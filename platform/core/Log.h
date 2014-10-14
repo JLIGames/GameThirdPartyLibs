@@ -1,2 +1,1 @@
-
-void Log(char *format, ...);
+void Log(const char *format, ...);
