@@ -98,8 +98,8 @@ GLuint createProgram(const char* pVertexSource, const char* pFragmentSource) {
     return program;
 }
 
-GLuint gProgram;
-GLuint gvPositionHandle;
+GLuint gProgram = GL_INVALID_ENUM;
+GLuint gvPositionHandle = GL_INVALID_ENUM;
 
 
 const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
@@ -119,14 +119,19 @@ bool create()
 	printGLString("Renderer", GL_RENDERER);
 	printGLString("Extensions", GL_EXTENSIONS);
 
-	gProgram = createProgram(gVertexShader, gFragmentShader);
-	if (!gProgram) {
-		LogError("Could not create program.");
-		return false;
-	}
-	gvPositionHandle = glGetAttribLocation(gProgram, "vPosition");
-	checkGlError("glGetAttribLocation");
-	Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
+    if (GL_INVALID_ENUM == gProgram)
+    {
+        gProgram = createProgram(gVertexShader, gFragmentShader);
+        Log("program: %d\n", gProgram);
+        
+        if (!gProgram) {
+            LogError("Could not create program.");
+            return false;
+        }
+        gvPositionHandle = glGetAttribLocation(gProgram, "vPosition");
+        Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
+    }
+	
 
 
 	return true;
@@ -140,7 +145,7 @@ void resize(int x, int y, int width, int height)
 
 void update(float step)
 {
-//	Log("%f\n", step);
+	Log("%f\n", step);
 }
 
 void render()
@@ -151,18 +156,22 @@ void render()
 		grey = 0.0f;
 	}
 	glClearColor(grey, grey, grey, 1.0f);
-    
 	checkGlError("glClearColor");
 	glClear( GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 	checkGlError("glClear");
 
+    Log("program: %d\n", gProgram);
 	glUseProgram(gProgram);
 	checkGlError("glUseProgram");
 
+    glEnableVertexAttribArray(gvPositionHandle);
+    checkGlError("glEnableVertexAttribArray");
+    
+    Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
 	glVertexAttribPointer(gvPositionHandle, 2, GL_FLOAT, GL_FALSE, 0, gTriangleVertices);
 	checkGlError("glVertexAttribPointer");
-	glEnableVertexAttribArray(gvPositionHandle);
-	checkGlError("glEnableVertexAttribArray");
+    
+	
 	glDrawArrays(GL_TRIANGLES, 0, 3);
 	checkGlError("glDrawArrays");
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include "Log.h"
+#include "../core/Log.h"
 
 void Log(const char *format, ...)
 {

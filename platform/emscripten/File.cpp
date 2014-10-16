@@ -1,9 +1,1 @@
-
-void Log(const char *format, ...)
-{
-}
-
-void LogError(const char *format, ...)
-{
-}
-
+#include "../core/File.h"
