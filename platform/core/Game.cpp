@@ -5,31 +5,11 @@
 #include "Sound.h"
 #include "Game.h"
 
-#include <android/log.h>
-
 #include "GLPlatform.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 static void printGLString(const char *name, GLenum s) {
     const char *v = (const char *) glGetString(s);
@@ -69,8 +49,7 @@ GLuint loadShader(GLenum shaderType, const char* pSource) {
                 char* buf = (char*) malloc(infoLen);
                 if (buf) {
                     glGetShaderInfoLog(shader, infoLen, NULL, buf);
-                    LogError("Could not compile shader %d:\n%s\n",
-                            shaderType, buf);
+                    LogError("Could not compile shader %d:\n%s\n", shaderType, buf);
                     free(buf);
                 }
                 glDeleteShader(shader);
@@ -147,8 +126,7 @@ bool create()
 	}
 	gvPositionHandle = glGetAttribLocation(gProgram, "vPosition");
 	checkGlError("glGetAttribLocation");
-	Log("glGetAttribLocation(\"vPosition\") = %d\n",
-			gvPositionHandle);
+	Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
 
 
 	return true;
@@ -162,7 +140,7 @@ void resize(int x, int y, int width, int height)
 
 void update(float step)
 {
-	Log("%f\n", step);
+//	Log("%f\n", step);
 }
 
 void render()
@@ -173,6 +151,7 @@ void render()
 		grey = 0.0f;
 	}
 	glClearColor(grey, grey, grey, 1.0f);
+    
 	checkGlError("glClearColor");
 	glClear( GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 	checkGlError("glClear");
@@ -192,11 +171,11 @@ void destroy()
 {
 }
 
-void pause()
-{
-}
-
-void unpause()
-{
-}
+//void pause()
+//{
+//}
+//
+//void unpause()
+//{
+//}
 
