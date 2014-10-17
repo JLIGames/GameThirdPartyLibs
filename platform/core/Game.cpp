@@ -5,7 +5,11 @@
 #include "Sound.h"
 #include "Game.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../emscripten/GLPlatform.h"
+#else
 #include "GLPlatform.h"
+#endif 
 
 #include <stdio.h>
 #include <stdlib.h>
