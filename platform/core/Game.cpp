@@ -157,7 +157,7 @@ void update(float step)
 }
 
 void render()
-{
+{return;
 	static float grey;
 	grey += 0.01f;
 	if (grey > 1.0f) {
