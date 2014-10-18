@@ -138,6 +138,10 @@ bool create()
 	
 
 
+    File *f = new File("strings/TEST");
+    Log("%s", static_cast<unsigned char *>(f->content()));
+    delete f;
+
 	return true;
 }
 
@@ -149,7 +153,7 @@ void resize(int x, int y, int width, int height)
 
 void update(float step)
 {
-	Log("%f\n", step);
+//	Log("%f\n", step);
 }
 
 void render()
