@@ -7,6 +7,7 @@
 
 #include "btBulletCollisionCommon.h"
 #include "zlib.h"
+#include "png.h"
 
 #ifdef __EMSCRIPTEN__
 #include "../emscripten/GLPlatform.h"
