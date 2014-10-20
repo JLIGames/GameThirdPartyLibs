@@ -5,6 +5,8 @@
 #include "Sound.h"
 #include "Game.h"
 
+#include "btBulletCollisionCommon.h"
+
 #ifdef __EMSCRIPTEN__
 #include "../emscripten/GLPlatform.h"
 #else
