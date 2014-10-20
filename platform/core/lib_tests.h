@@ -15,4 +15,11 @@
 #include "png_test.h"
 #include "zlib_test.h"
 
+#include "fmod.hpp"
+#include "fmod_errors.h"
+
+#include "json_test.h"
+
+#include "xml_test.h"
+
 #endif
