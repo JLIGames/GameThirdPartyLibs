@@ -34,6 +34,8 @@
  * minimal (insufficient) error checking; for a more realistic version look at
  * contrib/examples/pngtopng.c
  */
+#include "png_test.h"
+
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>

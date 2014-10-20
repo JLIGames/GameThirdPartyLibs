@@ -3,6 +3,7 @@
 ** Lua compiler (saves bytecodes to files; also list bytecodes)
 ** See Copyright Notice in lua.h
 */
+#include "lua_test.h"
 
 #include <errno.h>
 #include <stdio.h>

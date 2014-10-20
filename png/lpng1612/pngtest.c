@@ -30,6 +30,7 @@
  * testing a wide variety of files easily.  You can also test a number
  * of files at once by typing "pngtest -m file1.png file2.png ..."
  */
+#include "png_test.h"
 
 #define _POSIX_SOURCE 1
 
