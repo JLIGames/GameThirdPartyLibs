@@ -5,17 +5,6 @@
 #include "Sound.h"
 #include "Game.h"
 
-#include "btBulletCollisionCommon.h"
-#include "zlib.h"
-//#include "png.h"
-
-extern "C"
-{
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
-}
-
 #ifdef __EMSCRIPTEN__
 #include "../emscripten/GLPlatform.h"
 #else
@@ -25,6 +14,8 @@ extern "C"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
+#include "lib_tests.h"
 
 static void printGLString(const char *name, GLenum s) {
     const char *v = (const char *) glGetString(s);

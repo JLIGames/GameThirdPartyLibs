@@ -41,7 +41,7 @@
 #include <png.h>
 #include <zlib.h>
 
-int main(int argc, const char **argv)
+int main_pngexample(int argc, const char **argv)
 {
    if (argc == 3)
    {

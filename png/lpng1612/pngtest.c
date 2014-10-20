@@ -1693,7 +1693,7 @@ static PNG_CONST char *outname = "pngout.png";
 #endif
 
 int
-main(int argc, char *argv[])
+main_pngtest(int argc, char *argv[])
 {
    int multiple = 0;
    int ierror = 0;
