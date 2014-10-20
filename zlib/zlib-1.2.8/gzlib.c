@@ -2,7 +2,8 @@
  * Copyright (C) 2004, 2010, 2011, 2012, 2013 Mark Adler
  * For conditions of distribution and use, see copyright notice in zlib.h
  */
-
+#include <unistd.h>  /* Many POSIX functions (but not all, by a large margin) */
+#include <fcntl.h>   /* open(), creat() - and fcntl() */
 #include "gzguts.h"
 
 #if defined(_WIN32) && !defined(__BORLANDC__)
