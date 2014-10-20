@@ -7,7 +7,14 @@
 
 #include "btBulletCollisionCommon.h"
 #include "zlib.h"
-#include "png.h"
+//#include "png.h"
+
+extern "C"
+{
+#include "lua.h"
+#include "lualib.h"
+#include "lauxlib.h"
+}
 
 #ifdef __EMSCRIPTEN__
 #include "../emscripten/GLPlatform.h"
