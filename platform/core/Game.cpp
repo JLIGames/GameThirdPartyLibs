@@ -157,7 +157,7 @@ void update(float step)
 }
 
 void render()
-{return;
+{
 	static float grey;
 	grey += 0.01f;
 	if (grey > 1.0f) {
@@ -168,14 +168,14 @@ void render()
 	glClear( GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 	checkGlError("glClear");
 
-    Log("program: %d\n", gProgram);
+//    Log("program: %d\n", gProgram);
 	glUseProgram(gProgram);
 	checkGlError("glUseProgram");
 
     glEnableVertexAttribArray(gvPositionHandle);
     checkGlError("glEnableVertexAttribArray");
     
-    Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
+//    Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
 	glVertexAttribPointer(gvPositionHandle, 2, GL_FLOAT, GL_FALSE, 0, gTriangleVertices);
 	checkGlError("glVertexAttribPointer");
     
@@ -195,4 +195,21 @@ void destroy()
 //void unpause()
 //{
 //}
+
+void touch_down()
+{
+	Log("onTouchDown\n");
+}
+void touch_up()
+{
+	Log("onTouchUp\n");
+}
+void touch_move()
+{
+	Log("onTouchMove\n");
+}
+void touch_cancelled()
+{
+    Log("onTouchCancelled\n");
+}
 
