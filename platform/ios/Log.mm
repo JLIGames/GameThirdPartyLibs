@@ -12,7 +12,6 @@ void Log(const char *format, ...)
     
     printf(format, args);
     
-    vprintf(format, args);
     va_end(args);
 }
 
@@ -24,6 +23,5 @@ void LogError(const char *format, ...)
     
     fprintf(stderr, format, args);
     
-    vprintf(format, args);
     va_end(args);
 }
