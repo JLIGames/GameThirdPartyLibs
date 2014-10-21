@@ -29,4 +29,6 @@ extern "C"
 
 #include "xml_test.h"
 
+#include "sqlite_test.h"
+
 #endif

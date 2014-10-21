@@ -9,5 +9,6 @@
 #ifndef JLIGameEngineTest_sqlite_test_h
 #define JLIGameEngineTest_sqlite_test_h
 
+int main_sqlite(int argc, char **argv);
 
 #endif
