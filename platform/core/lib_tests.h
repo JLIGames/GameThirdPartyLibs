@@ -26,7 +26,7 @@ extern "C"
 //#include "fmod.hpp"
 //#include "fmod_errors.h"
 //
-//#include "json_test.h"
+#include "json_test.h"
 //
 //#include "xml_test.h"
 //
