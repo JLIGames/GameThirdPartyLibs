@@ -7,6 +7,8 @@
 class File
 {
 public:
+    static FILE	*fopen(const char * filename, const char * mode);
+    
 	File():
 			file_content(0),
 			file_size(0)
@@ -17,7 +19,7 @@ public:
 					file_content(0),
 					file_size(0)
 	{
-		open(filepath);
+		readAsset(filepath);
 	}
 	File(const File &rhs):
 							file_content(0),
@@ -59,7 +61,8 @@ public:
 		return *this;
 	}
 
-	bool open(const std::string filepath);
+	bool readAsset(const std::string filepath);
+    static bool write(const std::string filepath, const char *data = NULL);
 
 	void *content()const
 	{

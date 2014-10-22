@@ -22,6 +22,8 @@ must not be misrepresented as being the original software.
 distribution.
 */
 
+#include "File.h"
+
 #include <ctype.h>
 
 #ifdef TIXML_USE_STL
@@ -45,7 +47,8 @@ FILE* TiXmlFOpen( const char* filename, const char* mode )
 			return fp;
 		return 0;
 	#else
-		return fopen( filename, mode );
+        return File::fopen(filename, mode);
+//		return fopen( filename, mode );
 	#endif
 }
 

@@ -139,11 +139,17 @@ bool create()
     }
 	
 
-
-    File *f = new File("strings/TEST");
-    Log("%s", static_cast<unsigned char *>(f->content()));
-    delete f;
-
+    
+//    FILE *ff = fopen("test.tst", "w");
+//    fclose(ff);
+//
+//    File *f = new File("strings/TEST");
+//    Log("%s", static_cast<unsigned char *>(f->content()));
+//    delete f;
+    
+//    main_xml();
+    
+    
 	return true;
 }
 

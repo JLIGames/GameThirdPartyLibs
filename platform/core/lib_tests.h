@@ -9,26 +9,30 @@
 #ifndef JLIGameEngineTest_lib_tests_h
 #define JLIGameEngineTest_lib_tests_h
 
-#include "btBulletCollisionCommon.h"
-
-extern "C"
-{
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
-}
-#include "lua_test.h"
-
-#include "png_test.h"
-#include "zlib_test.h"
-
-#include "fmod.hpp"
-#include "fmod_errors.h"
-
-#include "json_test.h"
-
-#include "xml_test.h"
-
-#include "sqlite_test.h"
+//#include "btBulletCollisionCommon.h"
+//
+//extern "C"
+//{
+//#include "lua.h"
+//#include "lualib.h"
+//#include "lauxlib.h"
+//}
+//#include "lua_test.h"
+//
+//#include "png_test.h"
+//#include "zlib_test.h"
+//
+//#include "fmod.hpp"
+//#include "fmod_errors.h"
+//
+//#include "json_test.h"
+//
+//#include "xml_test.h"
+//
+//#include "sqlite_test.h"
+//
+//#include "ogg_test.h"
+//
+//#include <theora/theora.h>
 
 #endif

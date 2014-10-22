@@ -1,7 +1,12 @@
 #include "../core/File.h"
 #include <assert.h>
 
-bool File::open(const std::string filepath)
+FILE	*File::fopen(const char * filename, const char * mode)
+{
+    return std::fopen(filename, mode);
+}
+
+bool File::readAsset(const std::string filepath)
 {
     FILE* stream = fopen(filepath.c_str(), "r");
     
@@ -22,5 +27,10 @@ bool File::open(const std::string filepath)
         return true;
     }
     
+    return false;
+}
+
+bool File::write(const std::string filepath, const char *data)
+{
     return false;
 }

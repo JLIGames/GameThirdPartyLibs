@@ -27,7 +27,13 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_i
 #endif
 #endif
 
-bool File::open(const std::string filepath)
+FILE	*File::fopen(const char * filename, const char * mode)
+{
+//    return std::fopen(filename, mode);
+	return 0;
+}
+
+bool File::readAsset(const std::string filepath)
 {
 	AAsset* asset = AAssetManager_open(asset_manager, filepath.c_str(), AASSET_MODE_UNKNOWN);
 
@@ -58,6 +64,11 @@ bool File::open(const std::string filepath)
 		return true;
 	}
 
+	return false;
+}
+
+bool File::write(const std::string filepath, const char *data)
+{
 	return false;
 }
 

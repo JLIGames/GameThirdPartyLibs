@@ -1,11 +1,19 @@
 #include "File.h"
 #import <UIKit/UIKit.h>
 
-bool File::open(const std::string filepath)
+FILE	*File::fopen(const char * filename, const char * mode)
+{
+    NSArray *paths_ = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docs_dir_ = [paths_ objectAtIndex:0];
+    NSString *full_path = [NSString stringWithFormat:@"%@/%s", docs_dir_, filename];
+    
+    return std::fopen([full_path UTF8String], mode);
+}
+bool File::readAsset(const std::string filepath)
 {
     printf("%s", filepath.c_str());
     
-    NSMutableString* adjusted_relative_path = [[NSMutableString alloc] initWithString:@"/assets/"];
+    NSMutableString* adjusted_relative_path = [[NSMutableString alloc] initWithString:@"assets/"];
     [adjusted_relative_path appendString:
      [[NSString alloc] initWithCString:filepath.c_str() encoding:NSASCIIStringEncoding]];
     
@@ -33,4 +41,24 @@ bool File::open(const std::string filepath)
     }
     
     return false;
+}
+
+bool File::write(const std::string filepath, const char *data)
+{
+    //get the documents directory:
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    //make a file name to write the data to using the documents directory:
+    NSString *fileName = [NSString stringWithFormat:@"%@/%s",
+                          documentsDirectory, filepath.c_str()];
+    //create content - four lines of text
+    NSString *content = [NSString stringWithUTF8String:data];
+    //save content to the documents directory
+    [content writeToFile:fileName
+              atomically:NO
+                encoding:NSStringEncodingConversionAllowLossy
+                   error:nil];
+    return true;
 }
