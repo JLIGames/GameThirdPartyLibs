@@ -5,8 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE    := lua
 
 LOCAL_C_INCLUDES := \
-$(LOCAL_PATH)/ \
-$(LOCAL_PATH)/../../
+$(LOCAL_PATH)/ 
 
 LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
 

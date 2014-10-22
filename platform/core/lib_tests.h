@@ -11,14 +11,14 @@
 
 #include "btBulletCollisionCommon.h"
 
-//
-//extern "C"
-//{
-//#include "lua.h"
-//#include "lualib.h"
-//#include "lauxlib.h"
-//}
-//#include "lua_test.h"
+
+extern "C"
+{
+#include "lua.h"
+#include "lualib.h"
+#include "lauxlib.h"
+}
+#include "lua_test.h"
 //
 //#include "png_test.h"
 //#include "zlib_test.h"
