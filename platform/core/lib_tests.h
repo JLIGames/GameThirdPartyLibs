@@ -21,8 +21,8 @@ extern "C"
 #include "lua_test.h"
 
 #include "png_test.h"
-//#include "zlib_test.h"
-//
+#include "zlib_test.h"
+
 //#include "fmod.hpp"
 //#include "fmod_errors.h"
 //
