@@ -148,6 +148,12 @@ bool create()
 //    delete f;
     
 //    main_xml();
+//    const char *argv[] =
+//    {
+//        "json",
+//    };
+//    main_jsontestrunner(0, argv);
+    
     
     
 	return true;
