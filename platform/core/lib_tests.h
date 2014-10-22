@@ -27,8 +27,8 @@ extern "C"
 //#include "fmod_errors.h"
 //
 #include "json_test.h"
-//
-//#include "xml_test.h"
+
+#include "xml_test.h"
 //
 //#include "sqlite_test.h"
 //
