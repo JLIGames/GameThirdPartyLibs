@@ -9,7 +9,8 @@
 #ifndef JLIGameEngineTest_lib_tests_h
 #define JLIGameEngineTest_lib_tests_h
 
-//#include "btBulletCollisionCommon.h"
+#include "btBulletCollisionCommon.h"
+
 //
 //extern "C"
 //{
