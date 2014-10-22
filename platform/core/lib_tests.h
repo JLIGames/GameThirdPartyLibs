@@ -19,8 +19,8 @@ extern "C"
 #include "lauxlib.h"
 }
 #include "lua_test.h"
-//
-//#include "png_test.h"
+
+#include "png_test.h"
 //#include "zlib_test.h"
 //
 //#include "fmod.hpp"
