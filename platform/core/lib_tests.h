@@ -32,8 +32,8 @@ extern "C"
 
 #include "sqlite_test.h"
 
-//#include "ogg_test.h"
-//
+#include "ogg_test.h"
+
 //#include <theora/theora.h>
 
 #endif
