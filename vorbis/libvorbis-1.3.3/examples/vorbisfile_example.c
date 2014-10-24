@@ -32,7 +32,7 @@
 
 char pcmout[4096]; /* take 4k out of the data segment, not the stack */
 
-int main(){
+int main_vorbisfile(){
   OggVorbis_File vf;
   int eof=0;
   int current_section;

@@ -24,7 +24,7 @@
 #include <fcntl.h>
 #endif
 
-int main(){
+int main_chaining(){
   OggVorbis_File ov;
   int i;
 

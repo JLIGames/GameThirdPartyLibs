@@ -40,7 +40,7 @@ int convsize=4096;
 
 extern void _VDBG_dump(void);
 
-int main(){
+int main_decoder(){
   ogg_sync_state   oy; /* sync and verify incoming physical bitstream */
   ogg_stream_state os; /* take physical pages, weld into a logical
                           stream of packets */

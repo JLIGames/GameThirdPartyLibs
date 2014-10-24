@@ -30,7 +30,7 @@
 static int check_output (const float * data_in, unsigned len, float allowable);
 
 int
-main(void){
+main_test(void){
   static float data_out [DATA_LEN] ;
   static float data_in [DATA_LEN] ;
 

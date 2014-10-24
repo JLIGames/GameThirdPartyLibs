@@ -39,7 +39,7 @@
 #define READ 1024
 signed char readbuffer[READ*4+44]; /* out of the data segment, not the stack */
 
-int main(){
+int main_encoder(){
   ogg_stream_state os; /* take physical pages, weld into a logical
                           stream of packets */
   ogg_page         og; /* one Ogg bitstream page.  Vorbis packets are inside */

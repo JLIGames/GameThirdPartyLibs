@@ -86,7 +86,7 @@ void _verify(OggVorbis_File *ov,
   }
 }
 
-int main(){
+int main_seeking(){
   OggVorbis_File ov;
   int i,ret;
   ogg_int64_t pcmlength;
