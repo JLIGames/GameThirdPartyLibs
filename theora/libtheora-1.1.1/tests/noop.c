@@ -105,7 +105,7 @@ noop_test_decode ()
   return 0;
 }
 
-int main(int argc, char *argv[])
+int main_noop(int argc, char *argv[])
 {
   noop_test_info ();
 

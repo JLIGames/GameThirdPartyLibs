@@ -140,7 +140,7 @@ granulepos_test_encode (int frequency, int auto_p)
   return 0;
 }
 
-int main(int argc, char *argv[])
+int main_granulepos_theora(int argc, char *argv[])
 {
 
   granulepos_test_encode (1, 1);

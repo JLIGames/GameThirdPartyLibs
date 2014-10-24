@@ -36,6 +36,6 @@ extern "C"
 
 #include "vorbis_test.h"
 
-//#include <theora/theora.h>
+#include "theora_test.h"
 
 #endif

@@ -76,7 +76,7 @@ noop_test_comments ()
   return 0;
 }
 
-int main(int argc, char *argv[])
+int main_noop_theora(int argc, char *argv[])
 {
   /*noop_test_decode ();*/
 

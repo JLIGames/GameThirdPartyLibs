@@ -83,7 +83,7 @@ test_comments ()
   return 0;
 }
 
-int main(int argc, char *argv[])
+int main_comment_theora(int argc, char *argv[])
 {
   test_comments ();
 
