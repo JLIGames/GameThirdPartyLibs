@@ -5,6 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE    := vorbis
 
 LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/../../platform/core/ \
 $(LOCAL_PATH)/ \
 $(LOCAL_PATH)/examples/ \
 $(LOCAL_PATH)/test \

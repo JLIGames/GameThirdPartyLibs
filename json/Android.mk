@@ -5,10 +5,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE    := json
 
 LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/../../platform/core/ \
 $(LOCAL_PATH)/include \
 $(LOCAL_PATH)/src/lib_json \
-$(LOCAL_PATH)/src/test_lib_json \
-$(LOCAL_PATH)/../../platform/core/
+$(LOCAL_PATH)/src/test_lib_json
 
 LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
 

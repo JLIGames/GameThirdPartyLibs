@@ -7,7 +7,6 @@ LOCAL_MODULE    := assimp
 LOCAL_C_INCLUDES := \
 $(LOCAL_PATH)/../../platform/core/ \
 $(LOCAL_PATH)/code/ \
-$(LOCAL_PATH)/code/res/ \
 $(LOCAL_PATH)/contrib/ConvertUTF/ \
 $(LOCAL_PATH)/contrib/irrXML/ \
 $(LOCAL_PATH)/contrib/poly2tri/poly2tri/common/ \
@@ -15,11 +14,9 @@ $(LOCAL_PATH)/contrib/poly2tri/poly2tri/ \
 $(LOCAL_PATH)/contrib/poly2tri/poly2tri/sweep/ \
 $(LOCAL_PATH)/contrib/unzip/ \
 $(LOCAL_PATH)/include/ \
-$(LOCAL_PATH)/ \
 $(LOCAL_PATH)/contrib/clipper/ \
-$(LOCAL_PATH)/include/assimp/ \
-$(LOCAL_PATH)/tools/assimp_cmd/ \
-$(LOCAL_PATH)/code/BoostWorkaround/ #\
+$(LOCAL_PATH)/code/BoostWorkaround/ \
+#\
 $(LOCAL_PATH)/code/BoostWorkaround/boost/ \
 $(LOCAL_PATH)/code/BoostWorkaround/boost/math/ \
 $(LOCAL_PATH)/code/BoostWorkaround/boost/tuple/ \
@@ -30,6 +27,9 @@ $(LOCAL_PATH)/test/unit/ \
 $(LOCAL_PATH)/tools/assimp_cmd/ \
 $(LOCAL_PATH)/tools/assimp_view/ \
 $(LOCAL_PATH)/port/jassimp/jassimp-native/src/ \
+$(LOCAL_PATH)/include/assimp/ \
+$(LOCAL_PATH)/tools/assimp_cmd/ \
+$(LOCAL_PATH)/code/res/ \
 
 LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
 
@@ -37,21 +37,6 @@ LOCAL_SRC_FILES := \
 $(LOCAL_PATH)/contrib/ConvertUTF/ConvertUTF.c \
 $(LOCAL_PATH)/contrib/unzip/ioapi.c \
 $(LOCAL_PATH)/contrib/unzip/unzip.c \
-$(LOCAL_PATH)/contrib/zlib/adler32.c \
-$(LOCAL_PATH)/contrib/zlib/compress.c \
-$(LOCAL_PATH)/contrib/zlib/crc32.c \
-$(LOCAL_PATH)/contrib/zlib/deflate.c \
-$(LOCAL_PATH)/contrib/zlib/gzclose.c \
-$(LOCAL_PATH)/contrib/zlib/gzlib.c \
-$(LOCAL_PATH)/contrib/zlib/gzread.c \
-$(LOCAL_PATH)/contrib/zlib/gzwrite.c \
-$(LOCAL_PATH)/contrib/zlib/infback.c \
-$(LOCAL_PATH)/contrib/zlib/inffast.c \
-$(LOCAL_PATH)/contrib/zlib/inflate.c \
-$(LOCAL_PATH)/contrib/zlib/inftrees.c \
-$(LOCAL_PATH)/contrib/zlib/trees.c \
-$(LOCAL_PATH)/contrib/zlib/uncompr.c \
-$(LOCAL_PATH)/contrib/zlib/zutil.c \
 $(LOCAL_PATH)/test/unit/CCompilerTest.c \
 $(LOCAL_PATH)/code/3DSConverter.cpp \
 $(LOCAL_PATH)/code/3DSLoader.cpp \
@@ -303,5 +288,21 @@ $(LOCAL_PATH)/contrib/cppunit-1.12.1/src/cppunit/XmlElement.cpp \
 $(LOCAL_PATH)/contrib/cppunit-1.12.1/src/cppunit/XmlOutputter.cpp \
 $(LOCAL_PATH)/contrib/cppunit-1.12.1/src/cppunit/XmlOutputterHook.cpp \
 $(LOCAL_PATH)/port/jassimp/jassimp-native/src/jassimp.cpp \
+\
+$(LOCAL_PATH)/contrib/zlib/adler32.c \
+$(LOCAL_PATH)/contrib/zlib/compress.c \
+$(LOCAL_PATH)/contrib/zlib/crc32.c \
+$(LOCAL_PATH)/contrib/zlib/deflate.c \
+$(LOCAL_PATH)/contrib/zlib/gzclose.c \
+$(LOCAL_PATH)/contrib/zlib/gzlib.c \
+$(LOCAL_PATH)/contrib/zlib/gzread.c \
+$(LOCAL_PATH)/contrib/zlib/gzwrite.c \
+$(LOCAL_PATH)/contrib/zlib/infback.c \
+$(LOCAL_PATH)/contrib/zlib/inffast.c \
+$(LOCAL_PATH)/contrib/zlib/inflate.c \
+$(LOCAL_PATH)/contrib/zlib/inftrees.c \
+$(LOCAL_PATH)/contrib/zlib/trees.c \
+$(LOCAL_PATH)/contrib/zlib/uncompr.c \
+$(LOCAL_PATH)/contrib/zlib/zutil.c \
 
 include $(BUILD_STATIC_LIBRARY)

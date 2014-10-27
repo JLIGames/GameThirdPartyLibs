@@ -5,6 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE    := ogg
 
 LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/../../platform/core/ \
 $(LOCAL_PATH)/ \
 $(LOCAL_PATH)/include \
 $(LOCAL_PATH)/src

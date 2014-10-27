@@ -4,6 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := bullet
 LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/../../platform/core/ \
 $(LOCAL_PATH)/ \
 $(LOCAL_PATH)/BulletCollision/BroadphaseCollision \
 $(LOCAL_PATH)/BulletCollision/CollisionDispatch \
@@ -17,8 +18,7 @@ $(LOCAL_PATH)/BulletDynamics/Featherstone \
 $(LOCAL_PATH)/BulletDynamics/MLCPSolvers \
 $(LOCAL_PATH)/BulletDynamics/Vehicle \
 $(LOCAL_PATH)/BulletSoftBody \
-$(LOCAL_PATH)/LinearMath \
-$(LOCAL_PATH)/../../platform/core/
+$(LOCAL_PATH)/LinearMath
 
 LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl -lm -llog
