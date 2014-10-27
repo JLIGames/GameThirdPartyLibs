@@ -21,8 +21,6 @@ $(LOCAL_PATH)/BulletSoftBody \
 $(LOCAL_PATH)/LinearMath
 
 LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
-LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl -lm -llog
-
 
 LOCAL_SRC_FILES := \
 BulletCollision/BroadphaseCollision/btAxisSweep3.cpp \
