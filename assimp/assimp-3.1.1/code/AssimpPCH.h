@@ -47,6 +47,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define ASSIMP_PCH_INCLUDED
 #define ASSIMP_INTERNAL_BUILD
 
+#define ASSIMP_USE_EXCEPTIONS
+
 // ----------------------------------------------------------------------------------------
 /* General compile config taken from defs.h. It is important that the user compiles
  * using exactly the same settings in defs.h. Settings in AssimpPCH.h may differ,
