@@ -463,7 +463,7 @@ local void gztack(char *name, int gd, z_stream *strm, int last)
    append the specified files, or append the data from stdin if no other file
    names are provided on the command line -- the gzip file must be writable
    and seekable */
-int main(int argc, char **argv)
+int main_zlib_gzappend(int argc, char **argv)
 {
     int gd, level;
     z_stream strm;

@@ -1,9 +1,12 @@
 #include "../core/File.h"
 #include <assert.h>
 
-FILE	*File::fopen(const char * filename, const char * mode)
+char *File::asset_path(const char *file, char *filePath)
 {
-    return std::fopen(filename, mode);
+    const char *path = "assets/";
+    
+    strcpy(filePath, path);
+    return filePath;
 }
 
 bool File::readAsset(const std::string filepath)

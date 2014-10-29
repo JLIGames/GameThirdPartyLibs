@@ -15,7 +15,11 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "lib_tests.h"
+//#include "lib_tests.h"
+
+//#include "fmod.hpp"
+//#include "fmod_errors.h"
+
 
 static void printGLString(const char *name, GLenum s) {
     const char *v = (const char *) glGetString(s);
@@ -112,14 +116,34 @@ const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
         0.5f, -0.5f };
 
 
-
-
-
-
-
-
 bool create()
 {
+//	FMOD::System   *system;
+//    FMOD::Sound    *sound;
+//    FMOD::Channel  *channel = 0;
+//
+//    FMOD_RESULT   result        = FMOD_OK;
+//    unsigned int  version       = 0;
+//
+//    result = FMOD::System_Create(&system);
+//    result = system->getVersion(&version);
+//    result = system->init(100, FMOD_INIT_NORMAL | FMOD_INIT_PROFILE_ENABLE, 0);
+//
+//
+//    char buff[512];
+//    const char *drumloop = File::asset_path("sounds/drumloop.wav", buff);
+//    result = system->createSound(drumloop, FMOD_2D, 0, &sound);
+//    result = system->playSound(sound, 0, false, &channel);
+//    result = channel->setPaused(false);
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	printGLString("Version", GL_VERSION);
 	printGLString("Vendor", GL_VENDOR);
 	printGLString("Renderer", GL_RENDERER);

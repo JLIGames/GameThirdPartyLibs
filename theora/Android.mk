@@ -5,7 +5,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE    := theora
 
 LOCAL_C_INCLUDES := \
-$(LOCAL_PATH)/examples/ \
 $(LOCAL_PATH)/include/ \
 $(LOCAL_PATH)/lib/ \
 $(LOCAL_PATH)/../../ogg/libogg-1.3.2/include \

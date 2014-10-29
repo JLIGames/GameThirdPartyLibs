@@ -351,7 +351,7 @@ local int extract(FILE *in, struct access *index, off_t offset,
 /* Demonstrate the use of build_index() and extract() by processing the file
    provided on the command line, and the extracting 16K from about 2/3rds of
    the way through the uncompressed output, and writing that to stdout. */
-int main(int argc, char **argv)
+int main_zlib_zran(int argc, char **argv)
 {
     int len;
     off_t offset;

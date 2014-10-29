@@ -27,10 +27,13 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_i
 #endif
 #endif
 
-FILE	*File::fopen(const char * filename, const char * mode)
+char *File::asset_path(const char *file, char *filePath)
 {
-//    return std::fopen(filename, mode);
-	return 0;
+	strcpy(filePath, "file:///android_asset/assets/");
+
+	strcat(filePath, file);
+
+	return filePath;
 }
 
 bool File::readAsset(const std::string filepath)

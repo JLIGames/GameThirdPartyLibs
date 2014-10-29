@@ -2,12 +2,20 @@
 #define _JLIGAMEENGINE_FILE_H_
 
 #include <string>
+#include <stdio.h>
 #include <stdlib.h>
 
 class File
 {
 public:
-    static FILE	*fopen(const char * filename, const char * mode);
+    static FILE	*fopen(const char * filename, const char * mode)
+    {
+        char buffer[512];
+        File::asset_path(filename, buffer);
+        return fopen(buffer, mode);
+    }
+    
+    static char *asset_path(const char *file, char *filePath);
     
 	File():
 			file_content(0),

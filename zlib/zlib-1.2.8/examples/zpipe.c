@@ -173,7 +173,7 @@ void zerr(int ret)
 }
 
 /* compress or decompress from stdin to stdout */
-int main(int argc, char **argv)
+int main_zlib_zpipe(int argc, char **argv)
 {
     int ret;
 

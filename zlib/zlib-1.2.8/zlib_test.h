@@ -10,5 +10,12 @@
 #define JLIGameEngineTest_zlib_test_h
 
 int main_zlib(int argc, char **argv);
+int main_zlib_enough(int argc, char **argv);
+int main_zlib_fitblk(int argc, char **argv);
+int main_zlib_gun(int argc, char **argv);
+int main_zlib_gzappend(int argc, char **argv);
+int main_zlib_gzjoin(int argc, char **argv);
+int main_zlib_zpipe(int argc, char **argv);
+int main_zlib_zran(int argc, char **argv);
 
 #endif

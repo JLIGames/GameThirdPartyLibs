@@ -424,7 +424,7 @@ local void gzcopy(char *name, int clr, unsigned long *crc, unsigned long *tot,
 }
 
 /* join the gzip files on the command line, write result to stdout */
-int main(int argc, char **argv)
+int main_zlib_gzjoin(int argc, char **argv)
 {
     unsigned long crc, tot;     /* running crc and total uncompressed length */
 

@@ -455,7 +455,7 @@ local void enough(int syms)
    to a multiple precision type), the method of printing will also need to be
    updated.
  */
-int main(int argc, char **argv)
+int main_zlib_enough(int argc, char **argv)
 {
     int syms;           /* total number of symbols to code */
     int n;              /* number of symbols to code for this run */

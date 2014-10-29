@@ -1,14 +1,25 @@
 #include "File.h"
 #import <UIKit/UIKit.h>
 
-FILE	*File::fopen(const char * filename, const char * mode)
+char *File::asset_path(const char *file, char *filePath)
 {
-    NSArray *paths_ = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docs_dir_ = [paths_ objectAtIndex:0];
-    NSString *full_path = [NSString stringWithFormat:@"%@/%s", docs_dir_, filename];
+//    NSArray *paths_ = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *docs_dir_ = [paths_ objectAtIndex:0];
+//    NSString *full_path = [NSString stringWithFormat:@"%@/%s", docs_dir_, file];
     
-    return std::fopen([full_path UTF8String], mode);
+    
+    NSMutableString* adjusted_relative_path = [[NSMutableString alloc] initWithString:@"assets/"];
+    [adjusted_relative_path appendString: [[NSString alloc] initWithCString:file
+                                                                   encoding:NSASCIIStringEncoding]];
+    
+    const char *path = [[[NSBundle mainBundle] pathForResource:adjusted_relative_path
+                                                        ofType:nil]
+                        cStringUsingEncoding:NSASCIIStringEncoding];
+    
+    strcpy(filePath, path);
+    return filePath;
 }
+
 bool File::readAsset(const std::string filepath)
 {
     printf("%s", filepath.c_str());

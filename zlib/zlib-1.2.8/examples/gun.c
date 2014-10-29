@@ -628,7 +628,7 @@ local int gunzip(z_stream *strm, char *inname, char *outname, int test)
 
 /* Process the gun command line arguments.  See the command syntax near the
    beginning of this source file. */
-int main(int argc, char **argv)
+int main_zlib_gun(int argc, char **argv)
 {
     int ret, len, test;
     char *outname;
