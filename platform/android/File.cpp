@@ -29,7 +29,7 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_i
 
 char *File::asset_path(const char *file, char *filePath)
 {
-	strcpy(filePath, "file:///android_asset/assets/");
+	strcpy(filePath, "file:///android_asset/");
 
 	strcat(filePath, file);
 
