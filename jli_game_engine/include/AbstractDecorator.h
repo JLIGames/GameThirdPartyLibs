@@ -29,9 +29,10 @@ public:
 
     bool hasDecorator(OBJECT *object)const;
     OBJECT*	getDecorator(const u32 index);
-    void addEntityDecorator(OBJECT *object);
+    void addDecorator(OBJECT *object);
     void removeDecorator(const u32 index);
     void removeDecorator(OBJECT *object);
+    u32 decorators()const;
 
     virtual void applyDecorators();
 
@@ -76,8 +77,11 @@ OBJECT*	AbstractDecorator<OBJECT>::getDecorator(const u32 index)
 }
 
 template <class OBJECT>
-void AbstractDecorator<OBJECT>::addEntityDecorator(OBJECT *object)
+void AbstractDecorator<OBJECT>::addDecorator(OBJECT *object)
 {
+    jliAssertMsg(this != object, "cannot decorate self with self");
+    jliAssertMsg(!hasDecorator(object), "already has the decorator");
+    
     m_Decorators.push_back(object);
 }
 
@@ -93,6 +97,12 @@ void AbstractDecorator<OBJECT>::removeDecorator(OBJECT *object)
 {
     jliAssertMsg(object, "object is null");
     m_Decorators.remove(object);
+}
+
+template <class OBJECT>
+u32 AbstractDecorator<OBJECT>::decorators()const
+{
+    return m_Decorators.size();
 }
 
 template <class OBJECT>
