@@ -93,7 +93,7 @@ private:
 
 template <class OBJECT_TYPE>
 AbstractState<OBJECT_TYPE>::AbstractState(const AbstractBuilder &builder):
-m_isFinished(true),
+m_isFinished(false),
 m_isInUse(false)
 {
     

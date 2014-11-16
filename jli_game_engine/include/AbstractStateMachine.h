@@ -90,9 +90,6 @@ void AbstractStateMachine<OWNER_TYPE>::update(f32 deltaTimeStep)
     
     if (theCurrentState)
     {
-        theCurrentState->update(AbstractBehavior<OWNER_TYPE>::getOwner(),
-                                deltaTimeStep);
-        
         pushNextState = theCurrentState->isFinished();
     }
     else
@@ -111,6 +108,12 @@ void AbstractStateMachine<OWNER_TYPE>::update(f32 deltaTimeStep)
         }
         
         changeState(theNextState);
+    }
+    else
+    {
+        if(theCurrentState)
+            theCurrentState->update(AbstractBehavior<OWNER_TYPE>::getOwner(),
+                                deltaTimeStep);
     }
 }
 
@@ -164,6 +167,7 @@ void AbstractStateMachine<OWNER_TYPE>::changeState(AbstractState<OWNER_TYPE>* st
     {
         theCurrentState->exit(AbstractBehavior<OWNER_TYPE>::getOwner());
         theCurrentState->enableInUse(false);
+        theCurrentState->enableFinished(false);
     }
     
     setState(state);
