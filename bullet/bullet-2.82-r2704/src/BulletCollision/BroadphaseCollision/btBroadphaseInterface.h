@@ -43,7 +43,11 @@ struct	btBroadphaseRayCallback : public btBroadphaseAabbCallback
 	virtual ~btBroadphaseRayCallback() {}
 };
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#else
 #include "LinearMath/btVector3.h"
+#endif
 
 ///The btBroadphaseInterface class provides an interface to detect aabb-overlapping object pairs.
 ///Some implementations for this broadphase interface include btAxisSweep3, bt32BitAxisSweep3 and btDbvtBroadphase.

@@ -15,14 +15,22 @@ subject to the following restrictions:
 
 
 #include "btSoftRigidDynamicsWorld.h"
+#ifdef __EMSCRIPTEN__
+#include "../LinearMath/btQuickprof.h"
+#else
 #include "LinearMath/btQuickprof.h"
+#endif
 
 //softbody & helpers
 #include "btSoftBody.h"
 #include "btSoftBodyHelpers.h"
 #include "btSoftBodySolvers.h"
 #include "btDefaultSoftBodySolver.h"
+#ifdef __EMSCRIPTEN__
+#include "../LinearMath/btSerializer.h"
+#else
 #include "LinearMath/btSerializer.h"
+#endif
 
 
 btSoftRigidDynamicsWorld::btSoftRigidDynamicsWorld(

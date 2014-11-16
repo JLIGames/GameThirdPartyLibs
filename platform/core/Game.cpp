@@ -4,6 +4,7 @@
 #include "Log.h"
 #include "Sound.h"
 #include "Game.h"
+#include "Util.h"
 
 #ifdef __EMSCRIPTEN__
 #include "../emscripten/GLPlatform.h"
@@ -17,8 +18,12 @@
 
 #include "lib_tests.h"
 
-#include "fmod.hpp"
-#include "fmod_errors.h"
+//#include "fmod.hpp"
+//#include "fmod_errors.h"
+
+
+
+
 
 
 static void printGLString(const char *name, GLenum s) {
@@ -118,23 +123,24 @@ const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
 
 bool create()
 {
-	FMOD::System   *system;
-    FMOD::Sound    *sound;
-    FMOD::Channel  *channel = 0;
-
-    FMOD_RESULT   result        = FMOD_OK;
-    unsigned int  version       = 0;
-
-    result = FMOD::System_Create(&system);
-    result = system->getVersion(&version);
-    result = system->init(100, FMOD_INIT_NORMAL | FMOD_INIT_PROFILE_ENABLE, 0);
-
-
-    char buff[512];
-    const char *drumloop = File::asset_path("sounds/drumloop.wav", buff);
-    result = system->createSound(drumloop, FMOD_2D, 0, &sound);
-    result = system->playSound(sound, 0, false, &channel);
-    result = channel->setPaused(false);
+    
+//	FMOD::System   *system;
+//    FMOD::Sound    *sound;
+//    FMOD::Channel  *channel = 0;
+//
+//    FMOD_RESULT   result        = FMOD_OK;
+//    unsigned int  version       = 0;
+//
+//    result = FMOD::System_Create(&system);
+//    result = system->getVersion(&version);
+//    result = system->init(100, FMOD_INIT_NORMAL | FMOD_INIT_PROFILE_ENABLE, 0);
+//
+//
+//    char buff[512];
+//    const char *drumloop = File::asset_path("sounds/drumloop.wav", buff);
+//    result = system->createSound(drumloop, FMOD_2D, 0, &sound);
+//    result = system->playSound(sound, 0, false, &channel);
+//    result = channel->setPaused(false);
     
     
     
@@ -202,24 +208,24 @@ void render()
 		grey = 0.0f;
 	}
 	glClearColor(grey, grey, grey, 1.0f);
-	checkGlError("glClearColor");
+//	checkGlError("glClearColor");
 	glClear( GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
-	checkGlError("glClear");
+//	checkGlError("glClear");
 
 //    Log("program: %d\n", gProgram);
 	glUseProgram(gProgram);
-	checkGlError("glUseProgram");
+//	checkGlError("glUseProgram");
 
     glEnableVertexAttribArray(gvPositionHandle);
-    checkGlError("glEnableVertexAttribArray");
+//    checkGlError("glEnableVertexAttribArray");
     
 //    Log("glGetAttribLocation(\"vPosition\") = %d\n", gvPositionHandle);
 	glVertexAttribPointer(gvPositionHandle, 2, GL_FLOAT, GL_FALSE, 0, gTriangleVertices);
-	checkGlError("glVertexAttribPointer");
+//	checkGlError("glVertexAttribPointer");
     
 	
 	glDrawArrays(GL_TRIANGLES, 0, 3);
-	checkGlError("glDrawArrays");
+//	checkGlError("glDrawArrays");
 }
 
 void destroy()

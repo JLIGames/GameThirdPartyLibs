@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 
 #include "btCollisionObject.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "LinearMath/btSerializer.h"
+#endif
 
 btCollisionObject::btCollisionObject()
 	:	m_anisotropicFriction(1.f,1.f,1.f),

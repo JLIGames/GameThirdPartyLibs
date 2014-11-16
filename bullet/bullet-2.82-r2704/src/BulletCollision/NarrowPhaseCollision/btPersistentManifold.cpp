@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 
 #include "btPersistentManifold.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransform.h"
+#else
 #include "LinearMath/btTransform.h"
+#endif
 
 
 btScalar					gContactBreakingThreshold = btScalar(0.02);

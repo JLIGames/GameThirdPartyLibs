@@ -15,11 +15,19 @@ subject to the following restrictions:
 
 
 #include "btHingeConstraint.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btTransformUtil.h"
+#include "../../LinearMath/btMinMax.h"
+#include <new>
+#include "btSolverBody.h"
+#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
 #include "LinearMath/btMinMax.h"
 #include <new>
 #include "btSolverBody.h"
+#endif
 
 
 

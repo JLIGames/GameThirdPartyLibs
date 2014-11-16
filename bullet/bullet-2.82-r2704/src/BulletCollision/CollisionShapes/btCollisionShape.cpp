@@ -12,8 +12,13 @@ subject to the following restrictions:
 2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
 3. This notice may not be removed or altered from any source distribution.
 */
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btCollisionShape.h"
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
 #include "LinearMath/btSerializer.h"
+#endif
 
 /*
   Make sure this dummy function never changes so that it

@@ -32,8 +32,11 @@ email: projectileman@yahoo.com
 -----------------------------------------------------------------------------
 */
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#else
 #include "LinearMath/btScalar.h"
-
+#endif
 
 
 #define GREAL btScalar

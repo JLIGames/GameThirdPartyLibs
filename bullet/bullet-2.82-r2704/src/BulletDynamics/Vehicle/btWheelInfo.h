@@ -11,8 +11,13 @@
 #ifndef BT_WHEEL_INFO_H
 #define BT_WHEEL_INFO_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btTransform.h"
+#else
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btTransform.h"
+#endif
 
 class btRigidBody;
 

@@ -13,6 +13,17 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btMultiBodyConstraintSolver.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+#include "btMultiBodyLinkCollider.h"
+
+#include "../../BulletDynamics/ConstraintSolver/btSolverBody.h"
+#include "btMultiBodyConstraint.h"
+#include "../../BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+
+#include "../../LinearMath/btQuickprof.h"
+#else
 #include "btMultiBodyConstraintSolver.h"
 #include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
 #include "btMultiBodyLinkCollider.h"
@@ -22,6 +33,7 @@ subject to the following restrictions:
 #include "BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
 
 #include "LinearMath/btQuickprof.h"
+#endif
 
 btScalar btMultiBodyConstraintSolver::solveSingleIteration(int iteration, btCollisionObject** bodies ,int numBodies,btPersistentManifold** manifoldPtr, int numManifolds,btTypedConstraint** constraints,int numConstraints,const btContactSolverInfo& infoGlobal,btIDebugDraw* debugDrawer)
 {

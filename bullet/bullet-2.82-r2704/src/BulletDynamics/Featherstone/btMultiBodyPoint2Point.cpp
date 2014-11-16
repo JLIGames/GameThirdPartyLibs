@@ -17,7 +17,11 @@ subject to the following restrictions:
 
 #include "btMultiBodyPoint2Point.h"
 #include "btMultiBodyLinkCollider.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#endif
 
 btMultiBodyPoint2Point::btMultiBodyPoint2Point(btMultiBody* body, int link, btRigidBody* bodyB, const btVector3& pivotInA, const btVector3& pivotInB)
 	:btMultiBodyConstraint(body,0,link,-1,3,false),

@@ -14,12 +14,21 @@ subject to the following restrictions:
 */
 
 #include "btRigidBody.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btConvexShape.h"
+#include "../../LinearMath/btMinMax.h"
+#include "../../LinearMath/btTransformUtil.h"
+#include "../../LinearMath/btMotionState.h"
+#include "../../BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
 #include "LinearMath/btMinMax.h"
 #include "LinearMath/btTransformUtil.h"
 #include "LinearMath/btMotionState.h"
 #include "BulletDynamics/ConstraintSolver/btTypedConstraint.h"
 #include "LinearMath/btSerializer.h"
+#endif
 
 //'temporarily' global variables
 btScalar	gDeactivationTime = btScalar(2.);

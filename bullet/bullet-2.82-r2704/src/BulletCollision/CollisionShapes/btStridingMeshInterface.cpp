@@ -14,7 +14,11 @@ subject to the following restrictions:
 */
 
 #include "btStridingMeshInterface.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "LinearMath/btSerializer.h"
+#endif
 
 btStridingMeshInterface::~btStridingMeshInterface()
 {

@@ -16,6 +16,15 @@ subject to the following restrictions:
 #ifndef BT_COMPOUND_SHAPE_H
 #define BT_COMPOUND_SHAPE_H
 
+#ifdef __EMSCRIPTEN__
+#include "btCollisionShape.h"
+
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btTransform.h"
+#include "../../LinearMath/btMatrix3x3.h"
+#include "btCollisionMargin.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "btCollisionShape.h"
 
 #include "LinearMath/btVector3.h"
@@ -23,6 +32,7 @@ subject to the following restrictions:
 #include "LinearMath/btMatrix3x3.h"
 #include "btCollisionMargin.h"
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 //class btOptimizedBvh;
 struct btDbvt;

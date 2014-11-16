@@ -14,10 +14,17 @@ subject to the following restrictions:
 */
 ///btSoftBody implementation by Nathanael Presson
 
+#ifdef __EMSCRIPTEN__
+#include "btSoftBodyInternals.h"
+#include "../BulletSoftBody/btSoftBodySolvers.h"
+#include "btSoftBodyData.h"
+#include "../LinearMath/btSerializer.h"
+#else
 #include "btSoftBodyInternals.h"
 #include "BulletSoftBody/btSoftBodySolvers.h"
 #include "btSoftBodyData.h"
 #include "LinearMath/btSerializer.h"
+#endif
 
 
 //

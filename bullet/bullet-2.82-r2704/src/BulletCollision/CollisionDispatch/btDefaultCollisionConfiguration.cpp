@@ -15,6 +15,28 @@ subject to the following restrictions:
 
 #include "btDefaultCollisionConfiguration.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btEmptyCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btConvexConcaveCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btCompoundCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btCompoundCompoundCollisionAlgorithm.h"
+
+#include "../../BulletCollision/CollisionDispatch/btConvexPlaneCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btBoxBoxCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h"
+#ifdef USE_BUGGY_SPHERE_BOX_ALGORITHM
+#include "../../BulletCollision/CollisionDispatch/btSphereBoxCollisionAlgorithm.h"
+#endif //USE_BUGGY_SPHERE_BOX_ALGORITHM
+#include "../../BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
+
+
+
+#include "../../LinearMath/btPoolAllocator.h"
+#else
 #include "BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btEmptyCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btConvexConcaveCollisionAlgorithm.h"
@@ -35,6 +57,7 @@ subject to the following restrictions:
 
 
 #include "LinearMath/btPoolAllocator.h"
+#endif
 
 
 

@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_COLLISION_OBJECT_H
 #define BT_COLLISION_OBJECT_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransform.h"
+#else
 #include "LinearMath/btTransform.h"
+#endif
 
 //island management, m_activationState1
 #define ACTIVE_TAG 1
@@ -28,9 +32,15 @@ subject to the following restrictions:
 struct	btBroadphaseProxy;
 class	btCollisionShape;
 struct btCollisionShapeData;
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btMotionState.h"
+#include "../../LinearMath/btAlignedAllocator.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btMotionState.h"
 #include "LinearMath/btAlignedAllocator.h"
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 typedef btAlignedObjectArray<class btCollisionObject*> btCollisionObjectArray;
 

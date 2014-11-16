@@ -13,10 +13,17 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#include "SphereTriangleDetector.h"
+#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
+#include "../../BulletCollision/CollisionShapes/btSphereShape.h"
+#else
 #include "LinearMath/btScalar.h"
 #include "SphereTriangleDetector.h"
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
 #include "BulletCollision/CollisionShapes/btSphereShape.h"
+#endif
 
 
 SphereTriangleDetector::SphereTriangleDetector(btSphereShape* sphere,btTriangleShape* triangle,btScalar contactBreakingThreshold)

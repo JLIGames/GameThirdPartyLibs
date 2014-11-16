@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_POINT2POINTCONSTRAINT_H
 #define BT_POINT2POINTCONSTRAINT_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#else
 #include "LinearMath/btVector3.h"
+#endif
 #include "btJacobianEntry.h"
 #include "btTypedConstraint.h"
 

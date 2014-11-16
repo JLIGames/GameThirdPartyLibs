@@ -23,6 +23,15 @@ Concave-Concave Collision
 
 */
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionDispatch/btManifoldResult.h"
+#include "../../LinearMath/btIDebugDraw.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../../BulletCollision/CollisionShapes/btBoxShape.h"
+#include "btGImpactCollisionAlgorithm.h"
+#include "btContactProcessing.h"
+#include "../../LinearMath/btQuickprof.h"
+#else
 #include "BulletCollision/CollisionDispatch/btManifoldResult.h"
 #include "LinearMath/btIDebugDraw.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
@@ -30,6 +39,7 @@ Concave-Concave Collision
 #include "btGImpactCollisionAlgorithm.h"
 #include "btContactProcessing.h"
 #include "LinearMath/btQuickprof.h"
+#endif
 
 
 //! Class for accessing the plane equation

@@ -16,9 +16,15 @@ subject to the following restrictions:
 #ifndef BT_MULTIBODY_LINK_H
 #define BT_MULTIBODY_LINK_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btQuaternion.h"
+#include "../../LinearMath/btVector3.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#else
 #include "LinearMath/btQuaternion.h"
 #include "LinearMath/btVector3.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
+#endif
 
 enum	btMultiBodyLinkFlags
 {

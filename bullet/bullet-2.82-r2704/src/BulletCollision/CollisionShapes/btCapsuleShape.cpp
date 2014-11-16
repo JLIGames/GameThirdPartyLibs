@@ -16,8 +16,13 @@ subject to the following restrictions:
 
 #include "btCapsuleShape.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btCollisionMargin.h"
+#include "../../LinearMath/btQuaternion.h"
+#else
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 #include "LinearMath/btQuaternion.h"
+#endif
 
 btCapsuleShape::btCapsuleShape(btScalar radius, btScalar height) : btConvexInternalShape ()
 {

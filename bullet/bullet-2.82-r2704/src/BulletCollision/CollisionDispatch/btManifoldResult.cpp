@@ -15,9 +15,15 @@ subject to the following restrictions:
 
 
 #include "btManifoldResult.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
 
 ///This is to allow MaterialCombiner/Custom Friction/Restitution values
 ContactAddedCallback		gContactAddedCallback=0;

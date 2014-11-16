@@ -18,7 +18,11 @@ subject to the following restrictions:
 #ifndef BT_GEAR_CONSTRAINT_H
 #define BT_GEAR_CONSTRAINT_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+#else
 #include "BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+#endif
 
 
 #ifdef BT_USE_DOUBLE_PRECISION

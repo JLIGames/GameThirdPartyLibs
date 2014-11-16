@@ -16,11 +16,19 @@ subject to the following restrictions:
 #ifndef BT_SPHERE_TRIANGLE_COLLISION_ALGORITHM_H
 #define BT_SPHERE_TRIANGLE_COLLISION_ALGORITHM_H
 
+#ifdef __EMSCRIPTEN__
+#include "btActivatingCollisionAlgorithm.h"
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+class btPersistentManifold;
+#include "btCollisionDispatcher.h"
+#else
 #include "btActivatingCollisionAlgorithm.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
 #include "BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
 class btPersistentManifold;
 #include "btCollisionDispatcher.h"
+#endif
 
 /// btSphereSphereCollisionAlgorithm  provides sphere-sphere collision detection.
 /// Other features are frame-coherency (persistent data) and collision response.

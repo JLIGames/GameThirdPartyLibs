@@ -20,12 +20,21 @@ subject to the following restrictions:
 #include "btSoftBody.h"
 
 
+#ifdef __EMSCRIPTEN__
+#include "../LinearMath/btQuickprof.h"
+#include "../LinearMath/btPolarDecomposition.h"
+#include "../BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+#include "../BulletCollision/CollisionShapes/btConvexInternalShape.h"
+#include "../BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+#else
 #include "LinearMath/btQuickprof.h"
 #include "LinearMath/btPolarDecomposition.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 #include "BulletCollision/CollisionShapes/btConvexInternalShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+#endif
 #include <string.h> //for memset
 //
 // btSymMatrix

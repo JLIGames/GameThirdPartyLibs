@@ -342,7 +342,7 @@ protected:
 			//  partition
 			do
 			{    
-				while (CompareFunc(m_data[i],x)) 
+				while (CompareFunc(m_data[i],x))
 					i++; 
 				while (CompareFunc(x,m_data[j])) 
 					j--;

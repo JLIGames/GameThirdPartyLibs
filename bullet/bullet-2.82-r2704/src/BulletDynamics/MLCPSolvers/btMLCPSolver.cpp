@@ -15,9 +15,15 @@ subject to the following restrictions:
 ///original version written by Erwin Coumans, October 2013
 
 #include "btMLCPSolver.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btMatrixX.h"
+#include "../../LinearMath/btQuickprof.h"
+#include "btSolveProjectedGaussSeidel.h"
+#else
 #include "LinearMath/btMatrixX.h"
 #include "LinearMath/btQuickprof.h"
 #include "btSolveProjectedGaussSeidel.h"
+#endif
 
 btMLCPSolver::btMLCPSolver(	 btMLCPSolverInterface* solver)
 :m_solver(solver),

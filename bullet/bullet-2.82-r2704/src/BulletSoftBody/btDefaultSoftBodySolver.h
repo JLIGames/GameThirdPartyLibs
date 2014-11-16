@@ -17,7 +17,11 @@ subject to the following restrictions:
 #define BT_SOFT_BODY_DEFAULT_SOLVER_H
 
 
+#ifdef __EMSCRIPTEN__
+#include "../BulletSoftBody/btSoftBodySolvers.h"
+#else
 #include "BulletSoftBody/btSoftBodySolvers.h"
+#endif
 #include "btSoftBodySolverVertexBuffer.h"
 struct btCollisionObjectWrapper;
 

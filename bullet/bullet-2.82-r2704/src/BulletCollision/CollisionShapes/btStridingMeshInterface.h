@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_STRIDING_MESHINTERFACE_H
 #define BT_STRIDING_MESHINTERFACE_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#else
 #include "LinearMath/btVector3.h"
+#endif
 #include "btTriangleCallback.h"
 #include "btConcaveShape.h"
 

@@ -13,6 +13,15 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "../BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../BulletCollision/CollisionShapes/btCollisionShape.h"
+
+#include "btDefaultSoftBodySolver.h"
+#include "../BulletCollision/CollisionShapes/btCapsuleShape.h"
+#include "../BulletSoftBody/btSoftBody.h"
+#else
 #include "BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
@@ -20,6 +29,7 @@ subject to the following restrictions:
 #include "btDefaultSoftBodySolver.h"
 #include "BulletCollision/CollisionShapes/btCapsuleShape.h"
 #include "BulletSoftBody/btSoftBody.h"
+#endif
 
 
 btDefaultSoftBodySolver::btDefaultSoftBodySolver()

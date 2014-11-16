@@ -16,8 +16,13 @@ subject to the following restrictions:
 
 
 #include "btUniversalConstraint.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
+#endif
 
 
 

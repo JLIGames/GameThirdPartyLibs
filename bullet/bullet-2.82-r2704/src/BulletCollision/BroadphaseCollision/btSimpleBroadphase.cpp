@@ -14,6 +14,15 @@ subject to the following restrictions:
 */
 
 #include "btSimpleBroadphase.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btDispatcher.h"
+#include "../../BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btTransform.h"
+#include "../../LinearMath/btMatrix3x3.h"
+#include "../../LinearMath/btAabbUtil2.h"
+#else
 #include "BulletCollision/BroadphaseCollision/btDispatcher.h"
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 
@@ -21,6 +30,7 @@ subject to the following restrictions:
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btMatrix3x3.h"
 #include "LinearMath/btAabbUtil2.h"
+#endif
 
 #include <new>
 

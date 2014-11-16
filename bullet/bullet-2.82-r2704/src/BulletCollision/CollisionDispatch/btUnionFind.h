@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_UNION_FIND_H
 #define BT_UNION_FIND_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 #define USE_PATH_COMPRESSION 1
 

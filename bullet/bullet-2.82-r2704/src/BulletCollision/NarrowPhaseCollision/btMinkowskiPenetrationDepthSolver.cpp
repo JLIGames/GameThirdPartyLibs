@@ -14,10 +14,17 @@ subject to the following restrictions:
 */
 
 #include "btMinkowskiPenetrationDepthSolver.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h"
+#include "../../BulletCollision/CollisionShapes/btConvexShape.h"
+#else
 #include "BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
 #include "BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
 #include "BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h"
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
+#endif
 
 #define NUM_UNITSPHERE_POINTS 42
 

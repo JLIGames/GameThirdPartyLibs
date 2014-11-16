@@ -24,8 +24,11 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransform.h"
+#else
 #include "LinearMath/btTransform.h"
-
+#endif
 
 ///Swap numbers
 #define BT_SWAP_NUMBERS(a,b){ \

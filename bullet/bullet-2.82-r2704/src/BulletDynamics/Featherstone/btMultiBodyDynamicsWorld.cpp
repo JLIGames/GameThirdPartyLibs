@@ -13,6 +13,15 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btMultiBodyDynamicsWorld.h"
+#include "btMultiBodyConstraintSolver.h"
+#include "btMultiBody.h"
+#include "btMultiBodyLinkCollider.h"
+#include "../../BulletCollision/CollisionDispatch/btSimulationIslandManager.h"
+#include "../../LinearMath/btQuickprof.h"
+#include "btMultiBodyConstraint.h"
+#else
 #include "btMultiBodyDynamicsWorld.h"
 #include "btMultiBodyConstraintSolver.h"
 #include "btMultiBody.h"
@@ -20,6 +29,7 @@ subject to the following restrictions:
 #include "BulletCollision/CollisionDispatch/btSimulationIslandManager.h"
 #include "LinearMath/btQuickprof.h"
 #include "btMultiBodyConstraint.h"
+#endif
 
 	
 

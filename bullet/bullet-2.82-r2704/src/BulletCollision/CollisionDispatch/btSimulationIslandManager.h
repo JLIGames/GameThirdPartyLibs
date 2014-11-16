@@ -16,10 +16,17 @@ subject to the following restrictions:
 #ifndef BT_SIMULATION_ISLAND_MANAGER_H
 #define BT_SIMULATION_ISLAND_MANAGER_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionDispatch/btUnionFind.h"
+#include "btCollisionCreateFunc.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+#include "btCollisionObject.h"
+#else
 #include "BulletCollision/CollisionDispatch/btUnionFind.h"
 #include "btCollisionCreateFunc.h"
 #include "LinearMath/btAlignedObjectArray.h"
 #include "btCollisionObject.h"
+#endif
 
 class btCollisionObject;
 class btCollisionWorld;

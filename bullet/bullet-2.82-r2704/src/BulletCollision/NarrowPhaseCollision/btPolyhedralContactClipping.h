@@ -21,8 +21,13 @@ subject to the following restrictions:
 #define BT_POLYHEDRAL_CONTACT_CLIPPING_H
 
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#include "../../LinearMath/btTransform.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
 #include "LinearMath/btTransform.h"
+#endif
 #include "btDiscreteCollisionDetectorInterface.h"
 
 class btConvexPolyhedron;

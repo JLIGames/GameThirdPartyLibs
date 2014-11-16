@@ -18,7 +18,11 @@ subject to the following restrictions:
 #include "btSoftBodyConcaveCollisionAlgorithm.h"
 #include "btSoftSoftCollisionAlgorithm.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../LinearMath/btPoolAllocator.h"
+#else
 #include "LinearMath/btPoolAllocator.h"
+#endif
 
 #define ENABLE_SOFTBODY_CONCAVE_COLLISIONS 1
 

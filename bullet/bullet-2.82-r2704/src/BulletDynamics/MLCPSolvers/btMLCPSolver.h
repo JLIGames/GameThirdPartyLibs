@@ -17,9 +17,15 @@ subject to the following restrictions:
 #ifndef BT_MLCP_SOLVER_H
 #define BT_MLCP_SOLVER_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h"
+#include "../../LinearMath/btMatrixX.h"
+#include "../../BulletDynamics/MLCPSolvers/btMLCPSolverInterface.h"
+#else
 #include "BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h"
 #include "LinearMath/btMatrixX.h"
 #include "BulletDynamics/MLCPSolvers/btMLCPSolverInterface.h"
+#endif
 
 class btMLCPSolver : public btSequentialImpulseConstraintSolver
 {

@@ -18,8 +18,13 @@ subject to the following restrictions:
 ///Separating axis rest based on work from Pierre Terdiman, see
 ///And contact clipping based on work from Simon Hobbs
 
+#ifdef __EMSCRIPTEN__
+#include "btConvexPolyhedron.h"
+#include "../../LinearMath/btHashMap.h"
+#else
 #include "btConvexPolyhedron.h"
 #include "LinearMath/btHashMap.h"
+#endif
 
 btConvexPolyhedron::btConvexPolyhedron()
 {

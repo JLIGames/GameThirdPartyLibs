@@ -14,12 +14,21 @@ subject to the following restrictions:
 */
 
 #include "btSoftSoftCollisionAlgorithm.h"
+#ifdef __EMSCRIPTEN__
+#include "../BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+#include "../BulletCollision/CollisionShapes/btBoxShape.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../BulletSoftBody/btSoftBodySolvers.h"
+#include "btSoftBody.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 #include "BulletCollision/CollisionShapes/btBoxShape.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletSoftBody/btSoftBodySolvers.h"
 #include "btSoftBody.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
 
 #define USE_PERSISTENT_CONTACTS 1
 

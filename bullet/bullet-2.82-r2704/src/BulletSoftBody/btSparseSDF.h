@@ -17,8 +17,13 @@ subject to the following restrictions:
 #ifndef BT_SPARSE_SDF_H
 #define BT_SPARSE_SDF_H
 
+#ifdef __EMSCRIPTEN__
+#include "../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+#else
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+#endif
 
 // Modified Paul Hsieh hash
 template <const int DWORDLEN>

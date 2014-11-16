@@ -16,7 +16,11 @@ subject to the following restrictions:
 #include "btMultiSapBroadphase.h"
 
 #include "btSimpleBroadphase.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAabbUtil2.h"
+#else
 #include "LinearMath/btAabbUtil2.h"
+#endif
 #include "btQuantizedBvh.h"
 
 ///	btSapBroadphaseArray	m_sapBroadphases;

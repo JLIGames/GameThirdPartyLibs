@@ -13,9 +13,15 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btGeneric6DofSpringConstraint.h"
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "btGeneric6DofSpringConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
+#endif
 
 
 btGeneric6DofSpringConstraint::btGeneric6DofSpringConstraint(btRigidBody& rbA, btRigidBody& rbB, const btTransform& frameInA, const btTransform& frameInB ,bool useLinearReferenceFrameA)

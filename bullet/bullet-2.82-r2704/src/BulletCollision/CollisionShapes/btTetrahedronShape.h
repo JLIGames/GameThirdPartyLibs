@@ -18,7 +18,11 @@ subject to the following restrictions:
 
 
 #include "btPolyhedralConvexShape.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#else
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#endif
 
 
 ///The btBU_Simplex1to4 implements tetrahedron, triangle, line, vertex collision shapes. In most cases it is better to use btConvexHullShape instead.

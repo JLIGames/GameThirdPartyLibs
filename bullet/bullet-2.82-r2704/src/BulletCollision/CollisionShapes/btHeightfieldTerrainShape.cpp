@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 #include "btHeightfieldTerrainShape.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "LinearMath/btTransformUtil.h"
+#endif
 
 
 

@@ -18,9 +18,15 @@ subject to the following restrictions:
 #ifndef BT_GJK_CONVEX_CAST_H
 #define BT_GJK_CONVEX_CAST_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btCollisionMargin.h"
+
+#include "../../LinearMath/btVector3.h"
+#else
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 
 #include "LinearMath/btVector3.h"
+#endif
 #include "btConvexCast.h"
 class btConvexShape;
 class btMinkowskiSumShape;

@@ -19,7 +19,11 @@ subject to the following restrictions:
 
 #include "btDispatcher.h"
 #include "btCollisionAlgorithm.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAabbUtil2.h"
+#else
 #include "LinearMath/btAabbUtil2.h"
+#endif
 
 #include <stdio.h>
 

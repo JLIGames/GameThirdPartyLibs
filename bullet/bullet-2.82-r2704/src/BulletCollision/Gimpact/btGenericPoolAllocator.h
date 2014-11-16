@@ -24,7 +24,11 @@ subject to the following restrictions:
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedAllocator.h"
+#else
 #include "LinearMath/btAlignedAllocator.h"
+#endif
 
 #define BT_UINT_MAX UINT_MAX
 #define BT_DEFAULT_MAX_POOLS 16

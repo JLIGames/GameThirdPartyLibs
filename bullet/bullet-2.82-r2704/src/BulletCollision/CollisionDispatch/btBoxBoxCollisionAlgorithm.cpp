@@ -13,12 +13,22 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btBoxBoxCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+#include "../../BulletCollision/CollisionShapes/btBoxShape.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "btBoxBoxDetector.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "btBoxBoxCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 #include "BulletCollision/CollisionShapes/btBoxShape.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "btBoxBoxDetector.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
+
 #define USE_PERSISTENT_CONTACTS 1
 
 btBoxBoxCollisionAlgorithm::btBoxBoxCollisionAlgorithm(btPersistentManifold* mf,const btCollisionAlgorithmConstructionInfo& ci,const btCollisionObjectWrapper* body0Wrap,const btCollisionObjectWrapper* body1Wrap)

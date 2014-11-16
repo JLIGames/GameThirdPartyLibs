@@ -13,12 +13,21 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btTriangleMeshShape.h"
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btQuaternion.h"
+#include "btStridingMeshInterface.h"
+#include "../../LinearMath/btAabbUtil2.h"
+#include "../../BulletCollision/CollisionShapes/btCollisionMargin.h"
+#else
 #include "btTriangleMeshShape.h"
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btQuaternion.h"
 #include "btStridingMeshInterface.h"
 #include "LinearMath/btAabbUtil2.h"
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
+#endif
 
 
 btTriangleMeshShape::btTriangleMeshShape(btStridingMeshInterface* meshInterface)

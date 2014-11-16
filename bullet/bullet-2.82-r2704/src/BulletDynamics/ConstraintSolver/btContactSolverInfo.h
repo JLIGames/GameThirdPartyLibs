@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_CONTACT_SOLVER_INFO
 #define BT_CONTACT_SOLVER_INFO
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#else
 #include "LinearMath/btScalar.h"
+#endif
 
 enum	btSolverMode
 {

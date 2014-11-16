@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 #include "btStaticPlaneShape.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "LinearMath/btTransformUtil.h"
+#endif
 
 
 btStaticPlaneShape::btStaticPlaneShape(const btVector3& planeNormal,btScalar planeConstant)

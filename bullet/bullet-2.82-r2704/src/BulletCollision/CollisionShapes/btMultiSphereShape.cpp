@@ -17,10 +17,17 @@ subject to the following restrictions:
 #define BT_USE_SSE_IN_API
 #endif
 
+#ifdef __EMSCRIPTEN__
+#include "btMultiSphereShape.h"
+#include "../../BulletCollision/CollisionShapes/btCollisionMargin.h"
+#include "../../LinearMath/btQuaternion.h"
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "btMultiSphereShape.h"
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 #include "LinearMath/btQuaternion.h"
 #include "LinearMath/btSerializer.h"
+#endif
 
 btMultiSphereShape::btMultiSphereShape (const btVector3* positions,const btScalar* radi,int numSpheres)
 :btConvexInternalAabbCachingShape ()

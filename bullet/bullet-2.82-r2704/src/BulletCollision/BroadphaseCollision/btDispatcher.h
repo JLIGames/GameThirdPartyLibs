@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 #ifndef BT_DISPATCHER_H
 #define BT_DISPATCHER_H
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#else
 #include "LinearMath/btScalar.h"
+#endif
 
 class btCollisionAlgorithm;
 struct btBroadphaseProxy;

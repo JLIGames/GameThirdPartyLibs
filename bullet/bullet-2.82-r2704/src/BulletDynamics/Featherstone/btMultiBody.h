@@ -24,11 +24,19 @@
 #ifndef BT_MULTIBODY_H
 #define BT_MULTIBODY_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btQuaternion.h"
+#include "../../LinearMath/btMatrix3x3.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btScalar.h"
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btQuaternion.h"
 #include "LinearMath/btMatrix3x3.h"
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 
 #include "btMultiBodyLink.h"

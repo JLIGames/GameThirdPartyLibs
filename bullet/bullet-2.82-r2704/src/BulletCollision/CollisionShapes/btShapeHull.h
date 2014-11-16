@@ -18,8 +18,13 @@ subject to the following restrictions:
 #ifndef BT_SHAPE_HULL_H
 #define BT_SHAPE_HULL_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#include "../../BulletCollision/CollisionShapes/btConvexShape.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
+#endif
 
 
 ///The btShapeHull class takes a btConvexShape, builds a simplified convex hull using btConvexHull and provides triangle indices and vertices.

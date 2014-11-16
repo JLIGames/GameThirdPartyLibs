@@ -17,7 +17,11 @@ subject to the following restrictions:
 #define BT_GENERIC_6DOF_SPRING_CONSTRAINT_H
 
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#else
 #include "LinearMath/btVector3.h"
+#endif
 #include "btTypedConstraint.h"
 #include "btGeneric6DofConstraint.h"
 

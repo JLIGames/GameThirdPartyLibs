@@ -22,6 +22,39 @@ subject to the following restrictions:
 #include "btConvexConvexAlgorithm.h"
 
 //#include <stdio.h>
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../../BulletCollision/CollisionShapes/btConvexShape.h"
+#include "../../BulletCollision/CollisionShapes/btCapsuleShape.h"
+#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
+
+
+
+#include "../../BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h"
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+#include "../../BulletCollision/CollisionShapes/btBoxShape.h"
+#include "../../BulletCollision/CollisionDispatch/btManifoldResult.h"
+
+#include "../../BulletCollision/NarrowPhaseCollision/btConvexPenetrationDepthSolver.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btContinuousConvexCollision.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btGjkConvexCast.h"
+
+
+
+#include "../../BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
+#include "../../BulletCollision/CollisionShapes/btSphereShape.h"
+
+#include "../../BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h"
+
+#include "../../BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btPolyhedralContactClipping.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
@@ -53,6 +86,7 @@ subject to the following restrictions:
 #include "BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h"
 #include "BulletCollision/NarrowPhaseCollision/btPolyhedralContactClipping.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
 
 ///////////
 

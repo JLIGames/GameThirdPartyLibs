@@ -17,8 +17,11 @@ subject to the following restrictions:
 
 
 #include "btPolyhedralConvexShape.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
+#else
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
-
+#endif
 
 /// The btConvexTriangleMeshShape is a convex hull of a triangle mesh, but the performance is not as good as btConvexHullShape.
 /// A small benefit of this class is that it uses the btStridingMeshInterface, so you can avoid the duplication of the triangle mesh data. Nevertheless, most users should use the much better performing btConvexHullShape instead.

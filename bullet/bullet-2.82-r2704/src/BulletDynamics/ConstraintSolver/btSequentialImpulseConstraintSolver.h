@@ -20,12 +20,21 @@ class btIDebugDraw;
 class btPersistentManifold;
 class btDispatcher;
 class btCollisionObject;
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+#include "../../BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+#include "../../BulletDynamics/ConstraintSolver/btSolverBody.h"
+#include "../../BulletDynamics/ConstraintSolver/btSolverConstraint.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
+#include "../../BulletDynamics/ConstraintSolver/btConstraintSolver.h"
+#else
 #include "BulletDynamics/ConstraintSolver/btTypedConstraint.h"
 #include "BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
 #include "BulletDynamics/ConstraintSolver/btSolverBody.h"
 #include "BulletDynamics/ConstraintSolver/btSolverConstraint.h"
 #include "BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
 #include "BulletDynamics/ConstraintSolver/btConstraintSolver.h"
+#endif
 
 ///The btSequentialImpulseConstraintSolver is a fast SIMD implementation of the Projected Gauss Seidel (iterative LCP) method.
 ATTRIBUTE_ALIGNED16(class) btSequentialImpulseConstraintSolver : public btConstraintSolver

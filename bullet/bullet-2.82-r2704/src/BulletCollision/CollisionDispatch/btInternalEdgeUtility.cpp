@@ -1,5 +1,14 @@
 #include "btInternalEdgeUtility.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
+#include "../../BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h"
+#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
+#include "../../LinearMath/btIDebugDraw.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
 #include "BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h"
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
@@ -7,6 +16,7 @@
 #include "BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
 #include "LinearMath/btIDebugDraw.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
 
 //#define DEBUG_INTERNAL_EDGE
 

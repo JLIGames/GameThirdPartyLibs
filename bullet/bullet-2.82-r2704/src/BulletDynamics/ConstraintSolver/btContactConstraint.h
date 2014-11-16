@@ -16,10 +16,17 @@ subject to the following restrictions:
 #ifndef BT_CONTACT_CONSTRAINT_H
 #define BT_CONTACT_CONSTRAINT_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#include "btJacobianEntry.h"
+#include "btTypedConstraint.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+#else
 #include "LinearMath/btVector3.h"
 #include "btJacobianEntry.h"
 #include "btTypedConstraint.h"
 #include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+#endif
 
 ///btContactConstraint can be automatically created to solve contact constraints using the unified btTypedConstraint interface
 ATTRIBUTE_ALIGNED16(class) btContactConstraint : public btTypedConstraint

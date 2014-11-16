@@ -15,6 +15,15 @@ subject to the following restrictions:
 
 
 #include <stdio.h>
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btIDebugDraw.h"
+#include "../../BulletCollision/CollisionDispatch/btGhostObject.h"
+#include "../../BulletCollision/CollisionShapes/btMultiSphereShape.h"
+#include "../../BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+#include "../../BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionWorld.h"
+#include "../../LinearMath/btDefaultMotionState.h"
+#else
 #include "LinearMath/btIDebugDraw.h"
 #include "BulletCollision/CollisionDispatch/btGhostObject.h"
 #include "BulletCollision/CollisionShapes/btMultiSphereShape.h"
@@ -22,6 +31,7 @@ subject to the following restrictions:
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btCollisionWorld.h"
 #include "LinearMath/btDefaultMotionState.h"
+#endif
 #include "btKinematicCharacterController.h"
 
 

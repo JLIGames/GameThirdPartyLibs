@@ -15,8 +15,13 @@ subject to the following restrictions:
 
 #include "btGhostObject.h"
 #include "btCollisionWorld.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btConvexShape.h"
+#include "../../LinearMath/btAabbUtil2.h"
+#else
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
 #include "LinearMath/btAabbUtil2.h"
+#endif
 
 btGhostObject::btGhostObject()
 {

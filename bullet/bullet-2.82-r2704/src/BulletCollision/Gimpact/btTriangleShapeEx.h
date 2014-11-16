@@ -25,8 +25,13 @@ subject to the following restrictions:
 #ifndef GIMPACT_TRIANGLE_SHAPE_EX_H
 #define GIMPACT_TRIANGLE_SHAPE_EX_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btCollisionShape.h"
+#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
+#else
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
+#endif
 #include "btBoxCollision.h"
 #include "btClipPolygon.h"
 #include "btGeometryOperations.h"

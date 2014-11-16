@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_COLLISION_CREATE_FUNC
 #define BT_COLLISION_CREATE_FUNC
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 class btCollisionAlgorithm;
 class btCollisionObject;
 struct btCollisionObjectWrapper;

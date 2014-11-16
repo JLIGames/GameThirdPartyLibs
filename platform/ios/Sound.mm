@@ -1,4 +1,14 @@
 #include "Sound.h"
+#include "Log.h"
+
+void ERRCHECK_fn(FMOD_RESULT result, const char *file, int line)
+{
+    if (result != FMOD_OK)
+    {
+        LogError("%s(%d): FMOD error %d - %s", file, line, result, FMOD_ErrorString(result));
+    }
+}
+#define ERRCHECK(_result) ERRCHECK_fn(_result, __FILE__, __LINE__)
 
 Sound::Sound()
 {
@@ -11,10 +21,16 @@ Sound::Sound()
 }
 Sound::~Sound()
 {
+    FMOD_RESULT   result        = FMOD_OK;
     
+    result = m_System->close();
+    ERRCHECK(result);
+    result = m_System->release();
+    ERRCHECK(result);
 }
 
 void Sound::update()
 {
     FMOD_RESULT result = m_System->update();
+    ERRCHECK(result);
 }

@@ -19,7 +19,11 @@ subject to the following restrictions:
 class btIDebugDraw;
 class btCollisionWorld;
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#else
 #include "LinearMath/btScalar.h"
+#endif
 #include "btRigidBody.h"
 
 ///Basic interface to allow actions such as vehicles and characters to be updated inside a btDynamicsWorld

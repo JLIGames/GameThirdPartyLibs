@@ -16,12 +16,21 @@ subject to the following restrictions:
 #define BT_USE_SSE_IN_API
 #endif
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btPolyhedralConvexShape.h"
+#include "btConvexPolyhedron.h"
+#include "../../LinearMath/btConvexHullComputer.h"
+#include <new>
+#include "../../LinearMath/btGeometryUtil.h"
+#include "../../LinearMath/btGrahamScan2dConvexHull.h"
+#else
 #include "BulletCollision/CollisionShapes/btPolyhedralConvexShape.h"
 #include "btConvexPolyhedron.h"
 #include "LinearMath/btConvexHullComputer.h"
 #include <new>
 #include "LinearMath/btGeometryUtil.h"
 #include "LinearMath/btGrahamScan2dConvexHull.h"
+#endif
 
 
 btPolyhedralConvexShape::btPolyhedralConvexShape() :btConvexInternalShape(),

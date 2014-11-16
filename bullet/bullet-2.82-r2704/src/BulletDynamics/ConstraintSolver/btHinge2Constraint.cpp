@@ -15,9 +15,15 @@ subject to the following restrictions:
 
 
 
+#ifdef __EMSCRIPTEN__
+#include "btHinge2Constraint.h"
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "btHinge2Constraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
+#endif
 
 
 

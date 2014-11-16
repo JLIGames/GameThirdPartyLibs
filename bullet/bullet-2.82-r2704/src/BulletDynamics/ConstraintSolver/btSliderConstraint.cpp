@@ -20,10 +20,17 @@ April 04, 2008
 
 
 
+#ifdef __EMSCRIPTEN__
+#include "btSliderConstraint.h"
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btTransformUtil.h"
+#include <new>
+#else
 #include "btSliderConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
 #include <new>
+#endif
 
 #define USE_OFFSET_FOR_CONSTANT_FRAME true
 

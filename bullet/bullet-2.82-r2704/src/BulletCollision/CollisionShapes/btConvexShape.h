@@ -18,11 +18,19 @@ subject to the following restrictions:
 
 #include "btCollisionShape.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btTransform.h"
+#include "../../LinearMath/btMatrix3x3.h"
+#include "btCollisionMargin.h"
+#include "../../LinearMath/btAlignedAllocator.h"
+#else
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btMatrix3x3.h"
 #include "btCollisionMargin.h"
 #include "LinearMath/btAlignedAllocator.h"
+#endif
 
 #define MAX_PREFERRED_PENETRATION_DIRECTIONS 10
 

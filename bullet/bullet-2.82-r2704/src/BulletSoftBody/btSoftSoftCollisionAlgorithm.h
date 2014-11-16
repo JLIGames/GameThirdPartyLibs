@@ -16,10 +16,17 @@ subject to the following restrictions:
 #ifndef BT_SOFT_SOFT_COLLISION_ALGORITHM_H
 #define BT_SOFT_SOFT_COLLISION_ALGORITHM_H
 
+#ifdef __EMSCRIPTEN__
+#include "../BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+#include "../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#include "../BulletCollision/BroadphaseCollision/btDispatcher.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+#else
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
 #include "BulletCollision/BroadphaseCollision/btDispatcher.h"
 #include "BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+#endif
 
 class btPersistentManifold;
 class btSoftBody;

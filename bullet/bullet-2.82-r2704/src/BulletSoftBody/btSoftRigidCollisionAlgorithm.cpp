@@ -13,6 +13,16 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btSoftRigidCollisionAlgorithm.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+#include "../BulletCollision/CollisionShapes/btSphereShape.h"
+#include "../BulletCollision/CollisionShapes/btBoxShape.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "btSoftBody.h"
+#include "../BulletSoftBody/btSoftBodySolvers.h"
+#include "../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "btSoftRigidCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 #include "BulletCollision/CollisionShapes/btSphereShape.h"
@@ -21,6 +31,7 @@ subject to the following restrictions:
 #include "btSoftBody.h"
 #include "BulletSoftBody/btSoftBodySolvers.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
 
 ///TODO: include all the shapes that the softbody can collide with
 ///alternatively, implement special case collision algorithms (just like for rigid collision shapes)

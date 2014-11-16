@@ -17,9 +17,15 @@ subject to the following restrictions:
 #define BT_TYPED_CONSTRAINT_H
 
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#include "btSolverConstraint.h"
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#else
 #include "LinearMath/btScalar.h"
 #include "btSolverConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#endif
 
 #ifdef BT_USE_DOUBLE_PRECISION
 #define btTypedConstraintData2		btTypedConstraintDoubleData

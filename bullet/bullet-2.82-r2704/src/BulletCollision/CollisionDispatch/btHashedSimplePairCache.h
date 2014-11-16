@@ -17,8 +17,11 @@ subject to the following restrictions:
 #define BT_HASHED_SIMPLE_PAIR_CACHE_H
 
 
-
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 const int BT_SIMPLE_NULL_PAIR=0xffffffff;
 

@@ -50,8 +50,13 @@ to be implemented. the first `nub' variables are assumed to have findex < 0.
 #include <assert.h>
 
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btScalar.h"
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 struct btDantzigScratchMemory
 {

@@ -15,11 +15,19 @@ subject to the following restrictions:
 
 
 
+#ifdef __EMSCRIPTEN__
+#include "btGjkConvexCast.h"
+#include "../../BulletCollision/CollisionShapes/btSphereShape.h"
+#include "btGjkPairDetector.h"
+#include "btPointCollector.h"
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "btGjkConvexCast.h"
 #include "BulletCollision/CollisionShapes/btSphereShape.h"
 #include "btGjkPairDetector.h"
 #include "btPointCollector.h"
 #include "LinearMath/btTransformUtil.h"
+#endif
 
 #ifdef BT_USE_DOUBLE_PRECISION
 #define MAX_ITERATIONS 64

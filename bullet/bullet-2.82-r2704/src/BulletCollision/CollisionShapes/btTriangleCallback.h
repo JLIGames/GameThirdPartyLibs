@@ -16,8 +16,11 @@ subject to the following restrictions:
 #ifndef BT_TRIANGLE_CALLBACK_H
 #define BT_TRIANGLE_CALLBACK_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#else
 #include "LinearMath/btVector3.h"
-
+#endif
 
 ///The btTriangleCallback provides a callback for each overlapping triangle when calling processAllTriangles.
 ///This callback is called by processAllTriangles for all btConcaveShape derived class, such as  btBvhTriangleMeshShape, btStaticPlaneShape and btHeightfieldTerrainShape.

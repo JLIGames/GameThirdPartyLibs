@@ -10,6 +10,7 @@
 #define JLIGameEngineTest_AbstractSingleton_h
 
 #include <assert.h>
+#include <cstddef>
 
 template <class SINGLETONS_TYPE>
 class AbstractSingleton

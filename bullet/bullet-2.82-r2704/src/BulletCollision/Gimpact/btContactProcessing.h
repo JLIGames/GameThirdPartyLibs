@@ -24,9 +24,15 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransform.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+#include "btTriangleShapeEx.h"
+#else
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btAlignedObjectArray.h"
 #include "btTriangleShapeEx.h"
+#endif
 
 
 

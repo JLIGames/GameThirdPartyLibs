@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 #ifndef BT_EMPTY_ALGORITH
 #define BT_EMPTY_ALGORITH
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+#else
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+#endif
 #include "btCollisionCreateFunc.h"
 #include "btCollisionDispatcher.h"
 

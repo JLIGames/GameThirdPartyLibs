@@ -21,7 +21,11 @@ subject to the following restrictions:
 #include "btBroadphaseProxy.h"
 #include "btOverlappingPairCallback.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 class btDispatcher;
 
 typedef btAlignedObjectArray<btBroadphasePair>	btBroadphasePairArray;

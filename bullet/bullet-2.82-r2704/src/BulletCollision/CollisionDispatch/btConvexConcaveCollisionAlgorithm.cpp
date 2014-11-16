@@ -14,6 +14,20 @@ subject to the following restrictions:
 */
 
 
+#ifdef __EMSCRIPTEN__
+#include "btConvexConcaveCollisionAlgorithm.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../../BulletCollision/CollisionShapes/btMultiSphereShape.h"
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#include "../../BulletCollision/CollisionShapes/btConcaveShape.h"
+#include "../../BulletCollision/CollisionDispatch/btManifoldResult.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btRaycastCallback.h"
+#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
+#include "../../BulletCollision/CollisionShapes/btSphereShape.h"
+#include "../../LinearMath/btIDebugDraw.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#else
 #include "btConvexConcaveCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionShapes/btMultiSphereShape.h"
@@ -26,6 +40,7 @@ subject to the following restrictions:
 #include "LinearMath/btIDebugDraw.h"
 #include "BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+#endif
 
 btConvexConcaveCollisionAlgorithm::btConvexConcaveCollisionAlgorithm( const btCollisionAlgorithmConstructionInfo& ci, const btCollisionObjectWrapper* body0Wrap,const btCollisionObjectWrapper* body1Wrap,bool isSwapped)
 : btActivatingCollisionAlgorithm(ci,body0Wrap,body1Wrap),

@@ -25,7 +25,11 @@ subject to the following restrictions:
 #ifndef GIMPACT_MASS_UTIL_H
 #define GIMPACT_MASS_UTIL_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btTransform.h"
+#else
 #include "LinearMath/btTransform.h"
+#endif
 
 
 

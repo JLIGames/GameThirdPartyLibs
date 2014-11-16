@@ -16,8 +16,13 @@ subject to the following restrictions:
 #ifndef BT_CHARACTER_CONTROLLER_INTERFACE_H
 #define BT_CHARACTER_CONTROLLER_INTERFACE_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#include "../../BulletDynamics/Dynamics/btActionInterface.h"
+#else
 #include "LinearMath/btVector3.h"
 #include "BulletDynamics/Dynamics/btActionInterface.h"
+#endif
 
 class btCollisionShape;
 class btRigidBody;

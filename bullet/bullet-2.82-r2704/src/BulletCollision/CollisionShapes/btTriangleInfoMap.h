@@ -16,9 +16,13 @@ subject to the following restrictions:
 #ifndef _BT_TRIANGLE_INFO_MAP_H
 #define _BT_TRIANGLE_INFO_MAP_H
 
-
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btHashMap.h"
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "LinearMath/btHashMap.h"
 #include "LinearMath/btSerializer.h"
+#endif
 
 
 ///for btTriangleInfo m_flags

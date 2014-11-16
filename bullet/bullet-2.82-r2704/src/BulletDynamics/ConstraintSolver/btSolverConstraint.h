@@ -17,6 +17,15 @@ subject to the following restrictions:
 #define BT_SOLVER_CONSTRAINT_H
 
 class	btRigidBody;
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btMatrix3x3.h"
+#include "btJacobianEntry.h"
+#include "../../LinearMath/btAlignedObjectArray.h"
+
+//#define NO_FRICTION_TANGENTIALS 1
+#include "btSolverBody.h"
+#else
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btMatrix3x3.h"
 #include "btJacobianEntry.h"
@@ -24,6 +33,7 @@ class	btRigidBody;
 
 //#define NO_FRICTION_TANGENTIALS 1
 #include "btSolverBody.h"
+#endif
 
 
 ///1D constraint along a normal axis between bodyA and bodyB. It can be combined to solve contact and friction constraints.

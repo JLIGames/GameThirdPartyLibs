@@ -15,6 +15,17 @@ subject to the following restrictions:
 */
 
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btScalar.h"
+#include "btSimulationIslandManager.h"
+#include "../../BulletCollision/BroadphaseCollision/btDispatcher.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionWorld.h"
+
+//#include <stdio.h>
+#include "../../LinearMath/btQuickprof.h"
+#else
 #include "LinearMath/btScalar.h"
 #include "btSimulationIslandManager.h"
 #include "BulletCollision/BroadphaseCollision/btDispatcher.h"
@@ -24,6 +35,7 @@ subject to the following restrictions:
 
 //#include <stdio.h>
 #include "LinearMath/btQuickprof.h"
+#endif
 
 btSimulationIslandManager::btSimulationIslandManager():
 m_splitIslands(true)

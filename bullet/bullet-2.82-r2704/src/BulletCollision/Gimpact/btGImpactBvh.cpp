@@ -21,7 +21,11 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 #include "btGImpactBvh.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btQuickprof.h"
+#else
 #include "LinearMath/btQuickprof.h"
+#endif
 
 #ifdef TRI_COLLISION_PROFILING
 

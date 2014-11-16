@@ -18,9 +18,15 @@ subject to the following restrictions:
 
 #include "btConcaveShape.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#include "../../LinearMath/btTransform.h"
+#include "../../LinearMath/btMatrix3x3.h"
+#else
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btMatrix3x3.h"
+#endif
 #include "btCollisionMargin.h"
 
 

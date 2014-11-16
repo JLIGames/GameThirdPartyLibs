@@ -16,8 +16,13 @@ subject to the following restrictions:
 #ifndef BT_SOFTBODY_FLOAT_DATA
 #define BT_SOFTBODY_FLOAT_DATA
 
+#ifdef __EMSCRIPTEN__
+#include "../BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "../BulletDynamics/Dynamics/btRigidBody.h"
+#else
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#endif
 
 
 struct	SoftBodyMaterialData

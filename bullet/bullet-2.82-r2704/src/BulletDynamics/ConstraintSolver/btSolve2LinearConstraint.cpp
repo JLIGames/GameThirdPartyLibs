@@ -17,8 +17,13 @@ subject to the following restrictions:
 
 #include "btSolve2LinearConstraint.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btVector3.h"
+#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btVector3.h"
+#endif
 #include "btJacobianEntry.h"
 
 

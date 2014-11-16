@@ -18,7 +18,11 @@ subject to the following restrictions:
 #ifndef BT_SIMPLEX_SOLVER_INTERFACE_H
 #define BT_SIMPLEX_SOLVER_INTERFACE_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btVector3.h"
+#else
 #include "LinearMath/btVector3.h"
+#endif
 
 #define NO_VIRTUAL_INTERFACE 1
 #ifdef NO_VIRTUAL_INTERFACE

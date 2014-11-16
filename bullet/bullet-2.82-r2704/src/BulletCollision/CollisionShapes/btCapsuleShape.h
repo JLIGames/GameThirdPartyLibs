@@ -17,7 +17,11 @@ subject to the following restrictions:
 #define BT_CAPSULE_SHAPE_H
 
 #include "btConvexInternalShape.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
+#else
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
+#endif
 
 
 ///The btCapsuleShape represents a capsule around the Y axis, there is also the btCapsuleShapeX aligned around the X axis and btCapsuleShapeZ around the Z axis.

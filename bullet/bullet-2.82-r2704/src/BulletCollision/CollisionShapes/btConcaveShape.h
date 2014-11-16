@@ -17,7 +17,11 @@ subject to the following restrictions:
 #define BT_CONCAVE_SHAPE_H
 
 #include "btCollisionShape.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
+#else
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
+#endif
 #include "btTriangleCallback.h"
 
 /// PHY_ScalarType enumerates possible scalar types.

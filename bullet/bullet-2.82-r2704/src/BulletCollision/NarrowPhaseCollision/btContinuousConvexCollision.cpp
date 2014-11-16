@@ -14,6 +14,17 @@ subject to the following restrictions:
 */
 
 
+#ifdef __EMSCRIPTEN__
+#include "btContinuousConvexCollision.h"
+#include "../../BulletCollision/CollisionShapes/btConvexShape.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h"
+#include "../../LinearMath/btTransformUtil.h"
+#include "../../BulletCollision/CollisionShapes/btSphereShape.h"
+
+#include "btGjkPairDetector.h"
+#include "btPointCollector.h"
+#include "../../BulletCollision/CollisionShapes/btStaticPlaneShape.h"
+#else
 #include "btContinuousConvexCollision.h"
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h"
@@ -23,6 +34,7 @@ subject to the following restrictions:
 #include "btGjkPairDetector.h"
 #include "btPointCollector.h"
 #include "BulletCollision/CollisionShapes/btStaticPlaneShape.h"
+#endif
 
 
 

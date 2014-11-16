@@ -17,7 +17,11 @@ subject to the following restrictions:
 #define BT_TRIANGLE_BUFFER_H
 
 #include "btTriangleCallback.h"
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
+#endif
 
 struct	btTriangle
 {

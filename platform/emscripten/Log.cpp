@@ -10,7 +10,6 @@ void Log(const char *format, ...)
     
     printf(format, args);
     
-    vprintf(format, args);
     va_end(args);
 }
 
@@ -22,6 +21,5 @@ void LogError(const char *format, ...)
     
     printf(format, args);
     
-    vprintf(format, args);
     va_end(args);
 }

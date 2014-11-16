@@ -15,9 +15,15 @@ subject to the following restrictions:
 
 #include "btQuantizedBvh.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAabbUtil2.h"
+#include "../../LinearMath/btIDebugDraw.h"
+#include "../../LinearMath/btSerializer.h"
+#else
 #include "LinearMath/btAabbUtil2.h"
 #include "LinearMath/btIDebugDraw.h"
 #include "LinearMath/btSerializer.h"
+#endif
 
 #define RAYAABB2
 

@@ -9,7 +9,11 @@
  * It is provided "as is" without express or implied warranty.
 */
 #include "btWheelInfo.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/Dynamics/btRigidBody.h" // for pointvelocity
+#else
 #include "BulletDynamics/Dynamics/btRigidBody.h" // for pointvelocity
+#endif
 
 
 btScalar btWheelInfo::getSuspensionRestLength() const

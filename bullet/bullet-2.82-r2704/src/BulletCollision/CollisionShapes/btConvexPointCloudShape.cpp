@@ -13,10 +13,17 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btConvexPointCloudShape.h"
+#include "../../BulletCollision/CollisionShapes/btCollisionMargin.h"
+
+#include "../../LinearMath/btQuaternion.h"
+#else
 #include "btConvexPointCloudShape.h"
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 
 #include "LinearMath/btQuaternion.h"
+#endif
 
 void btConvexPointCloudShape::setLocalScaling(const btVector3& scaling)
 {

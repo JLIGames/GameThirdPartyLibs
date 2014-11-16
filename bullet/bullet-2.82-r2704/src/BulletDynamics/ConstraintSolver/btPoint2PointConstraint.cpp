@@ -15,7 +15,11 @@ subject to the following restrictions:
 
 
 #include "btPoint2PointConstraint.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#endif
 #include <new>
 
 

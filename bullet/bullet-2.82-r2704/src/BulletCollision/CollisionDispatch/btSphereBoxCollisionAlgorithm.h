@@ -16,6 +16,15 @@ subject to the following restrictions:
 #ifndef BT_SPHERE_BOX_COLLISION_ALGORITHM_H
 #define BT_SPHERE_BOX_COLLISION_ALGORITHM_H
 
+#ifdef __EMSCRIPTEN__
+#include "btActivatingCollisionAlgorithm.h"
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+#include "../../BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+class btPersistentManifold;
+#include "btCollisionDispatcher.h"
+
+#include "../../LinearMath/btVector3.h"
+#else
 #include "btActivatingCollisionAlgorithm.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
 #include "BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
@@ -23,6 +32,7 @@ class btPersistentManifold;
 #include "btCollisionDispatcher.h"
 
 #include "LinearMath/btVector3.h"
+#endif
 
 /// btSphereBoxCollisionAlgorithm  provides sphere-box collision detection.
 /// Other features are frame-coherency (persistent data) and collision response.

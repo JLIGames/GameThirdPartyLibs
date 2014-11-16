@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_MULTIBODY_CONSTRAINT_SOLVER_H
 #define BT_MULTIBODY_CONSTRAINT_SOLVER_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h"
+#else
 #include "BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h"
+#endif
 #include "btMultiBodySolverConstraint.h"
 
 

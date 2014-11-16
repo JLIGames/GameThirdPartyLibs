@@ -1,9 +1,15 @@
 #ifndef BT_COMPOUND_FROM_GIMPACT
 #define BT_COMPOUND_FROM_GIMPACT
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/CollisionShapes/btCompoundShape.h"
+#include "btGImpactShape.h"
+#include "../../BulletCollision/NarrowPhaseCollision/btRaycastCallback.h"
+#else
 #include "BulletCollision/CollisionShapes/btCompoundShape.h"
 #include "btGImpactShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btRaycastCallback.h"
+#endif
 
 struct MyCallback : public btTriangleRaycastCallback
 		{

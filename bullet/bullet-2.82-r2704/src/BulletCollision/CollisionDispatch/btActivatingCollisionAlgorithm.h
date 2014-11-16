@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef __BT_ACTIVATING_COLLISION_ALGORITHM_H
 #define __BT_ACTIVATING_COLLISION_ALGORITHM_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+#else
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+#endif
 
 ///This class is not enabled yet (work-in-progress) to more aggressively activate objects.
 class btActivatingCollisionAlgorithm : public btCollisionAlgorithm

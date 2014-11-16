@@ -19,10 +19,17 @@ email: projectileman@yahoo.com
 http://gimpact.sf.net
 */
 
+#ifdef __EMSCRIPTEN__
+#include "btGeneric6DofConstraint.h"
+#include "../../BulletDynamics/Dynamics/btRigidBody.h"
+#include "../../LinearMath/btTransformUtil.h"
+#include "../../LinearMath/btTransformUtil.h"
+#else
 #include "btGeneric6DofConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
 #include "LinearMath/btTransformUtil.h"
+#endif
 #include <new>
 
 

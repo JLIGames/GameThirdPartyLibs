@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_SOFT_BODY_SOLVERS_H
 #define BT_SOFT_BODY_SOLVERS_H
 
+#ifdef __EMSCRIPTEN__
+#include "../BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+#else
 #include "BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+#endif
 
 
 class btSoftBodyTriangleData;

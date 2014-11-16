@@ -17,9 +17,15 @@ subject to the following restrictions:
 #define BT_MULTI_SPHERE_MINKOWSKI_H
 
 #include "btConvexInternalShape.h"
+#ifdef __EMSCRIPTEN__
+#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
+#include "../../LinearMath/btAlignedObjectArray.h"
+#include "../../LinearMath/btAabbUtil2.h"
+#else
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
 #include "LinearMath/btAlignedObjectArray.h"
 #include "LinearMath/btAabbUtil2.h"
+#endif
 
 
 

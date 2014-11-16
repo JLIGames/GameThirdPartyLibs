@@ -16,7 +16,11 @@ subject to the following restrictions:
 #ifndef BT_JACOBIAN_ENTRY_H
 #define BT_JACOBIAN_ENTRY_H
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btMatrix3x3.h"
+#else
 #include "LinearMath/btMatrix3x3.h"
+#endif
 
 
 //notes:

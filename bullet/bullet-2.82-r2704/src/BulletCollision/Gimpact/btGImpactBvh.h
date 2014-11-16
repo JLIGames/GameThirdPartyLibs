@@ -25,8 +25,11 @@ subject to the following restrictions:
 */
 
 
+#ifdef __EMSCRIPTEN__
+#include "../../LinearMath/btAlignedObjectArray.h"
+#else
 #include "LinearMath/btAlignedObjectArray.h"
-
+#endif
 #include "btBoxCollision.h"
 #include "btTriangleShapeEx.h"
 
