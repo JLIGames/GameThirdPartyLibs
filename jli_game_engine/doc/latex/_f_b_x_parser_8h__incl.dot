@@ -1,0 +1,28 @@
+digraph "assimp/assimp-3.1.1/code/FBXParser.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="assimp/assimp-3.1.1\l/code/FBXParser.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="map",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="utility",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="boost/shared_ptr.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$shared__ptr_8hpp_source.html"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="LogAux.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_log_aux_8h.html",tooltip="Common logging usage patterns for importer implementations. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="TinyFormatter.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_tiny_formatter_8h.html",tooltip="Utility to format log messages more easily. Introduced to get rid of the boost::format dependency..."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="sstream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="FBXCompileConfig.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_compile_config_8h.html",tooltip="FBX importer compile-time switches. "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="FBXTokenizer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_tokenizer_8h.html",tooltip="FBX lexer. "];
+  Node11 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+}

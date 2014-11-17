@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/Skinning/OGLES/Build/Android/src/com/powervr" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fb53afe84fd5b9d70b309c1b975f8884 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="com" fontname="Helvetica", fontsize="10", URL="dir_fb53afe84fd5b9d70b309c1b975f8884.html"]
+  subgraph clusterdir_b44309e55bee40903b1e627db19e0e72 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b44309e55bee40903b1e627db19e0e72.html"];
+    dir_b44309e55bee40903b1e627db19e0e72 [shape=plaintext label="powervr"];
+    dir_0b10c71671f8b3f720ff0e123cac3b71 [shape=box label="OGLESSkinning" color="black" fillcolor="white" style="filled" URL="dir_0b10c71671f8b3f720ff0e123cac3b71.html"];
+  }
+  }
+}

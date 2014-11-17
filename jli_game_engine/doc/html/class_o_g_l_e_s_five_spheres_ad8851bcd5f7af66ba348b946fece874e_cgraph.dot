@@ -1,0 +1,29 @@
+digraph "OGLESFiveSpheres::CreateIndices"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLESFiveSpheres::Create\lIndices",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PVRShell::PVRShellSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#afe4052dde87d659948defdd63529eee6",tooltip="This function is used to pass preferences to the PVRShell. If used, this function must be called from..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OGLESFiveSpheres::GetVertex\lIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_five_spheres.html#a9ae1a2b80fd9cb72ddf8c8cd5d361804"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PVRTTriStrip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_tri_strip_8h.html#ab0aea1649a854ff2e3afdd9739ac7a32",tooltip="Reads a triangle list and generates an optimised triangle strip. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CStrip::StripFromEdges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_strip.html#af80cd2f5d3a943127c34dd6af9751ee3"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CStrip::StripGrow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_strip.html#ab63dd8a0b984134e4db1aa10111e743f"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CTri::EdgeFromAdjTri",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tri.html#a85d6603e71c559770222fe69798af1f5"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CTri::Cement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tri.html#a81cf9e059f724080845d2a7a1cf34455"];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CTri::Undo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_tri.html#a63141b5c4b07ae602d5b21cdf9e11d03"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CStrip::StripImprove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_strip.html#a3e833c14ef1f84a278d8141f78740519"];
+  Node10 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CStrip::Output",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_strip.html#abbdfae7e0e99ec424dadb298d7444f32"];
+}

@@ -1,0 +1,89 @@
+\hypertarget{class_fracture_demo}{\section{Fracture\+Demo Class Reference}
+\label{class_fracture_demo}\index{Fracture\+Demo@{Fracture\+Demo}}
+}
+
+
+\hyperlink{class_fracture_demo}{Fracture\+Demo} shows basic breaking and glueing of objects.  
+
+
+
+
+{\ttfamily \#include $<$Fracture\+Demo.\+h$>$}
+
+
+
+Inheritance diagram for Fracture\+Demo\+:
+
+
+Collaboration diagram for Fracture\+Demo\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_fracture_demo_a55fd14aec70a8cc81b363b69fb251e7a}{init\+Physics} ()
+\item 
+\hypertarget{class_fracture_demo_a5b4d8b678f718fe0f2d614453256fec5}{void {\bfseries exit\+Physics} ()}\label{class_fracture_demo_a5b4d8b678f718fe0f2d614453256fec5}
+
+\item 
+virtual void \hyperlink{class_fracture_demo_a4254a2386f19bc3e6a68da9f09e9ad95}{client\+Move\+And\+Display} ()
+\item 
+\hypertarget{class_fracture_demo_a8965dbe5e23409f691feeb5e0d95bbcd}{virtual void {\bfseries display\+Callback} ()}\label{class_fracture_demo_a8965dbe5e23409f691feeb5e0d95bbcd}
+
+\item 
+\hypertarget{class_fracture_demo_a270b3fe13f1febcc448cd69289d1a1bb}{virtual void {\bfseries keyboard\+Up\+Callback} (unsigned char key, int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_fracture_demo_a270b3fe13f1febcc448cd69289d1a1bb}
+
+\item 
+\hypertarget{class_fracture_demo_af3481ec6299b4db19aa10a56b98fc98b}{virtual void {\bfseries client\+Reset\+Scene} ()}\label{class_fracture_demo_af3481ec6299b4db19aa10a56b98fc98b}
+
+\item 
+\hypertarget{class_fracture_demo_ad0369cb9f1e7ccc7f33f7751ca9ec19b}{void {\bfseries shoot\+Box} (const bt\+Vector3 \&destination)}\label{class_fracture_demo_ad0369cb9f1e7ccc7f33f7751ca9ec19b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_fracture_demo_af44b044b464e46e1327ed0244f4bf138}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_fracture_demo_af44b044b464e46e1327ed0244f4bf138}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_fracture_demo}{Fracture\+Demo} shows basic breaking and glueing of objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_fracture_demo_a4254a2386f19bc3e6a68da9f09e9ad95}{\index{Fracture\+Demo@{Fracture\+Demo}!client\+Move\+And\+Display@{client\+Move\+And\+Display}}
+\index{client\+Move\+And\+Display@{client\+Move\+And\+Display}!Fracture\+Demo@{Fracture\+Demo}}
+\subsubsection[{client\+Move\+And\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Fracture\+Demo\+::client\+Move\+And\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_fracture_demo_a4254a2386f19bc3e6a68da9f09e9ad95}
+step the simulation \hypertarget{class_fracture_demo_a55fd14aec70a8cc81b363b69fb251e7a}{\index{Fracture\+Demo@{Fracture\+Demo}!init\+Physics@{init\+Physics}}
+\index{init\+Physics@{init\+Physics}!Fracture\+Demo@{Fracture\+Demo}}
+\subsubsection[{init\+Physics}]{\setlength{\rightskip}{0pt plus 5cm}void Fracture\+Demo\+::init\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_fracture_demo_a55fd14aec70a8cc81b363b69fb251e7a}
+collision configuration contains default setup for memory, collision setup
+
+use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/\+Bullet\+Multi\+Threaded)
+
+the default constraint solver. For parallel processing you can use a different solver (see Extras/\+Bullet\+Multi\+Threaded)
+
+create a few basic rigid bodies
+
+bt\+Collision\+Shape$\ast$ ground\+Shape = new bt\+Static\+Plane\+Shape(bt\+Vector3(0,1,0),0);
+
+create a few basic rigid bodies
+
+Create Dynamic Objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Fracture\+Demo/Fracture\+Demo.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Fracture\+Demo/Fracture\+Demo.\+cpp\end{DoxyCompactItemize}

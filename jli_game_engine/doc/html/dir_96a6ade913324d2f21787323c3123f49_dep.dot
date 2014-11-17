@@ -1,0 +1,9 @@
+digraph "assimp/assimp-3.1.1/code/BoostWorkaround/boost/tuple" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e84d1dfec8c34797f201b4aa93b1c5d8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="boost" fontname="Helvetica", fontsize="10", URL="dir_e84d1dfec8c34797f201b4aa93b1c5d8.html"]
+  dir_96a6ade913324d2f21787323c3123f49 [shape=box, label="tuple", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_96a6ade913324d2f21787323c3123f49.html"];
+  }
+}

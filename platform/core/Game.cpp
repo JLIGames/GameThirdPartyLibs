@@ -22,7 +22,7 @@
 //#include "fmod_errors.h"
 
 
-
+#include "nanovg.h"
 
 
 
@@ -123,6 +123,8 @@ const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
 
 bool create()
 {
+//    NVGcolor nvgTo = vecFrom;
+//    btVector4 vecTo = nvgFrom;
     
 //	FMOD::System   *system;
 //    FMOD::Sound    *sound;

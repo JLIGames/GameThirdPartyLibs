@@ -1,0 +1,11 @@
+digraph "Browsing collected test result"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="Writing test result",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___writing_test_result.html"];
+  Node1 [label="Creating custom assertions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___creating_new_assertions.html"];
+  Node0 [label="Browsing collected\l test result",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0->Node1 [shape=plaintext, label="SourceLine", color="orange", dir="none", style="dashed"];
+  Node0->Node2 [shape=plaintext, label="TestResultCollector", color="orange", dir="none", style="dashed"];
+}

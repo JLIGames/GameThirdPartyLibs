@@ -1,0 +1,10 @@
+digraph "PVR" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0b2164ee8d0d182697821942e7832ea4 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0b2164ee8d0d182697821942e7832ea4.html"];
+    dir_0b2164ee8d0d182697821942e7832ea4 [shape=plaintext label="PVR"];
+    dir_2d878b5cc6871189fc186a386430f469 [shape=box label="SDK_3.4" color="red" fillcolor="white" style="filled" URL="dir_2d878b5cc6871189fc186a386430f469.html"];
+  }
+}

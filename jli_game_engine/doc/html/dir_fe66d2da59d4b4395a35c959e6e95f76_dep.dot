@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/ShadowMapping/OGLES2/Build" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5fa8dd2388d1935a944486b64fc790ad {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES2" fontname="Helvetica", fontsize="10", URL="dir_5fa8dd2388d1935a944486b64fc790ad.html"]
+  subgraph clusterdir_fe66d2da59d4b4395a35c959e6e95f76 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fe66d2da59d4b4395a35c959e6e95f76.html"];
+    dir_fe66d2da59d4b4395a35c959e6e95f76 [shape=plaintext label="Build"];
+    dir_45f236dca4e2441c7a8f23c1839e09cc [shape=box label="Android" color="red" fillcolor="white" style="filled" URL="dir_45f236dca4e2441c7a8f23c1839e09cc.html"];
+  }
+  }
+}

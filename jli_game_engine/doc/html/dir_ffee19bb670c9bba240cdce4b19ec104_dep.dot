@@ -1,0 +1,9 @@
+digraph "fmod/android/fmodstudioapi10503android/api/lowlevel/examples/plugins" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_88610fdaf4ea60c12223c75ad7a2fc1f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="examples" fontname="Helvetica", fontsize="10", URL="dir_88610fdaf4ea60c12223c75ad7a2fc1f.html"]
+  dir_ffee19bb670c9bba240cdce4b19ec104 [shape=box, label="plugins", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ffee19bb670c9bba240cdce4b19ec104.html"];
+  }
+}

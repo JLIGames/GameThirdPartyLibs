@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/MatrixPalette/OGLES/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_45f038cb0a9fcd79e4fb014f6ab93f0a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_45f038cb0a9fcd79e4fb014f6ab93f0a.html"]
+  subgraph clusterdir_7b137b127ce1e9836fa8aee90770aa5d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_7b137b127ce1e9836fa8aee90770aa5d.html"];
+    dir_7b137b127ce1e9836fa8aee90770aa5d [shape=plaintext label="Android"];
+    dir_38a2e11fa1330cce65a6831e1c246474 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_38a2e11fa1330cce65a6831e1c246474.html"];
+  }
+  }
+}

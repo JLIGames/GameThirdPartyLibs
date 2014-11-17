@@ -1,0 +1,19 @@
+digraph "GLUI_Control::output_live"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GLUI_Control::output_live",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="GLUI_EditText::set_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___edit_text.html#aa283908f42990f6056298d6381cc19a7"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="GLUI_EditText::deactivate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___edit_text.html#a4a83b7bc0b6d60e4fa0dd797b49255ab"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="GLUI_EditText::key\l_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___edit_text.html#a92fcd78877375cb2bba3b5e9f88635b6"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="GLUI_Rotation::reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___rotation.html#ab6ce638fa62a697b3eb177a7ac879919"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="GLUI_Rotation::idle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___rotation.html#a809f09063d91dcb89ea237849d5478ac"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="GLUI_TextBox::set_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___text_box.html#a99733f4d591d54f26237f7c8023411b0"];
+}

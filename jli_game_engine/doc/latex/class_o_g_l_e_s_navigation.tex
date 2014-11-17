@@ -1,0 +1,517 @@
+\hypertarget{class_o_g_l_e_s_navigation}{\section{O\+G\+L\+E\+S\+Navigation Class Reference}
+\label{class_o_g_l_e_s_navigation}\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S\+Navigation\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S\+Navigation\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s_navigation_a077baeb03a6b17c3efe03d0cfb4cd72b}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s_navigation_a33ac8658ee8a1d7f710a08208ae4f5e1}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s_navigation_a40d03ff1f8d2aab1f555004eca059716}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s_navigation_a34fbe53124c79f73cc560dd8dd821d28}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s_navigation_a4d73567a360599959d26bf7ec08ab430}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s_navigation_a1bc8126d198cb9d9e96ed97e703f4406}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_a3817dbee47d6cd218598a32094cd7fb6}{Update\+Timer} ()
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ae02872b1254fea3eef0c89f904e3d602}{Update\+Objectset} ()
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ad5d777eaa6c34b3d57cd03c5cc4da12c}{Handle\+Input} ()
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ac58c075250528b934c91089a0055bb02}{Render} (const \hyperlink{struct_render_layer}{Render\+Layer} $\ast$p\+Render\+Layer)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_af690367bda054e63fa94a0feb54d66b9}{Render\+Triangles} (const \hyperlink{struct_render_layer}{Render\+Layer} $\ast$p\+Render\+Layer)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_af17cdbb48c9bc5d2c0c09603872828bf}{Render\+Ground} ()
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_a0a043039bc19b8064c0e8edb196f19b1}{Cache\+Bucket\+Index\+Set} (\hyperlink{struct_render_layer}{Render\+Layer} $\ast$p\+Render\+Layer, const unsigned int bucketindex)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ab45b34ab4f09e558f7570c2a95af6711}{Remove\+Bucket\+Index\+Set} (\hyperlink{struct_render_layer}{Render\+Layer} $\ast$p\+Render\+Layer, const unsigned int bucketindex)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_a740b63abf5cec61d554b569b661e8bd3}{Bind\+V\+B\+O} (G\+Luint vbo)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_a2bb8f2fd72fabca3dc28ab4d46445405}{Bind\+Texture} (G\+Lenum unit, G\+Luint texture)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ad54acd9d44fc9ab591ff57dc0b451b97}{Calculate\+Camera\+Matrices} ()
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_a0f2bc69f3215287a65baf082c5a8c2a0}{Calculate\+Clip\+Planes} (float \&near, float \&far)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ad542512ddb314a3b293afda1ac29899e}{Calculate\+View\+Frustum\+Corners} (\hyperlink{struct_p_v_r_t_view_frustum}{P\+V\+R\+T\+View\+Frustum} \&corners) const 
+\item 
+bool \hyperlink{class_o_g_l_e_s_navigation_a4c2f55657919359e022145a91cd77f8f}{Circle\+Intersects\+Bounding\+Box} (const \hyperlink{struct_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&bbox, const \hyperlink{struct_p_v_r_t_bounding_circle}{P\+V\+R\+T\+Bounding\+Circle} \&circle)
+\item 
+float \hyperlink{class_o_g_l_e_s_navigation_a5fc44930aac0929f079c11701d27edba}{Calculate\+Line\+Plane\+Intersection} (const \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \&plane, const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&a, const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&b) const 
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ae88e63610de8eea60dd865d98be62b89}{Calculate\+Camera\+Bounding\+Circle} (const \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \&plane, const float shift, \hyperlink{struct_p_v_r_t_bounding_circle}{P\+V\+R\+T\+Bounding\+Circle} \&bcircle)
+\item 
+void \hyperlink{class_o_g_l_e_s_navigation_ad6f603a5f510a4c3ae1fa34e89b0570d}{Read\+Data} (const char $\ast$$\ast$p\+Src, void $\ast$p\+Dst, P\+V\+R\+Tuint32 size) const 
+\item 
+bool \hyperlink{class_o_g_l_e_s_navigation_a9090c6fb3e85d73fc76a9742829e6b78}{Check\+Marker} (const char $\ast$$\ast$p\+Data, unsigned int token) const 
+\item 
+bool \hyperlink{class_o_g_l_e_s_navigation_ac7cf56adfd443b5de90ad0a62f608c5e}{Load\+P\+V\+R\+T\+Map\+Bucket} (const char $\ast$psz\+Filename, \hyperlink{struct_p_v_r_t_map_bucket}{P\+V\+R\+T\+Map\+Bucket} \&layer) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class declarations
+
+
+
+  \hyperlink{class_o_g_l_e_s_navigation}{O\+G\+L\+E\+S\+Navigation}  Navigation demo main class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s_navigation_a2bb8f2fd72fabca3dc28ab4d46445405}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Bind\+Texture@{Bind\+Texture}}
+\index{Bind\+Texture@{Bind\+Texture}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Bind\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Bind\+Texture (
+\begin{DoxyParamCaption}
+\item[{G\+Lenum}]{unit, }
+\item[{G\+Luint}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a2bb8f2fd72fabca3dc28ab4d46445405}
+
+
+  Bind\+Texture  Checks whether the given texture is already bound and binds it if necessary. Currently only supports one global texture, regardless to which texture unit it is currently bound. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a740b63abf5cec61d554b569b661e8bd3}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Bind\+V\+B\+O@{Bind\+V\+B\+O}}
+\index{Bind\+V\+B\+O@{Bind\+V\+B\+O}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Bind\+V\+B\+O}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Bind\+V\+B\+O (
+\begin{DoxyParamCaption}
+\item[{G\+Luint}]{vbo}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a740b63abf5cec61d554b569b661e8bd3}
+
+
+  Bind\+V\+B\+O  Checks whether the given V\+B\+O is already bound and binds it if necessary. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a0a043039bc19b8064c0e8edb196f19b1}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Cache\+Bucket\+Index\+Set@{Cache\+Bucket\+Index\+Set}}
+\index{Cache\+Bucket\+Index\+Set@{Cache\+Bucket\+Index\+Set}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Cache\+Bucket\+Index\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Cache\+Bucket\+Index\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Render\+Layer} $\ast$}]{p\+Render\+Layer, }
+\item[{const unsigned int}]{bucketindex}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a0a043039bc19b8064c0e8edb196f19b1}
+
+
+  Cache\+Bucket\+Index\+Set  Creates a V\+B\+O of a bucket of coordinates and adds it to the cache queue of the map tile or increases reference count if already cached. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ae88e63610de8eea60dd865d98be62b89}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Calculate\+Camera\+Bounding\+Circle@{Calculate\+Camera\+Bounding\+Circle}}
+\index{Calculate\+Camera\+Bounding\+Circle@{Calculate\+Camera\+Bounding\+Circle}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Calculate\+Camera\+Bounding\+Circle}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Calculate\+Camera\+Bounding\+Circle (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec4} \&}]{plane, }
+\item[{const float}]{shift, }
+\item[{{\bf P\+V\+R\+T\+Bounding\+Circle} \&}]{circle}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_ae88e63610de8eea60dd865d98be62b89}
+
+
+  Calculate\+Camera\+Bounding\+Circle  plane The plane which will be intersected with the viewfrustum.  shift The resulting bounding circle will be shifted along the view direction by this amount.  \hyperlink{struct_p_v_r_t_bounding_circle}{P\+V\+R\+T\+Bounding\+Circle} The bounding circle enclosing the intersection primitive.  Calculates the intersection points of a viewfrustum and a plane. Only the viewfrustum side vectors (pointing towards the viewing direction) will be taken into account. The resulting intersection points are then used to calculate a bounding circle, which will be shifted along the viewing direction. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ad54acd9d44fc9ab591ff57dc0b451b97}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Calculate\+Camera\+Matrices@{Calculate\+Camera\+Matrices}}
+\index{Calculate\+Camera\+Matrices@{Calculate\+Camera\+Matrices}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Calculate\+Camera\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Calculate\+Camera\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_ad54acd9d44fc9ab591ff57dc0b451b97}
+
+
+  Calculate\+Camera\+Matrices  Calculates all required camera matrices. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a0f2bc69f3215287a65baf082c5a8c2a0}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Calculate\+Clip\+Planes@{Calculate\+Clip\+Planes}}
+\index{Calculate\+Clip\+Planes@{Calculate\+Clip\+Planes}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Calculate\+Clip\+Planes}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Calculate\+Clip\+Planes (
+\begin{DoxyParamCaption}
+\item[{float \&}]{nearplane, }
+\item[{float \&}]{farplane}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a0f2bc69f3215287a65baf082c5a8c2a0}
+
+
+  Calculate\+Clip\+Planes  nearplane The calculated near plane.  farplane The calculated far plane.  Calculates optimal clipping planes based on the current camera setup and the viewable area. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a5fc44930aac0929f079c11701d27edba}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Calculate\+Line\+Plane\+Intersection@{Calculate\+Line\+Plane\+Intersection}}
+\index{Calculate\+Line\+Plane\+Intersection@{Calculate\+Line\+Plane\+Intersection}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Calculate\+Line\+Plane\+Intersection}]{\setlength{\rightskip}{0pt plus 5cm}float O\+G\+L\+E\+S\+Navigation\+::\+Calculate\+Line\+Plane\+Intersection (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec4} \&}]{plane, }
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{a, }
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{b}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s_navigation_a5fc44930aac0929f079c11701d27edba}
+
+
+  Calculate\+Line\+Plane\+Intersection  plane \hyperlink{class_plane}{Plane} definition in normal plus distance format.  a First point of line.  b Second point of line.  \hyperlink{struct_intersection}{Intersection} distance.  Calculates the intersection of a line and a plane. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ad542512ddb314a3b293afda1ac29899e}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Calculate\+View\+Frustum\+Corners@{Calculate\+View\+Frustum\+Corners}}
+\index{Calculate\+View\+Frustum\+Corners@{Calculate\+View\+Frustum\+Corners}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Calculate\+View\+Frustum\+Corners}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Calculate\+View\+Frustum\+Corners (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+View\+Frustum} \&}]{corners}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s_navigation_ad542512ddb314a3b293afda1ac29899e}
+
+
+  Calculate\+View\+Frustum\+Corners  corners The eight vertices defining the viewfrustum shape.  Calculates the eight viewfrustum vertices based on the current camera setup. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a9090c6fb3e85d73fc76a9742829e6b78}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Check\+Marker@{Check\+Marker}}
+\index{Check\+Marker@{Check\+Marker}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Check\+Marker}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Check\+Marker (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$$\ast$}]{p\+Data, }
+\item[{unsigned int}]{token}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s_navigation_a9090c6fb3e85d73fc76a9742829e6b78}
+
+
+  Check\+Marker  p\+Data Pointer to data to read the data from.  token \hyperlink{union_value}{Value} of token to check.  True if the marker is correct, false otherwise.  Reads a 32-\/bit token from the data stream and compares it against the provided one. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a4c2f55657919359e022145a91cd77f8f}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Circle\+Intersects\+Bounding\+Box@{Circle\+Intersects\+Bounding\+Box}}
+\index{Circle\+Intersects\+Bounding\+Box@{Circle\+Intersects\+Bounding\+Box}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Circle\+Intersects\+Bounding\+Box}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Circle\+Intersects\+Bounding\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{bbox, }
+\item[{const {\bf P\+V\+R\+T\+Bounding\+Circle} \&}]{circle}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a4c2f55657919359e022145a91cd77f8f}
+
+
+  Circle\+Intersects\+Bounding\+Box  bbox The bounding box.  circle The bounding circle.  bool Indicates whether the primitives intersect or not.  Determines whether a bounding circle and a bounding box intersect or not. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ad5d777eaa6c34b3d57cd03c5cc4da12c}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Handle\+Input@{Handle\+Input}}
+\index{Handle\+Input@{Handle\+Input}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Handle\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Handle\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_ad5d777eaa6c34b3d57cd03c5cc4da12c}
+
+
+  Handle\+Input  Handles user input. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a077baeb03a6b17c3efe03d0cfb4cd72b}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_navigation_a077baeb03a6b17c3efe03d0cfb4cd72b}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s_navigation_a077baeb03a6b17c3efe03d0cfb4cd72b}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s_navigation_a077baeb03a6b17c3efe03d0cfb4cd72b}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a33ac8658ee8a1d7f710a08208ae4f5e1}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_navigation_a33ac8658ee8a1d7f710a08208ae4f5e1}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s_navigation_a33ac8658ee8a1d7f710a08208ae4f5e1}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ac7cf56adfd443b5de90ad0a62f608c5e}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Load\+P\+V\+R\+T\+Map\+Bucket@{Load\+P\+V\+R\+T\+Map\+Bucket}}
+\index{Load\+P\+V\+R\+T\+Map\+Bucket@{Load\+P\+V\+R\+T\+Map\+Bucket}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Load\+P\+V\+R\+T\+Map\+Bucket}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Load\+P\+V\+R\+T\+Map\+Bucket (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\+Filename, }
+\item[{{\bf P\+V\+R\+T\+Map\+Bucket} \&}]{layer}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s_navigation_ac7cf56adfd443b5de90ad0a62f608c5e}
+
+
+  read\+P\+V\+R\+T\+Map\+Bucket  psz\+Filename Filename to read the map layer from.  layer The layer to write.  bool True if successful, false otherwise.  Reads a map bucket from a file. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a1bc8126d198cb9d9e96ed97e703f4406}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a1bc8126d198cb9d9e96ed97e703f4406}
+
+
+  Load\+Textures  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a34fbe53124c79f73cc560dd8dd821d28}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_navigation_a34fbe53124c79f73cc560dd8dd821d28}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s_navigation_a34fbe53124c79f73cc560dd8dd821d28}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s_navigation_a34fbe53124c79f73cc560dd8dd821d28}{Quit\+Application()} will not be called. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+\hypertarget{class_o_g_l_e_s_navigation_ad6f603a5f510a4c3ae1fa34e89b0570d}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Read\+Data@{Read\+Data}}
+\index{Read\+Data@{Read\+Data}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Read\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Read\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$$\ast$}]{p\+Src, }
+\item[{void $\ast$}]{p\+Dst, }
+\item[{P\+V\+R\+Tuint32}]{size}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s_navigation_ad6f603a5f510a4c3ae1fa34e89b0570d}
+
+
+  Read\+Data  p\+Src Pointer to pointer to read data from.  size Amount of data in bytes to copy.  p\+Dst Destination buffer.  Copies a defined amount of data from a source pointer and sets it after the last read byte. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a40d03ff1f8d2aab1f555004eca059716}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_navigation_a40d03ff1f8d2aab1f555004eca059716}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s_navigation_a40d03ff1f8d2aab1f555004eca059716}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ab45b34ab4f09e558f7570c2a95af6711}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Remove\+Bucket\+Index\+Set@{Remove\+Bucket\+Index\+Set}}
+\index{Remove\+Bucket\+Index\+Set@{Remove\+Bucket\+Index\+Set}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Remove\+Bucket\+Index\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Remove\+Bucket\+Index\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Render\+Layer} $\ast$}]{p\+Render\+Layer, }
+\item[{const unsigned int}]{bucketindex}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_ab45b34ab4f09e558f7570c2a95af6711}
+
+
+  Remove\+Bucket\+Index\+Set  Decreases reference count of V\+B\+O and removes V\+B\+O if not required any longer. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ac58c075250528b934c91089a0055bb02}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Render@{Render}}
+\index{Render@{Render}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{const {\bf Render\+Layer} $\ast$}]{p\+Render\+Layer}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_ac58c075250528b934c91089a0055bb02}
+
+
+  Render  p\+Render\+Layer The navigation map layer to render.  Renders 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_af17cdbb48c9bc5d2c0c09603872828bf}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Render\+Ground@{Render\+Ground}}
+\index{Render\+Ground@{Render\+Ground}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Render\+Ground}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Render\+Ground (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_af17cdbb48c9bc5d2c0c09603872828bf}
+
+
+  Render\+Ground  Draws a rectangle the size of the maps bounding boxes. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a4d73567a360599959d26bf7ec08ab430}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Navigation\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_navigation_a4d73567a360599959d26bf7ec08ab430}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_af690367bda054e63fa94a0feb54d66b9}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Render\+Triangles@{Render\+Triangles}}
+\index{Render\+Triangles@{Render\+Triangles}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Render\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Render\+Triangles (
+\begin{DoxyParamCaption}
+\item[{const {\bf Render\+Layer} $\ast$}]{p\+Render\+Layer}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_af690367bda054e63fa94a0feb54d66b9}
+
+
+  Render\+Triangles  p\+Render\+Layer The navigation map layer to render.  Draws a rectangle the size of the maps bounding boxes. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_ae02872b1254fea3eef0c89f904e3d602}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Update\+Objectset@{Update\+Objectset}}
+\index{Update\+Objectset@{Update\+Objectset}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Update\+Objectset}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Update\+Objectset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_ae02872b1254fea3eef0c89f904e3d602}
+
+
+  Update\+Objectset  none  Updates the visible object set based on the camera position and the intersections of the view frustum with the global map plane. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_navigation_a3817dbee47d6cd218598a32094cd7fb6}{\index{O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}!Update\+Timer@{Update\+Timer}}
+\index{Update\+Timer@{Update\+Timer}!O\+G\+L\+E\+S\+Navigation@{O\+G\+L\+E\+S\+Navigation}}
+\subsubsection[{Update\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Navigation\+::\+Update\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_navigation_a3817dbee47d6cd218598a32094cd7fb6}
+
+
+  Update\+Timer  none  Updates the values of the current time, previous time, current time in seconds, delta time and the F\+P\+S counter used in the program 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Advanced/\+Navigation/\+O\+G\+L\+E\+S/O\+G\+L\+E\+S\+Navigation.\+cpp\end{DoxyCompactItemize}

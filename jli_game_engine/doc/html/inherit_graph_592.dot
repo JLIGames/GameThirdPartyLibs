@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="boost::detail::list\l_elem_base\< T0, NIDX,\l detail::list_elem\< T1,\l 1, detail::list_elem\<\l T2, 2, detail::list_elem\l\< T3, 3, detail::list_elem\l\< T4, 4, detail::list_end \>\l \> \> \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structboost_1_1detail_1_1list__elem__base.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="boost::detail::list\l_elem\< T0, 0, detail\l::list_elem\< T1, 1, detail\l::list_elem\< T2, 2, detail\l::list_elem\< T3, 3, detail\l::list_elem\< T4, 4, detail::\llist_end \> \> \> \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structboost_1_1detail_1_1list__elem.html"];
+}

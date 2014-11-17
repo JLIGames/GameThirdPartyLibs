@@ -1,0 +1,18 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/Refraction/OGLES3" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9ec2b89ad8e9bcfd1c7b1bf0c0d1a645 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Refraction" fontname="Helvetica", fontsize="10", URL="dir_9ec2b89ad8e9bcfd1c7b1bf0c0d1a645.html"]
+  subgraph clusterdir_797f11c575a0f145d09a1dbe37cb0927 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_797f11c575a0f145d09a1dbe37cb0927.html"];
+    dir_797f11c575a0f145d09a1dbe37cb0927 [shape=plaintext label="OGLES3"];
+    dir_62e22a66b18e7e05319e9eaf4ec762be [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_62e22a66b18e7e05319e9eaf4ec762be.html"];
+    dir_7b304e3320e56d20596225101d5293ab [shape=box label="Content" color="black" fillcolor="white" style="filled" URL="dir_7b304e3320e56d20596225101d5293ab.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_797f11c575a0f145d09a1dbe37cb0927->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000702_000133.html"];
+  dir_797f11c575a0f145d09a1dbe37cb0927->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_000702_001762.html"];
+}

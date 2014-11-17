@@ -1,0 +1,350 @@
+\hypertarget{class_assimp_1_1_validate_d_s_process}{\section{Assimp\+:\+:Validate\+D\+S\+Process Class Reference}
+\label{class_assimp_1_1_validate_d_s_process}\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+}
+
+
+{\ttfamily \#include $<$Validate\+Data\+Structure.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Validate\+D\+S\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Validate\+D\+S\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_validate_d_s_process_aedaa4dc34da51a813f45c18cb496fa6f}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a6a394d0c9953d3dec71257da615fa0c6}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+A\+I\+\_\+\+W\+O\+N\+T\+\_\+\+R\+E\+T\+U\+R\+N void \hyperlink{class_assimp_1_1_validate_d_s_process_a6efb18bf509d75da51f811a280e9c392}{Report\+Error} (const char $\ast$msg,...) A\+I\+\_\+\+W\+O\+N\+T\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+S\+U\+F\+F\+I\+X
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a8e65937485a42c3f0613ecb8d0e0b238}{Report\+Warning} (const char $\ast$msg,...)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a98786c27d6c5668e36fb0f0e71f7cb8f}{Validate} (const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a9157598ee8e2ef6bed9c42947cf2b942}{Validate} (const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh, const \hyperlink{structai_bone}{ai\+Bone} $\ast$p\+Bone, float $\ast$af\+Sum)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_ad93403b2f76cb6ab9701777fe4dbee45}{Validate} (const \hyperlink{structai_animation}{ai\+Animation} $\ast$p\+Animation)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_ad47c4afde0e91e134600954a9c274494}{Validate} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Material)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a089a1032f290e1f3fd990ee9224e7d0b}{Search\+For\+Invalid\+Textures} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Material, \hyperlink{material_8h_a7dd415ff703a2cc53d1c22ddbbd7dde0}{ai\+Texture\+Type} type)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_aa6f2831afa7e202d162da3043af8503e}{Validate} (const \hyperlink{structai_texture}{ai\+Texture} $\ast$p\+Texture)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a86827a515bc0ece4146a19ce29d91e4c}{Validate} (const \hyperlink{structai_light}{ai\+Light} $\ast$p\+Light)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a8b89f8ad18d3fbaa53fc035263f11181}{Validate} (const \hyperlink{structai_camera}{ai\+Camera} $\ast$p\+Camera)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a3a55af70b54a5065651384b2bc195308}{Validate} (const \hyperlink{structai_animation}{ai\+Animation} $\ast$p\+Animation, const \hyperlink{structai_node_anim}{ai\+Node\+Anim} $\ast$p\+Bone\+Anim)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_a4183d51ca3d024aa52b0b94359e42e48}{Validate} (const \hyperlink{structai_node}{ai\+Node} $\ast$p\+Node)
+\item 
+void \hyperlink{class_assimp_1_1_validate_d_s_process_af5c8c238cd0353a83f28757558b94812}{Validate} (const \hyperlink{structai_string}{ai\+String} $\ast$p\+String)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Validates the whole A\+S\+S\+I\+M\+P scene data structure for correctness. Import\+Error\+Exception is thrown of the scene is corrupt. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_validate_d_s_process_a6a394d0c9953d3dec71257da615fa0c6}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_validate_d_s_process_a6a394d0c9953d3dec71257da615fa0c6}
+Executes the post processing step on the given imported data. A process should throw an Import\+Error\+Exception$\ast$ if it fails. This method must be implemented by deriving classes. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_aedaa4dc34da51a813f45c18cb496fa6f}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Validate\+D\+S\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_validate_d_s_process_aedaa4dc34da51a813f45c18cb496fa6f}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a6efb18bf509d75da51f811a280e9c392}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Report\+Error@{Report\+Error}}
+\index{Report\+Error@{Report\+Error}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Report\+Error}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+\_\+\+W\+O\+N\+T\+\_\+\+R\+E\+T\+U\+R\+N void Validate\+D\+S\+Process\+::\+Report\+Error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a6efb18bf509d75da51f811a280e9c392}
+Report a validation error. This will throw an exception, control won't return. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & Format string for sprintf(). \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a8e65937485a42c3f0613ecb8d0e0b238}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Report\+Warning@{Report\+Warning}}
+\index{Report\+Warning@{Report\+Warning}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Report\+Warning}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Report\+Warning (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a8e65937485a42c3f0613ecb8d0e0b238}
+Report a validation warning. This won't throw an exception, control will return to the callera. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & Format string for sprintf(). \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a089a1032f290e1f3fd990ee9224e7d0b}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Search\+For\+Invalid\+Textures@{Search\+For\+Invalid\+Textures}}
+\index{Search\+For\+Invalid\+Textures@{Search\+For\+Invalid\+Textures}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Search\+For\+Invalid\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Search\+For\+Invalid\+Textures (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Material} $\ast$}]{p\+Material, }
+\item[{{\bf ai\+Texture\+Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a089a1032f290e1f3fd990ee9224e7d0b}
+Search the material data structure for invalid or corrupt texture keys. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Material} & Input material \\
+\hline
+{\em type} & \hyperlink{struct_type}{Type} of the texture \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a98786c27d6c5668e36fb0f0e71f7cb8f}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a98786c27d6c5668e36fb0f0e71f7cb8f}
+Validates a mesh 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & Input mesh \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a9157598ee8e2ef6bed9c42947cf2b942}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Mesh} $\ast$}]{p\+Mesh, }
+\item[{const {\bf ai\+Bone} $\ast$}]{p\+Bone, }
+\item[{float $\ast$}]{af\+Sum}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a9157598ee8e2ef6bed9c42947cf2b942}
+Validates a bone 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & Input mesh \\
+\hline
+{\em p\+Bone} & Input bone \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_ad93403b2f76cb6ab9701777fe4dbee45}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Animation} $\ast$}]{p\+Animation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_ad93403b2f76cb6ab9701777fe4dbee45}
+Validates an animation 
+\begin{DoxyParams}{Parameters}
+{\em p\+Animation} & Input animation \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_ad47c4afde0e91e134600954a9c274494}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Material} $\ast$}]{p\+Material}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_ad47c4afde0e91e134600954a9c274494}
+Validates a material 
+\begin{DoxyParams}{Parameters}
+{\em p\+Material} & Input material \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_aa6f2831afa7e202d162da3043af8503e}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Texture} $\ast$}]{p\+Texture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_aa6f2831afa7e202d162da3043af8503e}
+Validates a texture 
+\begin{DoxyParams}{Parameters}
+{\em p\+Texture} & Input texture \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a86827a515bc0ece4146a19ce29d91e4c}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Light} $\ast$}]{p\+Light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a86827a515bc0ece4146a19ce29d91e4c}
+Validates a light source 
+\begin{DoxyParams}{Parameters}
+{\em p\+Light} & Input light \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a8b89f8ad18d3fbaa53fc035263f11181}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Camera} $\ast$}]{p\+Camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a8b89f8ad18d3fbaa53fc035263f11181}
+Validates a camera 
+\begin{DoxyParams}{Parameters}
+{\em p\+Camera} & Input camera \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a3a55af70b54a5065651384b2bc195308}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Animation} $\ast$}]{p\+Animation, }
+\item[{const {\bf ai\+Node\+Anim} $\ast$}]{p\+Bone\+Anim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a3a55af70b54a5065651384b2bc195308}
+Validates a bone animation channel 
+\begin{DoxyParams}{Parameters}
+{\em p\+Animation} & Animation channel. \\
+\hline
+{\em p\+Bone\+Anim} & Input bone animation \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_a4183d51ca3d024aa52b0b94359e42e48}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_a4183d51ca3d024aa52b0b94359e42e48}
+Validates a node and all of its subnodes 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_node}{Node}} & Input node \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_validate_d_s_process_af5c8c238cd0353a83f28757558b94812}{\index{Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}!Validate@{Validate}}
+\index{Validate@{Validate}!Assimp\+::\+Validate\+D\+S\+Process@{Assimp\+::\+Validate\+D\+S\+Process}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void Validate\+D\+S\+Process\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+String} $\ast$}]{p\+String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_validate_d_s_process_af5c8c238cd0353a83f28757558b94812}
+Validates a string 
+\begin{DoxyParams}{Parameters}
+{\em p\+String} & Input string \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Validate\+Data\+Structure.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_validate_data_structure_8cpp}{Validate\+Data\+Structure.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+digraph "CPVRTArray::Clear"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CPVRTArray::Clear",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CPVRTPFXEffect::Register\lUniformSemantic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_effect.html#a50041cb94518a8c4204e7b188cb45bff",tooltip="Registers a user-provided uniform semantic. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="OGLES2IntroducingPFX\l::InitView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_introducing_p_f_x.html#a60689521ef922e6ac479011562f4e3c8"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="OGLES3IntroducingPFX\l::InitView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_introducing_p_f_x.html#a6762e7f140fe15a0a945e39abf25ae34"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="OGLES2MaximumIntensityBlend\l::InitView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_maximum_intensity_blend.html#ab3bb87b3ff371c02101474f097b2db19"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="CPVRTPFXEffect::RemoveUniform\lSemantic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_effect.html#a8cd988fd9b9fc6712221484cad2fe63e",tooltip="Removes a given semantic ID from the &#39;known&#39; semantic list and re-parses the effect to update the uni..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CPVRTMap\< CPVRTStringHash,\l STextureData \>::Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$singleton_c_p_v_r_t_map.html#a57bdb7b0c05259b925c08245c35bedac",tooltip="Clears the Map of all data values. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CPVRTPrint3D::Print3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#a00f8bd769478fa34fc5f0e7113066759",tooltip="Display wide-char 3D text on screen. CPVRTPrint3D::SetTextures(...) must have been called beforehand..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CPVRTPrint3D::MeasureText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#aaba0e9b4cd00538e8592b7aeb1c64312",tooltip="Returns the size of a string in pixels. "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="OGLESIntroducingPrint3D\l::RenderTitle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_introducing_print3_d.html#aa906f31a55ab5482703011bee554d843"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="OGLESIntroducingPrint3D\l::RenderScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_introducing_print3_d.html#a4b9d708b27fbb073f8b96d9ee1ed5a02"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="OGLESIntroducingPrint3D\l::RenderText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_introducing_print3_d.html#aa0d93174d333a69a43df67113db998e9"];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="OGLES2IntroducingPrint3D\l::RenderTitle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_introducing_print3_d.html#ace817b33b9733946d8294c7974ccbfe0"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="OGLES2IntroducingPrint3D\l::RenderScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_introducing_print3_d.html#ad5d79717c1e16789c24d0ac5d19e1649"];
+  Node9 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="OGLES2IntroducingPrint3D\l::RenderText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_introducing_print3_d.html#ae5ea6091a3022f952eab3070d868c2c4"];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="OGLES3IntroducingPrint3D\l::RenderTitle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_introducing_print3_d.html#a0e04f8d21d0f35b4e36b2f096a87d3fa"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="OGLES3IntroducingPrint3D\l::RenderScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_introducing_print3_d.html#af15a145b22637aa212ebe5ff1f5817d8"];
+  Node9 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="OGLES3IntroducingPrint3D\l::RenderText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_introducing_print3_d.html#aaa06f89184fab1d820971dba0ee45076"];
+  Node18 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="OGLES2MaximumIntensityBlend\l::RenderScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_maximum_intensity_blend.html#af3a7ec554818b805290fef1a04036d2f"];
+  Node9 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="CPVRTPrint3D::MeasureText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#aa12963cb94d9b301293dfb47ff03d008",tooltip="Returns the size of a string in pixels. "];
+}

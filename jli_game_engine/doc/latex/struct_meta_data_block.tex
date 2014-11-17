@@ -1,0 +1,148 @@
+\hypertarget{struct_meta_data_block}{\section{Meta\+Data\+Block Struct Reference}
+\label{struct_meta_data_block}\index{Meta\+Data\+Block@{Meta\+Data\+Block}}
+}
+
+
+A struct containing a block of extraneous meta data for a texture.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+Texture.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_meta_data_block_a80bd1a60900d57af87f64962cdf9f6c0}{Meta\+Data\+Block} ()
+\begin{DoxyCompactList}\small\item\em Meta Data Block Constructor. \end{DoxyCompactList}\item 
+\hypertarget{struct_meta_data_block_aff4210b154285644f93e56582a28a45e}{{\bfseries Meta\+Data\+Block} (const \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} \&rhs)}\label{struct_meta_data_block_aff4210b154285644f93e56582a28a45e}
+
+\item 
+\hyperlink{struct_meta_data_block_aeb1a26d46c7187c01eb019f028833e06}{$\sim$\+Meta\+Data\+Block} ()
+\begin{DoxyCompactList}\small\item\em Meta Data Block Destructor. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{struct_meta_data_block_a5ec779853e4a7616a90ea5de74b1ffb7}{Size\+Of\+Block} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of extra bytes this will add to any output files. \end{DoxyCompactList}\item 
+\hyperlink{struct_meta_data_block}{Meta\+Data\+Block} \& \hyperlink{struct_meta_data_block_ac50c45b7bb6c5b00118750e52cb6f028}{operator=} (const \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} \&rhs)
+\begin{DoxyCompactList}\small\item\em Assigns one \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} to the other. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_meta_data_block_adfb6189bf6c0e132d5913baef4c209b3}{Read\+From\+Ptr} (const unsigned char $\ast$$\ast$p\+Data\+Cursor)
+\begin{DoxyCompactList}\small\item\em Reads from a pointer of memory in to the meta data block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_meta_data_block_a4e84dbbc43a2ff6d29932b3e81bb3f13}{P\+V\+R\+Tuint32 \hyperlink{struct_meta_data_block_a4e84dbbc43a2ff6d29932b3e81bb3f13}{Dev\+F\+O\+U\+R\+C\+C}}\label{struct_meta_data_block_a4e84dbbc43a2ff6d29932b3e81bb3f13}
+
+\begin{DoxyCompactList}\small\item\em A 4cc descriptor of the data type's creator. Values equating to values between 'P' 'V' 'R' 0 and 'P' 'V' 'R' 255 will be used by our headers. \end{DoxyCompactList}\item 
+\hypertarget{struct_meta_data_block_afecde206adf069a05ab0fb49ed33f634}{P\+V\+R\+Tuint32 \hyperlink{struct_meta_data_block_afecde206adf069a05ab0fb49ed33f634}{u32\+Key}}\label{struct_meta_data_block_afecde206adf069a05ab0fb49ed33f634}
+
+\begin{DoxyCompactList}\small\item\em A D\+W\+O\+R\+D (enum value) identifying the data type, and thus how to read it. \end{DoxyCompactList}\item 
+\hypertarget{struct_meta_data_block_ad48251b9f93f2978dbf91955c7e4d729}{P\+V\+R\+Tuint32 \hyperlink{struct_meta_data_block_ad48251b9f93f2978dbf91955c7e4d729}{u32\+Data\+Size}}\label{struct_meta_data_block_ad48251b9f93f2978dbf91955c7e4d729}
+
+\begin{DoxyCompactList}\small\item\em Size of the Data member. \end{DoxyCompactList}\item 
+\hypertarget{struct_meta_data_block_a9f9600f3a0cc09d04e77b0c1b60c15b5}{P\+V\+R\+Tuint8 $\ast$ \hyperlink{struct_meta_data_block_a9f9600f3a0cc09d04e77b0c1b60c15b5}{Data}}\label{struct_meta_data_block_a9f9600f3a0cc09d04e77b0c1b60c15b5}
+
+\begin{DoxyCompactList}\small\item\em Data array, can be absolutely anything, the loader needs to know how to handle it based on Dev\+F\+O\+U\+R\+C\+C and Key. Use new operator to assign to it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct containing a block of extraneous meta data for a texture. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_meta_data_block_a80bd1a60900d57af87f64962cdf9f6c0}{\index{Meta\+Data\+Block@{Meta\+Data\+Block}!Meta\+Data\+Block@{Meta\+Data\+Block}}
+\index{Meta\+Data\+Block@{Meta\+Data\+Block}!Meta\+Data\+Block@{Meta\+Data\+Block}}
+\subsubsection[{Meta\+Data\+Block}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Data\+Block\+::\+Meta\+Data\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_meta_data_block_a80bd1a60900d57af87f64962cdf9f6c0}
+
+
+Meta Data Block Constructor. 
+
+Meta Data Block Copy Constructor.
+
+
+
+ \hypertarget{struct_meta_data_block_aeb1a26d46c7187c01eb019f028833e06}{\index{Meta\+Data\+Block@{Meta\+Data\+Block}!````~Meta\+Data\+Block@{$\sim$\+Meta\+Data\+Block}}
+\index{````~Meta\+Data\+Block@{$\sim$\+Meta\+Data\+Block}!Meta\+Data\+Block@{Meta\+Data\+Block}}
+\subsubsection[{$\sim$\+Meta\+Data\+Block}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Data\+Block\+::$\sim$\+Meta\+Data\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_meta_data_block_aeb1a26d46c7187c01eb019f028833e06}
+
+
+Meta Data Block Destructor. 
+
+
+
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_meta_data_block_ac50c45b7bb6c5b00118750e52cb6f028}{\index{Meta\+Data\+Block@{Meta\+Data\+Block}!operator=@{operator=}}
+\index{operator=@{operator=}!Meta\+Data\+Block@{Meta\+Data\+Block}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Meta\+Data\+Block}\& Meta\+Data\+Block\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Meta\+Data\+Block} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_meta_data_block_ac50c45b7bb6c5b00118750e52cb6f028}
+
+
+Assigns one \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} to the other. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+\hyperlink{struct_meta_data_block}{Meta\+Data\+Block} This \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} after the operation. 
+\end{DoxyReturn}
+\hypertarget{struct_meta_data_block_adfb6189bf6c0e132d5913baef4c209b3}{\index{Meta\+Data\+Block@{Meta\+Data\+Block}!Read\+From\+Ptr@{Read\+From\+Ptr}}
+\index{Read\+From\+Ptr@{Read\+From\+Ptr}!Meta\+Data\+Block@{Meta\+Data\+Block}}
+\subsubsection[{Read\+From\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Data\+Block\+::\+Read\+From\+Ptr (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$$\ast$}]{p\+Data\+Cursor}
+\end{DoxyParamCaption}
+)}}\label{struct_meta_data_block_adfb6189bf6c0e132d5913baef4c209b3}
+
+
+Reads from a pointer of memory in to the meta data block. 
+
+
+
+  Read\+From\+Ptr  p\+Data\+Cursor The data to read  Reads from a pointer of memory in to the meta data block.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Data\+Cursor} & The data to read \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_meta_data_block_a5ec779853e4a7616a90ea5de74b1ffb7}{\index{Meta\+Data\+Block@{Meta\+Data\+Block}!Size\+Of\+Block@{Size\+Of\+Block}}
+\index{Size\+Of\+Block@{Size\+Of\+Block}!Meta\+Data\+Block@{Meta\+Data\+Block}}
+\subsubsection[{Size\+Of\+Block}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Data\+Block\+::\+Size\+Of\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_meta_data_block_a5ec779853e4a7616a90ea5de74b1ffb7}
+
+
+Returns the number of extra bytes this will add to any output files. 
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t Size (in a file) of the block. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_texture_8h}{P\+V\+R\+T\+Texture.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+Texture.\+cpp\end{DoxyCompactItemize}

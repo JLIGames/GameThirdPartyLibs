@@ -1,0 +1,59 @@
+\hypertarget{bt_g_impact_shape_8h}{\section{bullet/bullet-\/2.82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/bt\+G\+Impact\+Shape.h File Reference}
+\label{bt_g_impact_shape_8h}\index{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/bt\+G\+Impact\+Shape.\+h@{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/bt\+G\+Impact\+Shape.\+h}}
+}
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Shapes/bt\+Collision\+Shape.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Shapes/bt\+Triangle\+Shape.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Shapes/bt\+Striding\+Mesh\+Interface.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Shapes/bt\+Collision\+Margin.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Dispatch/bt\+Collision\+World.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Shapes/bt\+Concave\+Shape.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet\+Collision/\+Collision\+Shapes/bt\+Tetrahedron\+Shape.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\+Math/bt\+Vector3.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\+Math/bt\+Transform.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\+Math/bt\+Matrix3x3.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\+Math/bt\+Aligned\+Object\+Array.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}bt\+G\+Impact\+Quantized\+Bvh.\+h\char`\"{}}\\*
+Include dependency graph for bt\+G\+Impact\+Shape.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbt_tetrahedron_shape_ex}{bt\+Tetrahedron\+Shape\+Ex}
+\begin{DoxyCompactList}\small\item\em Helper class for tetrahedrons. \end{DoxyCompactList}\item 
+class \hyperlink{classbt_g_impact_shape_interface}{bt\+G\+Impact\+Shape\+Interface}
+\begin{DoxyCompactList}\small\item\em Base class for gimpact shapes. \end{DoxyCompactList}\item 
+class \hyperlink{classbt_g_impact_compound_shape}{bt\+G\+Impact\+Compound\+Shape}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classbt_g_impact_compound_shape}{bt\+G\+Impact\+Compound\+Shape} allows to handle multiple bt\+Collision\+Shape objects at once \end{DoxyCompactList}\item 
+class \hyperlink{classbt_g_impact_compound_shape_1_1_compound_primitive_manager}{bt\+G\+Impact\+Compound\+Shape\+::\+Compound\+Primitive\+Manager}
+\begin{DoxyCompactList}\small\item\em compound primitive manager \end{DoxyCompactList}\item 
+class \hyperlink{classbt_g_impact_mesh_shape_part}{bt\+G\+Impact\+Mesh\+Shape\+Part}
+\begin{DoxyCompactList}\small\item\em This class manages a sub part of a mesh supplied by the bt\+Striding\+Mesh\+Interface interface. \end{DoxyCompactList}\item 
+class \hyperlink{classbt_g_impact_mesh_shape_part_1_1_trimesh_primitive_manager}{bt\+G\+Impact\+Mesh\+Shape\+Part\+::\+Trimesh\+Primitive\+Manager}
+\begin{DoxyCompactList}\small\item\em Trimesh primitive manager. \end{DoxyCompactList}\item 
+class \hyperlink{classbt_g_impact_mesh_shape}{bt\+G\+Impact\+Mesh\+Shape}
+\begin{DoxyCompactList}\small\item\em This class manages a mesh supplied by the bt\+Striding\+Mesh\+Interface interface. \end{DoxyCompactList}\item 
+struct \hyperlink{structbt_g_impact_mesh_shape_data}{bt\+G\+Impact\+Mesh\+Shape\+Data}
+\begin{DoxyCompactList}\small\item\em do not change those serialization structures, it requires an updated s\+Bullet\+D\+N\+Astr/s\+Bullet\+D\+N\+Astr64 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{bt_g_impact_shape_8h_a9fcdf1a76bb3d1affed81432e4e4ab68}{typedef \hyperlink{classbt_g_impact_quantized_bvh}{bt\+G\+Impact\+Quantized\+Bvh} \hyperlink{bt_g_impact_shape_8h_a9fcdf1a76bb3d1affed81432e4e4ab68}{bt\+G\+Impact\+Box\+Set}}\label{bt_g_impact_shape_8h_a9fcdf1a76bb3d1affed81432e4e4ab68}
+
+\begin{DoxyCompactList}\small\item\em declare Quantized trees, (you can change to float based trees) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{bt_g_impact_shape_8h_a01b6081e3dbbcb5e6211f1a59746fcc3}{enum {\bfseries e\+G\+I\+M\+P\+A\+C\+T\+\_\+\+S\+H\+A\+P\+E\+\_\+\+T\+Y\+P\+E} \{ {\bfseries C\+O\+N\+S\+T\+\_\+\+G\+I\+M\+P\+A\+C\+T\+\_\+\+C\+O\+M\+P\+O\+U\+N\+D\+\_\+\+S\+H\+A\+P\+E} = 0, 
+{\bfseries C\+O\+N\+S\+T\+\_\+\+G\+I\+M\+P\+A\+C\+T\+\_\+\+T\+R\+I\+M\+E\+S\+H\+\_\+\+S\+H\+A\+P\+E\+\_\+\+P\+A\+R\+T}, 
+{\bfseries C\+O\+N\+S\+T\+\_\+\+G\+I\+M\+P\+A\+C\+T\+\_\+\+T\+R\+I\+M\+E\+S\+H\+\_\+\+S\+H\+A\+P\+E}
+ \}}\label{bt_g_impact_shape_8h_a01b6081e3dbbcb5e6211f1a59746fcc3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Leon Najera
+
+Francisco Len Nßjera 
+\end{DoxyAuthor}

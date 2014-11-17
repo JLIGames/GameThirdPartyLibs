@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="EWS_COORD_TAG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_e_w_s___c_o_o_r_d___t_a_g.html"];
+}

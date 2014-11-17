@@ -1,0 +1,223 @@
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{\section{pvrnavigation\+:\+:P\+V\+R\+T\+Bounding\+Box2\+D Struct Reference}
+\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+}
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+Bounding\+Primitives.\+h$>$}
+
+
+
+Collaboration diagram for pvrnavigation\+:\+:P\+V\+R\+T\+Bounding\+Box2\+D\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a6c56a4d0cae7d4d69a464c50085ea9da}{P\+V\+R\+T\+Bounding\+Box2\+D} ()
+\item 
+\hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af84ff043b6b1b74ba15b5901ece8d72b}{P\+V\+R\+T\+Bounding\+Box2\+D} (const \hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} \&v)
+\item 
+\hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a45cb3ca5b265ca03d134739a50597e9f}{P\+V\+R\+T\+Bounding\+Box2\+D} (const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&v)
+\item 
+\hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a1b62d750c8cd39cc0d7a28faaddb4249}{P\+V\+R\+T\+Bounding\+Box2\+D} (const \hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} \&a, const \hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} \&b)
+\item 
+\hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a1c6e71cbbfacd4f753defdd0d5e4ae30}{P\+V\+R\+T\+Bounding\+Box2\+D} (const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&a, const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&b)
+\item 
+float \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af1c371e4ce121c1710364edcecdaf232}{Width} () const 
+\item 
+float \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_aa9a340816b7414cfda9ff39b6ef2d712}{Height} () const 
+\item 
+\hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a106a2393ad829e6f95d1686a7a925106}{Dimensions} () const 
+\item 
+\hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a41241f3628e6cf6f623793045fabbcd3}{Center} () const 
+\item 
+bool \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a0f28f5dec956bcceb470ea6f6081d124}{Contains} (const \hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} \&v) const 
+\item 
+bool \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a65789027440c02c0e2b7dce8102979b5}{Contains} (const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&v) const 
+\item 
+bool \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a6a505b9bc7cf75d143c89d4d3b270879}{Overlaps} (const \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&bb) const 
+\item 
+void \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a8b5a6a09cbbde92c96fad7d990d9328f}{Extend} (const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&v)
+\item 
+void \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a5b0b1ccc29bb3a459b7e7c9e249f6490}{Merge} (const \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&b)
+\item 
+void \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a2b8d80d993b48263951192f8ce6f008f}{Subdivide} (\hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&upper\+Left, \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&lower\+Left, \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&lower\+Right, \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&upper\+Right) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a0940e0e2daad2c30e361aa9f12bcdfa0}{\hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} {\bfseries min\+Coords}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a0940e0e2daad2c30e361aa9f12bcdfa0}
+
+\item 
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af77bece3cf071d0647013aa3c1e4e869}{\hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} {\bfseries max\+Coords}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af77bece3cf071d0647013aa3c1e4e869}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+  \hyperlink{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D}  Structure describing a 2\+D bounding box. Supports all kind of set operations and provides higher level functionality. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a6c56a4d0cae7d4d69a464c50085ea9da}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}}
+\index{P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{P\+V\+R\+T\+Bounding\+Box2\+D}]{\setlength{\rightskip}{0pt plus 5cm}pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+P\+V\+R\+T\+Bounding\+Box2\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a6c56a4d0cae7d4d69a464c50085ea9da}
+
+
+  Constructor  Initiales min and max coordinates to zero. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af84ff043b6b1b74ba15b5901ece8d72b}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}}
+\index{P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{P\+V\+R\+T\+Bounding\+Box2\+D}]{\setlength{\rightskip}{0pt plus 5cm}pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+P\+V\+R\+T\+Bounding\+Box2\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec2} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af84ff043b6b1b74ba15b5901ece8d72b}
+
+
+  Constructor  v 2\+D Initialisation vector.  Initiales min and max coordinates to the given coordinate. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a45cb3ca5b265ca03d134739a50597e9f}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}}
+\index{P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{P\+V\+R\+T\+Bounding\+Box2\+D}]{\setlength{\rightskip}{0pt plus 5cm}pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+P\+V\+R\+T\+Bounding\+Box2\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a45cb3ca5b265ca03d134739a50597e9f}
+
+
+  Constructor  v 3\+D Initialisation vector; z component will be ignored.  Initiales min and max coordinates to the given coordinate. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a1b62d750c8cd39cc0d7a28faaddb4249}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}}
+\index{P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{P\+V\+R\+T\+Bounding\+Box2\+D}]{\setlength{\rightskip}{0pt plus 5cm}pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+P\+V\+R\+T\+Bounding\+Box2\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec2} \&}]{a, }
+\item[{const {\bf P\+V\+R\+T\+Vec2} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a1b62d750c8cd39cc0d7a28faaddb4249}
+
+
+  Constructor  a 2\+D initialisation vector for min coordinates. b 2\+D initialisation vector for max coordinates.  Initiales min and max coordinates to the given coordinates. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a1c6e71cbbfacd4f753defdd0d5e4ae30}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}}
+\index{P\+V\+R\+T\+Bounding\+Box2\+D@{P\+V\+R\+T\+Bounding\+Box2\+D}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{P\+V\+R\+T\+Bounding\+Box2\+D}]{\setlength{\rightskip}{0pt plus 5cm}pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+P\+V\+R\+T\+Bounding\+Box2\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{a, }
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a1c6e71cbbfacd4f753defdd0d5e4ae30}
+
+
+  Constructor  a 3\+D initialisation vector for min coordinates; z will be ignored. b 3\+D initialisation vector for max coordinates; z will be ignored.  Initiales min and max coordinates to the given coordinates. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a41241f3628e6cf6f623793045fabbcd3}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Center@{Center}}
+\index{Center@{Center}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Vec2} pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a41241f3628e6cf6f623793045fabbcd3}
+
+
+  Center  The center of the bounding box.  Calculates the center of the bounding box. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a0f28f5dec956bcceb470ea6f6081d124}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Contains@{Contains}}
+\index{Contains@{Contains}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Contains}]{\setlength{\rightskip}{0pt plus 5cm}bool pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec2} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a0f28f5dec956bcceb470ea6f6081d124}
+
+
+  Contains  v The 2\+D point to test.  True if point is within bounding box, false otherwise.  Determines whether a given point is within the bounding box or not. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a65789027440c02c0e2b7dce8102979b5}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Contains@{Contains}}
+\index{Contains@{Contains}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Contains}]{\setlength{\rightskip}{0pt plus 5cm}bool pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a65789027440c02c0e2b7dce8102979b5}
+
+
+  Contains  v The 3\+D point to test; z will be ignored.  True if point is within bounding box, false otherwise.  Determines whether a given point is within the bounding box or not. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a106a2393ad829e6f95d1686a7a925106}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Dimensions@{Dimensions}}
+\index{Dimensions@{Dimensions}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Vec2} pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a106a2393ad829e6f95d1686a7a925106}
+
+
+  Dimensions  Width and height of bounding box.  Calculates the width and height of the bounding box. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a8b5a6a09cbbde92c96fad7d990d9328f}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Extend@{Extend}}
+\index{Extend@{Extend}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Extend}]{\setlength{\rightskip}{0pt plus 5cm}void pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Extend (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Vec3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a8b5a6a09cbbde92c96fad7d990d9328f}
+
+
+  Extend  v The vector to extend the bounding box with.  Extends a bounding box to include the given vector. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_aa9a340816b7414cfda9ff39b6ef2d712}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Height@{Height}}
+\index{Height@{Height}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}float pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Height (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_aa9a340816b7414cfda9ff39b6ef2d712}
+
+
+  Height  Absolute difference between min and max y coordinates.  Calculates the height of the bounding box. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a5b0b1ccc29bb3a459b7e7c9e249f6490}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Merge@{Merge}}
+\index{Merge@{Merge}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Merge}]{\setlength{\rightskip}{0pt plus 5cm}void pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Merge (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a5b0b1ccc29bb3a459b7e7c9e249f6490}
+
+
+  Merge  v The bounding box to extend the bounding box with.  Merges the extents of two bounding boxes. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a6a505b9bc7cf75d143c89d4d3b270879}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Overlaps}]{\setlength{\rightskip}{0pt plus 5cm}bool pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{bb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a6a505b9bc7cf75d143c89d4d3b270879}
+
+
+  Overlaps  bb The bounding box to test the overlap with.  True if bounding boxes overlap, false otherwise.  Determines whether a given bounding box overlaps or not. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a2b8d80d993b48263951192f8ce6f008f}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Subdivide@{Subdivide}}
+\index{Subdivide@{Subdivide}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Subdivide}]{\setlength{\rightskip}{0pt plus 5cm}void pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Subdivide (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{upper\+Left, }
+\item[{{\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{lower\+Left, }
+\item[{{\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{lower\+Right, }
+\item[{{\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{upper\+Right}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_a2b8d80d993b48263951192f8ce6f008f}
+
+
+  Subdivide  upper\+Left The new bounding box in the upper left corner. lower\+Left The new bounding box in the lower left corner. lower\+Right The new bounding box in the lower right corner. upper\+Right The new bounding box in the upper right corner.  Subdivides the bounding box by splitting it into equally sized quads. \hypertarget{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af1c371e4ce121c1710364edcecdaf232}{\index{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}!Width@{Width}}
+\index{Width@{Width}!pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D@{pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}float pvrnavigation\+::\+P\+V\+R\+T\+Bounding\+Box2\+D\+::\+Width (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structpvrnavigation_1_1_p_v_r_t_bounding_box2_d_af1c371e4ce121c1710364edcecdaf232}
+
+
+  Width  Absolute difference between min and max x coordinates.  Calculates the width of the bounding box. 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Utilities/\+Nav\+Data\+Tools/lib\+P\+V\+R\+Navigation/P\+V\+R\+T\+Bounding\+Primitives.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{_blender_d_n_a_8h}{\section{assimp/assimp-\/3.1.1/code/\+Blender\+D\+N\+A.h File Reference}
+\label{_blender_d_n_a_8h}\index{assimp/assimp-\/3.\+1.\+1/code/\+Blender\+D\+N\+A.\+h@{assimp/assimp-\/3.\+1.\+1/code/\+Blender\+D\+N\+A.\+h}}
+}
+
+
+Blender {\ttfamily D\+N\+A} (file format specification embedded in blend file itself) loader.  
+
+
+{\ttfamily \#include \char`\"{}Base\+Importer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tiny\+Formatter.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Blender\+D\+N\+A.\+inl\char`\"{}}\\*
+Include dependency graph for Blender\+D\+N\+A.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{singleton_assimp_1_1_stream_reader}{Assimp\+::\+Stream\+Reader$<$ Swap\+Endianess, Runtime\+Switch $>$}
+\item 
+class \hyperlink{singleton_assimp_1_1_blender_1_1_object_cache}{Assimp\+::\+Blender\+::\+Object\+Cache$<$ T\+O\+U\+T $>$}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_error}{Assimp\+::\+Blender\+::\+Error}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_elem_base}{Assimp\+::\+Blender\+::\+Elem\+Base}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_pointer}{Assimp\+::\+Blender\+::\+Pointer}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_file_offset}{Assimp\+::\+Blender\+::\+File\+Offset}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1vector}{Assimp\+::\+Blender\+::vector$<$ T $>$}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_field}{Assimp\+::\+Blender\+::\+Field}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_structure}{Assimp\+::\+Blender\+::\+Structure}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_structure_1_1__default_initializer_3_01_error_policy___warn_01_4}{Assimp\+::\+Blender\+::\+Structure\+::\+\_\+default\+Initializer$<$ Error\+Policy\+\_\+\+Warn $>$}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_structure_1_1__default_initializer_3_01_error_policy___fail_01_4}{Assimp\+::\+Blender\+::\+Structure\+::\+\_\+default\+Initializer$<$ Error\+Policy\+\_\+\+Fail $>$}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_d_n_a}{Assimp\+::\+Blender\+::\+D\+N\+A}
+\item 
+struct \hyperlink{struct_assimp_1_1_blender_1_1_file_block_head}{Assimp\+::\+Blender\+::\+File\+Block\+Head}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_section_parser}{Assimp\+::\+Blender\+::\+Section\+Parser}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_statistics}{Assimp\+::\+Blender\+::\+Statistics}
+\item 
+class \hyperlink{singleton_assimp_1_1_blender_1_1_object_cache}{Assimp\+::\+Blender\+::\+Object\+Cache$<$ T\+O\+U\+T $>$}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_object_cache_3_01_blender_1_1vector_01_4}{Assimp\+::\+Blender\+::\+Object\+Cache$<$ Blender\+::vector $>$}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_file_database}{Assimp\+::\+Blender\+::\+File\+Database}
+\item 
+class \hyperlink{class_assimp_1_1_blender_1_1_d_n_a_parser}{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_blender_d_n_a_8h_ac98345bc83501c09f23cfc87f4308c3c}{\#define {\bfseries A\+S\+S\+I\+M\+P\+\_\+\+B\+U\+I\+L\+D\+\_\+\+B\+L\+E\+N\+D\+E\+R\+\_\+\+D\+E\+B\+U\+G}}\label{_blender_d_n_a_8h_ac98345bc83501c09f23cfc87f4308c3c}
+
+\item 
+\hypertarget{_blender_d_n_a_8h_a293add477dac96f5ba3b84d43d25a3b5}{\#define {\bfseries Error\+Policy\+\_\+\+Igno}~Error\+Policy\+\_\+\+Warn}\label{_blender_d_n_a_8h_a293add477dac96f5ba3b84d43d25a3b5}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Field\+Flags} \{ {\bfseries Field\+Flag\+\_\+\+Pointer} = 0x1, 
+{\bfseries Field\+Flag\+\_\+\+Array} = 0x2
+ \}
+\item 
+enum {\bfseries Error\+Policy} \{ {\bfseries Assimp\+::\+Blender\+::\+Error\+Policy\+\_\+\+Igno}, 
+{\bfseries Assimp\+::\+Blender\+::\+Error\+Policy\+\_\+\+Warn}, 
+{\bfseries Assimp\+::\+Blender\+::\+Error\+Policy\+\_\+\+Fail}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_blender_abb35d064a7212ef7cb0fb6be17834a3e}{{\footnotesize template$<$$>$ }\\bool {\bfseries Assimp\+::\+Blender\+::\+Structure\+::\+Resolve\+Pointer$<$ boost\+::shared\+\_\+ptr, Elem\+Base $>$} (\hyperlink{classboost_1_1shared__ptr}{boost\+::shared\+\_\+ptr}$<$ Elem\+Base $>$ \&out, const Pointer \&ptrval, const File\+Database \&db, const Field \&f, bool) const }\label{namespace_assimp_1_1_blender_abb35d064a7212ef7cb0fb6be17834a3e}
+
+\item 
+\hypertarget{namespace_assimp_1_1_blender_af2203e3cd170dc3927db3a95dda66694}{bool {\bfseries Assimp\+::\+Blender\+::operator$<$} (const Pointer \&a, const Pointer \&b)}\label{namespace_assimp_1_1_blender_af2203e3cd170dc3927db3a95dda66694}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blender {\ttfamily D\+N\+A} (file format specification embedded in blend file itself) loader. 
+

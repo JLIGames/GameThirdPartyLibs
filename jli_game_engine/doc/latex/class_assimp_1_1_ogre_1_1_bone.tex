@@ -1,0 +1,78 @@
+\hypertarget{class_assimp_1_1_ogre_1_1_bone}{\section{Assimp\+:\+:Ogre\+:\+:Bone Class Reference}
+\label{class_assimp_1_1_ogre_1_1_bone}\index{Assimp\+::\+Ogre\+::\+Bone@{Assimp\+::\+Ogre\+::\+Bone}}
+}
+
+
+Ogre \hyperlink{class_assimp_1_1_ogre_1_1_bone}{Bone}.  
+
+
+
+
+{\ttfamily \#include $<$Ogre\+Structs.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:Ogre\+:\+:Bone\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_aa394d46812c9ab9430a44b0d52f11d0d}{bool \hyperlink{class_assimp_1_1_ogre_1_1_bone_aa394d46812c9ab9430a44b0d52f11d0d}{Is\+Parented} () const }\label{class_assimp_1_1_ogre_1_1_bone_aa394d46812c9ab9430a44b0d52f11d0d}
+
+\begin{DoxyCompactList}\small\item\em Returns if this bone is parented. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a0c8d7883fed7e2510237baa66f101fed}{uint16\+\_\+t \hyperlink{class_assimp_1_1_ogre_1_1_bone_a0c8d7883fed7e2510237baa66f101fed}{Parent\+Id} () const }\label{class_assimp_1_1_ogre_1_1_bone_a0c8d7883fed7e2510237baa66f101fed}
+
+\begin{DoxyCompactList}\small\item\em Parent index as uint16\+\_\+t. Internally int32\+\_\+t as -\/1 means unparented. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a13a3acbd459260ec6514eda67671c948}{void \hyperlink{class_assimp_1_1_ogre_1_1_bone_a13a3acbd459260ec6514eda67671c948}{Add\+Child} (\hyperlink{class_assimp_1_1_ogre_1_1_bone}{Bone} $\ast$bone)}\label{class_assimp_1_1_ogre_1_1_bone_a13a3acbd459260ec6514eda67671c948}
+
+\begin{DoxyCompactList}\small\item\em Add child bone. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a3bf8ffe66efd832179eabf3e97ecdbe1}{void \hyperlink{class_assimp_1_1_ogre_1_1_bone_a3bf8ffe66efd832179eabf3e97ecdbe1}{Calculate\+World\+Matrix\+And\+Default\+Pose} (\hyperlink{class_assimp_1_1_ogre_1_1_skeleton}{Skeleton} $\ast$skeleton)}\label{class_assimp_1_1_ogre_1_1_bone_a3bf8ffe66efd832179eabf3e97ecdbe1}
+
+\begin{DoxyCompactList}\small\item\em Calculates the world matrix for bone and its children. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a209f40d91f35fba6233002085f55289b}{\hyperlink{structai_node}{ai\+Node} $\ast$ \hyperlink{class_assimp_1_1_ogre_1_1_bone_a209f40d91f35fba6233002085f55289b}{Convert\+To\+Assimp\+Node} (\hyperlink{class_assimp_1_1_ogre_1_1_skeleton}{Skeleton} $\ast$parent, \hyperlink{structai_node}{ai\+Node} $\ast$parent\+Node=0)}\label{class_assimp_1_1_ogre_1_1_bone_a209f40d91f35fba6233002085f55289b}
+
+\begin{DoxyCompactList}\small\item\em Convert to \hyperlink{class_assimp}{Assimp} node (animation nodes). \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_abed99b3d23d7ffd3c360d47ccc981328}{\hyperlink{structai_bone}{ai\+Bone} $\ast$ \hyperlink{class_assimp_1_1_ogre_1_1_bone_abed99b3d23d7ffd3c360d47ccc981328}{Convert\+To\+Assimp\+Bone} (\hyperlink{class_assimp_1_1_ogre_1_1_skeleton}{Skeleton} $\ast$parent, const std\+::vector$<$ \hyperlink{structai_vertex_weight}{ai\+Vertex\+Weight} $>$ \&bone\+Weights)}\label{class_assimp_1_1_ogre_1_1_bone_abed99b3d23d7ffd3c360d47ccc981328}
+
+\begin{DoxyCompactList}\small\item\em Convert to \hyperlink{class_assimp}{Assimp} bone (mesh bones). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a63adae0ac8794d06416f8cc37cf41644}{uint16\+\_\+t {\bfseries id}}\label{class_assimp_1_1_ogre_1_1_bone_a63adae0ac8794d06416f8cc37cf41644}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a53a0058b66616427c8e66e6c50c0ae5d}{std\+::string {\bfseries name}}\label{class_assimp_1_1_ogre_1_1_bone_a53a0058b66616427c8e66e6c50c0ae5d}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_afb09991f66f310598c59439583c5d9b2}{\hyperlink{class_assimp_1_1_ogre_1_1_bone}{Bone} $\ast$ {\bfseries parent}}\label{class_assimp_1_1_ogre_1_1_bone_afb09991f66f310598c59439583c5d9b2}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_abe1a50dd8ccc621e3a5ba7cf9190baaf}{int32\+\_\+t {\bfseries parent\+Id}}\label{class_assimp_1_1_ogre_1_1_bone_abe1a50dd8ccc621e3a5ba7cf9190baaf}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_ad9d2af87a8ee9ae1cc696071ff08e253}{std\+::vector$<$ uint16\+\_\+t $>$ {\bfseries children}}\label{class_assimp_1_1_ogre_1_1_bone_ad9d2af87a8ee9ae1cc696071ff08e253}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a3f4b3467e5848fd783fca21b9d4040d7}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries position}}\label{class_assimp_1_1_ogre_1_1_bone_a3f4b3467e5848fd783fca21b9d4040d7}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a1ff833443a8e45617777337df34407a6}{\hyperlink{structai_quaternion}{ai\+Quaternion} {\bfseries rotation}}\label{class_assimp_1_1_ogre_1_1_bone_a1ff833443a8e45617777337df34407a6}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_a7cc1f7851cfaca89530fbfac6eb7b3e4}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries scale}}\label{class_assimp_1_1_ogre_1_1_bone_a7cc1f7851cfaca89530fbfac6eb7b3e4}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_ab2f43c51957cb35a88d8456a0c1f6fb5}{\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} {\bfseries world\+Matrix}}\label{class_assimp_1_1_ogre_1_1_bone_ab2f43c51957cb35a88d8456a0c1f6fb5}
+
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_bone_afae76e670da28edb1515c9c762bcf233}{\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} {\bfseries default\+Pose}}\label{class_assimp_1_1_ogre_1_1_bone_afae76e670da28edb1515c9c762bcf233}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ogre \hyperlink{class_assimp_1_1_ogre_1_1_bone}{Bone}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Structs.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Structs.\+cpp\end{DoxyCompactItemize}

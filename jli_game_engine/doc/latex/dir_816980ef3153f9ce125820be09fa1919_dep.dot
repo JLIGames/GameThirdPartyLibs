@@ -1,0 +1,14 @@
+digraph "fmod/ios/FMOD Programmers API/api/studio" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8631acaf2fa5bbe95cc300d189199481 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="api" fontname="Helvetica", fontsize="10", URL="dir_8631acaf2fa5bbe95cc300d189199481.html"]
+  subgraph clusterdir_816980ef3153f9ce125820be09fa1919 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_816980ef3153f9ce125820be09fa1919.html"];
+    dir_816980ef3153f9ce125820be09fa1919 [shape=plaintext label="studio"];
+    dir_d9184ddd74295e8a89126e9b2c62a2ca [shape=box label="examples" color="black" fillcolor="white" style="filled" URL="dir_d9184ddd74295e8a89126e9b2c62a2ca.html"];
+    dir_95f2504610d9946513da92e19d5a6823 [shape=box label="inc" color="black" fillcolor="white" style="filled" URL="dir_95f2504610d9946513da92e19d5a6823.html"];
+  }
+  }
+}

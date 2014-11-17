@@ -1,0 +1,101 @@
+\hypertarget{_p_v_r_t_tri_strip_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Tri\+Strip.h File Reference}
+\label{_p_v_r_t_tri_strip_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Tri\+Strip.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Tri\+Strip.\+h}}
+}
+
+
+Strips a triangle list.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_p_v_r_t_tri_strip_8h_ab0aea1649a854ff2e3afdd9739ac7a32}{P\+V\+R\+T\+Tri\+Strip} (unsigned int $\ast$$\ast$ppui32\+Strips, unsigned int $\ast$$\ast$ppn\+Strip\+Len, unsigned int $\ast$pn\+Strip\+Cnt, const unsigned int $\ast$const pui32\+Tri\+List, const unsigned int n\+Tri\+Cnt)
+\begin{DoxyCompactList}\small\item\em Reads a triangle list and generates an optimised triangle strip. \end{DoxyCompactList}\item 
+void \hyperlink{_p_v_r_t_tri_strip_8h_a67ea05656c98ddd187a9800448b41e9a}{P\+V\+R\+T\+Tri\+Strip\+List} (unsigned int $\ast$const pui32\+Tri\+List, const unsigned int n\+Tri\+Cnt)
+\begin{DoxyCompactList}\small\item\em Reads a triangle list and generates an optimised triangle strip. Result is converted back to a triangle list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Strips a triangle list. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_tri_strip_8h_ab0aea1649a854ff2e3afdd9739ac7a32}{\index{P\+V\+R\+T\+Tri\+Strip.\+h@{P\+V\+R\+T\+Tri\+Strip.\+h}!P\+V\+R\+T\+Tri\+Strip@{P\+V\+R\+T\+Tri\+Strip}}
+\index{P\+V\+R\+T\+Tri\+Strip@{P\+V\+R\+T\+Tri\+Strip}!P\+V\+R\+T\+Tri\+Strip.\+h@{P\+V\+R\+T\+Tri\+Strip.\+h}}
+\subsubsection[{P\+V\+R\+T\+Tri\+Strip}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Tri\+Strip (
+\begin{DoxyParamCaption}
+\item[{unsigned int $\ast$$\ast$}]{ppui32\+Strips, }
+\item[{unsigned int $\ast$$\ast$}]{ppn\+Strip\+Len, }
+\item[{unsigned int $\ast$}]{pn\+Strip\+Cnt, }
+\item[{const unsigned int $\ast$const}]{pui32\+Tri\+List, }
+\item[{const unsigned int}]{n\+Tri\+Cnt}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_tri_strip_8h_ab0aea1649a854ff2e3afdd9739ac7a32}
+
+
+Reads a triangle list and generates an optimised triangle strip. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ppui32\+Strips} & \\
+\hline
+\mbox{\tt out}  & {\em ppn\+Strip\+Len} & \\
+\hline
+\mbox{\tt out}  & {\em pn\+Strip\+Cnt} & \\
+\hline
+\mbox{\tt in}  & {\em pui32\+Tri\+List} & \\
+\hline
+\mbox{\tt in}  & {\em n\+Tri\+Cnt} & 
+
+  P\+V\+R\+T\+Tri\+Strip  ppui32\+Strips  ppn\+Strip\+Len  pn\+Strip\+Cnt  pui32\+Tri\+List  n\+Tri\+Cnt  Reads a triangle list and generates an optimised triangle strip. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_tri_strip_8h_a67ea05656c98ddd187a9800448b41e9a}{\index{P\+V\+R\+T\+Tri\+Strip.\+h@{P\+V\+R\+T\+Tri\+Strip.\+h}!P\+V\+R\+T\+Tri\+Strip\+List@{P\+V\+R\+T\+Tri\+Strip\+List}}
+\index{P\+V\+R\+T\+Tri\+Strip\+List@{P\+V\+R\+T\+Tri\+Strip\+List}!P\+V\+R\+T\+Tri\+Strip.\+h@{P\+V\+R\+T\+Tri\+Strip.\+h}}
+\subsubsection[{P\+V\+R\+T\+Tri\+Strip\+List}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Tri\+Strip\+List (
+\begin{DoxyParamCaption}
+\item[{unsigned int $\ast$const}]{pui32\+Tri\+List, }
+\item[{const unsigned int}]{n\+Tri\+Cnt}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_tri_strip_8h_a67ea05656c98ddd187a9800448b41e9a}
+
+
+Reads a triangle list and generates an optimised triangle strip. Result is converted back to a triangle list. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em pui32\+Tri\+List} & \\
+\hline
+\mbox{\tt in}  & {\em n\+Tri\+Cnt} & 
+
+  P\+V\+R\+T\+Tri\+Strip\+List  pui32\+Tri\+List  n\+Tri\+Cnt  Reads a triangle list and generates an optimised triangle strip. Result is converted back to a triangle list. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+

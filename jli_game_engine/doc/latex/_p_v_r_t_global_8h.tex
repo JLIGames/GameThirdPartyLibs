@@ -1,0 +1,394 @@
+\hypertarget{_p_v_r_t_global_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Global.h File Reference}
+\label{_p_v_r_t_global_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Global.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Global.\+h}}
+}
+
+
+Global defines and typedefs for P\+V\+R\+Tools.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+Include dependency graph for P\+V\+R\+T\+Global.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_v_r_t_global_8h_ad86fd81a5d487a65fe6fdf11b7c4bc10}{P\+V\+R\+T\+\_\+\+M\+I\+N}(a, b)~(((a) $<$ (b)) ? (a) \+: (b))
+\item 
+\hypertarget{_p_v_r_t_global_8h_ad2469b54167e39e7cd51c6ffa37725a0}{\#define {\bfseries P\+V\+R\+T\+\_\+\+M\+A\+X}(a, b)~(((a) $>$ (b)) ? (a) \+: (b))}\label{_p_v_r_t_global_8h_ad2469b54167e39e7cd51c6ffa37725a0}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a89f6712cd672d25a466ce7a0a3ff2ee8}{\#define {\bfseries P\+V\+R\+T\+\_\+\+C\+L\+A\+M\+P}(x, l, h)~(\hyperlink{_p_v_r_t_global_8h_ad86fd81a5d487a65fe6fdf11b7c4bc10}{P\+V\+R\+T\+\_\+\+M\+I\+N}((h), P\+V\+R\+T\+\_\+\+M\+A\+X((x), (l))))}\label{_p_v_r_t_global_8h_a89f6712cd672d25a466ce7a0a3ff2ee8}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a4e8c3874586b940221eb8c411ab71ab7}{\#define {\bfseries P\+V\+R\+T\+\_\+\+U\+N\+R\+E\+F\+E\+R\+E\+N\+C\+E\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}(x)~((void) x)}\label{_p_v_r_t_global_8h_a4e8c3874586b940221eb8c411ab71ab7}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a90618c3a47451d27ae086fa5643d9e4a}{\#define {\bfseries \+\_\+\+C\+R\+T\+\_\+\+W\+A\+R\+N}~0}\label{_p_v_r_t_global_8h_a90618c3a47451d27ae086fa5643d9e4a}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_aa9b7496aa193ca162a08f995dffab916}{\#define {\bfseries \+\_\+\+R\+P\+T0}(a, b)}\label{_p_v_r_t_global_8h_aa9b7496aa193ca162a08f995dffab916}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_ae3966ffaf8a284ab0bb386970a75df57}{\#define {\bfseries \+\_\+\+R\+P\+T1}(a, b, c)}\label{_p_v_r_t_global_8h_ae3966ffaf8a284ab0bb386970a75df57}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a5592695d99ffa77a0cc84629fe43eede}{\#define {\bfseries \+\_\+\+R\+P\+T2}(a, b, c, d)}\label{_p_v_r_t_global_8h_a5592695d99ffa77a0cc84629fe43eede}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_aa692160c7c35944e1e47b27e06b079ff}{\#define {\bfseries \+\_\+\+R\+P\+T3}(a, b, c, d, e)}\label{_p_v_r_t_global_8h_aa692160c7c35944e1e47b27e06b079ff}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a86a182fd69b71176fd8c28dcbe2e0c15}{\#define {\bfseries \+\_\+\+R\+P\+T4}(a, b, c, d, e, f)}\label{_p_v_r_t_global_8h_a86a182fd69b71176fd8c28dcbe2e0c15}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a301e1dc16521419c0ace45a202b96bbb}{\#define {\bfseries \+\_\+\+A\+S\+S\+E\+R\+T}(X)}\label{_p_v_r_t_global_8h_a301e1dc16521419c0ace45a202b96bbb}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_acbb8281bd30247a4645e9f0286ff8bd4}{\#define {\bfseries \+\_\+\+A\+S\+S\+E\+R\+T\+E}(X)}\label{_p_v_r_t_global_8h_acbb8281bd30247a4645e9f0286ff8bd4}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a3fff9ce329964b961ee891f64ff33653}{\#define {\bfseries F\+R\+E\+E}(X)~\{ if(X) \{ free(X); (X) = 0; \} \}}\label{_p_v_r_t_global_8h_a3fff9ce329964b961ee891f64ff33653}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a82d4b997e6c2596d76be784b32789c62}{\#define {\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T}(T, size)~typedef int (sizeof\+\_\+\#\#T)\mbox{[}sizeof(T) == (size)\mbox{]}}\label{_p_v_r_t_global_8h_a82d4b997e6c2596d76be784b32789c62}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_ae8fa4bab315a63300066964c51915c92}{\#define {\bfseries P\+V\+R\+T\+C\+O\+M\+P\+I\+L\+E\+A\+S\+S\+E\+R\+T}(T, expr)~typedef int (assert\+\_\+\#\#T)\mbox{[}expr\mbox{]}}\label{_p_v_r_t_global_8h_ae8fa4bab315a63300066964c51915c92}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_ad38b9c0a2ff4e19b7e40fe3915786a08}{\#define {\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+O\+F\+W\+C\+H\+A\+R}~2}\label{_p_v_r_t_global_8h_ad38b9c0a2ff4e19b7e40fe3915786a08}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_global_8h_ab5908fdd6d10b8f8a9ccfdf8db0d4bc0}{typedef char {\bfseries P\+V\+R\+Tchar8}}\label{_p_v_r_t_global_8h_ab5908fdd6d10b8f8a9ccfdf8db0d4bc0}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a9756d4c583f036183baea5a7a244eaf3}{typedef signed char {\bfseries P\+V\+R\+Tint8}}\label{_p_v_r_t_global_8h_a9756d4c583f036183baea5a7a244eaf3}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a398c892d8808cdc2b1dc36098f4b6e02}{typedef signed short {\bfseries P\+V\+R\+Tint16}}\label{_p_v_r_t_global_8h_a398c892d8808cdc2b1dc36098f4b6e02}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a8e00d8dbdb27ffaa5ef428b9e620c6ca}{typedef signed int {\bfseries P\+V\+R\+Tint32}}\label{_p_v_r_t_global_8h_a8e00d8dbdb27ffaa5ef428b9e620c6ca}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_aa4b1278406513b20119c6d433b1d8f79}{typedef unsigned char {\bfseries P\+V\+R\+Tuint8}}\label{_p_v_r_t_global_8h_aa4b1278406513b20119c6d433b1d8f79}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a0bb14023950b8fd1e7ecf2ce50145c4e}{typedef unsigned short {\bfseries P\+V\+R\+Tuint16}}\label{_p_v_r_t_global_8h_a0bb14023950b8fd1e7ecf2ce50145c4e}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a524aaa82e7ea31c153cfc131d5cbd7c7}{typedef unsigned int {\bfseries P\+V\+R\+Tuint32}}\label{_p_v_r_t_global_8h_a524aaa82e7ea31c153cfc131d5cbd7c7}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a3708979eadcd4b8cd3ce0f282ed78766}{typedef float {\bfseries P\+V\+R\+Tfloat32}}\label{_p_v_r_t_global_8h_a3708979eadcd4b8cd3ce0f282ed78766}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_aa4d8471421af66667c5e3a7662ceabf0}{typedef signed long long {\bfseries P\+V\+R\+Tint64}}\label{_p_v_r_t_global_8h_aa4d8471421af66667c5e3a7662ceabf0}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_af6321fb089340f133d0ef2dadec6075e}{typedef unsigned long long {\bfseries P\+V\+R\+Tuint64}}\label{_p_v_r_t_global_8h_af6321fb089340f133d0ef2dadec6075e}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_p_v_r_t_global_8h_a21d72bffd820f4e5eb29d92ff78804c1}{E\+Texture\+Filter} \{ \\*
+{\bfseries e\+Filter\+\_\+\+Nearest}, 
+{\bfseries e\+Filter\+\_\+\+Linear}, 
+{\bfseries e\+Filter\+\_\+\+None}, 
+{\bfseries e\+Filter\+\_\+\+Size}, 
+\\*
+{\bfseries e\+Filter\+\_\+\+Default} = e\+Filter\+\_\+\+Linear, 
+{\bfseries e\+Filter\+\_\+\+Mip\+Default} = e\+Filter\+\_\+\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Enum values for defining texture filtering. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_t_global_8h_ad20b935540f714d13a95ed3be839dd00}{E\+Texture\+Wrap} \{ {\bfseries e\+Wrap\+\_\+\+Clamp}, 
+{\bfseries e\+Wrap\+\_\+\+Repeat}, 
+{\bfseries e\+Wrap\+\_\+\+Size}, 
+{\bfseries e\+Wrap\+\_\+\+Default} = e\+Wrap\+\_\+\+Repeat
+ \}
+\begin{DoxyCompactList}\small\item\em Enum values for defining texture wrapping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_global_8h_ab257aca65e858a869efda651e9ea121c}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tchar8, 1)}\label{_p_v_r_t_global_8h_ab257aca65e858a869efda651e9ea121c}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a73d050985ac8ac093545799329587521}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tint8, 1)}\label{_p_v_r_t_global_8h_a73d050985ac8ac093545799329587521}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_ae9844374f2a04fcf14c88fc2d9188ad9}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tuint8, 1)}\label{_p_v_r_t_global_8h_ae9844374f2a04fcf14c88fc2d9188ad9}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_ac9cb6ff9a6467882a7e4ee1b5cc07f93}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tint16, 2)}\label{_p_v_r_t_global_8h_ac9cb6ff9a6467882a7e4ee1b5cc07f93}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a7f33810ba22bb0724a66d99cdf8852ab}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tuint16, 2)}\label{_p_v_r_t_global_8h_a7f33810ba22bb0724a66d99cdf8852ab}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a332ef5d06f82bd4f2a2e47c4a9446337}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tint32, 4)}\label{_p_v_r_t_global_8h_a332ef5d06f82bd4f2a2e47c4a9446337}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a4c5985417709e4cd4f8d134ca0431ba7}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tuint32, 4)}\label{_p_v_r_t_global_8h_a4c5985417709e4cd4f8d134ca0431ba7}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a8d2c836b2cfd990eb2ef56d3af494e7e}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tint64, 8)}\label{_p_v_r_t_global_8h_a8d2c836b2cfd990eb2ef56d3af494e7e}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a524dc11669dda0bb4060332cc97ee1ac}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tuint64, 8)}\label{_p_v_r_t_global_8h_a524dc11669dda0bb4060332cc97ee1ac}
+
+\item 
+\hypertarget{_p_v_r_t_global_8h_a93b1fd5fde8fbcd3416535a7c91b6361}{{\bfseries P\+V\+R\+T\+S\+I\+Z\+E\+A\+S\+S\+E\+R\+T} (P\+V\+R\+Tfloat32, 4)}\label{_p_v_r_t_global_8h_a93b1fd5fde8fbcd3416535a7c91b6361}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{_p_v_r_t_global_8h_afe19d4786433a4e6cd22c2c749cbb5d7}{P\+V\+R\+Tswap} (T \&a, T \&b)
+\begin{DoxyCompactList}\small\item\em A swap template function that swaps a and b. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{_p_v_r_t_global_8h_a497f72109a613b9c832ffec55de43320}{P\+V\+R\+T\+Clamp} (const T \&val, const T \&min, const T \&max)
+\begin{DoxyCompactList}\small\item\em A clamp template function that clamps val between min and max. \end{DoxyCompactList}\item 
+void \hyperlink{_p_v_r_t_global_8h_ab36eb7d2270c8daf6173b8c5fd3aacdf}{P\+V\+R\+T\+Byte\+Swap} (unsigned char $\ast$p\+Bytes, int i32\+Byte\+No)
+\begin{DoxyCompactList}\small\item\em Swaps the endianness of p\+Bytes in place. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{_p_v_r_t_global_8h_ae82269dabf200946aa724f9270f3b7b7}{P\+V\+R\+T\+Byte\+Swap32} (unsigned int ui32\+Long)
+\begin{DoxyCompactList}\small\item\em Converts the endianness of an unsigned int. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{_p_v_r_t_global_8h_af399bac5bc7acedc178113c98c0d4ac5}{P\+V\+R\+T\+Byte\+Swap16} (unsigned short ui16\+Short)
+\begin{DoxyCompactList}\small\item\em Converts the endianness of a unsigned short. \end{DoxyCompactList}\item 
+bool \hyperlink{_p_v_r_t_global_8h_adc60f9cef4ae352558855702f92d54a8}{P\+V\+R\+T\+Is\+Little\+Endian} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the platform the code is ran on is little endian. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\const T \& \hyperlink{_p_v_r_t_global_8h_aa4d1a0ca414a4b72e59b9e2ec8f56b8c}{P\+V\+R\+T\+Min} (const T \&a, const T \&b)
+\begin{DoxyCompactList}\small\item\em Minimum of a, b. In case of tie, a is returned. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\const T \& \hyperlink{_p_v_r_t_global_8h_a76561b3b81369c604d7dd0faf5d3d43b}{P\+V\+R\+T\+Max} (const T \&a, const T \&b)
+\begin{DoxyCompactList}\small\item\em Maximum of a, b. In case of tie, a is returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Global defines and typedefs for P\+V\+R\+Tools. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_p_v_r_t_global_8h_ad86fd81a5d487a65fe6fdf11b7c4bc10}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+\_\+\+M\+I\+N@{P\+V\+R\+T\+\_\+\+M\+I\+N}}
+\index{P\+V\+R\+T\+\_\+\+M\+I\+N@{P\+V\+R\+T\+\_\+\+M\+I\+N}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+\_\+\+M\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+V\+R\+T\+\_\+\+M\+I\+N(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~(((a) $<$ (b)) ? (a) \+: (b))}}\label{_p_v_r_t_global_8h_ad86fd81a5d487a65fe6fdf11b7c4bc10}
+
+
+ Macros 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_p_v_r_t_global_8h_a21d72bffd820f4e5eb29d92ff78804c1}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!E\+Texture\+Filter@{E\+Texture\+Filter}}
+\index{E\+Texture\+Filter@{E\+Texture\+Filter}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{E\+Texture\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+Texture\+Filter}}}\label{_p_v_r_t_global_8h_a21d72bffd820f4e5eb29d92ff78804c1}
+
+
+Enum values for defining texture filtering. 
+
+
+
+ \hypertarget{_p_v_r_t_global_8h_ad20b935540f714d13a95ed3be839dd00}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!E\+Texture\+Wrap@{E\+Texture\+Wrap}}
+\index{E\+Texture\+Wrap@{E\+Texture\+Wrap}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{E\+Texture\+Wrap}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+Texture\+Wrap}}}\label{_p_v_r_t_global_8h_ad20b935540f714d13a95ed3be839dd00}
+
+
+Enum values for defining texture wrapping. 
+
+
+
+ 
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_global_8h_ab36eb7d2270c8daf6173b8c5fd3aacdf}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Byte\+Swap@{P\+V\+R\+T\+Byte\+Swap}}
+\index{P\+V\+R\+T\+Byte\+Swap@{P\+V\+R\+T\+Byte\+Swap}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Byte\+Swap}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Byte\+Swap (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\+Bytes, }
+\item[{int}]{i32\+Byte\+No}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_ab36eb7d2270c8daf6173b8c5fd3aacdf}
+
+
+Swaps the endianness of p\+Bytes in place. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Bytes} & A number \\
+\hline
+\mbox{\tt in}  & {\em i32\+Byte\+No} & Number of bytes in p\+Bytes \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_global_8h_af399bac5bc7acedc178113c98c0d4ac5}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Byte\+Swap16@{P\+V\+R\+T\+Byte\+Swap16}}
+\index{P\+V\+R\+T\+Byte\+Swap16@{P\+V\+R\+T\+Byte\+Swap16}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Byte\+Swap16}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short P\+V\+R\+T\+Byte\+Swap16 (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{ui16\+Short}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_af399bac5bc7acedc178113c98c0d4ac5}
+
+
+Converts the endianness of a unsigned short. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui16\+Short} & A number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ui16\+Short with its endianness changed 
+\end{DoxyReturn}
+\hypertarget{_p_v_r_t_global_8h_ae82269dabf200946aa724f9270f3b7b7}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Byte\+Swap32@{P\+V\+R\+T\+Byte\+Swap32}}
+\index{P\+V\+R\+T\+Byte\+Swap32@{P\+V\+R\+T\+Byte\+Swap32}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Byte\+Swap32}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int P\+V\+R\+T\+Byte\+Swap32 (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui32\+Long}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_ae82269dabf200946aa724f9270f3b7b7}
+
+
+Converts the endianness of an unsigned int. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui32\+Long} & A number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ui32\+Long with its endianness changed 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_global_8h_a497f72109a613b9c832ffec55de43320}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Clamp@{P\+V\+R\+T\+Clamp}}
+\index{P\+V\+R\+T\+Clamp@{P\+V\+R\+T\+Clamp}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Clamp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T P\+V\+R\+T\+Clamp (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{val, }
+\item[{const T \&}]{min, }
+\item[{const T \&}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_a497f72109a613b9c832ffec55de43320}
+
+
+A clamp template function that clamps val between min and max. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em val} & \hyperlink{union_value}{Value} to clamp \\
+\hline
+\mbox{\tt in}  & {\em min} & Minimum legal value \\
+\hline
+\mbox{\tt in}  & {\em max} & Maximum legal value \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_global_8h_adc60f9cef4ae352558855702f92d54a8}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Is\+Little\+Endian@{P\+V\+R\+T\+Is\+Little\+Endian}}
+\index{P\+V\+R\+T\+Is\+Little\+Endian@{P\+V\+R\+T\+Is\+Little\+Endian}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Is\+Little\+Endian}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+V\+R\+T\+Is\+Little\+Endian (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_adc60f9cef4ae352558855702f92d54a8}
+
+
+Returns true if the platform the code is ran on is little endian. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+True if the platform the code is ran on is little endian 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_global_8h_a76561b3b81369c604d7dd0faf5d3d43b}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Max@{P\+V\+R\+T\+Max}}
+\index{P\+V\+R\+T\+Max@{P\+V\+R\+T\+Max}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\& P\+V\+R\+T\+Max (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{const T \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_a76561b3b81369c604d7dd0faf5d3d43b}
+
+
+Maximum of a, b. In case of tie, a is returned. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+Returns b if a $<$ b. otherwise a 
+\end{DoxyReturn}
+\hypertarget{_p_v_r_t_global_8h_aa4d1a0ca414a4b72e59b9e2ec8f56b8c}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+T\+Min@{P\+V\+R\+T\+Min}}
+\index{P\+V\+R\+T\+Min@{P\+V\+R\+T\+Min}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+T\+Min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\& P\+V\+R\+T\+Min (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{const T \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_aa4d1a0ca414a4b72e59b9e2ec8f56b8c}
+
+
+Minimum of a, b. In case of tie, a is returned. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+Returns b if a $>$ b, otherwise a 
+\end{DoxyReturn}
+\hypertarget{_p_v_r_t_global_8h_afe19d4786433a4e6cd22c2c749cbb5d7}{\index{P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}!P\+V\+R\+Tswap@{P\+V\+R\+Tswap}}
+\index{P\+V\+R\+Tswap@{P\+V\+R\+Tswap}!P\+V\+R\+T\+Global.\+h@{P\+V\+R\+T\+Global.\+h}}
+\subsubsection[{P\+V\+R\+Tswap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void P\+V\+R\+Tswap (
+\begin{DoxyParamCaption}
+\item[{T \&}]{a, }
+\item[{T \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_p_v_r_t_global_8h_afe19d4786433a4e6cd22c2c749cbb5d7}
+
+
+A swap template function that swaps a and b. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & \hyperlink{struct_type}{Type} a \\
+\hline
+\mbox{\tt in}  & {\em b} & \hyperlink{struct_type}{Type} b \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+

@@ -1,0 +1,128 @@
+\hypertarget{_compare_dump_8cpp}{\section{assimp/assimp-\/3.1.1/tools/assimp\+\_\+cmd/\+Compare\+Dump.cpp File Reference}
+\label{_compare_dump_8cpp}\index{assimp/assimp-\/3.\+1.\+1/tools/assimp\+\_\+cmd/\+Compare\+Dump.\+cpp@{assimp/assimp-\/3.\+1.\+1/tools/assimp\+\_\+cmd/\+Compare\+Dump.\+cpp}}
+}
+
+
+Implementation of the 'assimp cmpdmp', which compares two model dumps for equality. It plays an important role in the regression test suite.  
+
+
+{\ttfamily \#include \char`\"{}Main.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../code/assbin\+\_\+chunks.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}generic\+\_\+inserter.\+hpp\char`\"{}}\\*
+Include dependency graph for Compare\+Dump.\+cpp\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcompare__fails__exception}{compare\+\_\+fails\+\_\+exception}
+\begin{DoxyCompactList}\small\item\em Sentinel exception to return quickly from deeply nested control paths. \end{DoxyCompactList}\item 
+class \hyperlink{classcomparer__context}{comparer\+\_\+context}
+\begin{DoxyCompactList}\small\item\em Record our way through the files to be compared and dump useful information if we fail. \end{DoxyCompactList}\item 
+class \hyperlink{classsliced__chunk__iterator}{sliced\+\_\+chunk\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Helper to iterate easily through corresponding chunks of two dumps simultaneously. \end{DoxyCompactList}\item 
+class \hyperlink{classsliced__chunk__reader}{sliced\+\_\+chunk\+\_\+reader}
+\begin{DoxyCompactList}\small\item\em Helper to iterate easily through corresponding chunks of two dumps simultaneously. \end{DoxyCompactList}\item 
+class \hyperlink{classscoped__chunk}{scoped\+\_\+chunk}
+\begin{DoxyCompactList}\small\item\em Utility to simplify usage of comparer\+\_\+context.\+push\+\_\+elem/pop\+\_\+elem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_compare_dump_8cpp_ac2c4780bd913b2f2a4a97b2fa3a7c215}{\#define {\bfseries M\+Y\+\_\+\+F\+L\+T\+\_\+\+E\+P\+S\+I\+L\+O\+N}~1e-\/1f}\label{_compare_dump_8cpp_ac2c4780bd913b2f2a4a97b2fa3a7c215}
+
+\item 
+\hypertarget{_compare_dump_8cpp_adb60b46284d4f8b3aedafb89976c7b2d}{\#define {\bfseries M\+Y\+\_\+\+D\+B\+L\+\_\+\+E\+P\+S\+I\+L\+O\+N}~1e-\/1}\label{_compare_dump_8cpp_adb60b46284d4f8b3aedafb89976c7b2d}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_compare_dump_8cpp_a7ee276b0e2549a57d7f0e1100d40a26f}{{\footnotesize template$<$typename char\+\_\+t , typename traits\+\_\+t $>$ }\\void {\bfseries mysprint} (std\+::basic\+\_\+ostream$<$ char\+\_\+t, traits\+\_\+t $>$ \&os, const \hyperlink{structai_string}{ai\+String} \&vec)}\label{_compare_dump_8cpp_a7ee276b0e2549a57d7f0e1100d40a26f}
+
+\item 
+\hypertarget{_compare_dump_8cpp_aa033d480416c29a341757ec1026f9c23}{{\footnotesize template$<$typename char\+\_\+t , typename traits\+\_\+t $>$ }\\std\+::basic\+\_\+ostream$<$ char\+\_\+t, \\*
+traits\+\_\+t $>$ \& {\bfseries operator$<$$<$} (std\+::basic\+\_\+ostream$<$ char\+\_\+t, traits\+\_\+t $>$ \&os, const \hyperlink{structai_string}{ai\+String} \&vec)}\label{_compare_dump_8cpp_aa033d480416c29a341757ec1026f9c23}
+
+\item 
+\hypertarget{_compare_dump_8cpp_ac1745df1aa75c5b39f764903875c5557}{void {\bfseries Compare\+On\+The\+Fly\+Material\+Property} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_ac1745df1aa75c5b39f764903875c5557}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a84633c04ab39f6e701e505c5d865a292}{void {\bfseries Compare\+On\+The\+Fly\+Material} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a84633c04ab39f6e701e505c5d865a292}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a4f0a3c1f355866b4ff07e7b8ac3dafa7}{void {\bfseries Compare\+On\+The\+Fly\+Bone} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a4f0a3c1f355866b4ff07e7b8ac3dafa7}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a34bf86bf0a84dd59c797a8525d86c9a8}{void {\bfseries Compare\+On\+The\+Fly\+Node\+Anim} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a34bf86bf0a84dd59c797a8525d86c9a8}
+
+\item 
+\hypertarget{_compare_dump_8cpp_ade2c3a899896c266e4c4bbfe0a4d98d8}{void {\bfseries Compare\+On\+The\+Fly\+Mesh} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_ade2c3a899896c266e4c4bbfe0a4d98d8}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a454ec100075b0f4e6fbc76f3bb723654}{void {\bfseries Compare\+On\+The\+Fly\+Camera} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a454ec100075b0f4e6fbc76f3bb723654}
+
+\item 
+\hypertarget{_compare_dump_8cpp_adec19bc30146c63e7fdf2348231369e9}{void {\bfseries Compare\+On\+The\+Fly\+Light} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_adec19bc30146c63e7fdf2348231369e9}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a27c46cd8b40ab3c5dc0a4b5889b446ba}{void {\bfseries Compare\+On\+The\+Fly\+Animation} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a27c46cd8b40ab3c5dc0a4b5889b446ba}
+
+\item 
+\hypertarget{_compare_dump_8cpp_afc6dd28c0b18d2df4d48f879615efb51}{void {\bfseries Compare\+On\+The\+Fly\+Texture} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_afc6dd28c0b18d2df4d48f879615efb51}
+
+\item 
+\hypertarget{_compare_dump_8cpp_aba5ad4eb2340639ca011593010787054}{void {\bfseries Compare\+On\+The\+Fly\+Node} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_aba5ad4eb2340639ca011593010787054}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a49626e3027860452a4173c2a3063a5bd}{void {\bfseries Compare\+On\+The\+Fly\+Scene} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a49626e3027860452a4173c2a3063a5bd}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a36283f4446caf3461e55197c522f45e7}{void {\bfseries Compare\+On\+The\+Fly} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a36283f4446caf3461e55197c522f45e7}
+
+\item 
+\hypertarget{_compare_dump_8cpp_a61d419b7f7c41b7bed033c15c614b612}{void {\bfseries Check\+Header} (\hyperlink{classcomparer__context}{comparer\+\_\+context} \&comp)}\label{_compare_dump_8cpp_a61d419b7f7c41b7bed033c15c614b612}
+
+\item 
+int \hyperlink{_compare_dump_8cpp_ae7f8038902230701231e55e1afb76932}{Assimp\+\_\+\+Compare\+Dump} (const char $\ast$const $\ast$params, unsigned int num)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bfseries A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the 'assimp cmpdmp', which compares two model dumps for equality. It plays an important role in the regression test suite. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_compare_dump_8cpp_ae7f8038902230701231e55e1afb76932}{\index{Compare\+Dump.\+cpp@{Compare\+Dump.\+cpp}!Assimp\+\_\+\+Compare\+Dump@{Assimp\+\_\+\+Compare\+Dump}}
+\index{Assimp\+\_\+\+Compare\+Dump@{Assimp\+\_\+\+Compare\+Dump}!Compare\+Dump.\+cpp@{Compare\+Dump.\+cpp}}
+\subsubsection[{Assimp\+\_\+\+Compare\+Dump}]{\setlength{\rightskip}{0pt plus 5cm}int Assimp\+\_\+\+Compare\+Dump (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const $\ast$}]{params, }
+\item[{unsigned int}]{num}
+\end{DoxyParamCaption}
+)}}\label{_compare_dump_8cpp_ae7f8038902230701231e55e1afb76932}
+assimp\+\_\+cmpdump utility 
+\begin{DoxyParams}{Parameters}
+{\em params} & Command line parameters to 'assimp cmpdump' \\
+\hline
+{\em Number} & of params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_compare_dump_8cpp_a605e83eb5c8f3cb036cb8a4b9e2502cf}{\index{Compare\+Dump.\+cpp@{Compare\+Dump.\+cpp}!A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P@{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P}}
+\index{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P@{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P}!Compare\+Dump.\+cpp@{Compare\+Dump.\+cpp}}
+\subsubsection[{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+C\+M\+P\+D\+U\+M\+P\+\_\+\+H\+E\+L\+P}}\label{_compare_dump_8cpp_a605e83eb5c8f3cb036cb8a4b9e2502cf}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+\textcolor{stringliteral}{"assimp cmpdump <actual> <expected>\(\backslash\)n"}
+\textcolor{stringliteral}{"\(\backslash\)tCompare two short dumps produced with \(\backslash\)'assimp dump <..> -s\(\backslash\)' for equality.\(\backslash\)n"}
+\end{DoxyCode}

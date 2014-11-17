@@ -1,0 +1,15 @@
+digraph "AssimpView::SceneAnimator::Calculate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AssimpView::SceneAnimator\l::Calculate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AssimpView::AnimEvaluator\l::Evaluate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_view_1_1_anim_evaluator.html#ad54be6d3b474ab3753b12c6996bc2852"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AssimpView::SceneAnimator\l::UpdateTransforms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_view_1_1_scene_animator.html#a8d108ebc1aee4a86d162accc0e40ebe7"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AssimpView::SceneAnimator\l::CalculateGlobalTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_view_1_1_scene_animator.html#aaffdfbd7ebf7787f81f6f48e1466da3a"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AssimpView::AnimEvaluator\l::GetTransformations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_view_1_1_anim_evaluator.html#a7be89e7cca438cbe27ca3038a3be44dd"];
+}

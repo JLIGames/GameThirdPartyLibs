@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/FresnelReflections/OGLES2/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0ba65514d5697c86a68d2faf6044ba8b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_0ba65514d5697c86a68d2faf6044ba8b.html"]
+  subgraph clusterdir_77c82fc753513f1509b5a570737e73b2 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_77c82fc753513f1509b5a570737e73b2.html"];
+    dir_77c82fc753513f1509b5a570737e73b2 [shape=plaintext label="com"];
+    dir_57c63069c45ed7b4b7685292c5bf8db8 [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_57c63069c45ed7b4b7685292c5bf8db8.html"];
+  }
+  }
+}

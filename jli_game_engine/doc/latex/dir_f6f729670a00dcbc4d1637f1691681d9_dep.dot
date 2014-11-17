@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/EdgeDetection/OGLES3/Content" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d62a95c70ef5c8e88691bc8cb38b1195 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_d62a95c70ef5c8e88691bc8cb38b1195.html"]
+  dir_f6f729670a00dcbc4d1637f1691681d9 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f6f729670a00dcbc4d1637f1691681d9.html"];
+  }
+}

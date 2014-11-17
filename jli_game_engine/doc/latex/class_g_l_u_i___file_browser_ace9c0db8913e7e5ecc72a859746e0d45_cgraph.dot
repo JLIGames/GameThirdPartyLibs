@@ -1,0 +1,20 @@
+digraph "GLUI_FileBrowser::GLUI_FileBrowser"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GLUI_FileBrowser::GLUI\l_FileBrowser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="GLUI_Node::add_control",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___node.html#afa7031b826994d524f219ea5016c113c"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="GLUI_Node::add_child\l_to_control",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___node.html#a52432c3a1f3783b5f47aa3ab3dae4435"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="GLUI_Main::refresh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#acd1e25e989f0f1820c496d4b8b9ee422"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="GLUI_Main::pack_controls",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#aa3c49dcfbc912870344e9265354ad53a"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="GLUI_Control::pack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___control.html#a55b244224a7446e7254a9d3b468d4925"];
+  Node6 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="GLUI_Main::check_subwindow\l_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#a8ca1f714c14dade8e6274112c69e5863"];
+}

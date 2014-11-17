@@ -1,0 +1,526 @@
+\hypertarget{class_assimp_1_1_collada_loader}{\section{Assimp\+:\+:Collada\+Loader Class Reference}
+\label{class_assimp_1_1_collada_loader}\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+}
+
+
+{\ttfamily \#include $<$Collada\+Loader.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Collada\+Loader\+:
+
+
+Collaboration diagram for Assimp\+:\+:Collada\+Loader\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_collada_loader_a5a6ee3f22d91684412107755ffdfb167}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool check\+Sig) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_collada_loader_a111a0ed539c7da04244623a066a718d2}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a4289309c9ba9306807e73195d1c969cb}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a9d79ca753279dee692fa191ca7b6c84a}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\item 
+\hyperlink{structai_node}{ai\+Node} $\ast$ \hyperlink{class_assimp_1_1_collada_loader_a7a98b2c21b0f4b63387f2ed5162439f7}{Build\+Hierarchy} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a96d5f081bc7382901ac41a3afcb41be5}{Resolve\+Node\+Instances} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, std\+::vector$<$ const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$ $>$ \&resolved)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_ae81b95f32274e08f033961df69828fd4}{Build\+Meshes\+For\+Node} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, \hyperlink{structai_node}{ai\+Node} $\ast$p\+Target)
+\item 
+\hyperlink{structai_mesh}{ai\+Mesh} $\ast$ \hyperlink{class_assimp_1_1_collada_loader_aed3569be31505133704b0ebcf89c7f1f}{Create\+Mesh} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Src\+Mesh, const \hyperlink{struct_assimp_1_1_collada_1_1_sub_mesh}{Collada\+::\+Sub\+Mesh} \&p\+Sub\+Mesh, const \hyperlink{struct_assimp_1_1_collada_1_1_controller}{Collada\+::\+Controller} $\ast$p\+Src\+Controller, size\+\_\+t p\+Start\+Vertex, size\+\_\+t p\+Start\+Face)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a224a5dbbf4a9e12e14756a93c619bbc5}{Build\+Cameras\+For\+Node} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, \hyperlink{structai_node}{ai\+Node} $\ast$p\+Target)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a6bd9ac82aec97771274553772e12a27a}{Build\+Lights\+For\+Node} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, \hyperlink{structai_node}{ai\+Node} $\ast$p\+Target)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_addbee11ead49ff6d535fdb600326e541}{Store\+Scene\+Meshes} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a893aff018a239fc0ef12eabc66834823}{Store\+Scene\+Materials} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_ae1bbdaa375f5329fceb665e5ceb32304}{Store\+Scene\+Lights} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_aa876a9ce8f3cd17b6d688ed39cf920d0}{Store\+Scene\+Cameras} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a80fe92456e3bd411b10ce29b5fa71628}{Store\+Scene\+Textures} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_ab2f9fe3ebdb1921b827cbf28994add20}{Store\+Animations} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a526310565202bcfd69a0157f0b4063c9}{Store\+Animations} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_animation}{Collada\+::\+Animation} $\ast$p\+Src\+Anim, const std\+::string p\+Prefix)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a155bbcc17bbded120a60c48786ca8004}{Create\+Animation} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_animation}{Collada\+::\+Animation} $\ast$p\+Src\+Anim, const std\+::string \&p\+Name)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a14247078885f4a7b136a0eee34a583a7}{Build\+Materials} (\hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a8aac2afa34c6999cd7b329c9d3e9f701}{Fill\+Materials} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a2c2553495a40d6e76066fbbd2fe10d79}{Apply\+Vertex\+To\+Effect\+Semantic\+Mapping} (\hyperlink{struct_assimp_1_1_collada_1_1_sampler}{Collada\+::\+Sampler} \&sampler, const \hyperlink{struct_assimp_1_1_collada_1_1_semantic_mapping_table}{Collada\+::\+Semantic\+Mapping\+Table} \&table)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a9285fd1491811d836d17f7e11c9d921f}{Add\+Texture} (\hyperlink{classai_material}{ai\+Material} \&mat, const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_effect}{Collada\+::\+Effect} \&effect, const \hyperlink{struct_assimp_1_1_collada_1_1_sampler}{Collada\+::\+Sampler} \&sampler, \hyperlink{material_8h_a7dd415ff703a2cc53d1c22ddbbd7dde0}{ai\+Texture\+Type} type, unsigned int idx=0)
+\item 
+\hyperlink{structai_string}{ai\+String} \hyperlink{class_assimp_1_1_collada_loader_a0f17fc50e04f1e4038d6e6e2b67d074b}{Find\+Filename\+For\+Effect\+Texture} (const \hyperlink{class_assimp_1_1_collada_parser}{Collada\+Parser} \&p\+Parser, const \hyperlink{struct_assimp_1_1_collada_1_1_effect}{Collada\+::\+Effect} \&p\+Effect, const std\+::string \&p\+Name)
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_aef58b5b58ee7021bfc9965f23795550c}{Convert\+Path} (\hyperlink{structai_string}{ai\+String} \&ss)
+\item 
+float \hyperlink{class_assimp_1_1_collada_loader_ac24c5b7e7451fe981624e26994893f14}{Read\+Float} (const \hyperlink{struct_assimp_1_1_collada_1_1_accessor}{Collada\+::\+Accessor} \&p\+Accessor, const \hyperlink{struct_assimp_1_1_collada_1_1_data}{Collada\+::\+Data} \&p\+Data, size\+\_\+t p\+Index, size\+\_\+t p\+Offset) const 
+\item 
+const std\+::string \& \hyperlink{class_assimp_1_1_collada_loader_aec3c49353264a9c17d667b8911dd8d58}{Read\+String} (const \hyperlink{struct_assimp_1_1_collada_1_1_accessor}{Collada\+::\+Accessor} \&p\+Accessor, const \hyperlink{struct_assimp_1_1_collada_1_1_data}{Collada\+::\+Data} \&p\+Data, size\+\_\+t p\+Index) const 
+\item 
+void \hyperlink{class_assimp_1_1_collada_loader_a82e37e098f72c7aad05d29b160d2c8a8}{Collect\+Nodes} (const \hyperlink{structai_node}{ai\+Node} $\ast$p\+Node, std\+::vector$<$ const \hyperlink{structai_node}{ai\+Node} $\ast$ $>$ \&po\+Nodes) const 
+\item 
+const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$ \hyperlink{class_assimp_1_1_collada_loader_ad93b29540018b969580dce787f116121}{Find\+Node} (const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, const std\+::string \&p\+Name) const 
+\item 
+const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$ \hyperlink{class_assimp_1_1_collada_loader_a6448ad9e38c338838e8c39e18e473db8}{Find\+Node\+By\+S\+I\+D} (const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, const std\+::string \&p\+S\+I\+D) const 
+\item 
+std\+::string \hyperlink{class_assimp_1_1_collada_loader_aea13d0332577518ef410fe3ad8bc822e}{Find\+Name\+For\+Node} (const \hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_assimp_1_1_collada_loader_a07c07f08414391b0684de4651396b5b3}{m\+File\+Name}
+\item 
+std\+::map$<$ \hyperlink{struct_assimp_1_1_collada_mesh_index}{Collada\+Mesh\+Index}, \\*
+size\+\_\+t $>$ \hyperlink{class_assimp_1_1_collada_loader_a68daccdd41b732f9c6a8f59a55e3e3d4}{m\+Mesh\+Index\+By\+I\+D}
+\item 
+std\+::map$<$ std\+::string, size\+\_\+t $>$ \hyperlink{class_assimp_1_1_collada_loader_a1086d5de6cf2cf2e9d0db608db10f52c}{m\+Material\+Index\+By\+Name}
+\item 
+std\+::vector$<$ \hyperlink{structai_mesh}{ai\+Mesh} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_loader_a6bb252f1dd881fda84f7575877836068}{m\+Meshes}
+\item 
+std\+::vector$<$ std\+::pair\\*
+$<$ \hyperlink{struct_assimp_1_1_collada_1_1_effect}{Collada\+::\+Effect} \\*
+$\ast$, \hyperlink{classai_material}{ai\+Material} $\ast$ $>$ $>$ \hyperlink{class_assimp_1_1_collada_loader_a1823f1e5da88ce3f3c45588c3723ca98}{new\+Mats}
+\item 
+std\+::vector$<$ \hyperlink{structai_camera}{ai\+Camera} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_loader_ae01b5e7ac7d5b81b39049caf5dcb51b2}{m\+Cameras}
+\item 
+std\+::vector$<$ \hyperlink{structai_light}{ai\+Light} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_loader_a5e90b34e54dab83fe030c855afdc6e41}{m\+Lights}
+\item 
+std\+::vector$<$ \hyperlink{structai_texture}{ai\+Texture} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_loader_aa9bd38aa446946f5160e4714615e8bab}{m\+Textures}
+\item 
+std\+::vector$<$ \hyperlink{structai_animation}{ai\+Animation} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_loader_a8d166d11cf816cd9a107aa0be4a0bdc1}{m\+Anims}
+\item 
+\hypertarget{class_assimp_1_1_collada_loader_a5bcb4fefad86a14c37105650c57bd90b}{bool {\bfseries no\+Skeleton\+Mesh}}\label{class_assimp_1_1_collada_loader_a5bcb4fefad86a14c37105650c57bd90b}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_loader_a73add1da0e63c71ec26e2b667703503b}{bool {\bfseries ignore\+Up\+Direction}}\label{class_assimp_1_1_collada_loader_a73add1da0e63c71ec26e2b667703503b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Loader class to read Collada scenes. Collada is over-\/engineered to death, with every new iteration bringing more useless stuff, so I limited the data to what I think is useful for games. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_collada_loader_a9285fd1491811d836d17f7e11c9d921f}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Add\+Texture@{Add\+Texture}}
+\index{Add\+Texture@{Add\+Texture}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Add\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Add\+Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} \&}]{mat, }
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Effect} \&}]{effect, }
+\item[{const {\bf Collada\+::\+Sampler} \&}]{sampler, }
+\item[{{\bf ai\+Texture\+Type}}]{type, }
+\item[{unsigned int}]{idx = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a9285fd1491811d836d17f7e11c9d921f}
+Add a texture and all of its sampling properties to a material 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a2c2553495a40d6e76066fbbd2fe10d79}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Apply\+Vertex\+To\+Effect\+Semantic\+Mapping@{Apply\+Vertex\+To\+Effect\+Semantic\+Mapping}}
+\index{Apply\+Vertex\+To\+Effect\+Semantic\+Mapping@{Apply\+Vertex\+To\+Effect\+Semantic\+Mapping}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Apply\+Vertex\+To\+Effect\+Semantic\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Apply\+Vertex\+To\+Effect\+Semantic\+Mapping (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Sampler} \&}]{sampler, }
+\item[{const {\bf Collada\+::\+Semantic\+Mapping\+Table} \&}]{table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a2c2553495a40d6e76066fbbd2fe10d79}
+Resolve U\+V channel mappings 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a224a5dbbf4a9e12e14756a93c619bbc5}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Build\+Cameras\+For\+Node@{Build\+Cameras\+For\+Node}}
+\index{Build\+Cameras\+For\+Node@{Build\+Cameras\+For\+Node}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Build\+Cameras\+For\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Build\+Cameras\+For\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{{\bf ai\+Node} $\ast$}]{p\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a224a5dbbf4a9e12e14756a93c619bbc5}
+Builds cameras for the given node and references them 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a7a98b2c21b0f4b63387f2ed5162439f7}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Build\+Hierarchy@{Build\+Hierarchy}}
+\index{Build\+Hierarchy@{Build\+Hierarchy}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Build\+Hierarchy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Node} $\ast$ Collada\+Loader\+::\+Build\+Hierarchy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a7a98b2c21b0f4b63387f2ed5162439f7}
+Recursively constructs a scene node for the given parser node and returns it. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a6bd9ac82aec97771274553772e12a27a}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Build\+Lights\+For\+Node@{Build\+Lights\+For\+Node}}
+\index{Build\+Lights\+For\+Node@{Build\+Lights\+For\+Node}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Build\+Lights\+For\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Build\+Lights\+For\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{{\bf ai\+Node} $\ast$}]{p\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a6bd9ac82aec97771274553772e12a27a}
+Builds lights for the given node and references them 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a14247078885f4a7b136a0eee34a583a7}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Build\+Materials@{Build\+Materials}}
+\index{Build\+Materials@{Build\+Materials}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Build\+Materials}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Build\+Materials (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a14247078885f4a7b136a0eee34a583a7}
+Constructs materials from the collada material definitions \hypertarget{class_assimp_1_1_collada_loader_ae81b95f32274e08f033961df69828fd4}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Build\+Meshes\+For\+Node@{Build\+Meshes\+For\+Node}}
+\index{Build\+Meshes\+For\+Node@{Build\+Meshes\+For\+Node}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Build\+Meshes\+For\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Build\+Meshes\+For\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{{\bf ai\+Node} $\ast$}]{p\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_ae81b95f32274e08f033961df69828fd4}
+Builds meshes for the given node and references them 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a5a6ee3f22d91684412107755ffdfb167}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool Collada\+Loader\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_collada_loader_a5a6ee3f22d91684412107755ffdfb167}
+Returns whether the class can handle the format of the given file. See \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Base\+Importer\+::\+Can\+Read()} for details. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_collada_loader_a82e37e098f72c7aad05d29b160d2c8a8}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Collect\+Nodes@{Collect\+Nodes}}
+\index{Collect\+Nodes@{Collect\+Nodes}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Collect\+Nodes}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Collect\+Nodes (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Node} $\ast$}]{p\+Node, }
+\item[{std\+::vector$<$ const {\bf ai\+Node} $\ast$ $>$ \&}]{po\+Nodes}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a82e37e098f72c7aad05d29b160d2c8a8}
+Recursively collects all nodes into the given array \hypertarget{class_assimp_1_1_collada_loader_aef58b5b58ee7021bfc9965f23795550c}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Convert\+Path@{Convert\+Path}}
+\index{Convert\+Path@{Convert\+Path}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Convert\+Path}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Convert\+Path (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+String} \&}]{ss}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_aef58b5b58ee7021bfc9965f23795550c}
+Converts a path read from a collada file to the usual representation \hypertarget{class_assimp_1_1_collada_loader_a155bbcc17bbded120a60c48786ca8004}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Create\+Animation@{Create\+Animation}}
+\index{Create\+Animation@{Create\+Animation}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Create\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Create\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Animation} $\ast$}]{p\+Src\+Anim, }
+\item[{const std\+::string \&}]{p\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a155bbcc17bbded120a60c48786ca8004}
+Constructs the animation for the given source anim 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_aed3569be31505133704b0ebcf89c7f1f}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Create\+Mesh@{Create\+Mesh}}
+\index{Create\+Mesh@{Create\+Mesh}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Create\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Mesh} $\ast$ Collada\+Loader\+::\+Create\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Mesh} $\ast$}]{p\+Src\+Mesh, }
+\item[{const {\bf Collada\+::\+Sub\+Mesh} \&}]{p\+Sub\+Mesh, }
+\item[{const {\bf Collada\+::\+Controller} $\ast$}]{p\+Src\+Controller, }
+\item[{size\+\_\+t}]{p\+Start\+Vertex, }
+\item[{size\+\_\+t}]{p\+Start\+Face}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_aed3569be31505133704b0ebcf89c7f1f}
+Creates a mesh for the given Collada\+Mesh face subset and returns the newly created mesh 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a8aac2afa34c6999cd7b329c9d3e9f701}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Fill\+Materials@{Fill\+Materials}}
+\index{Fill\+Materials@{Fill\+Materials}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Fill\+Materials}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Fill\+Materials (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a8aac2afa34c6999cd7b329c9d3e9f701}
+Fill materials from the collada material definitions 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a0f17fc50e04f1e4038d6e6e2b67d074b}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Find\+Filename\+For\+Effect\+Texture@{Find\+Filename\+For\+Effect\+Texture}}
+\index{Find\+Filename\+For\+Effect\+Texture@{Find\+Filename\+For\+Effect\+Texture}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Find\+Filename\+For\+Effect\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+String} Collada\+Loader\+::\+Find\+Filename\+For\+Effect\+Texture (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Effect} \&}]{p\+Effect, }
+\item[{const std\+::string \&}]{p\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a0f17fc50e04f1e4038d6e6e2b67d074b}
+Resolves the texture name for the given effect texture entry 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_aea13d0332577518ef410fe3ad8bc822e}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Find\+Name\+For\+Node@{Find\+Name\+For\+Node}}
+\index{Find\+Name\+For\+Node@{Find\+Name\+For\+Node}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Find\+Name\+For\+Node}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Collada\+Loader\+::\+Find\+Name\+For\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_aea13d0332577518ef410fe3ad8bc822e}
+Finds a proper name for a node derived from the collada-\/node's properties \hypertarget{class_assimp_1_1_collada_loader_ad93b29540018b969580dce787f116121}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Find\+Node@{Find\+Node}}
+\index{Find\+Node@{Find\+Node}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Find\+Node}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Collada\+::\+Node} $\ast$ Collada\+Loader\+::\+Find\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{const std\+::string \&}]{p\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_ad93b29540018b969580dce787f116121}
+Finds a node in the collada scene by the given name \hypertarget{class_assimp_1_1_collada_loader_a6448ad9e38c338838e8c39e18e473db8}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Find\+Node\+By\+S\+I\+D@{Find\+Node\+By\+S\+I\+D}}
+\index{Find\+Node\+By\+S\+I\+D@{Find\+Node\+By\+S\+I\+D}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Find\+Node\+By\+S\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Collada\+::\+Node} $\ast$ Collada\+Loader\+::\+Find\+Node\+By\+S\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{const std\+::string \&}]{p\+S\+I\+D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a6448ad9e38c338838e8c39e18e473db8}
+Finds a node in the collada scene by the given S\+I\+D \hypertarget{class_assimp_1_1_collada_loader_a111a0ed539c7da04244623a066a718d2}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ Collada\+Loader\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_collada_loader_a111a0ed539c7da04244623a066a718d2}
+Return importer meta information. See \#\+Base\+Importer\+::\+Get\+Info for the details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_collada_loader_a9d79ca753279dee692fa191ca7b6c84a}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_collada_loader_a9d79ca753279dee692fa191ca7b6c84a}
+Imports the given file into the given scene structure. See \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Base\+Importer\+::\+Intern\+Read\+File()} for details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_collada_loader_ac24c5b7e7451fe981624e26994893f14}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Read\+Float@{Read\+Float}}
+\index{Read\+Float@{Read\+Float}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Read\+Float}]{\setlength{\rightskip}{0pt plus 5cm}float Collada\+Loader\+::\+Read\+Float (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+::\+Accessor} \&}]{p\+Accessor, }
+\item[{const {\bf Collada\+::\+Data} \&}]{p\+Data, }
+\item[{size\+\_\+t}]{p\+Index, }
+\item[{size\+\_\+t}]{p\+Offset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_ac24c5b7e7451fe981624e26994893f14}
+Reads a float value from an accessor and its data array. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Accessor} & The accessor to use for reading \\
+\hline
+{\em p\+Data} & The data array to read from \\
+\hline
+{\em p\+Index} & The index of the element to retrieve \\
+\hline
+{\em p\+Offset} & Offset into the element, for multipart elements such as vectors or matrices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the specified value 
+\end{DoxyReturn}
+\hypertarget{class_assimp_1_1_collada_loader_aec3c49353264a9c17d667b8911dd8d58}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Read\+String@{Read\+String}}
+\index{Read\+String@{Read\+String}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Read\+String}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& Collada\+Loader\+::\+Read\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+::\+Accessor} \&}]{p\+Accessor, }
+\item[{const {\bf Collada\+::\+Data} \&}]{p\+Data, }
+\item[{size\+\_\+t}]{p\+Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_aec3c49353264a9c17d667b8911dd8d58}
+Reads a string value from an accessor and its data array. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Accessor} & The accessor to use for reading \\
+\hline
+{\em p\+Data} & The data array to read from \\
+\hline
+{\em p\+Index} & The index of the element to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the specified value 
+\end{DoxyReturn}
+\hypertarget{class_assimp_1_1_collada_loader_a96d5f081bc7382901ac41a3afcb41be5}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Resolve\+Node\+Instances@{Resolve\+Node\+Instances}}
+\index{Resolve\+Node\+Instances@{Resolve\+Node\+Instances}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Resolve\+Node\+Instances}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Resolve\+Node\+Instances (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{std\+::vector$<$ const {\bf Collada\+::\+Node} $\ast$ $>$ \&}]{resolved}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a96d5f081bc7382901ac41a3afcb41be5}
+Resolve node instances 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_a4289309c9ba9306807e73195d1c969cb}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_collada_loader_a4289309c9ba9306807e73195d1c969cb}
+Called prior to \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File()}. The function is a request to the importer to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & \hyperlink{class_assimp_1_1_importer}{Importer} instance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_loader_ab2f9fe3ebdb1921b827cbf28994add20}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Animations@{Store\+Animations}}
+\index{Store\+Animations@{Store\+Animations}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Animations}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Animations (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_ab2f9fe3ebdb1921b827cbf28994add20}
+Stores all animations 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & target scene to store the anims \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_collada_loader_a526310565202bcfd69a0157f0b4063c9}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Animations@{Store\+Animations}}
+\index{Store\+Animations@{Store\+Animations}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Animations}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Animations (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{const {\bf Collada\+Parser} \&}]{p\+Parser, }
+\item[{const {\bf Collada\+::\+Animation} $\ast$}]{p\+Src\+Anim, }
+\item[{const std\+::string}]{p\+Prefix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a526310565202bcfd69a0157f0b4063c9}
+Stores all animations for the given source anim and its nested child animations 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & target scene to store the anims \\
+\hline
+{\em p\+Src\+Anim} & the source animation to process \\
+\hline
+{\em p\+Prefix} & Prefix to the name in case of nested animations \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_collada_loader_aa876a9ce8f3cd17b6d688ed39cf920d0}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Scene\+Cameras@{Store\+Scene\+Cameras}}
+\index{Store\+Scene\+Cameras@{Store\+Scene\+Cameras}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Scene\+Cameras}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Scene\+Cameras (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_aa876a9ce8f3cd17b6d688ed39cf920d0}
+Stores all cameras in the given scene \hypertarget{class_assimp_1_1_collada_loader_ae1bbdaa375f5329fceb665e5ceb32304}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Scene\+Lights@{Store\+Scene\+Lights}}
+\index{Store\+Scene\+Lights@{Store\+Scene\+Lights}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Scene\+Lights}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Scene\+Lights (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_ae1bbdaa375f5329fceb665e5ceb32304}
+Stores all lights in the given scene \hypertarget{class_assimp_1_1_collada_loader_a893aff018a239fc0ef12eabc66834823}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Scene\+Materials@{Store\+Scene\+Materials}}
+\index{Store\+Scene\+Materials@{Store\+Scene\+Materials}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Scene\+Materials}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Scene\+Materials (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a893aff018a239fc0ef12eabc66834823}
+Stores all materials in the given scene \hypertarget{class_assimp_1_1_collada_loader_addbee11ead49ff6d535fdb600326e541}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Scene\+Meshes@{Store\+Scene\+Meshes}}
+\index{Store\+Scene\+Meshes@{Store\+Scene\+Meshes}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Scene\+Meshes}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Scene\+Meshes (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_addbee11ead49ff6d535fdb600326e541}
+Stores all meshes in the given scene \hypertarget{class_assimp_1_1_collada_loader_a80fe92456e3bd411b10ce29b5fa71628}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!Store\+Scene\+Textures@{Store\+Scene\+Textures}}
+\index{Store\+Scene\+Textures@{Store\+Scene\+Textures}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{Store\+Scene\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Loader\+::\+Store\+Scene\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a80fe92456e3bd411b10ce29b5fa71628}
+Stores all textures in the given scene 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_collada_loader_a8d166d11cf816cd9a107aa0be4a0bdc1}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Anims@{m\+Anims}}
+\index{m\+Anims@{m\+Anims}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Anims}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf ai\+Animation}$\ast$$>$ Assimp\+::\+Collada\+Loader\+::m\+Anims\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a8d166d11cf816cd9a107aa0be4a0bdc1}
+Accumulated animations for the target scene \hypertarget{class_assimp_1_1_collada_loader_ae01b5e7ac7d5b81b39049caf5dcb51b2}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Cameras@{m\+Cameras}}
+\index{m\+Cameras@{m\+Cameras}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Cameras}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf ai\+Camera}$\ast$$>$ Assimp\+::\+Collada\+Loader\+::m\+Cameras\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_ae01b5e7ac7d5b81b39049caf5dcb51b2}
+Temporary camera list \hypertarget{class_assimp_1_1_collada_loader_a07c07f08414391b0684de4651396b5b3}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+File\+Name@{m\+File\+Name}}
+\index{m\+File\+Name@{m\+File\+Name}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+Collada\+Loader\+::m\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a07c07f08414391b0684de4651396b5b3}
+Filename, for a verbose error message \hypertarget{class_assimp_1_1_collada_loader_a5e90b34e54dab83fe030c855afdc6e41}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Lights@{m\+Lights}}
+\index{m\+Lights@{m\+Lights}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Lights}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf ai\+Light}$\ast$$>$ Assimp\+::\+Collada\+Loader\+::m\+Lights\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a5e90b34e54dab83fe030c855afdc6e41}
+Temporary light list \hypertarget{class_assimp_1_1_collada_loader_a1086d5de6cf2cf2e9d0db608db10f52c}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Material\+Index\+By\+Name@{m\+Material\+Index\+By\+Name}}
+\index{m\+Material\+Index\+By\+Name@{m\+Material\+Index\+By\+Name}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Material\+Index\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, size\+\_\+t$>$ Assimp\+::\+Collada\+Loader\+::m\+Material\+Index\+By\+Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a1086d5de6cf2cf2e9d0db608db10f52c}
+Which material was stored under which index in the scene \hypertarget{class_assimp_1_1_collada_loader_a6bb252f1dd881fda84f7575877836068}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Meshes@{m\+Meshes}}
+\index{m\+Meshes@{m\+Meshes}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Meshes}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf ai\+Mesh}$\ast$$>$ Assimp\+::\+Collada\+Loader\+::m\+Meshes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a6bb252f1dd881fda84f7575877836068}
+Accumulated meshes for the target scene \hypertarget{class_assimp_1_1_collada_loader_a68daccdd41b732f9c6a8f59a55e3e3d4}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Mesh\+Index\+By\+I\+D@{m\+Mesh\+Index\+By\+I\+D}}
+\index{m\+Mesh\+Index\+By\+I\+D@{m\+Mesh\+Index\+By\+I\+D}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Mesh\+Index\+By\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<${\bf Collada\+Mesh\+Index}, size\+\_\+t$>$ Assimp\+::\+Collada\+Loader\+::m\+Mesh\+Index\+By\+I\+D\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a68daccdd41b732f9c6a8f59a55e3e3d4}
+Which mesh-\/material compound was stored under which mesh I\+D \hypertarget{class_assimp_1_1_collada_loader_aa9bd38aa446946f5160e4714615e8bab}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!m\+Textures@{m\+Textures}}
+\index{m\+Textures@{m\+Textures}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{m\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf ai\+Texture}$\ast$$>$ Assimp\+::\+Collada\+Loader\+::m\+Textures\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_aa9bd38aa446946f5160e4714615e8bab}
+Temporary texture list \hypertarget{class_assimp_1_1_collada_loader_a1823f1e5da88ce3f3c45588c3723ca98}{\index{Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}!new\+Mats@{new\+Mats}}
+\index{new\+Mats@{new\+Mats}!Assimp\+::\+Collada\+Loader@{Assimp\+::\+Collada\+Loader}}
+\subsubsection[{new\+Mats}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<${\bf Collada\+::\+Effect}$\ast$, {\bf ai\+Material}$\ast$$>$ $>$ Assimp\+::\+Collada\+Loader\+::new\+Mats\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_loader_a1823f1e5da88ce3f3c45588c3723ca98}
+Temporary material list 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Collada\+Loader.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Collada\+Loader.\+cpp\end{DoxyCompactItemize}

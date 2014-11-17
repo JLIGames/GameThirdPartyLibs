@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/LightMap/OGLES3/Build/Android/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e5c632d5a4d84a7974dfbd55923996a6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Android" fontname="Helvetica", fontsize="10", URL="dir_e5c632d5a4d84a7974dfbd55923996a6.html"]
+  subgraph clusterdir_40b95822d41ce7d90f6bb1cda972efb6 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_40b95822d41ce7d90f6bb1cda972efb6.html"];
+    dir_40b95822d41ce7d90f6bb1cda972efb6 [shape=plaintext label="src"];
+    dir_0eb3bfdf6d45c61909933b19b8d8efba [shape=box label="com" color="red" fillcolor="white" style="filled" URL="dir_0eb3bfdf6d45c61909933b19b8d8efba.html"];
+  }
+  }
+}

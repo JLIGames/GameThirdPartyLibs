@@ -1,0 +1,28 @@
+digraph "OGLES3TextureArray::RenderScene"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLES3TextureArray\l::RenderScene",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CPVRTPFXEffect::Activate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_effect.html#a66c1e23696dd3c0acda2becdac348c69",tooltip="Selects the gl program object and binds the textures. If the render target texture for the current re..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CPVRTArray::GetSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_array.html#a7f441650618876cd84adaad282a83ac1",tooltip="Gives current size of array/number of elements. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CPVRTPFXEffect::GetUniform\lArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_effect.html#ab9f4ce64c4bd31eb5fb45d86f4239bed",tooltip="Returns a list of known semantics. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PVRShell::PVRShellOutput\lDebug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#a143d693b1c6e373b29485c1be51d1010",tooltip="Writes the resultant string to the debug output (e.g. using printf(), OutputDebugString(), ...). Check the SDK release notes for details on how the string is output. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="CPVRTPrint3D::DisplayDefault\lTitle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#a2bccb1ef64d69a433696094987799d79",tooltip="Creates a default title with predefined position and colours. It displays as well company logos when ..."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CPVRTPrint3D::Print3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#afd98a5ba4e3f9183ceb615566a64f843",tooltip="Display 3D text on screen. CPVRTPrint3D::SetTextures(...) must have been called beforehand. This function accepts formatting in the printf way. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CPVRTArray::Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_array.html#ad1e3c37b05d484c9e5598899d6611440",tooltip="Clears the array. "];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="PVRTUnicodeUTF8ToUTF32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_unicode_8h.html#a54150f433be76ed547efa36329d48341",tooltip="Decodes a UTF8-encoded string in to Unicode code points (UTF32). If pUTF8 is not null terminated..."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="CPVRTArray::Append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_array.html#a1af5aeb05badf2783dbc7ec5b98cead2",tooltip="Appends an element to the end of the array, expanding it if necessary. "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="CPVRTPrint3D::Flush",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#ad7d1d707351cc84ec0614487e4acc6b1",tooltip="Flushes all the print text commands. "];
+}

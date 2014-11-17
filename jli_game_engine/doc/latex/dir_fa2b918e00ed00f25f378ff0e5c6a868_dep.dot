@@ -1,0 +1,9 @@
+digraph "zlib/zlib-1.2.8/contrib/blast" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e0c029cd5149dae73dc2b47aa4b1f108 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_e0c029cd5149dae73dc2b47aa4b1f108.html"]
+  dir_fa2b918e00ed00f25f378ff0e5c6a868 [shape=box, label="blast", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_fa2b918e00ed00f25f378ff0e5c6a868.html"];
+  }
+}

@@ -1,0 +1,13 @@
+digraph "Assimp::LWO::AnimResolver::DoInterpolation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::LWO::AnimResolver\l::DoInterpolation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::LWO::AnimResolver\l::InterpolateTrack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_l_w_o_1_1_anim_resolver.html#a833d3f6bed953d02dbd7b98537521c1b",tooltip="Interpolate 2 tracks if one is given. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::LWO::AnimResolver\l::GetKeys",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_l_w_o_1_1_anim_resolver.html#a76d2885a28167f149d5fc10742e60f05",tooltip="Build linearly subsampled keys from 3 single envelopes. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Assimp::LWO::AnimResolver\l::ExtractAnimChannel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_l_w_o_1_1_anim_resolver.html#a12c37cb4c519b65845333158ba72597f",tooltip="Extract a node animation channel. "];
+}

@@ -1,0 +1,201 @@
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process}{\section{Assimp\+:\+:Compute\+U\+V\+Mapping\+Process Class Reference}
+\label{class_assimp_1_1_compute_u_v_mapping_process}\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+}
+
+
+{\ttfamily \#include $<$Compute\+U\+V\+Mapping\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Compute\+U\+V\+Mapping\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Compute\+U\+V\+Mapping\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_compute_u_v_mapping_process_a4367886b8af45c9cbc91162356bd9450}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_compute_u_v_mapping_process_a32b0f8c659ee1decabf1e7c11ce78842}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_compute_u_v_mapping_process_a47e200ae23ec415306a60e4788851454}{Compute\+Sphere\+Mapping} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh, const \hyperlink{structai_vector3_d}{ai\+Vector3\+D} \&axis, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$out)
+\item 
+void \hyperlink{class_assimp_1_1_compute_u_v_mapping_process_a2d862172069b832a32f3e1c39dfb1940}{Compute\+Cylinder\+Mapping} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh, const \hyperlink{structai_vector3_d}{ai\+Vector3\+D} \&axis, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$out)
+\item 
+void \hyperlink{class_assimp_1_1_compute_u_v_mapping_process_a3070e62592beab8e44037c65eb2904cc}{Compute\+Plane\+Mapping} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh, const \hyperlink{structai_vector3_d}{ai\+Vector3\+D} \&axis, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$out)
+\item 
+void \hyperlink{class_assimp_1_1_compute_u_v_mapping_process_a7c5c394afea2047b2fffd5ca20c7209b}{Compute\+Box\+Mapping} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$out)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp_1_1_compute_u_v_mapping_process}{Compute\+U\+V\+Mapping\+Process} -\/ converts special mappings, such as spherical, cylindrical or boxed to proper U\+V coordinates for rendering. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process_a7c5c394afea2047b2fffd5ca20c7209b}{\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}!Compute\+Box\+Mapping@{Compute\+Box\+Mapping}}
+\index{Compute\+Box\+Mapping@{Compute\+Box\+Mapping}!Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+\subsubsection[{Compute\+Box\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}void Compute\+U\+V\+Mapping\+Process\+::\+Compute\+Box\+Mapping (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{mesh, }
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_compute_u_v_mapping_process_a7c5c394afea2047b2fffd5ca20c7209b}
+Computes cubic U\+V coordinates for a mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \hyperlink{class_mesh}{Mesh} to be processed \\
+\hline
+{\em out} & Receives output U\+V coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process_a2d862172069b832a32f3e1c39dfb1940}{\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}!Compute\+Cylinder\+Mapping@{Compute\+Cylinder\+Mapping}}
+\index{Compute\+Cylinder\+Mapping@{Compute\+Cylinder\+Mapping}!Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+\subsubsection[{Compute\+Cylinder\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}void Compute\+U\+V\+Mapping\+Process\+::\+Compute\+Cylinder\+Mapping (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{mesh, }
+\item[{const {\bf ai\+Vector3\+D} \&}]{axis, }
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_compute_u_v_mapping_process_a2d862172069b832a32f3e1c39dfb1940}
+Computes cylindrical U\+V coordinates for a mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \hyperlink{class_mesh}{Mesh} to be processed \\
+\hline
+{\em axis} & Main axis \\
+\hline
+{\em out} & Receives output U\+V coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process_a3070e62592beab8e44037c65eb2904cc}{\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}!Compute\+Plane\+Mapping@{Compute\+Plane\+Mapping}}
+\index{Compute\+Plane\+Mapping@{Compute\+Plane\+Mapping}!Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+\subsubsection[{Compute\+Plane\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}void Compute\+U\+V\+Mapping\+Process\+::\+Compute\+Plane\+Mapping (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{mesh, }
+\item[{const {\bf ai\+Vector3\+D} \&}]{axis, }
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_compute_u_v_mapping_process_a3070e62592beab8e44037c65eb2904cc}
+Computes planar U\+V coordinates for a mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \hyperlink{class_mesh}{Mesh} to be processed \\
+\hline
+{\em axis} & Main axis \\
+\hline
+{\em out} & Receives output U\+V coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process_a47e200ae23ec415306a60e4788851454}{\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}!Compute\+Sphere\+Mapping@{Compute\+Sphere\+Mapping}}
+\index{Compute\+Sphere\+Mapping@{Compute\+Sphere\+Mapping}!Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+\subsubsection[{Compute\+Sphere\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}void Compute\+U\+V\+Mapping\+Process\+::\+Compute\+Sphere\+Mapping (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{mesh, }
+\item[{const {\bf ai\+Vector3\+D} \&}]{axis, }
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_compute_u_v_mapping_process_a47e200ae23ec415306a60e4788851454}
+Computes spherical U\+V coordinates for a mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \hyperlink{class_mesh}{Mesh} to be processed \\
+\hline
+{\em axis} & Main axis \\
+\hline
+{\em out} & Receives output U\+V coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process_a32b0f8c659ee1decabf1e7c11ce78842}{\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Compute\+U\+V\+Mapping\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_compute_u_v_mapping_process_a32b0f8c659ee1decabf1e7c11ce78842}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_compute_u_v_mapping_process_a4367886b8af45c9cbc91162356bd9450}{\index{Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Compute\+U\+V\+Mapping\+Process@{Assimp\+::\+Compute\+U\+V\+Mapping\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Compute\+U\+V\+Mapping\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_compute_u_v_mapping_process_a4367886b8af45c9cbc91162356bd9450}
+Returns whether the processing step is present in the given flag field. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Compute\+U\+V\+Mapping\+Process.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Compute\+U\+V\+Mapping\+Process.\+cpp\end{DoxyCompactItemize}

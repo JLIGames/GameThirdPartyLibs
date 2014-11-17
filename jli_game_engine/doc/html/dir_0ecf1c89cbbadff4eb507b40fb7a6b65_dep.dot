@@ -1,0 +1,9 @@
+digraph "assimp/assimp-3.1.1/test/unit/BoostWorkaround" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_36579ade72dab41cda4da9fe679e84ed {
+    graph [ bgcolor="#ddddee", pencolor="black", label="unit" fontname="Helvetica", fontsize="10", URL="dir_36579ade72dab41cda4da9fe679e84ed.html"]
+  dir_0ecf1c89cbbadff4eb507b40fb7a6b65 [shape=box, label="BoostWorkaround", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0ecf1c89cbbadff4eb507b40fb7a6b65.html"];
+  }
+}

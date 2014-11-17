@@ -1,0 +1,23 @@
+digraph "Assimp::MDLImporter::CreateTextureARGB8_3DGS_MDL3"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::MDLImporter\l::CreateTextureARGB8\l_3DGS_MDL3",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::MDLImporter\l::SearchPalette",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#af8088e0602fc58ad5d93e0d7ea7ed45c"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::IOSystem::Open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816",tooltip="Open a new file with a given path. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::IOStream::FileSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#aaa01183d197fb714f28d6c611b6fa058",tooltip="Returns filesize Returns the filesize. "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::IOStream::Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#ae376f641020989d61863b9c6f55c7abf",tooltip="Read from the file. "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::Logger::info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a12b8a125083c47ac0bb6056f00761e52",tooltip="Writes a info message. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::Logger::OnInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aba81c4562ff8db83f06c6b62f2eb7983",tooltip="Called as a request to write a specific info message. "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::MDLImporter\l::FreePalette",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#ad89156b5a500b4644777f4e1fcc57ed5"];
+}

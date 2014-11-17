@@ -1,0 +1,107 @@
+\hypertarget{classbt_bvh_tree}{\section{bt\+Bvh\+Tree Class Reference}
+\label{classbt_bvh_tree}\index{bt\+Bvh\+Tree@{bt\+Bvh\+Tree}}
+}
+
+
+Basic \hyperlink{class_box}{Box} tree structure.  
+
+
+
+
+{\ttfamily \#include $<$bt\+G\+Impact\+Bvh.\+h$>$}
+
+
+
+Collaboration diagram for bt\+Bvh\+Tree\+:
+\subsection*{Public Member Functions}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbt_bvh_tree_aed589b2985838c6268597f4f64a96c46}{build\+\_\+tree} (\hyperlink{class_g_i_m___b_v_h___d_a_t_a___a_r_r_a_y}{G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+D\+A\+T\+A\+\_\+\+A\+R\+R\+A\+Y} \&primitive\+\_\+boxes)
+\begin{DoxyCompactList}\small\item\em stackless build tree \end{DoxyCompactList}\item 
+\hypertarget{classbt_bvh_tree_ad9963d9620aad83024c3d01d7c08a341}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries clear\+Nodes} ()}\label{classbt_bvh_tree_ad9963d9620aad83024c3d01d7c08a341}
+
+\item 
+\hypertarget{classbt_bvh_tree_a676b9b3a4c8ba0a2c215b20d9448d985}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{classbt_bvh_tree_a676b9b3a4c8ba0a2c215b20d9448d985}{get\+Node\+Count} () const }\label{classbt_bvh_tree_a676b9b3a4c8ba0a2c215b20d9448d985}
+
+\begin{DoxyCompactList}\small\item\em node count \end{DoxyCompactList}\item 
+\hypertarget{classbt_bvh_tree_af5d8776467b0f7c9e12091f813f6b2af}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{classbt_bvh_tree_af5d8776467b0f7c9e12091f813f6b2af}{is\+Leaf\+Node} (int nodeindex) const }\label{classbt_bvh_tree_af5d8776467b0f7c9e12091f813f6b2af}
+
+\begin{DoxyCompactList}\small\item\em tells if the node is a leaf \end{DoxyCompactList}\item 
+\hypertarget{classbt_bvh_tree_a4c74de8866d95d2c463202d79cf30bb1}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries get\+Node\+Data} (int nodeindex) const }\label{classbt_bvh_tree_a4c74de8866d95d2c463202d79cf30bb1}
+
+\item 
+\hypertarget{classbt_bvh_tree_aa5ba5267a383b6225bba18b788ad3281}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries get\+Node\+Bound} (int nodeindex, bt\+A\+A\+B\+B \&bound) const }\label{classbt_bvh_tree_aa5ba5267a383b6225bba18b788ad3281}
+
+\item 
+\hypertarget{classbt_bvh_tree_a789e785f88d84a857ca1931ff85a4b7d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries set\+Node\+Bound} (int nodeindex, const bt\+A\+A\+B\+B \&bound)}\label{classbt_bvh_tree_a789e785f88d84a857ca1931ff85a4b7d}
+
+\item 
+\hypertarget{classbt_bvh_tree_a0dd0180bf26b79a558511bbbcc7ad720}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries get\+Left\+Node} (int nodeindex) const }\label{classbt_bvh_tree_a0dd0180bf26b79a558511bbbcc7ad720}
+
+\item 
+\hypertarget{classbt_bvh_tree_a15ddcfbc96afaaca31127d0c835a022d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries get\+Right\+Node} (int nodeindex) const }\label{classbt_bvh_tree_a15ddcfbc96afaaca31127d0c835a022d}
+
+\item 
+\hypertarget{classbt_bvh_tree_a755fb9eb99a5269dc6ce6f408768b199}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries get\+Escape\+Node\+Index} (int nodeindex) const }\label{classbt_bvh_tree_a755fb9eb99a5269dc6ce6f408768b199}
+
+\item 
+\hypertarget{classbt_bvh_tree_a82f96e3b273eb1efbd67fc16a23cf633}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E const \\*
+\hyperlink{class_g_i_m___b_v_h___t_r_e_e___n_o_d_e}{G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+T\+R\+E\+E\+\_\+\+N\+O\+D\+E} $\ast$ {\bfseries get\+\_\+node\+\_\+pointer} (int index=0) const }\label{classbt_bvh_tree_a82f96e3b273eb1efbd67fc16a23cf633}
+
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_bvh_tree_adab83b12f4b402cfb5993229464bb5bf}{int {\bfseries \+\_\+sort\+\_\+and\+\_\+calc\+\_\+splitting\+\_\+index} (\hyperlink{class_g_i_m___b_v_h___d_a_t_a___a_r_r_a_y}{G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+D\+A\+T\+A\+\_\+\+A\+R\+R\+A\+Y} \&primitive\+\_\+boxes, int start\+Index, int end\+Index, int split\+Axis)}\label{classbt_bvh_tree_adab83b12f4b402cfb5993229464bb5bf}
+
+\item 
+\hypertarget{classbt_bvh_tree_a0a4c7b8aac4746d61db57943813897ae}{int {\bfseries \+\_\+calc\+\_\+splitting\+\_\+axis} (\hyperlink{class_g_i_m___b_v_h___d_a_t_a___a_r_r_a_y}{G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+D\+A\+T\+A\+\_\+\+A\+R\+R\+A\+Y} \&primitive\+\_\+boxes, int start\+Index, int end\+Index)}\label{classbt_bvh_tree_a0a4c7b8aac4746d61db57943813897ae}
+
+\item 
+\hypertarget{classbt_bvh_tree_a04dbb29969ae7bdedc06d650b5f35932}{void {\bfseries \+\_\+build\+\_\+sub\+\_\+tree} (\hyperlink{class_g_i_m___b_v_h___d_a_t_a___a_r_r_a_y}{G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+D\+A\+T\+A\+\_\+\+A\+R\+R\+A\+Y} \&primitive\+\_\+boxes, int start\+Index, int end\+Index)}\label{classbt_bvh_tree_a04dbb29969ae7bdedc06d650b5f35932}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_bvh_tree_a2d08e4099671e71c48786c26f7cd554a}{int {\bfseries m\+\_\+num\+\_\+nodes}}\label{classbt_bvh_tree_a2d08e4099671e71c48786c26f7cd554a}
+
+\item 
+\hypertarget{classbt_bvh_tree_a0b90eb3e890f84648f7c3b7ca52fefb7}{\hyperlink{class_g_i_m___b_v_h___t_r_e_e___n_o_d_e___a_r_r_a_y}{G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+T\+R\+E\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+R\+R\+A\+Y} {\bfseries m\+\_\+node\+\_\+array}}\label{classbt_bvh_tree_a0b90eb3e890f84648f7c3b7ca52fefb7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic \hyperlink{class_box}{Box} tree structure. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_bvh_tree_aed589b2985838c6268597f4f64a96c46}{\index{bt\+Bvh\+Tree@{bt\+Bvh\+Tree}!build\+\_\+tree@{build\+\_\+tree}}
+\index{build\+\_\+tree@{build\+\_\+tree}!bt\+Bvh\+Tree@{bt\+Bvh\+Tree}}
+\subsubsection[{build\+\_\+tree}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Bvh\+Tree\+::build\+\_\+tree (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+I\+M\+\_\+\+B\+V\+H\+\_\+\+D\+A\+T\+A\+\_\+\+A\+R\+R\+A\+Y} \&}]{primitive\+\_\+boxes}
+\end{DoxyParamCaption}
+)}}\label{classbt_bvh_tree_aed589b2985838c6268597f4f64a96c46}
+
+
+stackless build tree 
+
+prototype functions for box tree management 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/bt\+G\+Impact\+Bvh.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/bt\+G\+Impact\+Bvh.\+cpp\end{DoxyCompactItemize}

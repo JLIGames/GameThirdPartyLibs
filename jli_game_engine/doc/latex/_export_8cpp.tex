@@ -1,0 +1,68 @@
+\hypertarget{_export_8cpp}{\section{assimp/assimp-\/3.1.1/tools/assimp\+\_\+cmd/\+Export.cpp File Reference}
+\label{_export_8cpp}\index{assimp/assimp-\/3.\+1.\+1/tools/assimp\+\_\+cmd/\+Export.\+cpp@{assimp/assimp-\/3.\+1.\+1/tools/assimp\+\_\+cmd/\+Export.\+cpp}}
+}
+
+
+Implementation of the 'assimp export' utility.  
+
+
+{\ttfamily \#include \char`\"{}Main.\+h\char`\"{}}\\*
+Include dependency graph for Export.\+cpp\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_export_8cpp_ab7c4f44afeeaf546d122152359aa3310}{size\+\_\+t {\bfseries Get\+Matching\+Format} (const std\+::string \&outf, bool byext=false)}\label{_export_8cpp_ab7c4f44afeeaf546d122152359aa3310}
+
+\item 
+int \hyperlink{_export_8cpp_ad0ddcefa629340a0a3438fbc40aee1d1}{Assimp\+\_\+\+Export} (const char $\ast$const $\ast$params, unsigned int num)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bfseries A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the 'assimp export' utility. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_export_8cpp_ad0ddcefa629340a0a3438fbc40aee1d1}{\index{Export.\+cpp@{Export.\+cpp}!Assimp\+\_\+\+Export@{Assimp\+\_\+\+Export}}
+\index{Assimp\+\_\+\+Export@{Assimp\+\_\+\+Export}!Export.\+cpp@{Export.\+cpp}}
+\subsubsection[{Assimp\+\_\+\+Export}]{\setlength{\rightskip}{0pt plus 5cm}int Assimp\+\_\+\+Export (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const $\ast$}]{params, }
+\item[{unsigned int}]{num}
+\end{DoxyParamCaption}
+)}}\label{_export_8cpp_ad0ddcefa629340a0a3438fbc40aee1d1}
+assimp\+\_\+export utility 
+\begin{DoxyParams}{Parameters}
+{\em params} & Command line parameters to 'assimp export' \\
+\hline
+{\em Number} & of params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_export_8cpp_a1c16a3fb1f5ef1d1de702ef6952fddbc}{\index{Export.\+cpp@{Export.\+cpp}!A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E@{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E}}
+\index{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E@{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E}!Export.\+cpp@{Export.\+cpp}}
+\subsubsection[{A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ A\+I\+C\+M\+D\+\_\+\+M\+S\+G\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+H\+E\+L\+P\+\_\+\+E}}\label{_export_8cpp_a1c16a3fb1f5ef1d1de702ef6952fddbc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+\textcolor{stringliteral}{"assimp export <model> [<out>] [-f<h>] [common parameters]\(\backslash\)n"}
+\textcolor{stringliteral}{"\(\backslash\)t -f<h> Specify the file format. If omitted, the output format is \(\backslash\)n"}
+\textcolor{stringliteral}{"\(\backslash\)t\(\backslash\)tderived from the file extension of the given output file  \(\backslash\)n"}
+\textcolor{stringliteral}{"\(\backslash\)t[See the assimp\_cmd docs for a full list of all common parameters]  \(\backslash\)n"}
+\end{DoxyCode}

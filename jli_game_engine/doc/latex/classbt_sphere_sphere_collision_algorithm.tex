@@ -1,0 +1,73 @@
+\hypertarget{classbt_sphere_sphere_collision_algorithm}{\section{bt\+Sphere\+Sphere\+Collision\+Algorithm Class Reference}
+\label{classbt_sphere_sphere_collision_algorithm}\index{bt\+Sphere\+Sphere\+Collision\+Algorithm@{bt\+Sphere\+Sphere\+Collision\+Algorithm}}
+}
+
+
+{\ttfamily \#include $<$bt\+Sphere\+Sphere\+Collision\+Algorithm.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Sphere\+Sphere\+Collision\+Algorithm\+:
+
+
+Collaboration diagram for bt\+Sphere\+Sphere\+Collision\+Algorithm\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbt_sphere_sphere_collision_algorithm_1_1_create_func}{Create\+Func}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_sphere_sphere_collision_algorithm_a861896f2389f4b8b4a45fda9dc5f5a88}{{\bfseries bt\+Sphere\+Sphere\+Collision\+Algorithm} (bt\+Persistent\+Manifold $\ast$mf, const \hyperlink{structbt_collision_algorithm_construction_info}{bt\+Collision\+Algorithm\+Construction\+Info} \&ci, const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$col0\+Wrap, const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$col1\+Wrap)}\label{classbt_sphere_sphere_collision_algorithm_a861896f2389f4b8b4a45fda9dc5f5a88}
+
+\item 
+\hypertarget{classbt_sphere_sphere_collision_algorithm_a0e088c92f8e8a1e5a82b118dec7f930c}{{\bfseries bt\+Sphere\+Sphere\+Collision\+Algorithm} (const \hyperlink{structbt_collision_algorithm_construction_info}{bt\+Collision\+Algorithm\+Construction\+Info} \&ci)}\label{classbt_sphere_sphere_collision_algorithm_a0e088c92f8e8a1e5a82b118dec7f930c}
+
+\item 
+virtual void \hyperlink{classbt_sphere_sphere_collision_algorithm_a7e5adac437f8c0cdb738360d5946a65d}{process\+Collision} (const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$body0\+Wrap, const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$body1\+Wrap, const \hyperlink{structbt_dispatcher_info}{bt\+Dispatcher\+Info} \&dispatch\+Info, \hyperlink{classbt_manifold_result}{bt\+Manifold\+Result} $\ast$result\+Out)
+\item 
+\hypertarget{classbt_sphere_sphere_collision_algorithm_a5866a58caa774b032f8563ab4cdb2747}{virtual bt\+Scalar {\bfseries calculate\+Time\+Of\+Impact} (bt\+Collision\+Object $\ast$body0, bt\+Collision\+Object $\ast$body1, const \hyperlink{structbt_dispatcher_info}{bt\+Dispatcher\+Info} \&dispatch\+Info, \hyperlink{classbt_manifold_result}{bt\+Manifold\+Result} $\ast$result\+Out)}\label{classbt_sphere_sphere_collision_algorithm_a5866a58caa774b032f8563ab4cdb2747}
+
+\item 
+\hypertarget{classbt_sphere_sphere_collision_algorithm_a12213d0da7590fd25b9bfb580ab1e70c}{virtual void {\bfseries get\+All\+Contact\+Manifolds} (\hyperlink{classbt_aligned_object_array}{bt\+Manifold\+Array} \&manifold\+Array)}\label{classbt_sphere_sphere_collision_algorithm_a12213d0da7590fd25b9bfb580ab1e70c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbt_sphere_sphere_collision_algorithm}{bt\+Sphere\+Sphere\+Collision\+Algorithm} provides sphere-\/sphere collision detection. Other features are frame-\/coherency (persistent data) and collision response. Also provides the most basic sample for custom/user \hyperlink{classbt_collision_algorithm}{bt\+Collision\+Algorithm} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_sphere_sphere_collision_algorithm_a7e5adac437f8c0cdb738360d5946a65d}{\index{bt\+Sphere\+Sphere\+Collision\+Algorithm@{bt\+Sphere\+Sphere\+Collision\+Algorithm}!process\+Collision@{process\+Collision}}
+\index{process\+Collision@{process\+Collision}!bt\+Sphere\+Sphere\+Collision\+Algorithm@{bt\+Sphere\+Sphere\+Collision\+Algorithm}}
+\subsubsection[{process\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Sphere\+Sphere\+Collision\+Algorithm\+::process\+Collision (
+\begin{DoxyParamCaption}
+\item[{const {\bf bt\+Collision\+Object\+Wrapper} $\ast$}]{body0\+Wrap, }
+\item[{const {\bf bt\+Collision\+Object\+Wrapper} $\ast$}]{body1\+Wrap, }
+\item[{const {\bf bt\+Dispatcher\+Info} \&}]{dispatch\+Info, }
+\item[{{\bf bt\+Manifold\+Result} $\ast$}]{result\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_sphere_sphere_collision_algorithm_a7e5adac437f8c0cdb738360d5946a65d}
+iff distance positive, don't generate a new contact
+
+distance (negative means penetration)
+
+point on A (worldspace) bt\+Vector3 pos0 = col0-\/$>$get\+World\+Transform().get\+Origin() -\/ radius0 $\ast$ normal\+On\+Surface\+B; point on B (worldspace)
+
+report a contact. internally this will be kept persistent, and contact reduction is done 
+
+Implements \hyperlink{classbt_collision_algorithm}{bt\+Collision\+Algorithm}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Collision\+Dispatch/bt\+Sphere\+Sphere\+Collision\+Algorithm.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Collision\+Dispatch/bt\+Sphere\+Sphere\+Collision\+Algorithm.\+cpp\end{DoxyCompactItemize}

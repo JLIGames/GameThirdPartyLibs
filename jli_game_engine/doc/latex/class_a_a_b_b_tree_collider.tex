@@ -1,0 +1,773 @@
+\hypertarget{class_a_a_b_b_tree_collider}{\section{A\+A\+B\+B\+Tree\+Collider Class Reference}
+\label{class_a_a_b_b_tree_collider}\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+}
+
+
+Inheritance diagram for A\+A\+B\+B\+Tree\+Collider\+:
+
+
+Collaboration diagram for A\+A\+B\+B\+Tree\+Collider\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_a_b_b_tree_collider_aa72f368c543cd786858341d2f087565f}{A\+A\+B\+B\+Tree\+Collider} ()
+\item 
+virtual \hyperlink{class_a_a_b_b_tree_collider_aca1c5cd562bfa332e019727a61c6a8df}{$\sim$\+A\+A\+B\+B\+Tree\+Collider} ()
+\item 
+bool \hyperlink{class_a_a_b_b_tree_collider_a2e7e3213e9d863cc88c10efc808708ba}{Collide} (\hyperlink{struct_b_v_t_cache}{B\+V\+T\+Cache} \&cache, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world0=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world1=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{class_a_a_b_b_tree_collider_afd6126e7f6d1e38d77282956bb719170}{Collide} (const \hyperlink{class_a_a_b_b_collision_tree}{A\+A\+B\+B\+Collision\+Tree} $\ast$tree0, const \hyperlink{class_a_a_b_b_collision_tree}{A\+A\+B\+B\+Collision\+Tree} $\ast$tree1, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world0=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world1=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{struct_pair}{Pair} $\ast$cache=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{class_a_a_b_b_tree_collider_ad64c8281e2cefa4fa33d2026b2fb899a}{Collide} (const \hyperlink{class_a_a_b_b_no_leaf_tree}{A\+A\+B\+B\+No\+Leaf\+Tree} $\ast$tree0, const \hyperlink{class_a_a_b_b_no_leaf_tree}{A\+A\+B\+B\+No\+Leaf\+Tree} $\ast$tree1, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world0=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world1=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{struct_pair}{Pair} $\ast$cache=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{class_a_a_b_b_tree_collider_a4ad33802d81db3bc504c64b9aebe88f4}{Collide} (const \hyperlink{class_a_a_b_b_quantized_tree}{A\+A\+B\+B\+Quantized\+Tree} $\ast$tree0, const \hyperlink{class_a_a_b_b_quantized_tree}{A\+A\+B\+B\+Quantized\+Tree} $\ast$tree1, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world0=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world1=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{struct_pair}{Pair} $\ast$cache=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{class_a_a_b_b_tree_collider_ad5829608c064e19c01191c1e336ac89c}{Collide} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_tree}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Tree} $\ast$tree0, const \hyperlink{class_a_a_b_b_quantized_no_leaf_tree}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Tree} $\ast$tree1, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world0=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world1=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{struct_pair}{Pair} $\ast$cache=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+inline\+\_\+ void \hyperlink{class_a_a_b_b_tree_collider_af9ae98fa5e9b721069a0dd4122754deb}{Set\+Full\+Box\+Box\+Test} (bool flag)
+\item 
+inline\+\_\+ void \hyperlink{class_a_a_b_b_tree_collider_a26592df7a68bee37634b96381b484b13}{Set\+Full\+Prim\+Box\+Test} (bool flag)
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_a23f2a701706c6c900d64bc44105a828e}{Get\+Nb\+B\+V\+B\+V\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_a11b71bcccec8a69ab8332f7f268caab7}{Get\+Nb\+Prim\+Prim\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_a46918d4c878c578c37f7ac5c6c96cd09}{Get\+Nb\+B\+V\+Prim\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_a8b070ba9da290af5bbc187298870f00b}{Get\+Nb\+Pairs} () const 
+\item 
+inline\+\_\+ const \hyperlink{struct_pair}{Pair} $\ast$ \hyperlink{class_a_a_b_b_tree_collider_a1a65b30029d7d0b3e9a4dfe204b3e660}{Get\+Pairs} () const 
+\item 
+\hyperlink{class_a_a_b_b_tree_collider_a8ca1c49353c7a329221a1ae27d616cc8}{override} (\hyperlink{class_collider}{Collider}) const char $\ast$\hyperlink{class_collider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_acd61a409f03743eba0423f7a341a01fb}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_collision_node}{A\+A\+B\+B\+Collision\+Node} $\ast$b0, const \hyperlink{class_a_a_b_b_collision_node}{A\+A\+B\+B\+Collision\+Node} $\ast$b1)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_acf3599e2543d75be61e985d2be02385f}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_quantized_node}{A\+A\+B\+B\+Quantized\+Node} $\ast$b0, const \hyperlink{class_a_a_b_b_quantized_node}{A\+A\+B\+B\+Quantized\+Node} $\ast$b1, const \hyperlink{class_point}{Point} \&a, const \hyperlink{class_point}{Point} \&Pa, const \hyperlink{class_point}{Point} \&b, const \hyperlink{class_point}{Point} \&Pb)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_ac472301f03796767728a8b2debe3cb77}{\+\_\+\+Collide\+Tri\+Box} (const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$b)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_ab3b86e653052018c0f6e8b77a0e287ec}{\+\_\+\+Collide\+Box\+Tri} (const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$b)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_a8791691a59e7b295b7954d4296cba6be}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$a, const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$b)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_a980e360e4ddcfbc5333f1e7d0cb92787}{\+\_\+\+Collide\+Tri\+Box} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$b)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_a986b84d848d5125b5314fb431583d9f2}{\+\_\+\+Collide\+Box\+Tri} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$b)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_a440c924079dab66e021367be7a52a84b}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$a, const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$b)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_ac2dc406579fce4f35db3570f7fc2a0bf}{Prim\+Test} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id0, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id1)
+\item 
+inline\+\_\+ void \hyperlink{class_a_a_b_b_tree_collider_a0508888368cc7948330dc7e813c1451d}{Prim\+Test\+Tri\+Index} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id1)
+\item 
+inline\+\_\+ void \hyperlink{class_a_a_b_b_tree_collider_a33193f42d2b57c88e8a389ac4f997e1d}{Prim\+Test\+Index\+Tri} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id0)
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_a_a_b_b_tree_collider_a97eedcc7f4d7ebdf948a21e285562635}{Box\+Box\+Overlap} (const \hyperlink{class_point}{Point} \&ea, const \hyperlink{class_point}{Point} \&ca, const \hyperlink{class_point}{Point} \&eb, const \hyperlink{class_point}{Point} \&cb)
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_a_a_b_b_tree_collider_ac8856fafa4de49a168401cfd503ca0c6}{Tri\+Box\+Overlap} (const \hyperlink{class_point}{Point} \&center, const \hyperlink{class_point}{Point} \&extents)
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_a_a_b_b_tree_collider_adc80057067a7a1d35db1b4061f330a04}{Tri\+Tri\+Overlap} (const \hyperlink{class_point}{Point} \&V0, const \hyperlink{class_point}{Point} \&V1, const \hyperlink{class_point}{Point} \&V2, const \hyperlink{class_point}{Point} \&U0, const \hyperlink{class_point}{Point} \&U1, const \hyperlink{class_point}{Point} \&U2)
+\item 
+void \hyperlink{class_a_a_b_b_tree_collider_a80deda4fb16093f2f8ad802685edfbdf}{Init\+Query} (const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world0=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$world1=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{class_a_a_b_b_tree_collider_ad153e4171d8202dbc0ae7c68d3a94a5d}{Check\+Temporal\+Coherence} (\hyperlink{struct_pair}{Pair} $\ast$cache)
+\item 
+\hypertarget{class_a_a_b_b_tree_collider_a316cdfe565ca88c97b3ccbedc8606fd5}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} {\bfseries Setup} (const \hyperlink{class_mesh_interface}{Mesh\+Interface} $\ast$mi0, const \hyperlink{class_mesh_interface}{Mesh\+Interface} $\ast$mi1)}\label{class_a_a_b_b_tree_collider_a316cdfe565ca88c97b3ccbedc8606fd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_a_b_b_tree_collider_a28cbeb908431b41d71942e51daa51c6f}{\hyperlink{class_container}{Container} \hyperlink{class_a_a_b_b_tree_collider_a28cbeb908431b41d71942e51daa51c6f}{m\+Pairs}}\label{class_a_a_b_b_tree_collider_a28cbeb908431b41d71942e51daa51c6f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pairs}{Pairs} of colliding primitives. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_aced97c67458e450960a8e389e54e4ecd}{const \hyperlink{class_mesh_interface}{Mesh\+Interface} $\ast$ \hyperlink{class_a_a_b_b_tree_collider_aced97c67458e450960a8e389e54e4ecd}{m\+I\+Mesh0}}\label{class_a_a_b_b_tree_collider_aced97c67458e450960a8e389e54e4ecd}
+
+\begin{DoxyCompactList}\small\item\em User-\/defined mesh interface for object0. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_af6f880c75e796750f78a3e594486c616}{const \hyperlink{class_mesh_interface}{Mesh\+Interface} $\ast$ \hyperlink{class_a_a_b_b_tree_collider_af6f880c75e796750f78a3e594486c616}{m\+I\+Mesh1}}\label{class_a_a_b_b_tree_collider_af6f880c75e796750f78a3e594486c616}
+
+\begin{DoxyCompactList}\small\item\em User-\/defined mesh interface for object1. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_af32b0d3ad97e359a04142bc92dd8fc46}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_af32b0d3ad97e359a04142bc92dd8fc46}{m\+Nb\+B\+V\+B\+V\+Tests}}\label{class_a_a_b_b_tree_collider_af32b0d3ad97e359a04142bc92dd8fc46}
+
+\begin{DoxyCompactList}\small\item\em Number of B\+V-\/\+B\+V tests. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_ade31b7ade21233ec4b06cf0f5f8de48b}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_ade31b7ade21233ec4b06cf0f5f8de48b}{m\+Nb\+Prim\+Prim\+Tests}}\label{class_a_a_b_b_tree_collider_ade31b7ade21233ec4b06cf0f5f8de48b}
+
+\begin{DoxyCompactList}\small\item\em Number of Primitive-\/\+Primitive tests. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_a0fa1cc8910a727857fa68220da09dd88}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_a0fa1cc8910a727857fa68220da09dd88}{m\+Nb\+B\+V\+Prim\+Tests}}\label{class_a_a_b_b_tree_collider_a0fa1cc8910a727857fa68220da09dd88}
+
+\begin{DoxyCompactList}\small\item\em Number of B\+V-\/\+Primitive tests. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_a0bb086abbf578b169180fefef2e10c7b}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_a_a_b_b_tree_collider_a0bb086abbf578b169180fefef2e10c7b}{m\+A\+R}}\label{class_a_a_b_b_tree_collider_a0bb086abbf578b169180fefef2e10c7b}
+
+\begin{DoxyCompactList}\small\item\em Absolute rotation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_a0028b67802c67ad784c1690c0890cdbf}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_a_a_b_b_tree_collider_a0028b67802c67ad784c1690c0890cdbf}{m\+R0to1}}\label{class_a_a_b_b_tree_collider_a0028b67802c67ad784c1690c0890cdbf}
+
+\begin{DoxyCompactList}\small\item\em Rotation from object0 to object1. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_ac504e7b180109cc835b8d94fbcaf11b5}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_a_a_b_b_tree_collider_ac504e7b180109cc835b8d94fbcaf11b5}{m\+R1to0}}\label{class_a_a_b_b_tree_collider_ac504e7b180109cc835b8d94fbcaf11b5}
+
+\begin{DoxyCompactList}\small\item\em Rotation from object1 to object0. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_afb6d524a70c358da166ed849e39d3b3f}{\hyperlink{class_point}{Point} \hyperlink{class_a_a_b_b_tree_collider_afb6d524a70c358da166ed849e39d3b3f}{m\+T0to1}}\label{class_a_a_b_b_tree_collider_afb6d524a70c358da166ed849e39d3b3f}
+
+\begin{DoxyCompactList}\small\item\em Translation from object0 to object1. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_ae9545bb15e31bb964b180bb4f96f5c6e}{\hyperlink{class_point}{Point} \hyperlink{class_a_a_b_b_tree_collider_ae9545bb15e31bb964b180bb4f96f5c6e}{m\+T1to0}}\label{class_a_a_b_b_tree_collider_ae9545bb15e31bb964b180bb4f96f5c6e}
+
+\begin{DoxyCompactList}\small\item\em Translation from object1 to object0. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_ac69b6e53726f37f85627774a2aea2f58}{\hyperlink{class_point}{Point} {\bfseries m\+Center\+Coeff0}}\label{class_a_a_b_b_tree_collider_ac69b6e53726f37f85627774a2aea2f58}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_collider_afb06c04eb8ec7a45056545fd2222da36}{\hyperlink{class_point}{Point} {\bfseries m\+Extents\+Coeff0}}\label{class_a_a_b_b_tree_collider_afb06c04eb8ec7a45056545fd2222da36}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_collider_a8584edaa99690280f993168eb050f190}{\hyperlink{class_point}{Point} {\bfseries m\+Center\+Coeff1}}\label{class_a_a_b_b_tree_collider_a8584edaa99690280f993168eb050f190}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_collider_aa56ff318aba204cfba09213bbd48536a}{\hyperlink{class_point}{Point} {\bfseries m\+Extents\+Coeff1}}\label{class_a_a_b_b_tree_collider_aa56ff318aba204cfba09213bbd48536a}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_collider_a322d9d87379225c6474cb4f16dfee714}{\hyperlink{class_point}{Point} \hyperlink{class_a_a_b_b_tree_collider_a322d9d87379225c6474cb4f16dfee714}{m\+Leaf\+Verts} \mbox{[}3\mbox{]}}\label{class_a_a_b_b_tree_collider_a322d9d87379225c6474cb4f16dfee714}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_triangle}{Triangle} vertices. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_a24cdabfd08ad43d88eaae58440323c14}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_collider_a24cdabfd08ad43d88eaae58440323c14}{m\+Leaf\+Index}}\label{class_a_a_b_b_tree_collider_a24cdabfd08ad43d88eaae58440323c14}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_triangle}{Triangle} index. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_aef765401c9ddb30867bf8cd2e0299717}{bool \hyperlink{class_a_a_b_b_tree_collider_aef765401c9ddb30867bf8cd2e0299717}{m\+Full\+Box\+Box\+Test}}\label{class_a_a_b_b_tree_collider_aef765401c9ddb30867bf8cd2e0299717}
+
+\begin{DoxyCompactList}\small\item\em Perform full B\+V-\/\+B\+V tests (true) or S\+A\+T-\/lite tests (false) \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_collider_aa36ffb0f18e1e0af7f10e02cc8a6eedd}{bool \hyperlink{class_a_a_b_b_tree_collider_aa36ffb0f18e1e0af7f10e02cc8a6eedd}{m\+Full\+Prim\+Box\+Test}}\label{class_a_a_b_b_tree_collider_aa36ffb0f18e1e0af7f10e02cc8a6eedd}
+
+\begin{DoxyCompactList}\small\item\em Perform full Primitive-\/\+B\+V tests (true) or S\+A\+T-\/lite tests (false) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree collider. This class performs a collision test between two \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_a_b_b_tree_collider_aa72f368c543cd786858341d2f087565f}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{A\+A\+B\+B\+Tree\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+Collider\+::\+A\+A\+B\+B\+Tree\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_collider_aa72f368c543cd786858341d2f087565f}
+Constructor. \hypertarget{class_a_a_b_b_tree_collider_aca1c5cd562bfa332e019727a61c6a8df}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!````~A\+A\+B\+B\+Tree\+Collider@{$\sim$\+A\+A\+B\+B\+Tree\+Collider}}
+\index{````~A\+A\+B\+B\+Tree\+Collider@{$\sim$\+A\+A\+B\+B\+Tree\+Collider}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{$\sim$\+A\+A\+B\+B\+Tree\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+Collider\+::$\sim$\+A\+A\+B\+B\+Tree\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_a_b_b_tree_collider_aca1c5cd562bfa332e019727a61c6a8df}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_a_b_b_tree_collider_acd61a409f03743eba0423f7a341a01fb}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{b0, }
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{b1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_acd61a409f03743eba0423f7a341a01fb}
+Recursive collision query for normal \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em b0} & \mbox{[}in\mbox{]} collision node from first tree \\
+\hline
+{\em b1} & \mbox{[}in\mbox{]} collision node from second tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_acf3599e2543d75be61e985d2be02385f}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{b0, }
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{b1, }
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{Pa, }
+\item[{const {\bf Point} \&}]{b, }
+\item[{const {\bf Point} \&}]{Pb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_acf3599e2543d75be61e985d2be02385f}
+Recursive collision query for quantized \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em b0} & \mbox{[}in\mbox{]} collision node from first tree \\
+\hline
+{\em b1} & \mbox{[}in\mbox{]} collision node from second tree \\
+\hline
+{\em a} & \mbox{[}in\mbox{]} extent from box A \\
+\hline
+{\em Pa} & \mbox{[}in\mbox{]} center from box A \\
+\hline
+{\em b} & \mbox{[}in\mbox{]} extent from box B \\
+\hline
+{\em Pb} & \mbox{[}in\mbox{]} center from box B \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a8791691a59e7b295b7954d4296cba6be}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{a, }
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a8791691a59e7b295b7954d4296cba6be}
+Recursive collision query for no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{[}in\mbox{]} collision node from first tree \\
+\hline
+{\em b} & \mbox{[}in\mbox{]} collision node from second tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a440c924079dab66e021367be7a52a84b}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{a, }
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a440c924079dab66e021367be7a52a84b}
+Recursive collision query for quantized no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{[}in\mbox{]} collision node from first tree \\
+\hline
+{\em b} & \mbox{[}in\mbox{]} collision node from second tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_ab3b86e653052018c0f6e8b77a0e287ec}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide\+Box\+Tri@{\+\_\+\+Collide\+Box\+Tri}}
+\index{\+\_\+\+Collide\+Box\+Tri@{\+\_\+\+Collide\+Box\+Tri}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+Box\+Tri}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide\+Box\+Tri (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_ab3b86e653052018c0f6e8b77a0e287ec}
+Recursive collision of a leaf node from B and a branch from A. 
+\begin{DoxyParams}{Parameters}
+{\em b} & \mbox{[}in\mbox{]} collision node from first tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a986b84d848d5125b5314fb431583d9f2}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide\+Box\+Tri@{\+\_\+\+Collide\+Box\+Tri}}
+\index{\+\_\+\+Collide\+Box\+Tri@{\+\_\+\+Collide\+Box\+Tri}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+Box\+Tri}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide\+Box\+Tri (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a986b84d848d5125b5314fb431583d9f2}
+Recursive collision of a leaf node from B and a quantized branch from A. 
+\begin{DoxyParams}{Parameters}
+{\em b} & \mbox{[}in\mbox{]} collision node from first tree \\
+\hline
+{\em leaf} & \mbox{[}in\mbox{]} leaf triangle from second tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_ac472301f03796767728a8b2debe3cb77}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide\+Tri\+Box@{\+\_\+\+Collide\+Tri\+Box}}
+\index{\+\_\+\+Collide\+Tri\+Box@{\+\_\+\+Collide\+Tri\+Box}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+Tri\+Box}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide\+Tri\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_ac472301f03796767728a8b2debe3cb77}
+Recursive collision of a leaf node from A and a branch from B. 
+\begin{DoxyParams}{Parameters}
+{\em b} & \mbox{[}in\mbox{]} collision node from second tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a980e360e4ddcfbc5333f1e7d0cb92787}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!\+\_\+\+Collide\+Tri\+Box@{\+\_\+\+Collide\+Tri\+Box}}
+\index{\+\_\+\+Collide\+Tri\+Box@{\+\_\+\+Collide\+Tri\+Box}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+Tri\+Box}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+\_\+\+Collide\+Tri\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a980e360e4ddcfbc5333f1e7d0cb92787}
+Recursive collision of a leaf node from A and a quantized branch from B. 
+\begin{DoxyParams}{Parameters}
+{\em leaf} & \mbox{[}in\mbox{]} leaf triangle from first tree \\
+\hline
+{\em b} & \mbox{[}in\mbox{]} collision node from second tree \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a97eedcc7f4d7ebdf948a21e285562635}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Box\+Box\+Overlap@{Box\+Box\+Overlap}}
+\index{Box\+Box\+Overlap@{Box\+Box\+Overlap}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Box\+Box\+Overlap}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+O\+L} A\+A\+B\+B\+Tree\+Collider\+::\+Box\+Box\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{ea, }
+\item[{const {\bf Point} \&}]{ca, }
+\item[{const {\bf Point} \&}]{eb, }
+\item[{const {\bf Point} \&}]{cb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a97eedcc7f4d7ebdf948a21e285562635}
+O\+B\+B-\/\+O\+B\+B overlap test using the separating axis theorem.
+\begin{DoxyItemize}
+\item original code by Gomez / Gamasutra (similar to Gottschalk's one in R\+A\+P\+I\+D)
+\item optimized for \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees by computing the rotation matrix once (S\+O\+L\+I\+D-\/fashion)
+\item the fabs matrix is precomputed as well and epsilon-\/tweaked (R\+A\+P\+I\+D-\/style, we found this almost mandatory)
+\item Class I\+I\+I axes can be disabled... (S\+O\+L\+I\+D \& Intel fashion)
+\item ...or enabled to perform some profiling
+\item C\+P\+U comparisons used when appropriate
+\item lazy evaluation sometimes saves some work in case of early exits (unlike S\+O\+L\+I\+D)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ea} & \mbox{[}in\mbox{]} extents from box A \\
+\hline
+{\em ca} & \mbox{[}in\mbox{]} center from box A \\
+\hline
+{\em eb} & \mbox{[}in\mbox{]} extents from box B \\
+\hline
+{\em cb} & \mbox{[}in\mbox{]} center from box B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if boxes overlap 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_ad153e4171d8202dbc0ae7c68d3a94a5d}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Check\+Temporal\+Coherence@{Check\+Temporal\+Coherence}}
+\index{Check\+Temporal\+Coherence@{Check\+Temporal\+Coherence}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Check\+Temporal\+Coherence}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Collider\+::\+Check\+Temporal\+Coherence (
+\begin{DoxyParamCaption}
+\item[{{\bf Pair} $\ast$}]{cache}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_ad153e4171d8202dbc0ae7c68d3a94a5d}
+Takes advantage of temporal coherence. 
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in\mbox{]} cache for a pair of previously colliding primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if we can return immediately 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+only works for \char`\"{}\+First Contact\char`\"{} mode 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_a2e7e3213e9d863cc88c10efc808708ba}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+V\+T\+Cache} \&}]{cache, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world0 = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world1 = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_collider_a2e7e3213e9d863cc88c10efc808708ba}
+Generic collision query for generic O\+P\+C\+O\+D\+E models. After the call, access the results with\+:
+\begin{DoxyItemize}
+\item \hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()}
+\item \hyperlink{class_a_a_b_b_tree_collider_a8b070ba9da290af5bbc187298870f00b}{Get\+Nb\+Pairs()}
+\item \hyperlink{class_a_a_b_b_tree_collider_a1a65b30029d7d0b3e9a4dfe204b3e660}{Get\+Pairs()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in\mbox{]} collision cache for model pointers and a colliding pair of primitives \\
+\hline
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object, or null \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only.
+\end{DoxyWarning}
+Generic collision query for generic O\+P\+C\+O\+D\+E models. After the call, access the results with\+:
+\begin{DoxyItemize}
+\item \hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()}
+\item \hyperlink{class_a_a_b_b_tree_collider_a8b070ba9da290af5bbc187298870f00b}{Get\+Nb\+Pairs()}
+\item \hyperlink{class_a_a_b_b_tree_collider_a1a65b30029d7d0b3e9a4dfe204b3e660}{Get\+Pairs()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in\mbox{]} collision cache for model pointers and a colliding pair of primitives \\
+\hline
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_afd6126e7f6d1e38d77282956bb719170}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Tree} $\ast$}]{tree0, }
+\item[{const {\bf A\+A\+B\+B\+Collision\+Tree} $\ast$}]{tree1, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world0 = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world1 = {\ttfamily {\bf null}}, }
+\item[{{\bf Pair} $\ast$}]{cache = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_collider_afd6126e7f6d1e38d77282956bb719170}
+Collision query for normal \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em tree0} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from first object \\
+\hline
+{\em tree1} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from second object \\
+\hline
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object \\
+\hline
+{\em cache} & \mbox{[}in/out\mbox{]} cache for a pair of previously colliding primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_ad64c8281e2cefa4fa33d2026b2fb899a}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Tree} $\ast$}]{tree0, }
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Tree} $\ast$}]{tree1, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world0 = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world1 = {\ttfamily {\bf null}}, }
+\item[{{\bf Pair} $\ast$}]{cache = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_collider_ad64c8281e2cefa4fa33d2026b2fb899a}
+Collision query for no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em tree0} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from first object \\
+\hline
+{\em tree1} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from second object \\
+\hline
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object \\
+\hline
+{\em cache} & \mbox{[}in/out\mbox{]} cache for a pair of previously colliding primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_a4ad33802d81db3bc504c64b9aebe88f4}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Tree} $\ast$}]{tree0, }
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Tree} $\ast$}]{tree1, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world0 = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world1 = {\ttfamily {\bf null}}, }
+\item[{{\bf Pair} $\ast$}]{cache = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_collider_a4ad33802d81db3bc504c64b9aebe88f4}
+Collision query for quantized \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em tree0} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from first object \\
+\hline
+{\em tree1} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from second object \\
+\hline
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object \\
+\hline
+{\em cache} & \mbox{[}in/out\mbox{]} cache for a pair of previously colliding primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_ad5829608c064e19c01191c1e336ac89c}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Tree} $\ast$}]{tree0, }
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Tree} $\ast$}]{tree1, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world0 = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world1 = {\ttfamily {\bf null}}, }
+\item[{{\bf Pair} $\ast$}]{cache = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_collider_ad5829608c064e19c01191c1e336ac89c}
+Collision query for quantized no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em tree0} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from first object \\
+\hline
+{\em tree1} & \mbox{[}in\mbox{]} \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from second object \\
+\hline
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object \\
+\hline
+{\em cache} & \mbox{[}in/out\mbox{]} cache for a pair of previously colliding primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_a23f2a701706c6c900d64bc44105a828e}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Get\+Nb\+B\+V\+B\+V\+Tests@{Get\+Nb\+B\+V\+B\+V\+Tests}}
+\index{Get\+Nb\+B\+V\+B\+V\+Tests@{Get\+Nb\+B\+V\+B\+V\+Tests}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Get\+Nb\+B\+V\+B\+V\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} A\+A\+B\+B\+Tree\+Collider\+::\+Get\+Nb\+B\+V\+B\+V\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_a23f2a701706c6c900d64bc44105a828e}
+Stats\+: gets the number of B\+V-\/\+B\+V overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_a_b_b_tree_collider_a11b71bcccec8a69ab8332f7f268caab7}{Get\+Nb\+Prim\+Prim\+Tests()} 
+
+\hyperlink{class_a_a_b_b_tree_collider_a46918d4c878c578c37f7ac5c6c96cd09}{Get\+Nb\+B\+V\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of B\+V-\/\+B\+V tests performed during last query 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_a46918d4c878c578c37f7ac5c6c96cd09}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Get\+Nb\+B\+V\+Prim\+Tests@{Get\+Nb\+B\+V\+Prim\+Tests}}
+\index{Get\+Nb\+B\+V\+Prim\+Tests@{Get\+Nb\+B\+V\+Prim\+Tests}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Get\+Nb\+B\+V\+Prim\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} A\+A\+B\+B\+Tree\+Collider\+::\+Get\+Nb\+B\+V\+Prim\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_a46918d4c878c578c37f7ac5c6c96cd09}
+Stats\+: gets the number of B\+V-\/\+Triangle overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_a_b_b_tree_collider_a23f2a701706c6c900d64bc44105a828e}{Get\+Nb\+B\+V\+B\+V\+Tests()} 
+
+\hyperlink{class_a_a_b_b_tree_collider_a11b71bcccec8a69ab8332f7f268caab7}{Get\+Nb\+Prim\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of B\+V-\/\+Triangle tests performed during last query 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_a8b070ba9da290af5bbc187298870f00b}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Get\+Nb\+Pairs@{Get\+Nb\+Pairs}}
+\index{Get\+Nb\+Pairs@{Get\+Nb\+Pairs}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Get\+Nb\+Pairs}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} A\+A\+B\+B\+Tree\+Collider\+::\+Get\+Nb\+Pairs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_a8b070ba9da290af5bbc187298870f00b}
+Gets the number of contacts after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()} 
+
+\hyperlink{class_a_a_b_b_tree_collider_a1a65b30029d7d0b3e9a4dfe204b3e660}{Get\+Pairs()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of contacts / colliding pairs. 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_a11b71bcccec8a69ab8332f7f268caab7}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Get\+Nb\+Prim\+Prim\+Tests@{Get\+Nb\+Prim\+Prim\+Tests}}
+\index{Get\+Nb\+Prim\+Prim\+Tests@{Get\+Nb\+Prim\+Prim\+Tests}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Get\+Nb\+Prim\+Prim\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} A\+A\+B\+B\+Tree\+Collider\+::\+Get\+Nb\+Prim\+Prim\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_a11b71bcccec8a69ab8332f7f268caab7}
+Stats\+: gets the number of Triangle-\/\+Triangle overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_a_b_b_tree_collider_a23f2a701706c6c900d64bc44105a828e}{Get\+Nb\+B\+V\+B\+V\+Tests()} 
+
+\hyperlink{class_a_a_b_b_tree_collider_a46918d4c878c578c37f7ac5c6c96cd09}{Get\+Nb\+B\+V\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Triangle-\/\+Triangle tests performed during last query 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_a1a65b30029d7d0b3e9a4dfe204b3e660}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Get\+Pairs@{Get\+Pairs}}
+\index{Get\+Pairs@{Get\+Pairs}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Get\+Pairs}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf Pair}$\ast$ A\+A\+B\+B\+Tree\+Collider\+::\+Get\+Pairs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_a1a65b30029d7d0b3e9a4dfe204b3e660}
+Gets the pairs of colliding triangles after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()} 
+
+\hyperlink{class_a_a_b_b_tree_collider_a8b070ba9da290af5bbc187298870f00b}{Get\+Nb\+Pairs()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the list of colliding pairs (triangle indices) 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_a80deda4fb16093f2f8ad802685edfbdf}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Init\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4x4} $\ast$}]{world0 = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world1 = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a80deda4fb16093f2f8ad802685edfbdf}
+Initializes a collision query \+:
+\begin{DoxyItemize}
+\item reset stats \& contact status
+\item setup matrices
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world0} & \mbox{[}in\mbox{]} world matrix for first object \\
+\hline
+{\em world1} & \mbox{[}in\mbox{]} world matrix for second object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_a_a_b_b_tree_collider_a8ca1c49353c7a329221a1ae27d616cc8}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!override@{override}}
+\index{override@{override}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{override}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_a_a_b_b_tree_collider_a8ca1c49353c7a329221a1ae27d616cc8}
+Validates current settings. You should call this method after all the settings and callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_ac2dc406579fce4f35db3570f7fc2a0bf}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Prim\+Test@{Prim\+Test}}
+\index{Prim\+Test@{Prim\+Test}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Prim\+Test}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Collider\+::\+Prim\+Test (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{id0, }
+\item[{{\bf udword}}]{id1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_ac2dc406579fce4f35db3570f7fc2a0bf}
+Leaf-\/leaf test for two primitive indices. 
+\begin{DoxyParams}{Parameters}
+{\em id0} & \mbox{[}in\mbox{]} index from first leaf-\/triangle \\
+\hline
+{\em id1} & \mbox{[}in\mbox{]} index from second leaf-\/triangle \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a33193f42d2b57c88e8a389ac4f997e1d}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Prim\+Test\+Index\+Tri@{Prim\+Test\+Index\+Tri}}
+\index{Prim\+Test\+Index\+Tri@{Prim\+Test\+Index\+Tri}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Prim\+Test\+Index\+Tri}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void A\+A\+B\+B\+Tree\+Collider\+::\+Prim\+Test\+Index\+Tri (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{id0}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a33193f42d2b57c88e8a389ac4f997e1d}
+Leaf-\/leaf test for a previously fetched triangle from tree B (in A's space) and a new leaf from A. 
+\begin{DoxyParams}{Parameters}
+{\em id0} & \mbox{[}in\mbox{]} leaf-\/triangle index from tree A \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_a0508888368cc7948330dc7e813c1451d}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Prim\+Test\+Tri\+Index@{Prim\+Test\+Tri\+Index}}
+\index{Prim\+Test\+Tri\+Index@{Prim\+Test\+Tri\+Index}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Prim\+Test\+Tri\+Index}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void A\+A\+B\+B\+Tree\+Collider\+::\+Prim\+Test\+Tri\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{id1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_a0508888368cc7948330dc7e813c1451d}
+Leaf-\/leaf test for a previously fetched triangle from tree A (in B's space) and a new leaf from B. 
+\begin{DoxyParams}{Parameters}
+{\em id1} & \mbox{[}in\mbox{]} leaf-\/triangle index from tree B \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_collider_af9ae98fa5e9b721069a0dd4122754deb}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Set\+Full\+Box\+Box\+Test@{Set\+Full\+Box\+Box\+Test}}
+\index{Set\+Full\+Box\+Box\+Test@{Set\+Full\+Box\+Box\+Test}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Set\+Full\+Box\+Box\+Test}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void A\+A\+B\+B\+Tree\+Collider\+::\+Set\+Full\+Box\+Box\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_af9ae98fa5e9b721069a0dd4122754deb}
+Settings\+: selects between full box-\/box tests or \char`\"{}\+S\+A\+T-\/lite\char`\"{} tests (where Class I\+I\+I axes are discarded) 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true for full tests, false for coarse tests \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_a_b_b_tree_collider_a26592df7a68bee37634b96381b484b13}{Set\+Full\+Prim\+Box\+Test(bool flag)} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_a_b_b_tree_collider_a26592df7a68bee37634b96381b484b13}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Set\+Full\+Prim\+Box\+Test@{Set\+Full\+Prim\+Box\+Test}}
+\index{Set\+Full\+Prim\+Box\+Test@{Set\+Full\+Prim\+Box\+Test}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Set\+Full\+Prim\+Box\+Test}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void A\+A\+B\+B\+Tree\+Collider\+::\+Set\+Full\+Prim\+Box\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_a_b_b_tree_collider_a26592df7a68bee37634b96381b484b13}
+Settings\+: selects between full triangle-\/box tests or \char`\"{}\+S\+A\+T-\/lite\char`\"{} tests (where Class I\+I\+I axes are discarded) 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true for full tests, false for coarse tests \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_a_b_b_tree_collider_af9ae98fa5e9b721069a0dd4122754deb}{Set\+Full\+Box\+Box\+Test(bool flag)} 
+\end{DoxySeeAlso}
+\hypertarget{class_a_a_b_b_tree_collider_ac8856fafa4de49a168401cfd503ca0c6}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Tri\+Box\+Overlap@{Tri\+Box\+Overlap}}
+\index{Tri\+Box\+Overlap@{Tri\+Box\+Overlap}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Tri\+Box\+Overlap}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+O\+L} A\+A\+B\+B\+Tree\+Collider\+::\+Tri\+Box\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{center, }
+\item[{const {\bf Point} \&}]{extents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_ac8856fafa4de49a168401cfd503ca0c6}
+Triangle-\/\+Box overlap test using the separating axis theorem. This is the code from Tomas Möller, a bit optimized\+:
+\begin{DoxyItemize}
+\item with some more lazy evaluation (faster path on P\+C)
+\item with a tiny bit of assembly
+\item with \char`\"{}\+S\+A\+T-\/lite\char`\"{} applied if needed
+\item and perhaps with some more minor modifs...
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{[}in\mbox{]} box center \\
+\hline
+{\em extents} & \mbox{[}in\mbox{]} box extents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if triangle \& box overlap 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_collider_adc80057067a7a1d35db1b4061f330a04}{\index{A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}!Tri\+Tri\+Overlap@{Tri\+Tri\+Overlap}}
+\index{Tri\+Tri\+Overlap@{Tri\+Tri\+Overlap}!A\+A\+B\+B\+Tree\+Collider@{A\+A\+B\+B\+Tree\+Collider}}
+\subsubsection[{Tri\+Tri\+Overlap}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+O\+L} A\+A\+B\+B\+Tree\+Collider\+::\+Tri\+Tri\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{V0, }
+\item[{const {\bf Point} \&}]{V1, }
+\item[{const {\bf Point} \&}]{V2, }
+\item[{const {\bf Point} \&}]{U0, }
+\item[{const {\bf Point} \&}]{U1, }
+\item[{const {\bf Point} \&}]{U2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_a_b_b_tree_collider_adc80057067a7a1d35db1b4061f330a04}
+Triangle/triangle intersection test routine, by Tomas Moller, 1997. See article \char`\"{}\+A Fast Triangle-\/\+Triangle Intersection Test\char`\"{}, Journal of Graphics Tools, 2(2), 1997
+
+Updated June 1999\+: removed the divisions -- a little faster now! Updated October 1999\+: added \{\} to C\+R\+O\+S\+S and S\+U\+B macros
+
+int No\+Div\+Tri\+Tri\+Isect(float V0\mbox{[}3\mbox{]},float V1\mbox{[}3\mbox{]},float V2\mbox{[}3\mbox{]}, float U0\mbox{[}3\mbox{]},float U1\mbox{[}3\mbox{]},float U2\mbox{[}3\mbox{]})
+
+
+\begin{DoxyParams}{Parameters}
+{\em V0} & \mbox{[}in\mbox{]} triangle 0, vertex 0 \\
+\hline
+{\em V1} & \mbox{[}in\mbox{]} triangle 0, vertex 1 \\
+\hline
+{\em V2} & \mbox{[}in\mbox{]} triangle 0, vertex 2 \\
+\hline
+{\em U0} & \mbox{[}in\mbox{]} triangle 1, vertex 0 \\
+\hline
+{\em U1} & \mbox{[}in\mbox{]} triangle 1, vertex 1 \\
+\hline
+{\em U2} & \mbox{[}in\mbox{]} triangle 1, vertex 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if triangles overlap 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___tree_collider_8h}{O\+P\+C\+\_\+\+Tree\+Collider.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/O\+P\+C\+\_\+\+Box\+Box\+Overlap.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___tree_collider_8cpp}{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/O\+P\+C\+\_\+\+Tri\+Box\+Overlap.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/O\+P\+C\+\_\+\+Tri\+Tri\+Overlap.\+h\end{DoxyCompactItemize}

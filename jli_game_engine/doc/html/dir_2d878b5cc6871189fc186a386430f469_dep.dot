@@ -1,0 +1,21 @@
+digraph "PVR/SDK_3.4" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0b2164ee8d0d182697821942e7832ea4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="PVR" fontname="Helvetica", fontsize="10", URL="dir_0b2164ee8d0d182697821942e7832ea4.html"]
+  subgraph clusterdir_2d878b5cc6871189fc186a386430f469 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2d878b5cc6871189fc186a386430f469.html"];
+    dir_2d878b5cc6871189fc186a386430f469 [shape=plaintext label="SDK_3.4"];
+    dir_1af8ad330c4bc410d3d82949093945d2 [shape=box label="Builds" color="red" fillcolor="white" style="filled" URL="dir_1af8ad330c4bc410d3d82949093945d2.html"];
+    dir_9235ba7a2b8ccfd2cbbe5635d248230f [shape=box label="Examples" color="red" fillcolor="white" style="filled" URL="dir_9235ba7a2b8ccfd2cbbe5635d248230f.html"];
+    dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" color="red" fillcolor="white" style="filled" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+    dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" color="red" fillcolor="white" style="filled" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+    dir_5cacc75a9feace28fdc3571b45e0e3b1 [shape=box label="Utilities" color="red" fillcolor="white" style="filled" URL="dir_5cacc75a9feace28fdc3571b45e0e3b1.html"];
+  }
+  }
+  dir_9235ba7a2b8ccfd2cbbe5635d248230f->dir_de41955a66a331b990d60d5323117a97 [headlabel="151", labeldistance=1.5 headhref="dir_000194_000133.html"];
+  dir_9235ba7a2b8ccfd2cbbe5635d248230f->dir_1af8ad330c4bc410d3d82949093945d2 [headlabel="5", labeldistance=1.5 headhref="dir_000194_000027.html"];
+  dir_9235ba7a2b8ccfd2cbbe5635d248230f->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="145", labeldistance=1.5 headhref="dir_000194_001762.html"];
+  dir_5cacc75a9feace28fdc3571b45e0e3b1->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="11", labeldistance=1.5 headhref="dir_000069_001762.html"];
+}

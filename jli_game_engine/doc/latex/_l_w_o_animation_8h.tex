@@ -1,0 +1,93 @@
+\hypertarget{_l_w_o_animation_8h}{\section{assimp/assimp-\/3.1.1/code/\+L\+W\+O\+Animation.h File Reference}
+\label{_l_w_o_animation_8h}\index{assimp/assimp-\/3.\+1.\+1/code/\+L\+W\+O\+Animation.\+h@{assimp/assimp-\/3.\+1.\+1/code/\+L\+W\+O\+Animation.\+h}}
+}
+
+
+L\+W\+O\+Animation\+Resolver utility class.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_assimp_1_1_l_w_o_1_1_key}{Assimp\+::\+L\+W\+O\+::\+Key}
+\begin{DoxyCompactList}\small\item\em Data structure for a L\+W\+O animation keyframe. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_assimp_1_1_l_w_o_1_1_envelope}{Assimp\+::\+L\+W\+O\+::\+Envelope}
+\begin{DoxyCompactList}\small\item\em Data structure for a L\+W\+O animation envelope. \end{DoxyCompactList}\item 
+class \hyperlink{class_assimp_1_1_l_w_o_1_1_anim_resolver}{Assimp\+::\+L\+W\+O\+::\+Anim\+Resolver}
+\begin{DoxyCompactList}\small\item\em Utility class to build \hyperlink{class_assimp}{Assimp} animations from L\+W\+O envelopes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_l_w_o_animation_8h_a34b8f37cae9d485aea1403079aa2bcf6}{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S}~0x1
+\item 
+\#define \hyperlink{_l_w_o_animation_8h_a5579bad44907eb435a971f052481d0b4}{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O}~0x2
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_l_w_o_a3f9526ecb610600c29d0bc5c3349456a}{enum {\bfseries Envelope\+Type} \{ \\*
+{\bfseries Envelope\+Type\+\_\+\+Position\+\_\+\+X} = 0x1, 
+{\bfseries Envelope\+Type\+\_\+\+Position\+\_\+\+Y} = 0x2, 
+{\bfseries Envelope\+Type\+\_\+\+Position\+\_\+\+Z} = 0x3, 
+{\bfseries Envelope\+Type\+\_\+\+Rotation\+\_\+\+Heading} = 0x4, 
+\\*
+{\bfseries Envelope\+Type\+\_\+\+Rotation\+\_\+\+Pitch} = 0x5, 
+{\bfseries Envelope\+Type\+\_\+\+Rotation\+\_\+\+Bank} = 0x6, 
+{\bfseries Envelope\+Type\+\_\+\+Scaling\+\_\+\+X} = 0x7, 
+{\bfseries Envelope\+Type\+\_\+\+Scaling\+\_\+\+Y} = 0x8, 
+\\*
+{\bfseries Envelope\+Type\+\_\+\+Scaling\+\_\+\+Z} = 0x9, 
+{\bfseries Envelope\+Type\+\_\+\+Color\+\_\+\+R} = 0xa, 
+{\bfseries Envelope\+Type\+\_\+\+Color\+\_\+\+G} = 0xb, 
+{\bfseries Envelope\+Type\+\_\+\+Color\+\_\+\+B} = 0xc, 
+\\*
+{\bfseries Envelope\+Type\+\_\+\+Falloff\+\_\+\+X} = 0xd, 
+{\bfseries Envelope\+Type\+\_\+\+Falloff\+\_\+\+Y} = 0xe, 
+{\bfseries Envelope\+Type\+\_\+\+Falloff\+\_\+\+Z} = 0xf, 
+{\bfseries Envelope\+Type\+\_\+\+Unknown}
+ \}}\label{namespace_assimp_1_1_l_w_o_a3f9526ecb610600c29d0bc5c3349456a}
+
+\begin{DoxyCompactList}\small\item\em List of recognized L\+W\+O envelopes. \end{DoxyCompactList}\item 
+\hypertarget{namespace_assimp_1_1_l_w_o_a8e6da66f6a5f98c8452a16a06f200501}{enum {\bfseries Interpolation\+Type} \{ \\*
+{\bfseries I\+T\+\_\+\+S\+T\+E\+P}, 
+{\bfseries I\+T\+\_\+\+L\+I\+N\+E}, 
+{\bfseries I\+T\+\_\+\+T\+C\+B}, 
+{\bfseries I\+T\+\_\+\+H\+E\+R\+M}, 
+\\*
+{\bfseries I\+T\+\_\+\+B\+E\+Z\+I}, 
+{\bfseries I\+T\+\_\+\+B\+E\+Z2}
+ \}}\label{namespace_assimp_1_1_l_w_o_a8e6da66f6a5f98c8452a16a06f200501}
+
+\begin{DoxyCompactList}\small\item\em List of recognized L\+W\+O interpolation modes. \end{DoxyCompactList}\item 
+\hypertarget{namespace_assimp_1_1_l_w_o_ae88b90391a89cb0fc104f1f05b9e716e}{enum {\bfseries Pre\+Post\+Behaviour} \{ \\*
+{\bfseries Pre\+Post\+Behaviour\+\_\+\+Reset} = 0x0, 
+{\bfseries Pre\+Post\+Behaviour\+\_\+\+Constant} = 0x1, 
+{\bfseries Pre\+Post\+Behaviour\+\_\+\+Repeat} = 0x2, 
+{\bfseries Pre\+Post\+Behaviour\+\_\+\+Oscillate} = 0x3, 
+\\*
+{\bfseries Pre\+Post\+Behaviour\+\_\+\+Offset\+Repeat} = 0x4, 
+{\bfseries Pre\+Post\+Behaviour\+\_\+\+Linear} = 0x5
+ \}}\label{namespace_assimp_1_1_l_w_o_ae88b90391a89cb0fc104f1f05b9e716e}
+
+\begin{DoxyCompactList}\small\item\em List of recognized L\+W\+O pre or post range behaviours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+L\+W\+O\+Animation\+Resolver utility class. 
+
+This is for all lightwave-\/related file format, not only L\+W\+O. L\+W\+S isthe main purpose. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_l_w_o_animation_8h_a34b8f37cae9d485aea1403079aa2bcf6}{\index{L\+W\+O\+Animation.\+h@{L\+W\+O\+Animation.\+h}!A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S@{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S}}
+\index{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S@{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S}!L\+W\+O\+Animation.\+h@{L\+W\+O\+Animation.\+h}}
+\subsubsection[{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+A\+N\+I\+M\+S~0x1}}\label{_l_w_o_animation_8h_a34b8f37cae9d485aea1403079aa2bcf6}
+Flag for Anim\+Resolver, subsamples the input data with the rate specified by Anim\+Resolver\+::\+Set\+Sample\+Rate(). \hypertarget{_l_w_o_animation_8h_a5579bad44907eb435a971f052481d0b4}{\index{L\+W\+O\+Animation.\+h@{L\+W\+O\+Animation.\+h}!A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O@{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O}}
+\index{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O@{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O}!L\+W\+O\+Animation.\+h@{L\+W\+O\+Animation.\+h}}
+\subsubsection[{A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+I\+\_\+\+L\+W\+O\+\_\+\+A\+N\+I\+M\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+T\+\_\+\+Z\+E\+R\+O~0x2}}\label{_l_w_o_animation_8h_a5579bad44907eb435a971f052481d0b4}
+Flag for Anim\+Resolver, ensures that the animations starts at zero. 

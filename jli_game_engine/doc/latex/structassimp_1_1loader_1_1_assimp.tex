@@ -1,0 +1,39 @@
+\hypertarget{structassimp_1_1loader_1_1_assimp}{\section{assimp\+:\+:loader\+:\+:Assimp Struct Reference}
+\label{structassimp_1_1loader_1_1_assimp}\index{assimp\+::loader\+::\+Assimp@{assimp\+::loader\+::\+Assimp}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structassimp_1_1loader_1_1_assimp_aad156ef76d3f77c27ec4423a86ab5ea6}{load} ()
+\item 
+static void \hyperlink{structassimp_1_1loader_1_1_assimp_a2380e5e18c3e5a480fafd7a6da93eee5}{unload} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loader class for dynamically loading the \hyperlink{structassimp_1_1loader_1_1_assimp}{Assimp} library.
+
+The library is »reference-\/counted«, meaning that the library is not unloaded on a call to {\ttfamily \hyperlink{structassimp_1_1loader_1_1_assimp_a2380e5e18c3e5a480fafd7a6da93eee5}{unload()}} if there are still other references to it. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structassimp_1_1loader_1_1_assimp_aad156ef76d3f77c27ec4423a86ab5ea6}{\index{assimp\+::loader\+::\+Assimp@{assimp\+::loader\+::\+Assimp}!load@{load}}
+\index{load@{load}!assimp\+::loader\+::\+Assimp@{assimp\+::loader\+::\+Assimp}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}static void assimp\+::loader\+::\+Assimp\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structassimp_1_1loader_1_1_assimp_aad156ef76d3f77c27ec4423a86ab5ea6}
+Loads the library if it is not already loaded and increases the reference counter.
+
+The library file ({\ttfamily libassimp.\+so} on P\+O\+S\+I\+X systems, {\ttfamily Assimp32.\+dll} on Win32) is loaded via Tango's Shared\+Lib class. \hypertarget{structassimp_1_1loader_1_1_assimp_a2380e5e18c3e5a480fafd7a6da93eee5}{\index{assimp\+::loader\+::\+Assimp@{assimp\+::loader\+::\+Assimp}!unload@{unload}}
+\index{unload@{unload}!assimp\+::loader\+::\+Assimp@{assimp\+::loader\+::\+Assimp}}
+\subsubsection[{unload}]{\setlength{\rightskip}{0pt plus 5cm}static void assimp\+::loader\+::\+Assimp\+::unload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structassimp_1_1loader_1_1_assimp_a2380e5e18c3e5a480fafd7a6da93eee5}
+Decreases the reference counter and unloads the library if this was the last reference. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/d\+Assimp/assimp/loader.\+d\end{DoxyCompactItemize}

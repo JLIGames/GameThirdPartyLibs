@@ -1,0 +1,15 @@
+digraph "fmod/android/fmodstudioapi10503android/api/lowlevel/examples/eclipse/play_sound/obj/local" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_de746bf8ac03003d9084ac72540d83ae {
+    graph [ bgcolor="#ddddee", pencolor="black", label="obj" fontname="Helvetica", fontsize="10", URL="dir_de746bf8ac03003d9084ac72540d83ae.html"]
+  subgraph clusterdir_ce623a5a54e0e9dbce8bb08b57ddfa1f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ce623a5a54e0e9dbce8bb08b57ddfa1f.html"];
+    dir_ce623a5a54e0e9dbce8bb08b57ddfa1f [shape=plaintext label="local"];
+    dir_5e8393fcb30358e53e095ef3222dd705 [shape=box label="armeabi" color="red" fillcolor="white" style="filled" URL="dir_5e8393fcb30358e53e095ef3222dd705.html"];
+    dir_f7de8e375460c894ff25ba0c9e316f8b [shape=box label="armeabi-v7a" color="red" fillcolor="white" style="filled" URL="dir_f7de8e375460c894ff25ba0c9e316f8b.html"];
+    dir_f8c2627719455976fd7ccdeb22dee577 [shape=box label="x86" color="red" fillcolor="white" style="filled" URL="dir_f8c2627719455976fd7ccdeb22dee577.html"];
+  }
+  }
+}

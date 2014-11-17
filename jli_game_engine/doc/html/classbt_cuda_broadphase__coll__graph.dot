@@ -1,0 +1,26 @@
+digraph "btCudaBroadphase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="btCudaBroadphase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="btGpu3DGridBroadphase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_gpu3_d_grid_broadphase.html",tooltip="The btGpu3DGridBroadphase uses GPU-style code compiled for CPU to compute overlapping pairs..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="btSimpleBroadphase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_simple_broadphase.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="btBroadphaseInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_broadphase_interface.html"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pairCache" ,fontname="Helvetica"];
+  Node5 [label="btOverlappingPairCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_overlapping_pair_cache.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="btOverlappingPairCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_overlapping_pair_callback.html",tooltip="The btOverlappingPairCallback class is an additional optional broadphase user callback for adding/rem..."];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pHandles" ,fontname="Helvetica"];
+  Node7 [label="btSimpleBroadphaseProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_simple_broadphase_proxy.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="btBroadphaseProxy",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_hAABB" ,fontname="Helvetica"];
+  Node9 [label="bt3DGrid3F1U",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt3_d_grid3_f1_u.html"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pLargeHandles" ,fontname="Helvetica"];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_params" ,fontname="Helvetica"];
+  Node10 [label="bt3DGridBroadphaseParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt3_d_grid_broadphase_params.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dAABB" ,fontname="Helvetica"];
+}

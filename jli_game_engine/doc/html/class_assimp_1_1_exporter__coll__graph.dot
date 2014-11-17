@@ -1,0 +1,17 @@
+digraph "Assimp::Exporter"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Assimp::Exporter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pimpl" ,fontname="Helvetica"];
+  Node2 [label="Assimp::ExporterPimpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_exporter_pimpl.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mIOSystem" ,fontname="Helvetica"];
+  Node3 [label="boost::shared_ptr\<\l Assimp::Assimp::IOSystem \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboost_1_1shared__ptr.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" blob" ,fontname="Helvetica"];
+  Node4 [label="aiExportDataBlob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structai_export_data_blob.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name" ,fontname="Helvetica"];
+  Node5 [label="aiString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structai_string.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IDisposable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+}

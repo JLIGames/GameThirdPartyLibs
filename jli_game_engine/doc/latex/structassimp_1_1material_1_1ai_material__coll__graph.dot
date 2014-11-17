@@ -1,0 +1,10 @@
+digraph "assimp::material::aiMaterial"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="assimp::material::aiMaterial",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mProperties" ];
+  Node2 [label="assimp::material::aiMaterial\lProperty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structassimp_1_1material_1_1ai_material_property.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mKey" ];
+  Node3 [label="assimp::types::aiString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structassimp_1_1types_1_1ai_string.html"];
+}

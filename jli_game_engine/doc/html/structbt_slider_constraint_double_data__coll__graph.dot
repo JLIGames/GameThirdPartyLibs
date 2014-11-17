@@ -1,0 +1,25 @@
+digraph "btSliderConstraintDoubleData"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="btSliderConstraintDoubleData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_typeConstraintData" ,fontname="Helvetica"];
+  Node2 [label="btTypedConstraintDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_typed_constraint_double_data.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rbA\nm_rbB" ,fontname="Helvetica"];
+  Node3 [label="btRigidBodyDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_rigid_body_double_data.html",tooltip="do not change those serialization structures, it requires an updated sBulletDNAstr/sBulletDNAstr64 ..."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_collisionObjectData" ,fontname="Helvetica"];
+  Node4 [label="btCollisionObjectDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_collision_object_double_data.html",tooltip="do not change those serialization structures, it requires an updated sBulletDNAstr/sBulletDNAstr64 ..."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rootCollisionShape" ,fontname="Helvetica"];
+  Node5 [label="btCollisionShapeData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_collision_shape_data.html",tooltip="do not change those serialization structures, it requires an updated sBulletDNAstr/sBulletDNAstr64 ..."];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_worldTransform\nm_interpolationWorldTransform" ,fontname="Helvetica"];
+  Node6 [label="btTransformDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_transform_double_data.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_origin" ,fontname="Helvetica"];
+  Node7 [label="btVector3DoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_vector3_double_data.html"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_basis" ,fontname="Helvetica"];
+  Node8 [label="btMatrix3x3DoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_matrix3x3_double_data.html",tooltip="for serialization "];
+  Node7 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_el" ,fontname="Helvetica"];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_interpolationAngularVelocity\nm_anisotropicFriction\nm_interpolationLinearVelocity" ,fontname="Helvetica"];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_gravity\nm_linearVelocity\nm_totalTorque\nm_invInertiaLocal\nm_gravity_acceleration\nm_linearFactor\nm_angularVelocity\nm_angularFactor\nm_totalForce" ,fontname="Helvetica"];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_invInertiaTensorWorld" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rbBFrame\nm_rbAFrame" ,fontname="Helvetica"];
+}

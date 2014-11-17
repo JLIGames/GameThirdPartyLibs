@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GIM_BOX_TREE_TEMPLATE\l_SET\< _GIM_PRIMITIVE\l_MANAGER_PROTOTYPE, _GIM\l_BOX_TREE_PROTOTYPE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___b_o_x___t_r_e_e___t_e_m_p_l_a_t_e___s_e_t.html",tooltip="Generic Box Tree Template. "];
+}

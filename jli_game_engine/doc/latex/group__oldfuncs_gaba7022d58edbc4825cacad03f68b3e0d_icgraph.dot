@@ -1,0 +1,9 @@
+digraph "theora_info_clear"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="theora_info_clear",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="theora_clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__oldfuncs.html#gab252d5d81b925136dda72e8f1c09c5eb"];
+}

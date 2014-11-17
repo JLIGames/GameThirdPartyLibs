@@ -1,0 +1,11 @@
+digraph "GIM_TRIANGLE::is_point_inside"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GIM_TRIANGLE::is_point\l_inside",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="GIM_TRIANGLE::ray_collision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___t_r_i_a_n_g_l_e.html#a2942ca686a994c2d112ad356c2a4e7ad",tooltip="Bidireccional ray collision. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="GIM_TRIANGLE::ray_collision\l_front_side",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___t_r_i_a_n_g_l_e.html#a2b333284fd573994acf89b9085a61927",tooltip="one direccion ray collision "];
+}

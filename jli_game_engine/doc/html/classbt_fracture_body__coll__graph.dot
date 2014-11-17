@@ -1,0 +1,35 @@
+digraph "btFractureBody"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="btFractureBody",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="btRigidBody",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_rigid_body.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="btCollisionObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_world" ,fontname="Helvetica"];
+  Node4 [label="btDynamicsWorld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_dynamics_world.html",tooltip="The btDynamicsWorld is the interface class for several dynamics implementation, basic, discrete, parallel, and continuous etc. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="btCollisionWorld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_collision_world.html",tooltip="CollisionWorld is interface and container for the collision detection. "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_collisionObjects" ,fontname="Helvetica"];
+  Node6 [label="btAlignedObjectArray\l\< btCollisionObject * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dispatchInfo" ,fontname="Helvetica"];
+  Node7 [label="btDispatcherInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dispatcher_info.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_debugDraw" ,fontname="Helvetica"];
+  Node8 [label="btIDebugDraw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_i_debug_draw.html"];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dispatcher1" ,fontname="Helvetica"];
+  Node9 [label="btDispatcher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_dispatcher.html"];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_broadphasePairCache" ,fontname="Helvetica"];
+  Node10 [label="btBroadphaseInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_broadphase_interface.html"];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_debugDrawer" ,fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_internalPreTickCallback\nm_internalTickCallback" ,fontname="Helvetica"];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_solverInfo" ,fontname="Helvetica"];
+  Node11 [label="btContactSolverInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_contact_solver_info.html"];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="btContactSolverInfoData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_contact_solver_info_data.html"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_masses" ,fontname="Helvetica"];
+  Node13 [label="btAlignedObjectArray\l\< btScalar \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_connections" ,fontname="Helvetica"];
+  Node14 [label="btAlignedObjectArray\l\< btConnection \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+}

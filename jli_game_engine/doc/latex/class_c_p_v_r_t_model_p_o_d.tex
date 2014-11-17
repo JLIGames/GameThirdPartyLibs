@@ -1,0 +1,1154 @@
+\hypertarget{class_c_p_v_r_t_model_p_o_d}{\section{C\+P\+V\+R\+T\+Model\+P\+O\+D Class Reference}
+\label{class_c_p_v_r_t_model_p_o_d}\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+}
+
+
+A class for loading and storing data from P\+O\+D files/headers.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+Model\+P\+O\+D.\+h$>$}
+
+
+
+Inheritance diagram for C\+P\+V\+R\+T\+Model\+P\+O\+D\+:
+
+
+Collaboration diagram for C\+P\+V\+R\+T\+Model\+P\+O\+D\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_v_r_t_model_p_o_d_ae04d9314e829bd539283627a9e2508dd}{C\+P\+V\+R\+T\+Model\+P\+O\+D} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} class. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_model_p_o_d_ac5f89fab9bfc45030a2936ee9e2d9710}{$\sim$\+C\+P\+V\+R\+T\+Model\+P\+O\+D} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} class. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_abe43b961eabe1c9db94545b97c84c71f}{Read\+From\+File} (const char $\ast$const psz\+File\+Name, char $\ast$const psz\+Exp\+Opt=N\+U\+L\+L, const size\+\_\+t count=0, char $\ast$const psz\+History=N\+U\+L\+L, const size\+\_\+t history\+Count=0)
+\begin{DoxyCompactList}\small\item\em Loads the specified \char`\"{}.\+P\+O\+D\char`\"{} file; returns the scene in p\+Scene. This structure must later be destroyed with P\+V\+R\+T\+Model\+P\+O\+D\+Destroy() to prevent memory leaks. \char`\"{}.\+P\+O\+D\char`\"{} files are exported using the P\+V\+R\+Geo\+P\+O\+D exporters. If psz\+Exp\+Opt is N\+U\+L\+L, the scene is loaded; otherwise the scene is not loaded and psz\+Exp\+Opt is filled in. The same is true for psz\+History. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_a83eecfad3cea65bae9befa3cbde20c88}{Read\+From\+Memory} (const char $\ast$p\+Data, const size\+\_\+t i32\+Size, char $\ast$const psz\+Exp\+Opt=N\+U\+L\+L, const size\+\_\+t count=0, char $\ast$const psz\+History=N\+U\+L\+L, const size\+\_\+t history\+Count=0)
+\begin{DoxyCompactList}\small\item\em Loads the supplied pod data. This data can be exported directly to a header using one of the pod exporters. If psz\+Exp\+Opt is N\+U\+L\+L, the scene is loaded; otherwise the scene is not loaded and psz\+Exp\+Opt is filled in. The same is true for psz\+History. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_a860063835e46583b704c53069a70483c}{Read\+From\+Memory} (const \hyperlink{struct_s_p_o_d_scene}{S\+P\+O\+D\+Scene} \&scene)
+\begin{DoxyCompactList}\small\item\em Sets the scene data from the supplied data structure. Use when loading from .H files. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_af8b1b565dbe71e343fd36828772015fa}{Copy\+From\+Memory} (const \hyperlink{struct_s_p_o_d_scene}{S\+P\+O\+D\+Scene} \&scene)
+\begin{DoxyCompactList}\small\item\em Copies the scene data from the supplied data structure. Use when loading from .H files where you want to modify the data. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_abd91acfb4ab05f3f7c8f5e25363bfb42}{Init\+Impl} ()
+\begin{DoxyCompactList}\small\item\em Used by the Read$\ast$() fns to initialise implementation details. Should also be called by applications which manually build data in the P\+O\+D structures for rendering; in this case call it after the data has been created. Otherwise, do not call this function. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a8360f69bbc97d1d74fc327cc1e84c47e}{Destroy\+Impl} ()
+\begin{DoxyCompactList}\small\item\em Used to free memory allocated by the implementation. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a7ddd6d1c03dce50baf7a89323147e37e}{Flush\+Cache} ()
+\begin{DoxyCompactList}\small\item\em Clears the matrix cache; use this if necessary when you edit the position or animation of a node. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_model_p_o_d_a14547b77b10b6e6d97c92b6ce0020705}{Is\+Loaded} ()
+\begin{DoxyCompactList}\small\item\em Boolean to check whether a P\+O\+D file has been loaded. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a8a15860a44e4ad22d3c486e17e89226c}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated to store the scene in p\+Scene. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a52258e72054fcc086efc2374648e141d}{Set\+Frame} (const \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} f\+Frame)
+\begin{DoxyCompactList}\small\item\em Set the animation frame for which subsequent Get$\ast$() calls should return data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a021fd16d1c7d7f3e09ba1e133289d0e7}{Get\+Rotation\+Matrix} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a515c34b5a0285ee713d97541eb082496}{Get\+Rotation\+Matrix} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_aaf982331192d8590949796dd61777c8a}{Get\+Scaling\+Matrix} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a0c2e6579a636c6ba2c63b99f5b895c8a}{Get\+Scaling\+Matrix} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a1523d8ed385a093a210e229b3e81a0bb}{Get\+Translation} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&V, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the translation vector for the given \hyperlink{class_mesh}{Mesh} Instance. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \hyperlink{class_c_p_v_r_t_model_p_o_d_ad0b83b6db7fef5859f8546a0e21b7b70}{Get\+Translation} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the translation vector for the given \hyperlink{class_mesh}{Mesh} Instance. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a5b9cdd65e3f36c6fe3c0a6937892d506}{Get\+Translation\+Matrix} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a761cc0208fc41641bd5fafbe87ab71c7}{Get\+Translation\+Matrix} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_ab614a904956547c6cd7c623046f888b2}{Get\+Transformation\+Matrix} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a5d8930577009f9c922665522ca9bb1c3}{Get\+World\+Matrix\+No\+Cache} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \hyperlink{class_c_p_v_r_t_model_p_o_d_ad13e0fe08758d7f7bbfd71c3b765600e}{Get\+World\+Matrix\+No\+Cache} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a275eceb98a361d91d77e15b54238a8de}{Get\+World\+Matrix} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a0e0fc98ee446caa808cae16f21ed8aa1}{Get\+World\+Matrix} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&node) const 
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_a6694249e9748720dcbc96ff3945dd367}{Get\+Bone\+World\+Matrix} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&m\+Out, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&Node\+Mesh, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&Node\+Bone)
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given bone. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a55e36dee28766a434d0d74d8c220933e}{Get\+Bone\+World\+Matrix} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&Node\+Mesh, const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&Node\+Bone)
+\begin{DoxyCompactList}\small\item\em Generates the world matrix for the given bone. \end{DoxyCompactList}\item 
+\hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} \hyperlink{class_c_p_v_r_t_model_p_o_d_aa96ff6f192ed302b0f0b5461c2b266d9}{Get\+Camera} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+From, \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+To, \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+Up, const unsigned int n\+Idx) const 
+\begin{DoxyCompactList}\small\item\em Calculate the From, To and Up vectors for the given camera. Uses animation data. Note that even if the camera has a target, $\ast$pv\+To is not the position of that target. $\ast$pv\+To is a position in the correct direction of the target, one unit away from the camera. \end{DoxyCompactList}\item 
+\hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} \hyperlink{class_c_p_v_r_t_model_p_o_d_a169b7cd0640846ee50a1ec7f1ba72550}{Get\+Camera\+Pos} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+From, \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+To, const unsigned int n\+Idx) const 
+\begin{DoxyCompactList}\small\item\em Calculate the position of the camera and its target. Uses animation data. If the queried camera does not have a target, $\ast$pv\+To is not changed. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_model_p_o_d_ae0cde5db69dc26398e815e28b4f33acf}{Get\+Light} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+Pos, \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&v\+Dir, const unsigned int n\+Idx) const 
+\begin{DoxyCompactList}\small\item\em Calculate the position and direction of the given Light. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a593d96ac61ad735488dff4cef4e699b8}{Get\+Light\+Position} (const unsigned int u32\+Idx) const 
+\begin{DoxyCompactList}\small\item\em Calculate the position the given Light. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \hyperlink{class_c_p_v_r_t_model_p_o_d_a904e919dc7ffa58127e9cff141f146bd}{Get\+Light\+Direction} (const unsigned int u32\+Idx) const 
+\begin{DoxyCompactList}\small\item\em Calculate the direction of the given Light. Uses animation data. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_a6b13bc7df2c7e50ddc3ede10233e12ec}{Create\+Skin\+Idx\+Weight} (char $\ast$const p\+Idx, char $\ast$const p\+Weight, const int n\+Vertex\+Bones, const int $\ast$const pn\+Bone\+Idx, const \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$const pf\+Bone\+Weight)
+\begin{DoxyCompactList}\small\item\em Creates the matrix indices and blend weights for a boned vertex. Call once per vertex of a boned mesh. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_model_p_o_d_aeb97379f3598577a9fa3923799e7d703}{Save\+P\+O\+D} (const char $\ast$const psz\+Filename, const char $\ast$const psz\+Exp\+Opt=0, const char $\ast$const psz\+History=0)
+\begin{DoxyCompactList}\small\item\em Save a binary P\+O\+D file (.P\+O\+D). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class for loading and storing data from P\+O\+D files/headers. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_p_v_r_t_model_p_o_d_ae04d9314e829bd539283627a9e2508dd}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{C\+P\+V\+R\+T\+Model\+P\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+C\+P\+V\+R\+T\+Model\+P\+O\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_ae04d9314e829bd539283627a9e2508dd}
+
+
+Constructor for \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} class. 
+
+
+
+
+
+
+
+  Constructor  Initializes the pointer to scene data to N\+U\+L\+L \hypertarget{class_c_p_v_r_t_model_p_o_d_ac5f89fab9bfc45030a2936ee9e2d9710}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!````~C\+P\+V\+R\+T\+Model\+P\+O\+D@{$\sim$\+C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\index{````~C\+P\+V\+R\+T\+Model\+P\+O\+D@{$\sim$\+C\+P\+V\+R\+T\+Model\+P\+O\+D}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{$\sim$\+C\+P\+V\+R\+T\+Model\+P\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::$\sim$\+C\+P\+V\+R\+T\+Model\+P\+O\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_ac5f89fab9bfc45030a2936ee9e2d9710}
+
+
+Destructor for \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} class. 
+
+
+
+
+
+
+
+  Destructor  Frees the memory allocated to store the scene in p\+Scene. 
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_t_model_p_o_d_af8b1b565dbe71e343fd36828772015fa}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Copy\+From\+Memory@{Copy\+From\+Memory}}
+\index{Copy\+From\+Memory@{Copy\+From\+Memory}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Copy\+From\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Copy\+From\+Memory (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Scene} \&}]{scene}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_af8b1b565dbe71e343fd36828772015fa}
+
+
+Copies the scene data from the supplied data structure. Use when loading from .H files where you want to modify the data. 
+
+
+
+  Copy\+From\+Memory  scene Scene data  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not  Sets the scene data from the supplied data structure.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & Scene data from the header file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a6b13bc7df2c7e50ddc3ede10233e12ec}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Create\+Skin\+Idx\+Weight@{Create\+Skin\+Idx\+Weight}}
+\index{Create\+Skin\+Idx\+Weight@{Create\+Skin\+Idx\+Weight}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Create\+Skin\+Idx\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Create\+Skin\+Idx\+Weight (
+\begin{DoxyParamCaption}
+\item[{char $\ast$const}]{p\+Idx, }
+\item[{char $\ast$const}]{p\+Weight, }
+\item[{const int}]{n\+Vertex\+Bones, }
+\item[{const int $\ast$const}]{pn\+Bone\+Idx, }
+\item[{const {\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$const}]{pf\+Bone\+Weight}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a6b13bc7df2c7e50ddc3ede10233e12ec}
+
+
+Creates the matrix indices and blend weights for a boned vertex. Call once per vertex of a boned mesh. 
+
+
+
+  Create\+Skin\+Idx\+Weight  p\+Idx Four bytes containing matrix indices for vertex (0..255) (D3\+D\+: use U\+B\+Y\+T\+E4)  p\+Weight Four bytes containing blend weights for vertex (0.\+0 .. 1.\+0) (D3\+D\+: use D3\+D\+C\+O\+L\+O\+R)  n\+Vertex\+Bones Number of bones this vertex uses  pn\+Bone\+Idx Pointer to 'n\+Vertex\+Bones' indices  pf\+Bone\+Weight Pointer to 'n\+Vertex\+Bones' blend weights  Creates the matrix indices and blend weights for a boned vertex. Call once per vertex of a boned mesh.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+Idx} & Four bytes containing matrix indices for vertex (0..255) (D3\+D\+: use U\+B\+Y\+T\+E4) \\
+\hline
+\mbox{\tt out}  & {\em p\+Weight} & Four bytes containing blend weights for vertex (0.\+0 .. 1.\+0) (D3\+D\+: use D3\+D\+C\+O\+L\+O\+R) \\
+\hline
+\mbox{\tt in}  & {\em n\+Vertex\+Bones} & Number of bones this vertex uses \\
+\hline
+\mbox{\tt in}  & {\em pn\+Bone\+Idx} & Pointer to 'n\+Vertex\+Bones' indices \\
+\hline
+\mbox{\tt in}  & {\em pf\+Bone\+Weight} & Pointer to 'n\+Vertex\+Bones' blend weights \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a8a15860a44e4ad22d3c486e17e89226c}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Destroy}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a8a15860a44e4ad22d3c486e17e89226c}
+
+
+Frees the memory allocated to store the scene in p\+Scene. 
+
+
+
+  Destroy  Frees the memory allocated to store the scene in p\+Scene.
+
+
+
+ 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a8360f69bbc97d1d74fc327cc1e84c47e}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Destroy\+Impl@{Destroy\+Impl}}
+\index{Destroy\+Impl@{Destroy\+Impl}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Destroy\+Impl}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Destroy\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a8360f69bbc97d1d74fc327cc1e84c47e}
+
+
+Used to free memory allocated by the implementation. 
+
+
+
+  Destroy\+Impl  Used to free memory allocated by the implementation.
+
+
+
+ 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a7ddd6d1c03dce50baf7a89323147e37e}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Flush\+Cache@{Flush\+Cache}}
+\index{Flush\+Cache@{Flush\+Cache}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Flush\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Flush\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a7ddd6d1c03dce50baf7a89323147e37e}
+
+
+Clears the matrix cache; use this if necessary when you edit the position or animation of a node. 
+
+
+
+  Flush\+Cache  Clears the matrix cache; use this if necessary when you edit the position or animation of a node.
+
+
+
+ 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a6694249e9748720dcbc96ff3945dd367}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Bone\+World\+Matrix@{Get\+Bone\+World\+Matrix}}
+\index{Get\+Bone\+World\+Matrix@{Get\+Bone\+World\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Bone\+World\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Bone\+World\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{Node\+Mesh, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{Node\+Bone}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a6694249e9748720dcbc96ff3945dd367}
+
+
+Generates the world matrix for the given bone. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & Bone world matrix \\
+\hline
+\mbox{\tt in}  & {\em Node\+Mesh} & \hyperlink{class_mesh}{Mesh} to take the world matrix from \\
+\hline
+\mbox{\tt in}  & {\em Node\+Bone} & Bone to take the matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+Bone\+World\+Matrix  m\+Out Bone world matrix  Node\+Mesh \hyperlink{class_mesh}{Mesh} to take the bone matrix from  Node\+Bone Bone to take the matrix from  Generates the world matrix for the given bone. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a55e36dee28766a434d0d74d8c220933e}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Bone\+World\+Matrix@{Get\+Bone\+World\+Matrix}}
+\index{Get\+Bone\+World\+Matrix@{Get\+Bone\+World\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Bone\+World\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Mat4} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Bone\+World\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{Node\+Mesh, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{Node\+Bone}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a55e36dee28766a434d0d74d8c220933e}
+
+
+Generates the world matrix for the given bone. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Node\+Mesh} & \hyperlink{class_mesh}{Mesh} to take the world matrix from \\
+\hline
+\mbox{\tt in}  & {\em Node\+Bone} & Bone to take the matrix from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bone world matrix
+\end{DoxyReturn}
+
+
+  Get\+Bone\+World\+Matrix  Node\+Mesh \hyperlink{class_mesh}{Mesh} to take the bone matrix from  Node\+Bone Bone to take the matrix from  Bone world matrix  Generates the world matrix for the given bone. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_aa96ff6f192ed302b0f0b5461c2b266d9}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+From, }
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+To, }
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+Up, }
+\item[{const unsigned int}]{n\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_aa96ff6f192ed302b0f0b5461c2b266d9}
+
+
+Calculate the From, To and Up vectors for the given camera. Uses animation data. Note that even if the camera has a target, $\ast$pv\+To is not the position of that target. $\ast$pv\+To is a position in the correct direction of the target, one unit away from the camera. 
+
+
+
+  Get\+Camera  v\+From Position of the camera  v\+To Target of the camera  v\+Up Up direction of the camera  n\+Idx \hyperlink{class_camera}{Camera} number  \hyperlink{class_camera}{Camera} horizontal F\+O\+V  Calculate the From, To and Up vectors for the given camera. Uses animation data. Note that even if the camera has a target, $\ast$pv\+To is not the position of that target. $\ast$pv\+To is a position in the correct direction of the target, one unit away from the camera.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em v\+From} & Position of the camera \\
+\hline
+\mbox{\tt out}  & {\em v\+To} & Target of the camera \\
+\hline
+\mbox{\tt out}  & {\em v\+Up} & Up direction of the camera \\
+\hline
+\mbox{\tt in}  & {\em n\+Idx} & \hyperlink{class_camera}{Camera} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_camera}{Camera} horizontal F\+O\+V 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a169b7cd0640846ee50a1ec7f1ba72550}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Camera\+Pos@{Get\+Camera\+Pos}}
+\index{Get\+Camera\+Pos@{Get\+Camera\+Pos}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Camera\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Camera\+Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+From, }
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+To, }
+\item[{const unsigned int}]{n\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a169b7cd0640846ee50a1ec7f1ba72550}
+
+
+Calculate the position of the camera and its target. Uses animation data. If the queried camera does not have a target, $\ast$pv\+To is not changed. 
+
+
+
+  Get\+Camera\+Pos  v\+From Position of the camera  v\+To Target of the camera  n\+Idx \hyperlink{class_camera}{Camera} number  \hyperlink{class_camera}{Camera} horizontal F\+O\+V  Calculate the position of the camera and its target. Uses animation data. If the queried camera does not have a target, $\ast$pv\+To is not changed.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em v\+From} & Position of the camera \\
+\hline
+\mbox{\tt out}  & {\em v\+To} & Target of the camera \\
+\hline
+\mbox{\tt in}  & {\em n\+Idx} & \hyperlink{class_camera}{Camera} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_camera}{Camera} horizontal F\+O\+V 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_ae0cde5db69dc26398e815e28b4f33acf}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Light@{Get\+Light}}
+\index{Get\+Light@{Get\+Light}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Light}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Light (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+Pos, }
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{v\+Dir, }
+\item[{const unsigned int}]{n\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_ae0cde5db69dc26398e815e28b4f33acf}
+
+
+Calculate the position and direction of the given Light. Uses animation data. 
+
+
+
+  Get\+Light  v\+Pos Position of the light  v\+Dir Direction of the light  n\+Idx Light number  Calculate the position and direction of the given Light. Uses animation data.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em v\+Pos} & Position of the light \\
+\hline
+\mbox{\tt out}  & {\em v\+Dir} & Direction of the light \\
+\hline
+\mbox{\tt in}  & {\em n\+Idx} & Light number \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a904e919dc7ffa58127e9cff141f146bd}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Light\+Direction@{Get\+Light\+Direction}}
+\index{Get\+Light\+Direction@{Get\+Light\+Direction}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Light\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Light\+Direction (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u32\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a904e919dc7ffa58127e9cff141f146bd}
+
+
+Calculate the direction of the given Light. Uses animation data. 
+
+
+
+  Get\+Light\+Direction  u32\+Idx Light number  \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} direction of light with w set correctly  Calculate the direction of the given Light. Uses animation data.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em u32\+Idx} & Light number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} direction of light with w set correctly 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a593d96ac61ad735488dff4cef4e699b8}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Light\+Position@{Get\+Light\+Position}}
+\index{Get\+Light\+Position@{Get\+Light\+Position}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Light\+Position}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Light\+Position (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u32\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a593d96ac61ad735488dff4cef4e699b8}
+
+
+Calculate the position the given Light. Uses animation data. 
+
+
+
+  Get\+Light\+Positon  u32\+Idx Light number  \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} position of light with w set correctly  Calculates the position of the given light. Uses animation data
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em u32\+Idx} & Light number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} position of light with w set correctly 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a021fd16d1c7d7f3e09ba1e133289d0e7}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}}
+\index{Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Rotation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Rotation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a021fd16d1c7d7f3e09ba1e133289d0e7}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & Rotation matrix \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the rotation matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+Rotation\+Matrix  m\+Out Rotation matrix  node \hyperlink{struct_node}{Node} to get the rotation matrix from  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a515c34b5a0285ee713d97541eb082496}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}}
+\index{Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Rotation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Mat4} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Rotation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a515c34b5a0285ee713d97541eb082496}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the rotation matrix from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rotation matrix
+\end{DoxyReturn}
+
+
+  Get\+Rotation\+Matrix  node \hyperlink{struct_node}{Node} to get the rotation matrix from  Rotation matrix  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_aaf982331192d8590949796dd61777c8a}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Scaling\+Matrix@{Get\+Scaling\+Matrix}}
+\index{Get\+Scaling\+Matrix@{Get\+Scaling\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Scaling\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_aaf982331192d8590949796dd61777c8a}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & Scaling matrix \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the rotation matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+Scaling\+Matrix  m\+Out Scaling matrix  node \hyperlink{struct_node}{Node} to get the rotation matrix from  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a0c2e6579a636c6ba2c63b99f5b895c8a}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Scaling\+Matrix@{Get\+Scaling\+Matrix}}
+\index{Get\+Scaling\+Matrix@{Get\+Scaling\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Scaling\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Mat4} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Scaling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a0c2e6579a636c6ba2c63b99f5b895c8a}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the rotation matrix from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Scaling matrix
+\end{DoxyReturn}
+
+
+  Get\+Scaling\+Matrix  node \hyperlink{struct_node}{Node} to get the rotation matrix from  Scaling matrix  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_ab614a904956547c6cd7c623046f888b2}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Transformation\+Matrix@{Get\+Transformation\+Matrix}}
+\index{Get\+Transformation\+Matrix@{Get\+Transformation\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Transformation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Transformation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_ab614a904956547c6cd7c623046f888b2}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & Transformation matrix \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the transformation matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+Transformation\+Matrix  m\+Out Transformation matrix  node \hyperlink{struct_node}{Node} to get the transformation matrix from  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a1523d8ed385a093a210e229b3e81a0bb}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Translation@{Get\+Translation}}
+\index{Get\+Translation@{Get\+Translation}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Translation (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} \&}]{V, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a1523d8ed385a093a210e229b3e81a0bb}
+
+
+Generates the translation vector for the given \hyperlink{class_mesh}{Mesh} Instance. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em V} & Translation vector \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the translation vector from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+Translation  V Translation vector  node \hyperlink{struct_node}{Node} to get the translation vector from  Generates the translation vector for the given \hyperlink{class_mesh}{Mesh} Instance. Uses animation data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_ad0b83b6db7fef5859f8546a0e21b7b70}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Translation@{Get\+Translation}}
+\index{Get\+Translation@{Get\+Translation}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Vec3} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_ad0b83b6db7fef5859f8546a0e21b7b70}
+
+
+Generates the translation vector for the given \hyperlink{class_mesh}{Mesh} Instance. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the translation vector from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Translation vector
+\end{DoxyReturn}
+
+
+  Get\+Translation  node \hyperlink{struct_node}{Node} to get the translation vector from  Translation vector  Generates the translation vector for the given \hyperlink{class_mesh}{Mesh} Instance. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a5b9cdd65e3f36c6fe3c0a6937892d506}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Translation\+Matrix@{Get\+Translation\+Matrix}}
+\index{Get\+Translation\+Matrix@{Get\+Translation\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Translation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a5b9cdd65e3f36c6fe3c0a6937892d506}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & Translation matrix \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the translation matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+Translation\+Matrix  m\+Out Translation matrix  node \hyperlink{struct_node}{Node} to get the translation matrix from  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a761cc0208fc41641bd5fafbe87ab71c7}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+Translation\+Matrix@{Get\+Translation\+Matrix}}
+\index{Get\+Translation\+Matrix@{Get\+Translation\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+Translation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Mat4} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+Translation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a761cc0208fc41641bd5fafbe87ab71c7}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the translation matrix from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Translation matrix
+\end{DoxyReturn}
+
+
+  Get\+Translation\+Matrix  node \hyperlink{struct_node}{Node} to get the translation matrix from  Translation matrix  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a275eceb98a361d91d77e15b54238a8de}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+World\+Matrix@{Get\+World\+Matrix}}
+\index{Get\+World\+Matrix@{Get\+World\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+World\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+World\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a275eceb98a361d91d77e15b54238a8de}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & World matrix \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the world matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+World\+Matrix  m\+Out World matrix  node \hyperlink{struct_node}{Node} to get the world matrix from  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a0e0fc98ee446caa808cae16f21ed8aa1}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+World\+Matrix@{Get\+World\+Matrix}}
+\index{Get\+World\+Matrix@{Get\+World\+Matrix}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+World\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Mat4} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+World\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a0e0fc98ee446caa808cae16f21ed8aa1}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the world matrix from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+World matrix
+\end{DoxyReturn}
+
+
+  Get\+World\+Matrix  node \hyperlink{struct_node}{Node} to get the world matrix from  World matrix  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a5d8930577009f9c922665522ca9bb1c3}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+World\+Matrix\+No\+Cache@{Get\+World\+Matrix\+No\+Cache}}
+\index{Get\+World\+Matrix\+No\+Cache@{Get\+World\+Matrix\+No\+Cache}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+World\+Matrix\+No\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+World\+Matrix\+No\+Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} \&}]{m\+Out, }
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_a5d8930577009f9c922665522ca9bb1c3}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em m\+Out} & World matrix \\
+\hline
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the world matrix from\\
+\hline
+\end{DoxyParams}
+
+
+  Get\+World\+Matrix\+No\+Cache  m\+Out World matrix  node \hyperlink{struct_node}{Node} to get the world matrix from  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_ad13e0fe08758d7f7bbfd71c3b765600e}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Get\+World\+Matrix\+No\+Cache@{Get\+World\+Matrix\+No\+Cache}}
+\index{Get\+World\+Matrix\+No\+Cache@{Get\+World\+Matrix\+No\+Cache}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Get\+World\+Matrix\+No\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+T\+Mat4} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Get\+World\+Matrix\+No\+Cache (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_model_p_o_d_ad13e0fe08758d7f7bbfd71c3b765600e}
+
+
+Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & \hyperlink{struct_node}{Node} to get the world matrix from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+World matrix
+\end{DoxyReturn}
+
+
+  Get\+World\+Matrix\+No\+Cache  node \hyperlink{struct_node}{Node} to get the world matrix from  World matrix  Generates the world matrix for the given \hyperlink{class_mesh}{Mesh} Instance; applies the parent's transform too. Uses animation data. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_abd91acfb4ab05f3f7c8f5e25363bfb42}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Init\+Impl@{Init\+Impl}}
+\index{Init\+Impl@{Init\+Impl}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Init\+Impl}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Init\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_abd91acfb4ab05f3f7c8f5e25363bfb42}
+
+
+Used by the Read$\ast$() fns to initialise implementation details. Should also be called by applications which manually build data in the P\+O\+D structures for rendering; in this case call it after the data has been created. Otherwise, do not call this function. 
+
+
+
+  Init\+Impl  Used by the Read$\ast$() fns to initialise implementation details. Should also be called by applications which manually build data in the P\+O\+D structures for rendering; in this case call it after the data has been created. Otherwise, do not call this function.
+
+
+
+ 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a14547b77b10b6e6d97c92b6ce0020705}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Is\+Loaded@{Is\+Loaded}}
+\index{Is\+Loaded@{Is\+Loaded}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Is\+Loaded}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Is\+Loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a14547b77b10b6e6d97c92b6ce0020705}
+
+
+Boolean to check whether a P\+O\+D file has been loaded. 
+
+
+
+  Is\+Loaded  Boolean to check whether a P\+O\+D file has been loaded.
+
+
+
+ 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_abe43b961eabe1c9db94545b97c84c71f}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Read\+From\+File@{Read\+From\+File}}
+\index{Read\+From\+File@{Read\+From\+File}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Read\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Read\+From\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{psz\+File\+Name, }
+\item[{char $\ast$const}]{psz\+Exp\+Opt = {\ttfamily NULL}, }
+\item[{const size\+\_\+t}]{count = {\ttfamily 0}, }
+\item[{char $\ast$const}]{psz\+History = {\ttfamily NULL}, }
+\item[{const size\+\_\+t}]{history\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_abe43b961eabe1c9db94545b97c84c71f}
+
+
+Loads the specified \char`\"{}.\+P\+O\+D\char`\"{} file; returns the scene in p\+Scene. This structure must later be destroyed with P\+V\+R\+T\+Model\+P\+O\+D\+Destroy() to prevent memory leaks. \char`\"{}.\+P\+O\+D\char`\"{} files are exported using the P\+V\+R\+Geo\+P\+O\+D exporters. If psz\+Exp\+Opt is N\+U\+L\+L, the scene is loaded; otherwise the scene is not loaded and psz\+Exp\+Opt is filled in. The same is true for psz\+History. 
+
+
+
+  Read\+From\+File  psz\+File\+Name Filename to load  psz\+Exp\+Opt String in which to place exporter options  count Maximum number of characters to store.  psz\+History String in which to place the pod file history  history\+Count Maximum number of characters to store.  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not  Loads the specified \char`\"{}.\+P\+O\+D\char`\"{} file; returns the scene in p\+Scene. This structure must later be destroyed with P\+V\+R\+T\+Model\+P\+O\+D\+Destroy() to prevent memory leaks. \char`\"{}.\+P\+O\+D\char`\"{} files are exported using the P\+V\+R\+Geo\+P\+O\+D exporters. If psz\+Exp\+Opt is N\+U\+L\+L, the scene is loaded; otherwise the scene is not loaded and psz\+Exp\+Opt is filled in. The same is true for psz\+History.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+File\+Name} & Filename to load \\
+\hline
+\mbox{\tt out}  & {\em psz\+Exp\+Opt} & String in which to place exporter options \\
+\hline
+\mbox{\tt in}  & {\em count} & Maximum number of characters to store. \\
+\hline
+\mbox{\tt out}  & {\em psz\+History} & String in which to place the pod file history \\
+\hline
+\mbox{\tt in}  & {\em history\+Count} & Maximum number of characters to store. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a83eecfad3cea65bae9befa3cbde20c88}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Read\+From\+Memory@{Read\+From\+Memory}}
+\index{Read\+From\+Memory@{Read\+From\+Memory}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Read\+From\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Read\+From\+Memory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Data, }
+\item[{const size\+\_\+t}]{i32\+Size, }
+\item[{char $\ast$const}]{psz\+Exp\+Opt = {\ttfamily NULL}, }
+\item[{const size\+\_\+t}]{count = {\ttfamily 0}, }
+\item[{char $\ast$const}]{psz\+History = {\ttfamily NULL}, }
+\item[{const size\+\_\+t}]{history\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a83eecfad3cea65bae9befa3cbde20c88}
+
+
+Loads the supplied pod data. This data can be exported directly to a header using one of the pod exporters. If psz\+Exp\+Opt is N\+U\+L\+L, the scene is loaded; otherwise the scene is not loaded and psz\+Exp\+Opt is filled in. The same is true for psz\+History. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Data} & Data to load \\
+\hline
+\mbox{\tt in}  & {\em i32\+Size} & Size of data \\
+\hline
+\mbox{\tt out}  & {\em psz\+Exp\+Opt} & String in which to place exporter options \\
+\hline
+\mbox{\tt in}  & {\em count} & Maximum number of characters to store. \\
+\hline
+\mbox{\tt out}  & {\em psz\+History} & String in which to place the pod file history \\
+\hline
+\mbox{\tt in}  & {\em history\+Count} & Maximum number of characters to store. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not
+\end{DoxyReturn}
+
+
+  Read\+From\+Memory  p\+Data Data to load  i32\+Size Size of data  psz\+Exp\+Opt String in which to place exporter options  count Maximum number of characters to store.  psz\+History String in which to place the pod file history  history\+Count Maximum number of characters to store.  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not  Loads the supplied pod data. This data can be exported directly to a header using one of the pod exporters. If psz\+Exp\+Opt is N\+U\+L\+L, the scene is loaded; otherwise the scene is not loaded and psz\+Exp\+Opt is filled in. The same is true for psz\+History. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a860063835e46583b704c53069a70483c}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Read\+From\+Memory@{Read\+From\+Memory}}
+\index{Read\+From\+Memory@{Read\+From\+Memory}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Read\+From\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Read\+From\+Memory (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Scene} \&}]{scene}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a860063835e46583b704c53069a70483c}
+
+
+Sets the scene data from the supplied data structure. Use when loading from .H files. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & Scene data from the header file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not
+\end{DoxyReturn}
+
+
+  Read\+From\+Memory  scene Scene data from the header file  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful, P\+V\+R\+\_\+\+F\+A\+I\+L if not  Sets the scene data from the supplied data structure. Use when loading from .H files. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_model_p_o_d_aeb97379f3598577a9fa3923799e7d703}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Save\+P\+O\+D@{Save\+P\+O\+D}}
+\index{Save\+P\+O\+D@{Save\+P\+O\+D}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Save\+P\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Save\+P\+O\+D (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{psz\+Filename, }
+\item[{const char $\ast$const}]{psz\+Exp\+Opt = {\ttfamily 0}, }
+\item[{const char $\ast$const}]{psz\+History = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_aeb97379f3598577a9fa3923799e7d703}
+
+
+Save a binary P\+O\+D file (.P\+O\+D). 
+
+
+
+  Save\+P\+O\+D  psz\+Filename Filename to save to  psz\+Exp\+Opt A string containing the options used by the exporter  Save a binary P\+O\+D file (.P\+O\+D).
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+Filename} & Filename to save to \\
+\hline
+\mbox{\tt in}  & {\em psz\+Exp\+Opt} & A string containing the options used by the exporter \\
+\hline
+\mbox{\tt in}  & {\em psz\+History} & A string containing the history of the exported pod file \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_p_v_r_t_model_p_o_d_a52258e72054fcc086efc2374648e141d}{\index{C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}!Set\+Frame@{Set\+Frame}}
+\index{Set\+Frame@{Set\+Frame}!C\+P\+V\+R\+T\+Model\+P\+O\+D@{C\+P\+V\+R\+T\+Model\+P\+O\+D}}
+\subsubsection[{Set\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Model\+P\+O\+D\+::\+Set\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf V\+E\+R\+T\+T\+Y\+P\+E}}]{f\+Frame}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_model_p_o_d_a52258e72054fcc086efc2374648e141d}
+
+
+Set the animation frame for which subsequent Get$\ast$() calls should return data. 
+
+
+
+  Set\+Frame  f\+Frame Frame number  Set the animation frame for which subsequent Get$\ast$() calls should return data.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em f\+Frame} & Frame number \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_model_p_o_d_8h}{P\+V\+R\+T\+Model\+P\+O\+D.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+Model\+P\+O\+D.\+cpp\end{DoxyCompactItemize}

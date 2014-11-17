@@ -1,0 +1,18 @@
+digraph "bullet/bullet-2.82-r2704/UnitTests/cppunit/include/cppunit" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1408d0d40231e8537ab72849b78f956a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_1408d0d40231e8537ab72849b78f956a.html"]
+  subgraph clusterdir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c.html"];
+    dir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c [shape=plaintext label="cppunit"];
+    dir_d519d0796ac959206daf77d81e7976fa [shape=box label="config" color="black" fillcolor="white" style="filled" URL="dir_d519d0796ac959206daf77d81e7976fa.html"];
+    dir_1e6da709118cedc1386ebc418413b02a [shape=box label="extensions" color="black" fillcolor="white" style="filled" URL="dir_1e6da709118cedc1386ebc418413b02a.html"];
+    dir_f8bcf1bc5fbe3be9e400bc481e0f9705 [shape=box label="plugin" color="black" fillcolor="white" style="filled" URL="dir_f8bcf1bc5fbe3be9e400bc481e0f9705.html"];
+    dir_91697d268417c1f94b1b9c4f4d3a4db4 [shape=box label="portability" color="black" fillcolor="white" style="filled" URL="dir_91697d268417c1f94b1b9c4f4d3a4db4.html"];
+    dir_0c902649d4119cf33087f1737c2d3bcc [shape=box label="tools" color="black" fillcolor="white" style="filled" URL="dir_0c902649d4119cf33087f1737c2d3bcc.html"];
+    dir_130abe9d59b09ee3a6c4514955c18f81 [shape=box label="ui" color="red" fillcolor="white" style="filled" URL="dir_130abe9d59b09ee3a6c4514955c18f81.html"];
+  }
+  }
+}

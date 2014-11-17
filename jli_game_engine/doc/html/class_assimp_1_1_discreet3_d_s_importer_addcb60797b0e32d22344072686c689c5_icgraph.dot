@@ -1,0 +1,11 @@
+digraph "Assimp::Discreet3DSImporter::ParseEditorChunk"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Discreet3DSImporter\l::ParseEditorChunk",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::Discreet3DSImporter\l::ParseMainChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#adbcf9fbe5c00a734e1939dbadd75604e"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::Discreet3DSImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#abf7e6eb912d47870e4b3ceec16376a90"];
+}

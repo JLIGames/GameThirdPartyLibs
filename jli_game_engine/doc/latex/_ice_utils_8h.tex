@@ -1,0 +1,250 @@
+\hypertarget{_ice_utils_8h}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Utils.h File Reference}
+\label{_ice_utils_8h}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Utils.\+h@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Utils.\+h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_utils_8h_a83fe08fc755251b821379ac54714db4c}{\#define {\bfseries S\+T\+A\+R\+T\+\_\+\+R\+U\+N\+O\+N\+C\+E}~\{ static bool \+\_\+\+\_\+\+Run\+Once\+\_\+\+\_\+ = false;	if(!\+\_\+\+\_\+\+Run\+Once\+\_\+\+\_\+)\{}\label{_ice_utils_8h_a83fe08fc755251b821379ac54714db4c}
+
+\item 
+\hypertarget{_ice_utils_8h_a7ab48b9d6eb786f29cdde7da35dfc14e}{\#define {\bfseries E\+N\+D\+\_\+\+R\+U\+N\+O\+N\+C\+E}~\+\_\+\+\_\+\+Run\+Once\+\_\+\+\_\+ = true;\}\}}\label{_ice_utils_8h_a7ab48b9d6eb786f29cdde7da35dfc14e}
+
+\item 
+\hypertarget{_ice_utils_8h_a06ec7f46743b772424102ffae56f0242}{\#define {\bfseries P\+R\+E\+V\+E\+N\+T\+\_\+\+C\+O\+P\+Y}(cur\+\_\+class)~private\+: cur\+\_\+class(const cur\+\_\+class\& object);	cur\+\_\+class\& operator=(const cur\+\_\+class\& object);}\label{_ice_utils_8h_a06ec7f46743b772424102ffae56f0242}
+
+\item 
+\hypertarget{_ice_utils_8h_a6f805d8480d1c4ed7dee4ab3a94ba178}{\#define \hyperlink{_ice_utils_8h_a6f805d8480d1c4ed7dee4ab3a94ba178}{O\+F\+F\+S\+E\+T\+\_\+\+O\+F}(Class, Member)~(size\+\_\+t)\&(((Class$\ast$)0)-\/$>$Member)}\label{_ice_utils_8h_a6f805d8480d1c4ed7dee4ab3a94ba178}
+
+\begin{DoxyCompactList}\small\item\em T\+O B\+E D\+O\+C\+U\+M\+E\+N\+T\+E\+D. \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_af55ba0d6cbc1905dd9ba97c62fd54c7b}{\#define \hyperlink{_ice_utils_8h_af55ba0d6cbc1905dd9ba97c62fd54c7b}{A\+R\+R\+A\+Y\+S\+I\+Z\+E}(p)~(sizeof(p)/sizeof(p\mbox{[}0\mbox{]}))}\label{_ice_utils_8h_af55ba0d6cbc1905dd9ba97c62fd54c7b}
+
+\begin{DoxyCompactList}\small\item\em T\+O B\+E D\+O\+C\+U\+M\+E\+N\+T\+E\+D. \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_a18abd98150704cea22137b62f26b9739}{\#define {\bfseries I\+S\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+2}(x)~((x\&1)==0)}\label{_ice_utils_8h_a18abd98150704cea22137b62f26b9739}
+
+\item 
+\hypertarget{_ice_utils_8h_ae635a0df3e1c2cefc963be8a2aa2a7dd}{\#define {\bfseries I\+S\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+4}(x)~((x\&3)==0)}\label{_ice_utils_8h_ae635a0df3e1c2cefc963be8a2aa2a7dd}
+
+\item 
+\hypertarget{_ice_utils_8h_ab4564c12a96ba93527332f5aee1a44f7}{\#define {\bfseries I\+S\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+8}(x)~((x\&7)==0)}\label{_ice_utils_8h_ab4564c12a96ba93527332f5aee1a44f7}
+
+\item 
+\#define {\bfseries G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S}(i, j, k)
+\item 
+\#define {\bfseries G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2}(i, j, k)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void \hyperlink{_ice_utils_8h_a4d6788ed1a82d4606b34d852c10c7340}{Reverse\+Bits} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&n)
+\item 
+\hypertarget{_ice_utils_8h_a41db1727743be6cebf4443361664688c}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{_ice_utils_8h_a41db1727743be6cebf4443361664688c}{Count\+Bits} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} n)}\label{_ice_utils_8h_a41db1727743be6cebf4443361664688c}
+
+\begin{DoxyCompactList}\small\item\em Count the number of '1' bits in a 32 bit word (from Steve Baker's Cute Code Collection) \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_aa038c1ef3962560920a62e04525003fc}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{_ice_utils_8h_aa038c1ef3962560920a62e04525003fc}{Count\+Bits2} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} bits)}\label{_ice_utils_8h_aa038c1ef3962560920a62e04525003fc}
+
+\begin{DoxyCompactList}\small\item\em Even faster? \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_a8b997ea4b74f548058ea76f99c379406}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries ones32} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} x)}\label{_ice_utils_8h_a8b997ea4b74f548058ea76f99c379406}
+
+\item 
+\hypertarget{_ice_utils_8h_a7186b976ef49f1468f92a2a8d47674d3}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries tzc} (\hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} x)}\label{_ice_utils_8h_a7186b976ef49f1468f92a2a8d47674d3}
+
+\item 
+inline\+\_\+ void \hyperlink{_ice_utils_8h_ad36294cd6a50248e99af311a433319b4}{Spread\+Bits} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&n)
+\item 
+\hypertarget{_ice_utils_8h_a20f4a1df4adef61f14ff9ac1e6bdde16}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Next\+Power\+Of\+Two} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} x)}\label{_ice_utils_8h_a20f4a1df4adef61f14ff9ac1e6bdde16}
+
+\item 
+\hypertarget{_ice_utils_8h_aa296decf8d5d4b9d496f2b14482a733a}{inline\+\_\+ bool \hyperlink{_ice_utils_8h_aa296decf8d5d4b9d496f2b14482a733a}{Is\+Power\+Of\+Two} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} n)}\label{_ice_utils_8h_aa296decf8d5d4b9d496f2b14482a733a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} to see if a number is an exact power of two (from Steve Baker's Cute Code Collection) \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_ae808145ada668d8b9c37e5ace49a7f5b}{inline\+\_\+ void \hyperlink{_ice_utils_8h_ae808145ada668d8b9c37e5ace49a7f5b}{Zero\+Least\+Set\+Bit} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&n)}\label{_ice_utils_8h_ae808145ada668d8b9c37e5ace49a7f5b}
+
+\begin{DoxyCompactList}\small\item\em Zero the least significant '1' bit in a word. (from Steve Baker's Cute Code Collection) \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_a467165f012455eacc17475b22812a244}{inline\+\_\+ void \hyperlink{_ice_utils_8h_a467165f012455eacc17475b22812a244}{Set\+Least\+N\+Bits} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&x, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} n)}\label{_ice_utils_8h_a467165f012455eacc17475b22812a244}
+
+\begin{DoxyCompactList}\small\item\em Set the least significant N bits in a word. (from Steve Baker's Cute Code Collection) \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_aac3d70b8d224b664daae248d0dc71e2d}{$\ast$inline\+\_\+ void {\bfseries Swap} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&x, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&\hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{_ice_utils_8h_aac3d70b8d224b664daae248d0dc71e2d}
+
+\item 
+inline\+\_\+ char \hyperlink{_ice_utils_8h_a1aebbfec0cec4f53723a47d817c80493}{Little\+Endian} ()
+\begin{DoxyCompactList}\small\item\em Alternative abs function. \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_ab1403248651d64c2bad657866aba59ec}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries abs\+\_\+} (\hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} x)}\label{_ice_utils_8h_ab1403248651d64c2bad657866aba59ec}
+
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} \hyperlink{_ice_utils_8h_a170635308b379a4deb578a4e51f0d8af}{min\+\_\+} (\hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} a, \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} b)
+\begin{DoxyCompactList}\small\item\em $<$ Alternative min function \end{DoxyCompactList}\item 
+\hypertarget{_ice_utils_8h_a8def74a825d3d89d89fe9d958ae71c61}{inline\+\_\+ \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} {\bfseries max\+\_\+} (\hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} a, \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} b)}\label{_ice_utils_8h_a8def74a825d3d89d89fe9d958ae71c61}
+
+\item 
+\hypertarget{_ice_utils_8h_acba2ac29f3e46f6c6376244ab3261e9c}{inline\+\_\+ \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} {\bfseries Integer\+Selection} (\hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} a, \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} b, \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} c, \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} d)}\label{_ice_utils_8h_acba2ac29f3e46f6c6376244ab3261e9c}
+
+\item 
+\hypertarget{_ice_utils_8h_af085b4c8cf2907ad6cdde5d539fd3c68}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} {\bfseries Has\+Null\+Byte} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} x)}\label{_ice_utils_8h_af085b4c8cf2907ad6cdde5d539fd3c68}
+
+\item 
+\hypertarget{_ice_utils_8h_a48c9a341dc3446e1e5c5967daae1abbb}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Lowest\+One\+Bit} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} w)}\label{_ice_utils_8h_a48c9a341dc3446e1e5c5967daae1abbb}
+
+\item 
+\hypertarget{_ice_utils_8h_ab2f40abf539b3251508e5ab0d325f477}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries msb32} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} x)}\label{_ice_utils_8h_ab2f40abf539b3251508e5ab0d325f477}
+
+\item 
+\hypertarget{_ice_utils_8h_addfdc2524eb54c9e134aca86c004e80d}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries g2b} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} gray)}\label{_ice_utils_8h_addfdc2524eb54c9e134aca86c004e80d}
+
+\item 
+\hypertarget{_ice_utils_8h_a0ed7f0c9ea26c44c1e1d5bd88be68bda}{inline\+\_\+ float {\bfseries Feedback\+Filter} (float val, float \&memory, float sharpness)}\label{_ice_utils_8h_a0ed7f0c9ea26c44c1e1d5bd88be68bda}
+
+\item 
+inline\+\_\+ int \hyperlink{_ice_utils_8h_a5c3b089dc96f585fed57542bb64a0f87}{Clamp\+To\+Int16} (int x)
+\item 
+\hypertarget{_ice_utils_8h_a06d798b4aa2bfc4635e1457264e7e363}{{\footnotesize template$<$class Type $>$ }\\inline\+\_\+ void {\bfseries T\+Swap} (\hyperlink{struct_type}{Type} \&a, \hyperlink{struct_type}{Type} \&b)}\label{_ice_utils_8h_a06d798b4aa2bfc4635e1457264e7e363}
+
+\item 
+\hypertarget{_ice_utils_8h_aca937a57ffc11b31b076697369cd88ce}{{\footnotesize template$<$class Type $>$ }\\inline\+\_\+ \hyperlink{struct_type}{Type} {\bfseries T\+Clamp} (const \hyperlink{struct_type}{Type} \&x, const \hyperlink{struct_type}{Type} \&lo, const \hyperlink{struct_type}{Type} \&hi)}\label{_ice_utils_8h_aca937a57ffc11b31b076697369cd88ce}
+
+\item 
+\hypertarget{_ice_utils_8h_aebacf51b8cab50a63ff647d157c483ad}{{\footnotesize template$<$class Type $>$ }\\inline\+\_\+ void {\bfseries T\+Sort} (\hyperlink{struct_type}{Type} \&a, \hyperlink{struct_type}{Type} \&b)}\label{_ice_utils_8h_aebacf51b8cab50a63ff647d157c483ad}
+
+\item 
+\hypertarget{_ice_utils_8h_aa1c67345e3838737c7c601ddef841309}{{\footnotesize template$<$class Type $>$ }\\inline\+\_\+ void {\bfseries T\+Sort} (\hyperlink{struct_type}{Type} \&a, \hyperlink{struct_type}{Type} \&b, \hyperlink{struct_type}{Type} \&c)}\label{_ice_utils_8h_aa1c67345e3838737c7c601ddef841309}
+
+\item 
+\hypertarget{_ice_utils_8h_a93aaf28e5e604a5f436597586fe81e3b}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Alignment} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} address)}\label{_ice_utils_8h_a93aaf28e5e604a5f436597586fe81e3b}
+
+\item 
+\hypertarget{_ice_utils_8h_a7aff02fc37aea623d1261a109ea57928}{inline\+\_\+ void {\bfseries Update\+Ptr} (void $\ast$\&ptr, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} stride)}\label{_ice_utils_8h_a7aff02fc37aea623d1261a109ea57928}
+
+\item 
+\hypertarget{_ice_utils_8h_aeb7ee49b488165c474f8bd23259d9ca2}{inline\+\_\+ void {\bfseries \+\_\+prefetch} (void const $\ast$ptr)}\label{_ice_utils_8h_aeb7ee49b488165c474f8bd23259d9ca2}
+
+\item 
+\hypertarget{_ice_utils_8h_a051e59fcf18fa01af72b1c86b67b8d46}{inline\+\_\+ void {\bfseries Compute2\+D\+Coords} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&u, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&v, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} i, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nbu)}\label{_ice_utils_8h_a051e59fcf18fa01af72b1c86b67b8d46}
+
+\item 
+\hypertarget{_ice_utils_8h_a53c69da603d20815c4f66ede713cf61b}{inline\+\_\+ void {\bfseries Compute3\+D\+Coords} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&u, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&v, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&w, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} i, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nbu, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nbu\+\_\+nbv)}\label{_ice_utils_8h_a53c69da603d20815c4f66ede713cf61b}
+
+\item 
+\hypertarget{_ice_utils_8h_a5b2575c611c528d6d71f60bad67caf41}{inline\+\_\+ void {\bfseries F\+Sin\+Cos} (float \&c, float \&s, float f)}\label{_ice_utils_8h_a5b2575c611c528d6d71f60bad67caf41}
+
+\item 
+\hypertarget{_ice_utils_8h_a8d88405bd199effb91dec086d5b7da90}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Modulo3} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} i)}\label{_ice_utils_8h_a8d88405bd199effb91dec086d5b7da90}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+$\ast$ \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} = x
+\item 
+\hypertarget{_ice_utils_8h_ada5c5f3c15b1aa65d2ed9e5fa97a38d5}{$\ast$ {\bfseries x} = \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}}\label{_ice_utils_8h_ada5c5f3c15b1aa65d2ed9e5fa97a38d5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains misc. useful macros \& defines.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman (collected from various sources) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000
+\end{DoxyDate}
+Contains misc. useful macros \& defines.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman (personal code + collected from various sources) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_ice_utils_8h_a9887f6dd2a3f787b3615c5233b192b68}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S@{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S}}
+\index{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S@{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S(
+\begin{DoxyParamCaption}
+\item[{}]{i, }
+\item[{}]{j, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_a9887f6dd2a3f787b3615c5233b192b68}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+k = 0x01000201;                 \(\backslash\)
+        k>>=(i<<3);                     \(\backslash\)
+        j = k & 0xff;                   \(\backslash\)
+        k>>=8;                          \(\backslash\)
+        k&=0xff;
+\end{DoxyCode}
+\hypertarget{_ice_utils_8h_ad96371a1e18e472d0afe6ea8168a785d}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2@{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2}}
+\index{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2@{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+\_\+\+N\+E\+X\+T\+\_\+\+I\+N\+D\+I\+C\+E\+S2(
+\begin{DoxyParamCaption}
+\item[{}]{i, }
+\item[{}]{j, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_ad96371a1e18e472d0afe6ea8168a785d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+j = ( 9 >> (i<<1)) & 3;         \(\backslash\)
+        k = (18 >> (i<<1)) & 3;
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{_ice_utils_8h_a5c3b089dc96f585fed57542bb64a0f87}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!Clamp\+To\+Int16@{Clamp\+To\+Int16}}
+\index{Clamp\+To\+Int16@{Clamp\+To\+Int16}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{Clamp\+To\+Int16}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ int Clamp\+To\+Int16 (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_a5c3b089dc96f585fed57542bb64a0f87}
+"If you can guarantee that your input domain (i.\+e. value of x) is slightly limited (abs(x) must be $<$ ((1$<$$<$31u)-\/32767)), then you can use the following code to clamp the resulting value into \mbox{[}-\/32768,+32767\mbox{]} range\+:" \hypertarget{_ice_utils_8h_a1aebbfec0cec4f53723a47d817c80493}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!Little\+Endian@{Little\+Endian}}
+\index{Little\+Endian@{Little\+Endian}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{Little\+Endian}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ char Little\+Endian (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_a1aebbfec0cec4f53723a47d817c80493}
+
+
+Alternative abs function. 
+
+Little/\+Big endian (from Steve Baker's Cute Code Collection)
+
+Extra comments by Kenny Hoff\+: Determines the byte-\/ordering of the current machine (little or big endian) by setting an integer value to 1 (so least significant bit is now 1); take the address of the int and cast to a byte pointer (treat integer as an array of four bytes); check the value of the first byte (must be 0 or 1). If the value is 1, then the first byte least significant byte and this implies L\+I\+T\+T\+L\+E endian. If the value is 0, the first byte is the most significant byte, B\+I\+G endian. Examples\+: integer 1 on B\+I\+G endian\+: 00000000 00000000 00000000 00000001 \subsubsection*{integer 1 on L\+I\+T\+T\+L\+E endian\+: 00000001 00000000 00000000 00000000 }
+
+int Is\+Little\+Endian() \{ int x=1; return ( ((char$\ast$)(\&x))\mbox{[}0\mbox{]} ); \} \hypertarget{_ice_utils_8h_a170635308b379a4deb578a4e51f0d8af}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!min\+\_\+@{min\+\_\+}}
+\index{min\+\_\+@{min\+\_\+}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{min\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf sdword} min\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{{\bf sdword}}]{a, }
+\item[{{\bf sdword}}]{b}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_a170635308b379a4deb578a4e51f0d8af}
+
+
+$<$ Alternative min function 
+
+Alternative max function \hypertarget{_ice_utils_8h_a4d6788ed1a82d4606b34d852c10c7340}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!Reverse\+Bits@{Reverse\+Bits}}
+\index{Reverse\+Bits@{Reverse\+Bits}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{Reverse\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Reverse\+Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf udword} \&}]{n}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_a4d6788ed1a82d4606b34d852c10c7340}
+Reverse all the bits in a 32 bit word (from Steve Baker's Cute Code Collection) (each line can be done in any order. \hypertarget{_ice_utils_8h_ad36294cd6a50248e99af311a433319b4}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!Spread\+Bits@{Spread\+Bits}}
+\index{Spread\+Bits@{Spread\+Bits}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{Spread\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Spread\+Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf udword} \&}]{n}
+\end{DoxyParamCaption}
+)}}\label{_ice_utils_8h_ad36294cd6a50248e99af311a433319b4}
+Spread out bits. E\+G 00001111 -\/$>$ 0101010101 00001010 -\/$>$ 0100010000 This is used to interleave two integers to produce a `\+Morton Key' used in Space Filling Curves (See Dr\+Dobbs Journal, July 1999) Order is important. 
+
+\subsection{Variable Documentation}
+\hypertarget{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{\index{Ice\+Utils.\+h@{Ice\+Utils.\+h}!y@{y}}
+\index{y@{y}!Ice\+Utils.\+h@{Ice\+Utils.\+h}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}$\ast$ y = x}}\label{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}
+Classic X\+O\+R swap (from Steve Baker's Cute Code Collection) x $^\wedge$= y; /$\ast$ x' = (x$^\wedge$y) 

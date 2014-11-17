@@ -1,0 +1,145 @@
+\hypertarget{classjassimp_1_1_jassimp}{\section{jassimp.\+Jassimp Class Reference}
+\label{classjassimp_1_1_jassimp}\index{jassimp.\+Jassimp@{jassimp.\+Jassimp}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classjassimp_1_1_ai_scene}{Ai\+Scene} \hyperlink{classjassimp_1_1_jassimp_ad633a3ba0ba16bb1d78aac00c0de8ccc}{import\+File} (String filename)  throws I\+O\+Exception 
+\item 
+static \hyperlink{classjassimp_1_1_ai_scene}{Ai\+Scene} \hyperlink{classjassimp_1_1_jassimp_a0027b306e2347ef392629b4825d81e9a}{import\+File} (String filename, Set$<$ \hyperlink{enumjassimp_1_1_ai_post_process_steps}{Ai\+Post\+Process\+Steps} $>$ post\+Processing)  throws I\+O\+Exception 
+\item 
+static native String \hyperlink{classjassimp_1_1_jassimp_a28dad3b44f39bad46d4f7417351fcd28}{get\+Error\+String} ()
+\item 
+static Ai\+Wrapper\+Provider$<$?,?,?,?,?$>$ \hyperlink{classjassimp_1_1_jassimp_a7715a96b604554c25befe0d1404da374}{get\+Wrapper\+Provider} ()
+\item 
+static void \hyperlink{classjassimp_1_1_jassimp_a8f8b958eeeaf2c9b396ea5812fd58f62}{set\+Wrapper\+Provider} (Ai\+Wrapper\+Provider$<$?,?,?,?,?$>$ wrapper\+Provider)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Ai\+Wrapper\+Provider$<$?,?,?,?,?$>$ \hyperlink{classjassimp_1_1_jassimp_a4b5a9a1f13f2397a63d7630d80e5e3a2}{B\+U\+I\+L\+T\+I\+N}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Entry point to the jassimp library.
+
+Use \hyperlink{}{import\+File(\+String, Set)} to load a file.
+
+\paragraph*{General Notes and Pitfalls}
+
+Due to the loading via J\+N\+I, strings (for example as returned by the {\ttfamily \hyperlink{namespace_assimp_a0f8daeb06b4e861a2152c33413e6eae1}{get\+Name()}} methods) are not interned. You should therefore compare strings the way it should be done, i.\+e, via {\ttfamily equals()}. Pointer comparison will fail. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjassimp_1_1_jassimp_a28dad3b44f39bad46d4f7417351fcd28}{\index{jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}!get\+Error\+String@{get\+Error\+String}}
+\index{get\+Error\+String@{get\+Error\+String}!jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}}
+\subsubsection[{get\+Error\+String}]{\setlength{\rightskip}{0pt plus 5cm}static native String jassimp.\+Jassimp.\+get\+Error\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjassimp_1_1_jassimp_a28dad3b44f39bad46d4f7417351fcd28}
+Returns a human readable error description.
+
+This method can be called when one of the import methods fails, i.\+e., throws an exception, to get a human readable error description.
+
+\begin{DoxyReturn}{Returns}
+the error string 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_jassimp_a7715a96b604554c25befe0d1404da374}{\index{jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}!get\+Wrapper\+Provider@{get\+Wrapper\+Provider}}
+\index{get\+Wrapper\+Provider@{get\+Wrapper\+Provider}!jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}}
+\subsubsection[{get\+Wrapper\+Provider}]{\setlength{\rightskip}{0pt plus 5cm}static Ai\+Wrapper\+Provider$<$?, ?, ?, ?, ?$>$ jassimp.\+Jassimp.\+get\+Wrapper\+Provider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjassimp_1_1_jassimp_a7715a96b604554c25befe0d1404da374}
+Returns the active wrapper provider.
+
+This method is part of the wrapped A\+P\+I (see \hyperlink{}{Ai\+Wrapper\+Provider} for details on wrappers).
+
+\begin{DoxyReturn}{Returns}
+the active wrapper provider 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_jassimp_ad633a3ba0ba16bb1d78aac00c0de8ccc}{\index{jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}!import\+File@{import\+File}}
+\index{import\+File@{import\+File}!jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}}
+\subsubsection[{import\+File}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ai\+Scene} jassimp.\+Jassimp.\+import\+File (
+\begin{DoxyParamCaption}
+\item[{String}]{filename}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjassimp_1_1_jassimp_ad633a3ba0ba16bb1d78aac00c0de8ccc}
+Imports a file via assimp without post processing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file to import \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the loaded scene 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classjassimp_1_1_jassimp_a0027b306e2347ef392629b4825d81e9a}{\index{jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}!import\+File@{import\+File}}
+\index{import\+File@{import\+File}!jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}}
+\subsubsection[{import\+File}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ai\+Scene} jassimp.\+Jassimp.\+import\+File (
+\begin{DoxyParamCaption}
+\item[{String}]{filename, }
+\item[{Set$<$ {\bf Ai\+Post\+Process\+Steps} $>$}]{post\+Processing}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjassimp_1_1_jassimp_a0027b306e2347ef392629b4825d81e9a}
+Imports a file via assimp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file to import \\
+\hline
+{\em post\+Processing} & post processing flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the loaded scene, or null if an error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_jassimp_a8f8b958eeeaf2c9b396ea5812fd58f62}{\index{jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}!set\+Wrapper\+Provider@{set\+Wrapper\+Provider}}
+\index{set\+Wrapper\+Provider@{set\+Wrapper\+Provider}!jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}}
+\subsubsection[{set\+Wrapper\+Provider}]{\setlength{\rightskip}{0pt plus 5cm}static void jassimp.\+Jassimp.\+set\+Wrapper\+Provider (
+\begin{DoxyParamCaption}
+\item[{Ai\+Wrapper\+Provider$<$?,?,?,?,?$>$}]{wrapper\+Provider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjassimp_1_1_jassimp_a8f8b958eeeaf2c9b396ea5812fd58f62}
+Sets a new wrapper provider.
+
+This method is part of the wrapped A\+P\+I (see \hyperlink{}{Ai\+Wrapper\+Provider} for details on wrappers).
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrapper\+Provider} & the new wrapper provider \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjassimp_1_1_jassimp_a4b5a9a1f13f2397a63d7630d80e5e3a2}{\index{jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}!B\+U\+I\+L\+T\+I\+N@{B\+U\+I\+L\+T\+I\+N}}
+\index{B\+U\+I\+L\+T\+I\+N@{B\+U\+I\+L\+T\+I\+N}!jassimp\+::\+Jassimp@{jassimp\+::\+Jassimp}}
+\subsubsection[{B\+U\+I\+L\+T\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}final Ai\+Wrapper\+Provider$<$?, ?, ?, ?, ?$>$ jassimp.\+Jassimp.\+B\+U\+I\+L\+T\+I\+N\hspace{0.3cm}{\ttfamily [static]}}}\label{classjassimp_1_1_jassimp_a4b5a9a1f13f2397a63d7630d80e5e3a2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+            \textcolor{keyword}{new} AiBuiltInWrapperProvider()
+\end{DoxyCode}
+The default wrapper provider using built in types. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Jassimp.\+java\end{DoxyCompactItemize}

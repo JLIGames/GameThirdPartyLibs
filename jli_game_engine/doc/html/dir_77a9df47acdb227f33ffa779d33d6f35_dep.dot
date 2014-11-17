@@ -1,0 +1,9 @@
+digraph "bullet/bullet-2.82-r2704/Extras/sph/common" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7799ae6d39e79392ec746de0f03821a3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="sph" fontname="Helvetica", fontsize="10", URL="dir_7799ae6d39e79392ec746de0f03821a3.html"]
+  dir_77a9df47acdb227f33ffa779d33d6f35 [shape=box, label="common", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_77a9df47acdb227f33ffa779d33d6f35.html"];
+  }
+}

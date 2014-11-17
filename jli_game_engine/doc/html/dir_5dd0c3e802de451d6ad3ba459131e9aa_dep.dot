@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Navigation3D/Data" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7e72ad61714fecb5514c5fe093a7b180 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Navigation3D" fontname="Helvetica", fontsize="10", URL="dir_7e72ad61714fecb5514c5fe093a7b180.html"]
+  subgraph clusterdir_5dd0c3e802de451d6ad3ba459131e9aa {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_5dd0c3e802de451d6ad3ba459131e9aa.html"];
+    dir_5dd0c3e802de451d6ad3ba459131e9aa [shape=plaintext label="Data"];
+    dir_054ec1b832acf18a146a94e40a5362a3 [shape=box label="Content" color="black" fillcolor="white" style="filled" URL="dir_054ec1b832acf18a146a94e40a5362a3.html"];
+  }
+  }
+}

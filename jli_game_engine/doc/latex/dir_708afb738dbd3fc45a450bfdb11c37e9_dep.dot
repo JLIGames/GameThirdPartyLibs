@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/PerturbedUvs/OGLES2/Build/Android/src/com/powervr" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_26e0101c71a8383ee9c7e8516b30f6b6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="com" fontname="Helvetica", fontsize="10", URL="dir_26e0101c71a8383ee9c7e8516b30f6b6.html"]
+  subgraph clusterdir_708afb738dbd3fc45a450bfdb11c37e9 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_708afb738dbd3fc45a450bfdb11c37e9.html"];
+    dir_708afb738dbd3fc45a450bfdb11c37e9 [shape=plaintext label="powervr"];
+    dir_2b010f31a0ec5227cb3c6507e9566403 [shape=box label="OGLES2PerturbedUvs" color="black" fillcolor="white" style="filled" URL="dir_2b010f31a0ec5227cb3c6507e9566403.html"];
+  }
+  }
+}

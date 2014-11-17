@@ -1,0 +1,18 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/ImageConvolution/OGLES3" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ea86a840561a19d00698ff75b7a6cfdf {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ImageConvolution" fontname="Helvetica", fontsize="10", URL="dir_ea86a840561a19d00698ff75b7a6cfdf.html"]
+  subgraph clusterdir_93614fd7dd156ec4f69b2eb202fdd7f7 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_93614fd7dd156ec4f69b2eb202fdd7f7.html"];
+    dir_93614fd7dd156ec4f69b2eb202fdd7f7 [shape=plaintext label="OGLES3"];
+    dir_7810a8551ce01003e1e6a0eae66cafb9 [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_7810a8551ce01003e1e6a0eae66cafb9.html"];
+    dir_80ba6b6d282247b14c5de57c51da2083 [shape=box label="Content" color="black" fillcolor="white" style="filled" URL="dir_80ba6b6d282247b14c5de57c51da2083.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_93614fd7dd156ec4f69b2eb202fdd7f7->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000288_000133.html"];
+  dir_93614fd7dd156ec4f69b2eb202fdd7f7->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_000288_001762.html"];
+}

@@ -1,0 +1,10 @@
+digraph "xml" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e3606260c4574633cb665e93ddc4b9f6 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e3606260c4574633cb665e93ddc4b9f6.html"];
+    dir_e3606260c4574633cb665e93ddc4b9f6 [shape=plaintext label="xml"];
+    dir_c7ef93510035d8533ef4c9d1c09d2231 [shape=box label="tinyxml" color="black" fillcolor="white" style="filled" URL="dir_c7ef93510035d8533ef4c9d1c09d2231.html"];
+  }
+}

@@ -1,0 +1,97 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000001}%
+\hypertarget{todo__todo000001}{}%
+Member \hyperlink{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_a3b907a23d6f3d316b4e40767ebda4b68}{Assimp\+:\+:Ogre\+:\+:Ogre\+Binary\+Serializer\+:\+:Import\+Mesh} (Memory\+Stream\+Reader $\ast$reader)]Check what we can actually support.  
+\item[\label{todo__todo000003}%
+\hypertarget{todo__todo000003}{}%
+Class \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer}{Assimp\+:\+:Ogre\+:\+:Ogre\+Importer} ]Support vertex colors. 
+
+Support poses/animations from the mesh file. Currently only skeleton file animations are supported.  
+\item[\label{todo__todo000002}%
+\hypertarget{todo__todo000002}{}%
+Member \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_a9b6609a0b257464d9a1092adf430ebef}{Assimp\+:\+:Ogre\+:\+:Ogre\+Importer\+:\+:Can\+Read} (const std\+::string \&p\+File, I\+O\+System $\ast$p\+I\+O\+Handler, bool check\+Sig) const ]Read and validate first header chunk?  
+\item[\label{todo__todo000008}%
+\hypertarget{todo__todo000008}{}%
+Member \hyperlink{class_assimp_1_1_ogre_1_1_skeleton_a6e29d13ff5cc937a8481c96024da5b0b}{Assimp\+:\+:Ogre\+:\+:Skeleton\+:\+:blend\+Mode} ]Take blend mode into account, but where?  
+\item[\label{todo__todo000016}%
+\hypertarget{todo__todo000016}{}%
+Member \hyperlink{classb_parse_1_1b_file_a2a8cb9d151dfa612f0eb86a705f4bb5d}{b\+Parse\+:\+:b\+File\+:\+:parse\+Internal} (int verbose\+Mode, char $\ast$mem\+Dna, int mem\+Dna\+Length)]we need a better version check, add version/sub version info from File\+Global into memory D\+N\+A/header files  
+\item[\label{todo__todo000017}%
+\hypertarget{todo__todo000017}{}%
+Member \hyperlink{classbt_axis_sweep3_internal_a4e26f4f8acf63f26451f6396223001bb}{bt\+Axis\+Sweep3\+Internal$<$ B\+P\+\_\+\+F\+P\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+E $>$\+:\+:remove\+Handle} (B\+P\+\_\+\+F\+P\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+E handle, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)]\+: compare performance  
+\item[\label{todo__todo000019}%
+\hypertarget{todo__todo000019}{}%
+Class \hyperlink{classbt_collision_configuration}{bt\+Collision\+Configuration} ]\+: describe the meaning  
+\item[\label{todo__todo000021}%
+\hypertarget{todo__todo000021}{}%
+Member \hyperlink{classbt_collision_world_ac1ca6489c220005798069152c3df0d08}{bt\+Collision\+World\+:\+:debug\+Draw\+Object} (const bt\+Transform \&world\+Transform, const bt\+Collision\+Shape $\ast$shape, const bt\+Vector3 \&color)]pass camera, for some culling? no -\/$>$ we are not a graphics lib  
+\item[\label{todo__todo000020}%
+\hypertarget{todo__todo000020}{}%
+Member \hyperlink{classbt_collision_world_a2312e2da71f0d7646a4dc19a4966bed0}{bt\+Collision\+World\+:\+:object\+Query\+Single\+Internal} (const bt\+Convex\+Shape $\ast$cast\+Shape, const bt\+Transform \&convex\+From\+Trans, const bt\+Transform \&convex\+To\+Trans, const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$col\+Obj\+Wrap, Convex\+Result\+Callback \&result\+Callback, bt\+Scalar allowed\+Penetration)]\+: use \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree or other B\+V\+H acceleration structure!  
+\item[\label{todo__todo000024}%
+\hypertarget{todo__todo000024}{}%
+Member \hyperlink{structbt_connectivity_processor_a5d5f11a5ad2bc3b3bfad6882b42e18de}{bt\+Connectivity\+Processor\+:\+:process\+Triangle} (bt\+Vector3 $\ast$triangle, int part\+Id, int triangle\+Index)]\+: check if we need some epsilon, due to floating point imprecision  
+\item[\label{todo__todo000022}%
+\hypertarget{todo__todo000022}{}%
+Class \hyperlink{classbt_default_collision_configuration}{bt\+Default\+Collision\+Configuration} ]\+: describe the meaning  
+\item[\label{todo__todo000023}%
+\hypertarget{todo__todo000023}{}%
+Member \hyperlink{classbt_default_collision_configuration_a39a173eedf0e8d55dd89ef3b637925a9}{bt\+Default\+Collision\+Configuration\+:\+:set\+Convex\+Convex\+Multipoint\+Iterations} (int num\+Perturbation\+Iterations=3, int minimum\+Points\+Perturbation\+Threshold=3)]we could add a per-\/object setting of those parameters, for level-\/of-\/detail collision detection.  
+\item[\label{todo__todo000037}%
+\hypertarget{todo__todo000037}{}%
+Class \hyperlink{classbt_kinematic_closest_not_me_ray_result_callback}{bt\+Kinematic\+Closest\+Not\+Me\+Ray\+Result\+Callback} ]Interact with dynamic objects, Ride kinematicly animated platforms properly More realistic (or maybe just a config option) falling -\/$>$ Should integrate falling velocity manually and use that in step\+Down() Support jumping Support ducking  
+\item[\label{todo__todo000025}%
+\hypertarget{todo__todo000025}{}%
+Member \hyperlink{classbt_manifold_result_aebe32f0c202d988d0458e88d768602c6}{bt\+Manifold\+Result\+:\+:add\+Contact\+Point} (const bt\+Vector3 \&normal\+On\+B\+In\+World, const bt\+Vector3 \&point\+In\+World, bt\+Scalar depth)], check this for any side effects  
+\item[\label{todo__todo000050}%
+\hypertarget{todo__todo000050}{}%
+Member \hyperlink{classbt_quaternion_adeda27273475435a9e3223abeea73992}{bt\+Quaternion\+:\+:farthest} (const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&qd) const ]document this and it's use  
+\item[\label{todo__todo000051}%
+\hypertarget{todo__todo000051}{}%
+Member \hyperlink{classbt_quaternion_a821a38604c6333b95d954867315d8716}{bt\+Quaternion\+:\+:nearest} (const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&qd) const ]document this and it's use  
+\item[\label{todo__todo000045}%
+\hypertarget{todo__todo000045}{}%
+Member \hyperlink{classbt_raycast_vehicle_a53451c4e3495561f3f078b2041ef04be}{bt\+Raycast\+Vehicle\+:\+:ray\+Cast} (\hyperlink{structbt_wheel_info}{bt\+Wheel\+Info} \&wheel)]for driving on dynamic/movable objects!;  
+\item[\label{todo__todo000038}%
+\hypertarget{todo__todo000038}{}%
+Member \hyperlink{classbt_rotational_limit_motor_ad52e9b1c402c7bdd47fb1a9de28afb7e}{bt\+Rotational\+Limit\+Motor\+:\+:solve\+Angular\+Limits} (bt\+Scalar time\+Step, bt\+Vector3 \&axis, bt\+Scalar jac\+Diag\+A\+B\+Inv, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body0, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body1)]\+: should clip against accumulated impulse  
+\item[\label{todo__todo000043}%
+\hypertarget{todo__todo000043}{}%
+Member \hyperlink{classbt_simple_dynamics_world_ac44c80444f4d6d4e3c2955dd43b7a93a}{bt\+Simple\+Dynamics\+World\+:\+:clear\+Forces} ()]\+: iterate over awake simulation islands!  
+\item[\label{todo__todo000044}%
+\hypertarget{todo__todo000044}{}%
+Member \hyperlink{classbt_simple_dynamics_world_a91e996f5ce6e465e805565ee0ba14824}{bt\+Simple\+Dynamics\+World\+:\+:synchronize\+Motion\+States} ()]\+: iterate over awake simulation islands!  
+\item[\label{todo__todo000027}%
+\hypertarget{todo__todo000027}{}%
+Member \hyperlink{classbt_simulation_island_manager_ab0f52dc46bc01c6754f4cb32ba26c99a}{bt\+Simulation\+Island\+Manager\+:\+:build\+And\+Process\+Islands} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$collision\+World, Island\+Callback $\ast$callback)]\+: this is random access, it can be walked 'cache friendly'!  
+\item[\label{todo__todo000026}%
+\hypertarget{todo__todo000026}{}%
+Member \hyperlink{classbt_simulation_island_manager_aea0b5869eca2d034ac9c643e149a5e01}{bt\+Simulation\+Island\+Manager\+:\+:build\+Islands} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$col\+World)]\+: check sleeping conditions!  
+\item[\label{todo__todo000047}%
+\hypertarget{todo__todo000047}{}%
+Member \hyperlink{classbt_soft_body_aced0f5421eeb1491a3fd77bb91e2e5af}{bt\+Soft\+Body\+:\+:set\+Collision\+Shape} (bt\+Collision\+Shape $\ast$collision\+Shape)]\+: avoid internal softbody shape hack and move collision code to collision library  
+\item[\label{todo__todo000048}%
+\hypertarget{todo__todo000048}{}%
+Member \hyperlink{structbt_sparse_sdf_a08dbaa356f577ebbd0808329766111d1}{bt\+Sparse\+Sdf$<$ C\+E\+L\+L\+S\+I\+Z\+E $>$\+:\+:Garbage\+Collect} (int lifetime=256)]\+: Reset puid's when int range limit is reached $\ast$/  
+\item[\label{todo__todo000028}%
+\hypertarget{todo__todo000028}{}%
+Member \hyperlink{classbt_sphere_triangle_collision_algorithm_af6de517d0a45abb91df4f61c5867c8f1}{bt\+Sphere\+Triangle\+Collision\+Algorithm\+:\+:process\+Collision} (const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$body0\+Wrap, const \hyperlink{structbt_collision_object_wrapper}{bt\+Collision\+Object\+Wrapper} $\ast$body1\+Wrap, const \hyperlink{structbt_dispatcher_info}{bt\+Dispatcher\+Info} \&dispatch\+Info, \hyperlink{classbt_manifold_result}{bt\+Manifold\+Result} $\ast$result\+Out)]\+: tighter bounds  
+\item[\label{todo__todo000034}%
+\hypertarget{todo__todo000034}{}%
+Member \hyperlink{classbt_triangle_mesh_a3b521a1faa5862a818d9f983230749a2}{bt\+Triangle\+Mesh\+:\+:find\+Or\+Add\+Vertex} (const bt\+Vector3 \&vertex, bool remove\+Duplicate\+Vertices)]\+: could use acceleration structure for this  
+\item[\label{todo__todo000054}%
+\hypertarget{todo__todo000054}{}%
+Class \hyperlink{class_default_value_array_allocator}{Default\+Value\+Array\+Allocator} ]make this thread-\/safe (lock when accessign batch allocator)  
+\item[\label{todo__todo000055}%
+\hypertarget{todo__todo000055}{}%
+Class \hyperlink{class_default_value_map_allocator}{Default\+Value\+Map\+Allocator} ]make this thread-\/safe (lock when accessign batch allocator)  
+\item[\label{todo__todo000035}%
+\hypertarget{todo__todo000035}{}%
+Class \hyperlink{class_g_i_m___c_o_n_t_a_c_t}{G\+I\+M\+\_\+\+C\+O\+N\+T\+A\+C\+T} ]\+: remove and replace \hyperlink{class_g_i_m___c_o_n_t_a_c_t}{G\+I\+M\+\_\+\+C\+O\+N\+T\+A\+C\+T} by \hyperlink{classbt_manifold_point}{bt\+Manifold\+Point}.  
+\item[\label{todo__todo000014}%
+\hypertarget{todo__todo000014}{}%
+Member \hyperlink{class_test_factory_registry_afa3fb925b07eb34e9ccfab84812afc18}{Test\+Factory\+Registry\+:\+:unregister\+Factory} (\hyperlink{class_test_factory}{Test\+Factory} $\ast$factory)]Address case when trying to remove a Test\+Registry\+Factory. 
+
+Address case when trying to remove a Test\+Registry\+Factory. 
+\end{DoxyRefList}

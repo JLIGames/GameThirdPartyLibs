@@ -1,0 +1,35 @@
+digraph "OGLES2Skybox2::ChangeSkyboxTo"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLES2Skybox2::ChangeSkyboxTo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPVRTPFXEffect::GetTexture\lArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_effect.html#a7aa24a05385a6cc26a33d3ab5bea27d7",tooltip="Gets the texture data array. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CPVRTArray::GetSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_array.html#a7f441650618876cd84adaad282a83ac1",tooltip="Gives current size of array/number of elements. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CPVRTPFXParser::FindTexture\lByName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#a4ff1bd4beec702c2ea21500bdb9db9bf",tooltip="Returns the index of the given texture. Returns -1 on failure. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CPVRTStringHash::Hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_string_hash.html#af7c991da6bbffdf4381683897469cc74",tooltip="Returns the hash of the base string. "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CPVRTPFXParser::GetNumber\lTextures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#ad26d3f66a6e6b4108b29a6c7d514598a",tooltip="Returns the number of textures referenced in the PFX. "];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CPVRTPFXParser::GetTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#a71ba1aa445a178b276979dcd45fa9037",tooltip="Returns a given texture. "];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CPVRTPFXEffect::SetTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_effect.html#a2c856bbaad1a9f8655eb0d46b60a7eb9",tooltip="Sets the textrue and applys the filtering. "];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CPVRTPFXParser::GetEffect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#ac47b42eff3d3acfa04fa75a9dd0e0a73",tooltip="Returns a given effect. "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CPVRTPFXParser::GetNumber\lEffects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#ae0e3acfc196a8186c12be71c109818c6",tooltip="Returns the number of effects referenced in the PFX. "];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CPVRTPFXParser::FindTexture\lIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#ab0cd310eac907396412ef7989079705a",tooltip="Returns the index in to the texture array within the effect block where the given texture resides..."];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

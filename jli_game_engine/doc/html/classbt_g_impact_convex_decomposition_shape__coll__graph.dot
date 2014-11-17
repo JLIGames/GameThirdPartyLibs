@@ -1,0 +1,39 @@
+digraph "btGImpactConvexDecompositionShape"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="btGImpactConvexDecomposition\lShape",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="btGImpactCompoundShape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_compound_shape.html",tooltip="btGImpactCompoundShape allows to handle multiple btCollisionShape objects at once ..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="btGImpactShapeInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html",tooltip="Base class for gimpact shapes. "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="btConcaveShape",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_set" ,fontname="Helvetica"];
+  Node5 [label="btGImpactQuantizedBvh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html",tooltip="Structure for containing Boxes. "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_primitive_manager" ,fontname="Helvetica"];
+  Node6 [label="btPrimitiveManagerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_manager_base.html",tooltip="Prototype Base class for primitive classification. "];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_tree" ,fontname="Helvetica"];
+  Node7 [label="btQuantizedBvhTree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_quantized_bvh_tree.html",tooltip="Basic Box tree structure. "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_node_array" ,fontname="Helvetica"];
+  Node8 [label="GIM_QUANTIZED_BVH_NODE\l_ARRAY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___q_u_a_n_t_i_z_e_d___b_v_h___n_o_d_e___a_r_r_a_y.html"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="btAlignedObjectArray\l\< BT_QUANTIZED_BVH_NODE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_childTransforms" ,fontname="Helvetica"];
+  Node10 [label="btAlignedObjectArray\l\< btTransform \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_childShapes" ,fontname="Helvetica"];
+  Node11 [label="btAlignedObjectArray\l\< btCollisionShape * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_primitive_manager" ,fontname="Helvetica"];
+  Node12 [label="btGImpactCompoundShape\l::CompoundPrimitiveManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_compound_shape_1_1_compound_primitive_manager.html",tooltip="compound primitive manager "];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_compoundShape" ,fontname="Helvetica"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_trimeshInterfaces" ,fontname="Helvetica"];
+  Node13 [label="btAlignedObjectArray\l\< btGImpactMeshShapePart\l::TrimeshPrimitiveManager \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_decomposition" ,fontname="Helvetica"];
+  Node14 [label="GIM_ConvexDecomposition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___convex_decomposition.html"];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="ConvexDecomposition\l::ConvexDecompInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_convex_decomposition_1_1_convex_decomp_interface.html"];
+  Node1 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_compoundShape" ,fontname="Helvetica"];
+  Node11 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_convexShapes" ,fontname="Helvetica"];
+}

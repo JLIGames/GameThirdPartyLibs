@@ -1,0 +1,115 @@
+\hypertarget{class_assimp_1_1_batch_loader}{\section{Assimp\+:\+:Batch\+Loader Class Reference}
+\label{class_assimp_1_1_batch_loader}\index{Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}}
+}
+
+
+{\ttfamily \#include $<$Importer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_batch_loader_a7f83d33c5c06bd78fb8b0ac5ac7aa47c}{Batch\+Loader} (\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O)
+\item 
+unsigned int \hyperlink{class_assimp_1_1_batch_loader_a232a69ba4ed9fe56eef23335d58c4d38}{Add\+Load\+Request} (const std\+::string \&\hyperlink{structfile}{file}, unsigned int steps=0, const Property\+Map $\ast$map=N\+U\+L\+L)
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{class_assimp_1_1_batch_loader_a9086813b06fd0e5be443955805294e7c}{Get\+Import} (unsigned int which)
+\item 
+void \hyperlink{class_assimp_1_1_batch_loader_a5e18e205c9af88f7021614eb66f67087}{Load\+All} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+O\+R I\+M\+P\+O\+R\+T\+E\+R P\+L\+U\+G\+I\+N\+S O\+N\+L\+Y\+: A helper class to the pleasure of importers that need to load many external meshes recursively.
+
+The class uses several threads to load these meshes (or at least it could, this has not yet been implemented at the moment).
+
+\begin{DoxyNote}{Note}
+The class may not be used by more than one thread 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_batch_loader_a7f83d33c5c06bd78fb8b0ac5ac7aa47c}{\index{Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}!Batch\+Loader@{Batch\+Loader}}
+\index{Batch\+Loader@{Batch\+Loader}!Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}}
+\subsubsection[{Batch\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}Batch\+Loader\+::\+Batch\+Loader (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_batch_loader_a7f83d33c5c06bd78fb8b0ac5ac7aa47c}
+Construct a batch loader from a given I\+O system to be used to acess external files 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_batch_loader_a232a69ba4ed9fe56eef23335d58c4d38}{\index{Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}!Add\+Load\+Request@{Add\+Load\+Request}}
+\index{Add\+Load\+Request@{Add\+Load\+Request}!Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}}
+\subsubsection[{Add\+Load\+Request}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Batch\+Loader\+::\+Add\+Load\+Request (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file, }
+\item[{unsigned int}]{steps = {\ttfamily 0}, }
+\item[{const Property\+Map $\ast$}]{map = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_batch_loader_a232a69ba4ed9fe56eef23335d58c4d38}
+Add a new file to the list of files to be loaded. 
+\begin{DoxyParams}{Parameters}
+{\em file} & \hyperlink{class_file}{File} to be loaded \\
+\hline
+{\em steps} & Post-\/processing steps to be executed on the file \\
+\hline
+{\em map} & Optional configuration properties \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+'Load request channel' -\/ an unique I\+D that can later be used to access the imported file data. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_assimp_1_1_batch_loader_a9086813b06fd0e5be443955805294e7c}{Get\+Import} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_batch_loader_a9086813b06fd0e5be443955805294e7c}{\index{Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}!Get\+Import@{Get\+Import}}
+\index{Get\+Import@{Get\+Import}!Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}}
+\subsubsection[{Get\+Import}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene} $\ast$ Batch\+Loader\+::\+Get\+Import (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{which}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_batch_loader_a9086813b06fd0e5be443955805294e7c}
+Get an imported scene. This polls the import from the internal request list. If an import is requested several times, this function can be called several times, too.
+
+
+\begin{DoxyParams}{Parameters}
+{\em which} & L\+R\+W\+C returned by \hyperlink{class_assimp_1_1_batch_loader_a232a69ba4ed9fe56eef23335d58c4d38}{Add\+Load\+Request()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+L\+L if there is no scene with this file name in the queue of the scene hasn't been loaded yet. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_batch_loader_a5e18e205c9af88f7021614eb66f67087}{\index{Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}!Load\+All@{Load\+All}}
+\index{Load\+All@{Load\+All}!Assimp\+::\+Batch\+Loader@{Assimp\+::\+Batch\+Loader}}
+\subsubsection[{Load\+All}]{\setlength{\rightskip}{0pt plus 5cm}void Batch\+Loader\+::\+Load\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_batch_loader_a5e18e205c9af88f7021614eb66f67087}
+Waits until all scenes have been loaded. This returns immediately if no scenes are queued. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_importer_8h}{Importer.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_base_importer_8cpp}{Base\+Importer.\+cpp}\end{DoxyCompactItemize}

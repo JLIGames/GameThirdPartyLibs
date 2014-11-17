@@ -1,0 +1,78 @@
+\hypertarget{_assimp_c_export_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+Assimp\+C\+Export.cpp File Reference}
+\label{_assimp_c_export_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+Assimp\+C\+Export.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+Assimp\+C\+Export.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+Interface\+I\+O\+Wrapper.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Scene\+Combiner.\+h\char`\"{}}\\*
+Include dependency graph for Assimp\+C\+Export.\+cpp\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I size\+\_\+t \hyperlink{_assimp_c_export_8cpp_a59cfffbc5b436da8ed8542108102b502}{ai\+Get\+Export\+Format\+Count} (void)
+\item 
+A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I const \\*
+\hyperlink{structai_export_format_desc}{ai\+Export\+Format\+Desc} $\ast$ \hyperlink{_assimp_c_export_8cpp_a6896ce9b9851aec848ba11bfc4a525f4}{ai\+Get\+Export\+Format\+Description} (size\+\_\+t p\+Index)
+\item 
+\hypertarget{_assimp_c_export_8cpp_a1b325bd59c7017b3220647268e90959c}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Copy\+Scene} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+In, \hyperlink{structai_scene}{ai\+Scene} $\ast$$\ast$p\+Out)}\label{_assimp_c_export_8cpp_a1b325bd59c7017b3220647268e90959c}
+
+\item 
+A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void \hyperlink{_assimp_c_export_8cpp_a59c30a6f75b024ae2da8bd4c4854320c}{ai\+Free\+Scene} (const C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+In)
+\item 
+\hypertarget{_assimp_c_export_8cpp_a742b4d8f6426a9930f81e3d33d7d4dc6}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I ai\+Return {\bfseries ai\+Export\+Scene} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const char $\ast$p\+Format\+Id, const char $\ast$p\+File\+Name, unsigned int p\+Preprocessing)}\label{_assimp_c_export_8cpp_a742b4d8f6426a9930f81e3d33d7d4dc6}
+
+\item 
+\hypertarget{_assimp_c_export_8cpp_aff0118b77b557a62cb2927fa18cfd742}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I ai\+Return {\bfseries ai\+Export\+Scene\+Ex} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const char $\ast$p\+Format\+Id, const char $\ast$p\+File\+Name, \hyperlink{structai_file_i_o}{ai\+File\+I\+O} $\ast$p\+I\+O, unsigned int p\+Preprocessing)}\label{_assimp_c_export_8cpp_aff0118b77b557a62cb2927fa18cfd742}
+
+\item 
+\hypertarget{_assimp_c_export_8cpp_a84e9d3df6c684a78381cce78654c0348}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I const C\+\_\+\+S\+T\+R\+U\+C\+T \\*
+\hyperlink{structai_export_data_blob}{ai\+Export\+Data\+Blob} $\ast$ {\bfseries ai\+Export\+Scene\+To\+Blob} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const char $\ast$p\+Format\+Id, unsigned int p\+Preprocessing)}\label{_assimp_c_export_8cpp_a84e9d3df6c684a78381cce78654c0348}
+
+\item 
+\hypertarget{_assimp_c_export_8cpp_a5db68e558cff4f7e300d587aa3122d2f}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I C\+\_\+\+S\+T\+R\+U\+C\+T void {\bfseries ai\+Release\+Export\+Blob} (const \hyperlink{structai_export_data_blob}{ai\+Export\+Data\+Blob} $\ast$p\+Data)}\label{_assimp_c_export_8cpp_a5db68e558cff4f7e300d587aa3122d2f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp}{Assimp} C export interface. See \hyperlink{_exporter_8cpp}{Exporter.\+cpp} for some notes. 
+
+\subsection{Function Documentation}
+\hypertarget{_assimp_c_export_8cpp_a59c30a6f75b024ae2da8bd4c4854320c}{\index{Assimp\+C\+Export.\+cpp@{Assimp\+C\+Export.\+cpp}!ai\+Free\+Scene@{ai\+Free\+Scene}}
+\index{ai\+Free\+Scene@{ai\+Free\+Scene}!Assimp\+C\+Export.\+cpp@{Assimp\+C\+Export.\+cpp}}
+\subsubsection[{ai\+Free\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void ai\+Free\+Scene (
+\begin{DoxyParamCaption}
+\item[{const C\+\_\+\+S\+T\+R\+U\+C\+T {\bf ai\+Scene} $\ast$}]{p\+In}
+\end{DoxyParamCaption}
+)}}\label{_assimp_c_export_8cpp_a59c30a6f75b024ae2da8bd4c4854320c}
+Frees a scene copy created using \hyperlink{cexport_8h_a3b462a882e970cd7f492e293e5dee4fe}{ai\+Copy\+Scene()} \hypertarget{_assimp_c_export_8cpp_a59cfffbc5b436da8ed8542108102b502}{\index{Assimp\+C\+Export.\+cpp@{Assimp\+C\+Export.\+cpp}!ai\+Get\+Export\+Format\+Count@{ai\+Get\+Export\+Format\+Count}}
+\index{ai\+Get\+Export\+Format\+Count@{ai\+Get\+Export\+Format\+Count}!Assimp\+C\+Export.\+cpp@{Assimp\+C\+Export.\+cpp}}
+\subsubsection[{ai\+Get\+Export\+Format\+Count}]{\setlength{\rightskip}{0pt plus 5cm}A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I size\+\_\+t ai\+Get\+Export\+Format\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_assimp_c_export_8cpp_a59cfffbc5b436da8ed8542108102b502}
+Returns the number of export file formats available in the current \hyperlink{class_assimp}{Assimp} build. Use \hyperlink{cexport_8h_adda7f2e6611f719af6c8a4a0bef0a0a2}{ai\+Get\+Export\+Format\+Description()} to retrieve infos of a specific export format. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_assimp_c_export_8cpp_a6896ce9b9851aec848ba11bfc4a525f4}{\index{Assimp\+C\+Export.\+cpp@{Assimp\+C\+Export.\+cpp}!ai\+Get\+Export\+Format\+Description@{ai\+Get\+Export\+Format\+Description}}
+\index{ai\+Get\+Export\+Format\+Description@{ai\+Get\+Export\+Format\+Description}!Assimp\+C\+Export.\+cpp@{Assimp\+C\+Export.\+cpp}}
+\subsubsection[{ai\+Get\+Export\+Format\+Description}]{\setlength{\rightskip}{0pt plus 5cm}A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I const {\bf ai\+Export\+Format\+Desc}$\ast$ ai\+Get\+Export\+Format\+Description (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{p\+Index}
+\end{DoxyParamCaption}
+)}}\label{_assimp_c_export_8cpp_a6896ce9b9851aec848ba11bfc4a525f4}
+Returns a description of the nth export file format. Use \hyperlink{cexport_8h_a59cfffbc5b436da8ed8542108102b502}{ai\+Get\+Export\+Format\+Count()} to learn how many export formats are supported. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Index} & \hyperlink{struct_index}{Index} of the export format to retrieve information for. Valid range is 0 to \hyperlink{cexport_8h_a59cfffbc5b436da8ed8542108102b502}{ai\+Get\+Export\+Format\+Count()} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A description of that specific export format. N\+U\+L\+L if p\+Index is out of range. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+

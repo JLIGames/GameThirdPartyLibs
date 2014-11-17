@@ -1,0 +1,55 @@
+A simple Python wrapper for \hyperlink{class_assimp}{Assimp} using {\ttfamily ctypes} to access the library. Requires Python $>$= 2.\+6.
+
+Python 3 support is mostly here, but not well tested.
+
+Note that pyassimp is not complete. Many A\+S\+S\+I\+M\+P features are missing. In particular, only loading of models is currently supported (no export).
+
+\subsection*{U\+S\+A\+G\+E }
+
+To get started with py\+Assimp, examine the {\ttfamily sample.\+py} script in {\ttfamily scripts/}, which illustrates the basic usage. All \hyperlink{class_assimp}{Assimp} data structures are wrapped using ctypes. All the data+length fields in \hyperlink{class_assimp}{Assimp}'s data structures (such as {\ttfamily \hyperlink{structai_mesh_ab34b7b5941e6636f1c08f615cbb072ef}{ai\+Mesh\+::m\+Num\+Vertices}}, {\ttfamily \hyperlink{structai_mesh_afd4588abb3e1c72821ae0234a3850662}{ai\+Mesh\+::m\+Vertices}}) are replaced by simple python lists, so you can call len() on them to get their respective size and access members using \mbox{[}\mbox{]}.
+
+For example, to load a file named 'hello.\+3ds' and print the first vertex of the first mesh, you would do (proper error handling substituted by assertions ...)\+:
+
+```python
+
+from pyassimp import $\ast$ scene = load('hello.\+3ds')
+
+assert len(scene.\+meshes) mesh = scene.\+meshes\mbox{[}0\mbox{]}
+
+assert len(mesh.\+vertices) print(mesh.\+vertices\mbox{[}0\mbox{]})
+
+\section*{don't forget this one, or you will leak!}
+
+release(scene)
+
+```
+
+Another example to list the 'top nodes' in a scene\+:
+
+```python
+
+from pyassimp import $\ast$ scene = load('hello.\+3ds')
+
+for c in scene.\+rootnode.\+children\+: print(str(c))
+
+release(scene)
+
+```
+
+\subsection*{I\+N\+S\+T\+A\+L\+L }
+
+Install {\ttfamily pyassimp} by running\+:
+
+\begin{quote}
+python setup.\+py install \end{quote}
+
+
+Py\+Assimp requires a assimp dynamic library ({\ttfamily D\+L\+L} on windows, {\ttfamily .so} on linux \+:-\/) in order to work. The default search directories are\+:
+
+
+\begin{DoxyItemize}
+\item the current directory
+\item on linux additionally\+: {\ttfamily /usr/lib} and {\ttfamily /usr/local/lib}
+\end{DoxyItemize}
+
+To build that library, refer to the \hyperlink{class_assimp}{Assimp} master I\+N\+S\+T\+A\+L\+L instructions. To look in more places, edit {\ttfamily ./pyassimp/helper.py}. There's an {\ttfamily additional\+\_\+dirs} list waiting for your entries. 

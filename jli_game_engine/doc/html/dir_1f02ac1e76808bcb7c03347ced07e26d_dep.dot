@@ -1,0 +1,13 @@
+digraph "assimp/assimp-3.1.1/samples/DevIL/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7a95bf0f6c67927ad38e96018877bff8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DevIL" fontname="Helvetica", fontsize="10", URL="dir_7a95bf0f6c67927ad38e96018877bff8.html"]
+  subgraph clusterdir_1f02ac1e76808bcb7c03347ced07e26d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_1f02ac1e76808bcb7c03347ced07e26d.html"];
+    dir_1f02ac1e76808bcb7c03347ced07e26d [shape=plaintext label="include"];
+    dir_86a32687dbebdd181f31e18acd7921a9 [shape=box label="IL" color="black" fillcolor="white" style="filled" URL="dir_86a32687dbebdd181f31e18acd7921a9.html"];
+  }
+  }
+}

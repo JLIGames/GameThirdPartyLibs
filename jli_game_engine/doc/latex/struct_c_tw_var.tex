@@ -1,0 +1,78 @@
+\hypertarget{struct_c_tw_var}{\section{C\+Tw\+Var Struct Reference}
+\label{struct_c_tw_var}\index{C\+Tw\+Var@{C\+Tw\+Var}}
+}
+
+
+Inheritance diagram for C\+Tw\+Var\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_c_tw_var_ac25068e714b7f77b1d85f992030c32d0}{virtual bool {\bfseries Is\+Group} () const =0}\label{struct_c_tw_var_ac25068e714b7f77b1d85f992030c32d0}
+
+\item 
+\hypertarget{struct_c_tw_var_a4fbcc414069de1b6d0d07d550d6205fa}{virtual bool {\bfseries Is\+Custom} () const }\label{struct_c_tw_var_a4fbcc414069de1b6d0d07d550d6205fa}
+
+\item 
+\hypertarget{struct_c_tw_var_a1b6a2ea33738ab0d87fc1e1c35ab1146}{virtual const \hyperlink{struct_c_tw_var}{C\+Tw\+Var} $\ast$ {\bfseries Find} (const char $\ast$\+\_\+\+Name, struct \hyperlink{struct_c_tw_var_group}{C\+Tw\+Var\+Group} $\ast$$\ast$\+\_\+\+Parent, int $\ast$\+\_\+\+Index) const =0}\label{struct_c_tw_var_a1b6a2ea33738ab0d87fc1e1c35ab1146}
+
+\item 
+\hypertarget{struct_c_tw_var_ad05c1e696deedcc289bf79353780aeb9}{virtual int {\bfseries Has\+Attrib} (const char $\ast$\+\_\+\+Attrib, bool $\ast$\+\_\+\+Has\+Value) const }\label{struct_c_tw_var_ad05c1e696deedcc289bf79353780aeb9}
+
+\item 
+\hypertarget{struct_c_tw_var_a68a7165aae93b22d0b971dca34441816}{virtual int {\bfseries Set\+Attrib} (int \+\_\+\+Attrib\+I\+D, const char $\ast$\+\_\+\+Value, \hyperlink{struct_c_tw_bar}{Tw\+Bar} $\ast$\+\_\+\+Bar, struct \hyperlink{struct_c_tw_var_group}{C\+Tw\+Var\+Group} $\ast$\+\_\+\+Var\+Parent, int \+\_\+\+Var\+Index)}\label{struct_c_tw_var_a68a7165aae93b22d0b971dca34441816}
+
+\item 
+\hypertarget{struct_c_tw_var_a96a3f7e3950407be0638b6b4d77000a1}{virtual E\+Ret\+Type {\bfseries Get\+Attrib} (int \+\_\+\+Attrib\+I\+D, \hyperlink{struct_c_tw_bar}{Tw\+Bar} $\ast$\+\_\+\+Bar, struct \hyperlink{struct_c_tw_var_group}{C\+Tw\+Var\+Group} $\ast$\+\_\+\+Var\+Parent, int \+\_\+\+Var\+Index, std\+::vector$<$ double $>$ \&out\+Double, std\+::ostringstream \&out\+String) const }\label{struct_c_tw_var_a96a3f7e3950407be0638b6b4d77000a1}
+
+\item 
+\hypertarget{struct_c_tw_var_a285b8db97def5cca7593d7cc373629e1}{virtual void {\bfseries Set\+Read\+Only} (bool \+\_\+\+Read\+Only)=0}\label{struct_c_tw_var_a285b8db97def5cca7593d7cc373629e1}
+
+\item 
+\hypertarget{struct_c_tw_var_a3e15477b5954f28bcaa630c013512d62}{virtual bool {\bfseries Is\+Read\+Only} () const =0}\label{struct_c_tw_var_a3e15477b5954f28bcaa630c013512d62}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_c_tw_var_ac2b2d19245a4c1210e2d3a8571ba627b}{static size\+\_\+t {\bfseries Get\+Data\+Size} (Tw\+Type \+\_\+\+Type)}\label{struct_c_tw_var_ac2b2d19245a4c1210e2d3a8571ba627b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_c_tw_var_aa33dc96994a21e7acd40b6a9065977ed}{std\+::string {\bfseries m\+\_\+\+Name}}\label{struct_c_tw_var_aa33dc96994a21e7acd40b6a9065977ed}
+
+\item 
+\hypertarget{struct_c_tw_var_a6d6ab383a409f05e696fcd56ab5ba9ae}{std\+::string {\bfseries m\+\_\+\+Label}}\label{struct_c_tw_var_a6d6ab383a409f05e696fcd56ab5ba9ae}
+
+\item 
+\hypertarget{struct_c_tw_var_a9b590dda54bb4970aaacfdcffb6b8e43}{std\+::string {\bfseries m\+\_\+\+Help}}\label{struct_c_tw_var_a9b590dda54bb4970aaacfdcffb6b8e43}
+
+\item 
+\hypertarget{struct_c_tw_var_ada5e998f9a6e5d31ef03c759c38e7776}{bool {\bfseries m\+\_\+\+Is\+Root}}\label{struct_c_tw_var_ada5e998f9a6e5d31ef03c759c38e7776}
+
+\item 
+\hypertarget{struct_c_tw_var_a13909bcd428a493cb0129edb23403395}{bool {\bfseries m\+\_\+\+Dont\+Clip}}\label{struct_c_tw_var_a13909bcd428a493cb0129edb23403395}
+
+\item 
+\hypertarget{struct_c_tw_var_afdaf6d69fd0704b73496ad51a33d9602}{bool {\bfseries m\+\_\+\+Visible}}\label{struct_c_tw_var_afdaf6d69fd0704b73496ad51a33d9602}
+
+\item 
+\hypertarget{struct_c_tw_var_a2eb6fc5bb3e7a4b1b7c73a5cbdff35f2}{signed short {\bfseries m\+\_\+\+Left\+Margin}}\label{struct_c_tw_var_a2eb6fc5bb3e7a4b1b7c73a5cbdff35f2}
+
+\item 
+\hypertarget{struct_c_tw_var_a337f169e917865761c1c9394f57994b7}{signed short {\bfseries m\+\_\+\+Top\+Margin}}\label{struct_c_tw_var_a337f169e917865761c1c9394f57994b7}
+
+\item 
+\hypertarget{struct_c_tw_var_a0750958d860f3cc2752914ac143e56e7}{const color32 $\ast$ {\bfseries m\+\_\+\+Color\+Ptr}}\label{struct_c_tw_var_a0750958d860f3cc2752914ac143e56e7}
+
+\item 
+\hypertarget{struct_c_tw_var_aef2163c6e40c68c52c67eaf8d3666c09}{const color32 $\ast$ {\bfseries m\+\_\+\+Bg\+Color\+Ptr}}\label{struct_c_tw_var_aef2163c6e40c68c52c67eaf8d3666c09}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Ant\+Tweak\+Bar/src/Tw\+Bar.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Ant\+Tweak\+Bar/src/Tw\+Bar.\+cpp\end{DoxyCompactItemize}

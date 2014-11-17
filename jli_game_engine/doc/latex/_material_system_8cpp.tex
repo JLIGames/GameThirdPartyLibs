@@ -1,0 +1,46 @@
+\hypertarget{_material_system_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+Material\+System.cpp File Reference}
+\label{_material_system_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+Material\+System.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+Material\+System.\+cpp}}
+}
+
+
+Implementation of the material system of the library.  
+
+
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hash.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fast\+\_\+atof.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Parsing\+Utils.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Material\+System.\+h\char`\"{}}\\*
+Include dependency graph for Material\+System.\+cpp\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_material_system_8cpp_a8d78f29e9eb08a61b401262934596efa}{ai\+Return {\bfseries ai\+Get\+Material\+Property} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, const char $\ast$p\+Key, unsigned int type, unsigned int index, const \hyperlink{classai_material_property}{ai\+Material\+Property} $\ast$$\ast$p\+Prop\+Out)}\label{_material_system_8cpp_a8d78f29e9eb08a61b401262934596efa}
+
+\item 
+\hypertarget{_material_system_8cpp_a0247a48c606a7af40b650e731c51b7fa}{ai\+Return {\bfseries ai\+Get\+Material\+Float\+Array} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, const char $\ast$p\+Key, unsigned int type, unsigned int index, float $\ast$p\+Out, unsigned int $\ast$p\+Max)}\label{_material_system_8cpp_a0247a48c606a7af40b650e731c51b7fa}
+
+\item 
+\hypertarget{_material_system_8cpp_a5e2cf30375942baab33003cff9743fb1}{ai\+Return {\bfseries ai\+Get\+Material\+Integer\+Array} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, const char $\ast$p\+Key, unsigned int type, unsigned int index, int $\ast$p\+Out, unsigned int $\ast$p\+Max)}\label{_material_system_8cpp_a5e2cf30375942baab33003cff9743fb1}
+
+\item 
+\hypertarget{_material_system_8cpp_aaeaaa167b8d13185721f3c2d39fc1bf5}{ai\+Return {\bfseries ai\+Get\+Material\+Color} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, const char $\ast$p\+Key, unsigned int type, unsigned int index, \hyperlink{structai_color4_d}{ai\+Color4\+D} $\ast$p\+Out)}\label{_material_system_8cpp_aaeaaa167b8d13185721f3c2d39fc1bf5}
+
+\item 
+\hypertarget{_material_system_8cpp_a2d9432ebc6bb98f10c8f15d00410a918}{ai\+Return {\bfseries ai\+Get\+Material\+U\+V\+Transform} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, const char $\ast$p\+Key, unsigned int type, unsigned int index, \hyperlink{structai_u_v_transform}{ai\+U\+V\+Transform} $\ast$p\+Out)}\label{_material_system_8cpp_a2d9432ebc6bb98f10c8f15d00410a918}
+
+\item 
+\hypertarget{_material_system_8cpp_ac063d7b2c9d2ce7a6a36b56abe6ebe71}{ai\+Return {\bfseries ai\+Get\+Material\+String} (const \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, const char $\ast$p\+Key, unsigned int type, unsigned int index, \hyperlink{structai_string}{ai\+String} $\ast$p\+Out)}\label{_material_system_8cpp_ac063d7b2c9d2ce7a6a36b56abe6ebe71}
+
+\item 
+\hypertarget{_material_system_8cpp_a8d331464c4f86b44cb6c6d64e39398ed}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I unsigned int {\bfseries ai\+Get\+Material\+Texture\+Count} (const C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat, C\+\_\+\+E\+N\+U\+M \hyperlink{material_8h_a7dd415ff703a2cc53d1c22ddbbd7dde0}{ai\+Texture\+Type} type)}\label{_material_system_8cpp_a8d331464c4f86b44cb6c6d64e39398ed}
+
+\item 
+\hypertarget{_material_system_8cpp_a1a111d2252aed32cd298f5fad9739bcf}{ai\+Return {\bfseries ai\+Get\+Material\+Texture} (const C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{classai_material}{ai\+Material} $\ast$mat, \hyperlink{material_8h_a7dd415ff703a2cc53d1c22ddbbd7dde0}{ai\+Texture\+Type} type, unsigned int index, C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_string}{ai\+String} $\ast$path, \hyperlink{material_8h_a6186e909f1ae28133ab10f1b4635b0f9}{ai\+Texture\+Mapping} $\ast$\+\_\+mapping, unsigned int $\ast$uvindex, float $\ast$blend, \hyperlink{material_8h_afcd3096d69affba13114cedfc6f9ee6b}{ai\+Texture\+Op} $\ast$op, \hyperlink{material_8h_a6cbe56056751aa80e8dd714632a49de0}{ai\+Texture\+Map\+Mode} $\ast$mapmode, unsigned int $\ast$flags)}\label{_material_system_8cpp_a1a111d2252aed32cd298f5fad9739bcf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the material system of the library. 
+

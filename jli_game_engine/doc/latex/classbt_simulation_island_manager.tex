@@ -1,0 +1,98 @@
+\hypertarget{classbt_simulation_island_manager}{\section{bt\+Simulation\+Island\+Manager Class Reference}
+\label{classbt_simulation_island_manager}\index{bt\+Simulation\+Island\+Manager@{bt\+Simulation\+Island\+Manager}}
+}
+
+
+Simulation\+Island\+Manager creates and handles simulation islands, using \hyperlink{classbt_union_find}{bt\+Union\+Find}.  
+
+
+
+
+{\ttfamily \#include $<$bt\+Simulation\+Island\+Manager.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbt_simulation_island_manager_1_1_island_callback}{Island\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_simulation_island_manager_ab9c747e8d11c29f7537c82483280b20d}{void {\bfseries init\+Union\+Find} (int n)}\label{classbt_simulation_island_manager_ab9c747e8d11c29f7537c82483280b20d}
+
+\item 
+\hypertarget{classbt_simulation_island_manager_a5a2829a514e99ec4731501b19f21ad29}{\hyperlink{classbt_union_find}{bt\+Union\+Find} \& {\bfseries get\+Union\+Find} ()}\label{classbt_simulation_island_manager_a5a2829a514e99ec4731501b19f21ad29}
+
+\item 
+\hypertarget{classbt_simulation_island_manager_a61c895f8349447d567d42bd6a3ba769f}{virtual void {\bfseries update\+Activation\+State} (\hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$col\+World, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)}\label{classbt_simulation_island_manager_a61c895f8349447d567d42bd6a3ba769f}
+
+\item 
+\hypertarget{classbt_simulation_island_manager_a136d82abf91b4fd489f7338d456a95d3}{virtual void {\bfseries store\+Island\+Activation\+State} (\hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$world)}\label{classbt_simulation_island_manager_a136d82abf91b4fd489f7338d456a95d3}
+
+\item 
+\hypertarget{classbt_simulation_island_manager_a3fd9a1a91e254d3f5736b71e48f9e7cc}{void {\bfseries find\+Unions} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$col\+World)}\label{classbt_simulation_island_manager_a3fd9a1a91e254d3f5736b71e48f9e7cc}
+
+\item 
+void \hyperlink{classbt_simulation_island_manager_ab0f52dc46bc01c6754f4cb32ba26c99a}{build\+And\+Process\+Islands} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$collision\+World, \hyperlink{structbt_simulation_island_manager_1_1_island_callback}{Island\+Callback} $\ast$callback)
+\item 
+void \hyperlink{classbt_simulation_island_manager_aea0b5869eca2d034ac9c643e149a5e01}{build\+Islands} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$col\+World)
+\item 
+\hypertarget{classbt_simulation_island_manager_ae18b05fce2ab10d425ba0ec0aff0336e}{bool {\bfseries get\+Split\+Islands} ()}\label{classbt_simulation_island_manager_ae18b05fce2ab10d425ba0ec0aff0336e}
+
+\item 
+\hypertarget{classbt_simulation_island_manager_a7bbea7ce9ec4c185d0110dd8dff99dd3}{void {\bfseries set\+Split\+Islands} (bool do\+Split\+Islands)}\label{classbt_simulation_island_manager_a7bbea7ce9ec4c185d0110dd8dff99dd3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simulation\+Island\+Manager creates and handles simulation islands, using \hyperlink{classbt_union_find}{bt\+Union\+Find}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_simulation_island_manager_ab0f52dc46bc01c6754f4cb32ba26c99a}{\index{bt\+Simulation\+Island\+Manager@{bt\+Simulation\+Island\+Manager}!build\+And\+Process\+Islands@{build\+And\+Process\+Islands}}
+\index{build\+And\+Process\+Islands@{build\+And\+Process\+Islands}!bt\+Simulation\+Island\+Manager@{bt\+Simulation\+Island\+Manager}}
+\subsubsection[{build\+And\+Process\+Islands}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Simulation\+Island\+Manager\+::build\+And\+Process\+Islands (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Dispatcher} $\ast$}]{dispatcher, }
+\item[{{\bf bt\+Collision\+World} $\ast$}]{collision\+World, }
+\item[{{\bf Island\+Callback} $\ast$}]{callback}
+\end{DoxyParamCaption}
+)}}\label{classbt_simulation_island_manager_ab0f52dc46bc01c6754f4cb32ba26c99a}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000027}{Todo}]\+: this is random access, it can be walked 'cache friendly'! \end{DoxyRefDesc}
+Process the actual simulation, only if not sleeping/deactivated 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classbt_simulation_island_manager_aea0b5869eca2d034ac9c643e149a5e01}{\index{bt\+Simulation\+Island\+Manager@{bt\+Simulation\+Island\+Manager}!build\+Islands@{build\+Islands}}
+\index{build\+Islands@{build\+Islands}!bt\+Simulation\+Island\+Manager@{bt\+Simulation\+Island\+Manager}}
+\subsubsection[{build\+Islands}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Simulation\+Island\+Manager\+::build\+Islands (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Dispatcher} $\ast$}]{dispatcher, }
+\item[{{\bf bt\+Collision\+World} $\ast$}]{col\+World}
+\end{DoxyParamCaption}
+)}}\label{classbt_simulation_island_manager_aea0b5869eca2d034ac9c643e149a5e01}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000026}{Todo}]\+: check sleeping conditions! \end{DoxyRefDesc}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Collision\+Dispatch/bt\+Simulation\+Island\+Manager.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Collision\+Dispatch/bt\+Simulation\+Island\+Manager.\+cpp\end{DoxyCompactItemize}

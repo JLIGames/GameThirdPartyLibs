@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/Skinning/OGLES3/Content" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_013fc7758b0fbca4bc1eac66c555631e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_013fc7758b0fbca4bc1eac66c555631e.html"]
+  dir_ddf4cc0efe9a18afb4e89bb104b61805 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ddf4cc0efe9a18afb4e89bb104b61805.html"];
+  }
+}

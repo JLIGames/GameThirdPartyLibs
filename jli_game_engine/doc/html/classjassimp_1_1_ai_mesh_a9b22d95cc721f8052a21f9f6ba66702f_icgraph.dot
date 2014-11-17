@@ -1,0 +1,19 @@
+digraph "jassimp.AiMesh.hasTangentsAndBitangents"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jassimp.AiMesh.hasTangents\lAndBitangents",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jassimp.AiMesh.getTangentX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_mesh.html#a6b925f191009563fab1481c3084be4e1"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jassimp.AiMesh.getTangentY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_mesh.html#a3e24a35c0fed180e3d487f54f1b483bf"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="jassimp.AiMesh.getTangentZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_mesh.html#a1d8ae20230cbcb2c8790b45971c0b271"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="jassimp.AiMesh.getBitangentX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_mesh.html#ab4a4a57615a7cff93e4f5dd6a1118791"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="jassimp.AiMesh.getBitangentY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_mesh.html#ace7875fb40281b0723187f0f2c1b69c1"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="jassimp.AiMesh.getBitangentZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_mesh.html#a53c35af707b8bf32a5043f2ed70806eb"];
+}

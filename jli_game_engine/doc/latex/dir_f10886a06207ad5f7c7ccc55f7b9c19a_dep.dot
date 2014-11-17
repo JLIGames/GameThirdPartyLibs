@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Tools/CameraInterface/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_63b5e6e7d93d311042c0f31036793f07 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CameraInterface" fontname="Helvetica", fontsize="10", URL="dir_63b5e6e7d93d311042c0f31036793f07.html"]
+  subgraph clusterdir_f10886a06207ad5f7c7ccc55f7b9c19a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f10886a06207ad5f7c7ccc55f7b9c19a.html"];
+    dir_f10886a06207ad5f7c7ccc55f7b9c19a [shape=plaintext label="Android"];
+    dir_9f3c37bad8b20f3f50e04628522703f3 [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_9f3c37bad8b20f3f50e04628522703f3.html"];
+  }
+  }
+}

@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/CellShading/OGLES3/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3c911e36ffb8ce3d0bdccda664e01737 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_3c911e36ffb8ce3d0bdccda664e01737.html"]
+  subgraph clusterdir_b9c6b3f94dab36ebefece1376dc67408 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b9c6b3f94dab36ebefece1376dc67408.html"];
+    dir_b9c6b3f94dab36ebefece1376dc67408 [shape=plaintext label="com"];
+    dir_19ae0b86b659943bcb5adc2ce932f92a [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_19ae0b86b659943bcb5adc2ce932f92a.html"];
+  }
+  }
+}

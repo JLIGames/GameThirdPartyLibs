@@ -1,0 +1,88 @@
+\hypertarget{structai_string}{\section{ai\+String Class Reference}
+\label{structai_string}\index{ai\+String@{ai\+String}}
+}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+
+
+Inheritance diagram for ai\+String\+:
+
+
+Collaboration diagram for ai\+String\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_string_a0d177ed49a346c6db830e6211bdb85f4}{virtual void {\bfseries Dispose} ()}\label{structai_string_a0d177ed49a346c6db830e6211bdb85f4}
+
+\item 
+\hypertarget{structai_string_a20fbe468a97ecd7c1d39cd28133e5799}{override string {\bfseries To\+String} ()}\label{structai_string_a20fbe468a97ecd7c1d39cd28133e5799}
+
+\item 
+\hypertarget{structai_string_a7ffb4448fdf93cf18762706fd03ad40b}{{\bfseries ai\+String} (\hyperlink{structai_string}{ai\+String} r\+Other)}\label{structai_string_a7ffb4448fdf93cf18762706fd03ad40b}
+
+\item 
+\hypertarget{structai_string_a85e3c405f4a587c05f1938bb713b0876}{{\bfseries ai\+String} (string p\+String)}\label{structai_string_a85e3c405f4a587c05f1938bb713b0876}
+
+\item 
+\hypertarget{structai_string_adce4941822eb7cb877e86efc3d045d34}{\hyperlink{structai_string}{ai\+String} {\bfseries \+\_\+\+\_\+set\+\_\+\+\_\+} (string sz)}\label{structai_string_adce4941822eb7cb877e86efc3d045d34}
+
+\item 
+\hypertarget{structai_string_a36add8f6745139209ffde26af87598bd}{bool {\bfseries \+\_\+\+\_\+equal\+\_\+\+\_\+} (\hyperlink{structai_string}{ai\+String} other)}\label{structai_string_a36add8f6745139209ffde26af87598bd}
+
+\item 
+\hypertarget{structai_string_a0891deea3564a9794526e383ebdac888}{bool {\bfseries \+\_\+\+\_\+nequal\+\_\+\+\_\+} (\hyperlink{structai_string}{ai\+String} other)}\label{structai_string_a0891deea3564a9794526e383ebdac888}
+
+\item 
+\hypertarget{structai_string_aa4a83da00f07554a84fbaaa2bd9a0202}{string {\bfseries C\+\_\+\+Str} ()}\label{structai_string_aa4a83da00f07554a84fbaaa2bd9a0202}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structai_string_a7d77c2031ff0340746aa046f7fbcf313}{length}
+\item 
+char \hyperlink{structai_string_aa90b1da7d347a3dcca0a95061e6ea41d}{data} \mbox{[}M\+A\+X\+L\+E\+N\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_string_a43fad9918c0fd93af455b6a50249bdf6}{bool {\bfseries swig\+C\+Mem\+Own}}\label{structai_string_a43fad9918c0fd93af455b6a50249bdf6}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_string_ac15d04fcd89a9d07e8dd76a0952232c1}{uint {\bfseries Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_string_ac15d04fcd89a9d07e8dd76a0952232c1}
+
+\item 
+\hypertarget{structai_string_a15feaa994294ec6842a26521d503c51b}{string {\bfseries Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_string_a15feaa994294ec6842a26521d503c51b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an U\+T\+F-\/8 string, zero byte terminated.
+
+The character set of an \hyperlink{structai_string}{ai\+String} is explicitly defined to be U\+T\+F-\/8. This Unicode transformation was chosen in the belief that most strings in 3d files are limited to A\+S\+C\+I\+I, thus the character set needed to be strictly A\+S\+C\+I\+I compatible.
+
+Most text file loaders provide proper Unicode input file handling, special unicode characters are correctly transcoded to U\+T\+F8 and are kept throughout the libraries' import pipeline.
+
+For most applications, it will be absolutely sufficient to interpret the \hyperlink{structai_string}{ai\+String} as A\+S\+C\+I\+I data and work with it as one would work with a plain char$\ast$. Windows users in need of proper support for i.\+e asian characters can use the \#\+Multi\+Byte\+To\+Wide\+Char(), \#\+Wide\+Char\+To\+Multi\+Byte() Win\+A\+P\+I functionality to convert the U\+T\+F-\/8 strings to their working character set (i.\+e. M\+B\+C\+S, Wide\+Char).
+
+We use this representation instead of std\+::string to be C-\/compatible. The (binary) length of such a string is limited to M\+A\+X\+L\+E\+N characters (including the the terminating zero). 
+
+\subsection{Member Data Documentation}
+\hypertarget{structai_string_aa90b1da7d347a3dcca0a95061e6ea41d}{\index{ai\+String@{ai\+String}!data@{data}}
+\index{data@{data}!ai\+String@{ai\+String}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}char ai\+String\+::data\mbox{[}M\+A\+X\+L\+E\+N\mbox{]}}}\label{structai_string_aa90b1da7d347a3dcca0a95061e6ea41d}
+String buffer. Size limit is M\+A\+X\+L\+E\+N \hypertarget{structai_string_a7d77c2031ff0340746aa046f7fbcf313}{\index{ai\+String@{ai\+String}!length@{length}}
+\index{length@{length}!ai\+String@{ai\+String}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t ai\+String\+::length}}\label{structai_string_a7d77c2031ff0340746aa046f7fbcf313}
+Binary length of the string excluding the terminal 0. This is N\+O\+T the logical length of strings containing U\+T\+F-\/8 multibyte sequences! It's the number of bytes from the beginning of the string to its end. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/include/assimp/types.\+h\item 
+assimp/assimp-\/3.\+1.\+1/port/\+Assimp.\+N\+E\+T/\+Assimp.\+N\+E\+T\+\_\+\+C\+S/ai\+String.\+cs\end{DoxyCompactItemize}

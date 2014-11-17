@@ -1,0 +1,91 @@
+\hypertarget{class_raytracer}{\section{Raytracer Class Reference}
+\label{class_raytracer}\index{Raytracer@{Raytracer}}
+}
+
+
+\hyperlink{class_raytracer}{Raytracer} shows the inner working of the ray casting, using ray tracing rendering into a texture.  
+
+
+
+
+{\ttfamily \#include $<$Raytracer.\+h$>$}
+
+
+
+Inheritance diagram for Raytracer\+:
+
+
+Collaboration diagram for Raytracer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_raytracer_af74007f0febd7e5e63aec4f498d1121b}{void {\bfseries init\+Physics} ()}\label{class_raytracer_af74007f0febd7e5e63aec4f498d1121b}
+
+\item 
+\hypertarget{class_raytracer_a988ce9a49234fda835a5d693c7d01116}{virtual void {\bfseries client\+Move\+And\+Display} ()}\label{class_raytracer_a988ce9a49234fda835a5d693c7d01116}
+
+\item 
+virtual void \hyperlink{class_raytracer_ab426a13ec9c917425f3181bb759a2bf2}{display\+Callback} ()
+\item 
+bool \hyperlink{class_raytracer_aed90423808c62b4fbfa7c19d645d1ffc}{world\+Raytest} (const bt\+Vector3 \&ray\+From, const bt\+Vector3 \&ray\+To, bt\+Vector3 \&world\+Normal, bt\+Vector3 \&world\+Hit\+Point)
+\begin{DoxyCompactList}\small\item\em world\+Raytest performs a ray versus all objects in a collision world, returning true is a hit is found (filling in world\+Normal and world\+Hit\+Point) \end{DoxyCompactList}\item 
+\hypertarget{class_raytracer_a1c5b9e75ac95f42fb771834091028cc4}{bool \hyperlink{class_raytracer_a1c5b9e75ac95f42fb771834091028cc4}{single\+Object\+Raytest} (const bt\+Vector3 \&ray\+From, const bt\+Vector3 \&ray\+To, bt\+Vector3 \&world\+Normal, bt\+Vector3 \&world\+Hit\+Point)}\label{class_raytracer_a1c5b9e75ac95f42fb771834091028cc4}
+
+\begin{DoxyCompactList}\small\item\em single\+Object\+Raytest performs a ray versus one collision shape, returning true is a hit is found (filling in world\+Normal and world\+Hit\+Point) \end{DoxyCompactList}\item 
+\hypertarget{class_raytracer_a68f494d0cd5b4869fad5fe3b18b8aeed}{bool \hyperlink{class_raytracer_a68f494d0cd5b4869fad5fe3b18b8aeed}{lowlevel\+Raytest} (const bt\+Vector3 \&ray\+From, const bt\+Vector3 \&ray\+To, bt\+Vector3 \&world\+Normal, bt\+Vector3 \&world\+Hit\+Point)}\label{class_raytracer_a68f494d0cd5b4869fad5fe3b18b8aeed}
+
+\begin{DoxyCompactList}\small\item\em lowlevel\+Raytest performs a ray versus convex shape, returning true is a hit is found (filling in world\+Normal and world\+Hit\+Point) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_raytracer_a2fc3126e23dcf97635bfaf10cea17e42}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_raytracer_a2fc3126e23dcf97635bfaf10cea17e42}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_raytracer}{Raytracer} shows the inner working of the ray casting, using ray tracing rendering into a texture. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_raytracer_ab426a13ec9c917425f3181bb759a2bf2}{\index{Raytracer@{Raytracer}!display\+Callback@{display\+Callback}}
+\index{display\+Callback@{display\+Callback}!Raytracer@{Raytracer}}
+\subsubsection[{display\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Raytracer\+::display\+Callback (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_raytracer_ab426a13ec9c917425f3181bb759a2bf2}
+clear texture 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_raytracer_aed90423808c62b4fbfa7c19d645d1ffc}{\index{Raytracer@{Raytracer}!world\+Raytest@{world\+Raytest}}
+\index{world\+Raytest@{world\+Raytest}!Raytracer@{Raytracer}}
+\subsubsection[{world\+Raytest}]{\setlength{\rightskip}{0pt plus 5cm}bool Raytracer\+::world\+Raytest (
+\begin{DoxyParamCaption}
+\item[{const bt\+Vector3 \&}]{ray\+From, }
+\item[{const bt\+Vector3 \&}]{ray\+To, }
+\item[{bt\+Vector3 \&}]{world\+Normal, }
+\item[{bt\+Vector3 \&}]{world\+Hit\+Point}
+\end{DoxyParamCaption}
+)}}\label{class_raytracer_aed90423808c62b4fbfa7c19d645d1ffc}
+
+
+world\+Raytest performs a ray versus all objects in a collision world, returning true is a hit is found (filling in world\+Normal and world\+Hit\+Point) 
+
+need to transform normal into worldspace 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Raytracer/Raytracer.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Raytracer/Raytracer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{class_rolling_friction_demo}{\section{Rolling\+Friction\+Demo Class Reference}
+\label{class_rolling_friction_demo}\index{Rolling\+Friction\+Demo@{Rolling\+Friction\+Demo}}
+}
+
+
+{\ttfamily \#include $<$Rolling\+Friction\+Demo.\+h$>$}
+
+
+
+Inheritance diagram for Rolling\+Friction\+Demo\+:
+
+
+Collaboration diagram for Rolling\+Friction\+Demo\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_rolling_friction_demo_a1478d5c8673d1a5611bd5c5c1d0b3f25}{init\+Physics} ()
+\item 
+\hypertarget{class_rolling_friction_demo_a7d624a63cbbef9f8376342638fab89d4}{void {\bfseries exit\+Physics} ()}\label{class_rolling_friction_demo_a7d624a63cbbef9f8376342638fab89d4}
+
+\item 
+virtual void \hyperlink{class_rolling_friction_demo_afe0395dd6a307d77b2464daaf25b0891}{client\+Move\+And\+Display} ()
+\item 
+\hypertarget{class_rolling_friction_demo_a9338ff79d53affb24131102222067c71}{virtual void {\bfseries display\+Callback} ()}\label{class_rolling_friction_demo_a9338ff79d53affb24131102222067c71}
+
+\item 
+\hypertarget{class_rolling_friction_demo_ae05302be881e6975e789a2e022e8ce57}{virtual void {\bfseries client\+Reset\+Scene} ()}\label{class_rolling_friction_demo_ae05302be881e6975e789a2e022e8ce57}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_rolling_friction_demo_a4c02d0473136abc36252f9a2dc234f3f}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_rolling_friction_demo_a4c02d0473136abc36252f9a2dc234f3f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_rolling_friction_demo}{Rolling\+Friction\+Demo} shows the use of rolling friction. Spheres will come to a rest on a sloped plane using a constraint. Damping cannot achieve the same. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rolling_friction_demo_afe0395dd6a307d77b2464daaf25b0891}{\index{Rolling\+Friction\+Demo@{Rolling\+Friction\+Demo}!client\+Move\+And\+Display@{client\+Move\+And\+Display}}
+\index{client\+Move\+And\+Display@{client\+Move\+And\+Display}!Rolling\+Friction\+Demo@{Rolling\+Friction\+Demo}}
+\subsubsection[{client\+Move\+And\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Rolling\+Friction\+Demo\+::client\+Move\+And\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_rolling_friction_demo_afe0395dd6a307d77b2464daaf25b0891}
+step the simulation \hypertarget{class_rolling_friction_demo_a1478d5c8673d1a5611bd5c5c1d0b3f25}{\index{Rolling\+Friction\+Demo@{Rolling\+Friction\+Demo}!init\+Physics@{init\+Physics}}
+\index{init\+Physics@{init\+Physics}!Rolling\+Friction\+Demo@{Rolling\+Friction\+Demo}}
+\subsubsection[{init\+Physics}]{\setlength{\rightskip}{0pt plus 5cm}void Rolling\+Friction\+Demo\+::init\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rolling_friction_demo_a1478d5c8673d1a5611bd5c5c1d0b3f25}
+collision configuration contains default setup for memory, collision setup
+
+use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/\+Bullet\+Multi\+Threaded)
+
+the default constraint solver. For parallel processing you can use a different solver (see Extras/\+Bullet\+Multi\+Threaded)
+
+create a few basic rigid bodies
+
+create a few basic rigid bodies
+
+Create Dynamic Objects 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Rolling\+Friction\+Demo/Rolling\+Friction\+Demo.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Rolling\+Friction\+Demo/Rolling\+Friction\+Demo.\+cpp\end{DoxyCompactItemize}

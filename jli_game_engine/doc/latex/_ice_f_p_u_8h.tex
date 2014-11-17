@@ -1,0 +1,309 @@
+\hypertarget{_ice_f_p_u_8h}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+F\+P\+U.h File Reference}
+\label{_ice_f_p_u_8h}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+F\+P\+U.\+h@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+F\+P\+U.\+h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_f_p_u_guard}{F\+P\+U\+Guard}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_f_p_u_8h_acb9b9ac64c64d12338e570855e58fbe3}{\#define {\bfseries S\+I\+G\+N\+\_\+\+B\+I\+T\+M\+A\+S\+K}~0x80000000}\label{_ice_f_p_u_8h_acb9b9ac64c64d12338e570855e58fbe3}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{\#define \hyperlink{_ice_f_p_u_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{I\+R}(x)~((\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}\&)(x))}\label{_ice_f_p_u_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}
+
+\begin{DoxyCompactList}\small\item\em Integer representation of a floating-\/point value. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_a02dca9accffc04badb82ae15765b74c8}{\#define \hyperlink{_ice_f_p_u_8h_a02dca9accffc04badb82ae15765b74c8}{S\+I\+R}(x)~((\hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword}\&)(x))}\label{_ice_f_p_u_8h_a02dca9accffc04badb82ae15765b74c8}
+
+\begin{DoxyCompactList}\small\item\em Signed integer representation of a floating-\/point value. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_aa854d8430e0acc31adb1ddb3647f6534}{\#define \hyperlink{_ice_f_p_u_8h_aa854d8430e0acc31adb1ddb3647f6534}{A\+I\+R}(x)~(\hyperlink{_ice_f_p_u_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{I\+R}(x)\&0x7fffffff)}\label{_ice_f_p_u_8h_aa854d8430e0acc31adb1ddb3647f6534}
+
+\begin{DoxyCompactList}\small\item\em Absolute integer representation of a floating-\/point value. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_a38d7c2b066b875bd36ed35784782d6cd}{\#define \hyperlink{_ice_f_p_u_8h_a38d7c2b066b875bd36ed35784782d6cd}{F\+R}(x)~((float\&)(x))}\label{_ice_f_p_u_8h_a38d7c2b066b875bd36ed35784782d6cd}
+
+\begin{DoxyCompactList}\small\item\em Floating-\/point representation of an integer value. \end{DoxyCompactList}\item 
+\#define \hyperlink{_ice_f_p_u_8h_a14be2d9ba7af50a0061321f1d48337de}{I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}(x)~(\hyperlink{_ice_f_p_u_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{I\+R}(x)\&0x80000000)
+\item 
+\hypertarget{_ice_f_p_u_8h_a64ef8bb27d373a3233407609d4267bf2}{\#define {\bfseries C\+H\+E\+C\+K\+\_\+\+V\+A\+L\+I\+D\+\_\+\+F\+L\+O\+A\+T}(x)~A\+S\+S\+E\+R\+T(Is\+Valid\+Float(x));}\label{_ice_f_p_u_8h_a64ef8bb27d373a3233407609d4267bf2}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a6263f39b2002e16b61bfcb88f44ff94a}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T0}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf0}\label{_ice_f_p_u_8h_a6263f39b2002e16b61bfcb88f44ff94a}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ac2bd7133552185ad9e21e628a86c9ddd}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T0}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf0}\label{_ice_f_p_u_8h_ac2bd7133552185ad9e21e628a86c9ddd}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a739d1db6c1c1d72f83be2ad65d232a49}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T0}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc0}\label{_ice_f_p_u_8h_a739d1db6c1c1d72f83be2ad65d232a49}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_abdef85ae9605fa352f7ea3e11aa0fe11}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T0}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc0}\label{_ice_f_p_u_8h_abdef85ae9605fa352f7ea3e11aa0fe11}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a7a08d04df8026995f271d7289d0a17bc}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T1}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf1}\label{_ice_f_p_u_8h_a7a08d04df8026995f271d7289d0a17bc}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ac38696d3cc3a57f6ddc5ecc0e3bc450d}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T1}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf1}\label{_ice_f_p_u_8h_ac38696d3cc3a57f6ddc5ecc0e3bc450d}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a7910ad521e44244c6c43f83cb4a3223f}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T1}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc1}\label{_ice_f_p_u_8h_a7910ad521e44244c6c43f83cb4a3223f}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aa20aaaf10be7ddcf4948590139268226}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T1}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc1}\label{_ice_f_p_u_8h_aa20aaaf10be7ddcf4948590139268226}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aa821b5811d8a58fc0a4cbd8ce63c4d6a}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T2}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf2}\label{_ice_f_p_u_8h_aa821b5811d8a58fc0a4cbd8ce63c4d6a}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aa253a12cc46197768732e23c57da8f02}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T2}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf2}\label{_ice_f_p_u_8h_aa253a12cc46197768732e23c57da8f02}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a18d354cbfcc2f3b8d5ddb958e5712e69}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T2}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc2}\label{_ice_f_p_u_8h_a18d354cbfcc2f3b8d5ddb958e5712e69}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_affd509160d588bf25970200e3063c01d}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T2}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc2}\label{_ice_f_p_u_8h_affd509160d588bf25970200e3063c01d}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a369b958ef0b23f28668b452993938a51}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T3}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf3}\label{_ice_f_p_u_8h_a369b958ef0b23f28668b452993938a51}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a6a907a34c3ef9a6df5be76ab3b3acd05}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T3}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf3}\label{_ice_f_p_u_8h_a6a907a34c3ef9a6df5be76ab3b3acd05}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a0a8c6f9ed8770b5aa78f86bfe4f155de}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T3}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc3}\label{_ice_f_p_u_8h_a0a8c6f9ed8770b5aa78f86bfe4f155de}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_af058024d09eafa747f773a228fb79d0e}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T3}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc3}\label{_ice_f_p_u_8h_af058024d09eafa747f773a228fb79d0e}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ac2120eb9299063d46645ebf157d8246c}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T4}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf4}\label{_ice_f_p_u_8h_ac2120eb9299063d46645ebf157d8246c}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a4dd8c5b0afa196b2a9f2c0995bc1c3d7}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T4}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf4}\label{_ice_f_p_u_8h_a4dd8c5b0afa196b2a9f2c0995bc1c3d7}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a79f462765bd1cddec3a4e53f9b2cd9ba}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T4}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc4}\label{_ice_f_p_u_8h_a79f462765bd1cddec3a4e53f9b2cd9ba}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_af3f0d007bd3d56048447b71a6ed41379}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T4}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc4}\label{_ice_f_p_u_8h_af3f0d007bd3d56048447b71a6ed41379}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aceaf6336fa41914740dfdd4a1721c4e9}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T5}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf5}\label{_ice_f_p_u_8h_aceaf6336fa41914740dfdd4a1721c4e9}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a21eff6f9b4c7cfe92a33250a94021db6}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T5}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf5}\label{_ice_f_p_u_8h_a21eff6f9b4c7cfe92a33250a94021db6}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a3ab3a45a1da0961628b9e056474d503a}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T5}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc5}\label{_ice_f_p_u_8h_a3ab3a45a1da0961628b9e056474d503a}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a7980999a5484155e6469e9d98bdf1d2f}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T5}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc5}\label{_ice_f_p_u_8h_a7980999a5484155e6469e9d98bdf1d2f}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a494a405f58ccf35ef967572481bd91db}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T6}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf6}\label{_ice_f_p_u_8h_a494a405f58ccf35ef967572481bd91db}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a5756975813b3a4eabf29632b2d37c27b}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T6}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf6}\label{_ice_f_p_u_8h_a5756975813b3a4eabf29632b2d37c27b}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a6cf710b5d14c69e3d0699085823e888c}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T6}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc6}\label{_ice_f_p_u_8h_a6cf710b5d14c69e3d0699085823e888c}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ae05c7ecc6a3a4b881b9e826fb3f3e288}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T6}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc6}\label{_ice_f_p_u_8h_ae05c7ecc6a3a4b881b9e826fb3f3e288}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ae071c693ed98c6c8b36579d131c14151}{\#define {\bfseries F\+C\+O\+M\+I\+\_\+\+S\+T7}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xf7}\label{_ice_f_p_u_8h_ae071c693ed98c6c8b36579d131c14151}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aeaefe45c50af2b3f8ca1eecbd39739d9}{\#define {\bfseries F\+C\+O\+M\+I\+P\+\_\+\+S\+T7}~\+\_\+asm	\+\_\+emit	0xdf	\+\_\+asm	\+\_\+emit	0xf7}\label{_ice_f_p_u_8h_aeaefe45c50af2b3f8ca1eecbd39739d9}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a90a4b10df69df6f495b56509fbf3efe4}{\#define {\bfseries F\+C\+M\+O\+V\+B\+\_\+\+S\+T7}~\+\_\+asm	\+\_\+emit	0xda	\+\_\+asm	\+\_\+emit	0xc7}\label{_ice_f_p_u_8h_a90a4b10df69df6f495b56509fbf3efe4}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a620e95213bc069958f2765814cc5ea0a}{\#define {\bfseries F\+C\+M\+O\+V\+N\+B\+\_\+\+S\+T7}~\+\_\+asm	\+\_\+emit	0xdb	\+\_\+asm	\+\_\+emit	0xc7}\label{_ice_f_p_u_8h_a620e95213bc069958f2765814cc5ea0a}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_f_p_u_8h_a864cf5a10ca614b2f9f0fbda44f12f1a}{enum {\bfseries F\+P\+U\+Mode} \{ \\*
+{\bfseries F\+P\+U\+\_\+\+F\+L\+O\+O\+R} = 0, 
+{\bfseries F\+P\+U\+\_\+\+C\+E\+I\+L} = 1, 
+{\bfseries F\+P\+U\+\_\+\+B\+E\+S\+T} = 2, 
+{\bfseries F\+P\+U\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+R\+D} = 0x7fffffff, 
+\\*
+{\bfseries F\+P\+U\+\_\+\+F\+L\+O\+O\+R} = 0, 
+{\bfseries F\+P\+U\+\_\+\+C\+E\+I\+L} = 1, 
+{\bfseries F\+P\+U\+\_\+\+B\+E\+S\+T} = 2, 
+{\bfseries F\+P\+U\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+R\+D} = 0x7fffffff
+ \}}\label{_ice_f_p_u_8h_a864cf5a10ca614b2f9f0fbda44f12f1a}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_f_p_u_8h_aee2f6570eb80b1fb1608eb45f8549bc7}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{_ice_f_p_u_8h_aee2f6570eb80b1fb1608eb45f8549bc7}{Different\+Sign} (float f0, float f1)}\label{_ice_f_p_u_8h_aee2f6570eb80b1fb1608eb45f8549bc7}
+
+\begin{DoxyCompactList}\small\item\em Checks 2 values have different signs. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a030fec73fd981e2fd01cb4d97fa09db3}{Fast\+Fabs} (float x)
+\item 
+\hypertarget{_ice_f_p_u_8h_a14f8f814399d8ec766117bf936170d36}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a14f8f814399d8ec766117bf936170d36}{Fast\+Sqrt} (float square)}\label{_ice_f_p_u_8h_a14f8f814399d8ec766117bf936170d36}
+
+\begin{DoxyCompactList}\small\item\em Fast square root for floating-\/point values. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_aa157e4b340b9c87c362d829489022686}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_aa157e4b340b9c87c362d829489022686}{fsat} (float f)}\label{_ice_f_p_u_8h_aa157e4b340b9c87c362d829489022686}
+
+\begin{DoxyCompactList}\small\item\em Saturates positive to zero. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_ab963c6e5f9b1469ddc1fe799be2ad0b3}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_ab963c6e5f9b1469ddc1fe799be2ad0b3}{frsqrt} (float f)}\label{_ice_f_p_u_8h_ab963c6e5f9b1469ddc1fe799be2ad0b3}
+
+\begin{DoxyCompactList}\small\item\em Computes 1.\+0f / sqrtf(x). \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_a025ec555b51285c1267253436818345b}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a025ec555b51285c1267253436818345b}{Inv\+Sqrt} (const float \&x)}\label{_ice_f_p_u_8h_a025ec555b51285c1267253436818345b}
+
+\begin{DoxyCompactList}\small\item\em Computes 1.\+0f / sqrtf(x). Comes from N\+V\+I\+D\+I\+A. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a5c8628d0cd8c08c80f71068e21838227}{R\+Sqrt} (float number)
+\item 
+\hypertarget{_ice_f_p_u_8h_acb7ed8f16672ca77457814ce841669a0}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_acb7ed8f16672ca77457814ce841669a0}{fsqrt} (float f)}\label{_ice_f_p_u_8h_acb7ed8f16672ca77457814ce841669a0}
+
+\begin{DoxyCompactList}\small\item\em T\+O B\+E D\+O\+C\+U\+M\+E\+N\+T\+E\+D. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_ace8903b0189be77d12bfa8e3537a8b62}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_ace8903b0189be77d12bfa8e3537a8b62}{fepsilon} (float f)}\label{_ice_f_p_u_8h_ace8903b0189be77d12bfa8e3537a8b62}
+
+\begin{DoxyCompactList}\small\item\em Returns the float ranged espilon value. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_aaf149f53279b512b33e2777ba4f95575}{inline\+\_\+ bool \hyperlink{_ice_f_p_u_8h_aaf149f53279b512b33e2777ba4f95575}{Is\+N\+A\+N} (float value)}\label{_ice_f_p_u_8h_aaf149f53279b512b33e2777ba4f95575}
+
+\begin{DoxyCompactList}\small\item\em Is the float valid ? \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_a33dd5de26c2c8ca1d78b2ce4ec4e55a8}{inline\+\_\+ bool {\bfseries Is\+Indeterminate} (float value)}\label{_ice_f_p_u_8h_a33dd5de26c2c8ca1d78b2ce4ec4e55a8}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_af1c7f371bd60091ae0d35e2bff77b58d}{inline\+\_\+ bool {\bfseries Is\+Plus\+Inf} (float value)}\label{_ice_f_p_u_8h_af1c7f371bd60091ae0d35e2bff77b58d}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_abfd78e1bd312133abdb15aba47ef1e14}{inline\+\_\+ bool {\bfseries Is\+Minus\+Inf} (float value)}\label{_ice_f_p_u_8h_abfd78e1bd312133abdb15aba47ef1e14}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aaf486d6f21ec189b2d553f206382fc66}{inline\+\_\+ bool {\bfseries Is\+Valid\+Float} (float value)}\label{_ice_f_p_u_8h_aaf486d6f21ec189b2d553f206382fc66}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a97357d6e68f75320a9e24acdf95146d6}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a97357d6e68f75320a9e24acdf95146d6}{Compute\+Float\+Epsilon} ()}\label{_ice_f_p_u_8h_a97357d6e68f75320a9e24acdf95146d6}
+
+\begin{DoxyCompactList}\small\item\em This function computes the slowest possible floating-\/point value (you can also directly use F\+L\+T\+\_\+\+E\+P\+S\+I\+L\+O\+N) \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_a76b017782ca63c559f2107e065c47d9a}{inline\+\_\+ bool {\bfseries Is\+Float\+Zero} (float x, float epsilon=1e-\/6f)}\label{_ice_f_p_u_8h_a76b017782ca63c559f2107e065c47d9a}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a76df974cfe8207330112d4403ebfc912}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a76df974cfe8207330112d4403ebfc912}{F\+C\+Max2} (float a, float b)}\label{_ice_f_p_u_8h_a76df974cfe8207330112d4403ebfc912}
+
+\begin{DoxyCompactList}\small\item\em A global function to find \hyperlink{_ice_types_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+A\+X(a,b)} using F\+C\+O\+M\+I/\+F\+C\+M\+O\+V. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_af606c9018c96e70a4264fef9c3660bb7}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_af606c9018c96e70a4264fef9c3660bb7}{F\+C\+Min2} (float a, float b)}\label{_ice_f_p_u_8h_af606c9018c96e70a4264fef9c3660bb7}
+
+\begin{DoxyCompactList}\small\item\em A global function to find \hyperlink{_ice_types_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+I\+N(a,b)} using F\+C\+O\+M\+I/\+F\+C\+M\+O\+V. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_ab2471402e18497761ab08e0ddc8869e9}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_ab2471402e18497761ab08e0ddc8869e9}{F\+C\+Max3} (float a, float b, float c)}\label{_ice_f_p_u_8h_ab2471402e18497761ab08e0ddc8869e9}
+
+\begin{DoxyCompactList}\small\item\em A global function to find \hyperlink{_ice_types_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+A\+X(a,b,c)} using F\+C\+O\+M\+I/\+F\+C\+M\+O\+V. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_af9df451973573c0d771977e8dca181ca}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_af9df451973573c0d771977e8dca181ca}{F\+C\+Min3} (float a, float b, float c)}\label{_ice_f_p_u_8h_af9df451973573c0d771977e8dca181ca}
+
+\begin{DoxyCompactList}\small\item\em A global function to find \hyperlink{_ice_types_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+I\+N(a,b,c)} using F\+C\+O\+M\+I/\+F\+C\+M\+O\+V. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_af492b1f8e7448122c8f6cfa7d2d1a188}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_af492b1f8e7448122c8f6cfa7d2d1a188}{F\+C\+Max4} (float a, float b, float c, float d)}\label{_ice_f_p_u_8h_af492b1f8e7448122c8f6cfa7d2d1a188}
+
+\begin{DoxyCompactList}\small\item\em A global function to find \hyperlink{_ice_types_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+A\+X(a,b,c,d)} using F\+C\+O\+M\+I/\+F\+C\+M\+O\+V. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_a2a87b4b88ed321d72340d1f98262b13a}{inline\+\_\+ float \hyperlink{_ice_f_p_u_8h_a2a87b4b88ed321d72340d1f98262b13a}{F\+C\+Min4} (float a, float b, float c, float d)}\label{_ice_f_p_u_8h_a2a87b4b88ed321d72340d1f98262b13a}
+
+\begin{DoxyCompactList}\small\item\em A global function to find \hyperlink{_ice_types_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+I\+N(a,b,c,d)} using F\+C\+O\+M\+I/\+F\+C\+M\+O\+V. \end{DoxyCompactList}\item 
+\hypertarget{_ice_f_p_u_8h_afd1c275966cba83a61bfe6fc7e8e300f}{inline\+\_\+ int {\bfseries Convert\+To\+Sortable} (float f)}\label{_ice_f_p_u_8h_afd1c275966cba83a61bfe6fc7e8e300f}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aeaea5e6eb159d5de13cf20b7364316ea}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Encode\+Float} (const float val)}\label{_ice_f_p_u_8h_aeaea5e6eb159d5de13cf20b7364316ea}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a1ed4e493c6bef24891116f2ea0dcb801}{inline\+\_\+ float {\bfseries Decode\+Float} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} ir)}\label{_ice_f_p_u_8h_a1ed4e493c6bef24891116f2ea0dcb801}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a1803e068ce7621afaf8f5c98a3fc8006}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I F\+P\+U\+Mode {\bfseries Get\+F\+P\+U\+Mode} ()}\label{_ice_f_p_u_8h_a1803e068ce7621afaf8f5c98a3fc8006}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_af4ac9089014433b1064d1aa30ab80ab8}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Save\+F\+P\+U} ()}\label{_ice_f_p_u_8h_af4ac9089014433b1064d1aa30ab80ab8}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a086fd00c95521b5d4458ff70d633ea4b}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Restore\+F\+P\+U} ()}\label{_ice_f_p_u_8h_a086fd00c95521b5d4458ff70d633ea4b}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ad2aed6040f0e5a816f8743ac1f6442b4}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Floor\+Mode} ()}\label{_ice_f_p_u_8h_ad2aed6040f0e5a816f8743ac1f6442b4}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a8c73eca89c6195bae17207bd6706562e}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Ceil\+Mode} ()}\label{_ice_f_p_u_8h_a8c73eca89c6195bae17207bd6706562e}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a83dd687798f22a7cc58c7dfd089098d4}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Best\+Mode} ()}\label{_ice_f_p_u_8h_a83dd687798f22a7cc58c7dfd089098d4}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a85b3dd57987a6b1bc0e5949ea9265ad9}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Precision24} ()}\label{_ice_f_p_u_8h_a85b3dd57987a6b1bc0e5949ea9265ad9}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ac98318a020eb4409a33a36c41e8de510}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Precision53} ()}\label{_ice_f_p_u_8h_ac98318a020eb4409a33a36c41e8de510}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a793d42d9085ecd156e976a2213278adf}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Precision64} ()}\label{_ice_f_p_u_8h_a793d42d9085ecd156e976a2213278adf}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ae3c6f32e18a099ad22efed1a31078107}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Rounding\+Chop} ()}\label{_ice_f_p_u_8h_ae3c6f32e18a099ad22efed1a31078107}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aae802d249bf8b97995b107be970ec89d}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Rounding\+Up} ()}\label{_ice_f_p_u_8h_aae802d249bf8b97995b107be970ec89d}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_aa8f771886a08d58ebd3a749bd67a4ec0}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Rounding\+Down} ()}\label{_ice_f_p_u_8h_aa8f771886a08d58ebd3a749bd67a4ec0}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ae0880d1cc8bc7d488247ad3b3d80ff28}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I void {\bfseries Set\+F\+P\+U\+Rounding\+Near} ()}\label{_ice_f_p_u_8h_ae0880d1cc8bc7d488247ad3b3d80ff28}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_a4c005b087a56701016075b7a77fd1799}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I int {\bfseries int\+Chop} (const float \&f)}\label{_ice_f_p_u_8h_a4c005b087a56701016075b7a77fd1799}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_af333f76e63e4b15d573fd31f5e23906c}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I int {\bfseries int\+Floor} (const float \&f)}\label{_ice_f_p_u_8h_af333f76e63e4b15d573fd31f5e23906c}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_af1c29bdbb51c4f19cca264651d04385f}{F\+U\+N\+C\+T\+I\+O\+N I\+C\+E\+C\+O\+R\+E\+\_\+\+A\+P\+I int {\bfseries int\+Ceil} (const float \&f)}\label{_ice_f_p_u_8h_af1c29bdbb51c4f19cca264651d04385f}
+
+\item 
+\hypertarget{_ice_f_p_u_8h_ac6900c17e100832b6f5f7f995c2e9c69}{inline\+\_\+ \hyperlink{_ice_types_8h_a1459338e4e102e56fead3b10918f15dd}{sdword} {\bfseries My\+Floor} (float f)}\label{_ice_f_p_u_8h_ac6900c17e100832b6f5f7f995c2e9c69}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains F\+P\+U related code.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_ice_f_p_u_8h_a14be2d9ba7af50a0061321f1d48337de}{\index{Ice\+F\+P\+U.\+h@{Ice\+F\+P\+U.\+h}!I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T@{I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}}
+\index{I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T@{I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}!Ice\+F\+P\+U.\+h@{Ice\+F\+P\+U.\+h}}
+\subsubsection[{I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~({\bf I\+R}(x)\&0x80000000)}}\label{_ice_f_p_u_8h_a14be2d9ba7af50a0061321f1d48337de}
+Integer-\/based comparison of a floating point value. Don't use it blindly, it can be faster or slower than the F\+P\+U comparison, depends on the context. 
+
+\subsection{Function Documentation}
+\hypertarget{_ice_f_p_u_8h_a030fec73fd981e2fd01cb4d97fa09db3}{\index{Ice\+F\+P\+U.\+h@{Ice\+F\+P\+U.\+h}!Fast\+Fabs@{Fast\+Fabs}}
+\index{Fast\+Fabs@{Fast\+Fabs}!Ice\+F\+P\+U.\+h@{Ice\+F\+P\+U.\+h}}
+\subsubsection[{Fast\+Fabs}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ float Fast\+Fabs (
+\begin{DoxyParamCaption}
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)}}\label{_ice_f_p_u_8h_a030fec73fd981e2fd01cb4d97fa09db3}
+Fast fabs for floating-\/point values. It just clears the sign bit. Don't use it blindy, it can be faster or slower than the F\+P\+U comparison, depends on the context. \hypertarget{_ice_f_p_u_8h_a5c8628d0cd8c08c80f71068e21838227}{\index{Ice\+F\+P\+U.\+h@{Ice\+F\+P\+U.\+h}!R\+Sqrt@{R\+Sqrt}}
+\index{R\+Sqrt@{R\+Sqrt}!Ice\+F\+P\+U.\+h@{Ice\+F\+P\+U.\+h}}
+\subsubsection[{R\+Sqrt}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ float R\+Sqrt (
+\begin{DoxyParamCaption}
+\item[{float}]{number}
+\end{DoxyParamCaption}
+)}}\label{_ice_f_p_u_8h_a5c8628d0cd8c08c80f71068e21838227}
+Computes 1.\+0f / sqrtf(x). Comes from Quake3. Looks like the first one I had above. See \href{http://www.magic-software.com/3DGEDInvSqrt.html}{\tt http\+://www.\+magic-\/software.\+com/3\+D\+G\+E\+D\+Inv\+Sqrt.\+html} 

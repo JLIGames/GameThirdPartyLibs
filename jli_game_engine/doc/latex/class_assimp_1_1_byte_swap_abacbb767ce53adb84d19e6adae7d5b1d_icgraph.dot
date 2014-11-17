@@ -1,0 +1,39 @@
+digraph "Assimp::ByteSwap::Swap2"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ByteSwap::Swap2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::BaseImporter\l::ConvertToUTF8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_base_importer.html#a3cd8c81533de987dd7acea6874ad918c"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::BaseImporter\l::TextFileToBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_base_importer.html#a8978de932cfe613f71283c1c5bff2974"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::AC3DImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_a_c3_d_importer.html#a88b27495efcf754f3dda7e4177aff902"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::ASEImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_a_s_e_importer.html#a9e7b1964d1476cfaf6f45e3ce37b2a78"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::CSMImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_c_s_m_importer.html#aa864e9a5bb7cc0a53bc3ca0963fffb78"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::NFFImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_n_f_f_importer.html#a97c20ab69758da48642dc690ab4a7b65"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::OFFImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_o_f_f_importer.html#a17abb1e1f7419354414e8d3245113742"];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::PLYImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_p_l_y_importer.html#a8849cd4413bdc1a9d70c5c539328b2b3"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::RAWImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_r_a_w_importer.html#af925a691a795d82a078bdb332c51e8cd"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::SMDImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_s_m_d_importer.html#a4f1ad132927d8077a231228223b392eb"];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Assimp::STLImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_s_t_l_importer.html#a4a1f2e7092290364d9bc52603ed7cf74"];
+  Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Assimp::UnrealImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_unreal_importer.html#a76e6e77e39a461137453bcbbb22ba71f",tooltip="Imports the given file into the given scene structure. "];
+  Node2 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Assimp::CIrrXML_IOStream\lReader::CIrrXML_IOStreamReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_c_irr_x_m_l___i_o_stream_reader.html#a5d0b13ea4a46fc699ae744860e07e0f9",tooltip="Construction from an existing IOStream. "];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Assimp::XFileImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_x_file_importer.html#a062ed9f5fdca14e89bc40a5d4990dc4d"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Assimp::ByteSwap::Swap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_byte_swap.html#a3ea83a13aef538fa962eabd313ab3d3f"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Assimp::MD2Importer\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d2_importer.html#ac510f399d605f97cecc6001d14f7692a"];
+}

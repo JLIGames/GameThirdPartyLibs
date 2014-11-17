@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Q3BSP::sQ3BSPLightmap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_q3_b_s_p_1_1s_q3_b_s_p_lightmap.html",tooltip="A light-map of the level, size 128 x 128, RGB components. "];
+}

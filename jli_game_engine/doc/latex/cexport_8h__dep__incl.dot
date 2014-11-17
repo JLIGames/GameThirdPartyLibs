@@ -1,0 +1,19 @@
+digraph "assimp/assimp-3.1.1/include/assimp/cexport.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="assimp/assimp-3.1.1\l/include/assimp/cexport.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="assimp/assimp-3.1.1\l/include/assimp/Exporter.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_exporter_8hpp_source.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="assimp/assimp-3.1.1\l/test/unit/utExport.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ut_export_8h_source.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="assimp/assimp-3.1.1\l/tools/assimp_cmd/Main.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$assimp_2assimp-3_81_81_2tools_2assimp__cmd_2_main_8h_source.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="assimp/assimp-3.1.1\l/tools/assimp_cmd/CompareDump.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_compare_dump_8cpp.html",tooltip="Implementation of the &#39;assimp cmpdmp&#39;, which compares two model dumps for equality. It plays an important role in the regression test suite. "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="assimp/assimp-3.1.1\l/tools/assimp_cmd/Export.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_export_8cpp.html",tooltip="Implementation of the &#39;assimp export&#39; utility. "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="assimp/assimp-3.1.1\l/tools/assimp_cmd/ImageExtractor.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image_extractor_8cpp.html",tooltip="Implementation of the &#39;assimp extract&#39; utility. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

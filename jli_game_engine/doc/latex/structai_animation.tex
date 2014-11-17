@@ -1,0 +1,93 @@
+\hypertarget{structai_animation}{\section{ai\+Animation Class Reference}
+\label{structai_animation}\index{ai\+Animation@{ai\+Animation}}
+}
+
+
+{\ttfamily \#include $<$anim.\+h$>$}
+
+
+
+Inheritance diagram for ai\+Animation\+:
+
+
+Collaboration diagram for ai\+Animation\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_animation_a4106cba9370874d9c5105811800d5c1b}{virtual void {\bfseries Dispose} ()}\label{structai_animation_a4106cba9370874d9c5105811800d5c1b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_string}{ai\+String} \hyperlink{structai_animation_a1be7d78d88694173a7ceef658fea77f1}{m\+Name}
+\item 
+double \hyperlink{structai_animation_ae2bbc49320b4b75c05e23e0ab704ece7}{m\+Duration}
+\item 
+double \hyperlink{structai_animation_afd26a40c3f16b6aa6e150effa3eaeab1}{m\+Ticks\+Per\+Second}
+\item 
+unsigned int \hyperlink{structai_animation_aebfccf9a9aefa6084566d21e8a30b7e5}{m\+Num\+Channels}
+\item 
+C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_node_anim}{ai\+Node\+Anim} $\ast$$\ast$ \hyperlink{structai_animation_a89244bb68b725ffbb85137174c28e757}{m\+Channels}
+\item 
+unsigned int \hyperlink{structai_animation_ac43aacd8502020174e553501f0b6bf5f}{m\+Num\+Mesh\+Channels}
+\item 
+C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_mesh_anim}{ai\+Mesh\+Anim} $\ast$$\ast$ \hyperlink{structai_animation_af05138121dbde8b31aa031505b454c85}{m\+Mesh\+Channels}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_animation_ac47fd6fa70f89a3be3b90d4008ce6130}{bool {\bfseries swig\+C\+Mem\+Own}}\label{structai_animation_ac47fd6fa70f89a3be3b90d4008ce6130}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_animation_a47eb8305ad2ac0b1a6b940a35223a48e}{\hyperlink{classai_node_anim_vector}{ai\+Node\+Anim\+Vector} \hyperlink{structai_animation_a89244bb68b725ffbb85137174c28e757}{m\+Channels} {\bfseries get}}\label{structai_animation_a47eb8305ad2ac0b1a6b940a35223a48e}
+
+\item 
+\hypertarget{structai_animation_a8160bfc14421b13600158662e159ad68}{\hyperlink{classai_mesh_anim_vector}{ai\+Mesh\+Anim\+Vector} {\bfseries m\+Mesh\+Channels}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{structai_animation_a8160bfc14421b13600158662e159ad68}
+
+\item 
+\hypertarget{structai_animation_a8de0bb4f23cfd3b395483f125f3d5f93}{\hyperlink{structai_string}{ai\+String} {\bfseries m\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_animation_a8de0bb4f23cfd3b395483f125f3d5f93}
+
+\item 
+\hypertarget{structai_animation_a58d5c6880c27122052175ada8be4d6c4}{uint {\bfseries m\+Num\+Channels}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_animation_a58d5c6880c27122052175ada8be4d6c4}
+
+\item 
+\hypertarget{structai_animation_aa2df8c2fd18619f7dc302217385f8ef9}{uint {\bfseries m\+Num\+Mesh\+Channels}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_animation_aa2df8c2fd18619f7dc302217385f8ef9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An animation consists of keyframe data for a number of nodes. For each node affected by the animation a separate series of data is given. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structai_animation_a89244bb68b725ffbb85137174c28e757}{\index{ai\+Animation@{ai\+Animation}!m\+Channels@{m\+Channels}}
+\index{m\+Channels@{m\+Channels}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}C\+\_\+\+S\+T\+R\+U\+C\+T {\bf ai\+Node\+Anim}$\ast$$\ast$ ai\+Animation\+::m\+Channels}}\label{structai_animation_a89244bb68b725ffbb85137174c28e757}
+The node animation channels. Each channel affects a single node. The array is m\+Num\+Channels in size. \hypertarget{structai_animation_ae2bbc49320b4b75c05e23e0ab704ece7}{\index{ai\+Animation@{ai\+Animation}!m\+Duration@{m\+Duration}}
+\index{m\+Duration@{m\+Duration}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}double ai\+Animation\+::m\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{structai_animation_ae2bbc49320b4b75c05e23e0ab704ece7}
+Duration of the animation in ticks. \hypertarget{structai_animation_af05138121dbde8b31aa031505b454c85}{\index{ai\+Animation@{ai\+Animation}!m\+Mesh\+Channels@{m\+Mesh\+Channels}}
+\index{m\+Mesh\+Channels@{m\+Mesh\+Channels}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Mesh\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}C\+\_\+\+S\+T\+R\+U\+C\+T {\bf ai\+Mesh\+Anim}$\ast$$\ast$ ai\+Animation\+::m\+Mesh\+Channels}}\label{structai_animation_af05138121dbde8b31aa031505b454c85}
+The mesh animation channels. Each channel affects a single mesh. The array is m\+Num\+Mesh\+Channels in size. \hypertarget{structai_animation_a1be7d78d88694173a7ceef658fea77f1}{\index{ai\+Animation@{ai\+Animation}!m\+Name@{m\+Name}}
+\index{m\+Name@{m\+Name}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Name}]{\setlength{\rightskip}{0pt plus 5cm}C\+\_\+\+S\+T\+R\+U\+C\+T {\bf ai\+String} ai\+Animation\+::m\+Name}}\label{structai_animation_a1be7d78d88694173a7ceef658fea77f1}
+The name of the animation. If the modeling package this data was exported from does support only a single animation channel, this name is usually empty (length is zero). \hypertarget{structai_animation_aebfccf9a9aefa6084566d21e8a30b7e5}{\index{ai\+Animation@{ai\+Animation}!m\+Num\+Channels@{m\+Num\+Channels}}
+\index{m\+Num\+Channels@{m\+Num\+Channels}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Num\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int ai\+Animation\+::m\+Num\+Channels}}\label{structai_animation_aebfccf9a9aefa6084566d21e8a30b7e5}
+The number of bone animation channels. Each channel affects a single node. \hypertarget{structai_animation_ac43aacd8502020174e553501f0b6bf5f}{\index{ai\+Animation@{ai\+Animation}!m\+Num\+Mesh\+Channels@{m\+Num\+Mesh\+Channels}}
+\index{m\+Num\+Mesh\+Channels@{m\+Num\+Mesh\+Channels}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Num\+Mesh\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int ai\+Animation\+::m\+Num\+Mesh\+Channels}}\label{structai_animation_ac43aacd8502020174e553501f0b6bf5f}
+The number of mesh animation channels. Each channel affects a single mesh and defines vertex-\/based animation. \hypertarget{structai_animation_afd26a40c3f16b6aa6e150effa3eaeab1}{\index{ai\+Animation@{ai\+Animation}!m\+Ticks\+Per\+Second@{m\+Ticks\+Per\+Second}}
+\index{m\+Ticks\+Per\+Second@{m\+Ticks\+Per\+Second}!ai\+Animation@{ai\+Animation}}
+\subsubsection[{m\+Ticks\+Per\+Second}]{\setlength{\rightskip}{0pt plus 5cm}double ai\+Animation\+::m\+Ticks\+Per\+Second\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{structai_animation_afd26a40c3f16b6aa6e150effa3eaeab1}
+Ticks per second. 0 if not specified in the imported file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/include/assimp/\hyperlink{anim_8h}{anim.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/port/\+Assimp.\+N\+E\+T/\+Assimp.\+N\+E\+T\+\_\+\+C\+S/ai\+Animation.\+cs\end{DoxyCompactItemize}

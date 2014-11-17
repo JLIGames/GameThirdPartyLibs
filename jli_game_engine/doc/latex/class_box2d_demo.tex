@@ -1,0 +1,89 @@
+\hypertarget{class_box2d_demo}{\section{Box2d\+Demo Class Reference}
+\label{class_box2d_demo}\index{Box2d\+Demo@{Box2d\+Demo}}
+}
+
+
+\hyperlink{class_box2d_demo}{Box2d\+Demo} is good starting point for learning the code base and porting.  
+
+
+
+
+{\ttfamily \#include $<$Box2d\+Demo.\+h$>$}
+
+
+
+Inheritance diagram for Box2d\+Demo\+:
+
+
+Collaboration diagram for Box2d\+Demo\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_box2d_demo_afa4baf5e6b4451564c2dc715346d5800}{virtual void {\bfseries reshape} (int w, int h)}\label{class_box2d_demo_afa4baf5e6b4451564c2dc715346d5800}
+
+\item 
+void \hyperlink{class_box2d_demo_a424d04d7613f69ee06550fee98341ab8}{init\+Physics} ()
+\item 
+\hypertarget{class_box2d_demo_a20c44c1313f4e18649c2790307f689d6}{void {\bfseries exit\+Physics} ()}\label{class_box2d_demo_a20c44c1313f4e18649c2790307f689d6}
+
+\item 
+virtual void \hyperlink{class_box2d_demo_a138f47a65b5cc193011e4060ba4e6257}{client\+Move\+And\+Display} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{bt_bullet_dynamics_common_8h_source}{bt\+Bullet\+Dynamics\+Common.\+h} is the main Bullet include file, contains most common include files. \end{DoxyCompactList}\item 
+\hypertarget{class_box2d_demo_a5de8f1df336c6f63237256979f3a97b4}{virtual void {\bfseries display\+Callback} ()}\label{class_box2d_demo_a5de8f1df336c6f63237256979f3a97b4}
+
+\item 
+\hypertarget{class_box2d_demo_afe71daecdbad58767686a2364a7c4ec5}{virtual void {\bfseries mouse\+Func} (int button, int \hyperlink{structstate}{state}, int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_box2d_demo_afe71daecdbad58767686a2364a7c4ec5}
+
+\item 
+\hypertarget{class_box2d_demo_a5d443e34a660bf7dd7e70cee9bdc9477}{virtual void {\bfseries mouse\+Motion\+Func} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_box2d_demo_a5d443e34a660bf7dd7e70cee9bdc9477}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_box2d_demo_a7c2f26d08624e229dc32fca18eb62b17}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_box2d_demo_a7c2f26d08624e229dc32fca18eb62b17}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_box2d_demo}{Box2d\+Demo} is good starting point for learning the code base and porting. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_box2d_demo_a138f47a65b5cc193011e4060ba4e6257}{\index{Box2d\+Demo@{Box2d\+Demo}!client\+Move\+And\+Display@{client\+Move\+And\+Display}}
+\index{client\+Move\+And\+Display@{client\+Move\+And\+Display}!Box2d\+Demo@{Box2d\+Demo}}
+\subsubsection[{client\+Move\+And\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Box2d\+Demo\+::client\+Move\+And\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_box2d_demo_a138f47a65b5cc193011e4060ba4e6257}
+
+
+\hyperlink{bt_bullet_dynamics_common_8h_source}{bt\+Bullet\+Dynamics\+Common.\+h} is the main Bullet include file, contains most common include files. 
+
+step the simulation \hypertarget{class_box2d_demo_a424d04d7613f69ee06550fee98341ab8}{\index{Box2d\+Demo@{Box2d\+Demo}!init\+Physics@{init\+Physics}}
+\index{init\+Physics@{init\+Physics}!Box2d\+Demo@{Box2d\+Demo}}
+\subsubsection[{init\+Physics}]{\setlength{\rightskip}{0pt plus 5cm}void Box2d\+Demo\+::init\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_box2d_demo_a424d04d7613f69ee06550fee98341ab8}
+collision configuration contains default setup for memory, collision setup
+
+use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/\+Bullet\+Multi\+Threaded)
+
+the default constraint solver. For parallel processing you can use a different solver (see Extras/\+Bullet\+Multi\+Threaded)
+
+create a few basic rigid bodies
+
+Create Dynamic Objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Box2d\+Demo/Box2d\+Demo.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Box2d\+Demo/Box2d\+Demo.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,2849 @@
+\hypertarget{class_c_p_v_r_t_string}{\section{C\+P\+V\+R\+T\+String Class Reference}
+\label{class_c_p_v_r_t_string}\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+}
+
+
+A string class.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+String.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_string_a304b4330cfa67e6f173b01f8bf2247a3}{typedef size\+\_\+t {\bfseries size\+\_\+type}}\label{class_c_p_v_r_t_string_a304b4330cfa67e6f173b01f8bf2247a3}
+
+\item 
+\hypertarget{class_c_p_v_r_t_string_a8944463157d91769a783125684ff8801}{typedef char {\bfseries value\+\_\+type}}\label{class_c_p_v_r_t_string_a8944463157d91769a783125684ff8801}
+
+\item 
+\hypertarget{class_c_p_v_r_t_string_a6dbc99fad0efe9491c48a7995ca0cd30}{typedef char \& {\bfseries reference}}\label{class_c_p_v_r_t_string_a6dbc99fad0efe9491c48a7995ca0cd30}
+
+\item 
+\hypertarget{class_c_p_v_r_t_string_aeed6bfe4e4cb81083fb65e52d7651bfc}{typedef const char \& {\bfseries const\+\_\+reference}}\label{class_c_p_v_r_t_string_aeed6bfe4e4cb81083fb65e52d7651bfc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_v_r_t_string_aed75cf589c42185d69bd6cabd19435d3}{C\+P\+V\+R\+T\+String} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Count=npos)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string_a1c890ef396db88561f0abc6499bc4be6}{C\+P\+V\+R\+T\+String} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Right, size\+\_\+t \+\_\+\+Roff=0, size\+\_\+t \+\_\+\+Count=npos)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string_afaa45c16f7e51e192c5fd60909e069bf}{C\+P\+V\+R\+T\+String} (size\+\_\+t \+\_\+\+Count, const char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string_aee988e45f0476231e8fec8d929e119c3}{C\+P\+V\+R\+T\+String} (const char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string_a7872190568c8d2ff9f1624467142c956}{C\+P\+V\+R\+T\+String} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_p_v_r_t_string_a8f1b944f3a690eb172e3e1ca99845235}{$\sim$\+C\+P\+V\+R\+T\+String} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a78f7b9163685822b1c31b08649e7af68}{append} (const char $\ast$\+\_\+\+Ptr)
+\begin{DoxyCompactList}\small\item\em Appends a string. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a5d447c118388e7875d53e34506d0b3bf}{append} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Count)
+\begin{DoxyCompactList}\small\item\em Appends a string of length \+\_\+\+Count. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a327278a567768aa9e4964e34ca1e473b}{append} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str)
+\begin{DoxyCompactList}\small\item\em Appends a string. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a43fd07cd63b7ca3cfcb91a2d40d7eb60}{append} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count)
+\begin{DoxyCompactList}\small\item\em Appends \+\_\+\+Count letters of \+\_\+\+Str from \+\_\+\+Off in \+\_\+\+Str. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_af806f928176168720c218de8c494e360}{append} (size\+\_\+t \+\_\+\+Count, const char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em Appends \+\_\+\+Ch \+\_\+\+Count times. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_ada0fed209f3ddcb45cde07eff41b718a}{assign} (const char $\ast$\+\_\+\+Ptr)
+\begin{DoxyCompactList}\small\item\em Assigns the string to the string \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_aa43b84d7c6d6b5fcb0b380492d4074b5}{assign} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Count)
+\begin{DoxyCompactList}\small\item\em Assigns the string to the string \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a55d7d994a0577c852e88d054f317d8c2}{assign} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str)
+\begin{DoxyCompactList}\small\item\em Assigns the string to the string \+\_\+\+Str. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a44936facbb11f935cbe4cf47a6ae3a75}{assign} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count=npos)
+\begin{DoxyCompactList}\small\item\em Assigns the string to \+\_\+\+Count characters in string \+\_\+\+Str starting at \+\_\+\+Off. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a770dd6f3c9c45aa0c3a9013b95dc3d5f}{assign} (size\+\_\+t \+\_\+\+Count, char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em Assigns the string to \+\_\+\+Count copies of \+\_\+\+Ch. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_p_v_r_t_string_aabd1f2848c4b1d65e7418b264502687d}{c\+\_\+str} () const 
+\begin{DoxyCompactList}\small\item\em Returns a const char$\ast$ pointer of the string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_ad6c21b772c47aad0bb87a37fdd849d5b}{capacity} () const 
+\begin{DoxyCompactList}\small\item\em Returns the size of the character array reserved. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_string_a68ced67b1e2866a680be2ce143253772}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears the string. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_aac2f2e6f45ca19cea06c3988e11d6b15}{compare} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str) const 
+\begin{DoxyCompactList}\small\item\em Compares the string with \+\_\+\+Str. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a18c9c740d80ca610aabf2f9b5f1092de}{compare} (size\+\_\+t \+\_\+\+Pos1, size\+\_\+t \+\_\+\+Num1, const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str) const 
+\begin{DoxyCompactList}\small\item\em Compares the string with \+\_\+\+Str. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a20bad10e494a9227e631cb61bf83a1f9}{compare} (size\+\_\+t \+\_\+\+Pos1, size\+\_\+t \+\_\+\+Num1, const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Compares the string with \+\_\+\+Str. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_adcca074e685aa4600c6eb5198a82c259}{compare} (const char $\ast$\+\_\+\+Ptr) const 
+\begin{DoxyCompactList}\small\item\em Compares the string with \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a47b3483deccd5aec82bcb637983eb77c}{compare} (size\+\_\+t \+\_\+\+Pos1, size\+\_\+t \+\_\+\+Num1, const char $\ast$\+\_\+\+Ptr) const 
+\begin{DoxyCompactList}\small\item\em Compares the string with \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a120a792d44eb8846d7c7e1b76aed6344}{compare} (size\+\_\+t \+\_\+\+Pos1, size\+\_\+t \+\_\+\+Num1, const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Compares the string with \+\_\+\+Str. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_string_ac887244c7a66c51e9921535ffb27349a}{operator$<$} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str) const 
+\begin{DoxyCompactList}\small\item\em Less than operator. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_string_a836dd5933c9a83b11bc0be8e7313410a}{operator==} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str) const 
+\begin{DoxyCompactList}\small\item\em == Operator \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_string_a83a09c08aa0e4286a000ca7d460d7220}{operator==} (const char $\ast$const \+\_\+\+Ptr) const 
+\begin{DoxyCompactList}\small\item\em == Operator \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_string_acd1bdcc44016b292b30dcf85740b8076}{operator!=} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str) const 
+\begin{DoxyCompactList}\small\item\em != Operator \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_string_ad282af0e6f045a5cc9332a87d0a72ef5}{operator!=} (const char $\ast$const \+\_\+\+Ptr) const 
+\begin{DoxyCompactList}\small\item\em != Operator \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a3360bd32ab0576fd575705c1a4be7966}{copy} (char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Count, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Copies the string to \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_p_v_r_t_string_a63d9aaa536816ddc51fa4e6f7dae9e56}{data} () const 
+\begin{DoxyCompactList}\small\item\em Returns a const char$\ast$ version of the string. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_string_ad840a73b6d6ace02ca50d14680f38439}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if the string is empty. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a224598bca261851e6b56eacf8dddb51e}{erase} (size\+\_\+t \+\_\+\+Pos=0, size\+\_\+t \+\_\+\+Count=npos)
+\begin{DoxyCompactList}\small\item\em Erases a portion of the string. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_afaca43fa31548dcae05b2cba65406379}{substitute} (char \+\_\+src, char \+\_\+sub\+Des, bool \+\_\+all=true)
+\begin{DoxyCompactList}\small\item\em Erases a portion of the string. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_ab6b191f6e48bb43af236460389fb3375}{substitute} (const char $\ast$\+\_\+src, const char $\ast$\+\_\+sub\+Des, bool \+\_\+all=true)
+\begin{DoxyCompactList}\small\item\em Erases a portion of the string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a5ebc83257276abc56a7d46522dc56bba}{find} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Finds a substring within this string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a39beb7375cd4ec6ecbb6201ed62722c1}{find} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Finds a substring within this string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a0dde9334b700611fadc237bb2e5731bb}{find\+\_\+first\+\_\+not\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that is not \+\_\+\+Ch. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a586c82d71a7f2dfbb999b329c31b0b79}{find\+\_\+first\+\_\+not\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that is not in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a9bb180af88db34e40588237e453c7399}{find\+\_\+first\+\_\+not\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that is not in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a9b2ee6a98e0ae4d21c281da568b840b5}{find\+\_\+first\+\_\+not\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that is not in \+\_\+\+Str. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a3ea029ce35650c19579a85dedcc267e7}{find\+\_\+first\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that is \+\_\+\+Ch. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_acf7a7dba5c5a24d21c82f48f8e43aa2c}{find\+\_\+first\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that matches a char in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_aae271ed8924554b0bf14e500633b7946}{find\+\_\+first\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that matches a char in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a2fd28a7d1cc030927ed08a11bc3cda2f}{find\+\_\+first\+\_\+ofn} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that matches all chars in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a5d98a7e0630190435a8a76f798d915d4}{find\+\_\+first\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the first char that matches a char in \+\_\+\+Str. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_aa92b066c4e466add4803bcc6a7ce9833}{find\+\_\+last\+\_\+not\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is not \+\_\+\+Ch. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a6e321f49478b32a043500f89e6dc5131}{find\+\_\+last\+\_\+not\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is not in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a17bbff6a0a2aef72d199fe08e1c9abed}{find\+\_\+last\+\_\+not\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is not in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_ae0eb296ad695900feff7c0dbe095f0f9}{find\+\_\+last\+\_\+not\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is not in \+\_\+\+Str. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a5559cea254c4d8f06968b13e20ebcadf}{find\+\_\+last\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is \+\_\+\+Ch. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_ae8c72833f5430656e8970324b1641c61}{find\+\_\+last\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_adb9baf66ebeebb6f5953fe2c8c3cceb7}{find\+\_\+last\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is in \+\_\+\+Ptr. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a66e86eaf153fe0677235e24ac9d3cd9d}{find\+\_\+last\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the position of the last char that is in \+\_\+\+Str. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_aedbcf94a3d39dbee321576aff1c29762}{find\+\_\+number\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of occurances of \+\_\+\+Ch in the parent string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a07e5836dbfaffb1eae775cc36e10564b}{find\+\_\+number\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of occurances of \+\_\+\+Ptr in the parent string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a16ccd07e094154b4f6581672ebd930c3}{find\+\_\+number\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of occurances of \+\_\+\+Ptr in the parent string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a1cd6a624ef671f897d6ee64b6bd7cae9}{find\+\_\+number\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of occurances of \+\_\+\+Str in the parent string. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_ae14a156ba0a9dc525d279acdacc92239}{find\+\_\+next\+\_\+occurance\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the next occurance of \+\_\+\+Ch in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_ac518d3b498634b68f2965578607e32f5}{find\+\_\+next\+\_\+occurance\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the next occurance of \+\_\+\+Ptr in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a3cdaf12aee3cf4a6daeeffa79cdd7cdd}{find\+\_\+next\+\_\+occurance\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the next occurance of \+\_\+\+Ptr in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a265f25012eee141cfb617ce84f57603e}{find\+\_\+next\+\_\+occurance\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the next occurance of \+\_\+\+Str in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a1d26b71c01436ae0d17e3c53abdf1a2e}{find\+\_\+previous\+\_\+occurance\+\_\+of} (char \+\_\+\+Ch, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the previous occurance of \+\_\+\+Ch in the parent string before \+\_\+\+Off. If not found, returns -\/1. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a35d45d2afafb7fbbd60cadea190cd4aa}{find\+\_\+previous\+\_\+occurance\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the previous occurance of \+\_\+\+Ptr in the parent string before \+\_\+\+Off. If not found, returns -\/1. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a19d8c94396debffd4b1b6b714556faa2}{find\+\_\+previous\+\_\+occurance\+\_\+of} (const char $\ast$\+\_\+\+Ptr, size\+\_\+t \+\_\+\+Off, size\+\_\+t \+\_\+\+Count) const 
+\begin{DoxyCompactList}\small\item\em Returns the previous occurance of \+\_\+\+Ptr in the parent string before \+\_\+\+Off. If not found, returns -\/1. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_string_a52b726a7249e0cc0da883dc9bcab246c}{find\+\_\+previous\+\_\+occurance\+\_\+of} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str, size\+\_\+t \+\_\+\+Off=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the previous occurance of \+\_\+\+Str in the parent string before \+\_\+\+Off. If not found, returns -\/1. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_ab5dde5b0bedbbe83788fda762ba940cc}{left} (size\+\_\+t i\+Size) const 
+\begin{DoxyCompactList}\small\item\em Returns the leftmost characters of the string (excluding the null character) in a new \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}. If i\+Size is larger than the string, a copy of the original string is returned. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a2dd6f07102e510a9746fc36c4089a94a}{right} (size\+\_\+t i\+Size) const 
+\begin{DoxyCompactList}\small\item\em Returns the rightmost characters of the string (excluding the null character) in a new \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}. If i\+Size is larger than the string, a copy of the original string is returned. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_ae3548c03219a9ddc367c64de48231bf9}{length} () const 
+\begin{DoxyCompactList}\small\item\em Returns the length of the string. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_a97b2ae01970a0a42a9dd368c026f73de}{max\+\_\+size} () const 
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of chars that the string can contain. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_string_aec4d14f780fb60781558da44fb5187c5}{push\+\_\+back} (char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em Appends \+\_\+\+Ch to the string. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_string_a073a2ea4628b55e63a0cab38e0c4996c}{reserve} (size\+\_\+t \+\_\+\+Count=0)
+\begin{DoxyCompactList}\small\item\em Reserves space for \+\_\+\+Count number of chars. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_string_a69df81652ae94c401c2c7071e827789e}{resize} (size\+\_\+t \+\_\+\+Count, char \+\_\+\+Ch=char())
+\begin{DoxyCompactList}\small\item\em Resizes the string to \+\_\+\+Count in length. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_c_p_v_r_t_string_afbdb5fbf9e15ecf80cc7b4338854cb5e}{size} () const 
+\begin{DoxyCompactList}\small\item\em Returns the size of the string. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a626210697c8a0b65b9245693c5f21d15}{substr} (size\+\_\+t \+\_\+\+Off=0, size\+\_\+t \+\_\+\+Count=npos) const 
+\begin{DoxyCompactList}\small\item\em Returns the size of the string. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_string_af4aa0d40e0e71b7cd41f52b635139b35}{swap} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Str)
+\begin{DoxyCompactList}\small\item\em Swaps the contents of the string with \+\_\+\+Str. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a84bdf409157354e80b364e558d52eaa6}{to\+Lower} ()
+\begin{DoxyCompactList}\small\item\em Converts the string to lower case. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a7b4746ff021fd8900b2dbbce270082f5}{to\+Upper} ()
+\begin{DoxyCompactList}\small\item\em Converts the string to upper case. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a484a1e04c5584d273d88c5ba12412fcf}{format} (const char $\ast$p\+Format,...)
+\begin{DoxyCompactList}\small\item\em return the formatted string \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a5c9840284dfa7a7338e924c45de94c66}{format\+Positional} (const char $\ast$p\+Format,...)
+\begin{DoxyCompactList}\small\item\em return the formatted string \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a2205e66ce7f148c60bd4302ca5b2c104}{operator+=} (char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em += Operator \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a7f620a3e8aa6166b6d5183c40db6d920}{operator+=} (const char $\ast$\+\_\+\+Ptr)
+\begin{DoxyCompactList}\small\item\em += Operator \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_ae0d887649bdc4f8182e6237a9e3e4a32}{operator+=} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em += Operator \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a4d8d2df189dd3cd75eec135b6ef8620d}{operator=} (char \+\_\+\+Ch)
+\begin{DoxyCompactList}\small\item\em = Operator \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_aabf81b6f788ff43281378b7b645aac41}{operator=} (const char $\ast$\+\_\+\+Ptr)
+\begin{DoxyCompactList}\small\item\em = Operator \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_string_a91892213650330c9be9473d6abbb6c1a}{operator=} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em = Operator \end{DoxyCompactList}\item 
+const\+\_\+reference \hyperlink{class_c_p_v_r_t_string_ad452cd45908e65c5e5526e5de25882d8}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t \+\_\+\+Off) const 
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} Operator \end{DoxyCompactList}\item 
+reference \hyperlink{class_c_p_v_r_t_string_aaa4c9bafcefe5062a402bf3ffaa83a4b}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t \+\_\+\+Off)
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} Operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_string_a730e8d6ecee3b20ef8d02580fe57b552}{static const size\+\_\+type {\bfseries npos} = (size\+\_\+t) -\/1}\label{class_c_p_v_r_t_string_a730e8d6ecee3b20ef8d02580fe57b552}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_string_ab18740beb7cff172a602739a8acf46d4}{char $\ast$ {\bfseries m\+\_\+p\+String}}\label{class_c_p_v_r_t_string_ab18740beb7cff172a602739a8acf46d4}
+
+\item 
+\hypertarget{class_c_p_v_r_t_string_a4519f2290c133aada40dbd82198c1630}{size\+\_\+t {\bfseries m\+\_\+\+Size}}\label{class_c_p_v_r_t_string_a4519f2290c133aada40dbd82198c1630}
+
+\item 
+\hypertarget{class_c_p_v_r_t_string_aaefbb02d87806b3bf36902a543e9a07a}{size\+\_\+t {\bfseries m\+\_\+\+Capacity}}\label{class_c_p_v_r_t_string_aaefbb02d87806b3bf36902a543e9a07a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a55822216138f6b1754a86f5be8b2d3c1}{operator+} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Left, const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a9f4a0eae70b0814e1e7da15f10a793b9}{operator+} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Left, const char $\ast$\+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_abd3296911823f295efe289da8f3ded23}{operator+} (const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Left, const char \+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_a4ec418661812913ea5de1c1eac277bae}{operator+} (const char $\ast$\+\_\+\+Left, const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \hyperlink{class_c_p_v_r_t_string_af51892b621daeb51ae1ec17b4427f59b}{operator+} (const char \+\_\+\+Left, const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&\+\_\+\+Right)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A string class. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_p_v_r_t_string_aed75cf589c42185d69bd6cabd19435d3}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{C\+P\+V\+R\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::\+C\+P\+V\+R\+T\+String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Count = {\ttfamily npos}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_aed75cf589c42185d69bd6cabd19435d3}
+
+
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} constructor. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of \+\_\+\+Ptr\\
+\hline
+\end{DoxyParams}
+
+
+  \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}  \+\_\+\+Ptr A string  \+\_\+\+Count Length of \+\_\+\+Ptr  Constructor 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a1c890ef396db88561f0abc6499bc4be6}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{C\+P\+V\+R\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::\+C\+P\+V\+R\+T\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Right, }
+\item[{size\+\_\+t}]{\+\_\+\+Roff = {\ttfamily 0}, }
+\item[{size\+\_\+t}]{\+\_\+\+Count = {\ttfamily npos}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a1c890ef396db88561f0abc6499bc4be6}
+
+
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} constructor. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Roff} & Offset into \+\_\+\+Right \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of chars from \+\_\+\+Right to assign to the new string\\
+\hline
+\end{DoxyParams}
+
+
+  \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}  \+\_\+\+Right A string  \+\_\+\+Roff Offset into \+\_\+\+Right  \+\_\+\+Count Number of chars from \+\_\+\+Right to assign to the new string  Constructor 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_afaa45c16f7e51e192c5fd60909e069bf}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{C\+P\+V\+R\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::\+C\+P\+V\+R\+T\+String (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Count, }
+\item[{const char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_afaa45c16f7e51e192c5fd60909e069bf}
+
+
+\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} constructor. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of new string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char to fill it with\\
+\hline
+\end{DoxyParams}
+
+
+  \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}  \+\_\+\+Count Length of new string  \+\_\+\+Ch A char to fill it with  Constructor 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_aee988e45f0476231e8fec8d929e119c3}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{C\+P\+V\+R\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::\+C\+P\+V\+R\+T\+String (
+\begin{DoxyParamCaption}
+\item[{const char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_aee988e45f0476231e8fec8d929e119c3}
+
+
+Constructor. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char\\
+\hline
+\end{DoxyParams}
+
+
+  \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}  \+\_\+\+Ch A char  Constructor 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a7872190568c8d2ff9f1624467142c956}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{C\+P\+V\+R\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::\+C\+P\+V\+R\+T\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a7872190568c8d2ff9f1624467142c956}
+
+
+Constructor. 
+
+
+
+
+
+
+
+  \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}  Constructor 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a8f1b944f3a690eb172e3e1ca99845235}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!````~C\+P\+V\+R\+T\+String@{$\sim$\+C\+P\+V\+R\+T\+String}}
+\index{````~C\+P\+V\+R\+T\+String@{$\sim$\+C\+P\+V\+R\+T\+String}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{$\sim$\+C\+P\+V\+R\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::$\sim$\+C\+P\+V\+R\+T\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_p_v_r_t_string_a8f1b944f3a690eb172e3e1ca99845235}
+
+
+Destructor. 
+
+
+
+
+
+
+
+  $\sim$\+C\+P\+V\+R\+T\+String  Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_t_string_a78f7b9163685822b1c31b08649e7af68}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!append@{append}}
+\index{append@{append}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a78f7b9163685822b1c31b08649e7af68}
+
+
+Appends a string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  append  \+\_\+\+Ptr A string  Updated string  Appends a string 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a5d447c118388e7875d53e34506d0b3bf}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!append@{append}}
+\index{append@{append}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a5d447c118388e7875d53e34506d0b3bf}
+
+
+Appends a string of length \+\_\+\+Count. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & String length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  append  \+\_\+\+Ptr A string  \+\_\+\+Count String length  Updated string  Appends a string of length \+\_\+\+Count \hypertarget{class_c_p_v_r_t_string_a327278a567768aa9e4964e34ca1e473b}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!append@{append}}
+\index{append@{append}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a327278a567768aa9e4964e34ca1e473b}
+
+
+Appends a string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  append  \+\_\+\+Str A string  Updated string  Appends a string 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a43fd07cd63b7ca3cfcb91a2d40d7eb60}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!append@{append}}
+\index{append@{append}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::append (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a43fd07cd63b7ca3cfcb91a2d40d7eb60}
+
+
+Appends \+\_\+\+Count letters of \+\_\+\+Str from \+\_\+\+Off in \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & A position in string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of letters to append \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  append  \+\_\+\+Str A string  \+\_\+\+Off A position in string  \+\_\+\+Count Number of letters to append  Updated string  Appends \+\_\+\+Count letters of \+\_\+\+Str from \+\_\+\+Off in \+\_\+\+Str 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_af806f928176168720c218de8c494e360}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!append@{append}}
+\index{append@{append}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::append (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Count, }
+\item[{const char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_af806f928176168720c218de8c494e360}
+
+
+Appends \+\_\+\+Ch \+\_\+\+Count times. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of times to append \+\_\+\+Ch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  append  \+\_\+\+Ch A char  \+\_\+\+Count Number of times to append \+\_\+\+Ch  Updated string  Appends \+\_\+\+Ch \+\_\+\+Count times \hypertarget{class_c_p_v_r_t_string_ada0fed209f3ddcb45cde07eff41b718a}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!assign@{assign}}
+\index{assign@{assign}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::assign (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_ada0fed209f3ddcb45cde07eff41b718a}
+
+
+Assigns the string to the string \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  assign  \+\_\+\+Ptr A string  Updated string  Assigns the string to the string \+\_\+\+Ptr 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_aa43b84d7c6d6b5fcb0b380492d4074b5}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!assign@{assign}}
+\index{assign@{assign}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::assign (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_aa43b84d7c6d6b5fcb0b380492d4074b5}
+
+
+Assigns the string to the string \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  assign  \+\_\+\+Ptr A string  \+\_\+\+Count Length of \+\_\+\+Ptr  Updated string  Assigns the string to the string \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a55d7d994a0577c852e88d054f317d8c2}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!assign@{assign}}
+\index{assign@{assign}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a55d7d994a0577c852e88d054f317d8c2}
+
+
+Assigns the string to the string \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  assign  \+\_\+\+Str A string  Updated string  Assigns the string to the string \+\_\+\+Str 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a44936facbb11f935cbe4cf47a6ae3a75}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!assign@{assign}}
+\index{assign@{assign}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count = {\ttfamily npos}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a44936facbb11f935cbe4cf47a6ae3a75}
+
+
+Assigns the string to \+\_\+\+Count characters in string \+\_\+\+Str starting at \+\_\+\+Off. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & First char to start assignment from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of \+\_\+\+Str \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  assign  \+\_\+\+Str A string  \+\_\+\+Off First char to start assignment from  \+\_\+\+Count Length of \+\_\+\+Str  Updated string  Assigns the string to \+\_\+\+Count characters in string \+\_\+\+Str starting at \+\_\+\+Off 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a770dd6f3c9c45aa0c3a9013b95dc3d5f}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!assign@{assign}}
+\index{assign@{assign}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::assign (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Count, }
+\item[{char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a770dd6f3c9c45aa0c3a9013b95dc3d5f}
+
+
+Assigns the string to \+\_\+\+Count copies of \+\_\+\+Ch. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of times to repeat \+\_\+\+Ch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated string
+\end{DoxyReturn}
+
+
+  assign  \+\_\+\+Ch A string  \+\_\+\+Count Number of times to repeat \+\_\+\+Ch  Updated string  Assigns the string to \+\_\+\+Count copies of \+\_\+\+Ch \hypertarget{class_c_p_v_r_t_string_aabd1f2848c4b1d65e7418b264502687d}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!c\+\_\+str@{c\+\_\+str}}
+\index{c\+\_\+str@{c\+\_\+str}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{c\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ C\+P\+V\+R\+T\+String\+::c\+\_\+str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_aabd1f2848c4b1d65e7418b264502687d}
+
+
+Returns a const char$\ast$ pointer of the string. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+const char$\ast$ pointer of the string
+\end{DoxyReturn}
+
+
+  c\+\_\+str  const char$\ast$ pointer of the string  Returns a const char$\ast$ pointer of the string \hypertarget{class_c_p_v_r_t_string_ad6c21b772c47aad0bb87a37fdd849d5b}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!capacity@{capacity}}
+\index{capacity@{capacity}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{capacity}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ad6c21b772c47aad0bb87a37fdd849d5b}
+
+
+Returns the size of the character array reserved. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+The size of the character array reserved
+\end{DoxyReturn}
+
+
+  capacity  The size of the character array reserved  Returns the size of the character array reserved \hypertarget{class_c_p_v_r_t_string_a68ced67b1e2866a680be2ce143253772}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!clear@{clear}}
+\index{clear@{clear}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+String\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a68ced67b1e2866a680be2ce143253772}
+
+
+Clears the string. 
+
+
+
+
+
+
+
+  clear  Clears the string \hypertarget{class_c_p_v_r_t_string_aac2f2e6f45ca19cea06c3988e11d6b15}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!compare@{compare}}
+\index{compare@{compare}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::compare (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_aac2f2e6f45ca19cea06c3988e11d6b15}
+
+
+Compares the string with \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the strings match
+\end{DoxyReturn}
+
+
+  compare  \+\_\+\+Str A string to compare with  0 if the strings match  Compares the string with \+\_\+\+Str 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a18c9c740d80ca610aabf2f9b5f1092de}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!compare@{compare}}
+\index{compare@{compare}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::compare (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Pos1, }
+\item[{size\+\_\+t}]{\+\_\+\+Num1, }
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a18c9c740d80ca610aabf2f9b5f1092de}
+
+
+Compares the string with \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Pos1} & Position to start comparing from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Num1} & Number of chars to compare \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the strings match
+\end{DoxyReturn}
+
+
+  compare  \+\_\+\+Pos1 Position to start comparing from  \+\_\+\+Num1 Number of chars to compare  \+\_\+\+Str A string to compare with  0 if the strings match  Compares the string with \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_a20bad10e494a9227e631cb61bf83a1f9}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!compare@{compare}}
+\index{compare@{compare}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::compare (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Pos1, }
+\item[{size\+\_\+t}]{\+\_\+\+Num1, }
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a20bad10e494a9227e631cb61bf83a1f9}
+
+
+Compares the string with \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Pos1} & Position to start comparing from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Num1} & Number of chars to compare \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to compare with \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Position in \+\_\+\+Str to compare from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of chars in \+\_\+\+Str to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the strings match
+\end{DoxyReturn}
+
+
+  compare  \+\_\+\+Pos1 Position to start comparing from  \+\_\+\+Num1 Number of chars to compare  \+\_\+\+Str A string to compare with  \+\_\+\+Off Position in \+\_\+\+Str to compare from  \+\_\+\+Count Number of chars in \+\_\+\+Str to compare with  0 if the strings match  Compares the string with \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_adcca074e685aa4600c6eb5198a82c259}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!compare@{compare}}
+\index{compare@{compare}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::compare (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_adcca074e685aa4600c6eb5198a82c259}
+
+
+Compares the string with \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the strings match
+\end{DoxyReturn}
+
+
+  compare  \+\_\+\+Ptr A string to compare with  0 if the strings match  Compares the string with \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a47b3483deccd5aec82bcb637983eb77c}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!compare@{compare}}
+\index{compare@{compare}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::compare (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Pos1, }
+\item[{size\+\_\+t}]{\+\_\+\+Num1, }
+\item[{const char $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a47b3483deccd5aec82bcb637983eb77c}
+
+
+Compares the string with \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Pos1} & Position to start comparing from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Num1} & Number of chars to compare \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the strings match
+\end{DoxyReturn}
+
+
+  compare  \+\_\+\+Pos1 Position to start comparing from  \+\_\+\+Num1 Number of chars to compare  \+\_\+\+Ptr A string to compare with  0 if the strings match  Compares the string with \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a120a792d44eb8846d7c7e1b76aed6344}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!compare@{compare}}
+\index{compare@{compare}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::compare (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Pos1, }
+\item[{size\+\_\+t}]{\+\_\+\+Num1, }
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a120a792d44eb8846d7c7e1b76aed6344}
+
+
+Compares the string with \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Pos1} & Position to start comparing from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Num1} & Number of chars to compare \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string to compare with \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of chars to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the strings match
+\end{DoxyReturn}
+
+
+  compare  \+\_\+\+Pos1 Position to start comparing from  \+\_\+\+Num1 Number of chars to compare  \+\_\+\+Ptr A string to compare with  \+\_\+\+Count Number of char to compare  0 if the strings match  Compares the string with \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_a3360bd32ab0576fd575705c1a4be7966}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!copy@{copy}}
+\index{copy@{copy}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::copy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Count, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a3360bd32ab0576fd575705c1a4be7966}
+
+
+Copies the string to \+\_\+\+Ptr. 
+
+
+
+  copy  \+\_\+\+Ptr A string to copy to  \+\_\+\+Count Size of \+\_\+\+Ptr  \+\_\+\+Off Position to start copying from  Number of bytes copied  Copies the string to \+\_\+\+Ptr
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em \+\_\+\+Ptr} & A string to copy to \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of \+\_\+\+Ptr \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Position to start copying from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes copied 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_string_a63d9aaa536816ddc51fa4e6f7dae9e56}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!data@{data}}
+\index{data@{data}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a63d9aaa536816ddc51fa4e6f7dae9e56}
+
+
+Returns a const char$\ast$ version of the string. 
+
+
+
+  data  A const char$\ast$ version of the string  Returns a const char$\ast$ version of the string
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+A const char$\ast$ version of the string 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_string_ad840a73b6d6ace02ca50d14680f38439}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!empty@{empty}}
+\index{empty@{empty}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ad840a73b6d6ace02ca50d14680f38439}
+
+
+Returns true if the string is empty. 
+
+
+
+  empty  True if the string is empty  Returns true if the string is empty
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+True if the string is empty 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a224598bca261851e6b56eacf8dddb51e}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!erase@{erase}}
+\index{erase@{erase}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::erase (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Pos = {\ttfamily 0}, }
+\item[{size\+\_\+t}]{\+\_\+\+Count = {\ttfamily npos}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a224598bca261851e6b56eacf8dddb51e}
+
+
+Erases a portion of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Pos} & The position to start erasing from \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of chars to erase \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  erase  \+\_\+\+Pos The position to start erasing from  \+\_\+\+Count Number of chars to erase  An updated string  Erases a portion of the string 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a5ebc83257276abc56a7d46522dc56bba}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find@{find}}
+\index{find@{find}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a5ebc83257276abc56a7d46522dc56bba}
+
+
+Finds a substring within this string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & String to search. \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Offset to search from. \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of characters in this string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first matched string.
+\end{DoxyReturn}
+
+
+  find  \+\_\+\+Ptr String to search.  \+\_\+\+Off Offset to search from.  \+\_\+\+Count Number of characters in this string.  Position of the first matched string.  Finds a substring within this string. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a39beb7375cd4ec6ecbb6201ed62722c1}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find@{find}}
+\index{find@{find}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a39beb7375cd4ec6ecbb6201ed62722c1}
+
+
+Finds a substring within this string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & String to search. \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Offset to search from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first matched string.
+\end{DoxyReturn}
+
+
+  find  \+\_\+\+Str String to search.  \+\_\+\+Off Offset to search from.  Position of the first matched string.  Erases a portion of the string 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a0dde9334b700611fadc237bb2e5731bb}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}}
+\index{find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a0dde9334b700611fadc237bb2e5731bb}
+
+
+Returns the position of the first char that is not \+\_\+\+Ch. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that is not \+\_\+\+Ch
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+not\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Position of the first char that is not \+\_\+\+Ch  Returns the position of the first char that is not \+\_\+\+Ch 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a586c82d71a7f2dfbb999b329c31b0b79}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}}
+\index{find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a586c82d71a7f2dfbb999b329c31b0b79}
+
+
+Returns the position of the first char that is not in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that is not in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+not\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Position of the first char that is not in \+\_\+\+Ptr  Returns the position of the first char that is not in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a9bb180af88db34e40588237e453c7399}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}}
+\index{find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a9bb180af88db34e40588237e453c7399}
+
+
+Returns the position of the first char that is not in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Number of chars in \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that is not in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+not\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Number of chars in \+\_\+\+Ptr  Position of the first char that is not in \+\_\+\+Ptr  Returns the position of the first char that is not in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a9b2ee6a98e0ae4d21c281da568b840b5}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}}
+\index{find\+\_\+first\+\_\+not\+\_\+of@{find\+\_\+first\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a9b2ee6a98e0ae4d21c281da568b840b5}
+
+
+Returns the position of the first char that is not in \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that is not in \+\_\+\+Str
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+not\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Position of the first char that is not in \+\_\+\+Str  Returns the position of the first char that is not in \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_a3ea029ce35650c19579a85dedcc267e7}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}}
+\index{find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a3ea029ce35650c19579a85dedcc267e7}
+
+
+Returns the position of the first char that is \+\_\+\+Ch. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that is \+\_\+\+Ch
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Position of the first char that is \+\_\+\+Ch  Returns the position of the first char that is \+\_\+\+Ch \hypertarget{class_c_p_v_r_t_string_acf7a7dba5c5a24d21c82f48f8e43aa2c}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}}
+\index{find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_acf7a7dba5c5a24d21c82f48f8e43aa2c}
+
+
+Returns the position of the first char that matches a char in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that matches a char in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Position of the first char that matches a char in \+\_\+\+Ptr  Returns the position of the first char that matches a char in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_aae271ed8924554b0bf14e500633b7946}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}}
+\index{find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_aae271ed8924554b0bf14e500633b7946}
+
+
+Returns the position of the first char that matches a char in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that matches a char in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Size of \+\_\+\+Ptr  Position of the first char that matches a char in \+\_\+\+Ptr  Returns the position of the first char that matches a char in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a5d98a7e0630190435a8a76f798d915d4}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}}
+\index{find\+\_\+first\+\_\+of@{find\+\_\+first\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a5d98a7e0630190435a8a76f798d915d4}
+
+
+Returns the position of the first char that matches a char in \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that matches a char in \+\_\+\+Str
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Position of the first char that matches a char in \+\_\+\+Str  Returns the position of the first char that matches a char in \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_a2fd28a7d1cc030927ed08a11bc3cda2f}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+first\+\_\+ofn@{find\+\_\+first\+\_\+ofn}}
+\index{find\+\_\+first\+\_\+ofn@{find\+\_\+first\+\_\+ofn}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+first\+\_\+ofn}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+first\+\_\+ofn (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a2fd28a7d1cc030927ed08a11bc3cda2f}
+
+
+Returns the position of the first char that matches all chars in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first char that matches a char in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+first\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Size of \+\_\+\+Ptr  Position of the first char that matches a char in \+\_\+\+Ptr  Returns the position of the first char that matches a char in \+\_\+\+Ptr 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_aa92b066c4e466add4803bcc6a7ce9833}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}}
+\index{find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_aa92b066c4e466add4803bcc6a7ce9833}
+
+
+Returns the position of the last char that is not \+\_\+\+Ch. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is not \+\_\+\+Ch
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+not\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Position of the last char that is not \+\_\+\+Ch  Returns the position of the last char that is not \+\_\+\+Ch 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a6e321f49478b32a043500f89e6dc5131}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}}
+\index{find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a6e321f49478b32a043500f89e6dc5131}
+
+
+Returns the position of the last char that is not in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is not in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+not\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Position of the last char that is not in \+\_\+\+Ptr  Returns the position of the last char that is not in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a17bbff6a0a2aef72d199fe08e1c9abed}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}}
+\index{find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a17bbff6a0a2aef72d199fe08e1c9abed}
+
+
+Returns the position of the last char that is not in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is not in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+not\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Length of \+\_\+\+Ptr  Position of the last char that is not in \+\_\+\+Ptr  Returns the position of the last char that is not in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_ae0eb296ad695900feff7c0dbe095f0f9}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}}
+\index{find\+\_\+last\+\_\+not\+\_\+of@{find\+\_\+last\+\_\+not\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+not\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+not\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ae0eb296ad695900feff7c0dbe095f0f9}
+
+
+Returns the position of the last char that is not in \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is not in \+\_\+\+Str
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+not\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Position of the last char that is not in \+\_\+\+Str  Returns the position of the last char that is not in \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_a5559cea254c4d8f06968b13e20ebcadf}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}}
+\index{find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a5559cea254c4d8f06968b13e20ebcadf}
+
+
+Returns the position of the last char that is \+\_\+\+Ch. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is \+\_\+\+Ch
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Position of the last char that is \+\_\+\+Ch  Returns the position of the last char that is \+\_\+\+Ch 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_ae8c72833f5430656e8970324b1641c61}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}}
+\index{find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ae8c72833f5430656e8970324b1641c61}
+
+
+Returns the position of the last char that is in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Position of the last char that is in \+\_\+\+Ptr  Returns the position of the last char that is in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_adb9baf66ebeebb6f5953fe2c8c3cceb7}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}}
+\index{find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_adb9baf66ebeebb6f5953fe2c8c3cceb7}
+
+
+Returns the position of the last char that is in \+\_\+\+Ptr. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is in \+\_\+\+Ptr
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Length of \+\_\+\+Ptr  Position of the last char that is in \+\_\+\+Ptr  Returns the position of the last char that is in \+\_\+\+Ptr \hypertarget{class_c_p_v_r_t_string_a66e86eaf153fe0677235e24ac9d3cd9d}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}}
+\index{find\+\_\+last\+\_\+of@{find\+\_\+last\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+last\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+last\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a66e86eaf153fe0677235e24ac9d3cd9d}
+
+
+Returns the position of the last char that is in \+\_\+\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the last char that is in \+\_\+\+Str
+\end{DoxyReturn}
+
+
+  find\+\_\+last\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Position of the last char that is in \+\_\+\+Str  Returns the position of the last char that is in \+\_\+\+Str \hypertarget{class_c_p_v_r_t_string_ae14a156ba0a9dc525d279acdacc92239}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+next\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+next\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ae14a156ba0a9dc525d279acdacc92239}
+
+
+Returns the next occurance of \+\_\+\+Ch in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Next occurance of \+\_\+\+Ch in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+next\+\_\+occurance\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Next occurance of \+\_\+\+Ch in the parent string.  Returns the next occurance of \+\_\+\+Ch in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \hypertarget{class_c_p_v_r_t_string_ac518d3b498634b68f2965578607e32f5}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+next\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+next\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ac518d3b498634b68f2965578607e32f5}
+
+
+Returns the next occurance of \+\_\+\+Ptr in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Next occurance of \+\_\+\+Ptr in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+next\+\_\+occurance\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Next occurance of \+\_\+\+Ptr in the parent string.  Returns the next occurance of \+\_\+\+Ptr in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \hypertarget{class_c_p_v_r_t_string_a3cdaf12aee3cf4a6daeeffa79cdd7cdd}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+next\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+next\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a3cdaf12aee3cf4a6daeeffa79cdd7cdd}
+
+
+Returns the next occurance of \+\_\+\+Ptr in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Next occurance of \+\_\+\+Ptr in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+next\+\_\+occurance\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Size of \+\_\+\+Ptr  Next occurance of \+\_\+\+Ptr in the parent string.  Returns the next occurance of \+\_\+\+Ptr in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \hypertarget{class_c_p_v_r_t_string_a265f25012eee141cfb617ce84f57603e}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+next\+\_\+occurance\+\_\+of@{find\+\_\+next\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+next\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+next\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a265f25012eee141cfb617ce84f57603e}
+
+
+Returns the next occurance of \+\_\+\+Str in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Next occurance of \+\_\+\+Str in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+next\+\_\+occurance\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Next occurance of \+\_\+\+Str in the parent string.  Returns the next occurance of \+\_\+\+Str in the parent string after or at \+\_\+\+Off. If not found, returns the length of the string. \hypertarget{class_c_p_v_r_t_string_aedbcf94a3d39dbee321576aff1c29762}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}}
+\index{find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+number\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+number\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_aedbcf94a3d39dbee321576aff1c29762}
+
+
+Returns the number of occurances of \+\_\+\+Ch in the parent string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of occurances of \+\_\+\+Ch in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+number\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Number of occurances of \+\_\+\+Ch in the parent string.  Returns the number of occurances of \+\_\+\+Ch in the parent string. \hypertarget{class_c_p_v_r_t_string_a07e5836dbfaffb1eae775cc36e10564b}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}}
+\index{find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+number\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+number\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a07e5836dbfaffb1eae775cc36e10564b}
+
+
+Returns the number of occurances of \+\_\+\+Ptr in the parent string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of occurances of \+\_\+\+Ptr in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+number\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Number of occurances of \+\_\+\+Ptr in the parent string.  Returns the number of occurances of \+\_\+\+Ptr in the parent string. \hypertarget{class_c_p_v_r_t_string_a16ccd07e094154b4f6581672ebd930c3}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}}
+\index{find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+number\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+number\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a16ccd07e094154b4f6581672ebd930c3}
+
+
+Returns the number of occurances of \+\_\+\+Ptr in the parent string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of occurances of \+\_\+\+Ptr in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+number\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Size of \+\_\+\+Ptr  Number of occurances of \+\_\+\+Ptr in the parent string.  Returns the number of occurances of \+\_\+\+Ptr in the parent string. \hypertarget{class_c_p_v_r_t_string_a1cd6a624ef671f897d6ee64b6bd7cae9}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}}
+\index{find\+\_\+number\+\_\+of@{find\+\_\+number\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+number\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+P\+V\+R\+T\+String\+::find\+\_\+number\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a1cd6a624ef671f897d6ee64b6bd7cae9}
+
+
+Returns the number of occurances of \+\_\+\+Str in the parent string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of occurances of \+\_\+\+Str in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+number\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Number of occurances of \+\_\+\+Str in the parent string.  Returns the number of occurances of \+\_\+\+Str in the parent string. \hypertarget{class_c_p_v_r_t_string_a1d26b71c01436ae0d17e3c53abdf1a2e}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+previous\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+previous\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a1d26b71c01436ae0d17e3c53abdf1a2e}
+
+
+Returns the previous occurance of \+\_\+\+Ch in the parent string before \+\_\+\+Off. If not found, returns -\/1. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Previous occurance of \+\_\+\+Ch in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+previous\+\_\+occurance\+\_\+of  \+\_\+\+Ch A char  \+\_\+\+Off Start position of the find  Previous occurance of \+\_\+\+Ch in the parent string.  Returns the previous occurance of \+\_\+\+Ch in the parent string before \+\_\+\+Off. If not found, returns -\/1. \hypertarget{class_c_p_v_r_t_string_a35d45d2afafb7fbbd60cadea190cd4aa}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+previous\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+previous\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a35d45d2afafb7fbbd60cadea190cd4aa}
+
+
+Returns the previous occurance of \+\_\+\+Ptr in the parent string before \+\_\+\+Off. If not found, returns -\/1. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Previous occurance of \+\_\+\+Ptr in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+previous\+\_\+occurance\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  Previous occurance of \+\_\+\+Ptr in the parent string.  Returns the previous occurance of \+\_\+\+Ptr in the parent string before \+\_\+\+Off. If not found, returns -\/1. \hypertarget{class_c_p_v_r_t_string_a19d8c94396debffd4b1b6b714556faa2}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+previous\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+previous\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+Off, }
+\item[{size\+\_\+t}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a19d8c94396debffd4b1b6b714556faa2}
+
+
+Returns the previous occurance of \+\_\+\+Ptr in the parent string before \+\_\+\+Off. If not found, returns -\/1. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of \+\_\+\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Previous occurance of \+\_\+\+Ptr in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+previous\+\_\+occurance\+\_\+of  \+\_\+\+Ptr A string  \+\_\+\+Off Start position of the find  \+\_\+\+Count Size of \+\_\+\+Ptr  Previous occurance of \+\_\+\+Ptr in the parent string.  Returns the previous occurance of \+\_\+\+Ptr in the parent string before \+\_\+\+Off. If not found, returns -\/1. \hypertarget{class_c_p_v_r_t_string_a52b726a7249e0cc0da883dc9bcab246c}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}}
+\index{find\+\_\+previous\+\_\+occurance\+\_\+of@{find\+\_\+previous\+\_\+occurance\+\_\+of}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{find\+\_\+previous\+\_\+occurance\+\_\+of}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+String\+::find\+\_\+previous\+\_\+occurance\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str, }
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a52b726a7249e0cc0da883dc9bcab246c}
+
+
+Returns the previous occurance of \+\_\+\+Str in the parent string before \+\_\+\+Off. If not found, returns -\/1. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start position of the find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Previous occurance of \+\_\+\+Str in the parent string.
+\end{DoxyReturn}
+
+
+  find\+\_\+previous\+\_\+occurance\+\_\+of  \+\_\+\+Str A string  \+\_\+\+Off Start position of the find  Previous occurance of \+\_\+\+Str in the parent string.  Returns the previous occurance of \+\_\+\+Str in the parent string before \+\_\+\+Off. If not found, returns -\/1. \hypertarget{class_c_p_v_r_t_string_a484a1e04c5584d273d88c5ba12412fcf}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!format@{format}}
+\index{format@{format}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::format (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a484a1e04c5584d273d88c5ba12412fcf}
+
+
+return the formatted string 
+
+
+
+  Format  p\+Format A string containing the formating  A formatted string  return the formatted string
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Format} & A string containing the formating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a5c9840284dfa7a7338e924c45de94c66}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!format\+Positional@{format\+Positional}}
+\index{format\+Positional@{format\+Positional}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{format\+Positional}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::format\+Positional (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a5c9840284dfa7a7338e924c45de94c66}
+
+
+return the formatted string 
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Format} & A string containing the formatting. Positional modifiers may be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_string_ab5dde5b0bedbbe83788fda762ba940cc}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!left@{left}}
+\index{left@{left}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::left (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i\+Size}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ab5dde5b0bedbbe83788fda762ba940cc}
+
+
+Returns the leftmost characters of the string (excluding the null character) in a new \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}. If i\+Size is larger than the string, a copy of the original string is returned. 
+
+
+
+  left  i\+Size number of characters to return (excluding null character)  The leftmost 'i\+Size' characters of the string.  Returns the leftmost characters of the string (excluding the null character) in a new \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}. If i\+Size is larger than the string, a copy of the original string is returned.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i\+Size} & number of characters to return (excluding null character) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The leftmost 'i\+Size' characters of the string. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_ae3548c03219a9ddc367c64de48231bf9}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!length@{length}}
+\index{length@{length}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ae3548c03219a9ddc367c64de48231bf9}
+
+
+Returns the length of the string. 
+
+
+
+  length  Length of the string  Returns the length of the string
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+Length of the string 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a97b2ae01970a0a42a9dd368c026f73de}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{max\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::max\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a97b2ae01970a0a42a9dd368c026f73de}
+
+
+Returns the maximum number of chars that the string can contain. 
+
+
+
+  max\+\_\+size  The maximum number of chars that the string can contain  Returns the maximum number of chars that the string can contain
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+The maximum number of chars that the string can contain 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_string_acd1bdcc44016b292b30dcf85740b8076}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+T\+String\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_acd1bdcc44016b292b30dcf85740b8076}
+
+
+!= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they don't match
+\end{DoxyReturn}
+
+
+  !=  \+\_\+\+Str A string to compare with  True if they don't match  != Operator \hypertarget{class_c_p_v_r_t_string_ad282af0e6f045a5cc9332a87d0a72ef5}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+T\+String\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ad282af0e6f045a5cc9332a87d0a72ef5}
+
+
+!= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they don't match
+\end{DoxyReturn}
+
+
+  !=  \+\_\+\+Ptr A string to compare with  True if they don't match  != Operator \hypertarget{class_c_p_v_r_t_string_a2205e66ce7f148c60bd4302ca5b2c104}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a2205e66ce7f148c60bd4302ca5b2c104}
+
+
++= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +=  \+\_\+\+Ch A char  An updated string  += Operator 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a7f620a3e8aa6166b6d5183c40db6d920}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a7f620a3e8aa6166b6d5183c40db6d920}
+
+
++= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +=  \+\_\+\+Ptr A string  An updated string  += Operator 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_ae0d887649bdc4f8182e6237a9e3e4a32}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_ae0d887649bdc4f8182e6237a9e3e4a32}
+
+
++= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +=  \+\_\+\+Right A string  An updated string  += Operator 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_ac887244c7a66c51e9921535ffb27349a}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+T\+String\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ac887244c7a66c51e9921535ffb27349a}
+
+
+Less than operator. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success
+\end{DoxyReturn}
+
+
+  $<$  \+\_\+\+Str A string to compare with  True on success  Less than operator \hypertarget{class_c_p_v_r_t_string_a4d8d2df189dd3cd75eec135b6ef8620d}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::operator= (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a4d8d2df189dd3cd75eec135b6ef8620d}
+
+
+= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  =  \+\_\+\+Ch A char  An updated string  = Operator 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_aabf81b6f788ff43281378b7b645aac41}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_aabf81b6f788ff43281378b7b645aac41}
+
+
+= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  =  \+\_\+\+Ptr A string  An updated string  = Operator 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a91892213650330c9be9473d6abbb6c1a}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} \& C\+P\+V\+R\+T\+String\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a91892213650330c9be9473d6abbb6c1a}
+
+
+= Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  =  \+\_\+\+Right A string  An updated string  = Operator 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a836dd5933c9a83b11bc0be8e7313410a}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator==@{operator==}}
+\index{operator==@{operator==}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+T\+String\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a836dd5933c9a83b11bc0be8e7313410a}
+
+
+== Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they match
+\end{DoxyReturn}
+
+
+  ==  \+\_\+\+Str A string to compare with  True if they match  == Operator \hypertarget{class_c_p_v_r_t_string_a83a09c08aa0e4286a000ca7d460d7220}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator==@{operator==}}
+\index{operator==@{operator==}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+T\+String\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a83a09c08aa0e4286a000ca7d460d7220}
+
+
+== Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ptr} & A string to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they match
+\end{DoxyReturn}
+
+
+  ==  \+\_\+\+Ptr A string to compare with  True if they match  == Operator \hypertarget{class_c_p_v_r_t_string_ad452cd45908e65c5e5526e5de25882d8}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::const\+\_\+reference C\+P\+V\+R\+T\+String\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Off}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_ad452cd45908e65c5e5526e5de25882d8}
+
+
+\mbox{[}\mbox{]} Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Off} & An index into the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A character
+\end{DoxyReturn}
+
+
+  \mbox{[}\mbox{]}  \+\_\+\+Off An index into the string  A character  \mbox{[}\mbox{]} Operator \hypertarget{class_c_p_v_r_t_string_aaa4c9bafcefe5062a402bf3ffaa83a4b}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::reference C\+P\+V\+R\+T\+String\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Off}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_aaa4c9bafcefe5062a402bf3ffaa83a4b}
+
+
+\mbox{[}\mbox{]} Operator 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Off} & An index into the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A character
+\end{DoxyReturn}
+
+
+  \mbox{[}\mbox{]}  \+\_\+\+Off An index into the string  A character  \mbox{[}\mbox{]} Operator \hypertarget{class_c_p_v_r_t_string_aec4d14f780fb60781558da44fb5187c5}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{push\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+Ch}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_aec4d14f780fb60781558da44fb5187c5}
+
+
+Appends \+\_\+\+Ch to the string. 
+
+
+
+  push\+\_\+back  \+\_\+\+Ch A char to append  Appends \+\_\+\+Ch to the string
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & A char to append \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a073a2ea4628b55e63a0cab38e0c4996c}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!reserve@{reserve}}
+\index{reserve@{reserve}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a073a2ea4628b55e63a0cab38e0c4996c}
+
+
+Reserves space for \+\_\+\+Count number of chars. 
+
+
+
+  reserve  \+\_\+\+Count Size of string to reserve  Reserves space for \+\_\+\+Count number of chars
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of string to reserve \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_p_v_r_t_string_a69df81652ae94c401c2c7071e827789e}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!resize@{resize}}
+\index{resize@{resize}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Count, }
+\item[{char}]{\+\_\+\+Ch = {\ttfamily char()}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a69df81652ae94c401c2c7071e827789e}
+
+
+Resizes the string to \+\_\+\+Count in length. 
+
+
+
+  resize  \+\_\+\+Count Size of string to resize to  \+\_\+\+Ch Character to use to fill any additional space  Resizes the string to \+\_\+\+Count in length
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Size of string to resize to \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Ch} & Character to use to fill any additional space \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a2dd6f07102e510a9746fc36c4089a94a}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!right@{right}}
+\index{right@{right}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::right (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i\+Size}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a2dd6f07102e510a9746fc36c4089a94a}
+
+
+Returns the rightmost characters of the string (excluding the null character) in a new \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}. If i\+Size is larger than the string, a copy of the original string is returned. 
+
+
+
+  right  i\+Size number of characters to return (excluding null character)  The rightmost 'i\+Size' characters of the string.  Returns the rightmost characters of the string (excluding the null character) in a new \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String}. If i\+Size is larger than the string, a copy of the original string is returned.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i\+Size} & number of characters to return (excluding null character) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rightmost 'i\+Size' characters of the string. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_afbdb5fbf9e15ecf80cc7b4338854cb5e}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!size@{size}}
+\index{size@{size}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_afbdb5fbf9e15ecf80cc7b4338854cb5e}
+
+
+Returns the size of the string. 
+
+
+
+  size  Size of the string  Returns the size of the string
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+Size of the string 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_string_afaca43fa31548dcae05b2cba65406379}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!substitute@{substitute}}
+\index{substitute@{substitute}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{substitute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String}\& C\+P\+V\+R\+T\+String\+::substitute (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+src, }
+\item[{char}]{\+\_\+sub\+Des, }
+\item[{bool}]{\+\_\+all = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_afaca43fa31548dcae05b2cba65406379}
+
+
+Erases a portion of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+src} & Character to search \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+sub\+Des} & Character to substitute for \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+all} & Substitute all \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_ab6b191f6e48bb43af236460389fb3375}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!substitute@{substitute}}
+\index{substitute@{substitute}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{substitute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String}\& C\+P\+V\+R\+T\+String\+::substitute (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+src, }
+\item[{const char $\ast$}]{\+\_\+sub\+Des, }
+\item[{bool}]{\+\_\+all = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_ab6b191f6e48bb43af236460389fb3375}
+
+
+Erases a portion of the string. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+src} & Character to search \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+sub\+Des} & Character to substitute for \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+all} & Substitute all \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_string_a626210697c8a0b65b9245693c5f21d15}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!substr@{substr}}
+\index{substr@{substr}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{substr}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::substr (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+Off = {\ttfamily 0}, }
+\item[{size\+\_\+t}]{\+\_\+\+Count = {\ttfamily npos}}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_string_a626210697c8a0b65b9245693c5f21d15}
+
+
+Returns the size of the string. 
+
+
+
+  substr  \+\_\+\+Off Start of the substring  \+\_\+\+Count Length of the substring  A substring of the string  Returns the size of the string
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Off} & Start of the substring \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Count} & Length of the substring \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A substring of the string 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_af4aa0d40e0e71b7cd41f52b635139b35}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!swap@{swap}}
+\index{swap@{swap}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_af4aa0d40e0e71b7cd41f52b635139b35}
+
+
+Swaps the contents of the string with \+\_\+\+Str. 
+
+
+
+  swap  \+\_\+\+Str A string to swap with  Swaps the contents of the string with \+\_\+\+Str
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Str} & A string to swap with \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_p_v_r_t_string_a84bdf409157354e80b364e558d52eaa6}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!to\+Lower@{to\+Lower}}
+\index{to\+Lower@{to\+Lower}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{to\+Lower}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::to\+Lower (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a84bdf409157354e80b364e558d52eaa6}
+
+
+Converts the string to lower case. 
+
+
+
+  to\+Lower  An updated string  Converts the string to lower case
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+An updated string 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_string_a7b4746ff021fd8900b2dbbce270082f5}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!to\+Upper@{to\+Upper}}
+\index{to\+Upper@{to\+Upper}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{to\+Upper}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+String\+::to\+Upper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_string_a7b4746ff021fd8900b2dbbce270082f5}
+
+
+Converts the string to upper case. 
+
+
+
+  to\+Upper  An updated string  Converts the string to upper case
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+An updated string 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_p_v_r_t_string_a55822216138f6b1754a86f5be8b2d3c1}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+@{operator+}}
+\index{operator+@{operator+}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Left, }
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_p_v_r_t_string_a55822216138f6b1754a86f5be8b2d3c1}
+
+
+
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Left} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +  \+\_\+\+Left A string  \+\_\+\+Right A string  An updated string  + Operator \hypertarget{class_c_p_v_r_t_string_a9f4a0eae70b0814e1e7da15f10a793b9}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+@{operator+}}
+\index{operator+@{operator+}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Left, }
+\item[{const char $\ast$}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_p_v_r_t_string_a9f4a0eae70b0814e1e7da15f10a793b9}
+
+
+
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Left} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +  \+\_\+\+Left A string  \+\_\+\+Right A string  An updated string  + Operator \hypertarget{class_c_p_v_r_t_string_abd3296911823f295efe289da8f3ded23}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+@{operator+}}
+\index{operator+@{operator+}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Left, }
+\item[{const char}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_p_v_r_t_string_abd3296911823f295efe289da8f3ded23}
+
+
+
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Left} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +  \+\_\+\+Left A string  \+\_\+\+Right A string  An updated string  + Operator \hypertarget{class_c_p_v_r_t_string_a4ec418661812913ea5de1c1eac277bae}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+@{operator+}}
+\index{operator+@{operator+}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+Left, }
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_p_v_r_t_string_a4ec418661812913ea5de1c1eac277bae}
+
+
+
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Left} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +  \+\_\+\+Left A string  \+\_\+\+Right A string  An updated string  + Operator \hypertarget{class_c_p_v_r_t_string_af51892b621daeb51ae1ec17b4427f59b}{\index{C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}!operator+@{operator+}}
+\index{operator+@{operator+}!C\+P\+V\+R\+T\+String@{C\+P\+V\+R\+T\+String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+V\+R\+T\+String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const char}]{\+\_\+\+Left, }
+\item[{const {\bf C\+P\+V\+R\+T\+String} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_p_v_r_t_string_af51892b621daeb51ae1ec17b4427f59b}
+
+
+
+\begin{DoxyItemize}
+\item Operator 
+\end{DoxyItemize}
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+\+Left} & A string \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+\+Right} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An updated string
+\end{DoxyReturn}
+
+
+  +  \+\_\+\+Left A string  \+\_\+\+Right A string  An updated string  + Operator 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_string_8h}{P\+V\+R\+T\+String.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+String.\+cpp\end{DoxyCompactItemize}

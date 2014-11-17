@@ -1,0 +1,9 @@
+digraph "Assimp::DefaultLogger::set"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::DefaultLogger::set",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::DefaultLogger\l::isNullLogger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a55ea67b3770c321fa0bda541763495a8",tooltip="Return whether a #NullLogger is currently active. "];
+}

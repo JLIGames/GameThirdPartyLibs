@@ -1,0 +1,16 @@
+digraph "PVRTMatrixVec3NormalizeF"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PVRTMatrixVec3NormalizeF",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PVRTMatrixLookAtLHF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_matrix_8h.html#aa1569890d381c6d9c02d927fe77bc5d0"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVRTMatrixLookAtRHF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_matrix_8h.html#afcc96f1726204666a814e51ba878b97f"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PVRTVertexTangentBitangent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_vertex_8h.html#af2843e359032a6d1cda8647b667a7aa9"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PVRTVertexGenerateTangent\lSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_vertex_8h.html#a73c1eb79b4e7cd5b1a5cfd0060d8ba93"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

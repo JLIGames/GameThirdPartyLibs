@@ -1,0 +1,171 @@
+\hypertarget{class_assimp_1_1_debone_process}{\section{Assimp\+:\+:Debone\+Process Class Reference}
+\label{class_assimp_1_1_debone_process}\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+}
+
+
+{\ttfamily \#include $<$Debone\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Debone\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Debone\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_debone_process_aa69ce4e81a06e41d176009bafa983d40}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_debone_process_ad062ecc02d4c77deed2028d952626526}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_debone_process_ac3ceaa3933abbec1d5692e03e42aa057}{m\+Num\+Bones}
+\item 
+\hypertarget{class_assimp_1_1_debone_process_a245ba16784465cd9dbf5480818e2a526}{unsigned int {\bfseries m\+Num\+Bones\+Can\+Do\+Without}}\label{class_assimp_1_1_debone_process_a245ba16784465cd9dbf5480818e2a526}
+
+\item 
+\hypertarget{class_assimp_1_1_debone_process_a11206b571174137d70e6096c33465dd7}{float {\bfseries m\+Threshold}}\label{class_assimp_1_1_debone_process_a11206b571174137d70e6096c33465dd7}
+
+\item 
+\hypertarget{class_assimp_1_1_debone_process_ac98ed87f642ff9b936fed474408a2833}{bool {\bfseries m\+All\+Or\+None}}\label{class_assimp_1_1_debone_process_ac98ed87f642ff9b936fed474408a2833}
+
+\item 
+\hypertarget{class_assimp_1_1_debone_process_ad1d5ade5db978ee44a7ead3388ac03f3}{std\+::vector$<$ std\+::vector\\*
+$<$ std\+::pair$<$ unsigned int, \\*
+\hyperlink{structai_node}{ai\+Node} $\ast$ $>$ $>$ $>$ \hyperlink{class_assimp_1_1_debone_process_ad1d5ade5db978ee44a7ead3388ac03f3}{m\+Sub\+Mesh\+Indices}}\label{class_assimp_1_1_debone_process_ad1d5ade5db978ee44a7ead3388ac03f3}
+
+\begin{DoxyCompactList}\small\item\em Per mesh index\+: Array of indices of the new submeshes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_debone_process_a3889723a333e0eb1874131efb0e8de34}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+bool \hyperlink{class_assimp_1_1_debone_process_ab1f536da62ce1d50737b48a4dae095e8}{Consider\+Mesh} (const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_debone_process_a68abdf4149da4e64846b20c0aee1dad3}{Split\+Mesh} (const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh, std\+::vector$<$ std\+::pair$<$ \hyperlink{structai_mesh}{ai\+Mesh} $\ast$, const \hyperlink{structai_bone}{ai\+Bone} $\ast$ $>$ $>$ \&po\+New\+Meshes) const 
+\item 
+\hypertarget{class_assimp_1_1_debone_process_a6457dc91b31b2f0293491522777e0567}{void \hyperlink{class_assimp_1_1_debone_process_a6457dc91b31b2f0293491522777e0567}{Update\+Node} (\hyperlink{structai_node}{ai\+Node} $\ast$p\+Node) const }\label{class_assimp_1_1_debone_process_a6457dc91b31b2f0293491522777e0567}
+
+\begin{DoxyCompactList}\small\item\em Recursively updates the node's mesh list to account for the changed mesh list. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_debone_process_affedab4adedda090e2afa27826c7662b}{void {\bfseries Apply\+Transform} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh, const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \&mat) const }\label{class_assimp_1_1_debone_process_affedab4adedda090e2afa27826c7662b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This post processing step removes bones nearly losslessly or according to a configured threshold. In order to remove the bone, the primitives affected by the bone are split from the mesh. The split off (new) mesh is boneless. At any point in time, bones without affect upon a given mesh are to be removed. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_debone_process_ab1f536da62ce1d50737b48a4dae095e8}{\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}!Consider\+Mesh@{Consider\+Mesh}}
+\index{Consider\+Mesh@{Consider\+Mesh}!Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+\subsubsection[{Consider\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}bool Debone\+Process\+::\+Consider\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_debone_process_ab1f536da62ce1d50737b48a4dae095e8}
+Counts bones total/removable in a given mesh. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & The mesh to process. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_debone_process_a3889723a333e0eb1874131efb0e8de34}{\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Debone\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_debone_process_a3889723a333e0eb1874131efb0e8de34}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_debone_process_aa69ce4e81a06e41d176009bafa983d40}{\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Debone\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_debone_process_aa69ce4e81a06e41d176009bafa983d40}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_debone_process_ad062ecc02d4c77deed2028d952626526}{\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Debone\+Process\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_debone_process_ad062ecc02d4c77deed2028d952626526}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_debone_process_a68abdf4149da4e64846b20c0aee1dad3}{\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}!Split\+Mesh@{Split\+Mesh}}
+\index{Split\+Mesh@{Split\+Mesh}!Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+\subsubsection[{Split\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void Debone\+Process\+::\+Split\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Mesh} $\ast$}]{p\+Mesh, }
+\item[{std\+::vector$<$ std\+::pair$<$ {\bf ai\+Mesh} $\ast$, const {\bf ai\+Bone} $\ast$ $>$ $>$ \&}]{po\+New\+Meshes}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_debone_process_a68abdf4149da4e64846b20c0aee1dad3}
+Splits the given mesh by bone count. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & the \hyperlink{class_mesh}{Mesh} to split. Is not changed at all, but might be superfluous in case it was split. \\
+\hline
+{\em po\+New\+Meshes} & Array of submeshes created in the process. Empty if splitting was not necessary. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_debone_process_ac3ceaa3933abbec1d5692e03e42aa057}{\index{Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}!m\+Num\+Bones@{m\+Num\+Bones}}
+\index{m\+Num\+Bones@{m\+Num\+Bones}!Assimp\+::\+Debone\+Process@{Assimp\+::\+Debone\+Process}}
+\subsubsection[{m\+Num\+Bones}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Debone\+Process\+::m\+Num\+Bones}}\label{class_assimp_1_1_debone_process_ac3ceaa3933abbec1d5692e03e42aa057}
+Number of bones present in the scene. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Debone\+Process.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_debone_process_8cpp}{Debone\+Process.\+cpp}\end{DoxyCompactItemize}

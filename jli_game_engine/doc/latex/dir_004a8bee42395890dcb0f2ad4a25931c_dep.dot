@@ -1,0 +1,10 @@
+digraph "vorbis" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_004a8bee42395890dcb0f2ad4a25931c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_004a8bee42395890dcb0f2ad4a25931c.html"];
+    dir_004a8bee42395890dcb0f2ad4a25931c [shape=plaintext label="vorbis"];
+    dir_465e7e0d29f66b77a98aa16791989bef [shape=box label="libvorbis-1.3.3" color="red" fillcolor="white" style="filled" URL="dir_465e7e0d29f66b77a98aa16791989bef.html"];
+  }
+}

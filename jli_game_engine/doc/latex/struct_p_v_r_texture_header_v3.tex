@@ -1,0 +1,86 @@
+\hypertarget{struct_p_v_r_texture_header_v3}{\section{P\+V\+R\+Texture\+Header\+V3 Struct Reference}
+\label{struct_p_v_r_texture_header_v3}\index{P\+V\+R\+Texture\+Header\+V3@{P\+V\+R\+Texture\+Header\+V3}}
+}
+
+
+A header for a P\+V\+R texture.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+Texture.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_p_v_r_texture_header_v3_aa7e17cf45a15ae57b5b3659eb87793a5}{P\+V\+R\+Texture\+Header\+V3} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the header -\/ used to make sure that the header is initialised usefully. The initial pixel format is an invalid one and must be set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a5816642f28d7312574736e75cb39359d}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a5816642f28d7312574736e75cb39359d}{u32\+Version}}\label{struct_p_v_r_texture_header_v3_a5816642f28d7312574736e75cb39359d}
+
+\begin{DoxyCompactList}\small\item\em Version of the file header, used to identify it. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a55a3ec93cfb9d2f12fcf6073d7772d5f}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a55a3ec93cfb9d2f12fcf6073d7772d5f}{u32\+Flags}}\label{struct_p_v_r_texture_header_v3_a55a3ec93cfb9d2f12fcf6073d7772d5f}
+
+\begin{DoxyCompactList}\small\item\em Various format flags. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a9fa7db60ade1348ddf311c3d5c5610a4}{P\+V\+R\+Tuint64 \hyperlink{struct_p_v_r_texture_header_v3_a9fa7db60ade1348ddf311c3d5c5610a4}{u64\+Pixel\+Format}}\label{struct_p_v_r_texture_header_v3_a9fa7db60ade1348ddf311c3d5c5610a4}
+
+\begin{DoxyCompactList}\small\item\em The pixel format, 8cc value storing the 4 channel identifiers and their respective sizes. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_aa20faf11c37c3dd60cc1ff3f11d2bf8f}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_aa20faf11c37c3dd60cc1ff3f11d2bf8f}{u32\+Colour\+Space}}\label{struct_p_v_r_texture_header_v3_aa20faf11c37c3dd60cc1ff3f11d2bf8f}
+
+\begin{DoxyCompactList}\small\item\em The Colour Space of the texture, currently either linear R\+G\+B or s\+R\+G\+B. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_ae7a61a91b7e08446e506b7e511e44695}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_ae7a61a91b7e08446e506b7e511e44695}{u32\+Channel\+Type}}\label{struct_p_v_r_texture_header_v3_ae7a61a91b7e08446e506b7e511e44695}
+
+\begin{DoxyCompactList}\small\item\em Variable type that the channel is stored in. Supports signed/unsigned int/short/byte or float for now. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a9c5e715af399f08ffc05359d2624685a}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a9c5e715af399f08ffc05359d2624685a}{u32\+Height}}\label{struct_p_v_r_texture_header_v3_a9c5e715af399f08ffc05359d2624685a}
+
+\begin{DoxyCompactList}\small\item\em Height of the texture. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_ac0878cce242cd38c35a1aeb0a4cf66a6}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_ac0878cce242cd38c35a1aeb0a4cf66a6}{u32\+Width}}\label{struct_p_v_r_texture_header_v3_ac0878cce242cd38c35a1aeb0a4cf66a6}
+
+\begin{DoxyCompactList}\small\item\em Width of the texture. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a501a49dfec89a8c45554e16335b7b12b}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a501a49dfec89a8c45554e16335b7b12b}{u32\+Depth}}\label{struct_p_v_r_texture_header_v3_a501a49dfec89a8c45554e16335b7b12b}
+
+\begin{DoxyCompactList}\small\item\em Depth of the texture. (Z-\/slices) \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a1d924c6dd065bdad417a8d0d7197ca20}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a1d924c6dd065bdad417a8d0d7197ca20}{u32\+Num\+Surfaces}}\label{struct_p_v_r_texture_header_v3_a1d924c6dd065bdad417a8d0d7197ca20}
+
+\begin{DoxyCompactList}\small\item\em Number of members in a Texture Array. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a6cd62813c77c3e1d0b3cc2ef938536d2}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a6cd62813c77c3e1d0b3cc2ef938536d2}{u32\+Num\+Faces}}\label{struct_p_v_r_texture_header_v3_a6cd62813c77c3e1d0b3cc2ef938536d2}
+
+\begin{DoxyCompactList}\small\item\em Number of faces in a Cube Map. Maybe be a value other than 6. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_aeff85edfb111086b73841c27c8b73254}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_aeff85edfb111086b73841c27c8b73254}{u32\+M\+I\+P\+Map\+Count}}\label{struct_p_v_r_texture_header_v3_aeff85edfb111086b73841c27c8b73254}
+
+\begin{DoxyCompactList}\small\item\em Number of M\+I\+P Maps in the texture -\/ N\+B\+: Includes top level. \end{DoxyCompactList}\item 
+\hypertarget{struct_p_v_r_texture_header_v3_a7ad0ccf7b3d539b6a39a14249cf39cc3}{P\+V\+R\+Tuint32 \hyperlink{struct_p_v_r_texture_header_v3_a7ad0ccf7b3d539b6a39a14249cf39cc3}{u32\+Meta\+Data\+Size}}\label{struct_p_v_r_texture_header_v3_a7ad0ccf7b3d539b6a39a14249cf39cc3}
+
+\begin{DoxyCompactList}\small\item\em Size of the accompanying meta data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A header for a P\+V\+R texture. 
+
+
+
+
+
+Contains everything required to read a texture accurately, and nothing more. Extraneous data is stored in a \hyperlink{struct_meta_data_block}{Meta\+Data\+Block}. Correct use of the texture may rely on \hyperlink{struct_meta_data_block}{Meta\+Data\+Block}, but accurate data loading can be done through the standard header alone. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_p_v_r_texture_header_v3_aa7e17cf45a15ae57b5b3659eb87793a5}{\index{P\+V\+R\+Texture\+Header\+V3@{P\+V\+R\+Texture\+Header\+V3}!P\+V\+R\+Texture\+Header\+V3@{P\+V\+R\+Texture\+Header\+V3}}
+\index{P\+V\+R\+Texture\+Header\+V3@{P\+V\+R\+Texture\+Header\+V3}!P\+V\+R\+Texture\+Header\+V3@{P\+V\+R\+Texture\+Header\+V3}}
+\subsubsection[{P\+V\+R\+Texture\+Header\+V3}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Texture\+Header\+V3\+::\+P\+V\+R\+Texture\+Header\+V3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_p_v_r_texture_header_v3_aa7e17cf45a15ae57b5b3659eb87793a5}
+
+
+Constructor for the header -\/ used to make sure that the header is initialised usefully. The initial pixel format is an invalid one and must be set. 
+
+
+
+ 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_texture_8h}{P\+V\+R\+T\+Texture.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,738 @@
+\hypertarget{class_o_g_l_e_s2_navigation3_d}{\section{O\+G\+L\+E\+S2\+Navigation3\+D Class Reference}
+\label{class_o_g_l_e_s2_navigation3_d}\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S2\+Navigation3\+D\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S2\+Navigation3\+D\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_navigation3_d_a3ebe1153920f498bae64a995c38c7cdd}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_navigation3_d_a609cead917ddb0f0fd12878fbc129fa7}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_navigation3_d_a084c0e3372c74535827fc20ba1a39a39}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_navigation3_d_aa16d07ae5e64b996f29fce58777a2a98}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_navigation3_d_ac5ad07593faf0e16244b602626d2be3c}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_a44021b8be24e6c6a2e1b5a1a8394fe8e}{Load\+Assets} (bool \&finished)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_ab3de1f3bc50a300eb17781f73a6b7628}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_a74010a6172519bfce746fe66a0165167}{Load\+Shader} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str, const \hyperlink{struct_shader_description}{Shader\+Description} \&descr, Shader \&shader)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_ae9b0517a0e301642740b9c7abbbf3913}{Load\+Shaders} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_abc4c7b8a89bf2c48ae1cbbbeecb256f8}{Release\+Shader} (Shader \&shader)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_aa97dace7d66a2c9106df4c9062a6d9b3}{Update\+Timer} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_aca85aa7b6359cb7d73170ee838ac07d5}{Handle\+Input} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a0030f4d90c3627df6bc58b3c28a274cd}{Handle\+Mouse\+Click} (\hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} pos)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a2cdb9a3bcdd1c849aa5dcd279504c813}{Handle\+Mouse\+Drag} (\hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2} dir)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a6a9cbcb7c66715671b07c368d8e711ad}{Update3d\+Model\+Workingset} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a1db092adebafab401f631bb02d97fb0c}{Render3d\+Models\+Visibility\+Set} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a7903548f34f6197d49be525b7ae0a34a}{Render3d\+Models\+Occlusion} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a6eff285720cccf5173b4464f929990b7}{Render\+Sky\+Box} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a84f56c378cc6261736fe3e38de7379ad}{Create\+Model\+Vbo} (const unsigned int tile, const unsigned int lod)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a5c70c690851d0bd321f952b4392c4164}{Release\+Model\+Vbo} (const unsigned int tile, const unsigned int lod)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_aa020af54def2942c654dc393a29bf2df}{Calculate\+Light\+Matrices} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_af4778c03d6a29279d2a279a095d21514}{Calculate\+Camera\+Matrices} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_aa70cd0b48250be3581eb8fee4b5fe43d}{Get\+Camera\+Frame} (\hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&from, \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&to, \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&up, float time)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a918a2c109fc1f766e1e522c865f90810}{Extract\+View\+Frustum\+Planes} (const \hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \&matrix, \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \&left, \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \&right, \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \&front, \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} \&back) const 
+\item 
+int \hyperlink{class_o_g_l_e_s2_navigation3_d_aa9e4365152f3079f1116d171b19a5642}{Bounding\+Box\+Intersects\+Frustum} (const \hyperlink{struct_p_v_r_t_bounding_box2_d}{P\+V\+R\+T\+Bounding\+Box2\+D} \&bbox, const \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} planes\mbox{[}4\mbox{]}) const 
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_abf5968e31fefea19cbd49a8f2b029048}{Load3d\+Model\+Index} (const char $\ast$psz\+Filename, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a8549bc0b82ebebb92558861339b4493e}{Release3d\+Model\+Index} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_navigation3_d_a061c1a0bf803aabc0e8720dae1fc723e}{Load\+Occlusion\+Data} (const char $\ast$psz\+Filename, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a0ec1a34f8b93330da8649d036ca6c185}{Release\+Occlusion\+Data} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a21af406806e1d242d07719def43bdd23}{Create\+Shadow\+Volumes} (unsigned int tile)
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_abdfb871935f9e0698e6dc43a40807170}{Release\+Shadow\+Volumes} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_a0149c8b5b297305aaa8ee8161d9a4426}{Update\+Shadow\+Volumes} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_acdf2912b3ecb62c1ce4532cfdac9c44a}{Render\+Shadow\+Volumes} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_ad56b99ca84bf7ae77c9bd7a3645bd142}{Render\+U\+I} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_navigation3_d_ab17d4fa3e9d1a36bb52436d3370d555a}{Init\+U\+I} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class declarations
+
+
+
+  \hyperlink{class_o_g_l_e_s2_navigation3_d}{O\+G\+L\+E\+S2\+Navigation3\+D}  Navigation demo main class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s2_navigation3_d_aa9e4365152f3079f1116d171b19a5642}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Bounding\+Box\+Intersects\+Frustum@{Bounding\+Box\+Intersects\+Frustum}}
+\index{Bounding\+Box\+Intersects\+Frustum@{Bounding\+Box\+Intersects\+Frustum}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Bounding\+Box\+Intersects\+Frustum}]{\setlength{\rightskip}{0pt plus 5cm}int O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Bounding\+Box\+Intersects\+Frustum (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Bounding\+Box2\+D} \&}]{bbox, }
+\item[{const {\bf P\+V\+R\+T\+Vec4}}]{planes\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s2_navigation3_d_aa9e4365152f3079f1116d171b19a5642}
+
+
+  Bounding\+Box\+Intersects\+Frustum  Tests whether a 2\+D bounding box is intersected or enclosed by a camera view frustum. Only the front, left, right and back planes of the view frustum are taken into consideration to optimize the intersection test. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_af4778c03d6a29279d2a279a095d21514}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Calculate\+Camera\+Matrices@{Calculate\+Camera\+Matrices}}
+\index{Calculate\+Camera\+Matrices@{Calculate\+Camera\+Matrices}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Calculate\+Camera\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Calculate\+Camera\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_af4778c03d6a29279d2a279a095d21514}
+
+
+  Calculate\+Camera\+Matrices  Calculates and interpolates the current camera frame. The interpolation is being done to prevent the camera from stuttering at slow speed passages (due to floating point issues). 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_aa020af54def2942c654dc393a29bf2df}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Calculate\+Light\+Matrices@{Calculate\+Light\+Matrices}}
+\index{Calculate\+Light\+Matrices@{Calculate\+Light\+Matrices}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Calculate\+Light\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Calculate\+Light\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_aa020af54def2942c654dc393a29bf2df}
+
+
+  Calculate\+Light\+Matrices  T\+O\+D\+O 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a84f56c378cc6261736fe3e38de7379ad}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Create\+Model\+Vbo@{Create\+Model\+Vbo}}
+\index{Create\+Model\+Vbo@{Create\+Model\+Vbo}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Create\+Model\+Vbo}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Create\+Model\+Vbo (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{tile, }
+\item[{const unsigned int}]{lod}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a84f56c378cc6261736fe3e38de7379ad}
+
+
+  Create\+Model\+Vbo  Loads a city block from file and creates vertex buffer objects. The model itself is being modified as the y and z axis are swapped and the resulting y axis has to be negated to coincide with 2\+D map data. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a21af406806e1d242d07719def43bdd23}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Create\+Shadow\+Volumes@{Create\+Shadow\+Volumes}}
+\index{Create\+Shadow\+Volumes@{Create\+Shadow\+Volumes}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Create\+Shadow\+Volumes}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Create\+Shadow\+Volumes (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{tile}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a21af406806e1d242d07719def43bdd23}
+
+
+  Create\+Shadow\+Volumes  Builds the shadow meshes and shadow volumes 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a918a2c109fc1f766e1e522c865f90810}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Extract\+View\+Frustum\+Planes@{Extract\+View\+Frustum\+Planes}}
+\index{Extract\+View\+Frustum\+Planes@{Extract\+View\+Frustum\+Planes}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Extract\+View\+Frustum\+Planes}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Extract\+View\+Frustum\+Planes (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Mat4} \&}]{matrix, }
+\item[{{\bf P\+V\+R\+T\+Vec4} \&}]{left, }
+\item[{{\bf P\+V\+R\+T\+Vec4} \&}]{right, }
+\item[{{\bf P\+V\+R\+T\+Vec4} \&}]{front, }
+\item[{{\bf P\+V\+R\+T\+Vec4} \&}]{back}
+\end{DoxyParamCaption}
+) const}}\label{class_o_g_l_e_s2_navigation3_d_a918a2c109fc1f766e1e522c865f90810}
+
+
+  Extract\+View\+Frustum\+Planes  Extracts the (left, right, front and back) view frustum planes from the camera modelview-\/projection matrix. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_aa70cd0b48250be3581eb8fee4b5fe43d}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Get\+Camera\+Frame@{Get\+Camera\+Frame}}
+\index{Get\+Camera\+Frame@{Get\+Camera\+Frame}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Get\+Camera\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Get\+Camera\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Vec3} \&}]{from, }
+\item[{{\bf P\+V\+R\+T\+Vec3} \&}]{to, }
+\item[{{\bf P\+V\+R\+T\+Vec3} \&}]{up, }
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_aa70cd0b48250be3581eb8fee4b5fe43d}
+
+
+  Get\+Camera\+Frame  Retrieves camera frame from the active camera path and converts the units from imperial to metric system. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_aca85aa7b6359cb7d73170ee838ac07d5}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Handle\+Input@{Handle\+Input}}
+\index{Handle\+Input@{Handle\+Input}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Handle\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Handle\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_aca85aa7b6359cb7d73170ee838ac07d5}
+
+
+  Handle\+Input  Handles user input. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a0030f4d90c3627df6bc58b3c28a274cd}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Handle\+Mouse\+Click@{Handle\+Mouse\+Click}}
+\index{Handle\+Mouse\+Click@{Handle\+Mouse\+Click}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Handle\+Mouse\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Handle\+Mouse\+Click (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Vec2}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a0030f4d90c3627df6bc58b3c28a274cd}
+
+
+  Handle\+Mouse\+Click  Handles user input via mouse interactions. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a2cdb9a3bcdd1c849aa5dcd279504c813}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Handle\+Mouse\+Drag@{Handle\+Mouse\+Drag}}
+\index{Handle\+Mouse\+Drag@{Handle\+Mouse\+Drag}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Handle\+Mouse\+Drag}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Handle\+Mouse\+Drag (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Vec2}}]{dir}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a2cdb9a3bcdd1c849aa5dcd279504c813}
+
+
+  Handle\+Mouse\+Drag  Handles user input via mouse interactions. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a3ebe1153920f498bae64a995c38c7cdd}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_navigation3_d_a3ebe1153920f498bae64a995c38c7cdd}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_navigation3_d_a3ebe1153920f498bae64a995c38c7cdd}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_navigation3_d_a3ebe1153920f498bae64a995c38c7cdd}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_ab17d4fa3e9d1a36bb52436d3370d555a}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Init\+U\+I@{Init\+U\+I}}
+\index{Init\+U\+I@{Init\+U\+I}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Init\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Init\+U\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_ab17d4fa3e9d1a36bb52436d3370d555a}
+
+
+  Init\+U\+I  Sets up all button locations and rendering attributes. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a609cead917ddb0f0fd12878fbc129fa7}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_navigation3_d_a609cead917ddb0f0fd12878fbc129fa7}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_navigation3_d_a609cead917ddb0f0fd12878fbc129fa7}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_abf5968e31fefea19cbd49a8f2b029048}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Load3d\+Model\+Index@{Load3d\+Model\+Index}}
+\index{Load3d\+Model\+Index@{Load3d\+Model\+Index}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Load3d\+Model\+Index}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Load3d\+Model\+Index (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\+Filename, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_abf5968e31fefea19cbd49a8f2b029048}
+
+
+  Load3d\+Model\+Index  Loads hierarchical index data (please see the 3\+D Navigation whitepaper for a file format description). 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a44021b8be24e6c6a2e1b5a1a8394fe8e}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Load\+Assets@{Load\+Assets}}
+\index{Load\+Assets@{Load\+Assets}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Load\+Assets}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Load\+Assets (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{finished}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a44021b8be24e6c6a2e1b5a1a8394fe8e}
+
+
+  Load\+Assets  finished True if loading has finished, false otherwise.  bool true if no error occures  Loads the assets required for the demo and display progress messages. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a061c1a0bf803aabc0e8720dae1fc723e}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Load\+Occlusion\+Data@{Load\+Occlusion\+Data}}
+\index{Load\+Occlusion\+Data@{Load\+Occlusion\+Data}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Load\+Occlusion\+Data}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Load\+Occlusion\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\+Filename, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a061c1a0bf803aabc0e8720dae1fc723e}
+
+
+  Load\+Occlusion\+Data  Loads the occlusion (/visibility) data information (please see the 3\+D Navigation whitepaper for a file format description). 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a74010a6172519bfce746fe66a0165167}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Load\+Shader@{Load\+Shader}}
+\index{Load\+Shader@{Load\+Shader}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Load\+Shader}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Load\+Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str, }
+\item[{const {\bf Shader\+Description} \&}]{descr, }
+\item[{Shader \&}]{shader}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a74010a6172519bfce746fe66a0165167}
+
+
+  Load\+Shader  p\+Error\+Str A string describing the error on failure  descr A struct containing all necessary information to load and build the shader  shader A struct containing all shader object identifiers  bool true if no error occured  Loads and compiles a shader and links it into a shader program 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_ae9b0517a0e301642740b9c7abbbf3913}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Load\+Shaders@{Load\+Shaders}}
+\index{Load\+Shaders@{Load\+Shaders}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Load\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Load\+Shaders (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_ae9b0517a0e301642740b9c7abbbf3913}
+
+
+  Load\+Shaders  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads and compiles shaders and links them to shader programs 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_ab3de1f3bc50a300eb17781f73a6b7628}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_ab3de1f3bc50a300eb17781f73a6b7628}
+
+
+  Load\+Textures  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_aa16d07ae5e64b996f29fce58777a2a98}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_navigation3_d_aa16d07ae5e64b996f29fce58777a2a98}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_navigation3_d_aa16d07ae5e64b996f29fce58777a2a98}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_navigation3_d_aa16d07ae5e64b996f29fce58777a2a98}{Quit\+Application()} will not be called. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a8549bc0b82ebebb92558861339b4493e}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Release3d\+Model\+Index@{Release3d\+Model\+Index}}
+\index{Release3d\+Model\+Index@{Release3d\+Model\+Index}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Release3d\+Model\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Release3d\+Model\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a8549bc0b82ebebb92558861339b4493e}
+
+
+  Release3d\+Model\+Index  Releases the hierarchical index data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a5c70c690851d0bd321f952b4392c4164}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Release\+Model\+Vbo@{Release\+Model\+Vbo}}
+\index{Release\+Model\+Vbo@{Release\+Model\+Vbo}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Release\+Model\+Vbo}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Release\+Model\+Vbo (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{tile, }
+\item[{const unsigned int}]{lod}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a5c70c690851d0bd321f952b4392c4164}
+
+
+  Release\+Model\+Vbo  Releases all resources and memory related with a certain city block. \hypertarget{class_o_g_l_e_s2_navigation3_d_a0ec1a34f8b93330da8649d036ca6c185}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Release\+Occlusion\+Data@{Release\+Occlusion\+Data}}
+\index{Release\+Occlusion\+Data@{Release\+Occlusion\+Data}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Release\+Occlusion\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Release\+Occlusion\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a0ec1a34f8b93330da8649d036ca6c185}
+
+
+  Release\+Occlusion\+Data  Releases all occlusion data. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_abc4c7b8a89bf2c48ae1cbbbeecb256f8}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Release\+Shader@{Release\+Shader}}
+\index{Release\+Shader@{Release\+Shader}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Release\+Shader}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Release\+Shader (
+\begin{DoxyParamCaption}
+\item[{Shader \&}]{shader}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_abc4c7b8a89bf2c48ae1cbbbeecb256f8}
+
+
+  Release\+Shader  bool true if no error occured  Releases a shader program including the individual shader objects. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_abdfb871935f9e0698e6dc43a40807170}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Release\+Shadow\+Volumes@{Release\+Shadow\+Volumes}}
+\index{Release\+Shadow\+Volumes@{Release\+Shadow\+Volumes}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Release\+Shadow\+Volumes}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Release\+Shadow\+Volumes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_abdfb871935f9e0698e6dc43a40807170}
+
+
+  Release\+Shadow\+Volumes  Releases all shadow volume related data 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a084c0e3372c74535827fc20ba1a39a39}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_navigation3_d_a084c0e3372c74535827fc20ba1a39a39}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_navigation3_d_a084c0e3372c74535827fc20ba1a39a39}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a7903548f34f6197d49be525b7ae0a34a}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Render3d\+Models\+Occlusion@{Render3d\+Models\+Occlusion}}
+\index{Render3d\+Models\+Occlusion@{Render3d\+Models\+Occlusion}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Render3d\+Models\+Occlusion}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Render3d\+Models\+Occlusion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a7903548f34f6197d49be525b7ae0a34a}
+
+
+  Render3d\+Models\+Occlusion  Renders the visible city blocks based on the occlusion culling intersection data. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a1db092adebafab401f631bb02d97fb0c}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Render3d\+Models\+Visibility\+Set@{Render3d\+Models\+Visibility\+Set}}
+\index{Render3d\+Models\+Visibility\+Set@{Render3d\+Models\+Visibility\+Set}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Render3d\+Models\+Visibility\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Render3d\+Models\+Visibility\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a1db092adebafab401f631bb02d97fb0c}
+
+
+  Render3d\+Models\+Visibility\+Set  Renders the visible city blocks based on the view frustum intersection tests. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_ac5ad07593faf0e16244b602626d2be3c}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_navigation3_d_ac5ad07593faf0e16244b602626d2be3c}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_acdf2912b3ecb62c1ce4532cfdac9c44a}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Render\+Shadow\+Volumes@{Render\+Shadow\+Volumes}}
+\index{Render\+Shadow\+Volumes@{Render\+Shadow\+Volumes}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Render\+Shadow\+Volumes}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Render\+Shadow\+Volumes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_acdf2912b3ecb62c1ce4532cfdac9c44a}
+
+
+  Render\+Shadow\+Volumes  Renders the shadow volumes using the stencil shadow volumes algorithm (zfail variant). 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a6eff285720cccf5173b4464f929990b7}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Render\+Sky\+Box@{Render\+Sky\+Box}}
+\index{Render\+Sky\+Box@{Render\+Sky\+Box}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Render\+Sky\+Box}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Render\+Sky\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a6eff285720cccf5173b4464f929990b7}
+
+
+  Render\+Sky\+Box  Renders a sky box centered around the view position. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_ad56b99ca84bf7ae77c9bd7a3645bd142}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Render\+U\+I@{Render\+U\+I}}
+\index{Render\+U\+I@{Render\+U\+I}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Render\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Render\+U\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_ad56b99ca84bf7ae77c9bd7a3645bd142}
+
+
+  Render\+U\+I  Renders an alpha-\/blended U\+I consisting of simple buttons. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a6a9cbcb7c66715671b07c368d8e711ad}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Update3d\+Model\+Workingset@{Update3d\+Model\+Workingset}}
+\index{Update3d\+Model\+Workingset@{Update3d\+Model\+Workingset}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Update3d\+Model\+Workingset}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Update3d\+Model\+Workingset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a6a9cbcb7c66715671b07c368d8e711ad}
+
+
+  Update3d\+Model\+Workingset  Updates the visible object set based on the camera view frustum. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_a0149c8b5b297305aaa8ee8161d9a4426}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Update\+Shadow\+Volumes@{Update\+Shadow\+Volumes}}
+\index{Update\+Shadow\+Volumes@{Update\+Shadow\+Volumes}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Update\+Shadow\+Volumes}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Update\+Shadow\+Volumes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_a0149c8b5b297305aaa8ee8161d9a4426}
+
+
+  Update\+Shadow\+Volumes  Updates the shadow volumes within a tile. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_navigation3_d_aa97dace7d66a2c9106df4c9062a6d9b3}{\index{O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}!Update\+Timer@{Update\+Timer}}
+\index{Update\+Timer@{Update\+Timer}!O\+G\+L\+E\+S2\+Navigation3\+D@{O\+G\+L\+E\+S2\+Navigation3\+D}}
+\subsubsection[{Update\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Navigation3\+D\+::\+Update\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_navigation3_d_aa97dace7d66a2c9106df4c9062a6d9b3}
+
+
+  Update\+Timer  none  Updates the values of the current time, previous time, current time in seconds, delta time and the F\+P\+S counter used in the program 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Advanced/\+Navigation3\+D/\+O\+G\+L\+E\+S2/O\+G\+L\+E\+S2\+Navigation3\+D.\+cpp\end{DoxyCompactItemize}

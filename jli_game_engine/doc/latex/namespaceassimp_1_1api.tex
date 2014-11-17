@@ -1,0 +1,514 @@
+\hypertarget{namespaceassimp_1_1api}{\section{assimp\+:\+:api Namespace Reference}
+\label{namespaceassimp_1_1api}\index{assimp\+::api@{assimp\+::api}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{namespaceassimp_1_1api_aa03d12d3d834066fbe3d3f19e92978e1}{function} (char $\ast$p\+File, uint p\+Flags, \hyperlink{structassimp_1_1file_i_o_1_1ai_file_i_o}{ai\+File\+I\+O} $\ast$p\+F\+S) ai\+Import\+File\+Ex
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{namespaceassimp_1_1api_aabfc64e31941ad6847077eaa44d6a396}{function} (char $\ast$p\+Buffer, uint p\+Length, uint p\+Flags, char $\ast$p\+Hint) \hyperlink{_assimp_8cpp_a1b2a265a07ea1341276a8dcd7a2a3cc2}{ai\+Import\+File\+From\+Memory}
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{namespaceassimp_1_1api_a49a7ab3400c42b9fcd6b36299dba672e}{function} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, uint p\+Flags) ai\+Apply\+Post\+Processing
+\item 
+\hyperlink{structassimp_1_1types_1_1ai_log_stream}{ai\+Log\+Stream} \hyperlink{namespaceassimp_1_1api_a7e46143acbded1341d1e1f8eec2384bb}{function} (\hyperlink{namespaceassimp_1_1types_a52da3a6c31d2b1f04a0f897a22c5b3a6}{ai\+Default\+Log\+Stream} p\+Streams, char $\ast$\hyperlink{structfile}{file}) ai\+Get\+Predefined\+Log\+Stream
+\item 
+void \hyperlink{namespaceassimp_1_1api_ab06b574647d60f0bcc3840a3967cb841}{function} (\hyperlink{structassimp_1_1types_1_1ai_log_stream}{ai\+Log\+Stream} $\ast$stream) ai\+Attach\+Log\+Stream
+\item 
+void \hyperlink{namespaceassimp_1_1api_aff9b0c24a61697a57cf678f5a1d206eb}{function} (ai\+Bool d) \hyperlink{_assimp_8cpp_a54a7485c9422348b2f20adcbd192ed64}{ai\+Enable\+Verbose\+Logging}
+\item 
+void \hyperlink{namespaceassimp_1_1api_ae17b92a994f8dbb3b9d1ab26db7a7af4}{function} () \hyperlink{_assimp_8cpp_a8f1fe2e8ccc5f93484098114ae7071bf}{ai\+Detach\+All\+Log\+Streams}
+\item 
+void \hyperlink{namespaceassimp_1_1api_a5400a71b2a39a12fb0b227326ce3ba04}{function} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene) ai\+Release\+Import
+\item 
+ai\+Bool \hyperlink{namespaceassimp_1_1api_a2ebfde55e5343eecec6442cf6ad4b542}{function} (char $\ast$sz\+Extension) \hyperlink{_assimp_8cpp_ae1d3a0603764b44b77aad1a464d888a1}{ai\+Is\+Extension\+Supported}
+\item 
+void \hyperlink{namespaceassimp_1_1api_a57acdbc9025a5c6ee4175a17d51167ee}{function} (\hyperlink{structassimp_1_1types_1_1ai_string}{ai\+String} $\ast$sz\+Out) ai\+Get\+Extension\+List
+\item 
+void \hyperlink{namespaceassimp_1_1api_ad2c942ec30e33d9ca7b6c8af7ca9d510}{function} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+In, \hyperlink{structassimp_1_1types_1_1ai_memory_info}{ai\+Memory\+Info} $\ast$info) \hyperlink{_assimp_8cpp_afbe064a84a03a81226b6d4c807502104}{ai\+Get\+Memory\+Requirements}
+\item 
+void \hyperlink{namespaceassimp_1_1api_ae5aec5ad6156334848d90dc2f6395b15}{function} (char $\ast$sz\+Name, int value) ai\+Set\+Import\+Property\+Integer
+\item 
+void \hyperlink{namespaceassimp_1_1api_a5a00f4be28c9dec7bbdc4f85b9d253de}{function} (char $\ast$sz\+Name, float value) ai\+Set\+Import\+Property\+Float
+\item 
+void \hyperlink{namespaceassimp_1_1api_a4acf426c7e49cb0e1a7e7f485c73fbb6}{function} (char $\ast$sz\+Name, \hyperlink{structassimp_1_1types_1_1ai_string}{ai\+String} $\ast$st) ai\+Set\+Import\+Property\+String
+\item 
+void \hyperlink{namespaceassimp_1_1api_a97b2f6d110170d49f686d7c1d2e9f003}{function} (\hyperlink{structai_quaternion}{ai\+Quaternion} $\ast$\hyperlink{classquat}{quat}, \hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat) ai\+Create\+Quaternion\+From\+Matrix
+\item 
+void \hyperlink{namespaceassimp_1_1api_aa65fdf29e38e679125b128d514d06365}{function} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$scaling, \hyperlink{structai_quaternion}{ai\+Quaternion} $\ast$rotation, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$position) ai\+Decompose\+Matrix
+\item 
+void \hyperlink{namespaceassimp_1_1api_a629a05a39dc232ccf6ce5eb87e5ad24e}{function} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat) ai\+Transpose\+Matrix4
+\item 
+void \hyperlink{namespaceassimp_1_1api_abcc340afe1c4c8f3ab5fddabbc107c07}{function} (\hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat) ai\+Transpose\+Matrix3
+\item 
+void \hyperlink{namespaceassimp_1_1api_a005b01872418f688d89ac0fd00f0e134}{function} (\hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$vec, \hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat) ai\+Transform\+Vec\+By\+Matrix3
+\item 
+void \hyperlink{namespaceassimp_1_1api_a6edacefaa630b4e7c4a1b1d20745a342}{function} (\hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$vec, \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat) ai\+Transform\+Vec\+By\+Matrix4
+\item 
+void \hyperlink{namespaceassimp_1_1api_aa5e391cbe1d1a6786024ef39f32e4ead}{function} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$dst, \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$src) ai\+Multiply\+Matrix4
+\item 
+void \hyperlink{namespaceassimp_1_1api_a61ae379d4d7546884e27fc3d30c26e51}{function} (\hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$dst, \hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$src) ai\+Multiply\+Matrix3
+\item 
+\hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} \hyperlink{namespaceassimp_1_1api_aa99170042116ae58ae78b61c7a571730}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$p\+Mat, char $\ast$p\+Key, uint type, uint index, \hyperlink{structassimp_1_1material_1_1ai_material_property}{ai\+Material\+Property} $\ast$$\ast$p\+Prop\+Out) ai\+Get\+Material\+Property
+\item 
+\hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} \hyperlink{namespaceassimp_1_1api_a62910ae5faa1f84e21969a0073dd63c4}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$p\+Mat, char $\ast$p\+Key, uint type, uint index, float $\ast$p\+Out, uint $\ast$p\+Max=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) ai\+Get\+Material\+Float\+Array
+\item 
+\hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} \hyperlink{namespaceassimp_1_1api_a3b95f7381bd9863158c5028b69f0c7b4}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$p\+Mat, char $\ast$p\+Key, uint type, uint index, int $\ast$p\+Out, uint $\ast$p\+Max=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) ai\+Get\+Material\+Integer\+Array
+\item 
+\hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} \hyperlink{namespaceassimp_1_1api_a4122546dbca7e31961370455a7a6ec14}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$p\+Mat, char $\ast$p\+Key, uint type, uint index, \hyperlink{structai_color4_d}{ai\+Color4\+D} $\ast$p\+Out) ai\+Get\+Material\+Color
+\item 
+\hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} \hyperlink{namespaceassimp_1_1api_acfb6b2f24a80524e35f5796745a0c9fa}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$p\+Mat, char $\ast$p\+Key, uint type, uint index, \hyperlink{structassimp_1_1types_1_1ai_string}{ai\+String} $\ast$p\+Out) ai\+Get\+Material\+String
+\item 
+uint \hyperlink{namespaceassimp_1_1api_af57fa984142989f4a315d32fd98412d1}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$p\+Mat, \hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1b}{ai\+Texture\+Type} type) ai\+Get\+Material\+Texture\+Count
+\item 
+\hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} \hyperlink{namespaceassimp_1_1api_a884bcd71df61b623fe8c9ca06c3e7fac}{function} (\hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material} $\ast$mat, \hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1b}{ai\+Texture\+Type} type, uint index, \hyperlink{structassimp_1_1types_1_1ai_string}{ai\+String} $\ast$path, \hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679}{ai\+Texture\+Mapping} $\ast$mapping=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, uint $\ast$uvindex=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, float $\ast$blend=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3}{ai\+Texture\+Op} $\ast$op=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42b}{ai\+Texture\+Map\+Mode} $\ast$mapmode=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) ai\+Get\+Material\+Texture
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C}
+\item 
+alias ai\+Get\+Material\+Float\+Array \hyperlink{namespaceassimp_1_1api_a2c26953d3d9bd2ac94f7cc060f2bd859}{ai\+Get\+Material\+Float}
+\item 
+alias ai\+Get\+Material\+Integer\+Array \hyperlink{namespaceassimp_1_1api_aa216865c75da2c28fc3d77471b00c3ea}{ai\+Get\+Material\+Integer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The C-\/style interface to the Open Asset import library.
+
+All functions of the C A\+P\+I have been collected in this module as function pointers, which are set by the dynamic library loader ({\ttfamily \hyperlink{namespaceassimp_1_1loader}{assimp.\+loader}}). 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceassimp_1_1api_aa03d12d3d834066fbe3d3f19e92978e1}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene}$\ast$ assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+File, }
+\item[{uint}]{p\+Flags, }
+\item[{{\bf ai\+File\+I\+O} $\ast$}]{p\+F\+S}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_aa03d12d3d834066fbe3d3f19e92978e1}
+Reads the given file using user-\/defined I/\+O functions and returns its content.
+
+If the call succeeds, the imported data is returned in an {\ttfamily \hyperlink{structai_scene}{ai\+Scene}} structure. The data is intended to be read-\/only, it stays property of the \hyperlink{class_assimp}{Assimp} library and will be stable until {\ttfamily ai\+Release\+Import()} is called. After you're done with it, call {\ttfamily ai\+Release\+Import()} to free the resources associated with this file.
+
+If an error is encountered, null is returned instead. Call {\ttfamily \hyperlink{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}{ai\+Get\+Error\+String()}} to retrieve a human-\/readable error description.
+
+Params\+: p\+File = Path and filename of the file to be imported, expected to be a null-\/terminated C-\/string. null is not a valid value. p\+Flags = Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the {\ttfamily ai\+Post\+Process\+Steps} flags. If you wish to inspect the imported scene first in order to fine-\/tune your post-\/processing setup, consider to use {\ttfamily ai\+Apply\+Post\+Processing()}. p\+F\+S = An \hyperlink{structai_file_i_o}{ai\+File\+I\+O} which will be used to open the model file itself and any other files the loader needs to open.
+
+Returns\+: A pointer to the imported data, null if the import failed. \hypertarget{namespaceassimp_1_1api_aabfc64e31941ad6847077eaa44d6a396}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene}$\ast$ assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Buffer, }
+\item[{uint}]{p\+Length, }
+\item[{uint}]{p\+Flags, }
+\item[{char $\ast$}]{p\+Hint}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_aabfc64e31941ad6847077eaa44d6a396}
+Reads the scene from the given memory buffer.
+
+Reads the given file using user-\/defined I/\+O functions and returns its content.
+
+If the call succeeds, the imported data is returned in an {\ttfamily \hyperlink{structai_scene}{ai\+Scene}} structure. The data is intended to be read-\/only, it stays property of the \hyperlink{class_assimp}{Assimp} library and will be stable until {\ttfamily ai\+Release\+Import()} is called. After you're done with it, call {\ttfamily ai\+Release\+Import()} to free the resources associated with this file.
+
+If an error is encountered, null is returned instead. Call {\ttfamily \hyperlink{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}{ai\+Get\+Error\+String()}} to retrieve a human-\/readable error description.
+
+Params\+: p\+Buffer = Pointer to the scene data. p\+Length = Size of p\+Buffer in bytes. p\+Flags = Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the {\ttfamily ai\+Post\+Process\+Steps} flags. If you wish to inspect the imported scene first in order to fine-\/tune your post-\/processing setup, consider to use {\ttfamily ai\+Apply\+Post\+Processing()}. p\+Hint = An additional hint to the library. If this is a non empty string, the library looks for a loader to support the file extension specified and passes the file to the first matching loader. If this loader is unable to complete the request, the library continues and tries to determine the file format on its own, a task that may or may not be successful.
+
+Returns\+: A pointer to the imported data, null if the import failed.
+
+Note\+: This is a straightforward way to decode models from memory buffers, but it doesn't handle model formats spreading their data across multiple files or even directories. Examples include O\+B\+J or M\+D3, which outsource parts of their material stuff into external scripts. If you need the full functionality, provide a custom I\+O\+System to make \hyperlink{class_assimp}{Assimp} find these files. \hypertarget{namespaceassimp_1_1api_a49a7ab3400c42b9fcd6b36299dba672e}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene}$\ast$ assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{uint}]{p\+Flags}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a49a7ab3400c42b9fcd6b36299dba672e}
+Apply post-\/processing to an already-\/imported scene.
+
+This is strictly equivalent to calling {\ttfamily \hyperlink{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}{ai\+Import\+File()}} or {\ttfamily ai\+Import\+File\+Ex()} with the same flags. However, you can use this separate function to inspect the imported scene first to fine-\/tune your post-\/processing setup.
+
+Params\+: p\+Scene = Scene to work on. p\+Flags = Provide a bitwise combination of the {\ttfamily ai\+Post\+Process\+Steps} flags.
+
+Returns\+: A pointer to the post-\/processed data. Post processing is done in-\/place, meaning this is still the same {\ttfamily \hyperlink{structai_scene}{ai\+Scene}} which you passed for p\+Scene. However, if post-\/processing failed, the scene could now be null. That's quite a rare case, post processing steps are not really designed to fail. To be exact, {\ttfamily ai\+Process.\+Validate\+D\+S} is currently the only post processing step which can actually cause the scene to be reset to null. \hypertarget{namespaceassimp_1_1api_a7e46143acbded1341d1e1f8eec2384bb}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Log\+Stream} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{ai\+Default\+Log\+Stream}]{p\+Streams, }
+\item[{char $\ast$}]{file}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a7e46143acbded1341d1e1f8eec2384bb}
+Get one of the predefined log streams. This is the quick'n'easy solution to access \hyperlink{class_assimp}{Assimp}'s log system. Attaching a log stream can slightly reduce \hyperlink{class_assimp}{Assimp}'s overall import performance.
+
+\subsubsection*{Examples\+: }
+
+\hyperlink{structai_log_stream}{ai\+Log\+Stream} stream = ai\+Get\+Predefined\+Log\+Stream( ai\+Default\+Log\+Stream.\+F\+I\+L\+E, \char`\"{}assimp.\+log.\+txt\char`\"{} ); if ( stream.\+callback !is null ) \{ ai\+Attach\+Log\+Stream( \&stream ); \subsubsection*{\} }
+
+Params\+: p\+Streams = The log stream destination. file = Solely for the {\ttfamily ai\+Default\+Log\+Stream.\+F\+I\+L\+E} flag\+: specifies the file to write to. Pass null for all other flags.
+
+Returns\+: The log stream, null if something went wrong. \hypertarget{namespaceassimp_1_1api_ab06b574647d60f0bcc3840a3967cb841}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Log\+Stream} $\ast$}]{stream}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_ab06b574647d60f0bcc3840a3967cb841}
+Attach a custom log stream to the libraries' logging system.
+
+Attaching a log stream can slightly reduce \hyperlink{class_assimp}{Assimp}'s overall import performance. Multiple log-\/streams can be attached.
+
+Params\+: stream = Describes the new log stream.
+
+Note\+: To ensure proper destruction of the logging system, you need to manually call {\ttfamily ai\+Detach\+Log\+Stream()} on every single log stream you attach. Alternatively, {\ttfamily \hyperlink{_assimp_8cpp_a8f1fe2e8ccc5f93484098114ae7071bf}{ai\+Detach\+All\+Log\+Streams()}} is provided.
+
+Detach a custom log stream from the libraries' logging system.
+
+This is the counterpart of \#ai\+Attach\+Predefined\+Log\+Stream. If you attached a stream, don't forget to detach it again.
+
+Params\+: stream = The log stream to be detached.
+
+Returns\+: {\ttfamily ai\+Return.\+S\+U\+C\+C\+E\+S\+S} if the log stream has been detached successfully.
+
+See\+: {\ttfamily ai\+Detach\+All\+Log\+Streams} \hypertarget{namespaceassimp_1_1api_aff9b0c24a61697a57cf678f5a1d206eb}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{ai\+Bool}]{d}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_aff9b0c24a61697a57cf678f5a1d206eb}
+Enable verbose logging.
+
+Verbose logging includes debug-\/related stuff and detailed import statistics. This can have severe impact on import performance and memory consumption. However, it might be useful to find out why a file is not read correctly.
+
+Param\+: d = Whether verbose logging should be enabled. \hypertarget{namespaceassimp_1_1api_ae17b92a994f8dbb3b9d1ab26db7a7af4}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}uint assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_ae17b92a994f8dbb3b9d1ab26db7a7af4}
+Detach all active log streams from the libraries' logging system.
+
+This ensures that the logging system is terminated properly and all resources allocated by it are actually freed. If you attached a stream, don't forget to detach it again.
+
+See\+: {\ttfamily ai\+Attach\+Log\+Stream}, {\ttfamily ai\+Detach\+Log\+Stream}
+
+Returns the error text of the last failed import process.
+
+Returns\+: A textual description of the error that occurred at the last importing process. null if there was no error. There can't be an error if you got a non-\/null {\ttfamily \hyperlink{structai_scene}{ai\+Scene}} from {\ttfamily \hyperlink{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}{ai\+Import\+File()}/ai\+Import\+File\+Ex()/ai\+Apply\+Post\+Processing()}.
+
+Returns a string with legal copyright and licensing information about \hyperlink{class_assimp}{Assimp}.
+
+The string may include multiple lines.
+
+Returns\+: Pointer to static string.
+
+Returns the current minor version number of the \hyperlink{class_assimp}{Assimp} library.
+
+Returns\+: Minor version of the \hyperlink{class_assimp}{Assimp} library.
+
+Returns the current major version number of the \hyperlink{class_assimp}{Assimp} library.
+
+Returns\+: Major version of the \hyperlink{class_assimp}{Assimp} library.
+
+Returns the repository revision of the \hyperlink{class_assimp}{Assimp} library.
+
+Returns\+: S\+V\+N Repository revision number of the \hyperlink{class_assimp}{Assimp} library.
+
+Returns the flags \hyperlink{class_assimp}{Assimp} was compiled with.
+
+Returns\+: Any bitwise combination of the A\+S\+S\+I\+M\+P\+\_\+\+C\+F\+L\+A\+G\+S\+\_\+xxx constants. \hypertarget{namespaceassimp_1_1api_a5400a71b2a39a12fb0b227326ce3ba04}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a5400a71b2a39a12fb0b227326ce3ba04}
+Releases all resources associated with the given import process.
+
+Call this function after you're done with the imported data.
+
+Params\+: p\+Scene = The imported data to release. null is a valid value. \hypertarget{namespaceassimp_1_1api_a2ebfde55e5343eecec6442cf6ad4b542}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}ai\+Bool assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sz\+Extension}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a2ebfde55e5343eecec6442cf6ad4b542}
+Returns whether a given file extension is supported by this \hyperlink{class_assimp}{Assimp} build.
+
+Params\+: sz\+Extension = Extension for which to query support. Must include a leading dot '.'. Example\+: \char`\"{}.\+3ds\char`\"{}, \char`\"{}.\+md3\char`\"{}
+
+Returns\+: {\ttfamily T\+R\+U\+E} if the file extension is supported. \hypertarget{namespaceassimp_1_1api_a57acdbc9025a5c6ee4175a17d51167ee}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+String} $\ast$}]{sz\+Out}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a57acdbc9025a5c6ee4175a17d51167ee}
+Gets a list of all file extensions supported by A\+S\+S\+I\+M\+P.
+
+Format of the list\+: \char`\"{}$\ast$.\+3ds;$\ast$.\+obj;$\ast$.\+dae\char`\"{}.
+
+If a file extension is contained in the list this does, of course, not mean that \hyperlink{class_assimp}{Assimp} is able to load all files with this extension.
+
+Params\+: sz\+Out = String to receive the extension list. null is not a valid parameter. \hypertarget{namespaceassimp_1_1api_ad2c942ec30e33d9ca7b6c8af7ca9d510}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+In, }
+\item[{{\bf ai\+Memory\+Info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_ad2c942ec30e33d9ca7b6c8af7ca9d510}
+Gets the storage required by an imported asset
+
+Params\+: p\+In = Asset to query storage size for. info = Data structure to be filled. \hypertarget{namespaceassimp_1_1api_ae5aec5ad6156334848d90dc2f6395b15}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sz\+Name, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_ae5aec5ad6156334848d90dc2f6395b15}
+Sets an integer property.
+
+Properties are always shared by all imports. It is not possible to specify them per import.
+
+Params\+: sz\+Name = Name of the configuration property to be set. All supported public properties are defined in the {\ttfamily config} module. value = New value for the property. \hypertarget{namespaceassimp_1_1api_a5a00f4be28c9dec7bbdc4f85b9d253de}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sz\+Name, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a5a00f4be28c9dec7bbdc4f85b9d253de}
+Sets a floating-\/point property.
+
+Properties are always shared by all imports. It is not possible to specify them per import.
+
+Params\+: sz\+Name = Name of the configuration property to be set. All supported public properties are defined in the {\ttfamily config} module. value = New value for the property. \hypertarget{namespaceassimp_1_1api_a4acf426c7e49cb0e1a7e7f485c73fbb6}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sz\+Name, }
+\item[{{\bf ai\+String} $\ast$}]{st}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a4acf426c7e49cb0e1a7e7f485c73fbb6}
+Sets a string property.
+
+Properties are always shared by all imports. It is not possible to specify them per import.
+
+Params\+: sz\+Name = Name of the configuration property to be set. All supported public properties are defined in the {\ttfamily config} module. st = New value for the property. \hypertarget{namespaceassimp_1_1api_a97b2f6d110170d49f686d7c1d2e9f003}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Quaternion} $\ast$}]{quat, }
+\item[{{\bf ai\+Matrix3x3} $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a97b2f6d110170d49f686d7c1d2e9f003}
+Constructs a quaternion from a 3x3 rotation matrix.
+
+Params\+: quat = Receives the output quaternion. mat = \hyperlink{class_matrix}{Matrix} to 'quaternionize'. \hypertarget{namespaceassimp_1_1api_aa65fdf29e38e679125b128d514d06365}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Matrix4x4} $\ast$}]{mat, }
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{scaling, }
+\item[{{\bf ai\+Quaternion} $\ast$}]{rotation, }
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{position}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_aa65fdf29e38e679125b128d514d06365}
+Decomposes a transformation matrix into its rotational, translational and scaling components.
+
+Params\+: mat = \hyperlink{class_matrix}{Matrix} to decompose. scaling = Receives the scaling component. rotation = Receives the rotational component. position = Receives the translational component. \hypertarget{namespaceassimp_1_1api_a629a05a39dc232ccf6ce5eb87e5ad24e}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Matrix4x4} $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a629a05a39dc232ccf6ce5eb87e5ad24e}
+Transposes a 4x4 matrix (in-\/place).
+
+Params\+: mat = The matrix to be transposed.
+
+Constructs a 4x4 identity matrix.
+
+Params\+: mat = \hyperlink{class_matrix}{Matrix} to receive its personal identity. \hypertarget{namespaceassimp_1_1api_abcc340afe1c4c8f3ab5fddabbc107c07}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Matrix3x3} $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_abcc340afe1c4c8f3ab5fddabbc107c07}
+Transposes a 3x3 matrix (in-\/place).
+
+Params\+: mat = The matrix to be transposed.
+
+Constructs a 3x3 identity matrix.
+
+Params\+: mat = \hyperlink{class_matrix}{Matrix} to receive its personal identity. \hypertarget{namespaceassimp_1_1api_a005b01872418f688d89ac0fd00f0e134}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{vec, }
+\item[{{\bf ai\+Matrix3x3} $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a005b01872418f688d89ac0fd00f0e134}
+Transforms a vector by a 3x3 matrix (in-\/place).
+
+Params\+: vec = Vector to be transformed. mat = \hyperlink{class_matrix}{Matrix} to transform the vector with. \hypertarget{namespaceassimp_1_1api_a6edacefaa630b4e7c4a1b1d20745a342}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Vector3\+D} $\ast$}]{vec, }
+\item[{{\bf ai\+Matrix4x4} $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a6edacefaa630b4e7c4a1b1d20745a342}
+Transforms a vector by a 4x4 matrix (in-\/place).
+
+Params\+: vec = Vector to be transformed. mat = \hyperlink{class_matrix}{Matrix} to transform the vector with. \hypertarget{namespaceassimp_1_1api_aa5e391cbe1d1a6786024ef39f32e4ead}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Matrix4x4} $\ast$}]{dst, }
+\item[{{\bf ai\+Matrix4x4} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_aa5e391cbe1d1a6786024ef39f32e4ead}
+Multiplies two 4x4 matrices.
+
+Params\+: dst = First factor, receives result. src = \hyperlink{class_matrix}{Matrix} to be multiplied with 'dst'. \hypertarget{namespaceassimp_1_1api_a61ae379d4d7546884e27fc3d30c26e51}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}void assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Matrix3x3} $\ast$}]{dst, }
+\item[{{\bf ai\+Matrix3x3} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a61ae379d4d7546884e27fc3d30c26e51}
+Multiplies two 3x3 matrices.
+
+Params\+: dst = First factor, receives result. src = \hyperlink{class_matrix}{Matrix} to be multiplied with 'dst'. \hypertarget{namespaceassimp_1_1api_aa99170042116ae58ae78b61c7a571730}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat, }
+\item[{char $\ast$}]{p\+Key, }
+\item[{uint}]{type, }
+\item[{uint}]{index, }
+\item[{{\bf ai\+Material\+Property} $\ast$$\ast$}]{p\+Prop\+Out}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_aa99170042116ae58ae78b61c7a571730}
+Retrieves a material property with a specific key from the material.
+
+Params\+: p\+Mat = Pointer to the input material. May not be null. p\+Key = Key to search for. One of the {\ttfamily A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+X\+X\+X} constants. type = Specifies the {\ttfamily ai\+Texture\+Type} of the texture to be retrieved, 0 for non-\/texture properties. index = \hyperlink{struct_index}{Index} of the texture to be retrieved, 0 for non-\/texture properties. p\+Prop\+Out = Pointer to receive a pointer to a valid {\ttfamily \hyperlink{classai_material_property}{ai\+Material\+Property}} structure or null if the key has not been found. \hypertarget{namespaceassimp_1_1api_a62910ae5faa1f84e21969a0073dd63c4}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat, }
+\item[{char $\ast$}]{p\+Key, }
+\item[{uint}]{type, }
+\item[{uint}]{index, }
+\item[{float $\ast$}]{p\+Out, }
+\item[{uint $\ast$}]{p\+Max = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a62910ae5faa1f84e21969a0073dd63c4}
+Retrieves a single float value or an array of float values from the material.
+
+\subsubsection*{Examples\+: }
+
+const F\+L\+O\+A\+T\+S\+\_\+\+I\+N\+\_\+\+U\+V\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M = ( ai\+U\+V\+Transform.\+sizeof / float.\+sizeof ); uint values\+Read = F\+L\+O\+A\+T\+S\+\_\+\+I\+N\+\_\+\+U\+V\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M; bool success = ( ai\+Get\+Material\+Float\+Array( \&material, A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+U\+V\+T\+R\+A\+N\+S\+F\+O\+R\+M, ai\+Texture\+Type.\+D\+I\+F\+F\+U\+S\+E, 0, cast( float$\ast$ ) \&trafo, \&values\+Read ) == ai\+Return.\+S\+U\+C\+C\+E\+S\+S ) \&\& \subsubsection*{( values\+Read == F\+L\+O\+A\+T\+S\+\_\+\+I\+N\+\_\+\+U\+V\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M ); }
+
+Params\+: p\+Mat = Pointer to the input material. May not be null. p\+Key = Key to search for. One of the A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+X\+X\+X constants. type = Specifies the {\ttfamily ai\+Texture\+Type} of the texture to be retrieved, 0 for non-\/texture properties. index = \hyperlink{struct_index}{Index} of the texture to be retrieved, 0 for non-\/texture properties. p\+Out = Pointer to a buffer to receive the result. p\+Max = Specifies the size of the given buffer in floats. Receives the number of values (not bytes!) read. null to read a scalar property.
+
+Returns\+: Specifies whether the key has been found. If not, the output arrays remains unmodified and p\+Max is set to 0. \hypertarget{namespaceassimp_1_1api_a3b95f7381bd9863158c5028b69f0c7b4}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat, }
+\item[{char $\ast$}]{p\+Key, }
+\item[{uint}]{type, }
+\item[{uint}]{index, }
+\item[{int $\ast$}]{p\+Out, }
+\item[{uint $\ast$}]{p\+Max = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a3b95f7381bd9863158c5028b69f0c7b4}
+Retrieves a single integer value or an array of integer values from the material.
+
+See\+: {\ttfamily ai\+Get\+Material\+Float\+Array()} \hypertarget{namespaceassimp_1_1api_a4122546dbca7e31961370455a7a6ec14}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat, }
+\item[{char $\ast$}]{p\+Key, }
+\item[{uint}]{type, }
+\item[{uint}]{index, }
+\item[{{\bf ai\+Color4\+D} $\ast$}]{p\+Out}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a4122546dbca7e31961370455a7a6ec14}
+Retrieves a color value from the material.
+
+See\+: {\ttfamily ai\+Get\+Material\+Float\+Array()} \hypertarget{namespaceassimp_1_1api_acfb6b2f24a80524e35f5796745a0c9fa}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat, }
+\item[{char $\ast$}]{p\+Key, }
+\item[{uint}]{type, }
+\item[{uint}]{index, }
+\item[{{\bf ai\+String} $\ast$}]{p\+Out}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_acfb6b2f24a80524e35f5796745a0c9fa}
+Retrieves a string value from the material.
+
+See\+: {\ttfamily ai\+Get\+Material\+Float\+Array()} \hypertarget{namespaceassimp_1_1api_af57fa984142989f4a315d32fd98412d1}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}uint assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat, }
+\item[{{\bf ai\+Texture\+Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_af57fa984142989f4a315d32fd98412d1}
+Get the number of textures for a particular texture type.
+
+Params\+: p\+Mat = Pointer to the input material. May not be N\+U\+L\+L type = Texture type to check for
+
+Returns\+: Number of textures for this type. \hypertarget{namespaceassimp_1_1api_a884bcd71df61b623fe8c9ca06c3e7fac}{\index{assimp\+::api@{assimp\+::api}!function@{function}}
+\index{function@{function}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Return} assimp\+::api\+::function (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{mat, }
+\item[{{\bf ai\+Texture\+Type}}]{type, }
+\item[{uint}]{index, }
+\item[{{\bf ai\+String} $\ast$}]{path, }
+\item[{{\bf ai\+Texture\+Mapping} $\ast$}]{mapping = {\ttfamily {\bf null}}, }
+\item[{uint $\ast$}]{uvindex = {\ttfamily {\bf null}}, }
+\item[{float $\ast$}]{blend = {\ttfamily {\bf null}}, }
+\item[{{\bf ai\+Texture\+Op} $\ast$}]{op = {\ttfamily {\bf null}}, }
+\item[{{\bf ai\+Texture\+Map\+Mode} $\ast$}]{mapmode = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{namespaceassimp_1_1api_a884bcd71df61b623fe8c9ca06c3e7fac}
+Helper function to get all values pertaining to a particular texture slot from a material structure.
+
+This function is provided just for convenience. You could also read the texture by parsing all of its properties manually. This function bundles all of them in a huge function monster.
+
+Params\+: mat = Pointer to the input material. May not be null. type = Specifies the texture stack ({\ttfamily ai\+Texture\+Type}) to read from. index = \hyperlink{struct_index}{Index} of the texture. The function fails if the requested index is not available for this texture type. {\ttfamily ai\+Get\+Material\+Texture\+Count()} can be used to determine the number of textures in a particular texture stack. path = Receives the output path. null is not a valid value. mapping = Recieves the texture mapping mode to be used. Pass null if you are not interested in this information. uvindex = For U\+V-\/mapped textures\+: receives the index of the U\+V source channel. Unmodified otherwise. Pass null if you are not interested in this information. blend = Receives the blend factor for the texture. Pass null if you are not interested in this information. op = Receives the texture blend operation to be perform between this texture and the previous texture. Pass null if you are not interested in this information. mapmode = Receives the mapping modes to be used for the texture. Pass a pointer to an array of two ai\+Texture\+Map\+Mode's (one for each axis, U\+V order) or null if you are not interested in this information.
+
+Returns\+: {\ttfamily ai\+Return.\+S\+U\+C\+C\+E\+S\+S} on success, otherwise something else. 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceassimp_1_1api_a2c26953d3d9bd2ac94f7cc060f2bd859}{\index{assimp\+::api@{assimp\+::api}!ai\+Get\+Material\+Float@{ai\+Get\+Material\+Float}}
+\index{ai\+Get\+Material\+Float@{ai\+Get\+Material\+Float}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{ai\+Get\+Material\+Float}]{\setlength{\rightskip}{0pt plus 5cm}alias ai\+Get\+Material\+Float\+Array assimp\+::api\+::ai\+Get\+Material\+Float}}\label{namespaceassimp_1_1api_a2c26953d3d9bd2ac94f7cc060f2bd859}
+Convenience alias for {\ttfamily ai\+Get\+Material\+Float\+Array()}. \hypertarget{namespaceassimp_1_1api_aa216865c75da2c28fc3d77471b00c3ea}{\index{assimp\+::api@{assimp\+::api}!ai\+Get\+Material\+Integer@{ai\+Get\+Material\+Integer}}
+\index{ai\+Get\+Material\+Integer@{ai\+Get\+Material\+Integer}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{ai\+Get\+Material\+Integer}]{\setlength{\rightskip}{0pt plus 5cm}alias ai\+Get\+Material\+Integer\+Array assimp\+::api\+::ai\+Get\+Material\+Integer}}\label{namespaceassimp_1_1api_aa216865c75da2c28fc3d77471b00c3ea}
+Convenience alias for {\ttfamily ai\+Get\+Material\+Integer\+Array()}. \hypertarget{namespaceassimp_1_1api_a6a69c3a6cfdb38c9939fabe50d23b987}{\index{assimp\+::api@{assimp\+::api}!C@{C}}
+\index{C@{C}!assimp\+::api@{assimp\+::api}}
+\subsubsection[{C}]{\setlength{\rightskip}{0pt plus 5cm}assimp\+::api\+::\+C}}\label{namespaceassimp_1_1api_a6a69c3a6cfdb38c9939fabe50d23b987}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+   
+   \hyperlink{structai_scene}{aiScene}* \textcolor{keyword}{function}( \textcolor{keywordtype}{char}* pFile, uint pFile ) \hyperlink{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}{aiImportFile}
+\end{DoxyCode}

@@ -1,0 +1,93 @@
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e}{\section{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E Class Reference}
+\label{class_g_i_m___b_o_x___t_r_e_e}\index{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E@{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E}}
+}
+
+
+Basic \hyperlink{class_box}{Box} tree structure.  
+
+
+
+
+{\ttfamily \#include $<$gim\+\_\+box\+\_\+set.\+h$>$}
+
+
+
+Collaboration diagram for G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E\+:
+\subsection*{Public Member Functions}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_g_i_m___b_o_x___t_r_e_e_af76fa1d2f5e20c8979120fa72cf7575f}{build\+\_\+tree} (\hyperlink{classgim__array}{gim\+\_\+array}$<$ \hyperlink{struct_g_i_m___a_a_b_b___d_a_t_a}{G\+I\+M\+\_\+\+A\+A\+B\+B\+\_\+\+D\+A\+T\+A} $>$ \&primitive\+\_\+boxes)
+\begin{DoxyCompactList}\small\item\em stackless build tree \end{DoxyCompactList}\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_aa016c5ef3669d464ed15eb18b7308b62}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries clear\+Nodes} ()}\label{class_g_i_m___b_o_x___t_r_e_e_aa016c5ef3669d464ed15eb18b7308b62}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_aca02d76bac47e019fd728a5871951d14}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E G\+U\+I\+N\+T \hyperlink{class_g_i_m___b_o_x___t_r_e_e_aca02d76bac47e019fd728a5871951d14}{get\+Node\+Count} () const }\label{class_g_i_m___b_o_x___t_r_e_e_aca02d76bac47e019fd728a5871951d14}
+
+\begin{DoxyCompactList}\small\item\em node count \end{DoxyCompactList}\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_acdbffa778ffd8cc69f5c17f5540c9fd1}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{class_g_i_m___b_o_x___t_r_e_e_acdbffa778ffd8cc69f5c17f5540c9fd1}{is\+Leaf\+Node} (G\+U\+I\+N\+T nodeindex) const }\label{class_g_i_m___b_o_x___t_r_e_e_acdbffa778ffd8cc69f5c17f5540c9fd1}
+
+\begin{DoxyCompactList}\small\item\em tells if the node is a leaf \end{DoxyCompactList}\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_a67325a5db7d87791068ef278e772f756}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E G\+U\+I\+N\+T {\bfseries get\+Node\+Data} (G\+U\+I\+N\+T nodeindex) const }\label{class_g_i_m___b_o_x___t_r_e_e_a67325a5db7d87791068ef278e772f756}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_afed3ac69e87861412130e5680bdc3c95}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries get\+Node\+Bound} (G\+U\+I\+N\+T nodeindex, \hyperlink{class_g_i_m___a_a_b_b}{G\+I\+M\+\_\+\+A\+A\+B\+B} \&bound) const }\label{class_g_i_m___b_o_x___t_r_e_e_afed3ac69e87861412130e5680bdc3c95}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_a910f36323977e36f0e911a09b47fe582}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries set\+Node\+Bound} (G\+U\+I\+N\+T nodeindex, const \hyperlink{class_g_i_m___a_a_b_b}{G\+I\+M\+\_\+\+A\+A\+B\+B} \&bound)}\label{class_g_i_m___b_o_x___t_r_e_e_a910f36323977e36f0e911a09b47fe582}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_ae126d08b3f3ecf3a4e8263f663e3659c}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E G\+U\+I\+N\+T {\bfseries get\+Left\+Node\+Index} (G\+U\+I\+N\+T nodeindex) const }\label{class_g_i_m___b_o_x___t_r_e_e_ae126d08b3f3ecf3a4e8263f663e3659c}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_a71dd3e4f8634003d31b74dcee051d668}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E G\+U\+I\+N\+T {\bfseries get\+Right\+Node\+Index} (G\+U\+I\+N\+T nodeindex) const }\label{class_g_i_m___b_o_x___t_r_e_e_a71dd3e4f8634003d31b74dcee051d668}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_ac4a36fb6600fb0c549153627c883b262}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E G\+U\+I\+N\+T {\bfseries get\+Scape\+Node\+Index} (G\+U\+I\+N\+T nodeindex) const }\label{class_g_i_m___b_o_x___t_r_e_e_ac4a36fb6600fb0c549153627c883b262}
+
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_ac9f0e8f8b9b1998bf126001afbd372c9}{G\+U\+I\+N\+T {\bfseries \+\_\+sort\+\_\+and\+\_\+calc\+\_\+splitting\+\_\+index} (\hyperlink{classgim__array}{gim\+\_\+array}$<$ \hyperlink{struct_g_i_m___a_a_b_b___d_a_t_a}{G\+I\+M\+\_\+\+A\+A\+B\+B\+\_\+\+D\+A\+T\+A} $>$ \&primitive\+\_\+boxes, G\+U\+I\+N\+T start\+Index, G\+U\+I\+N\+T end\+Index, G\+U\+I\+N\+T split\+Axis)}\label{class_g_i_m___b_o_x___t_r_e_e_ac9f0e8f8b9b1998bf126001afbd372c9}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_a36da9ee25d328a3ebd9696c3e3ce8973}{G\+U\+I\+N\+T {\bfseries \+\_\+calc\+\_\+splitting\+\_\+axis} (\hyperlink{classgim__array}{gim\+\_\+array}$<$ \hyperlink{struct_g_i_m___a_a_b_b___d_a_t_a}{G\+I\+M\+\_\+\+A\+A\+B\+B\+\_\+\+D\+A\+T\+A} $>$ \&primitive\+\_\+boxes, G\+U\+I\+N\+T start\+Index, G\+U\+I\+N\+T end\+Index)}\label{class_g_i_m___b_o_x___t_r_e_e_a36da9ee25d328a3ebd9696c3e3ce8973}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_af1432fe0768138ad9749b8f45cea7a47}{void {\bfseries \+\_\+build\+\_\+sub\+\_\+tree} (\hyperlink{classgim__array}{gim\+\_\+array}$<$ \hyperlink{struct_g_i_m___a_a_b_b___d_a_t_a}{G\+I\+M\+\_\+\+A\+A\+B\+B\+\_\+\+D\+A\+T\+A} $>$ \&primitive\+\_\+boxes, G\+U\+I\+N\+T start\+Index, G\+U\+I\+N\+T end\+Index)}\label{class_g_i_m___b_o_x___t_r_e_e_af1432fe0768138ad9749b8f45cea7a47}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_ad175db1b709c3fd9835ce8423af847fd}{G\+U\+I\+N\+T {\bfseries m\+\_\+num\+\_\+nodes}}\label{class_g_i_m___b_o_x___t_r_e_e_ad175db1b709c3fd9835ce8423af847fd}
+
+\item 
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_a6dd738f6725e3595eaf9f2fa73615868}{\hyperlink{classgim__array}{gim\+\_\+array}$<$ \hyperlink{struct_g_i_m___b_o_x___t_r_e_e___n_o_d_e}{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E\+\_\+\+N\+O\+D\+E} $>$ {\bfseries m\+\_\+node\+\_\+array}}\label{class_g_i_m___b_o_x___t_r_e_e_a6dd738f6725e3595eaf9f2fa73615868}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic \hyperlink{class_box}{Box} tree structure. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_i_m___b_o_x___t_r_e_e_af76fa1d2f5e20c8979120fa72cf7575f}{\index{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E@{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E}!build\+\_\+tree@{build\+\_\+tree}}
+\index{build\+\_\+tree@{build\+\_\+tree}!G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E@{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E}}
+\subsubsection[{build\+\_\+tree}]{\setlength{\rightskip}{0pt plus 5cm}void G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+T\+R\+E\+E\+::build\+\_\+tree (
+\begin{DoxyParamCaption}
+\item[{{\bf gim\+\_\+array}$<$ {\bf G\+I\+M\+\_\+\+A\+A\+B\+B\+\_\+\+D\+A\+T\+A} $>$ \&}]{primitive\+\_\+boxes}
+\end{DoxyParamCaption}
+)}}\label{class_g_i_m___b_o_x___t_r_e_e_af76fa1d2f5e20c8979120fa72cf7575f}
+
+
+stackless build tree 
+
+prototype functions for box tree management 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/\hyperlink{gim__box__set_8h}{gim\+\_\+box\+\_\+set.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+box\+\_\+set.\+cpp\end{DoxyCompactItemize}

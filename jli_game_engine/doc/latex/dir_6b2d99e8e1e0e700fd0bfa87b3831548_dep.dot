@@ -1,0 +1,33 @@
+digraph "PVR/SDK_3.4/Examples/Beginner" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9235ba7a2b8ccfd2cbbe5635d248230f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Examples" fontname="Helvetica", fontsize="10", URL="dir_9235ba7a2b8ccfd2cbbe5635d248230f.html"]
+  subgraph clusterdir_6b2d99e8e1e0e700fd0bfa87b3831548 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6b2d99e8e1e0e700fd0bfa87b3831548.html"];
+    dir_6b2d99e8e1e0e700fd0bfa87b3831548 [shape=plaintext label="Beginner"];
+    dir_f46708bf406ba7a3fe768157668dddeb [shape=box label="01_HelloAPI" color="red" fillcolor="white" style="filled" URL="dir_f46708bf406ba7a3fe768157668dddeb.html"];
+    dir_e78ef17aad7a74cf84acc95959cc9eca [shape=box label="02_IntroducingPVRShell" color="red" fillcolor="white" style="filled" URL="dir_e78ef17aad7a74cf84acc95959cc9eca.html"];
+    dir_db782e4467006490b210f2a95dfb96cd [shape=box label="03_Texturing" color="red" fillcolor="white" style="filled" URL="dir_db782e4467006490b210f2a95dfb96cd.html"];
+    dir_77dd74aec83bdca5678c9aa13784670a [shape=box label="04_BasicTnL" color="red" fillcolor="white" style="filled" URL="dir_77dd74aec83bdca5678c9aa13784670a.html"];
+    dir_ba8888ad618c586d1cf8cef2f4f714e1 [shape=box label="05_IntroducingPVRTools" color="red" fillcolor="white" style="filled" URL="dir_ba8888ad618c586d1cf8cef2f4f714e1.html"];
+    dir_242009e3774cc8e12260614f8a4062e4 [shape=box label="06_IntroducingPrint3D" color="red" fillcolor="white" style="filled" URL="dir_242009e3774cc8e12260614f8a4062e4.html"];
+    dir_58391c7290aaf0cc42ece35a24b8894a [shape=box label="07_IntroducingPOD" color="red" fillcolor="white" style="filled" URL="dir_58391c7290aaf0cc42ece35a24b8894a.html"];
+    dir_18fcbc7c6a9586eeee3966c47c3dd3ab [shape=box label="08_IntroducingPFX" color="red" fillcolor="white" style="filled" URL="dir_18fcbc7c6a9586eeee3966c47c3dd3ab.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_77dd74aec83bdca5678c9aa13784670a->dir_de41955a66a331b990d60d5323117a97 [headlabel="3", labeldistance=1.5 headhref="dir_001180_000133.html"];
+  dir_58391c7290aaf0cc42ece35a24b8894a->dir_de41955a66a331b990d60d5323117a97 [headlabel="3", labeldistance=1.5 headhref="dir_000624_000133.html"];
+  dir_58391c7290aaf0cc42ece35a24b8894a->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="3", labeldistance=1.5 headhref="dir_000624_001762.html"];
+  dir_db782e4467006490b210f2a95dfb96cd->dir_de41955a66a331b990d60d5323117a97 [headlabel="3", labeldistance=1.5 headhref="dir_001158_000133.html"];
+  dir_18fcbc7c6a9586eeee3966c47c3dd3ab->dir_de41955a66a331b990d60d5323117a97 [headlabel="2", labeldistance=1.5 headhref="dir_000747_000133.html"];
+  dir_18fcbc7c6a9586eeee3966c47c3dd3ab->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="2", labeldistance=1.5 headhref="dir_000747_001762.html"];
+  dir_ba8888ad618c586d1cf8cef2f4f714e1->dir_de41955a66a331b990d60d5323117a97 [headlabel="3", labeldistance=1.5 headhref="dir_000280_000133.html"];
+  dir_ba8888ad618c586d1cf8cef2f4f714e1->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="3", labeldistance=1.5 headhref="dir_000280_001762.html"];
+  dir_e78ef17aad7a74cf84acc95959cc9eca->dir_de41955a66a331b990d60d5323117a97 [headlabel="3", labeldistance=1.5 headhref="dir_001136_000133.html"];
+  dir_242009e3774cc8e12260614f8a4062e4->dir_de41955a66a331b990d60d5323117a97 [headlabel="3", labeldistance=1.5 headhref="dir_001220_000133.html"];
+  dir_242009e3774cc8e12260614f8a4062e4->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="3", labeldistance=1.5 headhref="dir_001220_001762.html"];
+}

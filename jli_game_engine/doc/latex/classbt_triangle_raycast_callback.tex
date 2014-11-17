@@ -1,0 +1,55 @@
+\hypertarget{classbt_triangle_raycast_callback}{\section{bt\+Triangle\+Raycast\+Callback Class Reference}
+\label{classbt_triangle_raycast_callback}\index{bt\+Triangle\+Raycast\+Callback@{bt\+Triangle\+Raycast\+Callback}}
+}
+
+
+Inheritance diagram for bt\+Triangle\+Raycast\+Callback\+:
+
+
+Collaboration diagram for bt\+Triangle\+Raycast\+Callback\+:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_triangle_raycast_callback_a561b385fd82b6b972fb6d206a42fc478}{enum {\bfseries E\+Flags} \{ \\*
+{\bfseries k\+F\+\_\+\+None} = 0, 
+{\bfseries k\+F\+\_\+\+Filter\+Backfaces} = 1 $<$$<$ 0, 
+{\bfseries k\+F\+\_\+\+Keep\+Unflipped\+Normal} = 1 $<$$<$ 1, 
+{\bfseries k\+F\+\_\+\+Use\+Sub\+Simplex\+Convex\+Cast\+Raytest} = 1 $<$$<$ 2, 
+\\*
+{\bfseries k\+F\+\_\+\+Terminator} = 0x\+F\+F\+F\+F\+F\+F\+F\+F
+ \}}\label{classbt_triangle_raycast_callback_a561b385fd82b6b972fb6d206a42fc478}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_triangle_raycast_callback_acfd6e50b725eedde2c5054d877a679fc}{{\bfseries bt\+Triangle\+Raycast\+Callback} (const bt\+Vector3 \&from, const bt\+Vector3 \&to, unsigned int flags=0)}\label{classbt_triangle_raycast_callback_acfd6e50b725eedde2c5054d877a679fc}
+
+\item 
+\hypertarget{classbt_triangle_raycast_callback_abfa22cc0d4b842c1ad9566154f450f1d}{virtual void {\bfseries process\+Triangle} (bt\+Vector3 $\ast$triangle, int part\+Id, int triangle\+Index)}\label{classbt_triangle_raycast_callback_abfa22cc0d4b842c1ad9566154f450f1d}
+
+\item 
+\hypertarget{classbt_triangle_raycast_callback_ae586790c742393f3650261de3a87f738}{virtual bt\+Scalar {\bfseries report\+Hit} (const bt\+Vector3 \&hit\+Normal\+Local, bt\+Scalar hit\+Fraction, int part\+Id, int triangle\+Index)=0}\label{classbt_triangle_raycast_callback_ae586790c742393f3650261de3a87f738}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_triangle_raycast_callback_abeb58bc424f22dda0061939895c76339}{bt\+Vector3 {\bfseries m\+\_\+from}}\label{classbt_triangle_raycast_callback_abeb58bc424f22dda0061939895c76339}
+
+\item 
+\hypertarget{classbt_triangle_raycast_callback_aa322a8ab074226440312548a7512e4bc}{bt\+Vector3 {\bfseries m\+\_\+to}}\label{classbt_triangle_raycast_callback_aa322a8ab074226440312548a7512e4bc}
+
+\item 
+\hypertarget{classbt_triangle_raycast_callback_a62a5d1ff4e30d29aa0de9cc8dcda8911}{unsigned int {\bfseries m\+\_\+flags}}\label{classbt_triangle_raycast_callback_a62a5d1ff4e30d29aa0de9cc8dcda8911}
+
+\item 
+\hypertarget{classbt_triangle_raycast_callback_a3f105a17c84acb05a1ff5a0a3fa9e43a}{bt\+Scalar {\bfseries m\+\_\+hit\+Fraction}}\label{classbt_triangle_raycast_callback_a3f105a17c84acb05a1ff5a0a3fa9e43a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Narrow\+Phase\+Collision/bt\+Raycast\+Callback.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Narrow\+Phase\+Collision/bt\+Raycast\+Callback.\+cpp\end{DoxyCompactItemize}

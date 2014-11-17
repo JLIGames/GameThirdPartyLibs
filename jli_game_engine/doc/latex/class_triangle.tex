@@ -1,0 +1,199 @@
+\hypertarget{class_triangle}{\section{Triangle Class Reference}
+\label{class_triangle}\index{Triangle@{Triangle}}
+}
+
+
+Collaboration diagram for Triangle\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_triangle_ac80e3c2a3d219c8aa81d99af89cae0f9}{inline\+\_\+ \hyperlink{class_triangle_ac80e3c2a3d219c8aa81d99af89cae0f9}{Triangle} ()}\label{class_triangle_ac80e3c2a3d219c8aa81d99af89cae0f9}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_triangle_a1acf1a7a9de668ddf66fc1661ad8cd14}{inline\+\_\+ \hyperlink{class_triangle_a1acf1a7a9de668ddf66fc1661ad8cd14}{Triangle} (const \hyperlink{class_point}{Point} \&p0, const \hyperlink{class_point}{Point} \&p1, const \hyperlink{class_point}{Point} \&p2)}\label{class_triangle_a1acf1a7a9de668ddf66fc1661ad8cd14}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_triangle_a6b07d7c9cfafa6a3422e4f55dd9e28dc}{inline\+\_\+ \hyperlink{class_triangle_a6b07d7c9cfafa6a3422e4f55dd9e28dc}{Triangle} (const \hyperlink{class_triangle}{Triangle} \&triangle)}\label{class_triangle_a6b07d7c9cfafa6a3422e4f55dd9e28dc}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_triangle_ab6a7b5183019a7282955c0c57f1ea98e}{inline\+\_\+ \hyperlink{class_triangle_ab6a7b5183019a7282955c0c57f1ea98e}{$\sim$\+Triangle} ()}\label{class_triangle_ab6a7b5183019a7282955c0c57f1ea98e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_triangle_a474ba7649c0a8fb7013892e7205911c9}{Flip} ()
+\item 
+float \hyperlink{class_triangle_ad3885c40e78c33327a622351dbb07ed7}{Area} () const 
+\item 
+float \hyperlink{class_triangle_a599d3355adcfa507458f8c59127162e7}{Perimeter} () const 
+\item 
+float \hyperlink{class_triangle_af797cac6e93b15df3ff798e66caaeca1}{Compacity} () const 
+\item 
+void \hyperlink{class_triangle_a5a58c9b3d52e65ba3c6bc45a01daa006}{Normal} (\hyperlink{class_point}{Point} \&normal) const 
+\item 
+void \hyperlink{class_triangle_ab3f35b42fe3eda2a5cb24ecb9352327a}{Denormalized\+Normal} (\hyperlink{class_point}{Point} \&normal) const 
+\item 
+void \hyperlink{class_triangle_ab12266ad0b45dfcdb90f73864324c610}{Center} (\hyperlink{class_point}{Point} \&center) const 
+\item 
+\hypertarget{class_triangle_a5fd363cf7a18893fd8e9a9725a51b6bf}{inline\+\_\+ \hyperlink{class_plane}{Plane} {\bfseries Plane\+Equation} () const }\label{class_triangle_a5fd363cf7a18893fd8e9a9725a51b6bf}
+
+\item 
+\hypertarget{class_triangle_a576c2439b17d2df127a309d455da88c2}{\hyperlink{_ice_triangle_8h_a996b8c795aeae8a7613008c9300751ea}{Part\+Val} {\bfseries Test\+Against\+Plane} (const \hyperlink{class_plane}{Plane} \&plane, float epsilon) const }\label{class_triangle_a576c2439b17d2df127a309d455da88c2}
+
+\item 
+\hypertarget{class_triangle_a0ff6ad4b924743fad9d16b7b29847d75}{void {\bfseries Compute\+Moment} (Moment \&m)}\label{class_triangle_a0ff6ad4b924743fad9d16b7b29847d75}
+
+\item 
+float \hyperlink{class_triangle_a013363d89cadfbaa44584c2d4514283a}{Min\+Edge\+Length} () const 
+\item 
+float \hyperlink{class_triangle_a7a67fed5c72f72dff4153d53cca3bf17}{Max\+Edge\+Length} () const 
+\item 
+void \hyperlink{class_triangle_ab7e8470714c153103ad1c1d72841e0cf}{Compute\+Point} (float u, float v, \hyperlink{class_point}{Point} \&pt, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$nearvtx=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const 
+\item 
+\hypertarget{class_triangle_a707f856524937c61b1ada90faf19685c}{void {\bfseries Inflate} (float fat\+\_\+coeff, bool constant\+\_\+border)}\label{class_triangle_a707f856524937c61b1ada90faf19685c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_triangle_a08015a93222f99844caad6aa1bacc990}{\hyperlink{class_point}{Point} \hyperlink{class_triangle_a08015a93222f99844caad6aa1bacc990}{m\+Verts} \mbox{[}3\mbox{]}}\label{class_triangle_a08015a93222f99844caad6aa1bacc990}
+
+\begin{DoxyCompactList}\small\item\em Vertices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an indexed triangle class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08.\+15.\+98 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_triangle_ad3885c40e78c33327a622351dbb07ed7}{\index{Triangle@{Triangle}!Area@{Area}}
+\index{Area@{Area}!Triangle@{Triangle}}
+\subsubsection[{Area}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_ad3885c40e78c33327a622351dbb07ed7}
+Computes the triangle area. \begin{DoxyReturn}{Returns}
+the area 
+\end{DoxyReturn}
+\hypertarget{class_triangle_ab12266ad0b45dfcdb90f73864324c610}{\index{Triangle@{Triangle}!Center@{Center}}
+\index{Center@{Center}!Triangle@{Triangle}}
+\subsubsection[{Center}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Center (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{center}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_ab12266ad0b45dfcdb90f73864324c610}
+Computes the triangle center. 
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{[}out\mbox{]} the computed center \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_triangle_af797cac6e93b15df3ff798e66caaeca1}{\index{Triangle@{Triangle}!Compacity@{Compacity}}
+\index{Compacity@{Compacity}!Triangle@{Triangle}}
+\subsubsection[{Compacity}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Compacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_af797cac6e93b15df3ff798e66caaeca1}
+Computes the triangle compacity. \begin{DoxyReturn}{Returns}
+the compacity 
+\end{DoxyReturn}
+\hypertarget{class_triangle_ab7e8470714c153103ad1c1d72841e0cf}{\index{Triangle@{Triangle}!Compute\+Point@{Compute\+Point}}
+\index{Compute\+Point@{Compute\+Point}!Triangle@{Triangle}}
+\subsubsection[{Compute\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Compute\+Point (
+\begin{DoxyParamCaption}
+\item[{float}]{u, }
+\item[{float}]{v, }
+\item[{{\bf Point} \&}]{pt, }
+\item[{{\bf udword} $\ast$}]{nearvtx = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_ab7e8470714c153103ad1c1d72841e0cf}
+Computes a point on the triangle according to the stabbing information. 
+\begin{DoxyParams}{Parameters}
+{\em u,v} & \mbox{[}in\mbox{]} point's barycentric coordinates \\
+\hline
+{\em pt} & \mbox{[}out\mbox{]} point on triangle \\
+\hline
+{\em nearvtx} & \mbox{[}out\mbox{]} index of nearest vertex \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_triangle_ab3f35b42fe3eda2a5cb24ecb9352327a}{\index{Triangle@{Triangle}!Denormalized\+Normal@{Denormalized\+Normal}}
+\index{Denormalized\+Normal@{Denormalized\+Normal}!Triangle@{Triangle}}
+\subsubsection[{Denormalized\+Normal}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Denormalized\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_ab3f35b42fe3eda2a5cb24ecb9352327a}
+Computes the triangle denormalized normal. 
+\begin{DoxyParams}{Parameters}
+{\em normal} & \mbox{[}out\mbox{]} the computed normal \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_triangle_a474ba7649c0a8fb7013892e7205911c9}{\index{Triangle@{Triangle}!Flip@{Flip}}
+\index{Flip@{Flip}!Triangle@{Triangle}}
+\subsubsection[{Flip}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Flip (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_triangle_a474ba7649c0a8fb7013892e7205911c9}
+Flips the winding order. \hypertarget{class_triangle_a7a67fed5c72f72dff4153d53cca3bf17}{\index{Triangle@{Triangle}!Max\+Edge\+Length@{Max\+Edge\+Length}}
+\index{Max\+Edge\+Length@{Max\+Edge\+Length}!Triangle@{Triangle}}
+\subsubsection[{Max\+Edge\+Length}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Max\+Edge\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_a7a67fed5c72f72dff4153d53cca3bf17}
+Computes the triangle's largest edge length. \begin{DoxyReturn}{Returns}
+the largest edge length 
+\end{DoxyReturn}
+\hypertarget{class_triangle_a013363d89cadfbaa44584c2d4514283a}{\index{Triangle@{Triangle}!Min\+Edge\+Length@{Min\+Edge\+Length}}
+\index{Min\+Edge\+Length@{Min\+Edge\+Length}!Triangle@{Triangle}}
+\subsubsection[{Min\+Edge\+Length}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Min\+Edge\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_a013363d89cadfbaa44584c2d4514283a}
+Computes the triangle moment. 
+\begin{DoxyParams}{Parameters}
+{\em m} & \mbox{[}out\mbox{]} the moment Computes the triangle's smallest edge length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the smallest edge length 
+\end{DoxyReturn}
+\hypertarget{class_triangle_a5a58c9b3d52e65ba3c6bc45a01daa006}{\index{Triangle@{Triangle}!Normal@{Normal}}
+\index{Normal@{Normal}!Triangle@{Triangle}}
+\subsubsection[{Normal}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_a5a58c9b3d52e65ba3c6bc45a01daa006}
+Computes the triangle normal. 
+\begin{DoxyParams}{Parameters}
+{\em normal} & \mbox{[}out\mbox{]} the computed normal \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_triangle_a599d3355adcfa507458f8c59127162e7}{\index{Triangle@{Triangle}!Perimeter@{Perimeter}}
+\index{Perimeter@{Perimeter}!Triangle@{Triangle}}
+\subsubsection[{Perimeter}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Perimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_triangle_a599d3355adcfa507458f8c59127162e7}
+Computes the triangle perimeter. \begin{DoxyReturn}{Returns}
+the perimeter 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\hyperlink{_ice_triangle_8h}{Ice\+Triangle.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\hyperlink{_ice_triangle_8cpp}{Ice\+Triangle.\+cpp}\end{DoxyCompactItemize}

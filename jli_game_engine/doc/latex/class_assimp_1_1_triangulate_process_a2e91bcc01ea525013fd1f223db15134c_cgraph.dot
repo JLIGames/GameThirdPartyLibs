@@ -1,0 +1,26 @@
+digraph "Assimp::TriangulateProcess::TriangulateMesh"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::TriangulateProcess\l::TriangulateMesh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::ArrayBounds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a4bd560c5925177fe3db8c0ef39338b17",tooltip="Find the min/max values of an array of Ts. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::OnLeftSideOfLine2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a8befcf1030197c725d93b98d558bec85"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::GetArea2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#af60598b5a7161a8c918b65fea426c08d"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::PointInTriangle2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#adfc6439fa2efcc68e6e1591411dc3ab8"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::Logger::error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aa8b7c3f56dc4cecfdacc8bb36ba3fac1",tooltip="Writes an error message. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::Logger::OnError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#ae2ea0790aba6125b90af0f2768b0759d",tooltip="Called as a request to write a specific error message. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::Logger::debug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a3b10454ab4c0949f251062376d9c4161",tooltip="Writes a debug message. "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::Logger::OnDebug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aded6996d20f14204877097b88bd5eac6",tooltip="Called as a request to write a specific debug message. "];
+}

@@ -1,0 +1,15 @@
+digraph "assimp/assimp-3.1.1/contrib/cppunit-1.12.1/include/cppunit/ui" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_40752acf4ccf16793dba1f6d6f3c971f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="cppunit" fontname="Helvetica", fontsize="10", URL="dir_40752acf4ccf16793dba1f6d6f3c971f.html"]
+  subgraph clusterdir_921e2aa9ce1863c443d5d38f8742af5a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_921e2aa9ce1863c443d5d38f8742af5a.html"];
+    dir_921e2aa9ce1863c443d5d38f8742af5a [shape=plaintext label="ui"];
+    dir_496426a70a5b7b5880d2e32a1440ec02 [shape=box label="mfc" color="black" fillcolor="white" style="filled" URL="dir_496426a70a5b7b5880d2e32a1440ec02.html"];
+    dir_debbcfc6405c31919938809fbdf42839 [shape=box label="qt" color="black" fillcolor="white" style="filled" URL="dir_debbcfc6405c31919938809fbdf42839.html"];
+    dir_9ee91b54edfe8685b1d26631576aa84b [shape=box label="text" color="black" fillcolor="white" style="filled" URL="dir_9ee91b54edfe8685b1d26631576aa84b.html"];
+  }
+  }
+}

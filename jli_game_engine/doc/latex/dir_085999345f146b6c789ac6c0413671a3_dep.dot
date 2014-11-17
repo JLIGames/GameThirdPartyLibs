@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Beginner/03_Texturing/OGLES/Build/Android/src/com/powervr/OGLESTexturing" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c7b58bf65a3c3b1dc1a6e5532952d877 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_c7b58bf65a3c3b1dc1a6e5532952d877.html"]
+  dir_085999345f146b6c789ac6c0413671a3 [shape=box, label="OGLESTexturing", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_085999345f146b6c789ac6c0413671a3.html"];
+  }
+}

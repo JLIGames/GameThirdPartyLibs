@@ -1,0 +1,11 @@
+digraph "Writing test result"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="Writing test result",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="Executing test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___executing_test.html"];
+  Node1 [label="Browsing collected\l test result",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___browsing_collected_test_result.html"];
+  Node0->Node1 [shape=plaintext, label="TestResultCollector", color="orange", dir="none", style="dashed"];
+  Node0->Node2 [shape=plaintext, label="TextTestRunner", color="orange", dir="none", style="dashed"];
+}

@@ -1,0 +1,41 @@
+digraph "bParse::bMain"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="bParse::bMain",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mFP" ,fontname="Helvetica"];
+  Node2 [label="bParse::bBlenderFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classb_parse_1_1b_blender_file.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="bParse::bFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classb_parse_1_1b_file.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mLibPointers\nmDataPointers" ,fontname="Helvetica"];
+  Node4 [label="btHashMap\< btHashPtr,\l bStructHandle * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_hash_map.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_keyArray" ,fontname="Helvetica"];
+  Node5 [label="btAlignedObjectArray\l\< btHashPtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_next\nm_hashTable" ,fontname="Helvetica"];
+  Node6 [label="btAlignedObjectArray\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_valueArray" ,fontname="Helvetica"];
+  Node7 [label="btAlignedObjectArray\l\< bStructHandle * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mFileDNA\nmMemoryDNA" ,fontname="Helvetica"];
+  Node8 [label="bParse::bDNA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classb_parse_1_1b_d_n_a.html"];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_chunks" ,fontname="Helvetica"];
+  Node9 [label="btAlignedObjectArray\l\< bParse::bChunkInd \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node10 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pointerFixupArray\nm_pointerPtrFixupArray" ,fontname="Helvetica"];
+  Node10 [label="btAlignedObjectArray\l\< char * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node11 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_chunkPtrPtrMap" ,fontname="Helvetica"];
+  Node11 [label="btHashMap\< btHashPtr,\l bParse::bChunkInd \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_hash_map.html"];
+  Node5 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_keyArray" ,fontname="Helvetica"];
+  Node9 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_valueArray" ,fontname="Helvetica"];
+  Node6 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_next\nm_hashTable" ,fontname="Helvetica"];
+  Node1 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mMain" ,fontname="Helvetica"];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_glob" ,fontname="Helvetica"];
+  Node12 [label="bParse::bStructHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structb_parse_1_1b_struct_handle.html"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mData" ,fontname="Helvetica"];
+  Node13 [label="btHashMap\< btHashInt,\l bListBasePtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_hash_map.html"];
+  Node6 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_next\nm_hashTable" ,fontname="Helvetica"];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_valueArray" ,fontname="Helvetica"];
+  Node14 [label="btAlignedObjectArray\l\< bListBasePtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node15 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_keyArray" ,fontname="Helvetica"];
+  Node15 [label="btAlignedObjectArray\l\< btHashInt \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mPool" ,fontname="Helvetica"];
+}

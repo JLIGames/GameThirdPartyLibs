@@ -1,0 +1,746 @@
+\hypertarget{class_c_p_v_r_t_p_f_x_parser}{\section{C\+P\+V\+R\+T\+P\+F\+X\+Parser Class Reference}
+\label{class_c_p_v_r_t_p_f_x_parser}\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+}
+
+
+P\+F\+X parser.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+P\+F\+X\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_v_r_t_p_f_x_parser_ab7b0e0decc8cb6f24b1ae2e11cf7fe07}{C\+P\+V\+R\+T\+P\+F\+X\+Parser} ()
+\begin{DoxyCompactList}\small\item\em Sets initial values. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_p_f_x_parser_a4928420b8ff017668c80325e13b6b081}{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Parser} ()
+\begin{DoxyCompactList}\small\item\em Frees memory used. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_p_f_x_parser_a99116781faf9aa20d7696ff768a8c640}{Parse\+From\+Memory} (const char $\ast$const psz\+Script, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$const p\+Return\+Error)
+\begin{DoxyCompactList}\small\item\em Parses a P\+F\+X script from memory. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_p_f_x_parser_ae1a2dba178d9960729d6c5a04255370f}{Parse\+From\+File} (const char $\ast$const psz\+File\+Name, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$const p\+Return\+Error)
+\begin{DoxyCompactList}\small\item\em Reads the P\+F\+X file and calls the parser. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_p_f_x_parser_a66fee8a0618c11778bad07f1fbe57920}{Set\+Viewport\+Size} (unsigned int ui\+Width, unsigned int ui\+Height)
+\begin{DoxyCompactList}\small\item\em Allows the current viewport size to be set. This value is used for calculating relative texture resolutions. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_parser_ab0cd310eac907396412ef7989079705a}{Find\+Texture\+Index} (const \hyperlink{class_c_p_v_r_t_string_hash}{C\+P\+V\+R\+T\+String\+Hash} \&Texture\+Name, unsigned int ui\+Effect) const 
+\begin{DoxyCompactList}\small\item\em Returns the index in to the texture array within the effect block where the given texture resides. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_v_r_t_p_f_x_parser_a50400904966afcd4f0b80b8298762cca}{Retrieve\+Render\+Pass\+Dependencies} (\hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_render_pass}{S\+P\+V\+R\+T\+P\+F\+X\+Render\+Pass} $\ast$ $>$ \&a\+Required\+Render\+Passes, \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ \hyperlink{class_c_p_v_r_t_string_hash}{C\+P\+V\+R\+T\+String\+Hash} $>$ \&asz\+Active\+Effect\+Strings)
+\begin{DoxyCompactList}\small\item\em Takes an array of strings containing the names of active effects for this P\+F\+X in a given application and then outputs an array of the render passes the application needs to perform that is sorted into the order they need to be executed (where \mbox{[}0\mbox{]} is the first to be executed, and \mbox{[}n\mbox{]} is the last). In addition to determining the order of dependent passes (such as P\+O\+S\+T\+P\+R\+O\+C\+E\+S\+S render passes), this function should check if C\+A\+M\+E\+R\+A passes are referenced by active E\+F\+F\+E\+C\+T blocks and use this information to strip redundant passes. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_parser_ace2c1223744f2d11a667317c25db15a8}{Get\+Number\+Render\+Passes} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of render passes within this P\+F\+X. \end{DoxyCompactList}\item 
+const \hyperlink{struct_s_p_v_r_t_p_f_x_render_pass}{S\+P\+V\+R\+T\+P\+F\+X\+Render\+Pass} \& \hyperlink{class_c_p_v_r_t_p_f_x_parser_ad7ad8e5595b6a3280c207861dfa1124b}{Get\+Render\+Pass} (unsigned int ui\+Index) const 
+\begin{DoxyCompactList}\small\item\em Returns the given render pass. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_parser_af79c075e3cc40f4b0ed44335ce392806}{Get\+Number\+Fragment\+Shaders} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of fragment shaders referenced in the P\+F\+X. \end{DoxyCompactList}\item 
+\hyperlink{struct_s_p_v_r_t_p_f_x_parser_shader}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Shader} \& \hyperlink{class_c_p_v_r_t_p_f_x_parser_a7d696f2ed86d0fa2b6f1711278843d0d}{Get\+Fragment\+Shader} (unsigned int ui\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a given fragment shader. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_parser_afa5fa0f40d8aad49b4502b9d77bdd1df}{Get\+Number\+Vertex\+Shaders} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of vertex shaders referenced in the P\+F\+X. \end{DoxyCompactList}\item 
+\hyperlink{struct_s_p_v_r_t_p_f_x_parser_shader}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Shader} \& \hyperlink{class_c_p_v_r_t_p_f_x_parser_aef3f17e8376b6129abf275a6cb1837ab}{Get\+Vertex\+Shader} (unsigned int ui\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a given vertex shader. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_parser_ae0e3acfc196a8186c12be71c109818c6}{Get\+Number\+Effects} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of effects referenced in the P\+F\+X. \end{DoxyCompactList}\item 
+const \hyperlink{struct_s_p_v_r_t_p_f_x_parser_effect}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Effect} \& \hyperlink{class_c_p_v_r_t_p_f_x_parser_ac47b42eff3d3acfa04fa75a9dd0e0a73}{Get\+Effect} (unsigned int ui\+Index) const 
+\begin{DoxyCompactList}\small\item\em Returns a given effect. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_p_f_x_parser_a72854ec3485e00894f5231bdb7aeb3f0}{Find\+Effect\+By\+Name} (const \hyperlink{class_c_p_v_r_t_string_hash}{C\+P\+V\+R\+T\+String\+Hash} \&Name) const 
+\begin{DoxyCompactList}\small\item\em Returns the index of the given string. Returns -\/1 on failure. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_v_r_t_p_f_x_parser_a4ff1bd4beec702c2ea21500bdb9db9bf}{Find\+Texture\+By\+Name} (const \hyperlink{class_c_p_v_r_t_string_hash}{C\+P\+V\+R\+T\+String\+Hash} \&Name) const 
+\begin{DoxyCompactList}\small\item\em Returns the index of the given texture. Returns -\/1 on failure. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_parser_ad26d3f66a6e6b4108b29a6c7d514598a}{Get\+Number\+Textures} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of textures referenced in the P\+F\+X. \end{DoxyCompactList}\item 
+const \hyperlink{struct_s_p_v_r_t_p_f_x_parser_texture}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Texture} $\ast$ \hyperlink{class_c_p_v_r_t_p_f_x_parser_a71ba1aa445a178b276979dcd45fa9037}{Get\+Texture} (unsigned int ui\+Index) const 
+\begin{DoxyCompactList}\small\item\em Returns a given texture. \end{DoxyCompactList}\item 
+const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \& \hyperlink{class_c_p_v_r_t_p_f_x_parser_a99bab9bf37aa8123e9f7e27c728ac2b0}{Get\+P\+F\+X\+File\+Name} () const 
+\begin{DoxyCompactList}\small\item\em eturns the P\+F\+X file name associated with this object. \end{DoxyCompactList}\item 
+const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $>$ \& \hyperlink{class_c_p_v_r_t_p_f_x_parser_ae20159f761bf59bc8e5cf6d76fed1c10}{Get\+Post\+Process\+Names} () const 
+\begin{DoxyCompactList}\small\item\em Returns a list of prost process effect names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a2fc44a9f07fbd2bc334a8b25e0c54bc7}{static const unsigned int {\bfseries V\+I\+E\+W\+P\+O\+R\+T\+\_\+\+S\+I\+Z\+E} = 0x\+A\+A\+A\+A}\label{class_c_p_v_r_t_p_f_x_parser_a2fc44a9f07fbd2bc334a8b25e0c54bc7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+F\+X parser. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ab7b0e0decc8cb6f24b1ae2e11cf7fe07}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{C\+P\+V\+R\+T\+P\+F\+X\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+C\+P\+V\+R\+T\+P\+F\+X\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_ab7b0e0decc8cb6f24b1ae2e11cf7fe07}
+
+
+Sets initial values. 
+
+
+
+  \hyperlink{class_c_p_v_r_t_p_f_x_parser}{C\+P\+V\+R\+T\+P\+F\+X\+Parser}  Sets initial values.
+
+
+
+ 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a4928420b8ff017668c80325e13b6b081}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!````~C\+P\+V\+R\+T\+P\+F\+X\+Parser@{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\index{````~C\+P\+V\+R\+T\+P\+F\+X\+Parser@{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Parser}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_a4928420b8ff017668c80325e13b6b081}
+
+
+Frees memory used. 
+
+
+
+  $\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Parser  Frees memory used.
+
+
+
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a72854ec3485e00894f5231bdb7aeb3f0}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Find\+Effect\+By\+Name@{Find\+Effect\+By\+Name}}
+\index{Find\+Effect\+By\+Name@{Find\+Effect\+By\+Name}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Find\+Effect\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Find\+Effect\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String\+Hash} \&}]{Name}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_a72854ec3485e00894f5231bdb7aeb3f0}
+
+
+Returns the index of the given string. Returns -\/1 on failure. 
+
+
+
+  Find\+Effect\+By\+Name  Name  int  Returns the index of the given string. Returns -\/1 on failure.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Name} & Name of the effect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a4ff1bd4beec702c2ea21500bdb9db9bf}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Find\+Texture\+By\+Name@{Find\+Texture\+By\+Name}}
+\index{Find\+Texture\+By\+Name@{Find\+Texture\+By\+Name}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Find\+Texture\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Find\+Texture\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String\+Hash} \&}]{Name}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_a4ff1bd4beec702c2ea21500bdb9db9bf}
+
+
+Returns the index of the given texture. Returns -\/1 on failure. 
+
+
+
+  Find\+Texture\+By\+Name  Name Name of the texture.  int  Returns the index of the given texture. Returns -\/1 on failure.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Name} & Name of the texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ab0cd310eac907396412ef7989079705a}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Find\+Texture\+Index@{Find\+Texture\+Index}}
+\index{Find\+Texture\+Index@{Find\+Texture\+Index}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Find\+Texture\+Index}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Find\+Texture\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String\+Hash} \&}]{Texture\+Name, }
+\item[{unsigned int}]{ui\+Effect}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ab0cd310eac907396412ef7989079705a}
+
+
+Returns the index in to the texture array within the effect block where the given texture resides. 
+
+
+
+  Find\+Texture\+Index  Texture\+Name  unsigned int \hyperlink{struct_index}{Index} in to the effect.\+Texture array.  Returns the index in to the texture array within the effect block where the given texture resides.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Texture\+Name} & The name of the texture to find \\
+\hline
+\mbox{\tt in}  & {\em ui\+Effect} & The effect block to look for the texture in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_index}{Index} in to the effect.\+Texture array. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ac47b42eff3d3acfa04fa75a9dd0e0a73}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Effect@{Get\+Effect}}
+\index{Get\+Effect@{Get\+Effect}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Effect (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ac47b42eff3d3acfa04fa75a9dd0e0a73}
+
+
+Returns a given effect. 
+
+
+
+  Get\+Effect  ui\+Index The index of this effect.  The P\+F\+X effect.  Returns a given effect.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Index} & The index of this effect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The P\+F\+X effect. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a7d696f2ed86d0fa2b6f1711278843d0d}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Fragment\+Shader@{Get\+Fragment\+Shader}}
+\index{Get\+Fragment\+Shader@{Get\+Fragment\+Shader}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Fragment\+Shader}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Fragment\+Shader (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_a7d696f2ed86d0fa2b6f1711278843d0d}
+
+
+Returns a given fragment shader. 
+
+
+
+  Get\+Fragment\+Shader  unsigned int The index of this shader.  const \hyperlink{struct_s_p_v_r_t_p_f_x_parser_shader}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Shader}\& The P\+F\+X fragment shader.  Returns a given fragment shader.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Index} & The index of this shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The P\+F\+X fragment shader. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ae0e3acfc196a8186c12be71c109818c6}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Number\+Effects@{Get\+Number\+Effects}}
+\index{Get\+Number\+Effects@{Get\+Number\+Effects}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Number\+Effects}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Number\+Effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ae0e3acfc196a8186c12be71c109818c6}
+
+
+Returns the number of effects referenced in the P\+F\+X. 
+
+
+
+  Get\+Number\+Effects  unsigned int Number of effects.  Returns the number of effects referenced in the P\+F\+X.
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+Number of effects. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_af79c075e3cc40f4b0ed44335ce392806}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Number\+Fragment\+Shaders@{Get\+Number\+Fragment\+Shaders}}
+\index{Get\+Number\+Fragment\+Shaders@{Get\+Number\+Fragment\+Shaders}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Number\+Fragment\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Number\+Fragment\+Shaders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_af79c075e3cc40f4b0ed44335ce392806}
+
+
+Returns the number of fragment shaders referenced in the P\+F\+X. 
+
+
+
+  Get\+Number\+Fragment\+Shaders  unsigned int Number of fragment shaders.  Returns the number of fragment shaders referenced in the P\+F\+X.
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+Number of fragment shaders. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ace2c1223744f2d11a667317c25db15a8}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Number\+Render\+Passes@{Get\+Number\+Render\+Passes}}
+\index{Get\+Number\+Render\+Passes@{Get\+Number\+Render\+Passes}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Number\+Render\+Passes}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Number\+Render\+Passes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ace2c1223744f2d11a667317c25db15a8}
+
+
+Returns the number of render passes within this P\+F\+X. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+The number of render passes required
+\end{DoxyReturn}
+
+
+  Get\+Number\+Render\+Passes  unsigned int  Returns the number of render passes within this P\+F\+X. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ad26d3f66a6e6b4108b29a6c7d514598a}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Number\+Textures@{Get\+Number\+Textures}}
+\index{Get\+Number\+Textures@{Get\+Number\+Textures}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Number\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Number\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ad26d3f66a6e6b4108b29a6c7d514598a}
+
+
+Returns the number of textures referenced in the P\+F\+X. 
+
+
+
+  Get\+Number\+Textures  unsigned int Number of effects.  Returns the number of textures referenced in the P\+F\+X.
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+Number of effects. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_afa5fa0f40d8aad49b4502b9d77bdd1df}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Number\+Vertex\+Shaders@{Get\+Number\+Vertex\+Shaders}}
+\index{Get\+Number\+Vertex\+Shaders@{Get\+Number\+Vertex\+Shaders}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Number\+Vertex\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Number\+Vertex\+Shaders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_afa5fa0f40d8aad49b4502b9d77bdd1df}
+
+
+Returns the number of vertex shaders referenced in the P\+F\+X. 
+
+
+
+  Get\+Number\+Vertex\+Shaders  unsigned int Number of vertex shaders.  Returns the number of vertex shaders referenced in the P\+F\+X.
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+Number of vertex shaders. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a99bab9bf37aa8123e9f7e27c728ac2b0}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+P\+F\+X\+File\+Name@{Get\+P\+F\+X\+File\+Name}}
+\index{Get\+P\+F\+X\+File\+Name@{Get\+P\+F\+X\+File\+Name}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+P\+F\+X\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+P\+F\+X\+File\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_a99bab9bf37aa8123e9f7e27c728ac2b0}
+
+
+eturns the P\+F\+X file name associated with this object. 
+
+
+
+  Get\+P\+F\+X\+File\+Name  const \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} \&  Returns the P\+F\+X file name associated with this object.
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+The filename for this P\+F\+X file 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ae20159f761bf59bc8e5cf6d76fed1c10}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Post\+Process\+Names@{Get\+Post\+Process\+Names}}
+\index{Get\+Post\+Process\+Names@{Get\+Post\+Process\+Names}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Post\+Process\+Names}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Post\+Process\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ae20159f761bf59bc8e5cf6d76fed1c10}
+
+
+Returns a list of prost process effect names. 
+
+
+
+  Get\+Post\+Process\+Names  const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array$<$\+C\+P\+V\+R\+T\+String$>$}\&  Returns a list of prost process effect names.
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+An array of post process names 
+\end{DoxyReturn}
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ad7ad8e5595b6a3280c207861dfa1124b}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Render\+Pass@{Get\+Render\+Pass}}
+\index{Get\+Render\+Pass@{Get\+Render\+Pass}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Render\+Pass}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf S\+P\+V\+R\+T\+P\+F\+X\+Render\+Pass} \& C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Render\+Pass (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_ad7ad8e5595b6a3280c207861dfa1124b}
+
+
+Returns the given render pass. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Index} & The render pass index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A given render pass.
+\end{DoxyReturn}
+
+
+  Get\+Number\+Render\+Passes  unsigned int The render pass index.  S\+P\+V\+R\+T\+P\+F\+X\+Render\+Pass$\ast$  Returns the given render pass. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a71ba1aa445a178b276979dcd45fa9037}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Texture@{Get\+Texture}}
+\index{Get\+Texture@{Get\+Texture}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Texture (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_parser_a71ba1aa445a178b276979dcd45fa9037}
+
+
+Returns a given texture. 
+
+
+
+  Get\+Texture  unsigned int The index of this texture  const \hyperlink{struct_s_p_v_r_t_p_f_x_parser_effect}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Effect}\& The P\+F\+X texture.  Returns a given texture.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Index} & The index of this texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The P\+F\+X texture. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_aef3f17e8376b6129abf275a6cb1837ab}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Get\+Vertex\+Shader@{Get\+Vertex\+Shader}}
+\index{Get\+Vertex\+Shader@{Get\+Vertex\+Shader}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Get\+Vertex\+Shader}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Get\+Vertex\+Shader (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_aef3f17e8376b6129abf275a6cb1837ab}
+
+
+Returns a given vertex shader. 
+
+
+
+  Get\+Vertex\+Shader  unsigned int The index of this shader.  const \hyperlink{struct_s_p_v_r_t_p_f_x_parser_shader}{S\+P\+V\+R\+T\+P\+F\+X\+Parser\+Shader}\& The P\+F\+X vertex shader.  Returns a given vertex shader.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Index} & The index of this shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The P\+F\+X vertex shader. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_ae1a2dba178d9960729d6c5a04255370f}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Parse\+From\+File@{Parse\+From\+File}}
+\index{Parse\+From\+File@{Parse\+From\+File}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Parse\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Parse\+From\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{psz\+File\+Name, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$const}]{p\+Return\+Error}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_ae1a2dba178d9960729d6c5a04255370f}
+
+
+Reads the P\+F\+X file and calls the parser. 
+
+
+
+  Parse\+From\+File  psz\+File\+Name P\+F\+X file name  p\+Return\+Error error string  E\+P\+V\+R\+T\+Error P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S for success parsing file P\+V\+R\+\_\+\+F\+A\+I\+L if file doesn't exist or is invalid  Reads the P\+F\+X file and calls the parser.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+File\+Name} & P\+F\+X file name \\
+\hline
+\mbox{\tt out}  & {\em p\+Return\+Error} & error string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S for success parsing file P\+V\+R\+\_\+\+F\+A\+I\+L if file doesn't exist or is invalid 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a99116781faf9aa20d7696ff768a8c640}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Parse\+From\+Memory@{Parse\+From\+Memory}}
+\index{Parse\+From\+Memory@{Parse\+From\+Memory}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Parse\+From\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Parse\+From\+Memory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{psz\+Script, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$const}]{p\+Return\+Error}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_a99116781faf9aa20d7696ff768a8c640}
+
+
+Parses a P\+F\+X script from memory. 
+
+
+
+  Parse\+From\+Memory  psz\+Script P\+F\+X script  p\+Return\+Error error string  E\+P\+V\+R\+T\+Error P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S for success parsing file P\+V\+R\+\_\+\+F\+A\+I\+L if file doesn't exist or is invalid  Parses a P\+F\+X script from memory.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+Script} & P\+F\+X script \\
+\hline
+\mbox{\tt out}  & {\em p\+Return\+Error} & error string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S for success parsing file P\+V\+R\+\_\+\+F\+A\+I\+L if file doesn't exist or is invalid 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a50400904966afcd4f0b80b8298762cca}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Retrieve\+Render\+Pass\+Dependencies@{Retrieve\+Render\+Pass\+Dependencies}}
+\index{Retrieve\+Render\+Pass\+Dependencies@{Retrieve\+Render\+Pass\+Dependencies}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Retrieve\+Render\+Pass\+Dependencies}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Retrieve\+Render\+Pass\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+Array}$<$ {\bf S\+P\+V\+R\+T\+P\+F\+X\+Render\+Pass} $\ast$ $>$ \&}]{a\+Required\+Render\+Passes, }
+\item[{{\bf C\+P\+V\+R\+T\+Array}$<$ {\bf C\+P\+V\+R\+T\+String\+Hash} $>$ \&}]{asz\+Active\+Effect\+Strings}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_a50400904966afcd4f0b80b8298762cca}
+
+
+Takes an array of strings containing the names of active effects for this P\+F\+X in a given application and then outputs an array of the render passes the application needs to perform that is sorted into the order they need to be executed (where \mbox{[}0\mbox{]} is the first to be executed, and \mbox{[}n\mbox{]} is the last). In addition to determining the order of dependent passes (such as P\+O\+S\+T\+P\+R\+O\+C\+E\+S\+S render passes), this function should check if C\+A\+M\+E\+R\+A passes are referenced by active E\+F\+F\+E\+C\+T blocks and use this information to strip redundant passes. 
+
+
+
+  Retrieve\+Render\+Pass\+Dependencies  a\+Required\+Render\+Passes  asz\+Active\+Effect\+Strings  bool  Returns a list of dependencies associated with the pass.
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em a\+Required\+Render\+Passes} & Dynamic array of required render passes \\
+\hline
+\mbox{\tt in}  & {\em asz\+Active\+Effect\+Strings} & Dynamic array containing names of active effects in the application \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+success of failure 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_parser_a66fee8a0618c11778bad07f1fbe57920}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}!Set\+Viewport\+Size@{Set\+Viewport\+Size}}
+\index{Set\+Viewport\+Size@{Set\+Viewport\+Size}!C\+P\+V\+R\+T\+P\+F\+X\+Parser@{C\+P\+V\+R\+T\+P\+F\+X\+Parser}}
+\subsubsection[{Set\+Viewport\+Size}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Parser\+::\+Set\+Viewport\+Size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Width, }
+\item[{unsigned int}]{ui\+Height}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_parser_a66fee8a0618c11778bad07f1fbe57920}
+
+
+Allows the current viewport size to be set. This value is used for calculating relative texture resolutions. 
+
+
+
+  Set\+Viewport\+Size  ui\+Width New viewport width  ui\+Height New viewport height  bool True on success  Allows the current viewport size to be set. This value is used for calculating relative texture resolutions
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Width} & New viewport width \\
+\hline
+\mbox{\tt in}  & {\em ui\+Height} & New viewport height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_p_f_x_parser_8h}{P\+V\+R\+T\+P\+F\+X\+Parser.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+P\+F\+X\+Parser.\+cpp\end{DoxyCompactItemize}

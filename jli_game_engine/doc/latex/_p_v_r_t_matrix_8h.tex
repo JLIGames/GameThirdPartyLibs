@@ -1,0 +1,914 @@
+\hypertarget{_p_v_r_t_matrix_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Matrix.h File Reference}
+\label{_p_v_r_t_matrix_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Matrix.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Matrix.\+h}}
+}
+
+
+Vector and \hyperlink{class_matrix}{Matrix} functions for floating and fixed point math.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Global.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Matrix.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_v_r_t_v_e_c_t_o_r2f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R2f}
+\begin{DoxyCompactList}\small\item\em 2\+D floating point vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_v_e_c_t_o_r2x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R2x}
+\begin{DoxyCompactList}\small\item\em 2\+D fixed point vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f}
+\begin{DoxyCompactList}\small\item\em 3\+D floating point vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x}
+\begin{DoxyCompactList}\small\item\em 3\+D fixed point vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_v_e_c_t_o_r4f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R4f}
+\begin{DoxyCompactList}\small\item\em 4\+D floating point vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_v_e_c_t_o_r4x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R4x}
+\begin{DoxyCompactList}\small\item\em 4\+D fixed point vector \end{DoxyCompactList}\item 
+class \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf}
+\begin{DoxyCompactList}\small\item\em 4x4 floating point matrix \end{DoxyCompactList}\item 
+class \hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx}
+\begin{DoxyCompactList}\small\item\em 4x4 fixed point matrix \end{DoxyCompactList}\item 
+class \hyperlink{class_p_v_r_t_m_a_t_r_i_x3f}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X3f}
+\begin{DoxyCompactList}\small\item\em 3x3 floating point matrix \end{DoxyCompactList}\item 
+class \hyperlink{class_p_v_r_t_m_a_t_r_i_x3x}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X3x}
+\begin{DoxyCompactList}\small\item\em 3x3 fixed point matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a12e6be551b043897a121788d397396ab}{\#define {\bfseries M\+A\+T00}~0}\label{_p_v_r_t_matrix_8h_a12e6be551b043897a121788d397396ab}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a94b5038c9a2b31a47548024586586b9f}{\#define {\bfseries M\+A\+T01}~1}\label{_p_v_r_t_matrix_8h_a94b5038c9a2b31a47548024586586b9f}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_adea133e7602d3cbb912cb312f16f99a9}{\#define {\bfseries M\+A\+T02}~2}\label{_p_v_r_t_matrix_8h_adea133e7602d3cbb912cb312f16f99a9}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a775c05b55f5a38d94d98c0047fec3e77}{\#define {\bfseries M\+A\+T03}~3}\label{_p_v_r_t_matrix_8h_a775c05b55f5a38d94d98c0047fec3e77}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ac596fa68adf614e9ee0e45c90651f914}{\#define {\bfseries M\+A\+T10}~4}\label{_p_v_r_t_matrix_8h_ac596fa68adf614e9ee0e45c90651f914}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_aee3873336f79deb89147fbcc89b3c3b2}{\#define {\bfseries M\+A\+T11}~5}\label{_p_v_r_t_matrix_8h_aee3873336f79deb89147fbcc89b3c3b2}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_af156faa7c048a14b17f80f2dd3609a57}{\#define {\bfseries M\+A\+T12}~6}\label{_p_v_r_t_matrix_8h_af156faa7c048a14b17f80f2dd3609a57}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_aba1ea4676123f3bcc35f4e02a9aa0876}{\#define {\bfseries M\+A\+T13}~7}\label{_p_v_r_t_matrix_8h_aba1ea4676123f3bcc35f4e02a9aa0876}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ad63ea6f516df76b34329a88ce11c1112}{\#define {\bfseries M\+A\+T20}~8}\label{_p_v_r_t_matrix_8h_ad63ea6f516df76b34329a88ce11c1112}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_abbae4da0e77bca7f6599d2733bc721ab}{\#define {\bfseries M\+A\+T21}~9}\label{_p_v_r_t_matrix_8h_abbae4da0e77bca7f6599d2733bc721ab}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a35bf6df6fa9fa369b0baeb556b2f8eac}{\#define {\bfseries M\+A\+T22}~10}\label{_p_v_r_t_matrix_8h_a35bf6df6fa9fa369b0baeb556b2f8eac}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_af67b77e8e7a93f009bd713460c7c066b}{\#define {\bfseries M\+A\+T23}~11}\label{_p_v_r_t_matrix_8h_af67b77e8e7a93f009bd713460c7c066b}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a078d7b9b3030413e35e14bd42dcddafe}{\#define {\bfseries M\+A\+T30}~12}\label{_p_v_r_t_matrix_8h_a078d7b9b3030413e35e14bd42dcddafe}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a020c37b1478d5f2da25dd079ac602eb6}{\#define {\bfseries M\+A\+T31}~13}\label{_p_v_r_t_matrix_8h_a020c37b1478d5f2da25dd079ac602eb6}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a628f027d81c2a664cb44d3deace04d09}{\#define {\bfseries M\+A\+T32}~14}\label{_p_v_r_t_matrix_8h_a628f027d81c2a664cb44d3deace04d09}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a41edd6d8efdfeb566932c346722b893e}{\#define {\bfseries M\+A\+T33}~15}\label{_p_v_r_t_matrix_8h_a41edd6d8efdfeb566932c346722b893e}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a9178563db3c135b50246d9f7acde2c4e}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Identity}~\hyperlink{_p_v_r_t_matrix_8h_ad2328cb230e348960e06cfe2f15e30bb}{P\+V\+R\+T\+Matrix\+Identity\+F}}\label{_p_v_r_t_matrix_8h_a9178563db3c135b50246d9f7acde2c4e}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a1eb322d7e4615e0bc58b896976676bc3}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Multiply}~\hyperlink{_p_v_r_t_matrix_8h_a3b1313f945548913d1142e4705d8241a}{P\+V\+R\+T\+Matrix\+Multiply\+F}}\label{_p_v_r_t_matrix_8h_a1eb322d7e4615e0bc58b896976676bc3}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a038cf7d5ebac4c246036c9a6e6dd573a}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Translation}~\hyperlink{_p_v_r_t_matrix_8h_acc357dc127ae4202265595783971cc87}{P\+V\+R\+T\+Matrix\+Translation\+F}}\label{_p_v_r_t_matrix_8h_a038cf7d5ebac4c246036c9a6e6dd573a}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a5cf9c043b31233af3f9a48333e2ccb15}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Scaling}~\hyperlink{_p_v_r_t_matrix_8h_a861ad0e264fad9950cc0685dac690e1f}{P\+V\+R\+T\+Matrix\+Scaling\+F}}\label{_p_v_r_t_matrix_8h_a5cf9c043b31233af3f9a48333e2ccb15}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_acbf5ea99350e69883d973773e1d35df0}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Rotation\+X}~\hyperlink{_p_v_r_t_matrix_8h_ad3cb8a1708b56be10015faaaa25025ef}{P\+V\+R\+T\+Matrix\+Rotation\+X\+F}}\label{_p_v_r_t_matrix_8h_acbf5ea99350e69883d973773e1d35df0}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_aa1f322f88a0c0ece1b8c5531d2d21d1c}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Rotation\+Y}~\hyperlink{_p_v_r_t_matrix_8h_ab8a00e2b0a698163d1eff4e35b27fd8b}{P\+V\+R\+T\+Matrix\+Rotation\+Y\+F}}\label{_p_v_r_t_matrix_8h_aa1f322f88a0c0ece1b8c5531d2d21d1c}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a05aa4ecc70e75772face6921aa5dfc6c}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Rotation\+Z}~\hyperlink{_p_v_r_t_matrix_8h_aa4bc218120d68424307fe50d73cf82c4}{P\+V\+R\+T\+Matrix\+Rotation\+Z\+F}}\label{_p_v_r_t_matrix_8h_a05aa4ecc70e75772face6921aa5dfc6c}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a3fea8091e8301f295135c876a518dd1f}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Transpose}~\hyperlink{_p_v_r_t_matrix_8h_a45048e3e094745e9c4047da0e620026d}{P\+V\+R\+T\+Matrix\+Transpose\+F}}\label{_p_v_r_t_matrix_8h_a3fea8091e8301f295135c876a518dd1f}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a18adea6e47ae30bffe2276686b066d2f}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Inverse}~\hyperlink{_p_v_r_t_matrix_8h_aac771724241fb0577921edd64d88bcca}{P\+V\+R\+T\+Matrix\+Inverse\+F}}\label{_p_v_r_t_matrix_8h_a18adea6e47ae30bffe2276686b066d2f}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a80f8fc80a2a055f61dce632a4ac9f67b}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Inverse\+Ex}~\hyperlink{_p_v_r_t_matrix_8h_a6b0e0012337b0ae8ede358311b6b348c}{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F}}\label{_p_v_r_t_matrix_8h_a80f8fc80a2a055f61dce632a4ac9f67b}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_afe24a7c4a57a844671df18e33053f907}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Look\+At\+L\+H}~\hyperlink{_p_v_r_t_matrix_8h_aa1569890d381c6d9c02d927fe77bc5d0}{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F}}\label{_p_v_r_t_matrix_8h_afe24a7c4a57a844671df18e33053f907}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ac34bdcf6f2d608d5b4be9865c7e56916}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Look\+At\+R\+H}~\hyperlink{_p_v_r_t_matrix_8h_afcc96f1726204666a814e51ba878b97f}{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F}}\label{_p_v_r_t_matrix_8h_ac34bdcf6f2d608d5b4be9865c7e56916}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_aaa1f0ecdd26464ccb008a791410ab633}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H}~\hyperlink{_p_v_r_t_matrix_8h_a4f171571e832f9ec14f8abbbf0d2d009}{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F}}\label{_p_v_r_t_matrix_8h_aaa1f0ecdd26464ccb008a791410ab633}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a198f7d2d255a95539fdc8609dd29c4bc}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H}~\hyperlink{_p_v_r_t_matrix_8h_af0ef186dbfe3a77463f3fa2a8812eef1}{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F}}\label{_p_v_r_t_matrix_8h_a198f7d2d255a95539fdc8609dd29c4bc}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a0c0bd77ff97f29a795510549ad072bb3}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Ortho\+L\+H}~\hyperlink{_p_v_r_t_matrix_8h_af923b17057c2953a6b02d1e345c16815}{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F}}\label{_p_v_r_t_matrix_8h_a0c0bd77ff97f29a795510549ad072bb3}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a1ff9f1f2a336c870a4d1b2cc65de8a26}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Ortho\+R\+H}~\hyperlink{_p_v_r_t_matrix_8h_ab8a6d2ee7db194d53e6400452cb8c2f3}{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F}}\label{_p_v_r_t_matrix_8h_a1ff9f1f2a336c870a4d1b2cc65de8a26}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ac67fee938ee99f0edc518233213ac8bb}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Vec3\+Lerp}~\hyperlink{_p_v_r_t_matrix_8h_a480403190ace3511d6f6454c06eba1c3}{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F}}\label{_p_v_r_t_matrix_8h_ac67fee938ee99f0edc518233213ac8bb}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a9fdaa628f1421d36644a76ecc7bb4bcd}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product}~\hyperlink{_p_v_r_t_matrix_8h_aff799c1d9db96bc9e2e0b6b006b89326}{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F}}\label{_p_v_r_t_matrix_8h_a9fdaa628f1421d36644a76ecc7bb4bcd}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a510a5ed497210f20f9c1df5c868f4924}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product}~\hyperlink{_p_v_r_t_matrix_8h_a35aa277943e7e9a07dc7f32a5c187e8e}{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F}}\label{_p_v_r_t_matrix_8h_a510a5ed497210f20f9c1df5c868f4924}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ac8993a2653aac52c5e60b39818ba5217}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Vec3\+Normalize}~\hyperlink{_p_v_r_t_matrix_8h_ac3209bb973c90b96ae9585ca5129a7d4}{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F}}\label{_p_v_r_t_matrix_8h_ac8993a2653aac52c5e60b39818ba5217}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_af97a987d0b0cbedc78abfbf1ed254fbc}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Vec3\+Length}~\hyperlink{_p_v_r_t_matrix_8h_a6ef9d239db771ef6a6bdded2a2f2d9f8}{P\+V\+R\+T\+Matrix\+Vec3\+Length\+F}}\label{_p_v_r_t_matrix_8h_af97a987d0b0cbedc78abfbf1ed254fbc}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a4818687e84ec69716608072f86aa4619}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve}~\hyperlink{_p_v_r_t_matrix_8h_a729e26309d3d01d6b8777fb96aef42b8}{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F}}\label{_p_v_r_t_matrix_8h_a4818687e84ec69716608072f86aa4619}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_afe20f720e2c7b30626133c6928488749}{typedef \hyperlink{struct_p_v_r_t_v_e_c_t_o_r2f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R2f} {\bfseries P\+V\+R\+T\+V\+E\+C\+T\+O\+R2}}\label{_p_v_r_t_matrix_8h_afe20f720e2c7b30626133c6928488749}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a679fe9d6816e15438ff647c7ef1238cb}{typedef \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} {\bfseries P\+V\+R\+T\+V\+E\+C\+T\+O\+R3}}\label{_p_v_r_t_matrix_8h_a679fe9d6816e15438ff647c7ef1238cb}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ae182197783b118489ce4e106b1407e41}{typedef \hyperlink{struct_p_v_r_t_v_e_c_t_o_r4f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R4f} {\bfseries P\+V\+R\+T\+V\+E\+C\+T\+O\+R4}}\label{_p_v_r_t_matrix_8h_ae182197783b118489ce4e106b1407e41}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_ad9d106f6b15cc8c31b346c5dddf62229}{typedef \hyperlink{class_p_v_r_t_m_a_t_r_i_x3f}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X3f} {\bfseries P\+V\+R\+T\+M\+A\+T\+R\+I\+X3}}\label{_p_v_r_t_matrix_8h_ad9d106f6b15cc8c31b346c5dddf62229}
+
+\item 
+\hypertarget{_p_v_r_t_matrix_8h_a7393b1493197bfba5f9709640d81a9de}{typedef \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} {\bfseries P\+V\+R\+T\+M\+A\+T\+R\+I\+X}}\label{_p_v_r_t_matrix_8h_a7393b1493197bfba5f9709640d81a9de}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ad2328cb230e348960e06cfe2f15e30bb}{P\+V\+R\+T\+Matrix\+Identity\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a5f4a228c1d8e7004f449590ad4f968c3}{P\+V\+R\+T\+Matrix\+Identity\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a3b1313f945548913d1142e4705d8241a}{P\+V\+R\+T\+Matrix\+Multiply\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+A, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+B)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a30b7d712629ad8f52063773d99efbb55}{P\+V\+R\+T\+Matrix\+Multiply\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+A, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+B)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_acc357dc127ae4202265595783971cc87}{P\+V\+R\+T\+Matrix\+Translation\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+X, const float f\+Y, const float f\+Z)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a58f496fa72bf50eb12babe74fa3f622e}{P\+V\+R\+T\+Matrix\+Translation\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+X, const int f\+Y, const int f\+Z)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a861ad0e264fad9950cc0685dac690e1f}{P\+V\+R\+T\+Matrix\+Scaling\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+X, const float f\+Y, const float f\+Z)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ae57348ff95a06f4bc7b2dc28fd447322}{P\+V\+R\+T\+Matrix\+Scaling\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+X, const int f\+Y, const int f\+Z)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ad3cb8a1708b56be10015faaaa25025ef}{P\+V\+R\+T\+Matrix\+Rotation\+X\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a8cffacd9422adcc13fe4c1bff8c3fba5}{P\+V\+R\+T\+Matrix\+Rotation\+X\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ab8a00e2b0a698163d1eff4e35b27fd8b}{P\+V\+R\+T\+Matrix\+Rotation\+Y\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a425202e4c8f32a148f70c54dd25fb18b}{P\+V\+R\+T\+Matrix\+Rotation\+Y\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aa4bc218120d68424307fe50d73cf82c4}{P\+V\+R\+T\+Matrix\+Rotation\+Z\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_af8dd4fb55692a605bb7d3197c8d8f66b}{P\+V\+R\+T\+Matrix\+Rotation\+Z\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a45048e3e094745e9c4047da0e620026d}{P\+V\+R\+T\+Matrix\+Transpose\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aa13ac6e8f085285258d71fc43c4e38b9}{P\+V\+R\+T\+Matrix\+Transpose\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aac771724241fb0577921edd64d88bcca}{P\+V\+R\+T\+Matrix\+Inverse\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aafa7256d2255355dca846bebfe68a2bd}{P\+V\+R\+T\+Matrix\+Inverse\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a6b0e0012337b0ae8ede358311b6b348c}{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aadea925939b3821df9bdb78f89cb0612}{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aa1569890d381c6d9c02d927fe77bc5d0}{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Eye, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+At, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Up)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_aee96c0d0e2791339e79c78b1bb1df14b}{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Eye, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+At, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Up)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_afcc96f1726204666a814e51ba878b97f}{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Eye, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+At, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Up)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a051813b18c9a70934c82334ca3417d85}{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Eye, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+At, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Up)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a4f171571e832f9ec14f8abbbf0d2d009}{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+F\+O\+Vy, const float f\+Aspect, const float f\+Near, const float f\+Far, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a14ad4717ff1351fcc2695481e644f482}{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+F\+O\+Vy, const int f\+Aspect, const int f\+Near, const int f\+Far, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_af0ef186dbfe3a77463f3fa2a8812eef1}{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float f\+F\+O\+Vy, const float f\+Aspect, const float f\+Near, const float f\+Far, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ab51725dd7a79d7186658596bda72b6ec}{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int f\+F\+O\+Vy, const int f\+Aspect, const int f\+Near, const int f\+Far, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_af923b17057c2953a6b02d1e345c16815}{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float w, const float h, const float zn, const float zf, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a85936b244826720b8124858027f9d936}{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int w, const int h, const int zn, const int zf, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ab8a6d2ee7db194d53e6400452cb8c2f3}{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const float w, const float h, const float zn, const float zf, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a700a323d93d52aab2aea2a98a7cff3db}{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const int w, const int h, const int zn, const int zf, const bool b\+Rotate=false)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a480403190ace3511d6f6454c06eba1c3}{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v1, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v2, const float s)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a93f0897355520e9dbf4b708802e1bf3c}{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v1, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v2, const int s)
+\item 
+float \hyperlink{_p_v_r_t_matrix_8h_aff799c1d9db96bc9e2e0b6b006b89326}{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F} (const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v1, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v2)
+\item 
+int \hyperlink{_p_v_r_t_matrix_8h_ac908d01d6d545eb7c60eb6f67775f58c}{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X} (const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v1, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v2)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a35aa277943e7e9a07dc7f32a5c187e8e}{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v1, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v2)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a74b56e545192b0aa87082e3ed20491d6}{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v1, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v2)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_ac3209bb973c90b96ae9585ca5129a7d4}{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a62d32f83733f2b73bfa520f8a2d3e05c}{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+In)
+\item 
+float \hyperlink{_p_v_r_t_matrix_8h_a6ef9d239db771ef6a6bdded2a2f2d9f8}{P\+V\+R\+T\+Matrix\+Vec3\+Length\+F} (const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+In)
+\item 
+int \hyperlink{_p_v_r_t_matrix_8h_a8985cbc6ce5f7671cf47eee90a6b2148}{P\+V\+R\+T\+Matrix\+Vec3\+Length\+X} (const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+In)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a729e26309d3d01d6b8777fb96aef42b8}{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F} (float $\ast$const p\+Res, float $\ast$$\ast$const p\+Src, const int n\+Cnt)
+\item 
+void \hyperlink{_p_v_r_t_matrix_8h_a790d1351d78da2ddfe025c285f15e53e}{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X} (int $\ast$const p\+Res, int $\ast$$\ast$const p\+Src, const int n\+Cnt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vector and \hyperlink{class_matrix}{Matrix} functions for floating and fixed point math. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited.
+\end{DoxyCopyright}
+The general matrix format used is directly compatible with, for example, both Direct\+X and Open\+G\+L. 
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_matrix_8h_ad2328cb230e348960e06cfe2f15e30bb}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Identity\+F@{P\+V\+R\+T\+Matrix\+Identity\+F}}
+\index{P\+V\+R\+T\+Matrix\+Identity\+F@{P\+V\+R\+T\+Matrix\+Identity\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Identity\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Identity\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ad2328cb230e348960e06cfe2f15e30bb}
+
+
+  P\+V\+R\+T\+Matrix\+Identity\+F  m\+Out Set to identity  Reset matrix to identity matrix. \hypertarget{_p_v_r_t_matrix_8h_a5f4a228c1d8e7004f449590ad4f968c3}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Identity\+X@{P\+V\+R\+T\+Matrix\+Identity\+X}}
+\index{P\+V\+R\+T\+Matrix\+Identity\+X@{P\+V\+R\+T\+Matrix\+Identity\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Identity\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Identity\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a5f4a228c1d8e7004f449590ad4f968c3}
+
+
+  P\+V\+R\+T\+Matrix\+Identity\+X  m\+Out Set to identity  Reset matrix to identity matrix. \hypertarget{_p_v_r_t_matrix_8h_a6b0e0012337b0ae8ede358311b6b348c}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F@{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F}}
+\index{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F@{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a6b0e0012337b0ae8ede358311b6b348c}
+
+
+  P\+V\+R\+T\+Matrix\+Inverse\+Ex\+F  m\+Out Inversed matrix  m\+In Original matrix  Compute the inverse matrix of m\+In. Uses a linear equation solver and the knowledge that M.\+M$^\wedge$-\/1=I. Use this fn to calculate the inverse of matrices that P\+V\+R\+T\+Matrix\+Inverse() cannot. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_aadea925939b3821df9bdb78f89cb0612}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X@{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X}}
+\index{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X@{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aadea925939b3821df9bdb78f89cb0612}
+
+
+  P\+V\+R\+T\+Matrix\+Inverse\+Ex\+X  m\+Out Inversed matrix  m\+In Original matrix  Compute the inverse matrix of m\+In. Uses a linear equation solver and the knowledge that M.\+M$^\wedge$-\/1=I. Use this fn to calculate the inverse of matrices that P\+V\+R\+T\+Matrix\+Inverse() cannot. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_aac771724241fb0577921edd64d88bcca}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Inverse\+F@{P\+V\+R\+T\+Matrix\+Inverse\+F}}
+\index{P\+V\+R\+T\+Matrix\+Inverse\+F@{P\+V\+R\+T\+Matrix\+Inverse\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Inverse\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Inverse\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aac771724241fb0577921edd64d88bcca}
+
+
+  P\+V\+R\+T\+Matrix\+Inverse\+F  m\+Out Inversed matrix  m\+In Original matrix  Compute the inverse matrix of m\+In. The matrix must be of the form \+: A 0 C 1 Where A is a 3x3 matrix and C is a 1x3 matrix. \hypertarget{_p_v_r_t_matrix_8h_aafa7256d2255355dca846bebfe68a2bd}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Inverse\+X@{P\+V\+R\+T\+Matrix\+Inverse\+X}}
+\index{P\+V\+R\+T\+Matrix\+Inverse\+X@{P\+V\+R\+T\+Matrix\+Inverse\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Inverse\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Inverse\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aafa7256d2255355dca846bebfe68a2bd}
+
+
+  P\+V\+R\+T\+Matrix\+Inverse\+X  m\+Out Inversed matrix  m\+In Original matrix  Compute the inverse matrix of m\+In. The matrix must be of the form \+: A 0 C 1 Where A is a 3x3 matrix and C is a 1x3 matrix. \hypertarget{_p_v_r_t_matrix_8h_a729e26309d3d01d6b8777fb96aef42b8}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F@{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F}}
+\index{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F@{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F (
+\begin{DoxyParamCaption}
+\item[{float $\ast$const}]{p\+Res, }
+\item[{float $\ast$$\ast$const}]{p\+Src, }
+\item[{const int}]{n\+Cnt}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a729e26309d3d01d6b8777fb96aef42b8}
+
+
+  P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+F  p\+Src 2\+D array of floats. 4 Eq linear problem is 5x4 matrix, constants in first column  n\+Cnt Number of equations to solve  p\+Res Result  Solves 'n\+Cnt' simultaneous equations of 'n\+Cnt' variables. p\+Res should be an array large enough to contain the results\+: the values of the 'n\+Cnt' variables. This fn recursively uses Gaussian Elimination. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a790d1351d78da2ddfe025c285f15e53e}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X@{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X}}
+\index{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X@{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X (
+\begin{DoxyParamCaption}
+\item[{int $\ast$const}]{p\+Res, }
+\item[{int $\ast$$\ast$const}]{p\+Src, }
+\item[{const int}]{n\+Cnt}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a790d1351d78da2ddfe025c285f15e53e}
+
+
+  P\+V\+R\+T\+Matrix\+Linear\+Eq\+Solve\+X  p\+Src 2\+D array of floats. 4 Eq linear problem is 5x4 matrix, constants in first column  n\+Cnt Number of equations to solve  p\+Res Result  Solves 'n\+Cnt' simultaneous equations of 'n\+Cnt' variables. p\+Res should be an array large enough to contain the results\+: the values of the 'n\+Cnt' variables. This fn recursively uses Gaussian Elimination. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_aa1569890d381c6d9c02d927fe77bc5d0}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F@{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F}}
+\index{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F@{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Eye, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+At, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Up}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aa1569890d381c6d9c02d927fe77bc5d0}
+
+
+  P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+F  m\+Out Look-\/at view matrix  v\+Eye Position of the camera  v\+At \hyperlink{class_point}{Point} the camera is looking at  v\+Up Up direction for the camera  Create a look-\/at view matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_aee96c0d0e2791339e79c78b1bb1df14b}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X@{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X}}
+\index{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X@{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Eye, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+At, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Up}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aee96c0d0e2791339e79c78b1bb1df14b}
+
+
+  P\+V\+R\+T\+Matrix\+Look\+At\+L\+H\+X  m\+Out Look-\/at view matrix  v\+Eye Position of the camera  v\+At \hyperlink{class_point}{Point} the camera is looking at  v\+Up Up direction for the camera  Create a look-\/at view matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_afcc96f1726204666a814e51ba878b97f}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F@{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F}}
+\index{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F@{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Eye, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+At, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Up}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_afcc96f1726204666a814e51ba878b97f}
+
+
+  P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+F  m\+Out Look-\/at view matrix  v\+Eye Position of the camera  v\+At \hyperlink{class_point}{Point} the camera is looking at  v\+Up Up direction for the camera  Create a look-\/at view matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a051813b18c9a70934c82334ca3417d85}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X@{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X}}
+\index{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X@{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Eye, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+At, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Up}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a051813b18c9a70934c82334ca3417d85}
+
+
+  P\+V\+R\+T\+Matrix\+Look\+At\+R\+H\+X  m\+Out Look-\/at view matrix  v\+Eye Position of the camera  v\+At \hyperlink{class_point}{Point} the camera is looking at  v\+Up Up direction for the camera  Create a look-\/at view matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a3b1313f945548913d1142e4705d8241a}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Multiply\+F@{P\+V\+R\+T\+Matrix\+Multiply\+F}}
+\index{P\+V\+R\+T\+Matrix\+Multiply\+F@{P\+V\+R\+T\+Matrix\+Multiply\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Multiply\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Multiply\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+A, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+B}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a3b1313f945548913d1142e4705d8241a}
+
+
+  P\+V\+R\+T\+Matrix\+Multiply\+F  m\+Out Result of m\+A x m\+B  m\+A First operand  m\+B Second operand  Multiply m\+A by m\+B and assign the result to m\+Out (m\+Out = p1 $\ast$ p2). A copy of the result matrix is done in the function because m\+Out can be a parameter m\+A or m\+B. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a30b7d712629ad8f52063773d99efbb55}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Multiply\+X@{P\+V\+R\+T\+Matrix\+Multiply\+X}}
+\index{P\+V\+R\+T\+Matrix\+Multiply\+X@{P\+V\+R\+T\+Matrix\+Multiply\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Multiply\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Multiply\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+A, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+B}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a30b7d712629ad8f52063773d99efbb55}
+
+
+  P\+V\+R\+T\+Matrix\+Multiply\+X  m\+Out Result of m\+A x m\+B  m\+A First operand  m\+B Second operand  Multiply m\+A by m\+B and assign the result to m\+Out (m\+Out = p1 $\ast$ p2). A copy of the result matrix is done in the function because m\+Out can be a parameter m\+A or m\+B. The fixed-\/point shift could be performed after adding all four intermediate results together however this might cause some overflow issues. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_af923b17057c2953a6b02d1e345c16815}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F@{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F}}
+\index{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F@{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{w, }
+\item[{const float}]{h, }
+\item[{const float}]{zn, }
+\item[{const float}]{zf, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_af923b17057c2953a6b02d1e345c16815}
+
+
+  P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+F  m\+Out Orthographic matrix  w Width of the screen  h Height of the screen  zn Near clipping distance  zf Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create an orthographic matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a85936b244826720b8124858027f9d936}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X@{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X}}
+\index{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X@{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{w, }
+\item[{const int}]{h, }
+\item[{const int}]{zn, }
+\item[{const int}]{zf, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a85936b244826720b8124858027f9d936}
+
+
+  P\+V\+R\+T\+Matrix\+Ortho\+L\+H\+X  m\+Out Orthographic matrix  w Width of the screen  h Height of the screen  zn Near clipping distance  zf Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create an orthographic matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_ab8a6d2ee7db194d53e6400452cb8c2f3}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F@{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F}}
+\index{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F@{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{w, }
+\item[{const float}]{h, }
+\item[{const float}]{zn, }
+\item[{const float}]{zf, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ab8a6d2ee7db194d53e6400452cb8c2f3}
+
+
+  P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+F  m\+Out Orthographic matrix  w Width of the screen  h Height of the screen  zn Near clipping distance  zf Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create an orthographic matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a700a323d93d52aab2aea2a98a7cff3db}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X@{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X}}
+\index{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X@{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{w, }
+\item[{const int}]{h, }
+\item[{const int}]{zn, }
+\item[{const int}]{zf, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a700a323d93d52aab2aea2a98a7cff3db}
+
+
+  P\+V\+R\+T\+Matrix\+Ortho\+R\+H\+X  m\+Out Orthographic matrix  w Width of the screen  h Height of the screen  zn Near clipping distance  zf Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create an orthographic matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a4f171571e832f9ec14f8abbbf0d2d009}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F}}
+\index{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+F\+O\+Vy, }
+\item[{const float}]{f\+Aspect, }
+\item[{const float}]{f\+Near, }
+\item[{const float}]{f\+Far, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a4f171571e832f9ec14f8abbbf0d2d009}
+
+
+  P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+F  m\+Out Perspective matrix  f\+F\+O\+Vy Field of view  f\+Aspect Aspect ratio  f\+Near Near clipping distance  f\+Far Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create a perspective matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a14ad4717ff1351fcc2695481e644f482}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X}}
+\index{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+F\+O\+Vy, }
+\item[{const int}]{f\+Aspect, }
+\item[{const int}]{f\+Near, }
+\item[{const int}]{f\+Far, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a14ad4717ff1351fcc2695481e644f482}
+
+
+  P\+V\+R\+T\+Matrix\+Perspective\+Fov\+L\+H\+X  m\+Out Perspective matrix  f\+F\+O\+Vy Field of view  f\+Aspect Aspect ratio  f\+Near Near clipping distance  f\+Far Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create a perspective matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_af0ef186dbfe3a77463f3fa2a8812eef1}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F}}
+\index{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+F\+O\+Vy, }
+\item[{const float}]{f\+Aspect, }
+\item[{const float}]{f\+Near, }
+\item[{const float}]{f\+Far, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_af0ef186dbfe3a77463f3fa2a8812eef1}
+
+
+  P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+F  m\+Out Perspective matrix  f\+F\+O\+Vy Field of view  f\+Aspect Aspect ratio  f\+Near Near clipping distance  f\+Far Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create a perspective matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_ab51725dd7a79d7186658596bda72b6ec}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X}}
+\index{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X@{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+F\+O\+Vy, }
+\item[{const int}]{f\+Aspect, }
+\item[{const int}]{f\+Near, }
+\item[{const int}]{f\+Far, }
+\item[{const bool}]{b\+Rotate}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ab51725dd7a79d7186658596bda72b6ec}
+
+
+  P\+V\+R\+T\+Matrix\+Perspective\+Fov\+R\+H\+X  m\+Out Perspective matrix  f\+F\+O\+Vy Field of view  f\+Aspect Aspect ratio  f\+Near Near clipping distance  f\+Far Far clipping distance  b\+Rotate Should we rotate it ? (for upright screens)  Create a perspective matrix. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_ad3cb8a1708b56be10015faaaa25025ef}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+X\+F@{P\+V\+R\+T\+Matrix\+Rotation\+X\+F}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+X\+F@{P\+V\+R\+T\+Matrix\+Rotation\+X\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+X\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+X\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ad3cb8a1708b56be10015faaaa25025ef}
+
+
+  Name P\+V\+R\+T\+Matrix\+Rotation\+X\+F  m\+Out Rotation matrix  f\+Angle Angle of the rotation  Create an X rotation matrix m\+Out. \hypertarget{_p_v_r_t_matrix_8h_a8cffacd9422adcc13fe4c1bff8c3fba5}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+X\+X@{P\+V\+R\+T\+Matrix\+Rotation\+X\+X}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+X\+X@{P\+V\+R\+T\+Matrix\+Rotation\+X\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+X\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+X\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a8cffacd9422adcc13fe4c1bff8c3fba5}
+
+
+  Name P\+V\+R\+T\+Matrix\+Rotation\+X\+X  m\+Out Rotation matrix  f\+Angle Angle of the rotation  Create an X rotation matrix m\+Out. \hypertarget{_p_v_r_t_matrix_8h_ab8a00e2b0a698163d1eff4e35b27fd8b}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+Y\+F@{P\+V\+R\+T\+Matrix\+Rotation\+Y\+F}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+Y\+F@{P\+V\+R\+T\+Matrix\+Rotation\+Y\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+Y\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+Y\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ab8a00e2b0a698163d1eff4e35b27fd8b}
+
+
+  Name P\+V\+R\+T\+Matrix\+Rotation\+Y\+F  m\+Out Rotation matrix  f\+Angle Angle of the rotation  Create an Y rotation matrix m\+Out. \hypertarget{_p_v_r_t_matrix_8h_a425202e4c8f32a148f70c54dd25fb18b}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+Y\+X@{P\+V\+R\+T\+Matrix\+Rotation\+Y\+X}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+Y\+X@{P\+V\+R\+T\+Matrix\+Rotation\+Y\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+Y\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+Y\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a425202e4c8f32a148f70c54dd25fb18b}
+
+
+  Name P\+V\+R\+T\+Matrix\+Rotation\+Y\+X  m\+Out Rotation matrix  f\+Angle Angle of the rotation  Create an Y rotation matrix m\+Out. \hypertarget{_p_v_r_t_matrix_8h_aa4bc218120d68424307fe50d73cf82c4}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+Z\+F@{P\+V\+R\+T\+Matrix\+Rotation\+Z\+F}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+Z\+F@{P\+V\+R\+T\+Matrix\+Rotation\+Z\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+Z\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+Z\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aa4bc218120d68424307fe50d73cf82c4}
+
+
+  Name P\+V\+R\+T\+Matrix\+Rotation\+Z\+F  m\+Out Rotation matrix  f\+Angle Angle of the rotation  Create an Z rotation matrix m\+Out. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_af8dd4fb55692a605bb7d3197c8d8f66b}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+Z\+X@{P\+V\+R\+T\+Matrix\+Rotation\+Z\+X}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+Z\+X@{P\+V\+R\+T\+Matrix\+Rotation\+Z\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+Z\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+Z\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_af8dd4fb55692a605bb7d3197c8d8f66b}
+
+
+  Name P\+V\+R\+T\+Matrix\+Rotation\+Z\+X  m\+Out Rotation matrix  f\+Angle Angle of the rotation  Create an Z rotation matrix m\+Out. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a861ad0e264fad9950cc0685dac690e1f}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Scaling\+F@{P\+V\+R\+T\+Matrix\+Scaling\+F}}
+\index{P\+V\+R\+T\+Matrix\+Scaling\+F@{P\+V\+R\+T\+Matrix\+Scaling\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Scaling\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Scaling\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+X, }
+\item[{const float}]{f\+Y, }
+\item[{const float}]{f\+Z}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a861ad0e264fad9950cc0685dac690e1f}
+
+
+  Name P\+V\+R\+T\+Matrix\+Scaling\+F  m\+Out Scale matrix  f\+X X component of the scaling  f\+Y Y component of the scaling  f\+Z Z component of the scaling  Build a scale matrix m\+Out using f\+X, f\+Y and f\+Z. \hypertarget{_p_v_r_t_matrix_8h_ae57348ff95a06f4bc7b2dc28fd447322}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Scaling\+X@{P\+V\+R\+T\+Matrix\+Scaling\+X}}
+\index{P\+V\+R\+T\+Matrix\+Scaling\+X@{P\+V\+R\+T\+Matrix\+Scaling\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Scaling\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Scaling\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+X, }
+\item[{const int}]{f\+Y, }
+\item[{const int}]{f\+Z}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ae57348ff95a06f4bc7b2dc28fd447322}
+
+
+  Name P\+V\+R\+T\+Matrix\+Scaling\+X  m\+Out Scale matrix  f\+X X component of the scaling  f\+Y Y component of the scaling  f\+Z Z component of the scaling  Build a scale matrix m\+Out using f\+X, f\+Y and f\+Z. \hypertarget{_p_v_r_t_matrix_8h_acc357dc127ae4202265595783971cc87}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Translation\+F@{P\+V\+R\+T\+Matrix\+Translation\+F}}
+\index{P\+V\+R\+T\+Matrix\+Translation\+F@{P\+V\+R\+T\+Matrix\+Translation\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Translation\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Translation\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const float}]{f\+X, }
+\item[{const float}]{f\+Y, }
+\item[{const float}]{f\+Z}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_acc357dc127ae4202265595783971cc87}
+
+
+  Name P\+V\+R\+T\+Matrix\+Translation\+F  m\+Out Translation matrix  f\+X X component of the translation  f\+Y Y component of the translation  f\+Z Z component of the translation  Build a transaltion matrix m\+Out using f\+X, f\+Y and f\+Z. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a58f496fa72bf50eb12babe74fa3f622e}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Translation\+X@{P\+V\+R\+T\+Matrix\+Translation\+X}}
+\index{P\+V\+R\+T\+Matrix\+Translation\+X@{P\+V\+R\+T\+Matrix\+Translation\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Translation\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Translation\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const int}]{f\+X, }
+\item[{const int}]{f\+Y, }
+\item[{const int}]{f\+Z}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a58f496fa72bf50eb12babe74fa3f622e}
+
+
+  Name P\+V\+R\+T\+Matrix\+Translation\+X  m\+Out Translation matrix  f\+X X component of the translation  f\+Y Y component of the translation  f\+Z Z component of the translation  Build a transaltion matrix m\+Out using f\+X, f\+Y and f\+Z. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a45048e3e094745e9c4047da0e620026d}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Transpose\+F@{P\+V\+R\+T\+Matrix\+Transpose\+F}}
+\index{P\+V\+R\+T\+Matrix\+Transpose\+F@{P\+V\+R\+T\+Matrix\+Transpose\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Transpose\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Transpose\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a45048e3e094745e9c4047da0e620026d}
+
+
+  Name P\+V\+R\+T\+Matrix\+Transpose\+F  m\+Out Transposed matrix  m\+In Original matrix  Compute the transpose matrix of m\+In. \hypertarget{_p_v_r_t_matrix_8h_aa13ac6e8f085285258d71fc43c4e38b9}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Transpose\+X@{P\+V\+R\+T\+Matrix\+Transpose\+X}}
+\index{P\+V\+R\+T\+Matrix\+Transpose\+X@{P\+V\+R\+T\+Matrix\+Transpose\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Transpose\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Transpose\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aa13ac6e8f085285258d71fc43c4e38b9}
+
+
+  Name P\+V\+R\+T\+Matrix\+Transpose\+X  m\+Out Transposed matrix  m\+In Original matrix  Compute the transpose matrix of m\+In. \hypertarget{_p_v_r_t_matrix_8h_a35aa277943e7e9a07dc7f32a5c187e8e}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v1, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v2}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a35aa277943e7e9a07dc7f32a5c187e8e}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+F  v\+Out Cross product of the two vectors  v1 First vector  v2 Second vector  This function performs the cross product of the two supplied vectors. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a74b56e545192b0aa87082e3ed20491d6}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v1, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v2}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a74b56e545192b0aa87082e3ed20491d6}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Cross\+Product\+X  v\+Out Cross product of the two vectors  v1 First vector  v2 Second vector  This function performs the cross product of the two supplied vectors. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_aff799c1d9db96bc9e2e0b6b006b89326}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F}]{\setlength{\rightskip}{0pt plus 5cm}float P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v1, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v2}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_aff799c1d9db96bc9e2e0b6b006b89326}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+F  v1 First vector  v2 Second vector  Dot product of the two vectors.  This function performs the dot product of the two supplied vectors. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_ac908d01d6d545eb7c60eb6f67775f58c}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X}]{\setlength{\rightskip}{0pt plus 5cm}int P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v1, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v2}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ac908d01d6d545eb7c60eb6f67775f58c}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Dot\+Product\+X  v1 First vector  v2 Second vector  Dot product of the two vectors.  This function performs the dot product of the two supplied vectors. A single $>$$>$ 16 shift could be applied to the final accumulated result however this runs the risk of overflow between the results of the intermediate additions. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a6ef9d239db771ef6a6bdded2a2f2d9f8}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Length\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Length\+F}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Length\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Length\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Length\+F}]{\setlength{\rightskip}{0pt plus 5cm}float P\+V\+R\+T\+Matrix\+Vec3\+Length\+F (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a6ef9d239db771ef6a6bdded2a2f2d9f8}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Length\+F  v\+In Vector to get the length of  The length of the vector  Gets the length of the supplied vector. \hypertarget{_p_v_r_t_matrix_8h_a8985cbc6ce5f7671cf47eee90a6b2148}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Length\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Length\+X}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Length\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Length\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Length\+X}]{\setlength{\rightskip}{0pt plus 5cm}int P\+V\+R\+T\+Matrix\+Vec3\+Length\+X (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a8985cbc6ce5f7671cf47eee90a6b2148}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Length\+X  v\+In Vector to get the length of  The length of the vector  Gets the length of the supplied vector \hypertarget{_p_v_r_t_matrix_8h_a480403190ace3511d6f6454c06eba1c3}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v1, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v2, }
+\item[{const float}]{s}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a480403190ace3511d6f6454c06eba1c3}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+F  v\+Out Result of the interpolation  v1 First vector to interpolate from  v2 Second vector to interpolate form  s Coefficient of interpolation  This function performs the linear interpolation based on the following formula\+: V1 + s(V2-\/\+V1). \hypertarget{_p_v_r_t_matrix_8h_a93f0897355520e9dbf4b708802e1bf3c}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v1, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v2, }
+\item[{const int}]{s}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a93f0897355520e9dbf4b708802e1bf3c}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Lerp\+X  v\+Out Result of the interpolation  v1 First vector to interpolate from  v2 Second vector to interpolate form  s Coefficient of interpolation  This function performs the linear interpolation based on the following formula\+: V1 + s(V2-\/\+V1). \hypertarget{_p_v_r_t_matrix_8h_ac3209bb973c90b96ae9585ca5129a7d4}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F@{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_ac3209bb973c90b96ae9585ca5129a7d4}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+F  v\+Out Normalized vector  v\+In Vector to normalize  Normalizes the supplied vector. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_matrix_8h_a62d32f83733f2b73bfa520f8a2d3e05c}{\index{P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}!P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X}}
+\index{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X@{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X}!P\+V\+R\+T\+Matrix.\+h@{P\+V\+R\+T\+Matrix.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+In}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_matrix_8h_a62d32f83733f2b73bfa520f8a2d3e05c}
+
+
+  P\+V\+R\+T\+Matrix\+Vec3\+Normalize\+X  v\+Out Normalized vector  v\+In Vector to normalize  Normalizes the supplied vector. The square root function is currently still performed in floating-\/point. Original vector is scaled down prior to be normalized in order to avoid overflow issues. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+

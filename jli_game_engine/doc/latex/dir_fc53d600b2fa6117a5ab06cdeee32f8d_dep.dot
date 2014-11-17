@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Skybox/OGLES/Build/Android/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_39c97f77d6d42cd5110b3b06ff837011 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Android" fontname="Helvetica", fontsize="10", URL="dir_39c97f77d6d42cd5110b3b06ff837011.html"]
+  subgraph clusterdir_fc53d600b2fa6117a5ab06cdeee32f8d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fc53d600b2fa6117a5ab06cdeee32f8d.html"];
+    dir_fc53d600b2fa6117a5ab06cdeee32f8d [shape=plaintext label="src"];
+    dir_d05199ce4728513d6e27ef824972940b [shape=box label="com" color="red" fillcolor="white" style="filled" URL="dir_d05199ce4728513d6e27ef824972940b.html"];
+  }
+  }
+}

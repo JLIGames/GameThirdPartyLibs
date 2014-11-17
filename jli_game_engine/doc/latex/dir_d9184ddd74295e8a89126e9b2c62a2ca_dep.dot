@@ -1,0 +1,9 @@
+digraph "fmod/ios/FMOD Programmers API/api/studio/examples" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_816980ef3153f9ce125820be09fa1919 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="studio" fontname="Helvetica", fontsize="10", URL="dir_816980ef3153f9ce125820be09fa1919.html"]
+  dir_d9184ddd74295e8a89126e9b2c62a2ca [shape=box, label="examples", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d9184ddd74295e8a89126e9b2c62a2ca.html"];
+  }
+}

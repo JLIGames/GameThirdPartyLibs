@@ -1,0 +1,92 @@
+\hypertarget{classbt_polar_decomposition}{\section{bt\+Polar\+Decomposition Class Reference}
+\label{classbt_polar_decomposition}\index{bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}}
+}
+
+
+{\ttfamily \#include $<$bt\+Polar\+Decomposition.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbt_polar_decomposition_aa346e3dcc8867ebd3944b51ab5b7fb1f}{bt\+Polar\+Decomposition} (bt\+Scalar tolerance=D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+O\+L\+E\+R\+A\+N\+C\+E, unsigned int \hyperlink{classbt_polar_decomposition_ac999bd3afdcc94a43ddbea028b5d4867}{max\+Iterations}=D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+I\+T\+E\+R\+A\+T\+I\+O\+N\+S)
+\item 
+unsigned int \hyperlink{classbt_polar_decomposition_a6ab0c88b30522ab42b6202a2f7a17eab}{decompose} (const bt\+Matrix3x3 \&a, bt\+Matrix3x3 \&u, bt\+Matrix3x3 \&h) const 
+\item 
+unsigned int \hyperlink{classbt_polar_decomposition_ac999bd3afdcc94a43ddbea028b5d4867}{max\+Iterations} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_polar_decomposition_a12a01581f129acf4b52128463ed2a839}{static const bt\+Scalar {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+O\+L\+E\+R\+A\+N\+C\+E} = bt\+Scalar(0.\+0001)}\label{classbt_polar_decomposition_a12a01581f129acf4b52128463ed2a839}
+
+\item 
+\hypertarget{classbt_polar_decomposition_af5a6809af029f7f5af20de124e243b2d}{static const unsigned int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+I\+T\+E\+R\+A\+T\+I\+O\+N\+S} = 16}\label{classbt_polar_decomposition_af5a6809af029f7f5af20de124e243b2d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to compute the polar decomposition of a matrix. In general, the polar decomposition factorizes a matrix, A, into two parts\+: a unitary matrix (U) and a positive, semi-\/definite Hermitian matrix (H). However, in this particular implementation the original matrix, A, is required to be a square 3x3 matrix with real elements. This means that U will be an orthogonal matrix and H with be a positive-\/definite, symmetric matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbt_polar_decomposition_aa346e3dcc8867ebd3944b51ab5b7fb1f}{\index{bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}!bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}}
+\index{bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}!bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}}
+\subsubsection[{bt\+Polar\+Decomposition}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Polar\+Decomposition\+::bt\+Polar\+Decomposition (
+\begin{DoxyParamCaption}
+\item[{bt\+Scalar}]{tolerance = {\ttfamily DEFAULT\+\_\+TOLERANCE}, }
+\item[{unsigned int}]{max\+Iterations = {\ttfamily DEFAULT\+\_\+MAX\+\_\+ITERATIONS}}
+\end{DoxyParamCaption}
+)}}\label{classbt_polar_decomposition_aa346e3dcc8867ebd3944b51ab5b7fb1f}
+Creates an instance with optional parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tolerance} & -\/ the tolerance used to determine convergence of the algorithm \\
+\hline
+{\em max\+Iterations} & -\/ the maximum number of iterations used to achieve convergence \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_polar_decomposition_a6ab0c88b30522ab42b6202a2f7a17eab}{\index{bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}!decompose@{decompose}}
+\index{decompose@{decompose}!bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}}
+\subsubsection[{decompose}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int bt\+Polar\+Decomposition\+::decompose (
+\begin{DoxyParamCaption}
+\item[{const bt\+Matrix3x3 \&}]{a, }
+\item[{bt\+Matrix3x3 \&}]{u, }
+\item[{bt\+Matrix3x3 \&}]{h}
+\end{DoxyParamCaption}
+) const}}\label{classbt_polar_decomposition_a6ab0c88b30522ab42b6202a2f7a17eab}
+Decomposes a matrix into orthogonal and symmetric, positive-\/definite parts. If the number of iterations returned by this function is equal to the maximum number of iterations, the algorithm has failed to converge.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ the original matrix \\
+\hline
+{\em u} & -\/ the resulting orthogonal matrix \\
+\hline
+{\em h} & -\/ the resulting symmetric matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of iterations performed by the algorithm. 
+\end{DoxyReturn}
+\hypertarget{classbt_polar_decomposition_ac999bd3afdcc94a43ddbea028b5d4867}{\index{bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}!max\+Iterations@{max\+Iterations}}
+\index{max\+Iterations@{max\+Iterations}!bt\+Polar\+Decomposition@{bt\+Polar\+Decomposition}}
+\subsubsection[{max\+Iterations}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int bt\+Polar\+Decomposition\+::max\+Iterations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classbt_polar_decomposition_ac999bd3afdcc94a43ddbea028b5d4867}
+Returns the maximum number of iterations that this algorithm will perform to achieve convergence.
+
+\begin{DoxyReturn}{Returns}
+maximum number of iterations 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Linear\+Math/bt\+Polar\+Decomposition.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Linear\+Math/bt\+Polar\+Decomposition.\+cpp\end{DoxyCompactItemize}

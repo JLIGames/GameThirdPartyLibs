@@ -1,0 +1,179 @@
+\hypertarget{class_p_v_r_shell_command_line}{\section{P\+V\+R\+Shell\+Command\+Line Class Reference}
+\label{class_p_v_r_shell_command_line}\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+}
+
+
+Command-\/line interpreter.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+Shell\+Impl.\+h$>$}
+
+
+
+Collaboration diagram for P\+V\+R\+Shell\+Command\+Line\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_v_r_shell_command_line_a1568200bffdf73da490ac90671c70805}{P\+V\+R\+Shell\+Command\+Line} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_p_v_r_shell_command_line_a46cd5e364c1f916829546e86d0d3f6de}{$\sim$\+P\+V\+R\+Shell\+Command\+Line} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_v_r_shell_command_line_a46200015b55e05a3ea360ee32e930354}{Set} (const char $\ast$p\+Str)
+\begin{DoxyCompactList}\small\item\em Set command-\/line options to p\+Str. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_v_r_shell_command_line_a03939829953665e33b4d0ba2d9c6e21c}{Prefix} (const char $\ast$p\+Str)
+\begin{DoxyCompactList}\small\item\em Prepend command-\/line options to m\+\_\+ps\+Orig. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_v_r_shell_command_line_adabcd2f4778b487451e50c0cc75c6f47}{Prefix\+From\+File} (const char $\ast$p\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Prepend command-\/line options to m\+\_\+ps\+Orig from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_v_r_shell_command_line_aed70d1cc85bc9d33b705a5efb81af363}{Parse} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} m\+\_\+ps\+Orig for command-\/line options and store them in m\+\_\+p\+Opt. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_v_r_shell_command_line_a79b2d23ee5b36d1741910aad9c4a5fd4}{Apply} (\hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} \&shell)
+\begin{DoxyCompactList}\small\item\em Apply the command-\/line options to shell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_v_r_shell_command_line_a18405c104edab2d5608b0a0eb9115439}{char $\ast$ {\bfseries m\+\_\+ps\+Orig}}\label{class_p_v_r_shell_command_line_a18405c104edab2d5608b0a0eb9115439}
+
+\item 
+\hypertarget{class_p_v_r_shell_command_line_af7ac61c231ee6a442c32888d5bcd02cc}{char $\ast$ {\bfseries m\+\_\+ps\+Split}}\label{class_p_v_r_shell_command_line_af7ac61c231ee6a442c32888d5bcd02cc}
+
+\item 
+\hypertarget{class_p_v_r_shell_command_line_a850140e30293d9e6f4378e08a4285596}{\hyperlink{struct_s_cmd_line_opt}{S\+Cmd\+Line\+Opt} $\ast$ {\bfseries m\+\_\+p\+Opt}}\label{class_p_v_r_shell_command_line_a850140e30293d9e6f4378e08a4285596}
+
+\item 
+\hypertarget{class_p_v_r_shell_command_line_a6765e52131fc8b678eaccd3d1f159c86}{int {\bfseries m\+\_\+n\+Opt\+Len}}\label{class_p_v_r_shell_command_line_a6765e52131fc8b678eaccd3d1f159c86}
+
+\item 
+\hypertarget{class_p_v_r_shell_command_line_a693dd30cde3e6eedef87d5fcd6a1fffd}{int {\bfseries m\+\_\+n\+Opt\+Max}}\label{class_p_v_r_shell_command_line_a693dd30cde3e6eedef87d5fcd6a1fffd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Command-\/line interpreter. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_p_v_r_shell_command_line_a1568200bffdf73da490ac90671c70805}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{P\+V\+R\+Shell\+Command\+Line}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Shell\+Command\+Line\+::\+P\+V\+R\+Shell\+Command\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_a1568200bffdf73da490ac90671c70805}
+
+
+Constructor. 
+
+
+
+ \hypertarget{class_p_v_r_shell_command_line_a46cd5e364c1f916829546e86d0d3f6de}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!````~P\+V\+R\+Shell\+Command\+Line@{$\sim$\+P\+V\+R\+Shell\+Command\+Line}}
+\index{````~P\+V\+R\+Shell\+Command\+Line@{$\sim$\+P\+V\+R\+Shell\+Command\+Line}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{$\sim$\+P\+V\+R\+Shell\+Command\+Line}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Shell\+Command\+Line\+::$\sim$\+P\+V\+R\+Shell\+Command\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_a46cd5e364c1f916829546e86d0d3f6de}
+
+
+Destructor. 
+
+
+
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_v_r_shell_command_line_a79b2d23ee5b36d1741910aad9c4a5fd4}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!Apply@{Apply}}
+\index{Apply@{Apply}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{Apply}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+Shell\+Command\+Line\+::\+Apply (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+Shell} \&}]{shell}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_a79b2d23ee5b36d1741910aad9c4a5fd4}
+
+
+Apply the command-\/line options to shell. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shell} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_p_v_r_shell_command_line_aed70d1cc85bc9d33b705a5efb81af363}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!Parse@{Parse}}
+\index{Parse@{Parse}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+Shell\+Command\+Line\+::\+Parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_aed70d1cc85bc9d33b705a5efb81af363}
+
+
+\hyperlink{struct_parse}{Parse} m\+\_\+ps\+Orig for command-\/line options and store them in m\+\_\+p\+Opt. 
+
+
+
+ \hypertarget{class_p_v_r_shell_command_line_a03939829953665e33b4d0ba2d9c6e21c}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!Prefix@{Prefix}}
+\index{Prefix@{Prefix}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{Prefix}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+Shell\+Command\+Line\+::\+Prefix (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_a03939829953665e33b4d0ba2d9c6e21c}
+
+
+Prepend command-\/line options to m\+\_\+ps\+Orig. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Str} & Input string \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_p_v_r_shell_command_line_adabcd2f4778b487451e50c0cc75c6f47}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!Prefix\+From\+File@{Prefix\+From\+File}}
+\index{Prefix\+From\+File@{Prefix\+From\+File}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{Prefix\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+V\+R\+Shell\+Command\+Line\+::\+Prefix\+From\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File\+Name}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_adabcd2f4778b487451e50c0cc75c6f47}
+
+
+Prepend command-\/line options to m\+\_\+ps\+Orig from a file. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+File\+Name} & Input string \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_p_v_r_shell_command_line_a46200015b55e05a3ea360ee32e930354}{\index{P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}!Set@{Set}}
+\index{Set@{Set}!P\+V\+R\+Shell\+Command\+Line@{P\+V\+R\+Shell\+Command\+Line}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+Shell\+Command\+Line\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_p_v_r_shell_command_line_a46200015b55e05a3ea360ee32e930354}
+
+
+Set command-\/line options to p\+Str. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Str} & Input string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Shell/\hyperlink{_p_v_r_shell_impl_8h}{P\+V\+R\+Shell\+Impl.\+h}\end{DoxyCompactItemize}

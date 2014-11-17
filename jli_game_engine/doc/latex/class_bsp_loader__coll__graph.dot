@@ -1,0 +1,31 @@
+digraph "BspLoader"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BspLoader",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dleafs" ];
+  Node2 [label="btAlignedObjectArray\l\< BSPLeaf \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dbrushes" ];
+  Node3 [label="btAlignedObjectArray\l\< BSPBrush \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dmodels" ];
+  Node4 [label="btAlignedObjectArray\l\< BSPModel \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_entities" ];
+  Node5 [label="btAlignedObjectArray\l\< BSPEntity \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dshaders" ];
+  Node6 [label="btAlignedObjectArray\l\< BSPShader \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dnodes" ];
+  Node7 [label="btAlignedObjectArray\l\< BSPNode \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dplanes" ];
+  Node8 [label="btAlignedObjectArray\l\< BSPPlane \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_drawIndexes\nm_dleafbrushes\nm_dleafsurfaces" ];
+  Node9 [label="btAlignedObjectArray\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_lightBytes\nm_visBytes\nm_gridData" ];
+  Node10 [label="btAlignedObjectArray\l\< unsigned char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_drawSurfaces" ];
+  Node11 [label="btAlignedObjectArray\l\< BSPSurface \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dbrushsides" ];
+  Node12 [label="btAlignedObjectArray\l\< BSPBrushSide \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dentdata" ];
+  Node13 [label="btAlignedObjectArray\l\< char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+}

@@ -1,0 +1,21 @@
+digraph "TestFixture"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="TestFixture",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestCase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_case.html",tooltip="A single test object. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Orthodox\< ClassUnderTest \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_orthodox.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TestCaller\< Fixture \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_caller.html",tooltip="Generate a test case from a fixture method.A test caller provides access to a test case method on a t..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TestCaseDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_case_decorator.html",tooltip="Decorator for Test cases. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ExceptionTestCaseDecorator\l\< ExpectedException \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_exception_test_case_decorator.html",tooltip="Expected exception test case decorator. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

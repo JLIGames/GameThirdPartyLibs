@@ -1,0 +1,198 @@
+\hypertarget{class_o_g_l_e_s2_alpha_blend}{\section{O\+G\+L\+E\+S2\+Alpha\+Blend Class Reference}
+\label{class_o_g_l_e_s2_alpha_blend}\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S2\+Alpha\+Blend\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S2\+Alpha\+Blend\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_alpha_blend_a2742bd10ae8ea83d0f2f618557bbb5f4}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_alpha_blend_ae12cde52d934d877320ada08767b7c23}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_alpha_blend_a77fcfb1c3204a5e318b48914840cd1bc}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_alpha_blend_ac873a8d817a005f4d9190a1ab2dc98c4}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_alpha_blend_a8556ad801c1204bc2c407591773b5b41}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_alpha_blend_a3ed834079b625ae6d4d7ecc1ef18e73f}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_alpha_blend_a7c2e5ccf9e1d38e34d0cceacfc020d76}{Load\+Shaders} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s2_alpha_blend_a41fb4c519d6741f8b94588d2b2d74d61}{Load\+Vbos} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_alpha_blend_adeb191abca3ec5571a8223d8715a0328}{Draw\+Quad} (float x1, float y1, float x2, float y2, G\+Luint ui\+Texture)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s2_alpha_blend_adeb191abca3ec5571a8223d8715a0328}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Draw\+Quad@{Draw\+Quad}}
+\index{Draw\+Quad@{Draw\+Quad}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Draw\+Quad}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Draw\+Quad (
+\begin{DoxyParamCaption}
+\item[{float}]{x1, }
+\item[{float}]{y1, }
+\item[{float}]{x2, }
+\item[{float}]{y2, }
+\item[{G\+Luint}]{ui\+Texture}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_alpha_blend_adeb191abca3ec5571a8223d8715a0328}
+
+
+  Draw\+Quad  x1 left coordinate of the rectangle to draw on the screen (between -\/1 and 1)  y1 top coordinate of the rectangle to draw on the screen (between -\/1 and 1)  x2 right coordinate of the rectangle to draw on the screen (between -\/1 and 1)  y2 bottom coordinate of the rectangle to draw on the screen (between -\/1 and 1)  ui\+Texture Open\+G\+L E\+S texture handle to use  Draws a given texture on a quad on the screen. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_a2742bd10ae8ea83d0f2f618557bbb5f4}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_alpha_blend_a2742bd10ae8ea83d0f2f618557bbb5f4}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_alpha_blend_a2742bd10ae8ea83d0f2f618557bbb5f4}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_alpha_blend_a2742bd10ae8ea83d0f2f618557bbb5f4}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_ae12cde52d934d877320ada08767b7c23}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_alpha_blend_ae12cde52d934d877320ada08767b7c23}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_alpha_blend_ae12cde52d934d877320ada08767b7c23}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_a7c2e5ccf9e1d38e34d0cceacfc020d76}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Load\+Shaders@{Load\+Shaders}}
+\index{Load\+Shaders@{Load\+Shaders}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Load\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Load\+Shaders (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_alpha_blend_a7c2e5ccf9e1d38e34d0cceacfc020d76}
+
+
+  Load\+Shaders  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads and compiles the shaders and links the shader programs required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_a3ed834079b625ae6d4d7ecc1ef18e73f}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_alpha_blend_a3ed834079b625ae6d4d7ecc1ef18e73f}
+
+
+  Load\+Textures  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_a41fb4c519d6741f8b94588d2b2d74d61}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Load\+Vbos@{Load\+Vbos}}
+\index{Load\+Vbos@{Load\+Vbos}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Load\+Vbos}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Load\+Vbos (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_alpha_blend_a41fb4c519d6741f8b94588d2b2d74d61}
+
+
+  Load\+Vbos  Loads the mesh data required for this training course into vertex buffer objects 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_ac873a8d817a005f4d9190a1ab2dc98c4}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_alpha_blend_ac873a8d817a005f4d9190a1ab2dc98c4}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_alpha_blend_ac873a8d817a005f4d9190a1ab2dc98c4}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_alpha_blend_ac873a8d817a005f4d9190a1ab2dc98c4}{Quit\+Application()} will not be called. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_a77fcfb1c3204a5e318b48914840cd1bc}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_alpha_blend_a77fcfb1c3204a5e318b48914840cd1bc}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_alpha_blend_a77fcfb1c3204a5e318b48914840cd1bc}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_alpha_blend_a8556ad801c1204bc2c407591773b5b41}{\index{O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S2\+Alpha\+Blend@{O\+G\+L\+E\+S2\+Alpha\+Blend}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Alpha\+Blend\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_alpha_blend_a8556ad801c1204bc2c407591773b5b41}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. Will also manage relevent O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Intermediate/\+Alpha\+Blend/\+O\+G\+L\+E\+S2/O\+G\+L\+E\+S2\+Alpha\+Blend.\+cpp\end{DoxyCompactItemize}

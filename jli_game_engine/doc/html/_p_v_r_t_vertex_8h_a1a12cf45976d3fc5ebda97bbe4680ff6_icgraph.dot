@@ -1,0 +1,22 @@
+digraph "PVRTVertexWrite"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PVRTVertexWrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPVRTBoneBatches::Create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_bone_batches.html#a2a0037ba145fbb78e013867effaa1764",tooltip="Fills the bone batch structure. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVRTModelPODDataConvert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_model_p_o_d_8h.html#adfd30b48777182094af212a5c1ebee45"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PVRTModelPODScaleAndConvert\lVtxData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_model_p_o_d_8h.html#af20fe002907f6754694ec5d04ff2237d"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PVRTModelPODDataShred",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_model_p_o_d_8h.html#a4bd5141d2fedb80acc1a906cfe3db121"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PVRTModelPODReorderFaces",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_model_p_o_d_8h.html#a96ac21525874d0eaf8f7868b313915f0"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PVRTModelPODToggleStrips",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_model_p_o_d_8h.html#a9c23c383a5d242b71146b83613f503cf"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PVRTVertexGenerateTangent\lSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_vertex_8h.html#a73c1eb79b4e7cd5b1a5cfd0060d8ba93"];
+}

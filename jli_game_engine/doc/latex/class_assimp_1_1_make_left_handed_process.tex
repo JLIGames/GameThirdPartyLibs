@@ -1,0 +1,170 @@
+\hypertarget{class_assimp_1_1_make_left_handed_process}{\section{Assimp\+:\+:Make\+Left\+Handed\+Process Class Reference}
+\label{class_assimp_1_1_make_left_handed_process}\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+}
+
+
+The \hyperlink{class_assimp_1_1_make_left_handed_process}{Make\+Left\+Handed\+Process} converts all imported data to a left-\/handed coordinate system.  
+
+
+
+
+{\ttfamily \#include $<$Convert\+To\+L\+H\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Make\+Left\+Handed\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Make\+Left\+Handed\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_make_left_handed_process_a494e6bf525fbeaa4e39b05331288cac0}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_make_left_handed_process_a65d1b32efd0056e668c2bf3763fa48d2}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_make_left_handed_process_a48e8217838d26ecbfd3b65dbf59639db}{Process\+Node} (\hyperlink{structai_node}{ai\+Node} $\ast$p\+Node, const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \&p\+Parent\+Global\+Rotation)
+\item 
+void \hyperlink{class_assimp_1_1_make_left_handed_process_a8f9b759b8fdd4e31b129d22f40fd8354}{Process\+Mesh} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_make_left_handed_process_a9f252439454d2108908172ae9838d274}{Process\+Material} (\hyperlink{classai_material}{ai\+Material} $\ast$p\+Mat)
+\item 
+void \hyperlink{class_assimp_1_1_make_left_handed_process_a2867082b8689b3aa3869dab31223b8f9}{Process\+Animation} (\hyperlink{structai_node_anim}{ai\+Node\+Anim} $\ast$p\+Anim)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_assimp_1_1_make_left_handed_process}{Make\+Left\+Handed\+Process} converts all imported data to a left-\/handed coordinate system. 
+
+This implies a mirroring of the Z axis of the coordinate system. But to keep transformation matrices free from reflections we shift the reflection to other places. We mirror the meshes and adapt the rotations.
+
+\begin{DoxyNote}{Note}
+R\+H-\/\+L\+H and L\+H-\/\+R\+H is the same, so this class can be used for both 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_make_left_handed_process_a65d1b32efd0056e668c2bf3763fa48d2}{\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+Left\+Handed\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_make_left_handed_process_a65d1b32efd0056e668c2bf3763fa48d2}
+Executes the post processing step on the given imported data. A process should throw an Import\+Error\+Exception$\ast$ if it fails. This method must be implemented by deriving classes. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_make_left_handed_process_a494e6bf525fbeaa4e39b05331288cac0}{\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Make\+Left\+Handed\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_make_left_handed_process_a494e6bf525fbeaa4e39b05331288cac0}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_make_left_handed_process_a2867082b8689b3aa3869dab31223b8f9}{\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}!Process\+Animation@{Process\+Animation}}
+\index{Process\+Animation@{Process\+Animation}!Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+\subsubsection[{Process\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+Left\+Handed\+Process\+::\+Process\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Node\+Anim} $\ast$}]{p\+Anim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_make_left_handed_process_a2867082b8689b3aa3869dab31223b8f9}
+Converts the given animation to L\+H coordinates. The rotation and translation keys are transformed, the scale keys work in local space and can therefore be left untouched. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Anim} & The bone animation to transform \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_make_left_handed_process_a9f252439454d2108908172ae9838d274}{\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}!Process\+Material@{Process\+Material}}
+\index{Process\+Material@{Process\+Material}!Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+\subsubsection[{Process\+Material}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+Left\+Handed\+Process\+::\+Process\+Material (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{p\+Mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_make_left_handed_process_a9f252439454d2108908172ae9838d274}
+Converts a single material to left-\/handed coordinates 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mat} & Material to convert \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_make_left_handed_process_a8f9b759b8fdd4e31b129d22f40fd8354}{\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}!Process\+Mesh@{Process\+Mesh}}
+\index{Process\+Mesh@{Process\+Mesh}!Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+\subsubsection[{Process\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+Left\+Handed\+Process\+::\+Process\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_make_left_handed_process_a8f9b759b8fdd4e31b129d22f40fd8354}
+Converts a single mesh to left handed coordinates. This means that positions, normals and tangents are mirrored at the local Z axis and the order of all faces are inverted. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & The mesh to convert. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_make_left_handed_process_a48e8217838d26ecbfd3b65dbf59639db}{\index{Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}!Process\+Node@{Process\+Node}}
+\index{Process\+Node@{Process\+Node}!Assimp\+::\+Make\+Left\+Handed\+Process@{Assimp\+::\+Make\+Left\+Handed\+Process}}
+\subsubsection[{Process\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+Left\+Handed\+Process\+::\+Process\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Node} $\ast$}]{p\+Node, }
+\item[{const {\bf ai\+Matrix4x4} \&}]{p\+Parent\+Global\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_make_left_handed_process_a48e8217838d26ecbfd3b65dbf59639db}
+Recursively converts a node and all of its children 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Convert\+To\+L\+H\+Process.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Convert\+To\+L\+H\+Process.\+cpp\end{DoxyCompactItemize}

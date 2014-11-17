@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Skybox2/OGLES2/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b47bb1344998f6ac4bf5fcf8476d5d5a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_b47bb1344998f6ac4bf5fcf8476d5d5a.html"]
+  subgraph clusterdir_986d210d1097d0dfd8dd3867b8305e64 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_986d210d1097d0dfd8dd3867b8305e64.html"];
+    dir_986d210d1097d0dfd8dd3867b8305e64 [shape=plaintext label="com"];
+    dir_c538a0dd53555545392aeedc8f6f14b8 [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_c538a0dd53555545392aeedc8f6f14b8.html"];
+  }
+  }
+}

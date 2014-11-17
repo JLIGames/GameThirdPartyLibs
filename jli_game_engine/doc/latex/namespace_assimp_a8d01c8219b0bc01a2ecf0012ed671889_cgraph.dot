@@ -1,0 +1,11 @@
+digraph "Assimp::IsCCW"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::IsCCW",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::OnLeftSideOfLine2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a8befcf1030197c725d93b98d558bec85"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::GetArea2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#af60598b5a7161a8c918b65fea426c08d"];
+}

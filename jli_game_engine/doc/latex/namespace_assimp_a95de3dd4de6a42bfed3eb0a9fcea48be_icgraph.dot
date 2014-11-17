@@ -1,0 +1,33 @@
+digraph "Assimp::ASSIMP_itoa10"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ASSIMP_itoa10",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::Discreet3DSImporter\l::ParseEditorChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#addcb60797b0e32d22344072686c689c5"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::Discreet3DSImporter\l::ParseMainChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#adbcf9fbe5c00a734e1939dbadd75604e"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::Discreet3DSImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#abf7e6eb912d47870e4b3ceec16376a90"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::AC3DImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_a_c3_d_importer.html#a88b27495efcf754f3dda7e4177aff902"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::ColladaExporter\l::WriteTextures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_exporter.html#ae64bb9a3e3ecd33275fa003079858bab",tooltip="Writes the embedded textures. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::ColladaExporter\l::WriteFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_exporter.html#a03044e96722b7ec8dcd295253176fc18",tooltip="Starts writing the contents. "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::ColladaExporter\l::ColladaExporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_exporter.html#a5b0a79d70cce72255dba4f6f15cff4d4",tooltip="Constructor for a specific scene to export. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::ColladaLoader\l::FindFilenameForEffectTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_loader.html#a0f17fc50e04f1e4038d6e6e2b67d074b"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::NFFImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_n_f_f_importer.html#a97c20ab69758da48642dc690ab4a7b65"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::Q3DImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_q3_d_importer.html#a7b9e5dbbbdb1b98dbb17e23e7ebc0209"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Assimp::SceneCombiner\l::MergeScenes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_scene_combiner.html#aa829482d9eecd375cd28cb54b07b98e6"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Assimp::ASSIMP_itoa10",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a780ce39f05ccc110f67a59dd76709112",tooltip="itoa with a fixed base 10 (Secure template overload) The compiler should choose this function if he o..."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Assimp_Extract",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image_extractor_8cpp.html#a931450979e9fe5df6fc52bc7fc67724d"];
+}

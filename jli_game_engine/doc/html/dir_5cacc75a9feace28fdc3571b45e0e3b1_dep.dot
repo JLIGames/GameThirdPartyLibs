@@ -1,0 +1,15 @@
+digraph "PVR/SDK_3.4/Utilities" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2d878b5cc6871189fc186a386430f469 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="SDK_3.4" fontname="Helvetica", fontsize="10", URL="dir_2d878b5cc6871189fc186a386430f469.html"]
+  subgraph clusterdir_5cacc75a9feace28fdc3571b45e0e3b1 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_5cacc75a9feace28fdc3571b45e0e3b1.html"];
+    dir_5cacc75a9feace28fdc3571b45e0e3b1 [shape=plaintext label="Utilities"];
+    dir_fc0308461a13f6987feb1ef1d4fa4201 [shape=box label="NavDataTools" color="red" fillcolor="white" style="filled" URL="dir_fc0308461a13f6987feb1ef1d4fa4201.html"];
+  }
+  }
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_fc0308461a13f6987feb1ef1d4fa4201->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="11", labeldistance=1.5 headhref="dir_000070_001762.html"];
+}

@@ -1,0 +1,9 @@
+digraph "jassimp.Jassimp.importFile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jassimp.Jassimp.importFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jassimp.AiPostProcessSteps.to\lRawValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$enumjassimp_1_1_ai_post_process_steps.html#a82bc62c78eb72ebb2dd980c3939ad287"];
+}

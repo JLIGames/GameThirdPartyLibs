@@ -1,0 +1,19 @@
+digraph "Assimp::Blender::FileDatabase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Blender::FileDatabase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dna" ];
+  Node2 [label="Assimp::Blender::DNA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1_d_n_a.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" structures" ];
+  Node3 [label="Assimp::Blender::vector\l\< Assimp::Blender::Structure \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1vector.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="std::vector\< Assimp\l::Blender::Structure \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" entries" ];
+  Node5 [label="Assimp::Blender::vector\l\< Assimp::Blender::FileBlock\lHead \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1vector.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="std::vector\< Assimp\l::Blender::FileBlockHead \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" reader" ];
+  Node7 [label="boost::shared_ptr\<\l StreamReaderAny \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboost_1_1shared__ptr.html"];
+}

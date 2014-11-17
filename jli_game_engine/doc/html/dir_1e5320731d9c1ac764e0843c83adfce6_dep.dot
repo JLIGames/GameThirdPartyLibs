@@ -1,0 +1,9 @@
+digraph "assimp/assimp-3.1.1/code/BoostWorkaround/boost/math" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e84d1dfec8c34797f201b4aa93b1c5d8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="boost" fontname="Helvetica", fontsize="10", URL="dir_e84d1dfec8c34797f201b4aa93b1c5d8.html"]
+  dir_1e5320731d9c1ac764e0843c83adfce6 [shape=box, label="math", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1e5320731d9c1ac764e0843c83adfce6.html"];
+  }
+}

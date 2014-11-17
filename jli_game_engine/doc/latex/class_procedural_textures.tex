@@ -1,0 +1,128 @@
+\hypertarget{class_procedural_textures}{\section{Procedural\+Textures Class Reference}
+\label{class_procedural_textures}\index{Procedural\+Textures@{Procedural\+Textures}}
+}
+
+
+{\ttfamily \#include $<$Procedural\+Textures.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_procedural_textures_a653224e00f5ec2345b3ff87c435fade4}{Procedural\+Textures} ()
+\item 
+\hyperlink{class_procedural_textures_afcdd7a422523d813cc06bb448ed3691e}{$\sim$\+Procedural\+Textures} ()
+\item 
+bool \hyperlink{class_procedural_textures_a354741cb335a1e067094479665c09422}{Init} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_procedural_textures_ada307c81d3e6f69625705538aa0a16dd}{Release} ()
+\item 
+bool \hyperlink{class_procedural_textures_ad493d760926439064bb3390372265d21}{Generate\+Into\+Texture} (const e\+Generator generator, G\+Luint texture, float width, float height, float scale)
+\item 
+const char $\ast$ \hyperlink{class_procedural_textures_a08962f2fb7c16751f95b9b1f70899d11}{Get\+Mode\+Description} (e\+Generator generator) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_procedural_textures_ae90392d6b65e44aabaccbc091cd81f8e}{G\+Luint {\bfseries m\+\_\+\+Programs} \mbox{[}N\+U\+M\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+S\mbox{]}}\label{class_procedural_textures_ae90392d6b65e44aabaccbc091cd81f8e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the Procedural Textures functionality. The model will be an Open\+G\+L texture and a generator type to be provided, and the texture will be generated in place in that G\+L texture object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_procedural_textures_a653224e00f5ec2345b3ff87c435fade4}{\index{Procedural\+Textures@{Procedural\+Textures}!Procedural\+Textures@{Procedural\+Textures}}
+\index{Procedural\+Textures@{Procedural\+Textures}!Procedural\+Textures@{Procedural\+Textures}}
+\subsubsection[{Procedural\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}Procedural\+Textures\+::\+Procedural\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_procedural_textures_a653224e00f5ec2345b3ff87c435fade4}
+
+
+  Constructor  Constructor \hypertarget{class_procedural_textures_afcdd7a422523d813cc06bb448ed3691e}{\index{Procedural\+Textures@{Procedural\+Textures}!````~Procedural\+Textures@{$\sim$\+Procedural\+Textures}}
+\index{````~Procedural\+Textures@{$\sim$\+Procedural\+Textures}!Procedural\+Textures@{Procedural\+Textures}}
+\subsubsection[{$\sim$\+Procedural\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}Procedural\+Textures\+::$\sim$\+Procedural\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_procedural_textures_afcdd7a422523d813cc06bb448ed3691e}
+
+
+  Destructor  Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_procedural_textures_ad493d760926439064bb3390372265d21}{\index{Procedural\+Textures@{Procedural\+Textures}!Generate\+Into\+Texture@{Generate\+Into\+Texture}}
+\index{Generate\+Into\+Texture@{Generate\+Into\+Texture}!Procedural\+Textures@{Procedural\+Textures}}
+\subsubsection[{Generate\+Into\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}bool Procedural\+Textures\+::\+Generate\+Into\+Texture (
+\begin{DoxyParamCaption}
+\item[{const e\+Generator}]{generator, }
+\item[{G\+Luint}]{texture, }
+\item[{float}]{width, }
+\item[{float}]{height, }
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)}}\label{class_procedural_textures_ad493d760926439064bb3390372265d21}
+
+
+  Generate\+Texture  bool true if no error occurred  Generates the procedural texture. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_procedural_textures_a08962f2fb7c16751f95b9b1f70899d11}{\index{Procedural\+Textures@{Procedural\+Textures}!Get\+Mode\+Description@{Get\+Mode\+Description}}
+\index{Get\+Mode\+Description@{Get\+Mode\+Description}!Procedural\+Textures@{Procedural\+Textures}}
+\subsubsection[{Get\+Mode\+Description}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Procedural\+Textures\+::\+Get\+Mode\+Description (
+\begin{DoxyParamCaption}
+\item[{e\+Generator}]{generator}
+\end{DoxyParamCaption}
+) const}}\label{class_procedural_textures_a08962f2fb7c16751f95b9b1f70899d11}
+
+
+  Get\+Mode\+Description  const char $\ast$ A textual description of the specified generator 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_procedural_textures_a354741cb335a1e067094479665c09422}{\index{Procedural\+Textures@{Procedural\+Textures}!Init@{Init}}
+\index{Init@{Init}!Procedural\+Textures@{Procedural\+Textures}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}bool Procedural\+Textures\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_procedural_textures_a354741cb335a1e067094479665c09422}
+
+
+  Init  bool true if no error occured  Initializes context and acquires all required resources. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_procedural_textures_ada307c81d3e6f69625705538aa0a16dd}{\index{Procedural\+Textures@{Procedural\+Textures}!Release@{Release}}
+\index{Release@{Release}!Procedural\+Textures@{Procedural\+Textures}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}void Procedural\+Textures\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_procedural_textures_ada307c81d3e6f69625705538aa0a16dd}
+
+
+  Release  Initializes context and acquires all required 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Advanced/\+Procedural\+Textures/\+O\+G\+L\+E\+S3/Procedural\+Textures.\+h\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Advanced/\+Procedural\+Textures/\+O\+G\+L\+E\+S3/Procedural\+Textures.\+cpp\end{DoxyCompactItemize}

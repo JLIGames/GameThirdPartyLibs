@@ -1,0 +1,13 @@
+digraph "OGLES3LevelOfDetail::QuitApplication"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLES3LevelOfDetail\l::QuitApplication",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPVRTModelPOD::Destroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a8a15860a44e4ad22d3c486e17e89226c",tooltip="Frees the memory allocated to store the scene in pScene. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CPVRTBoneBatches::Release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_bone_batches.html#a3282990401eae2cf95c8170c7626230d",tooltip="Destroy the bone batch structure. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CPVRTModelPOD::DestroyImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a8360f69bbc97d1d74fc327cc1e84c47e",tooltip="Used to free memory allocated by the implementation. "];
+}

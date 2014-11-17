@@ -1,0 +1,146 @@
+\hypertarget{class_assimp_1_1_scene_preprocessor}{\section{Assimp\+:\+:Scene\+Preprocessor Class Reference}
+\label{class_assimp_1_1_scene_preprocessor}\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+}
+
+
+{\ttfamily \#include $<$Scene\+Preprocessor.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:Scene\+Preprocessor\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_scene_preprocessor_ab115153c8601d5003edc05a5d7c0e384}{Scene\+Preprocessor} ()
+\item 
+\hyperlink{class_assimp_1_1_scene_preprocessor_a55b78e2359e988f6c4b2340aef961fdb}{Scene\+Preprocessor} (\hyperlink{structai_scene}{ai\+Scene} $\ast$\+\_\+scene)
+\item 
+void \hyperlink{class_assimp_1_1_scene_preprocessor_a8759d84f8d8256dcd65fc213d3e34643}{Set\+Scene} (\hyperlink{structai_scene}{ai\+Scene} $\ast$sc)
+\item 
+void \hyperlink{class_assimp_1_1_scene_preprocessor_a59ff27f974822fb5ed7b4c66a2649ffb}{Process\+Scene} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_scene_preprocessor_aae45d1d539fa3c34ea2cc443bd80e6a6}{Process\+Animation} (\hyperlink{structai_animation}{ai\+Animation} $\ast$anim)
+\item 
+void \hyperlink{class_assimp_1_1_scene_preprocessor_abeccb6d0df888ee8721f95ed513a1676}{Process\+Mesh} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_scene_preprocessor_ae77827b718185fc0e3509cbae4247c79}{\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{class_assimp_1_1_scene_preprocessor_ae77827b718185fc0e3509cbae4247c79}{scene}}\label{class_assimp_1_1_scene_preprocessor_ae77827b718185fc0e3509cbae4247c79}
+
+\begin{DoxyCompactList}\small\item\em Scene we're currently working on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_scene_preprocessor_a9ac62147ad215dd45ec3f58b1083b34b}{class {\bfseries \+::\+Scene\+Preprocessor\+Test}}\label{class_assimp_1_1_scene_preprocessor_a9ac62147ad215dd45ec3f58b1083b34b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp_1_1_scene_preprocessor}{Scene\+Preprocessor}\+: Preprocess a scene before any post-\/processing steps are executed.
+
+The step computes data that needn't necessarily be provided by the importer, such as \hyperlink{structai_mesh_a99d66ac0a444068c1b252b30265cbf53}{ai\+Mesh\+::m\+Primitive\+Types}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_scene_preprocessor_ab115153c8601d5003edc05a5d7c0e384}{\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}!Scene\+Preprocessor@{Scene\+Preprocessor}}
+\index{Scene\+Preprocessor@{Scene\+Preprocessor}!Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+\subsubsection[{Scene\+Preprocessor}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+Scene\+Preprocessor\+::\+Scene\+Preprocessor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_scene_preprocessor_ab115153c8601d5003edc05a5d7c0e384}
+Default c'tpr. Use \hyperlink{class_assimp_1_1_scene_preprocessor_a8759d84f8d8256dcd65fc213d3e34643}{Set\+Scene()} to assign a scene to the object. \hypertarget{class_assimp_1_1_scene_preprocessor_a55b78e2359e988f6c4b2340aef961fdb}{\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}!Scene\+Preprocessor@{Scene\+Preprocessor}}
+\index{Scene\+Preprocessor@{Scene\+Preprocessor}!Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+\subsubsection[{Scene\+Preprocessor}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+Scene\+Preprocessor\+::\+Scene\+Preprocessor (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{\+\_\+scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_scene_preprocessor_a55b78e2359e988f6c4b2340aef961fdb}
+Constructs the object and assigns a specific scene to it 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_scene_preprocessor_aae45d1d539fa3c34ea2cc443bd80e6a6}{\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}!Process\+Animation@{Process\+Animation}}
+\index{Process\+Animation@{Process\+Animation}!Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+\subsubsection[{Process\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Preprocessor\+::\+Process\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Animation} $\ast$}]{anim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_scene_preprocessor_aae45d1d539fa3c34ea2cc443bd80e6a6}
+Preprocess an animation in the scene 
+\begin{DoxyParams}{Parameters}
+{\em anim} & Anim to be preprocessed. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_scene_preprocessor_abeccb6d0df888ee8721f95ed513a1676}{\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}!Process\+Mesh@{Process\+Mesh}}
+\index{Process\+Mesh@{Process\+Mesh}!Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+\subsubsection[{Process\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Preprocessor\+::\+Process\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_scene_preprocessor_abeccb6d0df888ee8721f95ed513a1676}
+Preprocess a mesh in the scene 
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \hyperlink{class_mesh}{Mesh} to be preprocessed. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_scene_preprocessor_a59ff27f974822fb5ed7b4c66a2649ffb}{\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}!Process\+Scene@{Process\+Scene}}
+\index{Process\+Scene@{Process\+Scene}!Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+\subsubsection[{Process\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Preprocessor\+::\+Process\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_scene_preprocessor_a59ff27f974822fb5ed7b4c66a2649ffb}
+Preprocess the current scene 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_scene_preprocessor_a8759d84f8d8256dcd65fc213d3e34643}{\index{Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}!Set\+Scene@{Set\+Scene}}
+\index{Set\+Scene@{Set\+Scene}!Assimp\+::\+Scene\+Preprocessor@{Assimp\+::\+Scene\+Preprocessor}}
+\subsubsection[{Set\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Scene\+Preprocessor\+::\+Set\+Scene (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{sc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_scene_preprocessor_a8759d84f8d8256dcd65fc213d3e34643}
+Assign a (new) scene to the object.
+
+One 'Scene\+Processor' can be used for multiple scenes. Call Process\+Scene to have the scene preprocessed. 
+\begin{DoxyParams}{Parameters}
+{\em sc} & Scene to be processed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Scene\+Preprocessor.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Scene\+Preprocessor.\+cpp\end{DoxyCompactItemize}

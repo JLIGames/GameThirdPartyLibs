@@ -1,0 +1,47 @@
+\hypertarget{class_assimp_1_1_f_b_x_1_1_parser}{\section{Assimp\+:\+:F\+B\+X\+:\+:Parser Class Reference}
+\label{class_assimp_1_1_f_b_x_1_1_parser}\index{Assimp\+::\+F\+B\+X\+::\+Parser@{Assimp\+::\+F\+B\+X\+::\+Parser}}
+}
+
+
+{\ttfamily \#include $<$F\+B\+X\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_f_b_x_1_1_parser_a19608ccdf52beef8b494b89f477a5c70}{Parser} (const Token\+List \&tokens, bool is\+\_\+binary)
+\item 
+\hypertarget{class_assimp_1_1_f_b_x_1_1_parser_a535f7139e03ac9d33d22d2a2320b5e8d}{const \hyperlink{class_assimp_1_1_f_b_x_1_1_scope}{Scope} \& {\bfseries Get\+Root\+Scope} () const }\label{class_assimp_1_1_f_b_x_1_1_parser_a535f7139e03ac9d33d22d2a2320b5e8d}
+
+\item 
+\hypertarget{class_assimp_1_1_f_b_x_1_1_parser_acfd68801224db67574826596ae14ed6e}{bool {\bfseries Is\+Binary} () const }\label{class_assimp_1_1_f_b_x_1_1_parser_acfd68801224db67574826596ae14ed6e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_f_b_x_1_1_parser_a921193447f6e42f596ac0a7694b02830}{class {\bfseries Scope}}\label{class_assimp_1_1_f_b_x_1_1_parser_a921193447f6e42f596ac0a7694b02830}
+
+\item 
+\hypertarget{class_assimp_1_1_f_b_x_1_1_parser_a016b821f88c7c0a2de1451c175cefbf9}{class {\bfseries Element}}\label{class_assimp_1_1_f_b_x_1_1_parser_a016b821f88c7c0a2de1451c175cefbf9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+B\+X parsing class, takes a list of input tokens and generates a hierarchy of nested \#\+Scope instances, representing the fbx D\+O\+M. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_f_b_x_1_1_parser_a19608ccdf52beef8b494b89f477a5c70}{\index{Assimp\+::\+F\+B\+X\+::\+Parser@{Assimp\+::\+F\+B\+X\+::\+Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Assimp\+::\+F\+B\+X\+::\+Parser@{Assimp\+::\+F\+B\+X\+::\+Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+F\+B\+X\+::\+Parser\+::\+Parser (
+\begin{DoxyParamCaption}
+\item[{const Token\+List \&}]{tokens, }
+\item[{bool}]{is\+\_\+binary}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_f_b_x_1_1_parser_a19608ccdf52beef8b494b89f477a5c70}
+\hyperlink{struct_parse}{Parse} given a token list. Does not take ownership of the tokens -\/ the objects must persist during the entire parser lifetime 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_parser_8h}{F\+B\+X\+Parser.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_parser_8cpp}{F\+B\+X\+Parser.\+cpp}\end{DoxyCompactItemize}

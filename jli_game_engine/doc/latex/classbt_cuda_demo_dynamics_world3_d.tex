@@ -1,0 +1,183 @@
+\hypertarget{classbt_cuda_demo_dynamics_world3_d}{\section{bt\+Cuda\+Demo\+Dynamics\+World3\+D Class Reference}
+\label{classbt_cuda_demo_dynamics_world3_d}\index{bt\+Cuda\+Demo\+Dynamics\+World3\+D@{bt\+Cuda\+Demo\+Dynamics\+World3\+D}}
+}
+
+
+Inheritance diagram for bt\+Cuda\+Demo\+Dynamics\+World3\+D\+:
+
+
+Collaboration diagram for bt\+Cuda\+Demo\+Dynamics\+World3\+D\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a2c7dce72ace97db4cf17bb87350e868d}{{\bfseries bt\+Cuda\+Demo\+Dynamics\+World3\+D} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_broadphase_interface}{bt\+Broadphase\+Interface} $\ast$pair\+Cache, \hyperlink{classbt_constraint_solver}{bt\+Constraint\+Solver} $\ast$constraint\+Solver, \hyperlink{classbt_collision_configuration}{bt\+Collision\+Configuration} $\ast$collision\+Configuration, int max\+Points\+Per\+Constr=4)}\label{classbt_cuda_demo_dynamics_world3_d_a2c7dce72ace97db4cf17bb87350e868d}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_af563807a7e0a5e4ab8c3a5280f3631d5}{virtual void {\bfseries calculate\+Simulation\+Islands} ()}\label{classbt_cuda_demo_dynamics_world3_d_af563807a7e0a5e4ab8c3a5280f3631d5}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_afed2b76e73736e48bdff7b9a25bdd832}{virtual void {\bfseries solve\+Constraints} (\hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \&solver\+Info)}\label{classbt_cuda_demo_dynamics_world3_d_afed2b76e73736e48bdff7b9a25bdd832}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a76a81bce95da1e8c690aa855da103e18}{virtual void {\bfseries predict\+Unconstraint\+Motion} (bt\+Scalar time\+Step)}\label{classbt_cuda_demo_dynamics_world3_d_a76a81bce95da1e8c690aa855da103e18}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a7d9e771b5eebee5479d3c65278ab703d}{virtual void {\bfseries integrate\+Transforms} (bt\+Scalar time\+Step)}\label{classbt_cuda_demo_dynamics_world3_d_a7d9e771b5eebee5479d3c65278ab703d}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a84fa871068d7e73ffc571b9fa111b28d}{void {\bfseries solve\+Constraints\+C\+P\+U} (\hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \&solver\+Info)}\label{classbt_cuda_demo_dynamics_world3_d_a84fa871068d7e73ffc571b9fa111b28d}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a452fcd29c4582e80a683e573fe2eb6e0}{void {\bfseries debug\+Draw\+Constraints} (int selected\+Batch, const float $\ast$p\+Color\+Tab)}\label{classbt_cuda_demo_dynamics_world3_d_a452fcd29c4582e80a683e573fe2eb6e0}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a687eebcca42ddec28019d5b0d8bf0633}{void {\bfseries set\+Obj\+Rad} (bt\+Scalar rad)}\label{classbt_cuda_demo_dynamics_world3_d_a687eebcca42ddec28019d5b0d8bf0633}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a26c02058ac842cfb362cbda8eef0ddd2}{void {\bfseries set\+World\+Min} (const bt\+Vector3 \&world\+Min)}\label{classbt_cuda_demo_dynamics_world3_d_a26c02058ac842cfb362cbda8eef0ddd2}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a1e186d740baceb1ce45c19b056f5068a}{void {\bfseries set\+World\+Max} (const bt\+Vector3 \&world\+Max)}\label{classbt_cuda_demo_dynamics_world3_d_a1e186d740baceb1ce45c19b056f5068a}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a8ec7e1ea649da2436f7f0fabbe99eba5}{void {\bfseries grab\+Data} ()}\label{classbt_cuda_demo_dynamics_world3_d_a8ec7e1ea649da2436f7f0fabbe99eba5}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_aa7dfa35a2b22167a8fa1bcfb1ea0feb4}{void {\bfseries grab\+Obj\+Data} ()}\label{classbt_cuda_demo_dynamics_world3_d_aa7dfa35a2b22167a8fa1bcfb1ea0feb4}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a324466e5527653dd18de0fdc081f654b}{void {\bfseries grab\+Constr\+Data} ()}\label{classbt_cuda_demo_dynamics_world3_d_a324466e5527653dd18de0fdc081f654b}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_aaa760c81b9ceff7be4419a091c54f0d1}{void {\bfseries create\+Batches} ()}\label{classbt_cuda_demo_dynamics_world3_d_aaa760c81b9ceff7be4419a091c54f0d1}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a583ad04cc4ecbc8f46380a489a12c683}{void {\bfseries copy\+Data\+To\+G\+P\+U} ()}\label{classbt_cuda_demo_dynamics_world3_d_a583ad04cc4ecbc8f46380a489a12c683}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a2e085b457de1a938a294a8d80d95588d}{void {\bfseries copy\+Data\+From\+G\+P\+U} ()}\label{classbt_cuda_demo_dynamics_world3_d_a2e085b457de1a938a294a8d80d95588d}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a74a19445de2a670b5765981075e5ba5d}{void {\bfseries writeback\+Data} ()}\label{classbt_cuda_demo_dynamics_world3_d_a74a19445de2a670b5765981075e5ba5d}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a51c5dfc3ecd5b1212c41df2a31004658}{void {\bfseries set\+Use\+C\+P\+U\+Solver} (bool use\+C\+P\+U)}\label{classbt_cuda_demo_dynamics_world3_d_a51c5dfc3ecd5b1212c41df2a31004658}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a7bc3d3c408fa8a83224d757580d83014}{void {\bfseries set\+Use\+Seq\+Imp\+Solver} (bool use\+Seq\+Imp\+Solver)}\label{classbt_cuda_demo_dynamics_world3_d_a7bc3d3c408fa8a83224d757580d83014}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_abfb133443bb58062823a4cd14bfce7d2}{void {\bfseries set\+Use\+Cuda\+Mot\+Integr} (bool use\+Cuda\+Mot\+Integr)}\label{classbt_cuda_demo_dynamics_world3_d_abfb133443bb58062823a4cd14bfce7d2}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a311498a3c6c4e9c5441fce042e5d7134}{void {\bfseries reset\+Scene} (void)}\label{classbt_cuda_demo_dynamics_world3_d_a311498a3c6c4e9c5441fce042e5d7134}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a2639a03a4ae0f2ba6fa614e11d8ae7b8}{int {\bfseries m\+\_\+num\+In\+Batches} \mbox{[}C\+U\+D\+A\+\_\+\+D\+E\+M\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+S\+\_\+\+W\+O\+R\+L\+D3\+D\+\_\+\+M\+A\+X\+\_\+\+B\+A\+T\+C\+H\+E\+S\mbox{]}}\label{classbt_cuda_demo_dynamics_world3_d_a2639a03a4ae0f2ba6fa614e11d8ae7b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a9c0d849cead02c9dbca5dc0396f857d0}{int {\bfseries m\+\_\+max\+Obj}}\label{classbt_cuda_demo_dynamics_world3_d_a9c0d849cead02c9dbca5dc0396f857d0}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a162575863f7122393977f54449159b23}{int {\bfseries m\+\_\+max\+Neihbors}}\label{classbt_cuda_demo_dynamics_world3_d_a162575863f7122393977f54449159b23}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a91800e2ffecb55848b021dbbf4d362f1}{int {\bfseries m\+\_\+max\+Constr}}\label{classbt_cuda_demo_dynamics_world3_d_a91800e2ffecb55848b021dbbf4d362f1}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a9719291d9b5d1af16bdf9011f99cd548}{int {\bfseries m\+\_\+max\+Points\+Per\+Constr}}\label{classbt_cuda_demo_dynamics_world3_d_a9719291d9b5d1af16bdf9011f99cd548}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a08eda37f39cd1ef66c776a78a02fa6de}{int {\bfseries m\+\_\+num\+Obj}}\label{classbt_cuda_demo_dynamics_world3_d_a08eda37f39cd1ef66c776a78a02fa6de}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a3c5077df8aaec4f95e48f97f1268e1d2}{int {\bfseries m\+\_\+num\+Sim\+Step}}\label{classbt_cuda_demo_dynamics_world3_d_a3c5077df8aaec4f95e48f97f1268e1d2}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a2cf69cdf4f88114f229b731910a10d0e}{bool {\bfseries m\+\_\+use\+C\+P\+U\+Solver}}\label{classbt_cuda_demo_dynamics_world3_d_a2cf69cdf4f88114f229b731910a10d0e}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_aec5c886ccff70c9b587237ae03a5dfb5}{bool {\bfseries m\+\_\+use\+Seq\+Imp\+Solver}}\label{classbt_cuda_demo_dynamics_world3_d_aec5c886ccff70c9b587237ae03a5dfb5}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_aa5dc44660246187d9a9c06ff0c075500}{bool {\bfseries m\+\_\+use\+Cuda\+Mot\+Integr}}\label{classbt_cuda_demo_dynamics_world3_d_aa5dc44660246187d9a9c06ff0c075500}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a920018e818f49d5b86d942d79bf7cd31}{bool {\bfseries m\+\_\+copy\+Integr\+Data\+To\+G\+P\+U}}\label{classbt_cuda_demo_dynamics_world3_d_a920018e818f49d5b86d942d79bf7cd31}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a58cf770f44014108e914c01add2c0115}{\hyperlink{structfloat4}{float4} $\ast$ {\bfseries m\+\_\+h\+Trans}}\label{classbt_cuda_demo_dynamics_world3_d_a58cf770f44014108e914c01add2c0115}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_aec57d988b18a88beca4d26f580599fe7}{\hyperlink{structfloat4}{float4} $\ast$ {\bfseries m\+\_\+h\+Vel}}\label{classbt_cuda_demo_dynamics_world3_d_aec57d988b18a88beca4d26f580599fe7}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a6309df07a56decfc0834adbf0586b81d}{\hyperlink{structfloat4}{float4} $\ast$ {\bfseries m\+\_\+h\+Ang\+Vel}}\label{classbt_cuda_demo_dynamics_world3_d_a6309df07a56decfc0834adbf0586b81d}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a9436838419d240ff594a1ecf10b2e5d6}{int $\ast$ {\bfseries m\+\_\+h\+Constraint\+Buffer}}\label{classbt_cuda_demo_dynamics_world3_d_a9436838419d240ff594a1ecf10b2e5d6}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a025deb0391363a13e7b8d5b5550c12b7}{int $\ast$ {\bfseries m\+\_\+h\+Constraint\+Counter}}\label{classbt_cuda_demo_dynamics_world3_d_a025deb0391363a13e7b8d5b5550c12b7}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a4e5ca281db6b07d78d6b7d6f4c42f9ce}{int {\bfseries m\+\_\+max\+Batches}}\label{classbt_cuda_demo_dynamics_world3_d_a4e5ca281db6b07d78d6b7d6f4c42f9ce}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_ab1bb22f52642c0b111b1e90291a14488}{int {\bfseries m\+\_\+num\+Batches}}\label{classbt_cuda_demo_dynamics_world3_d_ab1bb22f52642c0b111b1e90291a14488}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a890847175d8c641f0bb5f61c2fb2ef5e}{int {\bfseries m\+\_\+num\+Constraints}}\label{classbt_cuda_demo_dynamics_world3_d_a890847175d8c641f0bb5f61c2fb2ef5e}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a2028989e20bf4ea43196c77de1b87bba}{\hyperlink{structint2}{int2} $\ast$ {\bfseries m\+\_\+h\+Ids}}\label{classbt_cuda_demo_dynamics_world3_d_a2028989e20bf4ea43196c77de1b87bba}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a0f60fdee4f3db857e26d1e6e15a9df05}{int $\ast$ {\bfseries m\+\_\+h\+Batch\+Ids}}\label{classbt_cuda_demo_dynamics_world3_d_a0f60fdee4f3db857e26d1e6e15a9df05}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_af66683db491fffcdaa1016c446632540}{int {\bfseries m\+\_\+max\+Vtx\+Per\+Obj}}\label{classbt_cuda_demo_dynamics_world3_d_af66683db491fffcdaa1016c446632540}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a518e1ee995f553c5238038c5fe3bb090}{float $\ast$ {\bfseries m\+\_\+h\+Lambda\+Dt\+Box}}\label{classbt_cuda_demo_dynamics_world3_d_a518e1ee995f553c5238038c5fe3bb090}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_ab509aa8ea719f7b675589c748a3111ab}{float $\ast$ {\bfseries m\+\_\+h\+Position\+Constraint}}\label{classbt_cuda_demo_dynamics_world3_d_ab509aa8ea719f7b675589c748a3111ab}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_ae538271321f73942060844ba3d8cc644}{\hyperlink{structfloat3}{float3} $\ast$ {\bfseries m\+\_\+h\+Normal}}\label{classbt_cuda_demo_dynamics_world3_d_ae538271321f73942060844ba3d8cc644}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_aab582addf24bf7afa7f5e8c8966640b5}{\hyperlink{structfloat3}{float3} $\ast$ {\bfseries m\+\_\+h\+Contact}}\label{classbt_cuda_demo_dynamics_world3_d_aab582addf24bf7afa7f5e8c8966640b5}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a5d83ff299150d4d9f2fd39b5c217d8b2}{bt\+Scalar {\bfseries m\+\_\+obj\+Rad}}\label{classbt_cuda_demo_dynamics_world3_d_a5d83ff299150d4d9f2fd39b5c217d8b2}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_adcec58e16ece986aabea52b30212c468}{bt\+Vector3 {\bfseries m\+\_\+world\+Min}}\label{classbt_cuda_demo_dynamics_world3_d_adcec58e16ece986aabea52b30212c468}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a97482e8d31aa3f98a6b38b4a85730abb}{bt\+Vector3 {\bfseries m\+\_\+world\+Max}}\label{classbt_cuda_demo_dynamics_world3_d_a97482e8d31aa3f98a6b38b4a85730abb}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_a412107850e27a63a989a28ff271b7727}{int $\ast$ {\bfseries m\+\_\+h\+Constraint\+Used}}\label{classbt_cuda_demo_dynamics_world3_d_a412107850e27a63a989a28ff271b7727}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_ae23a5eaf1a252673e4ecfd47a4801276}{float $\ast$ {\bfseries m\+\_\+h\+Force\+Torque\+Damp}}\label{classbt_cuda_demo_dynamics_world3_d_ae23a5eaf1a252673e4ecfd47a4801276}
+
+\item 
+\hypertarget{classbt_cuda_demo_dynamics_world3_d_ae07de25d33ee414c2985c461e1374093}{float $\ast$ {\bfseries m\+\_\+h\+Inv\+Inertia\+Mass}}\label{classbt_cuda_demo_dynamics_world3_d_ae07de25d33ee414c2985c461e1374093}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Gpu3d\+Demo/bt\+Gpu\+Demo\+Dynamics\+World3\+D.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Gpu3d\+Demo/bt\+Gpu\+Demo\+Dynamics\+World3\+D.\+cpp\end{DoxyCompactItemize}

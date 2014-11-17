@@ -1,0 +1,17 @@
+digraph "btVector4::setValue"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="btVector4::setValue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="bt_edge_plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bt_geometry_operations_8h.html#a8ef83f3444ff4b984beb7c1c593cb0eb",tooltip="Calc a plane from a triangle edge an a normal. plane is a vec4f. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="btPrimitiveTriangle\l::get_edge_plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_triangle.html#a88f93beaca616105c4d73bdd337167e1",tooltip="Calcs the plane which is paralele to the edge and perpendicular to the triangle plane. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="btPrimitiveTriangle\l::clip_triangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_triangle.html#a56e930410f18f866e47431ed77c6c3ca",tooltip="Clips the triangle against this. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="btPrimitiveTriangle\l::find_triangle_collision\l_clip_method",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_triangle.html#a24c4903aecd95c2d11bbc42ba3df0e66",tooltip="Find collision using the clipping method. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="bt_segment_collision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bt_geometry_operations_8h.html#aae15cd5c84602688921b973fc88b60ef",tooltip="Find closest points on segments. "];
+}

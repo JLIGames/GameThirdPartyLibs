@@ -1,0 +1,112 @@
+\hypertarget{struct_i_limage}{\section{I\+Limage Struct Reference}
+\label{struct_i_limage}\index{I\+Limage@{I\+Limage}}
+}
+
+
+The Fundamental \hyperlink{class_image}{Image} structure.  
+
+
+
+
+{\ttfamily \#include $<$devil\+\_\+internal\+\_\+exports.\+h$>$}
+
+
+
+Collaboration diagram for I\+Limage\+:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_i_limage_acdaccde79cda12c44c7a076ef9978cf1}{I\+Luint \hyperlink{struct_i_limage_acdaccde79cda12c44c7a076ef9978cf1}{Width}}\label{struct_i_limage_acdaccde79cda12c44c7a076ef9978cf1}
+
+\begin{DoxyCompactList}\small\item\em the image's width \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_af0fe112b929d774c723ba5d8b6c2c5da}{I\+Luint \hyperlink{struct_i_limage_af0fe112b929d774c723ba5d8b6c2c5da}{Height}}\label{struct_i_limage_af0fe112b929d774c723ba5d8b6c2c5da}
+
+\begin{DoxyCompactList}\small\item\em the image's height \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a00e19fb6f1e50731d114c302129112d9}{I\+Luint \hyperlink{struct_i_limage_a00e19fb6f1e50731d114c302129112d9}{Depth}}\label{struct_i_limage_a00e19fb6f1e50731d114c302129112d9}
+
+\begin{DoxyCompactList}\small\item\em the image's depth \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a1b3ec86e5bf7087b7d46f0ed61d86eb9}{I\+Lubyte \hyperlink{struct_i_limage_a1b3ec86e5bf7087b7d46f0ed61d86eb9}{Bpp}}\label{struct_i_limage_a1b3ec86e5bf7087b7d46f0ed61d86eb9}
+
+\begin{DoxyCompactList}\small\item\em bytes per pixel (now number of channels) \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a20c53053c80d504de93c3ee17290a9ba}{I\+Lubyte \hyperlink{struct_i_limage_a20c53053c80d504de93c3ee17290a9ba}{Bpc}}\label{struct_i_limage_a20c53053c80d504de93c3ee17290a9ba}
+
+\begin{DoxyCompactList}\small\item\em bytes per channel \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a09ee9478fab289cf2622f06db9171894}{I\+Luint \hyperlink{struct_i_limage_a09ee9478fab289cf2622f06db9171894}{Bps}}\label{struct_i_limage_a09ee9478fab289cf2622f06db9171894}
+
+\begin{DoxyCompactList}\small\item\em bytes per scanline (components for I\+L) \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_ab7a9627719d89abb3cb48087452acbc8}{I\+Lubyte $\ast$ \hyperlink{struct_i_limage_ab7a9627719d89abb3cb48087452acbc8}{Data}}\label{struct_i_limage_ab7a9627719d89abb3cb48087452acbc8}
+
+\begin{DoxyCompactList}\small\item\em the image data \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a9e84436c94d9cd5afad59be12dff753b}{I\+Luint \hyperlink{struct_i_limage_a9e84436c94d9cd5afad59be12dff753b}{Size\+Of\+Data}}\label{struct_i_limage_a9e84436c94d9cd5afad59be12dff753b}
+
+\begin{DoxyCompactList}\small\item\em the total size of the data (in bytes) \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a5ce85bc0b983ddf0ed91b1ed98d9132a}{I\+Luint \hyperlink{struct_i_limage_a5ce85bc0b983ddf0ed91b1ed98d9132a}{Size\+Of\+Plane}}\label{struct_i_limage_a5ce85bc0b983ddf0ed91b1ed98d9132a}
+
+\begin{DoxyCompactList}\small\item\em Size\+Of\+Data in a 2d image, size of each plane slice in a 3d image (in bytes) \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_af36941d08ffdd7ed7c42cdb11d2a5513}{I\+Lenum \hyperlink{struct_i_limage_af36941d08ffdd7ed7c42cdb11d2a5513}{Format}}\label{struct_i_limage_af36941d08ffdd7ed7c42cdb11d2a5513}
+
+\begin{DoxyCompactList}\small\item\em image format (in I\+L enum style) \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_af84630dff97fdc18dcf1c8187f5e1918}{I\+Lenum \hyperlink{struct_i_limage_af84630dff97fdc18dcf1c8187f5e1918}{Type}}\label{struct_i_limage_af84630dff97fdc18dcf1c8187f5e1918}
+
+\begin{DoxyCompactList}\small\item\em image type (in I\+L enum style) \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_ac2bc011c3f8a65eea30a8d4495c96a2e}{I\+Lenum \hyperlink{struct_i_limage_ac2bc011c3f8a65eea30a8d4495c96a2e}{Origin}}\label{struct_i_limage_ac2bc011c3f8a65eea30a8d4495c96a2e}
+
+\begin{DoxyCompactList}\small\item\em origin of the image \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a1e17c6b3c912a9bcddb50dd7a61011a7}{\hyperlink{struct_i_lpal}{I\+Lpal} \hyperlink{struct_i_limage_a1e17c6b3c912a9bcddb50dd7a61011a7}{Pal}}\label{struct_i_limage_a1e17c6b3c912a9bcddb50dd7a61011a7}
+
+\begin{DoxyCompactList}\small\item\em palette details \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_afde5827e053680ff1e81a9a9c0832042}{I\+Luint \hyperlink{struct_i_limage_afde5827e053680ff1e81a9a9c0832042}{Duration}}\label{struct_i_limage_afde5827e053680ff1e81a9a9c0832042}
+
+\begin{DoxyCompactList}\small\item\em length of the time to display this \char`\"{}frame\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a20bd452e1573aa08c7d9687190cbfa89}{I\+Lenum \hyperlink{struct_i_limage_a20bd452e1573aa08c7d9687190cbfa89}{Cube\+Flags}}\label{struct_i_limage_a20bd452e1573aa08c7d9687190cbfa89}
+
+\begin{DoxyCompactList}\small\item\em cube map flags for sides present in chain \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_afa2c8bedcd1178760327302911969035}{struct \hyperlink{struct_i_limage}{I\+Limage} $\ast$ \hyperlink{struct_i_limage_afa2c8bedcd1178760327302911969035}{Mipmaps}}\label{struct_i_limage_afa2c8bedcd1178760327302911969035}
+
+\begin{DoxyCompactList}\small\item\em mipmapped versions of this image terminated by a N\+U\+L\+L -\/ usu. N\+U\+L\+L \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_adbd033e6e25af697caa549be3deeb5ff}{struct \hyperlink{struct_i_limage}{I\+Limage} $\ast$ \hyperlink{struct_i_limage_adbd033e6e25af697caa549be3deeb5ff}{Next}}\label{struct_i_limage_adbd033e6e25af697caa549be3deeb5ff}
+
+\begin{DoxyCompactList}\small\item\em next image in the chain -\/ usu. N\+U\+L\+L \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a42b8f93f02ab5e6c9623967a08e2d013}{struct \hyperlink{struct_i_limage}{I\+Limage} $\ast$ \hyperlink{struct_i_limage_a42b8f93f02ab5e6c9623967a08e2d013}{Faces}}\label{struct_i_limage_a42b8f93f02ab5e6c9623967a08e2d013}
+
+\begin{DoxyCompactList}\small\item\em next cubemap face in the chain -\/ usu. N\+U\+L\+L \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a504d31f6b9c9d6da656f5eecb57bdd46}{struct \hyperlink{struct_i_limage}{I\+Limage} $\ast$ \hyperlink{struct_i_limage_a504d31f6b9c9d6da656f5eecb57bdd46}{Layers}}\label{struct_i_limage_a504d31f6b9c9d6da656f5eecb57bdd46}
+
+\begin{DoxyCompactList}\small\item\em subsequent layers in the chain -\/ usu. N\+U\+L\+L \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_ab128f3c35d0617202e3ec8252af5fa03}{I\+Luint $\ast$ \hyperlink{struct_i_limage_ab128f3c35d0617202e3ec8252af5fa03}{Anim\+List}}\label{struct_i_limage_ab128f3c35d0617202e3ec8252af5fa03}
+
+\begin{DoxyCompactList}\small\item\em animation list \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a70e6057f47ac13562d06c43e17f9be56}{I\+Luint \hyperlink{struct_i_limage_a70e6057f47ac13562d06c43e17f9be56}{Anim\+Size}}\label{struct_i_limage_a70e6057f47ac13562d06c43e17f9be56}
+
+\begin{DoxyCompactList}\small\item\em animation list size \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a78a95799c50680f0301e83b3f09c010f}{void $\ast$ \hyperlink{struct_i_limage_a78a95799c50680f0301e83b3f09c010f}{Profile}}\label{struct_i_limage_a78a95799c50680f0301e83b3f09c010f}
+
+\begin{DoxyCompactList}\small\item\em colour profile \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a03dcb37bc626f621f4c638fde928bf64}{I\+Luint \hyperlink{struct_i_limage_a03dcb37bc626f621f4c638fde928bf64}{Profile\+Size}}\label{struct_i_limage_a03dcb37bc626f621f4c638fde928bf64}
+
+\begin{DoxyCompactList}\small\item\em colour profile size \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_ae0438126967c9e3fcdbf916776c7430c}{I\+Luint \hyperlink{struct_i_limage_ae0438126967c9e3fcdbf916776c7430c}{Off\+X}}\label{struct_i_limage_ae0438126967c9e3fcdbf916776c7430c}
+
+\begin{DoxyCompactList}\small\item\em x-\/offset of the image \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a3d0db9b9c3aa7399ff8fe82327e1cc42}{I\+Luint \hyperlink{struct_i_limage_a3d0db9b9c3aa7399ff8fe82327e1cc42}{Off\+Y}}\label{struct_i_limage_a3d0db9b9c3aa7399ff8fe82327e1cc42}
+
+\begin{DoxyCompactList}\small\item\em y-\/offset of the image \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a65df57fee0fb33328ef00fecb7709638}{I\+Lubyte $\ast$ \hyperlink{struct_i_limage_a65df57fee0fb33328ef00fecb7709638}{Dxtc\+Data}}\label{struct_i_limage_a65df57fee0fb33328ef00fecb7709638}
+
+\begin{DoxyCompactList}\small\item\em compressed data \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a41c04c16ff79d67c0c20d726ea411805}{I\+Lenum \hyperlink{struct_i_limage_a41c04c16ff79d67c0c20d726ea411805}{Dxtc\+Format}}\label{struct_i_limage_a41c04c16ff79d67c0c20d726ea411805}
+
+\begin{DoxyCompactList}\small\item\em compressed data format \end{DoxyCompactList}\item 
+\hypertarget{struct_i_limage_a5d423e11ee4e5076d92f6a7e863b2070}{I\+Luint \hyperlink{struct_i_limage_a5d423e11ee4e5076d92f6a7e863b2070}{Dxtc\+Size}}\label{struct_i_limage_a5d423e11ee4e5076d92f6a7e863b2070}
+
+\begin{DoxyCompactList}\small\item\em compressed data size \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Fundamental \hyperlink{class_image}{Image} structure. 
+
+Every bit of information about an image is stored in this internal structure. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/samples/\+Dev\+I\+L/include/\+I\+L/devil\+\_\+internal\+\_\+exports.\+h\end{DoxyCompactItemize}

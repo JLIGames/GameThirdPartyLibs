@@ -1,0 +1,55 @@
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object}{\section{Assimp\+:\+:Obj\+File\+:\+:Object Struct Reference}
+\label{struct_assimp_1_1_obj_file_1_1_object}\index{Assimp\+::\+Obj\+File\+::\+Object@{Assimp\+::\+Obj\+File\+::\+Object}}
+}
+
+
+Stores all objects of an objfile object definition.  
+
+
+
+
+{\ttfamily \#include $<$Obj\+File\+Data.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:Obj\+File\+:\+:Object\+:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_a411419c4a57b33b2e36114f1b844f906}{enum {\bfseries Object\+Type} \{ {\bfseries Obj\+Type}, 
+{\bfseries Group\+Type}
+ \}}\label{struct_assimp_1_1_obj_file_1_1_object_a411419c4a57b33b2e36114f1b844f906}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_ada8fce3cf96f66e65e5464ac33088f32}{\hyperlink{struct_assimp_1_1_obj_file_1_1_object_ada8fce3cf96f66e65e5464ac33088f32}{Object} ()}\label{struct_assimp_1_1_obj_file_1_1_object_ada8fce3cf96f66e65e5464ac33088f32}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_ab5834da552b6a8d037161ec887e7fdbe}{\hyperlink{struct_assimp_1_1_obj_file_1_1_object_ab5834da552b6a8d037161ec887e7fdbe}{$\sim$\+Object} ()}\label{struct_assimp_1_1_obj_file_1_1_object_ab5834da552b6a8d037161ec887e7fdbe}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_ac63114ad2dac9d65ac36d6926e874b05}{std\+::string \hyperlink{struct_assimp_1_1_obj_file_1_1_object_ac63114ad2dac9d65ac36d6926e874b05}{m\+\_\+str\+Obj\+Name}}\label{struct_assimp_1_1_obj_file_1_1_object_ac63114ad2dac9d65ac36d6926e874b05}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_assimp_1_1_obj_file_1_1_object}{Object} name. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_a86c1aec1d2853623c558cab9a832baa7}{\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \hyperlink{struct_assimp_1_1_obj_file_1_1_object_a86c1aec1d2853623c558cab9a832baa7}{m\+\_\+\+Transformation}}\label{struct_assimp_1_1_obj_file_1_1_object_a86c1aec1d2853623c558cab9a832baa7}
+
+\begin{DoxyCompactList}\small\item\em Transformation matrix, stored in Open\+G\+L format. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_ac840b1d1102b755094e030373e9ebcd7}{std\+::vector$<$ \hyperlink{struct_assimp_1_1_obj_file_1_1_object}{Object} $\ast$ $>$ \hyperlink{struct_assimp_1_1_obj_file_1_1_object_ac840b1d1102b755094e030373e9ebcd7}{m\+\_\+\+Sub\+Objects}}\label{struct_assimp_1_1_obj_file_1_1_object_ac840b1d1102b755094e030373e9ebcd7}
+
+\begin{DoxyCompactList}\small\item\em All sub-\/objects referenced by this object. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_obj_file_1_1_object_a7d501dba7934caa5183800a5727d5ab3}{std\+::vector$<$ unsigned int $>$ \hyperlink{struct_assimp_1_1_obj_file_1_1_object_a7d501dba7934caa5183800a5727d5ab3}{m\+\_\+\+Meshes}}\label{struct_assimp_1_1_obj_file_1_1_object_a7d501dba7934caa5183800a5727d5ab3}
+
+\begin{DoxyCompactList}\small\item\em Assigned meshes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores all objects of an objfile object definition. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Obj\+File\+Data.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+digraph "DotZLib.CodecBase.copyInput"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DotZLib.CodecBase.copyInput",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DotZLib.Deflater.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_deflater.html#a2db95e3ca07e562df0652ed1ad8d0c4d",tooltip="Adds more data to the codec to be processed. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DotZLib.Inflater.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_inflater.html#a773dd62fe806dd9b6117f859faaeb079",tooltip="Adds more data to the codec to be processed. "];
+}

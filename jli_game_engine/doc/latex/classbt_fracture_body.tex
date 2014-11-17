@@ -1,0 +1,86 @@
+\hypertarget{classbt_fracture_body}{\section{bt\+Fracture\+Body Class Reference}
+\label{classbt_fracture_body}\index{bt\+Fracture\+Body@{bt\+Fracture\+Body}}
+}
+
+
+Inheritance diagram for bt\+Fracture\+Body\+:
+
+
+Collaboration diagram for bt\+Fracture\+Body\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_fracture_body_a84a5f54fe4c165da0204fedc87be824e}{{\bfseries bt\+Fracture\+Body} (const \hyperlink{structbt_rigid_body_1_1bt_rigid_body_construction_info}{bt\+Rigid\+Body\+Construction\+Info} \&construction\+Info, \hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} $\ast$world)}\label{classbt_fracture_body_a84a5f54fe4c165da0204fedc87be824e}
+
+\item 
+\hyperlink{classbt_fracture_body_af1602de70861d95f4918edf7f77647b2}{bt\+Fracture\+Body} (bt\+Scalar mass, \hyperlink{classbt_motion_state}{bt\+Motion\+State} $\ast$motion\+State, bt\+Collision\+Shape $\ast$collision\+Shape, const bt\+Vector3 \&local\+Inertia, bt\+Scalar $\ast$masses, int num\+Masses, \hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} $\ast$world)
+\item 
+\hypertarget{classbt_fracture_body_a1fab6c0465b284fefffb7e80153b6671}{void {\bfseries recompute\+Connectivity} (\hyperlink{classbt_collision_world}{bt\+Collision\+World} $\ast$world)}\label{classbt_fracture_body_a1fab6c0465b284fefffb7e80153b6671}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bt\+Compound\+Shape $\ast$ \hyperlink{classbt_fracture_body_adf11a93222057986021f7f147371991e}{shift\+Transform} (bt\+Compound\+Shape $\ast$box\+Compound, bt\+Scalar $\ast$masses, bt\+Transform \&shift, bt\+Vector3 \&principal\+Inertia)
+\item 
+\hypertarget{classbt_fracture_body_a29c54368ef075a6eb8ea614fa95590d5}{static bt\+Compound\+Shape $\ast$ {\bfseries shift\+Transform\+Distribute\+Mass} (bt\+Compound\+Shape $\ast$box\+Compound, bt\+Scalar mass, bt\+Transform \&shift)}\label{classbt_fracture_body_a29c54368ef075a6eb8ea614fa95590d5}
+
+\item 
+\hypertarget{classbt_fracture_body_a5ef72e92752eece0a6791a04e3e2d6db}{static bool {\bfseries collision\+Callback} (\hyperlink{classbt_manifold_point}{bt\+Manifold\+Point} \&cp, const bt\+Collision\+Object $\ast$col\+Obj0, int part\+Id0, int index0, const bt\+Collision\+Object $\ast$col\+Obj1, int part\+Id1, int index1)}\label{classbt_fracture_body_a5ef72e92752eece0a6791a04e3e2d6db}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_fracture_body_a9a7593439dec021509f9d4699c6e6dd3}{\hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} $\ast$ {\bfseries m\+\_\+world}}\label{classbt_fracture_body_a9a7593439dec021509f9d4699c6e6dd3}
+
+\item 
+\hypertarget{classbt_fracture_body_acf2c239684a3915a060b882b62e9d83f}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Scalar $>$ {\bfseries m\+\_\+masses}}\label{classbt_fracture_body_acf2c239684a3915a060b882b62e9d83f}
+
+\item 
+\hypertarget{classbt_fracture_body_a056986119ab02401a43f47e0e49c568e}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{structbt_connection}{bt\+Connection} $>$ {\bfseries m\+\_\+connections}}\label{classbt_fracture_body_a056986119ab02401a43f47e0e49c568e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbt_fracture_body_af1602de70861d95f4918edf7f77647b2}{\index{bt\+Fracture\+Body@{bt\+Fracture\+Body}!bt\+Fracture\+Body@{bt\+Fracture\+Body}}
+\index{bt\+Fracture\+Body@{bt\+Fracture\+Body}!bt\+Fracture\+Body@{bt\+Fracture\+Body}}
+\subsubsection[{bt\+Fracture\+Body}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Fracture\+Body\+::bt\+Fracture\+Body (
+\begin{DoxyParamCaption}
+\item[{bt\+Scalar}]{mass, }
+\item[{{\bf bt\+Motion\+State} $\ast$}]{motion\+State, }
+\item[{bt\+Collision\+Shape $\ast$}]{collision\+Shape, }
+\item[{const bt\+Vector3 \&}]{local\+Inertia, }
+\item[{bt\+Scalar $\ast$}]{masses, }
+\item[{int}]{num\+Masses, }
+\item[{{\bf bt\+Dynamics\+World} $\ast$}]{world}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classbt_fracture_body_af1602de70861d95f4918edf7f77647b2}
+\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} constructor for backwards compatibility. To specify friction (etc) during rigid body construction, please use the other constructor (using bt\+Rigid\+Body\+Construction\+Info) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_fracture_body_adf11a93222057986021f7f147371991e}{\index{bt\+Fracture\+Body@{bt\+Fracture\+Body}!shift\+Transform@{shift\+Transform}}
+\index{shift\+Transform@{shift\+Transform}!bt\+Fracture\+Body@{bt\+Fracture\+Body}}
+\subsubsection[{shift\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Compound\+Shape $\ast$ bt\+Fracture\+Body\+::shift\+Transform (
+\begin{DoxyParamCaption}
+\item[{bt\+Compound\+Shape $\ast$}]{box\+Compound, }
+\item[{bt\+Scalar $\ast$}]{masses, }
+\item[{bt\+Transform \&}]{shift, }
+\item[{bt\+Vector3 \&}]{principal\+Inertia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbt_fracture_body_adf11a93222057986021f7f147371991e}
+create a new compound with world transform/center of mass properly aligned with the principal axis
+
+non-\/recursive compound shapes perform better
+
+creation is faster using a new compound to store the shifted children
+
+update\+Child\+Transform is really slow, because it re-\/calculates the \hyperlink{class_a_a_b_b}{A\+A\+B\+B} each time. todo\+: add option to disable this update 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Fracture\+Demo/bt\+Fracture\+Body.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Fracture\+Demo/bt\+Fracture\+Body.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_voronoi_fracture_demo}{\section{Voronoi\+Fracture\+Demo Class Reference}
+\label{class_voronoi_fracture_demo}\index{Voronoi\+Fracture\+Demo@{Voronoi\+Fracture\+Demo}}
+}
+
+
+\hyperlink{class_voronoi_fracture_demo}{Voronoi\+Fracture\+Demo} is good starting point for learning the code base and porting.  
+
+
+
+
+{\ttfamily \#include $<$Voronoi\+Fracture\+Demo.\+h$>$}
+
+
+
+Inheritance diagram for Voronoi\+Fracture\+Demo\+:
+
+
+Collaboration diagram for Voronoi\+Fracture\+Demo\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_voronoi_fracture_demo_a438a148f9e921b17c3b8aac8273b91b2}{init\+Physics} ()
+\item 
+\hypertarget{class_voronoi_fracture_demo_ac54aba11d9c18b42682d4273dc1315e9}{void {\bfseries exit\+Physics} ()}\label{class_voronoi_fracture_demo_ac54aba11d9c18b42682d4273dc1315e9}
+
+\item 
+\hypertarget{class_voronoi_fracture_demo_aca62dbbabef4a1edc6a803be595192da}{void {\bfseries get\+Vertices\+Inside\+Planes} (const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&planes, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&vertices\+Out, std\+::set$<$ int $>$ \&plane\+Indices\+Out)}\label{class_voronoi_fracture_demo_aca62dbbabef4a1edc6a803be595192da}
+
+\item 
+\hypertarget{class_voronoi_fracture_demo_a5c2c4018468db3e9816d3d280060842f}{void {\bfseries voronoi\+B\+B\+Shatter} (const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&points, const bt\+Vector3 \&bbmin, const bt\+Vector3 \&bbmax, const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&bbq, const bt\+Vector3 \&bbt, bt\+Scalar mat\+Density)}\label{class_voronoi_fracture_demo_a5c2c4018468db3e9816d3d280060842f}
+
+\item 
+\hypertarget{class_voronoi_fracture_demo_a2e879eac2fa3d23702d9ecc9908f2e35}{void {\bfseries voronoi\+Convex\+Hull\+Shatter} (const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&points, const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&verts, const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&bbq, const bt\+Vector3 \&bbt, bt\+Scalar mat\+Density)}\label{class_voronoi_fracture_demo_a2e879eac2fa3d23702d9ecc9908f2e35}
+
+\item 
+virtual void \hyperlink{class_voronoi_fracture_demo_ad3dd25d2e5e1042e182fe1f9546f7baf}{client\+Move\+And\+Display} ()
+\item 
+\hypertarget{class_voronoi_fracture_demo_a363f7caeb806474cb9c468b33195264a}{virtual void {\bfseries display\+Callback} ()}\label{class_voronoi_fracture_demo_a363f7caeb806474cb9c468b33195264a}
+
+\item 
+\hypertarget{class_voronoi_fracture_demo_ada314cafb0b9a743c9606491de756d2b}{virtual void {\bfseries client\+Reset\+Scene} ()}\label{class_voronoi_fracture_demo_ada314cafb0b9a743c9606491de756d2b}
+
+\item 
+\hypertarget{class_voronoi_fracture_demo_a3a728e14b98dd40e77d32af29ef02526}{virtual void {\bfseries keyboard\+Callback} (unsigned char key, int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_voronoi_fracture_demo_a3a728e14b98dd40e77d32af29ef02526}
+
+\item 
+\hypertarget{class_voronoi_fracture_demo_a62f4ebbc2fcfcc0d30e5fde99039f9e2}{void {\bfseries attach\+Fixed\+Constraints} ()}\label{class_voronoi_fracture_demo_a62f4ebbc2fcfcc0d30e5fde99039f9e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_voronoi_fracture_demo_a7cab9a5ae13c63576d22f2bbbcfa7547}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_voronoi_fracture_demo_a7cab9a5ae13c63576d22f2bbbcfa7547}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_voronoi_fracture_demo}{Voronoi\+Fracture\+Demo} is good starting point for learning the code base and porting. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voronoi_fracture_demo_ad3dd25d2e5e1042e182fe1f9546f7baf}{\index{Voronoi\+Fracture\+Demo@{Voronoi\+Fracture\+Demo}!client\+Move\+And\+Display@{client\+Move\+And\+Display}}
+\index{client\+Move\+And\+Display@{client\+Move\+And\+Display}!Voronoi\+Fracture\+Demo@{Voronoi\+Fracture\+Demo}}
+\subsubsection[{client\+Move\+And\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Voronoi\+Fracture\+Demo\+::client\+Move\+And\+Display (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_voronoi_fracture_demo_ad3dd25d2e5e1042e182fe1f9546f7baf}
+step the simulation \hypertarget{class_voronoi_fracture_demo_a438a148f9e921b17c3b8aac8273b91b2}{\index{Voronoi\+Fracture\+Demo@{Voronoi\+Fracture\+Demo}!init\+Physics@{init\+Physics}}
+\index{init\+Physics@{init\+Physics}!Voronoi\+Fracture\+Demo@{Voronoi\+Fracture\+Demo}}
+\subsubsection[{init\+Physics}]{\setlength{\rightskip}{0pt plus 5cm}void Voronoi\+Fracture\+Demo\+::init\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_voronoi_fracture_demo_a438a148f9e921b17c3b8aac8273b91b2}
+collision configuration contains default setup for memory, collision setup
+
+use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/\+Bullet\+Multi\+Threaded)
+
+the default constraint solver. For parallel processing you can use a different solver (see Extras/\+Bullet\+Multi\+Threaded)
+
+create a few basic rigid bodies 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Voronoi\+Fracture\+Demo/Voronoi\+Fracture\+Demo.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Voronoi\+Fracture\+Demo/Voronoi\+Fracture\+Demo.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{_ice_allocator_8cpp}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Allocator.cpp File Reference}
+\label{_ice_allocator_8cpp}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Allocator.\+cpp@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Allocator.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}Std\+Afx.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$malloc.\+h$>$}\\*
+Include dependency graph for Ice\+Allocator.\+cpp\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_default_allocator}{Default\+Allocator}
+\item 
+struct \hyperlink{struct_debug_block}{Debug\+Block}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_allocator_8cpp_a5d164df1ed3c709f47d6d6f7b4f99bfc}{\#define {\bfseries N\+E\+W\+\_\+\+C\+O\+D\+E}}\label{_ice_allocator_8cpp_a5d164df1ed3c709f47d6d6f7b4f99bfc}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_afbeef1f678da97d508b84771424702ab}{\#define {\bfseries L\+O\+C\+A\+L\+\_\+\+M\+A\+L\+L\+O\+C}~\+::malloc}\label{_ice_allocator_8cpp_afbeef1f678da97d508b84771424702ab}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_a204bded1ef08557a7203dc462745aef4}{\#define {\bfseries L\+O\+C\+A\+L\+\_\+\+F\+R\+E\+E}~\+::free}\label{_ice_allocator_8cpp_a204bded1ef08557a7203dc462745aef4}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_a78547528a6eb1bbd45a3135b6e82dc9b}{\#define {\bfseries D\+E\+B\+U\+G\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+E\+R}~0x\+Beef\+Babe}\label{_ice_allocator_8cpp_a78547528a6eb1bbd45a3135b6e82dc9b}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_a2d03534f827239f93dac37fe4bdd16ce}{\#define {\bfseries D\+E\+B\+U\+G\+\_\+\+D\+E\+A\+L\+L\+O\+C\+A\+T\+E\+D}~0x\+Dead\+Dead}\label{_ice_allocator_8cpp_a2d03534f827239f93dac37fe4bdd16ce}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_a8eddc2cbc137e2d692d1d3d58bd040ea}{\#define {\bfseries M\+E\+M\+B\+L\+O\+C\+K\+S\+T\+A\+R\+T}~64}\label{_ice_allocator_8cpp_a8eddc2cbc137e2d692d1d3d58bd040ea}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_allocator_8cpp_adaa33c367208ed141f7de8531c4cb876}{{\bfseries I\+C\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+R\+T} (sizeof(\hyperlink{struct_debug_block}{Debug\+Block})==24)}\label{_ice_allocator_8cpp_adaa33c367208ed141f7de8531c4cb876}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_a73982c24bf0c0af98acfb18976cb055e}{inline\+\_\+ bool {\bfseries Valid\+Address} (const void $\ast$addy)}\label{_ice_allocator_8cpp_a73982c24bf0c0af98acfb18976cb055e}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_a5de5acb68a8f0728fc00b30dbe7cbef3}{void {\bfseries Init\+Default\+Allocator} ()}\label{_ice_allocator_8cpp_a5de5acb68a8f0728fc00b30dbe7cbef3}
+
+\item 
+\hypertarget{_ice_allocator_8cpp_af6deb9b7ced4bd0e2320950eab8b3c1b}{void {\bfseries Release\+Default\+Allocator} ()}\label{_ice_allocator_8cpp_af6deb9b7ced4bd0e2320950eab8b3c1b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an allocator base class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 19, 2003 
+\end{DoxyDate}

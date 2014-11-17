@@ -1,0 +1,105 @@
+\hypertarget{struct_occlusion_buffer}{\section{Occlusion\+Buffer Struct Reference}
+\label{struct_occlusion_buffer}\index{Occlusion\+Buffer@{Occlusion\+Buffer}}
+}
+
+
+Collaboration diagram for Occlusion\+Buffer\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_occlusion_buffer_1_1_query_o_c_l}{Query\+O\+C\+L}
+\item 
+struct \hyperlink{struct_occlusion_buffer_1_1_write_o_c_l}{Write\+O\+C\+L}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_occlusion_buffer_a2fd79fae99c05ccb54d532ee82602e7d}{void {\bfseries setup} (int w, int h)}\label{struct_occlusion_buffer_a2fd79fae99c05ccb54d532ee82602e7d}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a3d24210d43ee718b39adc4fbfda42ed1}{void {\bfseries clear} ()}\label{struct_occlusion_buffer_a3d24210d43ee718b39adc4fbfda42ed1}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a835ad7db2ba936a9f18cff7de9b885a7}{void {\bfseries initialize} ()}\label{struct_occlusion_buffer_a835ad7db2ba936a9f18cff7de9b885a7}
+
+\item 
+\hypertarget{struct_occlusion_buffer_ac1186078cce0ad41cefe0deb43db1261}{void {\bfseries draw\+Buffer} (bt\+Scalar l, bt\+Scalar t, bt\+Scalar r, bt\+Scalar b)}\label{struct_occlusion_buffer_ac1186078cce0ad41cefe0deb43db1261}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a4493cda4724a7fd173d6f7052da91eb8}{\hyperlink{classbt_vector4}{bt\+Vector4} {\bfseries transform} (const bt\+Vector3 \&x) const }\label{struct_occlusion_buffer_a4493cda4724a7fd173d6f7052da91eb8}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a2ec3372fc2d8e33964be682a6ce050a3}{{\footnotesize template$<$typename P\+O\+L\+I\+C\+Y $>$ }\\bool {\bfseries draw} (const \hyperlink{classbt_vector4}{bt\+Vector4} \&a, const \hyperlink{classbt_vector4}{bt\+Vector4} \&b, const \hyperlink{classbt_vector4}{bt\+Vector4} \&c, const bt\+Scalar minarea)}\label{struct_occlusion_buffer_a2ec3372fc2d8e33964be682a6ce050a3}
+
+\item 
+\hypertarget{struct_occlusion_buffer_aae3d878ce142c4b7aebf64b44ca73f03}{{\footnotesize template$<$const int N\+P, typename P\+O\+L\+I\+C\+Y $>$ }\\bool {\bfseries clip\+Draw} (const \hyperlink{classbt_vector4}{bt\+Vector4} $\ast$p, bt\+Scalar minarea)}\label{struct_occlusion_buffer_aae3d878ce142c4b7aebf64b44ca73f03}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a42198dffc38161cf5bf48b52ca8e299e}{void {\bfseries append\+Occluder} (const bt\+Vector3 \&a, const bt\+Vector3 \&b, const bt\+Vector3 \&c)}\label{struct_occlusion_buffer_a42198dffc38161cf5bf48b52ca8e299e}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a48412001423fbff3943dcb95eb69c5e6}{void {\bfseries append\+Occluder} (const bt\+Vector3 \&a, const bt\+Vector3 \&b, const bt\+Vector3 \&c, const bt\+Vector3 \&d)}\label{struct_occlusion_buffer_a48412001423fbff3943dcb95eb69c5e6}
+
+\item 
+\hypertarget{struct_occlusion_buffer_acd240e3b4b158575f78bc25d58f89784}{void {\bfseries append\+Occluder} (const bt\+Vector3 \&c, const bt\+Vector3 \&e)}\label{struct_occlusion_buffer_acd240e3b4b158575f78bc25d58f89784}
+
+\item 
+\hypertarget{struct_occlusion_buffer_ae2bf6abf86dfb5f72b3588932eda9727}{bool {\bfseries query\+Occluder} (const bt\+Vector3 \&a, const bt\+Vector3 \&b, const bt\+Vector3 \&c)}\label{struct_occlusion_buffer_ae2bf6abf86dfb5f72b3588932eda9727}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a8469a82bbbce934ab7389008d4b41287}{bool {\bfseries query\+Occluder} (const bt\+Vector3 \&a, const bt\+Vector3 \&b, const bt\+Vector3 \&c, const bt\+Vector3 \&d)}\label{struct_occlusion_buffer_a8469a82bbbce934ab7389008d4b41287}
+
+\item 
+\hypertarget{struct_occlusion_buffer_aa50a37ed1f97f43558bef9b41439162b}{bool {\bfseries query\+Occluder} (const bt\+Vector3 \&c, const bt\+Vector3 \&e)}\label{struct_occlusion_buffer_aa50a37ed1f97f43558bef9b41439162b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_occlusion_buffer_a83098b35dcdab3a58ac7fdc240ecc45f}{static bool {\bfseries project} (\hyperlink{classbt_vector4}{bt\+Vector4} $\ast$p, int n)}\label{struct_occlusion_buffer_a83098b35dcdab3a58ac7fdc240ecc45f}
+
+\item 
+\hypertarget{struct_occlusion_buffer_ab14e300150ae5366a916fc97e755827e}{{\footnotesize template$<$const int N\+P$>$ }\\static int {\bfseries clip} (const \hyperlink{classbt_vector4}{bt\+Vector4} $\ast$pi, \hyperlink{classbt_vector4}{bt\+Vector4} $\ast$po)}\label{struct_occlusion_buffer_ab14e300150ae5366a916fc97e755827e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_occlusion_buffer_a4526f73f49d596730c812b9035f034b7}{bool {\bfseries initialized}}\label{struct_occlusion_buffer_a4526f73f49d596730c812b9035f034b7}
+
+\item 
+\hypertarget{struct_occlusion_buffer_ac6cea9d1214a6d1d12dad0aa2d2ca500}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Scalar $>$ {\bfseries buffer}}\label{struct_occlusion_buffer_ac6cea9d1214a6d1d12dad0aa2d2ca500}
+
+\item 
+\hypertarget{struct_occlusion_buffer_ae4b5f154610294f7ca6de621e29dcbb9}{int {\bfseries sizes} \mbox{[}2\mbox{]}}\label{struct_occlusion_buffer_ae4b5f154610294f7ca6de621e29dcbb9}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a041fce5f8e68b77917ee1bf0e13d23c3}{bt\+Scalar {\bfseries scales} \mbox{[}2\mbox{]}}\label{struct_occlusion_buffer_a041fce5f8e68b77917ee1bf0e13d23c3}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a873c96ad40b1ee850df217f25cb7c45f}{bt\+Scalar {\bfseries offsets} \mbox{[}2\mbox{]}}\label{struct_occlusion_buffer_a873c96ad40b1ee850df217f25cb7c45f}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a6c6a2bf102aa7041be3995e50d37a002}{bt\+Scalar {\bfseries wtrs} \mbox{[}16\mbox{]}}\label{struct_occlusion_buffer_a6c6a2bf102aa7041be3995e50d37a002}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a1a445ec8207abe2f5abf989d936e11ca}{bt\+Vector3 {\bfseries eye}}\label{struct_occlusion_buffer_a1a445ec8207abe2f5abf989d936e11ca}
+
+\item 
+\hypertarget{struct_occlusion_buffer_aed449a6cab2c10894ed0114726c8a591}{bt\+Vector3 {\bfseries neardist}}\label{struct_occlusion_buffer_aed449a6cab2c10894ed0114726c8a591}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a07d33591cd7f0d462c94922d8164d06c}{bt\+Scalar {\bfseries ocarea}}\label{struct_occlusion_buffer_a07d33591cd7f0d462c94922d8164d06c}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a4baef042dcdbedc16e4ef1642a69b259}{bt\+Scalar {\bfseries qrarea}}\label{struct_occlusion_buffer_a4baef042dcdbedc16e4ef1642a69b259}
+
+\item 
+\hypertarget{struct_occlusion_buffer_a02969862d95b615862b13bf77747d97e}{G\+Luint {\bfseries texture}}\label{struct_occlusion_buffer_a02969862d95b615862b13bf77747d97e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/Bullet\+S\+A\+P\+Complete\+Box\+Pruning\+Test.\+cpp\end{DoxyCompactItemize}

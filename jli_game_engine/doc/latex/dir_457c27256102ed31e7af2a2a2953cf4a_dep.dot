@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/MagicLantern/OGLES2/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ed9a478bf77d90ff4dbb5f092b89aa81 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_ed9a478bf77d90ff4dbb5f092b89aa81.html"]
+  subgraph clusterdir_457c27256102ed31e7af2a2a2953cf4a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_457c27256102ed31e7af2a2a2953cf4a.html"];
+    dir_457c27256102ed31e7af2a2a2953cf4a [shape=plaintext label="Android"];
+    dir_8d00eeec49380933cf37b7a8b8539ee9 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_8d00eeec49380933cf37b7a8b8539ee9.html"];
+  }
+  }
+}

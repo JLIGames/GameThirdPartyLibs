@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Glass/OGLES2/Build/Android/src/com/powervr/OGLES2Glass" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a0434ffa374c3fc4e3d4362d8f07c1f5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_a0434ffa374c3fc4e3d4362d8f07c1f5.html"]
+  dir_7fcf560de66b0f6c2ea42430093f2257 [shape=box, label="OGLES2Glass", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7fcf560de66b0f6c2ea42430093f2257.html"];
+  }
+}

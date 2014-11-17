@@ -1,0 +1,17 @@
+digraph "Assimp::Discreet3DSImporter::ParseLightChunk"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Discreet3DSImporter\l::ParseLightChunk",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::Discreet3DSImporter\l::ParseChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#a73f4620770f9025734df29b2e5f877a3"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::Discreet3DSImporter\l::ParseObjectChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#aaa3cbae948bc9b29d2b9a9148cee56df"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Assimp::Discreet3DSImporter\l::ParseEditorChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#addcb60797b0e32d22344072686c689c5"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Assimp::Discreet3DSImporter\l::ParseMainChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#adbcf9fbe5c00a734e1939dbadd75604e"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Assimp::Discreet3DSImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_discreet3_d_s_importer.html#abf7e6eb912d47870e4b3ceec16376a90"];
+}

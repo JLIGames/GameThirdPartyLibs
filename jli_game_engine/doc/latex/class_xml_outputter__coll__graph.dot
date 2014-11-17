@@ -1,0 +1,26 @@
+digraph "XmlOutputter"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="XmlOutputter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Outputter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_outputter.html",tooltip="Abstract outputter to print test result summary. "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_result" ];
+  Node3 [label="TestResultCollector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result_collector.html",tooltip="Collects test result.A TestResultCollector is a TestListener which collects the results of executing ..."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="TestSuccessListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_success_listener.html",tooltip="TestListener that checks if any test case failed. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="TestListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_listener.html",tooltip="Listener for test progress and result.Implementing the Observer pattern a TestListener may be registe..."];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="SynchronizedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_synchronized_object.html",tooltip="Base class for synchronized object. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_syncObject" ];
+  Node7 [label="SynchronizedObject\l::SynchronizationObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_synchronized_object_1_1_synchronization_object.html",tooltip="Abstract synchronization object (mutex) "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_xml" ];
+  Node8 [label="XmlDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_document.html",tooltip="A XML Document. "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rootElement" ];
+  Node9 [label="XmlElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_element.html",tooltip="A XML Element. "];
+}

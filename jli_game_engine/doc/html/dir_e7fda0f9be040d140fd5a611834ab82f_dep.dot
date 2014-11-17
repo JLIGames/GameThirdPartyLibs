@@ -1,0 +1,15 @@
+digraph "vorbis/libvorbis-1.3.3/lib/books" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a5987fa2b7b09fbe0958b05a7bff368f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_a5987fa2b7b09fbe0958b05a7bff368f.html"]
+  subgraph clusterdir_e7fda0f9be040d140fd5a611834ab82f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e7fda0f9be040d140fd5a611834ab82f.html"];
+    dir_e7fda0f9be040d140fd5a611834ab82f [shape=plaintext label="books"];
+    dir_a98e66b285a13b335a099f7a7190d59e [shape=box label="coupled" color="black" fillcolor="white" style="filled" URL="dir_a98e66b285a13b335a099f7a7190d59e.html"];
+    dir_0fcf10dfbd0b71dedefeee37e87b0c5c [shape=box label="floor" color="black" fillcolor="white" style="filled" URL="dir_0fcf10dfbd0b71dedefeee37e87b0c5c.html"];
+    dir_504bd90c7f6d3bb195b353ef03b9465a [shape=box label="uncoupled" color="black" fillcolor="white" style="filled" URL="dir_504bd90c7f6d3bb195b353ef03b9465a.html"];
+  }
+  }
+}

@@ -1,0 +1,13 @@
+digraph "Assimp::BaseProcess::ExecuteOnScene"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::BaseProcess\l::ExecuteOnScene",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::Importer::ReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_importer.html#afa338a135a56956bd5deb7d238498dde"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::Importer::ReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_importer.html#a339882c7acb47d5b5110bbd078d870a9",tooltip="Reads the given file and returns its contents if successful. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::Importer::ApplyPost\lProcessing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_importer.html#ace2fb85c67414a9d4ac6e69049eec7de"];
+}

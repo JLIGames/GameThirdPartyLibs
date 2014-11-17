@@ -1,0 +1,35 @@
+digraph "theora/libtheora-1.1.1/include/theora/theora.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="theora/libtheora-1.1.1\l/include/theora/theora.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="theora/libtheora-1.1.1\l/lib/internal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$internal_8h_source.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="theora/libtheora-1.1.1\l/lib/encint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$encint_8h_source.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="theora/libtheora-1.1.1\l/lib/x86/x86enc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$x86enc_8h_source.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="theora/libtheora-1.1.1\l/lib/x86_vc/x86enc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vc_2x86enc_8h_source.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="theora/libtheora-1.1.1\l/lib/apiwrapper.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$apiwrapper_8h_source.html"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="theora/libtheora-1.1.1\l/lib/cpu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cpu_8h_source.html"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="theora/libtheora-1.1.1\l/lib/decint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$decint_8h_source.html"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="theora/libtheora-1.1.1\l/lib/x86/x86int.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$x86int_8h_source.html"];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="theora/libtheora-1.1.1\l/lib/x86/mmxfrag.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mmxfrag_8h_source.html"];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="theora/libtheora-1.1.1\l/lib/x86/mmxloop.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mmxloop_8h_source.html"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="theora/libtheora-1.1.1\l/lib/x86_vc/x86int.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vc_2x86int_8h_source.html"];
+  Node12 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="theora/libtheora-1.1.1\l/lib/x86_vc/mmxfrag.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vc_2mmxfrag_8h_source.html"];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="theora/libtheora-1.1.1\l/lib/x86_vc/mmxloop.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vc_2mmxloop_8h_source.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

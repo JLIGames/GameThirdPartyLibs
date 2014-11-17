@@ -1,0 +1,83 @@
+\hypertarget{struct_assimp_1_1_s_transform_vec_info}{\section{Assimp\+:\+:S\+Transform\+Vec\+Info Struct Reference}
+\label{struct_assimp_1_1_s_transform_vec_info}\index{Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}}
+}
+
+
+{\ttfamily \#include $<$Texture\+Transform.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:S\+Transform\+Vec\+Info\+:
+
+
+Collaboration diagram for Assimp\+:\+:S\+Transform\+Vec\+Info\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_assimp_1_1_s_transform_vec_info_a194fd9e579a7d6ac53b884f892ec0c58}{operator==} (const \hyperlink{struct_assimp_1_1_s_transform_vec_info}{S\+Transform\+Vec\+Info} \&other) const 
+\item 
+\hypertarget{struct_assimp_1_1_s_transform_vec_info_aa4c264e77c5b1605aba11cd67c57b016}{bool {\bfseries operator!=} (const \hyperlink{struct_assimp_1_1_s_transform_vec_info}{S\+Transform\+Vec\+Info} \&other) const }\label{struct_assimp_1_1_s_transform_vec_info_aa4c264e77c5b1605aba11cd67c57b016}
+
+\item 
+bool \hyperlink{struct_assimp_1_1_s_transform_vec_info_a88c8aeb9bffcb253d3db96ffd7a6378d}{Is\+Untransformed} () const 
+\item 
+void \hyperlink{struct_assimp_1_1_s_transform_vec_info_acb6715cfdd163028fbb71468c2f27265}{Get\+Matrix} (\hyperlink{structai_matrix3x3}{ai\+Matrix3x3} \&m\+Out)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_s_transform_vec_info_a97270544cd32c6c27e98b0c7be047e89}{unsigned int \hyperlink{struct_assimp_1_1_s_transform_vec_info_a97270544cd32c6c27e98b0c7be047e89}{uv\+Index}}\label{struct_assimp_1_1_s_transform_vec_info_a97270544cd32c6c27e98b0c7be047e89}
+
+\begin{DoxyCompactList}\small\item\em Source texture coordinate index. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_s_transform_vec_info_a8262c5fe0e019113218c8e24f379fc30}{\hyperlink{material_8h_a6cbe56056751aa80e8dd714632a49de0}{ai\+Texture\+Map\+Mode} \hyperlink{struct_assimp_1_1_s_transform_vec_info_a8262c5fe0e019113218c8e24f379fc30}{map\+U}}\label{struct_assimp_1_1_s_transform_vec_info_a8262c5fe0e019113218c8e24f379fc30}
+
+\begin{DoxyCompactList}\small\item\em Texture mapping mode in the u, v direction. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_s_transform_vec_info_a87dde2dcf287af043b657ff90e599b13}{\hyperlink{material_8h_a6cbe56056751aa80e8dd714632a49de0}{ai\+Texture\+Map\+Mode} {\bfseries map\+V}}\label{struct_assimp_1_1_s_transform_vec_info_a87dde2dcf287af043b657ff90e599b13}
+
+\item 
+unsigned int \hyperlink{struct_assimp_1_1_s_transform_vec_info_a3233c0d7f6a3caefa25aaa2740edd443}{locked\+Pos}
+\item 
+std\+::list$<$ \hyperlink{struct_assimp_1_1_t_t_update_info}{T\+T\+Update\+Info} $>$ \hyperlink{struct_assimp_1_1_s_transform_vec_info_a6ccefe9b1d6992c90f0a310ae568bd9d}{update\+List}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Helper class representing texture coordinate transformations 
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_assimp_1_1_s_transform_vec_info_acb6715cfdd163028fbb71468c2f27265}{\index{Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}}
+\subsubsection[{Get\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+S\+Transform\+Vec\+Info\+::\+Get\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Matrix3x3} \&}]{m\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_assimp_1_1_s_transform_vec_info_acb6715cfdd163028fbb71468c2f27265}
+Build a 3x3 matrix from the transformations \hypertarget{struct_assimp_1_1_s_transform_vec_info_a88c8aeb9bffcb253d3db96ffd7a6378d}{\index{Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}!Is\+Untransformed@{Is\+Untransformed}}
+\index{Is\+Untransformed@{Is\+Untransformed}!Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}}
+\subsubsection[{Is\+Untransformed}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+S\+Transform\+Vec\+Info\+::\+Is\+Untransformed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_assimp_1_1_s_transform_vec_info_a88c8aeb9bffcb253d3db96ffd7a6378d}
+Returns whether this is an untransformed texture coordinate set \hypertarget{struct_assimp_1_1_s_transform_vec_info_a194fd9e579a7d6ac53b884f892ec0c58}{\index{Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}!operator==@{operator==}}
+\index{operator==@{operator==}!Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+S\+Transform\+Vec\+Info\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+Transform\+Vec\+Info} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_assimp_1_1_s_transform_vec_info_a194fd9e579a7d6ac53b884f892ec0c58}
+Compare two transform setups 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_assimp_1_1_s_transform_vec_info_a3233c0d7f6a3caefa25aaa2740edd443}{\index{Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}!locked\+Pos@{locked\+Pos}}
+\index{locked\+Pos@{locked\+Pos}!Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}}
+\subsubsection[{locked\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+S\+Transform\+Vec\+Info\+::locked\+Pos}}\label{struct_assimp_1_1_s_transform_vec_info_a3233c0d7f6a3caefa25aaa2740edd443}
+Locked destination U\+V index A\+I\+\_\+\+T\+T\+\_\+\+U\+V\+\_\+\+I\+D\+X\+\_\+\+L\+O\+C\+K\+\_\+\+T\+B\+D -\/ to be determined A\+I\+\_\+\+T\+T\+\_\+\+U\+V\+\_\+\+I\+D\+X\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E -\/ none (default) \hypertarget{struct_assimp_1_1_s_transform_vec_info_a6ccefe9b1d6992c90f0a310ae568bd9d}{\index{Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}!update\+List@{update\+List}}
+\index{update\+List@{update\+List}!Assimp\+::\+S\+Transform\+Vec\+Info@{Assimp\+::\+S\+Transform\+Vec\+Info}}
+\subsubsection[{update\+List}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf T\+T\+Update\+Info}$>$ Assimp\+::\+S\+Transform\+Vec\+Info\+::update\+List}}\label{struct_assimp_1_1_s_transform_vec_info_a6ccefe9b1d6992c90f0a310ae568bd9d}
+Update info -\/ shortcuts into all materials that are referencing this transform setup 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Texture\+Transform.\+h\end{DoxyCompactItemize}

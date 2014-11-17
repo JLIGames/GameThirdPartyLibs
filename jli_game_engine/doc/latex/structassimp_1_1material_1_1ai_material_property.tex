@@ -1,0 +1,72 @@
+\hypertarget{structassimp_1_1material_1_1ai_material_property}{\section{assimp\+:\+:material\+:\+:ai\+Material\+Property Struct Reference}
+\label{structassimp_1_1material_1_1ai_material_property}\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+}
+
+
+Collaboration diagram for assimp\+:\+:material\+:\+:ai\+Material\+Property\+:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structassimp_1_1types_1_1ai_string}{ai\+String} \hyperlink{structassimp_1_1material_1_1ai_material_property_afe4ebd7e7adaccee8f4a5322aeb59757}{m\+Key}
+\item 
+uint \hyperlink{structassimp_1_1material_1_1ai_material_property_a12b6a483209cee22013648d1a4388259}{m\+Semantic}
+\item 
+uint \hyperlink{structassimp_1_1material_1_1ai_material_property_ae24935f31f41f397e9558a2f9022b066}{m\+Index}
+\item 
+uint \hyperlink{structassimp_1_1material_1_1ai_material_property_a05a3fdd6e28bc2246d56162cf5f68bc2}{m\+Data\+Length}
+\item 
+\hyperlink{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702a}{ai\+Property\+Type\+Info} \hyperlink{structassimp_1_1material_1_1ai_material_property_a50ea7cf49a1560abff974c8838acadb4}{m\+Type}
+\item 
+char $\ast$ \hyperlink{structassimp_1_1material_1_1ai_material_property_adf2f2f2289591165b4a56435f9ca8c02}{m\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure for a single material property.
+
+As an user, you'll probably never need to deal with this data structure. Just use the provided {\ttfamily ai\+Get\+Material\+X\+X\+X()} functions to query material properties easily. Processing them manually is faster, but it is not the recommended way. It isn't worth the effort.
+
+Material property names follow a simple scheme\+:
+
+{\ttfamily \$\mbox{[}name\mbox{]}}\+: A public property, there must be a corresponding A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+X\+X\+X constant.
+
+{\ttfamily ?\mbox{[}name\mbox{]}}\+: Also public, but ignored by the {\ttfamily ai\+Process.\+Remove\+Redundant\+Materials} post-\/processing step.
+
+{\ttfamily $\sim$\mbox{[}name\mbox{]}}\+: A temporary property for internal use. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structassimp_1_1material_1_1ai_material_property_adf2f2f2289591165b4a56435f9ca8c02}{\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}!m\+Data@{m\+Data}}
+\index{m\+Data@{m\+Data}!assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+\subsubsection[{m\+Data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ assimp\+::material\+::ai\+Material\+Property\+::m\+Data}}\label{structassimp_1_1material_1_1ai_material_property_adf2f2f2289591165b4a56435f9ca8c02}
+Binary buffer to hold the property's value.
+
+The size of the buffer is always {\ttfamily m\+Data\+Length}. \hypertarget{structassimp_1_1material_1_1ai_material_property_a05a3fdd6e28bc2246d56162cf5f68bc2}{\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}!m\+Data\+Length@{m\+Data\+Length}}
+\index{m\+Data\+Length@{m\+Data\+Length}!assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+\subsubsection[{m\+Data\+Length}]{\setlength{\rightskip}{0pt plus 5cm}uint assimp\+::material\+::ai\+Material\+Property\+::m\+Data\+Length}}\label{structassimp_1_1material_1_1ai_material_property_a05a3fdd6e28bc2246d56162cf5f68bc2}
+Size of the buffer {\ttfamily m\+Data} is pointing to (in bytes).
+
+This value may not be 0. \hypertarget{structassimp_1_1material_1_1ai_material_property_ae24935f31f41f397e9558a2f9022b066}{\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}!m\+Index@{m\+Index}}
+\index{m\+Index@{m\+Index}!assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+\subsubsection[{m\+Index}]{\setlength{\rightskip}{0pt plus 5cm}uint assimp\+::material\+::ai\+Material\+Property\+::m\+Index}}\label{structassimp_1_1material_1_1ai_material_property_ae24935f31f41f397e9558a2f9022b066}
+For texture properties, this specifies the index of the texture.
+
+For non-\/texture properties, this member is always 0. \hypertarget{structassimp_1_1material_1_1ai_material_property_afe4ebd7e7adaccee8f4a5322aeb59757}{\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}!m\+Key@{m\+Key}}
+\index{m\+Key@{m\+Key}!assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+\subsubsection[{m\+Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+String} assimp\+::material\+::ai\+Material\+Property\+::m\+Key}}\label{structassimp_1_1material_1_1ai_material_property_afe4ebd7e7adaccee8f4a5322aeb59757}
+Specifies the name of the property (key).
+
+Keys are generally case insensitive. \hypertarget{structassimp_1_1material_1_1ai_material_property_a12b6a483209cee22013648d1a4388259}{\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}!m\+Semantic@{m\+Semantic}}
+\index{m\+Semantic@{m\+Semantic}!assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+\subsubsection[{m\+Semantic}]{\setlength{\rightskip}{0pt plus 5cm}uint assimp\+::material\+::ai\+Material\+Property\+::m\+Semantic}}\label{structassimp_1_1material_1_1ai_material_property_a12b6a483209cee22013648d1a4388259}
+For texture properties, this specifies the exact usage semantic.
+
+For non-\/texture properties, this member is always 0 (or rather {\ttfamily ai\+Texture\+Type.\+N\+O\+N\+E}). \hypertarget{structassimp_1_1material_1_1ai_material_property_a50ea7cf49a1560abff974c8838acadb4}{\index{assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}!m\+Type@{m\+Type}}
+\index{m\+Type@{m\+Type}!assimp\+::material\+::ai\+Material\+Property@{assimp\+::material\+::ai\+Material\+Property}}
+\subsubsection[{m\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Property\+Type\+Info} assimp\+::material\+::ai\+Material\+Property\+::m\+Type}}\label{structassimp_1_1material_1_1ai_material_property_a50ea7cf49a1560abff974c8838acadb4}
+\hyperlink{struct_type}{Type} information for the property.
+
+Defines the data layout inside the data buffer. This is used by the library internally to perform debug checks and to utilize proper type conversions. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/d\+Assimp/assimp/material.\+d\end{DoxyCompactItemize}

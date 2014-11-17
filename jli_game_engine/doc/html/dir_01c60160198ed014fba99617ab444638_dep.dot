@@ -1,0 +1,9 @@
+digraph "assimp/assimp-3.1.1/scripts/IFCImporter" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9bbdaa3c58090fb18f73c38e57027bce {
+    graph [ bgcolor="#ddddee", pencolor="black", label="scripts" fontname="Helvetica", fontsize="10", URL="dir_9bbdaa3c58090fb18f73c38e57027bce.html"]
+  dir_01c60160198ed014fba99617ab444638 [shape=box, label="IFCImporter", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_01c60160198ed014fba99617ab444638.html"];
+  }
+}

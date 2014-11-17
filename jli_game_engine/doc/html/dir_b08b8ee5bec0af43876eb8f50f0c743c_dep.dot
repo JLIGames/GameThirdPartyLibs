@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Shell/API/EAGL" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_42ad26a6aa1f1f4d0ca646914997eecd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="API" fontname="Helvetica", fontsize="10", URL="dir_42ad26a6aa1f1f4d0ca646914997eecd.html"]
+  subgraph clusterdir_b08b8ee5bec0af43876eb8f50f0c743c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b08b8ee5bec0af43876eb8f50f0c743c.html"];
+    dir_b08b8ee5bec0af43876eb8f50f0c743c [shape=plaintext label="EAGL"];
+    dir_14e2413032e6f3af65e4ed41faa5c406 [shape=box label="OpenGLSupport" color="black" fillcolor="white" style="filled" URL="dir_14e2413032e6f3af65e4ed41faa5c406.html"];
+  }
+  }
+}

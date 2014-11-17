@@ -1,0 +1,26 @@
+digraph "MyInternalTriangleIndexCallback"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="MyInternalTriangleIndexCallback",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="btInternalTriangleIndexCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_internal_triangle_index_callback.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_gimpactShape" ];
+  Node3 [label="btGImpactMeshShape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_mesh_shape.html",tooltip="This class manages a mesh supplied by the btStridingMeshInterface interface. "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="btGImpactShapeInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html",tooltip="Base class for gimpact shapes. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="btConcaveShape",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_set" ];
+  Node6 [label="btGImpactQuantizedBvh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html",tooltip="Structure for containing Boxes. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_primitive_manager" ];
+  Node7 [label="btPrimitiveManagerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_manager_base.html",tooltip="Prototype Base class for primitive classification. "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_tree" ];
+  Node8 [label="btQuantizedBvhTree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_quantized_bvh_tree.html",tooltip="Basic Box tree structure. "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_node_array" ];
+  Node9 [label="GIM_QUANTIZED_BVH_NODE\l_ARRAY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___q_u_a_n_t_i_z_e_d___b_v_h___n_o_d_e___a_r_r_a_y.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="btAlignedObjectArray\l\< BT_QUANTIZED_BVH_NODE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node11 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_mesh_parts" ];
+  Node11 [label="btAlignedObjectArray\l\< btGImpactMeshShapePart * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+}

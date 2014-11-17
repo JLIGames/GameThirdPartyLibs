@@ -1,0 +1,31 @@
+\hypertarget{structbt_discrete_collision_detector_interface}{\section{bt\+Discrete\+Collision\+Detector\+Interface Struct Reference}
+\label{structbt_discrete_collision_detector_interface}\index{bt\+Discrete\+Collision\+Detector\+Interface@{bt\+Discrete\+Collision\+Detector\+Interface}}
+}
+
+
+{\ttfamily \#include $<$bt\+Discrete\+Collision\+Detector\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Discrete\+Collision\+Detector\+Interface\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbt_discrete_collision_detector_interface_1_1_closest_point_input}{Closest\+Point\+Input}
+\item 
+struct \hyperlink{structbt_discrete_collision_detector_interface_1_1_result}{Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_discrete_collision_detector_interface_af749c5b0731c32d086a0a42e17c38b73}{virtual void {\bfseries get\+Closest\+Points} (const \hyperlink{structbt_discrete_collision_detector_interface_1_1_closest_point_input}{Closest\+Point\+Input} \&input, \hyperlink{structbt_discrete_collision_detector_interface_1_1_result}{Result} \&output, class \hyperlink{classbt_i_debug_draw}{bt\+I\+Debug\+Draw} $\ast$debug\+Draw, bool swap\+Results=false)=0}\label{structbt_discrete_collision_detector_interface_af749c5b0731c32d086a0a42e17c38b73}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface is made to be used by an iterative approach to do Time\+Of\+Impact calculations This interface allows to query for closest points and penetration depth between two (convex) objects the closest point is on the second object (B), and the normal points from the surface on B towards A. distance is between closest points on B and closest point on A. So you can calculate closest point on A by taking closest\+Point\+In\+A = closest\+Point\+In\+B + m\+\_\+distance $\ast$ m\+\_\+normal\+On\+Surface\+B 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Narrow\+Phase\+Collision/bt\+Discrete\+Collision\+Detector\+Interface.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data}{\section{Assimp\+:\+:Ogre\+:\+:I\+Vertex\+Data Class Reference}
+\label{class_assimp_1_1_ogre_1_1_i_vertex_data}\index{Assimp\+::\+Ogre\+::\+I\+Vertex\+Data@{Assimp\+::\+Ogre\+::\+I\+Vertex\+Data}}
+}
+
+
+Inheritance diagram for Assimp\+:\+:Ogre\+:\+:I\+Vertex\+Data\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data_a555ac2e680cb12a7a0a2c8a2eb3df973}{bool \hyperlink{class_assimp_1_1_ogre_1_1_i_vertex_data_a555ac2e680cb12a7a0a2c8a2eb3df973}{Has\+Bone\+Assignments} () const }\label{class_assimp_1_1_ogre_1_1_i_vertex_data_a555ac2e680cb12a7a0a2c8a2eb3df973}
+
+\begin{DoxyCompactList}\small\item\em Returns if bone assignments are available. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data_ad15bb1b0728e23923b32a2a9021a66d1}{void \hyperlink{class_assimp_1_1_ogre_1_1_i_vertex_data_ad15bb1b0728e23923b32a2a9021a66d1}{Add\+Vertex\+Mapping} (uint32\+\_\+t old\+Index, uint32\+\_\+t new\+Index)}\label{class_assimp_1_1_ogre_1_1_i_vertex_data_ad15bb1b0728e23923b32a2a9021a66d1}
+
+\begin{DoxyCompactList}\small\item\em Add vertex mapping from old to new index. \end{DoxyCompactList}\item 
+Assimp\+Vertex\+Bone\+Weight\+List \hyperlink{class_assimp_1_1_ogre_1_1_i_vertex_data_a85abc52b69b77582398a499f5296ceee}{Assimp\+Bone\+Weights} (size\+\_\+t vertices)
+\begin{DoxyCompactList}\small\item\em Returns re-\/mapped bone assignments. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data_a82c9a8c374fd12790b47a835a52e3d95}{std\+::set$<$ uint16\+\_\+t $>$ \hyperlink{class_assimp_1_1_ogre_1_1_i_vertex_data_a82c9a8c374fd12790b47a835a52e3d95}{Referenced\+Bones\+By\+Weights} () const }\label{class_assimp_1_1_ogre_1_1_i_vertex_data_a82c9a8c374fd12790b47a835a52e3d95}
+
+\begin{DoxyCompactList}\small\item\em Returns a set of bone indexes that are referenced by bone assignments (weights). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data_a9306ffb5789e2d0c9ccea898861becae}{uint32\+\_\+t \hyperlink{class_assimp_1_1_ogre_1_1_i_vertex_data_a9306ffb5789e2d0c9ccea898861becae}{count}}\label{class_assimp_1_1_ogre_1_1_i_vertex_data_a9306ffb5789e2d0c9ccea898861becae}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_vertex}{Vertex} count. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data_a1906f3cf64c0055d6e220a886b57cad1}{Vertex\+Bone\+Assignment\+List \hyperlink{class_assimp_1_1_ogre_1_1_i_vertex_data_a1906f3cf64c0055d6e220a886b57cad1}{bone\+Assignments}}\label{class_assimp_1_1_ogre_1_1_i_vertex_data_a1906f3cf64c0055d6e220a886b57cad1}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_ogre_1_1_bone}{Bone} assignments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_ogre_1_1_i_vertex_data_a85abc52b69b77582398a499f5296ceee}{\index{Assimp\+::\+Ogre\+::\+I\+Vertex\+Data@{Assimp\+::\+Ogre\+::\+I\+Vertex\+Data}!Assimp\+Bone\+Weights@{Assimp\+Bone\+Weights}}
+\index{Assimp\+Bone\+Weights@{Assimp\+Bone\+Weights}!Assimp\+::\+Ogre\+::\+I\+Vertex\+Data@{Assimp\+::\+Ogre\+::\+I\+Vertex\+Data}}
+\subsubsection[{Assimp\+Bone\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+Vertex\+Bone\+Weight\+List Assimp\+::\+Ogre\+::\+I\+Vertex\+Data\+::\+Assimp\+Bone\+Weights (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{vertices}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_ogre_1_1_i_vertex_data_a85abc52b69b77582398a499f5296ceee}
+
+
+Returns re-\/mapped bone assignments. 
+
+\begin{DoxyNote}{Note}
+Uses mappings added via Add\+Vertex\+Mapping. 
+\end{DoxyNote}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Structs.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Structs.\+cpp\end{DoxyCompactItemize}

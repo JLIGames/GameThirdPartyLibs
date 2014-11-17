@@ -1,0 +1,19 @@
+digraph "Assimp::IOStream"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::IOStream",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AllocateFromAssimpHeap",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::BlobIOStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blob_i_o_stream.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Assimp::CIOStreamWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_c_i_o_stream_wrapper.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Assimp::DefaultIOStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_i_o_stream.html",tooltip="Default IO implementation, use standard IO operations. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Assimp::MemoryIOStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_memory_i_o_stream.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Assimp::Q3BSP::ZipFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_q3_b_s_p_1_1_zip_file.html"];
+}

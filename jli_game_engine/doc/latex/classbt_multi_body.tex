@@ -1,0 +1,234 @@
+\hypertarget{classbt_multi_body}{\section{bt\+Multi\+Body Class Reference}
+\label{classbt_multi_body}\index{bt\+Multi\+Body@{bt\+Multi\+Body}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_multi_body_a607c1ece0fdf16a6d32ac8eafd91976e}{{\bfseries B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()}\label{classbt_multi_body_a607c1ece0fdf16a6d32ac8eafd91976e}
+
+\item 
+\hypertarget{classbt_multi_body_ab221797839166ac108b3878c3a823768}{{\bfseries bt\+Multi\+Body} (int n\+\_\+links, bt\+Scalar mass, const bt\+Vector3 \&inertia, bool fixed\+\_\+base\+\_\+, bool can\+\_\+sleep\+\_\+)}\label{classbt_multi_body_ab221797839166ac108b3878c3a823768}
+
+\item 
+\hypertarget{classbt_multi_body_ad9921754c20a1de7fbc4dfe82e3ccba2}{void {\bfseries setup\+Prismatic} (int i, bt\+Scalar mass, const bt\+Vector3 \&inertia, int parent, const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&rot\+\_\+parent\+\_\+to\+\_\+this, const bt\+Vector3 \&joint\+\_\+axis, const bt\+Vector3 \&r\+\_\+vector\+\_\+when\+\_\+q\+\_\+zero, bool disable\+Parent\+Collision=false)}\label{classbt_multi_body_ad9921754c20a1de7fbc4dfe82e3ccba2}
+
+\item 
+\hypertarget{classbt_multi_body_a90726123e71ab232653365aa4ef3d18b}{void {\bfseries setup\+Revolute} (int i, bt\+Scalar mass, const bt\+Vector3 \&inertia, int parent, const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&zero\+\_\+rot\+\_\+parent\+\_\+to\+\_\+this, const bt\+Vector3 \&joint\+\_\+axis, const bt\+Vector3 \&parent\+\_\+axis\+\_\+position, const bt\+Vector3 \&my\+\_\+axis\+\_\+position, bool disable\+Parent\+Collision=false)}\label{classbt_multi_body_a90726123e71ab232653365aa4ef3d18b}
+
+\item 
+\hypertarget{classbt_multi_body_a781e21f93b6790d1657d7d3cdb8022d0}{const \hyperlink{structbt_multibody_link}{bt\+Multibody\+Link} \& {\bfseries get\+Link} (int index) const }\label{classbt_multi_body_a781e21f93b6790d1657d7d3cdb8022d0}
+
+\item 
+\hypertarget{classbt_multi_body_a780d83915c460c1a17f098d47b2c8df2}{\hyperlink{structbt_multibody_link}{bt\+Multibody\+Link} \& {\bfseries get\+Link} (int index)}\label{classbt_multi_body_a780d83915c460c1a17f098d47b2c8df2}
+
+\item 
+\hypertarget{classbt_multi_body_afe617a7ba5ab8538212ed9019721ee34}{void {\bfseries set\+Base\+Collider} (\hyperlink{classbt_multi_body_link_collider}{bt\+Multi\+Body\+Link\+Collider} $\ast$collider)}\label{classbt_multi_body_afe617a7ba5ab8538212ed9019721ee34}
+
+\item 
+\hypertarget{classbt_multi_body_aa79e0fa50d51a69866b3797349dc27fa}{const \hyperlink{classbt_multi_body_link_collider}{bt\+Multi\+Body\+Link\+Collider} $\ast$ {\bfseries get\+Base\+Collider} () const }\label{classbt_multi_body_aa79e0fa50d51a69866b3797349dc27fa}
+
+\item 
+\hypertarget{classbt_multi_body_a8553158acf5059cba677db783dc03ecd}{\hyperlink{classbt_multi_body_link_collider}{bt\+Multi\+Body\+Link\+Collider} $\ast$ {\bfseries get\+Base\+Collider} ()}\label{classbt_multi_body_a8553158acf5059cba677db783dc03ecd}
+
+\item 
+\hypertarget{classbt_multi_body_acdd7254ef29655dec23fff85ae813fa3}{int {\bfseries get\+Parent} (int link\+\_\+num) const }\label{classbt_multi_body_acdd7254ef29655dec23fff85ae813fa3}
+
+\item 
+\hypertarget{classbt_multi_body_acef820064e4e581db9ba6f8975add485}{int {\bfseries get\+Num\+Links} () const }\label{classbt_multi_body_acef820064e4e581db9ba6f8975add485}
+
+\item 
+\hypertarget{classbt_multi_body_aef5c1ba30457bf8e7c74044f01064bd0}{bt\+Scalar {\bfseries get\+Base\+Mass} () const }\label{classbt_multi_body_aef5c1ba30457bf8e7c74044f01064bd0}
+
+\item 
+\hypertarget{classbt_multi_body_a78eb1091ecbc5fd203f70708ec44bada}{const bt\+Vector3 \& {\bfseries get\+Base\+Inertia} () const }\label{classbt_multi_body_a78eb1091ecbc5fd203f70708ec44bada}
+
+\item 
+\hypertarget{classbt_multi_body_a9e42b7ba9ad1c1574ee3079a1cf260c4}{bt\+Scalar {\bfseries get\+Link\+Mass} (int i) const }\label{classbt_multi_body_a9e42b7ba9ad1c1574ee3079a1cf260c4}
+
+\item 
+\hypertarget{classbt_multi_body_a19762042ddc38fb5a2b0be384d87ac27}{const bt\+Vector3 \& {\bfseries get\+Link\+Inertia} (int i) const }\label{classbt_multi_body_a19762042ddc38fb5a2b0be384d87ac27}
+
+\item 
+\hypertarget{classbt_multi_body_a39b17484fc121b0ec1f859e0f50e7552}{void {\bfseries set\+Base\+Mass} (bt\+Scalar mass)}\label{classbt_multi_body_a39b17484fc121b0ec1f859e0f50e7552}
+
+\item 
+\hypertarget{classbt_multi_body_a4043d6629d0585f67c8a82d0274ff17c}{void {\bfseries set\+Base\+Inertia} (const bt\+Vector3 \&inertia)}\label{classbt_multi_body_a4043d6629d0585f67c8a82d0274ff17c}
+
+\item 
+\hypertarget{classbt_multi_body_a5fc3f6bd2957523e68c4ee84342b8dae}{const bt\+Vector3 \& {\bfseries get\+Base\+Pos} () const }\label{classbt_multi_body_a5fc3f6bd2957523e68c4ee84342b8dae}
+
+\item 
+\hypertarget{classbt_multi_body_aab8838b6832975800672431df4f74e63}{const bt\+Vector3 {\bfseries get\+Base\+Vel} () const }\label{classbt_multi_body_aab8838b6832975800672431df4f74e63}
+
+\item 
+\hypertarget{classbt_multi_body_a3b2fda3ba8e8203f97d796e1913ad36e}{const \hyperlink{classbt_quaternion}{bt\+Quaternion} \& {\bfseries get\+World\+To\+Base\+Rot} () const }\label{classbt_multi_body_a3b2fda3ba8e8203f97d796e1913ad36e}
+
+\item 
+\hypertarget{classbt_multi_body_a8ef1c6776b5e670ca0e0f69156d02dc0}{bt\+Vector3 {\bfseries get\+Base\+Omega} () const }\label{classbt_multi_body_a8ef1c6776b5e670ca0e0f69156d02dc0}
+
+\item 
+\hypertarget{classbt_multi_body_a7860a23d986ca40ca24112fc4870e9db}{void {\bfseries set\+Base\+Pos} (const bt\+Vector3 \&pos)}\label{classbt_multi_body_a7860a23d986ca40ca24112fc4870e9db}
+
+\item 
+\hypertarget{classbt_multi_body_a559187909a25d3fb42140abf079d84cd}{void {\bfseries set\+Base\+Vel} (const bt\+Vector3 \&vel)}\label{classbt_multi_body_a559187909a25d3fb42140abf079d84cd}
+
+\item 
+\hypertarget{classbt_multi_body_aea1adaa2e8f6bf164abe19275427dcea}{void {\bfseries set\+World\+To\+Base\+Rot} (const \hyperlink{classbt_quaternion}{bt\+Quaternion} \&rot)}\label{classbt_multi_body_aea1adaa2e8f6bf164abe19275427dcea}
+
+\item 
+\hypertarget{classbt_multi_body_a56c0cf6a7bfccf1d3512933955d5127f}{void {\bfseries set\+Base\+Omega} (const bt\+Vector3 \&omega)}\label{classbt_multi_body_a56c0cf6a7bfccf1d3512933955d5127f}
+
+\item 
+\hypertarget{classbt_multi_body_ad3f3b5b349ec09f11ec7328938e7fb73}{bt\+Scalar {\bfseries get\+Joint\+Pos} (int i) const }\label{classbt_multi_body_ad3f3b5b349ec09f11ec7328938e7fb73}
+
+\item 
+\hypertarget{classbt_multi_body_aa7f3c238920519e388421ed1cc450826}{bt\+Scalar {\bfseries get\+Joint\+Vel} (int i) const }\label{classbt_multi_body_aa7f3c238920519e388421ed1cc450826}
+
+\item 
+\hypertarget{classbt_multi_body_aad8bd57ac6615edfc1a50502d9cb78c2}{void {\bfseries set\+Joint\+Pos} (int i, bt\+Scalar q)}\label{classbt_multi_body_aad8bd57ac6615edfc1a50502d9cb78c2}
+
+\item 
+\hypertarget{classbt_multi_body_a8c16a6fdd585bfb3759757f4fe80f16a}{void {\bfseries set\+Joint\+Vel} (int i, bt\+Scalar qdot)}\label{classbt_multi_body_a8c16a6fdd585bfb3759757f4fe80f16a}
+
+\item 
+\hypertarget{classbt_multi_body_a5a024ce75818ebaf721232dbeedc80c2}{const bt\+Scalar $\ast$ {\bfseries get\+Velocity\+Vector} () const }\label{classbt_multi_body_a5a024ce75818ebaf721232dbeedc80c2}
+
+\item 
+\hypertarget{classbt_multi_body_a57f95d468657616c9ae682fafb94b225}{const bt\+Vector3 \& {\bfseries get\+R\+Vector} (int i) const }\label{classbt_multi_body_a57f95d468657616c9ae682fafb94b225}
+
+\item 
+\hypertarget{classbt_multi_body_a6e6d4761a395a904ab834cdace799e12}{const \hyperlink{classbt_quaternion}{bt\+Quaternion} \& {\bfseries get\+Parent\+To\+Local\+Rot} (int i) const }\label{classbt_multi_body_a6e6d4761a395a904ab834cdace799e12}
+
+\item 
+\hypertarget{classbt_multi_body_aa6a202b1ee969f93856cec661bcbb487}{bt\+Vector3 {\bfseries local\+Pos\+To\+World} (int i, const bt\+Vector3 \&vec) const }\label{classbt_multi_body_aa6a202b1ee969f93856cec661bcbb487}
+
+\item 
+\hypertarget{classbt_multi_body_ad58277e0f8a7a8073c5be98702354ffa}{bt\+Vector3 {\bfseries local\+Dir\+To\+World} (int i, const bt\+Vector3 \&vec) const }\label{classbt_multi_body_ad58277e0f8a7a8073c5be98702354ffa}
+
+\item 
+\hypertarget{classbt_multi_body_ab25c5f6a332dbcc6235f9f0f7ffa48f4}{bt\+Vector3 {\bfseries world\+Pos\+To\+Local} (int i, const bt\+Vector3 \&vec) const }\label{classbt_multi_body_ab25c5f6a332dbcc6235f9f0f7ffa48f4}
+
+\item 
+\hypertarget{classbt_multi_body_a175e28556fe987082261b87dcc89ef39}{bt\+Vector3 {\bfseries world\+Dir\+To\+Local} (int i, const bt\+Vector3 \&vec) const }\label{classbt_multi_body_a175e28556fe987082261b87dcc89ef39}
+
+\item 
+\hypertarget{classbt_multi_body_a25b316255d50d8fba25372ee986e1ca1}{bt\+Scalar {\bfseries get\+Kinetic\+Energy} () const }\label{classbt_multi_body_a25b316255d50d8fba25372ee986e1ca1}
+
+\item 
+\hypertarget{classbt_multi_body_a5ce0340d6f9655dd73a12413458ac2a2}{bt\+Vector3 {\bfseries get\+Angular\+Momentum} () const }\label{classbt_multi_body_a5ce0340d6f9655dd73a12413458ac2a2}
+
+\item 
+\hypertarget{classbt_multi_body_aff9f8aa773319219146b7f1aa5849e8e}{void {\bfseries clear\+Forces\+And\+Torques} ()}\label{classbt_multi_body_aff9f8aa773319219146b7f1aa5849e8e}
+
+\item 
+\hypertarget{classbt_multi_body_a504c9eb4bba7d799b76b3a5c2e59a2c1}{void {\bfseries clear\+Velocities} ()}\label{classbt_multi_body_a504c9eb4bba7d799b76b3a5c2e59a2c1}
+
+\item 
+\hypertarget{classbt_multi_body_af485aabee052a04aafab737ed6d45c09}{void {\bfseries add\+Base\+Force} (const bt\+Vector3 \&f)}\label{classbt_multi_body_af485aabee052a04aafab737ed6d45c09}
+
+\item 
+\hypertarget{classbt_multi_body_a57545c47299f1a3ec305461e6ec6b5c4}{void {\bfseries add\+Base\+Torque} (const bt\+Vector3 \&t)}\label{classbt_multi_body_a57545c47299f1a3ec305461e6ec6b5c4}
+
+\item 
+\hypertarget{classbt_multi_body_a7c3897d0dc78fae74b1f665349596713}{void {\bfseries add\+Link\+Force} (int i, const bt\+Vector3 \&f)}\label{classbt_multi_body_a7c3897d0dc78fae74b1f665349596713}
+
+\item 
+\hypertarget{classbt_multi_body_a6fca672a0de1e44a828e2ed2b2bfca3b}{void {\bfseries add\+Link\+Torque} (int i, const bt\+Vector3 \&t)}\label{classbt_multi_body_a6fca672a0de1e44a828e2ed2b2bfca3b}
+
+\item 
+\hypertarget{classbt_multi_body_a7c55a0935f2bcc58863c9d6724f3976a}{void {\bfseries add\+Joint\+Torque} (int i, bt\+Scalar Q)}\label{classbt_multi_body_a7c55a0935f2bcc58863c9d6724f3976a}
+
+\item 
+\hypertarget{classbt_multi_body_a79dc0e7a8a409f47909250b9ffa2e1e6}{const bt\+Vector3 \& {\bfseries get\+Base\+Force} () const }\label{classbt_multi_body_a79dc0e7a8a409f47909250b9ffa2e1e6}
+
+\item 
+\hypertarget{classbt_multi_body_a6b679575df8c6ff92867ec0f7ed35a6a}{const bt\+Vector3 \& {\bfseries get\+Base\+Torque} () const }\label{classbt_multi_body_a6b679575df8c6ff92867ec0f7ed35a6a}
+
+\item 
+\hypertarget{classbt_multi_body_a60df7f714c58622f9beeadc85afa81a5}{const bt\+Vector3 \& {\bfseries get\+Link\+Force} (int i) const }\label{classbt_multi_body_a60df7f714c58622f9beeadc85afa81a5}
+
+\item 
+\hypertarget{classbt_multi_body_a0af6ab925c2e0309b23c57a972a18328}{const bt\+Vector3 \& {\bfseries get\+Link\+Torque} (int i) const }\label{classbt_multi_body_a0af6ab925c2e0309b23c57a972a18328}
+
+\item 
+\hypertarget{classbt_multi_body_a2f7049848432520db198c92915e5ce1a}{bt\+Scalar {\bfseries get\+Joint\+Torque} (int i) const }\label{classbt_multi_body_a2f7049848432520db198c92915e5ce1a}
+
+\item 
+\hypertarget{classbt_multi_body_a19f334bbde8909b282cd55bc28d75b4b}{void {\bfseries step\+Velocities} (bt\+Scalar dt, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Scalar $>$ \&scratch\+\_\+r, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&scratch\+\_\+v, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Matrix3x3 $>$ \&scratch\+\_\+m)}\label{classbt_multi_body_a19f334bbde8909b282cd55bc28d75b4b}
+
+\item 
+\hypertarget{classbt_multi_body_af64bc1fed1e0d4d55340c939ef0a24fd}{void {\bfseries calc\+Acceleration\+Deltas} (const bt\+Scalar $\ast$force, bt\+Scalar $\ast$output, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Scalar $>$ \&scratch\+\_\+r, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&scratch\+\_\+v) const }\label{classbt_multi_body_af64bc1fed1e0d4d55340c939ef0a24fd}
+
+\item 
+\hypertarget{classbt_multi_body_ad233408cb61f257b1c3977bf3b7bcd8e}{void {\bfseries apply\+Delta\+Vee} (const bt\+Scalar $\ast$delta\+\_\+vee)}\label{classbt_multi_body_ad233408cb61f257b1c3977bf3b7bcd8e}
+
+\item 
+\hypertarget{classbt_multi_body_aac7bf81725ac6ca493b03d264d06e663}{void {\bfseries apply\+Delta\+Vee} (const bt\+Scalar $\ast$delta\+\_\+vee, bt\+Scalar multiplier)}\label{classbt_multi_body_aac7bf81725ac6ca493b03d264d06e663}
+
+\item 
+\hypertarget{classbt_multi_body_a81d5daf2fe75d4f21149f2607002fe23}{void {\bfseries step\+Positions} (bt\+Scalar dt)}\label{classbt_multi_body_a81d5daf2fe75d4f21149f2607002fe23}
+
+\item 
+\hypertarget{classbt_multi_body_af299e8e99d7c78d73fb387b44e97ee06}{void {\bfseries fill\+Contact\+Jacobian} (int link, const bt\+Vector3 \&contact\+\_\+point, const bt\+Vector3 \&normal, bt\+Scalar $\ast$jac, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Scalar $>$ \&scratch\+\_\+r, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ \&scratch\+\_\+v, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Matrix3x3 $>$ \&scratch\+\_\+m) const }\label{classbt_multi_body_af299e8e99d7c78d73fb387b44e97ee06}
+
+\item 
+\hypertarget{classbt_multi_body_a2659acc78021df7907f0ac75e4e9ea61}{void {\bfseries set\+Can\+Sleep} (bool can\+Sleep)}\label{classbt_multi_body_a2659acc78021df7907f0ac75e4e9ea61}
+
+\item 
+\hypertarget{classbt_multi_body_a947ebf5106cd13a75d4ba57c5bd6f265}{bool {\bfseries is\+Awake} () const }\label{classbt_multi_body_a947ebf5106cd13a75d4ba57c5bd6f265}
+
+\item 
+\hypertarget{classbt_multi_body_a2cf38777cf487eafb13cdd5b56a0f530}{void {\bfseries wake\+Up} ()}\label{classbt_multi_body_a2cf38777cf487eafb13cdd5b56a0f530}
+
+\item 
+\hypertarget{classbt_multi_body_adc438609bb0c384950cfba1ee720200b}{void {\bfseries go\+To\+Sleep} ()}\label{classbt_multi_body_adc438609bb0c384950cfba1ee720200b}
+
+\item 
+\hypertarget{classbt_multi_body_a6fda2785db8302ce2e487cf55aff23d5}{void {\bfseries check\+Motion\+And\+Sleep\+If\+Required} (bt\+Scalar timestep)}\label{classbt_multi_body_a6fda2785db8302ce2e487cf55aff23d5}
+
+\item 
+\hypertarget{classbt_multi_body_a3585e41fed4768e25da2fb6caa90f182}{bool {\bfseries has\+Fixed\+Base} () const }\label{classbt_multi_body_a3585e41fed4768e25da2fb6caa90f182}
+
+\item 
+\hypertarget{classbt_multi_body_a24602b0578403cdc8adfaca32ea06647}{int {\bfseries get\+Companion\+Id} () const }\label{classbt_multi_body_a24602b0578403cdc8adfaca32ea06647}
+
+\item 
+\hypertarget{classbt_multi_body_aec0ff1d617e7d31344ad4f4c83e808e7}{void {\bfseries set\+Companion\+Id} (int id)}\label{classbt_multi_body_aec0ff1d617e7d31344ad4f4c83e808e7}
+
+\item 
+\hypertarget{classbt_multi_body_ab2b5bc6f3953c9768bb6caa0aba43e63}{void {\bfseries set\+Num\+Links} (int num\+Links)}\label{classbt_multi_body_ab2b5bc6f3953c9768bb6caa0aba43e63}
+
+\item 
+\hypertarget{classbt_multi_body_acd549ec0b522a89558745eea1d78aacc}{bt\+Scalar {\bfseries get\+Linear\+Damping} () const }\label{classbt_multi_body_acd549ec0b522a89558745eea1d78aacc}
+
+\item 
+\hypertarget{classbt_multi_body_a51e85f96027e3b2d6a7c87d60b3c7660}{void {\bfseries set\+Linear\+Damping} (bt\+Scalar damp)}\label{classbt_multi_body_a51e85f96027e3b2d6a7c87d60b3c7660}
+
+\item 
+\hypertarget{classbt_multi_body_a0fcf845fcabb06ac2661817622973e19}{bt\+Scalar {\bfseries get\+Angular\+Damping} () const }\label{classbt_multi_body_a0fcf845fcabb06ac2661817622973e19}
+
+\item 
+\hypertarget{classbt_multi_body_ae0f6093898427b056d9111790b870e01}{bool {\bfseries get\+Use\+Gyro\+Term} () const }\label{classbt_multi_body_ae0f6093898427b056d9111790b870e01}
+
+\item 
+\hypertarget{classbt_multi_body_a2bcc1281a4e5d88d68c1caf6baa691c7}{void {\bfseries set\+Use\+Gyro\+Term} (bool use\+Gyro)}\label{classbt_multi_body_a2bcc1281a4e5d88d68c1caf6baa691c7}
+
+\item 
+\hypertarget{classbt_multi_body_afb1a74353d88c63fa8dcad83c49d96e9}{bt\+Scalar {\bfseries get\+Max\+Applied\+Impulse} () const }\label{classbt_multi_body_afb1a74353d88c63fa8dcad83c49d96e9}
+
+\item 
+\hypertarget{classbt_multi_body_a0d79a9b5c5371b661b7692ee3d4a9e75}{void {\bfseries set\+Max\+Applied\+Impulse} (bt\+Scalar max\+Imp)}\label{classbt_multi_body_a0d79a9b5c5371b661b7692ee3d4a9e75}
+
+\item 
+\hypertarget{classbt_multi_body_a4c7bc3057da41bae8fa8873ea9dbb191}{void {\bfseries set\+Has\+Self\+Collision} (bool has\+Self\+Collision)}\label{classbt_multi_body_a4c7bc3057da41bae8fa8873ea9dbb191}
+
+\item 
+\hypertarget{classbt_multi_body_ad15ae1d616f08d2591ee01e8134dcd3e}{bool {\bfseries has\+Self\+Collision} () const }\label{classbt_multi_body_ad15ae1d616f08d2591ee01e8134dcd3e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Featherstone/bt\+Multi\+Body.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Featherstone/bt\+Multi\+Body.\+cpp\end{DoxyCompactItemize}

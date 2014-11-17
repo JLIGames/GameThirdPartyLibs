@@ -1,0 +1,19 @@
+digraph "Assimp::OptimizeGraphProcess::SetupProperties"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::OptimizeGraphProcess\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::Importer::GetProperty\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_importer.html#aca134d367c7f7383c57776bf83c36bb0"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::OptimizeGraphProcess\l::AddLockedNodeList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_optimize_graph_process.html#a3c395f1c3de25cf617faffea3f3ef421",tooltip="Add a list of node names to be locked and not modified. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::ConvertListToStrings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a1427aee7ea9b613a4677c68d40d68b3b",tooltip="Extract single strings from a list of identifiers. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::Logger::error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aa8b7c3f56dc4cecfdacc8bb36ba3fac1",tooltip="Writes an error message. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::Logger::OnError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#ae2ea0790aba6125b90af0f2768b0759d",tooltip="Called as a request to write a specific error message. "];
+}

@@ -1,0 +1,15 @@
+digraph "Assimp::ColladaParser::TestOpening"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ColladaParser\l::TestOpening",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="irr::io::IIrrXMLReader\l::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#a157f458f7dabeeff173f72a0fb443a8e",tooltip="Reads forward to the next xml node. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::ColladaParser\l::ThrowException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a5bee81038d013b75b112a76bf5f7b587"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="irr::io::IIrrXMLReader\l::getNodeType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#a3482e8e6bdc15965fc6a0bcef6e9a8e0",tooltip="Returns the type of the current XML node. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="irr::io::IIrrXMLReader\l::getNodeName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#a7d745b130c895d0f910f191d04e20e87",tooltip="Returns the name of the current node. "];
+}

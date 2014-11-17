@@ -1,0 +1,170 @@
+\hypertarget{class_p_v_r_shell_init_o_s}{\section{P\+V\+R\+Shell\+Init\+O\+S Class Reference}
+\label{class_p_v_r_shell_init_o_s}\index{P\+V\+R\+Shell\+Init\+O\+S@{P\+V\+R\+Shell\+Init\+O\+S}}
+}
+
+
+Interface with specific Operating System.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+Shell\+O\+S.\+h$>$}
+
+
+
+Inheritance diagram for P\+V\+R\+Shell\+Init\+O\+S\+:
+
+
+Collaboration diagram for P\+V\+R\+Shell\+Init\+O\+S\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_aa2acd766954c4f17509fe79d60e73abd}{void {\bfseries Began\+Touch} (float vec2\+Location\mbox{[}2\mbox{]}, \hyperlink{class_p_v_r_shell_init}{P\+V\+R\+Shell\+Init} $\ast$init)}\label{class_p_v_r_shell_init_o_s_aa2acd766954c4f17509fe79d60e73abd}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a304959959375b808a0ffcddb38974b51}{void {\bfseries Moved\+Touch} (float vec2\+Location\mbox{[}2\mbox{]}, \hyperlink{class_p_v_r_shell_init}{P\+V\+R\+Shell\+Init} $\ast$init)}\label{class_p_v_r_shell_init_o_s_a304959959375b808a0ffcddb38974b51}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_aa8ed74352d0c3d1d96bc9fc2b8b36c47}{void {\bfseries Ended\+Touch} (float vec2\+Location\mbox{[}2\mbox{]}, \hyperlink{class_p_v_r_shell_init}{P\+V\+R\+Shell\+Init} $\ast$init)}\label{class_p_v_r_shell_init_o_s_aa8ed74352d0c3d1d96bc9fc2b8b36c47}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_ad2f92057977d204c1ebffa51343a4b82}{int {\bfseries Open\+X11\+Window} (const \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} \&shell)}\label{class_p_v_r_shell_init_o_s_ad2f92057977d204c1ebffa51343a4b82}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a8cf3d23c5e4148071531b4a414987294}{void {\bfseries Close\+X11\+Window} ()}\label{class_p_v_r_shell_init_o_s_a8cf3d23c5e4148071531b4a414987294}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_ae6de935bb0d5fa2157f4351980d08eec}{A\+T\+O\+M {\bfseries My\+Register\+Class} ()}\label{class_p_v_r_shell_init_o_s_ae6de935bb0d5fa2157f4351980d08eec}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_add45d5ac514b66a91902905e09ce0617}{timeval {\bfseries m\+\_\+\+Start\+Time}}\label{class_p_v_r_shell_init_o_s_add45d5ac514b66a91902905e09ce0617}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_ab2b1f0cac5d9d02f009315d1243b4bca}{android\+\_\+app $\ast$ {\bfseries m\+\_\+p\+Android\+State}}\label{class_p_v_r_shell_init_o_s_ab2b1f0cac5d9d02f009315d1243b4bca}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a1816fbdf5b78ec0983d74f77378a3301}{bool {\bfseries m\+\_\+b\+Rendering}}\label{class_p_v_r_shell_init_o_s_a1816fbdf5b78ec0983d74f77378a3301}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a9bd01dfa0abb98a4daae7d612b079c05}{bool {\bfseries m\+\_\+b\+Error}}\label{class_p_v_r_shell_init_o_s_a9bd01dfa0abb98a4daae7d612b079c05}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a15f464968bea62cec8cda4a0627fc4fa}{char $\ast$ {\bfseries sz\+Title}}\label{class_p_v_r_shell_init_o_s_a15f464968bea62cec8cda4a0627fc4fa}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_ae6ab666954452f94158ad6344c16c03d}{float {\bfseries m\+\_\+vec3\+Accel} \mbox{[}3\mbox{]}}\label{class_p_v_r_shell_init_o_s_ae6ab666954452f94158ad6344c16c03d}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a441e71ef11667a07170f4801a4bc56a1}{mach\+\_\+timebase\+\_\+info\+\_\+data\+\_\+t {\bfseries m\+\_\+s\+Time\+Base\+Info}}\label{class_p_v_r_shell_init_o_s_a441e71ef11667a07170f4801a4bc56a1}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a3e5c16419df17d8c1684b17344ab8008}{E\+W\+S\+\_\+\+D\+I\+S\+P\+L\+A\+Y {\bfseries m\+\_\+\+E\+W\+S\+Display}}\label{class_p_v_r_shell_init_o_s_a3e5c16419df17d8c1684b17344ab8008}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a0d5cdc78a82ae37feb8322ee75349ce9}{E\+W\+S\+\_\+\+W\+I\+N\+D\+O\+W {\bfseries m\+\_\+\+E\+W\+S\+Window}}\label{class_p_v_r_shell_init_o_s_a0d5cdc78a82ae37feb8322ee75349ce9}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_aec9ce182ab4e9476e27770b5b3ae1e79}{int {\bfseries keypad\+\_\+fd}}\label{class_p_v_r_shell_init_o_s_aec9ce182ab4e9476e27770b5b3ae1e79}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a1a91e99ebced2786ed974d1bf3108fd4}{int {\bfseries remote\+\_\+fd}}\label{class_p_v_r_shell_init_o_s_a1a91e99ebced2786ed974d1bf3108fd4}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_af2d96b1f26fc2c72929bf8e2dd59de2a}{struct termios {\bfseries remios}}\label{class_p_v_r_shell_init_o_s_af2d96b1f26fc2c72929bf8e2dd59de2a}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a67f950d39b101c88e0ecad2ccbd9e7da}{struct termios {\bfseries remios\+\_\+orig}}\label{class_p_v_r_shell_init_o_s_a67f950d39b101c88e0ecad2ccbd9e7da}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a29c7bf2cba31664e5c1dfac0009d15f6}{int {\bfseries devfd}}\label{class_p_v_r_shell_init_o_s_a29c7bf2cba31664e5c1dfac0009d15f6}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a3b3c814c7c4cab3433bd4ac8e66606c5}{struct termios {\bfseries termio}}\label{class_p_v_r_shell_init_o_s_a3b3c814c7c4cab3433bd4ac8e66606c5}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a47c96e5dafa0b228248776c0ffca083d}{struct termios {\bfseries termio\+\_\+orig}}\label{class_p_v_r_shell_init_o_s_a47c96e5dafa0b228248776c0ffca083d}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a44c4509820ee5546484c0e8a4d555429}{unsigned int {\bfseries m\+\_\+ui32\+Native\+Display}}\label{class_p_v_r_shell_init_o_s_a44c4509820ee5546484c0e8a4d555429}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_af0e8009cbc881f51bfb0e13b0ba8aae9}{Display $\ast$ {\bfseries m\+\_\+\+X11\+Display}}\label{class_p_v_r_shell_init_o_s_af0e8009cbc881f51bfb0e13b0ba8aae9}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a743e043b3a36abc21cef59039cdd929d}{long {\bfseries m\+\_\+\+X11\+Screen}}\label{class_p_v_r_shell_init_o_s_a743e043b3a36abc21cef59039cdd929d}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_afaffbbb23c73014b085b2bb301e6ae60}{X\+Visual\+Info $\ast$ {\bfseries m\+\_\+\+X11\+Visual}}\label{class_p_v_r_shell_init_o_s_afaffbbb23c73014b085b2bb301e6ae60}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_aa03ba5d602ae3c87df57f2cd55326f2a}{Colormap {\bfseries m\+\_\+\+X11\+Color\+Map}}\label{class_p_v_r_shell_init_o_s_aa03ba5d602ae3c87df57f2cd55326f2a}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a92e9dfb4c92b0e189038e1b2ef6156cf}{Window {\bfseries m\+\_\+\+X11\+Window}}\label{class_p_v_r_shell_init_o_s_a92e9dfb4c92b0e189038e1b2ef6156cf}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a46372583e3c4b850b3c0e507f72a746b}{Pixmap {\bfseries m\+\_\+\+X11\+Pixmap}}\label{class_p_v_r_shell_init_o_s_a46372583e3c4b850b3c0e507f72a746b}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a365581c25f54cc77319cf2ce70077538}{G\+C {\bfseries m\+\_\+\+X11\+G\+C}}\label{class_p_v_r_shell_init_o_s_a365581c25f54cc77319cf2ce70077538}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a8a68c057b88f0c3b79d8fbc62f93ecb7}{unsigned int {\bfseries m\+\_\+u32\+Button\+State}}\label{class_p_v_r_shell_init_o_s_a8a68c057b88f0c3b79d8fbc62f93ecb7}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a475a3bf46b2e2a8bc6419282c8a36c38}{struct mach\+\_\+timebase\+\_\+info {\bfseries m\+\_\+s\+Time\+Base\+Info}}\label{class_p_v_r_shell_init_o_s_a475a3bf46b2e2a8bc6419282c8a36c38}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_aede50737bb1a4802eb30582b34fcef04}{Void\+N\+S\+Window $\ast$ {\bfseries m\+\_\+p\+Window}}\label{class_p_v_r_shell_init_o_s_aede50737bb1a4802eb30582b34fcef04}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a0fb57eb5eeebe5a34c275fee7562e61c}{Void\+N\+S\+View $\ast$ {\bfseries m\+\_\+p\+View}}\label{class_p_v_r_shell_init_o_s_a0fb57eb5eeebe5a34c275fee7562e61c}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a3950a489386c6ffc4a47eee67ba4104a}{Void\+N\+S\+Application\+Delegate $\ast$ {\bfseries m\+\_\+p\+App\+Controller}}\label{class_p_v_r_shell_init_o_s_a3950a489386c6ffc4a47eee67ba4104a}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_ac4415235a47e3bd5570571e88a6deecd}{H\+D\+C {\bfseries m\+\_\+h\+D\+C}}\label{class_p_v_r_shell_init_o_s_ac4415235a47e3bd5570571e88a6deecd}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_ac36bf610383f5eab27cac6e990ab47bb}{H\+W\+N\+D {\bfseries m\+\_\+h\+Wnd}}\label{class_p_v_r_shell_init_o_s_ac36bf610383f5eab27cac6e990ab47bb}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a8184eb0958253ff9c835b7420464d5cf}{H\+B\+I\+T\+M\+A\+P {\bfseries m\+\_\+h\+Bm\+Pixmap}}\label{class_p_v_r_shell_init_o_s_a8184eb0958253ff9c835b7420464d5cf}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a3c0f10f75c5c9a1c1741c17a1affdeb3}{H\+B\+I\+T\+M\+A\+P {\bfseries m\+\_\+h\+Bm\+Pixmap\+Old}}\label{class_p_v_r_shell_init_o_s_a3c0f10f75c5c9a1c1741c17a1affdeb3}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a26394b6c0c39489b172a03267fe6dcfb}{H\+D\+C {\bfseries m\+\_\+h\+Dc\+Pixmap}}\label{class_p_v_r_shell_init_o_s_a26394b6c0c39489b172a03267fe6dcfb}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a36a4105370055c738644637542dce87e}{H\+A\+C\+C\+E\+L {\bfseries m\+\_\+h\+Accel\+Table}}\label{class_p_v_r_shell_init_o_s_a36a4105370055c738644637542dce87e}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_a9272bbe9fc6b9e1124140d6a6499713d}{H\+I\+N\+S\+T\+A\+N\+C\+E {\bfseries m\+\_\+h\+Instance}}\label{class_p_v_r_shell_init_o_s_a9272bbe9fc6b9e1124140d6a6499713d}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_af20f7523f230480f12199101c9c4de9d}{int {\bfseries m\+\_\+n\+Cmd\+Show}}\label{class_p_v_r_shell_init_o_s_af20f7523f230480f12199101c9c4de9d}
+
+\item 
+\hypertarget{class_p_v_r_shell_init_o_s_aac53d2cfb32b4e2b78c914392f1eab3f}{bool {\bfseries m\+\_\+b\+Have\+Focus}}\label{class_p_v_r_shell_init_o_s_aac53d2cfb32b4e2b78c914392f1eab3f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface with specific Operating System. 
+
+Interface with specific Operative System.
+
+
+
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Shell/\+O\+S/\+Android/\hyperlink{_android_2_p_v_r_shell_o_s_8h}{P\+V\+R\+Shell\+O\+S.\+h}\end{DoxyCompactItemize}

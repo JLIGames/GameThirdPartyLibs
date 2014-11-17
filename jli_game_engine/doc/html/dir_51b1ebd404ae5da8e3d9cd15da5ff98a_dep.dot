@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/PVRScopeRemote/OGLES/BuildDeveloper" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8e5b8042e81df063249704d16dedd197 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES" fontname="Helvetica", fontsize="10", URL="dir_8e5b8042e81df063249704d16dedd197.html"]
+  subgraph clusterdir_51b1ebd404ae5da8e3d9cd15da5ff98a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_51b1ebd404ae5da8e3d9cd15da5ff98a.html"];
+    dir_51b1ebd404ae5da8e3d9cd15da5ff98a [shape=plaintext label="BuildDeveloper"];
+    dir_1e49055697fed48d6dce8b868221b91d [shape=box label="Android" color="red" fillcolor="white" style="filled" URL="dir_1e49055697fed48d6dce8b868221b91d.html"];
+  }
+  }
+}

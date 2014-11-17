@@ -1,0 +1,9 @@
+digraph "nanovg/nanovg/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2b41848336d2d5ce61d5005eea9267ee {
+    graph [ bgcolor="#ddddee", pencolor="black", label="nanovg" fontname="Helvetica", fontsize="10", URL="dir_2b41848336d2d5ce61d5005eea9267ee.html"]
+  dir_31ad4b4218f1bb4f90770af429bdb658 [shape=box, label="src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_31ad4b4218f1bb4f90770af429bdb658.html"];
+  }
+}

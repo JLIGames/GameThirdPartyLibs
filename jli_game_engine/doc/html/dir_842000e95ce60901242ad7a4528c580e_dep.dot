@@ -1,0 +1,9 @@
+digraph "assimp/assimp-3.1.1/port/Assimp.NET/Assimp.NET_CS" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a7fc954bec2b5c34eccb48d9fb6af4a1 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Assimp.NET" fontname="Helvetica", fontsize="10", URL="dir_a7fc954bec2b5c34eccb48d9fb6af4a1.html"]
+  dir_842000e95ce60901242ad7a4528c580e [shape=box, label="Assimp.NET_CS", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_842000e95ce60901242ad7a4528c580e.html"];
+  }
+}

@@ -1,0 +1,9 @@
+digraph "json/jsoncpp-src-0.5.0/include/json" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_dbd68175eb46f2a00751d546c7c6048a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_dbd68175eb46f2a00751d546c7c6048a.html"]
+  dir_adec98d2cf4b4e7ac35a0dc3e09748a3 [shape=box, label="json", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_adec98d2cf4b4e7ac35a0dc3e09748a3.html"];
+  }
+}

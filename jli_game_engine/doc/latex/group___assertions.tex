@@ -1,0 +1,730 @@
+\hypertarget{group___assertions}{\section{Making assertions}
+\label{group___assertions}\index{Making assertions@{Making assertions}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___assertions_gadb3d7be52fb36db9b627ded165cfa335}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, condition)
+\item 
+\#define \hyperlink{group___assertions_ga26aaaa22505b7a7b4978f0401a86f12a}{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}(message)
+\item 
+\#define \hyperlink{group___assertions_ga71162f05be07ef6817d156e77c68b1a3}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}(expected, actual)
+\item 
+\#define \hyperlink{group___assertions_gafad9998a5abcf0bc12e88f24dbfb67be}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expected, actual)
+\item 
+\#define \hyperlink{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}(expected, actual, delta)
+\begin{DoxyCompactList}\small\item\em Macro for primitive double value comparisons.
+
+The assertion pass if both expected and actual are finite and {\ttfamily fabs}( {\ttfamily expected} -\/ {\ttfamily actual} ) $<$= {\ttfamily delta}. If either {\ttfamily expected} or actual are infinite (+/-\/ inf), the assertion pass if {\ttfamily expected} == {\ttfamily actual}. If either {\ttfamily expected} or {\ttfamily actual} is a Na\+N (not a number), then the assertion fails. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___assertions_gaabb14685ed44e0e49e1974b460dfad1f}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expected, actual, delta)
+\begin{DoxyCompactList}\small\item\em Macro for primitive double value comparisons, setting a user-\/supplied message in case of failure. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___assertions_ga943774e85c218214d3a4986c32039af0}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}(expression, Exception\+Type)
+\item 
+\#define \hyperlink{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expression, Exception\+Type)
+\item 
+\#define \hyperlink{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}(expression)
+\item 
+\#define \hyperlink{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expression)
+\item 
+\#define \hyperlink{group___assertions_gafcf8b80f3af1607e52f41045ff0efbcb}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}(assertion)~\hyperlink{group___assertions_ga943774e85c218214d3a4986c32039af0}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}( assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )
+\item 
+\#define \hyperlink{group___assertions_ga84c9c36cf203112a2b4a87cbb4b58f55}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, assertion)~\hyperlink{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )
+\item 
+\#define \hyperlink{group___assertions_ga82c2f57f5c04ce2cb211f6bd65876737}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}(assertion)~\hyperlink{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}( assertion )
+\item 
+\#define \hyperlink{group___assertions_ga9dccc1cd410edc877ac42243d711fc3b}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, assertion)~\hyperlink{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion )
+\item 
+\#define \hyperlink{group___assertions_gadb3d7be52fb36db9b627ded165cfa335}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, condition)
+\item 
+\#define \hyperlink{group___assertions_ga26aaaa22505b7a7b4978f0401a86f12a}{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}(message)
+\item 
+\#define \hyperlink{group___assertions_ga71162f05be07ef6817d156e77c68b1a3}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}(expected, actual)
+\item 
+\#define \hyperlink{group___assertions_gafad9998a5abcf0bc12e88f24dbfb67be}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expected, actual)
+\item 
+\#define \hyperlink{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}(expected, actual, delta)
+\begin{DoxyCompactList}\small\item\em Macro for primitive double value comparisons.
+
+The assertion pass if both expected and actual are finite and {\ttfamily fabs}( {\ttfamily expected} -\/ {\ttfamily actual} ) $<$= {\ttfamily delta}. If either {\ttfamily expected} or actual are infinite (+/-\/ inf), the assertion pass if {\ttfamily expected} == {\ttfamily actual}. If either {\ttfamily expected} or {\ttfamily actual} is a Na\+N (not a number), then the assertion fails. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___assertions_gaabb14685ed44e0e49e1974b460dfad1f}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expected, actual, delta)
+\begin{DoxyCompactList}\small\item\em Macro for primitive double value comparisons, setting a user-\/supplied message in case of failure. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___assertions_ga943774e85c218214d3a4986c32039af0}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}(expression, Exception\+Type)
+\item 
+\#define \hyperlink{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expression, Exception\+Type)
+\item 
+\#define \hyperlink{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}(expression)
+\item 
+\#define \hyperlink{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, expression)
+\item 
+\#define \hyperlink{group___assertions_gafcf8b80f3af1607e52f41045ff0efbcb}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}(assertion)~\hyperlink{group___assertions_ga943774e85c218214d3a4986c32039af0}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}( assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )
+\item 
+\#define \hyperlink{group___assertions_ga84c9c36cf203112a2b4a87cbb4b58f55}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, assertion)~\hyperlink{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )
+\item 
+\#define \hyperlink{group___assertions_ga82c2f57f5c04ce2cb211f6bd65876737}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}(assertion)~\hyperlink{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}( assertion )
+\item 
+\#define \hyperlink{group___assertions_ga9dccc1cd410edc877ac42243d711fc3b}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}(message, assertion)~\hyperlink{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion )
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___assertions_gafcf8b80f3af1607e52f41045ff0efbcb}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L(
+\begin{DoxyParamCaption}
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}( assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )}}\label{group___assertions_gafcf8b80f3af1607e52f41045ff0efbcb}
+Asserts that an assertion fail.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_FAIL( CPPUNIT\_ASSERT( 1 == 2 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_gafcf8b80f3af1607e52f41045ff0efbcb}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L(
+\begin{DoxyParamCaption}
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}( assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )}}\label{group___assertions_gafcf8b80f3af1607e52f41045ff0efbcb}
+Asserts that an assertion fail.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_FAIL( CPPUNIT\_ASSERT( 1 == 2 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga84c9c36cf203112a2b4a87cbb4b58f55}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )}}\label{group___assertions_ga84c9c36cf203112a2b4a87cbb4b58f55}
+Asserts that an assertion fail, with a user-\/supplied message in case of error.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_FAIL\_MESSAGE( "1 == 2", CPPUNIT\_ASSERT( 1 == 2 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga84c9c36cf203112a2b4a87cbb4b58f55}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion, C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+::\+Exception )}}\label{group___assertions_ga84c9c36cf203112a2b4a87cbb4b58f55}
+Asserts that an assertion fail, with a user-\/supplied message in case of error.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_FAIL\_MESSAGE( "1 == 2", CPPUNIT\_ASSERT( 1 == 2 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga82c2f57f5c04ce2cb211f6bd65876737}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S(
+\begin{DoxyParamCaption}
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}( assertion )}}\label{group___assertions_ga82c2f57f5c04ce2cb211f6bd65876737}
+Asserts that an assertion pass.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_PASS( CPPUNIT\_ASSERT( 1 == 1 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga82c2f57f5c04ce2cb211f6bd65876737}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S(
+\begin{DoxyParamCaption}
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}( assertion )}}\label{group___assertions_ga82c2f57f5c04ce2cb211f6bd65876737}
+Asserts that an assertion pass.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_PASS( CPPUNIT\_ASSERT( 1 == 1 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga9dccc1cd410edc877ac42243d711fc3b}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion )}}\label{group___assertions_ga9dccc1cd410edc877ac42243d711fc3b}
+Asserts that an assertion pass, with a user-\/supplied message in case of failure.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_PASS\_MESSAGE( "1 != 1", CPPUNIT\_ASSERT( 1 == 1 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga9dccc1cd410edc877ac42243d711fc3b}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+P\+A\+S\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{assertion}
+\end{DoxyParamCaption}
+)~{\bf C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}( message, assertion )}}\label{group___assertions_ga9dccc1cd410edc877ac42243d711fc3b}
+Asserts that an assertion pass, with a user-\/supplied message in case of failure.
+
+Use to test assertions. Example of usage\+: 
+\begin{DoxyCode}
+1 CPPUNIT\_ASSERT\_ASSERTION\_PASS\_MESSAGE( "1 != 1", CPPUNIT\_ASSERT( 1 == 1 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L(
+\begin{DoxyParamCaption}
+\item[{}]{expected, }
+\item[{}]{actual, }
+\item[{}]{delta}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertDoubleEquals( (expected),            \(\backslash\)
+                                    (actual),              \(\backslash\)
+                                    (delta),               \(\backslash\)
+                                    \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),  \(\backslash\)
+                                    \textcolor{stringliteral}{""} ) )
+\end{DoxyCode}
+
+
+Macro for primitive double value comparisons.
+
+The assertion pass if both expected and actual are finite and {\ttfamily fabs}( {\ttfamily expected} -\/ {\ttfamily actual} ) $<$= {\ttfamily delta}. If either {\ttfamily expected} or actual are infinite (+/-\/ inf), the assertion pass if {\ttfamily expected} == {\ttfamily actual}. If either {\ttfamily expected} or {\ttfamily actual} is a Na\+N (not a number), then the assertion fails. 
+
+\hypertarget{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L(
+\begin{DoxyParamCaption}
+\item[{}]{expected, }
+\item[{}]{actual, }
+\item[{}]{delta}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertDoubleEquals( (expected),            \(\backslash\)
+                                    (actual),              \(\backslash\)
+                                    (delta),               \(\backslash\)
+                                    \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),  \(\backslash\)
+                                    \textcolor{stringliteral}{""} ) )
+\end{DoxyCode}
+
+
+Macro for primitive double value comparisons.
+
+The assertion pass if both expected and actual are finite and {\ttfamily fabs}( {\ttfamily expected} -\/ {\ttfamily actual} ) $<$= {\ttfamily delta}. If either {\ttfamily expected} or actual are infinite (+/-\/ inf), the assertion pass if {\ttfamily expected} == {\ttfamily actual}. If either {\ttfamily expected} or {\ttfamily actual} is a Na\+N (not a number), then the assertion fails. 
+
+\hypertarget{group___assertions_gaabb14685ed44e0e49e1974b460dfad1f}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expected, }
+\item[{}]{actual, }
+\item[{}]{delta}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gaabb14685ed44e0e49e1974b460dfad1f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertDoubleEquals( (expected),            \(\backslash\)
+                                    (actual),              \(\backslash\)
+                                    (delta),               \(\backslash\)
+                                    \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),  \(\backslash\)
+                                    (message) ) )
+\end{DoxyCode}
+
+
+Macro for primitive double value comparisons, setting a user-\/supplied message in case of failure. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L} for detailed semantic of the assertion. 
+\end{DoxySeeAlso}
+\hypertarget{group___assertions_gaabb14685ed44e0e49e1974b460dfad1f}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expected, }
+\item[{}]{actual, }
+\item[{}]{delta}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gaabb14685ed44e0e49e1974b460dfad1f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertDoubleEquals( (expected),            \(\backslash\)
+                                    (actual),              \(\backslash\)
+                                    (delta),               \(\backslash\)
+                                    \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),  \(\backslash\)
+                                    (message) ) )
+\end{DoxyCode}
+
+
+Macro for primitive double value comparisons, setting a user-\/supplied message in case of failure. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___assertions_ga9d88b1e379e4a9ba2a5e9e79763389ea}{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+S\+\_\+\+E\+Q\+U\+A\+L} for detailed semantic of the assertion. 
+\end{DoxySeeAlso}
+\hypertarget{group___assertions_ga71162f05be07ef6817d156e77c68b1a3}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L(
+\begin{DoxyParamCaption}
+\item[{}]{expected, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga71162f05be07ef6817d156e77c68b1a3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertEquals( (expected),              \(\backslash\)
+                              (actual),                \(\backslash\)
+                              \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),    \(\backslash\)
+                              \textcolor{stringliteral}{""} ) )
+\end{DoxyCode}
+Asserts that two values are equals.
+
+Equality and string representation can be defined with an appropriate Cpp\+Unit\+::assertion\+\_\+traits class.
+
+A diagnostic is printed if actual and expected values disagree.
+
+Requirement for {\itshape expected} and {\itshape actual} parameters\+:
+\begin{DoxyItemize}
+\item They are exactly of the same type
+\item They are serializable into a std\+::strstream using operator $<$$<$.
+\item They can be compared using operator ==.
+\end{DoxyItemize}
+
+The last two requirements (serialization and comparison) can be removed by specializing the Cpp\+Unit\+::assertion\+\_\+traits. \hypertarget{group___assertions_ga71162f05be07ef6817d156e77c68b1a3}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L(
+\begin{DoxyParamCaption}
+\item[{}]{expected, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga71162f05be07ef6817d156e77c68b1a3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertEquals( (expected),              \(\backslash\)
+                              (actual),                \(\backslash\)
+                              \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),    \(\backslash\)
+                              \textcolor{stringliteral}{""} ) )
+\end{DoxyCode}
+Asserts that two values are equals.
+
+Equality and string representation can be defined with an appropriate Cpp\+Unit\+::assertion\+\_\+traits class.
+
+A diagnostic is printed if actual and expected values disagree.
+
+Requirement for {\itshape expected} and {\itshape actual} parameters\+:
+\begin{DoxyItemize}
+\item They are exactly of the same type
+\item They are serializable into a std\+::strstream using operator $<$$<$.
+\item They can be compared using operator ==.
+\end{DoxyItemize}
+
+The last two requirements (serialization and comparison) can be removed by specializing the Cpp\+Unit\+::assertion\+\_\+traits. \hypertarget{group___assertions_gafad9998a5abcf0bc12e88f24dbfb67be}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expected, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gafad9998a5abcf0bc12e88f24dbfb67be}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertEquals( (expected),              \(\backslash\)
+                              (actual),                \(\backslash\)
+                              \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),    \(\backslash\)
+                              (message) ) )
+\end{DoxyCode}
+Asserts that two values are equals, provides additional message on failure.
+
+Equality and string representation can be defined with an appropriate \hyperlink{structassertion__traits}{assertion\+\_\+traits} class.
+
+A diagnostic is printed if actual and expected values disagree. The message is printed in addition to the expected and actual value to provide additional information.
+
+Requirement for {\itshape expected} and {\itshape actual} parameters\+:
+\begin{DoxyItemize}
+\item They are exactly of the same type
+\item They are serializable into a std\+::strstream using operator $<$$<$.
+\item They can be compared using operator ==.
+\end{DoxyItemize}
+
+The last two requirements (serialization and comparison) can be removed by specializing the Cpp\+Unit\+::assertion\+\_\+traits. \hypertarget{group___assertions_gafad9998a5abcf0bc12e88f24dbfb67be}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expected, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gafad9998a5abcf0bc12e88f24dbfb67be}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::assertEquals( (expected),              \(\backslash\)
+                              (actual),                \(\backslash\)
+                              \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}(),    \(\backslash\)
+                              (message) ) )
+\end{DoxyCode}
+Asserts that two values are equals, provides additional message on failure.
+
+Equality and string representation can be defined with an appropriate \hyperlink{structassertion__traits}{assertion\+\_\+traits} class.
+
+A diagnostic is printed if actual and expected values disagree. The message is printed in addition to the expected and actual value to provide additional information.
+
+Requirement for {\itshape expected} and {\itshape actual} parameters\+:
+\begin{DoxyItemize}
+\item They are exactly of the same type
+\item They are serializable into a std\+::strstream using operator $<$$<$.
+\item They can be compared using operator ==.
+\end{DoxyItemize}
+
+The last two requirements (serialization and comparison) can be removed by specializing the Cpp\+Unit\+::assertion\+\_\+traits. \hypertarget{group___assertions_gadb3d7be52fb36db9b627ded165cfa335}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{condition}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gadb3d7be52fb36db9b627ded165cfa335}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::failIf( !(condition),                            \(\backslash\)
+                                  CPPUNIT\_NS::Message( \textcolor{stringliteral}{"assertion failed"}, \(\backslash\)
+                                                       \textcolor{stringliteral}{"Expression: "}      \(\backslash\)
+                                                       #condition,         \(\backslash\)
+                                                       message ),          \(\backslash\)
+                                  \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+Assertion with a user specified message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} reported in diagnostic if {\itshape condition} evaluates to {\ttfamily false}. \\
+\hline
+{\em condition} & If this condition evaluates to {\ttfamily false} then the test failed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___assertions_gadb3d7be52fb36db9b627ded165cfa335}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{condition}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gadb3d7be52fb36db9b627ded165cfa335}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::failIf( !(condition),                            \(\backslash\)
+                                  CPPUNIT\_NS::Message( \textcolor{stringliteral}{"assertion failed"}, \(\backslash\)
+                                                       \textcolor{stringliteral}{"Expression: "}      \(\backslash\)
+                                                       #condition,         \(\backslash\)
+                                                       message ),          \(\backslash\)
+                                  \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+Assertion with a user specified message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} reported in diagnostic if {\itshape condition} evaluates to {\ttfamily false}. \\
+\hline
+{\em condition} & If this condition evaluates to {\ttfamily false} then the test failed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W(
+\begin{DoxyParamCaption}
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{CPPUNIT\_ASSERT\_NO\_THROW\_MESSAGE}( CPPUNIT\_NS::AdditionalMessage(),       \(\backslash\)
+                                    expression )
+\end{DoxyCode}
+Asserts that the given expression does not throw any exceptions.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2  v.push\_back( 10 );
+3 CPPUNIT\_ASSERT\_NO\_THROW( v.at( 0 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W(
+\begin{DoxyParamCaption}
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga13e42eed1f56d77d9a76242185ebdcbe}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{CPPUNIT\_ASSERT\_NO\_THROW\_MESSAGE}( CPPUNIT\_NS::AdditionalMessage(),       \(\backslash\)
+                                    expression )
+\end{DoxyCode}
+Asserts that the given expression does not throw any exceptions.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2  v.push\_back( 10 );
+3 CPPUNIT\_ASSERT\_NO\_THROW( v.at( 0 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                       \(\backslash\)
+      CPPUNIT\_NS::Message cpputMsg\_( \textcolor{stringliteral}{"unexpected exception caught"} );         \(\backslash\)
+      cpputMsg\_.addDetail( message );                                         \(\backslash\)
+                                                                              \(\backslash\)
+      try \{                                                                   \(\backslash\)
+         expression;                                                          \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} std::exception &e ) \{                                   \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Caught: "} +                                    \(\backslash\)
+                              CPPUNIT\_EXTRACT\_EXCEPTION\_TYPE\_( e,             \(\backslash\)
+                                          \textcolor{stringliteral}{"std::exception or derived"} ) );    \(\backslash\)
+         cpputMsg\_.addDetail( std::string(\textcolor{stringliteral}{"What(): "}) + e.what() );           \(\backslash\)
+         CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                               \(\backslash\)
+                                     \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                  \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( ... ) \{                                                       \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Caught: unknown."} );                           \(\backslash\)
+         CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                               \(\backslash\)
+                                     \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                  \(\backslash\)
+      \}                                                                       \(\backslash\)
+   \} \textcolor{keywordflow}{while} ( \textcolor{keyword}{false} )
+\end{DoxyCode}
+Asserts that the given expression does not throw any exceptions, setting a user supplied message in case of failure.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2  v.push\_back( 10 );
+3 CPPUNIT\_ASSERT\_NO\_THROW( "std::vector<int> v;", v.at( 0 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gaae2428381cbd7355b354473ebe2dc5ac}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                       \(\backslash\)
+      CPPUNIT\_NS::Message cpputMsg\_( \textcolor{stringliteral}{"unexpected exception caught"} );         \(\backslash\)
+      cpputMsg\_.addDetail( message );                                         \(\backslash\)
+                                                                              \(\backslash\)
+      try \{                                                                   \(\backslash\)
+         expression;                                                          \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} std::exception &e ) \{                                   \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Caught: "} +                                    \(\backslash\)
+                              CPPUNIT\_EXTRACT\_EXCEPTION\_TYPE\_( e,             \(\backslash\)
+                                          \textcolor{stringliteral}{"std::exception or derived"} ) );    \(\backslash\)
+         cpputMsg\_.addDetail( std::string(\textcolor{stringliteral}{"What(): "}) + e.what() );           \(\backslash\)
+         CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                               \(\backslash\)
+                                     \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                  \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( ... ) \{                                                       \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Caught: unknown."} );                           \(\backslash\)
+         CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                               \(\backslash\)
+                                     \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                  \(\backslash\)
+      \}                                                                       \(\backslash\)
+   \} \textcolor{keywordflow}{while} ( \textcolor{keyword}{false} )
+\end{DoxyCode}
+Asserts that the given expression does not throw any exceptions, setting a user supplied message in case of failure.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2  v.push\_back( 10 );
+3 CPPUNIT\_ASSERT\_NO\_THROW( "std::vector<int> v;", v.at( 0 ) );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga943774e85c218214d3a4986c32039af0}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W(
+\begin{DoxyParamCaption}
+\item[{}]{expression, }
+\item[{}]{Exception\+Type}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga943774e85c218214d3a4986c32039af0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{CPPUNIT\_ASSERT\_THROW\_MESSAGE}( CPPUNIT\_NS::AdditionalMessage(),       \(\backslash\)
+                                 expression,                            \(\backslash\)
+                                 ExceptionType )
+\end{DoxyCode}
+Asserts that the given expression throws an exception of the specified type.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2 CPPUNIT\_ASSERT\_THROW( v.at( 50 ), std::out\_of\_range );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga943774e85c218214d3a4986c32039af0}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W(
+\begin{DoxyParamCaption}
+\item[{}]{expression, }
+\item[{}]{Exception\+Type}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga943774e85c218214d3a4986c32039af0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{CPPUNIT\_ASSERT\_THROW\_MESSAGE}( CPPUNIT\_NS::AdditionalMessage(),       \(\backslash\)
+                                 expression,                            \(\backslash\)
+                                 ExceptionType )
+\end{DoxyCode}
+Asserts that the given expression throws an exception of the specified type.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2 CPPUNIT\_ASSERT\_THROW( v.at( 50 ), std::out\_of\_range );
+\end{DoxyCode}
+ \hypertarget{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expression, }
+\item[{}]{Exception\+Type}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                       \(\backslash\)
+      bool cpputCorrectExceptionThrown\_ = \textcolor{keyword}{false};                              \(\backslash\)
+      CPPUNIT\_NS::Message cpputMsg\_( \textcolor{stringliteral}{"expected exception not thrown"} );       \(\backslash\)
+      cpputMsg\_.addDetail( message );                                         \(\backslash\)
+      cpputMsg\_.addDetail( \textcolor{stringliteral}{"Expected: "}                                       \(\backslash\)
+                           CPPUNIT\_GET\_PARAMETER\_STRING( ExceptionType ) );   \(\backslash\)
+                                                                              \(\backslash\)
+      try \{                                                                   \(\backslash\)
+         expression;                                                          \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} ExceptionType & ) \{                                     \(\backslash\)
+         cpputCorrectExceptionThrown\_ = \textcolor{keyword}{true};                                 \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} std::exception &e) \{                                    \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Actual  : "} +                                  \(\backslash\)
+                              CPPUNIT\_EXTRACT\_EXCEPTION\_TYPE\_( e,             \(\backslash\)
+                                          \textcolor{stringliteral}{"std::exception or derived"}) );     \(\backslash\)
+         cpputMsg\_.addDetail( std::string(\textcolor{stringliteral}{"What()  : "}) + e.what() );         \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( ... ) \{                                                       \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Actual  : unknown."});                          \(\backslash\)
+      \}                                                                       \(\backslash\)
+                                                                              \(\backslash\)
+      if ( cpputCorrectExceptionThrown\_ )                                     \(\backslash\)
+         break;                                                               \(\backslash\)
+                                                                              \(\backslash\)
+      CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                                  \(\backslash\)
+                                  \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                     \(\backslash\)
+   \} \textcolor{keywordflow}{while} ( \textcolor{keyword}{false} )
+\end{DoxyCode}
+Asserts that the given expression throws an exception of the specified type, setting a user supplied message in case of failure.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2 CPPUNIT\_ASSERT\_THROW\_MESSAGE( "- std::vector<int> v;", v.at( 50 ), std::out\_of\_range );
+\end{DoxyCode}
+ \hypertarget{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E@{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+M\+E\+S\+S\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{expression, }
+\item[{}]{Exception\+Type}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_gaae97b9355f43bb72ffa4489bd66dafb3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                       \(\backslash\)
+      bool cpputCorrectExceptionThrown\_ = \textcolor{keyword}{false};                              \(\backslash\)
+      CPPUNIT\_NS::Message cpputMsg\_( \textcolor{stringliteral}{"expected exception not thrown"} );       \(\backslash\)
+      cpputMsg\_.addDetail( message );                                         \(\backslash\)
+      cpputMsg\_.addDetail( \textcolor{stringliteral}{"Expected: "}                                       \(\backslash\)
+                           CPPUNIT\_GET\_PARAMETER\_STRING( ExceptionType ) );   \(\backslash\)
+                                                                              \(\backslash\)
+      try \{                                                                   \(\backslash\)
+         expression;                                                          \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} ExceptionType & ) \{                                     \(\backslash\)
+         cpputCorrectExceptionThrown\_ = \textcolor{keyword}{true};                                 \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} std::exception &e) \{                                    \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Actual  : "} +                                  \(\backslash\)
+                              CPPUNIT\_EXTRACT\_EXCEPTION\_TYPE\_( e,             \(\backslash\)
+                                          \textcolor{stringliteral}{"std::exception or derived"}) );     \(\backslash\)
+         cpputMsg\_.addDetail( std::string(\textcolor{stringliteral}{"What()  : "}) + e.what() );         \(\backslash\)
+      \} \textcolor{keywordflow}{catch} ( ... ) \{                                                       \(\backslash\)
+         cpputMsg\_.addDetail( \textcolor{stringliteral}{"Actual  : unknown."});                          \(\backslash\)
+      \}                                                                       \(\backslash\)
+                                                                              \(\backslash\)
+      if ( cpputCorrectExceptionThrown\_ )                                     \(\backslash\)
+         break;                                                               \(\backslash\)
+                                                                              \(\backslash\)
+      CPPUNIT\_NS::Asserter::fail( cpputMsg\_,                                  \(\backslash\)
+                                  \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() );                     \(\backslash\)
+   \} \textcolor{keywordflow}{while} ( \textcolor{keyword}{false} )
+\end{DoxyCode}
+Asserts that the given expression throws an exception of the specified type, setting a user supplied message in case of failure.
+
+Example of usage\+: 
+\begin{DoxyCode}
+1  std::vector<int> v;
+2 CPPUNIT\_ASSERT\_THROW\_MESSAGE( "- std::vector<int> v;", v.at( 50 ), std::out\_of\_range );
+\end{DoxyCode}
+ \hypertarget{group___assertions_ga26aaaa22505b7a7b4978f0401a86f12a}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L(
+\begin{DoxyParamCaption}
+\item[{}]{message}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga26aaaa22505b7a7b4978f0401a86f12a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::fail( CPPUNIT\_NS::Message( \textcolor{stringliteral}{"forced failure"},  \(\backslash\)
+                                                     message ),         \(\backslash\)
+                                \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+Fails with the specified message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} reported in diagnostic. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___assertions_ga26aaaa22505b7a7b4978f0401a86f12a}{\index{Making assertions@{Making assertions}!C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}}
+\index{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L@{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}!Making assertions@{Making assertions}}
+\subsubsection[{C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+P\+P\+U\+N\+I\+T\+\_\+\+F\+A\+I\+L(
+\begin{DoxyParamCaption}
+\item[{}]{message}
+\end{DoxyParamCaption}
+)}}\label{group___assertions_ga26aaaa22505b7a7b4978f0401a86f12a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( CPPUNIT\_NS::Asserter::fail( CPPUNIT\_NS::Message( \textcolor{stringliteral}{"forced failure"},  \(\backslash\)
+                                                     message ),         \(\backslash\)
+                                \hyperlink{group___creating_new_assertions_ga76898763afdc78bf5924dd7744b4c630}{CPPUNIT\_SOURCELINE}() ) )
+\end{DoxyCode}
+Fails with the specified message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \hyperlink{class_message}{Message} reported in diagnostic. \\
+\hline
+\end{DoxyParams}

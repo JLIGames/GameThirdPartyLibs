@@ -1,0 +1,11 @@
+digraph "Assimp::CopyNextWord"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::CopyNextWord",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::isSeparator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#ac0fa4924a9d69a0c625c44af70de4793",tooltip="Returns true, if token is a space on any supported platform. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::isEndOfBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a98cbb5f7f096bb5e6b42e08d4f65456a",tooltip="Returns true, if the last entry of the buffer is reached. "];
+}

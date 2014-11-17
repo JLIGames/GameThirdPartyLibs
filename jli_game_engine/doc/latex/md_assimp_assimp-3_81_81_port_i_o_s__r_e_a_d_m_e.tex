@@ -1,0 +1,30 @@
+(deployment target 6.\+0+, 32/64bit)
+
+Builds assimp libraries for several i\+O\+S C\+P\+U architectures at once, and outputs a fat binary from the result.
+
+Run the {\bfseries build.\+sh} script from the {\ttfamily ./port/i\+O\+S/} directory. See $\ast$$\ast$./build.sh --help$\ast$$\ast$ for information about command line options.
+
+```bash shadeds-\/\+Mac\+:i\+O\+S arul\$ ./build.sh --help \mbox{[}!\mbox{]} ./build.sh -\/ assimp i\+O\+S build script
+\begin{DoxyItemize}
+\item don't build fat library (--no-\/fat)
+\item supported architectures(--archs)\+: armv7, armv7s, arm64, i386, x86\+\_\+64
+\item supported C++ S\+T\+D libs.(--stdlib)\+: libc++, libstdc++ ``` Example\+: ```bash cd ./port/i\+O\+S/ ./build.sh --stdlib=libc++ --archs=\char`\"{}armv7 arm64 i386\char`\"{} ``` Supported architectures/devices\+:
+\end{DoxyItemize}
+
+\subsubsection*{Simulator}
+
+
+\begin{DoxyItemize}
+\item i386
+\item x86\+\_\+64
+\end{DoxyItemize}
+
+\subsubsection*{Device}
+
+
+\begin{DoxyItemize}
+\item $\sim$$\sim$\+A\+R\+Mv6 (dropped after i\+O\+S 6.\+0)$\sim$$\sim$
+\item A\+R\+Mv7
+\item A\+R\+Mv7-\/s
+\item A\+R\+M64 
+\end{DoxyItemize}

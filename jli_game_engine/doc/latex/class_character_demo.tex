@@ -1,0 +1,137 @@
+\hypertarget{class_character_demo}{\section{Character\+Demo Class Reference}
+\label{class_character_demo}\index{Character\+Demo@{Character\+Demo}}
+}
+
+
+\hyperlink{class_character_demo}{Character\+Demo} shows how to setup and use the built-\/in raycast vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Character\+Demo.\+h$>$}
+
+
+
+Inheritance diagram for Character\+Demo\+:
+
+
+Collaboration diagram for Character\+Demo\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_character_demo_a793e527a6b57b43b1b6cf30451416324}{void {\bfseries debug\+Draw\+Contacts} ()}\label{class_character_demo_a793e527a6b57b43b1b6cf30451416324}
+
+\item 
+virtual void \hyperlink{class_character_demo_a42f37ad732747d46449cb384f17b19e0}{client\+Move\+And\+Display} ()
+\item 
+virtual void \hyperlink{class_character_demo_a87a3accda91b2487741b7fb748d07ec4}{client\+Reset\+Scene} ()
+\item 
+\hypertarget{class_character_demo_a02d4834f73029e57ab0027b12e112680}{virtual void {\bfseries display\+Callback} ()}\label{class_character_demo_a02d4834f73029e57ab0027b12e112680}
+
+\item 
+\hypertarget{class_character_demo_ac7577aa794b1b951ff82c37eec2468bd}{virtual void \hyperlink{class_character_demo_ac7577aa794b1b951ff82c37eec2468bd}{update\+Camera} ()}\label{class_character_demo_ac7577aa794b1b951ff82c37eec2468bd}
+
+\begin{DoxyCompactList}\small\item\em a very basic camera following the character \end{DoxyCompactList}\item 
+\hypertarget{class_character_demo_a56fe0f7aef747b1306cbca4c0553742b}{virtual void {\bfseries special\+Keyboard} (int key, int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_character_demo_a56fe0f7aef747b1306cbca4c0553742b}
+
+\item 
+\hypertarget{class_character_demo_ac344194def64e418cd881a76d8412abf}{virtual void {\bfseries special\+Keyboard\+Up} (int key, int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_character_demo_ac344194def64e418cd881a76d8412abf}
+
+\item 
+\hypertarget{class_character_demo_a65a9bece235061806c91d79c9b0e9b88}{void {\bfseries renderme} ()}\label{class_character_demo_a65a9bece235061806c91d79c9b0e9b88}
+
+\item 
+void \hyperlink{class_character_demo_a1aa943283eeaa3d46a44d00d0d0161e7}{init\+Physics} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_character_demo_a69a5c0f7a8085ce70b94404d96354f32}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_character_demo_a69a5c0f7a8085ce70b94404d96354f32}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_character_demo_ac37eecd41474abe460259fede92f5cb0}{bt\+Kinematic\+Character\+Controller $\ast$ {\bfseries m\+\_\+character}}\label{class_character_demo_ac37eecd41474abe460259fede92f5cb0}
+
+\item 
+\hypertarget{class_character_demo_ad4c1db315fae4d5b9b5ca846d7d04bc6}{class \hyperlink{classbt_pair_caching_ghost_object}{bt\+Pair\+Caching\+Ghost\+Object} $\ast$ {\bfseries m\+\_\+ghost\+Object}}\label{class_character_demo_ad4c1db315fae4d5b9b5ca846d7d04bc6}
+
+\item 
+\hypertarget{class_character_demo_ab84c0f00072cb19c8624469dec97500f}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ bt\+Collision\+Shape $\ast$ $>$ {\bfseries m\+\_\+collision\+Shapes}}\label{class_character_demo_ab84c0f00072cb19c8624469dec97500f}
+
+\item 
+\hypertarget{class_character_demo_a44655f68dc1c6cc135f42076553a8cbf}{class \hyperlink{classbt_broadphase_interface}{bt\+Broadphase\+Interface} $\ast$ {\bfseries m\+\_\+overlapping\+Pair\+Cache}}\label{class_character_demo_a44655f68dc1c6cc135f42076553a8cbf}
+
+\item 
+\hypertarget{class_character_demo_a790b4e7d24268f9f5ed5653578e6331d}{class \hyperlink{classbt_collision_dispatcher}{bt\+Collision\+Dispatcher} $\ast$ {\bfseries m\+\_\+dispatcher}}\label{class_character_demo_a790b4e7d24268f9f5ed5653578e6331d}
+
+\item 
+\hypertarget{class_character_demo_ab28a585cefabe9cb209e303b51b0175e}{class \hyperlink{classbt_constraint_solver}{bt\+Constraint\+Solver} $\ast$ {\bfseries m\+\_\+constraint\+Solver}}\label{class_character_demo_ab28a585cefabe9cb209e303b51b0175e}
+
+\item 
+\hypertarget{class_character_demo_aba44037cd6c392c4279b6d17ae27a9b9}{class \\*
+\hyperlink{classbt_default_collision_configuration}{bt\+Default\+Collision\+Configuration} $\ast$ {\bfseries m\+\_\+collision\+Configuration}}\label{class_character_demo_aba44037cd6c392c4279b6d17ae27a9b9}
+
+\item 
+\hypertarget{class_character_demo_a558e40d5680e5b353ae44120be875327}{class bt\+Triangle\+Index\+Vertex\+Array $\ast$ {\bfseries m\+\_\+index\+Vertex\+Arrays}}\label{class_character_demo_a558e40d5680e5b353ae44120be875327}
+
+\item 
+\hypertarget{class_character_demo_acef5d86d7365167384ea05d5af6ef6a4}{bt\+Vector3 $\ast$ {\bfseries m\+\_\+vertices}}\label{class_character_demo_acef5d86d7365167384ea05d5af6ef6a4}
+
+\item 
+\hypertarget{class_character_demo_a5320c9ab745dbe4424682c70e560b0c2}{float {\bfseries m\+\_\+camera\+Height}}\label{class_character_demo_a5320c9ab745dbe4424682c70e560b0c2}
+
+\item 
+\hypertarget{class_character_demo_ab040ee5578ae6102281d1a4beec4ce21}{float {\bfseries m\+\_\+min\+Camera\+Distance}}\label{class_character_demo_ab040ee5578ae6102281d1a4beec4ce21}
+
+\item 
+\hypertarget{class_character_demo_ac15901fc286f1ce210e82a9619b8cdf3}{float {\bfseries m\+\_\+max\+Camera\+Distance}}\label{class_character_demo_ac15901fc286f1ce210e82a9619b8cdf3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_character_demo}{Character\+Demo} shows how to setup and use the built-\/in raycast vehicle. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_character_demo_a42f37ad732747d46449cb384f17b19e0}{\index{Character\+Demo@{Character\+Demo}!client\+Move\+And\+Display@{client\+Move\+And\+Display}}
+\index{client\+Move\+And\+Display@{client\+Move\+And\+Display}!Character\+Demo@{Character\+Demo}}
+\subsubsection[{client\+Move\+And\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+Demo\+::client\+Move\+And\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_character_demo_a42f37ad732747d46449cb384f17b19e0}
+set walk\+Direction for our character \hypertarget{class_character_demo_a87a3accda91b2487741b7fb748d07ec4}{\index{Character\+Demo@{Character\+Demo}!client\+Reset\+Scene@{client\+Reset\+Scene}}
+\index{client\+Reset\+Scene@{client\+Reset\+Scene}!Character\+Demo@{Character\+Demo}}
+\subsubsection[{client\+Reset\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+Demo\+::client\+Reset\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_character_demo_a87a3accda91b2487741b7fb748d07ec4}
+W\+T\+F 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_character_demo_a1aa943283eeaa3d46a44d00d0d0161e7}{\index{Character\+Demo@{Character\+Demo}!init\+Physics@{init\+Physics}}
+\index{init\+Physics@{init\+Physics}!Character\+Demo@{Character\+Demo}}
+\subsubsection[{init\+Physics}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+Demo\+::init\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_character_demo_a1aa943283eeaa3d46a44d00d0d0161e7}
+Create some basic environment from a Quake level
+
+only collide with static for now (no interaction with dynamic objects) 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Character\+Demo/Character\+Demo.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Character\+Demo/Character\+Demo.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{_a_s_e_parser_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+A\+S\+E\+Parser.cpp File Reference}
+\label{_a_s_e_parser_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+A\+S\+E\+Parser.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+A\+S\+E\+Parser.\+cpp}}
+}
+
+
+Implementation of the A\+S\+E parser class.  
+
+
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Texture\+Transform.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\+S\+E\+Loader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Material\+System.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fast\+\_\+atof.\+h\char`\"{}}\\*
+Include dependency graph for A\+S\+E\+Parser.\+cpp\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_a_s_e_parser_8cpp_a26c8ada79382b504c4162bdd728ca7f6}{\#define {\bfseries A\+I\+\_\+\+A\+S\+E\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+I\+N\+I\+T}()~int i\+Depth = 0;}\label{_a_s_e_parser_8cpp_a26c8ada79382b504c4162bdd728ca7f6}
+
+\item 
+\#define {\bfseries A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N}()
+\item 
+\#define {\bfseries A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N}(level, msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the A\+S\+E parser class. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_a_s_e_parser_8cpp_ae9c74f6146e4746d537bf99f05ce8327}{\index{A\+S\+E\+Parser.\+cpp@{A\+S\+E\+Parser.\+cpp}!A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N@{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N}}
+\index{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N@{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N}!A\+S\+E\+Parser.\+cpp@{A\+S\+E\+Parser.\+cpp}}
+\subsubsection[{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+E\+C\+T\+I\+O\+N(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}}\label{_a_s_e_parser_8cpp_ae9c74f6146e4746d537bf99f05ce8327}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\textcolor{charliteral}{'\{'} == *filePtr)iDepth++; \(\backslash\)
+    else \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\}'} == *filePtr) \(\backslash\)
+    \{ \(\backslash\)
+        if (0 == --iDepth) \(\backslash\)
+        \{ \(\backslash\)
+            ++filePtr; \(\backslash\)
+            SkipToNextToken(); \(\backslash\)
+            return; \(\backslash\)
+        \} \(\backslash\)
+    \} \(\backslash\)
+    else \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\(\backslash\)0'} == *filePtr) \(\backslash\)
+    \{ \(\backslash\)
+        LogError(\textcolor{stringliteral}{"Encountered unexpected EOL while parsing a "} msg \(\backslash\)
+        \textcolor{stringliteral}{" chunk (Level "} level \textcolor{stringliteral}{")"}); \(\backslash\)
+    \} \(\backslash\)
+    if(IsLineEnd(*filePtr) && !bLastWasEndLine) \(\backslash\)
+        \{ \(\backslash\)
+        ++iLineNumber; \(\backslash\)
+        bLastWasEndLine = \textcolor{keyword}{true}; \(\backslash\)
+    \} \textcolor{keywordflow}{else} bLastWasEndLine = \textcolor{keyword}{false}; \(\backslash\)
+    ++filePtr;
+\end{DoxyCode}
+\hypertarget{_a_s_e_parser_8cpp_a14d994ced67054b916ad9cd4fb8c152d}{\index{A\+S\+E\+Parser.\+cpp@{A\+S\+E\+Parser.\+cpp}!A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N@{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N}}
+\index{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N@{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N}!A\+S\+E\+Parser.\+cpp@{A\+S\+E\+Parser.\+cpp}}
+\subsubsection[{A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+I\+\_\+\+A\+S\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+T\+O\+P\+\_\+\+L\+E\+V\+E\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_a_s_e_parser_8cpp_a14d994ced67054b916ad9cd4fb8c152d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\{'} == *filePtr)iDepth++; \(\backslash\)
+    else \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\}'} == *filePtr) \(\backslash\)
+    \{ \(\backslash\)
+        if (0 == --iDepth) \(\backslash\)
+        \{ \(\backslash\)
+            ++filePtr; \(\backslash\)
+            SkipToNextToken(); \(\backslash\)
+            return; \(\backslash\)
+        \} \(\backslash\)
+    \} \(\backslash\)
+    else \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\(\backslash\)0'} == *filePtr) \(\backslash\)
+    \{ \(\backslash\)
+        return; \(\backslash\)
+    \} \(\backslash\)
+    if(IsLineEnd(*filePtr) && !bLastWasEndLine) \(\backslash\)
+    \{ \(\backslash\)
+        ++iLineNumber; \(\backslash\)
+        bLastWasEndLine = \textcolor{keyword}{true}; \(\backslash\)
+    \} \textcolor{keywordflow}{else} bLastWasEndLine = \textcolor{keyword}{false}; \(\backslash\)
+    ++filePtr;
+\end{DoxyCode}

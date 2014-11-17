@@ -1,0 +1,73 @@
+\hypertarget{_p_v_r_scope_stats_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Builds/\+Include/\+P\+V\+R\+Scope\+Stats.h File Reference}
+\label{_p_v_r_scope_stats_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Builds/\+Include/\+P\+V\+R\+Scope\+Stats.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Builds/\+Include/\+P\+V\+R\+Scope\+Stats.\+h}}
+}
+
+
+P\+V\+R\+Scope\+Stats header file.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_p_v_r_scope_counter_def}{S\+P\+V\+R\+Scope\+Counter\+Def}
+\begin{DoxyCompactList}\small\item\em Definition of a counter that P\+V\+R\+Scope calculates. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_v_r_scope_counter_reading}{S\+P\+V\+R\+Scope\+Counter\+Reading}
+\begin{DoxyCompactList}\small\item\em A set of return values resulting from querying the counter values. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_v_r_scope_get_info}{S\+P\+V\+R\+Scope\+Get\+Info}
+\begin{DoxyCompactList}\small\item\em A set of return values holding miscellaneous P\+V\+R\+Scope information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___scope_stats_gae53be0f580f9e1088efc1c06d94002d3}{E\+P\+V\+R\+Scope\+Init\+Code} \{ \\*
+\hyperlink{group___scope_stats_ggae53be0f580f9e1088efc1c06d94002d3a03a9f90b6a77559a18331474440ff211}{e\+P\+V\+R\+Scope\+Init\+Code\+Ok}, 
+\hyperlink{group___scope_stats_ggae53be0f580f9e1088efc1c06d94002d3a341d023f4fb6b7b492823e645f221711}{e\+P\+V\+R\+Scope\+Init\+Code\+Out\+Of\+Mem}, 
+\hyperlink{group___scope_stats_ggae53be0f580f9e1088efc1c06d94002d3aaadb7255dba5c8426dbb3e6d13ea987d}{e\+P\+V\+R\+Scope\+Init\+Code\+Driver\+Support\+Not\+Found}, 
+\hyperlink{group___scope_stats_ggae53be0f580f9e1088efc1c06d94002d3a20396b5b67ba5c2842ee1b80bae71e3b}{e\+P\+V\+R\+Scope\+Init\+Code\+Driver\+Support\+Insufficient}, 
+\\*
+\hyperlink{group___scope_stats_ggae53be0f580f9e1088efc1c06d94002d3aa94ba1ce834620972a1be2e8a2d72546}{e\+P\+V\+R\+Scope\+Init\+Code\+Driver\+Support\+Init\+Failed}, 
+\hyperlink{group___scope_stats_ggae53be0f580f9e1088efc1c06d94002d3a0119ee96a570646839d978e046886994}{e\+P\+V\+R\+Scope\+Init\+Code\+Driver\+Support\+Query\+Info\+Failed}
+ \}
+\begin{DoxyCompactList}\small\item\em P\+V\+R\+Scope initialisation return codes. \end{DoxyCompactList}\item 
+enum \hyperlink{group___scope_stats_gab88ac352edee5bc7263aaca13f3672ce}{E\+P\+V\+R\+Scope\+Standard\+Counter} \{ \\*
+\hyperlink{group___scope_stats_ggab88ac352edee5bc7263aaca13f3672cea6a50c3a8b6bf6c30158101185b5fe98e}{e\+P\+V\+R\+Scope\+Standard\+Counter\+\_\+\+F\+P\+S}, 
+\hyperlink{group___scope_stats_ggab88ac352edee5bc7263aaca13f3672cea4bb03f399c43755930342dde5c245671}{e\+P\+V\+R\+Scope\+Standard\+Counter\+\_\+\+Load\+\_\+2\+D}, 
+\hyperlink{group___scope_stats_ggab88ac352edee5bc7263aaca13f3672ceaff064962e64c26329e73f4e8da1baf9f}{e\+P\+V\+R\+Scope\+Standard\+Counter\+\_\+\+Load\+\_\+\+Renderer}, 
+\hyperlink{group___scope_stats_ggab88ac352edee5bc7263aaca13f3672ceae10eca4f1c6ce9ca553092091ca5821b}{e\+P\+V\+R\+Scope\+Standard\+Counter\+\_\+\+Load\+\_\+\+Tiler}, 
+\\*
+\hyperlink{group___scope_stats_ggab88ac352edee5bc7263aaca13f3672ceaaa784703993777405822b46e678882f7}{e\+P\+V\+R\+Scope\+Standard\+Counter\+\_\+\+Load\+\_\+\+Shader\+\_\+\+Pixel}, 
+\hyperlink{group___scope_stats_ggab88ac352edee5bc7263aaca13f3672ceaf1b15c540c3a659bd9089b887432771c}{e\+P\+V\+R\+Scope\+Standard\+Counter\+\_\+\+Load\+\_\+\+Shader\+\_\+\+Vertex}
+ \}
+\begin{DoxyCompactList}\small\item\em Set of \char`\"{}standard\char`\"{} counters, just a few of the total list of counters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scope_stats_ga409deb795bfd7df5ba2ce469c4a6e38c}{const char $\ast$ \hyperlink{group___scope_stats_ga409deb795bfd7df5ba2ce469c4a6e38c}{P\+V\+R\+Scope\+Get\+Description} ()}\label{group___scope_stats_ga409deb795bfd7df5ba2ce469c4a6e38c}
+
+\begin{DoxyCompactList}\small\item\em Query the P\+V\+R\+Scope library description. \end{DoxyCompactList}\item 
+enum \hyperlink{group___scope_stats_gae53be0f580f9e1088efc1c06d94002d3}{E\+P\+V\+R\+Scope\+Init\+Code} \hyperlink{group___scope_stats_ga2e43fb3eacff1d4a3993343ef0712068}{P\+V\+R\+Scope\+Initialise} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$$\ast$pps\+Data)
+\begin{DoxyCompactList}\small\item\em Initialise \hyperlink{group___scope_stats}{P\+V\+R\+Scope\+Stats}, to access the H\+W performance counters in Power\+V\+R. \end{DoxyCompactList}\item 
+void \hyperlink{group___scope_stats_ga15e5e7430519429dc947583cd61ccbce}{P\+V\+R\+Scope\+De\+Initialise} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$$\ast$pps\+Data, struct \hyperlink{struct_s_p_v_r_scope_counter_def}{S\+P\+V\+R\+Scope\+Counter\+Def} $\ast$$\ast$pps\+Counters, struct \hyperlink{struct_s_p_v_r_scope_counter_reading}{S\+P\+V\+R\+Scope\+Counter\+Reading} $\ast$const ps\+Reading)
+\begin{DoxyCompactList}\small\item\em Shutdown or de-\/initalise \hyperlink{group___scope_stats}{P\+V\+R\+Scope\+Stats} and free the allocated memory. \end{DoxyCompactList}\item 
+void \hyperlink{group___scope_stats_ga2935f4d8b13a9f53a5db81fd833c9d77}{P\+V\+R\+Scope\+Get\+Info} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$const ps\+Data, struct \hyperlink{struct_s_p_v_r_scope_get_info}{S\+P\+V\+R\+Scope\+Get\+Info} $\ast$const ps\+Info)
+\begin{DoxyCompactList}\small\item\em Query for \hyperlink{group___scope_stats}{P\+V\+R\+Scope\+Stats} information. This function should only be called during initialisation. \end{DoxyCompactList}\item 
+int \hyperlink{group___scope_stats_gae6706dd6e98dcffc9170d68f5a44a0d0}{P\+V\+R\+Scope\+Get\+Counters} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$const ps\+Data, unsigned int $\ast$const pn\+Count, struct \hyperlink{struct_s_p_v_r_scope_counter_def}{S\+P\+V\+R\+Scope\+Counter\+Def} $\ast$$\ast$pps\+Counters, struct \hyperlink{struct_s_p_v_r_scope_counter_reading}{S\+P\+V\+R\+Scope\+Counter\+Reading} $\ast$const ps\+Reading)
+\begin{DoxyCompactList}\small\item\em Query for the list of \hyperlink{group___scope_stats}{P\+V\+R\+Scope\+Stats} H\+W performance counters, and allocate memory in which the counter values will be received. This function should only be called during initialisation. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___scope_stats_ga66f76d92635f635c92ad9f48be8a3b47}{P\+V\+R\+Scope\+Find\+Standard\+Counter} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$const ps\+Data, enum \hyperlink{group___scope_stats_gab88ac352edee5bc7263aaca13f3672ce}{E\+P\+V\+R\+Scope\+Standard\+Counter} e\+Counter)
+\begin{DoxyCompactList}\small\item\em Helper function to query for the counter index of one of a set of \char`\"{}standard\char`\"{} counters. \end{DoxyCompactList}\item 
+int \hyperlink{group___scope_stats_gaae8137bf11bd6f384a8afd1585176e66}{P\+V\+R\+Scope\+Read\+Counters} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$const ps\+Data, struct \hyperlink{struct_s_p_v_r_scope_counter_reading}{S\+P\+V\+R\+Scope\+Counter\+Reading} $\ast$const ps\+Reading)
+\begin{DoxyCompactList}\small\item\em Call regularly to allow P\+V\+R\+Scope to track the latest hardware performance data. If ps\+Reading is not N\+U\+L\+L, P\+V\+R\+Scope will also calculate and return counter values to the application. \end{DoxyCompactList}\item 
+void \hyperlink{group___scope_stats_ga2c8d5edf1c7bf731ee31ef15e5b7cd66}{P\+V\+R\+Scope\+Set\+Group} (struct S\+P\+V\+R\+Scope\+Impl\+Data $\ast$const ps\+Data, const unsigned int n\+Group)
+\begin{DoxyCompactList}\small\item\em Request a new H\+W counter group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+V\+R\+Scope\+Stats header file. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Ltd. All Rights Reserved. 
+\end{DoxyCopyright}

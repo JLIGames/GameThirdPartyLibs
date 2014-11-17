@@ -1,0 +1,13 @@
+digraph "sqlite/sqlite-doc-3080700/images" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_33d0ba510ec82d4100f5e3a2c3d6138e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="sqlite-doc-3080700" fontname="Helvetica", fontsize="10", URL="dir_33d0ba510ec82d4100f5e3a2c3d6138e.html"]
+  subgraph clusterdir_e205388cd4bef8340f6df94c212212d0 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e205388cd4bef8340f6df94c212212d0.html"];
+    dir_e205388cd4bef8340f6df94c212212d0 [shape=plaintext label="images"];
+    dir_1a28b12d968e4790fc1d76cb3ae033b4 [shape=box label="fileformat" color="black" fillcolor="white" style="filled" URL="dir_1a28b12d968e4790fc1d76cb3ae033b4.html"];
+  }
+  }
+}

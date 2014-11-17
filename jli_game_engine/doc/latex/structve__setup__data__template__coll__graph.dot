@@ -1,0 +1,37 @@
+digraph "ve_setup_data_template"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ve_setup_data_template",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" floor_books" ];
+  Node2 [label="static_codebook",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstatic__codebook.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" global_params" ];
+  Node3 [label="vorbis_info_psy_global",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__psy__global.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_tone_adj_other\npsy_tone_adj_impulse\npsy_tone_adj_long" ];
+  Node4 [label="vp_adjblock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvp__adjblock.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_noiseguards" ];
+  Node5 [label="noiseguard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnoiseguard.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stereo_modes" ];
+  Node6 [label="adj_stereo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structadj__stereo.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_tone_masteratt" ];
+  Node7 [label="att3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatt3.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_noise_compand" ];
+  Node8 [label="compandblock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcompandblock.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" maps" ];
+  Node9 [label="vorbis_mapping_template",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__mapping__template.html"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" res" ];
+  Node10 [label="vorbis_residue_template",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__residue__template.html"];
+  Node2 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" book_aux\nbook_aux_managed" ];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" books_base_managed\nbooks_base" ];
+  Node11 [label="static_bookblock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstatic__bookblock.html"];
+  Node2 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" books" ];
+  Node12 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" res" ];
+  Node12 [label="vorbis_info_residue0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__residue0.html"];
+  Node13 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" map" ];
+  Node13 [label="vorbis_info_mapping0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__mapping0.html"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_noise_bias_trans\npsy_noise_bias_padding\npsy_noise_bias_impulse\npsy_noise_bias_long" ];
+  Node14 [label="noise3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnoise3.html"];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" floor_params" ];
+  Node15 [label="vorbis_info_floor1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__floor1.html"];
+}

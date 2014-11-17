@@ -12,11 +12,14 @@
 #include "Util.h"
 #include "AbstractObject.h"
 
-class AbstractBuilder :
+ATTRIBUTE_ALIGNED16(class) AbstractBuilder :
 public AbstractObject
 {
 protected:
     virtual ~AbstractBuilder(){}
+    
+    BT_DECLARE_ALIGNED_ALLOCATOR();
+    
 public:
     virtual u32 getType()const = 0;
 };

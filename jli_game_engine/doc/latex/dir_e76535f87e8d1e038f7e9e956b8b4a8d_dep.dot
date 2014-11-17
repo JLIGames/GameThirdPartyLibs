@@ -1,0 +1,15 @@
+digraph "bullet/bullet-2.82-r2704/src/BulletMultiThreaded" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_68d7f8ba1985e704f0f5f20dc6f517a7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_68d7f8ba1985e704f0f5f20dc6f517a7.html"]
+  subgraph clusterdir_e76535f87e8d1e038f7e9e956b8b4a8d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e76535f87e8d1e038f7e9e956b8b4a8d.html"];
+    dir_e76535f87e8d1e038f7e9e956b8b4a8d [shape=plaintext label="BulletMultiThreaded"];
+    dir_78fa3e321d72f03f45b655db8f159619 [shape=box label="GpuSoftBodySolvers" color="red" fillcolor="white" style="filled" URL="dir_78fa3e321d72f03f45b655db8f159619.html"];
+    dir_701c293db4731ec136215f5380993c81 [shape=box label="SpuNarrowPhaseCollisionTask" color="black" fillcolor="white" style="filled" URL="dir_701c293db4731ec136215f5380993c81.html"];
+    dir_2d0cbca570342654f8422c80d77c5cf8 [shape=box label="SpuSampleTask" color="black" fillcolor="white" style="filled" URL="dir_2d0cbca570342654f8422c80d77c5cf8.html"];
+  }
+  }
+}

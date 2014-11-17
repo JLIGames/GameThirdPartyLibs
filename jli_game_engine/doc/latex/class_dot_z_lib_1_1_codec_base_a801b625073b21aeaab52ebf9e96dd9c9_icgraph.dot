@@ -1,0 +1,23 @@
+digraph "DotZLib.CodecBase.resetOutput"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DotZLib.CodecBase.resetOutput",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DotZLib.CodecBase.OnData\lAvailable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#a5c697195bc017ae951858e7c8948f9ae",tooltip="Fires the DataAvailable event "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DotZLib.Deflater.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_deflater.html#a2db95e3ca07e562df0652ed1ad8d0c4d",tooltip="Adds more data to the codec to be processed. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DotZLib.Deflater.Finish",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_deflater.html#a84507769a20a13c2ff48cfcef8f5c13b",tooltip="Finishes up any pending data that needs to be processed and handled. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="DotZLib.Inflater.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_inflater.html#a773dd62fe806dd9b6117f859faaeb079",tooltip="Adds more data to the codec to be processed. "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="DotZLib.Inflater.Finish",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_inflater.html#aa70c9d026f5d1b44fe0679b78973285c",tooltip="Finishes up any pending data that needs to be processed and handled. "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="DotZLib.Deflater.Deflater",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_deflater.html#a3af92869710011e866633c2186c7cab1",tooltip="Constructs an new instance of the Deflater "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="DotZLib.Inflater.Inflater",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_inflater.html#acb40e9664a78756a3def8ed66aa35ca1",tooltip="Constructs an new instance of the Inflater "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

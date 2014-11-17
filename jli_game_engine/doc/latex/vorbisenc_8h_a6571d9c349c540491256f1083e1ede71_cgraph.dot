@@ -1,0 +1,11 @@
+digraph "vorbis_encode_init"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="vorbis_encode_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="vorbis_encode_setup\l_managed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vorbisenc_8h.html#ac73714f24500e18024e83104e9e09485"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="vorbis_encode_setup_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vorbisenc_8h.html#ac3953ff69d05864e78d1858a544ed619"];
+}

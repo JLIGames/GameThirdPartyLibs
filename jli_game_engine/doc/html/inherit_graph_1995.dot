@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GIM_TREE_TREE_COLLIDER\l\< BOX_SET_CLASS0, BOX\l_SET_CLASS1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___t_r_e_e___t_r_e_e___c_o_l_l_i_d_e_r.html",tooltip="GIM_BOX_SET collision methods. "];
+}

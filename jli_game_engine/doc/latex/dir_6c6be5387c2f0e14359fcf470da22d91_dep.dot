@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Shell/Documentation/html/search" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bc805221664ad7f57e50f0ccf32eafcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="html" fontname="Helvetica", fontsize="10", URL="dir_bc805221664ad7f57e50f0ccf32eafcd.html"]
+  dir_6c6be5387c2f0e14359fcf470da22d91 [shape=box, label="search", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6c6be5387c2f0e14359fcf470da22d91.html"];
+  }
+}

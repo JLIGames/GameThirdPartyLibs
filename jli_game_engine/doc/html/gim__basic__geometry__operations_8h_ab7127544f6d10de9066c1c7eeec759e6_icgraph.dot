@@ -1,0 +1,15 @@
+digraph "LINE_PLANE_COLLISION"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LINE_PLANE_COLLISION",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SEGMENT_COLLISION",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gim__basic__geometry__operations_8h.html#aacd84291c8b391c4fe78cde568f27865",tooltip="Find closest points on segments. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GIM_TRIANGLE_CALCULATION\l_CACHE::cross_line_intersection_test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___t_r_i_a_n_g_l_e___c_a_l_c_u_l_a_t_i_o_n___c_a_c_h_e.html#a8ce209ccff8cdd7ece72b0465e222a85",tooltip="Test verifying interval intersection with the direction between planes. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GIM_TRIANGLE::ray_collision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___t_r_i_a_n_g_l_e.html#a2942ca686a994c2d112ad356c2a4e7ad",tooltip="Bidireccional ray collision. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GIM_TRIANGLE::ray_collision\l_front_side",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___t_r_i_a_n_g_l_e.html#a2b333284fd573994acf89b9085a61927",tooltip="one direccion ray collision "];
+}

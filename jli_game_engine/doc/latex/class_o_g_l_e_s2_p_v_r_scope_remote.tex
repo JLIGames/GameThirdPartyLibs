@@ -1,0 +1,206 @@
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote}{\section{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote Class Reference}
+\label{class_o_g_l_e_s2_p_v_r_scope_remote}\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_af0bfafb7123df24f92c39ab126be8c64}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a34819d6a18ee75f5627c10408ce040bd}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a01491b45d66d76586a85d3da4fd2bfad}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_acc20778b733d71af5dfd3dd17da916a8}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a32713a1496b40adada64f04deec5d006}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_aacf32e3c5b51f560e47a9d9cdc7ca735}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a4c1e2e0559f92218075a623c3527dc15}{Load\+Shaders} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str, const char $\ast$const psz\+Frag, const char $\ast$const psz\+Vert)
+\item 
+void \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_ac2c21b41b3193c46979877e20429f9f3}{Load\+Vbos} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a2cffeefb72406ac94dcf15d45f7d080b}{Draw\+Mesh} (int i32\+Node\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_a2cffeefb72406ac94dcf15d45f7d080b}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Draw\+Mesh@{Draw\+Mesh}}
+\index{Draw\+Mesh@{Draw\+Mesh}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Draw\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Draw\+Mesh (
+\begin{DoxyParamCaption}
+\item[{int}]{i32\+Node\+Index}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_a2cffeefb72406ac94dcf15d45f7d080b}
+
+
+  Draw\+Mesh  i32\+Node\+Index \hyperlink{struct_node}{Node} index of the mesh to draw  Draws a \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} after the model view matrix has been set and the meterial prepared. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_af0bfafb7123df24f92c39ab126be8c64}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_af0bfafb7123df24f92c39ab126be8c64}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_af0bfafb7123df24f92c39ab126be8c64}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_af0bfafb7123df24f92c39ab126be8c64}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_a34819d6a18ee75f5627c10408ce040bd}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_a34819d6a18ee75f5627c10408ce040bd}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a34819d6a18ee75f5627c10408ce040bd}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_a4c1e2e0559f92218075a623c3527dc15}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Load\+Shaders@{Load\+Shaders}}
+\index{Load\+Shaders@{Load\+Shaders}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Load\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Load\+Shaders (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str, }
+\item[{const char $\ast$const}]{psz\+Frag, }
+\item[{const char $\ast$const}]{psz\+Vert}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_a4c1e2e0559f92218075a623c3527dc15}
+
+
+  Load\+Shaders  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads and compiles the shaders and links the shader programs required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_aacf32e3c5b51f560e47a9d9cdc7ca735}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_aacf32e3c5b51f560e47a9d9cdc7ca735}
+
+
+  Load\+Textures  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_ac2c21b41b3193c46979877e20429f9f3}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Load\+Vbos@{Load\+Vbos}}
+\index{Load\+Vbos@{Load\+Vbos}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Load\+Vbos}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Load\+Vbos (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_ac2c21b41b3193c46979877e20429f9f3}
+
+
+  Load\+Vbos  Loads the mesh data required for this training course into vertex buffer objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_acc20778b733d71af5dfd3dd17da916a8}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_acc20778b733d71af5dfd3dd17da916a8}
+
+
+  Quit\+Application  bool true if no error occurred  Code in \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_acc20778b733d71af5dfd3dd17da916a8}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_acc20778b733d71af5dfd3dd17da916a8}{Quit\+Application()} will not be called. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_a01491b45d66d76586a85d3da4fd2bfad}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_a01491b45d66d76586a85d3da4fd2bfad}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_p_v_r_scope_remote_a01491b45d66d76586a85d3da4fd2bfad}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_p_v_r_scope_remote_a32713a1496b40adada64f04deec5d006}{\index{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote@{O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_p_v_r_scope_remote_a32713a1496b40adada64f04deec5d006}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. Will also manage relevent O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Advanced/\+P\+V\+R\+Scope\+Remote/\+O\+G\+L\+E\+S2/O\+G\+L\+E\+S2\+P\+V\+R\+Scope\+Remote.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{class_assimp_1_1_sort_by_p_type_process}{\section{Assimp\+:\+:Sort\+By\+P\+Type\+Process Class Reference}
+\label{class_assimp_1_1_sort_by_p_type_process}\index{Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}}
+}
+
+
+{\ttfamily \#include $<$Sort\+By\+P\+Type\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Sort\+By\+P\+Type\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Sort\+By\+P\+Type\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_sort_by_p_type_process_a4a6a252e094ea33c5701ea94708bd1da}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_sort_by_p_type_process_a2b86b16593ebe43a41f76707c992a4e0}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_sort_by_p_type_process_ac09e30908353a5f38d2592320b4f779c}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp_1_1_sort_by_p_type_process}{Sort\+By\+P\+Type\+Process}\+: Sorts meshes by the types of primitives they contain. A mesh with 5 lines, 3 points and 145 triangles would be split in 3 submeshes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_sort_by_p_type_process_a2b86b16593ebe43a41f76707c992a4e0}{\index{Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Sort\+By\+P\+Type\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_sort_by_p_type_process_a2b86b16593ebe43a41f76707c992a4e0}
+Executes the post processing step on the given imported data. A process should throw an Import\+Error\+Exception$\ast$ if it fails. This method must be implemented by deriving classes. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_sort_by_p_type_process_a4a6a252e094ea33c5701ea94708bd1da}{\index{Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Sort\+By\+P\+Type\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_sort_by_p_type_process_a4a6a252e094ea33c5701ea94708bd1da}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_sort_by_p_type_process_ac09e30908353a5f38d2592320b4f779c}{\index{Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Sort\+By\+P\+Type\+Process@{Assimp\+::\+Sort\+By\+P\+Type\+Process}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Sort\+By\+P\+Type\+Process\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_sort_by_p_type_process_ac09e30908353a5f38d2592320b4f779c}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Sort\+By\+P\+Type\+Process.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Sort\+By\+P\+Type\+Process.\+cpp\end{DoxyCompactItemize}

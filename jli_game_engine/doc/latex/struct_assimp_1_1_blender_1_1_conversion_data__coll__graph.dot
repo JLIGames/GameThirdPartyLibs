@@ -1,0 +1,31 @@
+digraph "Assimp::Blender::ConversionData"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Blender::ConversionData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lights" ];
+  Node2 [label="Assimp::Blender::TempArray\l\< std::Assimp::Blender::\lvector, aiLight \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_blender_1_1_temp_array.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" db" ];
+  Node3 [label="Assimp::Blender::FileDatabase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1_file_database.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dna" ];
+  Node4 [label="Assimp::Blender::DNA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1_d_n_a.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" structures" ];
+  Node5 [label="Assimp::Blender::vector\l\< Assimp::Blender::Structure \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1vector.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="std::vector\< Assimp\l::Blender::Structure \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" entries" ];
+  Node7 [label="Assimp::Blender::vector\l\< Assimp::Blender::FileBlock\lHead \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_blender_1_1vector.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="std::vector\< Assimp\l::Blender::FileBlockHead \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" reader" ];
+  Node9 [label="boost::shared_ptr\<\l StreamReaderAny \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboost_1_1shared__ptr.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" meshes" ];
+  Node10 [label="Assimp::Blender::TempArray\l\< std::Assimp::Blender::\lvector, aiMesh \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_blender_1_1_temp_array.html"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cameras" ];
+  Node11 [label="Assimp::Blender::TempArray\l\< std::Assimp::Blender::\lvector, aiCamera \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_blender_1_1_temp_array.html"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" materials" ];
+  Node12 [label="Assimp::Blender::TempArray\l\< std::Assimp::Blender::\lvector, aiMaterial \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_blender_1_1_temp_array.html"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" textures" ];
+  Node13 [label="Assimp::Blender::TempArray\l\< std::Assimp::Blender::\lvector, aiTexture \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_blender_1_1_temp_array.html"];
+}

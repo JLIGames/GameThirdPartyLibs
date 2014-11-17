@@ -1,0 +1,15 @@
+digraph "Assimp::MDLImporter::AddAnimationBoneTrafoKey_3DGS_MDL7"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::MDLImporter\l::AddAnimationBoneTrafoKey\l_3DGS_MDL7",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::MDLImporter\l::ParseBoneTrafoKeys\l_3DGS_MDL7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a5a97cbdade369e6189edf26d715ef364"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::MDLImporter\l::ProcessFrames_3DGS_MDL7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a52529265d0a93d200ad62a86d6c48c23"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::MDLImporter\l::InternReadFile_3DGS_MDL7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a70b64e8b3295003cb86e7703ed23d9cb"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::MDLImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#ab95ee90a0d1724dc4876383a782716e1"];
+}

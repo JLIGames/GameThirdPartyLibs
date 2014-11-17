@@ -1,0 +1,536 @@
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d}{\section{H\+A\+C\+D\+:\+:H\+A\+C\+D Class Reference}
+\label{class_h_a_c_d_1_1_h_a_c_d}\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+}
+
+
+Provides an implementation of the Hierarchical Approximate Convex Decomposition (\hyperlink{class_h_a_c_d_1_1_h_a_c_d}{H\+A\+C\+D}) technique described in \char`\"{}\+A Simple and Efficient Approach for 3\+D Mesh Approximate Convex Decomposition\char`\"{} Game Programming Gems 8 -\/ Chapter 2.\+8, p.\+202. A short version of the chapter was published in I\+C\+I\+P09 and is available at \href{ftp://ftp.elet.polimi.it/users/Stefano.Tubaro/ICIP_USB_Proceedings_v2/pdfs/0003501.pdf}{\tt ftp\+://ftp.\+elet.\+polimi.\+it/users/\+Stefano.\+Tubaro/\+I\+C\+I\+P\+\_\+\+U\+S\+B\+\_\+\+Proceedings\+\_\+v2/pdfs/0003501.\+pdf}.  
+
+
+
+
+{\ttfamily \#include $<$hacd\+H\+A\+C\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const long $\ast$const \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a9b9ea873c8a256661e1d18c8e3786357}{Get\+Partition} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_adbf1ee70b86737fd7e4e7f25b901c0fd}{Set\+Scale\+Factor} (double scale)
+\item 
+const double \hyperlink{class_h_a_c_d_1_1_h_a_c_d_aef9fcb622463db71c57a8549a2c055c0}{Get\+Scale\+Factor} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_abadb9c8fbdae132d3324dbe9436b80aa}{Set\+Call\+Back} (Call\+Back\+Function call\+Back)
+\item 
+const Call\+Back\+Function \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a50493a948481168d6ca825aa31b90326}{Get\+Call\+Back} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a6db85aa35a4a67b4051f38fbc827ef81}{Set\+Add\+Faces\+Points} (bool add\+Faces\+Points)
+\item 
+const bool \hyperlink{class_h_a_c_d_1_1_h_a_c_d_af7f766c8f064eff4e6bdc58fc6cf49a9}{Get\+Add\+Faces\+Points} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_af6611e7dea03a69af44140d071c1bbb1}{Set\+Add\+Extra\+Dist\+Points} (bool add\+Extra\+Dist\+Points)
+\item 
+const bool \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a4e3a56a9808ac0146b473ccbf82bc4d7}{Get\+Add\+Extra\+Dist\+Points} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a5b300a3914c270d7265515e99122a66b}{Set\+Add\+Neighbours\+Dist\+Points} (bool add\+Neighbours\+Dist\+Points)
+\item 
+const bool \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a3356651bf4f7c445dfe4c6217609f44c}{Get\+Add\+Neighbours\+Dist\+Points} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a0132180ef051b26ee0fb930069c8aac1}{Set\+Points} (\hyperlink{class_h_a_c_d_1_1_vec3}{Vec3}$<$ Real $>$ $\ast$points)
+\item 
+const \hyperlink{class_h_a_c_d_1_1_vec3}{Vec3}$<$ Real $>$ $\ast$ \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a676abd8410ef3b4677119cd36be3248c}{Get\+Points} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a58e438e2251f4fd02b625383e637638d}{Set\+Triangles} (\hyperlink{class_h_a_c_d_1_1_vec3}{Vec3}$<$ long $>$ $\ast$triangles)
+\item 
+const \hyperlink{class_h_a_c_d_1_1_vec3}{Vec3}$<$ long $>$ $\ast$ \hyperlink{class_h_a_c_d_1_1_h_a_c_d_aa726a99df2ca7a8273e9d5c77d8c54b5}{Get\+Triangles} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a5740ae0273b1fc040fbafc28a5456936}{Set\+N\+Points} (size\+\_\+t n\+Points)
+\item 
+const size\+\_\+t \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a3f8bf9642e36902ea14933bcf764aba5}{Get\+N\+Points} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_af1f0345b39497d1448204c56335872e2}{Set\+N\+Triangles} (size\+\_\+t n\+Triangles)
+\item 
+const size\+\_\+t \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a13a174c40da96bcc5f0d352214683a49}{Get\+N\+Triangles} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a08384f0267e2bde8a3fe0bbe6d8f371b}{Set\+N\+Clusters} (size\+\_\+t n\+Clusters)
+\item 
+const size\+\_\+t \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a2279e1acac638c6204a423d3ce325016}{Get\+N\+Clusters} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a65250437760f715b395dcc8b89f067c8}{Set\+Concavity} (double concavity)
+\item 
+double \hyperlink{class_h_a_c_d_1_1_h_a_c_d_abfba8986c9cebc43fed7b6052a6a6974}{Get\+Concavity} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a998981fd43b72ad6df9b73eae98278c3}{Set\+Connect\+Dist} (double cc\+Connect\+Dist)
+\item 
+double \hyperlink{class_h_a_c_d_1_1_h_a_c_d_af8b7f4d5b01038dac19cc7cb934eed84}{Get\+Connect\+Dist} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a6b424dea28071f87eaa9d8723e3d054f}{Set\+Volume\+Weight} (double beta)
+\item 
+double \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a55e4a0f7e76da4e04cea0e41826ea9f9}{Get\+Volume\+Weight} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_acbb98a45d321ac15533b78ca466f681b}{Set\+Compacity\+Weight} (double alpha)
+\item 
+double \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a56e2cb34d9c25f015e64e0d337e68f60}{Get\+Compacity\+Weight} () const 
+\item 
+void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a10505ead4864d427da45181dca102d0e}{Set\+N\+Vertices\+Per\+C\+H} (size\+\_\+t n\+Vertices\+Per\+C\+H)
+\item 
+const size\+\_\+t \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a29daec6aafc138ea09b54c39d15a6bcf}{Get\+N\+Vertices\+Per\+C\+H} () const 
+\item 
+size\+\_\+t \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a06fb62f6e5f20c95d75f32424affcfac}{Get\+N\+Points\+C\+H} (size\+\_\+t num\+C\+H) const 
+\item 
+size\+\_\+t \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a2d84cf35a49d0b83269e2d84f3cffbbc}{Get\+N\+Triangles\+C\+H} (size\+\_\+t num\+C\+H) const 
+\item 
+bool \hyperlink{class_h_a_c_d_1_1_h_a_c_d_aa6ab81c287c06641c7d3fbbf7df51160}{Get\+C\+H} (size\+\_\+t num\+C\+H, \hyperlink{class_h_a_c_d_1_1_vec3}{Vec3}$<$ Real $>$ $\ast$const points, \hyperlink{class_h_a_c_d_1_1_vec3}{Vec3}$<$ long $>$ $\ast$const triangles)
+\item 
+bool \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a161560c4e73cf46541984f0ab6c27b0b}{Compute} (bool full\+C\+H=false, bool export\+Dist\+Points=false)
+\item 
+bool \hyperlink{class_h_a_c_d_1_1_h_a_c_d_af7f33db238235e1238b5b8d5c831a988}{Save} (const char $\ast$file\+Name, bool uni\+Color, long num\+Cluster=-\/1) const 
+\item 
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a240747f650bde48307934e084563bed3}{void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a240747f650bde48307934e084563bed3}{Normalize\+Data} ()}\label{class_h_a_c_d_1_1_h_a_c_d_a240747f650bde48307934e084563bed3}
+
+\begin{DoxyCompactList}\small\item\em Shifts and scales to the data to have all the coordinates between 0.\+0 and 1000.\+0. \end{DoxyCompactList}\item 
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a053c66915edd6f3ddc333b1e57c5dbb3}{void \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a053c66915edd6f3ddc333b1e57c5dbb3}{Denormalize\+Data} ()}\label{class_h_a_c_d_1_1_h_a_c_d_a053c66915edd6f3ddc333b1e57c5dbb3}
+
+\begin{DoxyCompactList}\small\item\em Inverse the operations applied by \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a240747f650bde48307934e084563bed3}{Normalize\+Data()}. \end{DoxyCompactList}\item 
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a8b8afc4c214d7fef80765c7b3a1ee973}{\hyperlink{class_h_a_c_d_1_1_h_a_c_d_a8b8afc4c214d7fef80765c7b3a1ee973}{H\+A\+C\+D} (void)}\label{class_h_a_c_d_1_1_h_a_c_d_a8b8afc4c214d7fef80765c7b3a1ee973}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a38511d80e4d64632fa080dfed54f59d7}{\hyperlink{class_h_a_c_d_1_1_h_a_c_d_a38511d80e4d64632fa080dfed54f59d7}{$\sim$\+H\+A\+C\+D} (void)}\label{class_h_a_c_d_1_1_h_a_c_d_a38511d80e4d64632fa080dfed54f59d7}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides an implementation of the Hierarchical Approximate Convex Decomposition (\hyperlink{class_h_a_c_d_1_1_h_a_c_d}{H\+A\+C\+D}) technique described in \char`\"{}\+A Simple and Efficient Approach for 3\+D Mesh Approximate Convex Decomposition\char`\"{} Game Programming Gems 8 -\/ Chapter 2.\+8, p.\+202. A short version of the chapter was published in I\+C\+I\+P09 and is available at \href{ftp://ftp.elet.polimi.it/users/Stefano.Tubaro/ICIP_USB_Proceedings_v2/pdfs/0003501.pdf}{\tt ftp\+://ftp.\+elet.\+polimi.\+it/users/\+Stefano.\+Tubaro/\+I\+C\+I\+P\+\_\+\+U\+S\+B\+\_\+\+Proceedings\+\_\+v2/pdfs/0003501.\+pdf}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a161560c4e73cf46541984f0ab6c27b0b}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Compute@{Compute}}
+\index{Compute@{Compute}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Compute}]{\setlength{\rightskip}{0pt plus 5cm}bool H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Compute (
+\begin{DoxyParamCaption}
+\item[{bool}]{full\+C\+H = {\ttfamily false}, }
+\item[{bool}]{export\+Dist\+Points = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_h_a_c_d_1_1_h_a_c_d_a161560c4e73cf46541984f0ab6c27b0b}
+Computes the \hyperlink{class_h_a_c_d_1_1_h_a_c_d}{H\+A\+C\+D} decomposition. 
+\begin{DoxyParams}{Parameters}
+{\em full\+C\+H} & specifies whether to generate convex-\/hulls with a full or limited (i.\+e. $<$ m\+\_\+n\+Vertices\+Per\+C\+H) number of vertices \\
+\hline
+{\em export\+Dist\+Points} & specifies wheter distance points should ne exported or not (used only for debugging). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if sucess 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a4e3a56a9808ac0146b473ccbf82bc4d7}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Add\+Extra\+Dist\+Points@{Get\+Add\+Extra\+Dist\+Points}}
+\index{Get\+Add\+Extra\+Dist\+Points@{Get\+Add\+Extra\+Dist\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Add\+Extra\+Dist\+Points}]{\setlength{\rightskip}{0pt plus 5cm}const bool H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Add\+Extra\+Dist\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a4e3a56a9808ac0146b473ccbf82bc4d7}
+Specifies wheter extra points should be added when computing the concavity \begin{DoxyReturn}{Returns}
+true = extra points should be added 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_af7f766c8f064eff4e6bdc58fc6cf49a9}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Add\+Faces\+Points@{Get\+Add\+Faces\+Points}}
+\index{Get\+Add\+Faces\+Points@{Get\+Add\+Faces\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Add\+Faces\+Points}]{\setlength{\rightskip}{0pt plus 5cm}const bool H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Add\+Faces\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_af7f766c8f064eff4e6bdc58fc6cf49a9}
+Specifies wheter faces points should be added when computing the concavity \begin{DoxyReturn}{Returns}
+true = faces points should be added 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a3356651bf4f7c445dfe4c6217609f44c}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Add\+Neighbours\+Dist\+Points@{Get\+Add\+Neighbours\+Dist\+Points}}
+\index{Get\+Add\+Neighbours\+Dist\+Points@{Get\+Add\+Neighbours\+Dist\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Add\+Neighbours\+Dist\+Points}]{\setlength{\rightskip}{0pt plus 5cm}const bool H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Add\+Neighbours\+Dist\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a3356651bf4f7c445dfe4c6217609f44c}
+Specifies wheter extra points should be added when computing the concavity \begin{DoxyReturn}{Returns}
+true = extra points should be added 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a50493a948481168d6ca825aa31b90326}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Call\+Back@{Get\+Call\+Back}}
+\index{Get\+Call\+Back@{Get\+Call\+Back}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Call\+Back}]{\setlength{\rightskip}{0pt plus 5cm}const Call\+Back\+Function H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Call\+Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a50493a948481168d6ca825aa31b90326}
+Gives the call-\/back function \begin{DoxyReturn}{Returns}
+pointer to the call-\/back function 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_aa6ab81c287c06641c7d3fbbf7df51160}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+C\+H@{Get\+C\+H}}
+\index{Get\+C\+H@{Get\+C\+H}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}bool H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+C\+H (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+C\+H, }
+\item[{{\bf Vec3}$<$ Real $>$ $\ast$const}]{points, }
+\item[{{\bf Vec3}$<$ long $>$ $\ast$const}]{triangles}
+\end{DoxyParamCaption}
+)}}\label{class_h_a_c_d_1_1_h_a_c_d_aa6ab81c287c06641c7d3fbbf7df51160}
+Gives the vertices and the triangles of the cluster number num\+C\+H. 
+\begin{DoxyParams}{Parameters}
+{\em num\+C\+H} & cluster's number \\
+\hline
+{\em points} & pointer to the vector of points to be filled \\
+\hline
+{\em triangles} & pointer to the vector of triangles to be filled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if sucess 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a56e2cb34d9c25f015e64e0d337e68f60}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Compacity\+Weight@{Get\+Compacity\+Weight}}
+\index{Get\+Compacity\+Weight@{Get\+Compacity\+Weight}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Compacity\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}double H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Compacity\+Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a56e2cb34d9c25f015e64e0d337e68f60}
+Gives the compacity weight (i.\+e. parameter alpha in \href{ftp://ftp.elet.polimi.it/users/Stefano.Tubaro/ICIP_USB_Proceedings_v2/pdfs/0003501.pdf}{\tt ftp\+://ftp.\+elet.\+polimi.\+it/users/\+Stefano.\+Tubaro/\+I\+C\+I\+P\+\_\+\+U\+S\+B\+\_\+\+Proceedings\+\_\+v2/pdfs/0003501.\+pdf}). \begin{DoxyReturn}{Returns}
+compacity weight 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_abfba8986c9cebc43fed7b6052a6a6974}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Concavity@{Get\+Concavity}}
+\index{Get\+Concavity@{Get\+Concavity}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Concavity}]{\setlength{\rightskip}{0pt plus 5cm}double H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Concavity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_abfba8986c9cebc43fed7b6052a6a6974}
+Gives the maximum allowed concavity. \begin{DoxyReturn}{Returns}
+maximum concavity 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_af8b7f4d5b01038dac19cc7cb934eed84}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Connect\+Dist@{Get\+Connect\+Dist}}
+\index{Get\+Connect\+Dist@{Get\+Connect\+Dist}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Connect\+Dist}]{\setlength{\rightskip}{0pt plus 5cm}double H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Connect\+Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_af8b7f4d5b01038dac19cc7cb934eed84}
+Gives the maximum allowed distance to get C\+Cs connected. \begin{DoxyReturn}{Returns}
+maximum distance to get C\+Cs connected 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a2279e1acac638c6204a423d3ce325016}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+N\+Clusters@{Get\+N\+Clusters}}
+\index{Get\+N\+Clusters@{Get\+N\+Clusters}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+N\+Clusters}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+N\+Clusters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a2279e1acac638c6204a423d3ce325016}
+Gives the number of generated clusters. \begin{DoxyReturn}{Returns}
+number of generated clusters 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a3f8bf9642e36902ea14933bcf764aba5}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+N\+Points@{Get\+N\+Points}}
+\index{Get\+N\+Points@{Get\+N\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+N\+Points}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+N\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a3f8bf9642e36902ea14933bcf764aba5}
+Gives the number of points in the input mesh. \begin{DoxyReturn}{Returns}
+number of points the input mesh 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a06fb62f6e5f20c95d75f32424affcfac}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+N\+Points\+C\+H@{Get\+N\+Points\+C\+H}}
+\index{Get\+N\+Points\+C\+H@{Get\+N\+Points\+C\+H}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+N\+Points\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+N\+Points\+C\+H (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+C\+H}
+\end{DoxyParamCaption}
+) const}}\label{class_h_a_c_d_1_1_h_a_c_d_a06fb62f6e5f20c95d75f32424affcfac}
+Gives the number of vertices for the cluster number num\+C\+H. \begin{DoxyReturn}{Returns}
+number of vertices 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a13a174c40da96bcc5f0d352214683a49}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+N\+Triangles@{Get\+N\+Triangles}}
+\index{Get\+N\+Triangles@{Get\+N\+Triangles}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+N\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+N\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a13a174c40da96bcc5f0d352214683a49}
+Gives the number of triangles in the input mesh. \begin{DoxyReturn}{Returns}
+number of triangles the input mesh 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a2d84cf35a49d0b83269e2d84f3cffbbc}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+N\+Triangles\+C\+H@{Get\+N\+Triangles\+C\+H}}
+\index{Get\+N\+Triangles\+C\+H@{Get\+N\+Triangles\+C\+H}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+N\+Triangles\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+N\+Triangles\+C\+H (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+C\+H}
+\end{DoxyParamCaption}
+) const}}\label{class_h_a_c_d_1_1_h_a_c_d_a2d84cf35a49d0b83269e2d84f3cffbbc}
+Gives the number of triangles for the cluster number num\+C\+H. 
+\begin{DoxyParams}{Parameters}
+{\em num\+C\+H} & cluster's number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of triangles 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a29daec6aafc138ea09b54c39d15a6bcf}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+N\+Vertices\+Per\+C\+H@{Get\+N\+Vertices\+Per\+C\+H}}
+\index{Get\+N\+Vertices\+Per\+C\+H@{Get\+N\+Vertices\+Per\+C\+H}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+N\+Vertices\+Per\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+N\+Vertices\+Per\+C\+H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a29daec6aafc138ea09b54c39d15a6bcf}
+Gives the maximum number of vertices for each generated convex-\/hull. \begin{DoxyReturn}{Returns}
+maximum \# vertices per C\+H 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a9b9ea873c8a256661e1d18c8e3786357}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Partition@{Get\+Partition}}
+\index{Get\+Partition@{Get\+Partition}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Partition}]{\setlength{\rightskip}{0pt plus 5cm}const long$\ast$ const H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Partition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a9b9ea873c8a256661e1d18c8e3786357}
+Gives the triangles partitionas an array of size m\+\_\+n\+Triangles where the i-\/th element specifies the cluster to which belong the i-\/th triangle \begin{DoxyReturn}{Returns}
+triangles partition 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a676abd8410ef3b4677119cd36be3248c}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Points@{Get\+Points}}
+\index{Get\+Points@{Get\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Points}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vec3}$<$Real$>$$\ast$ H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a676abd8410ef3b4677119cd36be3248c}
+Gives the points of the input mesh (Remark\+: the input points will be scaled and shifted. Use \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a053c66915edd6f3ddc333b1e57c5dbb3}{Denormalize\+Data()} to invert those operations) \begin{DoxyReturn}{Returns}
+pointer to the input points 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_aef9fcb622463db71c57a8549a2c055c0}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Scale\+Factor@{Get\+Scale\+Factor}}
+\index{Get\+Scale\+Factor@{Get\+Scale\+Factor}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Scale\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}const double H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Scale\+Factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_aef9fcb622463db71c57a8549a2c055c0}
+Gives the scale factor \begin{DoxyReturn}{Returns}
+scale factor 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_aa726a99df2ca7a8273e9d5c77d8c54b5}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Triangles@{Get\+Triangles}}
+\index{Get\+Triangles@{Get\+Triangles}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vec3}$<$long$>$$\ast$ H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_aa726a99df2ca7a8273e9d5c77d8c54b5}
+Gives the triangles in the input mesh \begin{DoxyReturn}{Returns}
+pointer to the input triangles 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a55e4a0f7e76da4e04cea0e41826ea9f9}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Get\+Volume\+Weight@{Get\+Volume\+Weight}}
+\index{Get\+Volume\+Weight@{Get\+Volume\+Weight}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Get\+Volume\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}double H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Get\+Volume\+Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a55e4a0f7e76da4e04cea0e41826ea9f9}
+Gives the volume weight. \begin{DoxyReturn}{Returns}
+volume weight 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_af7f33db238235e1238b5b8d5c831a988}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Save@{Save}}
+\index{Save@{Save}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}bool H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Save (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+Name, }
+\item[{bool}]{uni\+Color, }
+\item[{long}]{num\+Cluster = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const}}\label{class_h_a_c_d_1_1_h_a_c_d_af7f33db238235e1238b5b8d5c831a988}
+Saves the generated convex-\/hulls in a V\+R\+M\+L 2.\+0 file. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the output file name \\
+\hline
+{\em uni\+Color} & specifies whether the different convex-\/hulls should have the same color or not \\
+\hline
+{\em num\+Cluster} & specifies the cluster to be saved, if num\+Cluster $<$ 0 export all clusters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if sucess 
+\end{DoxyReturn}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_af6611e7dea03a69af44140d071c1bbb1}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Add\+Extra\+Dist\+Points@{Set\+Add\+Extra\+Dist\+Points}}
+\index{Set\+Add\+Extra\+Dist\+Points@{Set\+Add\+Extra\+Dist\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Add\+Extra\+Dist\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Add\+Extra\+Dist\+Points (
+\begin{DoxyParamCaption}
+\item[{bool}]{add\+Extra\+Dist\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_af6611e7dea03a69af44140d071c1bbb1}
+Specifies whether extra points should be added when computing the concavity 
+\begin{DoxyParams}{Parameters}
+{\em add\+Extera\+Dist\+Points} & true = extra points should be added \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a6db85aa35a4a67b4051f38fbc827ef81}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Add\+Faces\+Points@{Set\+Add\+Faces\+Points}}
+\index{Set\+Add\+Faces\+Points@{Set\+Add\+Faces\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Add\+Faces\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Add\+Faces\+Points (
+\begin{DoxyParamCaption}
+\item[{bool}]{add\+Faces\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a6db85aa35a4a67b4051f38fbc827ef81}
+Specifies whether faces points should be added when computing the concavity 
+\begin{DoxyParams}{Parameters}
+{\em add\+Faces\+Points} & true = faces points should be added \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a5b300a3914c270d7265515e99122a66b}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Add\+Neighbours\+Dist\+Points@{Set\+Add\+Neighbours\+Dist\+Points}}
+\index{Set\+Add\+Neighbours\+Dist\+Points@{Set\+Add\+Neighbours\+Dist\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Add\+Neighbours\+Dist\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Add\+Neighbours\+Dist\+Points (
+\begin{DoxyParamCaption}
+\item[{bool}]{add\+Neighbours\+Dist\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a5b300a3914c270d7265515e99122a66b}
+Specifies whether extra points should be added when computing the concavity 
+\begin{DoxyParams}{Parameters}
+{\em add\+Extera\+Dist\+Points} & true = extra points should be added \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_abadb9c8fbdae132d3324dbe9436b80aa}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Call\+Back@{Set\+Call\+Back}}
+\index{Set\+Call\+Back@{Set\+Call\+Back}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Call\+Back}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Call\+Back (
+\begin{DoxyParamCaption}
+\item[{Call\+Back\+Function}]{call\+Back}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_abadb9c8fbdae132d3324dbe9436b80aa}
+Sets the call-\/back function 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & pointer to the call-\/back function \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_acbb98a45d321ac15533b78ca466f681b}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Compacity\+Weight@{Set\+Compacity\+Weight}}
+\index{Set\+Compacity\+Weight@{Set\+Compacity\+Weight}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Compacity\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Compacity\+Weight (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_acbb98a45d321ac15533b78ca466f681b}
+Sets the compacity weight (i.\+e. parameter alpha in \href{ftp://ftp.elet.polimi.it/users/Stefano.Tubaro/ICIP_USB_Proceedings_v2/pdfs/0003501.pdf}{\tt ftp\+://ftp.\+elet.\+polimi.\+it/users/\+Stefano.\+Tubaro/\+I\+C\+I\+P\+\_\+\+U\+S\+B\+\_\+\+Proceedings\+\_\+v2/pdfs/0003501.\+pdf}). 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & compacity weight \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a65250437760f715b395dcc8b89f067c8}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Concavity@{Set\+Concavity}}
+\index{Set\+Concavity@{Set\+Concavity}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Concavity}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Concavity (
+\begin{DoxyParamCaption}
+\item[{double}]{concavity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a65250437760f715b395dcc8b89f067c8}
+Sets the maximum allowed concavity. 
+\begin{DoxyParams}{Parameters}
+{\em concavity} & maximum concavity \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a998981fd43b72ad6df9b73eae98278c3}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Connect\+Dist@{Set\+Connect\+Dist}}
+\index{Set\+Connect\+Dist@{Set\+Connect\+Dist}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Connect\+Dist}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Connect\+Dist (
+\begin{DoxyParamCaption}
+\item[{double}]{cc\+Connect\+Dist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a998981fd43b72ad6df9b73eae98278c3}
+Sets the maximum allowed distance to get C\+Cs connected. 
+\begin{DoxyParams}{Parameters}
+{\em concavity} & maximum distance to get C\+Cs connected \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a08384f0267e2bde8a3fe0bbe6d8f371b}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+N\+Clusters@{Set\+N\+Clusters}}
+\index{Set\+N\+Clusters@{Set\+N\+Clusters}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+N\+Clusters}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+N\+Clusters (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n\+Clusters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a08384f0267e2bde8a3fe0bbe6d8f371b}
+Sets the minimum number of clusters to be generated. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Clusters} & minimum number of clusters \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a5740ae0273b1fc040fbafc28a5456936}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+N\+Points@{Set\+N\+Points}}
+\index{Set\+N\+Points@{Set\+N\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+N\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+N\+Points (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a5740ae0273b1fc040fbafc28a5456936}
+Sets the number of points in the input mesh. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Points} & number of points the input mesh \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_af1f0345b39497d1448204c56335872e2}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+N\+Triangles@{Set\+N\+Triangles}}
+\index{Set\+N\+Triangles@{Set\+N\+Triangles}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+N\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+N\+Triangles (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n\+Triangles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_af1f0345b39497d1448204c56335872e2}
+Sets the number of triangles in the input mesh. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Triangles} & number of triangles in the input mesh \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a10505ead4864d427da45181dca102d0e}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+N\+Vertices\+Per\+C\+H@{Set\+N\+Vertices\+Per\+C\+H}}
+\index{Set\+N\+Vertices\+Per\+C\+H@{Set\+N\+Vertices\+Per\+C\+H}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+N\+Vertices\+Per\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+N\+Vertices\+Per\+C\+H (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n\+Vertices\+Per\+C\+H}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a10505ead4864d427da45181dca102d0e}
+Sets the maximum number of vertices for each generated convex-\/hull. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Vertices\+Per\+C\+H} & maximum \# vertices per C\+H \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a0132180ef051b26ee0fb930069c8aac1}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Points@{Set\+Points}}
+\index{Set\+Points@{Set\+Points}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Points (
+\begin{DoxyParamCaption}
+\item[{{\bf Vec3}$<$ Real $>$ $\ast$}]{points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a0132180ef051b26ee0fb930069c8aac1}
+Sets the points of the input mesh (Remark\+: the input points will be scaled and shifted. Use \hyperlink{class_h_a_c_d_1_1_h_a_c_d_a053c66915edd6f3ddc333b1e57c5dbb3}{Denormalize\+Data()} to invert those operations) 
+\begin{DoxyParams}{Parameters}
+{\em points} & pointer to the input points \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_adbf1ee70b86737fd7e4e7f25b901c0fd}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Scale\+Factor@{Set\+Scale\+Factor}}
+\index{Set\+Scale\+Factor@{Set\+Scale\+Factor}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Scale\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Scale\+Factor (
+\begin{DoxyParamCaption}
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_adbf1ee70b86737fd7e4e7f25b901c0fd}
+Sets the scale factor 
+\begin{DoxyParams}{Parameters}
+{\em scale} & scale factor \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a58e438e2251f4fd02b625383e637638d}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Triangles@{Set\+Triangles}}
+\index{Set\+Triangles@{Set\+Triangles}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Triangles (
+\begin{DoxyParamCaption}
+\item[{{\bf Vec3}$<$ long $>$ $\ast$}]{triangles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a58e438e2251f4fd02b625383e637638d}
+Sets the triangles of the input mesh. 
+\begin{DoxyParams}{Parameters}
+{\em triangles} & points pointer to the input points \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_a_c_d_1_1_h_a_c_d_a6b424dea28071f87eaa9d8723e3d054f}{\index{H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}!Set\+Volume\+Weight@{Set\+Volume\+Weight}}
+\index{Set\+Volume\+Weight@{Set\+Volume\+Weight}!H\+A\+C\+D\+::\+H\+A\+C\+D@{H\+A\+C\+D\+::\+H\+A\+C\+D}}
+\subsubsection[{Set\+Volume\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+C\+D\+::\+H\+A\+C\+D\+::\+Set\+Volume\+Weight (
+\begin{DoxyParamCaption}
+\item[{double}]{beta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_h_a_c_d_1_1_h_a_c_d_a6b424dea28071f87eaa9d8723e3d054f}
+Sets the volume weight. 
+\begin{DoxyParams}{Parameters}
+{\em beta} & volume weight \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+H\+A\+C\+D/hacd\+H\+A\+C\+D.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+H\+A\+C\+D/hacd\+H\+A\+C\+D.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,210 @@
+\hypertarget{class_text_test_runner}{\section{Text\+Test\+Runner Class Reference}
+\label{class_text_test_runner}\index{Text\+Test\+Runner@{Text\+Test\+Runner}}
+}
+
+
+A text mode test runner.
+
+The test runner manage the life cycle of the added tests.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Test\+Runner.\+h$>$}
+
+
+
+Inheritance diagram for Text\+Test\+Runner\+:
+
+
+Collaboration diagram for Text\+Test\+Runner\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_text_test_runner_ab91401ee0f35e84be5341afc21d55206}{Text\+Test\+Runner} (\hyperlink{class_outputter}{Outputter} $\ast$outputter=N\+U\+L\+L)
+\item 
+bool \hyperlink{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{run} (std\+::string test\+Path=\char`\"{}\char`\"{}, bool do\+Wait=false, bool do\+Print\+Result=true, bool do\+Print\+Progress=true)
+\item 
+void \hyperlink{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{set\+Outputter} (\hyperlink{class_outputter}{Outputter} $\ast$outputter)
+\item 
+\hyperlink{class_test_result_collector}{Test\+Result\+Collector} \& \hyperlink{class_text_test_runner_afd777921e79254ccca655245dc5dce67}{result} () const 
+\item 
+\hyperlink{class_test_result}{Test\+Result} \& \hyperlink{class_text_test_runner_a399452a89f16c4d68a0be8aa2ea4a3c6}{event\+Manager} () const 
+\item 
+\hypertarget{class_text_test_runner_a5f215d32151fc67e0374e83a5cd65e81}{virtual void {\bfseries run} (\hyperlink{class_test_result}{Test\+Result} \&controller, const std\+::string \&test\+Path=\char`\"{}\char`\"{})}\label{class_text_test_runner_a5f215d32151fc67e0374e83a5cd65e81}
+
+\item 
+\hypertarget{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}{{\bfseries Text\+Test\+Runner} (\hyperlink{class_outputter}{Outputter} $\ast$outputter=N\+U\+L\+L)}\label{class_text_test_runner_ac7b6cba645a3a5e76382fcd40e4f7eb6}
+
+\item 
+\hypertarget{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{bool {\bfseries run} (std\+::string test\+Path=\char`\"{}\char`\"{}, bool do\+Wait=false, bool do\+Print\+Result=true, bool do\+Print\+Progress=true)}\label{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}
+
+\item 
+\hypertarget{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{void {\bfseries set\+Outputter} (\hyperlink{class_outputter}{Outputter} $\ast$outputter)}\label{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}
+
+\item 
+\hypertarget{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}{\hyperlink{class_test_result_collector}{Test\+Result\+Collector} \& {\bfseries result} () const }\label{class_text_test_runner_a7a6cf866d23d621ed35474c8179b9b48}
+
+\item 
+\hypertarget{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}{\hyperlink{class_test_result}{Test\+Result} \& {\bfseries event\+Manager} () const }\label{class_text_test_runner_afa50f45ea60892db3cf0b128c06a1629}
+
+\item 
+\hypertarget{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}{virtual void {\bfseries run} (\hyperlink{class_test_result}{Test\+Result} \&controller, const std\+::string \&test\+Path=\char`\"{}\char`\"{})}\label{class_text_test_runner_a361eaa340138edf3659a9fcb813c3b5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_test_runner_acaedfb853cba2b7eff33bc012413d052}{virtual void {\bfseries wait} (bool do\+Wait)}\label{class_text_test_runner_acaedfb853cba2b7eff33bc012413d052}
+
+\item 
+\hypertarget{class_text_test_runner_a2218622eb745ab4725cb9c5931e93a0e}{virtual void {\bfseries print\+Result} (bool do\+Print\+Result)}\label{class_text_test_runner_a2218622eb745ab4725cb9c5931e93a0e}
+
+\item 
+\hypertarget{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}{virtual void {\bfseries wait} (bool do\+Wait)}\label{class_text_test_runner_a5b192f9419f5d1e6ebe9abd4755da140}
+
+\item 
+\hypertarget{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}{virtual void {\bfseries print\+Result} (bool do\+Print\+Result)}\label{class_text_test_runner_aa01e5dee4cdad860ee7154329918f9ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_text_test_runner_a0fe03f0ddb56d68ed478bb807cff08c8}{\hyperlink{class_test_result_collector}{Test\+Result\+Collector} $\ast$ {\bfseries m\+\_\+result}}\label{class_text_test_runner_a0fe03f0ddb56d68ed478bb807cff08c8}
+
+\item 
+\hypertarget{class_text_test_runner_a5d9bedab3a84ef32944697f102689387}{\hyperlink{class_test_result}{Test\+Result} $\ast$ {\bfseries m\+\_\+event\+Manager}}\label{class_text_test_runner_a5d9bedab3a84ef32944697f102689387}
+
+\item 
+\hypertarget{class_text_test_runner_abf21b88df7770bb5e7279ffcb8b2802a}{\hyperlink{class_outputter}{Outputter} $\ast$ {\bfseries m\+\_\+outputter}}\label{class_text_test_runner_abf21b88df7770bb5e7279ffcb8b2802a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A text mode test runner.
+
+The test runner manage the life cycle of the added tests. 
+
+The test runner can run only one of the added tests or all the tests.
+
+\hyperlink{class_test_runner}{Test\+Runner} prints out a trace as the tests are executed followed by a summary at the end. The trace and summary print are optional.
+
+Here is an example of use\+:
+
+
+\begin{DoxyCode}
+CppUnit::TextTestRunner runner;
+runner.addTest( ExampleTestCase::suite() );
+runner.run( \textcolor{stringliteral}{""}, \textcolor{keyword}{true} );    \textcolor{comment}{// Run all tests and wait}
+\end{DoxyCode}
+
+
+The trace is printed using a \hyperlink{class_text_test_progress_listener}{Text\+Test\+Progress\+Listener}. The summary is printed using a \hyperlink{class_text_outputter}{Text\+Outputter}.
+
+You can specify an alternate \hyperlink{class_outputter}{Outputter} at construction or later with \hyperlink{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{set\+Outputter()}.
+
+After construction, you can register additional \hyperlink{class_test_listener}{Test\+Listener} to \hyperlink{class_text_test_runner_a399452a89f16c4d68a0be8aa2ea4a3c6}{event\+Manager()}, for a custom progress trace, for example.
+
+
+\begin{DoxyCode}
+CppUnit::TextTestRunner runner;
+runner.addTest( ExampleTestCase::suite() );
+runner.setOutputter( CppUnit::CompilerOutputter::defaultOutputter( 
+                         &runner.result(),
+                         std::cerr ) );
+MyCustomProgressTestListener progress;
+runner.eventManager().addListener( &progress );
+runner.run( \textcolor{stringliteral}{""}, \textcolor{keyword}{true} );    \textcolor{comment}{// Run all tests and wait}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_compiler_outputter}{Compiler\+Outputter}, \hyperlink{class_xml_outputter}{Xml\+Outputter}, \hyperlink{class_text_outputter}{Text\+Outputter}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_text_test_runner_ab91401ee0f35e84be5341afc21d55206}{\index{Text\+Test\+Runner@{Text\+Test\+Runner}!Text\+Test\+Runner@{Text\+Test\+Runner}}
+\index{Text\+Test\+Runner@{Text\+Test\+Runner}!Text\+Test\+Runner@{Text\+Test\+Runner}}
+\subsubsection[{Text\+Test\+Runner}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+P\+U\+N\+I\+T\+\_\+\+N\+S\+\_\+\+B\+E\+G\+I\+N Text\+Test\+Runner\+::\+Text\+Test\+Runner (
+\begin{DoxyParamCaption}
+\item[{{\bf Outputter} $\ast$}]{outputter = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_runner_ab91401ee0f35e84be5341afc21d55206}
+Constructs a new text runner. 
+\begin{DoxyParams}{Parameters}
+{\em outputter} & used to print text result. Owned by the runner. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_text_test_runner_a399452a89f16c4d68a0be8aa2ea4a3c6}{\index{Text\+Test\+Runner@{Text\+Test\+Runner}!event\+Manager@{event\+Manager}}
+\index{event\+Manager@{event\+Manager}!Text\+Test\+Runner@{Text\+Test\+Runner}}
+\subsubsection[{event\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\+Result} \& Text\+Test\+Runner\+::event\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_text_test_runner_a399452a89f16c4d68a0be8aa2ea4a3c6}
+Returns the event manager. The instance of \hyperlink{class_test_result}{Test\+Result} results returned is the one that is used to run the test. Use this to register additional \hyperlink{class_test_listener}{Test\+Listener} before running the tests. \hypertarget{class_text_test_runner_afd777921e79254ccca655245dc5dce67}{\index{Text\+Test\+Runner@{Text\+Test\+Runner}!result@{result}}
+\index{result@{result}!Text\+Test\+Runner@{Text\+Test\+Runner}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\+Result\+Collector} \& Text\+Test\+Runner\+::result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_text_test_runner_afd777921e79254ccca655245dc5dce67}
+Returns the result of the test run. Use this after calling \hyperlink{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{run()} to access the result of the test run. \hypertarget{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{\index{Text\+Test\+Runner@{Text\+Test\+Runner}!run@{run}}
+\index{run@{run}!Text\+Test\+Runner@{Text\+Test\+Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}bool Text\+Test\+Runner\+::run (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{test\+Name = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{bool}]{do\+Wait = {\ttfamily false}, }
+\item[{bool}]{do\+Print\+Result = {\ttfamily true}, }
+\item[{bool}]{do\+Print\+Progress = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}
+Runs the named test case.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Name} & Name of the test case to run. If an empty is given, then all added tests are run. The name can be the name of any test in the hierarchy. \\
+\hline
+{\em do\+Wait} & if {\ttfamily true} then the user must press the R\+E\+T\+U\+R\+N key before the \hyperlink{class_text_test_runner_ad9c38c263202c2bd453b927ba53dcf48}{run()} method exit. \\
+\hline
+{\em do\+Print\+Result} & if {\ttfamily true} (default) then the test result are printed on the standard output. \\
+\hline
+{\em do\+Print\+Progress} & if {\ttfamily true} (default) then \hyperlink{class_text_test_progress_listener}{Text\+Test\+Progress\+Listener} is used to show the progress. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} is the test was successful, {\ttfamily false} if the test failed or was not found. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}{\index{Text\+Test\+Runner@{Text\+Test\+Runner}!set\+Outputter@{set\+Outputter}}
+\index{set\+Outputter@{set\+Outputter}!Text\+Test\+Runner@{Text\+Test\+Runner}}
+\subsubsection[{set\+Outputter}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Test\+Runner\+::set\+Outputter (
+\begin{DoxyParamCaption}
+\item[{{\bf Outputter} $\ast$}]{outputter}
+\end{DoxyParamCaption}
+)}}\label{class_text_test_runner_a9d62d11f3acba355e47d21cb99106117}
+Specifies an alternate outputter.
+
+Notes that the outputter will be use after the test run only if {\itshape print\+Result} was {\ttfamily true}. 
+\begin{DoxyParams}{Parameters}
+{\em outputter} & New outputter to use. The previous outputter is destroyed. The \hyperlink{class_text_test_runner}{Text\+Test\+Runner} assumes ownership of the outputter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_compiler_outputter}{Compiler\+Outputter}, \hyperlink{class_xml_outputter}{Xml\+Outputter}, \hyperlink{class_text_outputter}{Text\+Outputter}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/contrib/cppunit-\/1.\+12.\+1/include/cppunit/ui/text/Text\+Test\+Runner.\+h\item 
+assimp/assimp-\/3.\+1.\+1/contrib/cppunit-\/1.\+12.\+1/src/cppunit/Text\+Test\+Runner.\+cpp\end{DoxyCompactItemize}

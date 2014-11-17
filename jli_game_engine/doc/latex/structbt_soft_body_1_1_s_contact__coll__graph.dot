@@ -1,0 +1,25 @@
+digraph "btSoftBody::SContact"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="btSoftBody::SContact",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_face" ];
+  Node2 [label="btSoftBody::Face",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_1_1_face.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="btSoftBody::Feature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_1_1_feature.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="btSoftBody::Element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_1_1_element.html"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_material" ];
+  Node5 [label="btSoftBody::Material",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_1_1_material.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_n" ];
+  Node6 [label="btSoftBody::Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_1_1_node.html"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_leaf" ];
+  Node7 [label="btDbvtNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_node.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" volume" ];
+  Node8 [label="btDbvtAabbMm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_aabb_mm.html"];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" childs\nparent" ];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_leaf" ];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_node" ];
+}

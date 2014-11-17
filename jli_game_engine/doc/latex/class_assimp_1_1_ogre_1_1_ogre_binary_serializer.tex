@@ -1,0 +1,68 @@
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_binary_serializer}{\section{Assimp\+:\+:Ogre\+:\+:Ogre\+Binary\+Serializer Class Reference}
+\label{class_assimp_1_1_ogre_1_1_ogre_binary_serializer}\index{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer@{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_assimp_1_1_ogre_1_1_mesh}{Mesh} $\ast$ \hyperlink{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_a3b907a23d6f3d316b4e40767ebda4b68}{Import\+Mesh} (Memory\+Stream\+Reader $\ast$reader)
+\begin{DoxyCompactList}\small\item\em Imports mesh and returns the result. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_adca42c4976752dc1b146003bd7cea9dd}{Import\+Skeleton} (\hyperlink{class_assimp_1_1_i_o_system}{Assimp\+::\+I\+O\+System} $\ast$p\+I\+O\+Handler, \hyperlink{class_assimp_1_1_ogre_1_1_mesh}{Mesh} $\ast$mesh)
+\begin{DoxyCompactList}\small\item\em Imports skeleton to {\ttfamily mesh} into \hyperlink{class_assimp_1_1_ogre_1_1_mesh_a6014a537b7b71a46e24ba56c6c2d738b}{Mesh\+::skeleton}. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_a4dd193c55c032c4051bcf02c5f2fda0a}{static bool {\bfseries Import\+Skeleton} (\hyperlink{class_assimp_1_1_i_o_system}{Assimp\+::\+I\+O\+System} $\ast$p\+I\+O\+Handler, \hyperlink{class_assimp_1_1_ogre_1_1_mesh_xml}{Mesh\+Xml} $\ast$mesh)}\label{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_a4dd193c55c032c4051bcf02c5f2fda0a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_a3b907a23d6f3d316b4e40767ebda4b68}{\index{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer@{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer}!Import\+Mesh@{Import\+Mesh}}
+\index{Import\+Mesh@{Import\+Mesh}!Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer@{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer}}
+\subsubsection[{Import\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mesh} $\ast$ Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer\+::\+Import\+Mesh (
+\begin{DoxyParamCaption}
+\item[{Memory\+Stream\+Reader $\ast$}]{reader}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_a3b907a23d6f3d316b4e40767ebda4b68}
+
+
+Imports mesh and returns the result. 
+
+\begin{DoxyNote}{Note}
+Fatal unrecoverable errors will throw a \hyperlink{class_deadly_import_error}{Deadly\+Import\+Error}. 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Check what we can actually support. \end{DoxyRefDesc}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_adca42c4976752dc1b146003bd7cea9dd}{\index{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer@{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer}!Import\+Skeleton@{Import\+Skeleton}}
+\index{Import\+Skeleton@{Import\+Skeleton}!Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer@{Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer}}
+\subsubsection[{Import\+Skeleton}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+Ogre\+::\+Ogre\+Binary\+Serializer\+::\+Import\+Skeleton (
+\begin{DoxyParamCaption}
+\item[{{\bf Assimp\+::\+I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{{\bf Mesh} $\ast$}]{mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_ogre_1_1_ogre_binary_serializer_adca42c4976752dc1b146003bd7cea9dd}
+
+
+Imports skeleton to {\ttfamily mesh} into \hyperlink{class_assimp_1_1_ogre_1_1_mesh_a6014a537b7b71a46e24ba56c6c2d738b}{Mesh\+::skeleton}. 
+
+If mesh does not have a skeleton reference or the skeleton file cannot be found it is not a fatal \hyperlink{class_deadly_import_error}{Deadly\+Import\+Error}. \begin{DoxyReturn}{Returns}
+If skeleton import was successful. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Binary\+Serializer.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Binary\+Serializer.\+cpp\end{DoxyCompactItemize}

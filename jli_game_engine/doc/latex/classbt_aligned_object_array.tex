@@ -1,0 +1,139 @@
+\hypertarget{classbt_aligned_object_array}{\section{bt\+Aligned\+Object\+Array$<$ T $>$ Class Template Reference}
+\label{classbt_aligned_object_array}\index{bt\+Aligned\+Object\+Array$<$ T $>$@{bt\+Aligned\+Object\+Array$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$bt\+Aligned\+Object\+Array.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbt_aligned_object_array_1_1less}{less}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_aligned_object_array_ab6ea335622f18386671194eb6bd6a41b}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E \\*
+\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ T $>$ \& {\bfseries operator=} (const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ T $>$ \&other)}\label{classbt_aligned_object_array_ab6ea335622f18386671194eb6bd6a41b}
+
+\item 
+\hypertarget{classbt_aligned_object_array_ae91d1383db8069a02d23caf915bc2ce3}{\hyperlink{classbt_aligned_object_array_ae91d1383db8069a02d23caf915bc2ce3}{bt\+Aligned\+Object\+Array} (const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array} \&other\+Array)}\label{classbt_aligned_object_array_ae91d1383db8069a02d23caf915bc2ce3}
+
+\begin{DoxyCompactList}\small\item\em Generally it is best to avoid using the copy constructor of an \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}, and use a (const) reference to the array instead. \end{DoxyCompactList}\item 
+\hypertarget{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}{size} () const }\label{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}
+
+\begin{DoxyCompactList}\small\item\em return the number of elements in the array \end{DoxyCompactList}\item 
+\hypertarget{classbt_aligned_object_array_a0a7cbc2d7afb6e816fed998a5d9f7e3f}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E const T \& {\bfseries at} (int n) const }\label{classbt_aligned_object_array_a0a7cbc2d7afb6e816fed998a5d9f7e3f}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a3792644f8e758fae5b4613fbcd1fd30f}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E T \& {\bfseries at} (int n)}\label{classbt_aligned_object_array_a3792644f8e758fae5b4613fbcd1fd30f}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a43d9bae749c2814e549f0bc7ae649a5d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int n) const }\label{classbt_aligned_object_array_a43d9bae749c2814e549f0bc7ae649a5d}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a29680dc26edbd4691d7b6a43d5a60840}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int n)}\label{classbt_aligned_object_array_a29680dc26edbd4691d7b6a43d5a60840}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a12123db01dda7758f0df5e3bba10cc0a}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classbt_aligned_object_array_a12123db01dda7758f0df5e3bba10cc0a}{clear} ()}\label{classbt_aligned_object_array_a12123db01dda7758f0df5e3bba10cc0a}
+
+\begin{DoxyCompactList}\small\item\em clear the array, deallocated memory. Generally it is better to use array.\+resize(0), to reduce performance overhead of run-\/time memory (de)allocations. \end{DoxyCompactList}\item 
+\hypertarget{classbt_aligned_object_array_a6169be905e03b84ea3bc8d8f7c7fc39d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries pop\+\_\+back} ()}\label{classbt_aligned_object_array_a6169be905e03b84ea3bc8d8f7c7fc39d}
+
+\item 
+S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classbt_aligned_object_array_a2cc58c74534181a7a10e5c6ab8b21227}{resize\+No\+Initialize} (int newsize)
+\item 
+\hypertarget{classbt_aligned_object_array_a6a48cd9cb91d0cfa50ee1c70ef485190}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries resize} (int newsize, const T \&fill\+Data=T())}\label{classbt_aligned_object_array_a6a48cd9cb91d0cfa50ee1c70ef485190}
+
+\item 
+\hypertarget{classbt_aligned_object_array_ad1f99f070780c42619386fd2a4336bec}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E T \& {\bfseries expand\+Non\+Initializing} ()}\label{classbt_aligned_object_array_ad1f99f070780c42619386fd2a4336bec}
+
+\item 
+\hypertarget{classbt_aligned_object_array_ad64affb4ed3f9db81f832cbac6b62527}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E T \& {\bfseries expand} (const T \&fill\+Value=T())}\label{classbt_aligned_object_array_ad64affb4ed3f9db81f832cbac6b62527}
+
+\item 
+\hypertarget{classbt_aligned_object_array_ad61e10166e2c00f487095d3482b9edd1}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries push\+\_\+back} (const T \&\+\_\+\+Val)}\label{classbt_aligned_object_array_ad61e10166e2c00f487095d3482b9edd1}
+
+\item 
+\hypertarget{classbt_aligned_object_array_afcfda91263ff04e1efcbe62bf68e2d1d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int \hyperlink{classbt_aligned_object_array_afcfda91263ff04e1efcbe62bf68e2d1d}{capacity} () const }\label{classbt_aligned_object_array_afcfda91263ff04e1efcbe62bf68e2d1d}
+
+\begin{DoxyCompactList}\small\item\em return the pre-\/allocated (reserved) elements, this is at least as large as the total number of elements,see \hyperlink{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}{size()} and reserve() \end{DoxyCompactList}\item 
+\hypertarget{classbt_aligned_object_array_a0bcdc850355c6742c66d50b16b102d9d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries reserve} (int \+\_\+\+Count)}\label{classbt_aligned_object_array_a0bcdc850355c6742c66d50b16b102d9d}
+
+\item 
+\hypertarget{classbt_aligned_object_array_afd02193777d3644c1202bd430cd47ec3}{{\footnotesize template$<$typename L $>$ }\\void {\bfseries quick\+Sort\+Internal} (const L \&Compare\+Func, int lo, int hi)}\label{classbt_aligned_object_array_afd02193777d3644c1202bd430cd47ec3}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a96e9890d9c406d43b53b0e5ff0723b2f}{{\footnotesize template$<$typename L $>$ }\\void {\bfseries quick\+Sort} (const L \&Compare\+Func)}\label{classbt_aligned_object_array_a96e9890d9c406d43b53b0e5ff0723b2f}
+
+\item 
+\hypertarget{classbt_aligned_object_array_af763a60de2f11089bb10ebff2c062642}{{\footnotesize template$<$typename L $>$ }\\void \hyperlink{classbt_aligned_object_array_af763a60de2f11089bb10ebff2c062642}{down\+Heap} (T $\ast$p\+Arr, int k, int n, const L \&Compare\+Func)}\label{classbt_aligned_object_array_af763a60de2f11089bb10ebff2c062642}
+
+\begin{DoxyCompactList}\small\item\em heap sort from \href{http://www.csse.monash.edu.au/~lloyd/tildeAlgDS/Sort/Heap/}{\tt http\+://www.\+csse.\+monash.\+edu.\+au/$\sim$lloyd/tilde\+Alg\+D\+S/\+Sort/\+Heap/} \end{DoxyCompactList}\item 
+\hypertarget{classbt_aligned_object_array_a4aeacaa461686c9394aabd3c139179b4}{void {\bfseries swap} (int index0, int index1)}\label{classbt_aligned_object_array_a4aeacaa461686c9394aabd3c139179b4}
+
+\item 
+\hypertarget{classbt_aligned_object_array_aa0979d77c9b1e397d656a0b1ef88b4e6}{{\footnotesize template$<$typename L $>$ }\\void {\bfseries heap\+Sort} (const L \&Compare\+Func)}\label{classbt_aligned_object_array_aa0979d77c9b1e397d656a0b1ef88b4e6}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a9c72e0a8fa512a04e11fe8c31b09260a}{int \hyperlink{classbt_aligned_object_array_a9c72e0a8fa512a04e11fe8c31b09260a}{find\+Binary\+Search} (const T \&key) const }\label{classbt_aligned_object_array_a9c72e0a8fa512a04e11fe8c31b09260a}
+
+\begin{DoxyCompactList}\small\item\em non-\/recursive binary search, assumes sorted array \end{DoxyCompactList}\item 
+\hypertarget{classbt_aligned_object_array_ae7b14c469b51e0ea010d3b9d701bc1b8}{int {\bfseries find\+Linear\+Search} (const T \&key) const }\label{classbt_aligned_object_array_ae7b14c469b51e0ea010d3b9d701bc1b8}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a6782242f06df5bab0cffbd23195cd9cd}{void {\bfseries remove} (const T \&key)}\label{classbt_aligned_object_array_a6782242f06df5bab0cffbd23195cd9cd}
+
+\item 
+\hypertarget{classbt_aligned_object_array_aa8d21bd5fe47cfe0216990b78fef665e}{void {\bfseries initialize\+From\+Buffer} (void $\ast$\hyperlink{structbuffer}{buffer}, int \hyperlink{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}{size}, int \hyperlink{classbt_aligned_object_array_afcfda91263ff04e1efcbe62bf68e2d1d}{capacity})}\label{classbt_aligned_object_array_aa8d21bd5fe47cfe0216990b78fef665e}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a1464bd66b0e5e3880b4c7aa4a2ce13a1}{void {\bfseries copy\+From\+Array} (const \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array} \&other\+Array)}\label{classbt_aligned_object_array_a1464bd66b0e5e3880b4c7aa4a2ce13a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_aligned_object_array_aedd4d8b9a38019cb1f98f794a6bb503d}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries alloc\+Size} (int \hyperlink{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}{size})}\label{classbt_aligned_object_array_aedd4d8b9a38019cb1f98f794a6bb503d}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a8ce92ec1a47cfd33242e8dc8ac580c99}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries copy} (int start, int end, T $\ast$dest) const }\label{classbt_aligned_object_array_a8ce92ec1a47cfd33242e8dc8ac580c99}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a336631607f9f5f08001866ed11b5fd64}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries init} ()}\label{classbt_aligned_object_array_a336631607f9f5f08001866ed11b5fd64}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a6dc404237b049258d12fb2ca62b934f7}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries destroy} (int first, int last)}\label{classbt_aligned_object_array_a6dc404237b049258d12fb2ca62b934f7}
+
+\item 
+\hypertarget{classbt_aligned_object_array_a8943d09db3d72365b8c3ac6046225858}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void $\ast$ {\bfseries allocate} (int \hyperlink{classbt_aligned_object_array_a6bdd14c7599ecb95e8d83dd5a715f9b7}{size})}\label{classbt_aligned_object_array_a8943d09db3d72365b8c3ac6046225858}
+
+\item 
+\hypertarget{classbt_aligned_object_array_acebca91940aecdb1c11718bc08b511c9}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries deallocate} ()}\label{classbt_aligned_object_array_acebca91940aecdb1c11718bc08b511c9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class bt\+Aligned\+Object\+Array$<$ T $>$}
+
+The \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array} template class uses a subset of the stl\+::vector interface for its methods It is developed to replace stl\+::vector to avoid portability issues, including S\+T\+L alignment issues to add S\+I\+M\+D/\+S\+S\+E data 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_aligned_object_array_a2cc58c74534181a7a10e5c6ab8b21227}{\index{bt\+Aligned\+Object\+Array@{bt\+Aligned\+Object\+Array}!resize\+No\+Initialize@{resize\+No\+Initialize}}
+\index{resize\+No\+Initialize@{resize\+No\+Initialize}!bt\+Aligned\+Object\+Array@{bt\+Aligned\+Object\+Array}}
+\subsubsection[{resize\+No\+Initialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void {\bf bt\+Aligned\+Object\+Array}$<$ T $>$\+::resize\+No\+Initialize (
+\begin{DoxyParamCaption}
+\item[{int}]{newsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classbt_aligned_object_array_a2cc58c74534181a7a10e5c6ab8b21227}
+resize changes the number of elements in the array. If the new size is larger, the new elements will be constructed using the optional second argument. when the new number of elements is smaller, the destructor will be called, but memory will not be freed, to reduce performance overhead of run-\/time memory (de)allocations. 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Linear\+Math/bt\+Aligned\+Object\+Array.\+h\end{DoxyCompactItemize}

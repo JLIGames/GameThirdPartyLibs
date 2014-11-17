@@ -1,0 +1,87 @@
+\hypertarget{class_assimp_1_1_n_f_f_importer}{\section{Assimp\+:\+:N\+F\+F\+Importer Class Reference}
+\label{class_assimp_1_1_n_f_f_importer}\index{Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}}
+}
+
+
+{\ttfamily \#include $<$N\+F\+F\+Loader.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:N\+F\+F\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:N\+F\+F\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_n_f_f_importer_a219c8db688c14e57f02e69a37bc585da}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool check\+Sig) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_n_f_f_importer_ae47aa9ffe01aa6eb883ba8f0985f7737}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_n_f_f_importer_a97c20ab69758da48642dc690ab4a7b65}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+N\+F\+F (Neutral \hyperlink{class_file}{File} Format) \hyperlink{class_assimp_1_1_importer}{Importer} class.
+
+The class implements both Eric Haynes N\+F\+F format and Sense8's N\+F\+F (N\+F\+F2) format. Both are quite different and the loading code is somewhat dirty at the moment. Sense8 should be moved to a separate loader. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_n_f_f_importer_a219c8db688c14e57f02e69a37bc585da}{\index{Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+F\+F\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_n_f_f_importer_a219c8db688c14e57f02e69a37bc585da}
+Returns whether the class can handle the format of the given file. See \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Base\+Importer\+::\+Can\+Read()} for details. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_n_f_f_importer_ae47aa9ffe01aa6eb883ba8f0985f7737}{\index{Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ N\+F\+F\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_n_f_f_importer_ae47aa9ffe01aa6eb883ba8f0985f7737}
+Return importer meta information. See \#\+Base\+Importer\+::\+Get\+Info for the details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_n_f_f_importer_a97c20ab69758da48642dc690ab4a7b65}{\index{Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+N\+F\+F\+Importer@{Assimp\+::\+N\+F\+F\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void N\+F\+F\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_n_f_f_importer_a97c20ab69758da48642dc690ab4a7b65}
+Imports the given file into the given scene structure. See \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Base\+Importer\+::\+Intern\+Read\+File()} for details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_n_f_f_loader_8h}{N\+F\+F\+Loader.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/N\+F\+F\+Loader.\+cpp\end{DoxyCompactItemize}

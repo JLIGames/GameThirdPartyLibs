@@ -1,0 +1,9 @@
+digraph "zlib/zlib-1.2.8/as400" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ee608a8abb8a8878bf325fc634e1cabc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="zlib-1.2.8" fontname="Helvetica", fontsize="10", URL="dir_ee608a8abb8a8878bf325fc634e1cabc.html"]
+  dir_543f1c961eafcb90781ead70bbcee8ad [shape=box, label="as400", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_543f1c961eafcb90781ead70bbcee8ad.html"];
+  }
+}

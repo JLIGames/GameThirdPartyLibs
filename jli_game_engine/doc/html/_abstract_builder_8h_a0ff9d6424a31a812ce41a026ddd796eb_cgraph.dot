@@ -1,0 +1,11 @@
+digraph "ATTRIBUTE_ALIGNED16"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ATTRIBUTE_ALIGNED16",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BT_DECLARE_ALIGNED\l_ALLOCATOR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_abstract_builder_8h.html#a073043644ede242268123f98ca10ec2d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_abstract_builder_8h.html#a5743fdb7978066dd207347b402a54872"];
+}

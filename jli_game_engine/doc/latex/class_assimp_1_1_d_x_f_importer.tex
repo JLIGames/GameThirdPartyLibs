@@ -1,0 +1,85 @@
+\hypertarget{class_assimp_1_1_d_x_f_importer}{\section{Assimp\+:\+:D\+X\+F\+Importer Class Reference}
+\label{class_assimp_1_1_d_x_f_importer}\index{Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}}
+}
+
+
+{\ttfamily \#include $<$D\+X\+F\+Loader.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:D\+X\+F\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:D\+X\+F\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_d_x_f_importer_a77a344cd0c5576f9705aba80fbc56c0b}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool check\+Sig) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_d_x_f_importer_a88361f339160bc34dce8124d3bf4cd86}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_d_x_f_importer_a5e055b507cafc7fa1bf32b0697dd1160}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+D\+X\+F importer implementation. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_d_x_f_importer_a77a344cd0c5576f9705aba80fbc56c0b}{\index{Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+X\+F\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_d_x_f_importer_a77a344cd0c5576f9705aba80fbc56c0b}
+Returns whether the class can handle the format of the given file. See \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Base\+Importer\+::\+Can\+Read()} for details. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_d_x_f_importer_a88361f339160bc34dce8124d3bf4cd86}{\index{Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ D\+X\+F\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_d_x_f_importer_a88361f339160bc34dce8124d3bf4cd86}
+Return importer meta information. See \#\+Base\+Importer\+::\+Get\+Info for the details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_d_x_f_importer_a5e055b507cafc7fa1bf32b0697dd1160}{\index{Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+D\+X\+F\+Importer@{Assimp\+::\+D\+X\+F\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void D\+X\+F\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_d_x_f_importer_a5e055b507cafc7fa1bf32b0697dd1160}
+Imports the given file into the given scene structure. See \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Base\+Importer\+::\+Intern\+Read\+File()} for details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_d_x_f_loader_8h}{D\+X\+F\+Loader.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_d_x_f_loader_8cpp}{D\+X\+F\+Loader.\+cpp}\end{DoxyCompactItemize}

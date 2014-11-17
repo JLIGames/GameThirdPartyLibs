@@ -1,0 +1,9 @@
+digraph "theora/libtheora-1.1.1/symbian" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_67164114db8055b3c4ba793f017b5b87 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libtheora-1.1.1" fontname="Helvetica", fontsize="10", URL="dir_67164114db8055b3c4ba793f017b5b87.html"]
+  dir_45c14bc9c8fa8f1fd58eb94080c4d49e [shape=box, label="symbian", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_45c14bc9c8fa8f1fd58eb94080c4d49e.html"];
+  }
+}

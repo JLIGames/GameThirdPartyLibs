@@ -1,0 +1,9 @@
+digraph "AssimpView::SceneAnimator::CreateNodeTree"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AssimpView::SceneAnimator\l::CreateNodeTree",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="AssimpView::SceneAnimator\l::CalculateGlobalTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_view_1_1_scene_animator.html#aaffdfbd7ebf7787f81f6f48e1466da3a"];
+}

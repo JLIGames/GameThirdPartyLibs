@@ -1,0 +1,74 @@
+\hypertarget{structai_file_i_o}{\section{ai\+File\+I\+O Class Reference}
+\label{structai_file_i_o}\index{ai\+File\+I\+O@{ai\+File\+I\+O}}
+}
+
+
+C-\/\+A\+P\+I\+: \hyperlink{class_file}{File} system callbacks.  
+
+
+
+
+{\ttfamily \#include $<$cfileio.\+h$>$}
+
+
+
+Inheritance diagram for ai\+File\+I\+O\+:
+
+
+Collaboration diagram for ai\+File\+I\+O\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_file_i_o_abe7e6a1dd794db26d68f8b445c24fd1d}{virtual void {\bfseries Dispose} ()}\label{structai_file_i_o_abe7e6a1dd794db26d68f8b445c24fd1d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ai\+File\+Open\+Proc \hyperlink{structai_file_i_o_a819d9c7823039294125068d06949a6df}{Open\+Proc}
+\item 
+ai\+File\+Close\+Proc \hyperlink{structai_file_i_o_a7ec702672712b5a02dc49cb17f980a14}{Close\+Proc}
+\item 
+ai\+User\+Data \hyperlink{structai_file_i_o_a9c62b7f3d70fbb2f41e33ad0b9933139}{User\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_file_i_o_a94af9327cd6c9c7d8bfd6d68be5c252c}{bool {\bfseries swig\+C\+Mem\+Own}}\label{structai_file_i_o_a94af9327cd6c9c7d8bfd6d68be5c252c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_file_i_o_af0a03988a7cd006e867f2577406b009f}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+f\+\_\+p\+\_\+ai\+File\+I\+O\+\_\+p\+\_\+q\+\_\+const\+\_\+\+\_\+char\+\_\+p\+\_\+q\+\_\+const\+\_\+\+\_\+char\+\_\+\+\_\+p\+\_\+ai\+File {\bfseries Open\+Proc}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_file_i_o_af0a03988a7cd006e867f2577406b009f}
+
+\item 
+\hypertarget{structai_file_i_o_a26d07a6efd0f3d2481268747163fcabf}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+f\+\_\+p\+\_\+ai\+File\+I\+O\+\_\+p\+\_\+ai\+File\+\_\+\+\_\+void {\bfseries Close\+Proc}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_file_i_o_a26d07a6efd0f3d2481268747163fcabf}
+
+\item 
+\hypertarget{structai_file_i_o_a793bda1596f4a4c938f98c8e990ce304}{string {\bfseries User\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_file_i_o_a793bda1596f4a4c938f98c8e990ce304}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C-\/\+A\+P\+I\+: \hyperlink{class_file}{File} system callbacks. 
+
+Provided are functions to open and close files. Supply a custom structure to the import function. If you don't, a default implementation is used. Use custom file systems to enable reading from other sources, such as Z\+I\+Ps or memory locations. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structai_file_i_o_a7ec702672712b5a02dc49cb17f980a14}{\index{ai\+File\+I\+O@{ai\+File\+I\+O}!Close\+Proc@{Close\+Proc}}
+\index{Close\+Proc@{Close\+Proc}!ai\+File\+I\+O@{ai\+File\+I\+O}}
+\subsubsection[{Close\+Proc}]{\setlength{\rightskip}{0pt plus 5cm}ai\+File\+Close\+Proc ai\+File\+I\+O\+::\+Close\+Proc}}\label{structai_file_i_o_a7ec702672712b5a02dc49cb17f980a14}
+Function used to close an existing file \hypertarget{structai_file_i_o_a819d9c7823039294125068d06949a6df}{\index{ai\+File\+I\+O@{ai\+File\+I\+O}!Open\+Proc@{Open\+Proc}}
+\index{Open\+Proc@{Open\+Proc}!ai\+File\+I\+O@{ai\+File\+I\+O}}
+\subsubsection[{Open\+Proc}]{\setlength{\rightskip}{0pt plus 5cm}ai\+File\+Open\+Proc ai\+File\+I\+O\+::\+Open\+Proc}}\label{structai_file_i_o_a819d9c7823039294125068d06949a6df}
+Function used to open a new file \hypertarget{structai_file_i_o_a9c62b7f3d70fbb2f41e33ad0b9933139}{\index{ai\+File\+I\+O@{ai\+File\+I\+O}!User\+Data@{User\+Data}}
+\index{User\+Data@{User\+Data}!ai\+File\+I\+O@{ai\+File\+I\+O}}
+\subsubsection[{User\+Data}]{\setlength{\rightskip}{0pt plus 5cm}ai\+User\+Data ai\+File\+I\+O\+::\+User\+Data}}\label{structai_file_i_o_a9c62b7f3d70fbb2f41e33ad0b9933139}
+User-\/defined, opaque data 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/include/assimp/cfileio.\+h\item 
+assimp/assimp-\/3.\+1.\+1/port/\+Assimp.\+N\+E\+T/\+Assimp.\+N\+E\+T\+\_\+\+C\+S/ai\+File\+I\+O.\+cs\end{DoxyCompactItemize}

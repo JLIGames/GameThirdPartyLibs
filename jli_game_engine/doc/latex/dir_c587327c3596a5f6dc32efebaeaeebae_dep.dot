@@ -1,0 +1,18 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/AlphaTest/OGLES2" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b034b34eac0c1d5169803e1f748bef07 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AlphaTest" fontname="Helvetica", fontsize="10", URL="dir_b034b34eac0c1d5169803e1f748bef07.html"]
+  subgraph clusterdir_c587327c3596a5f6dc32efebaeaeebae {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_c587327c3596a5f6dc32efebaeaeebae.html"];
+    dir_c587327c3596a5f6dc32efebaeaeebae [shape=plaintext label="OGLES2"];
+    dir_0a72b5e2979efbd2d17ca5d659730be0 [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_0a72b5e2979efbd2d17ca5d659730be0.html"];
+    dir_2d90ab6e8dd6fa85b63701bb4c477b3b [shape=box label="Content" color="black" fillcolor="white" style="filled" URL="dir_2d90ab6e8dd6fa85b63701bb4c477b3b.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_c587327c3596a5f6dc32efebaeaeebae->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000726_000133.html"];
+  dir_c587327c3596a5f6dc32efebaeaeebae->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_000726_001762.html"];
+}

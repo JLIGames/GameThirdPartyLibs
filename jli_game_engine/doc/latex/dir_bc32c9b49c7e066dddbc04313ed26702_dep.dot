@@ -1,0 +1,9 @@
+digraph "theora/libtheora-1.1.1/win32/experimental/transcoder/avi2vp3" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_926f51ea86e57d24ba05dc1fb8448612 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="transcoder" fontname="Helvetica", fontsize="10", URL="dir_926f51ea86e57d24ba05dc1fb8448612.html"]
+  dir_bc32c9b49c7e066dddbc04313ed26702 [shape=box, label="avi2vp3", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bc32c9b49c7e066dddbc04313ed26702.html"];
+  }
+}

@@ -1,0 +1,120 @@
+\hypertarget{class_assimp_1_1_texture_transform_step}{\section{Assimp\+:\+:Texture\+Transform\+Step Class Reference}
+\label{class_assimp_1_1_texture_transform_step}\index{Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}}
+}
+
+
+{\ttfamily \#include $<$Texture\+Transform.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Texture\+Transform\+Step\+:
+
+
+Collaboration diagram for Assimp\+:\+:Texture\+Transform\+Step\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_texture_transform_step_a655b2e766c47bc94689616869318a1e0}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_texture_transform_step_aa169fc22d75109790ce62538bd1c902c}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_texture_transform_step_a98b34f7e62e91f1d7b2e397b1222758c}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_texture_transform_step_a1cc7926f68517dcffeaca9c53896180f}{Pre\+Process\+U\+V\+Transform} (\hyperlink{struct_assimp_1_1_s_transform_vec_info}{S\+Transform\+Vec\+Info} \&info)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Helper step to compute final U\+V coordinate sets if there are scalings or rotations in the original data read from the file. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_texture_transform_step_aa169fc22d75109790ce62538bd1c902c}{\index{Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Transform\+Step\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_texture_transform_step_aa169fc22d75109790ce62538bd1c902c}
+Executes the post processing step on the given imported data. A process should throw an Import\+Error\+Exception$\ast$ if it fails. This method must be implemented by deriving classes. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_texture_transform_step_a655b2e766c47bc94689616869318a1e0}{\index{Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Texture\+Transform\+Step\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_texture_transform_step_a655b2e766c47bc94689616869318a1e0}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_texture_transform_step_a1cc7926f68517dcffeaca9c53896180f}{\index{Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}!Pre\+Process\+U\+V\+Transform@{Pre\+Process\+U\+V\+Transform}}
+\index{Pre\+Process\+U\+V\+Transform@{Pre\+Process\+U\+V\+Transform}!Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}}
+\subsubsection[{Pre\+Process\+U\+V\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Transform\+Step\+::\+Pre\+Process\+U\+V\+Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Transform\+Vec\+Info} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_texture_transform_step_a1cc7926f68517dcffeaca9c53896180f}
+Preprocess a specific U\+V transformation setup
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & Transformation setup to be preprocessed. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_texture_transform_step_a98b34f7e62e91f1d7b2e397b1222758c}{\index{Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Texture\+Transform\+Step@{Assimp\+::\+Texture\+Transform\+Step}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Transform\+Step\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_texture_transform_step_a98b34f7e62e91f1d7b2e397b1222758c}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Texture\+Transform.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Texture\+Transform.\+cpp\end{DoxyCompactItemize}

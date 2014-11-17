@@ -1,0 +1,9 @@
+digraph "GLUI_Control::redraw"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GLUI_Control::redraw",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GLUI_Main::should_redraw_now",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#a838a093d3748a6a6434f5e3a62d29c79"];
+}

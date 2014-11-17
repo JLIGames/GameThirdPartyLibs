@@ -1,0 +1,235 @@
+\hypertarget{class_assimp_1_1_x_file_importer}{\section{Assimp\+:\+:X\+File\+Importer Class Reference}
+\label{class_assimp_1_1_x_file_importer}\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+}
+
+
+{\ttfamily \#include $<$X\+File\+Importer.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:X\+File\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:X\+File\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_x_file_importer_a37ebcae63c19eed43727aef6c50776c2}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool Check\+Sig) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_x_file_importer_aba3e78d75128b02d9c961131a06605cc}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_x_file_importer_a062ed9f5fdca14e89bc40a5d4990dc4d}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\item 
+void \hyperlink{class_assimp_1_1_x_file_importer_a8469386c3fad0cea492366faa471928f}{Create\+Data\+Representation\+From\+Import} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{struct_assimp_1_1_x_file_1_1_scene}{X\+File\+::\+Scene} $\ast$p\+Data)
+\item 
+\hyperlink{structai_node}{ai\+Node} $\ast$ \hyperlink{class_assimp_1_1_x_file_importer_ab114dd63712b166d6357831cca52c40f}{Create\+Nodes} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{structai_node}{ai\+Node} $\ast$p\+Parent, const \hyperlink{struct_assimp_1_1_x_file_1_1_node}{X\+File\+::\+Node} $\ast$p\+Node)
+\item 
+void \hyperlink{class_assimp_1_1_x_file_importer_a64bc626aa09647e73fa8eb65bffeb892}{Create\+Meshes} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{structai_node}{ai\+Node} $\ast$p\+Node, const std\+::vector$<$ \hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$ $>$ \&p\+Meshes)
+\item 
+void \hyperlink{class_assimp_1_1_x_file_importer_a5febf1d1cb60b0e8c51be8435ce0821d}{Create\+Animations} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, const \hyperlink{struct_assimp_1_1_x_file_1_1_scene}{X\+File\+::\+Scene} $\ast$p\+Data)
+\item 
+void \hyperlink{class_assimp_1_1_x_file_importer_a42582aba2686f42fc445004ffcf262df}{Convert\+Materials} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, std\+::vector$<$ \hyperlink{struct_assimp_1_1_x_file_1_1_material}{X\+File\+::\+Material} $>$ \&p\+Materials)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ char $>$ \hyperlink{class_assimp_1_1_x_file_importer_a0fbc700f85f2567ff81b68eb8af0dc99}{m\+Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_assimp_1_1_x_file_importer}{X\+File\+Importer} is a worker class capable of importing a scene from a Direct\+X file .x 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_x_file_importer_a37ebcae63c19eed43727aef6c50776c2}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+File\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{Check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_x_file_importer_a37ebcae63c19eed43727aef6c50776c2}
+Returns whether the class can handle the format of the given file. See \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Base\+Importer\+::\+Can\+Read()} for details. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_importer_a42582aba2686f42fc445004ffcf262df}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Convert\+Materials@{Convert\+Materials}}
+\index{Convert\+Materials@{Convert\+Materials}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Convert\+Materials}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Importer\+::\+Convert\+Materials (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{std\+::vector$<$ {\bf X\+File\+::\+Material} $>$ \&}]{p\+Materials}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_importer_a42582aba2686f42fc445004ffcf262df}
+Converts all materials in the given array and stores them in the scene's material list. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to hold the converted materials. \\
+\hline
+{\em p\+Materials} & The material array to convert. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_importer_a5febf1d1cb60b0e8c51be8435ce0821d}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Create\+Animations@{Create\+Animations}}
+\index{Create\+Animations@{Create\+Animations}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Create\+Animations}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Importer\+::\+Create\+Animations (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{const {\bf X\+File\+::\+Scene} $\ast$}]{p\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_importer_a5febf1d1cb60b0e8c51be8435ce0821d}
+Converts the animations from the given imported data and creates them in the scene. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to hold to converted animations \\
+\hline
+{\em p\+Data} & The data to read the animations from \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_importer_a8469386c3fad0cea492366faa471928f}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Create\+Data\+Representation\+From\+Import@{Create\+Data\+Representation\+From\+Import}}
+\index{Create\+Data\+Representation\+From\+Import@{Create\+Data\+Representation\+From\+Import}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Create\+Data\+Representation\+From\+Import}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Importer\+::\+Create\+Data\+Representation\+From\+Import (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf X\+File\+::\+Scene} $\ast$}]{p\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_importer_a8469386c3fad0cea492366faa471928f}
+Constructs the return data structure out of the imported data. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to construct the return data in. \\
+\hline
+{\em p\+Data} & The imported data in the internal temporary representation. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_importer_a64bc626aa09647e73fa8eb65bffeb892}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Create\+Meshes@{Create\+Meshes}}
+\index{Create\+Meshes@{Create\+Meshes}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Create\+Meshes}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Importer\+::\+Create\+Meshes (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf ai\+Node} $\ast$}]{p\+Node, }
+\item[{const std\+::vector$<$ {\bf X\+File\+::\+Mesh} $\ast$ $>$ \&}]{p\+Meshes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_importer_a64bc626aa09647e73fa8eb65bffeb892}
+Converts all meshes in the given mesh array. Each mesh is split up per material, the indices of the generated meshes are stored in the node structure. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to construct the return data in. \\
+\hline
+{\em p\+Node} & The target node structure that references the constructed meshes. \\
+\hline
+{\em p\+Meshes} & The array of meshes to convert \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_importer_ab114dd63712b166d6357831cca52c40f}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Create\+Nodes@{Create\+Nodes}}
+\index{Create\+Nodes@{Create\+Nodes}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Create\+Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Node} $\ast$ X\+File\+Importer\+::\+Create\+Nodes (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf ai\+Node} $\ast$}]{p\+Parent, }
+\item[{const {\bf X\+File\+::\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_importer_ab114dd63712b166d6357831cca52c40f}
+Recursively creates scene nodes from the imported hierarchy. The meshes and materials of the nodes will be extracted on the way. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to construct the return data in. \\
+\hline
+{\em p\+Parent} & The parent node where to create new child nodes \\
+\hline
+{\em p\+Node} & The temporary node to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created node 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_importer_aba3e78d75128b02d9c961131a06605cc}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ X\+File\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_x_file_importer_aba3e78d75128b02d9c961131a06605cc}
+Return importer meta information. See \#\+Base\+Importer\+::\+Get\+Info for the details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_x_file_importer_a062ed9f5fdca14e89bc40a5d4990dc4d}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_x_file_importer_a062ed9f5fdca14e89bc40a5d4990dc4d}
+Imports the given file into the given scene structure. See \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Base\+Importer\+::\+Intern\+Read\+File()} for details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_x_file_importer_a0fbc700f85f2567ff81b68eb8af0dc99}{\index{Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}!m\+Buffer@{m\+Buffer}}
+\index{m\+Buffer@{m\+Buffer}!Assimp\+::\+X\+File\+Importer@{Assimp\+::\+X\+File\+Importer}}
+\subsubsection[{m\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$char$>$ Assimp\+::\+X\+File\+Importer\+::m\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_importer_a0fbc700f85f2567ff81b68eb8af0dc99}
+Buffer to hold the loaded file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_x_file_importer_8h}{X\+File\+Importer.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_x_file_importer_8cpp}{X\+File\+Importer.\+cpp}\end{DoxyCompactItemize}

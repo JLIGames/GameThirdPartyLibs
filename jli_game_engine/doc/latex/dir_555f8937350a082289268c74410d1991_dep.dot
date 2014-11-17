@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/GameOfLife/OGLES3/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_35e49de05d7165da1082c75f6b0e0783 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_35e49de05d7165da1082c75f6b0e0783.html"]
+  subgraph clusterdir_555f8937350a082289268c74410d1991 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_555f8937350a082289268c74410d1991.html"];
+    dir_555f8937350a082289268c74410d1991 [shape=plaintext label="Android"];
+    dir_e510cf13a3baa48336990c6e51f77a3d [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_e510cf13a3baa48336990c6e51f77a3d.html"];
+  }
+  }
+}

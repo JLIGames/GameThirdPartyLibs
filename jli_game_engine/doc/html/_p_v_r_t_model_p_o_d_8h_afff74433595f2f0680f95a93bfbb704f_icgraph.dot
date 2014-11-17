@@ -1,0 +1,11 @@
+digraph "PVRTModelPODCopyCamera"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PVRTModelPODCopyCamera",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPVRTModelPOD::CopyFromMemory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#af8b1b565dbe71e343fd36828772015fa",tooltip="Copies the scene data from the supplied data structure. Use when loading from .H files where you want..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVRTModelPODFlattenToWorld\lSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_model_p_o_d_8h.html#a28d7bc51f67815c37f900645f1affc8c"];
+}

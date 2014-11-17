@@ -1,0 +1,126 @@
+\hypertarget{gim__box__collision_8h}{\section{bullet/bullet-\/2.82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+box\+\_\+collision.h File Reference}
+\label{gim__box__collision_8h}\index{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+box\+\_\+collision.\+h@{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+box\+\_\+collision.\+h}}
+}
+{\ttfamily \#include \char`\"{}gim\+\_\+basic\+\_\+geometry\+\_\+operations.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\+Math/bt\+Transform.\+h\char`\"{}}\\*
+Include dependency graph for gim\+\_\+box\+\_\+collision.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_g_i_m___b_o_x___b_o_x___t_r_a_n_s_f_o_r_m___c_a_c_h_e}{G\+I\+M\+\_\+\+B\+O\+X\+\_\+\+B\+O\+X\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+C\+A\+C\+H\+E}
+\begin{DoxyCompactList}\small\item\em Class for transforming a model1 to the space of model0. \end{DoxyCompactList}\item 
+class \hyperlink{class_g_i_m___a_a_b_b}{G\+I\+M\+\_\+\+A\+A\+B\+B}
+\begin{DoxyCompactList}\small\item\em Axis aligned box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R}(edge, absolute\+\_\+edge, pointa, pointb, \+\_\+extend, i\+\_\+dir\+\_\+0, i\+\_\+dir\+\_\+1, i\+\_\+comp\+\_\+0, i\+\_\+comp\+\_\+1)
+\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}(edge, absolute\+\_\+edge, pointa, pointb, \+\_\+extend)
+\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}(edge, absolute\+\_\+edge, pointa, pointb, \+\_\+extend)
+\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}(edge, absolute\+\_\+edge, pointa, pointb, \+\_\+extend)
+\item 
+\hypertarget{gim__box__collision_8h_af904747b983d079ca2da14ec42f93219}{\#define {\bfseries B\+O\+X\+\_\+\+P\+L\+A\+N\+E\+\_\+\+E\+P\+S\+I\+L\+O\+N}~0.\+000001f}\label{gim__box__collision_8h_af904747b983d079ca2da14ec42f93219}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{gim__box__collision_8h_aa49eb219258cf139b29260bf3b3cd2bc}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{gim__box__collision_8h_aa49eb219258cf139b29260bf3b3cd2bc}{bt\+Compare\+Transforms\+Equal} (const bt\+Transform \&t1, const bt\+Transform \&t2)}\label{gim__box__collision_8h_aa49eb219258cf139b29260bf3b3cd2bc}
+
+\begin{DoxyCompactList}\small\item\em Compairison of transformation objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Leon Najera 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{gim__box__collision_8h_a73d5b2745d2ba4a78a65301e648964b8}{\index{gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}!T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R}}
+\index{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R}!gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+M\+C\+R(
+\begin{DoxyParamCaption}
+\item[{}]{edge, }
+\item[{}]{absolute\+\_\+edge, }
+\item[{}]{pointa, }
+\item[{}]{pointb, }
+\item[{}]{\+\_\+extend, }
+\item[{}]{i\+\_\+dir\+\_\+0, }
+\item[{}]{i\+\_\+dir\+\_\+1, }
+\item[{}]{i\+\_\+comp\+\_\+0, }
+\item[{}]{i\+\_\+comp\+\_\+1}
+\end{DoxyParamCaption}
+)}}\label{gim__box__collision_8h_a73d5b2745d2ba4a78a65301e648964b8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    const btScalar dir0 = -edge[i\_dir\_0];\(\backslash\)
+    const btScalar dir1 = edge[i\_dir\_1];\(\backslash\)
+    btScalar pmin = pointa[i\_comp\_0]*dir0 + pointa[i\_comp\_1]*dir1;\(\backslash\)
+    btScalar pmax = pointb[i\_comp\_0]*dir0 + pointb[i\_comp\_1]*dir1;\(\backslash\)
+    if(pmin>pmax)\(\backslash\)
+    \{\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{\(\backslash\)}
+\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{        GIM\_SWAP\_NUMBERS}(pmin,pmax); \(\backslash\)
+    \}\(\backslash\)
+    const btScalar abs\_dir0 = absolute\_edge[i\_dir\_0];\(\backslash\)
+    const btScalar abs\_dir1 = absolute\_edge[i\_dir\_1];\(\backslash\)
+    const btScalar rad = \_extend[i\_comp\_0] * abs\_dir0 + \_extend[i\_comp\_1] * abs\_dir1;\(\backslash\)
+    if(pmin>rad || -rad>pmax) return false;\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__box__collision_8h_a2d38950755d80ae3a15b11e87b87e5e7}{\index{gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}!T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}}
+\index{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}!gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+X\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R(
+\begin{DoxyParamCaption}
+\item[{}]{edge, }
+\item[{}]{absolute\+\_\+edge, }
+\item[{}]{pointa, }
+\item[{}]{pointb, }
+\item[{}]{\+\_\+extend}
+\end{DoxyParamCaption}
+)}}\label{gim__box__collision_8h_a2d38950755d80ae3a15b11e87b87e5e7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    TEST\_CROSS\_EDGE\_BOX\_MCR(edge,absolute\_edge,pointa,pointb,\_extend,2,1,1,2);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__box__collision_8h_a76d71fb2f550bb2437cfbf4fffecd2d8}{\index{gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}!T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}}
+\index{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}!gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Y\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R(
+\begin{DoxyParamCaption}
+\item[{}]{edge, }
+\item[{}]{absolute\+\_\+edge, }
+\item[{}]{pointa, }
+\item[{}]{pointb, }
+\item[{}]{\+\_\+extend}
+\end{DoxyParamCaption}
+)}}\label{gim__box__collision_8h_a76d71fb2f550bb2437cfbf4fffecd2d8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    TEST\_CROSS\_EDGE\_BOX\_MCR(edge,absolute\_edge,pointa,pointb,\_extend,0,2,2,0);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__box__collision_8h_a87669619f5c17a3b6ecd01205a87b729}{\index{gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}!T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}}
+\index{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R@{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}!gim\+\_\+box\+\_\+collision.\+h@{gim\+\_\+box\+\_\+collision.\+h}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+C\+R\+O\+S\+S\+\_\+\+E\+D\+G\+E\+\_\+\+B\+O\+X\+\_\+\+Z\+\_\+\+A\+X\+I\+S\+\_\+\+M\+C\+R(
+\begin{DoxyParamCaption}
+\item[{}]{edge, }
+\item[{}]{absolute\+\_\+edge, }
+\item[{}]{pointa, }
+\item[{}]{pointb, }
+\item[{}]{\+\_\+extend}
+\end{DoxyParamCaption}
+)}}\label{gim__box__collision_8h_a87669619f5c17a3b6ecd01205a87b729}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    TEST\_CROSS\_EDGE\_BOX\_MCR(edge,absolute\_edge,pointa,pointb,\_extend,1,0,0,1);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}

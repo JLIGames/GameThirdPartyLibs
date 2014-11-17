@@ -1,0 +1,13 @@
+digraph "bullet/bullet-2.82-r2704/UnitTests/cppunit/include/cppunit/plugin/TestPlugIn.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="bullet/bullet-2.82\l-r2704/UnitTests/cppunit\l/include/cppunit/plugin\l/TestPlugIn.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="assimp/assimp-3.1.1\l/contrib/cppunit-1.12.1\l/include/cppunit/plugin\l/TestPlugInDefaultImpl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$assimp_2assimp-3_81_81_2contrib_2cppunit-1_812_81_2include_2cppunit_2plugin_2_test_plug_in_default_impl_8h_source.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="bullet/bullet-2.82\l-r2704/UnitTests/cppunit\l/include/cppunit/plugin\l/TestPlugInDefaultImpl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bullet_2bullet-2_882-r2704_2_unit_tests_2cppunit_2include_2cppunit_2plugin_2_test_plug_in_default_impl_8h_source.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="assimp/assimp-3.1.1\l/contrib/cppunit-1.12.1\l/include/cppunit/plugin\l/TestPlugIn.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$assimp_2assimp-3_81_81_2contrib_2cppunit-1_812_81_2include_2cppunit_2plugin_2_test_plug_in_8h.html"];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

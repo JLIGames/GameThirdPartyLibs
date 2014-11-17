@@ -1,0 +1,69 @@
+\hypertarget{class_assimp_1_1_blender_1_1_blender_modifier}{\section{Assimp\+:\+:Blender\+:\+:Blender\+Modifier Class Reference}
+\label{class_assimp_1_1_blender_1_1_blender_modifier}\index{Assimp\+::\+Blender\+::\+Blender\+Modifier@{Assimp\+::\+Blender\+::\+Blender\+Modifier}}
+}
+
+
+{\ttfamily \#include $<$Blender\+Modifier.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Blender\+:\+:Blender\+Modifier\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier_a51461ec72bbc9ff9d839d04bf520042b}{Is\+Active} (const \hyperlink{struct_assimp_1_1_blender_1_1_modifier_data}{Modifier\+Data} \&)
+\item 
+virtual void \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier_a3776e392c50da71b52484c48ae4b4cb9}{Do\+It} (\hyperlink{structai_node}{ai\+Node} \&, \hyperlink{struct_assimp_1_1_blender_1_1_conversion_data}{Conversion\+Data} \&, const \hyperlink{struct_assimp_1_1_blender_1_1_elem_base}{Elem\+Base} \&orig\+\_\+modifier, const \hyperlink{struct_assimp_1_1_blender_1_1_scene}{Scene} \&, const \hyperlink{struct_assimp_1_1_blender_1_1_object}{Object} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dummy base class for all blender modifiers. Modifiers are reused between imports, so they should be stateless and not try to cache model data. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_blender_1_1_blender_modifier_a3776e392c50da71b52484c48ae4b4cb9}{\index{Assimp\+::\+Blender\+::\+Blender\+Modifier@{Assimp\+::\+Blender\+::\+Blender\+Modifier}!Do\+It@{Do\+It}}
+\index{Do\+It@{Do\+It}!Assimp\+::\+Blender\+::\+Blender\+Modifier@{Assimp\+::\+Blender\+::\+Blender\+Modifier}}
+\subsubsection[{Do\+It}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Assimp\+::\+Blender\+::\+Blender\+Modifier\+::\+Do\+It (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Node} \&}]{, }
+\item[{{\bf Conversion\+Data} \&}]{, }
+\item[{const {\bf Elem\+Base} \&}]{orig\+\_\+modifier, }
+\item[{const {\bf Scene} \&}]{, }
+\item[{const {\bf Object} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_blender_1_1_blender_modifier_a3776e392c50da71b52484c48ae4b4cb9}
+Apply the modifier to a given output node. The original data used to construct the node is given as well. Not called unless \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier_a51461ec72bbc9ff9d839d04bf520042b}{Is\+Active()} was called and gave positive response. 
+
+Reimplemented in \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier___subdivision_a73e025dfe4fb3b41a2b90d5bf017015a}{Assimp\+::\+Blender\+::\+Blender\+Modifier\+\_\+\+Subdivision}, and \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier___mirror_a3377492ecd500ec78505ff7887681911}{Assimp\+::\+Blender\+::\+Blender\+Modifier\+\_\+\+Mirror}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_blender_1_1_blender_modifier_a51461ec72bbc9ff9d839d04bf520042b}{\index{Assimp\+::\+Blender\+::\+Blender\+Modifier@{Assimp\+::\+Blender\+::\+Blender\+Modifier}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Blender\+::\+Blender\+Modifier@{Assimp\+::\+Blender\+::\+Blender\+Modifier}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Assimp\+::\+Blender\+::\+Blender\+Modifier\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{const {\bf Modifier\+Data} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_blender_1_1_blender_modifier_a51461ec72bbc9ff9d839d04bf520042b}
+Check if {\itshape this} modifier is active, given a \hyperlink{struct_assimp_1_1_blender_1_1_modifier_data}{Modifier\+Data}\& block. 
+
+Reimplemented in \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier___subdivision_aa00790f5b621339efcd452a8f56b0ae3}{Assimp\+::\+Blender\+::\+Blender\+Modifier\+\_\+\+Subdivision}, and \hyperlink{class_assimp_1_1_blender_1_1_blender_modifier___mirror_a09a384a82d846ddb469bb690b82f18d3}{Assimp\+::\+Blender\+::\+Blender\+Modifier\+\_\+\+Mirror}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_blender_modifier_8h}{Blender\+Modifier.\+h}\end{DoxyCompactItemize}

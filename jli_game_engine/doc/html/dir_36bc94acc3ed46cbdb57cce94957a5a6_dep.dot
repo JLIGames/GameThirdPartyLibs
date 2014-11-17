@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/Instancing/OGLES3/Build/Android/src/com/powervr/OGLES3Instancing" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_60a80cc66db4d7cc9cb2558744115dbc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_60a80cc66db4d7cc9cb2558744115dbc.html"]
+  dir_36bc94acc3ed46cbdb57cce94957a5a6 [shape=box, label="OGLES3Instancing", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_36bc94acc3ed46cbdb57cce94957a5a6.html"];
+  }
+}

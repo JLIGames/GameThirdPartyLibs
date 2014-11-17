@@ -1,0 +1,11 @@
+digraph "bullet/bullet-2.82-r2704/src/BulletCollision/CollisionDispatch" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_169d553c9f6b1b109a900f38b48f3038 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="BulletCollision" fontname="Helvetica", fontsize="10", URL="dir_169d553c9f6b1b109a900f38b48f3038.html"]
+  dir_0f8db6a0820233109427e10c7fba9a7c [shape=box, label="CollisionDispatch", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0f8db6a0820233109427e10c7fba9a7c.html"];
+  }
+  dir_1557977f34ac62c0e545e0a4bbccfb97 [shape=box label="Gimpact" URL="dir_1557977f34ac62c0e545e0a4bbccfb97.html"];
+  dir_0f8db6a0820233109427e10c7fba9a7c->dir_1557977f34ac62c0e545e0a4bbccfb97 [headlabel="1", labeldistance=1.5 headhref="dir_000299_000301.html"];
+}

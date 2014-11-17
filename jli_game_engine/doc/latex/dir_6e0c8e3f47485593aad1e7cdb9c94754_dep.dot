@@ -1,0 +1,9 @@
+digraph "bullet/bullet-2.82-r2704/Extras/Serialize/BulletXmlWorldImporter" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3f5a2536fb21792f4dbeb795295f94e6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Serialize" fontname="Helvetica", fontsize="10", URL="dir_3f5a2536fb21792f4dbeb795295f94e6.html"]
+  dir_6e0c8e3f47485593aad1e7cdb9c94754 [shape=box, label="BulletXmlWorldImporter", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6e0c8e3f47485593aad1e7cdb9c94754.html"];
+  }
+}

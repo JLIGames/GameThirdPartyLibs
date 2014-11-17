@@ -1,0 +1,298 @@
+\hypertarget{ilu_8h}{\section{assimp/assimp-\/3.1.1/samples/\+Dev\+I\+L/include/\+I\+L/ilu.h File Reference}
+\label{ilu_8h}\index{assimp/assimp-\/3.\+1.\+1/samples/\+Dev\+I\+L/include/\+I\+L/ilu.\+h@{assimp/assimp-\/3.\+1.\+1/samples/\+Dev\+I\+L/include/\+I\+L/ilu.\+h}}
+}
+{\ttfamily \#include $<$I\+L/il.\+h$>$}\\*
+Include dependency graph for ilu.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_linfo}{I\+Linfo}
+\item 
+struct \hyperlink{struct_i_lpointf}{I\+Lpointf}
+\item 
+struct \hyperlink{struct_i_lpointi}{I\+Lpointi}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ilu_8h_a9eee89dba09c314cf6d1fa83d085bdde}{\#define {\bfseries \+\_\+\+\_\+ilu\+\_\+h\+\_\+}}\label{ilu_8h_a9eee89dba09c314cf6d1fa83d085bdde}
+
+\item 
+\hypertarget{ilu_8h_a790fbdc22bba85aa28365922b6db19af}{\#define {\bfseries \+\_\+\+\_\+\+I\+L\+U\+\_\+\+H\+\_\+\+\_\+}}\label{ilu_8h_a790fbdc22bba85aa28365922b6db19af}
+
+\item 
+\hypertarget{ilu_8h_a5b43a16414aa78d20a72cecb71ec4141}{\#define {\bfseries I\+L\+U\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+7\+\_\+8}~1}\label{ilu_8h_a5b43a16414aa78d20a72cecb71ec4141}
+
+\item 
+\hypertarget{ilu_8h_a95c2fd7d019b7ee54feea4823a259b77}{\#define {\bfseries I\+L\+U\+\_\+\+V\+E\+R\+S\+I\+O\+N}~178}\label{ilu_8h_a95c2fd7d019b7ee54feea4823a259b77}
+
+\item 
+\hypertarget{ilu_8h_a20f386c85e644f98dd7adcce069daf85}{\#define {\bfseries I\+L\+U\+\_\+\+F\+I\+L\+T\+E\+R}~0x2600}\label{ilu_8h_a20f386c85e644f98dd7adcce069daf85}
+
+\item 
+\hypertarget{ilu_8h_acda1839073fc34b53756d186618d0e86}{\#define {\bfseries I\+L\+U\+\_\+\+N\+E\+A\+R\+E\+S\+T}~0x2601}\label{ilu_8h_acda1839073fc34b53756d186618d0e86}
+
+\item 
+\hypertarget{ilu_8h_ae35d372df13b18bad3e50362e1d9ee8b}{\#define {\bfseries I\+L\+U\+\_\+\+L\+I\+N\+E\+A\+R}~0x2602}\label{ilu_8h_ae35d372df13b18bad3e50362e1d9ee8b}
+
+\item 
+\hypertarget{ilu_8h_a6b10d4679c5f1861af624ede4151019b}{\#define {\bfseries I\+L\+U\+\_\+\+B\+I\+L\+I\+N\+E\+A\+R}~0x2603}\label{ilu_8h_a6b10d4679c5f1861af624ede4151019b}
+
+\item 
+\hypertarget{ilu_8h_a035adbc49df2e444e26362c2aab83e89}{\#define {\bfseries I\+L\+U\+\_\+\+S\+C\+A\+L\+E\+\_\+\+B\+O\+X}~0x2604}\label{ilu_8h_a035adbc49df2e444e26362c2aab83e89}
+
+\item 
+\hypertarget{ilu_8h_a4b1d7667102f9321a8efbdcc01fc4512}{\#define {\bfseries I\+L\+U\+\_\+\+S\+C\+A\+L\+E\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E}~0x2605}\label{ilu_8h_a4b1d7667102f9321a8efbdcc01fc4512}
+
+\item 
+\hypertarget{ilu_8h_ac8046224aa296fbcaa02bd4b3d2b61d7}{\#define {\bfseries I\+L\+U\+\_\+\+S\+C\+A\+L\+E\+\_\+\+B\+E\+L\+L}~0x2606}\label{ilu_8h_ac8046224aa296fbcaa02bd4b3d2b61d7}
+
+\item 
+\hypertarget{ilu_8h_ad5960c87c75291c674fb123b7d5bd0b1}{\#define {\bfseries I\+L\+U\+\_\+\+S\+C\+A\+L\+E\+\_\+\+B\+S\+P\+L\+I\+N\+E}~0x2607}\label{ilu_8h_ad5960c87c75291c674fb123b7d5bd0b1}
+
+\item 
+\hypertarget{ilu_8h_a78f38617f75fa3988523fd6d3b20de55}{\#define {\bfseries I\+L\+U\+\_\+\+S\+C\+A\+L\+E\+\_\+\+L\+A\+N\+C\+Z\+O\+S3}~0x2608}\label{ilu_8h_a78f38617f75fa3988523fd6d3b20de55}
+
+\item 
+\hypertarget{ilu_8h_a51d6a13b4be1be3f29925a118f48b06c}{\#define {\bfseries I\+L\+U\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+I\+T\+C\+H\+E\+L\+L}~0x2609}\label{ilu_8h_a51d6a13b4be1be3f29925a118f48b06c}
+
+\item 
+\hypertarget{ilu_8h_a0f39c0540a3e196b8fe0977b58e2b140}{\#define {\bfseries I\+L\+U\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+U\+M}~0x0501}\label{ilu_8h_a0f39c0540a3e196b8fe0977b58e2b140}
+
+\item 
+\hypertarget{ilu_8h_af48796c72dfeff8abaa713a951e2fd1f}{\#define {\bfseries I\+L\+U\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+M\+E\+M\+O\+R\+Y}~0x0502}\label{ilu_8h_af48796c72dfeff8abaa713a951e2fd1f}
+
+\item 
+\hypertarget{ilu_8h_a2b63cd619c052be7cf171fff0c4b80d6}{\#define {\bfseries I\+L\+U\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+O\+R}~0x0504}\label{ilu_8h_a2b63cd619c052be7cf171fff0c4b80d6}
+
+\item 
+\hypertarget{ilu_8h_aaade57b09263a8ed88823bb06b8881f8}{\#define {\bfseries I\+L\+U\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+U\+E}~0x0505}\label{ilu_8h_aaade57b09263a8ed88823bb06b8881f8}
+
+\item 
+\hypertarget{ilu_8h_a9754924778f8fa991df2e9671e77188e}{\#define {\bfseries I\+L\+U\+\_\+\+I\+L\+L\+E\+G\+A\+L\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N}~0x0506}\label{ilu_8h_a9754924778f8fa991df2e9671e77188e}
+
+\item 
+\hypertarget{ilu_8h_a4bad46dfd8598912bb2c28a4bd6e73ec}{\#define {\bfseries I\+L\+U\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M}~0x0509}\label{ilu_8h_a4bad46dfd8598912bb2c28a4bd6e73ec}
+
+\item 
+\hypertarget{ilu_8h_a31f8e3e1ac5e937360249843a3ff213d}{\#define {\bfseries I\+L\+U\+\_\+\+P\+L\+A\+C\+E\+M\+E\+N\+T}~0x0700}\label{ilu_8h_a31f8e3e1ac5e937360249843a3ff213d}
+
+\item 
+\hypertarget{ilu_8h_a10464c56f3a11e323d77731575b734c9}{\#define {\bfseries I\+L\+U\+\_\+\+L\+O\+W\+E\+R\+\_\+\+L\+E\+F\+T}~0x0701}\label{ilu_8h_a10464c56f3a11e323d77731575b734c9}
+
+\item 
+\hypertarget{ilu_8h_a6d8c6f4f1c13b3e97c91b8812d7fc8e7}{\#define {\bfseries I\+L\+U\+\_\+\+L\+O\+W\+E\+R\+\_\+\+R\+I\+G\+H\+T}~0x0702}\label{ilu_8h_a6d8c6f4f1c13b3e97c91b8812d7fc8e7}
+
+\item 
+\hypertarget{ilu_8h_a7be3bbc8cad9c3686ebc87855d54ff3b}{\#define {\bfseries I\+L\+U\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+E\+F\+T}~0x0703}\label{ilu_8h_a7be3bbc8cad9c3686ebc87855d54ff3b}
+
+\item 
+\hypertarget{ilu_8h_a451961767b83e0794cb4d9a2bfa81b46}{\#define {\bfseries I\+L\+U\+\_\+\+U\+P\+P\+E\+R\+\_\+\+R\+I\+G\+H\+T}~0x0704}\label{ilu_8h_a451961767b83e0794cb4d9a2bfa81b46}
+
+\item 
+\hypertarget{ilu_8h_aaac17201b942f22e53b902ccd3fa9552}{\#define {\bfseries I\+L\+U\+\_\+\+C\+E\+N\+T\+E\+R}~0x0705}\label{ilu_8h_aaac17201b942f22e53b902ccd3fa9552}
+
+\item 
+\hypertarget{ilu_8h_af88398e1553de0f46570e37bbebd3562}{\#define {\bfseries I\+L\+U\+\_\+\+C\+O\+N\+V\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+T\+R\+I\+X}~0x0710}\label{ilu_8h_af88398e1553de0f46570e37bbebd3562}
+
+\item 
+\hypertarget{ilu_8h_ab051012a164e23e09375bbd66e3995a6}{\#define {\bfseries I\+L\+U\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M}~I\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M}\label{ilu_8h_ab051012a164e23e09375bbd66e3995a6}
+
+\item 
+\hypertarget{ilu_8h_ab9462c3f76a72f7878d741e604a3820a}{\#define {\bfseries I\+L\+U\+\_\+\+V\+E\+N\+D\+O\+R}~I\+L\+\_\+\+V\+E\+N\+D\+O\+R}\label{ilu_8h_ab9462c3f76a72f7878d741e604a3820a}
+
+\item 
+\hypertarget{ilu_8h_aa1377827295eb7d59b8963bd4d82f72d}{\#define {\bfseries I\+L\+U\+\_\+\+E\+N\+G\+L\+I\+S\+H}~0x0800}\label{ilu_8h_aa1377827295eb7d59b8963bd4d82f72d}
+
+\item 
+\hypertarget{ilu_8h_a9b7bf06469b39d7a4365cb405891ed98}{\#define {\bfseries I\+L\+U\+\_\+\+A\+R\+A\+B\+I\+C}~0x0801}\label{ilu_8h_a9b7bf06469b39d7a4365cb405891ed98}
+
+\item 
+\hypertarget{ilu_8h_a7eca83548bcddf19792ae5653684b775}{\#define {\bfseries I\+L\+U\+\_\+\+D\+U\+T\+C\+H}~0x0802}\label{ilu_8h_a7eca83548bcddf19792ae5653684b775}
+
+\item 
+\hypertarget{ilu_8h_a659f8ec6d0e155e01e1294397bfd078e}{\#define {\bfseries I\+L\+U\+\_\+\+J\+A\+P\+A\+N\+E\+S\+E}~0x0803}\label{ilu_8h_a659f8ec6d0e155e01e1294397bfd078e}
+
+\item 
+\hypertarget{ilu_8h_aecaaa06cc4b5476262ef3c676d445acc}{\#define {\bfseries I\+L\+U\+\_\+\+S\+P\+A\+N\+I\+S\+H}~0x0804}\label{ilu_8h_aecaaa06cc4b5476262ef3c676d445acc}
+
+\item 
+\hypertarget{ilu_8h_a6ad94ba34d67aa1df0ad265e39684a15}{\#define {\bfseries I\+L\+U\+\_\+\+G\+E\+R\+M\+A\+N}~0x0805}\label{ilu_8h_a6ad94ba34d67aa1df0ad265e39684a15}
+
+\item 
+\hypertarget{ilu_8h_abb43b2a3a6a9bc21c62816dfddc99712}{\#define {\bfseries I\+L\+U\+\_\+\+F\+R\+E\+N\+C\+H}~0x0806}\label{ilu_8h_abb43b2a3a6a9bc21c62816dfddc99712}
+
+\item 
+\hypertarget{ilu_8h_a0a389076d0ee26e202a2936f24bf3064}{\#define {\bfseries ilu\+Colors\+Used}~ilu\+Colours\+Used}\label{ilu_8h_a0a389076d0ee26e202a2936f24bf3064}
+
+\item 
+\hypertarget{ilu_8h_a9cb7945597df7ba0805b636098d9c99a}{\#define {\bfseries ilu\+Swap\+Colors}~ilu\+Swap\+Colours}\label{ilu_8h_a9cb7945597df7ba0805b636098d9c99a}
+
+\item 
+\hypertarget{ilu_8h_ac6dc544853bc3901b963db66916bd989}{\#define {\bfseries ilu\+Replace\+Color}~ilu\+Replace\+Colour}\label{ilu_8h_ac6dc544853bc3901b963db66916bd989}
+
+\item 
+\hypertarget{ilu_8h_a5feef179c31b31a1f931a4e9af64a4b7}{\#define {\bfseries ilu\+Scale\+Color}~ilu\+Scale\+Colour}\label{ilu_8h_a5feef179c31b31a1f931a4e9af64a4b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ilu_8h_a5a49fba70811076d7563d6108b13fde0}{typedef struct \hyperlink{struct_i_linfo}{I\+Linfo} {\bfseries I\+Linfo}}\label{ilu_8h_a5a49fba70811076d7563d6108b13fde0}
+
+\item 
+\hypertarget{ilu_8h_aa5c8136a90415227bb193ec6484fe1b9}{typedef struct \hyperlink{struct_i_lpointf}{I\+Lpointf} {\bfseries I\+Lpointf}}\label{ilu_8h_aa5c8136a90415227bb193ec6484fe1b9}
+
+\item 
+\hypertarget{ilu_8h_a709a4e64b757bbf3f85e1f6995ad6857}{typedef struct \hyperlink{struct_i_lpointi}{I\+Lpointi} {\bfseries I\+Lpointi}}\label{ilu_8h_a709a4e64b757bbf3f85e1f6995ad6857}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ilu_8h_a70fe0b8a1bae5e21961e05a53be20cd1}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Alienify} (void)}\label{ilu_8h_a70fe0b8a1bae5e21961e05a53be20cd1}
+
+\item 
+\hypertarget{ilu_8h_a4166edba620d5cb667e0a496e301eb45}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Blur\+Avg} (I\+Luint Iter)}\label{ilu_8h_a4166edba620d5cb667e0a496e301eb45}
+
+\item 
+\hypertarget{ilu_8h_a0b3b3e619e8107081c9398c2f6849b30}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Blur\+Gaussian} (I\+Luint Iter)}\label{ilu_8h_a0b3b3e619e8107081c9398c2f6849b30}
+
+\item 
+\hypertarget{ilu_8h_a0f39f28b597e5365a4dfea8474e111d6}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Build\+Mipmaps} (void)}\label{ilu_8h_a0f39f28b597e5365a4dfea8474e111d6}
+
+\item 
+\hypertarget{ilu_8h_a4206af44a14302abcd5948d8f1db7dc0}{I\+L\+A\+P\+I I\+Luint I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Colours\+Used} (void)}\label{ilu_8h_a4206af44a14302abcd5948d8f1db7dc0}
+
+\item 
+\hypertarget{ilu_8h_ac42b46801e4c9832ccfd8ae6bf8f601e}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Compare\+Image} (I\+Luint Comp)}\label{ilu_8h_ac42b46801e4c9832ccfd8ae6bf8f601e}
+
+\item 
+\hypertarget{ilu_8h_a31c10a6fc7ef7cb771af9e5366541f9d}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Contrast} (I\+Lfloat Contrast)}\label{ilu_8h_a31c10a6fc7ef7cb771af9e5366541f9d}
+
+\item 
+\hypertarget{ilu_8h_a59adee04d96fcf96e3c917da2d96cd02}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Crop} (I\+Luint X\+Off, I\+Luint Y\+Off, I\+Luint Z\+Off, I\+Luint Width, I\+Luint Height, I\+Luint Depth)}\label{ilu_8h_a59adee04d96fcf96e3c917da2d96cd02}
+
+\item 
+\hypertarget{ilu_8h_ac24e0e349c627117823b5601d0bce7b4}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Delete\+Image} (I\+Luint Id)}\label{ilu_8h_ac24e0e349c627117823b5601d0bce7b4}
+
+\item 
+\hypertarget{ilu_8h_a2ee4769fcc898598231491fda870dab6}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Edge\+Detect\+E} (void)}\label{ilu_8h_a2ee4769fcc898598231491fda870dab6}
+
+\item 
+\hypertarget{ilu_8h_a8548aa01f2c98e65647dd25e2d3b0417}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Edge\+Detect\+P} (void)}\label{ilu_8h_a8548aa01f2c98e65647dd25e2d3b0417}
+
+\item 
+\hypertarget{ilu_8h_aeb32181d77e579e67aef048073c2bafc}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Edge\+Detect\+S} (void)}\label{ilu_8h_aeb32181d77e579e67aef048073c2bafc}
+
+\item 
+\hypertarget{ilu_8h_a01618e1b0796f5754c974ec222250206}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Emboss} (void)}\label{ilu_8h_a01618e1b0796f5754c974ec222250206}
+
+\item 
+\hypertarget{ilu_8h_adf96f90370765335874084eee3ff370e}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Enlarge\+Canvas} (I\+Luint Width, I\+Luint Height, I\+Luint Depth)}\label{ilu_8h_adf96f90370765335874084eee3ff370e}
+
+\item 
+\hypertarget{ilu_8h_abeaca518394c4ed5cf45f92655a9cf90}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Enlarge\+Image} (I\+Lfloat X\+Dim, I\+Lfloat Y\+Dim, I\+Lfloat Z\+Dim)}\label{ilu_8h_abeaca518394c4ed5cf45f92655a9cf90}
+
+\item 
+\hypertarget{ilu_8h_af642c3b70bf03cf71878240bdcd5302c}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Equalize} (void)}\label{ilu_8h_af642c3b70bf03cf71878240bdcd5302c}
+
+\item 
+\hypertarget{ilu_8h_aaf36a1230a91987d0a3b2e9220d61468}{I\+L\+A\+P\+I I\+Lconst\+\_\+string I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Error\+String} (I\+Lenum Error)}\label{ilu_8h_aaf36a1230a91987d0a3b2e9220d61468}
+
+\item 
+\hypertarget{ilu_8h_aeb5bb85ceb172bd9742f7f0730a1d440}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Convolution} (I\+Lint $\ast$matrix, I\+Lint scale, I\+Lint bias)}\label{ilu_8h_aeb5bb85ceb172bd9742f7f0730a1d440}
+
+\item 
+\hypertarget{ilu_8h_abddcc5fa1efd75444164d0d55ceee3ee}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Flip\+Image} (void)}\label{ilu_8h_abddcc5fa1efd75444164d0d55ceee3ee}
+
+\item 
+\hypertarget{ilu_8h_adb86757410111086d217078506c018d5}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Gamma\+Correct} (I\+Lfloat Gamma)}\label{ilu_8h_adb86757410111086d217078506c018d5}
+
+\item 
+\hypertarget{ilu_8h_a055322db876d6f9679ee7f7314cbcfe4}{I\+L\+A\+P\+I I\+Luint I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Gen\+Image} (void)}\label{ilu_8h_a055322db876d6f9679ee7f7314cbcfe4}
+
+\item 
+\hypertarget{ilu_8h_aefb71b5edf7e9c0ecb23252678fa83da}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Get\+Image\+Info} (\hyperlink{struct_i_linfo}{I\+Linfo} $\ast$Info)}\label{ilu_8h_aefb71b5edf7e9c0ecb23252678fa83da}
+
+\item 
+\hypertarget{ilu_8h_a712ccc206c2c816945f47ac90e7e7bbf}{I\+L\+A\+P\+I I\+Lint I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Get\+Integer} (I\+Lenum Mode)}\label{ilu_8h_a712ccc206c2c816945f47ac90e7e7bbf}
+
+\item 
+\hypertarget{ilu_8h_a14461fead59674eeff0a28864683d162}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Get\+Integerv} (I\+Lenum Mode, I\+Lint $\ast$Param)}\label{ilu_8h_a14461fead59674eeff0a28864683d162}
+
+\item 
+\hypertarget{ilu_8h_ade49384bacffd41f0dbe21f7c5494ea6}{I\+L\+A\+P\+I I\+Lstring I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Get\+String} (I\+Lenum String\+Name)}\label{ilu_8h_ade49384bacffd41f0dbe21f7c5494ea6}
+
+\item 
+\hypertarget{ilu_8h_af1a46cf2e1d812d51be18c3ef351ecd4}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Image\+Parameter} (I\+Lenum P\+Name, I\+Lenum Param)}\label{ilu_8h_af1a46cf2e1d812d51be18c3ef351ecd4}
+
+\item 
+\hypertarget{ilu_8h_a16e7499605f4c0d48e6689cc58144e5b}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Init} (void)}\label{ilu_8h_a16e7499605f4c0d48e6689cc58144e5b}
+
+\item 
+\hypertarget{ilu_8h_affd9d3ec68b9e7db3dd1297b31b327da}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Invert\+Alpha} (void)}\label{ilu_8h_affd9d3ec68b9e7db3dd1297b31b327da}
+
+\item 
+\hypertarget{ilu_8h_ab843841a789db947061245d4d35ee6dc}{I\+L\+A\+P\+I I\+Luint I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Load\+Image} (I\+Lconst\+\_\+string File\+Name)}\label{ilu_8h_ab843841a789db947061245d4d35ee6dc}
+
+\item 
+\hypertarget{ilu_8h_a03db91501944c334d48e897e9e3b15d8}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Mirror} (void)}\label{ilu_8h_a03db91501944c334d48e897e9e3b15d8}
+
+\item 
+\hypertarget{ilu_8h_a15c05e56498b20189ab580dd120dccb3}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Negative} (void)}\label{ilu_8h_a15c05e56498b20189ab580dd120dccb3}
+
+\item 
+\hypertarget{ilu_8h_af9359237eb029939b115444bce738aff}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Noisify} (I\+Lclampf Tolerance)}\label{ilu_8h_af9359237eb029939b115444bce738aff}
+
+\item 
+\hypertarget{ilu_8h_a69f567249abb33071da9b93abd6de427}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Pixelize} (I\+Luint Pix\+Size)}\label{ilu_8h_a69f567249abb33071da9b93abd6de427}
+
+\item 
+\hypertarget{ilu_8h_a73668bc59f11c4821393d3a44df1be68}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Regionfv} (\hyperlink{struct_i_lpointf}{I\+Lpointf} $\ast$Points, I\+Luint n)}\label{ilu_8h_a73668bc59f11c4821393d3a44df1be68}
+
+\item 
+\hypertarget{ilu_8h_a6ea69978cded983cc21490a60a12f77f}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Regioniv} (\hyperlink{struct_i_lpointi}{I\+Lpointi} $\ast$Points, I\+Luint n)}\label{ilu_8h_a6ea69978cded983cc21490a60a12f77f}
+
+\item 
+\hypertarget{ilu_8h_af7ce7633f540b3ed89730200b9d24cb5}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Replace\+Colour} (I\+Lubyte Red, I\+Lubyte Green, I\+Lubyte Blue, I\+Lfloat Tolerance)}\label{ilu_8h_af7ce7633f540b3ed89730200b9d24cb5}
+
+\item 
+\hypertarget{ilu_8h_a69af227797290ccd7bb34927855a5fe5}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Rotate} (I\+Lfloat Angle)}\label{ilu_8h_a69af227797290ccd7bb34927855a5fe5}
+
+\item 
+\hypertarget{ilu_8h_a0e502eabdd7109d9c281c5b05279bf9c}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Rotate3\+D} (I\+Lfloat x, I\+Lfloat \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, I\+Lfloat z, I\+Lfloat Angle)}\label{ilu_8h_a0e502eabdd7109d9c281c5b05279bf9c}
+
+\item 
+\hypertarget{ilu_8h_a8698a68186b3d313bb0fc74319683bd0}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Saturate1f} (I\+Lfloat Saturation)}\label{ilu_8h_a8698a68186b3d313bb0fc74319683bd0}
+
+\item 
+\hypertarget{ilu_8h_adde31e43e1460359cd2b51e8510888c5}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Saturate4f} (I\+Lfloat r, I\+Lfloat g, I\+Lfloat b, I\+Lfloat Saturation)}\label{ilu_8h_adde31e43e1460359cd2b51e8510888c5}
+
+\item 
+\hypertarget{ilu_8h_a47880e7f7b7de06fc49fc91137df93f8}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Scale} (I\+Luint Width, I\+Luint Height, I\+Luint Depth)}\label{ilu_8h_a47880e7f7b7de06fc49fc91137df93f8}
+
+\item 
+\hypertarget{ilu_8h_ac2452b04f15fc457f7f75b016f3ca77b}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Scale\+Alpha} (I\+Lfloat scale)}\label{ilu_8h_ac2452b04f15fc457f7f75b016f3ca77b}
+
+\item 
+\hypertarget{ilu_8h_a68e80cd1f8141a8687510b48fbe935fa}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Scale\+Colours} (I\+Lfloat r, I\+Lfloat g, I\+Lfloat b)}\label{ilu_8h_a68e80cd1f8141a8687510b48fbe935fa}
+
+\item 
+\hypertarget{ilu_8h_a5bc56b65c2262df5748a2848e34f90d2}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Set\+Language} (I\+Lenum Language)}\label{ilu_8h_a5bc56b65c2262df5748a2848e34f90d2}
+
+\item 
+\hypertarget{ilu_8h_afdac2b81a42fec7eb7197c2b54a20a9d}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Sharpen} (I\+Lfloat Factor, I\+Luint Iter)}\label{ilu_8h_afdac2b81a42fec7eb7197c2b54a20a9d}
+
+\item 
+\hypertarget{ilu_8h_a1ad019048c0196813927f77c7f5079da}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Swap\+Colours} (void)}\label{ilu_8h_a1ad019048c0196813927f77c7f5079da}
+
+\item 
+\hypertarget{ilu_8h_ab7503da5525d5f10edcb0f2caed5c51d}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilu\+Wave} (I\+Lfloat Angle)}\label{ilu_8h_ab7503da5525d5f10edcb0f2caed5c51d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main include file for I\+L\+U 

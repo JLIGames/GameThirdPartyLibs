@@ -1,0 +1,38 @@
+digraph "GIM_ShapeRetriever::TetraShapeRetriever"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GIM_ShapeRetriever\l::TetraShapeRetriever",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GIM_ShapeRetriever\l::ChildShapeRetriever",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___shape_retriever_1_1_child_shape_retriever.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_parent" ,fontname="Helvetica"];
+  Node3 [label="GIM_ShapeRetriever",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___shape_retriever.html",tooltip="Retrieving shapes shapes. "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_gim_shape" ,fontname="Helvetica"];
+  Node4 [label="btGImpactShapeInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html",tooltip="Base class for gimpact shapes. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="btConcaveShape",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_set" ,fontname="Helvetica"];
+  Node6 [label="btGImpactQuantizedBvh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html",tooltip="Structure for containing Boxes. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_primitive_manager" ,fontname="Helvetica"];
+  Node7 [label="btPrimitiveManagerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_manager_base.html",tooltip="Prototype Base class for primitive classification. "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_tree" ,fontname="Helvetica"];
+  Node8 [label="btQuantizedBvhTree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_quantized_bvh_tree.html",tooltip="Basic Box tree structure. "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_node_array" ,fontname="Helvetica"];
+  Node9 [label="GIM_QUANTIZED_BVH_NODE\l_ARRAY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___q_u_a_n_t_i_z_e_d___b_v_h___n_o_d_e___a_r_r_a_y.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="btAlignedObjectArray\l\< BT_QUANTIZED_BVH_NODE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node1 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_tetra_retriever" ,fontname="Helvetica"];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_child_retriever\nm_current_retriever" ,fontname="Helvetica"];
+  Node11 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_tetrashape" ,fontname="Helvetica"];
+  Node11 [label="btTetrahedronShapeEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_tetrahedron_shape_ex.html",tooltip="Helper class for tetrahedrons. "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="btBU_Simplex1to4",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_trishape" ,fontname="Helvetica"];
+  Node13 [label="btTriangleShapeEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_triangle_shape_ex.html",tooltip="Helper class for colliding Bullet Triangle Shapes. "];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="btTriangleShape",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node15 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_tri_retriever" ,fontname="Helvetica"];
+  Node15 [label="GIM_ShapeRetriever\l::TriangleShapeRetriever",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___shape_retriever_1_1_triangle_shape_retriever.html"];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

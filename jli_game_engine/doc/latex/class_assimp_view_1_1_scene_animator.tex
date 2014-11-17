@@ -1,0 +1,303 @@
+\hypertarget{class_assimp_view_1_1_scene_animator}{\section{Assimp\+View\+:\+:Scene\+Animator Class Reference}
+\label{class_assimp_view_1_1_scene_animator}\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+}
+
+
+{\ttfamily \#include $<$Scene\+Animator.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+View\+:\+:Scene\+Animator\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_view_1_1_scene_animator_ad3f0975b87a7b83e6a53bb932dc87c5c}{Scene\+Animator} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, size\+\_\+t p\+Anim\+Index=0)
+\item 
+\hyperlink{class_assimp_view_1_1_scene_animator_a204cb5b04afb15e6223e1b0f016d12fc}{$\sim$\+Scene\+Animator} ()
+\item 
+void \hyperlink{class_assimp_view_1_1_scene_animator_a248309cdd1e5c8af66247aa14b174609}{Set\+Anim\+Index} (size\+\_\+t p\+Anim\+Index)
+\item 
+void \hyperlink{class_assimp_view_1_1_scene_animator_ac2fca81d4eb40a272065b5cf032db38b}{Calculate} (double p\+Time)
+\item 
+const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \& \hyperlink{class_assimp_view_1_1_scene_animator_a49d269f5bafdf8c265a1ce0c0d3d6663}{Get\+Local\+Transform} (const \hyperlink{structai_node}{ai\+Node} $\ast$node) const 
+\item 
+const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \& \hyperlink{class_assimp_view_1_1_scene_animator_a9b0eba92e2845fa9d5b2412e764c1075}{Get\+Global\+Transform} (const \hyperlink{structai_node}{ai\+Node} $\ast$node) const 
+\item 
+const std\+::vector$<$ \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $>$ \& \hyperlink{class_assimp_view_1_1_scene_animator_aa7dfe2a1c9320bf616bfefefca10f6cd}{Get\+Bone\+Matrices} (const \hyperlink{structai_node}{ai\+Node} $\ast$p\+Node, size\+\_\+t p\+Mesh\+Index=0)
+\item 
+\hypertarget{class_assimp_view_1_1_scene_animator_a3b56d5171e533ecc5a56cf317c378269}{size\+\_\+t \hyperlink{class_assimp_view_1_1_scene_animator_a3b56d5171e533ecc5a56cf317c378269}{Current\+Anim\+Index} () const }\label{class_assimp_view_1_1_scene_animator_a3b56d5171e533ecc5a56cf317c378269}
+
+\begin{DoxyCompactList}\small\item\em Get the current animation index. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_view_1_1_scene_animator_a35c087279955cef0b9888d338bbd197d}{\hyperlink{structai_animation}{ai\+Animation} $\ast$ \hyperlink{class_assimp_view_1_1_scene_animator_a35c087279955cef0b9888d338bbd197d}{Current\+Anim} () const }\label{class_assimp_view_1_1_scene_animator_a35c087279955cef0b9888d338bbd197d}
+
+\begin{DoxyCompactList}\small\item\em Get the current animation or N\+U\+L\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ const \hyperlink{structai_node}{ai\+Node} \\*
+$\ast$, \hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node} $\ast$ $>$ \hyperlink{class_assimp_view_1_1_scene_animator_aa14c2ffd5c92d72e07905ce9a7f43c36}{Node\+Map}
+\item 
+typedef std\+::map$<$ const char \\*
+$\ast$, const \hyperlink{structai_node}{ai\+Node} $\ast$ $>$ \hyperlink{class_assimp_view_1_1_scene_animator_a0d705443f7c558756e8816763a2777c2}{Bone\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node} $\ast$ \hyperlink{class_assimp_view_1_1_scene_animator_a3bbce6d002dbbc7ec1a30fc467a97706}{Create\+Node\+Tree} (\hyperlink{structai_node}{ai\+Node} $\ast$p\+Node, \hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node} $\ast$p\+Parent)
+\item 
+void \hyperlink{class_assimp_view_1_1_scene_animator_a8d108ebc1aee4a86d162accc0e40ebe7}{Update\+Transforms} (\hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node} $\ast$p\+Node, const std\+::vector$<$ \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $>$ \&p\+Transforms)
+\item 
+void \hyperlink{class_assimp_view_1_1_scene_animator_aaffdfbd7ebf7787f81f6f48e1466da3a}{Calculate\+Global\+Transform} (\hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node} $\ast$p\+Internal\+Node)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{class_assimp_view_1_1_scene_animator_a4fe1542596fc5b5287fc2ad54d486379}{m\+Scene}
+\item 
+size\+\_\+t \hyperlink{class_assimp_view_1_1_scene_animator_a4305f48bc7e66229f416838f0b8e49b0}{m\+Current\+Anim\+Index}
+\item 
+\hyperlink{class_assimp_view_1_1_anim_evaluator}{Anim\+Evaluator} $\ast$ \hyperlink{class_assimp_view_1_1_scene_animator_a833e91d8a9b56837f20d0c80100ff63a}{m\+Anim\+Evaluator}
+\item 
+\hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node} $\ast$ \hyperlink{class_assimp_view_1_1_scene_animator_a37b1c60f39ab41656731cd90b0597f13}{m\+Root\+Node}
+\item 
+\hypertarget{class_assimp_view_1_1_scene_animator_a0bdeecf52b4d49e7e17540d0ca77bb1b}{\hyperlink{class_assimp_view_1_1_scene_animator_aa14c2ffd5c92d72e07905ce9a7f43c36}{Node\+Map} {\bfseries m\+Nodes\+By\+Name}}\label{class_assimp_view_1_1_scene_animator_a0bdeecf52b4d49e7e17540d0ca77bb1b}
+
+\item 
+\hypertarget{class_assimp_view_1_1_scene_animator_a421583430dbf68057ef49927067ea166}{\hyperlink{class_assimp_view_1_1_scene_animator_a0d705443f7c558756e8816763a2777c2}{Bone\+Map} {\bfseries m\+Bone\+Nodes\+By\+Name}}\label{class_assimp_view_1_1_scene_animator_a421583430dbf68057ef49927067ea166}
+
+\item 
+std\+::vector$<$ \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $>$ \hyperlink{class_assimp_view_1_1_scene_animator_a78e94ddc3e4866d76d336bc769aceca8}{m\+Transforms}
+\item 
+\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \hyperlink{class_assimp_view_1_1_scene_animator_a76d6c3f6a84b52919ca645f3af7623a5}{m\+Identity\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calculates the animated node transformations for a given scene and timestamp.
+
+Create an instance for a \hyperlink{structai_scene}{ai\+Scene} you want to animate and set the current animation to play. You can then have the instance calculate the current pose for all nodes by calling \hyperlink{class_assimp_view_1_1_scene_animator_ac2fca81d4eb40a272065b5cf032db38b}{Calculate()} for a given timestamp. After this you can retrieve the present transformation for a given node by calling \hyperlink{class_assimp_view_1_1_scene_animator_a49d269f5bafdf8c265a1ce0c0d3d6663}{Get\+Local\+Transform()} or \hyperlink{class_assimp_view_1_1_scene_animator_a9b0eba92e2845fa9d5b2412e764c1075}{Get\+Global\+Transform()}. A full set of bone matrices can be retrieved by \hyperlink{class_assimp_view_1_1_scene_animator_aa7dfe2a1c9320bf616bfefefca10f6cd}{Get\+Bone\+Matrices()} for a given mesh. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_assimp_view_1_1_scene_animator_a0d705443f7c558756e8816763a2777c2}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Bone\+Map@{Bone\+Map}}
+\index{Bone\+Map@{Bone\+Map}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Bone\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$const char$\ast$, const {\bf ai\+Node}$\ast$$>$ {\bf Assimp\+View\+::\+Scene\+Animator\+::\+Bone\+Map}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a0d705443f7c558756e8816763a2777c2}
+Name to node map to quickly find nodes for given bones by their name \hypertarget{class_assimp_view_1_1_scene_animator_aa14c2ffd5c92d72e07905ce9a7f43c36}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Node\+Map@{Node\+Map}}
+\index{Node\+Map@{Node\+Map}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Node\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$const {\bf ai\+Node}$\ast$, {\bf Scene\+Anim\+Node}$\ast$$>$ {\bf Assimp\+View\+::\+Scene\+Animator\+::\+Node\+Map}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_aa14c2ffd5c92d72e07905ce9a7f43c36}
+Name to node map to quickly find nodes by their name 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_view_1_1_scene_animator_ad3f0975b87a7b83e6a53bb932dc87c5c}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Scene\+Animator@{Scene\+Animator}}
+\index{Scene\+Animator@{Scene\+Animator}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Scene\+Animator}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+Animator\+::\+Scene\+Animator (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{size\+\_\+t}]{p\+Anim\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_view_1_1_scene_animator_ad3f0975b87a7b83e6a53bb932dc87c5c}
+Constructor for a given scene.
+
+The object keeps a reference to the scene during its lifetime, but ownership stays at the caller. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to animate. \\
+\hline
+{\em p\+Anim\+Index} & \mbox{[}optional\mbox{]} \hyperlink{struct_index}{Index} of the animation to play. Assumed to be 0 if not given. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_a204cb5b04afb15e6223e1b0f016d12fc}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!````~Scene\+Animator@{$\sim$\+Scene\+Animator}}
+\index{````~Scene\+Animator@{$\sim$\+Scene\+Animator}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{$\sim$\+Scene\+Animator}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+Animator\+::$\sim$\+Scene\+Animator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_view_1_1_scene_animator_a204cb5b04afb15e6223e1b0f016d12fc}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_view_1_1_scene_animator_ac2fca81d4eb40a272065b5cf032db38b}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Calculate@{Calculate}}
+\index{Calculate@{Calculate}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Calculate}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Animator\+::\+Calculate (
+\begin{DoxyParamCaption}
+\item[{double}]{p\+Time}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_view_1_1_scene_animator_ac2fca81d4eb40a272065b5cf032db38b}
+Calculates the node transformations for the scene. Call this to get uptodate results before calling one of the getters. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Time} & Current time. Can be an arbitrary range. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_aaffdfbd7ebf7787f81f6f48e1466da3a}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Calculate\+Global\+Transform@{Calculate\+Global\+Transform}}
+\index{Calculate\+Global\+Transform@{Calculate\+Global\+Transform}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Calculate\+Global\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Animator\+::\+Calculate\+Global\+Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Scene\+Anim\+Node} $\ast$}]{p\+Internal\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_aaffdfbd7ebf7787f81f6f48e1466da3a}
+Calculates the global transformation matrix for the given internal node 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_a3bbce6d002dbbc7ec1a30fc467a97706}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Create\+Node\+Tree@{Create\+Node\+Tree}}
+\index{Create\+Node\+Tree@{Create\+Node\+Tree}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Create\+Node\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene\+Anim\+Node} $\ast$ Scene\+Animator\+::\+Create\+Node\+Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Node} $\ast$}]{p\+Node, }
+\item[{{\bf Scene\+Anim\+Node} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a3bbce6d002dbbc7ec1a30fc467a97706}
+Recursively creates an internal node structure matching the current scene and animation. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_aa7dfe2a1c9320bf616bfefefca10f6cd}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Get\+Bone\+Matrices@{Get\+Bone\+Matrices}}
+\index{Get\+Bone\+Matrices@{Get\+Bone\+Matrices}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Get\+Bone\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ {\bf ai\+Matrix4x4} $>$ \& Scene\+Animator\+::\+Get\+Bone\+Matrices (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Node} $\ast$}]{p\+Node, }
+\item[{size\+\_\+t}]{p\+Mesh\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_view_1_1_scene_animator_aa7dfe2a1c9320bf616bfefefca10f6cd}
+Calculates the bone matrices for the given mesh.
+
+Each bone matrix transforms from mesh space in bind pose to mesh space in skinned pose, it does not contain the mesh's world matrix. Thus the usual matrix chain for using in the vertex shader is 
+\begin{DoxyCode}
+boneMatrix * worldMatrix * viewMatrix * projMatrix
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+Node} & The node carrying the mesh. \\
+\hline
+{\em p\+Mesh\+Index} & \hyperlink{struct_index}{Index} of the mesh in the node's mesh array. The N\+O\+D\+E's mesh array, not the scene's mesh array! Leave out to use the first mesh of the node, which is usually also the only one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to a vector of bone matrices. Stays stable till the next call to \hyperlink{class_assimp_view_1_1_scene_animator_aa7dfe2a1c9320bf616bfefefca10f6cd}{Get\+Bone\+Matrices()}; 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_a9b0eba92e2845fa9d5b2412e764c1075}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Get\+Global\+Transform@{Get\+Global\+Transform}}
+\index{Get\+Global\+Transform@{Get\+Global\+Transform}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Get\+Global\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Matrix4x4} \& Scene\+Animator\+::\+Get\+Global\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_assimp_view_1_1_scene_animator_a9b0eba92e2845fa9d5b2412e764c1075}
+Retrieves the most recent global transformation matrix for the given node.
+
+The returned matrix is in world space, which is the same coordinate space as the transformation of the scene's root node. If the node is not animated, the node's original transformation is returned so that you can safely use or assign it to the node itsself. If there is no node with the given name, the identity matrix is returned. All transformations are updated whenever \hyperlink{class_assimp_view_1_1_scene_animator_ac2fca81d4eb40a272065b5cf032db38b}{Calculate()} is called. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Node\+Name} & Name of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the node's most recently calculated global transformation matrix. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_a49d269f5bafdf8c265a1ce0c0d3d6663}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Get\+Local\+Transform@{Get\+Local\+Transform}}
+\index{Get\+Local\+Transform@{Get\+Local\+Transform}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Get\+Local\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Matrix4x4} \& Scene\+Animator\+::\+Get\+Local\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+) const}}\label{class_assimp_view_1_1_scene_animator_a49d269f5bafdf8c265a1ce0c0d3d6663}
+Retrieves the most recent local transformation matrix for the given node.
+
+The returned matrix is in the node's parent's local space, just like the original node's transformation matrix. If the node is not animated, the node's original transformation is returned so that you can safely use or assign it to the node itsself. If there is no node with the given name, the identity matrix is returned. All transformations are updated whenever \hyperlink{class_assimp_view_1_1_scene_animator_ac2fca81d4eb40a272065b5cf032db38b}{Calculate()} is called. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Node\+Name} & Name of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the node's most recently calculated local transformation matrix. 
+\end{DoxyReturn}
+\hypertarget{class_assimp_view_1_1_scene_animator_a248309cdd1e5c8af66247aa14b174609}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Set\+Anim\+Index@{Set\+Anim\+Index}}
+\index{Set\+Anim\+Index@{Set\+Anim\+Index}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Set\+Anim\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Animator\+::\+Set\+Anim\+Index (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{p\+Anim\+Index}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_view_1_1_scene_animator_a248309cdd1e5c8af66247aa14b174609}
+Sets the animation to use for playback. This also recreates the internal mapping structures, which might take a few cycles. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Anim\+Index} & \hyperlink{struct_index}{Index} of the animation in the scene's animation array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_view_1_1_scene_animator_a8d108ebc1aee4a86d162accc0e40ebe7}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!Update\+Transforms@{Update\+Transforms}}
+\index{Update\+Transforms@{Update\+Transforms}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{Update\+Transforms}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+Animator\+::\+Update\+Transforms (
+\begin{DoxyParamCaption}
+\item[{{\bf Scene\+Anim\+Node} $\ast$}]{p\+Node, }
+\item[{const std\+::vector$<$ {\bf ai\+Matrix4x4} $>$ \&}]{p\+Transforms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a8d108ebc1aee4a86d162accc0e40ebe7}
+Recursively updates the internal node transformations from the given matrix array 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_view_1_1_scene_animator_a833e91d8a9b56837f20d0c80100ff63a}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!m\+Anim\+Evaluator@{m\+Anim\+Evaluator}}
+\index{m\+Anim\+Evaluator@{m\+Anim\+Evaluator}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{m\+Anim\+Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Anim\+Evaluator}$\ast$ Assimp\+View\+::\+Scene\+Animator\+::m\+Anim\+Evaluator\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a833e91d8a9b56837f20d0c80100ff63a}
+The \hyperlink{class_assimp_view_1_1_anim_evaluator}{Anim\+Evaluator} we use to calculate the current pose for the current animation \hypertarget{class_assimp_view_1_1_scene_animator_a4305f48bc7e66229f416838f0b8e49b0}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!m\+Current\+Anim\+Index@{m\+Current\+Anim\+Index}}
+\index{m\+Current\+Anim\+Index@{m\+Current\+Anim\+Index}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{m\+Current\+Anim\+Index}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Assimp\+View\+::\+Scene\+Animator\+::m\+Current\+Anim\+Index\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a4305f48bc7e66229f416838f0b8e49b0}
+Current animation index \hypertarget{class_assimp_view_1_1_scene_animator_a76d6c3f6a84b52919ca645f3af7623a5}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!m\+Identity\+Matrix@{m\+Identity\+Matrix}}
+\index{m\+Identity\+Matrix@{m\+Identity\+Matrix}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{m\+Identity\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Matrix4x4} Assimp\+View\+::\+Scene\+Animator\+::m\+Identity\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a76d6c3f6a84b52919ca645f3af7623a5}
+Identity matrix to return a reference to in case of error \hypertarget{class_assimp_view_1_1_scene_animator_a37b1c60f39ab41656731cd90b0597f13}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!m\+Root\+Node@{m\+Root\+Node}}
+\index{m\+Root\+Node@{m\+Root\+Node}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{m\+Root\+Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene\+Anim\+Node}$\ast$ Assimp\+View\+::\+Scene\+Animator\+::m\+Root\+Node\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a37b1c60f39ab41656731cd90b0597f13}
+Root node of the internal scene structure \hypertarget{class_assimp_view_1_1_scene_animator_a4fe1542596fc5b5287fc2ad54d486379}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!m\+Scene@{m\+Scene}}
+\index{m\+Scene@{m\+Scene}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{m\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Scene}$\ast$ Assimp\+View\+::\+Scene\+Animator\+::m\+Scene\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a4fe1542596fc5b5287fc2ad54d486379}
+The scene we're operating on \hypertarget{class_assimp_view_1_1_scene_animator_a78e94ddc3e4866d76d336bc769aceca8}{\index{Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}!m\+Transforms@{m\+Transforms}}
+\index{m\+Transforms@{m\+Transforms}!Assimp\+View\+::\+Scene\+Animator@{Assimp\+View\+::\+Scene\+Animator}}
+\subsubsection[{m\+Transforms}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf ai\+Matrix4x4}$>$ Assimp\+View\+::\+Scene\+Animator\+::m\+Transforms\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_view_1_1_scene_animator_a78e94ddc3e4866d76d336bc769aceca8}
+Array to return transformations results inside. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/tools/assimp\+\_\+view/\hyperlink{_scene_animator_8h}{Scene\+Animator.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/tools/assimp\+\_\+view/\hyperlink{_scene_animator_8cpp}{Scene\+Animator.\+cpp}\end{DoxyCompactItemize}

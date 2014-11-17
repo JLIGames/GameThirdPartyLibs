@@ -1,0 +1,87 @@
+\hypertarget{_o_p_c___a_a_b_b_collider_8cpp}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.cpp File Reference}
+\label{_o_p_c___a_a_b_b_collider_8cpp}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Box\+Box\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Tri\+Box\+Overlap.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T}(prim\+\_\+index, flag)
+\item 
+\#define \hyperlink{_o_p_c___a_a_b_b_collider_8cpp_af8e82ecbc8a3f50581ed3212db0075ba}{A\+A\+B\+B\+\_\+\+P\+R\+I\+M}(prim\+\_\+index, flag)
+\begin{DoxyCompactList}\small\item\em A\+A\+B\+B-\/triangle test. \end{DoxyCompactList}\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B}(center, extents)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for an \hyperlink{class_a_a_b_b}{A\+A\+B\+B} collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January, 1st, 2002 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_o_p_c___a_a_b_b_collider_8cpp_af8e82ecbc8a3f50581ed3212db0075ba}{\index{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}!A\+A\+B\+B\+\_\+\+P\+R\+I\+M@{A\+A\+B\+B\+\_\+\+P\+R\+I\+M}}
+\index{A\+A\+B\+B\+\_\+\+P\+R\+I\+M@{A\+A\+B\+B\+\_\+\+P\+R\+I\+M}!O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}}
+\subsubsection[{A\+A\+B\+B\+\_\+\+P\+R\+I\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+A\+B\+B\+\_\+\+P\+R\+I\+M(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}}\label{_o_p_c___a_a_b_b_collider_8cpp_af8e82ecbc8a3f50581ed3212db0075ba}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Request vertices from the app */}                     \(\backslash\)
+    VertexPointers VP;  mIMesh->GetTriangle(VP, prim\_index);\(\backslash\)
+    mLeafVerts[0] = *VP.Vertex[0];                          \(\backslash\)
+    mLeafVerts[1] = *VP.Vertex[1];                          \(\backslash\)
+    mLeafVerts[2] = *VP.Vertex[2];                          \(\backslash\)
+    \textcolor{comment}{/* Perform triangle-box overlap test */}                 \(\backslash\)
+    if(TriBoxOverlap())                                     \(\backslash\)
+    \{                                                       \(\backslash\)
+        SET\_CONTACT(prim\_index, flag)                       \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+A\+A\+B\+B-\/triangle test. 
+
+\hypertarget{_o_p_c___a_a_b_b_collider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}{\index{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}!S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T}}
+\index{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T}!O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}}
+\subsubsection[{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}}\label{_o_p_c___a_a_b_b_collider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Set contact status */}                                \(\backslash\)
+    mFlags |= flag;                                         \(\backslash\)
+    mTouchedPrimitives->Add(prim\_index);
+\end{DoxyCode}
+\hypertarget{_o_p_c___a_a_b_b_collider_8cpp_a15829060f637ba6ade713433e308c631}{\index{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}!T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B@{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B}}
+\index{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B@{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B}!O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+cpp}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+A\+A\+B\+B(
+\begin{DoxyParamCaption}
+\item[{}]{center, }
+\item[{}]{extents}
+\end{DoxyParamCaption}
+)}}\label{_o_p_c___a_a_b_b_collider_8cpp_a15829060f637ba6ade713433e308c631}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(AABBContainsBox(center, extents))    \(\backslash\)
+    \{                                       \(\backslash\)
+        \textcolor{comment}{/* Set contact status */}            \(\backslash\)
+        mFlags |= \hyperlink{_o_p_c___collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}{OPC\_CONTACT};               \(\backslash\)
+        \_Dump(node);                        \(\backslash\)
+        return;                             \(\backslash\)
+    \}
+\end{DoxyCode}

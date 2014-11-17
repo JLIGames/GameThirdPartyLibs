@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Beginner/01_HelloAPI/OGLES/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a8a2be4e2a206a5b001436039936d9fc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_a8a2be4e2a206a5b001436039936d9fc.html"]
+  subgraph clusterdir_6311e4496c10d27587f2ab2419af132c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6311e4496c10d27587f2ab2419af132c.html"];
+    dir_6311e4496c10d27587f2ab2419af132c [shape=plaintext label="com"];
+    dir_6ea2bfc194b2d155775b3fbe53923115 [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_6ea2bfc194b2d155775b3fbe53923115.html"];
+  }
+  }
+}

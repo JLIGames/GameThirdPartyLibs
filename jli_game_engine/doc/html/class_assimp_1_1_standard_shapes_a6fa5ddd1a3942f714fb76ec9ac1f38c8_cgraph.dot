@@ -1,0 +1,11 @@
+digraph "Assimp::StandardShapes::MakeSphere"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::StandardShapes\l::MakeSphere",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::integer_pow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a7f1165ac9e907c30dbbba7657c651b4e",tooltip="Evaluates an integer power. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::StandardShapes\l::MakeIcosahedron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_standard_shapes.html#a2592a9c15a11d95181f78bd3f7c0458b",tooltip="Generates an icosahedron. "];
+}

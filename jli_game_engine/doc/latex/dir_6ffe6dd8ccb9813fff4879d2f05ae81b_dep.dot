@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/PhantomMask/OGLES3/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6fe0de3668902a390ca266bf199f3fec {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_6fe0de3668902a390ca266bf199f3fec.html"]
+  subgraph clusterdir_6ffe6dd8ccb9813fff4879d2f05ae81b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6ffe6dd8ccb9813fff4879d2f05ae81b.html"];
+    dir_6ffe6dd8ccb9813fff4879d2f05ae81b [shape=plaintext label="com"];
+    dir_a88043efb338678f96e7b02991094339 [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_a88043efb338678f96e7b02991094339.html"];
+  }
+  }
+}

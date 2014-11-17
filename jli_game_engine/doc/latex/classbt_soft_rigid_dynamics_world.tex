@@ -1,0 +1,131 @@
+\hypertarget{classbt_soft_rigid_dynamics_world}{\section{bt\+Soft\+Rigid\+Dynamics\+World Class Reference}
+\label{classbt_soft_rigid_dynamics_world}\index{bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}}
+}
+
+
+Inheritance diagram for bt\+Soft\+Rigid\+Dynamics\+World\+:
+
+
+Collaboration diagram for bt\+Soft\+Rigid\+Dynamics\+World\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_ad3724ef1193391fe522edc96c541ac9c}{{\bfseries bt\+Soft\+Rigid\+Dynamics\+World} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_broadphase_interface}{bt\+Broadphase\+Interface} $\ast$pair\+Cache, \hyperlink{classbt_constraint_solver}{bt\+Constraint\+Solver} $\ast$constraint\+Solver, \hyperlink{classbt_collision_configuration}{bt\+Collision\+Configuration} $\ast$collision\+Configuration, \hyperlink{classbt_soft_body_solver}{bt\+Soft\+Body\+Solver} $\ast$soft\+Body\+Solver=0)}\label{classbt_soft_rigid_dynamics_world_ad3724ef1193391fe522edc96c541ac9c}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a4f4f35e55b213306488d9b57a30271a3}{virtual void {\bfseries debug\+Draw\+World} ()}\label{classbt_soft_rigid_dynamics_world_a4f4f35e55b213306488d9b57a30271a3}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_aa20faacb10b1d67a6b79e19a3709da65}{void {\bfseries add\+Soft\+Body} (\hyperlink{classbt_soft_body}{bt\+Soft\+Body} $\ast$body, short int collision\+Filter\+Group=bt\+Broadphase\+Proxy\+::\+Default\+Filter, short int collision\+Filter\+Mask=bt\+Broadphase\+Proxy\+::\+All\+Filter)}\label{classbt_soft_rigid_dynamics_world_aa20faacb10b1d67a6b79e19a3709da65}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a4129564060bc4960f509ebf31470686a}{void {\bfseries remove\+Soft\+Body} (\hyperlink{classbt_soft_body}{bt\+Soft\+Body} $\ast$body)}\label{classbt_soft_rigid_dynamics_world_a4129564060bc4960f509ebf31470686a}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_af2b8c217f386bb37cab6512294281c7e}{virtual void \hyperlink{classbt_soft_rigid_dynamics_world_af2b8c217f386bb37cab6512294281c7e}{remove\+Collision\+Object} (bt\+Collision\+Object $\ast$collision\+Object)}\label{classbt_soft_rigid_dynamics_world_af2b8c217f386bb37cab6512294281c7e}
+
+\begin{DoxyCompactList}\small\item\em remove\+Collision\+Object will first check if it is a rigid body, if so call remove\+Rigid\+Body otherwise call bt\+Discrete\+Dynamics\+World\+::remove\+Collision\+Object \end{DoxyCompactList}\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a71eb1e7164938e5964e84c3af465864f}{int {\bfseries get\+Draw\+Flags} () const }\label{classbt_soft_rigid_dynamics_world_a71eb1e7164938e5964e84c3af465864f}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_ad982fb770a12204e59a19dedeff32ae4}{void {\bfseries set\+Draw\+Flags} (int f)}\label{classbt_soft_rigid_dynamics_world_ad982fb770a12204e59a19dedeff32ae4}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_adf7ee702dee979e4120ce536eb95e695}{\hyperlink{structbt_soft_body_world_info}{bt\+Soft\+Body\+World\+Info} \& {\bfseries get\+World\+Info} ()}\label{classbt_soft_rigid_dynamics_world_adf7ee702dee979e4120ce536eb95e695}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a57032ecdd44be4a10357bfdc0f1aab68}{const \hyperlink{structbt_soft_body_world_info}{bt\+Soft\+Body\+World\+Info} \& {\bfseries get\+World\+Info} () const }\label{classbt_soft_rigid_dynamics_world_a57032ecdd44be4a10357bfdc0f1aab68}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_ab1fefe17b8d0eafa9d6bcc350d84e540}{virtual bt\+Dynamics\+World\+Type {\bfseries get\+World\+Type} () const }\label{classbt_soft_rigid_dynamics_world_ab1fefe17b8d0eafa9d6bcc350d84e540}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a4cf515c1e5bab7952f0a26c535aa7da8}{\hyperlink{classbt_aligned_object_array}{bt\+Soft\+Body\+Array} \& {\bfseries get\+Soft\+Body\+Array} ()}\label{classbt_soft_rigid_dynamics_world_a4cf515c1e5bab7952f0a26c535aa7da8}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a59821d263de56fec8ee82d0d4f7294a8}{const \hyperlink{classbt_aligned_object_array}{bt\+Soft\+Body\+Array} \& {\bfseries get\+Soft\+Body\+Array} () const }\label{classbt_soft_rigid_dynamics_world_a59821d263de56fec8ee82d0d4f7294a8}
+
+\item 
+virtual void \hyperlink{classbt_soft_rigid_dynamics_world_a1d914916b59d57a72295129f2d710d4a}{ray\+Test} (const bt\+Vector3 \&ray\+From\+World, const bt\+Vector3 \&ray\+To\+World, Ray\+Result\+Callback \&result\+Callback) const 
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_ac7770632b7372c54d2d85d33109bcfbf}{virtual void {\bfseries serialize} (\hyperlink{classbt_serializer}{bt\+Serializer} $\ast$serializer)}\label{classbt_soft_rigid_dynamics_world_ac7770632b7372c54d2d85d33109bcfbf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classbt_soft_rigid_dynamics_world_a918218d4fe565ce42fd78c9d06d22cb0}{ray\+Test\+Single} (const bt\+Transform \&ray\+From\+Trans, const bt\+Transform \&ray\+To\+Trans, bt\+Collision\+Object $\ast$collision\+Object, const bt\+Collision\+Shape $\ast$collision\+Shape, const bt\+Transform \&col\+Obj\+World\+Transform, Ray\+Result\+Callback \&result\+Callback)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_aa2fe667a197a86d8bbfdd1149010afea}{virtual void {\bfseries predict\+Unconstraint\+Motion} (bt\+Scalar time\+Step)}\label{classbt_soft_rigid_dynamics_world_aa2fe667a197a86d8bbfdd1149010afea}
+
+\item 
+virtual void \hyperlink{classbt_soft_rigid_dynamics_world_ace902ab44e0e090b82e2031f154d7015}{internal\+Single\+Step\+Simulation} (bt\+Scalar time\+Step)
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_af65fd70ac5706da07d6f99286662e4fe}{void {\bfseries solve\+Soft\+Bodies\+Constraints} (bt\+Scalar time\+Step)}\label{classbt_soft_rigid_dynamics_world_af65fd70ac5706da07d6f99286662e4fe}
+
+\item 
+\hypertarget{classbt_soft_rigid_dynamics_world_a289b622acef102e2b8471376993bdd23}{void {\bfseries serialize\+Soft\+Bodies} (\hyperlink{classbt_serializer}{bt\+Serializer} $\ast$serializer)}\label{classbt_soft_rigid_dynamics_world_a289b622acef102e2b8471376993bdd23}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_soft_rigid_dynamics_world_ace902ab44e0e090b82e2031f154d7015}{\index{bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}!internal\+Single\+Step\+Simulation@{internal\+Single\+Step\+Simulation}}
+\index{internal\+Single\+Step\+Simulation@{internal\+Single\+Step\+Simulation}!bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}}
+\subsubsection[{internal\+Single\+Step\+Simulation}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Soft\+Rigid\+Dynamics\+World\+::internal\+Single\+Step\+Simulation (
+\begin{DoxyParamCaption}
+\item[{bt\+Scalar}]{time\+Step}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classbt_soft_rigid_dynamics_world_ace902ab44e0e090b82e2031f154d7015}
+solve soft bodies constraints
+
+update soft bodies \hypertarget{classbt_soft_rigid_dynamics_world_a1d914916b59d57a72295129f2d710d4a}{\index{bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}!ray\+Test@{ray\+Test}}
+\index{ray\+Test@{ray\+Test}!bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}}
+\subsubsection[{ray\+Test}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Soft\+Rigid\+Dynamics\+World\+::ray\+Test (
+\begin{DoxyParamCaption}
+\item[{const bt\+Vector3 \&}]{ray\+From\+World, }
+\item[{const bt\+Vector3 \&}]{ray\+To\+World, }
+\item[{Ray\+Result\+Callback \&}]{result\+Callback}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_soft_rigid_dynamics_world_a1d914916b59d57a72295129f2d710d4a}
+use the broadphase to accelerate the search for objects, based on their aabb and for each object with ray-\/aabb overlap, perform an exact ray test 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classbt_soft_rigid_dynamics_world_a918218d4fe565ce42fd78c9d06d22cb0}{\index{bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}!ray\+Test\+Single@{ray\+Test\+Single}}
+\index{ray\+Test\+Single@{ray\+Test\+Single}!bt\+Soft\+Rigid\+Dynamics\+World@{bt\+Soft\+Rigid\+Dynamics\+World}}
+\subsubsection[{ray\+Test\+Single}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Soft\+Rigid\+Dynamics\+World\+::ray\+Test\+Single (
+\begin{DoxyParamCaption}
+\item[{const bt\+Transform \&}]{ray\+From\+Trans, }
+\item[{const bt\+Transform \&}]{ray\+To\+Trans, }
+\item[{bt\+Collision\+Object $\ast$}]{collision\+Object, }
+\item[{const bt\+Collision\+Shape $\ast$}]{collision\+Shape, }
+\item[{const bt\+Transform \&}]{col\+Obj\+World\+Transform, }
+\item[{Ray\+Result\+Callback \&}]{result\+Callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbt_soft_rigid_dynamics_world_a918218d4fe565ce42fd78c9d06d22cb0}
+ray\+Test\+Single performs a raycast call and calls the result\+Callback. It is used internally by ray\+Test. In a future implementation, we consider moving the ray test as a virtual method in bt\+Collision\+Shape. This allows more customization. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Soft\+Body/bt\+Soft\+Rigid\+Dynamics\+World.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Soft\+Body/bt\+Soft\+Rigid\+Dynamics\+World.\+cpp\end{DoxyCompactItemize}

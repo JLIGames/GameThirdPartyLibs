@@ -1,0 +1,46 @@
+\hypertarget{structassimp_1_1mesh_1_1ai_bone}{\section{assimp\+:\+:mesh\+:\+:ai\+Bone Struct Reference}
+\label{structassimp_1_1mesh_1_1ai_bone}\index{assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}}
+}
+
+
+Collaboration diagram for assimp\+:\+:mesh\+:\+:ai\+Bone\+:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structassimp_1_1types_1_1ai_string}{ai\+String} \hyperlink{structassimp_1_1mesh_1_1ai_bone_a2cf2e251c682709f1deaef9f863fa94e}{m\+Name}
+\item 
+uint \hyperlink{structassimp_1_1mesh_1_1ai_bone_a25df69957af6505c3e2e9db0205e209d}{m\+Num\+Weights}
+\item 
+\hyperlink{structassimp_1_1mesh_1_1ai_vertex_weight}{ai\+Vertex\+Weight} $\ast$ \hyperlink{structassimp_1_1mesh_1_1ai_bone_acb25d504b05606e326b03da7fea4ef8c}{m\+Weights}
+\item 
+\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \hyperlink{structassimp_1_1mesh_1_1ai_bone_afacaa1fbf11977a77e72c174874c42be}{m\+Offset\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single bone of a mesh.
+
+A bone has a name by which it can be found in the frame hierarchy and by which it can be addressed by animations. In addition it has a number of influences on vertices. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structassimp_1_1mesh_1_1ai_bone_a2cf2e251c682709f1deaef9f863fa94e}{\index{assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}!m\+Name@{m\+Name}}
+\index{m\+Name@{m\+Name}!assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}}
+\subsubsection[{m\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+String} assimp\+::mesh\+::ai\+Bone\+::m\+Name}}\label{structassimp_1_1mesh_1_1ai_bone_a2cf2e251c682709f1deaef9f863fa94e}
+The name of the bone. \hypertarget{structassimp_1_1mesh_1_1ai_bone_a25df69957af6505c3e2e9db0205e209d}{\index{assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}!m\+Num\+Weights@{m\+Num\+Weights}}
+\index{m\+Num\+Weights@{m\+Num\+Weights}!assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}}
+\subsubsection[{m\+Num\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}uint assimp\+::mesh\+::ai\+Bone\+::m\+Num\+Weights}}\label{structassimp_1_1mesh_1_1ai_bone_a25df69957af6505c3e2e9db0205e209d}
+The number of vertices affected by this bone.
+
+The maximum value for this member is {\ttfamily A\+I\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+E\+\_\+\+W\+E\+I\+G\+H\+T\+S}. \hypertarget{structassimp_1_1mesh_1_1ai_bone_afacaa1fbf11977a77e72c174874c42be}{\index{assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}!m\+Offset\+Matrix@{m\+Offset\+Matrix}}
+\index{m\+Offset\+Matrix@{m\+Offset\+Matrix}!assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}}
+\subsubsection[{m\+Offset\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Matrix4x4} assimp\+::mesh\+::ai\+Bone\+::m\+Offset\+Matrix}}\label{structassimp_1_1mesh_1_1ai_bone_afacaa1fbf11977a77e72c174874c42be}
+\hyperlink{class_matrix}{Matrix} that transforms from mesh space to bone space (in the bind pose). \hypertarget{structassimp_1_1mesh_1_1ai_bone_acb25d504b05606e326b03da7fea4ef8c}{\index{assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}!m\+Weights@{m\+Weights}}
+\index{m\+Weights@{m\+Weights}!assimp\+::mesh\+::ai\+Bone@{assimp\+::mesh\+::ai\+Bone}}
+\subsubsection[{m\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Vertex\+Weight}$\ast$ assimp\+::mesh\+::ai\+Bone\+::m\+Weights}}\label{structassimp_1_1mesh_1_1ai_bone_acb25d504b05606e326b03da7fea4ef8c}
+The vertices affected by this bone.
+
+This array is {\ttfamily m\+Num\+Weights} entries in size. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/d\+Assimp/assimp/mesh.\+d\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{_f_b_x_parser_8h}{\section{assimp/assimp-\/3.1.1/code/\+F\+B\+X\+Parser.h File Reference}
+\label{_f_b_x_parser_8h}\index{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Parser.\+h@{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Parser.\+h}}
+}
+
+
+F\+B\+X parsing code.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$boost/shared\+\_\+ptr.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}Log\+Aux.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Compile\+Config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Tokenizer.\+h\char`\"{}}\\*
+Include dependency graph for F\+B\+X\+Parser.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Assimp\+::\+F\+B\+X\+::\+Element}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_scope}{Assimp\+::\+F\+B\+X\+::\+Scope}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_parser}{Assimp\+::\+F\+B\+X\+::\+Parser}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_b_x_parser_8h_afa9a415242a43d56ffd60fc51eb18fdb}{\#define {\bfseries new\+\_\+\+Scope}~new Scope}\label{_f_b_x_parser_8h_afa9a415242a43d56ffd60fc51eb18fdb}
+
+\item 
+\hypertarget{_f_b_x_parser_8h_a56fe5abf52dc222b6a08bbc7b38bc891}{\#define {\bfseries new\+\_\+\+Element}~new Element}\label{_f_b_x_parser_8h_a56fe5abf52dc222b6a08bbc7b38bc891}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_ade32301af6ae8173bb4112d13c4f3ab1}{typedef std\+::vector$<$ Scope $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Scope\+List}}\label{namespace_assimp_1_1_f_b_x_ade32301af6ae8173bb4112d13c4f3ab1}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a22c3e1c5f36c6d96e2852818ac2b73b6}{typedef \\*
+std\+::fbx\+\_\+unordered\+\_\+multimap\\*
+$<$ std\+::string, Element $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Element\+Map}}\label{namespace_assimp_1_1_f_b_x_a22c3e1c5f36c6d96e2852818ac2b73b6}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_af6aee131555b2ad1dbc1bf5085dc27af}{typedef std\+::pair\\*
+$<$ Element\+Map\+::const\+\_\+iterator, \\*
+Element\+Map\+::const\+\_\+iterator $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Element\+Collection}}\label{namespace_assimp_1_1_f_b_x_af6aee131555b2ad1dbc1bf5085dc27af}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a4a5c88516cfe0e72178cf8c648eeb954}{uint64\+\_\+t {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+I\+D} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t, const char $\ast$\&err\+\_\+out)}\label{namespace_assimp_1_1_f_b_x_a4a5c88516cfe0e72178cf8c648eeb954}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_aae7f3d622261aec86845ccad5ec50971}{size\+\_\+t {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+Dim} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t, const char $\ast$\&err\+\_\+out)}\label{namespace_assimp_1_1_f_b_x_aae7f3d622261aec86845ccad5ec50971}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_af269def8f16ff84b5cfc89bbb0b7680a}{float {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+Float} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t, const char $\ast$\&err\+\_\+out)}\label{namespace_assimp_1_1_f_b_x_af269def8f16ff84b5cfc89bbb0b7680a}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a82a329f7c9c37a4767bad973de06eb69}{int {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+Int} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t, const char $\ast$\&err\+\_\+out)}\label{namespace_assimp_1_1_f_b_x_a82a329f7c9c37a4767bad973de06eb69}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a1afc7835fef948aacf4a9f1b16fc8e02}{std\+::string {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+String} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t, const char $\ast$\&err\+\_\+out)}\label{namespace_assimp_1_1_f_b_x_a1afc7835fef948aacf4a9f1b16fc8e02}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_ac9f837c42223514ae0dfd23b462d743e}{uint64\+\_\+t {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+I\+D} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t)}\label{namespace_assimp_1_1_f_b_x_ac9f837c42223514ae0dfd23b462d743e}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a93dc213e19cdf7b113d86ae07a69e7ae}{size\+\_\+t {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+Dim} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t)}\label{namespace_assimp_1_1_f_b_x_a93dc213e19cdf7b113d86ae07a69e7ae}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_af30c9bcc386d61e16fa4823a21d99ebe}{float {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+Float} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t)}\label{namespace_assimp_1_1_f_b_x_af30c9bcc386d61e16fa4823a21d99ebe}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_ab74bf642dcc9ffd0d1901f33200036d7}{int {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+Int} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t)}\label{namespace_assimp_1_1_f_b_x_ab74bf642dcc9ffd0d1901f33200036d7}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_accd0f60243c566aef1f6867674d5c1dd}{std\+::string {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Token\+As\+String} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \&t)}\label{namespace_assimp_1_1_f_b_x_accd0f60243c566aef1f6867674d5c1dd}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a7fa66be15d8979f6f69773b4b2c220fc}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_a7fa66be15d8979f6f69773b4b2c220fc}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_af40b4ccbbd985b6fb89e81d7d0f1d952}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ \hyperlink{structai_color4_d}{ai\+Color4\+D} $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_af40b4ccbbd985b6fb89e81d7d0f1d952}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a350f19413a387cfc98b6adfdac3624b7}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ \hyperlink{structai_vector2_d}{ai\+Vector2\+D} $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_a350f19413a387cfc98b6adfdac3624b7}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a04cacc2160ba55b50fdc4e57dcbea30a}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ int $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_a04cacc2160ba55b50fdc4e57dcbea30a}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a5fa01507221e33951c268ec81c3b8ec6}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ float $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_a5fa01507221e33951c268ec81c3b8ec6}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a6c98c3c892d6eb6dc0aaa925b175af51}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ unsigned int $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_a6c98c3c892d6eb6dc0aaa925b175af51}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a1024e45e3f437d43d147b8f31595d1b6}{void {\bfseries Assimp\+::\+F\+B\+X\+::\+Parse\+Vector\+Data\+Array} (std\+::vector$<$ uint64\+\_\+t $>$ \&out, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_a1024e45e3f437d43d147b8f31595d1b6}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a0a5c9fd6de1ce8e4018119f1e64a2433}{const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \& {\bfseries Assimp\+::\+F\+B\+X\+::\+Get\+Required\+Element} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_scope}{Scope} \&sc, const std\+::string \&index, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} $\ast$element)}\label{namespace_assimp_1_1_f_b_x_a0a5c9fd6de1ce8e4018119f1e64a2433}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_af01ac5f167a1d6567b22d4aa41374477}{const \hyperlink{class_assimp_1_1_f_b_x_1_1_scope}{Scope} \& {\bfseries Assimp\+::\+F\+B\+X\+::\+Get\+Required\+Scope} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el)}\label{namespace_assimp_1_1_f_b_x_af01ac5f167a1d6567b22d4aa41374477}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a457236a67fb5ab1c06cae8976c0d296c}{const \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Token} \& {\bfseries Assimp\+::\+F\+B\+X\+::\+Get\+Required\+Token} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&el, unsigned int index)}\label{namespace_assimp_1_1_f_b_x_a457236a67fb5ab1c06cae8976c0d296c}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a57012cb5a255e40438a1b2acd9d568ac}{\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} {\bfseries Assimp\+::\+F\+B\+X\+::\+Read\+Matrix} (const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&element)}\label{namespace_assimp_1_1_f_b_x_a57012cb5a255e40438a1b2acd9d568ac}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+B\+X parsing code. 
+

@@ -33,6 +33,7 @@ private:
 
 template <class OWNER_TYPE>
 AbstractBehavior<OWNER_TYPE>::AbstractBehavior(OWNER_TYPE *owner):
+AbstractObject(),
 m_pOwner(owner){}
 
 template <class OWNER_TYPE>

@@ -1,0 +1,79 @@
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser}{\section{Assimp\+:\+:Blender\+:\+:Section\+Parser Class Reference}
+\label{class_assimp_1_1_blender_1_1_section_parser}\index{Assimp\+::\+Blender\+::\+Section\+Parser@{Assimp\+::\+Blender\+::\+Section\+Parser}}
+}
+
+
+{\ttfamily \#include $<$Blender\+D\+N\+A.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:Blender\+:\+:Section\+Parser\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_blender_1_1_section_parser_a122328903815c862403d2f9434f7d817}{Section\+Parser} (Stream\+Reader\+Any \&stream, bool ptr64)
+\item 
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser_ac17e0de596767f6d86db696359bfc201}{const \hyperlink{struct_assimp_1_1_blender_1_1_file_block_head}{File\+Block\+Head} \& {\bfseries Get\+Current} () const }\label{class_assimp_1_1_blender_1_1_section_parser_ac17e0de596767f6d86db696359bfc201}
+
+\item 
+void \hyperlink{class_assimp_1_1_blender_1_1_section_parser_aea8492b62c76236a9cebf42c3c0b66d3}{Next} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser_a0e1d0a41f22020b27f33e510d44667f4}{\hyperlink{struct_assimp_1_1_blender_1_1_file_block_head}{File\+Block\+Head} {\bfseries current}}\label{class_assimp_1_1_blender_1_1_section_parser_a0e1d0a41f22020b27f33e510d44667f4}
+
+\item 
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser_a73fb55e7cc5aeeef0b1c334e497fdd84}{Stream\+Reader\+Any \& {\bfseries stream}}\label{class_assimp_1_1_blender_1_1_section_parser_a73fb55e7cc5aeeef0b1c334e497fdd84}
+
+\item 
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser_ab1270d8e71390cc9a94cb1877248c56c}{bool {\bfseries ptr64}}\label{class_assimp_1_1_blender_1_1_section_parser_ab1270d8e71390cc9a94cb1877248c56c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility to read all master file blocks in turn. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser_a122328903815c862403d2f9434f7d817}{\index{Assimp\+::\+Blender\+::\+Section\+Parser@{Assimp\+::\+Blender\+::\+Section\+Parser}!Section\+Parser@{Section\+Parser}}
+\index{Section\+Parser@{Section\+Parser}!Assimp\+::\+Blender\+::\+Section\+Parser@{Assimp\+::\+Blender\+::\+Section\+Parser}}
+\subsubsection[{Section\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+Blender\+::\+Section\+Parser\+::\+Section\+Parser (
+\begin{DoxyParamCaption}
+\item[{Stream\+Reader\+Any \&}]{stream, }
+\item[{bool}]{ptr64}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_blender_1_1_section_parser_a122328903815c862403d2f9434f7d817}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Inout stream, must point to the first section in the file. Call \hyperlink{class_assimp_1_1_blender_1_1_section_parser_aea8492b62c76236a9cebf42c3c0b66d3}{Next()} once to have it read. \\
+\hline
+{\em ptr64} & \hyperlink{struct_assimp_1_1_blender_1_1_pointer}{Pointer} size in file is 64 bits? \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_blender_1_1_section_parser_aea8492b62c76236a9cebf42c3c0b66d3}{\index{Assimp\+::\+Blender\+::\+Section\+Parser@{Assimp\+::\+Blender\+::\+Section\+Parser}!Next@{Next}}
+\index{Next@{Next}!Assimp\+::\+Blender\+::\+Section\+Parser@{Assimp\+::\+Blender\+::\+Section\+Parser}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}void Section\+Parser\+::\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_blender_1_1_section_parser_aea8492b62c76236a9cebf42c3c0b66d3}
+Advance to the next section. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_deadly_import_error}{Deadly\+Import\+Error}} & if the last chunk was passed. \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_blender_d_n_a_8h}{Blender\+D\+N\+A.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_blender_d_n_a_8cpp}{Blender\+D\+N\+A.\+cpp}\end{DoxyCompactItemize}

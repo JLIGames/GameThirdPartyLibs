@@ -1,0 +1,11 @@
+digraph "Assimp::IOSystem::ComparePaths"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::IOSystem::Compare\lPaths",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::FileSystemFilter\l::ComparePaths",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_file_system_filter.html#ae4e3f3d8d868b1c09ad927419a4b14e6"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::IOSystem::Compare\lPaths",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_system.html#a279d1d4b0b2aa37800e222aad508dff1",tooltip="For backward compatibility. "];
+}

@@ -1,0 +1,171 @@
+\hypertarget{classjassimp_1_1_ai_built_in_wrapper_provider}{\section{jassimp.\+Ai\+Built\+In\+Wrapper\+Provider Class Reference}
+\label{classjassimp_1_1_ai_built_in_wrapper_provider}\index{jassimp.\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp.\+Ai\+Built\+In\+Wrapper\+Provider}}
+}
+
+
+Inheritance diagram for jassimp.\+Ai\+Built\+In\+Wrapper\+Provider\+:
+
+
+Collaboration diagram for jassimp.\+Ai\+Built\+In\+Wrapper\+Provider\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjassimp_1_1_ai_vector}{Ai\+Vector} \hyperlink{classjassimp_1_1_ai_built_in_wrapper_provider_a9b1431d6caec7f20a21b42d7f9136a64}{wrap\+Vector3f} (Byte\+Buffer \hyperlink{structbuffer}{buffer}, int offset, int num\+Components)
+\item 
+\hyperlink{classjassimp_1_1_ai_matrix4f}{Ai\+Matrix4f} \hyperlink{classjassimp_1_1_ai_built_in_wrapper_provider_a41d8c81c95f316ae540ea709d0f84809}{wrap\+Matrix4f} (float\mbox{[}$\,$\mbox{]} data)
+\item 
+\hyperlink{classjassimp_1_1_ai_color}{Ai\+Color} \hyperlink{classjassimp_1_1_ai_built_in_wrapper_provider_a069b712bf1cbb700756319659125a490}{wrap\+Color} (Byte\+Buffer \hyperlink{structbuffer}{buffer}, int offset)
+\item 
+\hyperlink{classjassimp_1_1_ai_node}{Ai\+Node} \hyperlink{classjassimp_1_1_ai_built_in_wrapper_provider_a4547edb169d62bf8ae898b4898bdb304}{wrap\+Scene\+Node} (Object parent, Object matrix, int\mbox{[}$\,$\mbox{]} mesh\+References, String name)
+\item 
+\hyperlink{classjassimp_1_1_ai_quaternion}{Ai\+Quaternion} \hyperlink{classjassimp_1_1_ai_built_in_wrapper_provider_ae9fd66fc16ee669b765ca5775f019ef6}{wrap\+Quaternion} (Byte\+Buffer \hyperlink{structbuffer}{buffer}, int offset)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper provider using jassimp built in types. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjassimp_1_1_ai_built_in_wrapper_provider_a069b712bf1cbb700756319659125a490}{\index{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}!wrap\+Color@{wrap\+Color}}
+\index{wrap\+Color@{wrap\+Color}!jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}}
+\subsubsection[{wrap\+Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Color} jassimp.\+Ai\+Built\+In\+Wrapper\+Provider.\+wrap\+Color (
+\begin{DoxyParamCaption}
+\item[{Byte\+Buffer}]{buffer, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_built_in_wrapper_provider_a069b712bf1cbb700756319659125a490}
+Wraps a R\+G\+B\+A color.
+
+A color consists of 4 float values (r,g,b,a) starting from offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to wrap \\
+\hline
+{\em offset} & the offset into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped color 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacejassimp_1_1_ai_wrapper_provider_3_01_v3_00_01_m4_00_01_c_00_01_n_00_01_q_01_4_a4adc8ceb42dd82e396727ec348287b6d}{jassimp.\+Ai\+Wrapper\+Provider$<$ V3, M4, C, N, Q $>$}.
+
+\hypertarget{classjassimp_1_1_ai_built_in_wrapper_provider_a41d8c81c95f316ae540ea709d0f84809}{\index{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}!wrap\+Matrix4f@{wrap\+Matrix4f}}
+\index{wrap\+Matrix4f@{wrap\+Matrix4f}!jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}}
+\subsubsection[{wrap\+Matrix4f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Matrix4f} jassimp.\+Ai\+Built\+In\+Wrapper\+Provider.\+wrap\+Matrix4f (
+\begin{DoxyParamCaption}
+\item[{float\mbox{[}$\,$\mbox{]}}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_built_in_wrapper_provider_a41d8c81c95f316ae540ea709d0f84809}
+Wraps a 4x4 matrix of floats.
+
+The calling code will allocate a new array for each invocation of this method. It is safe to store a reference to the passed in array and use the array to store the matrix data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the matrix data in row-\/major order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped matrix 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacejassimp_1_1_ai_wrapper_provider_3_01_v3_00_01_m4_00_01_c_00_01_n_00_01_q_01_4_a5628d0357d73861c1f8070ed21fd3918}{jassimp.\+Ai\+Wrapper\+Provider$<$ V3, M4, C, N, Q $>$}.
+
+\hypertarget{classjassimp_1_1_ai_built_in_wrapper_provider_ae9fd66fc16ee669b765ca5775f019ef6}{\index{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}!wrap\+Quaternion@{wrap\+Quaternion}}
+\index{wrap\+Quaternion@{wrap\+Quaternion}!jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}}
+\subsubsection[{wrap\+Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Quaternion} jassimp.\+Ai\+Built\+In\+Wrapper\+Provider.\+wrap\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{Byte\+Buffer}]{buffer, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_built_in_wrapper_provider_ae9fd66fc16ee669b765ca5775f019ef6}
+Wraps a quaternion.
+
+A quaternion consists of 4 float values (w,x,y,z) starting from offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to wrap \\
+\hline
+{\em offset} & the offset into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped quaternion 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacejassimp_1_1_ai_wrapper_provider_3_01_v3_00_01_m4_00_01_c_00_01_n_00_01_q_01_4_aa81f22967b4a2e23a4fcdd6d0e5d35c7}{jassimp.\+Ai\+Wrapper\+Provider$<$ V3, M4, C, N, Q $>$}.
+
+\hypertarget{classjassimp_1_1_ai_built_in_wrapper_provider_a4547edb169d62bf8ae898b4898bdb304}{\index{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}!wrap\+Scene\+Node@{wrap\+Scene\+Node}}
+\index{wrap\+Scene\+Node@{wrap\+Scene\+Node}!jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}}
+\subsubsection[{wrap\+Scene\+Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Node} jassimp.\+Ai\+Built\+In\+Wrapper\+Provider.\+wrap\+Scene\+Node (
+\begin{DoxyParamCaption}
+\item[{Object}]{parent, }
+\item[{Object}]{matrix, }
+\item[{int\mbox{[}$\,$\mbox{]}}]{mesh\+References, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_built_in_wrapper_provider_a4547edb169d62bf8ae898b4898bdb304}
+Wraps a scene graph node.
+
+See \hyperlink{classjassimp_1_1_ai_node}{Ai\+Node} for a description of the scene graph structure used by assimp.
+
+The parent node is either null or an instance returned by this method. It is therefore safe to cast the passed in parent object to the implementation specific type
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & the parent node \\
+\hline
+{\em matrix} & the transformation matrix \\
+\hline
+{\em mesh\+References} & array of mesh references (indexes) \\
+\hline
+{\em name} & the name of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped scene graph node 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacejassimp_1_1_ai_wrapper_provider_3_01_v3_00_01_m4_00_01_c_00_01_n_00_01_q_01_4_a7a46e64a036f6a5b802f28b24e17788c}{jassimp.\+Ai\+Wrapper\+Provider$<$ V3, M4, C, N, Q $>$}.
+
+\hypertarget{classjassimp_1_1_ai_built_in_wrapper_provider_a9b1431d6caec7f20a21b42d7f9136a64}{\index{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}!wrap\+Vector3f@{wrap\+Vector3f}}
+\index{wrap\+Vector3f@{wrap\+Vector3f}!jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider@{jassimp\+::\+Ai\+Built\+In\+Wrapper\+Provider}}
+\subsubsection[{wrap\+Vector3f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Vector} jassimp.\+Ai\+Built\+In\+Wrapper\+Provider.\+wrap\+Vector3f (
+\begin{DoxyParamCaption}
+\item[{Byte\+Buffer}]{buffer, }
+\item[{int}]{offset, }
+\item[{int}]{num\+Components}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_built_in_wrapper_provider_a9b1431d6caec7f20a21b42d7f9136a64}
+Wraps a vector.
+
+Most vectors are 3-\/dimensional, i.\+e., with 3 components. The exception are texture coordinates, which may be 1-\/ or 2-\/dimensional. A vector consists of num\+Components floats (x,y,z) starting from offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to wrap \\
+\hline
+{\em offset} & the offset into buffer \\
+\hline
+{\em num\+Components} & the number of components \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped vector 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacejassimp_1_1_ai_wrapper_provider_3_01_v3_00_01_m4_00_01_c_00_01_n_00_01_q_01_4_a740fd7589d85350202ba54bc9d42894d}{jassimp.\+Ai\+Wrapper\+Provider$<$ V3, M4, C, N, Q $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Ai\+Built\+In\+Wrapper\+Provider.\+java\end{DoxyCompactItemize}

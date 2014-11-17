@@ -1,0 +1,49 @@
+\hypertarget{classjassimp_1_1_ai_light}{\section{jassimp.\+Ai\+Light Class Reference}
+\label{classjassimp_1_1_ai_light}\index{jassimp.\+Ai\+Light@{jassimp.\+Ai\+Light}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classjassimp_1_1_ai_light_aad89436caea611452b2cb25aa436c5fd}{get\+Name} ()
+\item 
+\hyperlink{enumjassimp_1_1_ai_light_type}{Ai\+Light\+Type} \hyperlink{classjassimp_1_1_ai_light_a4de066018817d70190de88229a80cf36}{get\+Type} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes a light source.
+
+\hyperlink{class_assimp}{Assimp} supports multiple sorts of light sources, including directional, point and spot lights. All of them are defined with just a single structure and distinguished by their parameters. Note -\/ some file formats (such as 3\+D\+S, A\+S\+E) export a \char`\"{}target point\char`\"{} -\/ the point a spot light is looking at (it can even be animated). \hyperlink{class_assimp}{Assimp} writes the target point as a subnode of a spotlights's main node, called \char`\"{}\&lt;spot\+Name\&gt;.\+Target\char`\"{}. However, this is just additional information then, the transformation tracks of the main node make the spot light already point in the right direction. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjassimp_1_1_ai_light_aad89436caea611452b2cb25aa436c5fd}{\index{jassimp\+::\+Ai\+Light@{jassimp\+::\+Ai\+Light}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jassimp\+::\+Ai\+Light@{jassimp\+::\+Ai\+Light}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String jassimp.\+Ai\+Light.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_light_aad89436caea611452b2cb25aa436c5fd}
+Returns the name of the light source.
+
+There must be a node in the scenegraph with the same name. This node specifies the position of the light in the scene hierarchy and can be animated.
+
+\begin{DoxyReturn}{Returns}
+the name 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_light_a4de066018817d70190de88229a80cf36}{\index{jassimp\+::\+Ai\+Light@{jassimp\+::\+Ai\+Light}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!jassimp\+::\+Ai\+Light@{jassimp\+::\+Ai\+Light}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Light\+Type} jassimp.\+Ai\+Light.\+get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_light_a4de066018817d70190de88229a80cf36}
+Returns The type of the light source.
+
+\begin{DoxyReturn}{Returns}
+the type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Ai\+Light.\+java\end{DoxyCompactItemize}

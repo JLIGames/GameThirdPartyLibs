@@ -1,0 +1,51 @@
+\hypertarget{class_json_test_1_1_runner}{\section{Json\+Test\+:\+:Runner Class Reference}
+\label{class_json_test_1_1_runner}\index{Json\+Test\+::\+Runner@{Json\+Test\+::\+Runner}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_json_test_1_1_runner_a48ad0b4b724b2076ecdd752318beec8c}{\hyperlink{class_json_test_1_1_runner}{Runner} \& \hyperlink{class_json_test_1_1_runner_a48ad0b4b724b2076ecdd752318beec8c}{add} (\hyperlink{namespace_json_test_a7ed671d588f9809e32a8fffb031853c5}{Test\+Case\+Factory} factory)}\label{class_json_test_1_1_runner_a48ad0b4b724b2076ecdd752318beec8c}
+
+\begin{DoxyCompactList}\small\item\em Adds a test to the suite. \end{DoxyCompactList}\item 
+int \hyperlink{class_json_test_1_1_runner_a34725df8c1abcba246439d7f7fc3d1e6}{run\+Command\+Line} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]}) const 
+\item 
+\hypertarget{class_json_test_1_1_runner_a907cd950b1f6dfd0cdd2aaca2065f3a7}{bool \hyperlink{class_json_test_1_1_runner_a907cd950b1f6dfd0cdd2aaca2065f3a7}{run\+All\+Test} (bool print\+Summary) const }\label{class_json_test_1_1_runner_a907cd950b1f6dfd0cdd2aaca2065f3a7}
+
+\begin{DoxyCompactList}\small\item\em Runs all the test cases. \end{DoxyCompactList}\item 
+\hypertarget{class_json_test_1_1_runner_af607a6ddb0759b925c0aded92b0c5cbd}{unsigned int \hyperlink{class_json_test_1_1_runner_af607a6ddb0759b925c0aded92b0c5cbd}{test\+Count} () const }\label{class_json_test_1_1_runner_af607a6ddb0759b925c0aded92b0c5cbd}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of test case in the suite. \end{DoxyCompactList}\item 
+\hypertarget{class_json_test_1_1_runner_adfdfafaf566c78564073d480fb8e6b43}{std\+::string \hyperlink{class_json_test_1_1_runner_adfdfafaf566c78564073d480fb8e6b43}{test\+Name\+At} (unsigned int index) const }\label{class_json_test_1_1_runner_adfdfafaf566c78564073d480fb8e6b43}
+
+\begin{DoxyCompactList}\small\item\em Returns the name of the test case at the specified index. \end{DoxyCompactList}\item 
+\hypertarget{class_json_test_1_1_runner_aa4c556b3f7efd9733c8ae2c57a146ace}{void \hyperlink{class_json_test_1_1_runner_aa4c556b3f7efd9733c8ae2c57a146ace}{run\+Test\+At} (unsigned int index, \hyperlink{class_json_test_1_1_test_result}{Test\+Result} \&result) const }\label{class_json_test_1_1_runner_aa4c556b3f7efd9733c8ae2c57a146ace}
+
+\begin{DoxyCompactList}\small\item\em Runs the test case at the specified index using the specified \hyperlink{class_json_test_1_1_test_result}{Test\+Result}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_json_test_1_1_runner_a09ce7ef9e39e38f1c86cf096fd3ffb97}{static void {\bfseries print\+Usage} (const char $\ast$app\+Name)}\label{class_json_test_1_1_runner_a09ce7ef9e39e38f1c86cf096fd3ffb97}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_json_test_1_1_runner_a34725df8c1abcba246439d7f7fc3d1e6}{\index{Json\+Test\+::\+Runner@{Json\+Test\+::\+Runner}!run\+Command\+Line@{run\+Command\+Line}}
+\index{run\+Command\+Line@{run\+Command\+Line}!Json\+Test\+::\+Runner@{Json\+Test\+::\+Runner}}
+\subsubsection[{run\+Command\+Line}]{\setlength{\rightskip}{0pt plus 5cm}int Json\+Test\+::\+Runner\+::run\+Command\+Line (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const}}\label{class_json_test_1_1_runner_a34725df8c1abcba246439d7f7fc3d1e6}
+Runs test as specified on the command-\/line If no command-\/line arguments are provided, run all tests. If --list-\/tests is provided, then print the list of all test cases If --test $<$testname$>$ is provided, then run test testname. 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+json/jsoncpp-\/src-\/0.\+5.\+0/src/test\+\_\+lib\+\_\+json/jsontest.\+h\item 
+json/jsoncpp-\/src-\/0.\+5.\+0/src/test\+\_\+lib\+\_\+json/jsontest.\+cpp\end{DoxyCompactItemize}

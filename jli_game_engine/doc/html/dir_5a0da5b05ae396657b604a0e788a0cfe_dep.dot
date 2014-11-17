@@ -1,0 +1,9 @@
+digraph "bullet/bullet-2.82-r2704/src/BulletDynamics/Dynamics" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_af43208036bf704b5e7ab06051c07d0a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="BulletDynamics" fontname="Helvetica", fontsize="10", URL="dir_af43208036bf704b5e7ab06051c07d0a.html"]
+  dir_5a0da5b05ae396657b604a0e788a0cfe [shape=box, label="Dynamics", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5a0da5b05ae396657b604a0e788a0cfe.html"];
+  }
+}

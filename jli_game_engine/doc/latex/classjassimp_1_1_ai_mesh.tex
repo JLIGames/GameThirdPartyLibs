@@ -1,0 +1,1143 @@
+\hypertarget{classjassimp_1_1_ai_mesh}{\section{jassimp.\+Ai\+Mesh Class Reference}
+\label{classjassimp_1_1_ai_mesh}\index{jassimp.\+Ai\+Mesh@{jassimp.\+Ai\+Mesh}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ \hyperlink{enumjassimp_1_1_ai_primitive_type}{Ai\+Primitive\+Type} $>$ \hyperlink{classjassimp_1_1_ai_mesh_a507049804efb042d6262ff27880705f0}{get\+Primitive\+Types} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a833ff375aed60ac78c83af1209762e6c}{is\+Pure\+Triangle} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a3ce02d9155a0dba1ac60bccb8e7c4716}{has\+Positions} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a3ab2af81d7fff77e7c1d752e5d2a5ead}{has\+Faces} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a65b96683a739d3b0d137bd8c56e6cef6}{has\+Normals} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a9b22d95cc721f8052a21f9f6ba66702f}{has\+Tangents\+And\+Bitangents} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a8c4b8804333585d1185e17ae0e527c84}{has\+Colors} (int colorset)
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a00dba3a644fb26076e9296109bdb9aa5}{has\+Vertex\+Colors} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_ac36f43841dbba11aeba50b929d257fe2}{has\+Tex\+Coords} (int coords)
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_a4cf5971c9e6f01b72726d6dfd9f1be57}{has\+Tex\+Coords} ()
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_mesh_ad221ad4fea380aee8ace9b93407bc6c0}{has\+Bones} ()
+\item 
+List$<$ \hyperlink{classjassimp_1_1_ai_bone}{Ai\+Bone} $>$ \hyperlink{classjassimp_1_1_ai_mesh_af907276e395e54140a12c5208069bb0b}{get\+Bones} ()
+\item 
+int \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives} ()
+\item 
+int \hyperlink{classjassimp_1_1_ai_mesh_a0fdbef791e24c6edefcb08f89acad885}{get\+Num\+Faces} ()
+\item 
+int \hyperlink{classjassimp_1_1_ai_mesh_a34ea13053c044aa612ad94cdf74b6395}{get\+Face\+Num\+Indices} (int face)
+\item 
+int \hyperlink{classjassimp_1_1_ai_mesh_afb524dc36282d86c2d02382ff3583598}{get\+Num\+U\+V\+Components} (int coords)
+\item 
+int \hyperlink{classjassimp_1_1_ai_mesh_a5ac59c6e98f8057b62ce6d6032be02a7}{get\+Material\+Index} ()
+\item 
+String \hyperlink{classjassimp_1_1_ai_mesh_ae03a07f41270efa9ffb39982b8c75c05}{get\+Name} ()
+\item 
+\hypertarget{classjassimp_1_1_ai_mesh_a945c8642aeef864aca8e6c73f4c5c9db}{String {\bfseries to\+String} ()}\label{classjassimp_1_1_ai_mesh_a945c8642aeef864aca8e6c73f4c5c9db}
+
+\item 
+Float\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_a83f58aa04c0a878dab0ce8042ca6e88f}{get\+Position\+Buffer} ()
+\item 
+Int\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_a5ba3c8bda2044dd506efd8cf09c752ea}{get\+Face\+Buffer} ()
+\item 
+Int\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_aa0a2c72766f1a1ea419eee08899c91e4}{get\+Face\+Offsets} ()
+\item 
+Int\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_a7119ac40da1cc6f54dda89f59424e746}{get\+Index\+Buffer} ()
+\item 
+Float\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_a5b4e5815633f8e073c4744ddd0847d5f}{get\+Normal\+Buffer} ()
+\item 
+Float\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_ac2e360087b8608fbfa187ac0dcdd8bf8}{get\+Tangent\+Buffer} ()
+\item 
+Float\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_aa085be4da7c45c89b3e2c34e41de4747}{get\+Bitangent\+Buffer} ()
+\item 
+Float\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_aaf44d649f02ddd624d7b8088624f77c0}{get\+Color\+Buffer} (int colorset)
+\item 
+Float\+Buffer \hyperlink{classjassimp_1_1_ai_mesh_a641c84ab7e897e0ff3236a6dfcdca30a}{get\+Tex\+Coord\+Buffer} (int coords)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a78be92f6812e8988472254a792a2343e}{get\+Position\+X} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a6858d7a63959e5ac878f95ab0c1acfbd}{get\+Position\+Y} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a2fa1765ee16e16836f0b05afb6279d4d}{get\+Position\+Z} (int vertex)
+\item 
+int \hyperlink{classjassimp_1_1_ai_mesh_a95a58d261841def7da3d2546aa623d8d}{get\+Face\+Vertex} (int face, int n)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_ae09ed8e8022a74f9d4706e94d343493e}{get\+Normal\+X} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a3ee594db051b13a990092bb849fba3ba}{get\+Normal\+Y} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a7c092b3ffd649987ef83a4550a7926f7}{get\+Normal\+Z} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a6b925f191009563fab1481c3084be4e1}{get\+Tangent\+X} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a3e24a35c0fed180e3d487f54f1b483bf}{get\+Tangent\+Y} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a1d8ae20230cbcb2c8790b45971c0b271}{get\+Tangent\+Z} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_ab4a4a57615a7cff93e4f5dd6a1118791}{get\+Bitangent\+X} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_ace7875fb40281b0723187f0f2c1b69c1}{get\+Bitangent\+Y} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a53c35af707b8bf32a5043f2ed70806eb}{get\+Bitangent\+Z} (int vertex)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_ac855813c83fd4472604c2fdc7f516a18}{get\+Color\+R} (int vertex, int colorset)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_ae094bfb42587ed03aa80199c4e520720}{get\+Color\+G} (int vertex, int colorset)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a51ea034317f0b667c1e6ba8609c7322e}{get\+Color\+B} (int vertex, int colorset)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_ae5e5ac85167a97e1c2b312e1fe3ce665}{get\+Color\+A} (int vertex, int colorset)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a74029d45d4c48786ba5e770f5713e48e}{get\+Tex\+Coord\+U} (int vertex, int coords)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a957a27c6b7dfcd62f3f025b65d94c2af}{get\+Tex\+Coord\+V} (int vertex, int coords)
+\item 
+float \hyperlink{classjassimp_1_1_ai_mesh_a79a7ae306edd412ec429cc837f8b48fd}{get\+Tex\+Coord\+W} (int vertex, int coords)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A mesh represents a geometry or model with a single material. 
+
+\paragraph*{Data}
+
+Meshes usually consist of a number of vertices and a series of faces referencing the vertices. In addition there might be a series of bones, each of them addressing a number of vertices with a certain weight. \hyperlink{struct_vertex}{Vertex} data is presented in channels with each channel containing a single per-\/vertex information such as a set of texture coordinates or a normal vector.
+
+Faces consist of one or more references to vertices, called vertex indices. The \hyperlink{classjassimp_1_1_ai_mesh_a507049804efb042d6262ff27880705f0}{get\+Primitive\+Types()} method can be used to check what face types are present in the mesh. Note that a single mesh can possess faces of different types. The number of indices used by a specific face can be retrieved with the \hyperlink{classjassimp_1_1_ai_mesh_a34ea13053c044aa612ad94cdf74b6395}{get\+Face\+Num\+Indices(int)} method.
+
+\paragraph*{A\+P\+I for vertex and face data}
+
+The jassimp interface for accessing vertex and face data is not a one-\/to-\/one mapping of the c/c++ interface. The c/c++ interface uses an object-\/oriented approach to represent data, which provides a considerable overhead using a naive java based realization (cache locality would be unpredictable and most likely bad, bulk data transfer would be impossible). 
+
+The jassimp interface uses flat byte buffers to store vertex and face data. This data can be accessed through three A\+P\+Is\+: 
+\begin{DoxyItemize}
+\item {\bfseries Buffer A\+P\+I\+:} the {\ttfamily get\+X\+X\+X\+Buffer()} methods return raw data buffers. 
+\item {\bfseries Direct A\+P\+I\+:} the {\ttfamily get\+X\+X\+X()} methods allow reading and writing of individual data values. 
+\item {\bfseries Wrapped A\+P\+I\+:} the {\ttfamily get\+Wrapped\+X\+X\+X()} methods provide an object oriented view on the data. 
+\end{DoxyItemize}
+
+The Buffer A\+P\+I is optimized for use in conjunction with rendering A\+P\+Is such as L\+W\+J\+G\+L. The returned buffers are guaranteed to have native byte order and to be direct byte buffers. They can be passed directly to L\+W\+J\+G\+L methods, e.\+g., to fill V\+B\+Os with data. Each invocation of a {\ttfamily get\+X\+X\+X\+Buffer()} method will return a new view of the internal buffer, i.\+e., if is safe to use the relative byte buffer operations. The Buffer A\+P\+I provides the best performance of all three A\+P\+Is, especially if large data volumes have to be processed.
+
+The Direct A\+P\+I provides an easy to use interface for reading and writing individual data values. Its performance is comparable to the Buffer A\+P\+I's performance for these operations. The main difference to the Buffer A\+P\+I is the missing support for bulk operations. If you intend to retrieve or modify large subsets of the raw data consider using the Buffer A\+P\+I, especially if the subsets are contiguous. 
+
+The Wrapped A\+P\+I offers an object oriented interface for accessing and modifying mesh data. As the name implies, this interface is realized through wrapper objects that provide a view on the raw data. For each invocation of a {\ttfamily get\+Wrapped\+X\+X\+X()} method, a new wrapper object is created. Iterating over mesh data via this interface will create many short-\/lived wrapper objects which -\/depending on usage and virtual machine-\/ may cause considerable garbage collection overhead. The Wrapped A\+P\+I provides the worst performance of all three A\+P\+Is, which may nevertheless still be good enough to warrant its usage. See \hyperlink{}{Ai\+Wrapper\+Provider} for more details on wrappers.
+
+\paragraph*{A\+P\+I for bones}
+
+As there is no standardized way for doing skinning in different graphics engines, bones are not represented as flat buffers but as object structure. Users of this library should convert this structure to the format required by the specific graphics engine.
+
+\paragraph*{Changing Data}
+
+This class is designed to be mutable, i.\+e., the returned objects and buffers may be modified. It is not possible to add/remove vertices as this would require reallocation of the data buffers. Wrapped objects may or may not propagate changes to the underlying data buffers. Consult the documentation of your wrapper provider for details. The built in wrappers will propagate changes. 
+
+Modification of face data is theoretically possible by modifying the face buffer and the face\+Offset buffer however it is strongly disadvised to do so because it might break all algorithms that depend on the internal consistency of these two data structures. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjassimp_1_1_ai_mesh_aa085be4da7c45c89b3e2c34e41de4747}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Bitangent\+Buffer@{get\+Bitangent\+Buffer}}
+\index{get\+Bitangent\+Buffer@{get\+Bitangent\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Bitangent\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Float\+Buffer jassimp.\+Ai\+Mesh.\+get\+Bitangent\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_aa085be4da7c45c89b3e2c34e41de4747}
+Returns a buffer containing bitangents.
+
+A bitangent consists of a triple of floats, the buffer will therefore contain {\ttfamily 3 $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} floats
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_ab4a4a57615a7cff93e4f5dd6a1118791}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Bitangent\+X@{get\+Bitangent\+X}}
+\index{get\+Bitangent\+X@{get\+Bitangent\+X}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Bitangent\+X}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Bitangent\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ab4a4a57615a7cff93e4f5dd6a1118791}
+Returns the x-\/coordinate of a vertex tangent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the x coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_ace7875fb40281b0723187f0f2c1b69c1}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Bitangent\+Y@{get\+Bitangent\+Y}}
+\index{get\+Bitangent\+Y@{get\+Bitangent\+Y}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Bitangent\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Bitangent\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ace7875fb40281b0723187f0f2c1b69c1}
+Returns the y-\/coordinate of a vertex tangent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the y coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a53c35af707b8bf32a5043f2ed70806eb}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Bitangent\+Z@{get\+Bitangent\+Z}}
+\index{get\+Bitangent\+Z@{get\+Bitangent\+Z}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Bitangent\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Bitangent\+Z (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a53c35af707b8bf32a5043f2ed70806eb}
+Returns the z-\/coordinate of a vertex tangent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the z coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_af907276e395e54140a12c5208069bb0b}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Bones@{get\+Bones}}
+\index{get\+Bones@{get\+Bones}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Bones}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Ai\+Bone}$>$ jassimp.\+Ai\+Mesh.\+get\+Bones (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_af907276e395e54140a12c5208069bb0b}
+Returns the bones of this mesh.
+
+\begin{DoxyReturn}{Returns}
+a list of bones 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_ae5e5ac85167a97e1c2b312e1fe3ce665}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Color\+A@{get\+Color\+A}}
+\index{get\+Color\+A@{get\+Color\+A}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Color\+A}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Color\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{colorset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ae5e5ac85167a97e1c2b312e1fe3ce665}
+Returns the alpha color component of a color from a vertex color set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em colorset} & the color set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the alpha color component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a51ea034317f0b667c1e6ba8609c7322e}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Color\+B@{get\+Color\+B}}
+\index{get\+Color\+B@{get\+Color\+B}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Color\+B}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Color\+B (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{colorset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a51ea034317f0b667c1e6ba8609c7322e}
+Returns the blue color component of a color from a vertex color set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em colorset} & the color set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the blue color component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_aaf44d649f02ddd624d7b8088624f77c0}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Color\+Buffer@{get\+Color\+Buffer}}
+\index{get\+Color\+Buffer@{get\+Color\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Color\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Float\+Buffer jassimp.\+Ai\+Mesh.\+get\+Color\+Buffer (
+\begin{DoxyParamCaption}
+\item[{int}]{colorset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_aaf44d649f02ddd624d7b8088624f77c0}
+Returns a buffer containing vertex colors for a color set.
+
+A vertex color consists of 4 floats (red, green, blue and alpha), the buffer will therefore contain {\ttfamily 4 $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} floats
+
+
+\begin{DoxyParams}{Parameters}
+{\em colorset} & the color set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer, or null if no data is available 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_ae094bfb42587ed03aa80199c4e520720}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Color\+G@{get\+Color\+G}}
+\index{get\+Color\+G@{get\+Color\+G}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Color\+G}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Color\+G (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{colorset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ae094bfb42587ed03aa80199c4e520720}
+Returns the green color component of a color from a vertex color set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em colorset} & the color set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the green color component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_ac855813c83fd4472604c2fdc7f516a18}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Color\+R@{get\+Color\+R}}
+\index{get\+Color\+R@{get\+Color\+R}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Color\+R}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Color\+R (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{colorset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ac855813c83fd4472604c2fdc7f516a18}
+Returns the red color component of a color from a vertex color set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em colorset} & the color set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the red color component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a5ba3c8bda2044dd506efd8cf09c752ea}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Face\+Buffer@{get\+Face\+Buffer}}
+\index{get\+Face\+Buffer@{get\+Face\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Face\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Int\+Buffer jassimp.\+Ai\+Mesh.\+get\+Face\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a5ba3c8bda2044dd506efd8cf09c752ea}
+Returns a buffer containing face data.
+
+You should use the \hyperlink{classjassimp_1_1_ai_mesh_a7119ac40da1cc6f54dda89f59424e746}{get\+Index\+Buffer()} method if you are interested in getting an index buffer used by graphics A\+P\+Is such as L\+W\+J\+G\+L.
+
+The buffer contains all vertex indices from all faces as a flat list. If the mesh is a pure triangle mesh, the buffer returned by this method is identical to the buffer returned by \hyperlink{classjassimp_1_1_ai_mesh_a7119ac40da1cc6f54dda89f59424e746}{get\+Index\+Buffer()}. For other meshes, the \hyperlink{classjassimp_1_1_ai_mesh_aa0a2c72766f1a1ea419eee08899c91e4}{get\+Face\+Offsets()} method can be used to retrieve an index structure that allows addressing individual faces in the list.
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer, or null if no data is available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a34ea13053c044aa612ad94cdf74b6395}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Face\+Num\+Indices@{get\+Face\+Num\+Indices}}
+\index{get\+Face\+Num\+Indices@{get\+Face\+Num\+Indices}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Face\+Num\+Indices}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Mesh.\+get\+Face\+Num\+Indices (
+\begin{DoxyParamCaption}
+\item[{int}]{face}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a34ea13053c044aa612ad94cdf74b6395}
+Returns the number of vertex indices for a single face.
+
+
+\begin{DoxyParams}{Parameters}
+{\em face} & the face \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of indices 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_aa0a2c72766f1a1ea419eee08899c91e4}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Face\+Offsets@{get\+Face\+Offsets}}
+\index{get\+Face\+Offsets@{get\+Face\+Offsets}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Face\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}Int\+Buffer jassimp.\+Ai\+Mesh.\+get\+Face\+Offsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_aa0a2c72766f1a1ea419eee08899c91e4}
+Returns an index structure for the buffer returned by \hyperlink{classjassimp_1_1_ai_mesh_a5ba3c8bda2044dd506efd8cf09c752ea}{get\+Face\+Buffer()}.
+
+You should use the \hyperlink{classjassimp_1_1_ai_mesh_a7119ac40da1cc6f54dda89f59424e746}{get\+Index\+Buffer()} method if you are interested in getting an index buffer used by graphics A\+P\+Is such as L\+W\+J\+G\+L.
+
+The returned buffer contains one integer entry for each face. This entry specifies the offset at which the face's data is located inside the face buffer. The difference between two subsequent entries can be used to determine how many vertices belong to a given face (the last face contains all entries between the offset and the end of the face buffer).
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer, or null if no data is available 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a95a58d261841def7da3d2546aa623d8d}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Face\+Vertex@{get\+Face\+Vertex}}
+\index{get\+Face\+Vertex@{get\+Face\+Vertex}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Face\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Mesh.\+get\+Face\+Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{face, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a95a58d261841def7da3d2546aa623d8d}
+Returns a vertex reference from a face.
+
+A face contains {\ttfamily get\+Face\+Num\+Indices(face)} vertex references. This method returns the n'th of these. The returned index can be passed directly to the vertex oriented methods, such as {\ttfamily get\+Position()} etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em face} & the face \\
+\hline
+{\em n} & the reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vertex index 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a7119ac40da1cc6f54dda89f59424e746}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Index\+Buffer@{get\+Index\+Buffer}}
+\index{get\+Index\+Buffer@{get\+Index\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Index\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Int\+Buffer jassimp.\+Ai\+Mesh.\+get\+Index\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a7119ac40da1cc6f54dda89f59424e746}
+Returns a buffer containing vertex indices for the mesh's faces.
+
+This method may only be called on pure triangle meshes, i.\+e., meshes containing only triangles. The \hyperlink{classjassimp_1_1_ai_mesh_a833ff375aed60ac78c83af1209762e6c}{is\+Pure\+Triangle()} method can be used to check whether this is the case.
+
+Indices are stored as integers, the buffer will therefore contain {\ttfamily 3 $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} integers (3 indices per triangle)
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & if the mesh is not a pure triangle mesh \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a5ac59c6e98f8057b62ce6d6032be02a7}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Material\+Index@{get\+Material\+Index}}
+\index{get\+Material\+Index@{get\+Material\+Index}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Material\+Index}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Mesh.\+get\+Material\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a5ac59c6e98f8057b62ce6d6032be02a7}
+Returns the material used by this mesh.
+
+A mesh does use only a single material. If an imported model uses multiple materials, the import splits up the mesh. Use this value as index into the scene's material list.
+
+\begin{DoxyReturn}{Returns}
+the material index 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_ae03a07f41270efa9ffb39982b8c75c05}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String jassimp.\+Ai\+Mesh.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ae03a07f41270efa9ffb39982b8c75c05}
+Returns the name of the mesh.
+
+Not all meshes have a name, if no name is set an empty string is returned.
+
+\begin{DoxyReturn}{Returns}
+the name or an empty string if no name is set 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a5b4e5815633f8e073c4744ddd0847d5f}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Normal\+Buffer@{get\+Normal\+Buffer}}
+\index{get\+Normal\+Buffer@{get\+Normal\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Normal\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Float\+Buffer jassimp.\+Ai\+Mesh.\+get\+Normal\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a5b4e5815633f8e073c4744ddd0847d5f}
+Returns a buffer containing normals.
+
+A normal consists of a triple of floats, the buffer will therefore contain {\ttfamily 3 $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} floats
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_ae09ed8e8022a74f9d4706e94d343493e}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Normal\+X@{get\+Normal\+X}}
+\index{get\+Normal\+X@{get\+Normal\+X}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Normal\+X}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Normal\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ae09ed8e8022a74f9d4706e94d343493e}
+Returns the x-\/coordinate of a vertex normal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the x coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a3ee594db051b13a990092bb849fba3ba}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Normal\+Y@{get\+Normal\+Y}}
+\index{get\+Normal\+Y@{get\+Normal\+Y}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Normal\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Normal\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a3ee594db051b13a990092bb849fba3ba}
+Returns the y-\/coordinate of a vertex normal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the y coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a7c092b3ffd649987ef83a4550a7926f7}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Normal\+Z@{get\+Normal\+Z}}
+\index{get\+Normal\+Z@{get\+Normal\+Z}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Normal\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Normal\+Z (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a7c092b3ffd649987ef83a4550a7926f7}
+Returns the z-\/coordinate of a vertex normal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the z coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a0fdbef791e24c6edefcb08f89acad885}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Num\+Faces@{get\+Num\+Faces}}
+\index{get\+Num\+Faces@{get\+Num\+Faces}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Num\+Faces}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Mesh.\+get\+Num\+Faces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a0fdbef791e24c6edefcb08f89acad885}
+Returns the number of faces in the mesh.
+
+\begin{DoxyReturn}{Returns}
+the number of faces 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_afb524dc36282d86c2d02382ff3583598}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Num\+U\+V\+Components@{get\+Num\+U\+V\+Components}}
+\index{get\+Num\+U\+V\+Components@{get\+Num\+U\+V\+Components}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Num\+U\+V\+Components}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Mesh.\+get\+Num\+U\+V\+Components (
+\begin{DoxyParamCaption}
+\item[{int}]{coords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_afb524dc36282d86c2d02382ff3583598}
+Returns the number of U\+V components for a texture coordinate set.
+
+Possible values range from 1 to 3 (1\+D to 3\+D texture coordinates)
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & the coordinate set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of components 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Num\+Vertives@{get\+Num\+Vertives}}
+\index{get\+Num\+Vertives@{get\+Num\+Vertives}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Num\+Vertives}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Mesh.\+get\+Num\+Vertives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}
+Returns the number of vertices in this mesh.
+
+\begin{DoxyReturn}{Returns}
+the number of vertices. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a83f58aa04c0a878dab0ce8042ca6e88f}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Position\+Buffer@{get\+Position\+Buffer}}
+\index{get\+Position\+Buffer@{get\+Position\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Position\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Float\+Buffer jassimp.\+Ai\+Mesh.\+get\+Position\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a83f58aa04c0a878dab0ce8042ca6e88f}
+Returns a buffer containing vertex positions.
+
+A vertex position consists of a triple of floats, the buffer will therefore contain {\ttfamily 3 $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} floats
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer, or null if no data is available 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a78be92f6812e8988472254a792a2343e}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Position\+X@{get\+Position\+X}}
+\index{get\+Position\+X@{get\+Position\+X}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Position\+X}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Position\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a78be92f6812e8988472254a792a2343e}
+Returns the x-\/coordinate of a vertex position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the x coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a6858d7a63959e5ac878f95ab0c1acfbd}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Position\+Y@{get\+Position\+Y}}
+\index{get\+Position\+Y@{get\+Position\+Y}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Position\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Position\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a6858d7a63959e5ac878f95ab0c1acfbd}
+Returns the y-\/coordinate of a vertex position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the y coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a2fa1765ee16e16836f0b05afb6279d4d}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Position\+Z@{get\+Position\+Z}}
+\index{get\+Position\+Z@{get\+Position\+Z}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Position\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Position\+Z (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a2fa1765ee16e16836f0b05afb6279d4d}
+Returns the z-\/coordinate of a vertex position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the z coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a507049804efb042d6262ff27880705f0}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Primitive\+Types@{get\+Primitive\+Types}}
+\index{get\+Primitive\+Types@{get\+Primitive\+Types}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Primitive\+Types}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf Ai\+Primitive\+Type}$>$ jassimp.\+Ai\+Mesh.\+get\+Primitive\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a507049804efb042d6262ff27880705f0}
+Returns the primitive types used by this mesh.
+
+\begin{DoxyReturn}{Returns}
+a set of primitive types used by this mesh 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_ac2e360087b8608fbfa187ac0dcdd8bf8}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tangent\+Buffer@{get\+Tangent\+Buffer}}
+\index{get\+Tangent\+Buffer@{get\+Tangent\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tangent\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Float\+Buffer jassimp.\+Ai\+Mesh.\+get\+Tangent\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ac2e360087b8608fbfa187ac0dcdd8bf8}
+Returns a buffer containing tangents.
+
+A tangent consists of a triple of floats, the buffer will therefore contain {\ttfamily 3 $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} floats
+
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a6b925f191009563fab1481c3084be4e1}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tangent\+X@{get\+Tangent\+X}}
+\index{get\+Tangent\+X@{get\+Tangent\+X}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tangent\+X}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Tangent\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a6b925f191009563fab1481c3084be4e1}
+Returns the x-\/coordinate of a vertex tangent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the x coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a3e24a35c0fed180e3d487f54f1b483bf}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tangent\+Y@{get\+Tangent\+Y}}
+\index{get\+Tangent\+Y@{get\+Tangent\+Y}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tangent\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Tangent\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a3e24a35c0fed180e3d487f54f1b483bf}
+Returns the y-\/coordinate of a vertex bitangent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the y coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a1d8ae20230cbcb2c8790b45971c0b271}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tangent\+Z@{get\+Tangent\+Z}}
+\index{get\+Tangent\+Z@{get\+Tangent\+Z}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tangent\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Tangent\+Z (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a1d8ae20230cbcb2c8790b45971c0b271}
+Returns the z-\/coordinate of a vertex tangent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the z coordinate 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a641c84ab7e897e0ff3236a6dfcdca30a}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tex\+Coord\+Buffer@{get\+Tex\+Coord\+Buffer}}
+\index{get\+Tex\+Coord\+Buffer@{get\+Tex\+Coord\+Buffer}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tex\+Coord\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Float\+Buffer jassimp.\+Ai\+Mesh.\+get\+Tex\+Coord\+Buffer (
+\begin{DoxyParamCaption}
+\item[{int}]{coords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a641c84ab7e897e0ff3236a6dfcdca30a}
+Returns a buffer containing coordinates for a texture coordinate set.
+
+A texture coordinate consists of up to 3 floats (u, v, w). The actual number can be queried via \hyperlink{classjassimp_1_1_ai_mesh_afb524dc36282d86c2d02382ff3583598}{get\+Num\+U\+V\+Components(int)}. The buffer will contain {\ttfamily get\+Num\+U\+V\+Components(coords) $\ast$ \hyperlink{classjassimp_1_1_ai_mesh_a0cd39e4728e167bdced9325949810bed}{get\+Num\+Vertives()}} floats
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & the texture coordinate set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a native-\/order direct buffer, or null if no data is available 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a74029d45d4c48786ba5e770f5713e48e}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tex\+Coord\+U@{get\+Tex\+Coord\+U}}
+\index{get\+Tex\+Coord\+U@{get\+Tex\+Coord\+U}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tex\+Coord\+U}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Tex\+Coord\+U (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{coords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a74029d45d4c48786ba5e770f5713e48e}
+Returns the u component of a coordinate from a texture coordinate set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em coords} & the texture coordinate set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the u component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a957a27c6b7dfcd62f3f025b65d94c2af}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tex\+Coord\+V@{get\+Tex\+Coord\+V}}
+\index{get\+Tex\+Coord\+V@{get\+Tex\+Coord\+V}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tex\+Coord\+V}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Tex\+Coord\+V (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{coords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a957a27c6b7dfcd62f3f025b65d94c2af}
+Returns the v component of a coordinate from a texture coordinate set.
+
+This method may only be called on 2-\/ or 3-\/dimensional coordinate sets. Call {\ttfamily get\+Num\+U\+V\+Components(coords)} to determine how may coordinate components are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em coords} & the texture coordinate set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the v component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a79a7ae306edd412ec429cc837f8b48fd}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!get\+Tex\+Coord\+W@{get\+Tex\+Coord\+W}}
+\index{get\+Tex\+Coord\+W@{get\+Tex\+Coord\+W}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{get\+Tex\+Coord\+W}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Mesh.\+get\+Tex\+Coord\+W (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex, }
+\item[{int}]{coords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a79a7ae306edd412ec429cc837f8b48fd}
+Returns the w component of a coordinate from a texture coordinate set.
+
+This method may only be called on 3-\/dimensional coordinate sets. Call {\ttfamily get\+Num\+U\+V\+Components(coords)} to determine how may coordinate components are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex index \\
+\hline
+{\em coords} & the texture coordinate set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the w component 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_ad221ad4fea380aee8ace9b93407bc6c0}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Bones@{has\+Bones}}
+\index{has\+Bones@{has\+Bones}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Bones}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Bones (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ad221ad4fea380aee8ace9b93407bc6c0}
+Tells whether the mesh has bones.
+
+\begin{DoxyReturn}{Returns}
+true if bones are available 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a8c4b8804333585d1185e17ae0e527c84}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Colors@{has\+Colors}}
+\index{has\+Colors@{has\+Colors}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Colors}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Colors (
+\begin{DoxyParamCaption}
+\item[{int}]{colorset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a8c4b8804333585d1185e17ae0e527c84}
+Tells whether the mesh has a vertex color set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em colorset} & index of the color set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if colors are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a3ab2af81d7fff77e7c1d752e5d2a5ead}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Faces@{has\+Faces}}
+\index{has\+Faces@{has\+Faces}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Faces}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Faces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a3ab2af81d7fff77e7c1d752e5d2a5ead}
+Tells whether the mesh has faces.
+
+Meshes almost always contain faces
+
+\begin{DoxyReturn}{Returns}
+true if faces are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a65b96683a739d3b0d137bd8c56e6cef6}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Normals@{has\+Normals}}
+\index{has\+Normals@{has\+Normals}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Normals}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a65b96683a739d3b0d137bd8c56e6cef6}
+Tells whether the mesh has normals.
+
+\begin{DoxyReturn}{Returns}
+true if normals are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a3ce02d9155a0dba1ac60bccb8e7c4716}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Positions@{has\+Positions}}
+\index{has\+Positions@{has\+Positions}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Positions}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Positions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a3ce02d9155a0dba1ac60bccb8e7c4716}
+Tells whether the mesh has vertex positions.
+
+Meshes almost always contain position data
+
+\begin{DoxyReturn}{Returns}
+true if positions are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a9b22d95cc721f8052a21f9f6ba66702f}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Tangents\+And\+Bitangents@{has\+Tangents\+And\+Bitangents}}
+\index{has\+Tangents\+And\+Bitangents@{has\+Tangents\+And\+Bitangents}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Tangents\+And\+Bitangents}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Tangents\+And\+Bitangents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a9b22d95cc721f8052a21f9f6ba66702f}
+Tells whether the mesh has tangents and bitangents.
+
+It is not possible that it contains tangents and no bitangents (or the other way round). The existence of one of them implies that the second is there, too.
+
+\begin{DoxyReturn}{Returns}
+true if tangents and bitangents are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_ac36f43841dbba11aeba50b929d257fe2}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Tex\+Coords@{has\+Tex\+Coords}}
+\index{has\+Tex\+Coords@{has\+Tex\+Coords}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Tex\+Coords}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Tex\+Coords (
+\begin{DoxyParamCaption}
+\item[{int}]{coords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_ac36f43841dbba11aeba50b929d257fe2}
+Tells whether the mesh has a texture coordinate set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & index of the texture coordinate set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if texture coordinates are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a4cf5971c9e6f01b72726d6dfd9f1be57}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Tex\+Coords@{has\+Tex\+Coords}}
+\index{has\+Tex\+Coords@{has\+Tex\+Coords}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Tex\+Coords}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Tex\+Coords (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a4cf5971c9e6f01b72726d6dfd9f1be57}
+Tells whether the mesh has any texture coordinate sets.
+
+Use \hyperlink{classjassimp_1_1_ai_mesh_ac36f43841dbba11aeba50b929d257fe2}{has\+Tex\+Coords(int)} to check which texture coordinate sets are available
+
+\begin{DoxyReturn}{Returns}
+true if any texture coordinates are available 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_mesh_a00dba3a644fb26076e9296109bdb9aa5}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!has\+Vertex\+Colors@{has\+Vertex\+Colors}}
+\index{has\+Vertex\+Colors@{has\+Vertex\+Colors}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{has\+Vertex\+Colors}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+has\+Vertex\+Colors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a00dba3a644fb26076e9296109bdb9aa5}
+Tells whether the mesh has any vertex colors.
+
+Use \hyperlink{classjassimp_1_1_ai_mesh_a8c4b8804333585d1185e17ae0e527c84}{has\+Colors(int)} to check which color sets are available.
+
+\begin{DoxyReturn}{Returns}
+true if any colors are available 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_mesh_a833ff375aed60ac78c83af1209762e6c}{\index{jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}!is\+Pure\+Triangle@{is\+Pure\+Triangle}}
+\index{is\+Pure\+Triangle@{is\+Pure\+Triangle}!jassimp\+::\+Ai\+Mesh@{jassimp\+::\+Ai\+Mesh}}
+\subsubsection[{is\+Pure\+Triangle}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Mesh.\+is\+Pure\+Triangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_mesh_a833ff375aed60ac78c83af1209762e6c}
+Tells whether the mesh is a pure triangle mesh, i.\+e., contains only triangular faces.
+
+To automatically triangulate meshes the \hyperlink{enumjassimp_1_1_ai_post_process_steps_a01837cc450eef4f697a8049dfe60ae49}{Ai\+Post\+Process\+Steps\#\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+E} post processing option can be used when loading the scene
+
+\begin{DoxyReturn}{Returns}
+true if the mesh is a pure triangle mesh, false otherwise 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Ai\+Mesh.\+java\end{DoxyCompactItemize}

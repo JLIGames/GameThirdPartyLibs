@@ -1,0 +1,13 @@
+digraph "ogg/libogg-1.3.2/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6d9cdabc2762398cff6166662d00c40b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libogg-1.3.2" fontname="Helvetica", fontsize="10", URL="dir_6d9cdabc2762398cff6166662d00c40b.html"]
+  subgraph clusterdir_ddaf9ca22a3b5ade7adecf2758eebf3c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ddaf9ca22a3b5ade7adecf2758eebf3c.html"];
+    dir_ddaf9ca22a3b5ade7adecf2758eebf3c [shape=plaintext label="include"];
+    dir_c0d3c1cf23316b1447eff00d4ea27d5a [shape=box label="ogg" color="black" fillcolor="white" style="filled" URL="dir_c0d3c1cf23316b1447eff00d4ea27d5a.html"];
+  }
+  }
+}

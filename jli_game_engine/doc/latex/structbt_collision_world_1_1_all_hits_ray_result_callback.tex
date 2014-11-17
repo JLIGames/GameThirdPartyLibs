@@ -1,0 +1,59 @@
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback}{\section{bt\+Collision\+World\+:\+:All\+Hits\+Ray\+Result\+Callback Struct Reference}
+\label{structbt_collision_world_1_1_all_hits_ray_result_callback}\index{bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback@{bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback}}
+}
+
+
+Inheritance diagram for bt\+Collision\+World\+:\+:All\+Hits\+Ray\+Result\+Callback\+:
+
+
+Collaboration diagram for bt\+Collision\+World\+:\+:All\+Hits\+Ray\+Result\+Callback\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_a156b1c9d98439529dea5781f38444c1d}{{\bfseries All\+Hits\+Ray\+Result\+Callback} (const bt\+Vector3 \&ray\+From\+World, const bt\+Vector3 \&ray\+To\+World)}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_a156b1c9d98439529dea5781f38444c1d}
+
+\item 
+virtual bt\+Scalar \hyperlink{structbt_collision_world_1_1_all_hits_ray_result_callback_a351da818747c246011624b9cb613c29b}{add\+Single\+Result} (\hyperlink{structbt_collision_world_1_1_local_ray_result}{Local\+Ray\+Result} \&ray\+Result, bool normal\+In\+World\+Space)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_a88f8f48d21057e7cc9ba50a1d9a97935}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ const \\*
+bt\+Collision\+Object $\ast$ $>$ {\bfseries m\+\_\+collision\+Objects}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_a88f8f48d21057e7cc9ba50a1d9a97935}
+
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_ac8a1a6c242d9aa153df571e9d87e86ac}{bt\+Vector3 {\bfseries m\+\_\+ray\+From\+World}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_ac8a1a6c242d9aa153df571e9d87e86ac}
+
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_a08624d7ca9e0c24decd0b3697293cc03}{bt\+Vector3 {\bfseries m\+\_\+ray\+To\+World}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_a08624d7ca9e0c24decd0b3697293cc03}
+
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_af8bc1ab14cdda90615ff7e560afc87c0}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ {\bfseries m\+\_\+hit\+Normal\+World}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_af8bc1ab14cdda90615ff7e560afc87c0}
+
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_ada5371cede268c981817c3a72a6ae090}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Vector3 $>$ {\bfseries m\+\_\+hit\+Point\+World}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_ada5371cede268c981817c3a72a6ae090}
+
+\item 
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_ab1d9107e78b4a06e70c803e32406ec54}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ bt\+Scalar $>$ {\bfseries m\+\_\+hit\+Fractions}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_ab1d9107e78b4a06e70c803e32406ec54}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structbt_collision_world_1_1_all_hits_ray_result_callback_a351da818747c246011624b9cb613c29b}{\index{bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback@{bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback}!add\+Single\+Result@{add\+Single\+Result}}
+\index{add\+Single\+Result@{add\+Single\+Result}!bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback@{bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback}}
+\subsubsection[{add\+Single\+Result}]{\setlength{\rightskip}{0pt plus 5cm}virtual bt\+Scalar bt\+Collision\+World\+::\+All\+Hits\+Ray\+Result\+Callback\+::add\+Single\+Result (
+\begin{DoxyParamCaption}
+\item[{{\bf Local\+Ray\+Result} \&}]{ray\+Result, }
+\item[{bool}]{normal\+In\+World\+Space}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{structbt_collision_world_1_1_all_hits_ray_result_callback_a351da818747c246011624b9cb613c29b}
+need to transform normal into worldspace 
+
+Implements \hyperlink{structbt_collision_world_1_1_ray_result_callback}{bt\+Collision\+World\+::\+Ray\+Result\+Callback}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Collision\+Dispatch/bt\+Collision\+World.\+h\end{DoxyCompactItemize}

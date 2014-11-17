@@ -1,0 +1,10 @@
+digraph "zlib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3c17883d206b7bf81e2b431b0ae79cdb {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_3c17883d206b7bf81e2b431b0ae79cdb.html"];
+    dir_3c17883d206b7bf81e2b431b0ae79cdb [shape=plaintext label="zlib"];
+    dir_ee608a8abb8a8878bf325fc634e1cabc [shape=box label="zlib-1.2.8" color="red" fillcolor="white" style="filled" URL="dir_ee608a8abb8a8878bf325fc634e1cabc.html"];
+  }
+}

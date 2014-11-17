@@ -1,0 +1,12 @@
+digraph "Functor"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Functor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ProtectorChain::ProtectFunctor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_protector_chain_1_1_protect_functor.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestCaseMethodFunctor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_case_method_functor.html",tooltip="Functor to call test case method (Implementation). "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,13 @@
+digraph "Assimp::ColladaExporter::ReadMaterialSurface"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ColladaExporter\l::ReadMaterialSurface",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::ColladaExporter\l::WriteMaterials",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_exporter.html#a357ea705b73f3015847d0d71c91f4bfa",tooltip="Writes the material setup. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::ColladaExporter\l::WriteFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_exporter.html#a03044e96722b7ec8dcd295253176fc18",tooltip="Starts writing the contents. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::ColladaExporter\l::ColladaExporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_exporter.html#a5b0a79d70cce72255dba4f6f15cff4d4",tooltip="Constructor for a specific scene to export. "];
+}

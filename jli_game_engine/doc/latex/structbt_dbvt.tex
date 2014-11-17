@@ -1,0 +1,206 @@
+\hypertarget{structbt_dbvt}{\section{bt\+Dbvt Struct Reference}
+\label{structbt_dbvt}\index{bt\+Dbvt@{bt\+Dbvt}}
+}
+
+
+{\ttfamily \#include $<$bt\+Dbvt.\+h$>$}
+
+
+
+Collaboration diagram for bt\+Dbvt\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbt_dbvt_1_1_i_clone}{I\+Clone}
+\item 
+struct \hyperlink{structbt_dbvt_1_1_i_collide}{I\+Collide}
+\item 
+struct \hyperlink{structbt_dbvt_1_1_i_writer}{I\+Writer}
+\item 
+struct \hyperlink{structbt_dbvt_1_1s_stk_c_l_n}{s\+Stk\+C\+L\+N}
+\item 
+struct \hyperlink{structbt_dbvt_1_1s_stk_n_n}{s\+Stk\+N\+N}
+\item 
+struct \hyperlink{structbt_dbvt_1_1s_stk_n_p}{s\+Stk\+N\+P}
+\item 
+struct \hyperlink{structbt_dbvt_1_1s_stk_n_p_s}{s\+Stk\+N\+P\+S}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_dbvt_aeddb9223432d2e067a0f6774db56f7fb}{enum \{ {\bfseries S\+I\+M\+P\+L\+E\+\_\+\+S\+T\+A\+C\+K\+S\+I\+Z\+E} = 64, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+T\+A\+C\+K\+S\+I\+Z\+E} = S\+I\+M\+P\+L\+E\+\_\+\+S\+T\+A\+C\+K\+S\+I\+Z\+E$\ast$2
+ \}}\label{structbt_dbvt_aeddb9223432d2e067a0f6774db56f7fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_dbvt_a91d88cec6f5e212809cb9f47a967090c}{void {\bfseries clear} ()}\label{structbt_dbvt_a91d88cec6f5e212809cb9f47a967090c}
+
+\item 
+\hypertarget{structbt_dbvt_a272b9d6210f48dc2bbde5cdf4f98e987}{bool {\bfseries empty} () const }\label{structbt_dbvt_a272b9d6210f48dc2bbde5cdf4f98e987}
+
+\item 
+\hypertarget{structbt_dbvt_a03c5cfc17ee3f6a89d86bf1028db34b0}{void {\bfseries optimize\+Bottom\+Up} ()}\label{structbt_dbvt_a03c5cfc17ee3f6a89d86bf1028db34b0}
+
+\item 
+\hypertarget{structbt_dbvt_a20c410b4825eab53cdcd2e2870e289aa}{void {\bfseries optimize\+Top\+Down} (int bu\+\_\+treshold=128)}\label{structbt_dbvt_a20c410b4825eab53cdcd2e2870e289aa}
+
+\item 
+\hypertarget{structbt_dbvt_a198643b190f8cdac7d7d62cef8cf9bb1}{void {\bfseries optimize\+Incremental} (int passes)}\label{structbt_dbvt_a198643b190f8cdac7d7d62cef8cf9bb1}
+
+\item 
+\hypertarget{structbt_dbvt_a0efd4485566228688870dc7340365d03}{\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$ {\bfseries insert} (const \hyperlink{structbt_dbvt_aabb_mm}{bt\+Dbvt\+Volume} \&\hyperlink{structbox}{box}, void $\ast$data)}\label{structbt_dbvt_a0efd4485566228688870dc7340365d03}
+
+\item 
+\hypertarget{structbt_dbvt_a6efe1f6bb9abd80ea76d1bfa97cebd2b}{void {\bfseries update} (\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$leaf, int lookahead=-\/1)}\label{structbt_dbvt_a6efe1f6bb9abd80ea76d1bfa97cebd2b}
+
+\item 
+\hypertarget{structbt_dbvt_a9a3ffbdaf6e85eb9ea7ac14094bcf139}{void {\bfseries update} (\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$leaf, \hyperlink{structbt_dbvt_aabb_mm}{bt\+Dbvt\+Volume} \&volume)}\label{structbt_dbvt_a9a3ffbdaf6e85eb9ea7ac14094bcf139}
+
+\item 
+\hypertarget{structbt_dbvt_a49dd2a5129f72f2fef26c52d4c326c8d}{bool {\bfseries update} (\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$leaf, \hyperlink{structbt_dbvt_aabb_mm}{bt\+Dbvt\+Volume} \&volume, const bt\+Vector3 \&velocity, bt\+Scalar margin)}\label{structbt_dbvt_a49dd2a5129f72f2fef26c52d4c326c8d}
+
+\item 
+\hypertarget{structbt_dbvt_ac4ec3a1dec7bc12e0803159a6d53e4b3}{bool {\bfseries update} (\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$leaf, \hyperlink{structbt_dbvt_aabb_mm}{bt\+Dbvt\+Volume} \&volume, const bt\+Vector3 \&velocity)}\label{structbt_dbvt_ac4ec3a1dec7bc12e0803159a6d53e4b3}
+
+\item 
+\hypertarget{structbt_dbvt_a0f6e436b7a7dd41d1ea1b732b26f0a5c}{bool {\bfseries update} (\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$leaf, \hyperlink{structbt_dbvt_aabb_mm}{bt\+Dbvt\+Volume} \&volume, bt\+Scalar margin)}\label{structbt_dbvt_a0f6e436b7a7dd41d1ea1b732b26f0a5c}
+
+\item 
+\hypertarget{structbt_dbvt_ae01b804da6734f4ce250f6fe7ef0b5fb}{void {\bfseries remove} (\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$leaf)}\label{structbt_dbvt_ae01b804da6734f4ce250f6fe7ef0b5fb}
+
+\item 
+\hypertarget{structbt_dbvt_a84c55460accf7b4a4bf9fd3b76887b17}{void {\bfseries write} (\hyperlink{structbt_dbvt_1_1_i_writer}{I\+Writer} $\ast$iwriter) const }\label{structbt_dbvt_a84c55460accf7b4a4bf9fd3b76887b17}
+
+\item 
+\hypertarget{structbt_dbvt_adaad3e37b372bcf57584d4957ab81c6b}{void {\bfseries clone} (\hyperlink{structbt_dbvt}{bt\+Dbvt} \&dest, \hyperlink{structbt_dbvt_1_1_i_clone}{I\+Clone} $\ast$iclone=0) const }\label{structbt_dbvt_adaad3e37b372bcf57584d4957ab81c6b}
+
+\item 
+\hypertarget{structbt_dbvt_aeb3be68be0d863b1534996676a2aa416}{D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries collide\+T\+T} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root0, const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root1, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)}\label{structbt_dbvt_aeb3be68be0d863b1534996676a2aa416}
+
+\item 
+\hypertarget{structbt_dbvt_ad42b74ec72d83f4de65e1e78ad5bc012}{D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries collide\+T\+Tpersistent\+Stack} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root0, const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root1, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)}\label{structbt_dbvt_ad42b74ec72d83f4de65e1e78ad5bc012}
+
+\item 
+\hypertarget{structbt_dbvt_a222e4c7a13c6202e971a8a30c45d0943}{D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries collide\+T\+V} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, const \hyperlink{structbt_dbvt_aabb_mm}{bt\+Dbvt\+Volume} \&volume, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y) const }\label{structbt_dbvt_a222e4c7a13c6202e971a8a30c45d0943}
+
+\item 
+D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void \hyperlink{structbt_dbvt_a9df5060e6631a1618e416f02498c0b21}{ray\+Test\+Internal} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, const bt\+Vector3 \&ray\+From, const bt\+Vector3 \&ray\+To, const bt\+Vector3 \&ray\+Direction\+Inverse, unsigned int signs\mbox{[}3\mbox{]}, bt\+Scalar lambda\+\_\+max, const bt\+Vector3 \&aabb\+Min, const bt\+Vector3 \&aabb\+Max, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_dbvt_aec8b277b3c47d6ce41334dc9758a169b}{static int {\bfseries maxdepth} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$node)}\label{structbt_dbvt_aec8b277b3c47d6ce41334dc9758a169b}
+
+\item 
+\hypertarget{structbt_dbvt_ab832dd26afc34769ae85242307af9825}{static int {\bfseries count\+Leaves} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$node)}\label{structbt_dbvt_ab832dd26afc34769ae85242307af9825}
+
+\item 
+\hypertarget{structbt_dbvt_a9535878974d63d48055d15a2ec6a290d}{static void {\bfseries extract\+Leaves} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$node, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$ $>$ \&leaves)}\label{structbt_dbvt_a9535878974d63d48055d15a2ec6a290d}
+
+\item 
+\hypertarget{structbt_dbvt_a3a00928493333d8adf3d27282c3450e4}{static void {\bfseries benchmark} ()}\label{structbt_dbvt_a3a00928493333d8adf3d27282c3450e4}
+
+\item 
+\hypertarget{structbt_dbvt_a3c2e1518e17541f83003b3c445d77b92}{static D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries enum\+Nodes} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)}\label{structbt_dbvt_a3c2e1518e17541f83003b3c445d77b92}
+
+\item 
+\hypertarget{structbt_dbvt_a98f3809446efbf886c89429869b9e099}{static D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries enum\+Leaves} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)}\label{structbt_dbvt_a98f3809446efbf886c89429869b9e099}
+
+\item 
+static D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void \hyperlink{structbt_dbvt_a8e316ee3bc9bd7b7354086c0c558cfb5}{ray\+Test} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, const bt\+Vector3 \&ray\+From, const bt\+Vector3 \&ray\+To, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)
+\item 
+\hypertarget{structbt_dbvt_a8f00d2d902816fb3bc6ab5b3d69c1ec5}{static D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries collide\+K\+D\+O\+P} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, const bt\+Vector3 $\ast$normals, const bt\+Scalar $\ast$offsets, int count, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)}\label{structbt_dbvt_a8f00d2d902816fb3bc6ab5b3d69c1ec5}
+
+\item 
+\hypertarget{structbt_dbvt_a2aa9c732441a8bb4cbec9c47c02e05c3}{static D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries collide\+O\+C\+L} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, const bt\+Vector3 $\ast$normals, const bt\+Scalar $\ast$offsets, const bt\+Vector3 \&sortaxis, int count, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y, bool fullsort=true)}\label{structbt_dbvt_a2aa9c732441a8bb4cbec9c47c02e05c3}
+
+\item 
+\hypertarget{structbt_dbvt_a632a36cd575d45e9f98a002211aee35e}{static D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void {\bfseries collide\+T\+U} (const \hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$root, D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y)}\label{structbt_dbvt_a632a36cd575d45e9f98a002211aee35e}
+
+\item 
+\hypertarget{structbt_dbvt_a09363b697138f2d1d51fea62ad147f9b}{static D\+B\+V\+T\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries nearest} (const int $\ast$i, const \hyperlink{structbt_dbvt_1_1s_stk_n_p_s}{bt\+Dbvt\+::s\+Stk\+N\+P\+S} $\ast$a, bt\+Scalar v, int l, int h)}\label{structbt_dbvt_a09363b697138f2d1d51fea62ad147f9b}
+
+\item 
+\hypertarget{structbt_dbvt_a0f9c3a3fa62050f132de16de2d362fd1}{static D\+B\+V\+T\+\_\+\+I\+N\+L\+I\+N\+E int {\bfseries allocate} (\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ int $>$ \&ifree, \hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ \hyperlink{structbt_dbvt_1_1s_stk_n_p_s}{s\+Stk\+N\+P\+S} $>$ \&stock, const \hyperlink{structbt_dbvt_1_1s_stk_n_p_s}{s\+Stk\+N\+P\+S} \&value)}\label{structbt_dbvt_a0f9c3a3fa62050f132de16de2d362fd1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structbt_dbvt_ac79cacfc8471aa681ee8756ca9d5683a}{\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$ {\bfseries m\+\_\+root}}\label{structbt_dbvt_ac79cacfc8471aa681ee8756ca9d5683a}
+
+\item 
+\hypertarget{structbt_dbvt_a80f8054d42c4053179481609557208f0}{\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$ {\bfseries m\+\_\+free}}\label{structbt_dbvt_a80f8054d42c4053179481609557208f0}
+
+\item 
+\hypertarget{structbt_dbvt_acd77bda8e22d25d2d251178f6155cde0}{int {\bfseries m\+\_\+lkhd}}\label{structbt_dbvt_acd77bda8e22d25d2d251178f6155cde0}
+
+\item 
+\hypertarget{structbt_dbvt_a8fe957e11b755e1bd5f8df46000390b0}{int {\bfseries m\+\_\+leaves}}\label{structbt_dbvt_a8fe957e11b755e1bd5f8df46000390b0}
+
+\item 
+\hypertarget{structbt_dbvt_a3887b5ca4953188b53f4261dac5c704b}{unsigned {\bfseries m\+\_\+opath}}\label{structbt_dbvt_a3887b5ca4953188b53f4261dac5c704b}
+
+\item 
+\hypertarget{structbt_dbvt_a716f85528e16cbcb3077cf989ddc69be}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ \hyperlink{structbt_dbvt_1_1s_stk_n_n}{s\+Stk\+N\+N} $>$ {\bfseries m\+\_\+stk\+Stack}}\label{structbt_dbvt_a716f85528e16cbcb3077cf989ddc69be}
+
+\item 
+\hypertarget{structbt_dbvt_ac6992e9e7335dc1b1d0bfdb8ba7daf61}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ const \\*
+\hyperlink{structbt_dbvt_node}{bt\+Dbvt\+Node} $\ast$ $>$ {\bfseries m\+\_\+ray\+Test\+Stack}}\label{structbt_dbvt_ac6992e9e7335dc1b1d0bfdb8ba7daf61}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{structbt_dbvt}{bt\+Dbvt} class implements a fast dynamic bounding volume tree based on axis aligned bounding boxes (aabb tree). This \hyperlink{structbt_dbvt}{bt\+Dbvt} is used for soft body collision detection and for the \hyperlink{structbt_dbvt_broadphase}{bt\+Dbvt\+Broadphase}. It has a fast insert, remove and update of nodes. Unlike the bt\+Quantized\+Bvh, nodes can be dynamically moved around, which allows for change in topology of the underlying data structure. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structbt_dbvt_a8e316ee3bc9bd7b7354086c0c558cfb5}{\index{bt\+Dbvt@{bt\+Dbvt}!ray\+Test@{ray\+Test}}
+\index{ray\+Test@{ray\+Test}!bt\+Dbvt@{bt\+Dbvt}}
+\subsubsection[{ray\+Test}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void bt\+Dbvt\+::ray\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf bt\+Dbvt\+Node} $\ast$}]{root, }
+\item[{const bt\+Vector3 \&}]{ray\+From, }
+\item[{const bt\+Vector3 \&}]{ray\+To, }
+\item[{D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structbt_dbvt_a8e316ee3bc9bd7b7354086c0c558cfb5}
+ray\+Test is a re-\/entrant ray test, and can be called in parallel as long as the bt\+Aligned\+Alloc is thread-\/safe (uses locking etc) ray\+Test is slower than ray\+Test\+Internal, because it builds a local stack, using memory allocations, and it recomputes signs/ray\+Direction\+Inverses each time what about division by zero? --$>$ just set ray\+Direction\mbox{[}i\mbox{]} to I\+N\+F/\+B\+T\+\_\+\+L\+A\+R\+G\+E\+\_\+\+F\+L\+O\+A\+T 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{structbt_dbvt_a9df5060e6631a1618e416f02498c0b21}{\index{bt\+Dbvt@{bt\+Dbvt}!ray\+Test\+Internal@{ray\+Test\+Internal}}
+\index{ray\+Test\+Internal@{ray\+Test\+Internal}!bt\+Dbvt@{bt\+Dbvt}}
+\subsubsection[{ray\+Test\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+V\+T\+\_\+\+P\+R\+E\+F\+I\+X void bt\+Dbvt\+::ray\+Test\+Internal (
+\begin{DoxyParamCaption}
+\item[{const {\bf bt\+Dbvt\+Node} $\ast$}]{root, }
+\item[{const bt\+Vector3 \&}]{ray\+From, }
+\item[{const bt\+Vector3 \&}]{ray\+To, }
+\item[{const bt\+Vector3 \&}]{ray\+Direction\+Inverse, }
+\item[{unsigned int}]{signs\mbox{[}3\mbox{]}, }
+\item[{bt\+Scalar}]{lambda\+\_\+max, }
+\item[{const bt\+Vector3 \&}]{aabb\+Min, }
+\item[{const bt\+Vector3 \&}]{aabb\+Max, }
+\item[{D\+B\+V\+T\+\_\+\+I\+P\+O\+L\+I\+C\+Y}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structbt_dbvt_a9df5060e6631a1618e416f02498c0b21}
+ray\+Test\+Internal is faster than ray\+Test, because it uses a persistent stack (to reduce dynamic memory allocations to a minimum) and it uses precomputed signs/ray\+Inverse\+Directions ray\+Test\+Internal is used by \hyperlink{structbt_dbvt_broadphase}{bt\+Dbvt\+Broadphase} to accelerate world ray casts 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Broadphase\+Collision/bt\+Dbvt.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Broadphase\+Collision/bt\+Dbvt.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jassimp.AiWrapperProvider\l\< V3, M4, C, N, Q \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacejassimp_1_1_ai_wrapper_provider_3_01_v3_00_01_m4_00_01_c_00_01_n_00_01_q_01_4.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jassimp.AiBuiltInWrapper\lProvider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjassimp_1_1_ai_built_in_wrapper_provider.html"];
+}

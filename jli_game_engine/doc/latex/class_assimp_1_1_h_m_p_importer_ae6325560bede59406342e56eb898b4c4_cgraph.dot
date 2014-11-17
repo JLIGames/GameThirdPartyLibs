@@ -1,0 +1,42 @@
+digraph "Assimp::HMPImporter::InternReadFile_HMP7"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::HMPImporter\l::InternReadFile_HMP7",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::HMPImporter\l::ValidateHeader_HMP457",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_h_m_p_importer.html#a447064760ffaffb9fe9532200056dca4"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::HMPImporter\l::CreateMaterial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_h_m_p_importer.html#af7848d5490b6c72bb5747a2c0a9ece6a"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::HMPImporter\l::ReadFirstSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_h_m_p_importer.html#a20c1e5069ae0918e20311b1c380c2866"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::MDLImporter\l::ParseSkinLump_3DGS_MDL7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a04c62f91a516fe535dfacb1131a69a59"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::MDLImporter\l::SkipSkinLump_3DGS_MDL7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#abd9b33a2990e6163af32399a45c7c426"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::MDLImporter\l::ParseTextureColorData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a29d41f4f7bd504b858b430595a80b708"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::MDLImporter\l::SearchPalette",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#af8088e0602fc58ad5d93e0d7ea7ed45c"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::IOSystem::Open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816",tooltip="Open a new file with a given path. "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::IOStream::FileSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#aaa01183d197fb714f28d6c611b6fa058",tooltip="Returns filesize Returns the filesize. "];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::IOStream::Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#ae376f641020989d61863b9c6f55c7abf",tooltip="Read from the file. "];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node8 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Assimp::Logger::info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a12b8a125083c47ac0bb6056f00761e52",tooltip="Writes a info message. "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Assimp::Logger::OnInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aba81c4562ff8db83f06c6b62f2eb7983",tooltip="Called as a request to write a specific info message. "];
+  Node7 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Assimp::MDLImporter\l::FreePalette",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#ad89156b5a500b4644777f4e1fcc57ed5"];
+  Node4 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Assimp::MDLImporter\l::SizeCheck",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a02b131e58eb34cde491791fe32b9be3a"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Assimp::HMPImporter\l::GenerateTextureCoords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_h_m_p_importer.html#a487698e3c1f9f7887559675354a3e011"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Assimp::HMPImporter\l::CreateOutputFaceList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_h_m_p_importer.html#a87829d4157cd41f98d2c386e450b6fcd"];
+}

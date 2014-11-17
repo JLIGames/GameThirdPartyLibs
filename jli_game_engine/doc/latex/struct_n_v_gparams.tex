@@ -1,0 +1,53 @@
+\hypertarget{struct_n_v_gparams}{\section{N\+V\+Gparams Struct Reference}
+\label{struct_n_v_gparams}\index{N\+V\+Gparams@{N\+V\+Gparams}}
+}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_n_v_gparams_a6976a0363fdbfa0ef1e756556ef05f97}{void $\ast$ {\bfseries user\+Ptr}}\label{struct_n_v_gparams_a6976a0363fdbfa0ef1e756556ef05f97}
+
+\item 
+\hypertarget{struct_n_v_gparams_a273c8d7199cc5dc4f1a69e12f0b90229}{int {\bfseries edge\+Anti\+Alias}}\label{struct_n_v_gparams_a273c8d7199cc5dc4f1a69e12f0b90229}
+
+\item 
+\hypertarget{struct_n_v_gparams_ae62f4124bb147d342edfcbc8c233c782}{int($\ast$ {\bfseries render\+Create} )(void $\ast$uptr)}\label{struct_n_v_gparams_ae62f4124bb147d342edfcbc8c233c782}
+
+\item 
+\hypertarget{struct_n_v_gparams_ae801ecf9e3f412eda60524ef6ff8ce26}{int($\ast$ {\bfseries render\+Create\+Texture} )(void $\ast$uptr, int type, int w, int h, int image\+Flags, const unsigned char $\ast$data)}\label{struct_n_v_gparams_ae801ecf9e3f412eda60524ef6ff8ce26}
+
+\item 
+\hypertarget{struct_n_v_gparams_a165c064c1c1a454a45e2848feedd5fdd}{int($\ast$ {\bfseries render\+Delete\+Texture} )(void $\ast$uptr, int image)}\label{struct_n_v_gparams_a165c064c1c1a454a45e2848feedd5fdd}
+
+\item 
+\hypertarget{struct_n_v_gparams_ab9ece91b2fa9528d2fde0a134086f3a5}{int($\ast$ {\bfseries render\+Update\+Texture} )(void $\ast$uptr, int image, int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int w, int h, const unsigned char $\ast$data)}\label{struct_n_v_gparams_ab9ece91b2fa9528d2fde0a134086f3a5}
+
+\item 
+\hypertarget{struct_n_v_gparams_a2ecbd50cea119eb702cfbab7538596b8}{int($\ast$ {\bfseries render\+Get\+Texture\+Size} )(void $\ast$uptr, int image, int $\ast$w, int $\ast$h)}\label{struct_n_v_gparams_a2ecbd50cea119eb702cfbab7538596b8}
+
+\item 
+\hypertarget{struct_n_v_gparams_afd36988acfa80d110a09c241f15b0059}{void($\ast$ {\bfseries render\+Viewport} )(void $\ast$uptr, int width, int height)}\label{struct_n_v_gparams_afd36988acfa80d110a09c241f15b0059}
+
+\item 
+\hypertarget{struct_n_v_gparams_a0ac3f690b38027133f69f55191567174}{void($\ast$ {\bfseries render\+Cancel} )(void $\ast$uptr)}\label{struct_n_v_gparams_a0ac3f690b38027133f69f55191567174}
+
+\item 
+\hypertarget{struct_n_v_gparams_aee5c82793f98015703e7c89bc8739dd5}{void($\ast$ {\bfseries render\+Flush} )(void $\ast$uptr)}\label{struct_n_v_gparams_aee5c82793f98015703e7c89bc8739dd5}
+
+\item 
+\hypertarget{struct_n_v_gparams_a3f0709b275cb0290857ff25c1413697d}{void($\ast$ {\bfseries render\+Fill} )(void $\ast$uptr, \hyperlink{struct_n_v_gpaint}{N\+V\+Gpaint} $\ast$paint, \hyperlink{struct_n_v_gscissor}{N\+V\+Gscissor} $\ast$scissor, float fringe, const float $\ast$bounds, const \hyperlink{struct_n_v_gpath}{N\+V\+Gpath} $\ast$paths, int npaths)}\label{struct_n_v_gparams_a3f0709b275cb0290857ff25c1413697d}
+
+\item 
+\hypertarget{struct_n_v_gparams_a5dbf82ea943f12666c486fd0588d3273}{void($\ast$ {\bfseries render\+Stroke} )(void $\ast$uptr, \hyperlink{struct_n_v_gpaint}{N\+V\+Gpaint} $\ast$paint, \hyperlink{struct_n_v_gscissor}{N\+V\+Gscissor} $\ast$scissor, float fringe, float stroke\+Width, const \hyperlink{struct_n_v_gpath}{N\+V\+Gpath} $\ast$paths, int npaths)}\label{struct_n_v_gparams_a5dbf82ea943f12666c486fd0588d3273}
+
+\item 
+\hypertarget{struct_n_v_gparams_a789ee1bc25628510d42bec82a23463a2}{void($\ast$ {\bfseries render\+Triangles} )(void $\ast$uptr, \hyperlink{struct_n_v_gpaint}{N\+V\+Gpaint} $\ast$paint, \hyperlink{struct_n_v_gscissor}{N\+V\+Gscissor} $\ast$scissor, const \hyperlink{struct_n_v_gvertex}{N\+V\+Gvertex} $\ast$verts, int nverts)}\label{struct_n_v_gparams_a789ee1bc25628510d42bec82a23463a2}
+
+\item 
+\hypertarget{struct_n_v_gparams_a92fc1339d100af7cc4b5fdeb7b36e63c}{void($\ast$ {\bfseries render\+Delete} )(void $\ast$uptr)}\label{struct_n_v_gparams_a92fc1339d100af7cc4b5fdeb7b36e63c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+nanovg/nanovg/src/nanovg.\+h\end{DoxyCompactItemize}

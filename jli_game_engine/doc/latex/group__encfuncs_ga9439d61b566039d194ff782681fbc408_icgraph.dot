@@ -1,0 +1,11 @@
+digraph "th_encode_flushheader"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="th_encode_flushheader",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="theora_encode_header",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__oldfuncs.html#ga451feb58d6bde726edbae193689887be"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="theora_encode_tables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__oldfuncs.html#ga5085baf20855b283fa01fc948505d9d2"];
+}

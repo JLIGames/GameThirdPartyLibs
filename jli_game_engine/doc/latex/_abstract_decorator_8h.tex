@@ -1,0 +1,224 @@
+\hypertarget{_abstract_decorator_8h}{\section{include/\+Abstract\+Decorator.h File Reference}
+\label{_abstract_decorator_8h}\index{include/\+Abstract\+Decorator.\+h@{include/\+Abstract\+Decorator.\+h}}
+}
+{\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}bt\+Aligned\+Object\+Array.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Abstract\+Object.\+h\char`\"{}}\\*
+Include dependency graph for Abstract\+Decorator.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_abstract_decorator_8h_a8239cd432dcd952afaacd469c4eb3538}{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+Decorator
+\item 
+virtual \hyperlink{_abstract_decorator_8h_ae0237816ea3de11a2ebe18c538f0c0d6}{$\sim$\+Abstract\+Decorator} ()
+\item 
+\hyperlink{_abstract_decorator_8h_a073043644ede242268123f98ca10ec2d}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
+\item 
+virtual Abstract\+Object $\ast$ \hyperlink{_abstract_decorator_8h_a33d82ba71b634824e1065dac81c0417d}{get\+Parent} ()
+\item 
+virtual bool \hyperlink{_abstract_decorator_8h_a135e7fabb5db36e2601b0683ebf3d16d}{has\+Parent} () const 
+\item 
+virtual void \hyperlink{_abstract_decorator_8h_a024570f8c214ccd3360c5a66174cf953}{set\+Parent} (Abstract\+Object $\ast$parent)
+\item 
+virtual void \hyperlink{_abstract_decorator_8h_a5599c2c574a15113b5044edf47ecdd1f}{remove\+Parent} ()
+\item 
+virtual bool \hyperlink{_abstract_decorator_8h_a7ad72c4e9256314a9be2823d000b8dbe}{remove\+From\+Parent} ()
+\item 
+bool \hyperlink{_abstract_decorator_8h_aef61baede606611a56c1f2550e35a097}{has\+Child} (Abstract\+Object $\ast$object) const 
+\item 
+Abstract\+Object $\ast$ \hyperlink{_abstract_decorator_8h_a90b0f5dfb277973db5ace4c908bd1a67}{get\+Child} (const u32 index)
+\item 
+void \hyperlink{_abstract_decorator_8h_ad24481f516f9fe752b1fb1bb75a64d4e}{add\+Child} (Abstract\+Decorator $\ast$object)
+\item 
+void \hyperlink{_abstract_decorator_8h_a9823a90d55a3b5f33a24cdaf86de2f71}{remove\+Child} (const u32 index)
+\item 
+void \hyperlink{_abstract_decorator_8h_afe9b3ded557d9f56981ffb2531aebb3f}{remove\+Child} (Abstract\+Object $\ast$object)
+\item 
+void \hyperlink{_abstract_decorator_8h_ae60dde18aad3927816e30b7cbe4d98c6}{remove\+Children} ()
+\item 
+u32 \hyperlink{_abstract_decorator_8h_a5fb31989e69c4d160565276417dec6b2}{children} () const 
+\item 
+virtual void \hyperlink{_abstract_decorator_8h_a428b2493d381358a3e6c879d5d662a22}{apply\+Child} (const u32 index)
+\item 
+virtual void \hyperlink{_abstract_decorator_8h_a375cba97ab9b9edeb220ac556ab59b79}{apply\+Children} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Aligned\+Object\+Array\\*
+$<$ Abstract\+Object $\ast$ $>$ \hyperlink{_abstract_decorator_8h_a5fa34a0e4ef4aba5dcf0d97893c2ee5d}{m\+\_\+\+Decorators}
+\item 
+Abstract\+Object $\ast$ \hyperlink{_abstract_decorator_8h_a1acaef14f64515c3075ae93bf61d6779}{m\+\_\+p\+Parent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_abstract_decorator_8h_ad24481f516f9fe752b1fb1bb75a64d4e}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{add\+Child}]{\setlength{\rightskip}{0pt plus 5cm}void add\+Child (
+\begin{DoxyParamCaption}
+\item[{Abstract\+Decorator $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_ad24481f516f9fe752b1fb1bb75a64d4e}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_a428b2493d381358a3e6c879d5d662a22}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!apply\+Child@{apply\+Child}}
+\index{apply\+Child@{apply\+Child}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{apply\+Child}]{\setlength{\rightskip}{0pt plus 5cm}virtual void apply\+Child (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a428b2493d381358a3e6c879d5d662a22}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_a375cba97ab9b9edeb220ac556ab59b79}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!apply\+Children@{apply\+Children}}
+\index{apply\+Children@{apply\+Children}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{apply\+Children}]{\setlength{\rightskip}{0pt plus 5cm}virtual void apply\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a375cba97ab9b9edeb220ac556ab59b79}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_a8239cd432dcd952afaacd469c4eb3538}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}}
+\index{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}]{\setlength{\rightskip}{0pt plus 5cm}A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16 (
+\begin{DoxyParamCaption}
+\item[{class}]{}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_a8239cd432dcd952afaacd469c4eb3538}
+\hypertarget{_abstract_decorator_8h_a073043644ede242268123f98ca10ec2d}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_a073043644ede242268123f98ca10ec2d}
+\hypertarget{_abstract_decorator_8h_a5fb31989e69c4d160565276417dec6b2}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!children@{children}}
+\index{children@{children}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}u32 children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{_abstract_decorator_8h_a5fb31989e69c4d160565276417dec6b2}
+\hypertarget{_abstract_decorator_8h_a90b0f5dfb277973db5ace4c908bd1a67}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!get\+Child@{get\+Child}}
+\index{get\+Child@{get\+Child}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{get\+Child}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Object$\ast$ get\+Child (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_a90b0f5dfb277973db5ace4c908bd1a67}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_a33d82ba71b634824e1065dac81c0417d}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}const Abstract\+Object $\ast$ get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a33d82ba71b634824e1065dac81c0417d}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_aef61baede606611a56c1f2550e35a097}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!has\+Child@{has\+Child}}
+\index{has\+Child@{has\+Child}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{has\+Child}]{\setlength{\rightskip}{0pt plus 5cm}bool has\+Child (
+\begin{DoxyParamCaption}
+\item[{Abstract\+Object $\ast$}]{object}
+\end{DoxyParamCaption}
+) const}}\label{_abstract_decorator_8h_aef61baede606611a56c1f2550e35a097}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_a135e7fabb5db36e2601b0683ebf3d16d}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!has\+Parent@{has\+Parent}}
+\index{has\+Parent@{has\+Parent}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{has\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool has\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a135e7fabb5db36e2601b0683ebf3d16d}
+\hypertarget{_abstract_decorator_8h_a9823a90d55a3b5f33a24cdaf86de2f71}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{remove\+Child}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+Child (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_a9823a90d55a3b5f33a24cdaf86de2f71}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_afe9b3ded557d9f56981ffb2531aebb3f}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{remove\+Child}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+Child (
+\begin{DoxyParamCaption}
+\item[{Abstract\+Object $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_afe9b3ded557d9f56981ffb2531aebb3f}
+\hypertarget{_abstract_decorator_8h_ae60dde18aad3927816e30b7cbe4d98c6}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!remove\+Children@{remove\+Children}}
+\index{remove\+Children@{remove\+Children}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{remove\+Children}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_abstract_decorator_8h_ae60dde18aad3927816e30b7cbe4d98c6}
+\hypertarget{_abstract_decorator_8h_a7ad72c4e9256314a9be2823d000b8dbe}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!remove\+From\+Parent@{remove\+From\+Parent}}
+\index{remove\+From\+Parent@{remove\+From\+Parent}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{remove\+From\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool remove\+From\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a7ad72c4e9256314a9be2823d000b8dbe}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_abstract_decorator_8h_a5599c2c574a15113b5044edf47ecdd1f}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!remove\+Parent@{remove\+Parent}}
+\index{remove\+Parent@{remove\+Parent}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{remove\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}virtual void remove\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a5599c2c574a15113b5044edf47ecdd1f}
+\hypertarget{_abstract_decorator_8h_a024570f8c214ccd3360c5a66174cf953}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!set\+Parent@{set\+Parent}}
+\index{set\+Parent@{set\+Parent}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{set\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}virtual void set\+Parent (
+\begin{DoxyParamCaption}
+\item[{Abstract\+Object $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_a024570f8c214ccd3360c5a66174cf953}
+\hypertarget{_abstract_decorator_8h_ae0237816ea3de11a2ebe18c538f0c0d6}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!````~Abstract\+Decorator@{$\sim$\+Abstract\+Decorator}}
+\index{````~Abstract\+Decorator@{$\sim$\+Abstract\+Decorator}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{$\sim$\+Abstract\+Decorator}]{\setlength{\rightskip}{0pt plus 5cm}virtual $\sim$Abstract\+Decorator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_decorator_8h_ae0237816ea3de11a2ebe18c538f0c0d6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_abstract_decorator_8h_a5fa34a0e4ef4aba5dcf0d97893c2ee5d}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!m\+\_\+\+Decorators@{m\+\_\+\+Decorators}}
+\index{m\+\_\+\+Decorators@{m\+\_\+\+Decorators}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{m\+\_\+\+Decorators}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Aligned\+Object\+Array$<$Abstract\+Object$\ast$$>$ m\+\_\+\+Decorators}}\label{_abstract_decorator_8h_a5fa34a0e4ef4aba5dcf0d97893c2ee5d}
+\hypertarget{_abstract_decorator_8h_a1acaef14f64515c3075ae93bf61d6779}{\index{Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}!m\+\_\+p\+Parent@{m\+\_\+p\+Parent}}
+\index{m\+\_\+p\+Parent@{m\+\_\+p\+Parent}!Abstract\+Decorator.\+h@{Abstract\+Decorator.\+h}}
+\subsubsection[{m\+\_\+p\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Object$\ast$ m\+\_\+p\+Parent}}\label{_abstract_decorator_8h_a1acaef14f64515c3075ae93bf61d6779}

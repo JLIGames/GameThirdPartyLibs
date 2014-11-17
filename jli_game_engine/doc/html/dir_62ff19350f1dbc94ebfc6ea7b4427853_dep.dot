@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/DeferredShading/OGLES3/Build/Android/src/com/powervr/OGLES3DeferredShading" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_84c900baedda5491faa321d369accb1a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_84c900baedda5491faa321d369accb1a.html"]
+  dir_62ff19350f1dbc94ebfc6ea7b4427853 [shape=box, label="OGLES3DeferredShading", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_62ff19350f1dbc94ebfc6ea7b4427853.html"];
+  }
+}

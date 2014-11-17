@@ -1,0 +1,182 @@
+\hypertarget{_p_v_r_t_unicode_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Unicode.h File Reference}
+\label{_p_v_r_t_unicode_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Unicode.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Unicode.\+h}}
+}
+
+
+A small collection of functions used to decode Unicode formats to individual code points.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Error.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Array.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Unicode.\+h\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{_p_v_r_t_unicode_8h_a54150f433be76ed547efa36329d48341}{P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32} (const P\+V\+R\+Tuint8 $\ast$const p\+U\+T\+F8, \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ P\+V\+R\+Tuint32 $>$ \&a\+U\+T\+F32)
+\begin{DoxyCompactList}\small\item\em Decodes a U\+T\+F8-\/encoded string in to Unicode code points (U\+T\+F32). If p\+U\+T\+F8 is not null terminated, the results are undefined. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{_p_v_r_t_unicode_8h_a95d281fcb6af34263da50482cb8ec959}{P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32} (const P\+V\+R\+Tuint16 $\ast$const p\+U\+T\+F16, \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ P\+V\+R\+Tuint32 $>$ \&a\+U\+T\+F32)
+\begin{DoxyCompactList}\small\item\em Decodes a U\+T\+F16-\/encoded string in to Unicode code points (U\+T\+F32). If p\+U\+T\+F16 is not null terminated, the results are undefined. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{_p_v_r_t_unicode_8h_a596122c69d252f3436cc6b8da9b5d70f}{P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length} (const P\+V\+R\+Tuint8 $\ast$const p\+U\+T\+F8)
+\begin{DoxyCompactList}\small\item\em Calculates the length of a U\+T\+F8 string. If p\+U\+T\+F8 is not null terminated, the results are undefined. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{_p_v_r_t_unicode_8h_a4c3229f2966e1faa450d8f51900337b0}{P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length} (const P\+V\+R\+Tuint16 $\ast$const p\+U\+T\+F16)
+\begin{DoxyCompactList}\small\item\em Calculates the length of a U\+T\+F16 string. If p\+U\+T\+F16 is not null terminated, the results are undefined. \end{DoxyCompactList}\item 
+bool \hyperlink{_p_v_r_t_unicode_8h_a3ae7dfd4682f5217cb7e7453d7248a54}{P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8} (const P\+V\+R\+Tuint8 $\ast$const p\+U\+T\+F8)
+\begin{DoxyCompactList}\small\item\em Checks whether the encoding of a U\+T\+F8 string is valid. If p\+U\+T\+F8 is not null terminated, the results are undefined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A small collection of functions used to decode Unicode formats to individual code points. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_unicode_8h_a4c3229f2966e1faa450d8f51900337b0}{\index{P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}!P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length@{P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length}}
+\index{P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length@{P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length}!P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}}
+\subsubsection[{P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length (
+\begin{DoxyParamCaption}
+\item[{const P\+V\+R\+Tuint16 $\ast$const}]{p\+U\+T\+F16}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_unicode_8h_a4c3229f2966e1faa450d8f51900337b0}
+
+
+Calculates the length of a U\+T\+F16 string. If p\+U\+T\+F16 is not null terminated, the results are undefined. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+U\+T\+F16} & A U\+T\+F16 string, which is null terminated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The length of the string, in Unicode code points.
+\end{DoxyReturn}
+
+
+  P\+V\+R\+T\+Unicode\+U\+T\+F16\+Length  p\+U\+T\+F16 A U\+T\+F16 string, which is null terminated.  The length of the string, in Unicode code points.  Calculates the length of a U\+T\+F16 string. If p\+U\+T\+F16 is not null terminated, the results are undefined. \hypertarget{_p_v_r_t_unicode_8h_a95d281fcb6af34263da50482cb8ec959}{\index{P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}!P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32@{P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32}}
+\index{P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32@{P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32}!P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}}
+\subsubsection[{P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32 (
+\begin{DoxyParamCaption}
+\item[{const P\+V\+R\+Tuint16 $\ast$const}]{p\+U\+T\+F16, }
+\item[{{\bf C\+P\+V\+R\+T\+Array}$<$ P\+V\+R\+Tuint32 $>$ \&}]{a\+U\+T\+F32}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_unicode_8h_a95d281fcb6af34263da50482cb8ec959}
+
+
+Decodes a U\+T\+F16-\/encoded string in to Unicode code points (U\+T\+F32). If p\+U\+T\+F16 is not null terminated, the results are undefined. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+U\+T\+F16} & A U\+T\+F16 string, which is null terminated. \\
+\hline
+\mbox{\tt out}  & {\em a\+U\+T\+F32} & An array of Unicode code points. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or failure.
+\end{DoxyReturn}
+
+
+  P\+V\+R\+T\+Unicode\+U\+T\+F16\+To\+U\+T\+F32  p\+U\+T\+F16 A U\+T\+F16 string, which is null terminated.  a\+U\+T\+F32 An array of Unicode code points.  Success or failure.  Decodes a U\+T\+F16-\/encoded string in to Unicode code points (U\+T\+F32). If p\+U\+T\+F16 is not null terminated, the results are undefined. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_unicode_8h_a596122c69d252f3436cc6b8da9b5d70f}{\index{P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}!P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length@{P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length}}
+\index{P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length@{P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length}!P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}}
+\subsubsection[{P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length (
+\begin{DoxyParamCaption}
+\item[{const P\+V\+R\+Tuint8 $\ast$const}]{p\+U\+T\+F8}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_unicode_8h_a596122c69d252f3436cc6b8da9b5d70f}
+
+
+Calculates the length of a U\+T\+F8 string. If p\+U\+T\+F8 is not null terminated, the results are undefined. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+U\+T\+F8} & A U\+T\+F8 string, which is null terminated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The length of the string, in Unicode code points.
+\end{DoxyReturn}
+
+
+  P\+V\+R\+T\+Unicode\+U\+T\+F8\+Length  p\+U\+T\+F8 A U\+T\+F8 string, which is null terminated.  The length of the string, in Unicode code points.  Calculates the length of a U\+T\+F8 string. If p\+U\+T\+F8 is not null terminated, the results are undefined. \hypertarget{_p_v_r_t_unicode_8h_a54150f433be76ed547efa36329d48341}{\index{P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}!P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32@{P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32}}
+\index{P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32@{P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32}!P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}}
+\subsubsection[{P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32 (
+\begin{DoxyParamCaption}
+\item[{const P\+V\+R\+Tuint8 $\ast$const}]{p\+U\+T\+F8, }
+\item[{{\bf C\+P\+V\+R\+T\+Array}$<$ P\+V\+R\+Tuint32 $>$ \&}]{a\+U\+T\+F32}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_unicode_8h_a54150f433be76ed547efa36329d48341}
+
+
+Decodes a U\+T\+F8-\/encoded string in to Unicode code points (U\+T\+F32). If p\+U\+T\+F8 is not null terminated, the results are undefined. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+U\+T\+F8} & A U\+T\+F8 string, which is null terminated. \\
+\hline
+\mbox{\tt out}  & {\em a\+U\+T\+F32} & An array of Unicode code points. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or failure.
+\end{DoxyReturn}
+
+
+  P\+V\+R\+T\+Unicode\+U\+T\+F8\+To\+U\+T\+F32  p\+U\+T\+F8 A U\+T\+F8 string, which is null terminated.  a\+U\+T\+F32 An array of Unicode code points.  Success or failure.  Decodes a U\+T\+F8-\/encoded string in to Unicode code points (U\+T\+F32). If p\+U\+T\+F8 is not null terminated, the results are undefined. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_unicode_8h_a3ae7dfd4682f5217cb7e7453d7248a54}{\index{P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}!P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8@{P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8}}
+\index{P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8@{P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8}!P\+V\+R\+T\+Unicode.\+h@{P\+V\+R\+T\+Unicode.\+h}}
+\subsubsection[{P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{const P\+V\+R\+Tuint8 $\ast$const}]{p\+U\+T\+F8}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_unicode_8h_a3ae7dfd4682f5217cb7e7453d7248a54}
+
+
+Checks whether the encoding of a U\+T\+F8 string is valid. If p\+U\+T\+F8 is not null terminated, the results are undefined. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+U\+T\+F8} & A U\+T\+F8 string, which is null terminated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false
+\end{DoxyReturn}
+
+
+  P\+V\+R\+T\+Unicode\+Valid\+U\+T\+F8  p\+U\+T\+F8 A U\+T\+F8 string, which is null terminated.  true or false  Checks whether the encoding of a U\+T\+F8 string is valid. If p\+U\+T\+F8 is not null terminated, the results are undefined. 

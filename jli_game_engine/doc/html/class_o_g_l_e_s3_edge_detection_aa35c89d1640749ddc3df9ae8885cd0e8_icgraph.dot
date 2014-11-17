@@ -1,0 +1,9 @@
+digraph "OGLES3EdgeDetection::LoadShaders"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLES3EdgeDetection\l::LoadShaders",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OGLES3EdgeDetection\l::InitView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_edge_detection.html#aceba315d85b9e702425aec86f7d6d1ba"];
+}

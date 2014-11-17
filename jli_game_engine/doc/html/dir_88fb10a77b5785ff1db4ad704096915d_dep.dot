@@ -1,0 +1,9 @@
+digraph "zlib/zlib-1.2.8/contrib/dotzlib/DotZLib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fe3ceb25ca395b6dc476c6b728b02248 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="dotzlib" fontname="Helvetica", fontsize="10", URL="dir_fe3ceb25ca395b6dc476c6b728b02248.html"]
+  dir_88fb10a77b5785ff1db4ad704096915d [shape=box, label="DotZLib", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_88fb10a77b5785ff1db4ad704096915d.html"];
+  }
+}

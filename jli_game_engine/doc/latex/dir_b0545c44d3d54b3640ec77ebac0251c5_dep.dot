@@ -1,0 +1,9 @@
+digraph "bullet/bullet-2.82-r2704/src/BulletMultiThreaded/GpuSoftBodySolvers/DX11" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_78fa3e321d72f03f45b655db8f159619 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GpuSoftBodySolvers" fontname="Helvetica", fontsize="10", URL="dir_78fa3e321d72f03f45b655db8f159619.html"]
+  dir_b0545c44d3d54b3640ec77ebac0251c5 [shape=box, label="DX11", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b0545c44d3d54b3640ec77ebac0251c5.html"];
+  }
+}

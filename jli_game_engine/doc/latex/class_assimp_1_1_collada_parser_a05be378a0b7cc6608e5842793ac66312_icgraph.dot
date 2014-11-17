@@ -1,0 +1,27 @@
+digraph "Assimp::ColladaParser::ResolveLibraryReference"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ColladaParser\l::ResolveLibraryReference",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::ColladaLoader\l::CreateMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_loader.html#aed3569be31505133704b0ebcf89c7f1f"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::ColladaLoader\l::CreateAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_loader.html#a155bbcc17bbded120a60c48786ca8004"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::ColladaParser\l::ReadPrimitives",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#aa6aaeaa74ed0e5fcc5ad1e596ce32444"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::ColladaParser\l::ReadIndexData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a61108ba6075e2b2d90eea18eb7fbdb7f"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::ColladaParser\l::ReadMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#acc839aeae53ac30f89bf23d8640e1d7c"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::ColladaParser\l::ReadGeometry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a516dbc59dcabe1474e3b802d13eac8e1"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::ColladaParser\l::ReadGeometryLibrary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#aeab10c144dadce3626ab2d8432def349"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::ColladaParser\l::ReadStructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a33b811a5865cf91cdbb264c49e2c05ae"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::ColladaParser\l::ReadContents",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a1744f170a70bdbfbe6a3877a570f7546"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::ColladaParser\l::ColladaParser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a1567efb45f7129a79e9c93a782338b37"];
+}

@@ -1,0 +1,62 @@
+\hypertarget{classbt_gjk_convex_cast}{\section{bt\+Gjk\+Convex\+Cast Class Reference}
+\label{classbt_gjk_convex_cast}\index{bt\+Gjk\+Convex\+Cast@{bt\+Gjk\+Convex\+Cast}}
+}
+
+
+Gjk\+Convex\+Cast performs a raycast on a convex object using support mapping.  
+
+
+
+
+{\ttfamily \#include $<$bt\+Gjk\+Convex\+Cast.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Gjk\+Convex\+Cast\+:
+
+
+Collaboration diagram for bt\+Gjk\+Convex\+Cast\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_gjk_convex_cast_af06c51b46aee3ce90b0034b46897dbed}{{\bfseries bt\+Gjk\+Convex\+Cast} (const bt\+Convex\+Shape $\ast$convex\+A, const bt\+Convex\+Shape $\ast$convex\+B, bt\+Simplex\+Solver\+Interface $\ast$simplex\+Solver)}\label{classbt_gjk_convex_cast_af06c51b46aee3ce90b0034b46897dbed}
+
+\item 
+virtual bool \hyperlink{classbt_gjk_convex_cast_a814009e1ebc582495689f365a42ce2c1}{calc\+Time\+Of\+Impact} (const bt\+Transform \&from\+A, const bt\+Transform \&to\+A, const bt\+Transform \&from\+B, const bt\+Transform \&to\+B, \hyperlink{structbt_convex_cast_1_1_cast_result}{Cast\+Result} \&result)
+\begin{DoxyCompactList}\small\item\em cast a convex against another convex object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gjk\+Convex\+Cast performs a raycast on a convex object using support mapping. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_gjk_convex_cast_a814009e1ebc582495689f365a42ce2c1}{\index{bt\+Gjk\+Convex\+Cast@{bt\+Gjk\+Convex\+Cast}!calc\+Time\+Of\+Impact@{calc\+Time\+Of\+Impact}}
+\index{calc\+Time\+Of\+Impact@{calc\+Time\+Of\+Impact}!bt\+Gjk\+Convex\+Cast@{bt\+Gjk\+Convex\+Cast}}
+\subsubsection[{calc\+Time\+Of\+Impact}]{\setlength{\rightskip}{0pt plus 5cm}bool bt\+Gjk\+Convex\+Cast\+::calc\+Time\+Of\+Impact (
+\begin{DoxyParamCaption}
+\item[{const bt\+Transform \&}]{from\+A, }
+\item[{const bt\+Transform \&}]{to\+A, }
+\item[{const bt\+Transform \&}]{from\+B, }
+\item[{const bt\+Transform \&}]{to\+B, }
+\item[{{\bf Cast\+Result} \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_gjk_convex_cast_a814009e1ebc582495689f365a42ce2c1}
+
+
+cast a convex against another convex object 
+
+compute linear velocity for this interval, to interpolate 
+
+Implements \hyperlink{classbt_convex_cast_abaf0f25a8cccfcafdaabada83c8d2bfb}{bt\+Convex\+Cast}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Narrow\+Phase\+Collision/bt\+Gjk\+Convex\+Cast.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Narrow\+Phase\+Collision/bt\+Gjk\+Convex\+Cast.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+
+
+ \hypertarget{importer_notes_blender}{}\section{Blender}\label{importer_notes_blender}
+This section contains implementation notes for the Blender3\+D importer. \hypertarget{importer_notes_bl_overview}{}\subsection{Overview}\label{importer_notes_bl_overview}
+assimp provides a self-\/contained reimplementation of Blender's so called S\+D\+N\+A system (\href{http://www.blender.org/development/architecture/notes-on-sdna/}{\tt http\+://www.\+blender.\+org/development/architecture/notes-\/on-\/sdna/}). S\+D\+N\+A allows Blender to be fully backward and forward compatible and to exchange files across all platforms. The B\+L\+E\+N\+D format is thus a non-\/trivial binary monster and the loader tries to read the most of it, naturally limited by the scope of the \hyperlink{structai_scene}{ai\+Scene} output data structure. Consequently, if Blender is the only modeling tool in your asset work flow, consider writing a custom exporter from Blender if assimps format coverage does not meet the requirements.\hypertarget{importer_notes_bl_status}{}\subsection{Current status}\label{importer_notes_bl_status}
+The Blender loader does not support animations yet, but is apart from that considered relatively stable.\hypertarget{importer_notes_bl_notes}{}\subsection{Notes}\label{importer_notes_bl_notes}
+When filing bugs on the Blender loader, always give the Blender version (or, even better, post the file caused the error).
+
+
+
+ \hypertarget{importer_notes_ifc}{}\section{I\+F\+C}\label{importer_notes_ifc}
+This section contains implementation notes on the I\+F\+C-\/\+S\+T\+E\+P importer. \hypertarget{importer_notes_ifc_overview}{}\subsection{Overview}\label{importer_notes_ifc_overview}
+The library provides a partial implementation of the I\+F\+C2x3 industry standard for automatized exchange of C\+A\+E/architectural data sets. See \href{http://en.wikipedia.org/wiki/Industry_Foundation_Classes}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Industry\+\_\+\+Foundation\+\_\+\+Classes} for more information on the format. We aim at getting as much 3\+D data out of the files as possible.\hypertarget{importer_notes_ifc_status}{}\subsection{Current status}\label{importer_notes_ifc_status}
+I\+F\+C support is new and considered experimental. Please report any bugs you may encounter.\hypertarget{importer_notes_ifc_notes}{}\subsection{Notes}\label{importer_notes_ifc_notes}
+
+\begin{DoxyItemize}
+\item Only the S\+T\+E\+P-\/based encoding is supported. I\+F\+C\+Z\+I\+P and I\+F\+C\+X\+M\+L are not (but I\+F\+C\+Z\+I\+P can simply be unzipped to get a S\+T\+E\+P file).
+\item The importer leaves vertex coordinates untouched, but applies a global scaling to the root transform to convert from whichever unit the I\+F\+C file uses to {\itshape metres}.
+\item If multiple geometric representations are provided, the choice which one to load is based on how expensive a representation seems to be in terms of import time. The loader also avoids representation types for which it has known deficits.
+\item Not supported are arbitrary binary operations (binary clipping is implemented, though).
+\item Of the various relationship types that I\+F\+C knows, only aggregation, containment and material assignment are resolved and mapped to the output graph.
+\item The implementation knows only about I\+F\+C2\+X3 and applies this rule set to all models it encounters, regardless of their actual version. Loading of older or newer files may fail with parsing errors.
+\end{DoxyItemize}\hypertarget{importer_notes_ifc_metadata}{}\subsection{Metadata}\label{importer_notes_ifc_metadata}
+I\+F\+C file properties (Ifc\+Property\+Set) are kept as per-\/node metadata, see \hyperlink{structai_node_a111b5a6cbc5dccde0cf2a17a6e5c3b67}{ai\+Node\+::m\+Meta\+Data}.
+
+
+
+ \hypertarget{importer_notes_ogre}{}\section{Ogre}\label{importer_notes_ogre}
+A\+T\+T\+E\+N\+T\+I\+O\+N$\ast$\+: The Ogre-\/\+Loader is currently under development, many things have changed after this documentation was written, but they are not final enough to rewrite the documentation. So things may have changed by now!
+
+This section contains implementations notes for the Ogre\+X\+M\+L importer. \hypertarget{importer_notes_overview}{}\subsection{Overview}\label{importer_notes_overview}
+Ogre importer is currently optimized for the Blender Ogre exporter, because thats the only one that I use. You can find the Blender Ogre exporter at\+: \href{http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922}{\tt http\+://www.\+ogre3d.\+org/forums/viewtopic.\+php?f=8\&t=45922}\hypertarget{importer_notes_what}{}\subsection{What will be loaded?}\label{importer_notes_what}
+\hyperlink{class_mesh}{Mesh}\+: Faces, Positions, Normals and all Tex\+Coords. The Materialname will be used to load the material.
+
+Material\+: The right material in the file will be searched, the importer should work with materials who have 1 technique and 1 pass in this technique. From there, the texturename (for 1 color-\/ and 1 normalmap) and the materialcolors (but not in custom materials) will be loaded. Also, the materialname will be set.
+
+Skeleton\+: Skeleton with Bone hierarchy (Position and Rotation, but no Scaling in the skeleton is supported), names and transformations, animations with rotation, translation and scaling keys.\hypertarget{importer_notes_export_Blender}{}\subsection{How to export Files from Blender}\label{importer_notes_export_Blender}
+You can find informations about how to use the Ogreexporter by your own, so here are just some options that you need, so the assimp importer will load everything correctly\+:
+\begin{DoxyItemize}
+\item Use either \char`\"{}\+Rendering Material\char`\"{} or \char`\"{}\+Custom Material\char`\"{} see \hyperlink{importer_notes_material}{Materials}
+\item do not use \char`\"{}\+Flip Up Axies to Y\char`\"{}
+\item use \char`\"{}\+Skeleton name follow mesh\char`\"{}
+\end{DoxyItemize}\hypertarget{importer_notes_xml}{}\subsection{X\+M\+L Format}\label{importer_notes_xml}
+There is a binary and a X\+M\+L mesh Format from Ogre. This loader can only Handle xml files, but don't panic, there is a command line converter, which you can use to create X\+M\+L files from Binary Files. Just look on the Ogre page for it.
+
+Currently you can only load meshes. So you will need to import the $\ast$.mesh.\+xml file, the loader will try to find the appendant material and skeleton file.
+
+The skeleton file must have the same name as the mesh file, e.\+g. fish.\+mesh.\+xml and fish.\+skeleton.\+xml.\hypertarget{importer_notes_material}{}\subsection{Materials}\label{importer_notes_material}
+The material file can have the same name as the mesh file (if the file is model.\+mesh or model.\+mesh.\+xml the loader will try to load model.\+material), or you can use Importer\+::\+Importer\+::\+Set\+Property\+String(A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+E, \char`\"{}materiafile.\+material\char`\"{}) to specify the name of the material file. This is especially usefull if multiply materials a stored in a single file. The importer will first try to load the material with the same name as the mesh and only if this can't be open try to load the alternate material file. The default material filename is \char`\"{}\+Scene.\+material\char`\"{}.
+
+We suggest that you use custom materials, because they support multiple textures (like colormap and normalmap). First of all you should read the custom material sektion in the Ogre Blender exporter Help \hyperlink{class_file}{File}, and than use the assimp.\+tlp template, which you can find in scripts/\+Ogre\+Impoter/\+Assimp.\+tlp in the assimp source. If you don't set all values, don't worry, they will be ignored during import.
+
+If you want more properties in custom materials, you can easily expand the ogre material loader, it will be just a few lines for each property. Just look in Ogre\+Importer\+Material.\+cpp\hypertarget{importer_notes_Importer}{}\subsection{Properties}\label{importer_notes_Importer}
+
+\begin{DoxyItemize}
+\item I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+T\+Y\+P\+E\+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+: Normally, a texture is loaded as a colormap, if no target is specified in the materialfile. Is this switch is enabled, texture names ending with \+\_\+n, \+\_\+l, \+\_\+s are used as normalmaps, lightmaps or specularmaps. ~\newline
+ Property type\+: Bool. Default value\+: false.
+\item I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+E\+: Ogre Meshes contain only the Material\+Name, not the Material\+File. If there is no material file with the same name as the material, Ogre \hyperlink{class_importer}{Importer} will try to load this file and search the material in it. ~\newline
+ Property type\+: String. Default value\+: guessed.
+\end{DoxyItemize}\hypertarget{importer_notes_todo}{}\subsection{Todo}\label{importer_notes_todo}
+
+\begin{DoxyItemize}
+\item Load colors in custom materials
+\item extend custom and normal material loading
+\item fix bone hierarchy bug
+\item test everything elaboratly
+\item check for non existent animation keys (what happens if a one time not all bones have a key?) 
+\end{DoxyItemize}

@@ -1,0 +1,71 @@
+\hypertarget{structai_mesh_key}{\section{ai\+Mesh\+Key Class Reference}
+\label{structai_mesh_key}\index{ai\+Mesh\+Key@{ai\+Mesh\+Key}}
+}
+
+
+{\ttfamily \#include $<$anim.\+h$>$}
+
+
+
+Inheritance diagram for ai\+Mesh\+Key\+:
+
+
+Collaboration diagram for ai\+Mesh\+Key\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_mesh_key_aebc82e3731ef4ff5a8998a7419e844b6}{virtual void {\bfseries Dispose} ()}\label{structai_mesh_key_aebc82e3731ef4ff5a8998a7419e844b6}
+
+\item 
+\hypertarget{structai_mesh_key_a284840832d05dce6fe5ebe475fcca92b}{{\bfseries ai\+Mesh\+Key} (double time, uint value)}\label{structai_mesh_key_a284840832d05dce6fe5ebe475fcca92b}
+
+\item 
+\hypertarget{structai_mesh_key_a6e53770a5f8790edc5e7b900d3dd8364}{bool {\bfseries \+\_\+\+\_\+equal\+\_\+\+\_\+} (\hyperlink{structai_mesh_key}{ai\+Mesh\+Key} o)}\label{structai_mesh_key_a6e53770a5f8790edc5e7b900d3dd8364}
+
+\item 
+\hypertarget{structai_mesh_key_a7e13e00dadbea39de5a6a1e87132ebdf}{bool {\bfseries \+\_\+\+\_\+nequal\+\_\+\+\_\+} (\hyperlink{structai_mesh_key}{ai\+Mesh\+Key} o)}\label{structai_mesh_key_a7e13e00dadbea39de5a6a1e87132ebdf}
+
+\item 
+\hypertarget{structai_mesh_key_acf9e21c3c87495ec7b2f71c28d9755b8}{bool {\bfseries \+\_\+\+\_\+smaller\+\_\+\+\_\+} (\hyperlink{structai_mesh_key}{ai\+Mesh\+Key} o)}\label{structai_mesh_key_acf9e21c3c87495ec7b2f71c28d9755b8}
+
+\item 
+\hypertarget{structai_mesh_key_a919697ab7f1e5c3e303449849b8c9039}{bool {\bfseries \+\_\+\+\_\+greater\+\_\+\+\_\+} (\hyperlink{structai_mesh_key}{ai\+Mesh\+Key} o)}\label{structai_mesh_key_a919697ab7f1e5c3e303449849b8c9039}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{structai_mesh_key_a0814e4b14ed162295ba19331410a51ab}{m\+Time}
+\item 
+unsigned int \hyperlink{structai_mesh_key_abdd5914697609a9d876f63b6ca090a18}{m\+Value}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_mesh_key_a491c9cd8e2d171a85db678a8e2241a34}{bool {\bfseries swig\+C\+Mem\+Own}}\label{structai_mesh_key_a491c9cd8e2d171a85db678a8e2241a34}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structai_mesh_key_ac48167a4b17c1e35cbfcbe194b0433b8}{uint {\bfseries m\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{structai_mesh_key_ac48167a4b17c1e35cbfcbe194b0433b8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Binds a anim mesh to a specific point in time. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structai_mesh_key_a0814e4b14ed162295ba19331410a51ab}{\index{ai\+Mesh\+Key@{ai\+Mesh\+Key}!m\+Time@{m\+Time}}
+\index{m\+Time@{m\+Time}!ai\+Mesh\+Key@{ai\+Mesh\+Key}}
+\subsubsection[{m\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double ai\+Mesh\+Key\+::m\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{structai_mesh_key_a0814e4b14ed162295ba19331410a51ab}
+The time of this key \hypertarget{structai_mesh_key_abdd5914697609a9d876f63b6ca090a18}{\index{ai\+Mesh\+Key@{ai\+Mesh\+Key}!m\+Value@{m\+Value}}
+\index{m\+Value@{m\+Value}!ai\+Mesh\+Key@{ai\+Mesh\+Key}}
+\subsubsection[{m\+Value}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int ai\+Mesh\+Key\+::m\+Value}}\label{structai_mesh_key_abdd5914697609a9d876f63b6ca090a18}
+\hyperlink{struct_index}{Index} into the \hyperlink{structai_mesh_a5078f7db7e99ed05db89dfa412f0e990}{ai\+Mesh\+::m\+Anim\+Meshes} array of the mesh coresponding to the \hyperlink{structai_mesh_anim}{ai\+Mesh\+Anim} hosting this key frame. The referenced anim mesh is evaluated according to the rules defined in the docs for \hyperlink{structai_anim_mesh}{ai\+Anim\+Mesh}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/include/assimp/\hyperlink{anim_8h}{anim.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/port/\+Assimp.\+N\+E\+T/\+Assimp.\+N\+E\+T\+\_\+\+C\+S/ai\+Mesh\+Key.\+cs\end{DoxyCompactItemize}

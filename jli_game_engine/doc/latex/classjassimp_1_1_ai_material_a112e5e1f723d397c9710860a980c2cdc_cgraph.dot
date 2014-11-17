@@ -1,0 +1,9 @@
+digraph "jassimp.AiMaterial.getShadingMode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jassimp.AiMaterial.getShadingMode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jassimp.AiShadingMode.from\lRawValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$enumjassimp_1_1_ai_shading_mode.html#ac3d06d05d3eab72588f9feefda126792"];
+}

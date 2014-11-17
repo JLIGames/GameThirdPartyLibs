@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/MaximumIntensityProjection/OGLES2/Build/Android/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0fb2dcb8297df0ae935112e3c52716a2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Android" fontname="Helvetica", fontsize="10", URL="dir_0fb2dcb8297df0ae935112e3c52716a2.html"]
+  subgraph clusterdir_f8b65eb6798626386b43d677b25f64e3 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f8b65eb6798626386b43d677b25f64e3.html"];
+    dir_f8b65eb6798626386b43d677b25f64e3 [shape=plaintext label="src"];
+    dir_7dcfecccea9493983019df32e1f65600 [shape=box label="com" color="red" fillcolor="white" style="filled" URL="dir_7dcfecccea9493983019df32e1f65600.html"];
+  }
+  }
+}

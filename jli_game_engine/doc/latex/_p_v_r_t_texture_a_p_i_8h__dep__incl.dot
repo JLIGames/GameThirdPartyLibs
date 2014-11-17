@@ -1,0 +1,10 @@
+digraph "PVR/SDK_3.4/Tools/OGLES/PVRTTextureAPI.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PVR/SDK_3.4/Tools/OGLES\l/PVRTTextureAPI.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PVR/SDK_3.4/Tools/OGLES\l/OGLESTools.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_g_l_e_s_tools_8h.html",tooltip="Header file of OGLESTools.lib. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PVR/SDK_3.4/Examples\l/Advanced/Particles/OGLES\l/Particle.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_2_s_d_k__3_84_2_examples_2_advanced_2_particles_2_o_g_l_e_s_2particle_8h_source.html"];
+}

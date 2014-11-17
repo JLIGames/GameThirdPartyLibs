@@ -1,0 +1,11 @@
+digraph "CPVRTResourceFile::CPVRTResourceFile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CPVRTResourceFile::\lCPVRTResourceFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPVRTString::c_str",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_string.html#aabd1f2848c4b1d65e7418b264502687d",tooltip="Returns a const char* pointer of the string. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CPVRTMemoryFileSystem\l::GetFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_memory_file_system.html#afa181aafa268d81f0bff5f902ccbb180",tooltip="Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its ..."];
+}

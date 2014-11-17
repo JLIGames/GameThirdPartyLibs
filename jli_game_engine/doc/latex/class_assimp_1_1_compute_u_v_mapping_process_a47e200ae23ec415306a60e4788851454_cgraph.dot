@@ -1,0 +1,11 @@
+digraph "Assimp::ComputeUVMappingProcess::ComputeSphereMapping"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ComputeUVMapping\lProcess::ComputeSphereMapping",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::FindMeshCenter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a4cccef1c4b037b4eda69f9955fe614b4",tooltip="Helper function to determine the &#39;real&#39; center of a mesh. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::ArrayBounds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a4bd560c5925177fe3db8c0ef39338b17",tooltip="Find the min/max values of an array of Ts. "];
+}

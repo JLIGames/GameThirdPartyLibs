@@ -1,0 +1,27 @@
+digraph "NVGLUframebuffer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="NVGLUframebuffer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ctx" ];
+  Node2 [label="NVGcontext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gcontext.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" states" ];
+  Node3 [label="NVGstate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gstate.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fill\nstroke" ];
+  Node4 [label="NVGpaint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gpaint.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" outerColor\ninnerColor" ];
+  Node5 [label="NVGcolor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gcolor.html"];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" scissor" ];
+  Node6 [label="NVGscissor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gscissor.html"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cache" ];
+  Node7 [label="NVGpathCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gpath_cache.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" paths" ];
+  Node8 [label="NVGpath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gpath.html"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fill\nstroke" ];
+  Node9 [label="NVGvertex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gvertex.html"];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" points" ];
+  Node10 [label="NVGpoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gpoint.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" verts" ];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" params" ];
+  Node11 [label="NVGparams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_v_gparams.html"];
+}

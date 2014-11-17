@@ -1,0 +1,131 @@
+\hypertarget{class_assimp_1_1_split_by_bone_count_process}{\section{Assimp\+:\+:Split\+By\+Bone\+Count\+Process Class Reference}
+\label{class_assimp_1_1_split_by_bone_count_process}\index{Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}}
+}
+
+
+{\ttfamily \#include $<$Split\+By\+Bone\+Count\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Split\+By\+Bone\+Count\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Split\+By\+Bone\+Count\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_split_by_bone_count_process_a2b2395f9eb88c2539114241e5a53331c}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+virtual void \hyperlink{class_assimp_1_1_split_by_bone_count_process_a1d3d5d3cd647a19eeb2828f38fb5f12d}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_affeda4401f3a32769c986d8eb6946e2f}{size\+\_\+t \hyperlink{class_assimp_1_1_split_by_bone_count_process_affeda4401f3a32769c986d8eb6946e2f}{m\+Max\+Bone\+Count}}\label{class_assimp_1_1_split_by_bone_count_process_affeda4401f3a32769c986d8eb6946e2f}
+
+\begin{DoxyCompactList}\small\item\em Max bone count. Splitting occurs if a mesh has more than that number of bones. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_a74c35395c15f4b81ee534518cfb3de17}{std\+::vector$<$ std\+::vector\\*
+$<$ size\+\_\+t $>$ $>$ \hyperlink{class_assimp_1_1_split_by_bone_count_process_a74c35395c15f4b81ee534518cfb3de17}{m\+Sub\+Mesh\+Indices}}\label{class_assimp_1_1_split_by_bone_count_process_a74c35395c15f4b81ee534518cfb3de17}
+
+\begin{DoxyCompactList}\small\item\em Per mesh index\+: Array of indices of the new submeshes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_split_by_bone_count_process_a4499ff0f895e8906495e887cd69dbd56}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_split_by_bone_count_process_a82e19952f0dcf5a4fa65c58183a689d9}{Split\+Mesh} (const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh, std\+::vector$<$ \hyperlink{structai_mesh}{ai\+Mesh} $\ast$ $>$ \&po\+New\+Meshes) const 
+\item 
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_af212dbc7955af257af204abcc9302c47}{void \hyperlink{class_assimp_1_1_split_by_bone_count_process_af212dbc7955af257af204abcc9302c47}{Update\+Node} (\hyperlink{structai_node}{ai\+Node} $\ast$p\+Node) const }\label{class_assimp_1_1_split_by_bone_count_process_af212dbc7955af257af204abcc9302c47}
+
+\begin{DoxyCompactList}\small\item\em Recursively updates the node's mesh list to account for the changed mesh list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Postprocessing filter to split meshes with many bones into submeshes so that each submesh has a certain max bone count.
+
+Applied B\+E\+F\+O\+R\+E the Join\+Vertices-\/\+Step occurs. Returns N\+O\+N-\/\+U\+N\+I\+Q\+U\+E vertices, splits by bone count. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_a4499ff0f895e8906495e887cd69dbd56}{\index{Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Split\+By\+Bone\+Count\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_split_by_bone_count_process_a4499ff0f895e8906495e887cd69dbd56}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_a2b2395f9eb88c2539114241e5a53331c}{\index{Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Split\+By\+Bone\+Count\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_split_by_bone_count_process_a2b2395f9eb88c2539114241e5a53331c}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_a1d3d5d3cd647a19eeb2828f38fb5f12d}{\index{Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Split\+By\+Bone\+Count\+Process\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_split_by_bone_count_process_a1d3d5d3cd647a19eeb2828f38fb5f12d}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_split_by_bone_count_process_a82e19952f0dcf5a4fa65c58183a689d9}{\index{Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}!Split\+Mesh@{Split\+Mesh}}
+\index{Split\+Mesh@{Split\+Mesh}!Assimp\+::\+Split\+By\+Bone\+Count\+Process@{Assimp\+::\+Split\+By\+Bone\+Count\+Process}}
+\subsubsection[{Split\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void Split\+By\+Bone\+Count\+Process\+::\+Split\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Mesh} $\ast$}]{p\+Mesh, }
+\item[{std\+::vector$<$ {\bf ai\+Mesh} $\ast$ $>$ \&}]{po\+New\+Meshes}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_split_by_bone_count_process_a82e19952f0dcf5a4fa65c58183a689d9}
+Splits the given mesh by bone count. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & the \hyperlink{class_mesh}{Mesh} to split. Is not changed at all, but might be superfluous in case it was split. \\
+\hline
+{\em po\+New\+Meshes} & Array of submeshes created in the process. Empty if splitting was not necessary. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_split_by_bone_count_process_8h}{Split\+By\+Bone\+Count\+Process.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_split_by_bone_count_process_8cpp}{Split\+By\+Bone\+Count\+Process.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+digraph "Test::getName"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Test::getName",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="BriefTestProgressListener\l::startTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_brief_test_progress_listener.html#ab4196e15752bb2be443e72418500e20e",tooltip="Called when just before a TestCase is run. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Test::findTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test.html#aba7193712668533f2fa048a93e0f4705",tooltip="Finds the test with the specified name in the hierarchy. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="TestPath::findActualRoot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_path.html#a4229e1e693fbadd725d532e4a92e7d6d",tooltip="Finds the actual root of a path string and get the path string name components. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="TestPath::TestPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_path.html#a5855701e39a328a19f9780a130106cb3",tooltip="Resolves a path from a string returned by toString(). "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Test::findTestPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test.html#ac14ebe5c88d6edf0280f1205626a89bd",tooltip="Finds the test with the specified name and its parents test. "];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Test::findTestPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test.html#aff5ac29caeb2acf85002cbf16276cda8",tooltip="Finds the specified test and its parents test. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="TestDecorator::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_decorator.html#acdcf679bba926032d2e4535fca1e9cf0",tooltip="Returns the test name. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="TestFailure::failedTestName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_failure.html#af2f5978f08aa97106acdb09a57807a0e",tooltip="Gets the name of the failed test. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="TestPath::toString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_path.html#a81fd857b678a51a56db150b5c4d32971",tooltip="Returns the path as a string. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="XmlOutputter::addFailedTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_outputter.html#a5002fa353d24724288987e704763def2",tooltip="Adds a failed test to the failed tests node. Creates a new element containing datas about the failed ..."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="XmlOutputter::addSuccessfulTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_outputter.html#a9f1b3768852b4dbf1a597c193a8e06a2",tooltip="Adds a successful test to the successful tests node. Creates a new element containing datas about the..."];
+}

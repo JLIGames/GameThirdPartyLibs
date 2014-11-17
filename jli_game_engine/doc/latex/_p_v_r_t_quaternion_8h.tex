@@ -1,0 +1,301 @@
+\hypertarget{_p_v_r_t_quaternion_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Quaternion.h File Reference}
+\label{_p_v_r_t_quaternion_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Quaternion.\+h}}
+}
+
+
+Quaternion functions for floating and fixed point math.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Matrix.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Quaternion.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf}
+\begin{DoxyCompactList}\small\item\em Floating point Quaternion. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx}
+\begin{DoxyCompactList}\small\item\em Fixed point Quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_ae669614d14e77a743ba7f13a96d85e6b}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Quaternion\+Identity}~\hyperlink{_p_v_r_t_quaternion_8h_acac2c9a21567ed36caf79e452e91f548}{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F}}\label{_p_v_r_t_quaternion_8h_ae669614d14e77a743ba7f13a96d85e6b}
+
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_aadbf7c4f755103e6d38236a90719695e}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis}~\hyperlink{_p_v_r_t_quaternion_8h_a1f5c89e30866c9ee3f5561b48d1251e1}{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F}}\label{_p_v_r_t_quaternion_8h_aadbf7c4f755103e6d38236a90719695e}
+
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_a16636387ea9509f80661e8446b292fca}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle}~\hyperlink{_p_v_r_t_quaternion_8h_ac0f0d2d70f4e58a077736464976ade20}{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F}}\label{_p_v_r_t_quaternion_8h_a16636387ea9509f80661e8446b292fca}
+
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_a2951f8decfde565a116eff81ca4474dc}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Quaternion\+Slerp}~\hyperlink{_p_v_r_t_quaternion_8h_a36a25f9f4eb92a050c3c6797f8b6f0ff}{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F}}\label{_p_v_r_t_quaternion_8h_a2951f8decfde565a116eff81ca4474dc}
+
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_a56d19135e3f6cd3fe6983d209b77a19f}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Quaternion\+Normalize}~\hyperlink{_p_v_r_t_quaternion_8h_a002fc2150ad0e29da86563f6e56bb03b}{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F}}\label{_p_v_r_t_quaternion_8h_a56d19135e3f6cd3fe6983d209b77a19f}
+
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_adef34263969ba6cd1cbfedf7092f2e41}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Rotation\+Quaternion}~\hyperlink{_p_v_r_t_quaternion_8h_aed4bd5cfc07a529ea5c758d0bbe4a179}{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F}}\label{_p_v_r_t_quaternion_8h_adef34263969ba6cd1cbfedf7092f2e41}
+
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_a95bc9d73968365975469a1172047a6e1}{\#define {\bfseries P\+V\+R\+T\+Matrix\+Quaternion\+Multiply}~\hyperlink{_p_v_r_t_quaternion_8h_a91c04860a911442841cfb127ef7bf25a}{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F}}\label{_p_v_r_t_quaternion_8h_a95bc9d73968365975469a1172047a6e1}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_quaternion_8h_a933c43688d70e95e096697ea9488d8f0}{typedef \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} {\bfseries P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+N}}\label{_p_v_r_t_quaternion_8h_a933c43688d70e95e096697ea9488d8f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_acac2c9a21567ed36caf79e452e91f548}{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+Out)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a8451047bc0771189277fce3d4c50368b}{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+Out)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a1f5c89e30866c9ee3f5561b48d1251e1}{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Axis, const float f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a349fb45d5ff011df24f085602c6a3576}{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+Out, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Axis, const int f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_ac0f0d2d70f4e58a077736464976ade20}{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F} (const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+In, \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&v\+Axis, float \&f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a89d098bd26ec7da0cad9e7dc00140e63}{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X} (const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+In, \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3x}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&v\+Axis, int \&f\+Angle)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a36a25f9f4eb92a050c3c6797f8b6f0ff}{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+Out, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+A, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+B, const float t)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a9fc64c665daa7e064e2b43539aa06968}{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+Out, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+A, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+B, const int t)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a002fc2150ad0e29da86563f6e56bb03b}{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&\hyperlink{classquat}{quat})
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a117d00d8d8be589577771c9e27df157c}{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&\hyperlink{classquat}{quat})
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_aed4bd5cfc07a529ea5c758d0bbe4a179}{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&m\+Out, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&\hyperlink{classquat}{quat})
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a2d196445cb3cd2d7b04c417e83a8a175}{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X} (\hyperlink{class_p_v_r_t_m_a_t_r_i_xx}{P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&m\+Out, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&\hyperlink{classquat}{quat})
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a91c04860a911442841cfb127ef7bf25a}{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+Out, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+A, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nf}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&q\+B)
+\item 
+void \hyperlink{_p_v_r_t_quaternion_8h_a291b5513318803017aaf9027fcff785c}{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X} (\hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+Out, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+A, const \hyperlink{struct_p_v_r_t_q_u_a_t_e_r_n_i_o_nx}{P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&q\+B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Quaternion functions for floating and fixed point math. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_quaternion_8h_acac2c9a21567ed36caf79e452e91f548}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+Out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_acac2c9a21567ed36caf79e452e91f548}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+F  q\+Out Identity quaternion  Sets the quaternion to (0, 0, 0, 1), the identity quaternion. \hypertarget{_p_v_r_t_quaternion_8h_a8451047bc0771189277fce3d4c50368b}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+Out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a8451047bc0771189277fce3d4c50368b}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Identity\+X  q\+Out Identity quaternion  Sets the quaternion to (0, 0, 0, 1), the identity quaternion. \hypertarget{_p_v_r_t_quaternion_8h_a91c04860a911442841cfb127ef7bf25a}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+Out, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+A, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+B}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a91c04860a911442841cfb127ef7bf25a}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+F  q\+Out Resulting quaternion  q\+A First quaternion to multiply  q\+B Second quaternion to multiply  Multiply quaternion A with quaternion B and return the result in q\+Out. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a291b5513318803017aaf9027fcff785c}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+Out, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+A, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+B}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a291b5513318803017aaf9027fcff785c}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Multiply\+X  q\+Out Resulting quaternion  q\+A First quaternion to multiply  q\+B Second quaternion to multiply  Multiply quaternion A with quaternion B and return the result in q\+Out. Input quaternions must be normalized. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a002fc2150ad0e29da86563f6e56bb03b}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{quat}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a002fc2150ad0e29da86563f6e56bb03b}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+F  quat Vector to normalize  Normalize quaternion. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a117d00d8d8be589577771c9e27df157c}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{quat}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a117d00d8d8be589577771c9e27df157c}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Normalize\+X  quat Vector to normalize  Normalize quaternion. Original quaternion is scaled down prior to be normalized in order to avoid overflow issues. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a1f5c89e30866c9ee3f5561b48d1251e1}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Axis, }
+\item[{const float}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a1f5c89e30866c9ee3f5561b48d1251e1}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+F  q\+Out Rotation quaternion  v\+Axis Axis to rotate around  f\+Angle Angle to rotate  Create quaternion corresponding to a rotation of f\+Angle radians around submitted vector. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a349fb45d5ff011df24f085602c6a3576}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+Out, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Axis, }
+\item[{const int}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a349fb45d5ff011df24f085602c6a3576}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Rotation\+Axis\+X  q\+Out Rotation quaternion  v\+Axis Axis to rotate around  f\+Angle Angle to rotate  Create quaternion corresponding to a rotation of f\+Angle radians around submitted vector. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a36a25f9f4eb92a050c3c6797f8b6f0ff}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+Out, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+A, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+B, }
+\item[{const float}]{t}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a36a25f9f4eb92a050c3c6797f8b6f0ff}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+F  q\+Out Result of the interpolation  q\+A First quaternion to interpolate from  q\+B Second quaternion to interpolate from  t Coefficient of interpolation  Perform a Spherical Linear int\+E\+R\+Polation between quaternion A and quaternion B at time t. t must be between 0.\+0f and 1.\+0f 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_a9fc64c665daa7e064e2b43539aa06968}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+Out, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+A, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+B, }
+\item[{const int}]{t}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a9fc64c665daa7e064e2b43539aa06968}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+Slerp\+X  q\+Out Result of the interpolation  q\+A First quaternion to interpolate from  q\+B Second quaternion to interpolate from  t Coefficient of interpolation  Perform a Spherical Linear int\+E\+R\+Polation between quaternion A and quaternion B at time t. t must be between 0.\+0f and 1.\+0f Requires input quaternions to be normalized 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_quaternion_8h_ac0f0d2d70f4e58a077736464976ade20}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F@{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{q\+In, }
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3f} \&}]{v\+Axis, }
+\item[{float \&}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_ac0f0d2d70f4e58a077736464976ade20}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+F  q\+In Quaternion to transform  v\+Axis Axis of rotation  f\+Angle Angle of rotation  Convert a quaternion to an axis and angle. Expects a unit quaternion. \hypertarget{_p_v_r_t_quaternion_8h_a89d098bd26ec7da0cad9e7dc00140e63}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X}}
+\index{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X@{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{q\+In, }
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3x} \&}]{v\+Axis, }
+\item[{int \&}]{f\+Angle}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a89d098bd26ec7da0cad9e7dc00140e63}
+
+
+  P\+V\+R\+T\+Matrix\+Quaternion\+To\+Axis\+Angle\+X  q\+In Quaternion to transform  v\+Axis Axis of rotation  f\+Angle Angle of rotation  Convert a quaternion to an axis and angle. Expects a unit quaternion. \hypertarget{_p_v_r_t_quaternion_8h_aed4bd5cfc07a529ea5c758d0bbe4a179}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F@{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F@{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xf} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nf} \&}]{quat}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_aed4bd5cfc07a529ea5c758d0bbe4a179}
+
+
+  P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+F  m\+Out Resulting rotation matrix  quat Quaternion to transform  Create rotation matrix from submitted quaternion. Assuming the quaternion is of the form \mbox{[}X Y Z W\mbox{]}\+: \begin{DoxyVerb}|       2     2                                 |
+| 1 - 2Y  - 2Z    2XY - 2ZW      2XZ + 2YW       0  |
+|                                                   |
+|                       2     2                 |
+\end{DoxyVerb}
+ M = $\vert$ 2\+X\+Y + 2\+Z\+W 1 -\/ 2\+X -\/ 2\+Z 2\+Y\+Z -\/ 2\+X\+W 0 $\vert$ $\vert$ $\vert$ $\vert$ 2 2 $\vert$ \begin{TabularC}{1}
+\hline
+\rowcolor{lightgray}{\bf 2\+X\+Z -\/ 2\+Y\+W 2\+Y\+Z + 2\+X\+W 1 -\/ 2\+X -\/ 2\+Y 0  }\\\cline{1-1}
+0 0 0 1 \\\cline{1-1}
+\end{TabularC}
+\hypertarget{_p_v_r_t_quaternion_8h_a2d196445cb3cd2d7b04c417e83a8a175}{\index{P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}!P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X@{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X}}
+\index{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X@{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X}!P\+V\+R\+T\+Quaternion.\+h@{P\+V\+R\+T\+Quaternion.\+h}}
+\subsubsection[{P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+Xx} \&}]{m\+Out, }
+\item[{const {\bf P\+V\+R\+T\+Q\+U\+A\+T\+E\+R\+N\+I\+O\+Nx} \&}]{quat}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_quaternion_8h_a2d196445cb3cd2d7b04c417e83a8a175}
+
+
+  P\+V\+R\+T\+Matrix\+Rotation\+Quaternion\+X  m\+Out Resulting rotation matrix  quat Quaternion to transform  Create rotation matrix from submitted quaternion. Assuming the quaternion is of the form \mbox{[}X Y Z W\mbox{]}\+: \begin{DoxyVerb}|       2     2                                 |
+| 1 - 2Y  - 2Z    2XY - 2ZW      2XZ + 2YW       0  |
+|                                                   |
+|                       2     2                 |
+\end{DoxyVerb}
+ M = $\vert$ 2\+X\+Y + 2\+Z\+W 1 -\/ 2\+X -\/ 2\+Z 2\+Y\+Z -\/ 2\+X\+W 0 $\vert$ $\vert$ $\vert$ $\vert$ 2 2 $\vert$ \begin{TabularC}{1}
+\hline
+\rowcolor{lightgray}{\bf 2\+X\+Z -\/ 2\+Y\+W 2\+Y\+Z + 2\+X\+W 1 -\/ 2\+X -\/ 2\+Y 0  }\\\cline{1-1}
+0 0 0 1 \\\cline{1-1}
+\end{TabularC}

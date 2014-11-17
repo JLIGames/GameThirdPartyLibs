@@ -1,0 +1,33 @@
+digraph "Collider"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Collider",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="AABBTreeCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_a_b_b_tree_collider.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="RayCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ray_collider.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="VolumeCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_volume_collider.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="AABBCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_a_b_b_collider.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="HybridAABBCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hybrid_a_a_b_b_collider.html"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="LSSCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_l_s_s_collider.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="HybridLSSCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hybrid_l_s_s_collider.html"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="OBBCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_b_b_collider.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="HybridOBBCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hybrid_o_b_b_collider.html"];
+  Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="PlanesCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_planes_collider.html"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="HybridPlanesCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hybrid_planes_collider.html"];
+  Node4 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="SphereCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sphere_collider.html"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="HybridSphereCollider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hybrid_sphere_collider.html"];
+}

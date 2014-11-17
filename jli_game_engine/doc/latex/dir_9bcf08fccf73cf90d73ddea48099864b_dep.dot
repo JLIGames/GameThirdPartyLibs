@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/TextureStreaming/OGLES3/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c31a079a2d53c5ad94d7715693ee2b5a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_c31a079a2d53c5ad94d7715693ee2b5a.html"]
+  subgraph clusterdir_9bcf08fccf73cf90d73ddea48099864b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_9bcf08fccf73cf90d73ddea48099864b.html"];
+    dir_9bcf08fccf73cf90d73ddea48099864b [shape=plaintext label="Android"];
+    dir_a395f95bc83ea39b31dd081c2a46137f [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_a395f95bc83ea39b31dd081c2a46137f.html"];
+  }
+  }
+}

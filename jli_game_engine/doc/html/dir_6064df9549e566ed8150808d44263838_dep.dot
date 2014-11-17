@@ -1,0 +1,17 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Fractal/OGLES" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6b942235daf0c8db59454e5eeb924b79 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Fractal" fontname="Helvetica", fontsize="10", URL="dir_6b942235daf0c8db59454e5eeb924b79.html"]
+  subgraph clusterdir_6064df9549e566ed8150808d44263838 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6064df9549e566ed8150808d44263838.html"];
+    dir_6064df9549e566ed8150808d44263838 [shape=plaintext label="OGLES"];
+    dir_c637c2383e08ef22deb5c40b75a4208d [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_c637c2383e08ef22deb5c40b75a4208d.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_6064df9549e566ed8150808d44263838->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000835_000133.html"];
+  dir_6064df9549e566ed8150808d44263838->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_000835_001762.html"];
+}

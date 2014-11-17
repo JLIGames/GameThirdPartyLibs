@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Navigation3D/OGLES/Content" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3770265f9b673c71256df6c407461b7d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES" fontname="Helvetica", fontsize="10", URL="dir_3770265f9b673c71256df6c407461b7d.html"]
+  dir_04303ec9efcd799bb9357e3678146284 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_04303ec9efcd799bb9357e3678146284.html"];
+  }
+}

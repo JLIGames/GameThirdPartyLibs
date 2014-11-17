@@ -1,0 +1,18 @@
+digraph "bt_vec_blend"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="bt_vec_blend",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="bt_plane_clip_polygon\l_collect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bt_clip_polygon_8h.html#a5d0b14854a98ea3902f6c914a292f83d",tooltip="This function calcs the distance from a 3D plane. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="bt_plane_clip_polygon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bt_clip_polygon_8h.html#aafbc2084e879509f77c833957061ba5c",tooltip="Clips a polygon by a plane. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="btPrimitiveTriangle\l::clip_triangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_triangle.html#a56e930410f18f866e47431ed77c6c3ca",tooltip="Clips the triangle against this. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="btPrimitiveTriangle\l::find_triangle_collision\l_clip_method",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_triangle.html#a24c4903aecd95c2d11bbc42ba3df0e66",tooltip="Find collision using the clipping method. "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="bt_plane_clip_triangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bt_clip_polygon_8h.html#a42c9a19345a31093d177bde5692d39e9",tooltip="Clips a polygon by a plane. "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

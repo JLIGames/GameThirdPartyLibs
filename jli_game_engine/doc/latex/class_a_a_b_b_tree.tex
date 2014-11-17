@@ -1,0 +1,163 @@
+\hypertarget{class_a_a_b_b_tree}{\section{A\+A\+B\+B\+Tree Class Reference}
+\label{class_a_a_b_b_tree}\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+}
+
+
+Inheritance diagram for A\+A\+B\+B\+Tree\+:
+
+
+Collaboration diagram for A\+A\+B\+B\+Tree\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_a_b_b_tree_ad5b760ccbc90b5cfa5ba2b08231a00e4}{A\+A\+B\+B\+Tree} ()
+\item 
+\hyperlink{class_a_a_b_b_tree_a093aa9a3837c574f8779f36ce882332a}{$\sim$\+A\+A\+B\+B\+Tree} ()
+\item 
+bool \hyperlink{class_a_a_b_b_tree_a4cc7addadfb139b13288d09b7fe5f3ad}{Build} (\hyperlink{class_a_a_b_b_tree_builder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+void \hyperlink{class_a_a_b_b_tree_a5afb9bb2637b341242003ba2df1378f9}{Release} ()
+\item 
+\hypertarget{class_a_a_b_b_tree_a71f0c0c2593f20c034dd5a90534c082c}{inline\+\_\+ const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{class_a_a_b_b_tree_a71f0c0c2593f20c034dd5a90534c082c}{Get\+Indices} () const }\label{class_a_a_b_b_tree_a71f0c0c2593f20c034dd5a90534c082c}
+
+\begin{DoxyCompactList}\small\item\em Catch the indices. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_a1726969e74677384364703bb246addb8}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_a1726969e74677384364703bb246addb8}{Get\+Nb\+Nodes} () const }\label{class_a_a_b_b_tree_a1726969e74677384364703bb246addb8}
+
+\begin{DoxyCompactList}\small\item\em Catch the number of nodes. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_a_b_b_tree_af03ae8eaa80a889ef6c715a0c9313c7a}{Is\+Complete} () const 
+\item 
+\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_a0f9b2f254109393c75dad19f1d63cc3c}{Compute\+Depth} () const 
+\item 
+\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_a2d646d050c93b9600c74a27259d39882}{Get\+Used\+Bytes} () const 
+\item 
+\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_a992607fb1f96ca3e378f0b465e49785b}{Walk} (\hyperlink{_o_p_c___a_a_b_b_tree_8h_ae6ec74ac6a40537f1fb0ddec8fd287cc}{Walking\+Callback} callback, void $\ast$user\+\_\+data) const 
+\item 
+bool \hyperlink{class_a_a_b_b_tree_a833fbf09b1989a73f852dfaf30e33546}{Refit} (\hyperlink{class_a_a_b_b_tree_builder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+bool \hyperlink{class_a_a_b_b_tree_a78b55dd9239d8ec9505f79b0601a8b1c}{Refit2} (\hyperlink{class_a_a_b_b_tree_builder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Contains a generic \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree. This is a vanilla \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree, without any particular optimization. It contains anonymous references to user-\/provided primitives, which can theoretically be anything -\/ triangles, boxes, etc. Each primitive is surrounded by an \hyperlink{class_a_a_b_b}{A\+A\+B\+B}, regardless of the primitive's nature. When the primitive is a triangle, the resulting tree can be converted into an optimized tree. If the primitive is a box, the resulting tree can be used for culling -\/ V\+F\+C or occlusion -\/, assuming you cull on a mesh-\/by-\/mesh basis (modern way).
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_a_b_b_tree_ad5b760ccbc90b5cfa5ba2b08231a00e4}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{A\+A\+B\+B\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+::\+A\+A\+B\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_ad5b760ccbc90b5cfa5ba2b08231a00e4}
+Constructor. \hypertarget{class_a_a_b_b_tree_a093aa9a3837c574f8779f36ce882332a}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!````~A\+A\+B\+B\+Tree@{$\sim$\+A\+A\+B\+B\+Tree}}
+\index{````~A\+A\+B\+B\+Tree@{$\sim$\+A\+A\+B\+B\+Tree}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{$\sim$\+A\+A\+B\+B\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+::$\sim$\+A\+A\+B\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_a093aa9a3837c574f8779f36ce882332a}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_a_b_b_tree_a4cc7addadfb139b13288d09b7fe5f3ad}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Build@{Build}}
+\index{Build@{Build}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Build}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Build (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_a4cc7addadfb139b13288d09b7fe5f3ad}
+Builds a generic \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree from a tree builder. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_a0f9b2f254109393c75dad19f1d63cc3c}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Compute\+Depth@{Compute\+Depth}}
+\index{Compute\+Depth@{Compute\+Depth}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Compute\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+::\+Compute\+Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_a_a_b_b_tree_a0f9b2f254109393c75dad19f1d63cc3c}
+Computes the depth of the tree. A well-\/balanced tree should have a \hyperlink{structlog}{log(n)} depth. A degenerate tree O(n) depth. \begin{DoxyReturn}{Returns}
+depth of the tree 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_a2d646d050c93b9600c74a27259d39882}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Get\+Used\+Bytes@{Get\+Used\+Bytes}}
+\index{Get\+Used\+Bytes@{Get\+Used\+Bytes}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Get\+Used\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+::\+Get\+Used\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_a_a_b_b_tree_a2d646d050c93b9600c74a27259d39882}
+Computes the number of bytes used by the tree. \begin{DoxyReturn}{Returns}
+number of bytes used 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_af03ae8eaa80a889ef6c715a0c9313c7a}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Is\+Complete@{Is\+Complete}}
+\index{Is\+Complete@{Is\+Complete}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Is\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Is\+Complete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_a_a_b_b_tree_af03ae8eaa80a889ef6c715a0c9313c7a}
+Checks the tree is a complete tree or not. A complete tree is made of 2$\ast$\+N-\/1 nodes, where N is the number of primitives in the tree. \begin{DoxyReturn}{Returns}
+true for complete trees 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_a833fbf09b1989a73f852dfaf30e33546}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Refit@{Refit}}
+\index{Refit@{Refit}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Refit}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Refit (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_a833fbf09b1989a73f852dfaf30e33546}
+Refits the tree in a top-\/down way. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_a78b55dd9239d8ec9505f79b0601a8b1c}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Refit2@{Refit2}}
+\index{Refit2@{Refit2}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Refit2}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Refit2 (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_a78b55dd9239d8ec9505f79b0601a8b1c}
+Refits the tree in a bottom-\/up way. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_a_b_b_tree_a5afb9bb2637b341242003ba2df1378f9}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Release@{Release}}
+\index{Release@{Release}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_a_a_b_b_tree_a5afb9bb2637b341242003ba2df1378f9}
+Releases the tree. \hypertarget{class_a_a_b_b_tree_a992607fb1f96ca3e378f0b465e49785b}{\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Walk@{Walk}}
+\index{Walk@{Walk}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\subsubsection[{Walk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+::\+Walk (
+\begin{DoxyParamCaption}
+\item[{{\bf Walking\+Callback}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+) const}}\label{class_a_a_b_b_tree_a992607fb1f96ca3e378f0b465e49785b}
+Walks the tree, calling the user back for each node. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___a_a_b_b_tree_8h}{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___a_a_b_b_tree_8cpp}{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+cpp}\end{DoxyCompactItemize}

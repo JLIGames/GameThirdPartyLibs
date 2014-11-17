@@ -1,0 +1,42 @@
+\hypertarget{struct_b_v_t_cache}{\section{B\+V\+T\+Cache Struct Reference}
+\label{struct_b_v_t_cache}\index{B\+V\+T\+Cache@{B\+V\+T\+Cache}}
+}
+
+
+{\ttfamily \#include $<$O\+P\+C\+\_\+\+Tree\+Collider.\+h$>$}
+
+
+
+Inheritance diagram for B\+V\+T\+Cache\+:
+
+
+Collaboration diagram for B\+V\+T\+Cache\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_b_v_t_cache_aaa31dbff32f6e91263f9615082620276}{inline\+\_\+ \hyperlink{struct_b_v_t_cache_aaa31dbff32f6e91263f9615082620276}{B\+V\+T\+Cache} ()}\label{struct_b_v_t_cache_aaa31dbff32f6e91263f9615082620276}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{struct_b_v_t_cache_aacca357b3b467e10268de85690bd7469}{void {\bfseries Reset\+Cache} ()}\label{struct_b_v_t_cache_aacca357b3b467e10268de85690bd7469}
+
+\item 
+\hypertarget{struct_b_v_t_cache_a284f4387f08079c9db2dd8dd7e1cb104}{inline\+\_\+ void {\bfseries Reset\+Count\+Down} ()}\label{struct_b_v_t_cache_a284f4387f08079c9db2dd8dd7e1cb104}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_b_v_t_cache_a69f8d5a7613435e6c58a6816ecd15e0a}{const \hyperlink{class_model}{Model} $\ast$ \hyperlink{struct_b_v_t_cache_a69f8d5a7613435e6c58a6816ecd15e0a}{Model0}}\label{struct_b_v_t_cache_a69f8d5a7613435e6c58a6816ecd15e0a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_model}{Model} for first object. \end{DoxyCompactList}\item 
+\hypertarget{struct_b_v_t_cache_a092159126dbd147d9488f881e675fea0}{const \hyperlink{class_model}{Model} $\ast$ \hyperlink{struct_b_v_t_cache_a092159126dbd147d9488f881e675fea0}{Model1}}\label{struct_b_v_t_cache_a092159126dbd147d9488f881e675fea0}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_model}{Model} for second object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure holds cached information used by the algorithm. Two model pointers and two colliding primitives are cached. \hyperlink{class_model}{Model} pointers are assigned to their respective meshes, and the pair of colliding primitives is used for temporal coherence. That is, in case temporal coherence is enabled, those two primitives are tested for overlap before everything else. If they still collide, we're done before even entering the recursive collision code. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___tree_collider_8h}{O\+P\+C\+\_\+\+Tree\+Collider.\+h}\end{DoxyCompactItemize}

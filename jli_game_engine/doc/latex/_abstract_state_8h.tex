@@ -1,0 +1,152 @@
+\hypertarget{_abstract_state_8h}{\section{include/\+Abstract\+State.h File Reference}
+\label{_abstract_state_8h}\index{include/\+Abstract\+State.\+h@{include/\+Abstract\+State.\+h}}
+}
+{\ttfamily \#include \char`\"{}bt\+Aligned\+Allocator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Abstract\+Factory\+Object.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Abstract\+Builder.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\\*
+Include dependency graph for Abstract\+State.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ }\\\hyperlink{_abstract_state_machine_8h_a8656ef3fc8dd45cc376ff40b2c244a7b}{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}(class) \\*
+Abstract\+State \hyperlink{_abstract_state_8h_a543640b4c15cdb5d96507c8bfc3eaf96}{Abstract\+State} (const Abstract\+State \&copy)
+\item 
+virtual \hyperlink{_abstract_state_8h_af475b911f34ff47d6077fe6f7a16b423}{$\sim$\+Abstract\+State} ()=0
+\item 
+\hyperlink{_abstract_state_8h_a073043644ede242268123f98ca10ec2d}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
+\item 
+\hyperlink{_abstract_state_8h_a543640b4c15cdb5d96507c8bfc3eaf96}{Abstract\+State} \& \hyperlink{_abstract_state_8h_a6bf702b68bbf2fbf0fafe273b15c1f73}{operator=} (const \hyperlink{_abstract_state_8h_a543640b4c15cdb5d96507c8bfc3eaf96}{Abstract\+State} \&)
+\item 
+virtual bool \hyperlink{_abstract_state_8h_a7cbe01cf53176945dbc7fa5a704cabef}{is\+Finished} () const 
+\item 
+virtual void \hyperlink{_abstract_state_8h_a90f345c237d2a2a38c0540840ac4caa7}{enable\+Finished} (const bool=true)
+\item 
+virtual bool \hyperlink{_abstract_state_8h_a35db52db78e5093546cfc64b0894e68a}{is\+In\+Use} () const 
+\item 
+virtual void \hyperlink{_abstract_state_8h_aa8318a132784afbc66f0061711ab16ca}{enable\+In\+Use} (const bool=true)
+\item 
+virtual void \hyperlink{_abstract_state_8h_aa575f8bfa810d7094bb074bbd331410f}{enter} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)=0
+\item 
+virtual void \hyperlink{_abstract_state_8h_af0e1a4db3b7efc390d6c20b198167024}{update} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$, f32)=0
+\item 
+virtual void \hyperlink{_abstract_state_8h_a4d2307f251f0d39f3437ac56b88c581c}{exit} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)=0
+\item 
+virtual bool \hyperlink{_abstract_state_8h_aa949ed1d299bab7fca2c9b43974a9ea0}{on\+Message} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$, const Telegram \&)=0
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_abstract_state_8h_a4f79b100b66517399492436ad0ceca83}{m\+\_\+is\+Finished}
+\item 
+bool \hyperlink{_abstract_state_8h_adf99061ec1a83c8e4f13f4aa7b6974fb}{m\+\_\+is\+In\+Use}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_abstract_state_8h_a543640b4c15cdb5d96507c8bfc3eaf96}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!Abstract\+State@{Abstract\+State}}
+\index{Abstract\+State@{Abstract\+State}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{Abstract\+State}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ {\bf A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+State Abstract\+State (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+State \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{_abstract_state_8h_a543640b4c15cdb5d96507c8bfc3eaf96}
+\hypertarget{_abstract_state_8h_a073043644ede242268123f98ca10ec2d}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_abstract_state_8h_a073043644ede242268123f98ca10ec2d}
+\hypertarget{_abstract_state_8h_a90f345c237d2a2a38c0540840ac4caa7}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!enable\+Finished@{enable\+Finished}}
+\index{enable\+Finished@{enable\+Finished}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{enable\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}void Abstract\+State\+::enable\+Finished (
+\begin{DoxyParamCaption}
+\item[{const bool}]{finished = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_state_8h_a90f345c237d2a2a38c0540840ac4caa7}
+\hypertarget{_abstract_state_8h_aa8318a132784afbc66f0061711ab16ca}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!enable\+In\+Use@{enable\+In\+Use}}
+\index{enable\+In\+Use@{enable\+In\+Use}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{enable\+In\+Use}]{\setlength{\rightskip}{0pt plus 5cm}void Abstract\+State\+::enable\+In\+Use (
+\begin{DoxyParamCaption}
+\item[{const bool}]{inqueue = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_state_8h_aa8318a132784afbc66f0061711ab16ca}
+\hypertarget{_abstract_state_8h_aa575f8bfa810d7094bb074bbd331410f}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!enter@{enter}}
+\index{enter@{enter}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void enter (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_state_8h_aa575f8bfa810d7094bb074bbd331410f}
+\hypertarget{_abstract_state_8h_a4d2307f251f0d39f3437ac56b88c581c}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!exit@{exit}}
+\index{exit@{exit}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}virtual void exit (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_state_8h_a4d2307f251f0d39f3437ac56b88c581c}
+\hypertarget{_abstract_state_8h_a7cbe01cf53176945dbc7fa5a704cabef}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!is\+Finished@{is\+Finished}}
+\index{is\+Finished@{is\+Finished}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{is\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+State\+::is\+Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_state_8h_a7cbe01cf53176945dbc7fa5a704cabef}
+\hypertarget{_abstract_state_8h_a35db52db78e5093546cfc64b0894e68a}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!is\+In\+Use@{is\+In\+Use}}
+\index{is\+In\+Use@{is\+In\+Use}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{is\+In\+Use}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+State\+::is\+In\+Use (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_state_8h_a35db52db78e5093546cfc64b0894e68a}
+\hypertarget{_abstract_state_8h_aa949ed1d299bab7fca2c9b43974a9ea0}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!on\+Message@{on\+Message}}
+\index{on\+Message@{on\+Message}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{on\+Message}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool on\+Message (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{, }
+\item[{const Telegram \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_state_8h_aa949ed1d299bab7fca2c9b43974a9ea0}
+\hypertarget{_abstract_state_8h_a6bf702b68bbf2fbf0fafe273b15c1f73}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!operator=@{operator=}}
+\index{operator=@{operator=}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+State}\& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+State} \&}]{}
+\end{DoxyParamCaption}
+)}}\label{_abstract_state_8h_a6bf702b68bbf2fbf0fafe273b15c1f73}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_abstract_state_8h_af0e1a4db3b7efc390d6c20b198167024}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!update@{update}}
+\index{update@{update}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void update (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{, }
+\item[{f32}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_state_8h_af0e1a4db3b7efc390d6c20b198167024}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_abstract_state_8h_af475b911f34ff47d6077fe6f7a16b423}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!````~Abstract\+State@{$\sim$\+Abstract\+State}}
+\index{````~Abstract\+State@{$\sim$\+Abstract\+State}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{$\sim$\+Abstract\+State}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+State\+::$\sim$\+Abstract\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_state_8h_af475b911f34ff47d6077fe6f7a16b423}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_abstract_state_8h_a4f79b100b66517399492436ad0ceca83}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!m\+\_\+is\+Finished@{m\+\_\+is\+Finished}}
+\index{m\+\_\+is\+Finished@{m\+\_\+is\+Finished}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{m\+\_\+is\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}bool m\+\_\+is\+Finished}}\label{_abstract_state_8h_a4f79b100b66517399492436ad0ceca83}
+\hypertarget{_abstract_state_8h_adf99061ec1a83c8e4f13f4aa7b6974fb}{\index{Abstract\+State.\+h@{Abstract\+State.\+h}!m\+\_\+is\+In\+Use@{m\+\_\+is\+In\+Use}}
+\index{m\+\_\+is\+In\+Use@{m\+\_\+is\+In\+Use}!Abstract\+State.\+h@{Abstract\+State.\+h}}
+\subsubsection[{m\+\_\+is\+In\+Use}]{\setlength{\rightskip}{0pt plus 5cm}bool m\+\_\+is\+In\+Use}}\label{_abstract_state_8h_adf99061ec1a83c8e4f13f4aa7b6974fb}

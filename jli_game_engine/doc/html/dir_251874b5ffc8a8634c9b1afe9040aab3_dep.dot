@@ -1,0 +1,11 @@
+digraph "assimp/assimp-3.1.1/samples/SimpleOpenGL" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fa4f8e3d4f5177145e1be8fdec42c1cb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="samples" fontname="Helvetica", fontsize="10", URL="dir_fa4f8e3d4f5177145e1be8fdec42c1cb.html"]
+  dir_251874b5ffc8a8634c9b1afe9040aab3 [shape=box, label="SimpleOpenGL", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_251874b5ffc8a8634c9b1afe9040aab3.html"];
+  }
+  dir_c101cde07d36a9a69cf1f5e6a5d497f4 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_c101cde07d36a9a69cf1f5e6a5d497f4.html"];
+  dir_251874b5ffc8a8634c9b1afe9040aab3->dir_c101cde07d36a9a69cf1f5e6a5d497f4 [headlabel="1", labeldistance=1.5 headhref="dir_000137_000030.html"];
+}

@@ -1,0 +1,265 @@
+\hypertarget{_p_v_r_t_shadow_vol_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Shadow\+Vol.h File Reference}
+\label{_p_v_r_t_shadow_vol_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Shadow\+Vol.\+h}}
+}
+
+
+Declarations of functions relating to shadow volume generation.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Context.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Vector.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Shadow\+Vol.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_v_r_t_shadow_vol_m_edge}{P\+V\+R\+T\+Shadow\+Vol\+M\+Edge}
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_edge}{Edge} to form part of a shadow volume mesh. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_shadow_vol_m_triangle}{P\+V\+R\+T\+Shadow\+Vol\+M\+Triangle}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_triangle}{Triangle} to form part of a shadow volume mesh. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh}
+\begin{DoxyCompactList}\small\item\em Shadow volume mesh. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_shadow_vol_shadow_vol}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol}
+\begin{DoxyCompactList}\small\item\em Renderable shadow-\/volume information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_shadow_vol_8h_ae8d8f65ebf539a4e34de950229d11514}{\#define {\bfseries P\+V\+R\+T\+S\+H\+A\+D\+O\+W\+V\+O\+L\+U\+M\+E\+\_\+\+V\+I\+S\+I\+B\+L\+E}~0x00000001}\label{_p_v_r_t_shadow_vol_8h_ae8d8f65ebf539a4e34de950229d11514}
+
+\item 
+\hypertarget{_p_v_r_t_shadow_vol_8h_ad726880409bde63a11b05e7b550a28cd}{\#define {\bfseries P\+V\+R\+T\+S\+H\+A\+D\+O\+W\+V\+O\+L\+U\+M\+E\+\_\+\+N\+E\+E\+D\+\_\+\+C\+A\+P\+\_\+\+F\+R\+O\+N\+T}~0x00000002}\label{_p_v_r_t_shadow_vol_8h_ad726880409bde63a11b05e7b550a28cd}
+
+\item 
+\hypertarget{_p_v_r_t_shadow_vol_8h_a73278e0b21f6943f1c1556914e720095}{\#define {\bfseries P\+V\+R\+T\+S\+H\+A\+D\+O\+W\+V\+O\+L\+U\+M\+E\+\_\+\+N\+E\+E\+D\+\_\+\+C\+A\+P\+\_\+\+B\+A\+C\+K}~0x00000004}\label{_p_v_r_t_shadow_vol_8h_a73278e0b21f6943f1c1556914e720095}
+
+\item 
+\hypertarget{_p_v_r_t_shadow_vol_8h_abb13eac7d8563f4dc444c19aba071d2e}{\#define {\bfseries P\+V\+R\+T\+S\+H\+A\+D\+O\+W\+V\+O\+L\+U\+M\+E\+\_\+\+N\+E\+E\+D\+\_\+\+Z\+F\+A\+I\+L}~0x00000008}\label{_p_v_r_t_shadow_vol_8h_abb13eac7d8563f4dc444c19aba071d2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a3f5f49826379f302d55a95d978d97419}{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, const float $\ast$const p\+Vertex, const unsigned int n\+Num\+Vertex, const unsigned short $\ast$const p\+Faces, const unsigned int n\+Num\+Faces)
+\item 
+bool \hyperlink{_p_v_r_t_shadow_vol_8h_a7e6158532160e8cb9768c897ab449f8c}{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, const \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const p\+Context)
+\item 
+bool \hyperlink{_p_v_r_t_shadow_vol_8h_aeaf55b606d528adbbd2f71d0a71aed3f}{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_vol}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const ps\+Vol, const \hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, const \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const p\+Context)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a9596e82a711e90bcb2648f3d0def675a}{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a67a18979c7fcf6c0c6abe3a4efed5b5e}{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const ps\+Context=N\+U\+L\+L)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a66a27a5fc713367557236df96c2ace33}{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_vol}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const ps\+Vol, \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const ps\+Context=N\+U\+L\+L)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a890b0876ff8a4d3898526672de9c3938}{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_vol}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const ps\+Vol, const unsigned int dw\+Vis\+Flags, const \hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv\+Light\+Model, const bool b\+Point\+Light, const \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const p\+Context=0)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a0a078adaf40615b97a647b2e0482f5ce}{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build} (\hyperlink{struct_p_v_r_t_shadow_vol_shadow_vol}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const ps\+Vol, const unsigned int dw\+Vis\+Flags, const \hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, const \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} $\ast$const pv\+Light\+Model, const bool b\+Point\+Light, const \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const p\+Context=0)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a919343e069d24c958a60459c25c4f124}{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv\+Extruded\+Cube, const \hyperlink{_p_v_r_t_trans_8h_aca6191c8da6023d9e00b2e0586d54a71}{P\+V\+R\+T\+B\+O\+U\+N\+D\+I\+N\+G\+B\+O\+X} $\ast$const p\+Bounding\+Box, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv\+Light\+Mdl, const bool b\+Point\+Light, const float f\+Vol\+Length)
+\item 
+void \hyperlink{_p_v_r_t_shadow_vol_8h_a5665bdf0576b08a60a8c24a157e4f961}{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible} (unsigned int $\ast$const pdw\+Vis\+Flags, const bool b\+Ob\+Visible, const bool b\+Needs\+Z\+Clipping, const \hyperlink{_p_v_r_t_trans_8h_aca6191c8da6023d9e00b2e0586d54a71}{P\+V\+R\+T\+B\+O\+U\+N\+D\+I\+N\+G\+B\+O\+X} $\ast$const p\+Bounding\+Box, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} $\ast$const pm\+Trans, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv\+Light\+Mdl, const bool b\+Point\+Light, const float f\+Cam\+Z\+Proj, const float f\+Vol\+Length)
+\item 
+int \hyperlink{_p_v_r_t_shadow_vol_8h_a458c18ba4b69601d83e8d9bb934c2569}{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render} (const \hyperlink{struct_p_v_r_t_shadow_vol_shadow_mesh}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const ps\+Mesh, const \hyperlink{struct_p_v_r_t_shadow_vol_shadow_vol}{P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const ps\+Vol, const \hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const p\+Context)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declarations of functions relating to shadow volume generation. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_shadow_vol_8h_a919343e069d24c958a60459c25c4f124}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude@{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude@{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv\+Extruded\+Cube, }
+\item[{const {\bf P\+V\+R\+T\+B\+O\+U\+N\+D\+I\+N\+G\+B\+O\+X} $\ast$const}]{p\+Bounding\+Box, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv\+Light\+Mdl, }
+\item[{const bool}]{b\+Point\+Light, }
+\item[{const float}]{f\+Vol\+Length}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a919343e069d24c958a60459c25c4f124}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Extrude  pv\+Extruded\+Cube 8 Vertices to represent the extruded box  p\+Bounding\+Box The bounding box to extrude  pv\+Light\+Mdl The light position/direction  b\+Point\+Light Is the light a point light  f\+Vol\+Length The length the volume has been extruded by  Extrudes the bounding box of the volume 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a5665bdf0576b08a60a8c24a157e4f961}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible@{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible@{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible (
+\begin{DoxyParamCaption}
+\item[{unsigned int $\ast$const}]{pdw\+Vis\+Flags, }
+\item[{const bool}]{b\+Ob\+Visible, }
+\item[{const bool}]{b\+Needs\+Z\+Clipping, }
+\item[{const {\bf P\+V\+R\+T\+B\+O\+U\+N\+D\+I\+N\+G\+B\+O\+X} $\ast$const}]{p\+Bounding\+Box, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} $\ast$const}]{pm\+Trans, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv\+Light\+Mdl, }
+\item[{const bool}]{b\+Point\+Light, }
+\item[{const float}]{f\+Cam\+Z\+Proj, }
+\item[{const float}]{f\+Vol\+Length}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a5665bdf0576b08a60a8c24a157e4f961}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Bounding\+Box\+Is\+Visible  pdw\+Vis\+Flags Visibility flags  b\+Ob\+Visible Unused set to true  b\+Needs\+Z\+Clipping Unused set to true  p\+Bounding\+Box The volumes bounding box  pm\+Trans The projection matrix  pv\+Light\+Mdl The light position/direction  b\+Point\+Light Is the light a point light  f\+Cam\+Z\+Proj The camera's z projection value  f\+Vol\+Length The length the volume is extruded by  Determines if the volume is visible and if it needs caps 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a3f5f49826379f302d55a95d978d97419}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{const float $\ast$const}]{p\+Vertex, }
+\item[{const unsigned int}]{n\+Num\+Vertex, }
+\item[{const unsigned short $\ast$const}]{p\+Faces, }
+\item[{const unsigned int}]{n\+Num\+Faces}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a3f5f49826379f302d55a95d978d97419}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh  ps\+Mesh The shadow volume mesh to populate  p\+Vertex A list of vertices  n\+Num\+Vertex The number of vertices  p\+Faces A list of faces  n\+Num\+Faces The number of faces  Creates a mesh format suitable for generating shadow volumes 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a9596e82a711e90bcb2648f3d0def675a}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a9596e82a711e90bcb2648f3d0def675a}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Destroy\+Mesh  ps\+Mesh The shadow volume mesh to destroy  Destroys all shadow volume mesh data created by P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Create\+Mesh 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a7e6158532160e8cb9768c897ab449f8c}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{const {\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{p\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a7e6158532160e8cb9768c897ab449f8c}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh  ps\+Mesh The shadow volume mesh  p\+Context A struct for A\+P\+I specific data  True on success  Init the mesh 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_aeaf55b606d528adbbd2f71d0a71aed3f}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const}]{ps\+Vol, }
+\item[{const {\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{const {\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{p\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_aeaf55b606d528adbbd2f71d0a71aed3f}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol  ps\+Vol The shadow volume struct  ps\+Mesh The shadow volume mesh  p\+Context A struct for A\+P\+I specific data  True on success  Init the renderable shadow volume information. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a67a18979c7fcf6c0c6abe3a4efed5b5e}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{{\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{ps\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a67a18979c7fcf6c0c6abe3a4efed5b5e}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Mesh  ps\+Mesh The shadow volume mesh to release  Releases all shadow volume mesh data created by P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Mesh 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a66a27a5fc713367557236df96c2ace33}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol@{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const}]{ps\+Vol, }
+\item[{{\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{ps\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a66a27a5fc713367557236df96c2ace33}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Release\+Vol  ps\+Vol The shadow volume information to release  Releases all data create by P\+V\+R\+T\+Shadow\+Vol\+Mesh\+Init\+Vol 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a890b0876ff8a4d3898526672de9c3938}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build@{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build@{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const}]{ps\+Vol, }
+\item[{const unsigned int}]{dw\+Vis\+Flags, }
+\item[{const {\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv\+Light\+Model, }
+\item[{const bool}]{b\+Point\+Light, }
+\item[{const {\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{p\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a890b0876ff8a4d3898526672de9c3938}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build  ps\+Vol The shadow volume information  dw\+Vis\+Flags Shadow volume creation flags  ps\+Mesh The shadow volume mesh  pv\+Light\+Model The light position/direction  b\+Point\+Light Is the light a point light  p\+Context A struct for passing in A\+P\+I specific data  Using the light set up the shadow volume so it can be extruded. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a0a078adaf40615b97a647b2e0482f5ce}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build@{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build@{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const}]{ps\+Vol, }
+\item[{const unsigned int}]{dw\+Vis\+Flags, }
+\item[{const {\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{const {\bf P\+V\+R\+T\+Vec3} $\ast$const}]{pv\+Light\+Model, }
+\item[{const bool}]{b\+Point\+Light, }
+\item[{const {\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{p\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a0a078adaf40615b97a647b2e0482f5ce}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Build  ps\+Vol The shadow volume information  dw\+Vis\+Flags Shadow volume creation flags  ps\+Mesh The shadow volume mesh  pv\+Light\+Model The light position/direction  b\+Point\+Light Is the light a point light  p\+Context A struct for passing in A\+P\+I specific data  Using the light set up the shadow volume so it can be extruded. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_shadow_vol_8h_a458c18ba4b69601d83e8d9bb934c2569}{\index{P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}!P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render@{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render}}
+\index{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render@{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render}!P\+V\+R\+T\+Shadow\+Vol.\+h@{P\+V\+R\+T\+Shadow\+Vol.\+h}}
+\subsubsection[{P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render}]{\setlength{\rightskip}{0pt plus 5cm}int P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Mesh} $\ast$const}]{ps\+Mesh, }
+\item[{const {\bf P\+V\+R\+T\+Shadow\+Vol\+Shadow\+Vol} $\ast$const}]{ps\+Vol, }
+\item[{const {\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{p\+Context}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_shadow_vol_8h_a458c18ba4b69601d83e8d9bb934c2569}
+
+
+  P\+V\+R\+T\+Shadow\+Vol\+Silhouette\+Projected\+Render  ps\+Mesh Shadow volume mesh  ps\+Vol Renderable shadow volume information  p\+Context A struct for passing in A\+P\+I specific data  Draws the shadow volume 
+
+Here is the caller graph for this function\+:
+
+

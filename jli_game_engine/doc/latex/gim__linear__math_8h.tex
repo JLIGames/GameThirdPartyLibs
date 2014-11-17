@@ -1,0 +1,2827 @@
+\hypertarget{gim__linear__math_8h}{\section{bullet/bullet-\/2.82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+linear\+\_\+math.h File Reference}
+\label{gim__linear__math_8h}\index{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+linear\+\_\+math.\+h@{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+linear\+\_\+math.\+h}}
+}
+{\ttfamily \#include \char`\"{}gim\+\_\+math.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gim\+\_\+geom\+\_\+types.\+h\char`\"{}}\\*
+Include dependency graph for gim\+\_\+linear\+\_\+math.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gim__linear__math_8h_addf58d1ce6189c2674dfb47337769528}{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2}(a)
+\begin{DoxyCompactList}\small\item\em Zero out a 2\+D vector. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a256521a640c383008e193f9176a027e1}{V\+E\+C\+\_\+\+Z\+E\+R\+O}(a)
+\begin{DoxyCompactList}\small\item\em Zero out a 3\+D vector. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ac18fd79af4df8ad7fbd8ba680907ce4f}{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4}(a)
+\begin{DoxyCompactList}\small\item\em Zero out a 4\+D vector. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a5e169abbe1945f72fefcca0753423d0e}{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2}(b, a)
+\begin{DoxyCompactList}\small\item\em Vector copy. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ab8018413588afb0cdef51bdca35eab54}{V\+E\+C\+\_\+\+C\+O\+P\+Y}(b, a)
+\begin{DoxyCompactList}\small\item\em Copy 3\+D vector. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_af8a88efd3659cb1e690bddfd574a957a}{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4}(b, a)
+\begin{DoxyCompactList}\small\item\em Copy 4\+D vector. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a1627bf177f521a219326496e5028bb9e}{V\+E\+C\+\_\+\+S\+W\+A\+P}(b, a)
+\begin{DoxyCompactList}\small\item\em V\+E\+C\+T\+O\+R S\+W\+A\+P. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ab38ab2ae5a06f6f72c51b3dabfc33f39}{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2}(v21, v2, v1)
+\begin{DoxyCompactList}\small\item\em Vector difference. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ac4e09c9fff7d73d4ecf1db099342c65d}{V\+E\+C\+\_\+\+D\+I\+F\+F}(v21, v2, v1)
+\begin{DoxyCompactList}\small\item\em Vector difference. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a0b556d87d73349dde19eed529a1cbd5a}{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4}(v21, v2, v1)
+\begin{DoxyCompactList}\small\item\em Vector difference. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a089606db0ab70a66120efd7a410593f0}{V\+E\+C\+\_\+\+S\+U\+M\+\_\+2}(v21, v2, v1)
+\begin{DoxyCompactList}\small\item\em Vector sum. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_aa9725f7431087ce9b1109f5c38c04144}{V\+E\+C\+\_\+\+S\+U\+M}(v21, v2, v1)
+\begin{DoxyCompactList}\small\item\em Vector sum. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_aaba3e7af10af69624564bb12d0e30e5e}{V\+E\+C\+\_\+\+S\+U\+M\+\_\+4}(v21, v2, v1)
+\begin{DoxyCompactList}\small\item\em Vector sum. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a401cf4a4fa9736b8a5554a0bb3399258}{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2}(c, a, b)
+\begin{DoxyCompactList}\small\item\em scalar times vector \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a935e5dd288737b2d4a7976ce1e807079}{V\+E\+C\+\_\+\+S\+C\+A\+L\+E}(c, a, b)
+\begin{DoxyCompactList}\small\item\em scalar times vector \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ac77b8e88e6e280b2d073064bdb450a91}{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4}(c, a, b)
+\begin{DoxyCompactList}\small\item\em scalar times vector \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a0792dad57046c2929570c66881a104e6}{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2}(c, a, b)
+\begin{DoxyCompactList}\small\item\em accumulate scaled vector \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_af47bd58c55125c39d4d029ed13e82381}{V\+E\+C\+\_\+\+A\+C\+C\+U\+M}(c, a, b)
+\begin{DoxyCompactList}\small\item\em accumulate scaled vector \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ad10421d1984f07375e5f38c9975500eb}{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4}(c, a, b)
+\begin{DoxyCompactList}\small\item\em accumulate scaled vector \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a4c6bdb143aded86fa23b3c8ca545d355}{\#define \hyperlink{gim__linear__math_8h_a4c6bdb143aded86fa23b3c8ca545d355}{V\+E\+C\+\_\+\+D\+O\+T\+\_\+2}(a, b)~((a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]})}\label{gim__linear__math_8h_a4c6bdb143aded86fa23b3c8ca545d355}
+
+\begin{DoxyCompactList}\small\item\em Vector dot product. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{\#define \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{V\+E\+C\+\_\+\+D\+O\+T}(a, b)~((a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]} + (a)\mbox{[}2\mbox{]}$\ast$(b)\mbox{[}2\mbox{]})}\label{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}
+
+\begin{DoxyCompactList}\small\item\em Vector dot product. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a0dc5b3c33b9936287fd9c855b7c6f790}{\#define \hyperlink{gim__linear__math_8h_a0dc5b3c33b9936287fd9c855b7c6f790}{V\+E\+C\+\_\+\+D\+O\+T\+\_\+4}(a, b)~((a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]} + (a)\mbox{[}2\mbox{]}$\ast$(b)\mbox{[}2\mbox{]} + (a)\mbox{[}3\mbox{]}$\ast$(b)\mbox{[}3\mbox{]})}\label{gim__linear__math_8h_a0dc5b3c33b9936287fd9c855b7c6f790}
+
+\begin{DoxyCompactList}\small\item\em Vector dot product. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a686ce28d56604506f31d76c740ac4fd1}{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q}(bsq, direction, position)
+\begin{DoxyCompactList}\small\item\em vector impact parameter (squared) \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ad6bcb52872cdbf5db316c54fb59a2555}{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T}(bsq, direction, position)
+\begin{DoxyCompactList}\small\item\em vector impact parameter \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a8854c1374762d046f1e17063d03d88fc}{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_abddd1b010b51bfbbca0118e314e14d4b}{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_aa2a0b317baba0ab8d6990d0e2815f6b5}{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a21417383be15c936d993d4305661a679}{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector inv length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector inv length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_aec4f953602d2225b220839a98f2e867d}{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector inv length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a3056965a0818b773d7689b763e9bdd66}{V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E}(\+\_\+len, \+\_\+va, \+\_\+vb)
+\begin{DoxyCompactList}\small\item\em distance between two points \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_af2f0691024d52985be12009ef63b3c2c}{V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H}(a, l)
+\begin{DoxyCompactList}\small\item\em Vector length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_aaf654e98fc3d0b65b965f942c031752a}{V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}(a)
+\begin{DoxyCompactList}\small\item\em Vector length. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a569442381b1cd2b7b288e1ff49745b8c}{V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E}(a, newlen)
+\begin{DoxyCompactList}\small\item\em Set Vector size. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a62c7e1537c9e1017df8bf2e1836bf56a}{V\+E\+C\+\_\+\+C\+R\+O\+S\+S}(c, a, b)
+\begin{DoxyCompactList}\small\item\em Vector cross. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a39371ce4be712dc5bfa5378de512702d}{V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R}(vp, v, n)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a507ad6241454e073b2ae5f1458dccb8d}{V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L}(vp, v, n)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a0749ff2ca1b3ba2e08184602f70150f6}{V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T}(vp, v, n)
+\item 
+\#define \hyperlink{gim__linear__math_8h_af15b5a9ed8acec92bd4713ef1b1bfd8d}{V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T}(vp, v, n)
+\item 
+\#define \hyperlink{gim__linear__math_8h_acdf9e604cbb083daea0e04913aa61cb8}{V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T}(vr, v, n)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ae9733a52284dec62a34d0b10c284073a}{V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B}(vr, sa, a, sb, b)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ad27cffb9482010310ff7c635ce8ce4d5}{V\+E\+C\+\_\+\+B\+L\+E\+N\+D}(vr, a, b, s)~\hyperlink{gim__linear__math_8h_ae9733a52284dec62a34d0b10c284073a}{V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B}(vr,(1-\/s),a,s,b)
+\item 
+\hypertarget{gim__linear__math_8h_a69de6d8e92b63988713483be1cc49ce6}{\#define {\bfseries V\+E\+C\+\_\+\+S\+E\+T3}(a, b, op, c)~a\mbox{[}0\mbox{]}=b\mbox{[}0\mbox{]} op c\mbox{[}0\mbox{]}; a\mbox{[}1\mbox{]}=b\mbox{[}1\mbox{]} op c\mbox{[}1\mbox{]}; a\mbox{[}2\mbox{]}=b\mbox{[}2\mbox{]} op c\mbox{[}2\mbox{]};}\label{gim__linear__math_8h_a69de6d8e92b63988713483be1cc49ce6}
+
+\item 
+\#define \hyperlink{gim__linear__math_8h_a5cf3a6b009f0d134790408b080c21d05}{V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D}(vec, maxc)
+\begin{DoxyCompactList}\small\item\em Finds the bigger cartesian coordinate from a vector. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a2eb685c9915f558e63d161380ec34aec}{V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S}(vec, i0, i1)
+\begin{DoxyCompactList}\small\item\em Finds the 2 smallest cartesian coordinates from a vector. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a980cf61350276c9f5ebcca5ed5ce6650}{\#define {\bfseries V\+E\+C\+\_\+\+E\+Q\+U\+A\+L}(v1, v2)~(v1\mbox{[}0\mbox{]}==v2\mbox{[}0\mbox{]}\&\&v1\mbox{[}1\mbox{]}==v2\mbox{[}1\mbox{]}\&\&v1\mbox{[}2\mbox{]}==v2\mbox{[}2\mbox{]})}\label{gim__linear__math_8h_a980cf61350276c9f5ebcca5ed5ce6650}
+
+\item 
+\hypertarget{gim__linear__math_8h_a27202c61bcf7b92218591035457de0c4}{\#define {\bfseries V\+E\+C\+\_\+\+N\+E\+A\+R\+\_\+\+E\+Q\+U\+A\+L}(v1, v2)~(G\+I\+M\+\_\+\+N\+E\+A\+R\+\_\+\+E\+Q\+U\+A\+L(v1\mbox{[}0\mbox{]},v2\mbox{[}0\mbox{]})\&\&G\+I\+M\+\_\+\+N\+E\+A\+R\+\_\+\+E\+Q\+U\+A\+L(v1\mbox{[}1\mbox{]},v2\mbox{[}1\mbox{]})\&\&G\+I\+M\+\_\+\+N\+E\+A\+R\+\_\+\+E\+Q\+U\+A\+L(v1\mbox{[}2\mbox{]},v2\mbox{[}2\mbox{]}))}\label{gim__linear__math_8h_a27202c61bcf7b92218591035457de0c4}
+
+\item 
+\#define \hyperlink{gim__linear__math_8h_a934bf58d1881fa181f4349af08cd9eb0}{X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}(dst, src)
+\begin{DoxyCompactList}\small\item\em Vector cross. \end{DoxyCompactList}\item 
+\#define {\bfseries Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}(dst, src)
+\item 
+\#define {\bfseries Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}(dst, src)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a9a8b051ee847cf08e9943b789d64d5da}{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}(m)
+\begin{DoxyCompactList}\small\item\em initialize matrix \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a05cdc9a8e37a073833c440cdc3ff8f21}{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_abdd6663619451330826ff1e50f7dd30e}{Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a97f13f6a9b3d9a79ccfae419a0cf0442}{R\+O\+T\+X\+\_\+\+C\+S}(m, cosine, sine)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a8155e824c26fe9f08bbc11e99ea02918}{R\+O\+T\+Y\+\_\+\+C\+S}(m, cosine, sine)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a56d43b79e2a5c5a2a9ee8cc492dc0b61}{R\+O\+T\+Z\+\_\+\+C\+S}(m, cosine, sine)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a5c71128db3d0ed0cab23a3f92f49f512}{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a245d28046e41b9127986528b33438808}{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a0ad73eb682c43f1b86e857adb16481a5}{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a557ab2ccd78b2e0b4d9fedd170feecdd}{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_aceefcd77a177bd5d29d5e541362d8523}{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ab6322f456acd6d33c6a012f1d3fb1813}{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a4285afe0c1ae9b3295d8cc01600017db}{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(b, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a6c062577486a5e2bc00f8157cf4bc91e}{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}(b, s, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ada79e57bb50f3462d529eb76a874fd90}{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}(b, s, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a002709faf3385bba39223633ac164516}{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(b, s, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a50332409e55187557084eaa37a1709a5}{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}(b, svec, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a612535b1ef17792bedb46b1bf53af248}{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}(b, svec, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a6dedf3f3dbef533902e7a0b06b442c49}{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(b, svec, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a36b29e5b5fec80fcf3c02debd862da6d}{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}(b, s, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a20236088a6f15ed7d46cae5a0af9cc66}{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}(b, s, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_afbeca3527bd6e128b0b2b48b4a9ade68}{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}(b, s, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ac6d218a39e9b02f7cf6b9a7128284ab0}{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}(c, a, b)
+\item 
+\#define \hyperlink{gim__linear__math_8h_adc21637da1b9cedc06163f9af0e7788c}{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}(c, a, b)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ade4986deaf57f63ee5a4eb258414b72a}{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}(c, a, b)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a1347689289a110df968af8c15214c9bc}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a77509be9c7e6c17a775579cdadc3d48e}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_aa2b6f05b321f62577afc3c2e9684dbfe}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_afc3955bb0e49e39384e5df5554abe219}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_af099ab2260f399c4aae1b396765ecdd1}{V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3}(p, v, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a6e2005ba7b646fadaaf57e593fdca191}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a58abfcd6bbdf0560a9bb35aa4175f711}{M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4}(pout, m, plane)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_transform}{Transform} a plane. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_af871ca40e7e5ffdfd1821660e3961400}{I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a97401951b8b624cfe5652522cfbfe65b}{N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2}(p, m, v)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a9313c2056bf737b573236e47abdaba9f}{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}(m, v, t)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ae52945c1b7dc37230e31afe3ccc8737a}{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}(m, v, t)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a31d5809366000ad6cc01d32bf994a0ba}{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}(m, v, t)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a219b9f66b90352ed522890fe9420f4d1}{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}(m, v, t)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a7fc096e2ff11c3bfe12c0db5f6733bd9}{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}(m, v, t)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a5a116959cf47480f3e49d6837d47fb7a}{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}(m, v, t)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a6f2a2ecb339390b21705b189a4cf65e9}{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2}(d, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_abaf7637d47710887964c835e29ad46b8}{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3}(d, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J}(fac, m, i, j)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ac4e78a794775d0904337c7a4ce3569cd}{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4}(d, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a0c7f47fe924f32ef9be08595d87b2c53}{C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2}(a, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_ac94b2e37161475c18640af73fa574c9a}{C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3}(a, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a84a345f6ac1e7eaffb43aaaaa20d3f54}{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4}(a, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a6a5ec2c825cc7704fadc69ec4cb97fc1}{A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}(a, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a62a11c86880325eeba50adc516983fcd}{A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}(a, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a0040ecc26b5a2a5b6d7f46315d59e2ce}{A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}(a, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_af4743de34fb47fcd15cada5f49aa1a8b}{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}(a, s, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a08c6edf3ef72cbe5836da42d63696460}{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}(a, s, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_aa023680dd19a4837fa370a5bc90fbc62}{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}(a, s, m)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a66f8f8c7c3d3ac25bd69f51a3109ddb0}{I\+N\+V\+E\+R\+T\+\_\+2\+X2}(b, det, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_aa6a79e64e50e8c70998b6a49e863c557}{I\+N\+V\+E\+R\+T\+\_\+3\+X3}(b, det, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a6ed4e9769b805b686a3f2d189b90067d}{I\+N\+V\+E\+R\+T\+\_\+4\+X4}(b, det, a)
+\item 
+\#define \hyperlink{gim__linear__math_8h_a123c79dfb36acfa922c3525728b4d48d}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W}(mat, \hyperlink{classvec3}{vec3}, rowindex)
+\begin{DoxyCompactList}\small\item\em Get the triple(3) row of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_add7ad274f2996e62dd1436563b207c48}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2}(mat, \hyperlink{classvec2}{vec2}, rowindex)
+\begin{DoxyCompactList}\small\item\em Get the tuple(2) row of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_aa72c7af5b15f5e57dde9a02a7a7c3f07}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4}(mat, \hyperlink{classvec4}{vec4}, rowindex)
+\begin{DoxyCompactList}\small\item\em Get the quad (4) row of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L}(mat, \hyperlink{classvec3}{vec3}, colindex)
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ab0ab423328356a52b03676f737c4ad53}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2}(mat, \hyperlink{classvec2}{vec2}, colindex)
+\begin{DoxyCompactList}\small\item\em Get the tuple(2) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a9984145161a4f636cb1ee4f6f2509d2f}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4}(mat, \hyperlink{classvec4}{vec4}, colindex)
+\begin{DoxyCompactList}\small\item\em Get the quad (4) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a2677e39b950b572631838cc849f7140e}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_ad293879383d89bbb78c689ab37b484ac}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a91e1043786f137bdd687ac6535de0e33}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a0a8d39f2682204f04133f1f17388fdd0}{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_af008fcd9bfe801c91a9d0feca02a7587}{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a3f960fcf0ab237da3840f942cabdd16e}{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a17a4199c48e414577a63bffb68eb80a8}{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Get the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a5803b2075d988d1c7f49d20c7d2e03be}{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}(mat, \hyperlink{classvec3}{vec3})
+\begin{DoxyCompactList}\small\item\em Set the triple(3) col of a transform matrix. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a47e40a107f8a62fe7fb028b4b92a51c0}{\#define \hyperlink{gim__linear__math_8h_a47e40a107f8a62fe7fb028b4b92a51c0}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+R\+O\+W}(mat, \hyperlink{classvec3}{vec3}, rowindex)~(\hyperlink{classvec3}{vec3}\mbox{[}0\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}0\mbox{]} + \hyperlink{classvec3}{vec3}\mbox{[}1\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}1\mbox{]} + \hyperlink{classvec3}{vec3}\mbox{[}2\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}2\mbox{]})}\label{gim__linear__math_8h_a47e40a107f8a62fe7fb028b4b92a51c0}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product between a vec3f and the row of a matrix. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_ac6b8bdf794b6ce3c7d414379933f09c3}{\#define \hyperlink{gim__linear__math_8h_ac6b8bdf794b6ce3c7d414379933f09c3}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+R\+O\+W2}(mat, \hyperlink{classvec2}{vec2}, rowindex)~(\hyperlink{classvec2}{vec2}\mbox{[}0\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}0\mbox{]} + \hyperlink{classvec2}{vec2}\mbox{[}1\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}1\mbox{]})}\label{gim__linear__math_8h_ac6b8bdf794b6ce3c7d414379933f09c3}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product between a vec2f and the row of a matrix. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a80c3de739bbcbffcc9d037943a17fb18}{\#define \hyperlink{gim__linear__math_8h_a80c3de739bbcbffcc9d037943a17fb18}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+R\+O\+W4}(mat, \hyperlink{classvec4}{vec4}, rowindex)~(\hyperlink{classvec4}{vec4}\mbox{[}0\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}0\mbox{]} + \hyperlink{classvec4}{vec4}\mbox{[}1\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}1\mbox{]} + \hyperlink{classvec4}{vec4}\mbox{[}2\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}2\mbox{]} + \hyperlink{classvec4}{vec4}\mbox{[}3\mbox{]}$\ast$mat\mbox{[}rowindex\mbox{]}\mbox{[}3\mbox{]})}\label{gim__linear__math_8h_a80c3de739bbcbffcc9d037943a17fb18}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product between a vec4f and the row of a matrix. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_aa461a89f97e69d8c98784c2c106664e5}{\#define \hyperlink{gim__linear__math_8h_aa461a89f97e69d8c98784c2c106664e5}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+C\+O\+L}(mat, \hyperlink{classvec3}{vec3}, colindex)~(\hyperlink{classvec3}{vec3}\mbox{[}0\mbox{]}$\ast$mat\mbox{[}0\mbox{]}\mbox{[}colindex\mbox{]} + \hyperlink{classvec3}{vec3}\mbox{[}1\mbox{]}$\ast$mat\mbox{[}1\mbox{]}\mbox{[}colindex\mbox{]} + \hyperlink{classvec3}{vec3}\mbox{[}2\mbox{]}$\ast$mat\mbox{[}2\mbox{]}\mbox{[}colindex\mbox{]})}\label{gim__linear__math_8h_aa461a89f97e69d8c98784c2c106664e5}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product between a vec3f and the col of a matrix. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_a460fbd6631a114654c6e51af775d146c}{\#define \hyperlink{gim__linear__math_8h_a460fbd6631a114654c6e51af775d146c}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+C\+O\+L2}(mat, \hyperlink{classvec2}{vec2}, colindex)~(\hyperlink{classvec2}{vec2}\mbox{[}0\mbox{]}$\ast$mat\mbox{[}0\mbox{]}\mbox{[}colindex\mbox{]} + \hyperlink{classvec2}{vec2}\mbox{[}1\mbox{]}$\ast$mat\mbox{[}1\mbox{]}\mbox{[}colindex\mbox{]})}\label{gim__linear__math_8h_a460fbd6631a114654c6e51af775d146c}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product between a vec2f and the col of a matrix. \end{DoxyCompactList}\item 
+\hypertarget{gim__linear__math_8h_add74d080de7f33fc70354faa933bac45}{\#define \hyperlink{gim__linear__math_8h_add74d080de7f33fc70354faa933bac45}{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+C\+O\+L4}(mat, \hyperlink{classvec4}{vec4}, colindex)~(\hyperlink{classvec4}{vec4}\mbox{[}0\mbox{]}$\ast$mat\mbox{[}0\mbox{]}\mbox{[}colindex\mbox{]} + \hyperlink{classvec4}{vec4}\mbox{[}1\mbox{]}$\ast$mat\mbox{[}1\mbox{]}\mbox{[}colindex\mbox{]} + \hyperlink{classvec4}{vec4}\mbox{[}2\mbox{]}$\ast$mat\mbox{[}2\mbox{]}\mbox{[}colindex\mbox{]} + \hyperlink{classvec4}{vec4}\mbox{[}3\mbox{]}$\ast$mat\mbox{[}3\mbox{]}\mbox{[}colindex\mbox{]})}\label{gim__linear__math_8h_add74d080de7f33fc70354faa933bac45}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product between a vec4f and the col of a matrix. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__linear__math_8h_a5b924b21f033ee45b8397d7ff3783a5f}{I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}(p, m, v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Leon Najera \hyperlink{struct_type}{Type} Independant Vector and matrix operations. 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{gim__linear__math_8h_a219b9f66b90352ed522890fe9420f4d1}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2@{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}}
+\index{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2@{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{v, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a219b9f66b90352ed522890fe9420f4d1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   m[0][0] += v[0] * t[0];                  \(\backslash\)
+   m[0][1] += v[0] * t[1];                  \(\backslash\)
+                                \(\backslash\)
+   m[1][0] += v[1] * t[0];                  \(\backslash\)
+   m[1][1] += v[1] * t[1];                  \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+outer product of vector times vector transpose
+
+The outer product of vector v and vector transpose t yeilds dyadic matrix m. \hypertarget{gim__linear__math_8h_a7fc096e2ff11c3bfe12c0db5f6733bd9}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3@{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}}
+\index{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3@{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{v, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a7fc096e2ff11c3bfe12c0db5f6733bd9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   m[0][0] += v[0] * t[0];                  \(\backslash\)
+   m[0][1] += v[0] * t[1];                  \(\backslash\)
+   m[0][2] += v[0] * t[2];                  \(\backslash\)
+                                \(\backslash\)
+   m[1][0] += v[1] * t[0];                  \(\backslash\)
+   m[1][1] += v[1] * t[1];                  \(\backslash\)
+   m[1][2] += v[1] * t[2];                  \(\backslash\)
+                                \(\backslash\)
+   m[2][0] += v[2] * t[0];                  \(\backslash\)
+   m[2][1] += v[2] * t[1];                  \(\backslash\)
+   m[2][2] += v[2] * t[2];                  \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+outer product of vector times vector transpose
+
+The outer product of vector v and vector transpose t yeilds dyadic matrix m. \hypertarget{gim__linear__math_8h_a5a116959cf47480f3e49d6837d47fb7a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4@{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}}
+\index{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4@{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+U\+M\+\_\+\+O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{v, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a5a116959cf47480f3e49d6837d47fb7a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   m[0][0] += v[0] * t[0];                  \(\backslash\)
+   m[0][1] += v[0] * t[1];                  \(\backslash\)
+   m[0][2] += v[0] * t[2];                  \(\backslash\)
+   m[0][3] += v[0] * t[3];                  \(\backslash\)
+                                \(\backslash\)
+   m[1][0] += v[1] * t[0];                  \(\backslash\)
+   m[1][1] += v[1] * t[1];                  \(\backslash\)
+   m[1][2] += v[1] * t[2];                  \(\backslash\)
+   m[1][3] += v[1] * t[3];                  \(\backslash\)
+                                \(\backslash\)
+   m[2][0] += v[2] * t[0];                  \(\backslash\)
+   m[2][1] += v[2] * t[1];                  \(\backslash\)
+   m[2][2] += v[2] * t[2];                  \(\backslash\)
+   m[2][3] += v[2] * t[3];                  \(\backslash\)
+                                \(\backslash\)
+   m[3][0] += v[3] * t[0];                  \(\backslash\)
+   m[3][1] += v[3] * t[1];                  \(\backslash\)
+   m[3][2] += v[3] * t[2];                  \(\backslash\)
+   m[3][3] += v[3] * t[3];                  \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+outer product of vector times vector transpose
+
+The outer product of vector v and vector transpose t yeilds dyadic matrix m. \hypertarget{gim__linear__math_8h_a36b29e5b5fec80fcf3c02debd862da6d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}}
+\index{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a36b29e5b5fec80fcf3c02debd862da6d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] += (s) * a[0][0];        \(\backslash\)
+   b[0][1] += (s) * a[0][1];        \(\backslash\)
+                    \(\backslash\)
+   b[1][0] += (s) * a[1][0];        \(\backslash\)
+   b[1][1] += (s) * a[1][1];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_a20236088a6f15ed7d46cae5a0af9cc66}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}}
+\index{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a20236088a6f15ed7d46cae5a0af9cc66}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] += (s) * a[0][0];        \(\backslash\)
+   b[0][1] += (s) * a[0][1];        \(\backslash\)
+   b[0][2] += (s) * a[0][2];        \(\backslash\)
+                    \(\backslash\)
+   b[1][0] += (s) * a[1][0];        \(\backslash\)
+   b[1][1] += (s) * a[1][1];        \(\backslash\)
+   b[1][2] += (s) * a[1][2];        \(\backslash\)
+                    \(\backslash\)
+   b[2][0] += (s) * a[2][0];        \(\backslash\)
+   b[2][1] += (s) * a[2][1];        \(\backslash\)
+   b[2][2] += (s) * a[2][2];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_afbeca3527bd6e128b0b2b48b4a9ade68}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+U\+M\+\_\+\+S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_afbeca3527bd6e128b0b2b48b4a9ade68}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] += (s) * a[0][0];        \(\backslash\)
+   b[0][1] += (s) * a[0][1];        \(\backslash\)
+   b[0][2] += (s) * a[0][2];        \(\backslash\)
+   b[0][3] += (s) * a[0][3];        \(\backslash\)
+                    \(\backslash\)
+   b[1][0] += (s) * a[1][0];        \(\backslash\)
+   b[1][1] += (s) * a[1][1];        \(\backslash\)
+   b[1][2] += (s) * a[1][2];        \(\backslash\)
+   b[1][3] += (s) * a[1][3];        \(\backslash\)
+                    \(\backslash\)
+   b[2][0] += (s) * a[2][0];        \(\backslash\)
+   b[2][1] += (s) * a[2][1];        \(\backslash\)
+   b[2][2] += (s) * a[2][2];        \(\backslash\)
+   b[2][3] += (s) * a[2][3];        \(\backslash\)
+                    \(\backslash\)
+   b[3][0] += (s) * a[3][0];        \(\backslash\)
+   b[3][1] += (s) * a[3][1];        \(\backslash\)
+   b[3][2] += (s) * a[3][2];        \(\backslash\)
+   b[3][3] += (s) * a[3][3];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_a6a5ec2c825cc7704fadc69ec4cb97fc1}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2@{A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}}
+\index{A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2@{A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a6a5ec2c825cc7704fadc69ec4cb97fc1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   a[0][0] = (m)[1][1];                     \(\backslash\)
+   a[1][0] = - (m)[1][0];                       \(\backslash\)
+   a[0][1] = - (m)[0][1];                       \(\backslash\)
+   a[1][1] = (m)[0][0];                     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+adjoint of matrix
+
+Computes adjoint of matrix m, returning a (Note that adjoint is just the transpose of the cofactor matrix) \hypertarget{gim__linear__math_8h_a62a11c86880325eeba50adc516983fcd}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3@{A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}}
+\index{A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3@{A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a62a11c86880325eeba50adc516983fcd}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   a[0][0] = m[1][1]*m[2][2] - m[1][2]*m[2][1];         \(\backslash\)
+   a[1][0] = - (m[1][0]*m[2][2] - m[2][0]*m[1][2]);     \(\backslash\)
+   a[2][0] = m[1][0]*m[2][1] - m[1][1]*m[2][0];         \(\backslash\)
+   a[0][1] = - (m[0][1]*m[2][2] - m[0][2]*m[2][1]);     \(\backslash\)
+   a[1][1] = m[0][0]*m[2][2] - m[0][2]*m[2][0];         \(\backslash\)
+   a[2][1] = - (m[0][0]*m[2][1] - m[0][1]*m[2][0]);     \(\backslash\)
+   a[0][2] = m[0][1]*m[1][2] - m[0][2]*m[1][1];         \(\backslash\)
+   a[1][2] = - (m[0][0]*m[1][2] - m[0][2]*m[1][0]);     \(\backslash\)
+   a[2][2] = m[0][0]*m[1][1] - m[0][1]*m[1][0]);        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+adjoint of matrix
+
+Computes adjoint of matrix m, returning a (Note that adjoint is just the transpose of the cofactor matrix) \hypertarget{gim__linear__math_8h_a0040ecc26b5a2a5b6d7f46315d59e2ce}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4@{A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}}
+\index{A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4@{A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0040ecc26b5a2a5b6d7f46315d59e2ce}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   char \_i\_,\_j\_;                            \(\backslash\)
+                                \(\backslash\)
+   for (\_i\_=0; \_i\_<4; \_i\_++) \{                  \(\backslash\)
+      for (\_j\_=0; \_j\_<4; \_j\_++) \{                   \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{         COFACTOR\_4X4\_IJ} (a[\_j\_][\_i\_], m, \_i\_, \_j\_);            \(\backslash\)
+      \}                             \(\backslash\)
+   \}                                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+adjoint of matrix
+
+Computes adjoint of matrix m, returning a (Note that adjoint is just the transpose of the cofactor matrix) \hypertarget{gim__linear__math_8h_a0c7f47fe924f32ef9be08595d87b2c53}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2}}
+\index{C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+F\+A\+C\+T\+O\+R\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0c7f47fe924f32ef9be08595d87b2c53}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   a[0][0] = (m)[1][1];                     \(\backslash\)
+   a[0][1] = - (m)[1][0];                       \(\backslash\)
+   a[1][0] = - (m)[0][1];                       \(\backslash\)
+   a[1][1] = (m)[0][0];                     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+cofactor of matrix
+
+Computes cofactor of matrix m, returning a \hypertarget{gim__linear__math_8h_ac94b2e37161475c18640af73fa574c9a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3}}
+\index{C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+F\+A\+C\+T\+O\+R\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ac94b2e37161475c18640af73fa574c9a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   a[0][0] = m[1][1]*m[2][2] - m[1][2]*m[2][1];         \(\backslash\)
+   a[0][1] = - (m[1][0]*m[2][2] - m[2][0]*m[1][2]);     \(\backslash\)
+   a[0][2] = m[1][0]*m[2][1] - m[1][1]*m[2][0];         \(\backslash\)
+   a[1][0] = - (m[0][1]*m[2][2] - m[0][2]*m[2][1]);     \(\backslash\)
+   a[1][1] = m[0][0]*m[2][2] - m[0][2]*m[2][0];         \(\backslash\)
+   a[1][2] = - (m[0][0]*m[2][1] - m[0][1]*m[2][0]);     \(\backslash\)
+   a[2][0] = m[0][1]*m[1][2] - m[0][2]*m[1][1];         \(\backslash\)
+   a[2][1] = - (m[0][0]*m[1][2] - m[0][2]*m[1][0]);     \(\backslash\)
+   a[2][2] = m[0][0]*m[1][1] - m[0][1]*m[1][0]);        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+cofactor of matrix
+
+Computes cofactor of matrix m, returning a \hypertarget{gim__linear__math_8h_a84a345f6ac1e7eaffb43aaaaa20d3f54}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4}}
+\index{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a84a345f6ac1e7eaffb43aaaaa20d3f54}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   int i,j;                         \(\backslash\)
+                                \(\backslash\)
+   for (i=0; i<4; i++) \{                    \(\backslash\)
+      for (j=0; j<4; j++) \{                 \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{         COFACTOR\_4X4\_IJ} (a[i][j], m, i, j);            \(\backslash\)
+      \}                             \(\backslash\)
+   \}                                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+cofactor of matrix
+
+Computes cofactor of matrix m, returning a \hypertarget{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J}}
+\index{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J@{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+F\+A\+C\+T\+O\+R\+\_\+4\+X4\+\_\+\+I\+J(
+\begin{DoxyParamCaption}
+\item[{}]{fac, }
+\item[{}]{m, }
+\item[{}]{i, }
+\item[{}]{j}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   GUINT \_\_ii[4], \_\_jj[4], \_\_k;                     \(\backslash\)
+                                \(\backslash\)
+   for (\_\_k=0; \_\_k<i; \_\_k++) \_\_ii[\_\_k] = \_\_k;               \(\backslash\)
+   for (\_\_k=i; \_\_k<3; \_\_k++) \_\_ii[\_\_k] = \_\_k+1;             \(\backslash\)
+   for (\_\_k=0; \_\_k<j; \_\_k++) \_\_jj[\_\_k] = \_\_k;               \(\backslash\)
+   for (\_\_k=j; \_\_k<3; \_\_k++) \_\_jj[\_\_k] = \_\_k+1;             \(\backslash\)
+                                \(\backslash\)
+   (fac) = m[\_\_ii[0]][\_\_jj[0]] * (m[\_\_ii[1]][\_\_jj[1]]*m[\_\_ii[2]][\_\_jj[2]]   \(\backslash\)
+                            - m[\_\_ii[1]][\_\_jj[2]]*m[\_\_ii[2]][\_\_jj[1]]); \(\backslash\)
+   (fac) -= m[\_\_ii[0]][\_\_jj[1]] * (m[\_\_ii[1]][\_\_jj[0]]*m[\_\_ii[2]][\_\_jj[2]]  \(\backslash\)
+                             - m[\_\_ii[1]][\_\_jj[2]]*m[\_\_ii[2]][\_\_jj[0]]);\(\backslash\)
+   (fac) += m[\_\_ii[0]][\_\_jj[2]] * (m[\_\_ii[1]][\_\_jj[0]]*m[\_\_ii[2]][\_\_jj[1]]  \(\backslash\)
+                             - m[\_\_ii[1]][\_\_jj[1]]*m[\_\_ii[2]][\_\_jj[0]]);\(\backslash\)
+                                \(\backslash\)
+   \_\_k = i+j;                           \(\backslash\)
+   if ( \_\_k != (\_\_k/2)*2) \{                     \(\backslash\)
+      (fac) = -(fac);                       \(\backslash\)
+   \}                                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+i,j,th cofactor of a 4x4 matrix \hypertarget{gim__linear__math_8h_a5c71128db3d0ed0cab23a3f92f49f512}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}}
+\index{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a5c71128db3d0ed0cab23a3f92f49f512}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[0][1];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[1][0];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix copy \hypertarget{gim__linear__math_8h_a245d28046e41b9127986528b33438808}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3}}
+\index{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a245d28046e41b9127986528b33438808}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[0][1];       \(\backslash\)
+   b[0][2] = a[0][2];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[1][0];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+   b[1][2] = a[1][2];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix copy \hypertarget{gim__linear__math_8h_a0ad73eb682c43f1b86e857adb16481a5}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}}
+\index{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0ad73eb682c43f1b86e857adb16481a5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[0][1];       \(\backslash\)
+   b[0][2] = a[0][2];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[1][0];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+   b[1][2] = a[1][2];       \(\backslash\)
+                \(\backslash\)
+   b[2][0] = a[2][0];       \(\backslash\)
+   b[2][1] = a[2][1];       \(\backslash\)
+   b[2][2] = a[2][2];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix copy \hypertarget{gim__linear__math_8h_a557ab2ccd78b2e0b4d9fedd170feecdd}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+P\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a557ab2ccd78b2e0b4d9fedd170feecdd}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[0][1];       \(\backslash\)
+   b[0][2] = a[0][2];       \(\backslash\)
+   b[0][3] = a[0][3];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[1][0];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+   b[1][2] = a[1][2];       \(\backslash\)
+   b[1][3] = a[1][3];       \(\backslash\)
+                \(\backslash\)
+   b[2][0] = a[2][0];       \(\backslash\)
+   b[2][1] = a[2][1];       \(\backslash\)
+   b[2][2] = a[2][2];       \(\backslash\)
+   b[2][3] = a[2][3];       \(\backslash\)
+                \(\backslash\)
+   b[3][0] = a[3][0];       \(\backslash\)
+   b[3][1] = a[3][1];       \(\backslash\)
+   b[3][2] = a[3][2];       \(\backslash\)
+   b[3][3] = a[3][3];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix copy \hypertarget{gim__linear__math_8h_a6f2a2ecb339390b21705b189a4cf65e9}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2@{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2}}
+\index{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2@{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{d, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a6f2a2ecb339390b21705b189a4cf65e9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   d = m[0][0] * m[1][1] - m[0][1] * m[1][0];           \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+determinant of matrix
+
+Computes determinant of matrix m, returning d \hypertarget{gim__linear__math_8h_abaf7637d47710887964c835e29ad46b8}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3@{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3}}
+\index{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3@{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{d, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_abaf7637d47710887964c835e29ad46b8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   d = m[0][0] * (m[1][1]*m[2][2] - m[1][2] * m[2][1]);     \(\backslash\)
+   d -= m[0][1] * (m[1][0]*m[2][2] - m[1][2] * m[2][0]);    \(\backslash\)
+   d += m[0][2] * (m[1][0]*m[2][1] - m[1][1] * m[2][0]);    \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+determinant of matrix
+
+Computes determinant of matrix m, returning d \hypertarget{gim__linear__math_8h_ac4e78a794775d0904337c7a4ce3569cd}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4@{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4}}
+\index{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4@{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+T\+E\+R\+M\+I\+N\+A\+N\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{d, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ac4e78a794775d0904337c7a4ce3569cd}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   GREAL cofac;                     \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{   COFACTOR\_4X4\_IJ} (cofac, m, 0, 0);              \(\backslash\)
+   d = m[0][0] * cofac;                     \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{   COFACTOR\_4X4\_IJ} (cofac, m, 0, 1);              \(\backslash\)
+   d += m[0][1] * cofac;                    \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{   COFACTOR\_4X4\_IJ} (cofac, m, 0, 2);              \(\backslash\)
+   d += m[0][2] * cofac;                    \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{   COFACTOR\_4X4\_IJ} (cofac, m, 0, 3);              \(\backslash\)
+   d += m[0][3] * cofac;                    \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+determinant of matrix
+
+Computes determinant of matrix m, returning d \hypertarget{gim__linear__math_8h_a9a8b051ee847cf08e9943b789d64d5da}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}}
+\index{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a9a8b051ee847cf08e9943b789d64d5da}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   m[0][0] = 1.0;               \(\backslash\)
+   m[0][1] = 0.0;               \(\backslash\)
+   m[0][2] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[1][0] = 0.0;               \(\backslash\)
+   m[1][1] = 1.0;               \(\backslash\)
+   m[1][2] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[2][0] = 0.0;               \(\backslash\)
+   m[2][1] = 0.0;               \(\backslash\)
+   m[2][2] = 1.0;               \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+initialize matrix 
+
+\hypertarget{gim__linear__math_8h_a05cdc9a8e37a073833c440cdc3ff8f21}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a05cdc9a8e37a073833c440cdc3ff8f21}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   m[0][0] = 1.0;               \(\backslash\)
+   m[0][1] = 0.0;               \(\backslash\)
+   m[0][2] = 0.0;               \(\backslash\)
+   m[0][3] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[1][0] = 0.0;               \(\backslash\)
+   m[1][1] = 1.0;               \(\backslash\)
+   m[1][2] = 0.0;               \(\backslash\)
+   m[1][3] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[2][0] = 0.0;               \(\backslash\)
+   m[2][1] = 0.0;               \(\backslash\)
+   m[2][2] = 1.0;               \(\backslash\)
+   m[2][3] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[3][0] = 0.0;               \(\backslash\)
+   m[3][1] = 0.0;               \(\backslash\)
+   m[3][2] = 0.0;               \(\backslash\)
+   m[3][3] = 1.0;               \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+initialize matrix \hypertarget{gim__linear__math_8h_a5b924b21f033ee45b8397d7ff3783a5f}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3@{I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}}
+\index{I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3@{I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+V\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a5b924b21f033ee45b8397d7ff3783a5f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = \hyperlink{gim__linear__math_8h_aa461a89f97e69d8c98784c2c106664e5}{MAT\_DOT\_COL}(m,v,0); \(\backslash\)
+   p[1] = \hyperlink{gim__linear__math_8h_aa461a89f97e69d8c98784c2c106664e5}{MAT\_DOT\_COL}(m,v,1);    \(\backslash\)
+   p[2] = \hyperlink{gim__linear__math_8h_aa461a89f97e69d8c98784c2c106664e5}{MAT\_DOT\_COL}(m,v,2);    \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+Transpose matrix times vector v is a vec3f and m is a mat4f~\newline
+ \hypertarget{gim__linear__math_8h_af871ca40e7e5ffdfd1821660e3961400}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2@{I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}}
+\index{I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2@{I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+V\+\_\+\+T\+R\+A\+N\+S\+P\+\_\+\+M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af871ca40e7e5ffdfd1821660e3961400}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   GREAL det;                       \(\backslash\)
+                                \(\backslash\)
+   det = m[0][0]*m[1][1] - m[0][1]*m[1][0];         \(\backslash\)
+   p[0] = m[1][1]*v[0] - m[1][0]*v[1];              \(\backslash\)
+   p[1] = - m[0][1]*v[0] + m[0][0]*v[1];            \(\backslash\)
+                                \(\backslash\)
+   \textcolor{comment}{/* if matrix not singular, and not orthonormal, then renormalize */} \(\backslash\)
+   if ((det!=1.0f) && (det != 0.0f)) \{              \(\backslash\)
+      det = 1.0f / det;                     \(\backslash\)
+      p[0] *= det;                      \(\backslash\)
+      p[1] *= det;                      \(\backslash\)
+   \}                                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+inverse transpose of matrix times vector
+
+This macro computes inverse transpose of matrix m, and multiplies vector v into it, to yeild vector p
+
+D\+A\+N\+G\+E\+R !!! Do Not use this on normal vectors!!! It will leave normals the wrong length !!! See macro below for use on normals. \hypertarget{gim__linear__math_8h_a66f8f8c7c3d3ac25bd69f51a3109ddb0}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+N\+V\+E\+R\+T\+\_\+2\+X2@{I\+N\+V\+E\+R\+T\+\_\+2\+X2}}
+\index{I\+N\+V\+E\+R\+T\+\_\+2\+X2@{I\+N\+V\+E\+R\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+N\+V\+E\+R\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+V\+E\+R\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{det, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a66f8f8c7c3d3ac25bd69f51a3109ddb0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   GREAL \_tmp\_;                 \hyperlink{gim__linear__math_8h_a6f2a2ecb339390b21705b189a4cf65e9}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a6f2a2ecb339390b21705b189a4cf65e9}{   DETERMINANT\_2X2} (det, a);          \(\backslash\)
+   \_tmp\_ = 1.0 / (det);             \hyperlink{gim__linear__math_8h_af4743de34fb47fcd15cada5f49aa1a8b}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_af4743de34fb47fcd15cada5f49aa1a8b}{   SCALE\_ADJOINT\_2X2} (b, \_tmp\_, a);     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+inverse of matrix
+
+Compute inverse of matrix a, returning determinant m and inverse b \hypertarget{gim__linear__math_8h_aa6a79e64e50e8c70998b6a49e863c557}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+N\+V\+E\+R\+T\+\_\+3\+X3@{I\+N\+V\+E\+R\+T\+\_\+3\+X3}}
+\index{I\+N\+V\+E\+R\+T\+\_\+3\+X3@{I\+N\+V\+E\+R\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+N\+V\+E\+R\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+V\+E\+R\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{det, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aa6a79e64e50e8c70998b6a49e863c557}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   GREAL \_tmp\_;                 \hyperlink{gim__linear__math_8h_abaf7637d47710887964c835e29ad46b8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_abaf7637d47710887964c835e29ad46b8}{   DETERMINANT\_3X3} (det, a);          \(\backslash\)
+   \_tmp\_ = 1.0 / (det);             \hyperlink{gim__linear__math_8h_a08c6edf3ef72cbe5836da42d63696460}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a08c6edf3ef72cbe5836da42d63696460}{   SCALE\_ADJOINT\_3X3} (b, \_tmp\_, a);     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+inverse of matrix
+
+Compute inverse of matrix a, returning determinant m and inverse b \hypertarget{gim__linear__math_8h_a6ed4e9769b805b686a3f2d189b90067d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!I\+N\+V\+E\+R\+T\+\_\+4\+X4@{I\+N\+V\+E\+R\+T\+\_\+4\+X4}}
+\index{I\+N\+V\+E\+R\+T\+\_\+4\+X4@{I\+N\+V\+E\+R\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{I\+N\+V\+E\+R\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+V\+E\+R\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{det, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a6ed4e9769b805b686a3f2d189b90067d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   GREAL \_tmp\_;                 \hyperlink{gim__linear__math_8h_ac4e78a794775d0904337c7a4ce3569cd}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ac4e78a794775d0904337c7a4ce3569cd}{   DETERMINANT\_4X4} (det, a);          \(\backslash\)
+   \_tmp\_ = 1.0 / (det);             \hyperlink{gim__linear__math_8h_aa023680dd19a4837fa370a5bc90fbc62}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_aa023680dd19a4837fa370a5bc90fbc62}{   SCALE\_ADJOINT\_4X4} (b, \_tmp\_, a);     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+inverse of matrix
+
+Compute inverse of matrix a, returning determinant m and inverse b \hypertarget{gim__linear__math_8h_a1347689289a110df968af8c15214c9bc}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}}
+\index{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a1347689289a110df968af8c15214c9bc}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = m[0][0]*v[0] + m[0][1]*v[1];              \(\backslash\)
+   p[1] = m[1][0]*v[0] + m[1][1]*v[1];              \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix times vector \hypertarget{gim__linear__math_8h_a6e2005ba7b646fadaaf57e593fdca191}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3}}
+\index{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+2\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a6e2005ba7b646fadaaf57e593fdca191}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = m[0][0]*v[0] + m[0][1]*v[1] + m[0][2];        \(\backslash\)
+   p[1] = m[1][0]*v[0] + m[1][1]*v[1] + m[1][2];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+affine matrix times vector The matrix is assumed to be an affine matrix, with last two entries representing a translation \hypertarget{gim__linear__math_8h_a77509be9c7e6c17a775579cdadc3d48e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}}
+\index{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a77509be9c7e6c17a775579cdadc3d48e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = m[0][0]*v[0] + m[0][1]*v[1] + m[0][2]*v[2];       \(\backslash\)
+   p[1] = m[1][0]*v[0] + m[1][1]*v[1] + m[1][2]*v[2];       \(\backslash\)
+   p[2] = m[2][0]*v[0] + m[2][1]*v[1] + m[2][2]*v[2];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix times vector \hypertarget{gim__linear__math_8h_afc3955bb0e49e39384e5df5554abe219}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4}}
+\index{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+3\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_afc3955bb0e49e39384e5df5554abe219}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = m[0][0]*v[0] + m[0][1]*v[1] + m[0][2]*v[2] + m[0][3]; \(\backslash\)
+   p[1] = m[1][0]*v[0] + m[1][1]*v[1] + m[1][2]*v[2] + m[1][3]; \(\backslash\)
+   p[2] = m[2][0]*v[0] + m[2][1]*v[1] + m[2][2]*v[2] + m[2][3]; \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix times vector v is a vec3f and m is a mat4f~\newline
+ Last column is added as the position \hypertarget{gim__linear__math_8h_aa2b6f05b321f62577afc3c2e9684dbfe}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4}}
+\index{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4@{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+D\+O\+T\+\_\+\+V\+E\+C\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aa2b6f05b321f62577afc3c2e9684dbfe}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = m[0][0]*v[0] + m[0][1]*v[1] + m[0][2]*v[2] + m[0][3]*v[3];    \(\backslash\)
+   p[1] = m[1][0]*v[0] + m[1][1]*v[1] + m[1][2]*v[2] + m[1][3]*v[3];    \(\backslash\)
+   p[2] = m[2][0]*v[0] + m[2][1]*v[1] + m[2][2]*v[2] + m[2][3]*v[3];    \(\backslash\)
+   p[3] = m[3][0]*v[0] + m[3][1]*v[1] + m[3][2]*v[2] + m[3][3]*v[3];    \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix times vector v is a vec4f \hypertarget{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}, }
+\item[{}]{colindex}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec3[0] = mat[0][colindex];\(\backslash\)
+    vec3[1] = mat[1][colindex];\(\backslash\)
+    vec3[2] = mat[2][colindex]; \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_ab0ab423328356a52b03676f737c4ad53}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L2(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec2}, }
+\item[{}]{colindex}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ab0ab423328356a52b03676f737c4ad53}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec2[0] = mat[0][colindex];\(\backslash\)
+    vec2[1] = mat[1][colindex];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the tuple(2) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a9984145161a4f636cb1ee4f6f2509d2f}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+C\+O\+L4(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec4}, }
+\item[{}]{colindex}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a9984145161a4f636cb1ee4f6f2509d2f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec4[0] = mat[0][colindex];\(\backslash\)
+    vec4[1] = mat[1][colindex];\(\backslash\)
+    vec4[2] = mat[2][colindex];\(\backslash\)
+    vec4[3] = mat[3][colindex];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the quad (4) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a123c79dfb36acfa922c3525728b4d48d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}, }
+\item[{}]{rowindex}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a123c79dfb36acfa922c3525728b4d48d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec3[0] = mat[rowindex][0];\(\backslash\)
+    vec3[1] = mat[rowindex][1];\(\backslash\)
+    vec3[2] = mat[rowindex][2]; \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) row of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_add7ad274f2996e62dd1436563b207c48}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W2(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec2}, }
+\item[{}]{rowindex}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_add7ad274f2996e62dd1436563b207c48}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec2[0] = mat[rowindex][0];\(\backslash\)
+    vec2[1] = mat[rowindex][1];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the tuple(2) row of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_aa72c7af5b15f5e57dde9a02a7a7c3f07}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+R\+O\+W4(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec4}, }
+\item[{}]{rowindex}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aa72c7af5b15f5e57dde9a02a7a7c3f07}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec4[0] = mat[rowindex][0];\(\backslash\)
+    vec4[1] = mat[rowindex][1];\(\backslash\)
+    vec4[2] = mat[rowindex][2];\(\backslash\)
+    vec4[3] = mat[rowindex][3];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the quad (4) row of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a17a4199c48e414577a63bffb68eb80a8}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a17a4199c48e414577a63bffb68eb80a8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    vec3[0] = mat[0][3];\(\backslash\)
+    vec3[1] = mat[1][3];\(\backslash\)
+    vec3[2] = mat[2][3]; \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a2677e39b950b572631838cc849f7140e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+X(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a2677e39b950b572631838cc849f7140e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{    MAT\_GET\_COL}(mat,\hyperlink{classvec3}{vec3},0);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_ad293879383d89bbb78c689ab37b484ac}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Y(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ad293879383d89bbb78c689ab37b484ac}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{    MAT\_GET\_COL}(mat,\hyperlink{classvec3}{vec3},1);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a91e1043786f137bdd687ac6535de0e33}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z}}
+\index{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z@{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+G\+E\+T\+\_\+\+Z(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a91e1043786f137bdd687ac6535de0e33}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a15b0c6a6e9db982215f6fb0566e8b666}{    MAT\_GET\_COL}(mat,\hyperlink{classvec3}{vec3},2);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a5803b2075d988d1c7f49d20c7d2e03be}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}}
+\index{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a5803b2075d988d1c7f49d20c7d2e03be}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    mat[0][3] = \hyperlink{classvec3}{vec3}[0];\(\backslash\)
+    mat[1][3] = \hyperlink{classvec3}{vec3}[1];\(\backslash\)
+    mat[2][3] = \hyperlink{classvec3}{vec3}[2]; \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Set the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a0a8d39f2682204f04133f1f17388fdd0}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X}}
+\index{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+X(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0a8d39f2682204f04133f1f17388fdd0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    mat[0][0] = \hyperlink{classvec3}{vec3}[0];\(\backslash\)
+    mat[1][0] = \hyperlink{classvec3}{vec3}[1];\(\backslash\)
+    mat[2][0] = \hyperlink{classvec3}{vec3}[2];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_af008fcd9bfe801c91a9d0feca02a7587}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y}}
+\index{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Y(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af008fcd9bfe801c91a9d0feca02a7587}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    mat[0][1] = \hyperlink{classvec3}{vec3}[0];\(\backslash\)
+    mat[1][1] = \hyperlink{classvec3}{vec3}[1];\(\backslash\)
+    mat[2][1] = \hyperlink{classvec3}{vec3}[2];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a3f960fcf0ab237da3840f942cabdd16e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z}}
+\index{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z@{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+S\+E\+T\+\_\+\+Z(
+\begin{DoxyParamCaption}
+\item[{}]{mat, }
+\item[{}]{{\bf vec3}}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a3f960fcf0ab237da3840f942cabdd16e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    mat[0][2] = \hyperlink{classvec3}{vec3}[0];\(\backslash\)
+    mat[1][2] = \hyperlink{classvec3}{vec3}[1];\(\backslash\)
+    mat[2][2] = \hyperlink{classvec3}{vec3}[2];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Get the triple(3) col of a transform matrix. 
+
+\hypertarget{gim__linear__math_8h_a58abfcd6bbdf0560a9bb35aa4175f711}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4@{M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4}}
+\index{M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4@{M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+P\+L\+A\+N\+E\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{pout, }
+\item[{}]{m, }
+\item[{}]{plane}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a58abfcd6bbdf0560a9bb35aa4175f711}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   pout[0] = m[0][0]*plane[0] + m[0][1]*plane[1]  + m[0][2]*plane[2];\(\backslash\)
+   pout[1] = m[1][0]*plane[0] + m[1][1]*plane[1]  + m[1][2]*plane[2];\(\backslash\)
+   pout[2] = m[2][0]*plane[0] + m[2][1]*plane[1]  + m[2][2]*plane[2];\(\backslash\)
+   pout[3] = m[0][3]*pout[0] + m[1][3]*pout[1]  + m[2][3]*pout[2] + plane[3];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+\hyperlink{struct_transform}{Transform} a plane. 
+
+\hypertarget{gim__linear__math_8h_ac6d218a39e9b02f7cf6b9a7128284ab0}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2@{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}}
+\index{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2@{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ac6d218a39e9b02f7cf6b9a7128284ab0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   c[0][0] = a[0][0]*b[0][0]+a[0][1]*b[1][0];   \(\backslash\)
+   c[0][1] = a[0][0]*b[0][1]+a[0][1]*b[1][1];   \(\backslash\)
+                        \(\backslash\)
+   c[1][0] = a[1][0]*b[0][0]+a[1][1]*b[1][0];   \(\backslash\)
+   c[1][1] = a[1][0]*b[0][1]+a[1][1]*b[1][1];   \(\backslash\)
+                        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix product
+
+c\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} = a\mbox{[}x\mbox{]}\mbox{[}0\mbox{]}$\ast$b\mbox{[}0\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}1\mbox{]}$\ast$b\mbox{[}1\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}2\mbox{]}$\ast$b\mbox{[}2\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}3\mbox{]}$\ast$b\mbox{[}3\mbox{]}\mbox{[}y\mbox{]}; \hypertarget{gim__linear__math_8h_adc21637da1b9cedc06163f9af0e7788c}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3@{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}}
+\index{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3@{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_adc21637da1b9cedc06163f9af0e7788c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   c[0][0] = a[0][0]*b[0][0]+a[0][1]*b[1][0]+a[0][2]*b[2][0];   \(\backslash\)
+   c[0][1] = a[0][0]*b[0][1]+a[0][1]*b[1][1]+a[0][2]*b[2][1];   \(\backslash\)
+   c[0][2] = a[0][0]*b[0][2]+a[0][1]*b[1][2]+a[0][2]*b[2][2];   \(\backslash\)
+                                \(\backslash\)
+   c[1][0] = a[1][0]*b[0][0]+a[1][1]*b[1][0]+a[1][2]*b[2][0];   \(\backslash\)
+   c[1][1] = a[1][0]*b[0][1]+a[1][1]*b[1][1]+a[1][2]*b[2][1];   \(\backslash\)
+   c[1][2] = a[1][0]*b[0][2]+a[1][1]*b[1][2]+a[1][2]*b[2][2];   \(\backslash\)
+                                \(\backslash\)
+   c[2][0] = a[2][0]*b[0][0]+a[2][1]*b[1][0]+a[2][2]*b[2][0];   \(\backslash\)
+   c[2][1] = a[2][0]*b[0][1]+a[2][1]*b[1][1]+a[2][2]*b[2][1];   \(\backslash\)
+   c[2][2] = a[2][0]*b[0][2]+a[2][1]*b[1][2]+a[2][2]*b[2][2];   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix product
+
+c\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} = a\mbox{[}x\mbox{]}\mbox{[}0\mbox{]}$\ast$b\mbox{[}0\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}1\mbox{]}$\ast$b\mbox{[}1\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}2\mbox{]}$\ast$b\mbox{[}2\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}3\mbox{]}$\ast$b\mbox{[}3\mbox{]}\mbox{[}y\mbox{]}; \hypertarget{gim__linear__math_8h_ade4986deaf57f63ee5a4eb258414b72a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4@{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}}
+\index{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4@{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+R\+I\+X\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ade4986deaf57f63ee5a4eb258414b72a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   c[0][0] = a[0][0]*b[0][0]+a[0][1]*b[1][0]+a[0][2]*b[2][0]+a[0][3]*b[3][0];\(\backslash\)
+   c[0][1] = a[0][0]*b[0][1]+a[0][1]*b[1][1]+a[0][2]*b[2][1]+a[0][3]*b[3][1];\(\backslash\)
+   c[0][2] = a[0][0]*b[0][2]+a[0][1]*b[1][2]+a[0][2]*b[2][2]+a[0][3]*b[3][2];\(\backslash\)
+   c[0][3] = a[0][0]*b[0][3]+a[0][1]*b[1][3]+a[0][2]*b[2][3]+a[0][3]*b[3][3];\(\backslash\)
+                        \(\backslash\)
+   c[1][0] = a[1][0]*b[0][0]+a[1][1]*b[1][0]+a[1][2]*b[2][0]+a[1][3]*b[3][0];\(\backslash\)
+   c[1][1] = a[1][0]*b[0][1]+a[1][1]*b[1][1]+a[1][2]*b[2][1]+a[1][3]*b[3][1];\(\backslash\)
+   c[1][2] = a[1][0]*b[0][2]+a[1][1]*b[1][2]+a[1][2]*b[2][2]+a[1][3]*b[3][2];\(\backslash\)
+   c[1][3] = a[1][0]*b[0][3]+a[1][1]*b[1][3]+a[1][2]*b[2][3]+a[1][3]*b[3][3];\(\backslash\)
+                        \(\backslash\)
+   c[2][0] = a[2][0]*b[0][0]+a[2][1]*b[1][0]+a[2][2]*b[2][0]+a[2][3]*b[3][0];\(\backslash\)
+   c[2][1] = a[2][0]*b[0][1]+a[2][1]*b[1][1]+a[2][2]*b[2][1]+a[2][3]*b[3][1];\(\backslash\)
+   c[2][2] = a[2][0]*b[0][2]+a[2][1]*b[1][2]+a[2][2]*b[2][2]+a[2][3]*b[3][2];\(\backslash\)
+   c[2][3] = a[2][0]*b[0][3]+a[2][1]*b[1][3]+a[2][2]*b[2][3]+a[2][3]*b[3][3];\(\backslash\)
+                        \(\backslash\)
+   c[3][0] = a[3][0]*b[0][0]+a[3][1]*b[1][0]+a[3][2]*b[2][0]+a[3][3]*b[3][0];\(\backslash\)
+   c[3][1] = a[3][0]*b[0][1]+a[3][1]*b[1][1]+a[3][2]*b[2][1]+a[3][3]*b[3][1];\(\backslash\)
+   c[3][2] = a[3][0]*b[0][2]+a[3][1]*b[1][2]+a[3][2]*b[2][2]+a[3][3]*b[3][2];\(\backslash\)
+   c[3][3] = a[3][0]*b[0][3]+a[3][1]*b[1][3]+a[3][2]*b[2][3]+a[3][3]*b[3][3];\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix product
+
+c\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} = a\mbox{[}x\mbox{]}\mbox{[}0\mbox{]}$\ast$b\mbox{[}0\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}1\mbox{]}$\ast$b\mbox{[}1\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}2\mbox{]}$\ast$b\mbox{[}2\mbox{]}\mbox{[}y\mbox{]}+a\mbox{[}x\mbox{]}\mbox{[}3\mbox{]}$\ast$b\mbox{[}3\mbox{]}\mbox{[}y\mbox{]}; \hypertarget{gim__linear__math_8h_a97401951b8b624cfe5652522cfbfe65b}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2@{N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2}}
+\index{N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2@{N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+O\+R\+M\+\_\+\+X\+F\+O\+R\+M\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{m, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a97401951b8b624cfe5652522cfbfe65b}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   GREAL len;                           \(\backslash\)
+                                \(\backslash\)
+   \textcolor{comment}{/* do nothing if off-diagonals are zero and diagonals are    \(\backslash\)}
+\textcolor{comment}{    * equal */}                          \(\backslash\)
+   if ((m[0][1] != 0.0) || (m[1][0] != 0.0) || (m[0][0] != m[1][1])) \{ \(\backslash\)
+      p[0] = m[1][1]*v[0] - m[1][0]*v[1];           \(\backslash\)
+      p[1] = - m[0][1]*v[0] + m[0][0]*v[1];         \(\backslash\)
+                                \(\backslash\)
+      len = p[0]*p[0] + p[1]*p[1];              \(\backslash\)
+      GIM\_INV\_SQRT(len,len);                    \(\backslash\)
+      p[0] *= len;                      \(\backslash\)
+      p[1] *= len;                      \(\backslash\)
+   \} \textcolor{keywordflow}{else} \{                         \hyperlink{gim__linear__math_8h_a5e169abbe1945f72fefcca0753423d0e}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a5e169abbe1945f72fefcca0753423d0e}{      VEC\_COPY\_2} (p, v);                    \(\backslash\)
+   \}                                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+transform normal vector by inverse transpose of matrix and then renormalize the vector
+
+This macro computes inverse transpose of matrix m, and multiplies vector v into it, to yeild vector p Vector p is then normalized. \hypertarget{gim__linear__math_8h_a9313c2056bf737b573236e47abdaba9f}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2@{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}}
+\index{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2@{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{v, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a9313c2056bf737b573236e47abdaba9f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   m[0][0] = v[0] * t[0];                   \(\backslash\)
+   m[0][1] = v[0] * t[1];                   \(\backslash\)
+                                \(\backslash\)
+   m[1][0] = v[1] * t[0];                   \(\backslash\)
+   m[1][1] = v[1] * t[1];                   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+outer product of vector times vector transpose
+
+The outer product of vector v and vector transpose t yeilds dyadic matrix m. \hypertarget{gim__linear__math_8h_ae52945c1b7dc37230e31afe3ccc8737a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3@{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}}
+\index{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3@{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{v, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ae52945c1b7dc37230e31afe3ccc8737a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   m[0][0] = v[0] * t[0];                   \(\backslash\)
+   m[0][1] = v[0] * t[1];                   \(\backslash\)
+   m[0][2] = v[0] * t[2];                   \(\backslash\)
+                                \(\backslash\)
+   m[1][0] = v[1] * t[0];                   \(\backslash\)
+   m[1][1] = v[1] * t[1];                   \(\backslash\)
+   m[1][2] = v[1] * t[2];                   \(\backslash\)
+                                \(\backslash\)
+   m[2][0] = v[2] * t[0];                   \(\backslash\)
+   m[2][1] = v[2] * t[1];                   \(\backslash\)
+   m[2][2] = v[2] * t[2];                   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+outer product of vector times vector transpose
+
+The outer product of vector v and vector transpose t yeilds dyadic matrix m. \hypertarget{gim__linear__math_8h_a31d5809366000ad6cc01d32bf994a0ba}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4@{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}}
+\index{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4@{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+U\+T\+E\+R\+\_\+\+P\+R\+O\+D\+U\+C\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{v, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a31d5809366000ad6cc01d32bf994a0ba}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   m[0][0] = v[0] * t[0];                   \(\backslash\)
+   m[0][1] = v[0] * t[1];                   \(\backslash\)
+   m[0][2] = v[0] * t[2];                   \(\backslash\)
+   m[0][3] = v[0] * t[3];                   \(\backslash\)
+                                \(\backslash\)
+   m[1][0] = v[1] * t[0];                   \(\backslash\)
+   m[1][1] = v[1] * t[1];                   \(\backslash\)
+   m[1][2] = v[1] * t[2];                   \(\backslash\)
+   m[1][3] = v[1] * t[3];                   \(\backslash\)
+                                \(\backslash\)
+   m[2][0] = v[2] * t[0];                   \(\backslash\)
+   m[2][1] = v[2] * t[1];                   \(\backslash\)
+   m[2][2] = v[2] * t[2];                   \(\backslash\)
+   m[2][3] = v[2] * t[3];                   \(\backslash\)
+                                \(\backslash\)
+   m[3][0] = v[3] * t[0];                   \(\backslash\)
+   m[3][1] = v[3] * t[1];                   \(\backslash\)
+   m[3][2] = v[3] * t[2];                   \(\backslash\)
+   m[3][3] = v[3] * t[3];                   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+outer product of vector times vector transpose
+
+The outer product of vector v and vector transpose t yeilds dyadic matrix m. \hypertarget{gim__linear__math_8h_a97f13f6a9b3d9a79ccfae419a0cf0442}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!R\+O\+T\+X\+\_\+\+C\+S@{R\+O\+T\+X\+\_\+\+C\+S}}
+\index{R\+O\+T\+X\+\_\+\+C\+S@{R\+O\+T\+X\+\_\+\+C\+S}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{R\+O\+T\+X\+\_\+\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+O\+T\+X\+\_\+\+C\+S(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{cosine, }
+\item[{}]{sine}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a97f13f6a9b3d9a79ccfae419a0cf0442}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   \textcolor{comment}{/* rotation about the x-axis */}  \(\backslash\)
+                    \(\backslash\)
+   m[0][0] = 1.0;           \(\backslash\)
+   m[0][1] = 0.0;           \(\backslash\)
+   m[0][2] = 0.0;           \(\backslash\)
+   m[0][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[1][0] = 0.0;           \(\backslash\)
+   m[1][1] = (cosine);          \(\backslash\)
+   m[1][2] = (sine);            \(\backslash\)
+   m[1][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[2][0] = 0.0;           \(\backslash\)
+   m[2][1] = -(sine);           \(\backslash\)
+   m[2][2] = (cosine);          \(\backslash\)
+   m[2][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[3][0] = 0.0;           \(\backslash\)
+   m[3][1] = 0.0;           \(\backslash\)
+   m[3][2] = 0.0;           \(\backslash\)
+   m[3][3] = 1.0;           \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix rotation X \hypertarget{gim__linear__math_8h_a8155e824c26fe9f08bbc11e99ea02918}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!R\+O\+T\+Y\+\_\+\+C\+S@{R\+O\+T\+Y\+\_\+\+C\+S}}
+\index{R\+O\+T\+Y\+\_\+\+C\+S@{R\+O\+T\+Y\+\_\+\+C\+S}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{R\+O\+T\+Y\+\_\+\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+O\+T\+Y\+\_\+\+C\+S(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{cosine, }
+\item[{}]{sine}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a8155e824c26fe9f08bbc11e99ea02918}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   \textcolor{comment}{/* rotation about the y-axis */}  \(\backslash\)
+                    \(\backslash\)
+   m[0][0] = (cosine);          \(\backslash\)
+   m[0][1] = 0.0;           \(\backslash\)
+   m[0][2] = -(sine);           \(\backslash\)
+   m[0][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[1][0] = 0.0;           \(\backslash\)
+   m[1][1] = 1.0;           \(\backslash\)
+   m[1][2] = 0.0;           \(\backslash\)
+   m[1][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[2][0] = (sine);            \(\backslash\)
+   m[2][1] = 0.0;           \(\backslash\)
+   m[2][2] = (cosine);          \(\backslash\)
+   m[2][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[3][0] = 0.0;           \(\backslash\)
+   m[3][1] = 0.0;           \(\backslash\)
+   m[3][2] = 0.0;           \(\backslash\)
+   m[3][3] = 1.0;           \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix rotation Y \hypertarget{gim__linear__math_8h_a56d43b79e2a5c5a2a9ee8cc492dc0b61}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!R\+O\+T\+Z\+\_\+\+C\+S@{R\+O\+T\+Z\+\_\+\+C\+S}}
+\index{R\+O\+T\+Z\+\_\+\+C\+S@{R\+O\+T\+Z\+\_\+\+C\+S}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{R\+O\+T\+Z\+\_\+\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+O\+T\+Z\+\_\+\+C\+S(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{cosine, }
+\item[{}]{sine}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a56d43b79e2a5c5a2a9ee8cc492dc0b61}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   \textcolor{comment}{/* rotation about the z-axis */}  \(\backslash\)
+                    \(\backslash\)
+   m[0][0] = (cosine);          \(\backslash\)
+   m[0][1] = (sine);            \(\backslash\)
+   m[0][2] = 0.0;           \(\backslash\)
+   m[0][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[1][0] = -(sine);           \(\backslash\)
+   m[1][1] = (cosine);          \(\backslash\)
+   m[1][2] = 0.0;           \(\backslash\)
+   m[1][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[2][0] = 0.0;           \(\backslash\)
+   m[2][1] = 0.0;           \(\backslash\)
+   m[2][2] = 1.0;           \(\backslash\)
+   m[2][3] = 0.0;           \(\backslash\)
+                    \(\backslash\)
+   m[3][0] = 0.0;           \(\backslash\)
+   m[3][1] = 0.0;           \(\backslash\)
+   m[3][2] = 0.0;           \(\backslash\)
+   m[3][3] = 1.0;           \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix rotation Z \hypertarget{gim__linear__math_8h_af4743de34fb47fcd15cada5f49aa1a8b}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2@{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}}
+\index{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2@{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{s, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af4743de34fb47fcd15cada5f49aa1a8b}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   a[0][0] = (s) * m[1][1];                 \(\backslash\)
+   a[1][0] = - (s) * m[1][0];                   \(\backslash\)
+   a[0][1] = - (s) * m[0][1];                   \(\backslash\)
+   a[1][1] = (s) * m[0][0];                 \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+compute adjoint of matrix and scale
+
+Computes adjoint of matrix m, scales it by s, returning a \hypertarget{gim__linear__math_8h_a08c6edf3ef72cbe5836da42d63696460}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3@{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}}
+\index{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3@{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{s, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a08c6edf3ef72cbe5836da42d63696460}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   a[0][0] = (s) * (m[1][1] * m[2][2] - m[1][2] * m[2][1]); \(\backslash\)
+   a[1][0] = (s) * (m[1][2] * m[2][0] - m[1][0] * m[2][2]); \(\backslash\)
+   a[2][0] = (s) * (m[1][0] * m[2][1] - m[1][1] * m[2][0]); \(\backslash\)
+                                \(\backslash\)
+   a[0][1] = (s) * (m[0][2] * m[2][1] - m[0][1] * m[2][2]); \(\backslash\)
+   a[1][1] = (s) * (m[0][0] * m[2][2] - m[0][2] * m[2][0]); \(\backslash\)
+   a[2][1] = (s) * (m[0][1] * m[2][0] - m[0][0] * m[2][1]); \(\backslash\)
+                                \(\backslash\)
+   a[0][2] = (s) * (m[0][1] * m[1][2] - m[0][2] * m[1][1]); \(\backslash\)
+   a[1][2] = (s) * (m[0][2] * m[1][0] - m[0][0] * m[1][2]); \(\backslash\)
+   a[2][2] = (s) * (m[0][0] * m[1][1] - m[0][1] * m[1][0]); \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+compute adjoint of matrix and scale
+
+Computes adjoint of matrix m, scales it by s, returning a \hypertarget{gim__linear__math_8h_aa023680dd19a4837fa370a5bc90fbc62}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4@{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}}
+\index{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4@{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+A\+D\+J\+O\+I\+N\+T\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{s, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aa023680dd19a4837fa370a5bc90fbc62}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   char \_i\_,\_j\_; \(\backslash\)
+   for (\_i\_=0; \_i\_<4; \_i\_++) \{                  \(\backslash\)
+      for (\_j\_=0; \_j\_<4; \_j\_++) \{                   \hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ae8fec7bfd2283940181f8e050f06dfa8}{         COFACTOR\_4X4\_IJ} (a[\_j\_][\_i\_], m, \_i\_, \_j\_);            \(\backslash\)
+         a[\_j\_][\_i\_] *= s;                      \(\backslash\)
+      \}                             \(\backslash\)
+   \}                                \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+compute adjoint of matrix and scale
+
+Computes adjoint of matrix m, scales it by s, returning a \hypertarget{gim__linear__math_8h_a6c062577486a5e2bc00f8157cf4bc91e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}}
+\index{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a6c062577486a5e2bc00f8157cf4bc91e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] = (s) * a[0][0];     \(\backslash\)
+   b[0][1] = (s) * a[0][1];     \(\backslash\)
+                    \(\backslash\)
+   b[1][0] = (s) * a[1][0];     \(\backslash\)
+   b[1][1] = (s) * a[1][1];     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_ada79e57bb50f3462d529eb76a874fd90}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}}
+\index{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ada79e57bb50f3462d529eb76a874fd90}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] = (s) * a[0][0];     \(\backslash\)
+   b[0][1] = (s) * a[0][1];     \(\backslash\)
+   b[0][2] = (s) * a[0][2];     \(\backslash\)
+                    \(\backslash\)
+   b[1][0] = (s) * a[1][0];     \(\backslash\)
+   b[1][1] = (s) * a[1][1];     \(\backslash\)
+   b[1][2] = (s) * a[1][2];     \(\backslash\)
+                    \(\backslash\)
+   b[2][0] = (s) * a[2][0];     \(\backslash\)
+   b[2][1] = (s) * a[2][1];     \(\backslash\)
+   b[2][2] = (s) * a[2][2];     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_a002709faf3385bba39223633ac164516}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a002709faf3385bba39223633ac164516}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] = (s) * a[0][0];     \(\backslash\)
+   b[0][1] = (s) * a[0][1];     \(\backslash\)
+   b[0][2] = (s) * a[0][2];     \(\backslash\)
+   b[0][3] = (s) * a[0][3];     \(\backslash\)
+                    \(\backslash\)
+   b[1][0] = (s) * a[1][0];     \(\backslash\)
+   b[1][1] = (s) * a[1][1];     \(\backslash\)
+   b[1][2] = (s) * a[1][2];     \(\backslash\)
+   b[1][3] = (s) * a[1][3];     \(\backslash\)
+                    \(\backslash\)
+   b[2][0] = (s) * a[2][0];     \(\backslash\)
+   b[2][1] = (s) * a[2][1];     \(\backslash\)
+   b[2][2] = (s) * a[2][2];     \(\backslash\)
+   b[2][3] = (s) * a[2][3];     \(\backslash\)
+                    \(\backslash\)
+   b[3][0] = s * a[3][0];       \(\backslash\)
+   b[3][1] = s * a[3][1];       \(\backslash\)
+   b[3][2] = s * a[3][2];       \(\backslash\)
+   b[3][3] = s * a[3][3];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_a50332409e55187557084eaa37a1709a5}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}}
+\index{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{svec, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a50332409e55187557084eaa37a1709a5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] = svec[0] * a[0][0];     \(\backslash\)
+   b[1][0] = svec[0] * a[1][0];     \(\backslash\)
+                    \(\backslash\)
+   b[0][1] = svec[1] * a[0][1];     \(\backslash\)
+   b[1][1] = svec[1] * a[1][1];     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_a612535b1ef17792bedb46b1bf53af248}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}}
+\index{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{svec, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a612535b1ef17792bedb46b1bf53af248}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] = svec[0] * a[0][0];     \(\backslash\)
+   b[1][0] = svec[0] * a[1][0];     \(\backslash\)
+   b[2][0] = svec[0] * a[2][0];     \(\backslash\)
+                    \(\backslash\)
+   b[0][1] = svec[1] * a[0][1];     \(\backslash\)
+   b[1][1] = svec[1] * a[1][1];     \(\backslash\)
+   b[2][1] = svec[1] * a[2][1];     \(\backslash\)
+                    \(\backslash\)
+   b[0][2] = svec[2] * a[0][2];     \(\backslash\)
+   b[1][2] = svec[2] * a[1][2];     \(\backslash\)
+   b[2][2] = svec[2] * a[2][2];     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar. Each columns is scaled by each scalar vector component \hypertarget{gim__linear__math_8h_a6dedf3f3dbef533902e7a0b06b442c49}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+L\+E\+\_\+\+V\+E\+C\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{svec, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a6dedf3f3dbef533902e7a0b06b442c49}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+   b[0][0] = svec[0] * a[0][0];     \(\backslash\)
+   b[1][0] = svec[0] * a[1][0];     \(\backslash\)
+   b[2][0] = svec[0] * a[2][0];     \(\backslash\)
+   b[3][0] = svec[0] * a[3][0];     \(\backslash\)
+                    \(\backslash\)
+   b[0][1] = svec[1] * a[0][1];     \(\backslash\)
+   b[1][1] = svec[1] * a[1][1];     \(\backslash\)
+   b[2][1] = svec[1] * a[2][1];     \(\backslash\)
+   b[3][1] = svec[1] * a[3][1];     \(\backslash\)
+                    \(\backslash\)
+   b[0][2] = svec[2] * a[0][2];     \(\backslash\)
+   b[1][2] = svec[2] * a[1][2];     \(\backslash\)
+   b[2][2] = svec[2] * a[2][2];     \(\backslash\)
+   b[3][2] = svec[2] * a[3][2];     \(\backslash\)
+   \(\backslash\)
+   b[0][3] = svec[3] * a[0][3];     \(\backslash\)
+   b[1][3] = svec[3] * a[1][3];     \(\backslash\)
+   b[2][3] = svec[3] * a[2][3];     \(\backslash\)
+   b[3][3] = svec[3] * a[3][3];     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+multiply matrix by scalar \hypertarget{gim__linear__math_8h_aceefcd77a177bd5d29d5e541362d8523}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}}
+\index{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2@{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+2\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aceefcd77a177bd5d29d5e541362d8523}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[1][0];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[0][1];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix transpose \hypertarget{gim__linear__math_8h_ab6322f456acd6d33c6a012f1d3fb1813}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}}
+\index{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3@{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ab6322f456acd6d33c6a012f1d3fb1813}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[1][0];       \(\backslash\)
+   b[0][2] = a[2][0];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[0][1];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+   b[1][2] = a[2][1];       \(\backslash\)
+                \(\backslash\)
+   b[2][0] = a[0][2];       \(\backslash\)
+   b[2][1] = a[1][2];       \(\backslash\)
+   b[2][2] = a[2][2];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix transpose \hypertarget{gim__linear__math_8h_a4285afe0c1ae9b3295d8cc01600017db}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+A\+N\+S\+P\+O\+S\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a4285afe0c1ae9b3295d8cc01600017db}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+   b[0][0] = a[0][0];       \(\backslash\)
+   b[0][1] = a[1][0];       \(\backslash\)
+   b[0][2] = a[2][0];       \(\backslash\)
+   b[0][3] = a[3][0];       \(\backslash\)
+                \(\backslash\)
+   b[1][0] = a[0][1];       \(\backslash\)
+   b[1][1] = a[1][1];       \(\backslash\)
+   b[1][2] = a[2][1];       \(\backslash\)
+   b[1][3] = a[3][1];       \(\backslash\)
+                \(\backslash\)
+   b[2][0] = a[0][2];       \(\backslash\)
+   b[2][1] = a[1][2];       \(\backslash\)
+   b[2][2] = a[2][2];       \(\backslash\)
+   b[2][3] = a[3][2];       \(\backslash\)
+                \(\backslash\)
+   b[3][0] = a[0][3];       \(\backslash\)
+   b[3][1] = a[1][3];       \(\backslash\)
+   b[3][2] = a[2][3];       \(\backslash\)
+   b[3][3] = a[3][3];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+matrix transpose \hypertarget{gim__linear__math_8h_af47bd58c55125c39d4d029ed13e82381}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+A\+C\+C\+U\+M@{V\+E\+C\+\_\+\+A\+C\+C\+U\+M}}
+\index{V\+E\+C\+\_\+\+A\+C\+C\+U\+M@{V\+E\+C\+\_\+\+A\+C\+C\+U\+M}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+A\+C\+C\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+A\+C\+C\+U\+M(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af47bd58c55125c39d4d029ed13e82381}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (c)[0] += (a)*(b)[0];            \(\backslash\)
+   (c)[1] += (a)*(b)[1];            \(\backslash\)
+   (c)[2] += (a)*(b)[2];            \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+accumulate scaled vector 
+
+\hypertarget{gim__linear__math_8h_a0792dad57046c2929570c66881a104e6}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2@{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2}}
+\index{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2@{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0792dad57046c2929570c66881a104e6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (c)[0] += (a)*(b)[0];            \(\backslash\)
+   (c)[1] += (a)*(b)[1];            \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+accumulate scaled vector 
+
+\hypertarget{gim__linear__math_8h_ad10421d1984f07375e5f38c9975500eb}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4@{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4}}
+\index{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4@{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+A\+C\+C\+U\+M\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ad10421d1984f07375e5f38c9975500eb}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (c)[0] += (a)*(b)[0];            \(\backslash\)
+   (c)[1] += (a)*(b)[1];            \(\backslash\)
+   (c)[2] += (a)*(b)[2];            \(\backslash\)
+   (c)[3] += (a)*(b)[3];            \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+accumulate scaled vector 
+
+\hypertarget{gim__linear__math_8h_ad27cffb9482010310ff7c635ce8ce4d5}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+B\+L\+E\+N\+D@{V\+E\+C\+\_\+\+B\+L\+E\+N\+D}}
+\index{V\+E\+C\+\_\+\+B\+L\+E\+N\+D@{V\+E\+C\+\_\+\+B\+L\+E\+N\+D}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+B\+L\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+B\+L\+E\+N\+D(
+\begin{DoxyParamCaption}
+\item[{}]{vr, }
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~{\bf V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B}(vr,(1-\/s),a,s,b)}}\label{gim__linear__math_8h_ad27cffb9482010310ff7c635ce8ce4d5}
+Vector blending Takes two vectors a, b, blends them together with s $<$=1 \hypertarget{gim__linear__math_8h_ae9733a52284dec62a34d0b10c284073a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B@{V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B}}
+\index{V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B@{V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+B(
+\begin{DoxyParamCaption}
+\item[{}]{vr, }
+\item[{}]{sa, }
+\item[{}]{a, }
+\item[{}]{sb, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ae9733a52284dec62a34d0b10c284073a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   vr[0] = (sa) * (a)[0] + (sb) * (b)[0];   \(\backslash\)
+   vr[1] = (sa) * (a)[1] + (sb) * (b)[1];   \(\backslash\)
+   vr[2] = (sa) * (a)[2] + (sb) * (b)[2];   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+Vector blending Takes two vectors a, b, blends them together with two scalars \hypertarget{gim__linear__math_8h_af2f0691024d52985be12009ef63b3c2c}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H@{V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H@{V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+C\+O\+N\+J\+U\+G\+A\+T\+E\+\_\+\+L\+E\+N\+G\+T\+H(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af2f0691024d52985be12009ef63b3c2c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = 1.0 - a[0]*a[0] - a[1]*a[1] - a[2]*a[2];\(\backslash\)
+    GIM\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector length. 
+
+\hypertarget{gim__linear__math_8h_ab8018413588afb0cdef51bdca35eab54}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+C\+O\+P\+Y@{V\+E\+C\+\_\+\+C\+O\+P\+Y}}
+\index{V\+E\+C\+\_\+\+C\+O\+P\+Y@{V\+E\+C\+\_\+\+C\+O\+P\+Y}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+C\+O\+P\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+C\+O\+P\+Y(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ab8018413588afb0cdef51bdca35eab54}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (b)[0] = (a)[0];             \(\backslash\)
+   (b)[1] = (a)[1];             \(\backslash\)
+   (b)[2] = (a)[2];             \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Copy 3\+D vector. 
+
+\hypertarget{gim__linear__math_8h_a5e169abbe1945f72fefcca0753423d0e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2@{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2}}
+\index{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2@{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a5e169abbe1945f72fefcca0753423d0e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (b)[0] = (a)[0];             \(\backslash\)
+   (b)[1] = (a)[1];             \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector copy. 
+
+\hypertarget{gim__linear__math_8h_af8a88efd3659cb1e690bddfd574a957a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4@{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4}}
+\index{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4@{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+C\+O\+P\+Y\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af8a88efd3659cb1e690bddfd574a957a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (b)[0] = (a)[0];             \(\backslash\)
+   (b)[1] = (a)[1];             \(\backslash\)
+   (b)[2] = (a)[2];             \(\backslash\)
+   (b)[3] = (a)[3];             \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Copy 4\+D vector. 
+
+\hypertarget{gim__linear__math_8h_a62c7e1537c9e1017df8bf2e1836bf56a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+C\+R\+O\+S\+S@{V\+E\+C\+\_\+\+C\+R\+O\+S\+S}}
+\index{V\+E\+C\+\_\+\+C\+R\+O\+S\+S@{V\+E\+C\+\_\+\+C\+R\+O\+S\+S}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+C\+R\+O\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+C\+R\+O\+S\+S(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a62c7e1537c9e1017df8bf2e1836bf56a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   c[0] = (a)[1] * (b)[2] - (a)[2] * (b)[1];    \(\backslash\)
+   c[1] = (a)[2] * (b)[0] - (a)[0] * (b)[2];    \(\backslash\)
+   c[2] = (a)[0] * (b)[1] - (a)[1] * (b)[0];    \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector cross. 
+
+\hypertarget{gim__linear__math_8h_ac4e09c9fff7d73d4ecf1db099342c65d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+D\+I\+F\+F@{V\+E\+C\+\_\+\+D\+I\+F\+F}}
+\index{V\+E\+C\+\_\+\+D\+I\+F\+F@{V\+E\+C\+\_\+\+D\+I\+F\+F}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+D\+I\+F\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+D\+I\+F\+F(
+\begin{DoxyParamCaption}
+\item[{}]{v21, }
+\item[{}]{v2, }
+\item[{}]{v1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ac4e09c9fff7d73d4ecf1db099342c65d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (v21)[0] = (v2)[0] - (v1)[0];        \(\backslash\)
+   (v21)[1] = (v2)[1] - (v1)[1];        \(\backslash\)
+   (v21)[2] = (v2)[2] - (v1)[2];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector difference. 
+
+\hypertarget{gim__linear__math_8h_ab38ab2ae5a06f6f72c51b3dabfc33f39}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2@{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2}}
+\index{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2@{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{v21, }
+\item[{}]{v2, }
+\item[{}]{v1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ab38ab2ae5a06f6f72c51b3dabfc33f39}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (v21)[0] = (v2)[0] - (v1)[0];        \(\backslash\)
+   (v21)[1] = (v2)[1] - (v1)[1];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector difference. 
+
+\hypertarget{gim__linear__math_8h_a0b556d87d73349dde19eed529a1cbd5a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4@{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4}}
+\index{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4@{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+D\+I\+F\+F\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{v21, }
+\item[{}]{v2, }
+\item[{}]{v1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0b556d87d73349dde19eed529a1cbd5a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (v21)[0] = (v2)[0] - (v1)[0];        \(\backslash\)
+   (v21)[1] = (v2)[1] - (v1)[1];        \(\backslash\)
+   (v21)[2] = (v2)[2] - (v1)[2];        \(\backslash\)
+   (v21)[3] = (v2)[3] - (v1)[3];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector difference. 
+
+\hypertarget{gim__linear__math_8h_a3056965a0818b773d7689b763e9bdd66}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E@{V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E}}
+\index{V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E@{V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+len, }
+\item[{}]{\+\_\+va, }
+\item[{}]{\+\_\+vb}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a3056965a0818b773d7689b763e9bdd66}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\hyperlink{gim__geom__types_8h_a7d4438fb6b78ad7be0723a61247a4480}{\(\backslash\)}
+\hyperlink{gim__geom__types_8h_a7d4438fb6b78ad7be0723a61247a4480}{    vec3f} \_tmp\_;               \hyperlink{gim__linear__math_8h_ac4e09c9fff7d73d4ecf1db099342c65d}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_ac4e09c9fff7d73d4ecf1db099342c65d}{    VEC\_DIFF}(\_tmp\_, \_vb, \_va);          \hyperlink{gim__linear__math_8h_abddd1b010b51bfbbca0118e314e14d4b}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_abddd1b010b51bfbbca0118e314e14d4b}{    VEC\_LENGTH}(\_tmp\_,\_len);           \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+distance between two points 
+
+\hypertarget{gim__linear__math_8h_af099ab2260f399c4aae1b396765ecdd1}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3@{V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3}}
+\index{V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3@{V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+D\+O\+T\+\_\+\+M\+A\+T\+\_\+3\+X3(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{v, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af099ab2260f399c4aae1b396765ecdd1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                               \(\backslash\)
+   p[0] = v[0]*m[0][0] + v[1]*m[1][0] + v[2]*m[2][0];       \(\backslash\)
+   p[1] = v[0]*m[0][1] + v[1]*m[1][1] + v[2]*m[2][1];       \(\backslash\)
+   p[2] = v[0]*m[0][2] + v[1]*m[1][2] + v[2]*m[2][2];       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+vector transpose times matrix
+
+p\mbox{[}j\mbox{]} = v\mbox{[}0\mbox{]}$\ast$m\mbox{[}0\mbox{]}\mbox{[}j\mbox{]} + v\mbox{[}1\mbox{]}$\ast$m\mbox{[}1\mbox{]}\mbox{[}j\mbox{]} + v\mbox{[}2\mbox{]}$\ast$m\mbox{[}2\mbox{]}\mbox{[}j\mbox{]}; \hypertarget{gim__linear__math_8h_ad6bcb52872cdbf5db316c54fb59a2555}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T@{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T}}
+\index{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T@{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T(
+\begin{DoxyParamCaption}
+\item[{}]{bsq, }
+\item[{}]{direction, }
+\item[{}]{position}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ad6bcb52872cdbf5db316c54fb59a2555}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\hyperlink{gim__linear__math_8h_a686ce28d56604506f31d76c740ac4fd1}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a686ce28d56604506f31d76c740ac4fd1}{   VEC\_IMPACT\_SQ}(bsq,direction,position);       \(\backslash\)
+   GIM\_SQRT(bsq,bsq);                   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+vector impact parameter 
+
+\hypertarget{gim__linear__math_8h_a686ce28d56604506f31d76c740ac4fd1}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q@{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q}}
+\index{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q@{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+S\+Q(
+\begin{DoxyParamCaption}
+\item[{}]{bsq, }
+\item[{}]{direction, }
+\item[{}]{position}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a686ce28d56604506f31d76c740ac4fd1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+   GREAL \_llel\_ = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(direction, position);\(\backslash\)
+   bsq = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(position, position) - \_llel\_*\_llel\_;\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+vector impact parameter (squared) 
+
+\hypertarget{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H@{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H@{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(a,a);\(\backslash\)
+    GIM\_INV\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector inv length. 
+
+\hypertarget{gim__linear__math_8h_a21417383be15c936d993d4305661a679}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2@{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}}
+\index{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2@{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a21417383be15c936d993d4305661a679}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = \hyperlink{gim__linear__math_8h_a4c6bdb143aded86fa23b3c8ca545d355}{VEC\_DOT\_2}(a,a);\(\backslash\)
+    GIM\_INV\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector inv length. 
+
+\hypertarget{gim__linear__math_8h_aec4f953602d2225b220839a98f2e867d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4@{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}}
+\index{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4@{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+I\+N\+V\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aec4f953602d2225b220839a98f2e867d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = \hyperlink{gim__linear__math_8h_a0dc5b3c33b9936287fd9c855b7c6f790}{VEC\_DOT\_4}(a,a);\(\backslash\)
+    GIM\_INV\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector inv length. 
+
+\hypertarget{gim__linear__math_8h_abddd1b010b51bfbbca0118e314e14d4b}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H@{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H@{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_abddd1b010b51bfbbca0118e314e14d4b}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(a,a);\(\backslash\)
+    GIM\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector length. 
+
+\hypertarget{gim__linear__math_8h_a8854c1374762d046f1e17063d03d88fc}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2@{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}}
+\index{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2@{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a8854c1374762d046f1e17063d03d88fc}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = \hyperlink{gim__linear__math_8h_a4c6bdb143aded86fa23b3c8ca545d355}{VEC\_DOT\_2}(a,a);\(\backslash\)
+    GIM\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector length. 
+
+\hypertarget{gim__linear__math_8h_aa2a0b317baba0ab8d6990d0e2815f6b5}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4@{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}}
+\index{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4@{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aa2a0b317baba0ab8d6990d0e2815f6b5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL \_pp = \hyperlink{gim__linear__math_8h_a0dc5b3c33b9936287fd9c855b7c6f790}{VEC\_DOT\_4}(a,a);\(\backslash\)
+    GIM\_SQRT(\_pp,l);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector length. 
+
+\hypertarget{gim__linear__math_8h_a5cf3a6b009f0d134790408b080c21d05}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D@{V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D}}
+\index{V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D@{V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+M\+A\+Y\+O\+R\+\_\+\+C\+O\+O\+R\+D(
+\begin{DoxyParamCaption}
+\item[{}]{vec, }
+\item[{}]{maxc}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a5cf3a6b009f0d134790408b080c21d05}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    GREAL A[] = \{fabs(vec[0]),fabs(vec[1]),fabs(vec[2])\};\(\backslash\)
+    maxc =  A[0]>A[1]?(A[0]>A[2]?0:2):(A[1]>A[2]?1:2);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Finds the bigger cartesian coordinate from a vector. 
+
+\hypertarget{gim__linear__math_8h_a2eb685c9915f558e63d161380ec34aec}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S@{V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S}}
+\index{V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S@{V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+A\+X\+E\+S(
+\begin{DoxyParamCaption}
+\item[{}]{vec, }
+\item[{}]{i0, }
+\item[{}]{i1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a2eb685c9915f558e63d161380ec34aec}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\hyperlink{gim__linear__math_8h_a5cf3a6b009f0d134790408b080c21d05}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_a5cf3a6b009f0d134790408b080c21d05}{    VEC\_MAYOR\_COORD}(vec,i0);\(\backslash\)
+    i0 = (i0+1)%3;\(\backslash\)
+    i1 = (i0+1)%3;\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Finds the 2 smallest cartesian coordinates from a vector. 
+
+\hypertarget{gim__linear__math_8h_aaf654e98fc3d0b65b965f942c031752a}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E@{V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}}
+\index{V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E@{V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aaf654e98fc3d0b65b965f942c031752a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{   \(\backslash\)
+    GREAL len;\hyperlink{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}{    VEC\_INV\_LENGTH}(a,len); \(\backslash\)
+    if(len<G\_REAL\_INFINITY)\(\backslash\)
+    \{\(\backslash\)
+        a[0] *= len;                \(\backslash\)
+        a[1] *= len;                \(\backslash\)
+        a[2] *= len;                \(\backslash\)
+    \}                       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector length. 
+
+\hypertarget{gim__linear__math_8h_a507ad6241454e073b2ae5f1458dccb8d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L@{V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L}}
+\index{V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L@{V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L(
+\begin{DoxyParamCaption}
+\item[{}]{vp, }
+\item[{}]{v, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a507ad6241454e073b2ae5f1458dccb8d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   GREAL dot = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(v, n);            \(\backslash\)
+   vp[0] = (dot) * (n)[0];          \(\backslash\)
+   vp[1] = (dot) * (n)[1];          \(\backslash\)
+   vp[2] = (dot) * (n)[2];          \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+Vector parallel -- assumes that n is of unit length \hypertarget{gim__linear__math_8h_a39371ce4be712dc5bfa5378de512702d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R@{V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R}}
+\index{V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R@{V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+A\+R(
+\begin{DoxyParamCaption}
+\item[{}]{vp, }
+\item[{}]{v, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a39371ce4be712dc5bfa5378de512702d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   GREAL dot = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(v, n);            \(\backslash\)
+   vp[0] = (v)[0] - dot*(n)[0];     \(\backslash\)
+   vp[1] = (v)[1] - dot*(n)[1];     \(\backslash\)
+   vp[2] = (v)[2] - dot*(n)[2];     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+Vector perp -- assumes that n is of unit length accepts vector v, subtracts out any component parallel to n \hypertarget{gim__linear__math_8h_a0749ff2ca1b3ba2e08184602f70150f6}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T@{V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T}}
+\index{V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T@{V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+P\+R\+O\+J\+E\+C\+T(
+\begin{DoxyParamCaption}
+\item[{}]{vp, }
+\item[{}]{v, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a0749ff2ca1b3ba2e08184602f70150f6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{ \(\backslash\)
+    GREAL scalar = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(v, n);            \(\backslash\)
+    scalar/= \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(n, n); \(\backslash\)
+    vp[0] = (scalar) * (n)[0];          \(\backslash\)
+    vp[1] = (scalar) * (n)[1];          \(\backslash\)
+    vp[2] = (scalar) * (n)[2];          \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+Same as Vector parallel -- n can have any length accepts vector v, subtracts out any component perpendicular to n \hypertarget{gim__linear__math_8h_acdf9e604cbb083daea0e04913aa61cb8}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T@{V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T}}
+\index{V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T@{V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+R\+E\+F\+L\+E\+C\+T(
+\begin{DoxyParamCaption}
+\item[{}]{vr, }
+\item[{}]{v, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_acdf9e604cbb083daea0e04913aa61cb8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   GREAL dot = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(v, n);            \(\backslash\)
+   vr[0] = (v)[0] - 2.0 * (dot) * (n)[0];   \(\backslash\)
+   vr[1] = (v)[1] - 2.0 * (dot) * (n)[1];   \(\backslash\)
+   vr[2] = (v)[2] - 2.0 * (dot) * (n)[2];   \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+Vector reflection -- assumes n is of unit length Takes vector v, reflects it against reflector n, and returns vr \hypertarget{gim__linear__math_8h_a569442381b1cd2b7b288e1ff49745b8c}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E@{V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E}}
+\index{V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E@{V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+R\+E\+N\+O\+R\+M\+A\+L\+I\+Z\+E(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{newlen}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a569442381b1cd2b7b288e1ff49745b8c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{   \(\backslash\)
+    GREAL len;\hyperlink{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}{\(\backslash\)}
+\hyperlink{gim__linear__math_8h_af74611859738f2ee03f54aaaabbb5605}{    VEC\_INV\_LENGTH}(a,len); \(\backslash\)
+    if(len<G\_REAL\_INFINITY)\(\backslash\)
+    \{\(\backslash\)
+        len *= newlen;\(\backslash\)
+        a[0] *= len;                \(\backslash\)
+        a[1] *= len;                \(\backslash\)
+        a[2] *= len;                \(\backslash\)
+    \}                       \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Set Vector size. 
+
+\hypertarget{gim__linear__math_8h_a935e5dd288737b2d4a7976ce1e807079}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+C\+A\+L\+E@{V\+E\+C\+\_\+\+S\+C\+A\+L\+E}}
+\index{V\+E\+C\+\_\+\+S\+C\+A\+L\+E@{V\+E\+C\+\_\+\+S\+C\+A\+L\+E}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+C\+A\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+C\+A\+L\+E(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a935e5dd288737b2d4a7976ce1e807079}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (c)[0] = (a)*(b)[0];             \(\backslash\)
+   (c)[1] = (a)*(b)[1];             \(\backslash\)
+   (c)[2] = (a)*(b)[2];             \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+scalar times vector 
+
+\hypertarget{gim__linear__math_8h_a401cf4a4fa9736b8a5554a0bb3399258}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2@{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2}}
+\index{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2@{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a401cf4a4fa9736b8a5554a0bb3399258}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (c)[0] = (a)*(b)[0];             \(\backslash\)
+   (c)[1] = (a)*(b)[1];             \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+scalar times vector 
+
+\hypertarget{gim__linear__math_8h_ac77b8e88e6e280b2d073064bdb450a91}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4@{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4}}
+\index{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4@{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ac77b8e88e6e280b2d073064bdb450a91}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (c)[0] = (a)*(b)[0];             \(\backslash\)
+   (c)[1] = (a)*(b)[1];             \(\backslash\)
+   (c)[2] = (a)*(b)[2];             \(\backslash\)
+   (c)[3] = (a)*(b)[3];             \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+scalar times vector 
+
+\hypertarget{gim__linear__math_8h_aa9725f7431087ce9b1109f5c38c04144}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+U\+M@{V\+E\+C\+\_\+\+S\+U\+M}}
+\index{V\+E\+C\+\_\+\+S\+U\+M@{V\+E\+C\+\_\+\+S\+U\+M}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+U\+M(
+\begin{DoxyParamCaption}
+\item[{}]{v21, }
+\item[{}]{v2, }
+\item[{}]{v1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aa9725f7431087ce9b1109f5c38c04144}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (v21)[0] = (v2)[0] + (v1)[0];        \(\backslash\)
+   (v21)[1] = (v2)[1] + (v1)[1];        \(\backslash\)
+   (v21)[2] = (v2)[2] + (v1)[2];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector sum. 
+
+\hypertarget{gim__linear__math_8h_a089606db0ab70a66120efd7a410593f0}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+U\+M\+\_\+2@{V\+E\+C\+\_\+\+S\+U\+M\+\_\+2}}
+\index{V\+E\+C\+\_\+\+S\+U\+M\+\_\+2@{V\+E\+C\+\_\+\+S\+U\+M\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+U\+M\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+U\+M\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{v21, }
+\item[{}]{v2, }
+\item[{}]{v1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a089606db0ab70a66120efd7a410593f0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (v21)[0] = (v2)[0] + (v1)[0];        \(\backslash\)
+   (v21)[1] = (v2)[1] + (v1)[1];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector sum. 
+
+\hypertarget{gim__linear__math_8h_aaba3e7af10af69624564bb12d0e30e5e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+U\+M\+\_\+4@{V\+E\+C\+\_\+\+S\+U\+M\+\_\+4}}
+\index{V\+E\+C\+\_\+\+S\+U\+M\+\_\+4@{V\+E\+C\+\_\+\+S\+U\+M\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+U\+M\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+U\+M\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{v21, }
+\item[{}]{v2, }
+\item[{}]{v1}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aaba3e7af10af69624564bb12d0e30e5e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (v21)[0] = (v2)[0] + (v1)[0];        \(\backslash\)
+   (v21)[1] = (v2)[1] + (v1)[1];        \(\backslash\)
+   (v21)[2] = (v2)[2] + (v1)[2];        \(\backslash\)
+   (v21)[3] = (v2)[3] + (v1)[3];        \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector sum. 
+
+\hypertarget{gim__linear__math_8h_a1627bf177f521a219326496e5028bb9e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+S\+W\+A\+P@{V\+E\+C\+\_\+\+S\+W\+A\+P}}
+\index{V\+E\+C\+\_\+\+S\+W\+A\+P@{V\+E\+C\+\_\+\+S\+W\+A\+P}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+S\+W\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+S\+W\+A\+P(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a1627bf177f521a219326496e5028bb9e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{  \hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{\(\backslash\)}
+\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{    GIM\_SWAP\_NUMBERS}((b)[0],(a)[0]);\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{\(\backslash\)}
+\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{    GIM\_SWAP\_NUMBERS}((b)[1],(a)[1]);\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{\(\backslash\)}
+\hyperlink{gim__math_8h_a4180c34946b372c111c6b3a41c4a17fe}{    GIM\_SWAP\_NUMBERS}((b)[2],(a)[2]);\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+V\+E\+C\+T\+O\+R S\+W\+A\+P. 
+
+\hypertarget{gim__linear__math_8h_af15b5a9ed8acec92bd4713ef1b1bfd8d}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T@{V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T}}
+\index{V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T@{V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+U\+N\+P\+R\+O\+J\+E\+C\+T(
+\begin{DoxyParamCaption}
+\item[{}]{vp, }
+\item[{}]{v, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_af15b5a9ed8acec92bd4713ef1b1bfd8d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{ \(\backslash\)
+    GREAL scalar = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(v, n);            \(\backslash\)
+    scalar = \hyperlink{gim__linear__math_8h_a645feed3e0b3876242458c9d848ed0fe}{VEC\_DOT}(n, n)/scalar; \(\backslash\)
+    vp[0] = (scalar) * (n)[0];          \(\backslash\)
+    vp[1] = (scalar) * (n)[1];          \(\backslash\)
+    vp[2] = (scalar) * (n)[2];          \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+accepts vector v \hypertarget{gim__linear__math_8h_a256521a640c383008e193f9176a027e1}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+Z\+E\+R\+O@{V\+E\+C\+\_\+\+Z\+E\+R\+O}}
+\index{V\+E\+C\+\_\+\+Z\+E\+R\+O@{V\+E\+C\+\_\+\+Z\+E\+R\+O}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+Z\+E\+R\+O}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+Z\+E\+R\+O(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a256521a640c383008e193f9176a027e1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (a)[0] = (a)[1] = (a)[2] = 0.0f;     \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Zero out a 3\+D vector. 
+
+\hypertarget{gim__linear__math_8h_addf58d1ce6189c2674dfb47337769528}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2@{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2}}
+\index{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2@{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+2(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_addf58d1ce6189c2674dfb47337769528}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (a)[0] = (a)[1] = 0.0f;          \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Zero out a 2\+D vector. 
+
+\hypertarget{gim__linear__math_8h_ac18fd79af4df8ad7fbd8ba680907ce4f}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4@{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4}}
+\index{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4@{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+E\+C\+\_\+\+Z\+E\+R\+O\+\_\+4(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_ac18fd79af4df8ad7fbd8ba680907ce4f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   (a)[0] = (a)[1] = (a)[2] = (a)[3] = 0.0f;    \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Zero out a 4\+D vector. 
+
+\hypertarget{gim__linear__math_8h_a934bf58d1881fa181f4349af08cd9eb0}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C@{X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}}
+\index{X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C@{X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C(
+\begin{DoxyParamCaption}
+\item[{}]{dst, }
+\item[{}]{src}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a934bf58d1881fa181f4349af08cd9eb0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                      \(\backslash\)
+    dst[0] = 0.0f;     \(\backslash\)
+    dst[1] = -src[2];  \(\backslash\)
+    dst[2] = src[1];  \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Vector cross. 
+
+\hypertarget{gim__linear__math_8h_aeaa68dfd0dd0dd9712a9023218a60b83}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C@{Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}}
+\index{Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C@{Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C(
+\begin{DoxyParamCaption}
+\item[{}]{dst, }
+\item[{}]{src}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_aeaa68dfd0dd0dd9712a9023218a60b83}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                      \(\backslash\)
+    dst[0] = src[2];     \(\backslash\)
+    dst[1] = 0.0f;  \(\backslash\)
+    dst[2] = -src[0];  \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__linear__math_8h_a4689354d9839fe579cb8981d5742ec43}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C@{Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}}
+\index{Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C@{Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+\_\+\+A\+X\+I\+S\+\_\+\+C\+R\+O\+S\+S\+\_\+\+V\+E\+C(
+\begin{DoxyParamCaption}
+\item[{}]{dst, }
+\item[{}]{src}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_a4689354d9839fe579cb8981d5742ec43}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                      \(\backslash\)
+    dst[0] = -src[1];     \(\backslash\)
+    dst[1] = src[0];  \(\backslash\)
+    dst[2] = 0.0f;  \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__linear__math_8h_abdd6663619451330826ff1e50f7dd30e}{\index{gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}!Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}}
+\index{Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4@{Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}!gim\+\_\+linear\+\_\+math.\+h@{gim\+\_\+linear\+\_\+math.\+h}}
+\subsubsection[{Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+E\+R\+O\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+4\+X4(
+\begin{DoxyParamCaption}
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}\label{gim__linear__math_8h_abdd6663619451330826ff1e50f7dd30e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+   m[0][0] = 0.0;               \(\backslash\)
+   m[0][1] = 0.0;               \(\backslash\)
+   m[0][2] = 0.0;               \(\backslash\)
+   m[0][3] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[1][0] = 0.0;               \(\backslash\)
+   m[1][1] = 0.0;               \(\backslash\)
+   m[1][2] = 0.0;               \(\backslash\)
+   m[1][3] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[2][0] = 0.0;               \(\backslash\)
+   m[2][1] = 0.0;               \(\backslash\)
+   m[2][2] = 0.0;               \(\backslash\)
+   m[2][3] = 0.0;               \(\backslash\)
+                        \(\backslash\)
+   m[3][0] = 0.0;               \(\backslash\)
+   m[3][1] = 0.0;               \(\backslash\)
+   m[3][2] = 0.0;               \(\backslash\)
+   m[3][3] = 0.0;               \(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+initialize matrix 

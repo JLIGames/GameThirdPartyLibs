@@ -1,0 +1,21 @@
+digraph "Assimp::BaseImporter::TextFileToBuffer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::BaseImporter\l::TextFileToBuffer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::IOStream::FileSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#aaa01183d197fb714f28d6c611b6fa058",tooltip="Returns filesize Returns the filesize. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::IOStream::Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#ae376f641020989d61863b9c6f55c7abf",tooltip="Read from the file. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::BaseImporter\l::ConvertToUTF8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_base_importer.html#a3cd8c81533de987dd7acea6874ad918c"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::Logger::debug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a3b10454ab4c0949f251062376d9c4161",tooltip="Writes a debug message. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::Logger::OnDebug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aded6996d20f14204877097b88bd5eac6",tooltip="Called as a request to write a specific debug message. "];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::ByteSwap::Swap2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_byte_swap.html#abacbb767ce53adb84d19e6adae7d5b1d"];
+}

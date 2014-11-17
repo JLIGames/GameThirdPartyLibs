@@ -1,0 +1,210 @@
+\hypertarget{class_c_batch}{\section{C\+Batch Class Reference}
+\label{class_c_batch}\index{C\+Batch@{C\+Batch}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_batch_a61c0645f155afdf7bcfed00de5f2231d}{C\+Batch} ()
+\item 
+\hyperlink{class_c_batch_a4d0c351b4234df7e092195c526f0a365}{C\+Batch} (const \hyperlink{class_c_batch}{C\+Batch} \&src)
+\item 
+\hyperlink{class_c_batch_a8171b2a263b3ca733e217f7efec86ffc}{$\sim$\+C\+Batch} ()
+\item 
+\hyperlink{class_c_batch}{C\+Batch} \& \hyperlink{class_c_batch_af09c040da33474f653698b649934a334}{operator=} (const \hyperlink{class_c_batch}{C\+Batch} \&src)
+\item 
+void \hyperlink{class_c_batch_a475f0d205d3387ec322e4af535170c1a}{Set\+Size} (const int n\+Size)
+\item 
+void \hyperlink{class_c_batch_afd1ff8a7cb2a65e8fbaba18672299db2}{Clear} ()
+\item 
+bool \hyperlink{class_c_batch_a9f9873ef7c040d6dd9b17336388fe696}{Add} (const int n)
+\item 
+void \hyperlink{class_c_batch_ad4612721b684b0fa74e0936c525d1129}{Merge} (const \hyperlink{class_c_batch}{C\+Batch} \&src)
+\item 
+int \hyperlink{class_c_batch_aa5be47c8e0dfc0e236cb7dfa38ede946}{Test\+Merge} (const \hyperlink{class_c_batch}{C\+Batch} \&src)
+\item 
+bool \hyperlink{class_c_batch_a76b1e6c4b8fb7a65a2b2cf3c0ca66597}{Contains} (const \hyperlink{class_c_batch}{C\+Batch} \&batch) const 
+\item 
+bool \hyperlink{class_c_batch_a529efde7b744a22711ae6ddffad14c8b}{Contains} (const int n) const 
+\item 
+void \hyperlink{class_c_batch_a628a95a6e596cf2effd45cf5eabc528d}{Write} (int $\ast$const pn, int $\ast$const pn\+Cnt) const 
+\item 
+void \hyperlink{class_c_batch_ab5ad6d04fe2b939895a4033bc0f7d62f}{Get\+Vertex\+Bone\+Indices} (float $\ast$const pf\+I, const float $\ast$const pf\+W, const int n)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_batch_abaa7c79f549e96105ee0ddd7914a937d}{int {\bfseries m\+\_\+n\+Capacity}}\label{class_c_batch_abaa7c79f549e96105ee0ddd7914a937d}
+
+\item 
+\hypertarget{class_c_batch_adb9dd5810dfb4ec182843f465d6f70d5}{int {\bfseries m\+\_\+n\+Cnt}}\label{class_c_batch_adb9dd5810dfb4ec182843f465d6f70d5}
+
+\item 
+\hypertarget{class_c_batch_a0cefd10f3ab65349e5b2200cfef54fe3}{int $\ast$ {\bfseries m\+\_\+pn\+Palette}}\label{class_c_batch_a0cefd10f3ab65349e5b2200cfef54fe3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+  \hyperlink{class_c_batch}{C\+Batch}  Class to contain and manage batch information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_batch_a61c0645f155afdf7bcfed00de5f2231d}{\index{C\+Batch@{C\+Batch}!C\+Batch@{C\+Batch}}
+\index{C\+Batch@{C\+Batch}!C\+Batch@{C\+Batch}}
+\subsubsection[{C\+Batch}]{\setlength{\rightskip}{0pt plus 5cm}C\+Batch\+::\+C\+Batch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a61c0645f155afdf7bcfed00de5f2231d}
+
+
+  \hyperlink{class_c_batch}{C\+Batch}  The default constructor \hypertarget{class_c_batch_a4d0c351b4234df7e092195c526f0a365}{\index{C\+Batch@{C\+Batch}!C\+Batch@{C\+Batch}}
+\index{C\+Batch@{C\+Batch}!C\+Batch@{C\+Batch}}
+\subsubsection[{C\+Batch}]{\setlength{\rightskip}{0pt plus 5cm}C\+Batch\+::\+C\+Batch (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Batch} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a4d0c351b4234df7e092195c526f0a365}
+
+
+  \hyperlink{class_c_batch}{C\+Batch}  src \hyperlink{class_c_batch}{C\+Batch} to copy  Copy constructor 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_batch_a8171b2a263b3ca733e217f7efec86ffc}{\index{C\+Batch@{C\+Batch}!````~C\+Batch@{$\sim$\+C\+Batch}}
+\index{````~C\+Batch@{$\sim$\+C\+Batch}!C\+Batch@{C\+Batch}}
+\subsubsection[{$\sim$\+C\+Batch}]{\setlength{\rightskip}{0pt plus 5cm}C\+Batch\+::$\sim$\+C\+Batch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a8171b2a263b3ca733e217f7efec86ffc}
+
+
+  $\sim$\+C\+Batch  Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_batch_a9f9873ef7c040d6dd9b17336388fe696}{\index{C\+Batch@{C\+Batch}!Add@{Add}}
+\index{Add@{Add}!C\+Batch@{C\+Batch}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Batch\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{const int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a9f9873ef7c040d6dd9b17336388fe696}
+
+
+  Clear  n The index of the new item Return bool Returns true if the item already exists or has been added.  Adds a new item to the batch, providing it has not already been added to the batch and the count doesn't exceed the maximum number of bones the batch can hold. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_batch_afd1ff8a7cb2a65e8fbaba18672299db2}{\index{C\+Batch@{C\+Batch}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Batch@{C\+Batch}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Batch\+::\+Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_afd1ff8a7cb2a65e8fbaba18672299db2}
+
+
+  Clear  Resets the count \hypertarget{class_c_batch_a76b1e6c4b8fb7a65a2b2cf3c0ca66597}{\index{C\+Batch@{C\+Batch}!Contains@{Contains}}
+\index{Contains@{Contains}!C\+Batch@{C\+Batch}}
+\subsubsection[{Contains}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Batch\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Batch} \&}]{batch}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a76b1e6c4b8fb7a65a2b2cf3c0ca66597}
+
+
+  Contains  src The batch to compare  bool Returns true if the batch and the input batch have at least one item in common  Returns true if the batch's have at least one item in common 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_batch_a529efde7b744a22711ae6ddffad14c8b}{\index{C\+Batch@{C\+Batch}!Contains@{Contains}}
+\index{Contains@{Contains}!C\+Batch@{C\+Batch}}
+\subsubsection[{Contains}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Batch\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const int}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a529efde7b744a22711ae6ddffad14c8b}
+
+
+  Contains  n The index of the new item  bool Returns true if the batch contains the item  Returns true if the batch contains the item. \hypertarget{class_c_batch_ab5ad6d04fe2b939895a4033bc0f7d62f}{\index{C\+Batch@{C\+Batch}!Get\+Vertex\+Bone\+Indices@{Get\+Vertex\+Bone\+Indices}}
+\index{Get\+Vertex\+Bone\+Indices@{Get\+Vertex\+Bone\+Indices}!C\+Batch@{C\+Batch}}
+\subsubsection[{Get\+Vertex\+Bone\+Indices}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Batch\+::\+Get\+Vertex\+Bone\+Indices (
+\begin{DoxyParamCaption}
+\item[{float $\ast$const}]{pf\+I, }
+\item[{const float $\ast$const}]{pf\+W, }
+\item[{const int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_ab5ad6d04fe2b939895a4033bc0f7d62f}
+
+
+  Get\+Vertex\+Bone\+Indices  pf\+I Returned index  pf\+W Weight?  n Length of index array  For each element of the input array, the index value is compared with the palette's index value. If the values are equal, the value of the current input array element is replaced with the palette index, otherwise the value is set to zero. \hypertarget{class_c_batch_ad4612721b684b0fa74e0936c525d1129}{\index{C\+Batch@{C\+Batch}!Merge@{Merge}}
+\index{Merge@{Merge}!C\+Batch@{C\+Batch}}
+\subsubsection[{Merge}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Batch\+::\+Merge (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Batch} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_ad4612721b684b0fa74e0936c525d1129}
+
+
+  Merge  src The batch to merge with  Merges the input batch with the current batch. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_batch_af09c040da33474f653698b649934a334}{\index{C\+Batch@{C\+Batch}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+Batch@{C\+Batch}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Batch}\& C\+Batch\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Batch} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_af09c040da33474f653698b649934a334}
+
+
+  operator=  Operator overload for the '=' operand \hypertarget{class_c_batch_a475f0d205d3387ec322e4af535170c1a}{\index{C\+Batch@{C\+Batch}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!C\+Batch@{C\+Batch}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Batch\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const int}]{n\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a475f0d205d3387ec322e4af535170c1a}
+
+
+  Set\+Size  n\+Size The new size of the batch  Delete all current information and resizes the batch to the value that has been passed in. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_batch_aa5be47c8e0dfc0e236cb7dfa38ede946}{\index{C\+Batch@{C\+Batch}!Test\+Merge@{Test\+Merge}}
+\index{Test\+Merge@{Test\+Merge}!C\+Batch@{C\+Batch}}
+\subsubsection[{Test\+Merge}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Batch\+::\+Test\+Merge (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Batch} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_aa5be47c8e0dfc0e236cb7dfa38ede946}
+
+
+  Test\+Merge  src The batch to merge with  int The number of items that are not already present in the batch. -\/1 if the merge will exceed the capacity of the batch  Tests how many of the items of the input batch are not already contained in the batch. This returns the number of items that would need to be added, or -\/1 if the number of additional items would exceed the capacity of the batch. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_batch_a628a95a6e596cf2effd45cf5eabc528d}{\index{C\+Batch@{C\+Batch}!Write@{Write}}
+\index{Write@{Write}!C\+Batch@{C\+Batch}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Batch\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{int $\ast$const}]{pn, }
+\item[{int $\ast$const}]{pn\+Cnt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_batch_a628a95a6e596cf2effd45cf5eabc528d}
+
+
+  Write  pn The array of items to overwrite  pn\+Cnt The number of items in the array  Writes the array of items and the number of items to the output parameters. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+Bone\+Batch.\+cpp\end{DoxyCompactItemize}

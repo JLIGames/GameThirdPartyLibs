@@ -14,6 +14,7 @@
 #include "AbstractFactoryObject.h"
 #include "Util.h"
 #include "AbstractBuilder.h"
+#include "btSerializer.h"
 
 template <class SINGLETONS_TYPE, class BASE_OBJECT_TYPE>
 class AbstractFactory :
@@ -25,7 +26,7 @@ public:
     virtual BASE_OBJECT_TYPE *create(const AbstractBuilder &);
     virtual BASE_OBJECT_TYPE *clone(const BASE_OBJECT_TYPE &);
     
-    virtual bool has(BASE_OBJECT_TYPE*)const;
+    virtual bool has(const BASE_OBJECT_TYPE*)const;
     
     virtual void destroy(BASE_OBJECT_TYPE*);
     virtual void destroyAll();
@@ -35,7 +36,9 @@ public:
     virtual BASE_OBJECT_TYPE *get(const u32)const;
     virtual void getAll(btAlignedObjectArray<BASE_OBJECT_TYPE*> &objects)const;
     
-    virtual s32 index(BASE_OBJECT_TYPE *)const;
+    virtual s32 index(const BASE_OBJECT_TYPE *)const;
+    
+    virtual	void serialize(btSerializer* serializer);
 protected:
     
     AbstractFactory();
@@ -47,7 +50,8 @@ protected:
     BASE_OBJECT_TYPE *create_Internal(const AbstractBuilder &);
     BASE_OBJECT_TYPE *clone_Internal(const BASE_OBJECT_TYPE &);
     void remove_Internal(BASE_OBJECT_TYPE*);
-public:
+private:
+    
     ObjectList m_ObjectList;
 };
 
@@ -64,7 +68,7 @@ BASE_OBJECT_TYPE *AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::clone(cons
 }
 
 template <class SINGLETONS_TYPE, class BASE_OBJECT_TYPE>
-bool AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::has(BASE_OBJECT_TYPE *object)const
+bool AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::has(const BASE_OBJECT_TYPE *object)const
 {
     return (m_ObjectList.size() != index(object));
 }
@@ -97,11 +101,12 @@ void AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::getAll(btAlignedObjectA
 }
 
 template <class SINGLETONS_TYPE, class BASE_OBJECT_TYPE>
-s32 AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::index(BASE_OBJECT_TYPE *object)const
+s32 AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::index(const BASE_OBJECT_TYPE *object)const
 {
     jliAssertMsg(object, "object is null");
     
-    return m_ObjectList.findLinearSearch(object);
+    BASE_OBJECT_TYPE *const obj = const_cast<BASE_OBJECT_TYPE *const>(object);
+    return m_ObjectList.findLinearSearch(obj);
 }
 
 template <class SINGLETONS_TYPE, class BASE_OBJECT_TYPE>
@@ -147,8 +152,6 @@ BASE_OBJECT_TYPE *AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::clone_Inte
     
     jliAssertMsg(!has(_object), "Object already exists in the factory");
     
-//    jliAssertMsg(size() + 1 < size(), "size limit reached");
-    
     m_ObjectList.push_back(_object);
     
     return _object;
@@ -165,6 +168,15 @@ void AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::remove_Internal(BASE_OB
     {
         m_ObjectList.swap( findIndex,size()-1);
         m_ObjectList.pop_back();
+    }
+}
+
+template <class SINGLETONS_TYPE, class BASE_OBJECT_TYPE>
+void AbstractFactory<SINGLETONS_TYPE, BASE_OBJECT_TYPE>::serialize(btSerializer* serializer)
+{
+    for (s32 i = 0; i < m_ObjectList.size(); i++)
+    {
+        m_ObjectList[i]->serializeObject(serializer);
     }
 }
 

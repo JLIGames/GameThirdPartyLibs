@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GIM_RSORT_TOKEN_COMPARATOR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___r_s_o_r_t___t_o_k_e_n___c_o_m_p_a_r_a_t_o_r.html",tooltip="Prototype for comparators. "];
+}

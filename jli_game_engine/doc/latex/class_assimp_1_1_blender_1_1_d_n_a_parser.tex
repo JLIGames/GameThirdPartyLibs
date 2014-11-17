@@ -1,0 +1,65 @@
+\hypertarget{class_assimp_1_1_blender_1_1_d_n_a_parser}{\section{Assimp\+:\+:Blender\+:\+:D\+N\+A\+Parser Class Reference}
+\label{class_assimp_1_1_blender_1_1_d_n_a_parser}\index{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}}
+}
+
+
+{\ttfamily \#include $<$Blender\+D\+N\+A.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_blender_1_1_d_n_a_parser_ac7f7ef8b84fc4ccb3e4b82b19e98fc08}{D\+N\+A\+Parser} (\hyperlink{class_assimp_1_1_blender_1_1_file_database}{File\+Database} \&db)
+\item 
+void \hyperlink{class_assimp_1_1_blender_1_1_d_n_a_parser_a162ca516d98ef2431875777f94f76731}{Parse} ()
+\item 
+const \hyperlink{class_assimp_1_1_blender_1_1_d_n_a}{Blender\+::\+D\+N\+A} \& \hyperlink{class_assimp_1_1_blender_1_1_d_n_a_parser_a2d9cc0df0f593efcbf9e425c73c7d72c}{Get\+D\+N\+A} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Factory to extract a \#\+D\+N\+A from the D\+N\+A1 file block in a B\+L\+E\+N\+D file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_blender_1_1_d_n_a_parser_ac7f7ef8b84fc4ccb3e4b82b19e98fc08}{\index{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}!D\+N\+A\+Parser@{D\+N\+A\+Parser}}
+\index{D\+N\+A\+Parser@{D\+N\+A\+Parser}!Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}}
+\subsubsection[{D\+N\+A\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+Blender\+::\+D\+N\+A\+Parser\+::\+D\+N\+A\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf File\+Database} \&}]{db}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_blender_1_1_d_n_a_parser_ac7f7ef8b84fc4ccb3e4b82b19e98fc08}
+Bind the parser to a empty \hyperlink{class_assimp_1_1_blender_1_1_d_n_a}{D\+N\+A} and an input stream 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_blender_1_1_d_n_a_parser_a2d9cc0df0f593efcbf9e425c73c7d72c}{\index{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}!Get\+D\+N\+A@{Get\+D\+N\+A}}
+\index{Get\+D\+N\+A@{Get\+D\+N\+A}!Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}}
+\subsubsection[{Get\+D\+N\+A}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Blender\+::\+D\+N\+A}\& Assimp\+::\+Blender\+::\+D\+N\+A\+Parser\+::\+Get\+D\+N\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_blender_1_1_d_n_a_parser_a2d9cc0df0f593efcbf9e425c73c7d72c}
+Obtain a reference to the extracted \hyperlink{class_assimp_1_1_blender_1_1_d_n_a}{D\+N\+A} information \hypertarget{class_assimp_1_1_blender_1_1_d_n_a_parser_a162ca516d98ef2431875777f94f76731}{\index{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}!Parse@{Parse}}
+\index{Parse@{Parse}!Assimp\+::\+Blender\+::\+D\+N\+A\+Parser@{Assimp\+::\+Blender\+::\+D\+N\+A\+Parser}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}void D\+N\+A\+Parser\+::\+Parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_blender_1_1_d_n_a_parser_a162ca516d98ef2431875777f94f76731}
+Locate the \hyperlink{class_assimp_1_1_blender_1_1_d_n_a}{D\+N\+A} in the file and parse it. The input stream is expected to point to the beginning of the D\+N1 chunk at the time this method is called and is undefined afterwards. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_deadly_import_error}{Deadly\+Import\+Error}} & if the \hyperlink{class_assimp_1_1_blender_1_1_d_n_a}{D\+N\+A} cannot be read. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Note}
+The position of the stream pointer is undefined afterwards. 
+\end{DoxyNote}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_blender_d_n_a_8h}{Blender\+D\+N\+A.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_blender_d_n_a_8cpp}{Blender\+D\+N\+A.\+cpp}\end{DoxyCompactItemize}

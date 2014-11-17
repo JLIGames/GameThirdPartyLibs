@@ -1,0 +1,144 @@
+\hypertarget{classbt_dynamics_world}{\section{bt\+Dynamics\+World Class Reference}
+\label{classbt_dynamics_world}\index{bt\+Dynamics\+World@{bt\+Dynamics\+World}}
+}
+
+
+The \hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} is the interface class for several dynamics implementation, basic, discrete, parallel, and continuous etc.  
+
+
+
+
+{\ttfamily \#include $<$bt\+Dynamics\+World.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Dynamics\+World\+:
+
+
+Collaboration diagram for bt\+Dynamics\+World\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_dynamics_world_ade9becb7e4f919d56a8c261baf560896}{{\bfseries bt\+Dynamics\+World} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_broadphase_interface}{bt\+Broadphase\+Interface} $\ast$broadphase, \hyperlink{classbt_collision_configuration}{bt\+Collision\+Configuration} $\ast$collision\+Configuration)}\label{classbt_dynamics_world_ade9becb7e4f919d56a8c261baf560896}
+
+\item 
+virtual int \hyperlink{classbt_dynamics_world_a5ab26a0d6e8b2b21fbde2ed8f8dd6294}{step\+Simulation} (bt\+Scalar time\+Step, int max\+Sub\+Steps=1, bt\+Scalar fixed\+Time\+Step=bt\+Scalar(1.)/bt\+Scalar(60.))=0
+\item 
+\hypertarget{classbt_dynamics_world_a392b087f91a91a9b46a63ac790f72b80}{virtual void {\bfseries debug\+Draw\+World} ()=0}\label{classbt_dynamics_world_a392b087f91a91a9b46a63ac790f72b80}
+
+\item 
+\hypertarget{classbt_dynamics_world_aafdfed3d693792d9280251ff8b9ae0d8}{virtual void {\bfseries add\+Constraint} (bt\+Typed\+Constraint $\ast$constraint, bool disable\+Collisions\+Between\+Linked\+Bodies=false)}\label{classbt_dynamics_world_aafdfed3d693792d9280251ff8b9ae0d8}
+
+\item 
+\hypertarget{classbt_dynamics_world_a89e0f17523fc4d65428545644f7e2515}{virtual void {\bfseries remove\+Constraint} (bt\+Typed\+Constraint $\ast$constraint)}\label{classbt_dynamics_world_a89e0f17523fc4d65428545644f7e2515}
+
+\item 
+\hypertarget{classbt_dynamics_world_ad8eea68a1bcbe55e6520aa3dee44a519}{virtual void {\bfseries add\+Action} (\hyperlink{classbt_action_interface}{bt\+Action\+Interface} $\ast$action)=0}\label{classbt_dynamics_world_ad8eea68a1bcbe55e6520aa3dee44a519}
+
+\item 
+\hypertarget{classbt_dynamics_world_a391b665d8ceae4d793fa213c87b5461f}{virtual void {\bfseries remove\+Action} (\hyperlink{classbt_action_interface}{bt\+Action\+Interface} $\ast$action)=0}\label{classbt_dynamics_world_a391b665d8ceae4d793fa213c87b5461f}
+
+\item 
+\hypertarget{classbt_dynamics_world_aee63562f8067022cca1b4999057c4373}{virtual void {\bfseries set\+Gravity} (const bt\+Vector3 \&gravity)=0}\label{classbt_dynamics_world_aee63562f8067022cca1b4999057c4373}
+
+\item 
+\hypertarget{classbt_dynamics_world_a2a1de7e4e5456428d4558be6f24723ef}{virtual bt\+Vector3 {\bfseries get\+Gravity} () const =0}\label{classbt_dynamics_world_a2a1de7e4e5456428d4558be6f24723ef}
+
+\item 
+\hypertarget{classbt_dynamics_world_aed92a7b6bc477b60d50988a048eaa5a6}{virtual void {\bfseries synchronize\+Motion\+States} ()=0}\label{classbt_dynamics_world_aed92a7b6bc477b60d50988a048eaa5a6}
+
+\item 
+\hypertarget{classbt_dynamics_world_a8d8f03c04ba63f525e09cb95452687f0}{virtual void {\bfseries add\+Rigid\+Body} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body)=0}\label{classbt_dynamics_world_a8d8f03c04ba63f525e09cb95452687f0}
+
+\item 
+\hypertarget{classbt_dynamics_world_ac516f56dd52fc5d5575bb863ead1ad04}{virtual void {\bfseries add\+Rigid\+Body} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body, short group, short mask)=0}\label{classbt_dynamics_world_ac516f56dd52fc5d5575bb863ead1ad04}
+
+\item 
+\hypertarget{classbt_dynamics_world_a06ac55453d839d0a6cbc9c53e5537f73}{virtual void {\bfseries remove\+Rigid\+Body} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body)=0}\label{classbt_dynamics_world_a06ac55453d839d0a6cbc9c53e5537f73}
+
+\item 
+\hypertarget{classbt_dynamics_world_a65cd45eeb235a87516f4f22383ceac49}{virtual void {\bfseries set\+Constraint\+Solver} (\hyperlink{classbt_constraint_solver}{bt\+Constraint\+Solver} $\ast$solver)=0}\label{classbt_dynamics_world_a65cd45eeb235a87516f4f22383ceac49}
+
+\item 
+\hypertarget{classbt_dynamics_world_af6179dea87b148971a2fed3c14ff052b}{virtual \hyperlink{classbt_constraint_solver}{bt\+Constraint\+Solver} $\ast$ {\bfseries get\+Constraint\+Solver} ()=0}\label{classbt_dynamics_world_af6179dea87b148971a2fed3c14ff052b}
+
+\item 
+\hypertarget{classbt_dynamics_world_a3db884cabbdd509a522f7900393338e4}{virtual int {\bfseries get\+Num\+Constraints} () const }\label{classbt_dynamics_world_a3db884cabbdd509a522f7900393338e4}
+
+\item 
+\hypertarget{classbt_dynamics_world_a25547b26ffbe6659c34c7e021bc2e532}{virtual bt\+Typed\+Constraint $\ast$ {\bfseries get\+Constraint} (int index)}\label{classbt_dynamics_world_a25547b26ffbe6659c34c7e021bc2e532}
+
+\item 
+\hypertarget{classbt_dynamics_world_a4f4b9c286cf78dd2020f1718526423bc}{virtual const bt\+Typed\+Constraint $\ast$ {\bfseries get\+Constraint} (int index) const }\label{classbt_dynamics_world_a4f4b9c286cf78dd2020f1718526423bc}
+
+\item 
+\hypertarget{classbt_dynamics_world_a7c657a2757b38c533dd6b3a7110624e1}{virtual bt\+Dynamics\+World\+Type {\bfseries get\+World\+Type} () const =0}\label{classbt_dynamics_world_a7c657a2757b38c533dd6b3a7110624e1}
+
+\item 
+\hypertarget{classbt_dynamics_world_a9a9d474cc43c25095cd32e1c3332152a}{virtual void {\bfseries clear\+Forces} ()=0}\label{classbt_dynamics_world_a9a9d474cc43c25095cd32e1c3332152a}
+
+\item 
+\hypertarget{classbt_dynamics_world_a6974c869e196322377e2d8c078db5805}{void \hyperlink{classbt_dynamics_world_a6974c869e196322377e2d8c078db5805}{set\+Internal\+Tick\+Callback} (bt\+Internal\+Tick\+Callback cb, void $\ast$world\+User\+Info=0, bool is\+Pre\+Tick=false)}\label{classbt_dynamics_world_a6974c869e196322377e2d8c078db5805}
+
+\begin{DoxyCompactList}\small\item\em Set the callback for when an internal tick (simulation substep) happens, optional user info. \end{DoxyCompactList}\item 
+\hypertarget{classbt_dynamics_world_ad1f3418fce3381a0fbd4419cc701a97d}{void {\bfseries set\+World\+User\+Info} (void $\ast$world\+User\+Info)}\label{classbt_dynamics_world_ad1f3418fce3381a0fbd4419cc701a97d}
+
+\item 
+\hypertarget{classbt_dynamics_world_ae13ad087a699a5caeabe283b69c54340}{void $\ast$ {\bfseries get\+World\+User\+Info} () const }\label{classbt_dynamics_world_ae13ad087a699a5caeabe283b69c54340}
+
+\item 
+\hypertarget{classbt_dynamics_world_ae8004bb6113c17b9cd1eca5ade1c2aba}{\hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \& {\bfseries get\+Solver\+Info} ()}\label{classbt_dynamics_world_ae8004bb6113c17b9cd1eca5ade1c2aba}
+
+\item 
+\hypertarget{classbt_dynamics_world_ab897455739081304249e7af787cafa19}{virtual void \hyperlink{classbt_dynamics_world_ab897455739081304249e7af787cafa19}{add\+Vehicle} (\hyperlink{classbt_action_interface}{bt\+Action\+Interface} $\ast$vehicle)}\label{classbt_dynamics_world_ab897455739081304249e7af787cafa19}
+
+\begin{DoxyCompactList}\small\item\em obsolete, use add\+Action instead. \end{DoxyCompactList}\item 
+\hypertarget{classbt_dynamics_world_abb361ed4e22766cd79d22ece3f5869e6}{virtual void \hyperlink{classbt_dynamics_world_abb361ed4e22766cd79d22ece3f5869e6}{remove\+Vehicle} (\hyperlink{classbt_action_interface}{bt\+Action\+Interface} $\ast$vehicle)}\label{classbt_dynamics_world_abb361ed4e22766cd79d22ece3f5869e6}
+
+\begin{DoxyCompactList}\small\item\em obsolete, use remove\+Action instead \end{DoxyCompactList}\item 
+\hypertarget{classbt_dynamics_world_a56e16159fdff1311706d4b73e0999e02}{virtual void \hyperlink{classbt_dynamics_world_a56e16159fdff1311706d4b73e0999e02}{add\+Character} (\hyperlink{classbt_action_interface}{bt\+Action\+Interface} $\ast$character)}\label{classbt_dynamics_world_a56e16159fdff1311706d4b73e0999e02}
+
+\begin{DoxyCompactList}\small\item\em obsolete, use add\+Action instead. \end{DoxyCompactList}\item 
+\hypertarget{classbt_dynamics_world_ae4daeac0b98e39a80bb960c5b995fd2a}{virtual void \hyperlink{classbt_dynamics_world_ae4daeac0b98e39a80bb960c5b995fd2a}{remove\+Character} (\hyperlink{classbt_action_interface}{bt\+Action\+Interface} $\ast$character)}\label{classbt_dynamics_world_ae4daeac0b98e39a80bb960c5b995fd2a}
+
+\begin{DoxyCompactList}\small\item\em obsolete, use remove\+Action instead \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_dynamics_world_a705c6e3e8c08da630f5c6ad47fb0956e}{bt\+Internal\+Tick\+Callback {\bfseries m\+\_\+internal\+Tick\+Callback}}\label{classbt_dynamics_world_a705c6e3e8c08da630f5c6ad47fb0956e}
+
+\item 
+\hypertarget{classbt_dynamics_world_a72c993a0878ed549579516b9e123b87a}{bt\+Internal\+Tick\+Callback {\bfseries m\+\_\+internal\+Pre\+Tick\+Callback}}\label{classbt_dynamics_world_a72c993a0878ed549579516b9e123b87a}
+
+\item 
+\hypertarget{classbt_dynamics_world_ad1938eab3c06e3c85d3739eb2b7a5d4c}{void $\ast$ {\bfseries m\+\_\+world\+User\+Info}}\label{classbt_dynamics_world_ad1938eab3c06e3c85d3739eb2b7a5d4c}
+
+\item 
+\hypertarget{classbt_dynamics_world_a3e879581a620599c279b64bedaf8d583}{\hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} {\bfseries m\+\_\+solver\+Info}}\label{classbt_dynamics_world_a3e879581a620599c279b64bedaf8d583}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} is the interface class for several dynamics implementation, basic, discrete, parallel, and continuous etc. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_dynamics_world_a5ab26a0d6e8b2b21fbde2ed8f8dd6294}{\index{bt\+Dynamics\+World@{bt\+Dynamics\+World}!step\+Simulation@{step\+Simulation}}
+\index{step\+Simulation@{step\+Simulation}!bt\+Dynamics\+World@{bt\+Dynamics\+World}}
+\subsubsection[{step\+Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual int bt\+Dynamics\+World\+::step\+Simulation (
+\begin{DoxyParamCaption}
+\item[{bt\+Scalar}]{time\+Step, }
+\item[{int}]{max\+Sub\+Steps = {\ttfamily 1}, }
+\item[{bt\+Scalar}]{fixed\+Time\+Step = {\ttfamily btScalar(1.)/btScalar(60.)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classbt_dynamics_world_a5ab26a0d6e8b2b21fbde2ed8f8dd6294}
+step\+Simulation proceeds the simulation over 'time\+Step', units in preferably in seconds. By default, Bullet will subdivide the timestep in constant substeps of each 'fixed\+Time\+Step'. in order to keep the simulation real-\/time, the maximum number of substeps can be clamped to 'max\+Sub\+Steps'. You can disable subdividing the timestep/substepping by passing max\+Sub\+Steps=0 as second argument to step\+Simulation, but in that case you have to keep the time\+Step constant. 
+
+Implemented in \hyperlink{classbt_simple_dynamics_world_af6b4810b5018cbaf09f82839111a243d}{bt\+Simple\+Dynamics\+World}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Dynamics/bt\+Dynamics\+World.\+h\end{DoxyCompactItemize}

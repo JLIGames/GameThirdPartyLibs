@@ -1,0 +1,9 @@
+digraph "bullet/bullet-2.82-r2704/Extras/CDTestFramework/AntTweakBar/src/res" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3e2ffb3fc5a8306119d5d32efa4f8072 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_3e2ffb3fc5a8306119d5d32efa4f8072.html"]
+  dir_2fa6e50d9698b049f126ced10015a709 [shape=box, label="res", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2fa6e50d9698b049f126ced10015a709.html"];
+  }
+}

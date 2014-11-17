@@ -1,0 +1,267 @@
+\hypertarget{class_matrix3x3}{\section{Matrix3x3 Class Reference}
+\label{class_matrix3x3}\index{Matrix3x3@{Matrix3x3}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_matrix3x3_ad29ce73053fb451f5de0debb2959e72e}{inline\+\_\+ \hyperlink{class_matrix3x3_ad29ce73053fb451f5de0debb2959e72e}{Matrix3x3} ()}\label{class_matrix3x3_ad29ce73053fb451f5de0debb2959e72e}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a005fba917326df36dc28fadd7f54e4d8}{inline\+\_\+ \hyperlink{class_matrix3x3_a005fba917326df36dc28fadd7f54e4d8}{Matrix3x3} (float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22)}\label{class_matrix3x3_a005fba917326df36dc28fadd7f54e4d8}
+
+\begin{DoxyCompactList}\small\item\em Constructor from 9 values. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_ade9bc27bcc432ce3543cda754ed0cf4a}{inline\+\_\+ \hyperlink{class_matrix3x3_ade9bc27bcc432ce3543cda754ed0cf4a}{Matrix3x3} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_ade9bc27bcc432ce3543cda754ed0cf4a}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a596ea10f85a00caa0940275c9bd830a5}{inline\+\_\+ \hyperlink{class_matrix3x3_a596ea10f85a00caa0940275c9bd830a5}{$\sim$\+Matrix3x3} ()}\label{class_matrix3x3_a596ea10f85a00caa0940275c9bd830a5}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a58ebc2c0d6b582fb7eb6bb3b78c97ad6}{inline\+\_\+ void \hyperlink{class_matrix3x3_a58ebc2c0d6b582fb7eb6bb3b78c97ad6}{Set} (float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22)}\label{class_matrix3x3_a58ebc2c0d6b582fb7eb6bb3b78c97ad6}
+
+\begin{DoxyCompactList}\small\item\em Assign values. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a3881bf406162edd7bff75f25eea7a38d}{inline\+\_\+ void \hyperlink{class_matrix3x3_a3881bf406162edd7bff75f25eea7a38d}{Set\+Scale} (const \hyperlink{class_point}{Point} \&p)}\label{class_matrix3x3_a3881bf406162edd7bff75f25eea7a38d}
+
+\begin{DoxyCompactList}\small\item\em Sets the scale from a \hyperlink{class_point}{Point}. The point is put on the diagonal. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_ab41b04b95b68fef87e6acac6d1a35f55}{inline\+\_\+ void \hyperlink{class_matrix3x3_ab41b04b95b68fef87e6acac6d1a35f55}{Set\+Scale} (float sx, float sy, float sz)}\label{class_matrix3x3_ab41b04b95b68fef87e6acac6d1a35f55}
+
+\begin{DoxyCompactList}\small\item\em Sets the scale from floats. Values are put on the diagonal. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a19d9b0ee7f43f45120a9c33c625e83c3}{inline\+\_\+ void \hyperlink{class_matrix3x3_a19d9b0ee7f43f45120a9c33c625e83c3}{Scale} (const \hyperlink{class_point}{Point} \&p)}\label{class_matrix3x3_a19d9b0ee7f43f45120a9c33c625e83c3}
+
+\begin{DoxyCompactList}\small\item\em Scales from a \hyperlink{class_point}{Point}. Each row is multiplied by a component. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a5eab275f6204853875dd8837efdf695b}{inline\+\_\+ void \hyperlink{class_matrix3x3_a5eab275f6204853875dd8837efdf695b}{Scale} (float sx, float sy, float sz)}\label{class_matrix3x3_a5eab275f6204853875dd8837efdf695b}
+
+\begin{DoxyCompactList}\small\item\em Scales from floats. Each row is multiplied by a value. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a28ff52567bb186d38053a2740dbb23eb}{inline\+\_\+ void \hyperlink{class_matrix3x3_a28ff52567bb186d38053a2740dbb23eb}{Copy} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&source)}\label{class_matrix3x3_a28ff52567bb186d38053a2740dbb23eb}
+
+\begin{DoxyCompactList}\small\item\em Copy from a \hyperlink{class_matrix3x3}{Matrix3x3}. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_ac0fd6aa5e05e474951995431032f32d2}{inline\+\_\+ void \hyperlink{class_matrix3x3_ac0fd6aa5e05e474951995431032f32d2}{Get\+Row} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r, \hyperlink{class_point}{Point} \&p) const }\label{class_matrix3x3_ac0fd6aa5e05e474951995431032f32d2}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a82a2357d38e6b987e36cec2995b11aa8}{inline\+\_\+ const \hyperlink{class_point}{Point} \& \hyperlink{class_matrix3x3_a82a2357d38e6b987e36cec2995b11aa8}{Get\+Row} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r) const }\label{class_matrix3x3_a82a2357d38e6b987e36cec2995b11aa8}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a1ece9d22cf514597b268b3bc129995ff}{inline\+\_\+ \hyperlink{class_point}{Point} \& \hyperlink{class_matrix3x3_a1ece9d22cf514597b268b3bc129995ff}{Get\+Row} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r)}\label{class_matrix3x3_a1ece9d22cf514597b268b3bc129995ff}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_ab27a1b055f5dcd6cb38d2a6291ff7cd4}{inline\+\_\+ void \hyperlink{class_matrix3x3_ab27a1b055f5dcd6cb38d2a6291ff7cd4}{Set\+Row} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r, const \hyperlink{class_point}{Point} \&p)}\label{class_matrix3x3_ab27a1b055f5dcd6cb38d2a6291ff7cd4}
+
+\begin{DoxyCompactList}\small\item\em Sets a row. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a8d4813c36f57e9b563902989d9e2b86a}{inline\+\_\+ void \hyperlink{class_matrix3x3_a8d4813c36f57e9b563902989d9e2b86a}{Get\+Col} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} c, \hyperlink{class_point}{Point} \&p) const }\label{class_matrix3x3_a8d4813c36f57e9b563902989d9e2b86a}
+
+\begin{DoxyCompactList}\small\item\em Returns a column. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a806c9df77cbf6626a60be2850b1626fc}{inline\+\_\+ void \hyperlink{class_matrix3x3_a806c9df77cbf6626a60be2850b1626fc}{Set\+Col} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} c, const \hyperlink{class_point}{Point} \&p)}\label{class_matrix3x3_a806c9df77cbf6626a60be2850b1626fc}
+
+\begin{DoxyCompactList}\small\item\em Sets a column. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a45d850d0a4804a6d5de1aee1597e2001}{inline\+\_\+ float \hyperlink{class_matrix3x3_a45d850d0a4804a6d5de1aee1597e2001}{Trace} () const }\label{class_matrix3x3_a45d850d0a4804a6d5de1aee1597e2001}
+
+\begin{DoxyCompactList}\small\item\em Computes the trace. The trace is the sum of the 3 diagonal components. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a7d8c601a1aeb4f89cc51f54c9c5454f7}{inline\+\_\+ void \hyperlink{class_matrix3x3_a7d8c601a1aeb4f89cc51f54c9c5454f7}{Zero} ()}\label{class_matrix3x3_a7d8c601a1aeb4f89cc51f54c9c5454f7}
+
+\begin{DoxyCompactList}\small\item\em Clears the matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_adc929f7f8eee58f37fbc29f3eefe3a08}{inline\+\_\+ void \hyperlink{class_matrix3x3_adc929f7f8eee58f37fbc29f3eefe3a08}{Identity} ()}\label{class_matrix3x3_adc929f7f8eee58f37fbc29f3eefe3a08}
+
+\begin{DoxyCompactList}\small\item\em Sets the identity matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a0ecdee706e3a985063e3b372da19fbbc}{inline\+\_\+ bool \hyperlink{class_matrix3x3_a0ecdee706e3a985063e3b372da19fbbc}{Is\+Identity} () const }\label{class_matrix3x3_a0ecdee706e3a985063e3b372da19fbbc}
+
+\begin{DoxyCompactList}\small\item\em Checks for identity. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a7a0a18d35e4a9d4f23f3ad1adff7da65}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_matrix3x3_a7a0a18d35e4a9d4f23f3ad1adff7da65}{Is\+Valid} () const }\label{class_matrix3x3_a7a0a18d35e4a9d4f23f3ad1adff7da65}
+
+\begin{DoxyCompactList}\small\item\em Checks matrix validity. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{class_matrix3x3_ae70311ba318a428a3eb5c6d011a00e9a}{Skew\+Symmetric} (const \hyperlink{class_point}{Point} \&a)
+\item 
+\hypertarget{class_matrix3x3_a72c353f72929e8c4f703173f76f77b05}{inline\+\_\+ void \hyperlink{class_matrix3x3_a72c353f72929e8c4f703173f76f77b05}{Neg} ()}\label{class_matrix3x3_a72c353f72929e8c4f703173f76f77b05}
+
+\begin{DoxyCompactList}\small\item\em Negates the matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a2fbcea9e9390924366e7b9e7216c8c0b}{inline\+\_\+ void \hyperlink{class_matrix3x3_a2fbcea9e9390924366e7b9e7216c8c0b}{Neg} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a2fbcea9e9390924366e7b9e7216c8c0b}
+
+\begin{DoxyCompactList}\small\item\em Neg from another matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a2ec5f827890694e7040318034b26a02d}{inline\+\_\+ void \hyperlink{class_matrix3x3_a2ec5f827890694e7040318034b26a02d}{Add} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a2ec5f827890694e7040318034b26a02d}
+
+\begin{DoxyCompactList}\small\item\em Add another matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a068602cc31da1c742896fbf333b5f6c2}{inline\+\_\+ void \hyperlink{class_matrix3x3_a068602cc31da1c742896fbf333b5f6c2}{Sub} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a068602cc31da1c742896fbf333b5f6c2}
+
+\begin{DoxyCompactList}\small\item\em Sub another matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a98b8f18c1f5a16242a5149889c5f6202}{inline\+\_\+ void \hyperlink{class_matrix3x3_a98b8f18c1f5a16242a5149889c5f6202}{Mac} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_matrix3x3}{Matrix3x3} \&b, float s)}\label{class_matrix3x3_a98b8f18c1f5a16242a5149889c5f6202}
+
+\begin{DoxyCompactList}\small\item\em Mac. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a3447245ea3ef24f98a8fe9335d002190}{inline\+\_\+ void \hyperlink{class_matrix3x3_a3447245ea3ef24f98a8fe9335d002190}{Mac} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, float s)}\label{class_matrix3x3_a3447245ea3ef24f98a8fe9335d002190}
+
+\begin{DoxyCompactList}\small\item\em Mac. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_aedd287d4f7c2ed61c80ac71460ab3c22}{inline\+\_\+ void \hyperlink{class_matrix3x3_aedd287d4f7c2ed61c80ac71460ab3c22}{Mult} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, float s)}\label{class_matrix3x3_aedd287d4f7c2ed61c80ac71460ab3c22}
+
+\begin{DoxyCompactList}\small\item\em this = A $\ast$ s \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a9dcba2e1c5f0cab8477fc69b53db2155}{inline\+\_\+ void {\bfseries Add} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_matrix3x3}{Matrix3x3} \&b)}\label{class_matrix3x3_a9dcba2e1c5f0cab8477fc69b53db2155}
+
+\item 
+\hypertarget{class_matrix3x3_a3bf4ff7a30a77a02fe8f78076541e3f0}{inline\+\_\+ void {\bfseries Sub} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_matrix3x3}{Matrix3x3} \&b)}\label{class_matrix3x3_a3bf4ff7a30a77a02fe8f78076541e3f0}
+
+\item 
+\hypertarget{class_matrix3x3_ac80995881ea1e23f8eb0f6f57bbb624a}{inline\+\_\+ void \hyperlink{class_matrix3x3_ac80995881ea1e23f8eb0f6f57bbb624a}{Mult} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_matrix3x3}{Matrix3x3} \&b)}\label{class_matrix3x3_ac80995881ea1e23f8eb0f6f57bbb624a}
+
+\begin{DoxyCompactList}\small\item\em this = a $\ast$ b \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_acaaf066874db7aecf219c362a9029de6}{inline\+\_\+ void \hyperlink{class_matrix3x3_acaaf066874db7aecf219c362a9029de6}{Mult\+At\+B} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_matrix3x3}{Matrix3x3} \&b)}\label{class_matrix3x3_acaaf066874db7aecf219c362a9029de6}
+
+\begin{DoxyCompactList}\small\item\em this = transpose(a) $\ast$ b \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a4df37cc8e30c8eb512c9645ea3446823}{inline\+\_\+ void \hyperlink{class_matrix3x3_a4df37cc8e30c8eb512c9645ea3446823}{Mult\+A\+Bt} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_matrix3x3}{Matrix3x3} \&b)}\label{class_matrix3x3_a4df37cc8e30c8eb512c9645ea3446823}
+
+\begin{DoxyCompactList}\small\item\em this = a $\ast$ transpose(b) \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_aa2420e6446d215b6146fe6c09563fdf0}{\hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_aa2420e6446d215b6146fe6c09563fdf0}{From\+To} (const \hyperlink{class_point}{Point} \&from, const \hyperlink{class_point}{Point} \&to)}\label{class_matrix3x3_aa2420e6446d215b6146fe6c09563fdf0}
+
+\begin{DoxyCompactList}\small\item\em Makes a rotation matrix mapping vector \char`\"{}from\char`\"{} to vector \char`\"{}to\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_matrix3x3_a2085f5fbfdc084bad6ec574e2efaec9c}{Rot\+X} (float angle)
+\item 
+void \hyperlink{class_matrix3x3_a042b69c07653ba64a03a32f0912e16b3}{Rot\+Y} (float angle)
+\item 
+void \hyperlink{class_matrix3x3_ac95efa91905c221156b7b2ab58b946b8}{Rot\+Z} (float angle)
+\item 
+void \hyperlink{class_matrix3x3_a7c4719756d1d0b58286f50258b645438}{Rot\+Y\+X} (float \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float x)
+\item 
+\hypertarget{class_matrix3x3_a945f9b8cc98fa3e2156acd531262c37b}{\hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_a945f9b8cc98fa3e2156acd531262c37b}{Rot} (float angle, const \hyperlink{class_point}{Point} \&axis)}\label{class_matrix3x3_a945f9b8cc98fa3e2156acd531262c37b}
+
+\begin{DoxyCompactList}\small\item\em Make a rotation matrix about an arbitrary axis. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a749e22af87eed9f1d646a2737792844d}{void \hyperlink{class_matrix3x3_a749e22af87eed9f1d646a2737792844d}{Transpose} ()}\label{class_matrix3x3_a749e22af87eed9f1d646a2737792844d}
+
+\begin{DoxyCompactList}\small\item\em Transpose the matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a1102e3c3f8d5fa7436b7b448ee587339}{void \hyperlink{class_matrix3x3_a1102e3c3f8d5fa7436b7b448ee587339}{Transpose} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a)}\label{class_matrix3x3_a1102e3c3f8d5fa7436b7b448ee587339}
+
+\begin{DoxyCompactList}\small\item\em this = Transpose(a) \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a37acc3f90610cd4afc0660be31297bd5}{float \hyperlink{class_matrix3x3_a37acc3f90610cd4afc0660be31297bd5}{Determinant} () const }\label{class_matrix3x3_a37acc3f90610cd4afc0660be31297bd5}
+
+\begin{DoxyCompactList}\small\item\em Compute the determinant of the matrix. We use the rule of Sarrus. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a09c69c6790de1d23159eef6cfaa67ade}{\hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_a09c69c6790de1d23159eef6cfaa67ade}{Invert} ()}\label{class_matrix3x3_a09c69c6790de1d23159eef6cfaa67ade}
+
+\begin{DoxyCompactList}\small\item\em Invert the matrix. Determinant must be different from zero, else matrix can't be inverted. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a0f58e158b9b98d162c23eabe33f78acd}{\hyperlink{class_matrix3x3}{Matrix3x3} \& {\bfseries Normalize} ()}\label{class_matrix3x3_a0f58e158b9b98d162c23eabe33f78acd}
+
+\item 
+\hypertarget{class_matrix3x3_a89f097e8a6c046d9b2a7c364f9a6dfbe}{\hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_a89f097e8a6c046d9b2a7c364f9a6dfbe}{Exp} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a)}\label{class_matrix3x3_a89f097e8a6c046d9b2a7c364f9a6dfbe}
+
+\begin{DoxyCompactList}\small\item\em this = exp(a) \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a89ea8a63ebc11e945fafdd9c761dcbb3}{void {\bfseries From\+Quat} (const Quat \&q)}\label{class_matrix3x3_a89ea8a63ebc11e945fafdd9c761dcbb3}
+
+\item 
+\hypertarget{class_matrix3x3_a9b951696a009332ac91d8ec6c5097dc3}{void {\bfseries From\+Quat\+L2} (const Quat \&q, float l2)}\label{class_matrix3x3_a9b951696a009332ac91d8ec6c5097dc3}
+
+\item 
+\hypertarget{class_matrix3x3_a90ffab5eff83c9f3a65552a84d85b316}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a90ffab5eff83c9f3a65552a84d85b316}{operator+} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat) const }\label{class_matrix3x3_a90ffab5eff83c9f3a65552a84d85b316}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Plus = \hyperlink{class_matrix3x3}{Matrix3x3} + \hyperlink{class_matrix3x3}{Matrix3x3};. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a8e29e6a7f65275594aec4fb1f542f2ba}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a8e29e6a7f65275594aec4fb1f542f2ba}{operator-\/} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat) const }\label{class_matrix3x3_a8e29e6a7f65275594aec4fb1f542f2ba}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Minus = \hyperlink{class_matrix3x3}{Matrix3x3} -\/ \hyperlink{class_matrix3x3}{Matrix3x3};. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a5986f5b597c6cb501ff839f54ed8a701}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a5986f5b597c6cb501ff839f54ed8a701}{operator$\ast$} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat) const }\label{class_matrix3x3_a5986f5b597c6cb501ff839f54ed8a701}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Mul = \hyperlink{class_matrix3x3}{Matrix3x3} $\ast$ \hyperlink{class_matrix3x3}{Matrix3x3};. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_ae0459b2a4ceb2fd36e2e2d4e2adc3cb6}{inline\+\_\+ \hyperlink{class_point}{Point} \hyperlink{class_matrix3x3_ae0459b2a4ceb2fd36e2e2d4e2adc3cb6}{operator$\ast$} (const \hyperlink{class_point}{Point} \&v) const }\label{class_matrix3x3_ae0459b2a4ceb2fd36e2e2d4e2adc3cb6}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_point}{Point} Mul = \hyperlink{class_matrix3x3}{Matrix3x3} $\ast$ \hyperlink{class_point}{Point};. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_aa3d255c9c691eff3528afcd70880a11c}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_aa3d255c9c691eff3528afcd70880a11c}{operator$\ast$} (float s) const }\label{class_matrix3x3_aa3d255c9c691eff3528afcd70880a11c}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Mul = \hyperlink{class_matrix3x3}{Matrix3x3} $\ast$ float;. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a8680510944c1491c1d44ae03746935ea}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a8680510944c1491c1d44ae03746935ea}{operator/} (float s) const }\label{class_matrix3x3_a8680510944c1491c1d44ae03746935ea}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Div = \hyperlink{class_matrix3x3}{Matrix3x3} / float;. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_afae9d530887621b836dd95428b38ed7c}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_afae9d530887621b836dd95428b38ed7c}{operator+=} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_afae9d530887621b836dd95428b38ed7c}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} += \hyperlink{class_matrix3x3}{Matrix3x3}. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a787a01c0e7b22160992a99c4a7cf8cfe}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_a787a01c0e7b22160992a99c4a7cf8cfe}{operator-\/=} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a787a01c0e7b22160992a99c4a7cf8cfe}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} -\/= \hyperlink{class_matrix3x3}{Matrix3x3}. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a0b111cd6ad50d5521b5ea1d8b1e6a2a3}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_a0b111cd6ad50d5521b5ea1d8b1e6a2a3}{operator$\ast$=} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a0b111cd6ad50d5521b5ea1d8b1e6a2a3}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} $\ast$= \hyperlink{class_matrix3x3}{Matrix3x3}. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a3762041f07d0b9e7100b44f3220822c4}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_a3762041f07d0b9e7100b44f3220822c4}{operator$\ast$=} (float s)}\label{class_matrix3x3_a3762041f07d0b9e7100b44f3220822c4}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} $\ast$= float. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_ac60380215cd70ecb2445498901241d76}{inline\+\_\+ \hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_ac60380215cd70ecb2445498901241d76}{operator/=} (float s)}\label{class_matrix3x3_ac60380215cd70ecb2445498901241d76}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} /= float. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a6c18a333c52912661fe2017a882b9b4f}{\hyperlink{class_matrix3x3_a6c18a333c52912661fe2017a882b9b4f}{operator Matrix4x4} () const }\label{class_matrix3x3_a6c18a333c52912661fe2017a882b9b4f}
+
+\begin{DoxyCompactList}\small\item\em Cast a \hyperlink{class_matrix3x3}{Matrix3x3} to a \hyperlink{class_matrix4x4}{Matrix4x4}. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_aa3ecbe209786625479d28a7c34e5ed6f}{\hyperlink{class_matrix3x3_aa3ecbe209786625479d28a7c34e5ed6f}{operator Quat} () const }\label{class_matrix3x3_aa3ecbe209786625479d28a7c34e5ed6f}
+
+\begin{DoxyCompactList}\small\item\em Cast a \hyperlink{class_matrix3x3}{Matrix3x3} to a Quat. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a6acb17060e5f9fb57103abaf2e08f3cc}{inline\+\_\+ const \hyperlink{class_point}{Point} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int row) const }\label{class_matrix3x3_a6acb17060e5f9fb57103abaf2e08f3cc}
+
+\item 
+\hypertarget{class_matrix3x3_a1b1b2ce1c019cdd3b9e286ff75550751}{inline\+\_\+ \hyperlink{class_point}{Point} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int row)}\label{class_matrix3x3_a1b1b2ce1c019cdd3b9e286ff75550751}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_matrix3x3_a909d707fd0c26b98f816c395f9530b49}{float {\bfseries m} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}}\label{class_matrix3x3_a909d707fd0c26b98f816c395f9530b49}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_matrix3x3_a54e4cff7dc37c73de3e3d0235ad36271}{inline\+\_\+ friend \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a54e4cff7dc37c73de3e3d0235ad36271}{operator$\ast$} (float s, const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a54e4cff7dc37c73de3e3d0235ad36271}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Mul = float $\ast$ \hyperlink{class_matrix3x3}{Matrix3x3};. \end{DoxyCompactList}\item 
+\hypertarget{class_matrix3x3_a639deffb8c0b2003b65c9e7ad3c5e907}{inline\+\_\+ friend \hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a639deffb8c0b2003b65c9e7ad3c5e907}{operator/} (float s, const \hyperlink{class_matrix3x3}{Matrix3x3} \&mat)}\label{class_matrix3x3_a639deffb8c0b2003b65c9e7ad3c5e907}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{class_matrix3x3}{Matrix3x3} Div = float / \hyperlink{class_matrix3x3}{Matrix3x3};. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3x3 matrix. Direct\+X-\/compliant, ie row-\/column order, ie m\mbox{[}Row\mbox{]}\mbox{[}Col\mbox{]}. Same as\+: m11 m12 m13 first row. m21 m22 m23 second row. m31 m32 m33 third row. Stored in memory as m11 m12 m13 m21...
+
+Multiplication rules\+:
+
+\mbox{[}x'y'z'\mbox{]} = \mbox{[}xyz\mbox{]}\mbox{[}M\mbox{]}
+
+x' = x$\ast$m11 + y$\ast$m21 + z$\ast$m31 y' = x$\ast$m12 + y$\ast$m22 + z$\ast$m32 z' = x$\ast$m13 + y$\ast$m23 + z$\ast$m33
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_matrix3x3_a2085f5fbfdc084bad6ec574e2efaec9c}{\index{Matrix3x3@{Matrix3x3}!Rot\+X@{Rot\+X}}
+\index{Rot\+X@{Rot\+X}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Rot\+X}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3x3\+::\+Rot\+X (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a2085f5fbfdc084bad6ec574e2efaec9c}
+Set a rotation matrix around the X axis. 1 0 0 R\+X = 0 cx sx 0 -\/sx cx \hypertarget{class_matrix3x3_a042b69c07653ba64a03a32f0912e16b3}{\index{Matrix3x3@{Matrix3x3}!Rot\+Y@{Rot\+Y}}
+\index{Rot\+Y@{Rot\+Y}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Rot\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3x3\+::\+Rot\+Y (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a042b69c07653ba64a03a32f0912e16b3}
+Set a rotation matrix around the Y axis. cy 0 -\/sy R\+Y = 0 1 0 sy 0 cy \hypertarget{class_matrix3x3_a7c4719756d1d0b58286f50258b645438}{\index{Matrix3x3@{Matrix3x3}!Rot\+Y\+X@{Rot\+Y\+X}}
+\index{Rot\+Y\+X@{Rot\+Y\+X}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Rot\+Y\+X}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3x3\+::\+Rot\+Y\+X (
+\begin{DoxyParamCaption}
+\item[{float}]{y, }
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a7c4719756d1d0b58286f50258b645438}
+cy sx.\+sy -\/sy.\+cx R\+Y.\+R\+X 0 cx sx sy -\/sx.\+cy cx.\+cy \hypertarget{class_matrix3x3_ac95efa91905c221156b7b2ab58b946b8}{\index{Matrix3x3@{Matrix3x3}!Rot\+Z@{Rot\+Z}}
+\index{Rot\+Z@{Rot\+Z}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Rot\+Z}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3x3\+::\+Rot\+Z (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_ac95efa91905c221156b7b2ab58b946b8}
+Set a rotation matrix around the Z axis. cz sz 0 R\+Z = -\/sz cz 0 0 0 1 \hypertarget{class_matrix3x3_ae70311ba318a428a3eb5c6d011a00e9a}{\index{Matrix3x3@{Matrix3x3}!Skew\+Symmetric@{Skew\+Symmetric}}
+\index{Skew\+Symmetric@{Skew\+Symmetric}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Skew\+Symmetric}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Matrix3x3\+::\+Skew\+Symmetric (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_matrix3x3_ae70311ba318a428a3eb5c6d011a00e9a}
+Makes a skew-\/symmetric matrix (a.\+k.\+a. Star($\ast$) \hyperlink{class_matrix}{Matrix}) \mbox{[} 0.\+0 -\/a.\+z a.\+y \mbox{]} \mbox{[} a.\+z 0.\+0 -\/a.\+x \mbox{]} \mbox{[} -\/a.\+y a.\+x 0.\+0 \mbox{]} This is also called a \char`\"{}cross matrix\char`\"{} since for any vectors A and B, A$^\wedge$\+B = Skew(\+A) $\ast$ B = -\/ B $\ast$ Skew(\+A); 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\hyperlink{_ice_matrix3x3_8h}{Ice\+Matrix3x3.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\hyperlink{_ice_matrix3x3_8cpp}{Ice\+Matrix3x3.\+cpp}\end{DoxyCompactItemize}

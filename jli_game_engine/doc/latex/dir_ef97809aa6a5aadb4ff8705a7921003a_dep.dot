@@ -1,0 +1,13 @@
+digraph "bullet/bullet-2.82-r2704/Extras/AllBulletDemosOSX/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6151c41e9cf6aab492f597392dd6d049 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AllBulletDemosOSX" fontname="Helvetica", fontsize="10", URL="dir_6151c41e9cf6aab492f597392dd6d049.html"]
+  subgraph clusterdir_ef97809aa6a5aadb4ff8705a7921003a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ef97809aa6a5aadb4ff8705a7921003a.html"];
+    dir_ef97809aa6a5aadb4ff8705a7921003a [shape=plaintext label="src"];
+    dir_24be2a4a2865fdef603402d1a4e96aca [shape=box label="toolkit" color="black" fillcolor="white" style="filled" URL="dir_24be2a4a2865fdef603402d1a4e96aca.html"];
+  }
+  }
+}

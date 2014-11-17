@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Fractal/OGLES2/Build/Android/src/com/powervr" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7b9cfe28bdddd76033286b3b07e619b4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="com" fontname="Helvetica", fontsize="10", URL="dir_7b9cfe28bdddd76033286b3b07e619b4.html"]
+  subgraph clusterdir_e0c81aceb0762b60c9fcc0871c7ca64a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e0c81aceb0762b60c9fcc0871c7ca64a.html"];
+    dir_e0c81aceb0762b60c9fcc0871c7ca64a [shape=plaintext label="powervr"];
+    dir_d1971fc9d8e5fcc2f39db571e477b1bf [shape=box label="OGLES2Fractal" color="black" fillcolor="white" style="filled" URL="dir_d1971fc9d8e5fcc2f39db571e477b1bf.html"];
+  }
+  }
+}

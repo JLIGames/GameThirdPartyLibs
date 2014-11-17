@@ -1,0 +1,16 @@
+digraph "zlib/zlib-1.2.8" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3c17883d206b7bf81e2b431b0ae79cdb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="zlib" fontname="Helvetica", fontsize="10", URL="dir_3c17883d206b7bf81e2b431b0ae79cdb.html"]
+  subgraph clusterdir_ee608a8abb8a8878bf325fc634e1cabc {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ee608a8abb8a8878bf325fc634e1cabc.html"];
+    dir_ee608a8abb8a8878bf325fc634e1cabc [shape=plaintext label="zlib-1.2.8"];
+    dir_543f1c961eafcb90781ead70bbcee8ad [shape=box label="as400" color="black" fillcolor="white" style="filled" URL="dir_543f1c961eafcb90781ead70bbcee8ad.html"];
+    dir_e0c029cd5149dae73dc2b47aa4b1f108 [shape=box label="contrib" color="red" fillcolor="white" style="filled" URL="dir_e0c029cd5149dae73dc2b47aa4b1f108.html"];
+    dir_28ccd7828573f5b7a327194e3edb9fec [shape=box label="examples" color="black" fillcolor="white" style="filled" URL="dir_28ccd7828573f5b7a327194e3edb9fec.html"];
+    dir_8a7395d54da978b8b3adff6de51127ff [shape=box label="test" color="black" fillcolor="white" style="filled" URL="dir_8a7395d54da978b8b3adff6de51127ff.html"];
+  }
+  }
+}

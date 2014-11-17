@@ -1,0 +1,18 @@
+digraph "PVRShellInit"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PVRShellInit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PVRShellInitAPI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell_init_a_p_i.html",tooltip="Initialisation interface with specific API. "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVRShellInitOS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell_init_o_s.html",tooltip="Interface with specific Operating System. "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_X11Display" ,fontname="Helvetica"];
+  Node4 [label="Display",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pShell" ,fontname="Helvetica"];
+  Node5 [label="PVRShell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html",tooltip="Inherited by the application; responsible for abstracting the OS and API. "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_CommandLine" ,fontname="Helvetica"];
+  Node6 [label="PVRShellCommandLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell_command_line.html",tooltip="Command-line interpreter. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pOpt" ,fontname="Helvetica"];
+  Node7 [label="SCmdLineOpt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_s_cmd_line_opt.html",tooltip="Stores a variable name/value pair for an individual command-line option. "];
+}

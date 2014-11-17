@@ -1,0 +1,9 @@
+digraph "Assimp::LWO::AnimResolver::DoInterpolation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::LWO::AnimResolver\l::DoInterpolation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::LWO::AnimResolver\l::DoInterpolation2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_l_w_o_1_1_anim_resolver.html#a836e5acf927a945537e446b7e61aa5ee",tooltip="Almost the same, except we won&#39;t handle pre/post conditions here. "];
+}

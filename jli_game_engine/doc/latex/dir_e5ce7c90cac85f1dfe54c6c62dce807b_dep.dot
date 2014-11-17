@@ -1,0 +1,15 @@
+digraph "fmod/android/fmodstudioapi10503android/api" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_74eb7b41963a8bf3079bcd7a681183a4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="fmodstudioapi10503android" fontname="Helvetica", fontsize="10", URL="dir_74eb7b41963a8bf3079bcd7a681183a4.html"]
+  subgraph clusterdir_e5ce7c90cac85f1dfe54c6c62dce807b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e5ce7c90cac85f1dfe54c6c62dce807b.html"];
+    dir_e5ce7c90cac85f1dfe54c6c62dce807b [shape=plaintext label="api"];
+    dir_59c0545bd291925d51a187ad2c6c1353 [shape=box label="fsbank" color="red" fillcolor="white" style="filled" URL="dir_59c0545bd291925d51a187ad2c6c1353.html"];
+    dir_0c8edc3481e202ca49e8214ff5158b73 [shape=box label="lowlevel" color="red" fillcolor="white" style="filled" URL="dir_0c8edc3481e202ca49e8214ff5158b73.html"];
+    dir_b3b05b33acbde359767e085880e81c86 [shape=box label="studio" color="red" fillcolor="white" style="filled" URL="dir_b3b05b33acbde359767e085880e81c86.html"];
+  }
+  }
+}

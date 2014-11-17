@@ -1,0 +1,23 @@
+digraph "Bullet::btTypedConstraintDoubleData"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Bullet::btTypedConstraint\lDoubleData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rbA\nm_rbB" ,fontname="Helvetica"];
+  Node2 [label="Bullet::btRigidBodyDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet_1_1bt_rigid_body_double_data.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_invInertiaTensorWorld" ,fontname="Helvetica"];
+  Node3 [label="Bullet::btMatrix3x3DoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet_1_1bt_matrix3x3_double_data.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_el" ,fontname="Helvetica"];
+  Node4 [label="Bullet::btVector3DoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet_1_1bt_vector3_double_data.html"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_collisionObjectData" ,fontname="Helvetica"];
+  Node5 [label="Bullet::btCollisionObject\lDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet_1_1bt_collision_object_double_data.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_worldTransform\nm_interpolationWorldTransform" ,fontname="Helvetica"];
+  Node6 [label="Bullet::btTransformDoubleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet_1_1bt_transform_double_data.html"];
+  Node3 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_basis" ,fontname="Helvetica"];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_origin" ,fontname="Helvetica"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rootCollisionShape" ,fontname="Helvetica"];
+  Node7 [label="Bullet::btCollisionShapeData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet_1_1bt_collision_shape_data.html"];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_interpolationAngularVelocity\nm_anisotropicFriction\nm_interpolationLinearVelocity" ,fontname="Helvetica"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_gravity\nm_linearVelocity\nm_totalTorque\nm_invInertiaLocal\nm_gravity_acceleration\nm_linearFactor\nm_angularVelocity\nm_angularFactor\nm_totalForce" ,fontname="Helvetica"];
+}

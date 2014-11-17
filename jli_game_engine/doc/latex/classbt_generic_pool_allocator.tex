@@ -1,0 +1,100 @@
+\hypertarget{classbt_generic_pool_allocator}{\section{bt\+Generic\+Pool\+Allocator Class Reference}
+\label{classbt_generic_pool_allocator}\index{bt\+Generic\+Pool\+Allocator@{bt\+Generic\+Pool\+Allocator}}
+}
+
+
+Generic \hyperlink{class_allocator}{Allocator} with pools.  
+
+
+
+
+{\ttfamily \#include $<$bt\+Generic\+Pool\+Allocator.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Generic\+Pool\+Allocator\+:
+
+
+Collaboration diagram for bt\+Generic\+Pool\+Allocator\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_generic_pool_allocator_ab34f82358157fb84815facf548a7ed44}{size\+\_\+t {\bfseries get\+\_\+pool\+\_\+capacity} ()}\label{classbt_generic_pool_allocator_ab34f82358157fb84815facf548a7ed44}
+
+\item 
+\hypertarget{classbt_generic_pool_allocator_abf2f5fb4394dff12a92005fc579f866e}{{\bfseries bt\+Generic\+Pool\+Allocator} (size\+\_\+t pool\+\_\+element\+\_\+size, size\+\_\+t pool\+\_\+element\+\_\+count)}\label{classbt_generic_pool_allocator_abf2f5fb4394dff12a92005fc579f866e}
+
+\item 
+\hypertarget{classbt_generic_pool_allocator_a3d92133ad713c674e5102bfd2ca2d66a}{virtual \hyperlink{classbt_generic_pool_allocator_a3d92133ad713c674e5102bfd2ca2d66a}{$\sim$bt\+Generic\+Pool\+Allocator} ()}\label{classbt_generic_pool_allocator_a3d92133ad713c674e5102bfd2ca2d66a}
+
+\begin{DoxyCompactList}\small\item\em $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$! \hyperlink{classbt_generic_pool_allocator}{bt\+Generic\+Pool\+Allocator} $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$!/// \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classbt_generic_pool_allocator_ae07307fd61ffa9ce47b5f198b87d17e1}{allocate} (size\+\_\+t size\+\_\+bytes)
+\begin{DoxyCompactList}\small\item\em Allocates memory in pool. \end{DoxyCompactList}\item 
+\hypertarget{classbt_generic_pool_allocator_a6904f973aef630798a87f0e6dd37e93c}{bool {\bfseries free\+Memory} (void $\ast$pointer)}\label{classbt_generic_pool_allocator_a6904f973aef630798a87f0e6dd37e93c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_generic_pool_allocator_a6a423ffc81fd7032cf04c1c2203b9a60}{\hyperlink{classbt_generic_memory_pool}{bt\+Generic\+Memory\+Pool} $\ast$ {\bfseries m\+\_\+pools} \mbox{[}B\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+P\+O\+O\+L\+S\mbox{]}}\label{classbt_generic_pool_allocator_a6a423ffc81fd7032cf04c1c2203b9a60}
+
+\item 
+\hypertarget{classbt_generic_pool_allocator_a683e472dcc9efbc63a9218ba2e1a4dc4}{size\+\_\+t {\bfseries m\+\_\+pool\+\_\+count}}\label{classbt_generic_pool_allocator_a683e472dcc9efbc63a9218ba2e1a4dc4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_generic_pool_allocator_a1de453f3e3f6fffa62ff6ac46466af0b}{\hyperlink{classbt_generic_memory_pool}{bt\+Generic\+Memory\+Pool} $\ast$ {\bfseries push\+\_\+new\+\_\+pool} ()}\label{classbt_generic_pool_allocator_a1de453f3e3f6fffa62ff6ac46466af0b}
+
+\item 
+\hypertarget{classbt_generic_pool_allocator_a6c04580d308b8dd29b1e6e26eb69ac54}{void $\ast$ {\bfseries failback\+\_\+alloc} (size\+\_\+t size\+\_\+bytes)}\label{classbt_generic_pool_allocator_a6c04580d308b8dd29b1e6e26eb69ac54}
+
+\item 
+\hypertarget{classbt_generic_pool_allocator_a7a8a33e2e4350d452d468b6a42ccf233}{bool {\bfseries failback\+\_\+free} (void $\ast$pointer)}\label{classbt_generic_pool_allocator_a7a8a33e2e4350d452d468b6a42ccf233}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_generic_pool_allocator_afaabd371d1062a16b62f584c7e06e1d5}{size\+\_\+t {\bfseries m\+\_\+pool\+\_\+element\+\_\+size}}\label{classbt_generic_pool_allocator_afaabd371d1062a16b62f584c7e06e1d5}
+
+\item 
+\hypertarget{classbt_generic_pool_allocator_a03e6c8bfe59622aeb9f6744802e5e5c5}{size\+\_\+t {\bfseries m\+\_\+pool\+\_\+element\+\_\+count}}\label{classbt_generic_pool_allocator_a03e6c8bfe59622aeb9f6744802e5e5c5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic \hyperlink{class_allocator}{Allocator} with pools. 
+
+General purpose \hyperlink{class_allocator}{Allocator} which can create Memory Pools dynamiacally as needed. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_generic_pool_allocator_ae07307fd61ffa9ce47b5f198b87d17e1}{\index{bt\+Generic\+Pool\+Allocator@{bt\+Generic\+Pool\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!bt\+Generic\+Pool\+Allocator@{bt\+Generic\+Pool\+Allocator}}
+\subsubsection[{allocate}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ bt\+Generic\+Pool\+Allocator\+::allocate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size\+\_\+bytes}
+\end{DoxyParamCaption}
+)}}\label{classbt_generic_pool_allocator_ae07307fd61ffa9ce47b5f198b87d17e1}
+
+
+Allocates memory in pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+bytes} & size in bytes of the buffer \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/\hyperlink{bt_generic_pool_allocator_8h}{bt\+Generic\+Pool\+Allocator.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/\hyperlink{bt_generic_pool_allocator_8cpp}{bt\+Generic\+Pool\+Allocator.\+cpp}\end{DoxyCompactItemize}

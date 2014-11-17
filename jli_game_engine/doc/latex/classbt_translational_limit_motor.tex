@@ -1,0 +1,137 @@
+\hypertarget{classbt_translational_limit_motor}{\section{bt\+Translational\+Limit\+Motor Class Reference}
+\label{classbt_translational_limit_motor}\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_translational_limit_motor_ad06b8b53ab20a22ec33b091e42eea822}{{\bfseries bt\+Translational\+Limit\+Motor} (const \hyperlink{classbt_translational_limit_motor}{bt\+Translational\+Limit\+Motor} \&other)}\label{classbt_translational_limit_motor_ad06b8b53ab20a22ec33b091e42eea822}
+
+\item 
+bool \hyperlink{classbt_translational_limit_motor_ae5bb30b955dcd0923d72642e37f00622}{is\+Limited} (int limit\+Index)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} limit. \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_a635a5c4078ef1b5a8fa171071843b62f}{bool {\bfseries need\+Apply\+Force} (int limit\+Index)}\label{classbt_translational_limit_motor_a635a5c4078ef1b5a8fa171071843b62f}
+
+\item 
+\hypertarget{classbt_translational_limit_motor_a74698c3a1b13a97371fd1eff60201f3a}{int {\bfseries test\+Limit\+Value} (int limit\+Index, bt\+Scalar test\+\_\+value)}\label{classbt_translational_limit_motor_a74698c3a1b13a97371fd1eff60201f3a}
+
+\item 
+bt\+Scalar \hyperlink{classbt_translational_limit_motor_a40857b3a98cd8d8fc986516985726e49}{solve\+Linear\+Axis} (bt\+Scalar time\+Step, bt\+Scalar jac\+Diag\+A\+B\+Inv, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&body1, const bt\+Vector3 \&point\+In\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&body2, const bt\+Vector3 \&point\+In\+B, int limit\+\_\+index, const bt\+Vector3 \&axis\+\_\+normal\+\_\+on\+\_\+a, const bt\+Vector3 \&anchor\+Pos)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_translational_limit_motor_ab82c9b2252e3320b5e3bec417d980258}{bt\+Vector3 \hyperlink{classbt_translational_limit_motor_ab82c9b2252e3320b5e3bec417d980258}{m\+\_\+lower\+Limit}}\label{classbt_translational_limit_motor_ab82c9b2252e3320b5e3bec417d980258}
+
+\begin{DoxyCompactList}\small\item\em the constraint lower limits \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_af30c7b646dcff227f7ba61927708c69d}{bt\+Vector3 \hyperlink{classbt_translational_limit_motor_af30c7b646dcff227f7ba61927708c69d}{m\+\_\+upper\+Limit}}\label{classbt_translational_limit_motor_af30c7b646dcff227f7ba61927708c69d}
+
+\begin{DoxyCompactList}\small\item\em the constraint upper limits \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_a6ae9f5534c032875f14edb8bb12f2b1d}{bt\+Vector3 {\bfseries m\+\_\+accumulated\+Impulse}}\label{classbt_translational_limit_motor_a6ae9f5534c032875f14edb8bb12f2b1d}
+
+\item 
+\hypertarget{classbt_translational_limit_motor_afbf19b011de530bc8bf77c47846a7ddb}{bool {\bfseries m\+\_\+enable\+Motor} \mbox{[}3\mbox{]}}\label{classbt_translational_limit_motor_afbf19b011de530bc8bf77c47846a7ddb}
+
+\item 
+\hypertarget{classbt_translational_limit_motor_ab55110a017e8dcd45aa9ff51a414f433}{bt\+Vector3 \hyperlink{classbt_translational_limit_motor_ab55110a017e8dcd45aa9ff51a414f433}{m\+\_\+target\+Velocity}}\label{classbt_translational_limit_motor_ab55110a017e8dcd45aa9ff51a414f433}
+
+\begin{DoxyCompactList}\small\item\em target motor velocity \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_a69a8bbce52a1428be16d3b799a2c8020}{bt\+Vector3 \hyperlink{classbt_translational_limit_motor_a69a8bbce52a1428be16d3b799a2c8020}{m\+\_\+max\+Motor\+Force}}\label{classbt_translational_limit_motor_a69a8bbce52a1428be16d3b799a2c8020}
+
+\begin{DoxyCompactList}\small\item\em max force on motor \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_a92e72a7a72546204270e5949e5e78530}{bt\+Vector3 {\bfseries m\+\_\+current\+Limit\+Error}}\label{classbt_translational_limit_motor_a92e72a7a72546204270e5949e5e78530}
+
+\item 
+\hypertarget{classbt_translational_limit_motor_a82c7d9119513981d0bafae04e928b6d2}{bt\+Vector3 \hyperlink{classbt_translational_limit_motor_a82c7d9119513981d0bafae04e928b6d2}{m\+\_\+current\+Linear\+Diff}}\label{classbt_translational_limit_motor_a82c7d9119513981d0bafae04e928b6d2}
+
+\begin{DoxyCompactList}\small\item\em How much is violated this limit. \end{DoxyCompactList}\item 
+int \hyperlink{classbt_translational_limit_motor_a10c82797a218fd20026256f9e69b9b62}{m\+\_\+current\+Limit} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Current relative offset of constraint frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+bt\+Scalar \hyperlink{classbt_translational_limit_motor_aa557a6c4d83ca5cb5a942f8f4b236f74}{m\+\_\+limit\+Softness}
+\begin{DoxyCompactList}\small\item\em Softness for linear limit. \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_ae82a9f720aca3ddba4b174f2dd3a2fd2}{bt\+Scalar \hyperlink{classbt_translational_limit_motor_ae82a9f720aca3ddba4b174f2dd3a2fd2}{m\+\_\+damping}}\label{classbt_translational_limit_motor_ae82a9f720aca3ddba4b174f2dd3a2fd2}
+
+\begin{DoxyCompactList}\small\item\em Damping for linear limit. \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_ae456444a651dc2fa323055b130d0511e}{bt\+Scalar {\bfseries m\+\_\+restitution}}\label{classbt_translational_limit_motor_ae456444a651dc2fa323055b130d0511e}
+
+\item 
+bt\+Vector3 \hyperlink{classbt_translational_limit_motor_a8970a726c2b50a0c60c0c8e079cc784f}{m\+\_\+normal\+C\+F\+M}
+\begin{DoxyCompactList}\small\item\em Bounce parameter for linear limit. \end{DoxyCompactList}\item 
+\hypertarget{classbt_translational_limit_motor_a0320a9d4a9a46e7b8626ccd84f970228}{bt\+Vector3 \hyperlink{classbt_translational_limit_motor_a0320a9d4a9a46e7b8626ccd84f970228}{m\+\_\+stop\+E\+R\+P}}\label{classbt_translational_limit_motor_a0320a9d4a9a46e7b8626ccd84f970228}
+
+\begin{DoxyCompactList}\small\item\em Error tolerance factor when joint is at limit. \end{DoxyCompactList}\item 
+bt\+Vector3 \hyperlink{classbt_translational_limit_motor_a531c6ae0a0805eaa4fc59a40982a67f8}{m\+\_\+stop\+C\+F\+M}
+\end{DoxyCompactItemize}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_translational_limit_motor_ae5bb30b955dcd0923d72642e37f00622}{\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}!is\+Limited@{is\+Limited}}
+\index{is\+Limited@{is\+Limited}!bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+\subsubsection[{is\+Limited}]{\setlength{\rightskip}{0pt plus 5cm}bool bt\+Translational\+Limit\+Motor\+::is\+Limited (
+\begin{DoxyParamCaption}
+\item[{int}]{limit\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classbt_translational_limit_motor_ae5bb30b955dcd0923d72642e37f00622}
+
+
+\hyperlink{class_test}{Test} limit. 
+
+
+\begin{DoxyItemize}
+\item free means upper $<$ lower,
+\item locked means upper == lower
+\item limited means upper $>$ lower
+\item limit\+Index\+: first 3 are linear, next 3 are angular 
+\end{DoxyItemize}\hypertarget{classbt_translational_limit_motor_a40857b3a98cd8d8fc986516985726e49}{\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}!solve\+Linear\+Axis@{solve\+Linear\+Axis}}
+\index{solve\+Linear\+Axis@{solve\+Linear\+Axis}!bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+\subsubsection[{solve\+Linear\+Axis}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Scalar bt\+Translational\+Limit\+Motor\+::solve\+Linear\+Axis (
+\begin{DoxyParamCaption}
+\item[{bt\+Scalar}]{time\+Step, }
+\item[{bt\+Scalar}]{jac\+Diag\+A\+B\+Inv, }
+\item[{{\bf bt\+Rigid\+Body} \&}]{body1, }
+\item[{const bt\+Vector3 \&}]{point\+In\+A, }
+\item[{{\bf bt\+Rigid\+Body} \&}]{body2, }
+\item[{const bt\+Vector3 \&}]{point\+In\+B, }
+\item[{int}]{limit\+\_\+index, }
+\item[{const bt\+Vector3 \&}]{axis\+\_\+normal\+\_\+on\+\_\+a, }
+\item[{const bt\+Vector3 \&}]{anchor\+Pos}
+\end{DoxyParamCaption}
+)}}\label{classbt_translational_limit_motor_a40857b3a98cd8d8fc986516985726e49}
+find relative velocity
+
+apply displacement correction 
+
+\subsection{Member Data Documentation}
+\hypertarget{classbt_translational_limit_motor_a10c82797a218fd20026256f9e69b9b62}{\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}!m\+\_\+current\+Limit@{m\+\_\+current\+Limit}}
+\index{m\+\_\+current\+Limit@{m\+\_\+current\+Limit}!bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+\subsubsection[{m\+\_\+current\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}int bt\+Translational\+Limit\+Motor\+::m\+\_\+current\+Limit\mbox{[}3\mbox{]}}}\label{classbt_translational_limit_motor_a10c82797a218fd20026256f9e69b9b62}
+
+
+Current relative offset of constraint frames. 
+
+0=free, 1=at lower limit, 2=at upper limit \hypertarget{classbt_translational_limit_motor_aa557a6c4d83ca5cb5a942f8f4b236f74}{\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}!m\+\_\+limit\+Softness@{m\+\_\+limit\+Softness}}
+\index{m\+\_\+limit\+Softness@{m\+\_\+limit\+Softness}!bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+\subsubsection[{m\+\_\+limit\+Softness}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Scalar bt\+Translational\+Limit\+Motor\+::m\+\_\+limit\+Softness}}\label{classbt_translational_limit_motor_aa557a6c4d83ca5cb5a942f8f4b236f74}
+
+
+Softness for linear limit. 
+
+Linear\+\_\+\+Limit\+\_\+parameters \hypertarget{classbt_translational_limit_motor_a8970a726c2b50a0c60c0c8e079cc784f}{\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}!m\+\_\+normal\+C\+F\+M@{m\+\_\+normal\+C\+F\+M}}
+\index{m\+\_\+normal\+C\+F\+M@{m\+\_\+normal\+C\+F\+M}!bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+\subsubsection[{m\+\_\+normal\+C\+F\+M}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Vector3 bt\+Translational\+Limit\+Motor\+::m\+\_\+normal\+C\+F\+M}}\label{classbt_translational_limit_motor_a8970a726c2b50a0c60c0c8e079cc784f}
+
+
+Bounce parameter for linear limit. 
+
+Constraint force mixing factor \hypertarget{classbt_translational_limit_motor_a531c6ae0a0805eaa4fc59a40982a67f8}{\index{bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}!m\+\_\+stop\+C\+F\+M@{m\+\_\+stop\+C\+F\+M}}
+\index{m\+\_\+stop\+C\+F\+M@{m\+\_\+stop\+C\+F\+M}!bt\+Translational\+Limit\+Motor@{bt\+Translational\+Limit\+Motor}}
+\subsubsection[{m\+\_\+stop\+C\+F\+M}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Vector3 bt\+Translational\+Limit\+Motor\+::m\+\_\+stop\+C\+F\+M}}\label{classbt_translational_limit_motor_a531c6ae0a0805eaa4fc59a40982a67f8}
+Constraint force mixing factor when joint is at limit 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Constraint\+Solver/bt\+Generic6\+Dof\+Constraint.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Constraint\+Solver/bt\+Generic6\+Dof\+Constraint.\+cpp\end{DoxyCompactItemize}

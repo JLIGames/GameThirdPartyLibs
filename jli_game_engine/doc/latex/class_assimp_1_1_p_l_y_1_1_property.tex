@@ -1,0 +1,89 @@
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property}{\section{Assimp\+:\+:P\+L\+Y\+:\+:Property Class Reference}
+\label{class_assimp_1_1_p_l_y_1_1_property}\index{Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}}
+}
+
+
+Helper class for a property in a P\+L\+Y file.  
+
+
+
+
+{\ttfamily \#include $<$Ply\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_a939c4da233c972ad53b83229ed4f88f4}{\hyperlink{class_assimp_1_1_p_l_y_1_1_property_a939c4da233c972ad53b83229ed4f88f4}{Property} ()}\label{class_assimp_1_1_p_l_y_1_1_property_a939c4da233c972ad53b83229ed4f88f4}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_assimp_1_1_p_l_y_1_1_property_a8e8f4cba19bf0f1b29b0d2aa11c4289b}{Parse\+Property} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out, \hyperlink{class_assimp_1_1_p_l_y_1_1_property}{Property} $\ast$p\+Out)
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_ae42da59426435424cb7a6f420d000e11}{static E\+Data\+Type \hyperlink{class_assimp_1_1_p_l_y_1_1_property_ae42da59426435424cb7a6f420d000e11}{Parse\+Data\+Type} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out)}\label{class_assimp_1_1_p_l_y_1_1_property_ae42da59426435424cb7a6f420d000e11}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a data type from a string. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_a9abbfab27b9e6207400920a6ea8c9187}{static E\+Semantic \hyperlink{class_assimp_1_1_p_l_y_1_1_property_a9abbfab27b9e6207400920a6ea8c9187}{Parse\+Semantic} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out)}\label{class_assimp_1_1_p_l_y_1_1_property_a9abbfab27b9e6207400920a6ea8c9187}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a semantic from a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_a6155ee8ad7db472258f99317f261fa9e}{E\+Data\+Type \hyperlink{class_assimp_1_1_p_l_y_1_1_property_a6155ee8ad7db472258f99317f261fa9e}{e\+Type}}\label{class_assimp_1_1_p_l_y_1_1_property_a6155ee8ad7db472258f99317f261fa9e}
+
+\begin{DoxyCompactList}\small\item\em Data type of the property. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_aa4bef747eb8eaa52008ded265cb94c40}{E\+Semantic \hyperlink{class_assimp_1_1_p_l_y_1_1_property_aa4bef747eb8eaa52008ded265cb94c40}{Semantic}}\label{class_assimp_1_1_p_l_y_1_1_property_aa4bef747eb8eaa52008ded265cb94c40}
+
+\begin{DoxyCompactList}\small\item\em Semantical meaning of the property. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_assimp_1_1_p_l_y_1_1_property_a4c10eda3b3b890e0fdb5035a0a40a714}{sz\+Name}
+\item 
+bool \hyperlink{class_assimp_1_1_p_l_y_1_1_property_aa732dc64999ba71453d792e1de0dfd44}{b\+Is\+List}
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_ac3b0c859eecf98994ec941f17d393e51}{E\+Data\+Type {\bfseries e\+First\+Type}}\label{class_assimp_1_1_p_l_y_1_1_property_ac3b0c859eecf98994ec941f17d393e51}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class for a property in a P\+L\+Y file. 
+
+This can e.\+g. be a part of the vertex declaration 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_a8e8f4cba19bf0f1b29b0d2aa11c4289b}{\index{Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}!Parse\+Property@{Parse\+Property}}
+\index{Parse\+Property@{Parse\+Property}!Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}}
+\subsubsection[{Parse\+Property}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+L\+Y\+::\+Property\+::\+Parse\+Property (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Cur, }
+\item[{const char $\ast$$\ast$}]{p\+Cur\+Out, }
+\item[{{\bf P\+L\+Y\+::\+Property} $\ast$}]{p\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_p_l_y_1_1_property_a8e8f4cba19bf0f1b29b0d2aa11c4289b}
+\hyperlink{struct_parse}{Parse} a property from a string. The end of the string is either '~\newline
+', '' or '\textbackslash{}0'. Return valie is false if the input string is N\+O\+T a valid property (E.\+g. does not start with the \char`\"{}property\char`\"{} keyword) 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_aa732dc64999ba71453d792e1de0dfd44}{\index{Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}!b\+Is\+List@{b\+Is\+List}}
+\index{b\+Is\+List@{b\+Is\+List}!Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}}
+\subsubsection[{b\+Is\+List}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+P\+L\+Y\+::\+Property\+::b\+Is\+List}}\label{class_assimp_1_1_p_l_y_1_1_property_aa732dc64999ba71453d792e1de0dfd44}
+Specifies whether the data type is a list where the first element specifies the size of the list \hypertarget{class_assimp_1_1_p_l_y_1_1_property_a4c10eda3b3b890e0fdb5035a0a40a714}{\index{Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}!sz\+Name@{sz\+Name}}
+\index{sz\+Name@{sz\+Name}!Assimp\+::\+P\+L\+Y\+::\+Property@{Assimp\+::\+P\+L\+Y\+::\+Property}}
+\subsubsection[{sz\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+P\+L\+Y\+::\+Property\+::sz\+Name}}\label{class_assimp_1_1_p_l_y_1_1_property_a4c10eda3b3b890e0fdb5035a0a40a714}
+Of the semantic of the property could not be parsed\+: Contains the semantic specified in the file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ply\+Parser.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_properties_8cpp}{F\+B\+X\+Properties.\+cpp}\item 
+assimp/assimp-\/3.\+1.\+1/code/Ply\+Parser.\+cpp\end{DoxyCompactItemize}

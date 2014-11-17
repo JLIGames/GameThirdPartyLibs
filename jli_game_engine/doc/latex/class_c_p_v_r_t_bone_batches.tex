@@ -1,0 +1,152 @@
+\hypertarget{class_c_p_v_r_t_bone_batches}{\section{C\+P\+V\+R\+T\+Bone\+Batches Class Reference}
+\label{class_c_p_v_r_t_bone_batches}\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+}
+
+
+A class for processing vertices into bone batches.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+Bone\+Batch.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_bone_batches_a2a0037ba145fbb78e013867effaa1764}{Create} (int $\ast$const pn\+Vtx\+Num\+Out, char $\ast$$\ast$const p\+Vtx\+Out, unsigned int $\ast$const pui32\+Idx, const int n\+Vtx\+Num, const char $\ast$const p\+Vtx, const int n\+Stride, const int n\+Offset\+Weight, const E\+P\+V\+R\+T\+Data\+Type e\+Type\+Weight, const int n\+Offset\+Idx, const E\+P\+V\+R\+T\+Data\+Type e\+Type\+Idx, const int n\+Tri\+Num, const int \hyperlink{class_c_p_v_r_t_bone_batches_af9b116c78dee953c533d4476418ad621}{n\+Batch\+Bone\+Max}, const int n\+Vertex\+Bones)
+\begin{DoxyCompactList}\small\item\em Fills the bone batch structure. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_bone_batches_a3282990401eae2cf95c8170c7626230d}{Release} ()
+\begin{DoxyCompactList}\small\item\em Destroy the bone batch structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{class_c_p_v_r_t_bone_batches_ad28f537c414b9f867ff7e97a2518ba2b}{pn\+Batches}
+\item 
+int $\ast$ \hyperlink{class_c_p_v_r_t_bone_batches_ae48f5f82f69a2bf19134aafdbb7b82f6}{pn\+Batch\+Bone\+Cnt}
+\item 
+int $\ast$ \hyperlink{class_c_p_v_r_t_bone_batches_a528439f662d00c261ae6344c5158bd69}{pn\+Batch\+Offset}
+\item 
+int \hyperlink{class_c_p_v_r_t_bone_batches_af9b116c78dee953c533d4476418ad621}{n\+Batch\+Bone\+Max}
+\item 
+int \hyperlink{class_c_p_v_r_t_bone_batches_aa153761d4db66658f734a3d3ca649b05}{n\+Batch\+Cnt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for processing vertices into bone batches. 
+
+
+
+ Handles a batch of bones
+
+
+
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_t_bone_batches_a2a0037ba145fbb78e013867effaa1764}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!Create@{Create}}
+\index{Create@{Create}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+Bone\+Batches\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{int $\ast$const}]{pn\+Vtx\+Num\+Out, }
+\item[{char $\ast$$\ast$const}]{p\+Vtx\+Out, }
+\item[{unsigned int $\ast$const}]{pui32\+Idx, }
+\item[{const int}]{n\+Vtx\+Num, }
+\item[{const char $\ast$const}]{p\+Vtx, }
+\item[{const int}]{n\+Stride, }
+\item[{const int}]{n\+Offset\+Weight, }
+\item[{const E\+P\+V\+R\+T\+Data\+Type}]{e\+Type\+Weight, }
+\item[{const int}]{n\+Offset\+Idx, }
+\item[{const E\+P\+V\+R\+T\+Data\+Type}]{e\+Type\+Idx, }
+\item[{const int}]{n\+Tri\+Num, }
+\item[{const int}]{n\+Batch\+Bone\+Max, }
+\item[{const int}]{n\+Vertex\+Bones}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_bone_batches_a2a0037ba145fbb78e013867effaa1764}
+
+
+Fills the bone batch structure. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em pn\+Vtx\+Num\+Out} & vertex count \\
+\hline
+\mbox{\tt out}  & {\em p\+Vtx\+Out} & Output vertices (program must free() this) \\
+\hline
+\mbox{\tt in,out}  & {\em pui32\+Idx} & index array for triangle list \\
+\hline
+\mbox{\tt in}  & {\em n\+Vtx\+Num} & vertex count \\
+\hline
+\mbox{\tt in}  & {\em p\+Vtx} & vertices \\
+\hline
+\mbox{\tt in}  & {\em n\+Stride} & Size of a vertex (in bytes) \\
+\hline
+\mbox{\tt in}  & {\em n\+Offset\+Weight} & Offset in bytes to the vertex bone-\/weights \\
+\hline
+\mbox{\tt in}  & {\em e\+Type\+Weight} & Data type of the vertex bone-\/weights \\
+\hline
+\mbox{\tt in}  & {\em n\+Offset\+Idx} & Offset in bytes to the vertex bone-\/indices \\
+\hline
+\mbox{\tt in}  & {\em e\+Type\+Idx} & Data type of the vertex bone-\/indices \\
+\hline
+\mbox{\tt in}  & {\em n\+Tri\+Num} & Number of triangles \\
+\hline
+\mbox{\tt in}  & {\em n\+Batch\+Bone\+Max} & Number of bones a batch can reference \\
+\hline
+\mbox{\tt in}  & {\em n\+Vertex\+Bones} & Number of bones affecting each vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful
+\end{DoxyReturn}
+
+
+  Create  pn\+Vtx\+Num\+Out vertex count  p\+Vtx\+Out Output vertices (program must free() this)  pui32\+Idx index array for triangle list  n\+Vtx\+Num vertex count  p\+Vtx vertices  n\+Stride Size of a vertex (in bytes)  n\+Offset\+Weight Offset in bytes to the vertex bone-\/weights  e\+Type\+Weight Data type of the vertex bone-\/weights  n\+Offset\+Idx Offset in bytes to the vertex bone-\/indices  e\+Type\+Idx Data type of the vertex bone-\/indices  n\+Tri\+Num Number of triangles  n\+Batch\+Bone\+Max Number of bones a batch can reference  n\+Vertex\+Bones Number of bones affecting each vertex  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if successful  Fills the bone batch structure 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_bone_batches_a3282990401eae2cf95c8170c7626230d}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!Release@{Release}}
+\index{Release@{Release}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Bone\+Batches\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_p_v_r_t_bone_batches_a3282990401eae2cf95c8170c7626230d}
+
+
+Destroy the bone batch structure. 
+
+
+
+ 
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_p_v_r_t_bone_batches_af9b116c78dee953c533d4476418ad621}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!n\+Batch\+Bone\+Max@{n\+Batch\+Bone\+Max}}
+\index{n\+Batch\+Bone\+Max@{n\+Batch\+Bone\+Max}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{n\+Batch\+Bone\+Max}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+Bone\+Batches\+::n\+Batch\+Bone\+Max}}\label{class_c_p_v_r_t_bone_batches_af9b116c78dee953c533d4476418ad621}
+Stored value as was passed into \hyperlink{class_c_p_v_r_t_bone_batches_a2a0037ba145fbb78e013867effaa1764}{Create()} \hypertarget{class_c_p_v_r_t_bone_batches_aa153761d4db66658f734a3d3ca649b05}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!n\+Batch\+Cnt@{n\+Batch\+Cnt}}
+\index{n\+Batch\+Cnt@{n\+Batch\+Cnt}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{n\+Batch\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+Bone\+Batches\+::n\+Batch\+Cnt}}\label{class_c_p_v_r_t_bone_batches_aa153761d4db66658f734a3d3ca649b05}
+Number of batches to render \hypertarget{class_c_p_v_r_t_bone_batches_ae48f5f82f69a2bf19134aafdbb7b82f6}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!pn\+Batch\+Bone\+Cnt@{pn\+Batch\+Bone\+Cnt}}
+\index{pn\+Batch\+Bone\+Cnt@{pn\+Batch\+Bone\+Cnt}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{pn\+Batch\+Bone\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ C\+P\+V\+R\+T\+Bone\+Batches\+::pn\+Batch\+Bone\+Cnt}}\label{class_c_p_v_r_t_bone_batches_ae48f5f82f69a2bf19134aafdbb7b82f6}
+Actual number of bone indices, per batch \hypertarget{class_c_p_v_r_t_bone_batches_ad28f537c414b9f867ff7e97a2518ba2b}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!pn\+Batches@{pn\+Batches}}
+\index{pn\+Batches@{pn\+Batches}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{pn\+Batches}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ C\+P\+V\+R\+T\+Bone\+Batches\+::pn\+Batches}}\label{class_c_p_v_r_t_bone_batches_ad28f537c414b9f867ff7e97a2518ba2b}
+Space for n\+Batch\+Bone\+Max bone indices, per batch \hypertarget{class_c_p_v_r_t_bone_batches_a528439f662d00c261ae6344c5158bd69}{\index{C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}!pn\+Batch\+Offset@{pn\+Batch\+Offset}}
+\index{pn\+Batch\+Offset@{pn\+Batch\+Offset}!C\+P\+V\+R\+T\+Bone\+Batches@{C\+P\+V\+R\+T\+Bone\+Batches}}
+\subsubsection[{pn\+Batch\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ C\+P\+V\+R\+T\+Bone\+Batches\+::pn\+Batch\+Offset}}\label{class_c_p_v_r_t_bone_batches_a528439f662d00c261ae6344c5158bd69}
+Offset into triangle array, per batch 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_bone_batch_8h}{P\+V\+R\+T\+Bone\+Batch.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+Bone\+Batch.\+cpp\end{DoxyCompactItemize}

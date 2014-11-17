@@ -1,0 +1,48 @@
+\hypertarget{_f_b_x_converter_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+F\+B\+X\+Converter.cpp File Reference}
+\label{_f_b_x_converter_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Converter.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Converter.\+cpp}}
+}
+
+
+Implementation of the F\+B\+X D\+O\+M -\/$>$ \hyperlink{structai_scene}{ai\+Scene} converter.  
+
+
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iterator$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$boost/tuple/tuple.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Parser.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Converter.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Document.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Properties.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Importer.\+h\char`\"{}}\\*
+Include dependency graph for F\+B\+X\+Converter.\+cpp\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_converter}{Assimp\+::\+F\+B\+X\+::\+Converter}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_b_x_converter_8cpp_a6f44c69a81f0d0d11fc0ec4acbd84c25}{\#define {\bfseries M\+A\+G\+I\+C\+\_\+\+N\+O\+D\+E\+\_\+\+T\+A\+G}~\char`\"{}\+\_\+\$\+Assimp\+Fbx\$\char`\"{}}\label{_f_b_x_converter_8cpp_a6f44c69a81f0d0d11fc0ec4acbd84c25}
+
+\item 
+\hypertarget{_f_b_x_converter_8cpp_ad2cbedf0a520b1d6ff29cef3c4155c19}{\#define {\bfseries C\+O\+N\+V\+E\+R\+T\+\_\+\+F\+B\+X\+\_\+\+T\+I\+M\+E}(time)~static\+\_\+cast$<$double$>$(time) / 46186158000\+L}\label{_f_b_x_converter_8cpp_ad2cbedf0a520b1d6ff29cef3c4155c19}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Assimp\+::\+F\+B\+X\+::\+Convert\+To\+Assimp\+Scene} (\hyperlink{structai_scene}{ai\+Scene} $\ast$out, const Document \&doc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the F\+B\+X D\+O\+M -\/$>$ \hyperlink{structai_scene}{ai\+Scene} converter. 
+

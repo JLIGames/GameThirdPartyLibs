@@ -51,6 +51,7 @@ private:
 
 template <class OWNER_TYPE>
 AbstractStateMachine<OWNER_TYPE>::AbstractStateMachine(const AbstractBuilder &builder) :
+AbstractFactoryObject(this),
 m_pCurrentState(NULL),
 m_pPreviousState(NULL)
 {
@@ -59,6 +60,7 @@ m_pPreviousState(NULL)
 
 template <class OWNER_TYPE>
 AbstractStateMachine<OWNER_TYPE>::AbstractStateMachine(const AbstractStateMachine &copy) :
+AbstractFactoryObject(this),
 m_pCurrentState(copy.m_pCurrentState),
 m_pPreviousState(copy.m_pPreviousState)
 {

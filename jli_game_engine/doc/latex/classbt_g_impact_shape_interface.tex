@@ -1,0 +1,294 @@
+\hypertarget{classbt_g_impact_shape_interface}{\section{bt\+G\+Impact\+Shape\+Interface Class Reference}
+\label{classbt_g_impact_shape_interface}\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+}
+
+
+Base class for gimpact shapes.  
+
+
+
+
+{\ttfamily \#include $<$bt\+G\+Impact\+Shape.\+h$>$}
+
+
+
+Inheritance diagram for bt\+G\+Impact\+Shape\+Interface\+:
+
+
+Collaboration diagram for bt\+G\+Impact\+Shape\+Interface\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classbt_g_impact_shape_interface_acb26c2d7a2aecabd06b996b72b848492}{update\+Bound} ()
+\begin{DoxyCompactList}\small\item\em performs refit operation \end{DoxyCompactList}\item 
+void \hyperlink{classbt_g_impact_shape_interface_a418d1f35f4dd58e4d3195aee639b615b}{get\+Aabb} (const bt\+Transform \&t, bt\+Vector3 \&aabb\+Min, bt\+Vector3 \&aabb\+Max) const 
+\begin{DoxyCompactList}\small\item\em If the Bounding box is not updated, then this class attemps to calculate it. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_ac430754948ac92d6f70b81e88416c96a}{virtual void \hyperlink{classbt_g_impact_shape_interface_ac430754948ac92d6f70b81e88416c96a}{post\+Update} ()}\label{classbt_g_impact_shape_interface_ac430754948ac92d6f70b81e88416c96a}
+
+\begin{DoxyCompactList}\small\item\em Tells to this object that is needed to refit the box set. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_ad4f12ac5c91bf67349109aecdec65455}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E const bt\+A\+A\+B\+B \& \hyperlink{classbt_g_impact_shape_interface_ad4f12ac5c91bf67349109aecdec65455}{get\+Local\+Box} ()}\label{classbt_g_impact_shape_interface_ad4f12ac5c91bf67349109aecdec65455}
+
+\begin{DoxyCompactList}\small\item\em Obtains the local box, which is the global calculated box of the total of subshapes. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_ada5489b5e81c4b11d46103dadea5d52b}{virtual int {\bfseries get\+Shape\+Type} () const }\label{classbt_g_impact_shape_interface_ada5489b5e81c4b11d46103dadea5d52b}
+
+\item 
+virtual void \hyperlink{classbt_g_impact_shape_interface_adec0bd43cd0105b1d0dc172bc7db50d8}{set\+Local\+Scaling} (const bt\+Vector3 \&scaling)
+\item 
+\hypertarget{classbt_g_impact_shape_interface_adbda098e714881e2258b33c5b1425a46}{virtual const bt\+Vector3 \& {\bfseries get\+Local\+Scaling} () const }\label{classbt_g_impact_shape_interface_adbda098e714881e2258b33c5b1425a46}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a2732455f7b2cdb44c41481d9d9ebd548}{virtual void {\bfseries set\+Margin} (bt\+Scalar margin)}\label{classbt_g_impact_shape_interface_a2732455f7b2cdb44c41481d9d9ebd548}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a87aac603f1fcd40f3c1cfe0d6f8baf16}{virtual void \hyperlink{classbt_g_impact_shape_interface_a87aac603f1fcd40f3c1cfe0d6f8baf16}{ray\+Test} (const bt\+Vector3 \&ray\+From, const bt\+Vector3 \&ray\+To, \hyperlink{structbt_collision_world_1_1_ray_result_callback}{bt\+Collision\+World\+::\+Ray\+Result\+Callback} \&result\+Callback) const }\label{classbt_g_impact_shape_interface_a87aac603f1fcd40f3c1cfe0d6f8baf16}
+
+\begin{DoxyCompactList}\small\item\em virtual method for ray collision \end{DoxyCompactList}\item 
+virtual void \hyperlink{classbt_g_impact_shape_interface_a2faf9adce39854a9a66dd658f646be25}{process\+All\+Triangles} (\hyperlink{classbt_triangle_callback}{bt\+Triangle\+Callback} $\ast$callback, const bt\+Vector3 \&aabb\+Min, const bt\+Vector3 \&aabb\+Max) const 
+\begin{DoxyCompactList}\small\item\em Function for retrieve triangles. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classbt_g_impact_shape_interface_a646ad13b4aa116d58df110c2f407e5a8}{process\+All\+Triangles\+Ray} (\hyperlink{classbt_triangle_callback}{bt\+Triangle\+Callback} $\ast$, const bt\+Vector3 \&, const bt\+Vector3 \&) const 
+\begin{DoxyCompactList}\small\item\em Function for retrieve triangles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+virtual e\+G\+I\+M\+P\+A\+C\+T\+\_\+\+S\+H\+A\+P\+E\+\_\+\+T\+Y\+P\+E \hyperlink{classbt_g_impact_shape_interface_a25cacbe448997e3f8ec99cb2d4952859}{get\+G\+Impact\+Shape\+Type} () const =0
+\begin{DoxyCompactList}\small\item\em Base method for determinig which kind of G\+I\+M\+P\+A\+C\+T shape we get. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_af790f5e01743f08a141b4ee9721cba43}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E const \\*
+\hyperlink{bt_g_impact_shape_8h_a9fcdf1a76bb3d1affed81432e4e4ab68}{bt\+G\+Impact\+Box\+Set} $\ast$ \hyperlink{classbt_g_impact_shape_interface_af790f5e01743f08a141b4ee9721cba43}{get\+Box\+Set} () const }\label{classbt_g_impact_shape_interface_af790f5e01743f08a141b4ee9721cba43}
+
+\begin{DoxyCompactList}\small\item\em gets boxset \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a042a632b8e87f0fe3c2294b9ab8457c6}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{classbt_g_impact_shape_interface_a042a632b8e87f0fe3c2294b9ab8457c6}{has\+Box\+Set} () const }\label{classbt_g_impact_shape_interface_a042a632b8e87f0fe3c2294b9ab8457c6}
+
+\begin{DoxyCompactList}\small\item\em Determines if this class has a hierarchy structure for sorting its primitives. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a291328e80a5f22cffc50924ebb90040a}{virtual const \\*
+\hyperlink{classbt_primitive_manager_base}{bt\+Primitive\+Manager\+Base} $\ast$ \hyperlink{classbt_g_impact_shape_interface_a291328e80a5f22cffc50924ebb90040a}{get\+Primitive\+Manager} () const =0}\label{classbt_g_impact_shape_interface_a291328e80a5f22cffc50924ebb90040a}
+
+\begin{DoxyCompactList}\small\item\em Obtains the primitive manager. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_aa145ed4669ce202e97d1a9e1081b3560}{virtual int \hyperlink{classbt_g_impact_shape_interface_aa145ed4669ce202e97d1a9e1081b3560}{get\+Num\+Child\+Shapes} () const =0}\label{classbt_g_impact_shape_interface_aa145ed4669ce202e97d1a9e1081b3560}
+
+\begin{DoxyCompactList}\small\item\em Gets the number of children. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a9ea24ba36990721e4f55851afc421e06}{virtual bool \hyperlink{classbt_g_impact_shape_interface_a9ea24ba36990721e4f55851afc421e06}{children\+Has\+Transform} () const =0}\label{classbt_g_impact_shape_interface_a9ea24ba36990721e4f55851afc421e06}
+
+\begin{DoxyCompactList}\small\item\em if true, then its children must get transforms. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a62093ef330529ac27df9538313ece90a}{virtual bool \hyperlink{classbt_g_impact_shape_interface_a62093ef330529ac27df9538313ece90a}{needs\+Retrieve\+Triangles} () const =0}\label{classbt_g_impact_shape_interface_a62093ef330529ac27df9538313ece90a}
+
+\begin{DoxyCompactList}\small\item\em Determines if this shape has triangles. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_ad3f86cd0b7d0bbfd272fd6e815e17485}{virtual bool \hyperlink{classbt_g_impact_shape_interface_ad3f86cd0b7d0bbfd272fd6e815e17485}{needs\+Retrieve\+Tetrahedrons} () const =0}\label{classbt_g_impact_shape_interface_ad3f86cd0b7d0bbfd272fd6e815e17485}
+
+\begin{DoxyCompactList}\small\item\em Determines if this shape has tetrahedrons. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a6f9c334805d5bff662e4946eac079a20}{virtual void {\bfseries get\+Bullet\+Triangle} (int prim\+\_\+index, \hyperlink{classbt_triangle_shape_ex}{bt\+Triangle\+Shape\+Ex} \&triangle) const =0}\label{classbt_g_impact_shape_interface_a6f9c334805d5bff662e4946eac079a20}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a6259c51d1c8c8239efdd1dd4b918e139}{virtual void {\bfseries get\+Bullet\+Tetrahedron} (int prim\+\_\+index, \hyperlink{classbt_tetrahedron_shape_ex}{bt\+Tetrahedron\+Shape\+Ex} \&tetrahedron) const =0}\label{classbt_g_impact_shape_interface_a6259c51d1c8c8239efdd1dd4b918e139}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_ae5de49e788c97a954ab9f2bde16adf60}{virtual void \hyperlink{classbt_g_impact_shape_interface_ae5de49e788c97a954ab9f2bde16adf60}{lock\+Child\+Shapes} () const }\label{classbt_g_impact_shape_interface_ae5de49e788c97a954ab9f2bde16adf60}
+
+\begin{DoxyCompactList}\small\item\em call when reading child shapes \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_ac7da336fdb3165c1d086c766fe42114e}{virtual void {\bfseries unlock\+Child\+Shapes} () const }\label{classbt_g_impact_shape_interface_ac7da336fdb3165c1d086c766fe42114e}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a8b5c48d7831cebf1099b8c983cb3f149}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classbt_g_impact_shape_interface_a8b5c48d7831cebf1099b8c983cb3f149}{get\+Primitive\+Triangle} (int index, \hyperlink{classbt_primitive_triangle}{bt\+Primitive\+Triangle} \&triangle) const }\label{classbt_g_impact_shape_interface_a8b5c48d7831cebf1099b8c983cb3f149}
+
+\begin{DoxyCompactList}\small\item\em if this trimesh \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a341963a807a574ec30ae60284c831f5b}{virtual void \hyperlink{classbt_g_impact_shape_interface_a341963a807a574ec30ae60284c831f5b}{get\+Child\+Aabb} (int child\+\_\+index, const bt\+Transform \&t, bt\+Vector3 \&aabb\+Min, bt\+Vector3 \&aabb\+Max) const }\label{classbt_g_impact_shape_interface_a341963a807a574ec30ae60284c831f5b}
+
+\begin{DoxyCompactList}\small\item\em Retrieves the bound from a child. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a9f2827a4cb6e8376eb54aea84a8cc87b}{virtual bt\+Collision\+Shape $\ast$ \hyperlink{classbt_g_impact_shape_interface_a9f2827a4cb6e8376eb54aea84a8cc87b}{get\+Child\+Shape} (int index)=0}\label{classbt_g_impact_shape_interface_a9f2827a4cb6e8376eb54aea84a8cc87b}
+
+\begin{DoxyCompactList}\small\item\em Gets the children. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_a0f89806a197c690e295ba0f60559b015}{virtual const bt\+Collision\+Shape $\ast$ \hyperlink{classbt_g_impact_shape_interface_a0f89806a197c690e295ba0f60559b015}{get\+Child\+Shape} (int index) const =0}\label{classbt_g_impact_shape_interface_a0f89806a197c690e295ba0f60559b015}
+
+\begin{DoxyCompactList}\small\item\em Gets the child. \end{DoxyCompactList}\item 
+\hypertarget{classbt_g_impact_shape_interface_ac06b1f597e2b628bf1e0523ab1c62d08}{virtual bt\+Transform \hyperlink{classbt_g_impact_shape_interface_ac06b1f597e2b628bf1e0523ab1c62d08}{get\+Child\+Transform} (int index) const =0}\label{classbt_g_impact_shape_interface_ac06b1f597e2b628bf1e0523ab1c62d08}
+
+\begin{DoxyCompactList}\small\item\em Gets the children transform. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classbt_g_impact_shape_interface_a83392f97bd7dfeb71ccdce6913a465b0}{set\+Child\+Transform} (int index, const bt\+Transform \&transform)=0
+\begin{DoxyCompactList}\small\item\em Sets the children transform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classbt_g_impact_shape_interface_a1712a4613e20aa9249514dcd97f0a086}{calc\+Local\+A\+A\+B\+B} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_g_impact_shape_interface_ac64c6cc7924e11e775e3448adca114c9}{bt\+A\+A\+B\+B {\bfseries m\+\_\+local\+A\+A\+B\+B}}\label{classbt_g_impact_shape_interface_ac64c6cc7924e11e775e3448adca114c9}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a8d7b7a78a8c65d3339d93fbf607a0d20}{bool {\bfseries m\+\_\+needs\+\_\+update}}\label{classbt_g_impact_shape_interface_a8d7b7a78a8c65d3339d93fbf607a0d20}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a1d26e1da7195c7e3308a341cdff8b691}{bt\+Vector3 {\bfseries local\+Scaling}}\label{classbt_g_impact_shape_interface_a1d26e1da7195c7e3308a341cdff8b691}
+
+\item 
+\hypertarget{classbt_g_impact_shape_interface_a52b446c99038ce5614e6839479958910}{\hyperlink{bt_g_impact_shape_8h_a9fcdf1a76bb3d1affed81432e4e4ab68}{bt\+G\+Impact\+Box\+Set} {\bfseries m\+\_\+box\+\_\+set}}\label{classbt_g_impact_shape_interface_a52b446c99038ce5614e6839479958910}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for gimpact shapes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_g_impact_shape_interface_a1712a4613e20aa9249514dcd97f0a086}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!calc\+Local\+A\+A\+B\+B@{calc\+Local\+A\+A\+B\+B}}
+\index{calc\+Local\+A\+A\+B\+B@{calc\+Local\+A\+A\+B\+B}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{calc\+Local\+A\+A\+B\+B}]{\setlength{\rightskip}{0pt plus 5cm}virtual void bt\+G\+Impact\+Shape\+Interface\+::calc\+Local\+A\+A\+B\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classbt_g_impact_shape_interface_a1712a4613e20aa9249514dcd97f0a086}
+use this function for perfofm refit in bounding boxes use this function for perfofm refit in bounding boxes 
+
+Reimplemented in \hyperlink{classbt_g_impact_mesh_shape_aa9273d609f4872c7a4c05e9873edbda8}{bt\+G\+Impact\+Mesh\+Shape}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classbt_g_impact_shape_interface_a418d1f35f4dd58e4d3195aee639b615b}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!get\+Aabb@{get\+Aabb}}
+\index{get\+Aabb@{get\+Aabb}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{get\+Aabb}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+G\+Impact\+Shape\+Interface\+::get\+Aabb (
+\begin{DoxyParamCaption}
+\item[{const bt\+Transform \&}]{t, }
+\item[{bt\+Vector3 \&}]{aabb\+Min, }
+\item[{bt\+Vector3 \&}]{aabb\+Max}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classbt_g_impact_shape_interface_a418d1f35f4dd58e4d3195aee639b615b}
+
+
+If the Bounding box is not updated, then this class attemps to calculate it. 
+
+\begin{DoxyPostcond}{Postcondition}
+Calls \hyperlink{classbt_g_impact_shape_interface_acb26c2d7a2aecabd06b996b72b848492}{update\+Bound()} for update the box set. 
+\end{DoxyPostcond}
+\hypertarget{classbt_g_impact_shape_interface_a25cacbe448997e3f8ec99cb2d4952859}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!get\+G\+Impact\+Shape\+Type@{get\+G\+Impact\+Shape\+Type}}
+\index{get\+G\+Impact\+Shape\+Type@{get\+G\+Impact\+Shape\+Type}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{get\+G\+Impact\+Shape\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual e\+G\+I\+M\+P\+A\+C\+T\+\_\+\+S\+H\+A\+P\+E\+\_\+\+T\+Y\+P\+E bt\+G\+Impact\+Shape\+Interface\+::get\+G\+Impact\+Shape\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classbt_g_impact_shape_interface_a25cacbe448997e3f8ec99cb2d4952859}
+
+
+Base method for determinig which kind of G\+I\+M\+P\+A\+C\+T shape we get. 
+
+Subshape member functions 
+
+Implemented in \hyperlink{classbt_g_impact_mesh_shape_acd958461b4f7802e5bceed2db87c4ff0}{bt\+G\+Impact\+Mesh\+Shape}, \hyperlink{classbt_g_impact_mesh_shape_part_a5ff615b55a2bdaeba511fb116a9ab546}{bt\+G\+Impact\+Mesh\+Shape\+Part}, and \hyperlink{classbt_g_impact_compound_shape_a861967c52cb52a358b8d99aa4c65e306}{bt\+G\+Impact\+Compound\+Shape}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classbt_g_impact_shape_interface_a2faf9adce39854a9a66dd658f646be25}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!process\+All\+Triangles@{process\+All\+Triangles}}
+\index{process\+All\+Triangles@{process\+All\+Triangles}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{process\+All\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}virtual void bt\+G\+Impact\+Shape\+Interface\+::process\+All\+Triangles (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Triangle\+Callback} $\ast$}]{callback, }
+\item[{const bt\+Vector3 \&}]{aabb\+Min, }
+\item[{const bt\+Vector3 \&}]{aabb\+Max}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classbt_g_impact_shape_interface_a2faf9adce39854a9a66dd658f646be25}
+
+
+Function for retrieve triangles. 
+
+It gives the triangles in local space 
+
+Reimplemented in \hyperlink{classbt_g_impact_mesh_shape_a0b3a0f7b06feb5e2e1fa94f2b5fcd4c7}{bt\+G\+Impact\+Mesh\+Shape}, \hyperlink{classbt_g_impact_mesh_shape_part_a230a814ad9f784638e8bcbf0592cdd39}{bt\+G\+Impact\+Mesh\+Shape\+Part}, and \hyperlink{classbt_g_impact_convex_decomposition_shape_aa59df7c7624fef1874c5874f0207f561}{bt\+G\+Impact\+Convex\+Decomposition\+Shape}.
+
+\hypertarget{classbt_g_impact_shape_interface_a646ad13b4aa116d58df110c2f407e5a8}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!process\+All\+Triangles\+Ray@{process\+All\+Triangles\+Ray}}
+\index{process\+All\+Triangles\+Ray@{process\+All\+Triangles\+Ray}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{process\+All\+Triangles\+Ray}]{\setlength{\rightskip}{0pt plus 5cm}virtual void bt\+G\+Impact\+Shape\+Interface\+::process\+All\+Triangles\+Ray (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Triangle\+Callback} $\ast$}]{, }
+\item[{const bt\+Vector3 \&}]{, }
+\item[{const bt\+Vector3 \&}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classbt_g_impact_shape_interface_a646ad13b4aa116d58df110c2f407e5a8}
+
+
+Function for retrieve triangles. 
+
+It gives the triangles in local space 
+
+Reimplemented in \hyperlink{classbt_g_impact_mesh_shape_a80b60d4ca87b2739b2389258e901900d}{bt\+G\+Impact\+Mesh\+Shape}, and \hyperlink{classbt_g_impact_mesh_shape_part_a0e35b55bd50911911f8164cf3a2dd5c8}{bt\+G\+Impact\+Mesh\+Shape\+Part}.
+
+\hypertarget{classbt_g_impact_shape_interface_a83392f97bd7dfeb71ccdce6913a465b0}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!set\+Child\+Transform@{set\+Child\+Transform}}
+\index{set\+Child\+Transform@{set\+Child\+Transform}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{set\+Child\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void bt\+G\+Impact\+Shape\+Interface\+::set\+Child\+Transform (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{const bt\+Transform \&}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classbt_g_impact_shape_interface_a83392f97bd7dfeb71ccdce6913a465b0}
+
+
+Sets the children transform. 
+
+\begin{DoxyPostcond}{Postcondition}
+You must call \hyperlink{classbt_g_impact_shape_interface_acb26c2d7a2aecabd06b996b72b848492}{update\+Bound()} for update the box set. 
+\end{DoxyPostcond}
+
+
+Implemented in \hyperlink{classbt_g_impact_mesh_shape_a274feed3c9a38a6af5c9f1141ae9ac1a}{bt\+G\+Impact\+Mesh\+Shape}, \hyperlink{classbt_g_impact_mesh_shape_part_a0a97d3769fb7d3f583e41da6b284bcc1}{bt\+G\+Impact\+Mesh\+Shape\+Part}, and \hyperlink{classbt_g_impact_compound_shape_a560410e20842ad73227d7712a574385c}{bt\+G\+Impact\+Compound\+Shape}.
+
+\hypertarget{classbt_g_impact_shape_interface_adec0bd43cd0105b1d0dc172bc7db50d8}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!set\+Local\+Scaling@{set\+Local\+Scaling}}
+\index{set\+Local\+Scaling@{set\+Local\+Scaling}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{set\+Local\+Scaling}]{\setlength{\rightskip}{0pt plus 5cm}virtual void bt\+G\+Impact\+Shape\+Interface\+::set\+Local\+Scaling (
+\begin{DoxyParamCaption}
+\item[{const bt\+Vector3 \&}]{scaling}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classbt_g_impact_shape_interface_adec0bd43cd0105b1d0dc172bc7db50d8}
+\begin{DoxyPostcond}{Postcondition}
+You must call \hyperlink{classbt_g_impact_shape_interface_acb26c2d7a2aecabd06b996b72b848492}{update\+Bound()} for update the box set. 
+\end{DoxyPostcond}
+
+
+Reimplemented in \hyperlink{classbt_g_impact_mesh_shape_aed8d5e4b2e75538109909d44b244bc35}{bt\+G\+Impact\+Mesh\+Shape}, and \hyperlink{classbt_g_impact_mesh_shape_part_a2c1de297d020a75e1ab0f10f7c71478f}{bt\+G\+Impact\+Mesh\+Shape\+Part}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classbt_g_impact_shape_interface_acb26c2d7a2aecabd06b996b72b848492}{\index{bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}!update\+Bound@{update\+Bound}}
+\index{update\+Bound@{update\+Bound}!bt\+G\+Impact\+Shape\+Interface@{bt\+G\+Impact\+Shape\+Interface}}
+\subsubsection[{update\+Bound}]{\setlength{\rightskip}{0pt plus 5cm}S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E void bt\+G\+Impact\+Shape\+Interface\+::update\+Bound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classbt_g_impact_shape_interface_acb26c2d7a2aecabd06b996b72b848492}
+
+
+performs refit operation 
+
+Updates the entire \hyperlink{class_box}{Box} set of this shape. \begin{DoxyPrecond}{Precondition}
+\hyperlink{classbt_g_impact_shape_interface_ac430754948ac92d6f70b81e88416c96a}{post\+Update()} must be called for attemps to calculating the box set, else this function will does nothing. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+if m\+\_\+needs\+\_\+update == true, then it calls \hyperlink{classbt_g_impact_shape_interface_a1712a4613e20aa9249514dcd97f0a086}{calc\+Local\+A\+A\+B\+B()}; 
+\end{DoxyPostcond}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/\hyperlink{bt_g_impact_shape_8h}{bt\+G\+Impact\+Shape.\+h}\end{DoxyCompactItemize}

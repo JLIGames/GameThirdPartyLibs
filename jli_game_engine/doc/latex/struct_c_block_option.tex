@@ -1,0 +1,103 @@
+\hypertarget{struct_c_block_option}{\section{C\+Block\+Option Struct Reference}
+\label{struct_c_block_option}\index{C\+Block\+Option@{C\+Block\+Option}}
+}
+
+
+Collaboration diagram for C\+Block\+Option\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_block_option_1_1_s_edge_delta}{S\+Edge\+Delta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_c_block_option_a6bec9116f3b6c7867b73cf079c283866}{void {\bfseries Init} (const int n\+Vtx\+Limit, const int n\+Tri\+Limit)}\label{struct_c_block_option_a6bec9116f3b6c7867b73cf079c283866}
+
+\item 
+\hypertarget{struct_c_block_option_a8a0fe9ae5daa91d31d036a480fb40bee}{void {\bfseries Copy} (const \hyperlink{struct_c_block_option}{C\+Block\+Option} $\ast$const p\+Src)}\label{struct_c_block_option_a8a0fe9ae5daa91d31d036a480fb40bee}
+
+\item 
+\hypertarget{struct_c_block_option_a4d43ce82db117545f7d614183c12a8d2}{void {\bfseries Clear} ()}\label{struct_c_block_option_a4d43ce82db117545f7d614183c12a8d2}
+
+\item 
+\hypertarget{struct_c_block_option_a9200b74210af92106f6b6dc1207962ef}{void {\bfseries Output} (P\+V\+R\+T\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+I\+D\+X $\ast$const pw\+Out, int $\ast$const pn\+Vtx\+Cnt, int $\ast$const pn\+Tri\+Cnt, const \hyperlink{class_c_object}{C\+Object} $\ast$const p\+Ob) const }\label{struct_c_block_option_a9200b74210af92106f6b6dc1207962ef}
+
+\item 
+\hypertarget{struct_c_block_option_aad6388316c68abf8e358d4e0cb036cad}{bool {\bfseries Using\+Vertex} (const \hyperlink{struct_s_vtx}{S\+Vtx} $\ast$const p\+Vtx) const }\label{struct_c_block_option_aad6388316c68abf8e358d4e0cb036cad}
+
+\item 
+\hypertarget{struct_c_block_option_a060678d5146632b8eb67b16bdfc2a822}{bool {\bfseries Contains} (const \hyperlink{struct_s_tri}{S\+Tri} $\ast$const p\+Tri) const }\label{struct_c_block_option_a060678d5146632b8eb67b16bdfc2a822}
+
+\item 
+\hypertarget{struct_c_block_option_afbefadc620b80cfaf60dc484f782066a}{bool {\bfseries Is\+Empty} () const }\label{struct_c_block_option_afbefadc620b80cfaf60dc484f782066a}
+
+\item 
+\hypertarget{struct_c_block_option_a95a436c9ada6996f27804f83c52c761e}{bool {\bfseries Is\+Full} () const }\label{struct_c_block_option_a95a436c9ada6996f27804f83c52c761e}
+
+\item 
+\hypertarget{struct_c_block_option_a76349edba58384916a4de25e66d1d418}{void {\bfseries Add\+Vertex} (\hyperlink{struct_s_vtx}{S\+Vtx} $\ast$const p\+Vtx)}\label{struct_c_block_option_a76349edba58384916a4de25e66d1d418}
+
+\item 
+\hypertarget{struct_c_block_option_a71ade1bc35ff9ac71291d490d853c01b}{void {\bfseries Add\+Vertex\+Check\+Dup} (\hyperlink{struct_s_vtx}{S\+Vtx} $\ast$const p\+Vtx)}\label{struct_c_block_option_a71ade1bc35ff9ac71291d490d853c01b}
+
+\item 
+\hypertarget{struct_c_block_option_a831310b5b1c5078aee76a993a02e64a3}{void {\bfseries Add\+Triangle\+Check\+Dup} (\hyperlink{struct_s_tri}{S\+Tri} $\ast$const p\+Tri)}\label{struct_c_block_option_a831310b5b1c5078aee76a993a02e64a3}
+
+\item 
+\hypertarget{struct_c_block_option_afc3c6882cab8c2d7f4778675cdf254e3}{void {\bfseries Add\+Edge\+Check\+Dup} (const \hyperlink{struct_s_edg}{S\+Edg} $\ast$const p\+Edg)}\label{struct_c_block_option_afc3c6882cab8c2d7f4778675cdf254e3}
+
+\item 
+\hypertarget{struct_c_block_option_a7b716841aff8eab0bda596d53e964872}{void {\bfseries Add\+Triangle} (\hyperlink{struct_s_tri}{S\+Tri} $\ast$const p\+Tri)}\label{struct_c_block_option_a7b716841aff8eab0bda596d53e964872}
+
+\item 
+\hypertarget{struct_c_block_option_aeca42f536a039d5fb6cf956df428a6c8}{void {\bfseries Add\+One\+Triangle} (\hyperlink{struct_s_tri}{S\+Tri} $\ast$const p\+Tri, const \hyperlink{class_c_object}{C\+Object} $\ast$const p\+Ob)}\label{struct_c_block_option_aeca42f536a039d5fb6cf956df428a6c8}
+
+\item 
+\hypertarget{struct_c_block_option_ad1d73897562015877f5205485c520a5e}{int {\bfseries Get\+Closed\+Edge\+Delta} () const }\label{struct_c_block_option_ad1d73897562015877f5205485c520a5e}
+
+\item 
+\hypertarget{struct_c_block_option_a2da47e867c75e27512d720aadd1de7f3}{bool {\bfseries Is\+Better\+Than} (const \hyperlink{struct_c_block_option}{C\+Block\+Option} $\ast$const p\+Cmp) const }\label{struct_c_block_option_a2da47e867c75e27512d720aadd1de7f3}
+
+\item 
+\hypertarget{struct_c_block_option_ab65a8827508789e3c48b3336c3f8d7c5}{void {\bfseries Add} (const \hyperlink{struct_c_block_option}{C\+Block\+Option} $\ast$const p\+Src, const \hyperlink{class_c_object}{C\+Object} $\ast$const p\+Ob)}\label{struct_c_block_option_ab65a8827508789e3c48b3336c3f8d7c5}
+
+\item 
+\hypertarget{struct_c_block_option_adc419a8298619330407e8966b540217f}{void {\bfseries Add} (const \hyperlink{struct_s_mesh}{S\+Mesh} $\ast$const p\+Mesh)}\label{struct_c_block_option_adc419a8298619330407e8966b540217f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_c_block_option_a1fea8bfedd219886f9fc8a6aa291a824}{int {\bfseries n\+Vtx\+Num}}\label{struct_c_block_option_a1fea8bfedd219886f9fc8a6aa291a824}
+
+\item 
+\hypertarget{struct_c_block_option_a7f7f048b43adbd20e89ce30eb2556706}{int {\bfseries n\+Edg\+Num}}\label{struct_c_block_option_a7f7f048b43adbd20e89ce30eb2556706}
+
+\item 
+\hypertarget{struct_c_block_option_a4434805722ee07de28b6de30da72e6f6}{int {\bfseries n\+Tri\+Num}}\label{struct_c_block_option_a4434805722ee07de28b6de30da72e6f6}
+
+\item 
+\hypertarget{struct_c_block_option_acc834642a1ef3f3e6d88a75ee5ab6df9}{\hyperlink{struct_s_vtx}{S\+Vtx} $\ast$$\ast$ {\bfseries ps\+Vtx}}\label{struct_c_block_option_acc834642a1ef3f3e6d88a75ee5ab6df9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_c_block_option_a21df5fdf085dc593aca89c64182f3b5c}{\hyperlink{struct_c_block_option_1_1_s_edge_delta}{S\+Edge\+Delta} $\ast$ {\bfseries ps\+Edge\+Delta}}\label{struct_c_block_option_a21df5fdf085dc593aca89c64182f3b5c}
+
+\item 
+\hypertarget{struct_c_block_option_a0de4be06e734ab4998b3546ad7dde053}{\hyperlink{struct_s_tri}{S\+Tri} $\ast$$\ast$ {\bfseries ps\+Tri}}\label{struct_c_block_option_a0de4be06e734ab4998b3546ad7dde053}
+
+\item 
+\hypertarget{struct_c_block_option_a6a7f0cf4b4c963f5d322f51f999c821f}{int {\bfseries m\+\_\+n\+Vtx\+Limit}}\label{struct_c_block_option_a6a7f0cf4b4c963f5d322f51f999c821f}
+
+\item 
+\hypertarget{struct_c_block_option_a85d7b493e5deb211e5855680eb26295f}{int {\bfseries m\+\_\+n\+Tri\+Limit}}\label{struct_c_block_option_a85d7b493e5deb211e5855680eb26295f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+Geometry.\+cpp\end{DoxyCompactItemize}

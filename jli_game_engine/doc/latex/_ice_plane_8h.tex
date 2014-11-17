@@ -1,0 +1,74 @@
+\hypertarget{_ice_plane_8h}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Plane.h File Reference}
+\label{_ice_plane_8h}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Plane.\+h@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Plane.\+h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_plane}{Plane}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_plane_8h_a6c1f30bf8a08975a931cd2b8b66a4c20}{\#define {\bfseries P\+L\+A\+N\+E\+\_\+\+E\+P\+S\+I\+L\+O\+N}~(1.\+0e-\/7f)}\label{_ice_plane_8h_a6c1f30bf8a08975a931cd2b8b66a4c20}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void \hyperlink{_ice_plane_8h_abfa394140ea3521e4bfcada2906c6a9b}{Transform\+Plane} (\hyperlink{class_plane}{Plane} \&transformed, const \hyperlink{class_plane}{Plane} \&plane, const \hyperlink{class_matrix4x4}{Matrix4x4} \&transform)
+\item 
+inline\+\_\+ void \hyperlink{_ice_plane_8h_a0163d63775cace83ce78e2aa7d568d15}{Transform\+Plane} (\hyperlink{class_plane}{Plane} \&plane, const \hyperlink{class_matrix4x4}{Matrix4x4} \&transform)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for planes.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{_ice_plane_8h_abfa394140ea3521e4bfcada2906c6a9b}{\index{Ice\+Plane.\+h@{Ice\+Plane.\+h}!Transform\+Plane@{Transform\+Plane}}
+\index{Transform\+Plane@{Transform\+Plane}!Ice\+Plane.\+h@{Ice\+Plane.\+h}}
+\subsubsection[{Transform\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} \&}]{transformed, }
+\item[{const {\bf Plane} \&}]{plane, }
+\item[{const {\bf Matrix4x4} \&}]{transform}
+\end{DoxyParamCaption}
+)}}\label{_ice_plane_8h_abfa394140ea3521e4bfcada2906c6a9b}
+Transforms a plane by a 4x4 matrix. Same as \hyperlink{class_plane}{Plane} $\ast$ \hyperlink{class_matrix4x4}{Matrix4x4} operator, but faster. 
+\begin{DoxyParams}{Parameters}
+{\em transformed} & \mbox{[}out\mbox{]} transformed plane \\
+\hline
+{\em plane} & \mbox{[}in\mbox{]} source plane \\
+\hline
+{\em transform} & \mbox{[}in\mbox{]} transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+the plane normal must be unit-\/length 
+\end{DoxyWarning}
+\hypertarget{_ice_plane_8h_a0163d63775cace83ce78e2aa7d568d15}{\index{Ice\+Plane.\+h@{Ice\+Plane.\+h}!Transform\+Plane@{Transform\+Plane}}
+\index{Transform\+Plane@{Transform\+Plane}!Ice\+Plane.\+h@{Ice\+Plane.\+h}}
+\subsubsection[{Transform\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} \&}]{plane, }
+\item[{const {\bf Matrix4x4} \&}]{transform}
+\end{DoxyParamCaption}
+)}}\label{_ice_plane_8h_a0163d63775cace83ce78e2aa7d568d15}
+Transforms a plane by a 4x4 matrix. Same as \hyperlink{class_plane}{Plane} $\ast$ \hyperlink{class_matrix4x4}{Matrix4x4} operator, but faster. 
+\begin{DoxyParams}{Parameters}
+{\em plane} & \mbox{[}in/out\mbox{]} source plane (transformed on return) \\
+\hline
+{\em transform} & \mbox{[}in\mbox{]} transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+the plane normal must be unit-\/length 
+\end{DoxyWarning}

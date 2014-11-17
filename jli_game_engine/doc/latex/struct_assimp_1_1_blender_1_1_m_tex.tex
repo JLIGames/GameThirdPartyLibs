@@ -1,0 +1,163 @@
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex}{\section{Assimp\+:\+:Blender\+:\+:M\+Tex Struct Reference}
+\label{struct_assimp_1_1_blender_1_1_m_tex}\index{Assimp\+::\+Blender\+::\+M\+Tex@{Assimp\+::\+Blender\+::\+M\+Tex}}
+}
+
+
+Inheritance diagram for Assimp\+:\+:Blender\+:\+:M\+Tex\+:
+
+
+Collaboration diagram for Assimp\+:\+:Blender\+:\+:M\+Tex\+:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a089fb1439cddc649e60d94e0903ff7b0}{enum {\bfseries Projection} \{ {\bfseries Proj\+\_\+\+N} = 0, 
+{\bfseries Proj\+\_\+\+X} = 1, 
+{\bfseries Proj\+\_\+\+Y} = 2, 
+{\bfseries Proj\+\_\+\+Z} = 3
+ \}}\label{struct_assimp_1_1_blender_1_1_m_tex_a089fb1439cddc649e60d94e0903ff7b0}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_aa5177e0b2f2efaa43fe3c4eb62684315}{enum {\bfseries Flag} \{ \\*
+{\bfseries Flag\+\_\+\+R\+G\+B\+T\+O\+I\+N\+T} = 0x1, 
+{\bfseries Flag\+\_\+\+S\+T\+E\+N\+C\+I\+L} = 0x2, 
+{\bfseries Flag\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E} = 0x4, 
+{\bfseries Flag\+\_\+\+A\+L\+P\+H\+A\+M\+I\+X} = 0x8, 
+\\*
+{\bfseries Flag\+\_\+\+V\+I\+E\+W\+S\+P\+A\+C\+E} = 0x10
+ \}}\label{struct_assimp_1_1_blender_1_1_m_tex_aa5177e0b2f2efaa43fe3c4eb62684315}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a52fe96b89d06b881590e964bb2e827c4}{enum {\bfseries Blend\+Type} \{ \\*
+{\bfseries Blend\+Type\+\_\+\+B\+L\+E\+N\+D} = 0, 
+{\bfseries Blend\+Type\+\_\+\+M\+U\+L} = 1, 
+{\bfseries Blend\+Type\+\_\+\+A\+D\+D} = 2, 
+{\bfseries Blend\+Type\+\_\+\+S\+U\+B} = 3, 
+\\*
+{\bfseries Blend\+Type\+\_\+\+D\+I\+V} = 4, 
+{\bfseries Blend\+Type\+\_\+\+D\+A\+R\+K} = 5, 
+{\bfseries Blend\+Type\+\_\+\+D\+I\+F\+F} = 6, 
+{\bfseries Blend\+Type\+\_\+\+L\+I\+G\+H\+T} = 7, 
+\\*
+{\bfseries Blend\+Type\+\_\+\+S\+C\+R\+E\+E\+N} = 8, 
+{\bfseries Blend\+Type\+\_\+\+O\+V\+E\+R\+L\+A\+Y} = 9, 
+{\bfseries Blend\+Type\+\_\+\+B\+L\+E\+N\+D\+\_\+\+H\+U\+E} = 10, 
+{\bfseries Blend\+Type\+\_\+\+B\+L\+E\+N\+D\+\_\+\+S\+A\+T} = 11, 
+\\*
+{\bfseries Blend\+Type\+\_\+\+B\+L\+E\+N\+D\+\_\+\+V\+A\+L} = 12, 
+{\bfseries Blend\+Type\+\_\+\+B\+L\+E\+N\+D\+\_\+\+C\+O\+L\+O\+R} = 13
+ \}}\label{struct_assimp_1_1_blender_1_1_m_tex_a52fe96b89d06b881590e964bb2e827c4}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_abbd69f65fd0876024dd17551e739895f}{enum {\bfseries Map\+Type} \{ \\*
+{\bfseries Map\+Type\+\_\+\+C\+O\+L} = 1, 
+{\bfseries Map\+Type\+\_\+\+N\+O\+R\+M} = 2, 
+{\bfseries Map\+Type\+\_\+\+C\+O\+L\+S\+P\+E\+C} = 4, 
+{\bfseries Map\+Type\+\_\+\+C\+O\+L\+M\+I\+R} = 8, 
+\\*
+{\bfseries Map\+Type\+\_\+\+R\+E\+F} = 16, 
+{\bfseries Map\+Type\+\_\+\+S\+P\+E\+C} = 32, 
+{\bfseries Map\+Type\+\_\+\+E\+M\+I\+T} = 64, 
+{\bfseries Map\+Type\+\_\+\+A\+L\+P\+H\+A} = 128, 
+\\*
+{\bfseries Map\+Type\+\_\+\+H\+A\+R} = 256, 
+{\bfseries Map\+Type\+\_\+\+R\+A\+Y\+M\+I\+R\+R} = 512, 
+{\bfseries Map\+Type\+\_\+\+T\+R\+A\+N\+S\+L\+U} = 1024, 
+{\bfseries Map\+Type\+\_\+\+A\+M\+B} = 2048, 
+\\*
+{\bfseries Map\+Type\+\_\+\+D\+I\+S\+P\+L\+A\+C\+E} = 4096, 
+{\bfseries Map\+Type\+\_\+\+W\+A\+R\+P} = 8192
+ \}}\label{struct_assimp_1_1_blender_1_1_m_tex_abbd69f65fd0876024dd17551e739895f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_af8211d495355e52613a5fdd7e9ab9d42}{Map\+Type {\bfseries mapto}}\label{struct_assimp_1_1_blender_1_1_m_tex_af8211d495355e52613a5fdd7e9ab9d42}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a16d67231db6e6845b33fb7f64a534efe}{Blend\+Type {\bfseries blendtype}}\label{struct_assimp_1_1_blender_1_1_m_tex_a16d67231db6e6845b33fb7f64a534efe}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_aa6af631172a2cf5596e86f4c672a0018}{\hyperlink{classboost_1_1shared__ptr}{boost\+::shared\+\_\+ptr}$<$ \hyperlink{struct_assimp_1_1_blender_1_1_object}{Object} $>$ {\bfseries object}}\label{struct_assimp_1_1_blender_1_1_m_tex_aa6af631172a2cf5596e86f4c672a0018}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a0755577ca006fc5c07043a1808573ad2}{\hyperlink{classboost_1_1shared__ptr}{boost\+::shared\+\_\+ptr}$<$ \hyperlink{struct_assimp_1_1_blender_1_1_tex}{Tex} $>$ {\bfseries tex}}\label{struct_assimp_1_1_blender_1_1_m_tex_a0755577ca006fc5c07043a1808573ad2}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a411586002a3a0a1ee12470052b8fc9fb}{char {\bfseries uvname} \mbox{[}32\mbox{]}}\label{struct_assimp_1_1_blender_1_1_m_tex_a411586002a3a0a1ee12470052b8fc9fb}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a9fc8b02b058d01cb1d07e3cd22334642}{Projection {\bfseries projx}}\label{struct_assimp_1_1_blender_1_1_m_tex_a9fc8b02b058d01cb1d07e3cd22334642}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a78a4a5b77df04a810fb1814fa04573fc}{Projection {\bfseries projy}}\label{struct_assimp_1_1_blender_1_1_m_tex_a78a4a5b77df04a810fb1814fa04573fc}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a90e362b86be40d9815f97e0a7b71ea85}{Projection {\bfseries projz}}\label{struct_assimp_1_1_blender_1_1_m_tex_a90e362b86be40d9815f97e0a7b71ea85}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_adc0f12ead70d60ef99f921defdc554b3}{char {\bfseries mapping}}\label{struct_assimp_1_1_blender_1_1_m_tex_adc0f12ead70d60ef99f921defdc554b3}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a00992b95794b1179a23b38cd220758a1}{float {\bfseries ofs} \mbox{[}3\mbox{]}}\label{struct_assimp_1_1_blender_1_1_m_tex_a00992b95794b1179a23b38cd220758a1}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a9ebdfd03a033308d3e8c99cfbe86b16d}{float {\bfseries size} \mbox{[}3\mbox{]}}\label{struct_assimp_1_1_blender_1_1_m_tex_a9ebdfd03a033308d3e8c99cfbe86b16d}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_ad1ff43d6f827db1174ab3f4189a9a180}{float {\bfseries rot}}\label{struct_assimp_1_1_blender_1_1_m_tex_ad1ff43d6f827db1174ab3f4189a9a180}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a12b21b7e00533a31641609ea169dfd07}{int {\bfseries texflag}}\label{struct_assimp_1_1_blender_1_1_m_tex_a12b21b7e00533a31641609ea169dfd07}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_aac8874fa6e45b1e6542f7195ba09b1f0}{short {\bfseries colormodel}}\label{struct_assimp_1_1_blender_1_1_m_tex_aac8874fa6e45b1e6542f7195ba09b1f0}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_afe0da88990e3c17193ce07766f817953}{short {\bfseries pmapto}}\label{struct_assimp_1_1_blender_1_1_m_tex_afe0da88990e3c17193ce07766f817953}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_ac1a44f90c9b47015b35428c7de036988}{short {\bfseries pmaptoneg}}\label{struct_assimp_1_1_blender_1_1_m_tex_ac1a44f90c9b47015b35428c7de036988}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a54996949f55b75c86fc7962b975c0b51}{float {\bfseries r}}\label{struct_assimp_1_1_blender_1_1_m_tex_a54996949f55b75c86fc7962b975c0b51}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a7dbc08649933d675223845ea9e79be50}{float {\bfseries g}}\label{struct_assimp_1_1_blender_1_1_m_tex_a7dbc08649933d675223845ea9e79be50}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_aac4ffe9cbd1ce5b23b03f871e282eef0}{float {\bfseries b}}\label{struct_assimp_1_1_blender_1_1_m_tex_aac4ffe9cbd1ce5b23b03f871e282eef0}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a93f893dd45d79207529973fcd31c21fe}{float k {\bfseries W\+A\+R\+N}}\label{struct_assimp_1_1_blender_1_1_m_tex_a93f893dd45d79207529973fcd31c21fe}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a0459f05a66b2c0a4e3d4ec9ed5c520ad}{float {\bfseries norfac}}\label{struct_assimp_1_1_blender_1_1_m_tex_a0459f05a66b2c0a4e3d4ec9ed5c520ad}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a77063f310ef4989975798f55d15ce598}{float {\bfseries colspecfac}}\label{struct_assimp_1_1_blender_1_1_m_tex_a77063f310ef4989975798f55d15ce598}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_ac2a73852b141c670ad7b6b2007b4a3ee}{float {\bfseries mirrfac}}\label{struct_assimp_1_1_blender_1_1_m_tex_ac2a73852b141c670ad7b6b2007b4a3ee}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_abddcf4ec89b3b567e2aa67139582c11a}{float {\bfseries alphafac}}\label{struct_assimp_1_1_blender_1_1_m_tex_abddcf4ec89b3b567e2aa67139582c11a}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a26a320ac5d3eb9511426b8585a93327c}{float {\bfseries difffac}}\label{struct_assimp_1_1_blender_1_1_m_tex_a26a320ac5d3eb9511426b8585a93327c}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a7dd23f136a3a4d07aaadec15b0a3ce53}{float {\bfseries specfac}}\label{struct_assimp_1_1_blender_1_1_m_tex_a7dd23f136a3a4d07aaadec15b0a3ce53}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_acf7c3cd05c196e921379c3cffa5e4550}{float {\bfseries emitfac}}\label{struct_assimp_1_1_blender_1_1_m_tex_acf7c3cd05c196e921379c3cffa5e4550}
+
+\item 
+\hypertarget{struct_assimp_1_1_blender_1_1_m_tex_a1f1c79b96c2e3199bdba41e313a7919e}{float {\bfseries hardfac}}\label{struct_assimp_1_1_blender_1_1_m_tex_a1f1c79b96c2e3199bdba41e313a7919e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_blender_scene_8h}{Blender\+Scene.\+h}\end{DoxyCompactItemize}

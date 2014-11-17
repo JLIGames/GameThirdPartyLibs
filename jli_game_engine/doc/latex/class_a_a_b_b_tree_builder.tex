@@ -1,0 +1,148 @@
+\hypertarget{class_a_a_b_b_tree_builder}{\section{A\+A\+B\+B\+Tree\+Builder Class Reference}
+\label{class_a_a_b_b_tree_builder}\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+}
+
+
+Inheritance diagram for A\+A\+B\+B\+Tree\+Builder\+:
+
+
+Collaboration diagram for A\+A\+B\+B\+Tree\+Builder\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_a892c7e33c261342a6eee3f41e8f4f014}{\hyperlink{class_a_a_b_b_tree_builder_a892c7e33c261342a6eee3f41e8f4f014}{A\+A\+B\+B\+Tree\+Builder} ()}\label{class_a_a_b_b_tree_builder_a892c7e33c261342a6eee3f41e8f4f014}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_builder_a0ad3a7a7585ea8f917a4c9d807bab481}{virtual \hyperlink{class_a_a_b_b_tree_builder_a0ad3a7a7585ea8f917a4c9d807bab481}{$\sim$\+A\+A\+B\+B\+Tree\+Builder} ()}\label{class_a_a_b_b_tree_builder_a0ad3a7a7585ea8f917a4c9d807bab481}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_a_a_b_b_tree_builder_adde85a9974ea5dc2c74fd851e11abf75}{Compute\+Global\+Box} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$primitives, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+prims, \hyperlink{class_a_a_b_b}{A\+A\+B\+B} \&global\+\_\+box) const =0
+\item 
+virtual float \hyperlink{class_a_a_b_b_tree_builder_acf08d2d4275763e25585aa240e641be1}{Get\+Splitting\+Value} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} index, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const =0
+\item 
+virtual float \hyperlink{class_a_a_b_b_tree_builder_a1386f18541381a799c444ac22ef1e241}{Get\+Splitting\+Value} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$primitives, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+prims, const \hyperlink{class_a_a_b_b}{A\+A\+B\+B} \&global\+\_\+box, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const 
+\item 
+virtual \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_a_a_b_b_tree_builder_a72c6fb9928720a2d6d997959335e6dab}{Validate\+Subdivision} (const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$primitives, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+prims, const \hyperlink{class_a_a_b_b}{A\+A\+B\+B} \&global\+\_\+box)
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_a47983eff336e89e78e452a8683a5e4d7}{inline\+\_\+ void {\bfseries Set\+Count} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)}\label{class_a_a_b_b_tree_builder_a47983eff336e89e78e452a8683a5e4d7}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_ae9a3c783c6f9c386c78d98474780cbdd}{inline\+\_\+ void {\bfseries Increase\+Count} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)}\label{class_a_a_b_b_tree_builder_ae9a3c783c6f9c386c78d98474780cbdd}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_a491ed2f10111692ca0816c56561f20d8}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Count} () const }\label{class_a_a_b_b_tree_builder_a491ed2f10111692ca0816c56561f20d8}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_a2cec3a6a39e79e13b8cd152f0ef75351}{inline\+\_\+ void {\bfseries Set\+Nb\+Invalid\+Splits} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)}\label{class_a_a_b_b_tree_builder_a2cec3a6a39e79e13b8cd152f0ef75351}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_adc8ad321e70d4fe79a98259ee40dab75}{inline\+\_\+ void {\bfseries Increase\+Nb\+Invalid\+Splits} ()}\label{class_a_a_b_b_tree_builder_adc8ad321e70d4fe79a98259ee40dab75}
+
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_ad61e2640272e6c0ca2f73892f4ec82ee}{inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Invalid\+Splits} () const }\label{class_a_a_b_b_tree_builder_ad61e2640272e6c0ca2f73892f4ec82ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_a_b_b_tree_builder_a608e2b63c531582147797a44f797faab}{\hyperlink{struct_build_settings}{Build\+Settings} \hyperlink{class_a_a_b_b_tree_builder_a608e2b63c531582147797a44f797faab}{m\+Settings}}\label{class_a_a_b_b_tree_builder_a608e2b63c531582147797a44f797faab}
+
+\begin{DoxyCompactList}\small\item\em Splitting rules \& split limit \mbox{[}Opcode 1.\+3\mbox{]}. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_builder_a25a042f34509d0c94cbd2e825ed9eaca}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_a_a_b_b_tree_builder_a25a042f34509d0c94cbd2e825ed9eaca}{m\+Nb\+Primitives}}\label{class_a_a_b_b_tree_builder_a25a042f34509d0c94cbd2e825ed9eaca}
+
+\begin{DoxyCompactList}\small\item\em Total number of primitives. \end{DoxyCompactList}\item 
+\hypertarget{class_a_a_b_b_tree_builder_a8f081024d14f27c49b6734d849f878a4}{void $\ast$ \hyperlink{class_a_a_b_b_tree_builder_a8f081024d14f27c49b6734d849f878a4}{m\+Node\+Base}}\label{class_a_a_b_b_tree_builder_a8f081024d14f27c49b6734d849f878a4}
+
+\begin{DoxyCompactList}\small\item\em Address of node pool \mbox{[}Opcode 1.\+3\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_a_b_b_tree_builder_adde85a9974ea5dc2c74fd851e11abf75}{\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Compute\+Global\+Box@{Compute\+Global\+Box}}
+\index{Compute\+Global\+Box@{Compute\+Global\+Box}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{Compute\+Global\+Box}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\+A\+B\+B\+Tree\+Builder\+::\+Compute\+Global\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{primitives, }
+\item[{{\bf udword}}]{nb\+\_\+prims, }
+\item[{{\bf A\+A\+B\+B} \&}]{global\+\_\+box}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_a_a_b_b_tree_builder_adde85a9974ea5dc2c74fd851e11abf75}
+Computes the \hyperlink{class_a_a_b_b}{A\+A\+B\+B} of a set of primitives. 
+\begin{DoxyParams}{Parameters}
+{\em primitives} & \mbox{[}in\mbox{]} list of indices of primitives \\
+\hline
+{\em nb\+\_\+prims} & \mbox{[}in\mbox{]} number of indices \\
+\hline
+{\em global\+\_\+box} & \mbox{[}out\mbox{]} global \hyperlink{class_a_a_b_b}{A\+A\+B\+B} enclosing the set of input primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_builder_acf08d2d4275763e25585aa240e641be1}{\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Get\+Splitting\+Value@{Get\+Splitting\+Value}}
+\index{Get\+Splitting\+Value@{Get\+Splitting\+Value}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{Get\+Splitting\+Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual float A\+A\+B\+B\+Tree\+Builder\+::\+Get\+Splitting\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{index, }
+\item[{{\bf udword}}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_a_a_b_b_tree_builder_acf08d2d4275763e25585aa240e641be1}
+Computes the splitting value along a given axis for a given primitive. 
+\begin{DoxyParams}{Parameters}
+{\em index} & \mbox{[}in\mbox{]} index of the primitive to split \\
+\hline
+{\em axis} & \mbox{[}in\mbox{]} axis index (0,1,2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+splitting value 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_builder_a1386f18541381a799c444ac22ef1e241}{\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Get\+Splitting\+Value@{Get\+Splitting\+Value}}
+\index{Get\+Splitting\+Value@{Get\+Splitting\+Value}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{Get\+Splitting\+Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual float A\+A\+B\+B\+Tree\+Builder\+::\+Get\+Splitting\+Value (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{primitives, }
+\item[{{\bf udword}}]{nb\+\_\+prims, }
+\item[{const {\bf A\+A\+B\+B} \&}]{global\+\_\+box, }
+\item[{{\bf udword}}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_a_a_b_b_tree_builder_a1386f18541381a799c444ac22ef1e241}
+Computes the splitting value along a given axis for a given node. 
+\begin{DoxyParams}{Parameters}
+{\em primitives} & \mbox{[}in\mbox{]} list of indices of primitives \\
+\hline
+{\em nb\+\_\+prims} & \mbox{[}in\mbox{]} number of indices \\
+\hline
+{\em global\+\_\+box} & \mbox{[}in\mbox{]} global \hyperlink{class_a_a_b_b}{A\+A\+B\+B} enclosing the set of input primitives \\
+\hline
+{\em axis} & \mbox{[}in\mbox{]} axis index (0,1,2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+splitting value 
+\end{DoxyReturn}
+\hypertarget{class_a_a_b_b_tree_builder_a72c6fb9928720a2d6d997959335e6dab}{\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Validate\+Subdivision@{Validate\+Subdivision}}
+\index{Validate\+Subdivision@{Validate\+Subdivision}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{Validate\+Subdivision}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+O\+O\+L} A\+A\+B\+B\+Tree\+Builder\+::\+Validate\+Subdivision (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{primitives, }
+\item[{{\bf udword}}]{nb\+\_\+prims, }
+\item[{const {\bf A\+A\+B\+B} \&}]{global\+\_\+box}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_a_a_b_b_tree_builder_a72c6fb9928720a2d6d997959335e6dab}
+Validates node subdivision. This is called each time a node is considered for subdivision, during tree building. 
+\begin{DoxyParams}{Parameters}
+{\em primitives} & \mbox{[}in\mbox{]} list of indices of primitives \\
+\hline
+{\em nb\+\_\+prims} & \mbox{[}in\mbox{]} number of indices \\
+\hline
+{\em global\+\_\+box} & \mbox{[}in\mbox{]} global \hyperlink{class_a_a_b_b}{A\+A\+B\+B} enclosing the set of input primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E if the node should be subdivised 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___tree_builders_8h}{O\+P\+C\+\_\+\+Tree\+Builders.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,503 @@
+\hypertarget{class_assimp_1_1_base_importer}{\section{Assimp\+:\+:Base\+Importer Class Reference}
+\label{class_assimp_1_1_base_importer}\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+}
+
+
+{\ttfamily \#include $<$Base\+Importer.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Base\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:Base\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_base_importer_a2d5c9b023d51d9145c841f95c3e21ca5}{Base\+Importer} ()
+\item 
+virtual \hyperlink{class_assimp_1_1_base_importer_a809ce474153402b8fc8c5a1add89a855}{$\sim$\+Base\+Importer} ()
+\item 
+virtual bool \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool check\+Sig) const =0
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp, const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\item 
+const std\+::string \& \hyperlink{class_assimp_1_1_base_importer_a223f616a340ef2a56c12403f8758f0e7}{Get\+Error\+Text} () const 
+\item 
+virtual void \hyperlink{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+virtual const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Get\+Info} () const =0
+\item 
+void \hyperlink{class_assimp_1_1_base_importer_a7ac75d5fcfe8784173bf117a912bafeb}{Get\+Extension\+List} (std\+::set$<$ std\+::string $>$ \&extensions)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_assimp_1_1_base_importer_a0f51adee4d99f4bef36f1db178009f51}{Search\+File\+Header\+For\+Token} (\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+System, const std\+::string \&\hyperlink{structfile}{file}, const char $\ast$$\ast$tokens, unsigned int num\+Tokens, unsigned int search\+Bytes=200, bool tokens\+Sol=false)
+\item 
+static bool \hyperlink{class_assimp_1_1_base_importer_a459774d87bff2cc54afbd768de98d438}{Simple\+Extension\+Check} (const std\+::string \&p\+File, const char $\ast$ext0, const char $\ast$ext1=N\+U\+L\+L, const char $\ast$ext2=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Check whether a file has a specific file extension. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_assimp_1_1_base_importer_a3954284d75f9fe30f5ff1758ecd2faeb}{Get\+Extension} (const std\+::string \&p\+File)
+\begin{DoxyCompactList}\small\item\em Extract file extension from a string. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_assimp_1_1_base_importer_a32623af462fcf73fd3c665ca4d866d0f}{Check\+Magic\+Token} (\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, const std\+::string \&p\+File, const void $\ast$magic, unsigned int num, unsigned int offset=0, unsigned int size=4)
+\begin{DoxyCompactList}\small\item\em Check whether a file starts with one or more magic tokens. \end{DoxyCompactList}\item 
+static void \hyperlink{class_assimp_1_1_base_importer_a3cd8c81533de987dd7acea6874ad918c}{Convert\+To\+U\+T\+F8} (std\+::vector$<$ char $>$ \&data)
+\item 
+static void \hyperlink{class_assimp_1_1_base_importer_ad9a7c9788930c44aa40c7448d61a862d}{Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1} (std\+::string \&data)
+\item 
+static void \hyperlink{class_assimp_1_1_base_importer_a8978de932cfe613f71283c1c5bff2974}{Text\+File\+To\+Buffer} (\hyperlink{class_assimp_1_1_i_o_stream}{I\+O\+Stream} $\ast$stream, std\+::vector$<$ char $>$ \&data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_assimp_1_1_base_importer_a7531969813de75ee5ae2f6be245abfb8}{m\+Error\+Text}
+\item 
+\hyperlink{class_assimp_1_1_progress_handler}{Progress\+Handler} $\ast$ \hyperlink{class_assimp_1_1_base_importer_addeaa8583012cf1727194710321ca02b}{progress}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_base_importer_ad2d8744585dcb094644b1caed04ac9ed}{class {\bfseries Importer}}\label{class_assimp_1_1_base_importer_ad2d8744585dcb094644b1caed04ac9ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+O\+R I\+M\+P\+O\+R\+T\+E\+R P\+L\+U\+G\+I\+N\+S O\+N\+L\+Y\+: The \hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} defines a common interface for all importer worker classes.
+
+The interface defines two functions\+: \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Can\+Read()} is used to check if the importer can handle the format of the given file. If an implementation of this function returns true, the importer then calls \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File()} which imports the given file. Read\+File is not overridable, it just calls \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Intern\+Read\+File()} and catches any Import\+Error\+Exception that might occur. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_base_importer_a2d5c9b023d51d9145c841f95c3e21ca5}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Base\+Importer@{Base\+Importer}}
+\index{Base\+Importer@{Base\+Importer}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Base\+Importer}]{\setlength{\rightskip}{0pt plus 5cm}Base\+Importer\+::\+Base\+Importer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_base_importer_a2d5c9b023d51d9145c841f95c3e21ca5}
+Constructor to be privately used by \hyperlink{class_importer}{Importer} \hypertarget{class_assimp_1_1_base_importer_a809ce474153402b8fc8c5a1add89a855}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!````~Base\+Importer@{$\sim$\+Base\+Importer}}
+\index{````~Base\+Importer@{$\sim$\+Base\+Importer}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{$\sim$\+Base\+Importer}]{\setlength{\rightskip}{0pt plus 5cm}Base\+Importer\+::$\sim$\+Base\+Importer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_base_importer_a809ce474153402b8fc8c5a1add89a855}
+Destructor, private as well 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Assimp\+::\+Base\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}
+Returns whether the class can handle the format of the given file.
+
+The implementation should be as quick as possible. A check for the file extension is enough. If no suitable loader is found with this strategy, \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Can\+Read()} is called again, the 'check\+Sig' parameter set to true this time. Now the implementation is expected to perform a full check of the file structure, possibly searching the first bytes of the file for magic identifiers or keywords.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Path and file name of the file to be examined. \\
+\hline
+{\em p\+I\+O\+Handler} & The I\+O handler to use for accessing any file. \\
+\hline
+{\em check\+Sig} & Set to true if this method is called a second time. This time, the implementation may take more time to examine the contents of the file to be loaded for magic bytes, keywords, etc to be able to load files with unknown/not existent file extensions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the class can read this file, false if not. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_assimp_1_1_m_d3_importer_a216411fbed007245dbd9a44b2ed0c5f8}{Assimp\+::\+M\+D3\+Importer}, \hyperlink{class_assimp_1_1_s_m_d_importer_a286b1d0e764a20f91382dee487daa5a5}{Assimp\+::\+S\+M\+D\+Importer}, \hyperlink{class_assimp_1_1_a_c3_d_importer_aefb82b11143ea7809b26253cdb84f8be}{Assimp\+::\+A\+C3\+D\+Importer}, \hyperlink{class_assimp_1_1_l_w_s_importer_ad47febdbe3d1c2f64207d9d6ae74459c}{Assimp\+::\+L\+W\+S\+Importer}, \hyperlink{class_assimp_1_1_unreal_importer_a346ca2f9970112362de60301c17f6894}{Assimp\+::\+Unreal\+Importer}, \hyperlink{class_assimp_1_1_blender_importer_a19f3c32d62f8047c48ea1c5453e0b295}{Assimp\+::\+Blender\+Importer}, \hyperlink{class_assimp_1_1_b_v_h_loader_aa5b4ccf7a0a79f74f72cb2eaacdf8eba}{Assimp\+::\+B\+V\+H\+Loader}, \hyperlink{class_assimp_1_1_m_d_l_importer_a0d0c164cc792374e7dd888fa3b4ee96d}{Assimp\+::\+M\+D\+L\+Importer}, \hyperlink{class_assimp_1_1_n_d_o_importer_a6506fd5111c641f180217c600467b128}{Assimp\+::\+N\+D\+O\+Importer}, \hyperlink{class_assimp_1_1_collada_loader_a5a6ee3f22d91684412107755ffdfb167}{Assimp\+::\+Collada\+Loader}, \hyperlink{class_assimp_1_1_i_f_c_importer_a097dc70abacf71c7b20d8a60c99987d7}{Assimp\+::\+I\+F\+C\+Importer}, \hyperlink{class_assimp_1_1_l_w_o_importer_a829d052a82d28257f6ab1f2f8b3f8e93}{Assimp\+::\+L\+W\+O\+Importer}, \hyperlink{class_assimp_1_1_terragen_importer_a9ea5a0d8351e2deca867841948ba858e}{Assimp\+::\+Terragen\+Importer}, \hyperlink{class_assimp_1_1_c_o_b_importer_a8c241131434701578dd0610e533327b8}{Assimp\+::\+C\+O\+B\+Importer}, \hyperlink{class_assimp_1_1_d_x_f_importer_a77a344cd0c5576f9705aba80fbc56c0b}{Assimp\+::\+D\+X\+F\+Importer}, \hyperlink{class_assimp_1_1_x_file_importer_a37ebcae63c19eed43727aef6c50776c2}{Assimp\+::\+X\+File\+Importer}, \hyperlink{class_assimp_1_1_discreet3_d_s_importer_a84b8203d949c065c380da1cf2139b838}{Assimp\+::\+Discreet3\+D\+S\+Importer}, \hyperlink{class_assimp_1_1_f_b_x_importer_ac3d4ebf6c87167a5c509bc65909809be}{Assimp\+::\+F\+B\+X\+Importer}, \hyperlink{class_assimp_1_1_h_m_p_importer_a075e2f0b6747922b72ac2b5b19b291ce}{Assimp\+::\+H\+M\+P\+Importer}, \hyperlink{class_assimp_1_1_obj_file_importer_a72c5f978c9c4c618b407e062b9912ed3}{Assimp\+::\+Obj\+File\+Importer}, \hyperlink{class_assimp_1_1_i_r_r_importer_a21f3c3225dcbb256de854aa82c2b0d14}{Assimp\+::\+I\+R\+R\+Importer}, \hyperlink{class_assimp_1_1_m_d5_importer_adc9113079c09de2af26948a58cd4a9df}{Assimp\+::\+M\+D5\+Importer}, \hyperlink{class_assimp_1_1_p_l_y_importer_a7553dbdfb2e470a2a22eafab95329385}{Assimp\+::\+P\+L\+Y\+Importer}, \hyperlink{class_assimp_1_1_n_f_f_importer_a219c8db688c14e57f02e69a37bc585da}{Assimp\+::\+N\+F\+F\+Importer}, \hyperlink{class_assimp_1_1_q3_b_s_p_file_importer_a9c17059ed987592cf7189a698a11e17c}{Assimp\+::\+Q3\+B\+S\+P\+File\+Importer}, \hyperlink{class_assimp_1_1_i_r_r_mesh_importer_a8fdf1a7a45bb589fc65c47f5f4803328}{Assimp\+::\+I\+R\+R\+Mesh\+Importer}, \hyperlink{class_assimp_1_1_m_d2_importer_a7146f942c6ca41d394669ad46f7d05c1}{Assimp\+::\+M\+D2\+Importer}, \hyperlink{class_assimp_1_1_a_s_e_importer_ae47165bcc544db0a849f024c0ae8f07b}{Assimp\+::\+A\+S\+E\+Importer}, \hyperlink{class_assimp_1_1_m_d_c_importer_a17e835174f1d042ba894d8c54d735909}{Assimp\+::\+M\+D\+C\+Importer}, \hyperlink{class_assimp_1_1_x_g_l_importer_a4d4b6f340370e574b6d4b67ab1312a17}{Assimp\+::\+X\+G\+L\+Importer}, \hyperlink{class_assimp_1_1_r_a_w_importer_aa9d9ea763ab2a5efef57fc8217773173}{Assimp\+::\+R\+A\+W\+Importer}, \hyperlink{class_assimp_1_1_o_f_f_importer_a1ffd2d54b2b27c6a76a70cbc35f4d999}{Assimp\+::\+O\+F\+F\+Importer}, \hyperlink{class_assimp_1_1_q3_d_importer_a10c41b948aab0f9f6f5f9065dd944874}{Assimp\+::\+Q3\+D\+Importer}, \hyperlink{class_assimp_1_1_s_t_l_importer_af9ca38d73cba9fac0a56bebf06b3b97f}{Assimp\+::\+S\+T\+L\+Importer}, \hyperlink{class_assimp_1_1_m_s3_d_importer_ab3da09f930bba981ec97f32dffe1c23b}{Assimp\+::\+M\+S3\+D\+Importer}, \hyperlink{class_assimp_1_1_c_s_m_importer_adabfef875783b0540a5d95a15b90c9a8}{Assimp\+::\+C\+S\+M\+Importer}, \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_a9b6609a0b257464d9a1092adf430ebef}{Assimp\+::\+Ogre\+::\+Ogre\+Importer}, and \hyperlink{class_assimp_1_1_b3_d_importer_a473469c5a57115138767ee6472c5ff9b}{Assimp\+::\+B3\+D\+Importer}.
+
+\hypertarget{class_assimp_1_1_base_importer_a32623af462fcf73fd3c665ca4d866d0f}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Check\+Magic\+Token@{Check\+Magic\+Token}}
+\index{Check\+Magic\+Token@{Check\+Magic\+Token}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Check\+Magic\+Token}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+Importer\+::\+Check\+Magic\+Token (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{const std\+::string \&}]{p\+File, }
+\item[{const void $\ast$}]{magic, }
+\item[{unsigned int}]{num, }
+\item[{unsigned int}]{offset = {\ttfamily 0}, }
+\item[{unsigned int}]{size = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_a32623af462fcf73fd3c665ca4d866d0f}
+
+
+Check whether a file starts with one or more magic tokens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Input file \\
+\hline
+{\em p\+I\+O\+Handler} & I\+O system to be used \\
+\hline
+{\em magic} & n magic tokens  num Size of magic \\
+\hline
+{\em offset} & Offset from file start where tokens are located \\
+\hline
+{\em Size} & of one token, in bytes. Maximally 16 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if one of the given tokens was found
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+For convinence, the check is also performed for the byte-\/swapped variant of all tokens (big endian). Only for tokens of size 2,4. 
+\end{DoxyNote}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a3cd8c81533de987dd7acea6874ad918c}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Convert\+To\+U\+T\+F8@{Convert\+To\+U\+T\+F8}}
+\index{Convert\+To\+U\+T\+F8@{Convert\+To\+U\+T\+F8}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Convert\+To\+U\+T\+F8}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+Importer\+::\+Convert\+To\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ char $>$ \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_a3cd8c81533de987dd7acea6874ad918c}
+An utility for all text file loaders. It converts a file to our U\+T\+F8 character set. Errors are reported, but ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \hyperlink{class_file}{File} buffer to be converted to U\+T\+F8 data. The buffer is resized as appropriate. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_ad9a7c9788930c44aa40c7448d61a862d}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1@{Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1}}
+\index{Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1@{Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+Importer\+::\+Convert\+U\+T\+F8to\+I\+S\+O8859\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_ad9a7c9788930c44aa40c7448d61a862d}
+An utility for all text file loaders. It converts a file from our U\+T\+F8 character set back to I\+S\+O-\/8859-\/1. Errors are reported, but ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \hyperlink{class_file}{File} buffer to be converted from U\+T\+F8 to I\+S\+O-\/8859-\/1. The buffer is resized as appropriate. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a223f616a340ef2a56c12403f8758f0e7}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Get\+Error\+Text@{Get\+Error\+Text}}
+\index{Get\+Error\+Text@{Get\+Error\+Text}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Get\+Error\+Text}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Assimp\+::\+Base\+Importer\+::\+Get\+Error\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_base_importer_a223f616a340ef2a56c12403f8758f0e7}
+Returns the error description of the last error that occured. \begin{DoxyReturn}{Returns}
+A description of the last error that occured. An empty string if there was no error. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a3954284d75f9fe30f5ff1758ecd2faeb}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Get\+Extension@{Get\+Extension}}
+\index{Get\+Extension@{Get\+Extension}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Get\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+Importer\+::\+Get\+Extension (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_a3954284d75f9fe30f5ff1758ecd2faeb}
+
+
+Extract file extension from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Input file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Extension without trailing dot, all lowercase 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a7ac75d5fcfe8784173bf117a912bafeb}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Get\+Extension\+List@{Get\+Extension\+List}}
+\index{Get\+Extension\+List@{Get\+Extension\+List}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Get\+Extension\+List}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+Importer\+::\+Get\+Extension\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::set$<$ std\+::string $>$ \&}]{extensions}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_base_importer_a7ac75d5fcfe8784173bf117a912bafeb}
+Called by \#\+Importer\+::\+Get\+Extension\+List for each loaded importer. Take the extension list contained in the structure returned by \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Get\+Info} and insert all file extensions into the given set. 
+\begin{DoxyParams}{Parameters}
+{\em extension} & set to collect file extensions in \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ai\+Importer\+Desc}$\ast$ Assimp\+::\+Base\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}
+Called by \#\+Importer\+::\+Get\+Importer\+Info to get a description of some loader features. Importers must provide this information. 
+
+Implemented in \hyperlink{class_assimp_1_1_m_d3_importer_ac10bd8b029d94b83024443515e10314e}{Assimp\+::\+M\+D3\+Importer}, \hyperlink{class_assimp_1_1_s_m_d_importer_a0771ff94e143b92b6367358041272aa8}{Assimp\+::\+S\+M\+D\+Importer}, \hyperlink{class_assimp_1_1_a_c3_d_importer_ac77b6db917189f7d61bdde0d124c1f29}{Assimp\+::\+A\+C3\+D\+Importer}, \hyperlink{class_assimp_1_1_l_w_s_importer_ad8facb61d246c1829d0f66b47e068e15}{Assimp\+::\+L\+W\+S\+Importer}, \hyperlink{class_assimp_1_1_unreal_importer_abdaca78b5edda1b9f1185928d57c2563}{Assimp\+::\+Unreal\+Importer}, \hyperlink{class_assimp_1_1_blender_importer_a8e4035e2db36d6b43cbc1a859642a133}{Assimp\+::\+Blender\+Importer}, \hyperlink{class_assimp_1_1_m_d_l_importer_a1295d9d6840c9a563866bc3ac8acc22d}{Assimp\+::\+M\+D\+L\+Importer}, \hyperlink{class_assimp_1_1_n_d_o_importer_a4d055448b8cfa7970e62cd97369aff9a}{Assimp\+::\+N\+D\+O\+Importer}, \hyperlink{class_assimp_1_1_b_v_h_loader_a289d1569988ab2b4c5b1def002777f9d}{Assimp\+::\+B\+V\+H\+Loader}, \hyperlink{class_assimp_1_1_collada_loader_a111a0ed539c7da04244623a066a718d2}{Assimp\+::\+Collada\+Loader}, \hyperlink{class_assimp_1_1_l_w_o_importer_a1d3d641b69c598d1286485ea8c92fc60}{Assimp\+::\+L\+W\+O\+Importer}, \hyperlink{class_assimp_1_1_discreet3_d_s_importer_a802b9ca9e70bce3953410b17c3ab5abd}{Assimp\+::\+Discreet3\+D\+S\+Importer}, \hyperlink{class_assimp_1_1_m_d2_importer_ab218b47deea315fd6ee8532325a18d97}{Assimp\+::\+M\+D2\+Importer}, \hyperlink{class_assimp_1_1_i_f_c_importer_aec4ab9e7ecbcadbf56741ce484734bb7}{Assimp\+::\+I\+F\+C\+Importer}, \hyperlink{class_assimp_1_1_d_x_f_importer_a88361f339160bc34dce8124d3bf4cd86}{Assimp\+::\+D\+X\+F\+Importer}, \hyperlink{class_assimp_1_1_m_d_c_importer_aa80ee247ecebd1d43adb12195df73567}{Assimp\+::\+M\+D\+C\+Importer}, \hyperlink{class_assimp_1_1_x_file_importer_aba3e78d75128b02d9c961131a06605cc}{Assimp\+::\+X\+File\+Importer}, \hyperlink{class_assimp_1_1_h_m_p_importer_ab6cd7d09ef814859ac5e272844b1e6c4}{Assimp\+::\+H\+M\+P\+Importer}, \hyperlink{class_assimp_1_1_terragen_importer_a222f315c7d7db5728efc5dc9407c7503}{Assimp\+::\+Terragen\+Importer}, \hyperlink{class_assimp_1_1_c_o_b_importer_a318bc3ee1d58376254320e3c35cb5628}{Assimp\+::\+C\+O\+B\+Importer}, \hyperlink{class_assimp_1_1_f_b_x_importer_a21defc65e3e3e00208c66ca0ea67f376}{Assimp\+::\+F\+B\+X\+Importer}, \hyperlink{class_assimp_1_1_m_d5_importer_ac268fc50f92b69c5b80f07b553a42015}{Assimp\+::\+M\+D5\+Importer}, \hyperlink{class_assimp_1_1_p_l_y_importer_afc947a0806c89d5b1bd89baca0cd7aa7}{Assimp\+::\+P\+L\+Y\+Importer}, \hyperlink{class_assimp_1_1_i_r_r_importer_a331d6ddf0bf40b8138c0bea0056501a0}{Assimp\+::\+I\+R\+R\+Importer}, \hyperlink{class_assimp_1_1_n_f_f_importer_ae47aa9ffe01aa6eb883ba8f0985f7737}{Assimp\+::\+N\+F\+F\+Importer}, \hyperlink{class_assimp_1_1_i_r_r_mesh_importer_a9d3e014c7102567fc7c9d17c6da4aa31}{Assimp\+::\+I\+R\+R\+Mesh\+Importer}, \hyperlink{class_assimp_1_1_a_s_e_importer_a3b24264bef094b708ff100f35b59f079}{Assimp\+::\+A\+S\+E\+Importer}, \hyperlink{class_assimp_1_1_x_g_l_importer_ab35796bcc2e68598e0cb4206728c82b3}{Assimp\+::\+X\+G\+L\+Importer}, \hyperlink{class_assimp_1_1_r_a_w_importer_aeb951c73f5fb7bb7653e55e7a9b688ff}{Assimp\+::\+R\+A\+W\+Importer}, \hyperlink{class_assimp_1_1_o_f_f_importer_a6fb99105f4666ee0a9a2d247a5db4e26}{Assimp\+::\+O\+F\+F\+Importer}, \hyperlink{class_assimp_1_1_q3_d_importer_ae95873906d3295d893c9a4af74392595}{Assimp\+::\+Q3\+D\+Importer}, \hyperlink{class_assimp_1_1_s_t_l_importer_af8fbcd1f1b57387e615afc737b96aa2a}{Assimp\+::\+S\+T\+L\+Importer}, \hyperlink{class_assimp_1_1_m_s3_d_importer_a4546d12a0844b8f3f23c26924f95df03}{Assimp\+::\+M\+S3\+D\+Importer}, \hyperlink{class_assimp_1_1_c_s_m_importer_afd60577dd9c2b67f5b3dd4ec41c1b6e0}{Assimp\+::\+C\+S\+M\+Importer}, \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_ab7c09bcd61d6bebd1738439100a4c3a0}{Assimp\+::\+Ogre\+::\+Ogre\+Importer}, \hyperlink{class_assimp_1_1_b3_d_importer_a6460c9b4295e146afd2233c5324826f2}{Assimp\+::\+B3\+D\+Importer}, and \hyperlink{class_test_plugin_a061c7e99d81d51175a17590a7b886685}{Test\+Plugin}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Assimp\+::\+Base\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}
+Imports the given file into the given scene structure. The function is expected to throw an Import\+Error\+Exception if there is an error. If it terminates normally, the data in \hyperlink{structai_scene}{ai\+Scene} is expected to be correct. Override this function to implement the actual importing. ~\newline
+ The output scene must meet the following requirements\+:~\newline
+ 
+\begin{DoxyItemize}
+\item At least a root node must be there, even if its only purpose is to reference one mesh. 
+\item \hyperlink{structai_mesh_a99d66ac0a444068c1b252b30265cbf53}{ai\+Mesh\+::m\+Primitive\+Types} may be 0. The types of primitives in the mesh are determined automatically in this case. 
+\item the vertex data is stored in a pseudo-\/indexed \char`\"{}verbose\char`\"{} format. In fact this means that every vertex that is referenced by a face is unique. Or the other way round\+: a vertex index may not occur twice in a single \hyperlink{structai_mesh}{ai\+Mesh}. 
+\item \hyperlink{structai_animation_ae2bbc49320b4b75c05e23e0ab704ece7}{ai\+Animation\+::m\+Duration} may be -\/1. \hyperlink{class_assimp}{Assimp} determines the length of the animation automatically in this case as the length of the longest animation channel. 
+\item \hyperlink{structai_mesh_ab2a81bfe1731f01271ebab274a8f01c4}{ai\+Mesh\+::m\+Bitangents} may be N\+U\+L\+L if tangents and normals are given. In this case bitangents are computed as the cross product between normal and tangent. 
+\item There needn't be a material. If none is there a default material is generated. However, it is recommended practice for loaders to generate a default material for yourself that matches the default material setting for the file format better than \hyperlink{class_assimp}{Assimp}'s generic default material. Note that default materials {\itshape should} be named A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E if they're just color-\/shaded or A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E if they define a (dummy) texture.  
+\end{DoxyItemize}If the A\+I\+\_\+\+S\+C\+E\+N\+E\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+T\+E-\/\+Flag is {\bfseries not} set\+:
+\begin{DoxyItemize}
+\item at least one mesh must be there 
+\item there may be no meshes with 0 vertices or faces 
+\end{DoxyItemize}This won't be checked (except by the validation step)\+: \hyperlink{class_assimp}{Assimp} will crash if one of the conditions is not met!
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Path of the file to be imported. \\
+\hline
+{\em p\+Scene} & The scene object to hold the imported data. N\+U\+L\+L is not a valid parameter. \\
+\hline
+{\em p\+I\+O\+Handler} & The I\+O handler to use for any file access. N\+U\+L\+L is not a valid parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_assimp_1_1_m_d3_importer_af9055e49cde3548bb992a7666145ec10}{Assimp\+::\+M\+D3\+Importer}, \hyperlink{class_assimp_1_1_s_m_d_importer_a4f1ad132927d8077a231228223b392eb}{Assimp\+::\+S\+M\+D\+Importer}, \hyperlink{class_assimp_1_1_a_c3_d_importer_a88b27495efcf754f3dda7e4177aff902}{Assimp\+::\+A\+C3\+D\+Importer}, \hyperlink{class_assimp_1_1_l_w_s_importer_a8d456bbf90dd0171a9510a1089d68c45}{Assimp\+::\+L\+W\+S\+Importer}, \hyperlink{class_assimp_1_1_unreal_importer_a76e6e77e39a461137453bcbbb22ba71f}{Assimp\+::\+Unreal\+Importer}, \hyperlink{class_assimp_1_1_blender_importer_aedbc68fb4a33f98473fb5737d7abff3b}{Assimp\+::\+Blender\+Importer}, \hyperlink{class_assimp_1_1_m_d_l_importer_ab95ee90a0d1724dc4876383a782716e1}{Assimp\+::\+M\+D\+L\+Importer}, \hyperlink{class_assimp_1_1_b_v_h_loader_ab523acec0ea7c03e18c75d3ace26d81d}{Assimp\+::\+B\+V\+H\+Loader}, \hyperlink{class_assimp_1_1_n_d_o_importer_a2061022f15ad70e29a9d7cb640c96e2d}{Assimp\+::\+N\+D\+O\+Importer}, \hyperlink{class_assimp_1_1_collada_loader_a9d79ca753279dee692fa191ca7b6c84a}{Assimp\+::\+Collada\+Loader}, \hyperlink{class_assimp_1_1_l_w_o_importer_a4b3cb778f4d4d49620aa9a0bc44ba1e7}{Assimp\+::\+L\+W\+O\+Importer}, \hyperlink{class_assimp_1_1_discreet3_d_s_importer_abf7e6eb912d47870e4b3ceec16376a90}{Assimp\+::\+Discreet3\+D\+S\+Importer}, \hyperlink{class_assimp_1_1_m_d5_importer_a5debfce7091733686d31a2454553736a}{Assimp\+::\+M\+D5\+Importer}, \hyperlink{class_assimp_1_1_m_d2_importer_ac510f399d605f97cecc6001d14f7692a}{Assimp\+::\+M\+D2\+Importer}, \hyperlink{class_assimp_1_1_i_f_c_importer_aba650349165893e5e64d51f3c0c74b92}{Assimp\+::\+I\+F\+C\+Importer}, \hyperlink{class_assimp_1_1_m_d_c_importer_ab88c5bf33072f70f042cdbd6b35cd25a}{Assimp\+::\+M\+D\+C\+Importer}, \hyperlink{class_assimp_1_1_x_file_importer_a062ed9f5fdca14e89bc40a5d4990dc4d}{Assimp\+::\+X\+File\+Importer}, \hyperlink{class_assimp_1_1_d_x_f_importer_a5e055b507cafc7fa1bf32b0697dd1160}{Assimp\+::\+D\+X\+F\+Importer}, \hyperlink{class_assimp_1_1_h_m_p_importer_a11a230b849809ebaa0fde85f7869f14d}{Assimp\+::\+H\+M\+P\+Importer}, \hyperlink{class_assimp_1_1_c_o_b_importer_a24dc861939b2cbfccab4609b937ca2e2}{Assimp\+::\+C\+O\+B\+Importer}, \hyperlink{class_assimp_1_1_f_b_x_importer_aa6fff384b6fe9956ab68650d7f1e1848}{Assimp\+::\+F\+B\+X\+Importer}, \hyperlink{class_assimp_1_1_p_l_y_importer_a8849cd4413bdc1a9d70c5c539328b2b3}{Assimp\+::\+P\+L\+Y\+Importer}, \hyperlink{class_assimp_1_1_n_f_f_importer_a97c20ab69758da48642dc690ab4a7b65}{Assimp\+::\+N\+F\+F\+Importer}, \hyperlink{class_assimp_1_1_terragen_importer_a3f645f0881440c057655cd486e88a04a}{Assimp\+::\+Terragen\+Importer}, \hyperlink{class_assimp_1_1_a_s_e_importer_a9e7b1964d1476cfaf6f45e3ce37b2a78}{Assimp\+::\+A\+S\+E\+Importer}, \hyperlink{class_assimp_1_1_i_r_r_importer_adad165810aa7d7859ebe688bd27aa39f}{Assimp\+::\+I\+R\+R\+Importer}, \hyperlink{class_assimp_1_1_i_r_r_mesh_importer_ab15c2a44e777baf330e51535b4f2a2e0}{Assimp\+::\+I\+R\+R\+Mesh\+Importer}, \hyperlink{class_assimp_1_1_r_a_w_importer_af925a691a795d82a078bdb332c51e8cd}{Assimp\+::\+R\+A\+W\+Importer}, \hyperlink{class_assimp_1_1_x_g_l_importer_a69abe132ca27c756c56f373af7f2d2f2}{Assimp\+::\+X\+G\+L\+Importer}, \hyperlink{class_assimp_1_1_o_f_f_importer_a17abb1e1f7419354414e8d3245113742}{Assimp\+::\+O\+F\+F\+Importer}, \hyperlink{class_assimp_1_1_q3_d_importer_a7b9e5dbbbdb1b98dbb17e23e7ebc0209}{Assimp\+::\+Q3\+D\+Importer}, \hyperlink{class_assimp_1_1_s_t_l_importer_a4a1f2e7092290364d9bc52603ed7cf74}{Assimp\+::\+S\+T\+L\+Importer}, \hyperlink{class_assimp_1_1_m_s3_d_importer_a9784f255e62ab45c8232f83b27dd6762}{Assimp\+::\+M\+S3\+D\+Importer}, \hyperlink{class_assimp_1_1_c_s_m_importer_aa864e9a5bb7cc0a53bc3ca0963fffb78}{Assimp\+::\+C\+S\+M\+Importer}, \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_af87c48299e8d92cd87d424b6ef71795b}{Assimp\+::\+Ogre\+::\+Ogre\+Importer}, and \hyperlink{class_assimp_1_1_b3_d_importer_aaeb1d48d9254e53f53772f0b0bcf764f}{Assimp\+::\+B3\+D\+Importer}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene} $\ast$ Base\+Importer\+::\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp, }
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}
+Imports the given file and returns the imported data. If the import succeeds, ownership of the data is transferred to the caller. If the import fails, N\+U\+L\+L is returned. The function takes care that any partially constructed data is destroyed beforehand.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & \hyperlink{class_importer}{Importer} object hosting this loader. \\
+\hline
+{\em p\+File} & Path of the file to be imported. \\
+\hline
+{\em p\+I\+O\+Handler} & I\+O-\/\+Handler used to open this and possible other files. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The imported data or N\+U\+L\+L if failed. If it failed a human-\/readable error description can be retrieved by calling \hyperlink{class_assimp_1_1_base_importer_a223f616a340ef2a56c12403f8758f0e7}{Get\+Error\+Text()}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is not intended to be overridden. Implement \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Intern\+Read\+File()} to do the import. If an exception is thrown somewhere in \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Intern\+Read\+File()}, this function will catch it and transform it into a suitable response to the caller. 
+\end{DoxyNote}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a0f51adee4d99f4bef36f1db178009f51}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Search\+File\+Header\+For\+Token@{Search\+File\+Header\+For\+Token}}
+\index{Search\+File\+Header\+For\+Token@{Search\+File\+Header\+For\+Token}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Search\+File\+Header\+For\+Token}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+Importer\+::\+Search\+File\+Header\+For\+Token (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+System, }
+\item[{const std\+::string \&}]{file, }
+\item[{const char $\ast$$\ast$}]{tokens, }
+\item[{unsigned int}]{num\+Tokens, }
+\item[{unsigned int}]{search\+Bytes = {\ttfamily 200}, }
+\item[{bool}]{tokens\+Sol = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_a0f51adee4d99f4bef36f1db178009f51}
+A utility for \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Can\+Read()}.
+
+The function searches the header of a file for a specific token and returns true if this token is found. This works for text files only. There is a rudimentary handling of U\+N\+I\+C\+O\+D\+E files. The comparison is case independent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+I\+O\+System} & I\+O System to work with \\
+\hline
+{\em file} & \hyperlink{class_file}{File} name of the file \\
+\hline
+{\em tokens} & List of tokens to search for \\
+\hline
+{\em num\+Tokens} & Size of the token array \\
+\hline
+{\em search\+Bytes} & Number of bytes to be searched for the tokens. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+Importer\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}
+Called prior to \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File()}. The function is a request to the importer to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & \hyperlink{class_assimp_1_1_importer}{Importer} instance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_assimp_1_1_m_d3_importer_a6e949a276c71016d1d5926ff76f13a86}{Assimp\+::\+M\+D3\+Importer}, \hyperlink{class_assimp_1_1_a_c3_d_importer_a59bf78ed30aa9de6e16d6ecfe5b3d1ad}{Assimp\+::\+A\+C3\+D\+Importer}, \hyperlink{class_assimp_1_1_l_w_s_importer_ad3192a55e03c2660835d8f5d790014e6}{Assimp\+::\+L\+W\+S\+Importer}, \hyperlink{class_assimp_1_1_s_m_d_importer_a816bd8aeb3f5c8b932be1fd0d7d68798}{Assimp\+::\+S\+M\+D\+Importer}, \hyperlink{class_assimp_1_1_unreal_importer_a6245271b643c4beac61819f6cb6291e2}{Assimp\+::\+Unreal\+Importer}, \hyperlink{class_assimp_1_1_blender_importer_a4c8b1b1c9b79bed2c2a56d56c8060889}{Assimp\+::\+Blender\+Importer}, \hyperlink{class_assimp_1_1_m_d_l_importer_a0815608887ab4132a1bac328007c4572}{Assimp\+::\+M\+D\+L\+Importer}, \hyperlink{class_assimp_1_1_n_d_o_importer_aae923695dd5a9ec9813fff4083562169}{Assimp\+::\+N\+D\+O\+Importer}, \hyperlink{class_assimp_1_1_a_s_e_importer_a71d33277500d8b4c300e2b36eb94d472}{Assimp\+::\+A\+S\+E\+Importer}, \hyperlink{class_assimp_1_1_b_v_h_loader_a8efcc5b879f1d5595feb1c3d505fa536}{Assimp\+::\+B\+V\+H\+Loader}, \hyperlink{class_assimp_1_1_collada_loader_a4289309c9ba9306807e73195d1c969cb}{Assimp\+::\+Collada\+Loader}, \hyperlink{class_assimp_1_1_i_r_r_importer_af7f79b288d02fba72959b34f547e1766}{Assimp\+::\+I\+R\+R\+Importer}, \hyperlink{class_assimp_1_1_terragen_importer_aa625c98a68fa8a2adb3b8c40074057a0}{Assimp\+::\+Terragen\+Importer}, \hyperlink{class_assimp_1_1_i_f_c_importer_ad1e3ea4947b7f534975b060bf66aad33}{Assimp\+::\+I\+F\+C\+Importer}, \hyperlink{class_assimp_1_1_m_d5_importer_a53497bd13f6c050fb668554c8b4faa02}{Assimp\+::\+M\+D5\+Importer}, \hyperlink{class_assimp_1_1_l_w_o_importer_a9c930022ee8c5d9816f4cdab0b747195}{Assimp\+::\+L\+W\+O\+Importer}, \hyperlink{class_assimp_1_1_c_o_b_importer_ad644da920e9f44f852f1c0e295164952}{Assimp\+::\+C\+O\+B\+Importer}, \hyperlink{class_assimp_1_1_f_b_x_importer_aa0b027a6c4fe87c01dc43cacd2f17116}{Assimp\+::\+F\+B\+X\+Importer}, \hyperlink{class_assimp_1_1_discreet3_d_s_importer_a69c8d30c01af9ac1548a9fcb25ab28ed}{Assimp\+::\+Discreet3\+D\+S\+Importer}, \hyperlink{class_assimp_1_1_m_d2_importer_a21b5689b4e166cc89152f9bcf0bd2418}{Assimp\+::\+M\+D2\+Importer}, \hyperlink{class_assimp_1_1_m_d_c_importer_ae95d077ab7d3da0740d96861649a75c7}{Assimp\+::\+M\+D\+C\+Importer}, \hyperlink{class_assimp_1_1_c_s_m_importer_a086615f1f4d3496acdd96be7fa32a90e}{Assimp\+::\+C\+S\+M\+Importer}, and \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_a766a089f91a75d1c32fcdf2f21e0d464}{Assimp\+::\+Ogre\+::\+Ogre\+Importer}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a459774d87bff2cc54afbd768de98d438}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Simple\+Extension\+Check@{Simple\+Extension\+Check}}
+\index{Simple\+Extension\+Check@{Simple\+Extension\+Check}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Simple\+Extension\+Check}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+Importer\+::\+Simple\+Extension\+Check (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{const char $\ast$}]{ext0, }
+\item[{const char $\ast$}]{ext1 = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{ext2 = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_a459774d87bff2cc54afbd768de98d438}
+
+
+Check whether a file has a specific file extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Input file \\
+\hline
+{\em ext0} & Extension to check for. Lowercase characters only, no dot! \\
+\hline
+{\em ext1} & Optional second extension \\
+\hline
+{\em ext2} & Optional third extension \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Case-\/insensitive 
+\end{DoxyNote}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_base_importer_a8978de932cfe613f71283c1c5bff2974}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!Text\+File\+To\+Buffer@{Text\+File\+To\+Buffer}}
+\index{Text\+File\+To\+Buffer@{Text\+File\+To\+Buffer}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{Text\+File\+To\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+Importer\+::\+Text\+File\+To\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+Stream} $\ast$}]{stream, }
+\item[{std\+::vector$<$ char $>$ \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_base_importer_a8978de932cfe613f71283c1c5bff2974}
+Utility for text file loaders which copies the contents of the file into a memory buffer and converts it to our U\+T\+F8 representation. 
+\begin{DoxyParams}{Parameters}
+{\em stream} & Stream to read from. \\
+\hline
+{\em data} & Output buffer to be resized and filled with the converted text file data. The buffer is terminated with a binary 0. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_base_importer_a7531969813de75ee5ae2f6be245abfb8}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!m\+Error\+Text@{m\+Error\+Text}}
+\index{m\+Error\+Text@{m\+Error\+Text}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{m\+Error\+Text}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+Base\+Importer\+::m\+Error\+Text\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_base_importer_a7531969813de75ee5ae2f6be245abfb8}
+Error description in case there was one. \hypertarget{class_assimp_1_1_base_importer_addeaa8583012cf1727194710321ca02b}{\index{Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}!progress@{progress}}
+\index{progress@{progress}!Assimp\+::\+Base\+Importer@{Assimp\+::\+Base\+Importer}}
+\subsubsection[{progress}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Progress\+Handler}$\ast$ Assimp\+::\+Base\+Importer\+::progress\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_base_importer_addeaa8583012cf1727194710321ca02b}
+Currently set progress handler 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Base\+Importer.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_base_importer_8cpp}{Base\+Importer.\+cpp}\end{DoxyCompactItemize}

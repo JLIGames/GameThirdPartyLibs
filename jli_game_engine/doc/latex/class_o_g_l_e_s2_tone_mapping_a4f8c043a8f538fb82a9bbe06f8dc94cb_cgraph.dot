@@ -1,0 +1,19 @@
+digraph "OGLES2ToneMapping::InitView"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLES2ToneMapping::\lInitView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CPVRTgles2Ext::IsGLExtension\lSupported",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_tgles2_ext.html#a7befd944f6be5d248ffbbd3b43d11f81",tooltip="Queries for support of an extension. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PVRShell::PVRShellSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#afe4052dde87d659948defdd63529eee6",tooltip="This function is used to pass preferences to the PVRShell. If used, this function must be called from..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PVRShell::PVRShellGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#ad58b00376cdae7a8aeea41fc17367bfd",tooltip="This function is used to get parameters from the PVRShell. It can be called from anywhere in the prog..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CPVRTPrint3D::SetTextures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#a83a1fbe0a34d14a6a0d206b1e555dda7",tooltip="Initialization and texture upload of default font data. Should be called only once for a Print3D obje..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PVRTTextureLoadFromPVR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___a_p_i___o_g_l_e_s.html#ga6eecac4c871ba7ccdd0ef4b057a7d596",tooltip="Allows textures to be stored in binary PVR files and loaded in. Can load parts of a mipmaped texture ..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CPVRTString::c_str",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_string.html#aabd1f2848c4b1d65e7418b264502687d",tooltip="Returns a const char* pointer of the string. "];
+}

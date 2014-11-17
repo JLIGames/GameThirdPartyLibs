@@ -1,0 +1,56 @@
+\hypertarget{_d_x_f_loader_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+D\+X\+F\+Loader.cpp File Reference}
+\label{_d_x_f_loader_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+D\+X\+F\+Loader.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+D\+X\+F\+Loader.\+cpp}}
+}
+
+
+Implementation of the D\+X\+F importer class.  
+
+
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+X\+F\+Loader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Parsing\+Utils.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Convert\+To\+L\+H\+Process.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fast\+\_\+atof.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+X\+F\+Helper.\+h\char`\"{}}\\*
+Include dependency graph for D\+X\+F\+Loader.\+cpp\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a5d3845853bc86db684384b4b111de8e1}{\#define {\bfseries A\+I\+\_\+\+D\+X\+F\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+I\+D\+E\+N\+T}~(\char`\"{}Auto\+C\+A\+D Binary D\+X\+F\textbackslash{}r\textbackslash{}n\textbackslash{}x1a\textbackslash{}0\char`\"{})}\label{_d_x_f_loader_8cpp_a5d3845853bc86db684384b4b111de8e1}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a6185ecda23eded53530820a2b4f073d9}{\#define {\bfseries A\+I\+\_\+\+D\+X\+F\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+I\+D\+E\+N\+T\+\_\+\+L\+E\+N}~(24)}\label{_d_x_f_loader_8cpp_a6185ecda23eded53530820a2b4f073d9}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a52d119045f4d9207efbdce07d7a08247}{\#define {\bfseries A\+I\+\_\+\+D\+X\+F\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+O\+R}~\hyperlink{structai_color4_d}{ai\+Color4\+D}(0.\+6f,0.\+6f,0.\+6f,0.\+6f)}\label{_d_x_f_loader_8cpp_a52d119045f4d9207efbdce07d7a08247}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a0d611c974f0a611e7a2967e35e9401f4}{\#define {\bfseries A\+I\+\_\+\+D\+X\+F\+\_\+\+N\+U\+M\+\_\+\+I\+N\+D\+E\+X\+\_\+\+C\+O\+L\+O\+R\+S}~(sizeof(g\+\_\+aclr\+Dxf\+Index\+Colors)/sizeof(g\+\_\+aclr\+Dxf\+Index\+Colors\mbox{[}0\mbox{]}))}\label{_d_x_f_loader_8cpp_a0d611c974f0a611e7a2967e35e9401f4}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a74f58a71fa228cef963ff43c0919b393}{\#define {\bfseries A\+I\+\_\+\+D\+X\+F\+\_\+\+E\+N\+T\+I\+T\+I\+E\+S\+\_\+\+M\+A\+G\+I\+C\+\_\+\+B\+L\+O\+C\+K}~\char`\"{}\$A\+S\+S\+I\+M\+P\+\_\+\+E\+N\+T\+I\+T\+I\+E\+S\+\_\+\+M\+A\+G\+I\+C\char`\"{}}\label{_d_x_f_loader_8cpp_a74f58a71fa228cef963ff43c0919b393}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a8e7e6516fee8e9d7595474e7d054389e}{\#define {\bfseries D\+X\+F\+\_\+\+P\+O\+L\+Y\+L\+I\+N\+E\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+S\+E\+D}~0x1}\label{_d_x_f_loader_8cpp_a8e7e6516fee8e9d7595474e7d054389e}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a99c64f17ac958ad68f95864361f29732}{\#define {\bfseries D\+X\+F\+\_\+\+P\+O\+L\+Y\+L\+I\+N\+E\+\_\+\+F\+L\+A\+G\+\_\+3\+D\+\_\+\+P\+O\+L\+Y\+L\+I\+N\+E}~0x8}\label{_d_x_f_loader_8cpp_a99c64f17ac958ad68f95864361f29732}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a234865d580544f8a935808d5115875d1}{\#define {\bfseries D\+X\+F\+\_\+\+P\+O\+L\+Y\+L\+I\+N\+E\+\_\+\+F\+L\+A\+G\+\_\+3\+D\+\_\+\+P\+O\+L\+Y\+M\+E\+S\+H}~0x10}\label{_d_x_f_loader_8cpp_a234865d580544f8a935808d5115875d1}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a6f117f0844dfc97a996a5785cb07aefe}{\#define {\bfseries D\+X\+F\+\_\+\+P\+O\+L\+Y\+L\+I\+N\+E\+\_\+\+F\+L\+A\+G\+\_\+\+P\+O\+L\+Y\+F\+A\+C\+E\+M\+E\+S\+H}~0x40}\label{_d_x_f_loader_8cpp_a6f117f0844dfc97a996a5785cb07aefe}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a8b6537c513cdf7177eefe47a1ef8d40f}{\#define {\bfseries D\+X\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+G\+\_\+\+P\+A\+R\+T\+\_\+\+O\+F\+\_\+\+P\+O\+L\+Y\+F\+A\+C\+E}~0x80}\label{_d_x_f_loader_8cpp_a8b6537c513cdf7177eefe47a1ef8d40f}
+
+\item 
+\hypertarget{_d_x_f_loader_8cpp_a67a2ccefdcd42da0544b6c78c5ab4395}{\#define {\bfseries D\+X\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+G\+\_\+\+H\+A\+S\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+S}~0x40}\label{_d_x_f_loader_8cpp_a67a2ccefdcd42da0544b6c78c5ab4395}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the D\+X\+F importer class. 
+

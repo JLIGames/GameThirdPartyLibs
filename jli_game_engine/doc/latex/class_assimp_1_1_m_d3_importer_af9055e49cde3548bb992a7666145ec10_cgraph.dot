@@ -1,0 +1,29 @@
+digraph "Assimp::MD3Importer::InternReadFile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::MD3Importer\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::IOSystem::Open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816",tooltip="Open a new file with a given path. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::Logger::debug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a3b10454ab4c0949f251062376d9c4161",tooltip="Writes a debug message. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::Logger::OnDebug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aded6996d20f14204877097b88bd5eac6",tooltip="Called as a request to write a specific debug message. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::Logger::info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a12b8a125083c47ac0bb6056f00761e52",tooltip="Writes a info message. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::Logger::OnInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aba81c4562ff8db83f06c6b62f2eb7983",tooltip="Called as a request to write a specific info message. "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::Logger::warn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a32bc5ee4b23df13551b83b925907f1b1",tooltip="Writes a warning message. "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::Logger::OnWarn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#ab8066978dd37992f711d75d49cf4607b",tooltip="Called as a request to write a specific warn message. "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::DefaultLogger\l::isNullLogger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a55ea67b3770c321fa0bda541763495a8",tooltip="Return whether a #NullLogger is currently active. "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::Logger::error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aa8b7c3f56dc4cecfdacc8bb36ba3fac1",tooltip="Writes an error message. "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Assimp::Logger::OnError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#ae2ea0790aba6125b90af0f2768b0759d",tooltip="Called as a request to write a specific error message. "];
+}

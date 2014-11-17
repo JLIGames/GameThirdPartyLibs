@@ -1,0 +1,11 @@
+digraph "bullet/bullet-2.82-r2704/Extras/GIMPACTUtils" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_37ce13f4fb998c871c8fd54d656f12bb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Extras" fontname="Helvetica", fontsize="10", URL="dir_37ce13f4fb998c871c8fd54d656f12bb.html"]
+  dir_2071a184d506796636e9ab58de678d14 [shape=box, label="GIMPACTUtils", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2071a184d506796636e9ab58de678d14.html"];
+  }
+  dir_68d7f8ba1985e704f0f5f20dc6f517a7 [shape=box label="src" fillcolor="white" style="filled" color="red" URL="dir_68d7f8ba1985e704f0f5f20dc6f517a7.html"];
+  dir_2071a184d506796636e9ab58de678d14->dir_68d7f8ba1985e704f0f5f20dc6f517a7 [headlabel="1", labeldistance=1.5 headhref="dir_000265_000296.html"];
+}

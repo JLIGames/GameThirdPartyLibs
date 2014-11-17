@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Tools/Documentation/html" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_457fc4c536e88a868c5e3cf3374c775a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Documentation" fontname="Helvetica", fontsize="10", URL="dir_457fc4c536e88a868c5e3cf3374c775a.html"]
+  subgraph clusterdir_05c8aa9c9ee99262995708bd34ae382d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_05c8aa9c9ee99262995708bd34ae382d.html"];
+    dir_05c8aa9c9ee99262995708bd34ae382d [shape=plaintext label="html"];
+    dir_db917adde5425e80faf695af38042232 [shape=box label="search" color="black" fillcolor="white" style="filled" URL="dir_db917adde5425e80faf695af38042232.html"];
+  }
+  }
+}

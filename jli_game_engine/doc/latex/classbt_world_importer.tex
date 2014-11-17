@@ -1,0 +1,380 @@
+\hypertarget{classbt_world_importer}{\section{bt\+World\+Importer Class Reference}
+\label{classbt_world_importer}\index{bt\+World\+Importer@{bt\+World\+Importer}}
+}
+
+
+Inheritance diagram for bt\+World\+Importer\+:
+
+
+Collaboration diagram for bt\+World\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_world_importer_a8c11527c80f69a03cea9e5188f0bcdc0}{{\bfseries bt\+World\+Importer} (\hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} $\ast$world)}\label{classbt_world_importer_a8c11527c80f69a03cea9e5188f0bcdc0}
+
+\item 
+virtual void \hyperlink{classbt_world_importer_a773cba2bf22bbe5e62f27c0c37b89585}{delete\+All\+Data} ()
+\begin{DoxyCompactList}\small\item\em make sure you don't use the dynamics world containing objects after you call this method \end{DoxyCompactList}\item 
+\hypertarget{classbt_world_importer_aa290d693dc056d0609d28748bb37d57d}{void {\bfseries set\+Verbose\+Mode} (int verbose\+Mode)}\label{classbt_world_importer_aa290d693dc056d0609d28748bb37d57d}
+
+\item 
+\hypertarget{classbt_world_importer_aa3cb95b43bec80c927bcab35f46f2f62}{int {\bfseries get\+Verbose\+Mode} () const }\label{classbt_world_importer_aa3cb95b43bec80c927bcab35f46f2f62}
+
+\item 
+\hypertarget{classbt_world_importer_a33847b0ed82f7a786c75619975731bdd}{int {\bfseries get\+Num\+Collision\+Shapes} () const }\label{classbt_world_importer_a33847b0ed82f7a786c75619975731bdd}
+
+\item 
+\hypertarget{classbt_world_importer_a38c9a86659bc5afa6c94ed1e76a22f0e}{bt\+Collision\+Shape $\ast$ {\bfseries get\+Collision\+Shape\+By\+Index} (int index)}\label{classbt_world_importer_a38c9a86659bc5afa6c94ed1e76a22f0e}
+
+\item 
+\hypertarget{classbt_world_importer_a495204935a9a07ed20f7e955ca1fc13e}{int {\bfseries get\+Num\+Rigid\+Bodies} () const }\label{classbt_world_importer_a495204935a9a07ed20f7e955ca1fc13e}
+
+\item 
+\hypertarget{classbt_world_importer_a2568e8eeacb3298c9a5edeb29416ec73}{bt\+Collision\+Object $\ast$ {\bfseries get\+Rigid\+Body\+By\+Index} (int index) const }\label{classbt_world_importer_a2568e8eeacb3298c9a5edeb29416ec73}
+
+\item 
+\hypertarget{classbt_world_importer_a97fd549367c3b7c83ede1300a32a7e89}{int {\bfseries get\+Num\+Constraints} () const }\label{classbt_world_importer_a97fd549367c3b7c83ede1300a32a7e89}
+
+\item 
+\hypertarget{classbt_world_importer_adb7f39089e82abfdaea514526d91cfb3}{bt\+Typed\+Constraint $\ast$ {\bfseries get\+Constraint\+By\+Index} (int index) const }\label{classbt_world_importer_adb7f39089e82abfdaea514526d91cfb3}
+
+\item 
+\hypertarget{classbt_world_importer_a742ec2f68fcdeeb479f2303740463c9c}{int {\bfseries get\+Num\+Bvhs} () const }\label{classbt_world_importer_a742ec2f68fcdeeb479f2303740463c9c}
+
+\item 
+\hypertarget{classbt_world_importer_abb267efe37211ba6c0324b36c4e16de5}{bt\+Optimized\+Bvh $\ast$ {\bfseries get\+Bvh\+By\+Index} (int index) const }\label{classbt_world_importer_abb267efe37211ba6c0324b36c4e16de5}
+
+\item 
+\hypertarget{classbt_world_importer_a88b77b46c7f0eafc34216e019adbe27f}{int {\bfseries get\+Num\+Triangle\+Info\+Maps} () const }\label{classbt_world_importer_a88b77b46c7f0eafc34216e019adbe27f}
+
+\item 
+\hypertarget{classbt_world_importer_aa825dd0cda4e1225bca6cb79c6704b18}{\hyperlink{structbt_triangle_info_map}{bt\+Triangle\+Info\+Map} $\ast$ {\bfseries get\+Triangle\+Info\+Map\+By\+Index} (int index) const }\label{classbt_world_importer_aa825dd0cda4e1225bca6cb79c6704b18}
+
+\item 
+\hypertarget{classbt_world_importer_ac38441ce4ec83187deb87b5f8781c4e3}{bt\+Collision\+Shape $\ast$ {\bfseries get\+Collision\+Shape\+By\+Name} (const char $\ast$name)}\label{classbt_world_importer_ac38441ce4ec83187deb87b5f8781c4e3}
+
+\item 
+\hypertarget{classbt_world_importer_a1f5772201350937dda30d009a54cd775}{\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$ {\bfseries get\+Rigid\+Body\+By\+Name} (const char $\ast$name)}\label{classbt_world_importer_a1f5772201350937dda30d009a54cd775}
+
+\item 
+\hypertarget{classbt_world_importer_a063b0314ee69ec69c299d872c62c1e1c}{bt\+Typed\+Constraint $\ast$ {\bfseries get\+Constraint\+By\+Name} (const char $\ast$name)}\label{classbt_world_importer_a063b0314ee69ec69c299d872c62c1e1c}
+
+\item 
+\hypertarget{classbt_world_importer_abe6967fea64ba0560d09f2b289068b66}{const char $\ast$ {\bfseries get\+Name\+For\+Pointer} (const void $\ast$ptr) const }\label{classbt_world_importer_abe6967fea64ba0560d09f2b289068b66}
+
+\item 
+\hypertarget{classbt_world_importer_a5f6c50446a7635c5f1fa2ffaa623670f}{virtual void \hyperlink{classbt_world_importer_a5f6c50446a7635c5f1fa2ffaa623670f}{set\+Dynamics\+World\+Info} (const bt\+Vector3 \&gravity, const \hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \&solver\+Info)}\label{classbt_world_importer_a5f6c50446a7635c5f1fa2ffaa623670f}
+
+\begin{DoxyCompactList}\small\item\em those virtuals are called by load and can be overridden by the user \end{DoxyCompactList}\item 
+\hypertarget{classbt_world_importer_a1a2ab32b9b828ce3294f67ec198e20db}{virtual \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$ {\bfseries create\+Rigid\+Body} (bool is\+Dynamic, bt\+Scalar mass, const bt\+Transform \&start\+Transform, bt\+Collision\+Shape $\ast$shape, const char $\ast$body\+Name)}\label{classbt_world_importer_a1a2ab32b9b828ce3294f67ec198e20db}
+
+\item 
+\hypertarget{classbt_world_importer_a05cddce52d4f03a1cdccfee758d5b7a6}{virtual bt\+Collision\+Object $\ast$ {\bfseries create\+Collision\+Object} (const bt\+Transform \&start\+Transform, bt\+Collision\+Shape $\ast$shape, const char $\ast$body\+Name)}\label{classbt_world_importer_a05cddce52d4f03a1cdccfee758d5b7a6}
+
+\item 
+\hypertarget{classbt_world_importer_a2c2f91563df0d5863573ecf63c69ba7f}{virtual bt\+Collision\+Shape $\ast$ \hyperlink{classbt_world_importer_a2c2f91563df0d5863573ecf63c69ba7f}{create\+Plane\+Shape} (const bt\+Vector3 \&plane\+Normal, bt\+Scalar plane\+Constant)}\label{classbt_world_importer_a2c2f91563df0d5863573ecf63c69ba7f}
+
+\begin{DoxyCompactList}\small\item\em shapes \end{DoxyCompactList}\item 
+\hypertarget{classbt_world_importer_a5d4ec053e841b139cb5321b2a7755c6c}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Box\+Shape} (const bt\+Vector3 \&half\+Extents)}\label{classbt_world_importer_a5d4ec053e841b139cb5321b2a7755c6c}
+
+\item 
+\hypertarget{classbt_world_importer_ab95da520b8d416df52ca0dce43d9aa2d}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Sphere\+Shape} (bt\+Scalar radius)}\label{classbt_world_importer_ab95da520b8d416df52ca0dce43d9aa2d}
+
+\item 
+\hypertarget{classbt_world_importer_a28f12cc4febac516821654954db2dd9c}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Capsule\+Shape\+X} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_a28f12cc4febac516821654954db2dd9c}
+
+\item 
+\hypertarget{classbt_world_importer_a0b393e26aedd6a01a43ab70b7e720d30}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Capsule\+Shape\+Y} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_a0b393e26aedd6a01a43ab70b7e720d30}
+
+\item 
+\hypertarget{classbt_world_importer_aee5f30e3b12e515b48af9e41025134f3}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Capsule\+Shape\+Z} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_aee5f30e3b12e515b48af9e41025134f3}
+
+\item 
+\hypertarget{classbt_world_importer_a83eb42068dc22f2d9ed788f05e3a4f93}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Cylinder\+Shape\+X} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_a83eb42068dc22f2d9ed788f05e3a4f93}
+
+\item 
+\hypertarget{classbt_world_importer_a771437c0979e58c97564a73a8cbcb59e}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Cylinder\+Shape\+Y} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_a771437c0979e58c97564a73a8cbcb59e}
+
+\item 
+\hypertarget{classbt_world_importer_ae8b8238b609ecfae71d06ef2e6730c66}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Cylinder\+Shape\+Z} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_ae8b8238b609ecfae71d06ef2e6730c66}
+
+\item 
+\hypertarget{classbt_world_importer_a832ab9f612b8b1c203331572331a8b6f}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Cone\+Shape\+X} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_a832ab9f612b8b1c203331572331a8b6f}
+
+\item 
+\hypertarget{classbt_world_importer_a07318da5652fce2c896d75571e1f3200}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Cone\+Shape\+Y} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_a07318da5652fce2c896d75571e1f3200}
+
+\item 
+\hypertarget{classbt_world_importer_aa0564888683ed36de5631ce58b4517f8}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Cone\+Shape\+Z} (bt\+Scalar radius, bt\+Scalar height)}\label{classbt_world_importer_aa0564888683ed36de5631ce58b4517f8}
+
+\item 
+\hypertarget{classbt_world_importer_ad6a3a7bbd10930809f0255251a49d708}{virtual class \\*
+bt\+Triangle\+Index\+Vertex\+Array $\ast$ {\bfseries create\+Triangle\+Mesh\+Container} ()}\label{classbt_world_importer_ad6a3a7bbd10930809f0255251a49d708}
+
+\item 
+\hypertarget{classbt_world_importer_ad762d151e8577d7062402e4c9a2f0509}{virtual bt\+Bvh\+Triangle\+Mesh\+Shape $\ast$ {\bfseries create\+Bvh\+Triangle\+Mesh\+Shape} (bt\+Striding\+Mesh\+Interface $\ast$trimesh, bt\+Optimized\+Bvh $\ast$bvh)}\label{classbt_world_importer_ad762d151e8577d7062402e4c9a2f0509}
+
+\item 
+\hypertarget{classbt_world_importer_a212287733b57d34f014928f787bbe8c9}{virtual bt\+Collision\+Shape $\ast$ {\bfseries create\+Convex\+Triangle\+Mesh\+Shape} (bt\+Striding\+Mesh\+Interface $\ast$trimesh)}\label{classbt_world_importer_a212287733b57d34f014928f787bbe8c9}
+
+\item 
+\hypertarget{classbt_world_importer_adf296f26280806a8fda9d9c09be0901b}{virtual \hyperlink{classbt_g_impact_mesh_shape}{bt\+G\+Impact\+Mesh\+Shape} $\ast$ {\bfseries create\+Gimpact\+Shape} (bt\+Striding\+Mesh\+Interface $\ast$trimesh)}\label{classbt_world_importer_adf296f26280806a8fda9d9c09be0901b}
+
+\item 
+virtual \\*
+\hyperlink{structbt_striding_mesh_interface_data}{bt\+Striding\+Mesh\+Interface\+Data} $\ast$ \hyperlink{classbt_world_importer_a4a4e68bd52dde1d7b87658afacd76f2c}{create\+Striding\+Mesh\+Interface\+Data} (\hyperlink{structbt_striding_mesh_interface_data}{bt\+Striding\+Mesh\+Interface\+Data} $\ast$interface\+Data)
+\item 
+\hypertarget{classbt_world_importer_a20960b1c062e6be022a7db52d3f25e4a}{virtual class bt\+Convex\+Hull\+Shape $\ast$ {\bfseries create\+Convex\+Hull\+Shape} ()}\label{classbt_world_importer_a20960b1c062e6be022a7db52d3f25e4a}
+
+\item 
+\hypertarget{classbt_world_importer_a8ad0cae0836310f440cbd254405e3574}{virtual class bt\+Compound\+Shape $\ast$ {\bfseries create\+Compound\+Shape} ()}\label{classbt_world_importer_a8ad0cae0836310f440cbd254405e3574}
+
+\item 
+\hypertarget{classbt_world_importer_a1948e3926fa3ade6b585f1fb2111ccd7}{virtual class \\*
+bt\+Scaled\+Bvh\+Triangle\+Mesh\+Shape $\ast$ {\bfseries create\+Scaled\+Trangle\+Mesh\+Shape} (bt\+Bvh\+Triangle\+Mesh\+Shape $\ast$mesh\+Shape, const bt\+Vector3 \&local\+Scalingbt\+Bvh\+Triangle\+Mesh\+Shape)}\label{classbt_world_importer_a1948e3926fa3ade6b585f1fb2111ccd7}
+
+\item 
+\hypertarget{classbt_world_importer_a43569391436f679c167aaf1c8eaa1002}{virtual class bt\+Multi\+Sphere\+Shape $\ast$ {\bfseries create\+Multi\+Sphere\+Shape} (const bt\+Vector3 $\ast$positions, const bt\+Scalar $\ast$radi, int num\+Spheres)}\label{classbt_world_importer_a43569391436f679c167aaf1c8eaa1002}
+
+\item 
+\hypertarget{classbt_world_importer_a68d6a56df3445f981cad8ad4813ca175}{virtual \\*
+bt\+Triangle\+Index\+Vertex\+Array $\ast$ {\bfseries create\+Mesh\+Interface} (\hyperlink{structbt_striding_mesh_interface_data}{bt\+Striding\+Mesh\+Interface\+Data} \&mesh\+Data)}\label{classbt_world_importer_a68d6a56df3445f981cad8ad4813ca175}
+
+\item 
+\hypertarget{classbt_world_importer_a1774909c1d3256caadc6f6b96bdf1b9b}{virtual bt\+Optimized\+Bvh $\ast$ \hyperlink{classbt_world_importer_a1774909c1d3256caadc6f6b96bdf1b9b}{create\+Optimized\+Bvh} ()}\label{classbt_world_importer_a1774909c1d3256caadc6f6b96bdf1b9b}
+
+\begin{DoxyCompactList}\small\item\em acceleration and connectivity structures \end{DoxyCompactList}\item 
+\hypertarget{classbt_world_importer_aeb5e3bb603b53d413b4e053c5dc359eb}{virtual \hyperlink{structbt_triangle_info_map}{bt\+Triangle\+Info\+Map} $\ast$ {\bfseries create\+Triangle\+Info\+Map} ()}\label{classbt_world_importer_aeb5e3bb603b53d413b4e053c5dc359eb}
+
+\item 
+\hypertarget{classbt_world_importer_ae63f9f2794b0ba937b2bc5508a9ec8cf}{virtual bt\+Point2\+Point\+Constraint $\ast$ \hyperlink{classbt_world_importer_ae63f9f2794b0ba937b2bc5508a9ec8cf}{create\+Point2\+Point\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Vector3 \&pivot\+In\+A, const bt\+Vector3 \&pivot\+In\+B)}\label{classbt_world_importer_ae63f9f2794b0ba937b2bc5508a9ec8cf}
+
+\begin{DoxyCompactList}\small\item\em constraints \end{DoxyCompactList}\item 
+\hypertarget{classbt_world_importer_aa01949736bee92ba89bd81ebc567781e}{virtual bt\+Point2\+Point\+Constraint $\ast$ {\bfseries create\+Point2\+Point\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, const bt\+Vector3 \&pivot\+In\+A)}\label{classbt_world_importer_aa01949736bee92ba89bd81ebc567781e}
+
+\item 
+\hypertarget{classbt_world_importer_aa5e34abe969471c2e9772944a502b91c}{virtual bt\+Hinge\+Constraint $\ast$ {\bfseries create\+Hinge\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&rb\+A\+Frame, const bt\+Transform \&rb\+B\+Frame, bool use\+Reference\+Frame\+A=false)}\label{classbt_world_importer_aa5e34abe969471c2e9772944a502b91c}
+
+\item 
+\hypertarget{classbt_world_importer_a32c49633d6db8b1d139166c7cbfc24ae}{virtual bt\+Hinge\+Constraint $\ast$ {\bfseries create\+Hinge\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, const bt\+Transform \&rb\+A\+Frame, bool use\+Reference\+Frame\+A=false)}\label{classbt_world_importer_a32c49633d6db8b1d139166c7cbfc24ae}
+
+\item 
+\hypertarget{classbt_world_importer_a42d29b6639791e025923239e3a7bddab}{virtual bt\+Cone\+Twist\+Constraint $\ast$ {\bfseries create\+Cone\+Twist\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&rb\+A\+Frame, const bt\+Transform \&rb\+B\+Frame)}\label{classbt_world_importer_a42d29b6639791e025923239e3a7bddab}
+
+\item 
+\hypertarget{classbt_world_importer_af17c119c389c9cb95e6853f52f3ff522}{virtual bt\+Cone\+Twist\+Constraint $\ast$ {\bfseries create\+Cone\+Twist\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, const bt\+Transform \&rb\+A\+Frame)}\label{classbt_world_importer_af17c119c389c9cb95e6853f52f3ff522}
+
+\item 
+\hypertarget{classbt_world_importer_a6d379c31d2ab1a596309bbdf80b64d3c}{virtual bt\+Generic6\+Dof\+Constraint $\ast$ {\bfseries create\+Generic6\+Dof\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&frame\+In\+A, const bt\+Transform \&frame\+In\+B, bool use\+Linear\+Reference\+Frame\+A)}\label{classbt_world_importer_a6d379c31d2ab1a596309bbdf80b64d3c}
+
+\item 
+\hypertarget{classbt_world_importer_ad79c71cfc4d9f815fa04480c8b1e30bb}{virtual bt\+Generic6\+Dof\+Constraint $\ast$ {\bfseries create\+Generic6\+Dof\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&frame\+In\+B, bool use\+Linear\+Reference\+Frame\+B)}\label{classbt_world_importer_ad79c71cfc4d9f815fa04480c8b1e30bb}
+
+\item 
+\hypertarget{classbt_world_importer_a7a5acffcfaae75af2d89c2b3e2d623cc}{virtual \\*
+bt\+Generic6\+Dof\+Spring\+Constraint $\ast$ {\bfseries create\+Generic6\+Dof\+Spring\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&frame\+In\+A, const bt\+Transform \&frame\+In\+B, bool use\+Linear\+Reference\+Frame\+A)}\label{classbt_world_importer_a7a5acffcfaae75af2d89c2b3e2d623cc}
+
+\item 
+\hypertarget{classbt_world_importer_af3efce1507b2752b6759c1a5942a887c}{virtual bt\+Slider\+Constraint $\ast$ {\bfseries create\+Slider\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&frame\+In\+A, const bt\+Transform \&frame\+In\+B, bool use\+Linear\+Reference\+Frame\+A)}\label{classbt_world_importer_af3efce1507b2752b6759c1a5942a887c}
+
+\item 
+\hypertarget{classbt_world_importer_a35ca419cc26d97737e61de84536577d2}{virtual bt\+Slider\+Constraint $\ast$ {\bfseries create\+Slider\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Transform \&frame\+In\+B, bool use\+Linear\+Reference\+Frame\+A)}\label{classbt_world_importer_a35ca419cc26d97737e61de84536577d2}
+
+\item 
+\hypertarget{classbt_world_importer_a95f89d7e78f7b9442c77807c0726fbce}{virtual \hyperlink{classbt_gear_constraint}{bt\+Gear\+Constraint} $\ast$ {\bfseries create\+Gear\+Constraint} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \&rb\+B, const bt\+Vector3 \&axis\+In\+A, const bt\+Vector3 \&axis\+In\+B, bt\+Scalar ratio)}\label{classbt_world_importer_a95f89d7e78f7b9442c77807c0726fbce}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_world_importer_a01b92ef86d898fddcf65235c278d1736}{char $\ast$ {\bfseries duplicate\+Name} (const char $\ast$name)}\label{classbt_world_importer_a01b92ef86d898fddcf65235c278d1736}
+
+\item 
+\hypertarget{classbt_world_importer_ab404aa295cf66a776e297614f4f822e7}{bt\+Collision\+Shape $\ast$ {\bfseries convert\+Collision\+Shape} (\hyperlink{structbt_collision_shape_data}{bt\+Collision\+Shape\+Data} $\ast$shape\+Data)}\label{classbt_world_importer_ab404aa295cf66a776e297614f4f822e7}
+
+\item 
+void \hyperlink{classbt_world_importer_a1e217f125f6094afd27e0d56ba1f26a0}{convert\+Constraint\+Backwards\+Compatible281} (\hyperlink{structbt_typed_constraint_data}{bt\+Typed\+Constraint\+Data} $\ast$constraint\+Data, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$rb\+B, int file\+Version)
+\item 
+void \hyperlink{classbt_world_importer_a852402389daff8195a23ebeff7167fc2}{convert\+Constraint\+Float} (\hyperlink{structbt_typed_constraint_float_data}{bt\+Typed\+Constraint\+Float\+Data} $\ast$constraint\+Data, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$rb\+B, int file\+Version)
+\item 
+void \hyperlink{classbt_world_importer_a5100315904d183d8dc0d0e6406f17fcb}{convert\+Constraint\+Double} (\hyperlink{structbt_typed_constraint_double_data}{bt\+Typed\+Constraint\+Double\+Data} $\ast$constraint\+Data, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$rb\+A, \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$rb\+B, int file\+Version)
+\item 
+\hypertarget{classbt_world_importer_ae3463a7637ad21ff921a073e15ccce1d}{void {\bfseries convert\+Rigid\+Body\+Float} (\hyperlink{structbt_rigid_body_float_data}{bt\+Rigid\+Body\+Float\+Data} $\ast$col\+Obj\+Data)}\label{classbt_world_importer_ae3463a7637ad21ff921a073e15ccce1d}
+
+\item 
+\hypertarget{classbt_world_importer_ac8d3bdda4d8be8085ce72d9462fff559}{void {\bfseries convert\+Rigid\+Body\+Double} (\hyperlink{structbt_rigid_body_double_data}{bt\+Rigid\+Body\+Double\+Data} $\ast$col\+Obj\+Data)}\label{classbt_world_importer_ac8d3bdda4d8be8085ce72d9462fff559}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_world_importer_a064f047ecad3d8fbcfc3ab683f480efa}{static \hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} \& {\bfseries get\+Fixed\+Body} ()}\label{classbt_world_importer_a064f047ecad3d8fbcfc3ab683f480efa}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_world_importer_a83c1bb476d86907a4de90701d839ed60}{\hyperlink{classbt_dynamics_world}{bt\+Dynamics\+World} $\ast$ {\bfseries m\+\_\+dynamics\+World}}\label{classbt_world_importer_a83c1bb476d86907a4de90701d839ed60}
+
+\item 
+\hypertarget{classbt_world_importer_a73b50bda0c4af12f71dbaf4f39f5dcef}{int {\bfseries m\+\_\+verbose\+Mode}}\label{classbt_world_importer_a73b50bda0c4af12f71dbaf4f39f5dcef}
+
+\item 
+\hypertarget{classbt_world_importer_a95052215bb82881557a46c9c15822ffa}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ bt\+Collision\+Shape $\ast$ $>$ {\bfseries m\+\_\+allocated\+Collision\+Shapes}}\label{classbt_world_importer_a95052215bb82881557a46c9c15822ffa}
+
+\item 
+\hypertarget{classbt_world_importer_a09871f4016cbc5ff6b60844755ba299c}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ bt\+Collision\+Object $\ast$ $>$ {\bfseries m\+\_\+allocated\+Rigid\+Bodies}}\label{classbt_world_importer_a09871f4016cbc5ff6b60844755ba299c}
+
+\item 
+\hypertarget{classbt_world_importer_a4bf1734f97ab10200affae3d671552b0}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ bt\+Typed\+Constraint $\ast$ $>$ {\bfseries m\+\_\+allocated\+Constraints}}\label{classbt_world_importer_a4bf1734f97ab10200affae3d671552b0}
+
+\item 
+\hypertarget{classbt_world_importer_a2f2f6b1a37164c478e6bee0dc7c4dcb0}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ bt\+Optimized\+Bvh $\ast$ $>$ {\bfseries m\+\_\+allocated\+Bvhs}}\label{classbt_world_importer_a2f2f6b1a37164c478e6bee0dc7c4dcb0}
+
+\item 
+\hypertarget{classbt_world_importer_a714a894b20b9e34844391cfb228d75a5}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{structbt_triangle_info_map}{bt\+Triangle\+Info\+Map} $\ast$ $>$ {\bfseries m\+\_\+allocated\+Triangle\+Info\+Maps}}\label{classbt_world_importer_a714a894b20b9e34844391cfb228d75a5}
+
+\item 
+\hypertarget{classbt_world_importer_a051e1d4a6cfc44b383a4b8266e774204}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ bt\+Triangle\+Index\+Vertex\+Array $\ast$ $>$ {\bfseries m\+\_\+allocated\+Triangle\+Index\+Arrays}}\label{classbt_world_importer_a051e1d4a6cfc44b383a4b8266e774204}
+
+\item 
+\hypertarget{classbt_world_importer_adeb829186a769187e327513dbfa4ef53}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{structbt_striding_mesh_interface_data}{bt\+Striding\+Mesh\+Interface\+Data} $\ast$ $>$ {\bfseries m\+\_\+allocatedbt\+Striding\+Mesh\+Interface\+Datas}}\label{classbt_world_importer_adeb829186a769187e327513dbfa4ef53}
+
+\item 
+\hypertarget{classbt_world_importer_a05567c18dedc76060afe48c7b11549a1}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ char $\ast$ $>$ {\bfseries m\+\_\+allocated\+Names}}\label{classbt_world_importer_a05567c18dedc76060afe48c7b11549a1}
+
+\item 
+\hypertarget{classbt_world_importer_a6cb05f125d7ff6b357d6399e72ce7ccb}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ int $\ast$ $>$ {\bfseries m\+\_\+index\+Arrays}}\label{classbt_world_importer_a6cb05f125d7ff6b357d6399e72ce7ccb}
+
+\item 
+\hypertarget{classbt_world_importer_af7321d53facbbe6ee5574299bb6c474d}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ short int $\ast$ $>$ {\bfseries m\+\_\+short\+Index\+Arrays}}\label{classbt_world_importer_af7321d53facbbe6ee5574299bb6c474d}
+
+\item 
+\hypertarget{classbt_world_importer_a5cff034540d844778db3864d84018fce}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ unsigned \\*
+char $\ast$ $>$ {\bfseries m\+\_\+char\+Index\+Arrays}}\label{classbt_world_importer_a5cff034540d844778db3864d84018fce}
+
+\item 
+\hypertarget{classbt_world_importer_ad008e7fd9c0314649dfd801ae0e9e5e8}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{structbt_vector3_float_data}{bt\+Vector3\+Float\+Data} $\ast$ $>$ {\bfseries m\+\_\+float\+Vertex\+Arrays}}\label{classbt_world_importer_ad008e7fd9c0314649dfd801ae0e9e5e8}
+
+\item 
+\hypertarget{classbt_world_importer_aa99903261ca9d239f1e13e5c007cc59c}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{structbt_vector3_double_data}{bt\+Vector3\+Double\+Data} $\ast$ $>$ {\bfseries m\+\_\+double\+Vertex\+Arrays}}\label{classbt_world_importer_aa99903261ca9d239f1e13e5c007cc59c}
+
+\item 
+\hypertarget{classbt_world_importer_a22d6ab53e60b24b3d9fbd1e6c81920de}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{classbt_hash_ptr}{bt\+Hash\+Ptr}, \\*
+bt\+Optimized\+Bvh $\ast$ $>$ {\bfseries m\+\_\+bvh\+Map}}\label{classbt_world_importer_a22d6ab53e60b24b3d9fbd1e6c81920de}
+
+\item 
+\hypertarget{classbt_world_importer_a6183f542e4bb50ee4c3a6f1b2b43619f}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{classbt_hash_ptr}{bt\+Hash\+Ptr}, \\*
+\hyperlink{structbt_triangle_info_map}{bt\+Triangle\+Info\+Map} $\ast$ $>$ {\bfseries m\+\_\+tim\+Map}}\label{classbt_world_importer_a6183f542e4bb50ee4c3a6f1b2b43619f}
+
+\item 
+\hypertarget{classbt_world_importer_a9adf75874e9a9601042b13ed526901da}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{structbt_hash_string}{bt\+Hash\+String}, \\*
+bt\+Collision\+Shape $\ast$ $>$ {\bfseries m\+\_\+name\+Shape\+Map}}\label{classbt_world_importer_a9adf75874e9a9601042b13ed526901da}
+
+\item 
+\hypertarget{classbt_world_importer_a4c69ea2f634266a8a43945ee3089b7b5}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{structbt_hash_string}{bt\+Hash\+String}, \\*
+\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$ $>$ {\bfseries m\+\_\+name\+Body\+Map}}\label{classbt_world_importer_a4c69ea2f634266a8a43945ee3089b7b5}
+
+\item 
+\hypertarget{classbt_world_importer_ad3314e573b4625f18bfa31a2fbdf3d52}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{structbt_hash_string}{bt\+Hash\+String}, \\*
+bt\+Typed\+Constraint $\ast$ $>$ {\bfseries m\+\_\+name\+Constraint\+Map}}\label{classbt_world_importer_ad3314e573b4625f18bfa31a2fbdf3d52}
+
+\item 
+\hypertarget{classbt_world_importer_a4df4917b9764d6d721f85182a1fb4d10}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{classbt_hash_ptr}{bt\+Hash\+Ptr}, const \\*
+char $\ast$ $>$ {\bfseries m\+\_\+object\+Name\+Map}}\label{classbt_world_importer_a4df4917b9764d6d721f85182a1fb4d10}
+
+\item 
+\hypertarget{classbt_world_importer_ac72f14f2c6450409465e60daf83c3865}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{classbt_hash_ptr}{bt\+Hash\+Ptr}, \\*
+bt\+Collision\+Shape $\ast$ $>$ {\bfseries m\+\_\+shape\+Map}}\label{classbt_world_importer_ac72f14f2c6450409465e60daf83c3865}
+
+\item 
+\hypertarget{classbt_world_importer_a2a66e9f199d377ddb4c5141d9889d7d7}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{classbt_hash_ptr}{bt\+Hash\+Ptr}, \\*
+bt\+Collision\+Object $\ast$ $>$ {\bfseries m\+\_\+body\+Map}}\label{classbt_world_importer_a2a66e9f199d377ddb4c5141d9889d7d7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_world_importer_a1e217f125f6094afd27e0d56ba1f26a0}{\index{bt\+World\+Importer@{bt\+World\+Importer}!convert\+Constraint\+Backwards\+Compatible281@{convert\+Constraint\+Backwards\+Compatible281}}
+\index{convert\+Constraint\+Backwards\+Compatible281@{convert\+Constraint\+Backwards\+Compatible281}!bt\+World\+Importer@{bt\+World\+Importer}}
+\subsubsection[{convert\+Constraint\+Backwards\+Compatible281}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+World\+Importer\+::convert\+Constraint\+Backwards\+Compatible281 (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Typed\+Constraint\+Data} $\ast$}]{constraint\+Data, }
+\item[{{\bf bt\+Rigid\+Body} $\ast$}]{rb\+A, }
+\item[{{\bf bt\+Rigid\+Body} $\ast$}]{rb\+B, }
+\item[{int}]{file\+Version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbt_world_importer_a1e217f125f6094afd27e0d56ba1f26a0}
+those fields didn't exist and set to zero for pre-\/280 versions, so do a check here 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classbt_world_importer_a5100315904d183d8dc0d0e6406f17fcb}{\index{bt\+World\+Importer@{bt\+World\+Importer}!convert\+Constraint\+Double@{convert\+Constraint\+Double}}
+\index{convert\+Constraint\+Double@{convert\+Constraint\+Double}!bt\+World\+Importer@{bt\+World\+Importer}}
+\subsubsection[{convert\+Constraint\+Double}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+World\+Importer\+::convert\+Constraint\+Double (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Typed\+Constraint\+Double\+Data} $\ast$}]{constraint\+Data, }
+\item[{{\bf bt\+Rigid\+Body} $\ast$}]{rb\+A, }
+\item[{{\bf bt\+Rigid\+Body} $\ast$}]{rb\+B, }
+\item[{int}]{file\+Version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbt_world_importer_a5100315904d183d8dc0d0e6406f17fcb}
+those fields didn't exist and set to zero for pre-\/280 versions, so do a check here 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classbt_world_importer_a852402389daff8195a23ebeff7167fc2}{\index{bt\+World\+Importer@{bt\+World\+Importer}!convert\+Constraint\+Float@{convert\+Constraint\+Float}}
+\index{convert\+Constraint\+Float@{convert\+Constraint\+Float}!bt\+World\+Importer@{bt\+World\+Importer}}
+\subsubsection[{convert\+Constraint\+Float}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+World\+Importer\+::convert\+Constraint\+Float (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Typed\+Constraint\+Float\+Data} $\ast$}]{constraint\+Data, }
+\item[{{\bf bt\+Rigid\+Body} $\ast$}]{rb\+A, }
+\item[{{\bf bt\+Rigid\+Body} $\ast$}]{rb\+B, }
+\item[{int}]{file\+Version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbt_world_importer_a852402389daff8195a23ebeff7167fc2}
+those fields didn't exist and set to zero for pre-\/280 versions, so do a check here 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classbt_world_importer_a4a4e68bd52dde1d7b87658afacd76f2c}{\index{bt\+World\+Importer@{bt\+World\+Importer}!create\+Striding\+Mesh\+Interface\+Data@{create\+Striding\+Mesh\+Interface\+Data}}
+\index{create\+Striding\+Mesh\+Interface\+Data@{create\+Striding\+Mesh\+Interface\+Data}!bt\+World\+Importer@{bt\+World\+Importer}}
+\subsubsection[{create\+Striding\+Mesh\+Interface\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bt\+Striding\+Mesh\+Interface\+Data} $\ast$ bt\+World\+Importer\+::create\+Striding\+Mesh\+Interface\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Striding\+Mesh\+Interface\+Data} $\ast$}]{interface\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_world_importer_a4a4e68bd52dde1d7b87658afacd76f2c}
+the m\+\_\+3indices8 was not initialized in some Bullet versions, this can cause crashes at loading time we catch it by only dealing with m\+\_\+3indices8 if none of the other indices are initialized \hypertarget{classbt_world_importer_a773cba2bf22bbe5e62f27c0c37b89585}{\index{bt\+World\+Importer@{bt\+World\+Importer}!delete\+All\+Data@{delete\+All\+Data}}
+\index{delete\+All\+Data@{delete\+All\+Data}!bt\+World\+Importer@{bt\+World\+Importer}}
+\subsubsection[{delete\+All\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+World\+Importer\+::delete\+All\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_world_importer_a773cba2bf22bbe5e62f27c0c37b89585}
+
+
+make sure you don't use the dynamics world containing objects after you call this method 
+
+delete all memory collision shapes, rigid bodies, constraints etc. allocated during the load. 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+Serialize/\+Bullet\+World\+Importer/bt\+World\+Importer.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+Serialize/\+Bullet\+World\+Importer/bt\+World\+Importer.\+cpp\end{DoxyCompactItemize}

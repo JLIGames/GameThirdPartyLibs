@@ -1,0 +1,110 @@
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser}{\section{Assimp\+:\+:A\+S\+E\+:\+:Parser Class Reference}
+\label{class_assimp_1_1_a_s_e_1_1_parser}\index{Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}}
+}
+
+
+Class to parse A\+S\+E files.  
+
+
+
+
+{\ttfamily \#include $<$A\+S\+E\+Parser.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:A\+S\+E\+:\+:Parser\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_a_s_e_1_1_parser_ad105bd959358622ac0c2aab3ed7b9013}{Parser} (const char $\ast$sz\+File, unsigned int file\+Format\+Default)
+\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_aa55266b2875ee4ab02f8b311a56e7fc3}{void \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_aa55266b2875ee4ab02f8b311a56e7fc3}{Parse} ()}\label{class_assimp_1_1_a_s_e_1_1_parser_aa55266b2875ee4ab02f8b311a56e7fc3}
+
+\begin{DoxyCompactList}\small\item\em Parses the file into the parsers internal representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_ab21ff74f644ae85e2317acb7b78ebccc}{const char $\ast$ \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_ab21ff74f644ae85e2317acb7b78ebccc}{file\+Ptr}}\label{class_assimp_1_1_a_s_e_1_1_parser_ab21ff74f644ae85e2317acb7b78ebccc}
+
+\begin{DoxyCompactList}\small\item\em Pointer to current data. \end{DoxyCompactList}\item 
+\hyperlink{structai_color3_d}{ai\+Color3\+D} \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a81bdd11dad2105b412e057e60c7164d0}{m\+\_\+clr\+Background}
+\item 
+\hyperlink{structai_color3_d}{ai\+Color3\+D} \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a4558b782fb5c7d6b0d71d2c6ccbb490f}{m\+\_\+clr\+Ambient}
+\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a3b9e980dbaaab9e09e2b11be7430d1e9}{std\+::vector$<$ \hyperlink{struct_assimp_1_1_d3_d_s_1_1_material}{Material} $>$ \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a3b9e980dbaaab9e09e2b11be7430d1e9}{m\+\_\+v\+Materials}}\label{class_assimp_1_1_a_s_e_1_1_parser_a3b9e980dbaaab9e09e2b11be7430d1e9}
+
+\begin{DoxyCompactList}\small\item\em List of all materials found in the file. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a3688054bef31831c57c3b59c06eac4f7}{std\+::vector$<$ \hyperlink{struct_assimp_1_1_d3_d_s_1_1_mesh}{Mesh} $>$ \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a3688054bef31831c57c3b59c06eac4f7}{m\+\_\+v\+Meshes}}\label{class_assimp_1_1_a_s_e_1_1_parser_a3688054bef31831c57c3b59c06eac4f7}
+
+\begin{DoxyCompactList}\small\item\em List of all meshes found in the file. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a124c5a659cd90acfe2dee8765e957da7}{std\+::vector$<$ \hyperlink{struct_assimp_1_1_a_s_e_1_1_dummy}{Dummy} $>$ \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a124c5a659cd90acfe2dee8765e957da7}{m\+\_\+v\+Dummies}}\label{class_assimp_1_1_a_s_e_1_1_parser_a124c5a659cd90acfe2dee8765e957da7}
+
+\begin{DoxyCompactList}\small\item\em List of all dummies found in the file. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a25fe72393c68061fe51544186ebc3a6d}{std\+::vector$<$ \hyperlink{struct_assimp_1_1_a_s_e_1_1_light}{Light} $>$ \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a25fe72393c68061fe51544186ebc3a6d}{m\+\_\+v\+Lights}}\label{class_assimp_1_1_a_s_e_1_1_parser_a25fe72393c68061fe51544186ebc3a6d}
+
+\begin{DoxyCompactList}\small\item\em List of all lights found in the file. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a22b30461cc3f596741f22d67eb3e25d6}{std\+::vector$<$ \hyperlink{struct_assimp_1_1_a_s_e_1_1_camera}{Camera} $>$ \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a22b30461cc3f596741f22d67eb3e25d6}{m\+\_\+v\+Cameras}}\label{class_assimp_1_1_a_s_e_1_1_parser_a22b30461cc3f596741f22d67eb3e25d6}
+
+\begin{DoxyCompactList}\small\item\em List of all cameras found in the file. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a988c4edf1c3fa60fbdc9dcdc30803981}{unsigned int \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a988c4edf1c3fa60fbdc9dcdc30803981}{i\+Line\+Number}}\label{class_assimp_1_1_a_s_e_1_1_parser_a988c4edf1c3fa60fbdc9dcdc30803981}
+
+\begin{DoxyCompactList}\small\item\em Current line in the file. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a7733201eedb0829db6e5c848be953688}{unsigned int \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a7733201eedb0829db6e5c848be953688}{i\+First\+Frame}}\label{class_assimp_1_1_a_s_e_1_1_parser_a7733201eedb0829db6e5c848be953688}
+
+\begin{DoxyCompactList}\small\item\em First frame. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a147f55812b64e7f2e658b29e04db27f6}{unsigned int \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a147f55812b64e7f2e658b29e04db27f6}{i\+Last\+Frame}}\label{class_assimp_1_1_a_s_e_1_1_parser_a147f55812b64e7f2e658b29e04db27f6}
+
+\begin{DoxyCompactList}\small\item\em Last frame. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a05e7c5516cfa27a06a45684a53ab6394}{unsigned int \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a05e7c5516cfa27a06a45684a53ab6394}{i\+Frame\+Speed}}\label{class_assimp_1_1_a_s_e_1_1_parser_a05e7c5516cfa27a06a45684a53ab6394}
+
+\begin{DoxyCompactList}\small\item\em Frame speed -\/ frames per second. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a320e1d1688899fea40bee730c075f07b}{unsigned int \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a320e1d1688899fea40bee730c075f07b}{i\+Ticks\+Per\+Frame}}\label{class_assimp_1_1_a_s_e_1_1_parser_a320e1d1688899fea40bee730c075f07b}
+
+\begin{DoxyCompactList}\small\item\em Ticks per frame. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a82349e13ab9171b968062f7978541798}{bool \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_a82349e13ab9171b968062f7978541798}{b\+Last\+Was\+End\+Line}}\label{class_assimp_1_1_a_s_e_1_1_parser_a82349e13ab9171b968062f7978541798}
+
+\begin{DoxyCompactList}\small\item\em true if the last character read was an end-\/line character \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_ae65d37652816513ac1f019a095676b2a}{unsigned int \hyperlink{class_assimp_1_1_a_s_e_1_1_parser_ae65d37652816513ac1f019a095676b2a}{i\+File\+Format}}\label{class_assimp_1_1_a_s_e_1_1_parser_ae65d37652816513ac1f019a095676b2a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_file}{File} format version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to parse A\+S\+E files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_ad105bd959358622ac0c2aab3ed7b9013}{\index{Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser\+::\+Parser (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+File, }
+\item[{unsigned int}]{file\+Format\+Default}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_a_s_e_1_1_parser_ad105bd959358622ac0c2aab3ed7b9013}
+Construct a parser from a given input file which is guaranted to be terminated with zero. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+File} & Input file \\
+\hline
+{\em file\+Format\+Default} & Assumed file format version. If the file format is specified in the file the new value replaces the default value. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a4558b782fb5c7d6b0d71d2c6ccbb490f}{\index{Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}!m\+\_\+clr\+Ambient@{m\+\_\+clr\+Ambient}}
+\index{m\+\_\+clr\+Ambient@{m\+\_\+clr\+Ambient}!Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}}
+\subsubsection[{m\+\_\+clr\+Ambient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Color3\+D} Assimp\+::\+A\+S\+E\+::\+Parser\+::m\+\_\+clr\+Ambient}}\label{class_assimp_1_1_a_s_e_1_1_parser_a4558b782fb5c7d6b0d71d2c6ccbb490f}
+Base ambient color to be passed to all materials Q\+N\+A\+N if none was found \hypertarget{class_assimp_1_1_a_s_e_1_1_parser_a81bdd11dad2105b412e057e60c7164d0}{\index{Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}!m\+\_\+clr\+Background@{m\+\_\+clr\+Background}}
+\index{m\+\_\+clr\+Background@{m\+\_\+clr\+Background}!Assimp\+::\+A\+S\+E\+::\+Parser@{Assimp\+::\+A\+S\+E\+::\+Parser}}
+\subsubsection[{m\+\_\+clr\+Background}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Color3\+D} Assimp\+::\+A\+S\+E\+::\+Parser\+::m\+\_\+clr\+Background}}\label{class_assimp_1_1_a_s_e_1_1_parser_a81bdd11dad2105b412e057e60c7164d0}
+background color to be passed to the viewer Q\+N\+A\+N if none was found 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/A\+S\+E\+Parser.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_a_s_e_parser_8cpp}{A\+S\+E\+Parser.\+cpp}\end{DoxyCompactItemize}

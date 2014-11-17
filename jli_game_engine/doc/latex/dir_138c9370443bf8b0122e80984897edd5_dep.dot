@@ -1,0 +1,9 @@
+digraph "assimp/assimp-3.1.1/contrib/clipper" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1510c05bdfd0076f7fcbe68696d9ed81 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_1510c05bdfd0076f7fcbe68696d9ed81.html"]
+  dir_138c9370443bf8b0122e80984897edd5 [shape=box, label="clipper", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_138c9370443bf8b0122e80984897edd5.html"];
+  }
+}

@@ -1,0 +1,48 @@
+digraph "video_input"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="video_input",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" th" ];
+  Node2 [label="th_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structth__input.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" oy" ];
+  Node3 [label="ogg_sync_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structogg__sync__state.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tc" ];
+  Node4 [label="th_comment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structth__comment.html"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ti" ];
+  Node5 [label="th_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structth__info.html"];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" to" ];
+  Node6 [label="ogg_stream_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structogg__stream__state.html"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" td" ];
+  Node7 [label="th_dec_ctx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structth__dec__ctx.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" huff_tables" ];
+  Node8 [label="oc_huff_node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__huff__node.html"];
+  Node8 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nodes" ];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ];
+  Node9 [label="oc_theora_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__theora__state.html"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" frags" ];
+  Node10 [label="oc_fragment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__fragment.html"];
+  Node11 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sb_flags" ];
+  Node11 [label="oc_sb_flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__sb__flags.html"];
+  Node12 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fplanes" ];
+  Node12 [label="oc_fragment_plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__fragment__plane.html"];
+  Node13 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" borders" ];
+  Node13 [label="oc_border_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__border__info.html"];
+  Node14 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" opt_data" ];
+  Node14 [label="oc_base_opt_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__base__opt__data.html"];
+  Node5 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" info" ];
+  Node15 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_frame_bufs" ];
+  Node15 [label="th_img_plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structth__img__plane.html"];
+  Node16 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" opt_vtable" ];
+  Node16 [label="oc_base_opt_vtable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__base__opt__vtable.html"];
+  Node17 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stripe_cb" ];
+  Node17 [label="th_stripe_callback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structth__stripe__callback.html"];
+  Node15 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pp_frame_buf" ];
+  Node18 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" opb" ];
+  Node18 [label="oc_pack_buf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoc__pack__buf.html"];
+  Node19 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" y4m" ];
+  Node19 [label="y4m_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structy4m__input.html"];
+  Node19 -> Node19 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" convert" ];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" get_info" ];
+}

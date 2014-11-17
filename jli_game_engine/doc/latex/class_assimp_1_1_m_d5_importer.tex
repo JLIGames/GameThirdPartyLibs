@@ -1,0 +1,272 @@
+\hypertarget{class_assimp_1_1_m_d5_importer}{\section{Assimp\+:\+:M\+D5\+Importer Class Reference}
+\label{class_assimp_1_1_m_d5_importer}\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+}
+
+
+{\ttfamily \#include $<$M\+D5\+Loader.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:M\+D5\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:M\+D5\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_m_d5_importer_adc9113079c09de2af26948a58cd4a9df}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$\hyperlink{class_assimp_1_1_m_d5_importer_ad47907df2a104a4130b56b728ccec5ab}{p\+I\+O\+Handler}, bool check\+Sig) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_m_d5_importer_ac268fc50f92b69c5b80f07b553a42015}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_a53497bd13f6c050fb668554c8b4faa02}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_a5debfce7091733686d31a2454553736a}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$\hyperlink{class_assimp_1_1_m_d5_importer_a0b840bcb30b376c7cb45557dcc84d3b0}{p\+Scene}, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$\hyperlink{class_assimp_1_1_m_d5_importer_ad47907df2a104a4130b56b728ccec5ab}{p\+I\+O\+Handler})
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_ae152fda3f4163291fc995bedf39968f5}{Load\+M\+D5\+Mesh\+File} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_ae55c5c829fe67ec3cad1db564aa3f094}{Load\+M\+D5\+Anim\+File} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_ab20e749ae30d80c5371d44822531d050}{Load\+M\+D5\+Camera\+File} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_aafd7c0b9500e843ccbd4051e72117d22}{Attach\+Childs\+\_\+\+Anim} (int i\+Parent\+I\+D, \hyperlink{structai_node}{ai\+Node} $\ast$pi\+Parent, Anim\+Bone\+List \&bones, const \hyperlink{structai_node_anim}{ai\+Node\+Anim} $\ast$$\ast$node\+\_\+anims)
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_aeaa34e39f4cbc3d3b5ff760aa62a9136}{Attach\+Childs\+\_\+\+Mesh} (int i\+Parent\+I\+D, \hyperlink{structai_node}{ai\+Node} $\ast$pi\+Parent, Bone\+List \&bones)
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_a8b24c9c60b2cd9285d78d9445f37a01d}{Make\+Data\+Unique} (\hyperlink{struct_assimp_1_1_m_d5_1_1_mesh_desc}{M\+D5\+::\+Mesh\+Desc} \&mesh\+Src)
+\item 
+void \hyperlink{class_assimp_1_1_m_d5_importer_af158d9c4c85c4227378bbaf6e6073463}{Load\+File\+Into\+Memory} (\hyperlink{class_assimp_1_1_i_o_stream}{I\+O\+Stream} $\ast$p\+File)
+\item 
+\hypertarget{class_assimp_1_1_m_d5_importer_a3dee4113f12b9ffc498c327f028d1c8b}{void {\bfseries Unload\+File\+From\+Memory} ()}\label{class_assimp_1_1_m_d5_importer_a3dee4113f12b9ffc498c327f028d1c8b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$ \hyperlink{class_assimp_1_1_m_d5_importer_ae4fe137342a0fccd002c6a36bea21ba5}{m\+I\+O\+Handler}
+\item 
+std\+::string \hyperlink{class_assimp_1_1_m_d5_importer_ae0550e0a1905777d59081f3ca67cf59f}{m\+File}
+\item 
+char $\ast$ \hyperlink{class_assimp_1_1_m_d5_importer_aaeef47328bed97291af1d494edd941ce}{m\+Buffer}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_m_d5_importer_aea09531401b7e32735dfb6ed0af09301}{file\+Size}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_m_d5_importer_a40a2bad49954cec75bb4126c2de08f19}{i\+Line\+Number}
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{class_assimp_1_1_m_d5_importer_a0b840bcb30b376c7cb45557dcc84d3b0}{p\+Scene}
+\item 
+\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$ \hyperlink{class_assimp_1_1_m_d5_importer_ad47907df2a104a4130b56b728ccec5ab}{p\+I\+O\+Handler}
+\item 
+bool \hyperlink{class_assimp_1_1_m_d5_importer_a846f72291cf0405d2706ddd760c6cd50}{b\+Had\+M\+D5\+Mesh}
+\item 
+bool \hyperlink{class_assimp_1_1_m_d5_importer_a15d640ebdbd30f65a78ed04a25da64a0}{b\+Had\+M\+D5\+Anim}
+\item 
+bool \hyperlink{class_assimp_1_1_m_d5_importer_afd03d113a5cff8de28877ebf2afd244c}{b\+Had\+M\+D5\+Camera}
+\item 
+bool \hyperlink{class_assimp_1_1_m_d5_importer_a6f654966c66b6542291ef4ad26be1592}{config\+No\+Auto\+Load}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp_1_1_importer}{Importer} class for the M\+D5 file format 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_m_d5_importer_aafd7c0b9500e843ccbd4051e72117d22}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Attach\+Childs\+\_\+\+Anim@{Attach\+Childs\+\_\+\+Anim}}
+\index{Attach\+Childs\+\_\+\+Anim@{Attach\+Childs\+\_\+\+Anim}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Attach\+Childs\+\_\+\+Anim}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Attach\+Childs\+\_\+\+Anim (
+\begin{DoxyParamCaption}
+\item[{int}]{i\+Parent\+I\+D, }
+\item[{{\bf ai\+Node} $\ast$}]{pi\+Parent, }
+\item[{Anim\+Bone\+List \&}]{bones, }
+\item[{const {\bf ai\+Node\+Anim} $\ast$$\ast$}]{node\+\_\+anims}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_aafd7c0b9500e843ccbd4051e72117d22}
+Construct node hierarchy from a given M\+D5\+A\+N\+I\+M 
+\begin{DoxyParams}{Parameters}
+{\em i\+Parent\+I\+D} & Current parent I\+D \\
+\hline
+{\em pi\+Parent} & Parent node to attach to \\
+\hline
+{\em bones} & Input bones \\
+\hline
+{\em node\+\_\+anims} & Generated node animations \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_m_d5_importer_aeaa34e39f4cbc3d3b5ff760aa62a9136}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Attach\+Childs\+\_\+\+Mesh@{Attach\+Childs\+\_\+\+Mesh}}
+\index{Attach\+Childs\+\_\+\+Mesh@{Attach\+Childs\+\_\+\+Mesh}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Attach\+Childs\+\_\+\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Attach\+Childs\+\_\+\+Mesh (
+\begin{DoxyParamCaption}
+\item[{int}]{i\+Parent\+I\+D, }
+\item[{{\bf ai\+Node} $\ast$}]{pi\+Parent, }
+\item[{Bone\+List \&}]{bones}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_aeaa34e39f4cbc3d3b5ff760aa62a9136}
+Construct node hierarchy from a given M\+D5\+M\+E\+S\+H 
+\begin{DoxyParams}{Parameters}
+{\em i\+Parent\+I\+D} & Current parent I\+D \\
+\hline
+{\em pi\+Parent} & Parent node to attach to \\
+\hline
+{\em bones} & Input bones \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_m_d5_importer_adc9113079c09de2af26948a58cd4a9df}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+D5\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d5_importer_adc9113079c09de2af26948a58cd4a9df}
+Returns whether the class can handle the format of the given file. See \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Base\+Importer\+::\+Can\+Read()} for details. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_m_d5_importer_ac268fc50f92b69c5b80f07b553a42015}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ M\+D5\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d5_importer_ac268fc50f92b69c5b80f07b553a42015}
+Return importer meta information. See \#\+Base\+Importer\+::\+Get\+Info for the details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_m_d5_importer_a5debfce7091733686d31a2454553736a}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d5_importer_a5debfce7091733686d31a2454553736a}
+Imports the given file into the given scene structure. See \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Base\+Importer\+::\+Intern\+Read\+File()} for details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_m_d5_importer_af158d9c4c85c4227378bbaf6e6073463}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Load\+File\+Into\+Memory@{Load\+File\+Into\+Memory}}
+\index{Load\+File\+Into\+Memory@{Load\+File\+Into\+Memory}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Load\+File\+Into\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Load\+File\+Into\+Memory (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+Stream} $\ast$}]{p\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_af158d9c4c85c4227378bbaf6e6073463}
+Load the contents of a specific file into memory and alocates a buffer to keep it.
+
+m\+Buffer is modified to point to this buffer. 
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & \hyperlink{class_file}{File} stream to be read \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d5_importer_ae55c5c829fe67ec3cad1db564aa3f094}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Load\+M\+D5\+Anim\+File@{Load\+M\+D5\+Anim\+File}}
+\index{Load\+M\+D5\+Anim\+File@{Load\+M\+D5\+Anim\+File}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Load\+M\+D5\+Anim\+File}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Load\+M\+D5\+Anim\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_ae55c5c829fe67ec3cad1db564aa3f094}
+Load a $\ast$.M\+D5\+A\+N\+I\+M file. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d5_importer_ab20e749ae30d80c5371d44822531d050}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Load\+M\+D5\+Camera\+File@{Load\+M\+D5\+Camera\+File}}
+\index{Load\+M\+D5\+Camera\+File@{Load\+M\+D5\+Camera\+File}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Load\+M\+D5\+Camera\+File}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Load\+M\+D5\+Camera\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_ab20e749ae30d80c5371d44822531d050}
+Load a $\ast$.M\+D5\+C\+A\+M\+E\+R\+A file. \hypertarget{class_assimp_1_1_m_d5_importer_ae152fda3f4163291fc995bedf39968f5}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Load\+M\+D5\+Mesh\+File@{Load\+M\+D5\+Mesh\+File}}
+\index{Load\+M\+D5\+Mesh\+File@{Load\+M\+D5\+Mesh\+File}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Load\+M\+D5\+Mesh\+File}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Load\+M\+D5\+Mesh\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_ae152fda3f4163291fc995bedf39968f5}
+Load a $\ast$.M\+D5\+M\+E\+S\+H file. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d5_importer_a8b24c9c60b2cd9285d78d9445f37a01d}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Make\+Data\+Unique@{Make\+Data\+Unique}}
+\index{Make\+Data\+Unique@{Make\+Data\+Unique}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Make\+Data\+Unique}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Make\+Data\+Unique (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+D5\+::\+Mesh\+Desc} \&}]{mesh\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_a8b24c9c60b2cd9285d78d9445f37a01d}
+Build unique vertex buffers from a given M\+D5\+A\+N\+I\+M 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Src} & Input data \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_m_d5_importer_a53497bd13f6c050fb668554c8b4faa02}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Importer\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d5_importer_a53497bd13f6c050fb668554c8b4faa02}
+Called prior to \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File()}. The function is a request to the importer to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_m_d5_importer_a15d640ebdbd30f65a78ed04a25da64a0}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!b\+Had\+M\+D5\+Anim@{b\+Had\+M\+D5\+Anim}}
+\index{b\+Had\+M\+D5\+Anim@{b\+Had\+M\+D5\+Anim}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{b\+Had\+M\+D5\+Anim}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+M\+D5\+Importer\+::b\+Had\+M\+D5\+Anim\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_a15d640ebdbd30f65a78ed04a25da64a0}
+true if a M\+D5\+A\+N\+I\+M file has already been parsed \hypertarget{class_assimp_1_1_m_d5_importer_afd03d113a5cff8de28877ebf2afd244c}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!b\+Had\+M\+D5\+Camera@{b\+Had\+M\+D5\+Camera}}
+\index{b\+Had\+M\+D5\+Camera@{b\+Had\+M\+D5\+Camera}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{b\+Had\+M\+D5\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+M\+D5\+Importer\+::b\+Had\+M\+D5\+Camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_afd03d113a5cff8de28877ebf2afd244c}
+true if a M\+D5\+C\+A\+M\+E\+R\+A file has already been parsed \hypertarget{class_assimp_1_1_m_d5_importer_a846f72291cf0405d2706ddd760c6cd50}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!b\+Had\+M\+D5\+Mesh@{b\+Had\+M\+D5\+Mesh}}
+\index{b\+Had\+M\+D5\+Mesh@{b\+Had\+M\+D5\+Mesh}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{b\+Had\+M\+D5\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+M\+D5\+Importer\+::b\+Had\+M\+D5\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_a846f72291cf0405d2706ddd760c6cd50}
+true if a M\+D5\+M\+E\+S\+H file has already been parsed \hypertarget{class_assimp_1_1_m_d5_importer_a6f654966c66b6542291ef4ad26be1592}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!config\+No\+Auto\+Load@{config\+No\+Auto\+Load}}
+\index{config\+No\+Auto\+Load@{config\+No\+Auto\+Load}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{config\+No\+Auto\+Load}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+M\+D5\+Importer\+::config\+No\+Auto\+Load\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_a6f654966c66b6542291ef4ad26be1592}
+configuration option\+: prevent anim autoload \hypertarget{class_assimp_1_1_m_d5_importer_aea09531401b7e32735dfb6ed0af09301}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!file\+Size@{file\+Size}}
+\index{file\+Size@{file\+Size}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{file\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+M\+D5\+Importer\+::file\+Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_aea09531401b7e32735dfb6ed0af09301}
+Size of the file \hypertarget{class_assimp_1_1_m_d5_importer_a40a2bad49954cec75bb4126c2de08f19}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!i\+Line\+Number@{i\+Line\+Number}}
+\index{i\+Line\+Number@{i\+Line\+Number}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{i\+Line\+Number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+M\+D5\+Importer\+::i\+Line\+Number\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_a40a2bad49954cec75bb4126c2de08f19}
+Current line number. For debugging purposes \hypertarget{class_assimp_1_1_m_d5_importer_aaeef47328bed97291af1d494edd941ce}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!m\+Buffer@{m\+Buffer}}
+\index{m\+Buffer@{m\+Buffer}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{m\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Assimp\+::\+M\+D5\+Importer\+::m\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_aaeef47328bed97291af1d494edd941ce}
+Buffer to hold the loaded file \hypertarget{class_assimp_1_1_m_d5_importer_ae0550e0a1905777d59081f3ca67cf59f}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!m\+File@{m\+File}}
+\index{m\+File@{m\+File}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{m\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+M\+D5\+Importer\+::m\+File\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_ae0550e0a1905777d59081f3ca67cf59f}
+Path to the file, excluding the file extension but with the dot \hypertarget{class_assimp_1_1_m_d5_importer_ae4fe137342a0fccd002c6a36bea21ba5}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!m\+I\+O\+Handler@{m\+I\+O\+Handler}}
+\index{m\+I\+O\+Handler@{m\+I\+O\+Handler}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{m\+I\+O\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+O\+System}$\ast$ Assimp\+::\+M\+D5\+Importer\+::m\+I\+O\+Handler\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_ae4fe137342a0fccd002c6a36bea21ba5}
+\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} to be used to access files \hypertarget{class_assimp_1_1_m_d5_importer_ad47907df2a104a4130b56b728ccec5ab}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!p\+I\+O\+Handler@{p\+I\+O\+Handler}}
+\index{p\+I\+O\+Handler@{p\+I\+O\+Handler}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{p\+I\+O\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+O\+System}$\ast$ Assimp\+::\+M\+D5\+Importer\+::p\+I\+O\+Handler\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_ad47907df2a104a4130b56b728ccec5ab}
+(Custom) I/\+O handler implementation \hypertarget{class_assimp_1_1_m_d5_importer_a0b840bcb30b376c7cb45557dcc84d3b0}{\index{Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}!p\+Scene@{p\+Scene}}
+\index{p\+Scene@{p\+Scene}!Assimp\+::\+M\+D5\+Importer@{Assimp\+::\+M\+D5\+Importer}}
+\subsubsection[{p\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene}$\ast$ Assimp\+::\+M\+D5\+Importer\+::p\+Scene\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d5_importer_a0b840bcb30b376c7cb45557dcc84d3b0}
+Scene to be filled 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_m_d5_loader_8h}{M\+D5\+Loader.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_m_d5_loader_8cpp}{M\+D5\+Loader.\+cpp}\end{DoxyCompactItemize}

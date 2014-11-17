@@ -1,0 +1,263 @@
+\hypertarget{classjassimp_1_1_ai_material}{\section{jassimp.\+Ai\+Material Class Reference}
+\label{classjassimp_1_1_ai_material}\index{jassimp.\+Ai\+Material@{jassimp.\+Ai\+Material}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Property}
+\item 
+enum {\bfseries Property\+Key}
+\item 
+enum {\bfseries Property\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classjassimp_1_1_ai_material_ab002fcfc715b4eca1c79b2b4335ee792}{has\+Properties} (Set$<$ Property\+Key $>$ keys)
+\item 
+void \hyperlink{classjassimp_1_1_ai_material_aa4b48d6639e41b94824bfd1113d603ae}{set\+Default} (Property\+Key key, Object default\+Value)
+\item 
+String \hyperlink{classjassimp_1_1_ai_material_a13f6e272122bb3389cda3c6476cf301d}{get\+Name} ()
+\item 
+int \hyperlink{classjassimp_1_1_ai_material_a62ea603f2abb941022fb4138f873eee8}{get\+Two\+Sided} ()
+\item 
+\hyperlink{enumjassimp_1_1_ai_shading_mode}{Ai\+Shading\+Mode} \hyperlink{classjassimp_1_1_ai_material_a112e5e1f723d397c9710860a980c2cdc}{get\+Shading\+Mode} ()
+\item 
+int \hyperlink{classjassimp_1_1_ai_material_a6a9b99b27fb0b988b5923a00bb6456a7}{get\+Wireframe} ()
+\item 
+\hyperlink{enumjassimp_1_1_ai_blend_mode}{Ai\+Blend\+Mode} \hyperlink{classjassimp_1_1_ai_material_ae86ba03c053112591c6aa8cc7d6ecc13}{get\+Blend\+Mode} ()
+\item 
+float \hyperlink{classjassimp_1_1_ai_material_a7e6c0bb48069c0fbc6fe9700b1baf3ad}{get\+Opacity} ()
+\item 
+float \hyperlink{classjassimp_1_1_ai_material_aa04329ffc3486652ecc1cce2266b52ff}{get\+Bump\+Scaling} ()
+\item 
+float \hyperlink{classjassimp_1_1_ai_material_aef6ae978aa8a17ba9e9e1ea6f2079fb2}{get\+Shininess} ()
+\item 
+float \hyperlink{classjassimp_1_1_ai_material_a031f2d48b21dbc3c1fce601af6473f37}{get\+Reflectivity} ()
+\item 
+float \hyperlink{classjassimp_1_1_ai_material_ab2a892bb40d70044d2a57df3b3d8895e}{get\+Shininess\+Strength} ()
+\item 
+float \hyperlink{classjassimp_1_1_ai_material_a60334cbfa4d0a20dc70ae4c78f0842bb}{get\+Refract\+Index} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure for a material.
+
+Depending on the imported scene and scene format, individual properties might be present or not. A list of all imported properties can be retrieved via \hyperlink{}{get\+Properties()}.
+
+This class offers {\ttfamily get\+X\+X\+X()} for all supported properties. These methods are fail-\/save, i.\+e., will return a default value when the corresponding property is not set. To change the built in default values, use the {\ttfamily set\+Default\+X\+X\+X()} methods.
+
+If your application expects a certain set of properties to be available, the \hyperlink{}{has\+Properties(\+Set)} method can be used to check whether all these properties are actually set. If this check fails, you can still use this material via the {\ttfamily get\+X\+X\+X()} methods without special error handling code as the implementation guarantees to return default values for missing properties. This check will not work on texture related properties (i.\+e., properties starting with {\ttfamily T\+E\+X\+\_\+}). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjassimp_1_1_ai_material_ae86ba03c053112591c6aa8cc7d6ecc13}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Blend\+Mode@{get\+Blend\+Mode}}
+\index{get\+Blend\+Mode@{get\+Blend\+Mode}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Blend\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Blend\+Mode} jassimp.\+Ai\+Material.\+get\+Blend\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_ae86ba03c053112591c6aa8cc7d6ecc13}
+Returns the blend mode.
+
+If missing, defaults to \hyperlink{enumjassimp_1_1_ai_blend_mode_a86f3ba70030a6263ccdc6f4d558908c0}{Ai\+Blend\+Mode\#\+D\+E\+F\+A\+U\+L\+T}
+
+\begin{DoxyReturn}{Returns}
+the blend mode 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_material_aa04329ffc3486652ecc1cce2266b52ff}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Bump\+Scaling@{get\+Bump\+Scaling}}
+\index{get\+Bump\+Scaling@{get\+Bump\+Scaling}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Bump\+Scaling}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Material.\+get\+Bump\+Scaling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_aa04329ffc3486652ecc1cce2266b52ff}
+Returns the bump scaling factor.
+
+If missing, defaults to 1.\+0
+
+\begin{DoxyReturn}{Returns}
+the bump scaling factor 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a13f6e272122bb3389cda3c6476cf301d}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String jassimp.\+Ai\+Material.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a13f6e272122bb3389cda3c6476cf301d}
+Returns the name of the material.
+
+If missing, defaults to empty string
+
+\begin{DoxyReturn}{Returns}
+the name 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a7e6c0bb48069c0fbc6fe9700b1baf3ad}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Opacity@{get\+Opacity}}
+\index{get\+Opacity@{get\+Opacity}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Opacity}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Material.\+get\+Opacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a7e6c0bb48069c0fbc6fe9700b1baf3ad}
+Returns the opacity.
+
+If missing, defaults to 1.\+0
+
+\begin{DoxyReturn}{Returns}
+the opacity 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a031f2d48b21dbc3c1fce601af6473f37}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Reflectivity@{get\+Reflectivity}}
+\index{get\+Reflectivity@{get\+Reflectivity}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Reflectivity}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Material.\+get\+Reflectivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a031f2d48b21dbc3c1fce601af6473f37}
+Returns the reflectivity.
+
+If missing, defaults to 0.\+0
+
+\begin{DoxyReturn}{Returns}
+the reflectivity 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a60334cbfa4d0a20dc70ae4c78f0842bb}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Refract\+Index@{get\+Refract\+Index}}
+\index{get\+Refract\+Index@{get\+Refract\+Index}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Refract\+Index}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Material.\+get\+Refract\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a60334cbfa4d0a20dc70ae4c78f0842bb}
+Returns the refract index.
+
+If missing, defaults to 0.\+0
+
+\begin{DoxyReturn}{Returns}
+the refract index 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a112e5e1f723d397c9710860a980c2cdc}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Shading\+Mode@{get\+Shading\+Mode}}
+\index{get\+Shading\+Mode@{get\+Shading\+Mode}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Shading\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ai\+Shading\+Mode} jassimp.\+Ai\+Material.\+get\+Shading\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a112e5e1f723d397c9710860a980c2cdc}
+Returns the shading mode.
+
+If missing, defaults to \hyperlink{enumjassimp_1_1_ai_shading_mode_a9dbf2a91f6777baf52d04113a2835b6e}{Ai\+Shading\+Mode\#\+F\+L\+A\+T}
+
+\begin{DoxyReturn}{Returns}
+the shading mode 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjassimp_1_1_ai_material_aef6ae978aa8a17ba9e9e1ea6f2079fb2}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Shininess@{get\+Shininess}}
+\index{get\+Shininess@{get\+Shininess}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Shininess}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Material.\+get\+Shininess (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_aef6ae978aa8a17ba9e9e1ea6f2079fb2}
+Returns the shininess.
+
+If missing, defaults to 1.\+0
+
+\begin{DoxyReturn}{Returns}
+the shininess 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_ab2a892bb40d70044d2a57df3b3d8895e}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Shininess\+Strength@{get\+Shininess\+Strength}}
+\index{get\+Shininess\+Strength@{get\+Shininess\+Strength}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Shininess\+Strength}]{\setlength{\rightskip}{0pt plus 5cm}float jassimp.\+Ai\+Material.\+get\+Shininess\+Strength (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_ab2a892bb40d70044d2a57df3b3d8895e}
+Returns the shininess strength.
+
+If missing, defaults to 0.\+0
+
+\begin{DoxyReturn}{Returns}
+the shininess strength 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a62ea603f2abb941022fb4138f873eee8}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Two\+Sided@{get\+Two\+Sided}}
+\index{get\+Two\+Sided@{get\+Two\+Sided}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Two\+Sided}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Material.\+get\+Two\+Sided (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a62ea603f2abb941022fb4138f873eee8}
+Returns the two-\/sided flag.
+
+If missing, defaults to 0
+
+\begin{DoxyReturn}{Returns}
+the two-\/sided flag 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_a6a9b99b27fb0b988b5923a00bb6456a7}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!get\+Wireframe@{get\+Wireframe}}
+\index{get\+Wireframe@{get\+Wireframe}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{get\+Wireframe}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Material.\+get\+Wireframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_a6a9b99b27fb0b988b5923a00bb6456a7}
+Returns the wireframe flag.
+
+If missing, defaults to 0
+
+\begin{DoxyReturn}{Returns}
+the wireframe flag 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_ab002fcfc715b4eca1c79b2b4335ee792}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!has\+Properties@{has\+Properties}}
+\index{has\+Properties@{has\+Properties}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{has\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}boolean jassimp.\+Ai\+Material.\+has\+Properties (
+\begin{DoxyParamCaption}
+\item[{Set$<$ Property\+Key $>$}]{keys}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_ab002fcfc715b4eca1c79b2b4335ee792}
+Checks whether the given set of properties is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & the keys to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all properties are available, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_material_aa4b48d6639e41b94824bfd1113d603ae}{\index{jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}!set\+Default@{set\+Default}}
+\index{set\+Default@{set\+Default}!jassimp\+::\+Ai\+Material@{jassimp\+::\+Ai\+Material}}
+\subsubsection[{set\+Default}]{\setlength{\rightskip}{0pt plus 5cm}void jassimp.\+Ai\+Material.\+set\+Default (
+\begin{DoxyParamCaption}
+\item[{Property\+Key}]{key, }
+\item[{Object}]{default\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_material_aa4b48d6639e41b94824bfd1113d603ae}
+Sets a default value.
+
+The passed in Object must match the type of the key as returned by the corresponding {\ttfamily get\+X\+X\+X()} method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key \\
+\hline
+{\em default\+Value} & the new default, may not be null \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if default\+Value is null or has a wrong type \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Ai\+Material.\+java\end{DoxyCompactItemize}

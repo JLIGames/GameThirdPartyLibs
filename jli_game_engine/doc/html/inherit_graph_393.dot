@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Q3Shader::ShaderData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_q3_shader_1_1_shader_data.html",tooltip="Tiny utility data structure to hold the data of a .shader file. "];
+}

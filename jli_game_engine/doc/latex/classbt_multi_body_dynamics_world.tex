@@ -1,0 +1,101 @@
+\hypertarget{classbt_multi_body_dynamics_world}{\section{bt\+Multi\+Body\+Dynamics\+World Class Reference}
+\label{classbt_multi_body_dynamics_world}\index{bt\+Multi\+Body\+Dynamics\+World@{bt\+Multi\+Body\+Dynamics\+World}}
+}
+
+
+{\ttfamily \#include $<$bt\+Multi\+Body\+Dynamics\+World.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Multi\+Body\+Dynamics\+World\+:
+
+
+Collaboration diagram for bt\+Multi\+Body\+Dynamics\+World\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_ada48332bbd9b86f7bbcbf1454972b136}{{\bfseries bt\+Multi\+Body\+Dynamics\+World} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_broadphase_interface}{bt\+Broadphase\+Interface} $\ast$pair\+Cache, bt\+Multi\+Body\+Constraint\+Solver $\ast$constraint\+Solver, \hyperlink{classbt_collision_configuration}{bt\+Collision\+Configuration} $\ast$collision\+Configuration)}\label{classbt_multi_body_dynamics_world_ada48332bbd9b86f7bbcbf1454972b136}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a8ccc168e654b5eae670660a1c89698e6}{virtual void {\bfseries add\+Multi\+Body} (\hyperlink{classbt_multi_body}{bt\+Multi\+Body} $\ast$body, short group=bt\+Broadphase\+Proxy\+::\+Default\+Filter, short mask=bt\+Broadphase\+Proxy\+::\+All\+Filter)}\label{classbt_multi_body_dynamics_world_a8ccc168e654b5eae670660a1c89698e6}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_ad66a6a1eeef7775c2eb01e76dd739428}{virtual void {\bfseries remove\+Multi\+Body} (\hyperlink{classbt_multi_body}{bt\+Multi\+Body} $\ast$body)}\label{classbt_multi_body_dynamics_world_ad66a6a1eeef7775c2eb01e76dd739428}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a5a066da00459c6376bccfa2eccf05bdd}{virtual void {\bfseries add\+Multi\+Body\+Constraint} (\hyperlink{classbt_multi_body_constraint}{bt\+Multi\+Body\+Constraint} $\ast$constraint)}\label{classbt_multi_body_dynamics_world_a5a066da00459c6376bccfa2eccf05bdd}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a65df7891840746799c48b1fab45192c4}{virtual void {\bfseries remove\+Multi\+Body\+Constraint} (\hyperlink{classbt_multi_body_constraint}{bt\+Multi\+Body\+Constraint} $\ast$constraint)}\label{classbt_multi_body_dynamics_world_a65df7891840746799c48b1fab45192c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a65bee9648fc52d04658334539b1df759}{virtual void {\bfseries calculate\+Simulation\+Islands} ()}\label{classbt_multi_body_dynamics_world_a65bee9648fc52d04658334539b1df759}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a14f75ed5c93f4b90b442ef5b54f52c1d}{virtual void {\bfseries update\+Activation\+State} (bt\+Scalar time\+Step)}\label{classbt_multi_body_dynamics_world_a14f75ed5c93f4b90b442ef5b54f52c1d}
+
+\item 
+virtual void \hyperlink{classbt_multi_body_dynamics_world_a96ca0256c11525090a831cc854fe0750}{solve\+Constraints} (\hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \&solver\+Info)
+\item 
+virtual void \hyperlink{classbt_multi_body_dynamics_world_a6abe9896c6178b8d5bebdbca53fa7a74}{integrate\+Transforms} (bt\+Scalar time\+Step)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a754ab7fa656bb2bb0e86ca809fee1594}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{classbt_multi_body}{bt\+Multi\+Body} $\ast$ $>$ {\bfseries m\+\_\+multi\+Bodies}}\label{classbt_multi_body_dynamics_world_a754ab7fa656bb2bb0e86ca809fee1594}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a08b6183912adb20721a04d73d458072b}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{classbt_multi_body_constraint}{bt\+Multi\+Body\+Constraint} $\ast$ $>$ {\bfseries m\+\_\+multi\+Body\+Constraints}}\label{classbt_multi_body_dynamics_world_a08b6183912adb20721a04d73d458072b}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_ad69814f73eddc979ee255391616fa994}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}\\*
+$<$ \hyperlink{classbt_multi_body_constraint}{bt\+Multi\+Body\+Constraint} $\ast$ $>$ {\bfseries m\+\_\+sorted\+Multi\+Body\+Constraints}}\label{classbt_multi_body_dynamics_world_ad69814f73eddc979ee255391616fa994}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a6ff4ac983ae4136f8c97eefdb5ea81f8}{bt\+Multi\+Body\+Constraint\+Solver $\ast$ {\bfseries m\+\_\+multi\+Body\+Constraint\+Solver}}\label{classbt_multi_body_dynamics_world_a6ff4ac983ae4136f8c97eefdb5ea81f8}
+
+\item 
+\hypertarget{classbt_multi_body_dynamics_world_a3300b222a68aa05d1e0190ae47ab759d}{\hyperlink{struct_multi_body_inplace_solver_island_callback}{Multi\+Body\+Inplace\+Solver\+Island\+Callback} $\ast$ {\bfseries m\+\_\+solver\+Multi\+Body\+Island\+Callback}}\label{classbt_multi_body_dynamics_world_a3300b222a68aa05d1e0190ae47ab759d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classbt_multi_body_dynamics_world}{bt\+Multi\+Body\+Dynamics\+World} adds Featherstone multi body dynamics to Bullet This implementation is still preliminary/experimental. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_multi_body_dynamics_world_a6abe9896c6178b8d5bebdbca53fa7a74}{\index{bt\+Multi\+Body\+Dynamics\+World@{bt\+Multi\+Body\+Dynamics\+World}!integrate\+Transforms@{integrate\+Transforms}}
+\index{integrate\+Transforms@{integrate\+Transforms}!bt\+Multi\+Body\+Dynamics\+World@{bt\+Multi\+Body\+Dynamics\+World}}
+\subsubsection[{integrate\+Transforms}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Multi\+Body\+Dynamics\+World\+::integrate\+Transforms (
+\begin{DoxyParamCaption}
+\item[{bt\+Scalar}]{time\+Step}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classbt_multi_body_dynamics_world_a6abe9896c6178b8d5bebdbca53fa7a74}
+base + num links 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classbt_multi_body_dynamics_world_a96ca0256c11525090a831cc854fe0750}{\index{bt\+Multi\+Body\+Dynamics\+World@{bt\+Multi\+Body\+Dynamics\+World}!solve\+Constraints@{solve\+Constraints}}
+\index{solve\+Constraints@{solve\+Constraints}!bt\+Multi\+Body\+Dynamics\+World@{bt\+Multi\+Body\+Dynamics\+World}}
+\subsubsection[{solve\+Constraints}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Multi\+Body\+Dynamics\+World\+::solve\+Constraints (
+\begin{DoxyParamCaption}
+\item[{{\bf bt\+Contact\+Solver\+Info} \&}]{solver\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classbt_multi_body_dynamics_world_a96ca0256c11525090a831cc854fe0750}
+solve all the constraints for this island 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Featherstone/bt\+Multi\+Body\+Dynamics\+World.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Dynamics/\+Featherstone/bt\+Multi\+Body\+Dynamics\+World.\+cpp\end{DoxyCompactItemize}

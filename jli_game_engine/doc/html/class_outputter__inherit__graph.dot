@@ -1,0 +1,15 @@
+digraph "Outputter"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Outputter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CompilerOutputter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_compiler_outputter.html",tooltip="Outputs a TestResultCollector in a compiler compatible format.Printing the test results in a compiler..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TextOutputter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_outputter.html",tooltip="Prints a TestResultCollector to a text stream. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XmlOutputter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_outputter.html",tooltip="Outputs a TestResultCollector in XML format.Save the test result as a XML stream. ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,10 @@
+digraph "assimp/assimp-3.1.1/code/RemoveRedundantMaterials.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="assimp/assimp-3.1.1\l/code/RemoveRedundantMaterials.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="assimp/assimp-3.1.1\l/code/RemoveRedundantMaterials.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_remove_redundant_materials_8cpp.html",tooltip="Implementation of the \"RemoveRedundantMaterials\" post processing step. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="assimp/assimp-3.1.1\l/test/unit/utRemoveRedundant\lMaterials.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ut_remove_redundant_materials_8h_source.html"];
+}

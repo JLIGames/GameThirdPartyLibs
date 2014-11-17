@@ -1,0 +1,111 @@
+\hypertarget{class_occlusion_calculator}{\section{Occlusion\+Calculator Class Reference}
+\label{class_occlusion_calculator}\index{Occlusion\+Calculator@{Occlusion\+Calculator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_occlusion_calculator_a912fbdede85dfc514ef70a48ff3dbf74}{Occlusion\+Calculator} (unsigned int width, unsigned int height)
+\item 
+\hyperlink{class_occlusion_calculator_a6d49fc27ac036d760f5785860798ba5f}{$\sim$\+Occlusion\+Calculator} ()
+\item 
+bool \hyperlink{class_occlusion_calculator_abce627642ad863b6423c453b66fae6d6}{Init\+Application} (int argc, const char $\ast$$\ast$argv)
+\item 
+bool \hyperlink{class_occlusion_calculator_a4b8463e7f1276f983825f876a035b01f}{Init\+View} ()
+\item 
+bool \hyperlink{class_occlusion_calculator_a4ac52f98c667eed7a5034621146b0a1a}{Release\+View} ()
+\item 
+bool \hyperlink{class_occlusion_calculator_a2371ea310fe479403778163c9dbe5cb3}{Quit\+Application} ()
+\item 
+bool \hyperlink{class_occlusion_calculator_a6cd208c3c172d00eaf437de4ada1414e}{Render\+Scene} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class declaration 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_occlusion_calculator_a912fbdede85dfc514ef70a48ff3dbf74}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{Occlusion\+Calculator}]{\setlength{\rightskip}{0pt plus 5cm}Occlusion\+Calculator\+::\+Occlusion\+Calculator (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{width, }
+\item[{unsigned int}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_a912fbdede85dfc514ef70a48ff3dbf74}
+
+
+  Constructor \hypertarget{class_occlusion_calculator_a6d49fc27ac036d760f5785860798ba5f}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!````~Occlusion\+Calculator@{$\sim$\+Occlusion\+Calculator}}
+\index{````~Occlusion\+Calculator@{$\sim$\+Occlusion\+Calculator}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{$\sim$\+Occlusion\+Calculator}]{\setlength{\rightskip}{0pt plus 5cm}Occlusion\+Calculator\+::$\sim$\+Occlusion\+Calculator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_a6d49fc27ac036d760f5785860798ba5f}
+
+
+  Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_occlusion_calculator_abce627642ad863b6423c453b66fae6d6}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool Occlusion\+Calculator\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_abce627642ad863b6423c453b66fae6d6}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_occlusion_calculator_abce627642ad863b6423c453b66fae6d6}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_occlusion_calculator_abce627642ad863b6423c453b66fae6d6}{Init\+Application()} will not be called again. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_occlusion_calculator_a4b8463e7f1276f983825f876a035b01f}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool Occlusion\+Calculator\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_a4b8463e7f1276f983825f876a035b01f}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_occlusion_calculator_a4b8463e7f1276f983825f876a035b01f}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_occlusion_calculator_a2371ea310fe479403778163c9dbe5cb3}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool Occlusion\+Calculator\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_a2371ea310fe479403778163c9dbe5cb3}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_occlusion_calculator_a2371ea310fe479403778163c9dbe5cb3}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_occlusion_calculator_a2371ea310fe479403778163c9dbe5cb3}{Quit\+Application()} will not be called. \hypertarget{class_occlusion_calculator_a4ac52f98c667eed7a5034621146b0a1a}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool Occlusion\+Calculator\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_a4ac52f98c667eed7a5034621146b0a1a}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_occlusion_calculator_a4ac52f98c667eed7a5034621146b0a1a}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. \hypertarget{class_occlusion_calculator_a6cd208c3c172d00eaf437de4ada1414e}{\index{Occlusion\+Calculator@{Occlusion\+Calculator}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!Occlusion\+Calculator@{Occlusion\+Calculator}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool Occlusion\+Calculator\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_occlusion_calculator_a6cd208c3c172d00eaf437de4ada1414e}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Utilities/\+Nav\+Data\+Tools/\+Occlusion\+Calculator/occlusioncalculator.\+cpp\end{DoxyCompactItemize}

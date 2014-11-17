@@ -1,0 +1,189 @@
+\hypertarget{class_o_g_l_e_s_optimize_mesh}{\section{O\+G\+L\+E\+S\+Optimize\+Mesh Class Reference}
+\label{class_o_g_l_e_s_optimize_mesh}\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S\+Optimize\+Mesh\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S\+Optimize\+Mesh\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s_optimize_mesh_a5b05cadd58fa2c399f4735efc498c7fc}{Init\+Application} ()
+\begin{DoxyCompactList}\small\item\em Initialise the application. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_o_g_l_e_s_optimize_mesh_a0c430017d937f617b28981488177f51f}{Init\+View} ()
+\begin{DoxyCompactList}\small\item\em Initialise the view. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_o_g_l_e_s_optimize_mesh_a8e11915b8961ed3021638e52ce74ff72}{Release\+View} ()
+\begin{DoxyCompactList}\small\item\em Release the view. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_o_g_l_e_s_optimize_mesh_a6598e38ed34e6bbc019e752bf7a70d22}{Quit\+Application} ()
+\begin{DoxyCompactList}\small\item\em Quit the application. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_o_g_l_e_s_optimize_mesh_a6bb2fea42f6b292a9fe132927dd3e104}{Render\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\item 
+\hypertarget{class_o_g_l_e_s_optimize_mesh_aaf4b389635cb853ef896501771958cb4}{void {\bfseries Draw\+Model} (int i\+Optim)}\label{class_o_g_l_e_s_optimize_mesh_aaf4b389635cb853ef896501771958cb4}
+
+\item 
+void \hyperlink{class_o_g_l_e_s_optimize_mesh_a4e94c23015e6eb7fda0f994ad23929d9}{Load\+Vbos} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s_optimize_mesh_a5b05cadd58fa2c399f4735efc498c7fc}{\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Optimize\+Mesh\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_optimize_mesh_a5b05cadd58fa2c399f4735efc498c7fc}
+
+
+Initialise the application. 
+
+
+
+
+
+This function can be overloaded by the application. It will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once, only at the beginning of the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} Win\+Main()/main() function. This function enables the user to perform any initialisation before the render A\+P\+I is initialised. From this function the user can call \hyperlink{class_p_v_r_shell_afe4052dde87d659948defdd63529eee6}{P\+V\+R\+Shell\+Set()} to change default values, e.\+g. requesting a particular resolution or device setting. \begin{DoxyReturn}{Returns}
+true for success, false to exit the application 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_optimize_mesh_a0c430017d937f617b28981488177f51f}{\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Optimize\+Mesh\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_optimize_mesh_a0c430017d937f617b28981488177f51f}
+
+
+Initialise the view. 
+
+
+
+
+
+This function can be overloaded by the application. It will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} after the O\+S and rendering A\+P\+I are initialised, before entering the \hyperlink{class_o_g_l_e_s_optimize_mesh_a6bb2fea42f6b292a9fe132927dd3e104}{Render\+Scene()} loop. It is called any time the rendering A\+P\+I is initialised, i.\+e. once at the beginning, and possibly again if the resolution changes, or a power management even occurs, or if the app requests a re-\/initialisation. The application should check here the configuration of the rendering A\+P\+I; it is possible that requests made in \hyperlink{class_o_g_l_e_s_optimize_mesh_a5b05cadd58fa2c399f4735efc498c7fc}{Init\+Application()} were not successful. Since everything is initialised when this function is called, you can load textures and perform rendering A\+P\+I functions. \begin{DoxyReturn}{Returns}
+true for success, false to exit the application 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_optimize_mesh_a4e94c23015e6eb7fda0f994ad23929d9}{\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}!Load\+Vbos@{Load\+Vbos}}
+\index{Load\+Vbos@{Load\+Vbos}!O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+\subsubsection[{Load\+Vbos}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S\+Optimize\+Mesh\+::\+Load\+Vbos (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s_optimize_mesh_a4e94c23015e6eb7fda0f994ad23929d9}
+
+
+  Load\+Vbos  Loads the mesh data required for this training course into vertex buffer objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_optimize_mesh_a6598e38ed34e6bbc019e752bf7a70d22}{\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Optimize\+Mesh\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_optimize_mesh_a6598e38ed34e6bbc019e752bf7a70d22}
+
+
+Quit the application. 
+
+
+
+
+
+This function can be overloaded by the application. It will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} just before finishing the program. It enables the application to release any memory/resources acquired in \hyperlink{class_o_g_l_e_s_optimize_mesh_a5b05cadd58fa2c399f4735efc498c7fc}{Init\+Application()}. \begin{DoxyReturn}{Returns}
+true for success, false to exit the application 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_optimize_mesh_a8e11915b8961ed3021638e52ce74ff72}{\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Optimize\+Mesh\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_optimize_mesh_a8e11915b8961ed3021638e52ce74ff72}
+
+
+Release the view. 
+
+
+
+
+
+This function can be overloaded by the application. It will be called after the \hyperlink{class_o_g_l_e_s_optimize_mesh_a6bb2fea42f6b292a9fe132927dd3e104}{Render\+Scene()} loop, before shutting down the render A\+P\+I. It enables the application to release any memory/resources acquired in \hyperlink{class_o_g_l_e_s_optimize_mesh_a0c430017d937f617b28981488177f51f}{Init\+View()}. \begin{DoxyReturn}{Returns}
+true for success, false to exit the application 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s_optimize_mesh_a6bb2fea42f6b292a9fe132927dd3e104}{\index{O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S\+Optimize\+Mesh@{O\+G\+L\+E\+S\+Optimize\+Mesh}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S\+Optimize\+Mesh\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s_optimize_mesh_a6bb2fea42f6b292a9fe132927dd3e104}
+
+
+Render the scene. 
+
+
+
+
+
+This function can be overloaded by the application. It is main application function in which you have to do your own rendering. Will be called repeatedly until the application exits. \begin{DoxyReturn}{Returns}
+true for success, false to exit the application 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Intermediate/\+Optimize\+Mesh/\+O\+G\+L\+E\+S/O\+G\+L\+E\+S\+Optimize\+Mesh.\+cpp\end{DoxyCompactItemize}

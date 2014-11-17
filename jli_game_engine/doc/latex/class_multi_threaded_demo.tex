@@ -1,0 +1,62 @@
+\hypertarget{class_multi_threaded_demo}{\section{Multi\+Threaded\+Demo Class Reference}
+\label{class_multi_threaded_demo}\index{Multi\+Threaded\+Demo@{Multi\+Threaded\+Demo}}
+}
+
+
+\hyperlink{class_multi_threaded_demo}{Multi\+Threaded\+Demo} shows basic stacking using Bullet physics, and allows toggle of Ccd (using key '1')  
+
+
+
+
+{\ttfamily \#include $<$Multi\+Threaded\+Demo.\+h$>$}
+
+
+
+Inheritance diagram for Multi\+Threaded\+Demo\+:
+
+
+Collaboration diagram for Multi\+Threaded\+Demo\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_multi_threaded_demo_a199850b9adaeeefd2deef7225e4cdaa6}{init\+Physics} ()
+\item 
+\hypertarget{class_multi_threaded_demo_a26e296f0e2dfd6ce25e2115f9fed85ba}{void {\bfseries exit\+Physics} ()}\label{class_multi_threaded_demo_a26e296f0e2dfd6ce25e2115f9fed85ba}
+
+\item 
+\hypertarget{class_multi_threaded_demo_ac910340fa9cd366f96008b8150401bbd}{virtual void {\bfseries client\+Move\+And\+Display} ()}\label{class_multi_threaded_demo_ac910340fa9cd366f96008b8150401bbd}
+
+\item 
+\hypertarget{class_multi_threaded_demo_a8a05563b821a7510bd3769791cf174e4}{virtual void {\bfseries display\+Callback} ()}\label{class_multi_threaded_demo_a8a05563b821a7510bd3769791cf174e4}
+
+\item 
+\hypertarget{class_multi_threaded_demo_a1eae129c6b49445c584b184ca5aa646e}{void {\bfseries create\+Stack} (bt\+Collision\+Shape $\ast$box\+Shape, float half\+Cube\+Size, int size, float z\+Pos)}\label{class_multi_threaded_demo_a1eae129c6b49445c584b184ca5aa646e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_multi_threaded_demo_a0868a4f2faca7fe4ff776ff0f462aa85}{static \hyperlink{class_demo_application}{Demo\+Application} $\ast$ {\bfseries Create} ()}\label{class_multi_threaded_demo_a0868a4f2faca7fe4ff776ff0f462aa85}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_multi_threaded_demo}{Multi\+Threaded\+Demo} shows basic stacking using Bullet physics, and allows toggle of Ccd (using key '1') 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_multi_threaded_demo_a199850b9adaeeefd2deef7225e4cdaa6}{\index{Multi\+Threaded\+Demo@{Multi\+Threaded\+Demo}!init\+Physics@{init\+Physics}}
+\index{init\+Physics@{init\+Physics}!Multi\+Threaded\+Demo@{Multi\+Threaded\+Demo}}
+\subsubsection[{init\+Physics}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\+Threaded\+Demo\+::init\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_multi_threaded_demo_a199850b9adaeeefd2deef7225e4cdaa6}
+Please don't make the box sizes larger then 1000\+: the collision detection will be inaccurate. See \href{http://www.continuousphysics.com/Bullet/phpBB2/viewtopic.php?t=346}{\tt http\+://www.\+continuousphysics.\+com/\+Bullet/php\+B\+B2/viewtopic.\+php?t=346}
+
+Playstation 3 S\+P\+U (S\+P\+U\+R\+S) version is available through P\+S3 Devnet For Unix/\+Mac someone could implement a pthreads version of \hyperlink{classbt_thread_support_interface}{bt\+Thread\+Support\+Interface}? you can hook it up to your custom task scheduler by deriving from \hyperlink{classbt_thread_support_interface}{bt\+Thread\+Support\+Interface} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Multi\+Threaded\+Demo/Multi\+Threaded\+Demo.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Multi\+Threaded\+Demo/Multi\+Threaded\+Demo.\+cpp\end{DoxyCompactItemize}

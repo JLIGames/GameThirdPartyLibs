@@ -1,0 +1,16 @@
+digraph "vorbis/libvorbis-1.3.3/lib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_465e7e0d29f66b77a98aa16791989bef {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libvorbis-1.3.3" fontname="Helvetica", fontsize="10", URL="dir_465e7e0d29f66b77a98aa16791989bef.html"]
+  subgraph clusterdir_a5987fa2b7b09fbe0958b05a7bff368f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_a5987fa2b7b09fbe0958b05a7bff368f.html"];
+    dir_a5987fa2b7b09fbe0958b05a7bff368f [shape=plaintext label="lib"];
+    dir_e7fda0f9be040d140fd5a611834ab82f [shape=box label="books" color="red" fillcolor="white" style="filled" URL="dir_e7fda0f9be040d140fd5a611834ab82f.html"];
+    dir_037576be86aec2b89574636b3f6fd2ad [shape=box label="modes" color="black" fillcolor="white" style="filled" URL="dir_037576be86aec2b89574636b3f6fd2ad.html"];
+  }
+  }
+  dir_a6c070ffc9e4cf684ec5e7de1df8e9e8 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_a6c070ffc9e4cf684ec5e7de1df8e9e8.html"];
+  dir_a5987fa2b7b09fbe0958b05a7bff368f->dir_a6c070ffc9e4cf684ec5e7de1df8e9e8 [headlabel="1", labeldistance=1.5 headhref="dir_001805_001802.html"];
+}

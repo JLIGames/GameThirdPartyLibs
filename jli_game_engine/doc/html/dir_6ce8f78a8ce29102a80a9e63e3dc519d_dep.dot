@@ -1,0 +1,17 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/ProceduralTextures" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3311445bd4425c20b6c3fe25c066f270 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Advanced" fontname="Helvetica", fontsize="10", URL="dir_3311445bd4425c20b6c3fe25c066f270.html"]
+  subgraph clusterdir_6ce8f78a8ce29102a80a9e63e3dc519d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6ce8f78a8ce29102a80a9e63e3dc519d.html"];
+    dir_6ce8f78a8ce29102a80a9e63e3dc519d [shape=plaintext label="ProceduralTextures"];
+    dir_ddc17cdabc7d939f546f92a24fbea322 [shape=box label="OGLES3" color="red" fillcolor="white" style="filled" URL="dir_ddc17cdabc7d939f546f92a24fbea322.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_ddc17cdabc7d939f546f92a24fbea322->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000607_000133.html"];
+  dir_ddc17cdabc7d939f546f92a24fbea322->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="2", labeldistance=1.5 headhref="dir_000607_001762.html"];
+}

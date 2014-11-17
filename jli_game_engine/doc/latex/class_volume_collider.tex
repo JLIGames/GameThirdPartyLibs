@@ -1,0 +1,177 @@
+\hypertarget{class_volume_collider}{\section{Volume\+Collider Class Reference}
+\label{class_volume_collider}\index{Volume\+Collider@{Volume\+Collider}}
+}
+
+
+Inheritance diagram for Volume\+Collider\+:
+
+
+Collaboration diagram for Volume\+Collider\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_volume_collider_a47d5798a198bc5a46bf03b27dbd6f58d}{Volume\+Collider} ()
+\item 
+virtual \hyperlink{class_volume_collider_a65b12ef17cd49013615330a4a1510beb}{$\sim$\+Volume\+Collider} ()=0
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_volume_collider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives} () const 
+\item 
+inline\+\_\+ const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{class_volume_collider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives} () const 
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_volume_collider_a682b0bcfb8d5fbb96591909b6bae6276}{Get\+Nb\+Volume\+B\+V\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_volume_collider_a752c69151ed1070abbb6fb68b5f4376a}{Get\+Nb\+Volume\+Prim\+Tests} () const 
+\item 
+\hyperlink{class_volume_collider_a785ddb7e78cd48ff30179703f5c7285a}{override} (\hyperlink{class_collider}{Collider}) const char $\ast$\hyperlink{class_collider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_volume_collider_a86f49b913fa453af05812f27a27e5606}{void {\bfseries \+\_\+\+Dump} (const \hyperlink{class_a_a_b_b_collision_node}{A\+A\+B\+B\+Collision\+Node} $\ast$node)}\label{class_volume_collider_a86f49b913fa453af05812f27a27e5606}
+
+\item 
+\hypertarget{class_volume_collider_ac9018229b2ce11b4b4cb6004e5cfa1a1}{void {\bfseries \+\_\+\+Dump} (const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)}\label{class_volume_collider_ac9018229b2ce11b4b4cb6004e5cfa1a1}
+
+\item 
+\hypertarget{class_volume_collider_a7d1365fd6410315c6b2e851a7532081c}{void {\bfseries \+\_\+\+Dump} (const \hyperlink{class_a_a_b_b_quantized_node}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)}\label{class_volume_collider_a7d1365fd6410315c6b2e851a7532081c}
+
+\item 
+\hypertarget{class_volume_collider_a413569222c1d11b0e7fd620003870c3e}{void {\bfseries \+\_\+\+Dump} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)}\label{class_volume_collider_a413569222c1d11b0e7fd620003870c3e}
+
+\item 
+\hyperlink{class_volume_collider_af4451514a209daf73bb5d99db7d91b73}{override} (\hyperlink{class_collider}{Collider}) inline\+\_\+ void \hyperlink{class_collider_a4ad7ed0314483cf47898290f4ac69081}{Init\+Query}()
+\item 
+\hypertarget{class_volume_collider_a96a9dc6a410daa202784f487d7d73c98}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} {\bfseries Is\+Cache\+Valid} (\hyperlink{struct_volume_cache}{Volume\+Cache} \&cache)}\label{class_volume_collider_a96a9dc6a410daa202784f487d7d73c98}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_volume_collider_a6cdf462ff6b4044dc67628cb8b140af9}{\hyperlink{class_container}{Container} $\ast$ \hyperlink{class_volume_collider_a6cdf462ff6b4044dc67628cb8b140af9}{m\+Touched\+Primitives}}\label{class_volume_collider_a6cdf462ff6b4044dc67628cb8b140af9}
+
+\begin{DoxyCompactList}\small\item\em List of touched primitives. \end{DoxyCompactList}\item 
+\hypertarget{class_volume_collider_aa86498d2879ddda11f0e3f9d61359a56}{\hyperlink{class_point}{Point} {\bfseries m\+Center\+Coeff}}\label{class_volume_collider_aa86498d2879ddda11f0e3f9d61359a56}
+
+\item 
+\hypertarget{class_volume_collider_a6c501ce36d689ee182ae7376cac7fdfa}{\hyperlink{class_point}{Point} {\bfseries m\+Extents\+Coeff}}\label{class_volume_collider_a6c501ce36d689ee182ae7376cac7fdfa}
+
+\item 
+\hypertarget{class_volume_collider_a2bed61c3cf73610e06f4a6bf8bbabb25}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_volume_collider_a2bed61c3cf73610e06f4a6bf8bbabb25}{m\+Nb\+Volume\+B\+V\+Tests}}\label{class_volume_collider_a2bed61c3cf73610e06f4a6bf8bbabb25}
+
+\begin{DoxyCompactList}\small\item\em Number of Volume-\/\+B\+V tests. \end{DoxyCompactList}\item 
+\hypertarget{class_volume_collider_a1ffde7bc95aa62d86e2236548edb15fe}{\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{class_volume_collider_a1ffde7bc95aa62d86e2236548edb15fe}{m\+Nb\+Volume\+Prim\+Tests}}\label{class_volume_collider_a1ffde7bc95aa62d86e2236548edb15fe}
+
+\begin{DoxyCompactList}\small\item\em Number of Volume-\/\+Primitive tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the abstract class for volume colliders.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_volume_collider_a47d5798a198bc5a46bf03b27dbd6f58d}{\index{Volume\+Collider@{Volume\+Collider}!Volume\+Collider@{Volume\+Collider}}
+\index{Volume\+Collider@{Volume\+Collider}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{Volume\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}Volume\+Collider\+::\+Volume\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_volume_collider_a47d5798a198bc5a46bf03b27dbd6f58d}
+Constructor. \hypertarget{class_volume_collider_a65b12ef17cd49013615330a4a1510beb}{\index{Volume\+Collider@{Volume\+Collider}!````~Volume\+Collider@{$\sim$\+Volume\+Collider}}
+\index{````~Volume\+Collider@{$\sim$\+Volume\+Collider}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{$\sim$\+Volume\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}Volume\+Collider\+::$\sim$\+Volume\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_volume_collider_a65b12ef17cd49013615330a4a1510beb}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_volume_collider_a274b51032b2c2e4394b1cc9308fa8d71}{\index{Volume\+Collider@{Volume\+Collider}!Get\+Nb\+Touched\+Primitives@{Get\+Nb\+Touched\+Primitives}}
+\index{Get\+Nb\+Touched\+Primitives@{Get\+Nb\+Touched\+Primitives}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{Get\+Nb\+Touched\+Primitives}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Volume\+Collider\+::\+Get\+Nb\+Touched\+Primitives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_volume_collider_a274b51032b2c2e4394b1cc9308fa8d71}
+Gets the number of touched primitives after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()} 
+
+\hyperlink{class_volume_collider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of touched primitives 
+\end{DoxyReturn}
+\hypertarget{class_volume_collider_a682b0bcfb8d5fbb96591909b6bae6276}{\index{Volume\+Collider@{Volume\+Collider}!Get\+Nb\+Volume\+B\+V\+Tests@{Get\+Nb\+Volume\+B\+V\+Tests}}
+\index{Get\+Nb\+Volume\+B\+V\+Tests@{Get\+Nb\+Volume\+B\+V\+Tests}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{Get\+Nb\+Volume\+B\+V\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Volume\+Collider\+::\+Get\+Nb\+Volume\+B\+V\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_volume_collider_a682b0bcfb8d5fbb96591909b6bae6276}
+Stats\+: gets the number of Volume-\/\+B\+V overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_volume_collider_a752c69151ed1070abbb6fb68b5f4376a}{Get\+Nb\+Volume\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Volume-\/\+B\+V tests performed during last query 
+\end{DoxyReturn}
+\hypertarget{class_volume_collider_a752c69151ed1070abbb6fb68b5f4376a}{\index{Volume\+Collider@{Volume\+Collider}!Get\+Nb\+Volume\+Prim\+Tests@{Get\+Nb\+Volume\+Prim\+Tests}}
+\index{Get\+Nb\+Volume\+Prim\+Tests@{Get\+Nb\+Volume\+Prim\+Tests}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{Get\+Nb\+Volume\+Prim\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Volume\+Collider\+::\+Get\+Nb\+Volume\+Prim\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_volume_collider_a752c69151ed1070abbb6fb68b5f4376a}
+Stats\+: gets the number of Volume-\/\+Triangle overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_volume_collider_a682b0bcfb8d5fbb96591909b6bae6276}{Get\+Nb\+Volume\+B\+V\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Volume-\/\+Triangle tests performed during last query 
+\end{DoxyReturn}
+\hypertarget{class_volume_collider_afca0d34cb9f4aa27537a4bfd03fe40d9}{\index{Volume\+Collider@{Volume\+Collider}!Get\+Touched\+Primitives@{Get\+Touched\+Primitives}}
+\index{Get\+Touched\+Primitives@{Get\+Touched\+Primitives}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{Get\+Touched\+Primitives}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf udword}$\ast$ Volume\+Collider\+::\+Get\+Touched\+Primitives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_volume_collider_afca0d34cb9f4aa27537a4bfd03fe40d9}
+Gets the list of touched primitives after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()} 
+
+\hyperlink{class_volume_collider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the list of touched primitives (primitive indices) 
+\end{DoxyReturn}
+\hypertarget{class_volume_collider_a785ddb7e78cd48ff30179703f5c7285a}{\index{Volume\+Collider@{Volume\+Collider}!override@{override}}
+\index{override@{override}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{override}]{\setlength{\rightskip}{0pt plus 5cm}Volume\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_volume_collider_a785ddb7e78cd48ff30179703f5c7285a}
+Validates current settings. You should call this method after all the settings / callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\hypertarget{class_volume_collider_af4451514a209daf73bb5d99db7d91b73}{\index{Volume\+Collider@{Volume\+Collider}!override@{override}}
+\index{override@{override}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{override}]{\setlength{\rightskip}{0pt plus 5cm}Volume\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_volume_collider_af4451514a209daf73bb5d99db7d91b73}
+Initializes a query 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___volume_collider_8h}{O\+P\+C\+\_\+\+Volume\+Collider.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___volume_collider_8cpp}{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp}\end{DoxyCompactItemize}

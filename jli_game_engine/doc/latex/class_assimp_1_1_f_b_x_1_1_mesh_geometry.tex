@@ -1,0 +1,132 @@
+\hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry}{\section{Assimp\+:\+:F\+B\+X\+:\+:Mesh\+Geometry Class Reference}
+\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry}\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+}
+
+
+{\ttfamily \#include $<$F\+B\+X\+Document.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:F\+B\+X\+:\+:Mesh\+Geometry\+:
+
+
+Collaboration diagram for Assimp\+:\+:F\+B\+X\+:\+:Mesh\+Geometry\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a1ef03b9131a3604c6b663ecaa8d5288a}{{\bfseries Mesh\+Geometry} (uint64\+\_\+t id, const \hyperlink{class_assimp_1_1_f_b_x_1_1_element}{Element} \&element, const std\+::string \&name, const \hyperlink{class_assimp_1_1_f_b_x_1_1_document}{Document} \&doc)}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a1ef03b9131a3604c6b663ecaa8d5288a}
+
+\item 
+const std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ae5733b882589ef15968a8df954ad0198}{Get\+Vertices} () const 
+\item 
+const std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a99c02000e681b2cabfe771666c0c08b0}{Get\+Normals} () const 
+\item 
+const std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a6bb257d0ba5b1b66283cd3a65d5d5d42}{Get\+Tangents} () const 
+\item 
+const std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_abea69ee28119b5051030bcdc44f671a9}{Get\+Binormals} () const 
+\item 
+const std\+::vector$<$ unsigned int $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a8f1a6307a9e5930d3a257c7ff6062784}{Get\+Face\+Index\+Counts} () const 
+\item 
+const std\+::vector$<$ \hyperlink{structai_vector2_d}{ai\+Vector2\+D} $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ad171dff1b33d7a5a831643261c3dbc95}{Get\+Texture\+Coords} (unsigned int index) const 
+\item 
+std\+::string \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_af029bb115da003d817c317f4582d38d6}{Get\+Texture\+Coord\+Channel\+Name} (unsigned int index) const 
+\item 
+const std\+::vector$<$ \hyperlink{structai_color4_d}{ai\+Color4\+D} $>$ \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ab3458f4cc0affa6bee580faf4023b280}{Get\+Vertex\+Colors} (unsigned int index) const 
+\item 
+const Mat\+Index\+Array \& \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a4f55a167372c635d2b3aee3a04219a8b}{Get\+Material\+Indices} () const 
+\item 
+const unsigned int $\ast$ \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a3d25bed50b9a4f8313ac473d0601fe60}{To\+Output\+Vertex\+Index} (unsigned int in\+\_\+index, unsigned int \&count) const 
+\item 
+unsigned int \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry_af21da4fdd3b0b1da4dd4b0e5ca6acc24}{Face\+For\+Vertex\+Index} (unsigned int in\+\_\+index) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+D\+O\+M class for F\+B\+X geometry of type \char`\"{}\+Mesh\char`\"{} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_af21da4fdd3b0b1da4dd4b0e5ca6acc24}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Face\+For\+Vertex\+Index@{Face\+For\+Vertex\+Index}}
+\index{Face\+For\+Vertex\+Index@{Face\+For\+Vertex\+Index}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Face\+For\+Vertex\+Index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Face\+For\+Vertex\+Index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{in\+\_\+index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_af21da4fdd3b0b1da4dd4b0e5ca6acc24}
+Determine the face to which a particular output vertex index belongs. This mapping is always unique. \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_abea69ee28119b5051030bcdc44f671a9}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Binormals@{Get\+Binormals}}
+\index{Get\+Binormals@{Get\+Binormals}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Binormals}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf ai\+Vector3\+D}$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Binormals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_abea69ee28119b5051030bcdc44f671a9}
+Get a list of all vertex binormals or an empty array if no binormals are specified \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a8f1a6307a9e5930d3a257c7ff6062784}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Face\+Index\+Counts@{Get\+Face\+Index\+Counts}}
+\index{Get\+Face\+Index\+Counts@{Get\+Face\+Index\+Counts}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Face\+Index\+Counts}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$unsigned int$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Face\+Index\+Counts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a8f1a6307a9e5930d3a257c7ff6062784}
+Return list of faces -\/ each entry denotes a face and specifies how many vertices it has. Vertices are taken from the vertex data arrays in sequential order. \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a4f55a167372c635d2b3aee3a04219a8b}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Material\+Indices@{Get\+Material\+Indices}}
+\index{Get\+Material\+Indices@{Get\+Material\+Indices}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Material\+Indices}]{\setlength{\rightskip}{0pt plus 5cm}const Mat\+Index\+Array\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Material\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a4f55a167372c635d2b3aee3a04219a8b}
+Get per-\/face-\/vertex material assignments \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a99c02000e681b2cabfe771666c0c08b0}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Normals@{Get\+Normals}}
+\index{Get\+Normals@{Get\+Normals}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Normals}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf ai\+Vector3\+D}$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a99c02000e681b2cabfe771666c0c08b0}
+Get a list of all vertex normals or an empty array if no normals are specified. \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a6bb257d0ba5b1b66283cd3a65d5d5d42}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Tangents@{Get\+Tangents}}
+\index{Get\+Tangents@{Get\+Tangents}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Tangents}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf ai\+Vector3\+D}$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Tangents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a6bb257d0ba5b1b66283cd3a65d5d5d42}
+Get a list of all vertex tangents or an empty array if no tangents are specified \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_af029bb115da003d817c317f4582d38d6}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Texture\+Coord\+Channel\+Name@{Get\+Texture\+Coord\+Channel\+Name}}
+\index{Get\+Texture\+Coord\+Channel\+Name@{Get\+Texture\+Coord\+Channel\+Name}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Texture\+Coord\+Channel\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Texture\+Coord\+Channel\+Name (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_af029bb115da003d817c317f4582d38d6}
+Get a U\+V coordinate slot, returns an empty array if the requested slot does not exist. \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ad171dff1b33d7a5a831643261c3dbc95}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Texture\+Coords@{Get\+Texture\+Coords}}
+\index{Get\+Texture\+Coords@{Get\+Texture\+Coords}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Texture\+Coords}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf ai\+Vector2\+D}$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Texture\+Coords (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ad171dff1b33d7a5a831643261c3dbc95}
+Get a U\+V coordinate slot, returns an empty array if the requested slot does not exist. \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ab3458f4cc0affa6bee580faf4023b280}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Vertex\+Colors@{Get\+Vertex\+Colors}}
+\index{Get\+Vertex\+Colors@{Get\+Vertex\+Colors}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Vertex\+Colors}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf ai\+Color4\+D}$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Vertex\+Colors (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ab3458f4cc0affa6bee580faf4023b280}
+Get a vertex color coordinate slot, returns an empty array if the requested slot does not exist. \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ae5733b882589ef15968a8df954ad0198}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!Get\+Vertices@{Get\+Vertices}}
+\index{Get\+Vertices@{Get\+Vertices}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{Get\+Vertices}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf ai\+Vector3\+D}$>$\& Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+Get\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_ae5733b882589ef15968a8df954ad0198}
+Get a list of all vertex points, non-\/unique \hypertarget{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a3d25bed50b9a4f8313ac473d0601fe60}{\index{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}!To\+Output\+Vertex\+Index@{To\+Output\+Vertex\+Index}}
+\index{To\+Output\+Vertex\+Index@{To\+Output\+Vertex\+Index}!Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry@{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}}
+\subsubsection[{To\+Output\+Vertex\+Index}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int$\ast$ Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry\+::\+To\+Output\+Vertex\+Index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{in\+\_\+index, }
+\item[{unsigned int \&}]{count}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_f_b_x_1_1_mesh_geometry_a3d25bed50b9a4f8313ac473d0601fe60}
+Convert from a fbx file vertex index (for example from a \#\+Cluster weight) or N\+U\+L\+L if the vertex index is not valid. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_document_8h}{F\+B\+X\+Document.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_mesh_geometry_8cpp}{F\+B\+X\+Mesh\+Geometry.\+cpp}\end{DoxyCompactItemize}

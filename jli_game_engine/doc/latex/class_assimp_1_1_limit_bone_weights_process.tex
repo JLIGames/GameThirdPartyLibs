@@ -1,0 +1,131 @@
+\hypertarget{class_assimp_1_1_limit_bone_weights_process}{\section{Assimp\+:\+:Limit\+Bone\+Weights\+Process Class Reference}
+\label{class_assimp_1_1_limit_bone_weights_process}\index{Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}}
+}
+
+
+{\ttfamily \#include $<$Limit\+Bone\+Weights\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Limit\+Bone\+Weights\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Limit\+Bone\+Weights\+Process\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_assimp_1_1_limit_bone_weights_process_1_1_weight}{Weight}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_limit_bone_weights_process_a7f52eb37fa98db95fdf531e465e39508}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_limit_bone_weights_process_a979319b353bc0a8dcc0b383ac1b1c40c}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+void \hyperlink{class_assimp_1_1_limit_bone_weights_process_a92ff3537a58ca89aef31aecf6bd03acc}{Process\+Mesh} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_limit_bone_weights_process_a9d959d9d9626bef3046ce69a517db0c3}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_limit_bone_weights_process_a3bc590dff2744a563bb5219270b518a6}{m\+Max\+Weights}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This post processing step limits the number of bones affecting a vertex to a certain maximum value. If a vertex is affected by more than that number of bones, the bone weight with the least influence on this vertex are removed. The other weights on this bone are then renormalized to assure the sum weight to be 1. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_limit_bone_weights_process_a9d959d9d9626bef3046ce69a517db0c3}{\index{Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Limit\+Bone\+Weights\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_limit_bone_weights_process_a9d959d9d9626bef3046ce69a517db0c3}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_limit_bone_weights_process_a7f52eb37fa98db95fdf531e465e39508}{\index{Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Limit\+Bone\+Weights\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_limit_bone_weights_process_a7f52eb37fa98db95fdf531e465e39508}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_limit_bone_weights_process_a92ff3537a58ca89aef31aecf6bd03acc}{\index{Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}!Process\+Mesh@{Process\+Mesh}}
+\index{Process\+Mesh@{Process\+Mesh}!Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}}
+\subsubsection[{Process\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void Limit\+Bone\+Weights\+Process\+::\+Process\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_limit_bone_weights_process_a92ff3537a58ca89aef31aecf6bd03acc}
+Limits the bone weight count for all vertices in the given mesh. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & The mesh to process. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_limit_bone_weights_process_a979319b353bc0a8dcc0b383ac1b1c40c}{\index{Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Limit\+Bone\+Weights\+Process\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_limit_bone_weights_process_a979319b353bc0a8dcc0b383ac1b1c40c}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_limit_bone_weights_process_a3bc590dff2744a563bb5219270b518a6}{\index{Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}!m\+Max\+Weights@{m\+Max\+Weights}}
+\index{m\+Max\+Weights@{m\+Max\+Weights}!Assimp\+::\+Limit\+Bone\+Weights\+Process@{Assimp\+::\+Limit\+Bone\+Weights\+Process}}
+\subsubsection[{m\+Max\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Limit\+Bone\+Weights\+Process\+::m\+Max\+Weights}}\label{class_assimp_1_1_limit_bone_weights_process_a3bc590dff2744a563bb5219270b518a6}
+Maximum number of bones influencing any single vertex. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Limit\+Bone\+Weights\+Process.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Limit\+Bone\+Weights\+Process.\+cpp\end{DoxyCompactItemize}

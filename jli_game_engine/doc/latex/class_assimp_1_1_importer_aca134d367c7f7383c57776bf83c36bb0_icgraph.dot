@@ -1,0 +1,19 @@
+digraph "Assimp::Importer::GetPropertyString"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Importer::GetProperty\lString",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::LWOImporter\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_l_w_o_importer.html#a9c930022ee8c5d9816f4cdab0b747195"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::MD3Importer\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d3_importer.html#a6e949a276c71016d1d5926ff76f13a86"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::MDLImporter\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_m_d_l_importer.html#a0815608887ab4132a1bac328007c4572"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::Ogre::OgreImporter\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_ogre_1_1_ogre_importer.html#a766a089f91a75d1c32fcdf2f21e0d464",tooltip="BaseImporter override. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::OptimizeGraphProcess\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_optimize_graph_process.html#a59a571c02b8ce7fcebf0e2bf29f97aa9"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::RemoveRedundantMats\lProcess::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_remove_redundant_mats_process.html#a60549eb9ba3b1833355af4216cd820b1"];
+}

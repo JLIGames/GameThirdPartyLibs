@@ -1,0 +1,207 @@
+\hypertarget{class_assimp_1_1_optimize_meshes_process}{\section{Assimp\+:\+:Optimize\+Meshes\+Process Class Reference}
+\label{class_assimp_1_1_optimize_meshes_process}\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+}
+
+
+Postprocessing step to optimize mesh usage.  
+
+
+
+
+{\ttfamily \#include $<$Optimize\+Meshes.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Optimize\+Meshes\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Optimize\+Meshes\+Process\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_assimp_1_1_optimize_meshes_process_1_1_mesh_info}{Mesh\+Info}
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_internal}{Internal} utility to store additional mesh info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_optimize_meshes_process_ad2564bdd293ac53f781883c044610649}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_optimize_meshes_process_a43232ef13ca41e15bfa237f1f6f19978}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+void \hyperlink{class_assimp_1_1_optimize_meshes_process_a21115c3af0abe17142d32ead4204b451}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+void \hyperlink{class_assimp_1_1_optimize_meshes_process_a96f593b6215808421204689f3c6db679}{Enable\+Primitive\+Type\+Sorting} (bool enable)
+\begin{DoxyCompactList}\small\item\em Specify whether you want meshes with different primitive types to be merged as well. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_optimize_meshes_process_a92be986cb23c8e82d570d95cbe90648b}{bool {\bfseries Is\+Primitive\+Type\+Sorting\+Enabled} () const }\label{class_assimp_1_1_optimize_meshes_process_a92be986cb23c8e82d570d95cbe90648b}
+
+\item 
+void \hyperlink{class_assimp_1_1_optimize_meshes_process_ae671bfa9bf6fe31602044836a0031f73}{Set\+Preferred\+Mesh\+Size\+Limit} (unsigned int verts, unsigned int faces)
+\begin{DoxyCompactList}\small\item\em Specify a maximum size of a single output mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_assimp_1_1_optimize_meshes_process_a362186826ee6914f1ef31170f8231117}{Process\+Node} (\hyperlink{structai_node}{ai\+Node} $\ast$p\+Node)
+\begin{DoxyCompactList}\small\item\em Do the actual optimization on all meshes of this node. \end{DoxyCompactList}\item 
+bool \hyperlink{class_assimp_1_1_optimize_meshes_process_af549a85d595b5a0336df11008087cc1e}{Can\+Join} (unsigned int a, unsigned int b, unsigned int verts, unsigned int faces)
+\begin{DoxyCompactList}\small\item\em Returns true if b can be joined with a. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_optimize_meshes_process_ad952acdcb5f6898f758544bb33d1a61c}{void \hyperlink{class_assimp_1_1_optimize_meshes_process_ad952acdcb5f6898f758544bb33d1a61c}{Find\+Instanced\+Meshes} (\hyperlink{structai_node}{ai\+Node} $\ast$p\+Node)}\label{class_assimp_1_1_optimize_meshes_process_ad952acdcb5f6898f758544bb33d1a61c}
+
+\begin{DoxyCompactList}\small\item\em Find instanced meshes, for the moment we're excluding them from all optimizations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Postprocessing step to optimize mesh usage. 
+
+The implementation looks for meshes that could be joined and joins them. Usually this will reduce the number of drawcalls.
+
+\begin{DoxyNote}{Note}
+Instanced meshes are currently not processed. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_optimize_meshes_process_af549a85d595b5a0336df11008087cc1e}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Can\+Join@{Can\+Join}}
+\index{Can\+Join@{Can\+Join}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Can\+Join}]{\setlength{\rightskip}{0pt plus 5cm}bool Optimize\+Meshes\+Process\+::\+Can\+Join (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{a, }
+\item[{unsigned int}]{b, }
+\item[{unsigned int}]{verts, }
+\item[{unsigned int}]{faces}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_optimize_meshes_process_af549a85d595b5a0336df11008087cc1e}
+
+
+Returns true if b can be joined with a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em verts} & Number of output verts up to now \\
+\hline
+{\em faces} & Number of output faces up to now \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_optimize_meshes_process_a96f593b6215808421204689f3c6db679}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Enable\+Primitive\+Type\+Sorting@{Enable\+Primitive\+Type\+Sorting}}
+\index{Enable\+Primitive\+Type\+Sorting@{Enable\+Primitive\+Type\+Sorting}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Enable\+Primitive\+Type\+Sorting}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Optimize\+Meshes\+Process\+::\+Enable\+Primitive\+Type\+Sorting (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_optimize_meshes_process_a96f593b6215808421204689f3c6db679}
+
+
+Specify whether you want meshes with different primitive types to be merged as well. 
+
+\hyperlink{class_assimp_1_1_optimize_meshes_process_ad2564bdd293ac53f781883c044610649}{Is\+Active()} sets this property automatically to true if the ai\+Process\+\_\+\+Sort\+By\+P\+Type flag is found. \hypertarget{class_assimp_1_1_optimize_meshes_process_a43232ef13ca41e15bfa237f1f6f19978}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Optimize\+Meshes\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_optimize_meshes_process_a43232ef13ca41e15bfa237f1f6f19978}
+Executes the post processing step on the given imported data. A process should throw an Import\+Error\+Exception$\ast$ if it fails. This method must be implemented by deriving classes. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_optimize_meshes_process_ad2564bdd293ac53f781883c044610649}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Optimize\+Meshes\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_optimize_meshes_process_ad2564bdd293ac53f781883c044610649}
+Returns whether the processing step is present in the given flag. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_optimize_meshes_process_a362186826ee6914f1ef31170f8231117}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Process\+Node@{Process\+Node}}
+\index{Process\+Node@{Process\+Node}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Process\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Optimize\+Meshes\+Process\+::\+Process\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_optimize_meshes_process_a362186826ee6914f1ef31170f8231117}
+
+
+Do the actual optimization on all meshes of this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Node} & \hyperlink{struct_node}{Node} we're working with \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_optimize_meshes_process_ae671bfa9bf6fe31602044836a0031f73}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Set\+Preferred\+Mesh\+Size\+Limit@{Set\+Preferred\+Mesh\+Size\+Limit}}
+\index{Set\+Preferred\+Mesh\+Size\+Limit@{Set\+Preferred\+Mesh\+Size\+Limit}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Set\+Preferred\+Mesh\+Size\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Optimize\+Meshes\+Process\+::\+Set\+Preferred\+Mesh\+Size\+Limit (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{verts, }
+\item[{unsigned int}]{faces}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_optimize_meshes_process_ae671bfa9bf6fe31602044836a0031f73}
+
+
+Specify a maximum size of a single output mesh. 
+
+If a single input mesh already exceeds this limit, it won't be split. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & Maximum number of vertices per mesh \\
+\hline
+{\em faces} & Maximum number of faces per mesh \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_optimize_meshes_process_a21115c3af0abe17142d32ead4204b451}{\index{Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Optimize\+Meshes\+Process@{Assimp\+::\+Optimize\+Meshes\+Process}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Optimize\+Meshes\+Process\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_optimize_meshes_process_a21115c3af0abe17142d32ead4204b451}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_optimize_meshes_8h}{Optimize\+Meshes.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_optimize_meshes_8cpp}{Optimize\+Meshes.\+cpp}\end{DoxyCompactItemize}

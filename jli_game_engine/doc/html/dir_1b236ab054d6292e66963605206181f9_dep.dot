@@ -1,0 +1,14 @@
+digraph "fmod/android/fmodstudioapi10503android/api/lowlevel/examples/eclipse/3d/obj/local/x86/objs-debug/stlport_shared" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_edb1581503a390647b4fcf2722c77ce5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="objs-debug" fontname="Helvetica", fontsize="10", URL="dir_edb1581503a390647b4fcf2722c77ce5.html"]
+  subgraph clusterdir_1b236ab054d6292e66963605206181f9 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_1b236ab054d6292e66963605206181f9.html"];
+    dir_1b236ab054d6292e66963605206181f9 [shape=plaintext label="stlport_shared"];
+    dir_b5eecc8ec4173bd69396c099cde59dd7 [shape=box label="__" color="red" fillcolor="white" style="filled" URL="dir_b5eecc8ec4173bd69396c099cde59dd7.html"];
+    dir_5b30392f1087428b81ae14437d7b0a6e [shape=box label="src" color="black" fillcolor="white" style="filled" URL="dir_5b30392f1087428b81ae14437d7b0a6e.html"];
+  }
+  }
+}

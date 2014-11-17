@@ -1,0 +1,9 @@
+digraph "png/lpng1612/contrib/pngminus" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1bdd4d8401a0ccf8f6cce33345e3b469 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_1bdd4d8401a0ccf8f6cce33345e3b469.html"]
+  dir_7185dd1f4d4ed5826a1085e57d4edd3c [shape=box, label="pngminus", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7185dd1f4d4ed5826a1085e57d4edd3c.html"];
+  }
+}

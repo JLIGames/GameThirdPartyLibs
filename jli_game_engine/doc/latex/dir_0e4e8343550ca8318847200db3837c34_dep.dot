@@ -1,0 +1,9 @@
+digraph "sqlite/sqlite-amalgamation-3080700" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d9e990f2c4f165877e05a91264b669b8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="sqlite" fontname="Helvetica", fontsize="10", URL="dir_d9e990f2c4f165877e05a91264b669b8.html"]
+  dir_0e4e8343550ca8318847200db3837c34 [shape=box, label="sqlite-amalgamation-3080700", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0e4e8343550ca8318847200db3837c34.html"];
+  }
+}

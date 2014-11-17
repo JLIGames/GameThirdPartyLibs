@@ -1,0 +1,200 @@
+\hypertarget{class_abstract_shared_factory}{\section{Abstract\+Shared\+Factory$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ Class Template Reference}
+\label{class_abstract_shared_factory}\index{Abstract\+Shared\+Factory$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$@{Abstract\+Shared\+Factory$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$}}
+}
+
+
+{\ttfamily \#include $<$Abstract\+Shared\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Abstract\+Shared\+Factory$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+:
+
+
+Collaboration diagram for Abstract\+Shared\+Factory$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ \hyperlink{class_abstract_shared_factory_ac2ca077592316dd585c317a992f9fd0d}{create} (const Abstract\+Builder \&)
+\item 
+virtual O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ \hyperlink{class_abstract_shared_factory_a93557cabaee0680f5870f25a28d25293}{clone} (const O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E \&)
+\item 
+virtual bool \hyperlink{class_abstract_shared_factory_abe6198f1845cd1489e1208593614afe8}{has} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$) const 
+\item 
+virtual void \hyperlink{class_abstract_shared_factory_a5b129772c8bcea8a059dbc21fb07ddce}{destroy} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)
+\item 
+virtual void \hyperlink{class_abstract_shared_factory_ae61501ab1af1ed320eac60d343e4f6b2}{destroy\+All} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)
+\item 
+virtual void \hyperlink{class_abstract_shared_factory_aacc07c2878fdf2500c8f32c71bf072b6}{destroy\+All} ()
+\item 
+virtual s32 \hyperlink{class_abstract_shared_factory_ad97ae0ec1e4154043314397da521c3da}{size} ()
+\item 
+virtual s32 \hyperlink{class_abstract_shared_factory_ad7b87235816684988ee876708d0a2938}{instances} (const u32)
+\item 
+virtual O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ \hyperlink{class_abstract_shared_factory_a11862977dff261201ff23bc3e25ad0c2}{get} (const u32) const 
+\item 
+virtual void \hyperlink{class_abstract_shared_factory_a6c2d3fa9693726781e81d52f141a3b0a}{get\+All} (bt\+Aligned\+Object\+Array$<$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ $>$ \&objects) const 
+\item 
+virtual s32 \hyperlink{class_abstract_shared_factory_aa6f6481274b9468b92d1b032cd7a32df}{index} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Object\+List \hyperlink{class_abstract_shared_factory_adc52945f7c9e7d22a790168090164ae4}{m\+\_\+\+Object\+List}
+\item 
+Object\+Duplicate\+Map \hyperlink{class_abstract_shared_factory_a6640dd3209b932e973547cf9f7ecf758}{m\+\_\+\+Object\+Duplicate\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_abstract_shared_factory_a424631661fee3c3c1dfd6bc4f39f6fab}{Abstract\+Shared\+Factory} ()
+\item 
+virtual \hyperlink{class_abstract_shared_factory_a1555d35824b19786b66c3ae9df617135}{$\sim$\+Abstract\+Shared\+Factory} ()=0
+\item 
+virtual O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ \hyperlink{class_abstract_shared_factory_a3a822396c66b512633644b1658a172d4}{ctor} (const Abstract\+Builder \&)=0
+\item 
+O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ \hyperlink{class_abstract_shared_factory_a772a1578f83e9d7f94b38015cbb22ebb}{create\+\_\+\+Internal} (const Abstract\+Builder \&)
+\item 
+O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ \hyperlink{class_abstract_shared_factory_aefa83a453407e19ac53e7478d9f92c9c}{clone\+\_\+\+Internal} (const O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E \&)
+\item 
+void \hyperlink{class_abstract_shared_factory_a3ce56d54b55727bf1dab3b32dd07d9ed}{remove\+\_\+\+Internal} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_abstract_shared_factory_a424631661fee3c3c1dfd6bc4f39f6fab}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{Abstract\+Shared\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::{\bf Abstract\+Shared\+Factory} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_abstract_shared_factory_a424631661fee3c3c1dfd6bc4f39f6fab}
+\hypertarget{class_abstract_shared_factory_a1555d35824b19786b66c3ae9df617135}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!````~Abstract\+Shared\+Factory@{$\sim$\+Abstract\+Shared\+Factory}}
+\index{````~Abstract\+Shared\+Factory@{$\sim$\+Abstract\+Shared\+Factory}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{$\sim$\+Abstract\+Shared\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::$\sim${\bf Abstract\+Shared\+Factory} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_abstract_shared_factory_a1555d35824b19786b66c3ae9df617135}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_abstract_shared_factory_a93557cabaee0680f5870f25a28d25293}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!clone@{clone}}
+\index{clone@{clone}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::clone (
+\begin{DoxyParamCaption}
+\item[{const O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_a93557cabaee0680f5870f25a28d25293}
+\hypertarget{class_abstract_shared_factory_aefa83a453407e19ac53e7478d9f92c9c}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!clone\+\_\+\+Internal@{clone\+\_\+\+Internal}}
+\index{clone\+\_\+\+Internal@{clone\+\_\+\+Internal}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{clone\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::clone\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{const O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_abstract_shared_factory_aefa83a453407e19ac53e7478d9f92c9c}
+\hypertarget{class_abstract_shared_factory_ac2ca077592316dd585c317a992f9fd0d}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!create@{create}}
+\index{create@{create}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::create (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_ac2ca077592316dd585c317a992f9fd0d}
+\hypertarget{class_abstract_shared_factory_a772a1578f83e9d7f94b38015cbb22ebb}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!create\+\_\+\+Internal@{create\+\_\+\+Internal}}
+\index{create\+\_\+\+Internal@{create\+\_\+\+Internal}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{create\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::create\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_abstract_shared_factory_a772a1578f83e9d7f94b38015cbb22ebb}
+\hypertarget{class_abstract_shared_factory_a3a822396c66b512633644b1658a172d4}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!ctor@{ctor}}
+\index{ctor@{ctor}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{ctor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ virtual O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E$\ast$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::ctor (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_abstract_shared_factory_a3a822396c66b512633644b1658a172d4}
+\hypertarget{class_abstract_shared_factory_a5b129772c8bcea8a059dbc21fb07ddce}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!destroy@{destroy}}
+\index{destroy@{destroy}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ void {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::destroy (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_a5b129772c8bcea8a059dbc21fb07ddce}
+\hypertarget{class_abstract_shared_factory_ae61501ab1af1ed320eac60d343e4f6b2}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!destroy\+All@{destroy\+All}}
+\index{destroy\+All@{destroy\+All}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{destroy\+All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ void {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::destroy\+All (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_ae61501ab1af1ed320eac60d343e4f6b2}
+\hypertarget{class_abstract_shared_factory_aacc07c2878fdf2500c8f32c71bf072b6}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!destroy\+All@{destroy\+All}}
+\index{destroy\+All@{destroy\+All}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{destroy\+All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ void {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::destroy\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_aacc07c2878fdf2500c8f32c71bf072b6}
+\hypertarget{class_abstract_shared_factory_a11862977dff261201ff23bc3e25ad0c2}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!get@{get}}
+\index{get@{get}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::get (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_a11862977dff261201ff23bc3e25ad0c2}
+\hypertarget{class_abstract_shared_factory_a6c2d3fa9693726781e81d52f141a3b0a}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!get\+All@{get\+All}}
+\index{get\+All@{get\+All}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{get\+All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ void {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::get\+All (
+\begin{DoxyParamCaption}
+\item[{bt\+Aligned\+Object\+Array$<$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$ $>$ \&}]{objects}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_a6c2d3fa9693726781e81d52f141a3b0a}
+\hypertarget{class_abstract_shared_factory_abe6198f1845cd1489e1208593614afe8}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!has@{has}}
+\index{has@{has}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{has}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ bool {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::has (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_abe6198f1845cd1489e1208593614afe8}
+\hypertarget{class_abstract_shared_factory_aa6f6481274b9468b92d1b032cd7a32df}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!index@{index}}
+\index{index@{index}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ s32 {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::index (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_aa6f6481274b9468b92d1b032cd7a32df}
+\hypertarget{class_abstract_shared_factory_ad7b87235816684988ee876708d0a2938}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!instances@{instances}}
+\index{instances@{instances}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{instances}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ s32 {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::instances (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_ad7b87235816684988ee876708d0a2938}
+\hypertarget{class_abstract_shared_factory_a3ce56d54b55727bf1dab3b32dd07d9ed}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!remove\+\_\+\+Internal@{remove\+\_\+\+Internal}}
+\index{remove\+\_\+\+Internal@{remove\+\_\+\+Internal}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{remove\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ void {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::remove\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_abstract_shared_factory_a3ce56d54b55727bf1dab3b32dd07d9ed}
+\hypertarget{class_abstract_shared_factory_ad97ae0ec1e4154043314397da521c3da}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!size@{size}}
+\index{size@{size}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ s32 {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_abstract_shared_factory_ad97ae0ec1e4154043314397da521c3da}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_abstract_shared_factory_a6640dd3209b932e973547cf9f7ecf758}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!m\+\_\+\+Object\+Duplicate\+Map@{m\+\_\+\+Object\+Duplicate\+Map}}
+\index{m\+\_\+\+Object\+Duplicate\+Map@{m\+\_\+\+Object\+Duplicate\+Map}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{m\+\_\+\+Object\+Duplicate\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ Object\+Duplicate\+Map {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::m\+\_\+\+Object\+Duplicate\+Map}}\label{class_abstract_shared_factory_a6640dd3209b932e973547cf9f7ecf758}
+\hypertarget{class_abstract_shared_factory_adc52945f7c9e7d22a790168090164ae4}{\index{Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}!m\+\_\+\+Object\+List@{m\+\_\+\+Object\+List}}
+\index{m\+\_\+\+Object\+List@{m\+\_\+\+Object\+List}!Abstract\+Shared\+Factory@{Abstract\+Shared\+Factory}}
+\subsubsection[{m\+\_\+\+Object\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E , class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ Object\+List {\bf Abstract\+Shared\+Factory}$<$ S\+I\+N\+G\+L\+E\+T\+O\+N\+S\+\_\+\+T\+Y\+P\+E, O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$\+::m\+\_\+\+Object\+List}}\label{class_abstract_shared_factory_adc52945f7c9e7d22a790168090164ae4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_abstract_shared_factory_8h}{Abstract\+Shared\+Factory.\+h}\end{DoxyCompactItemize}

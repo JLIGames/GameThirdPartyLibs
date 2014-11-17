@@ -1,0 +1,65 @@
+\hypertarget{_p_v_r_t_vector_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Vector.h File Reference}
+\label{_p_v_r_t_vector_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Vector.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Vector.\+h}}
+}
+
+
+Vector and matrix mathematics library.  
+
+
+{\ttfamily \#include \char`\"{}assert.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Fixed\+Point.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Matrix.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+Include dependency graph for P\+V\+R\+T\+Vector.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_v_r_t_vec2}{P\+V\+R\+T\+Vec2}
+\begin{DoxyCompactList}\small\item\em 2 component vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3}
+\begin{DoxyCompactList}\small\item\em 3 component vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4}
+\begin{DoxyCompactList}\small\item\em 4 component vector \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_mat3}{P\+V\+R\+T\+Mat3}
+\begin{DoxyCompactList}\small\item\em 3x3 \hyperlink{class_matrix}{Matrix} \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4}
+\begin{DoxyCompactList}\small\item\em 4x4 \hyperlink{class_matrix}{Matrix} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_p_v_r_t_vector_8h_a07390b9e1020a498d8ceb1ba7131ce98}{P\+V\+R\+T\+Linear\+Eq\+Solve} (\hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$const p\+Res, \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$$\ast$const p\+Src, const int n\+Cnt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vector and matrix mathematics library. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_vector_8h_a07390b9e1020a498d8ceb1ba7131ce98}{\index{P\+V\+R\+T\+Vector.\+h@{P\+V\+R\+T\+Vector.\+h}!P\+V\+R\+T\+Linear\+Eq\+Solve@{P\+V\+R\+T\+Linear\+Eq\+Solve}}
+\index{P\+V\+R\+T\+Linear\+Eq\+Solve@{P\+V\+R\+T\+Linear\+Eq\+Solve}!P\+V\+R\+T\+Vector.\+h@{P\+V\+R\+T\+Vector.\+h}}
+\subsubsection[{P\+V\+R\+T\+Linear\+Eq\+Solve}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Linear\+Eq\+Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$const}]{p\+Res, }
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$$\ast$const}]{p\+Src, }
+\item[{const int}]{n\+Cnt}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_vector_8h_a07390b9e1020a498d8ceb1ba7131ce98}
+
+
+  P\+V\+R\+T\+Linear\+Eq\+Solve  p\+Src 2\+D array of floats. 4 Eq linear problem is 5x4 matrix, constants in first column  n\+Cnt Number of equations to solve  p\+Res Result  Solves 'n\+Cnt' simultaneous equations of 'n\+Cnt' variables. p\+Res should be an array large enough to contain the results\+: the values of the 'n\+Cnt' variables. This fn recursively uses Gaussian Elimination. 
+
+Here is the caller graph for this function\+:
+
+

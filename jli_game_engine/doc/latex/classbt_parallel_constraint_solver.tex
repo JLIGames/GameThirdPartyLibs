@@ -1,0 +1,78 @@
+\hypertarget{classbt_parallel_constraint_solver}{\section{bt\+Parallel\+Constraint\+Solver Class Reference}
+\label{classbt_parallel_constraint_solver}\index{bt\+Parallel\+Constraint\+Solver@{bt\+Parallel\+Constraint\+Solver}}
+}
+
+
+{\ttfamily \#include $<$bt\+Parallel\+Constraint\+Solver.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Parallel\+Constraint\+Solver\+:
+
+
+Collaboration diagram for bt\+Parallel\+Constraint\+Solver\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_parallel_constraint_solver_acb3d5063e1894e7340b9cc5b76feead4}{{\bfseries bt\+Parallel\+Constraint\+Solver} (class \hyperlink{classbt_thread_support_interface}{bt\+Thread\+Support\+Interface} $\ast$solver\+Thread\+Support)}\label{classbt_parallel_constraint_solver_acb3d5063e1894e7340b9cc5b76feead4}
+
+\item 
+virtual bt\+Scalar \hyperlink{classbt_parallel_constraint_solver_a2713bd22bd322034ba8470186105ff22}{solve\+Group} (bt\+Collision\+Object $\ast$$\ast$bodies, int num\+Bodies, bt\+Persistent\+Manifold $\ast$$\ast$manifold, int num\+Manifolds, bt\+Typed\+Constraint $\ast$$\ast$constraints, int num\+Constraints, const \hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \&info, \hyperlink{classbt_i_debug_draw}{bt\+I\+Debug\+Draw} $\ast$debug\+Drawer, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_parallel_constraint_solver_aab8c837b3c89b314454ca6d7ad83edcc}{struct \\*
+\hyperlink{structbt_parallel_solver_memory_cache}{bt\+Parallel\+Solver\+Memory\+Cache} $\ast$ {\bfseries m\+\_\+memory\+Cache}}\label{classbt_parallel_constraint_solver_aab8c837b3c89b314454ca6d7ad83edcc}
+
+\item 
+\hypertarget{classbt_parallel_constraint_solver_aa8dbaf8f3936c2e812fdad475fd2ea0f}{class \hyperlink{classbt_thread_support_interface}{bt\+Thread\+Support\+Interface} $\ast$ {\bfseries m\+\_\+solver\+Thread\+Support}}\label{classbt_parallel_constraint_solver_aa8dbaf8f3936c2e812fdad475fd2ea0f}
+
+\item 
+\hypertarget{classbt_parallel_constraint_solver_ab7c9ca0afb6c236b1fc644d21bcbf68d}{struct bt\+Constraint\+Solver\+I\+O $\ast$ {\bfseries m\+\_\+solver\+I\+O}}\label{classbt_parallel_constraint_solver_ab7c9ca0afb6c236b1fc644d21bcbf68d}
+
+\item 
+\hypertarget{classbt_parallel_constraint_solver_ac976c5397d8e58e4c58e9ecb50237547}{class \hyperlink{classbt_barrier}{bt\+Barrier} $\ast$ {\bfseries m\+\_\+barrier}}\label{classbt_parallel_constraint_solver_ac976c5397d8e58e4c58e9ecb50237547}
+
+\item 
+\hypertarget{classbt_parallel_constraint_solver_aa8fbee3bf2eb4e9d278f25dbccaca8a9}{class \hyperlink{classbt_critical_section}{bt\+Critical\+Section} $\ast$ {\bfseries m\+\_\+critical\+Section}}\label{classbt_parallel_constraint_solver_aa8fbee3bf2eb4e9d278f25dbccaca8a9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classbt_parallel_constraint_solver}{bt\+Parallel\+Constraint\+Solver} performs computations on constraint rows in parallel Using the cross-\/platform threading it supports Windows, Linux, Mac O\+S\+X and Play\+Station 3 Cell S\+P\+Us 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_parallel_constraint_solver_a2713bd22bd322034ba8470186105ff22}{\index{bt\+Parallel\+Constraint\+Solver@{bt\+Parallel\+Constraint\+Solver}!solve\+Group@{solve\+Group}}
+\index{solve\+Group@{solve\+Group}!bt\+Parallel\+Constraint\+Solver@{bt\+Parallel\+Constraint\+Solver}}
+\subsubsection[{solve\+Group}]{\setlength{\rightskip}{0pt plus 5cm}bt\+Scalar bt\+Parallel\+Constraint\+Solver\+::solve\+Group (
+\begin{DoxyParamCaption}
+\item[{bt\+Collision\+Object $\ast$$\ast$}]{bodies, }
+\item[{int}]{num\+Bodies, }
+\item[{bt\+Persistent\+Manifold $\ast$$\ast$}]{manifold, }
+\item[{int}]{num\+Manifolds, }
+\item[{bt\+Typed\+Constraint $\ast$$\ast$}]{constraints, }
+\item[{int}]{num\+Constraints, }
+\item[{const {\bf bt\+Contact\+Solver\+Info} \&}]{info, }
+\item[{{\bf bt\+I\+Debug\+Draw} $\ast$}]{debug\+Drawer, }
+\item[{{\bf bt\+Dispatcher} $\ast$}]{dispatcher}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_parallel_constraint_solver_a2713bd22bd322034ba8470186105ff22}
+setup the bt\+Solver\+Constraints
+
+the size of bt\+Solver\+Constraint needs be a multiple of bt\+Scalar
+
+finalize the constraint setup
+
+fix rhs todo\+: add force/torque accelerators 
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/bt\+Parallel\+Constraint\+Solver.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/bt\+Parallel\+Constraint\+Solver.\+cpp\end{DoxyCompactItemize}

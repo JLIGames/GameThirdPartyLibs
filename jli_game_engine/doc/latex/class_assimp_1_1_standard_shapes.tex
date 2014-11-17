@@ -1,0 +1,304 @@
+\hypertarget{class_assimp_1_1_standard_shapes}{\section{Assimp\+:\+:Standard\+Shapes Class Reference}
+\label{class_assimp_1_1_standard_shapes}\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+}
+
+
+Helper class to generate vertex buffers for standard geometric shapes, such as cylinders, cones, boxes, spheres, elipsoids ... .  
+
+
+
+
+{\ttfamily \#include $<$Standard\+Shapes.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structai_mesh}{ai\+Mesh} $\ast$ \hyperlink{class_assimp_1_1_standard_shapes_ac387f53194750409c1b40b7a4f331ee4}{Make\+Mesh} (const std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions, unsigned int num\+Indices)
+\item 
+\hypertarget{class_assimp_1_1_standard_shapes_a00559ed93325e8e39344850e99ea4a8f}{static \hyperlink{structai_mesh}{ai\+Mesh} $\ast$ {\bfseries Make\+Mesh} (unsigned int($\ast$Generate\+Func)(std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&))}\label{class_assimp_1_1_standard_shapes_a00559ed93325e8e39344850e99ea4a8f}
+
+\item 
+\hypertarget{class_assimp_1_1_standard_shapes_a1c53825c742b9bcdfaee14369581e67f}{static \hyperlink{structai_mesh}{ai\+Mesh} $\ast$ {\bfseries Make\+Mesh} (unsigned int($\ast$Generate\+Func)(std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&, bool))}\label{class_assimp_1_1_standard_shapes_a1c53825c742b9bcdfaee14369581e67f}
+
+\item 
+\hypertarget{class_assimp_1_1_standard_shapes_a370fb69515ec84c16c375213f465f02a}{static \hyperlink{structai_mesh}{ai\+Mesh} $\ast$ {\bfseries Make\+Mesh} (unsigned int n, void($\ast$Generate\+Func)(unsigned int, std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&))}\label{class_assimp_1_1_standard_shapes_a370fb69515ec84c16c375213f465f02a}
+
+\item 
+static unsigned int \hyperlink{class_assimp_1_1_standard_shapes_a80bbbdedb949238d7ea6dda761948dfb}{Make\+Hexahedron} (std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions, bool polygons=false)
+\begin{DoxyCompactList}\small\item\em Generates a hexahedron (cube) \end{DoxyCompactList}\item 
+static unsigned int \hyperlink{class_assimp_1_1_standard_shapes_a2592a9c15a11d95181f78bd3f7c0458b}{Make\+Icosahedron} (std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions)
+\begin{DoxyCompactList}\small\item\em Generates an icosahedron. \end{DoxyCompactList}\item 
+static unsigned int \hyperlink{class_assimp_1_1_standard_shapes_a2738550132e77f535ddba6623f19fd76}{Make\+Dodecahedron} (std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions, bool polygons=false)
+\begin{DoxyCompactList}\small\item\em Generates a dodecahedron. \end{DoxyCompactList}\item 
+static unsigned int \hyperlink{class_assimp_1_1_standard_shapes_aef96c33aa1e4dfe77b483cbe47229c9c}{Make\+Octahedron} (std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions)
+\begin{DoxyCompactList}\small\item\em Generates an octahedron. \end{DoxyCompactList}\item 
+static unsigned int \hyperlink{class_assimp_1_1_standard_shapes_a0bc611df1adbd1f87366142f03b86168}{Make\+Tetrahedron} (std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions)
+\begin{DoxyCompactList}\small\item\em Generates a tetrahedron. \end{DoxyCompactList}\item 
+static void \hyperlink{class_assimp_1_1_standard_shapes_a6fa5ddd1a3942f714fb76ec9ac1f38c8}{Make\+Sphere} (unsigned int tess, std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions)
+\begin{DoxyCompactList}\small\item\em Generates a sphere. \end{DoxyCompactList}\item 
+static void \hyperlink{class_assimp_1_1_standard_shapes_ab43e2577bd25f867602f5127346d6baf}{Make\+Cone} (float height, float radius1, float radius2, unsigned int tess, std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions, bool b\+Open=false)
+\begin{DoxyCompactList}\small\item\em Generates a cone or a cylinder, either open or closed. \end{DoxyCompactList}\item 
+static void \hyperlink{class_assimp_1_1_standard_shapes_ae5819cfcca8d673c83b50ecde190e1ca}{Make\+Circle} (float radius, unsigned int tess, std\+::vector$<$ \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $>$ \&positions)
+\begin{DoxyCompactList}\small\item\em Generates a flat circle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to generate vertex buffers for standard geometric shapes, such as cylinders, cones, boxes, spheres, elipsoids ... . 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_standard_shapes_ae5819cfcca8d673c83b50ecde190e1ca}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Circle@{Make\+Circle}}
+\index{Make\+Circle@{Make\+Circle}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Circle}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Standard\+Shapes\+::\+Make\+Circle (
+\begin{DoxyParamCaption}
+\item[{float}]{radius, }
+\item[{unsigned int}]{tess, }
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_ae5819cfcca8d673c83b50ecde190e1ca}
+
+
+Generates a flat circle. 
+
+The circle is constructed in the planed formed by the x,z axes of the cartesian coordinate system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & Radius of the circle \\
+\hline
+{\em tess} & Number of segments. \\
+\hline
+{\em positions} & Receives output triangles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_standard_shapes_ab43e2577bd25f867602f5127346d6baf}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Cone@{Make\+Cone}}
+\index{Make\+Cone@{Make\+Cone}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Cone}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Standard\+Shapes\+::\+Make\+Cone (
+\begin{DoxyParamCaption}
+\item[{float}]{height, }
+\item[{float}]{radius1, }
+\item[{float}]{radius2, }
+\item[{unsigned int}]{tess, }
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions, }
+\item[{bool}]{b\+Open = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_ab43e2577bd25f867602f5127346d6baf}
+
+
+Generates a cone or a cylinder, either open or closed. 
+
+
+\begin{DoxyCode}
+    |-----|       <- radius 1
+
+     \_\_x\_\_        <- ]               ^
+    /     \(\backslash\)          | height        |
+   /       \(\backslash\)         |               Y                 
+  /         \(\backslash\)        |
+ /           \(\backslash\)       |
+/\_\_\_\_\_\_x\_\_\_\_\_\_\(\backslash\)   <- ] <- end \hyperlink{classcap}{cap}
+
+|-------------|   <- radius 2
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & Height of the cone \\
+\hline
+{\em radius1} & First radius \\
+\hline
+{\em radius2} & Second radius \\
+\hline
+{\em tess} & Number of triangles. \\
+\hline
+{\em b\+Opened} & true for an open cone/cylinder. An open shape has no 'end caps' \\
+\hline
+{\em positions} & Receives output triangles \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_standard_shapes_a2738550132e77f535ddba6623f19fd76}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Dodecahedron@{Make\+Dodecahedron}}
+\index{Make\+Dodecahedron@{Make\+Dodecahedron}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Dodecahedron}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Standard\+Shapes\+::\+Make\+Dodecahedron (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions, }
+\item[{bool}]{polygons = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_a2738550132e77f535ddba6623f19fd76}
+
+
+Generates a dodecahedron. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & Receives output triangles \\
+\hline
+{\em polygons} & If you pass true here pentagons will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of vertices per face 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_standard_shapes_a80bbbdedb949238d7ea6dda761948dfb}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Hexahedron@{Make\+Hexahedron}}
+\index{Make\+Hexahedron@{Make\+Hexahedron}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Hexahedron}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Standard\+Shapes\+::\+Make\+Hexahedron (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions, }
+\item[{bool}]{polygons = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_a80bbbdedb949238d7ea6dda761948dfb}
+
+
+Generates a hexahedron (cube) 
+
+Hexahedrons can be scaled on all axes. 
+\begin{DoxyParams}{Parameters}
+{\em positions} & Receives output triangles. \\
+\hline
+{\em polygons} & If you pass true here quads will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of vertices per face 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_standard_shapes_a2592a9c15a11d95181f78bd3f7c0458b}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Icosahedron@{Make\+Icosahedron}}
+\index{Make\+Icosahedron@{Make\+Icosahedron}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Icosahedron}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Standard\+Shapes\+::\+Make\+Icosahedron (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_a2592a9c15a11d95181f78bd3f7c0458b}
+
+
+Generates an icosahedron. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & Receives output triangles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of vertices per face 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_standard_shapes_ac387f53194750409c1b40b7a4f331ee4}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Mesh@{Make\+Mesh}}
+\index{Make\+Mesh@{Make\+Mesh}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Mesh} $\ast$ Assimp\+::\+Standard\+Shapes\+::\+Make\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions, }
+\item[{unsigned int}]{num\+Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_ac387f53194750409c1b40b7a4f331ee4}
+Generates a mesh from an array of vertex positions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & List of vertex positions \\
+\hline
+{\em num\+Indices} & Number of indices per primitive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output mesh 
+\end{DoxyReturn}
+\hypertarget{class_assimp_1_1_standard_shapes_aef96c33aa1e4dfe77b483cbe47229c9c}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Octahedron@{Make\+Octahedron}}
+\index{Make\+Octahedron@{Make\+Octahedron}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Octahedron}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Standard\+Shapes\+::\+Make\+Octahedron (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_aef96c33aa1e4dfe77b483cbe47229c9c}
+
+
+Generates an octahedron. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & Receives output triangles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of vertices per face 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_standard_shapes_a6fa5ddd1a3942f714fb76ec9ac1f38c8}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Sphere@{Make\+Sphere}}
+\index{Make\+Sphere@{Make\+Sphere}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Sphere}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Standard\+Shapes\+::\+Make\+Sphere (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{tess, }
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_a6fa5ddd1a3942f714fb76ec9ac1f38c8}
+
+
+Generates a sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tess} & Number of subdivions -\/ 0 generates a octahedron \\
+\hline
+{\em positions} & Receives output triangles. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_standard_shapes_a0bc611df1adbd1f87366142f03b86168}{\index{Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}!Make\+Tetrahedron@{Make\+Tetrahedron}}
+\index{Make\+Tetrahedron@{Make\+Tetrahedron}!Assimp\+::\+Standard\+Shapes@{Assimp\+::\+Standard\+Shapes}}
+\subsubsection[{Make\+Tetrahedron}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+Standard\+Shapes\+::\+Make\+Tetrahedron (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf ai\+Vector3\+D} $>$ \&}]{positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_standard_shapes_a0bc611df1adbd1f87366142f03b86168}
+
+
+Generates a tetrahedron. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & Receives output triangles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of vertices per face 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Standard\+Shapes.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_standard_shapes_8cpp}{Standard\+Shapes.\+cpp}\end{DoxyCompactItemize}

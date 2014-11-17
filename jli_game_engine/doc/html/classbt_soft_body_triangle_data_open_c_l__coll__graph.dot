@@ -1,0 +1,28 @@
+digraph "btSoftBodyTriangleDataOpenCL"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="btSoftBodyTriangleDataOpenCL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="btSoftBodyTriangleData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_soft_body_triangle_data.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_normal" ,fontname="Helvetica"];
+  Node3 [label="btAlignedObjectArray\l\< Vectormath::Aos::Vector3 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_vertexIndices" ,fontname="Helvetica"];
+  Node4 [label="btAlignedObjectArray\l\< btSoftBodyTriangleData\l::TriangleNodeSet \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_area" ,fontname="Helvetica"];
+  Node5 [label="btAlignedObjectArray\l\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_clNormal" ,fontname="Helvetica"];
+  Node6 [label="btOpenCLBuffer\< Vectormath\l::Aos::Vector3 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_open_c_l_buffer.html"];
+  Node3 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_CPUBuffer" ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_clArea" ,fontname="Helvetica"];
+  Node7 [label="btOpenCLBuffer\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_open_c_l_buffer.html"];
+  Node5 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_CPUBuffer" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_triangleAddresses" ,fontname="Helvetica"];
+  Node8 [label="btAlignedObjectArray\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_batchStartLengths" ,fontname="Helvetica"];
+  Node9 [label="btAlignedObjectArray\l\< btSoftBodyTriangleDataOpen\lCL::btSomePair \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_clVertexIndices" ,fontname="Helvetica"];
+  Node10 [label="btOpenCLBuffer\< btSoftBody\lTriangleData::TriangleNodeSet \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_open_c_l_buffer.html"];
+  Node4 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_CPUBuffer" ,fontname="Helvetica"];
+}

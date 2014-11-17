@@ -14,50 +14,7 @@
 #include "AbstractBuilder.h"
 #include "Util.h"
 
-class Telegram
-{
-public:
-    //the entity that sent this telegram
-    AbstractFactoryObject *Sender;
-    
-    //the entity that is to receive this telegram
-    AbstractFactoryObject *Receiver;
-    
-    //the message itself. These are all enumerated in the file
-    //"MessageTypes.h"
-    s32          Msg;
-    
-    //messages can be dispatched immediately or delayed for a specified amount
-    //of time. If a delay is necessary this field is stamped with the time
-    //the message should be dispatched.
-    f32       DispatchTime;
-    
-    //any additional information that may accompany the message
-    void*        ExtraInfo;
-    
-    
-    Telegram():
-    Sender(NULL),
-    Receiver(NULL),
-    Msg(0),
-    DispatchTime(NULL),
-    ExtraInfo(NULL)
-    {}
-    
-    
-    Telegram(f32 time,
-             AbstractFactoryObject *sender,
-             AbstractFactoryObject *receiver,
-             s32    msg,
-             void*  info = NULL) :
-    Sender(sender),
-    Receiver(receiver),
-    Msg(msg),
-    DispatchTime(time),
-    ExtraInfo(info)
-    {}
-    
-};
+class Telegram;
 
 template <class OBJECT_TYPE>
 ATTRIBUTE_ALIGNED16(class) AbstractState :
@@ -93,6 +50,7 @@ private:
 
 template <class OBJECT_TYPE>
 AbstractState<OBJECT_TYPE>::AbstractState(const AbstractBuilder &builder):
+AbstractFactoryObject(this),
 m_isFinished(false),
 m_isInUse(false)
 {
@@ -101,6 +59,7 @@ m_isInUse(false)
 
 template <class OBJECT_TYPE>
 AbstractState<OBJECT_TYPE>::AbstractState(const AbstractState &copy):
+AbstractFactoryObject(this),
 m_isFinished(copy.m_isFinished),
 m_isInUse(false)
 {
@@ -147,5 +106,52 @@ void AbstractState<OBJECT_TYPE>::enableInUse(const bool inqueue)
 {
     m_isInUse = inqueue;
 }
+
+
+
+class Telegram
+{
+public:
+    //the entity that sent this telegram
+    AbstractFactoryObject *Sender;
+    
+    //the entity that is to receive this telegram
+    AbstractFactoryObject *Receiver;
+    
+    //the message itself. These are all enumerated in the file
+    //"MessageTypes.h"
+    s32          Msg;
+    
+    //messages can be dispatched immediately or delayed for a specified amount
+    //of time. If a delay is necessary this field is stamped with the time
+    //the message should be dispatched.
+    f32       DispatchTime;
+    
+    //any additional information that may accompany the message
+    void*        ExtraInfo;
+    
+    
+    Telegram():
+    Sender(NULL),
+    Receiver(NULL),
+    Msg(0),
+    DispatchTime(NULL),
+    ExtraInfo(NULL)
+    {}
+    
+    
+    Telegram(f32 time,
+             AbstractFactoryObject *sender,
+             AbstractFactoryObject *receiver,
+             s32    msg,
+             void*  info = NULL) :
+    Sender(sender),
+    Receiver(receiver),
+    Msg(msg),
+    DispatchTime(time),
+    ExtraInfo(info)
+    {}
+    
+};
 
 #endif

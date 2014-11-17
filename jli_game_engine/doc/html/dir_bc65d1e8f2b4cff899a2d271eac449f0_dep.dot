@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/ImageConvolution/OGLES3/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7810a8551ce01003e1e6a0eae66cafb9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_7810a8551ce01003e1e6a0eae66cafb9.html"]
+  subgraph clusterdir_bc65d1e8f2b4cff899a2d271eac449f0 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_bc65d1e8f2b4cff899a2d271eac449f0.html"];
+    dir_bc65d1e8f2b4cff899a2d271eac449f0 [shape=plaintext label="Android"];
+    dir_6369f64f6c04a0809e5bd76e0a6ed867 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_6369f64f6c04a0809e5bd76e0a6ed867.html"];
+  }
+  }
+}

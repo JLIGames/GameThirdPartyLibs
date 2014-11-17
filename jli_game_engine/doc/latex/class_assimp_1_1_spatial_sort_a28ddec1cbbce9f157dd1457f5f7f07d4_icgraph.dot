@@ -1,0 +1,27 @@
+digraph "Assimp::SpatialSort::Finalize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::SpatialSort\l::Finalize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::SpatialSort\l::Append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_spatial_sort.html#acc7813f0ab385e7744890b92f12c8fd8"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::SpatialSort\l::Fill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_spatial_sort.html#a9818ff67761742c6492173e61035ad37"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::CalcTangentsProcess\l::ProcessMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_calc_tangents_process.html#a3bcd59a8133ee86b766684788aedaa35"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::GenVertexNormals\lProcess::GenMeshVertexNormals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_gen_vertex_normals_process.html#ac591d330ec07c819c42130634d389c83"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::GenVertexNormals\lProcess::Execute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_gen_vertex_normals_process.html#a2514a574f19838ebb9aa7c539d16ebe2"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::JoinVerticesProcess\l::ProcessMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_join_vertices_process.html#ab900e951f4144ee6754c9176cb3ba36e"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::JoinVerticesProcess\l::Execute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_join_vertices_process.html#a8930ce25e09083b42e34c6e0d87b7453"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::Exporter::Export",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_exporter.html#a3226ea1a598a94c899fa17acebe5d47d"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::Exporter::Export\lToBlob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_exporter.html#a534989e16682cc20fde977f9f859aa29"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::SpatialSort\l::SpatialSort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_spatial_sort.html#a5f2d83525c94a943f38450e4fa9da3e9"];
+}

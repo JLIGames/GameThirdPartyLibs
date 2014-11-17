@@ -1,0 +1,45 @@
+digraph "Assimp::FBX::Object"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::FBX::Object",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::FBX::AnimationCurve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_animation_curve.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::FBX::AnimationCurveNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_animation_curve_node.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::FBX::AnimationLayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_animation_layer.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::FBX::AnimationStack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_animation_stack.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::FBX::Deformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_deformer.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::FBX::Cluster",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_cluster.html"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::FBX::Skin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_skin.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::FBX::Geometry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_geometry.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::FBX::MeshGeometry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_mesh_geometry.html"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::FBX::LayeredTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_layered_texture.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Assimp::FBX::Material",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_material.html"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Assimp::FBX::Model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_model.html"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Assimp::FBX::NodeAttribute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_node_attribute.html"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Assimp::FBX::Camera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_camera.html"];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Assimp::FBX::CameraSwitcher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_camera_switcher.html"];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Assimp::FBX::Light",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_light.html"];
+  Node14 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Assimp::FBX::LimbNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_limb_node.html"];
+  Node14 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Assimp::FBX::Null",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_null.html"];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="Assimp::FBX::Texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_1_1_texture.html"];
+}

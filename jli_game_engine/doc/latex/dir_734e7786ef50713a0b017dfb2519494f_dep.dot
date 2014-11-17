@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Fractal/OGLES2/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3b23cdaae580852d2263bb60f038a760 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_3b23cdaae580852d2263bb60f038a760.html"]
+  subgraph clusterdir_734e7786ef50713a0b017dfb2519494f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_734e7786ef50713a0b017dfb2519494f.html"];
+    dir_734e7786ef50713a0b017dfb2519494f [shape=plaintext label="Android"];
+    dir_30d071e2c8cdc8456e39bebde9cb5d69 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_30d071e2c8cdc8456e39bebde9cb5d69.html"];
+  }
+  }
+}

@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::SceneCombiner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_scene_combiner.html",tooltip="Static helper class providing various utilities to merge two scenes. It is intended as internal utili..."];
+}

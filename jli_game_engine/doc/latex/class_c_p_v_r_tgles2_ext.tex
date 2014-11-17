@@ -1,0 +1,340 @@
+\hypertarget{class_c_p_v_r_tgles2_ext}{\section{C\+P\+V\+R\+Tgles2\+Ext Class Reference}
+\label{class_c_p_v_r_tgles2_ext}\index{C\+P\+V\+R\+Tgles2\+Ext@{C\+P\+V\+R\+Tgles2\+Ext}}
+}
+
+
+A class for initialising and managing O\+G\+L\+E\+S2 extensions.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+Tgles2\+Ext.\+h$>$}
+
+
+
+Collaboration diagram for C\+P\+V\+R\+Tgles2\+Ext\+:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ae46ef971946caa4bbe3dc5fb5757c585}{typedef G\+Lsizei $\ast$ {\bfseries count}}\label{class_c_p_v_r_tgles2_ext_ae46ef971946caa4bbe3dc5fb5757c585}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ae35a01467acb4ae310b2cb7e899ffd3e}{typedef G\+Lsizei G\+Lenum {\bfseries type}}\label{class_c_p_v_r_tgles2_ext_ae35a01467acb4ae310b2cb7e899ffd3e}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_af9803324346cb2059088eb1d9fb0897c}{typedef G\+Lsizei G\+Lenum const \\*
+G\+Lvoid $\ast$$\ast$ {\bfseries indices}}\label{class_c_p_v_r_tgles2_ext_af9803324346cb2059088eb1d9fb0897c}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ac3400e5ec3a7873cb13c644fe4bf1e3e}{typedef G\+Lsizei G\+Lenum const \\*
+G\+Lvoid G\+Lsizei {\bfseries primcount}}\label{class_c_p_v_r_tgles2_ext_ac3400e5ec3a7873cb13c644fe4bf1e3e}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ab804a687751784d70f1dc055c8d6fe93}{typedef void $\ast$(G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$ {\bfseries P\+F\+N\+G\+L\+M\+A\+P\+B\+U\+F\+F\+E\+R\+O\+E\+S} )(G\+Lenum target, G\+Lenum \hyperlink{structaccess}{access})}\label{class_c_p_v_r_tgles2_ext_ab804a687751784d70f1dc055c8d6fe93}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a24c4410b572b8c8ba94c6dbae6bcc441}{typedef G\+Lboolean(G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$ {\bfseries P\+F\+N\+G\+L\+U\+N\+M\+A\+P\+B\+U\+F\+F\+E\+R\+O\+E\+S} )(G\+Lenum target)}\label{class_c_p_v_r_tgles2_ext_a24c4410b572b8c8ba94c6dbae6bcc441}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a8b167795a23163686fb202116c9a944a}{typedef void(G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$ {\bfseries P\+F\+N\+G\+L\+G\+E\+T\+B\+U\+F\+F\+E\+R\+P\+O\+I\+N\+T\+E\+R\+V\+O\+E\+S} )(G\+Lenum target, G\+Lenum pname, void $\ast$$\ast$params)}\label{class_c_p_v_r_tgles2_ext_a8b167795a23163686fb202116c9a944a}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aa887b2d616ec8ca2ec73df3843c1ae00}{typedef G\+Lint $\ast$ {\bfseries first}}\label{class_c_p_v_r_tgles2_ext_aa887b2d616ec8ca2ec73df3843c1ae00}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aa0aecf84f1eef2e9121c19d6ae1510c6}{typedef G\+Lint G\+Lsizei $\ast$ {\bfseries count}}\label{class_c_p_v_r_tgles2_ext_aa0aecf84f1eef2e9121c19d6ae1510c6}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a1e2676ff43b5c3f0d2b4aa844bfda60a}{typedef G\+Lint G\+Lsizei G\+Lsizei {\bfseries primcount}}\label{class_c_p_v_r_tgles2_ext_a1e2676ff43b5c3f0d2b4aa844bfda60a}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ace5214d738b73c9c8a93a3f3da3f925d}{typedef void(G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$ {\bfseries P\+F\+N\+G\+L\+D\+I\+S\+C\+A\+R\+D\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+E\+X\+T} )(G\+Lenum target, G\+Lsizei num\+Attachments, const G\+Lenum $\ast$attachments)}\label{class_c_p_v_r_tgles2_ext_ace5214d738b73c9c8a93a3f3da3f925d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a2439a4737b501f3e3c5a4fce362480e9}{typedef G\+Luint $\ast$ {\bfseries ids}}\label{class_c_p_v_r_tgles2_ext_a2439a4737b501f3e3c5a4fce362480e9}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a7265d042869a595d4ecedfeff86b6029}{typedef const G\+Luint $\ast$ {\bfseries ids}}\label{class_c_p_v_r_tgles2_ext_a7265d042869a595d4ecedfeff86b6029}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a1fb8013894798749ca13f14c147ebb5f}{typedef G\+Luint {\bfseries id}}\label{class_c_p_v_r_tgles2_ext_a1fb8013894798749ca13f14c147ebb5f}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_abe6ce849d1992a8c0f1f8ec29aa5b00d}{typedef G\+Lenum {\bfseries pname}}\label{class_c_p_v_r_tgles2_ext_abe6ce849d1992a8c0f1f8ec29aa5b00d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aa59bb807b80eb34f828e00561004f121}{typedef G\+Lenum G\+Lint $\ast$ {\bfseries params}}\label{class_c_p_v_r_tgles2_ext_aa59bb807b80eb34f828e00561004f121}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_abe6ce849d1992a8c0f1f8ec29aa5b00d}{typedef G\+Lenum {\bfseries pname}}\label{class_c_p_v_r_tgles2_ext_abe6ce849d1992a8c0f1f8ec29aa5b00d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_af94a02bc494e456a9d5941cb5b05b6a0}{typedef G\+Lenum G\+Luint $\ast$ {\bfseries params}}\label{class_c_p_v_r_tgles2_ext_af94a02bc494e456a9d5941cb5b05b6a0}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_afc28cb5dc5517d63bc02efa288195d03}{typedef const G\+Luint $\ast$ {\bfseries vertexarrays}}\label{class_c_p_v_r_tgles2_ext_afc28cb5dc5517d63bc02efa288195d03}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a3bf443a5e2c094121f19f7b0125cf2c4}{typedef G\+Luint $\ast$ {\bfseries vertexarrays}}\label{class_c_p_v_r_tgles2_ext_a3bf443a5e2c094121f19f7b0125cf2c4}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a3fd19d50f4e2565a44928dc3926d007d}{typedef G\+Lsizei {\bfseries samples}}\label{class_c_p_v_r_tgles2_ext_a3fd19d50f4e2565a44928dc3926d007d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a4e2aa37edfa184ddce76ec91ac5d573d}{typedef G\+Lsizei G\+Lenum {\bfseries internalformat}}\label{class_c_p_v_r_tgles2_ext_a4e2aa37edfa184ddce76ec91ac5d573d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a31126d8711023adaa65f5fc9b111d7a4}{typedef G\+Lsizei G\+Lenum G\+Lsizei {\bfseries width}}\label{class_c_p_v_r_tgles2_ext_a31126d8711023adaa65f5fc9b111d7a4}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a9c120cee81d2beff2554730b22a36745}{typedef G\+Lsizei G\+Lenum G\+Lsizei \\*
+G\+Lsizei {\bfseries height}}\label{class_c_p_v_r_tgles2_ext_a9c120cee81d2beff2554730b22a36745}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a40c9fa283601f2120198a057c1e9853a}{typedef G\+Lenum {\bfseries attachment}}\label{class_c_p_v_r_tgles2_ext_a40c9fa283601f2120198a057c1e9853a}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_af3712168a47282bd3e31f9d85fdc892b}{typedef G\+Lenum G\+Lenum {\bfseries textarget}}\label{class_c_p_v_r_tgles2_ext_af3712168a47282bd3e31f9d85fdc892b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a84aa8a62de530408b333c31d1344841b}{typedef G\+Lenum G\+Lenum G\+Luint {\bfseries texture}}\label{class_c_p_v_r_tgles2_ext_a84aa8a62de530408b333c31d1344841b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a49158fad242eb9651becfba298e2c243}{typedef G\+Lenum G\+Lenum G\+Luint G\+Lint {\bfseries level}}\label{class_c_p_v_r_tgles2_ext_a49158fad242eb9651becfba298e2c243}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ab1c74d0d96ad8b7324938366e2355eda}{typedef G\+Lenum G\+Lenum G\+Luint \\*
+G\+Lint G\+Lsizei {\bfseries samples}}\label{class_c_p_v_r_tgles2_ext_ab1c74d0d96ad8b7324938366e2355eda}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a3fd19d50f4e2565a44928dc3926d007d}{typedef G\+Lsizei {\bfseries samples}}\label{class_c_p_v_r_tgles2_ext_a3fd19d50f4e2565a44928dc3926d007d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a4e2aa37edfa184ddce76ec91ac5d573d}{typedef G\+Lsizei G\+Lenum {\bfseries internalformat}}\label{class_c_p_v_r_tgles2_ext_a4e2aa37edfa184ddce76ec91ac5d573d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a31126d8711023adaa65f5fc9b111d7a4}{typedef G\+Lsizei G\+Lenum G\+Lsizei {\bfseries width}}\label{class_c_p_v_r_tgles2_ext_a31126d8711023adaa65f5fc9b111d7a4}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a9c120cee81d2beff2554730b22a36745}{typedef G\+Lsizei G\+Lenum G\+Lsizei \\*
+G\+Lsizei {\bfseries height}}\label{class_c_p_v_r_tgles2_ext_a9c120cee81d2beff2554730b22a36745}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a40c9fa283601f2120198a057c1e9853a}{typedef G\+Lenum {\bfseries attachment}}\label{class_c_p_v_r_tgles2_ext_a40c9fa283601f2120198a057c1e9853a}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_af3712168a47282bd3e31f9d85fdc892b}{typedef G\+Lenum G\+Lenum {\bfseries textarget}}\label{class_c_p_v_r_tgles2_ext_af3712168a47282bd3e31f9d85fdc892b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a84aa8a62de530408b333c31d1344841b}{typedef G\+Lenum G\+Lenum G\+Luint {\bfseries texture}}\label{class_c_p_v_r_tgles2_ext_a84aa8a62de530408b333c31d1344841b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a49158fad242eb9651becfba298e2c243}{typedef G\+Lenum G\+Lenum G\+Luint G\+Lint {\bfseries level}}\label{class_c_p_v_r_tgles2_ext_a49158fad242eb9651becfba298e2c243}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ab1c74d0d96ad8b7324938366e2355eda}{typedef G\+Lenum G\+Lenum G\+Luint \\*
+G\+Lint G\+Lsizei {\bfseries samples}}\label{class_c_p_v_r_tgles2_ext_ab1c74d0d96ad8b7324938366e2355eda}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ab53846368d499ce94b988d323da65555}{typedef const G\+Lenum $\ast$ {\bfseries bufs}}\label{class_c_p_v_r_tgles2_ext_ab53846368d499ce94b988d323da65555}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_af94a52689d2dd162575afb6786f40b19}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+M\+U\+L\+T\+I\+D\+R\+A\+W\+E\+L\+E\+M\+E\+N\+T\+S)(G\+Lenum mode}\label{class_c_p_v_r_tgles2_ext_af94a52689d2dd162575afb6786f40b19}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ad5a9913a3fb3df336f179d674174365b}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+M\+U\+L\+T\+I\+D\+R\+A\+W\+A\+R\+R\+A\+Y\+S)(G\+Lenum mode}\label{class_c_p_v_r_tgles2_ext_ad5a9913a3fb3df336f179d674174365b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a15bfc778fbf3b47d7a6bf90f2bde5a9b}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+G\+E\+N\+Q\+U\+E\+R\+I\+E\+S\+E\+X\+T)(G\+Lsizei n}\label{class_c_p_v_r_tgles2_ext_a15bfc778fbf3b47d7a6bf90f2bde5a9b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ae1f47569223f26e631591b100e56bb0a}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+D\+E\+L\+E\+T\+E\+Q\+U\+E\+R\+I\+E\+S\+E\+X\+T)(G\+Lsizei n}\label{class_c_p_v_r_tgles2_ext_ae1f47569223f26e631591b100e56bb0a}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a76c0fc00498eed98f1851256d8d4e533}{typedef {\bfseries G\+Lboolean} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+I\+S\+Q\+U\+E\+R\+Y\+E\+X\+T)(G\+Luint id)}\label{class_c_p_v_r_tgles2_ext_a76c0fc00498eed98f1851256d8d4e533}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a48426169cd108d7743e46adee167bb7d}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+B\+E\+G\+I\+N\+Q\+U\+E\+R\+Y\+E\+X\+T)(G\+Lenum target}\label{class_c_p_v_r_tgles2_ext_a48426169cd108d7743e46adee167bb7d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a3ba113e2efadee0ab21d56cf6516119a}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+E\+N\+D\+Q\+U\+E\+R\+Y\+E\+X\+T)(G\+Lenum target)}\label{class_c_p_v_r_tgles2_ext_a3ba113e2efadee0ab21d56cf6516119a}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a843b44485280f8d8e38dc58bd99be3d2}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+G\+E\+T\+Q\+U\+E\+R\+Y\+I\+V\+E\+X\+T)(G\+Lenum target}\label{class_c_p_v_r_tgles2_ext_a843b44485280f8d8e38dc58bd99be3d2}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a7fe2e1fbb476b648e28f5a5efb1a9e61}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y $\ast$P\+F\+N\+G\+L\+G\+E\+T\+Q\+U\+E\+R\+Y\+O\+B\+J\+E\+C\+T\+U\+I\+V\+E\+X\+T)(G\+Luint id}\label{class_c_p_v_r_tgles2_ext_a7fe2e1fbb476b648e28f5a5efb1a9e61}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a502025e8206f97690ccabccfdd4a01bb}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+B\+I\+N\+D\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+O\+E\+S)(G\+Luint vertexarray)}\label{class_c_p_v_r_tgles2_ext_a502025e8206f97690ccabccfdd4a01bb}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aa2e84273efaec2c0c7c5f0ffe0f5c20b}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+D\+E\+L\+E\+T\+E\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+S\+O\+E\+S)(G\+Lsizei n}\label{class_c_p_v_r_tgles2_ext_aa2e84273efaec2c0c7c5f0ffe0f5c20b}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ac84ea4716600cb4d3ef23c08839a7b90}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+G\+E\+N\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+S\+O\+E\+S)(G\+Lsizei n}\label{class_c_p_v_r_tgles2_ext_ac84ea4716600cb4d3ef23c08839a7b90}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a8b49619404ed7328eb0b27ec14ac11a0}{typedef {\bfseries G\+Lboolean} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+I\+S\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+O\+E\+S)(G\+Luint vertexarray)}\label{class_c_p_v_r_tgles2_ext_a8b49619404ed7328eb0b27ec14ac11a0}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aae4d9e793a85b863ae05aa4925818b46}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+R\+E\+N\+D\+E\+R\+B\+U\+F\+F\+E\+R\+S\+T\+O\+R\+A\+G\+E\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+I\+M\+G)(G\+Lenum target}\label{class_c_p_v_r_tgles2_ext_aae4d9e793a85b863ae05aa4925818b46}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ac0e4abcfeeaaf1da925963d93e23a208}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+T\+E\+X\+T\+U\+R\+E2\+D\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+I\+M\+G)(G\+Lenum target}\label{class_c_p_v_r_tgles2_ext_ac0e4abcfeeaaf1da925963d93e23a208}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a30b0d1ac6df809ce53b9fc4727f64f67}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+R\+E\+N\+D\+E\+R\+B\+U\+F\+F\+E\+R\+S\+T\+O\+R\+A\+G\+E\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+E\+X\+T)(G\+Lenum target}\label{class_c_p_v_r_tgles2_ext_a30b0d1ac6df809ce53b9fc4727f64f67}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aa1002af68291ea507e96280ccf63bdf0}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+T\+E\+X\+T\+U\+R\+E2\+D\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+E\+X\+T)(G\+Lenum target}\label{class_c_p_v_r_tgles2_ext_aa1002af68291ea507e96280ccf63bdf0}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a7c81cff8538e282ba685a095662de50e}{typedef {\bfseries void} (G\+L\+\_\+\+A\+P\+I\+E\+N\+T\+R\+Y\+P P\+F\+N\+G\+L\+D\+R\+A\+W\+B\+U\+F\+F\+E\+R\+S\+E\+X\+T)(G\+Lsizei n}\label{class_c_p_v_r_tgles2_ext_a7c81cff8538e282ba685a095662de50e}
+
+\item 
+void \hyperlink{class_c_p_v_r_tgles2_ext_adabcad176552a14aba8e9a7267fe7267}{Load\+Extensions} ()
+\begin{DoxyCompactList}\small\item\em Initialises I\+M\+G extensions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_c_p_v_r_tgles2_ext_a7befd944f6be5d248ffbbd3b43d11f81}{Is\+G\+L\+Extension\+Supported} (const char $\ast$const extension)
+\begin{DoxyCompactList}\small\item\em Queries for support of an extension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a3bf590db69b6b5ab77a97c769a21bc4f}{P\+F\+N\+G\+L\+M\+U\+L\+T\+I\+D\+R\+A\+W\+E\+L\+E\+M\+E\+N\+T\+S {\bfseries gl\+Multi\+Draw\+Elements\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a3bf590db69b6b5ab77a97c769a21bc4f}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a8c060c88a4a4fa49486a0660b1a6b3fd}{P\+F\+N\+G\+L\+M\+U\+L\+T\+I\+D\+R\+A\+W\+A\+R\+R\+A\+Y\+S {\bfseries gl\+Multi\+Draw\+Arrays\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a8c060c88a4a4fa49486a0660b1a6b3fd}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a0dfc21fd3aa41b4355534027b0f0d3d8}{P\+F\+N\+G\+L\+M\+A\+P\+B\+U\+F\+F\+E\+R\+O\+E\+S {\bfseries gl\+Map\+Buffer\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_a0dfc21fd3aa41b4355534027b0f0d3d8}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a2a4c48a4136064c948d347214c2283ef}{P\+F\+N\+G\+L\+U\+N\+M\+A\+P\+B\+U\+F\+F\+E\+R\+O\+E\+S {\bfseries gl\+Unmap\+Buffer\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_a2a4c48a4136064c948d347214c2283ef}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a113f7d23842fb535ae809af4b61f859f}{P\+F\+N\+G\+L\+G\+E\+T\+B\+U\+F\+F\+E\+R\+P\+O\+I\+N\+T\+E\+R\+V\+O\+E\+S {\bfseries gl\+Get\+Buffer\+Pointerv\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_a113f7d23842fb535ae809af4b61f859f}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a555ad8a16b3d6043ecab4dfcb03d9731}{P\+F\+N\+G\+L\+D\+I\+S\+C\+A\+R\+D\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+E\+X\+T {\bfseries gl\+Discard\+Framebuffer\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a555ad8a16b3d6043ecab4dfcb03d9731}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_aa453f812e54c17067d12a8e4d4ff9bfa}{P\+F\+N\+G\+L\+G\+E\+N\+Q\+U\+E\+R\+I\+E\+S\+E\+X\+T {\bfseries gl\+Gen\+Queries\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_aa453f812e54c17067d12a8e4d4ff9bfa}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a53f2ebe11ffe86e5e303924f500fdf73}{P\+F\+N\+G\+L\+D\+E\+L\+E\+T\+E\+Q\+U\+E\+R\+I\+E\+S\+E\+X\+T {\bfseries gl\+Delete\+Queries\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a53f2ebe11ffe86e5e303924f500fdf73}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a82c9d5355d17ca3412efe8a085799faf}{P\+F\+N\+G\+L\+I\+S\+Q\+U\+E\+R\+Y\+E\+X\+T {\bfseries gl\+Is\+Query\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a82c9d5355d17ca3412efe8a085799faf}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a8b83eb3904f474dfa6fb5bf1bc6c4df8}{P\+F\+N\+G\+L\+B\+E\+G\+I\+N\+Q\+U\+E\+R\+Y\+E\+X\+T {\bfseries gl\+Begin\+Query\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a8b83eb3904f474dfa6fb5bf1bc6c4df8}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a3f7cd9da989941345f9162d155612eba}{P\+F\+N\+G\+L\+E\+N\+D\+Q\+U\+E\+R\+Y\+E\+X\+T {\bfseries gl\+End\+Query\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a3f7cd9da989941345f9162d155612eba}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_abd920ea8b6acb8dbbf2ecae263373f6d}{P\+F\+N\+G\+L\+G\+E\+T\+Q\+U\+E\+R\+Y\+I\+V\+E\+X\+T {\bfseries gl\+Get\+Queryiv\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_abd920ea8b6acb8dbbf2ecae263373f6d}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_abe1f321718b8c126b659e9d0881a29b5}{P\+F\+N\+G\+L\+G\+E\+T\+Q\+U\+E\+R\+Y\+O\+B\+J\+E\+C\+T\+U\+I\+V\+E\+X\+T {\bfseries gl\+Get\+Query\+Objectuiv\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_abe1f321718b8c126b659e9d0881a29b5}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ab74b17ef2e65c1d43862f63450c2f1ce}{P\+F\+N\+G\+L\+B\+I\+N\+D\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+O\+E\+S {\bfseries gl\+Bind\+Vertex\+Array\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_ab74b17ef2e65c1d43862f63450c2f1ce}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ab01fcdf9ac9cdd8452e04758ef2afe80}{P\+F\+N\+G\+L\+D\+E\+L\+E\+T\+E\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+S\+O\+E\+S {\bfseries gl\+Delete\+Vertex\+Arrays\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_ab01fcdf9ac9cdd8452e04758ef2afe80}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ad0138ed776309bf1ef52a5ceaed223bb}{P\+F\+N\+G\+L\+G\+E\+N\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+S\+O\+E\+S {\bfseries gl\+Gen\+Vertex\+Arrays\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_ad0138ed776309bf1ef52a5ceaed223bb}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_ae60d3666416d01ff496485b4e4562722}{P\+F\+N\+G\+L\+I\+S\+V\+E\+R\+T\+E\+X\+A\+R\+R\+A\+Y\+O\+E\+S {\bfseries gl\+Is\+Vertex\+Array\+O\+E\+S}}\label{class_c_p_v_r_tgles2_ext_ae60d3666416d01ff496485b4e4562722}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a83aedaff0b7b5e92c8dec3d8fc0b7e10}{P\+F\+N\+G\+L\+R\+E\+N\+D\+E\+R\+B\+U\+F\+F\+E\+R\+S\+T\+O\+R\+A\+G\+E\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+I\+M\+G {\bfseries gl\+Renderbuffer\+Storage\+Multisample\+I\+M\+G}}\label{class_c_p_v_r_tgles2_ext_a83aedaff0b7b5e92c8dec3d8fc0b7e10}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a5f5617e74c2d76e573ee8acf53e4e54f}{P\+F\+N\+G\+L\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+T\+E\+X\+T\+U\+R\+E2\+D\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+I\+M\+G {\bfseries gl\+Framebuffer\+Texture2\+D\+Multisample\+I\+M\+G}}\label{class_c_p_v_r_tgles2_ext_a5f5617e74c2d76e573ee8acf53e4e54f}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_af46cb63055f2a06943c45942d9a477f7}{P\+F\+N\+G\+L\+R\+E\+N\+D\+E\+R\+B\+U\+F\+F\+E\+R\+S\+T\+O\+R\+A\+G\+E\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+E\+X\+T {\bfseries gl\+Renderbuffer\+Storage\+Multisample\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_af46cb63055f2a06943c45942d9a477f7}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_a301f51e9da8fe91951b12275ceffbafd}{P\+F\+N\+G\+L\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+T\+E\+X\+T\+U\+R\+E2\+D\+M\+U\+L\+T\+I\+S\+A\+M\+P\+L\+E\+E\+X\+T {\bfseries gl\+Framebuffer\+Texture2\+D\+Multisample\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_a301f51e9da8fe91951b12275ceffbafd}
+
+\item 
+\hypertarget{class_c_p_v_r_tgles2_ext_abedc4e1076a2ebb01ef02cb8a3abb380}{P\+F\+N\+G\+L\+D\+R\+A\+W\+B\+U\+F\+F\+E\+R\+S\+E\+X\+T {\bfseries gl\+Draw\+Buffers\+E\+X\+T}}\label{class_c_p_v_r_tgles2_ext_abedc4e1076a2ebb01ef02cb8a3abb380}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for initialising and managing O\+G\+L\+E\+S2 extensions. 
+
+
+
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_tgles2_ext_a7befd944f6be5d248ffbbd3b43d11f81}{\index{C\+P\+V\+R\+Tgles2\+Ext@{C\+P\+V\+R\+Tgles2\+Ext}!Is\+G\+L\+Extension\+Supported@{Is\+G\+L\+Extension\+Supported}}
+\index{Is\+G\+L\+Extension\+Supported@{Is\+G\+L\+Extension\+Supported}!C\+P\+V\+R\+Tgles2\+Ext@{C\+P\+V\+R\+Tgles2\+Ext}}
+\subsubsection[{Is\+G\+L\+Extension\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+Tgles2\+Ext\+::\+Is\+G\+L\+Extension\+Supported (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_p_v_r_tgles2_ext_a7befd944f6be5d248ffbbd3b43d11f81}
+
+
+Queries for support of an extension. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em extension} & extension to query for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the extension is supported
+\end{DoxyReturn}
+
+
+  Is\+G\+L\+Extension\+Supported  extension extension to query for  True if the extension is supported  Queries for support of an extension 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_tgles2_ext_adabcad176552a14aba8e9a7267fe7267}{\index{C\+P\+V\+R\+Tgles2\+Ext@{C\+P\+V\+R\+Tgles2\+Ext}!Load\+Extensions@{Load\+Extensions}}
+\index{Load\+Extensions@{Load\+Extensions}!C\+P\+V\+R\+Tgles2\+Ext@{C\+P\+V\+R\+Tgles2\+Ext}}
+\subsubsection[{Load\+Extensions}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+Tgles2\+Ext\+::\+Load\+Extensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_tgles2_ext_adabcad176552a14aba8e9a7267fe7267}
+
+
+Initialises I\+M\+G extensions. 
+
+
+
+
+
+
+
+  Load\+Extensions  Initialises I\+M\+G extensions 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S2/\hyperlink{_p_v_r_tgles2_ext_8h}{P\+V\+R\+Tgles2\+Ext.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S2/P\+V\+R\+Tgles2\+Ext.\+cpp\end{DoxyCompactItemize}

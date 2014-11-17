@@ -1,0 +1,13 @@
+digraph "bullet/bullet-2.82-r2704/UnitTests/cppunit/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a102af177c3bb991114e13e75465de7c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="cppunit" fontname="Helvetica", fontsize="10", URL="dir_a102af177c3bb991114e13e75465de7c.html"]
+  subgraph clusterdir_1408d0d40231e8537ab72849b78f956a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_1408d0d40231e8537ab72849b78f956a.html"];
+    dir_1408d0d40231e8537ab72849b78f956a [shape=plaintext label="include"];
+    dir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c [shape=box label="cppunit" color="red" fillcolor="white" style="filled" URL="dir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c.html"];
+  }
+  }
+}

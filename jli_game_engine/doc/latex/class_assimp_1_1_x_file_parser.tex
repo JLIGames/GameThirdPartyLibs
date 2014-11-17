@@ -1,0 +1,257 @@
+\hypertarget{class_assimp_1_1_x_file_parser}{\section{Assimp\+:\+:X\+File\+Parser Class Reference}
+\label{class_assimp_1_1_x_file_parser}\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+}
+
+
+{\ttfamily \#include $<$X\+File\+Parser.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:X\+File\+Parser\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_x_file_parser_a03a765a3d539d6e6b0a1bc809286c7fd}{X\+File\+Parser} (const std\+::vector$<$ char $>$ \&p\+Buffer)
+\item 
+\hyperlink{class_assimp_1_1_x_file_parser_a0a07145253a79ee7dfaf866b1dba4e06}{$\sim$\+X\+File\+Parser} ()
+\item 
+\hyperlink{struct_assimp_1_1_x_file_1_1_scene}{X\+File\+::\+Scene} $\ast$ \hyperlink{class_assimp_1_1_x_file_parser_acba18a8080cd8a2f10d42025be5b18bf}{Get\+Imported\+Data} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ac4c4075d1083dd1b4f576642309ec8cd}{void {\bfseries Parse\+File} ()}\label{class_assimp_1_1_x_file_parser_ac4c4075d1083dd1b4f576642309ec8cd}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ae5395b12ef2d48b21fa86a34c73b6d8b}{void {\bfseries Parse\+Data\+Object\+Template} ()}\label{class_assimp_1_1_x_file_parser_ae5395b12ef2d48b21fa86a34c73b6d8b}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ad06b413a962ae72d5ae42e81c49f3a74}{void {\bfseries Parse\+Data\+Object\+Frame} (\hyperlink{struct_assimp_1_1_x_file_1_1_node}{X\+File\+::\+Node} $\ast$p\+Parent)}\label{class_assimp_1_1_x_file_parser_ad06b413a962ae72d5ae42e81c49f3a74}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a7dc0bf0e605b2b88bda3b3786fc02166}{void {\bfseries Parse\+Data\+Object\+Transformation\+Matrix} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \&p\+Matrix)}\label{class_assimp_1_1_x_file_parser_a7dc0bf0e605b2b88bda3b3786fc02166}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ab0f17ede2e1263b2aeaa3a6813ef0568}{void {\bfseries Parse\+Data\+Object\+Mesh} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_ab0f17ede2e1263b2aeaa3a6813ef0568}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a9b9effc75ee2ad690f9f70d68b14083f}{void {\bfseries Parse\+Data\+Object\+Skin\+Weights} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_a9b9effc75ee2ad690f9f70d68b14083f}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a1e12510bad39283b3235ecd3978203b5}{void {\bfseries Parse\+Data\+Object\+Skin\+Mesh\+Header} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_a1e12510bad39283b3235ecd3978203b5}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ac2fb5ccbf5bd64a4146532b1fca07cc6}{void {\bfseries Parse\+Data\+Object\+Mesh\+Normals} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_ac2fb5ccbf5bd64a4146532b1fca07cc6}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a57e209546902cd44347975952adf53bb}{void {\bfseries Parse\+Data\+Object\+Mesh\+Texture\+Coords} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_a57e209546902cd44347975952adf53bb}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ae3c5517db091abb595423e34cd56a57f}{void {\bfseries Parse\+Data\+Object\+Mesh\+Vertex\+Colors} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_ae3c5517db091abb595423e34cd56a57f}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_aba7d085746ba8fd3b6a8364396798865}{void {\bfseries Parse\+Data\+Object\+Mesh\+Material\+List} (\hyperlink{struct_assimp_1_1_x_file_1_1_mesh}{X\+File\+::\+Mesh} $\ast$p\+Mesh)}\label{class_assimp_1_1_x_file_parser_aba7d085746ba8fd3b6a8364396798865}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ad227c498d8aa95cb2b82db5b98b13478}{void {\bfseries Parse\+Data\+Object\+Material} (\hyperlink{struct_assimp_1_1_x_file_1_1_material}{X\+File\+::\+Material} $\ast$p\+Material)}\label{class_assimp_1_1_x_file_parser_ad227c498d8aa95cb2b82db5b98b13478}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ae0877e929feefef668e88c3adccfd759}{void {\bfseries Parse\+Data\+Object\+Anim\+Ticks\+Per\+Second} ()}\label{class_assimp_1_1_x_file_parser_ae0877e929feefef668e88c3adccfd759}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a75a8abb92551284e4bedb9eb58a2d592}{void {\bfseries Parse\+Data\+Object\+Animation\+Set} ()}\label{class_assimp_1_1_x_file_parser_a75a8abb92551284e4bedb9eb58a2d592}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_af28a873050a5f79ca6e225e55ea899d7}{void {\bfseries Parse\+Data\+Object\+Animation} (\hyperlink{struct_assimp_1_1_x_file_1_1_animation}{X\+File\+::\+Animation} $\ast$p\+Anim)}\label{class_assimp_1_1_x_file_parser_af28a873050a5f79ca6e225e55ea899d7}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a9b2fed53ffb870ec5cd91dd7f56d72c2}{void {\bfseries Parse\+Data\+Object\+Animation\+Key} (\hyperlink{struct_assimp_1_1_x_file_1_1_anim_bone}{X\+File\+::\+Anim\+Bone} $\ast$p\+Anim\+Bone)}\label{class_assimp_1_1_x_file_parser_a9b2fed53ffb870ec5cd91dd7f56d72c2}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a18e3cc486144b6e1deb90a8aaa772745}{void {\bfseries Parse\+Data\+Object\+Texture\+Filename} (std\+::string \&p\+Name)}\label{class_assimp_1_1_x_file_parser_a18e3cc486144b6e1deb90a8aaa772745}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_aaa54d94ead30f07364e872797569565c}{void {\bfseries Parse\+Unknown\+Data\+Object} ()}\label{class_assimp_1_1_x_file_parser_aaa54d94ead30f07364e872797569565c}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a58b0af77b15ab9ab62b6e57d15b55a21}{void \hyperlink{class_assimp_1_1_x_file_parser_a58b0af77b15ab9ab62b6e57d15b55a21}{Find\+Next\+None\+White\+Space} ()}\label{class_assimp_1_1_x_file_parser_a58b0af77b15ab9ab62b6e57d15b55a21}
+
+\begin{DoxyCompactList}\small\item\em places pointer to next begin of a token, and ignores comments \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_aaab454251408ef75977f461c8741b0d2}{std\+::string \hyperlink{class_assimp_1_1_x_file_parser_aaab454251408ef75977f461c8741b0d2}{Get\+Next\+Token} ()}\label{class_assimp_1_1_x_file_parser_aaab454251408ef75977f461c8741b0d2}
+
+\begin{DoxyCompactList}\small\item\em returns next parseable token. Returns empty string if no token there \end{DoxyCompactList}\item 
+void \hyperlink{class_assimp_1_1_x_file_parser_ae901575a3f000f9796a414662f445096}{read\+Head\+Of\+Data\+Object} (std\+::string $\ast$po\+Name=N\+U\+L\+L)
+\item 
+void \hyperlink{class_assimp_1_1_x_file_parser_a957bc3cc01a9b3b04501fe461fa3087d}{Check\+For\+Closing\+Brace} ()
+\begin{DoxyCompactList}\small\item\em checks for closing curly brace, throws exception if not there \end{DoxyCompactList}\item 
+void \hyperlink{class_assimp_1_1_x_file_parser_a60316a23efd584cde265a3413bd41037}{Check\+For\+Semicolon} ()
+\begin{DoxyCompactList}\small\item\em checks for one following semicolon, throws exception if not there \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_af950d3482dab28f117978297f9bc0355}{void \hyperlink{class_assimp_1_1_x_file_parser_af950d3482dab28f117978297f9bc0355}{Check\+For\+Separator} ()}\label{class_assimp_1_1_x_file_parser_af950d3482dab28f117978297f9bc0355}
+
+\begin{DoxyCompactList}\small\item\em checks for a separator char, either a ',' or a ';' \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a634d9c48723049989c9b2ede757a61a6}{void \hyperlink{class_assimp_1_1_x_file_parser_a634d9c48723049989c9b2ede757a61a6}{Test\+For\+Separator} ()}\label{class_assimp_1_1_x_file_parser_a634d9c48723049989c9b2ede757a61a6}
+
+\begin{DoxyCompactList}\small\item\em tests and possibly consumes a separator char, but does nothing if there was no separator \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a78ff0a8969af8e9ecc366fd1d4105f19}{void \hyperlink{class_assimp_1_1_x_file_parser_a78ff0a8969af8e9ecc366fd1d4105f19}{Get\+Next\+Token\+As\+String} (std\+::string \&po\+String)}\label{class_assimp_1_1_x_file_parser_a78ff0a8969af8e9ecc366fd1d4105f19}
+
+\begin{DoxyCompactList}\small\item\em reads a x file style string \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_aa302b7d6cc5661ee6f9cef70ff01addd}{void {\bfseries Read\+Until\+End\+Of\+Line} ()}\label{class_assimp_1_1_x_file_parser_aa302b7d6cc5661ee6f9cef70ff01addd}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_acdc08c5da9c41871497970ebe6364b52}{unsigned short {\bfseries Read\+Bin\+Word} ()}\label{class_assimp_1_1_x_file_parser_acdc08c5da9c41871497970ebe6364b52}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a8dffd7bf0a4604d5918030a1547cbdac}{unsigned int {\bfseries Read\+Bin\+D\+Word} ()}\label{class_assimp_1_1_x_file_parser_a8dffd7bf0a4604d5918030a1547cbdac}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a4f34a5dd7732e0fbd756fdaef444207c}{unsigned int {\bfseries Read\+Int} ()}\label{class_assimp_1_1_x_file_parser_a4f34a5dd7732e0fbd756fdaef444207c}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a26a4dfebb503f5c5280e5ae93425a501}{float {\bfseries Read\+Float} ()}\label{class_assimp_1_1_x_file_parser_a26a4dfebb503f5c5280e5ae93425a501}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a76badb4ae83d797e28adabce127f5930}{\hyperlink{structai_vector2_d}{ai\+Vector2\+D} {\bfseries Read\+Vector2} ()}\label{class_assimp_1_1_x_file_parser_a76badb4ae83d797e28adabce127f5930}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a9971e3d1d52a9a47cf608816a89e5e24}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries Read\+Vector3} ()}\label{class_assimp_1_1_x_file_parser_a9971e3d1d52a9a47cf608816a89e5e24}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_af2f32c4f0e23e5cb1ad21b61693e6289}{\hyperlink{structai_color3_d}{ai\+Color3\+D} {\bfseries Read\+R\+G\+B} ()}\label{class_assimp_1_1_x_file_parser_af2f32c4f0e23e5cb1ad21b61693e6289}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_af9a2c92313eba42de1a0c9d1efb7d5d3}{\hyperlink{structai_color4_d}{ai\+Color4\+D} {\bfseries Read\+R\+G\+B\+A} ()}\label{class_assimp_1_1_x_file_parser_af9a2c92313eba42de1a0c9d1efb7d5d3}
+
+\item 
+void \hyperlink{class_assimp_1_1_x_file_parser_abf8b740b46a44be3d724a57967d968b8}{Throw\+Exception} (const std\+::string \&p\+Text)
+\item 
+void \hyperlink{class_assimp_1_1_x_file_parser_a3a3c0d40f403a2c02e61aefa8844e189}{Filter\+Hierarchy} (\hyperlink{struct_assimp_1_1_x_file_1_1_node}{X\+File\+::\+Node} $\ast$p\+Node)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_aab42914d86845e7a88ea6767632ec7da}{unsigned int {\bfseries m\+Major\+Version}}\label{class_assimp_1_1_x_file_parser_aab42914d86845e7a88ea6767632ec7da}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a5528290c5d79e9b4a8988ecac83ed52e}{unsigned int \hyperlink{class_assimp_1_1_x_file_parser_a5528290c5d79e9b4a8988ecac83ed52e}{m\+Minor\+Version}}\label{class_assimp_1_1_x_file_parser_a5528290c5d79e9b4a8988ecac83ed52e}
+
+\begin{DoxyCompactList}\small\item\em version numbers \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a1f5fa376a323a3338d2158015d54ff95}{bool \hyperlink{class_assimp_1_1_x_file_parser_a1f5fa376a323a3338d2158015d54ff95}{m\+Is\+Binary\+Format}}\label{class_assimp_1_1_x_file_parser_a1f5fa376a323a3338d2158015d54ff95}
+
+\begin{DoxyCompactList}\small\item\em true if the file is in binary, false if it's in text form \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a8d4ff63cc7513620cce26bd6cca536e1}{unsigned int \hyperlink{class_assimp_1_1_x_file_parser_a8d4ff63cc7513620cce26bd6cca536e1}{m\+Binary\+Float\+Size}}\label{class_assimp_1_1_x_file_parser_a8d4ff63cc7513620cce26bd6cca536e1}
+
+\begin{DoxyCompactList}\small\item\em float size in bytes, either 4 or 8 \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_af587c90c49d084d760570be0bd97fdc5}{unsigned int {\bfseries m\+Binary\+Num\+Count}}\label{class_assimp_1_1_x_file_parser_af587c90c49d084d760570be0bd97fdc5}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_afda520b193185456b52e5816ab891e6a}{const char $\ast$ {\bfseries P}}\label{class_assimp_1_1_x_file_parser_afda520b193185456b52e5816ab891e6a}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a853f28bab67231fa3dbc6e1edf673230}{const char $\ast$ {\bfseries End}}\label{class_assimp_1_1_x_file_parser_a853f28bab67231fa3dbc6e1edf673230}
+
+\item 
+\hypertarget{class_assimp_1_1_x_file_parser_a633201b2fb3ce8cc3bc1e8224288ab8b}{unsigned int \hyperlink{class_assimp_1_1_x_file_parser_a633201b2fb3ce8cc3bc1e8224288ab8b}{m\+Line\+Number}}\label{class_assimp_1_1_x_file_parser_a633201b2fb3ce8cc3bc1e8224288ab8b}
+
+\begin{DoxyCompactList}\small\item\em Line number when reading in text format. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_x_file_parser_ac45207bc58a2cd10226c909f7ee16570}{\hyperlink{struct_assimp_1_1_x_file_1_1_scene}{X\+File\+::\+Scene} $\ast$ \hyperlink{class_assimp_1_1_x_file_parser_ac45207bc58a2cd10226c909f7ee16570}{m\+Scene}}\label{class_assimp_1_1_x_file_parser_ac45207bc58a2cd10226c909f7ee16570}
+
+\begin{DoxyCompactList}\small\item\em Imported data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_assimp_1_1_x_file_parser}{X\+File\+Parser} reads a X\+File either in text or binary form and builds a temporary data structure out of it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_x_file_parser_a03a765a3d539d6e6b0a1bc809286c7fd}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!X\+File\+Parser@{X\+File\+Parser}}
+\index{X\+File\+Parser@{X\+File\+Parser}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{X\+File\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}X\+File\+Parser\+::\+X\+File\+Parser (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ char $>$ \&}]{p\+Buffer}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_x_file_parser_a03a765a3d539d6e6b0a1bc809286c7fd}
+Constructor. Creates a data structure out of the X\+File given in the memory block. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer} & Null-\/terminated memory buffer containing the X\+File \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_parser_a0a07145253a79ee7dfaf866b1dba4e06}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!````~X\+File\+Parser@{$\sim$\+X\+File\+Parser}}
+\index{````~X\+File\+Parser@{$\sim$\+X\+File\+Parser}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{$\sim$\+X\+File\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}X\+File\+Parser\+::$\sim$\+X\+File\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_x_file_parser_a0a07145253a79ee7dfaf866b1dba4e06}
+Destructor. Destroys all imported data along with it 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_x_file_parser_a957bc3cc01a9b3b04501fe461fa3087d}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!Check\+For\+Closing\+Brace@{Check\+For\+Closing\+Brace}}
+\index{Check\+For\+Closing\+Brace@{Check\+For\+Closing\+Brace}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{Check\+For\+Closing\+Brace}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Parser\+::\+Check\+For\+Closing\+Brace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_parser_a957bc3cc01a9b3b04501fe461fa3087d}
+
+
+checks for closing curly brace, throws exception if not there 
+
+checks for closing curly brace \hypertarget{class_assimp_1_1_x_file_parser_a60316a23efd584cde265a3413bd41037}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!Check\+For\+Semicolon@{Check\+For\+Semicolon}}
+\index{Check\+For\+Semicolon@{Check\+For\+Semicolon}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{Check\+For\+Semicolon}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Parser\+::\+Check\+For\+Semicolon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_parser_a60316a23efd584cde265a3413bd41037}
+
+
+checks for one following semicolon, throws exception if not there 
+
+checks for one following semicolon \hypertarget{class_assimp_1_1_x_file_parser_a3a3c0d40f403a2c02e61aefa8844e189}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!Filter\+Hierarchy@{Filter\+Hierarchy}}
+\index{Filter\+Hierarchy@{Filter\+Hierarchy}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{Filter\+Hierarchy}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Parser\+::\+Filter\+Hierarchy (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+File\+::\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_parser_a3a3c0d40f403a2c02e61aefa8844e189}
+Filters the imported hierarchy for some degenerated cases that some exporters produce. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Data} & The sub-\/hierarchy to filter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_x_file_parser_acba18a8080cd8a2f10d42025be5b18bf}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!Get\+Imported\+Data@{Get\+Imported\+Data}}
+\index{Get\+Imported\+Data@{Get\+Imported\+Data}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{Get\+Imported\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+File\+::\+Scene}$\ast$ Assimp\+::\+X\+File\+Parser\+::\+Get\+Imported\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_x_file_parser_acba18a8080cd8a2f10d42025be5b18bf}
+Returns the temporary representation of the imported data 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_x_file_parser_ae901575a3f000f9796a414662f445096}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!read\+Head\+Of\+Data\+Object@{read\+Head\+Of\+Data\+Object}}
+\index{read\+Head\+Of\+Data\+Object@{read\+Head\+Of\+Data\+Object}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{read\+Head\+Of\+Data\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Parser\+::read\+Head\+Of\+Data\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::string $\ast$}]{po\+Name = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_parser_ae901575a3f000f9796a414662f445096}
+reads header of dataobject including the opening brace. returns false if error happened, and writes name of object if there is one \hypertarget{class_assimp_1_1_x_file_parser_abf8b740b46a44be3d724a57967d968b8}{\index{Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}!Throw\+Exception@{Throw\+Exception}}
+\index{Throw\+Exception@{Throw\+Exception}!Assimp\+::\+X\+File\+Parser@{Assimp\+::\+X\+File\+Parser}}
+\subsubsection[{Throw\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}void X\+File\+Parser\+::\+Throw\+Exception (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+Text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_x_file_parser_abf8b740b46a44be3d724a57967d968b8}
+Throws an exception with a line number and the given text. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/X\+File\+Parser.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/X\+File\+Parser.\+cpp\end{DoxyCompactItemize}

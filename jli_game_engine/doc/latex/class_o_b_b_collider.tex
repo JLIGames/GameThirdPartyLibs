@@ -1,0 +1,382 @@
+\hypertarget{class_o_b_b_collider}{\section{O\+B\+B\+Collider Class Reference}
+\label{class_o_b_b_collider}\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+}
+
+
+Inheritance diagram for O\+B\+B\+Collider\+:
+
+
+Collaboration diagram for O\+B\+B\+Collider\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_o_b_b_collider_aebdd293adf48509ccd61b4cb11cf5e6c}{O\+B\+B\+Collider} ()
+\item 
+virtual \hyperlink{class_o_b_b_collider_ae9de47fc270d02d90fa5304690797c40}{$\sim$\+O\+B\+B\+Collider} ()
+\item 
+bool \hyperlink{class_o_b_b_collider_a243f4dd2ddba99e708b1da21ff44f82a}{Collide} (\hyperlink{struct_o_b_b_cache}{O\+B\+B\+Cache} \&cache, const \hyperlink{class_o_b_b}{O\+B\+B} \&\hyperlink{structbox}{box}, const \hyperlink{class_model}{Model} \&model, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$worldb=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+inline\+\_\+ void \hyperlink{class_o_b_b_collider_a938d1253a6ec0db3adc98aac49cb0e00}{Set\+Full\+Box\+Box\+Test} (bool flag)
+\item 
+\hyperlink{class_o_b_b_collider_ad59ff02a25c37bfdf32aee68e614da70}{override} (\hyperlink{class_collider}{Collider}) const char $\ast$\hyperlink{class_collider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_o_b_b_collider_a7990bab5c0031bcb1f9ff91e0784fb89}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_collision_node}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a8a0b06aac794cf0beeaf2f4655319f2b}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a9b112aeac7f0ec4475a7257359c038d7}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_quantized_node}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a03ade2e5058bc111c4595a1bfc2001bb}{\+\_\+\+Collide} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a452f93a41ae9e7d0fa1b691cdf149841}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{class_a_a_b_b_collision_node}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a17db250fb7683f36dec64773d347a759}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{class_a_a_b_b_no_leaf_node}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a0914b34907f08b5e7861737e10de573c}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{class_a_a_b_b_quantized_node}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{class_o_b_b_collider_a2b02ebe38b171892c5b8372171b8a7bc}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{class_a_a_b_b_quantized_no_leaf_node}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_o_b_b_collider_a0f9acb8c2122ff46b420af36f7b625a5}{O\+B\+B\+Contains\+Box} (const \hyperlink{class_point}{Point} \&bc, const \hyperlink{class_point}{Point} \&be)
+\item 
+\hypertarget{class_o_b_b_collider_a63fbe7758467d8b29fdd3c6e8da22824}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_o_b_b_collider_a63fbe7758467d8b29fdd3c6e8da22824}{Box\+Box\+Overlap} (const \hyperlink{class_point}{Point} \&extents, const \hyperlink{class_point}{Point} \&center)}\label{class_o_b_b_collider_a63fbe7758467d8b29fdd3c6e8da22824}
+
+\begin{DoxyCompactList}\small\item\em A dedicated version when one box is constant. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_ac43f039d69c1aa61c26b1b7591e56412}{inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_o_b_b_collider_ac43f039d69c1aa61c26b1b7591e56412}{Tri\+Box\+Overlap} ()}\label{class_o_b_b_collider_ac43f039d69c1aa61c26b1b7591e56412}
+
+\begin{DoxyCompactList}\small\item\em A dedicated version where the box is constant. \end{DoxyCompactList}\item 
+\hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_o_b_b_collider_abf8598e360a0653cd51f4cfe18144bc0}{Init\+Query} (\hyperlink{struct_o_b_b_cache}{O\+B\+B\+Cache} \&cache, const \hyperlink{class_o_b_b}{O\+B\+B} \&\hyperlink{structbox}{box}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$worldb=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{class_matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_b_b_collider_a3f2a35512d607384b9d24cc3b937aa16}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_o_b_b_collider_a3f2a35512d607384b9d24cc3b937aa16}{m\+A\+R}}\label{class_o_b_b_collider_a3f2a35512d607384b9d24cc3b937aa16}
+
+\begin{DoxyCompactList}\small\item\em Absolute rotation matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_a43d821460eea05ea9e2dd86b5a5dcadf}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_o_b_b_collider_a43d821460eea05ea9e2dd86b5a5dcadf}{m\+R\+Model\+To\+Box}}\label{class_o_b_b_collider_a43d821460eea05ea9e2dd86b5a5dcadf}
+
+\begin{DoxyCompactList}\small\item\em Rotation from model space to obb space. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_a197766ce684173100fba6eaa7131e1a3}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_o_b_b_collider_a197766ce684173100fba6eaa7131e1a3}{m\+R\+Box\+To\+Model}}\label{class_o_b_b_collider_a197766ce684173100fba6eaa7131e1a3}
+
+\begin{DoxyCompactList}\small\item\em Rotation from obb space to model space. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_a5eb9ff0a018d75d717f193d390af58fc}{\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_collider_a5eb9ff0a018d75d717f193d390af58fc}{m\+T\+Model\+To\+Box}}\label{class_o_b_b_collider_a5eb9ff0a018d75d717f193d390af58fc}
+
+\begin{DoxyCompactList}\small\item\em Translation from model space to obb space. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_a0eb63cd1ff29e3fff66807c88f940162}{\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_collider_a0eb63cd1ff29e3fff66807c88f940162}{m\+T\+Box\+To\+Model}}\label{class_o_b_b_collider_a0eb63cd1ff29e3fff66807c88f940162}
+
+\begin{DoxyCompactList}\small\item\em Translation from obb space to model space. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_a85cf33fc7c9905f3eb92f50d8c5e85ee}{\hyperlink{class_point}{Point} {\bfseries m\+Box\+Extents}}\label{class_o_b_b_collider_a85cf33fc7c9905f3eb92f50d8c5e85ee}
+
+\item 
+\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_collider_ababfe89f659ab27311d469a5df6f0549}{m\+B0}
+\item 
+\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_collider_a465c36ae12538e771dd86148e2ce595d}{m\+B1}
+\item 
+\hypertarget{class_o_b_b_collider_a5b9422d324719a2d111012eb774d417a}{float {\bfseries m\+B\+Bx1}}\label{class_o_b_b_collider_a5b9422d324719a2d111012eb774d417a}
+
+\item 
+\hypertarget{class_o_b_b_collider_a99be976cae0cdb329ecbbc55b71a1708}{float {\bfseries m\+B\+By1}}\label{class_o_b_b_collider_a99be976cae0cdb329ecbbc55b71a1708}
+
+\item 
+\hypertarget{class_o_b_b_collider_acf538636f3f399f017abd44bef2bd40c}{float {\bfseries m\+B\+Bz1}}\label{class_o_b_b_collider_acf538636f3f399f017abd44bef2bd40c}
+
+\item 
+\hypertarget{class_o_b_b_collider_ab3bbbd2d415083919b4c5f346e19837d}{float {\bfseries m\+B\+B\+\_\+1}}\label{class_o_b_b_collider_ab3bbbd2d415083919b4c5f346e19837d}
+
+\item 
+\hypertarget{class_o_b_b_collider_a22da5eeed48b4cc2380972a959cb2abc}{float {\bfseries m\+B\+B\+\_\+2}}\label{class_o_b_b_collider_a22da5eeed48b4cc2380972a959cb2abc}
+
+\item 
+\hypertarget{class_o_b_b_collider_ab34c62840fc63a5c3d98714d6b460f19}{float {\bfseries m\+B\+B\+\_\+3}}\label{class_o_b_b_collider_ab34c62840fc63a5c3d98714d6b460f19}
+
+\item 
+\hypertarget{class_o_b_b_collider_a372957c5d34150815500851c2dde6e7c}{float {\bfseries m\+B\+B\+\_\+4}}\label{class_o_b_b_collider_a372957c5d34150815500851c2dde6e7c}
+
+\item 
+\hypertarget{class_o_b_b_collider_aae145764ee071112cd9bd7528c40a60d}{float {\bfseries m\+B\+B\+\_\+5}}\label{class_o_b_b_collider_aae145764ee071112cd9bd7528c40a60d}
+
+\item 
+\hypertarget{class_o_b_b_collider_ad60595833b8626f182a69536737c0a34}{float {\bfseries m\+B\+B\+\_\+6}}\label{class_o_b_b_collider_ad60595833b8626f182a69536737c0a34}
+
+\item 
+\hypertarget{class_o_b_b_collider_a5be6b9a63136d2a57162b0f61dd1abf2}{float {\bfseries m\+B\+B\+\_\+7}}\label{class_o_b_b_collider_a5be6b9a63136d2a57162b0f61dd1abf2}
+
+\item 
+\hypertarget{class_o_b_b_collider_a7cbb8b569756091d6a10c5774f561d86}{float {\bfseries m\+B\+B\+\_\+8}}\label{class_o_b_b_collider_a7cbb8b569756091d6a10c5774f561d86}
+
+\item 
+\hypertarget{class_o_b_b_collider_ad12058c42c9e2dc31f4cd8416b3bc963}{float {\bfseries m\+B\+B\+\_\+9}}\label{class_o_b_b_collider_ad12058c42c9e2dc31f4cd8416b3bc963}
+
+\item 
+\hypertarget{class_o_b_b_collider_a23dc8fecb5ba4c64bea47b218e0a9570}{\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_collider_a23dc8fecb5ba4c64bea47b218e0a9570}{m\+Leaf\+Verts} \mbox{[}3\mbox{]}}\label{class_o_b_b_collider_a23dc8fecb5ba4c64bea47b218e0a9570}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_triangle}{Triangle} vertices. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_collider_a7b07a8f74b083bc75d3fa798cd4ec9cd}{bool \hyperlink{class_o_b_b_collider_a7b07a8f74b083bc75d3fa798cd4ec9cd}{m\+Full\+Box\+Box\+Test}}\label{class_o_b_b_collider_a7b07a8f74b083bc75d3fa798cd4ec9cd}
+
+\begin{DoxyCompactList}\small\item\em Perform full B\+V-\/\+B\+V tests (true) or S\+A\+T-\/lite tests (false) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an O\+B\+B-\/vs-\/tree collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January, 1st, 2002 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_o_b_b_collider_aebdd293adf48509ccd61b4cb11cf5e6c}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{O\+B\+B\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}O\+B\+B\+Collider\+::\+O\+B\+B\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_b_b_collider_aebdd293adf48509ccd61b4cb11cf5e6c}
+Constructor. \hypertarget{class_o_b_b_collider_ae9de47fc270d02d90fa5304690797c40}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!````~O\+B\+B\+Collider@{$\sim$\+O\+B\+B\+Collider}}
+\index{````~O\+B\+B\+Collider@{$\sim$\+O\+B\+B\+Collider}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{$\sim$\+O\+B\+B\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}O\+B\+B\+Collider\+::$\sim$\+O\+B\+B\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_b_b_collider_ae9de47fc270d02d90fa5304690797c40}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_b_b_collider_a7990bab5c0031bcb1f9ff91e0784fb89}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a7990bab5c0031bcb1f9ff91e0784fb89}
+Recursive collision query for normal \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a8a0b06aac794cf0beeaf2f4655319f2b}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a8a0b06aac794cf0beeaf2f4655319f2b}
+Recursive collision query for no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a9b112aeac7f0ec4475a7257359c038d7}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a9b112aeac7f0ec4475a7257359c038d7}
+Recursive collision query for quantized \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a03ade2e5058bc111c4595a1bfc2001bb}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a03ade2e5058bc111c4595a1bfc2001bb}
+Recursive collision query for quantized no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a452f93a41ae9e7d0fa1b691cdf149841}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+No\+Primitive\+Test}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a452f93a41ae9e7d0fa1b691cdf149841}
+Recursive collision query for normal \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a17db250fb7683f36dec64773d347a759}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+No\+Primitive\+Test}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a17db250fb7683f36dec64773d347a759}
+Recursive collision query for no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a0914b34907f08b5e7861737e10de573c}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+No\+Primitive\+Test}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a0914b34907f08b5e7861737e10de573c}
+Recursive collision query for quantized \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a2b02ebe38b171892c5b8372171b8a7bc}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{\+\_\+\+Collide\+No\+Primitive\+Test}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a2b02ebe38b171892c5b8372171b8a7bc}
+Recursive collision query for quantized no-\/leaf \hyperlink{class_a_a_b_b}{A\+A\+B\+B} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_collider_a243f4dd2ddba99e708b1da21ff44f82a}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+B\+Cache} \&}]{cache, }
+\item[{const {\bf O\+B\+B} \&}]{box, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldb = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}}\label{class_o_b_b_collider_a243f4dd2ddba99e708b1da21ff44f82a}
+Generic collision query for generic O\+P\+C\+O\+D\+E models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{class_collider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()}
+\item with \hyperlink{class_volume_collider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives()}
+\item with \hyperlink{class_volume_collider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a box cache \\
+\hline
+{\em box} & \mbox{[}in\mbox{]} collision \hyperlink{class_o_b_b}{O\+B\+B} in local space \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em worldb} & \mbox{[}in\mbox{]} \hyperlink{class_o_b_b}{O\+B\+B}'s world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model's world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_o_b_b_collider_abf8598e360a0653cd51f4cfe18144bc0}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{Init\+Query}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} O\+B\+B\+Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+B\+Cache} \&}]{cache, }
+\item[{const {\bf O\+B\+B} \&}]{box, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldb = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_abf8598e360a0653cd51f4cfe18144bc0}
+Initializes a collision query \+:
+\begin{DoxyItemize}
+\item reset stats \& contact status
+\item setup matrices
+\item check temporal coherence
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a box cache \\
+\hline
+{\em box} & \mbox{[}in\mbox{]} obb in local space \\
+\hline
+{\em worldb} & \mbox{[}in\mbox{]} obb's world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model's world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E if we can return immediately 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+L\+E N\+O\+T S\+U\+P\+P\+O\+R\+T\+E\+D. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\hypertarget{class_o_b_b_collider_a0f9acb8c2122ff46b420af36f7b625a5}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!O\+B\+B\+Contains\+Box@{O\+B\+B\+Contains\+Box}}
+\index{O\+B\+B\+Contains\+Box@{O\+B\+B\+Contains\+Box}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{O\+B\+B\+Contains\+Box}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+O\+L} O\+B\+B\+Collider\+::\+O\+B\+B\+Contains\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{bc, }
+\item[{const {\bf Point} \&}]{be}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a0f9acb8c2122ff46b420af36f7b625a5}
+Checks the \hyperlink{class_o_b_b}{O\+B\+B} completely contains the box. In which case we can end the query sooner. 
+\begin{DoxyParams}{Parameters}
+{\em bc} & \mbox{[}in\mbox{]} box center \\
+\hline
+{\em be} & \mbox{[}in\mbox{]} box extents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \hyperlink{class_o_b_b}{O\+B\+B} contains the whole box 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_collider_ad59ff02a25c37bfdf32aee68e614da70}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!override@{override}}
+\index{override@{override}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{override}]{\setlength{\rightskip}{0pt plus 5cm}O\+B\+B\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_collider_ad59ff02a25c37bfdf32aee68e614da70}
+Validates current settings. You should call this method after all the settings and callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_collider_a938d1253a6ec0db3adc98aac49cb0e00}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!Set\+Full\+Box\+Box\+Test@{Set\+Full\+Box\+Box\+Test}}
+\index{Set\+Full\+Box\+Box\+Test@{Set\+Full\+Box\+Box\+Test}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{Set\+Full\+Box\+Box\+Test}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void O\+B\+B\+Collider\+::\+Set\+Full\+Box\+Box\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_o_b_b_collider_a938d1253a6ec0db3adc98aac49cb0e00}
+Settings\+: select between full box-\/box tests or \char`\"{}\+S\+A\+T-\/lite\char`\"{} tests (where Class I\+I\+I axes are discarded) 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true for full tests, false for coarse tests \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_o_b_b_collider_ababfe89f659ab27311d469a5df6f0549}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!m\+B0@{m\+B0}}
+\index{m\+B0@{m\+B0}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{m\+B0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} O\+B\+B\+Collider\+::m\+B0\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_ababfe89f659ab27311d469a5df6f0549}
+
+\begin{DoxyItemize}
+\item m\+T\+Model\+To\+Box + m\+Box\+Extents 
+\end{DoxyItemize}\hypertarget{class_o_b_b_collider_a465c36ae12538e771dd86148e2ce595d}{\index{O\+B\+B\+Collider@{O\+B\+B\+Collider}!m\+B1@{m\+B1}}
+\index{m\+B1@{m\+B1}!O\+B\+B\+Collider@{O\+B\+B\+Collider}}
+\subsubsection[{m\+B1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} O\+B\+B\+Collider\+::m\+B1\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_o_b_b_collider_a465c36ae12538e771dd86148e2ce595d}
+
+\begin{DoxyItemize}
+\item m\+T\+Model\+To\+Box -\/ m\+Box\+Extents 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___o_b_b_collider_8h}{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/O\+P\+C\+\_\+\+Box\+Box\+Overlap.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___o_b_b_collider_8cpp}{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/O\+P\+C\+\_\+\+Tri\+Box\+Overlap.\+h\end{DoxyCompactItemize}

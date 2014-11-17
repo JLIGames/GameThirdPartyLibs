@@ -1,0 +1,19 @@
+digraph "makerelease.sourceforge_web_synchro"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="makerelease.sourceforge\l_web_synchro",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="doxybuild.find_program",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedoxybuild.html#a6bdaf84386e33597ba4b372676c4f89f"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="makerelease.check_no\l_pending_commit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemakerelease.html#a1394b79b7c581a351a6636f44b7d3af3"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="makerelease.svn_commit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemakerelease.html#a07d7fbaca9a0c0f020a94cb517a726d5"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="makerelease.svn_check\l_if_tag_exist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemakerelease.html#a4a87c78ffb58124f7ca8fa04dbe098ae"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="makerelease.svn_remove_tag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemakerelease.html#aab18424bd00cfff0e43dc4d2be3c8941"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="makerelease.svn_tag\l_sandbox",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemakerelease.html#a83fb6289739248902a4582b3065596be"];
+}

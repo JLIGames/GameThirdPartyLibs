@@ -1,0 +1,9 @@
+digraph "Assimp::Ogre::OgreBinarySerializer::ImportMesh"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Ogre::OgreBinary\lSerializer::ImportMesh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::Ogre::OgreImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_ogre_1_1_ogre_importer.html#af87c48299e8d92cd87d424b6ef71795b",tooltip="BaseImporter override. "];
+}

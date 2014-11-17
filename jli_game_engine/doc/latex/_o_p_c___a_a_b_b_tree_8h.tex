@@ -1,0 +1,173 @@
+\hypertarget{_o_p_c___a_a_b_b_tree_8h}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.h File Reference}
+\label{_o_p_c___a_a_b_b_tree_8h}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}}
+}
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_a_a_b_b_tree_node}{A\+A\+B\+B\+Tree\+Node}
+\item 
+class \hyperlink{class_a_a_b_b_tree}{A\+A\+B\+B\+Tree}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_o_p_c___a_a_b_b_tree_8h_a4d90d919e35d5d494b484577b8b49987}{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}(base\+\_\+class, volume)
+\begin{DoxyCompactList}\small\item\em T\+O B\+E D\+O\+C\+U\+M\+E\+N\+T\+E\+D. \end{DoxyCompactList}\item 
+\hypertarget{_opcode_8h_ad65323b4e73c80a74194c51417866f7f}{\#define {\bfseries \+\_\+\+\_\+\+O\+P\+C\+\_\+\+A\+A\+B\+B\+T\+R\+E\+E\+\_\+\+H\+\_\+\+\_\+}}\label{_opcode_8h_ad65323b4e73c80a74194c51417866f7f}
+
+\item 
+\#define {\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}(base\+\_\+class, volume)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_o_p_c___a_a_b_b_tree_8h_ad4034477e54e04210620aee798382e10}{typedef void($\ast$ {\bfseries Culling\+Callback} )(\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+primitives, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$node\+\_\+primitives, \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} need\+\_\+clipping, void $\ast$user\+\_\+data)}\label{_o_p_c___a_a_b_b_tree_8h_ad4034477e54e04210620aee798382e10}
+
+\item 
+typedef bool($\ast$ \hyperlink{_o_p_c___a_a_b_b_tree_8h_ae6ec74ac6a40537f1fb0ddec8fd287cc}{Walking\+Callback} )(const \hyperlink{class_a_a_b_b_tree_node}{A\+A\+B\+B\+Tree\+Node} $\ast$current, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} depth, void $\ast$user\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for a versatile \hyperlink{class_a_a_b_b}{A\+A\+B\+B} tree.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_opcode_8h_a4d90d919e35d5d494b484577b8b49987}{\index{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}!O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}}
+\subsubsection[{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{volume}
+\end{DoxyParamCaption}
+)}}\label{_opcode_8h_a4d90d919e35d5d494b484577b8b49987}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                                                                                         
+      \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                                                                                  
+      \(\backslash\)
+                                    base\_class();                                                                       
+      \(\backslash\)
+                                    ~base\_class();                                                                      
+      \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                                                                               
+      \(\backslash\)
+        inline\_ \textcolor{keyword}{const} volume*       Get##volume()\textcolor{keyword}{   const   }\{ \textcolor{keywordflow}{return} &mBV;                          \}                   
+      \(\backslash\)
+        \textcolor{comment}{/* Clear the last bit */}                                                                                        
+      \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class*   GetPos()\textcolor{keyword}{        const   }\{ \textcolor{keywordflow}{return} (\textcolor{keyword}{const} base\_class*)(mPos&~1);  \}                   
+      \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class*   GetNeg()\textcolor{keyword}{        const   }\{ \textcolor{keyword}{const} base\_class* P = GetPos(); \textcolor{keywordflow}{return} P ? P+
+      1 : \hyperlink{_ice_types_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null};\}   \(\backslash\)
+                                                                                                                        
+      \(\backslash\)
+        \textcolor{comment}{/* We don't need to test both nodes since we can't have one without the other   */}                              
+      \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool}                IsLeaf()\textcolor{keyword}{        const   }\{ \textcolor{keywordflow}{return} !GetPos();                     \}                   
+      \(\backslash\)
+                                                                                                                        
+      \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                                                                                     
+      \(\backslash\)
+        inline\_ udword              GetNodeSize()\textcolor{keyword}{   const   }\{ \textcolor{keywordflow}{return} 
+      \hyperlink{_ice_memory_macros_8h_a3a81c4bd09b5d408b74a993d749de241}{SIZEOFOBJECT};                   \}                   \(\backslash\)
+        protected:                                                                                                      
+      \(\backslash\)
+        \textcolor{comment}{/* Tree-independent data */}                                                                                     
+      \(\backslash\)
+        \textcolor{comment}{/* Following data always belong to the BV-tree, regardless of what the tree actually contains.*/}                
+      \(\backslash\)
+        \textcolor{comment}{/* Whatever happens we need the two children and the enclosing volume.*/}                                        
+      \(\backslash\)
+                volume              mBV;        \textcolor{comment}{/* Global bounding-volume enclosing all the node-related
+       primitives */}  \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{\(\backslash\)}
+\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{                udword}                mPos;       \textcolor{comment}{/* "Positive" & "Negative" children */}
+\end{DoxyCode}
+\hypertarget{_o_p_c___a_a_b_b_tree_8h_a4d90d919e35d5d494b484577b8b49987}{\index{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}!O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}}
+\subsubsection[{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+T\+R\+E\+E(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{volume}
+\end{DoxyParamCaption}
+)}}\label{_o_p_c___a_a_b_b_tree_8h_a4d90d919e35d5d494b484577b8b49987}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                                                                                         
+      \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                                                                                  
+      \(\backslash\)
+                                    base\_class();                                                                       
+      \(\backslash\)
+                                    ~base\_class();                                                                      
+      \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                                                                               
+      \(\backslash\)
+        inline\_ \textcolor{keyword}{const} volume*       Get##volume()\textcolor{keyword}{   const   }\{ \textcolor{keywordflow}{return} &mBV;                          \}                   
+      \(\backslash\)
+        \textcolor{comment}{/* Clear the last bit */}                                                                                        
+      \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class*   GetPos()\textcolor{keyword}{        const   }\{ \textcolor{keywordflow}{return} (\textcolor{keyword}{const} base\_class*)(mPos&~1);  \}                   
+      \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class*   GetNeg()\textcolor{keyword}{        const   }\{ \textcolor{keywordflow}{return} (\textcolor{keyword}{const} base\_class*)(mNeg&~1);  \}                   
+      \(\backslash\)
+                                                                                                                        
+      \(\backslash\)
+\textcolor{comment}{/*      inline\_ bool                IsLeaf()        const   \{ return (!GetPos() && !GetNeg());  \}   */}                  
+      \(\backslash\)
+        \textcolor{comment}{/* We don't need to test both nodes since we can't have one without the other   */}                              
+      \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool}                IsLeaf()\textcolor{keyword}{        const   }\{ \textcolor{keywordflow}{return} !GetPos();                     \}                   
+      \(\backslash\)
+                                                                                                                        
+      \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                                                                                     
+      \(\backslash\)
+        inline\_ udword              GetNodeSize()\textcolor{keyword}{   const   }\{ \textcolor{keywordflow}{return} 
+      \hyperlink{_ice_memory_macros_8h_a3a81c4bd09b5d408b74a993d749de241}{SIZEOFOBJECT};                   \}                   \(\backslash\)
+        protected:                                                                                                      
+      \(\backslash\)
+        \textcolor{comment}{/* Tree-independent data */}                                                                                     
+      \(\backslash\)
+        \textcolor{comment}{/* Following data always belong to the BV-tree, regardless of what the tree actually contains.*/}                
+      \(\backslash\)
+        \textcolor{comment}{/* Whatever happens we need the two children and the enclosing volume.*/}                                        
+      \(\backslash\)
+                volume              mBV;        \textcolor{comment}{/* Global bounding-volume enclosing all the node-related
+       primitives */}  \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{\(\backslash\)}
+\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{                udword}                mPos;       \textcolor{comment}{/* "Positive" child */}                                                  
+      \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{\(\backslash\)}
+\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{                udword}                mNeg;       \textcolor{comment}{/* "Negative" child */}
+\end{DoxyCode}
+
+
+T\+O B\+E D\+O\+C\+U\+M\+E\+N\+T\+E\+D. 
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_o_p_c___a_a_b_b_tree_8h_ae6ec74ac6a40537f1fb0ddec8fd287cc}{\index{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}!Walking\+Callback@{Walking\+Callback}}
+\index{Walking\+Callback@{Walking\+Callback}!O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h@{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}}
+\subsubsection[{Walking\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ Walking\+Callback)(const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$current, {\bf udword} depth, void $\ast$user\+\_\+data)}}\label{_o_p_c___a_a_b_b_tree_8h_ae6ec74ac6a40537f1fb0ddec8fd287cc}
+User-\/callback, called for each node by the walking code. 
+\begin{DoxyParams}{Parameters}
+{\em current} & \mbox{[}in\mbox{]} current node \\
+\hline
+{\em depth} & \mbox{[}in\mbox{]} current node's depth \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true to recurse through children, else false to bypass them 
+\end{DoxyReturn}

@@ -1,0 +1,953 @@
+\hypertarget{class_assimp_1_1_m_d_l_importer}{\section{Assimp\+:\+:M\+D\+L\+Importer Class Reference}
+\label{class_assimp_1_1_m_d_l_importer}\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+}
+
+
+Class to load M\+D\+L files.  
+
+
+
+
+{\ttfamily \#include $<$M\+D\+L\+Loader.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:M\+D\+L\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:M\+D\+L\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_m_d_l_importer_a0d0c164cc792374e7dd888fa3b4ee96d}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$\hyperlink{class_assimp_1_1_m_d_l_importer_a5799905b6ba533b0f066684b859bc3d5}{p\+I\+O\+Handler}, bool check\+Sig) const 
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a0815608887ab4132a1bac328007c4572}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_m_d_l_importer_a1295d9d6840c9a563866bc3ac8acc22d}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_ab95ee90a0d1724dc4876383a782716e1}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$\hyperlink{class_assimp_1_1_m_d_l_importer_a7c9f90a45d7a42bfc37d53bd8d7452e8}{p\+Scene}, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$\hyperlink{class_assimp_1_1_m_d_l_importer_a5799905b6ba533b0f066684b859bc3d5}{p\+I\+O\+Handler})
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a600e7f165003c7f5b0314eb685a3d883}{Intern\+Read\+File\+\_\+\+Quake1} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a374daf0faf9619426f4da82e867cb6c5}{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a70b64e8b3295003cb86e7703ed23d9cb}{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a636725add7ee757368721d5359c1ba38}{Intern\+Read\+File\+\_\+\+H\+L2} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a02b131e58eb34cde491791fe32b9be3a}{Size\+Check} (const void $\ast$sz\+Pos)
+\item 
+\hypertarget{class_assimp_1_1_m_d_l_importer_a564286b6cddd58d819872e0ecedeb3ff}{void {\bfseries Size\+Check} (const void $\ast$sz\+Pos, const char $\ast$sz\+File, unsigned int i\+Line)}\label{class_assimp_1_1_m_d_l_importer_a564286b6cddd58d819872e0ecedeb3ff}
+
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a9e9ce1d177c90bbd95aa5c2a3e77ea77}{Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_header___m_d_l7}{M\+D\+L\+::\+Header\+\_\+\+M\+D\+L7} $\ast$pc\+Header)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a1bbf32ec8ccba826b752f946dad2af5d}{Validate\+Header\+\_\+\+Quake1} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_header}{M\+D\+L\+::\+Header} $\ast$pc\+Header)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_af8088e0602fc58ad5d93e0d7ea7ed45c}{Search\+Palette} (const unsigned char $\ast$$\ast$psz\+Color\+Map)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_ad89156b5a500b4644777f4e1fcc57ed5}{Free\+Palette} (const unsigned char $\ast$psz\+Color\+Map)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a32f9149f4377db833e7ab20a298b5c68}{Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3} (const unsigned char $\ast$sz\+Data)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a71308616f6db2964badc31e080ad2e86}{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4} (const unsigned char $\ast$sz\+Data, unsigned int i\+Type, unsigned int $\ast$pi\+Skip)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a195711d7628a49b0a884dd2c02cc6c04}{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5} (const unsigned char $\ast$sz\+Data, unsigned int i\+Type, unsigned int $\ast$pi\+Skip)
+\item 
+\hyperlink{structai_color4_d}{ai\+Color4\+D} \hyperlink{class_assimp_1_1_m_d_l_importer_af2a06afd91b03e01ecb8131e111bfc44}{Replace\+Texture\+With\+Color} (const \hyperlink{structai_texture}{ai\+Texture} $\ast$pc\+Texture)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a66c4c6fbbcb16fb75f3296fe1f8ae078}{Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a3a7ff38627af31051decd3256dee290b}{Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345} (\hyperlink{structai_vector3_d}{ai\+Vector3\+D} \&v\+Out, const \hyperlink{struct_assimp_1_1_m_d_l_1_1_tex_coord___m_d_l3}{M\+D\+L\+::\+Tex\+Coord\+\_\+\+M\+D\+L3} $\ast$pc\+Src, unsigned int i\+Index)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_aa5a73aacb5640857d879d43f63ab47c5}{Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a04c62f91a516fe535dfacb1131a69a59}{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const unsigned char $\ast$sz\+Current, const unsigned char $\ast$$\ast$sz\+Current\+Out, std\+::vector$<$ \hyperlink{classai_material}{ai\+Material} $\ast$ $>$ \&pc\+Mats)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a9e9208eb7dd643fca171ca31449c045c}{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const unsigned char $\ast$sz\+Current, const unsigned char $\ast$$\ast$sz\+Current\+Out, \hyperlink{classai_material}{ai\+Material} $\ast$pc\+Mat\+Out, unsigned int i\+Type, unsigned int i\+Width, unsigned int i\+Height)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_abd9b33a2990e6163af32399a45c7c426}{Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const unsigned char $\ast$sz\+Current, const unsigned char $\ast$$\ast$sz\+Current\+Out, unsigned int i\+Type, unsigned int i\+Width, unsigned int i\+Height)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a29d41f4f7bd504b858b430595a80b708}{Parse\+Texture\+Color\+Data} (const unsigned char $\ast$sz\+Data, unsigned int i\+Type, unsigned int $\ast$pi\+Skip, \hyperlink{structai_texture}{ai\+Texture} $\ast$pc\+New)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_aac1dc902d188115c06dce3201f16703e}{Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (\hyperlink{classai_material}{ai\+Material} $\ast$pc\+Mat1, \hyperlink{classai_material}{ai\+Material} $\ast$pc\+Mat2, \hyperlink{classai_material}{ai\+Material} $\ast$pc\+Mat\+Out)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a750cbde3e5094348149323f0320e9561}{Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (unsigned int i\+Trafo, const \hyperlink{struct_assimp_1_1_m_d_l_1_1_bone_transform___m_d_l7}{M\+D\+L\+::\+Bone\+Transform\+\_\+\+M\+D\+L7} $\ast$pc\+Bone\+Transforms, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7}{M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$apc\+Bones\+Out)
+\item 
+\hyperlink{struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7}{M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$ \hyperlink{class_assimp_1_1_m_d_l_importer_aef1df02215752af0884522db19ed180b}{Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a5a97cbdade369e6189edf26d715ef364}{Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_info___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&group\+Info, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_frame_info___m_d_l7}{Int\+Frame\+Info\+\_\+\+M\+D\+L7} \&frame, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_shared_data___m_d_l7}{M\+D\+L\+::\+Int\+Shared\+Data\+\_\+\+M\+D\+L7} \&shared)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_ab59d06605bc1d9be58849dfdd3a3a124}{Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (\hyperlink{struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7}{M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$apc\+Out\+Bones)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_aac2bc9c7bd6ab09ea4db7a08f67b8379}{Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7}{M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$apc\+Bones\+Out, \hyperlink{structai_node}{ai\+Node} $\ast$pc\+Parent, uint16\+\_\+t i\+Parent\+Index)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a422ec6cf770baff52fccccc1588f0238}{Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7}{M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$apc\+Bones\+Out)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_aac31e6714d5e76b9c60327997c6f5817}{Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} ()
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_acf97233c63ea11215c527603893ea985}{Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (\hyperlink{struct_assimp_1_1_m_d_l_1_1_int_shared_data___m_d_l7}{M\+D\+L\+::\+Int\+Shared\+Data\+\_\+\+M\+D\+L7} \&shared)
+\item 
+bool \hyperlink{class_assimp_1_1_m_d_l_importer_a52529265d0a93d200ad62a86d6c48c23}{Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_info___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&group\+Info, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_data___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&group\+Data, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_shared_data___m_d_l7}{M\+D\+L\+::\+Int\+Shared\+Data\+\_\+\+M\+D\+L7} \&shared, const unsigned char $\ast$sz\+Current, const unsigned char $\ast$$\ast$sz\+Current\+Out)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a56685b45106f4b483c1fb5fc5fce5ba7}{Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_info___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&group\+Info, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_data___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&group\+Data, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_split_group_data___m_d_l7}{M\+D\+L\+::\+Int\+Split\+Group\+Data\+\_\+\+M\+D\+L7} \&split\+Group\+Data)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_afeb395ac8c41c973cd8497a675e46659}{Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (const \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_info___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&group\+Info, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_data___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&group\+Data)
+\item 
+void \hyperlink{class_assimp_1_1_m_d_l_importer_a4a46ef5aef4bb7e4bae395023f409aa9}{Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7} (\hyperlink{struct_assimp_1_1_m_d_l_1_1_int_group_data___m_d_l7}{M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&group\+Data, \hyperlink{struct_assimp_1_1_m_d_l_1_1_int_split_group_data___m_d_l7}{M\+D\+L\+::\+Int\+Split\+Group\+Data\+\_\+\+M\+D\+L7} \&split\+Group\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_m_d_l_importer_a4c132778226da8c47fa3bc964c2cca73}{config\+Frame\+I\+D}
+\item 
+std\+::string \hyperlink{class_assimp_1_1_m_d_l_importer_ab551f430fb4e07102424d27ae788fbf7}{config\+Palette}
+\item 
+unsigned char $\ast$ \hyperlink{class_assimp_1_1_m_d_l_importer_ac33a21b57e203a8d12fa632460191f21}{m\+Buffer}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_m_d_l_importer_af4fd7e31090f7e9cebaf212af72ee801}{i\+G\+S\+File\+Version}
+\item 
+\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$ \hyperlink{class_assimp_1_1_m_d_l_importer_a5799905b6ba533b0f066684b859bc3d5}{p\+I\+O\+Handler}
+\item 
+\hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{class_assimp_1_1_m_d_l_importer_a7c9f90a45d7a42bfc37d53bd8d7452e8}{p\+Scene}
+\item 
+unsigned int \hyperlink{class_assimp_1_1_m_d_l_importer_a1690abad19b3d5cab5e9880b2fdcfa94}{i\+File\+Size}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to load M\+D\+L files. 
+
+Several subformats exist\+: 
+\begin{DoxyItemize}
+\item Quake I 
+\item 3\+D Game Studio M\+D\+L3, M\+D\+L4 
+\item 3\+D Game Studio M\+D\+L5 
+\item 3\+D Game Studio M\+D\+L7 
+\item Halflife 2 
+\end{DoxyItemize}These formats are partially identical and it would be possible to load them all with a single 1000-\/line function-\/beast. However, it has been split into several code paths to make the code easier to read and maintain. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_m_d_l_importer_a750cbde3e5094348149323f0320e9561}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Add\+Animation\+Bone\+Trafo\+Key\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i\+Trafo, }
+\item[{const {\bf M\+D\+L\+::\+Bone\+Transform\+\_\+\+M\+D\+L7} $\ast$}]{pc\+Bone\+Transforms, }
+\item[{{\bf M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$}]{apc\+Bones\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a750cbde3e5094348149323f0320e9561}
+Add a bone transformation key to an animation 
+\begin{DoxyParams}{Parameters}
+{\em i\+Trafo} & \hyperlink{struct_index}{Index} of the transformation (always==frame index?) No need to validate this index, it is always valid. \\
+\hline
+{\em pc\+Bone\+Transforms} & Bone transformation for this index \\
+\hline
+{\em apc\+Out\+Bones} & Output bones array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_aac2bc9c7bd6ab09ea4db7a08f67b8379}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Add\+Bones\+To\+Node\+Graph\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$}]{apc\+Bones\+Out, }
+\item[{{\bf ai\+Node} $\ast$}]{pc\+Parent, }
+\item[{uint16\+\_\+t}]{i\+Parent\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_aac2bc9c7bd6ab09ea4db7a08f67b8379}
+Add all bones to the nodegraph (as children of the root node) 
+\begin{DoxyParams}{Parameters}
+{\em apc\+Bones\+Out} & List of bones \\
+\hline
+{\em pc\+Parent} & Parent node. New nodes will be added to this node \\
+\hline
+{\em i\+Parent\+Index} & \hyperlink{struct_index}{Index} of the parent bone \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a422ec6cf770baff52fccccc1588f0238}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Build\+Output\+Anims\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$}]{apc\+Bones\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a422ec6cf770baff52fccccc1588f0238}
+Build output animations 
+\begin{DoxyParams}{Parameters}
+{\em apc\+Bones\+Out} & List of bones \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_ab59d06605bc1d9be58849dfdd3a3a124}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Calc\+Abs\+Bone\+Matrices\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$}]{apc\+Out\+Bones}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_ab59d06605bc1d9be58849dfdd3a3a124}
+Calculate absolute bone animation matrices for each bone 
+\begin{DoxyParams}{Parameters}
+{\em apc\+Out\+Bones} & Output bones array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a66c4c6fbbcb16fb75f3296fe1f8ae078}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5@{Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5}}
+\index{Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5@{Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Calculate\+U\+V\+Coordinates\+\_\+\+M\+D\+L5 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a66c4c6fbbcb16fb75f3296fe1f8ae078}
+Converts the absolute texture coordinates in M\+D\+L5 files to relative in a range between 0 and 1 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a0d0c164cc792374e7dd888fa3b4ee96d}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+D\+L\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d_l_importer_a0d0c164cc792374e7dd888fa3b4ee96d}
+Returns whether the class can handle the format of the given file. See \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Base\+Importer\+::\+Can\+Read()} for details. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_acf97233c63ea11215c527603893ea985}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Copy\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+D\+L\+::\+Int\+Shared\+Data\+\_\+\+M\+D\+L7} \&}]{shared}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_acf97233c63ea11215c527603893ea985}
+Copies only the material that are referenced by at least one mesh to the final output material list. All other materials will be discarded. 
+\begin{DoxyParams}{Parameters}
+{\em shared} & -\/$>$ doc of data structure \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a71308616f6db2964badc31e080ad2e86}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4@{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4}}
+\index{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4@{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L4 (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Data, }
+\item[{unsigned int}]{i\+Type, }
+\item[{unsigned int $\ast$}]{pi\+Skip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a71308616f6db2964badc31e080ad2e86}
+Used to load textures from M\+D\+L3/4 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Data} & Input data \\
+\hline
+{\em i\+Type} & Color data type \\
+\hline
+{\em pi\+Skip} & Receive\+: Size to skip, in bytes \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a195711d7628a49b0a884dd2c02cc6c04}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5@{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5}}
+\index{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5@{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Create\+Texture\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5 (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Data, }
+\item[{unsigned int}]{i\+Type, }
+\item[{unsigned int $\ast$}]{pi\+Skip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a195711d7628a49b0a884dd2c02cc6c04}
+Used to load textures from M\+D\+L5 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Data} & Input data \\
+\hline
+{\em i\+Type} & Color data type \\
+\hline
+{\em pi\+Skip} & Receive\+: Size to skip, in bytes \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a32f9149f4377db833e7ab20a298b5c68}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3@{Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3}}
+\index{Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3@{Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Create\+Texture\+A\+R\+G\+B8\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L3 (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a32f9149f4377db833e7ab20a298b5c68}
+Load a paletized texture from the file and convert it to 32bpp 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_ad89156b5a500b4644777f4e1fcc57ed5}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Free\+Palette@{Free\+Palette}}
+\index{Free\+Palette@{Free\+Palette}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Free\+Palette}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Free\+Palette (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{psz\+Color\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_ad89156b5a500b4644777f4e1fcc57ed5}
+Free a palette created with a previous call to \hyperlink{class_assimp_1_1_m_d_l_importer_af8088e0602fc58ad5d93e0d7ea7ed45c}{Search\+Palette()} 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a4a46ef5aef4bb7e4bae395023f409aa9}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Generate\+Output\+Meshes\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&}]{group\+Data, }
+\item[{{\bf M\+D\+L\+::\+Int\+Split\+Group\+Data\+\_\+\+M\+D\+L7} \&}]{split\+Group\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a4a46ef5aef4bb7e4bae395023f409aa9}
+Generate the final output meshes for a7 models 
+\begin{DoxyParams}{Parameters}
+{\em group\+Data} & -\/$>$ doc of data structure \\
+\hline
+{\em split\+Group\+Data} & -\/$>$ doc of data structure \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a1295d9d6840c9a563866bc3ac8acc22d}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ M\+D\+L\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d_l_importer_a1295d9d6840c9a563866bc3ac8acc22d}
+Return importer meta information. See \#\+Base\+Importer\+::\+Get\+Info for the details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_aac31e6714d5e76b9c60327997c6f5817}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Handle\+Material\+References\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_aac31e6714d5e76b9c60327997c6f5817}
+Handles materials that are just referencing another material There is no test file for this feature, but Conitec's doc say it is used. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a3a7ff38627af31051decd3256dee290b}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345@{Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345}}
+\index{Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345@{Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Import\+U\+V\+Coordinate\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345 (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Vector3\+D} \&}]{v\+Out, }
+\item[{const {\bf M\+D\+L\+::\+Tex\+Coord\+\_\+\+M\+D\+L3} $\ast$}]{pc\+Src, }
+\item[{unsigned int}]{i\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a3a7ff38627af31051decd3256dee290b}
+Read an U\+V coordinate from the file. If the file format is not M\+D\+L5, the function calculates relative texture coordinates 
+\begin{DoxyParams}{Parameters}
+{\em v\+Out} & Receives the output U\+V coord \\
+\hline
+{\em pc\+Src} & U\+V coordinate buffer \\
+\hline
+{\em U\+V} & coordinate index \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_ab95ee90a0d1724dc4876383a782716e1}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d_l_importer_ab95ee90a0d1724dc4876383a782716e1}
+Imports the given file into the given scene structure. See \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Base\+Importer\+::\+Intern\+Read\+File()} for details 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a374daf0faf9619426f4da82e867cb6c5}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345@{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345}}
+\index{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345@{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L345 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a374daf0faf9619426f4da82e867cb6c5}
+Import a Game\+Studio A4/\+A5 file (M\+D\+L 3,4,5) 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a70b64e8b3295003cb86e7703ed23d9cb}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Intern\+Read\+File\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a70b64e8b3295003cb86e7703ed23d9cb}
+Import a Game\+Studio A7 file (M\+D\+L 7) 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a636725add7ee757368721d5359c1ba38}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Intern\+Read\+File\+\_\+\+H\+L2@{Intern\+Read\+File\+\_\+\+H\+L2}}
+\index{Intern\+Read\+File\+\_\+\+H\+L2@{Intern\+Read\+File\+\_\+\+H\+L2}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Intern\+Read\+File\+\_\+\+H\+L2}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Intern\+Read\+File\+\_\+\+H\+L2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a636725add7ee757368721d5359c1ba38}
+Import a C\+S\+:S/\+H\+L2 M\+D\+L file (not fully implemented) 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a600e7f165003c7f5b0314eb685a3d883}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Intern\+Read\+File\+\_\+\+Quake1@{Intern\+Read\+File\+\_\+\+Quake1}}
+\index{Intern\+Read\+File\+\_\+\+Quake1@{Intern\+Read\+File\+\_\+\+Quake1}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Intern\+Read\+File\+\_\+\+Quake1}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Intern\+Read\+File\+\_\+\+Quake1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a600e7f165003c7f5b0314eb685a3d883}
+Import a quake 1 M\+D\+L file (I\+D\+P\+O) 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_aac1dc902d188115c06dce3201f16703e}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Join\+Skins\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Material} $\ast$}]{pc\+Mat1, }
+\item[{{\bf ai\+Material} $\ast$}]{pc\+Mat2, }
+\item[{{\bf ai\+Material} $\ast$}]{pc\+Mat\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_aac1dc902d188115c06dce3201f16703e}
+Join two materials / skins. Setup U\+V source ... etc 
+\begin{DoxyParams}{Parameters}
+{\em pc\+Mat1} & First input material \\
+\hline
+{\em pc\+Mat2} & Second input material \\
+\hline
+{\em pc\+Mat\+Out} & Output material instance to be filled. Must be empty \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_aef1df02215752af0884522db19ed180b}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+D\+L\+::\+Int\+Bone\+\_\+\+M\+D\+L7} $\ast$$\ast$ M\+D\+L\+Importer\+::\+Load\+Bones\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_aef1df02215752af0884522db19ed180b}
+Load the bone list of a M\+D\+L7 file \begin{DoxyReturn}{Returns}
+If the bones could be loaded successfully, a valid array containing pointers to a temporary bone representation. N\+U\+L\+L if the bones could not be loaded. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a5a97cbdade369e6189edf26d715ef364}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Parse\+Bone\+Trafo\+Keys\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&}]{group\+Info, }
+\item[{{\bf Int\+Frame\+Info\+\_\+\+M\+D\+L7} \&}]{frame, }
+\item[{{\bf M\+D\+L\+::\+Int\+Shared\+Data\+\_\+\+M\+D\+L7} \&}]{shared}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a5a97cbdade369e6189edf26d715ef364}
+Load bone transformation keyframes from a file chunk 
+\begin{DoxyParams}{Parameters}
+{\em group\+Info} & -\/$>$ doc of data structure \\
+\hline
+{\em frame} & -\/$>$ doc of data structure \\
+\hline
+{\em shared} & -\/$>$ doc of data structure \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a04c62f91a516fe535dfacb1131a69a59}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Current, }
+\item[{const unsigned char $\ast$$\ast$}]{sz\+Current\+Out, }
+\item[{std\+::vector$<$ {\bf ai\+Material} $\ast$ $>$ \&}]{pc\+Mats}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a04c62f91a516fe535dfacb1131a69a59}
+\hyperlink{struct_parse}{Parse} a skin lump in a M\+D\+L7/\+H\+M\+P7 file with all of its features variant 1\+: Current cursor position is the beginning of the skin header 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Current} & Current data pointer \\
+\hline
+{\em sz\+Current\+Out} & Output data pointer \\
+\hline
+{\em pc\+Mats} & Material list for this group. To be filled ... \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a9e9208eb7dd643fca171ca31449c045c}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Parse\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Current, }
+\item[{const unsigned char $\ast$$\ast$}]{sz\+Current\+Out, }
+\item[{{\bf ai\+Material} $\ast$}]{pc\+Mat\+Out, }
+\item[{unsigned int}]{i\+Type, }
+\item[{unsigned int}]{i\+Width, }
+\item[{unsigned int}]{i\+Height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a9e9208eb7dd643fca171ca31449c045c}
+\hyperlink{struct_parse}{Parse} a skin lump in a M\+D\+L7/\+H\+M\+P7 file with all of its features variant 2\+: Current cursor position is the beginning of the skin data 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Current} & Current data pointer \\
+\hline
+{\em sz\+Current\+Out} & Output data pointer \\
+\hline
+{\em pc\+Mat\+Out} & Output material \\
+\hline
+{\em i\+Type} & header.\+typ \\
+\hline
+{\em i\+Width} & header.\+width \\
+\hline
+{\em i\+Height} & header.\+height \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a29d41f4f7bd504b858b430595a80b708}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Parse\+Texture\+Color\+Data@{Parse\+Texture\+Color\+Data}}
+\index{Parse\+Texture\+Color\+Data@{Parse\+Texture\+Color\+Data}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Parse\+Texture\+Color\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Parse\+Texture\+Color\+Data (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Data, }
+\item[{unsigned int}]{i\+Type, }
+\item[{unsigned int $\ast$}]{pi\+Skip, }
+\item[{{\bf ai\+Texture} $\ast$}]{pc\+New}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a29d41f4f7bd504b858b430595a80b708}
+\hyperlink{struct_parse}{Parse} texture color data for M\+D\+L5, M\+D\+L6 and M\+D\+L7 formats 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Data} & Current data pointer \\
+\hline
+{\em i\+Type} & type of the texture data. No D\+D\+S or external \\
+\hline
+{\em pi\+Skip} & Receive the number of bytes to skip \\
+\hline
+{\em pc\+New} & Must point to fully initialized data. Width and height must be set. If pc\+New-\/$>$pc\+Data is set to U\+I\+N\+T\+\_\+\+M\+A\+X, pi\+Skip will receive the size of the texture, in bytes, but no color data will be read. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a52529265d0a93d200ad62a86d6c48c23}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+D\+L\+Importer\+::\+Process\+Frames\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&}]{group\+Info, }
+\item[{{\bf M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&}]{group\+Data, }
+\item[{{\bf M\+D\+L\+::\+Int\+Shared\+Data\+\_\+\+M\+D\+L7} \&}]{shared, }
+\item[{const unsigned char $\ast$}]{sz\+Current, }
+\item[{const unsigned char $\ast$$\ast$}]{sz\+Current\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a52529265d0a93d200ad62a86d6c48c23}
+Process the frame section at the end of a group 
+\begin{DoxyParams}{Parameters}
+{\em group\+Info} & -\/$>$ doc of data structure \\
+\hline
+{\em shared} & -\/$>$ doc of data structure \\
+\hline
+{\em sz\+Current} & Pointer to the start of the frame section \\
+\hline
+{\em sz\+Current\+Out} & Receives a pointer to the first byte of the next data section. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false to read no further groups (a small workaround for some tiny and unsolved problems ... ) 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_afeb395ac8c41c973cd8497a675e46659}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Read\+Faces\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&}]{group\+Info, }
+\item[{{\bf M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&}]{group\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_afeb395ac8c41c973cd8497a675e46659}
+Read all faces and vertices from a M\+D\+L7 group. The function fills preallocated memory buffers. 
+\begin{DoxyParams}{Parameters}
+{\em group\+Info} & -\/$>$ doc of data structure \\
+\hline
+{\em group\+Data} & -\/$>$ doc of data structure \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_af2a06afd91b03e01ecb8131e111bfc44}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Replace\+Texture\+With\+Color@{Replace\+Texture\+With\+Color}}
+\index{Replace\+Texture\+With\+Color@{Replace\+Texture\+With\+Color}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Replace\+Texture\+With\+Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Color4\+D} M\+D\+L\+Importer\+::\+Replace\+Texture\+With\+Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\+Texture} $\ast$}]{pc\+Texture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_af2a06afd91b03e01ecb8131e111bfc44}
+Checks whether a texture can be replaced with a single color This is useful for all file formats before M\+D\+L7 (all those that are not containing material colors separate from textures). M\+E\+D seems to write dummy 8x8 monochrome images instead. 
+\begin{DoxyParams}{Parameters}
+{\em pc\+Texture} & Input texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ai\+Color.\+r is set to qnan if the function fails and no color can be found. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_af8088e0602fc58ad5d93e0d7ea7ed45c}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Search\+Palette@{Search\+Palette}}
+\index{Search\+Palette@{Search\+Palette}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Search\+Palette}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Search\+Palette (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$$\ast$}]{psz\+Color\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_af8088e0602fc58ad5d93e0d7ea7ed45c}
+Try to load a palette from the current directory (colormap.\+lmp) If it is not found the default palette of Quake1 is returned 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_aa5a73aacb5640857d879d43f63ab47c5}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1@{Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1}}
+\index{Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1@{Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Setup\+Material\+Properties\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L5\+\_\+\+Quake1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_aa5a73aacb5640857d879d43f63ab47c5}
+Setup the material properties for Quake and M\+D\+L$<$7 models. These formats don't support more than one material per mesh, therefore the method processes only O\+N\+E skin and removes all others. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a0815608887ab4132a1bac328007c4572}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_m_d_l_importer_a0815608887ab4132a1bac328007c4572}
+Called prior to \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File()}. The function is a request to the importer to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a02b131e58eb34cde491791fe32b9be3a}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Size\+Check@{Size\+Check}}
+\index{Size\+Check@{Size\+Check}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Size\+Check}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Size\+Check (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{sz\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a02b131e58eb34cde491791fe32b9be3a}
+Check whether a given position is inside the valid range Throw a \hyperlink{class_deadly_import_error}{Deadly\+Import\+Error} if it is not 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Pos} & Cursor position \\
+\hline
+{\em sz\+File} & Name of the source file from which the function was called \\
+\hline
+{\em i\+Line} & Source code line from which the function was called \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_abd9b33a2990e6163af32399a45c7c426}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Skip\+Skin\+Lump\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{sz\+Current, }
+\item[{const unsigned char $\ast$$\ast$}]{sz\+Current\+Out, }
+\item[{unsigned int}]{i\+Type, }
+\item[{unsigned int}]{i\+Width, }
+\item[{unsigned int}]{i\+Height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_abd9b33a2990e6163af32399a45c7c426}
+Skip a skin lump in a M\+D\+L7/\+H\+M\+P7 file 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Current} & Current data pointer \\
+\hline
+{\em sz\+Current\+Out} & Output data pointer. Points to the byte just behind the last byte of the skin. \\
+\hline
+{\em i\+Type} & header.\+typ \\
+\hline
+{\em i\+Width} & header.\+width \\
+\hline
+{\em i\+Height} & header.\+height \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a56685b45106f4b483c1fb5fc5fce5ba7}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Sort\+By\+Materials\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Int\+Group\+Info\+\_\+\+M\+D\+L7} \&}]{group\+Info, }
+\item[{{\bf M\+D\+L\+::\+Int\+Group\+Data\+\_\+\+M\+D\+L7} \&}]{group\+Data, }
+\item[{{\bf M\+D\+L\+::\+Int\+Split\+Group\+Data\+\_\+\+M\+D\+L7} \&}]{split\+Group\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a56685b45106f4b483c1fb5fc5fce5ba7}
+Sort all faces by their materials. If the mesh is using multiple materials per face (that are blended together) the function might create new materials. 
+\begin{DoxyParams}{Parameters}
+{\em group\+Info} & -\/$>$ doc of data structure \\
+\hline
+{\em group\+Data} & -\/$>$ doc of data structure \\
+\hline
+{\em split\+Group\+Data} & -\/$>$ doc of data structure \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a9e9ce1d177c90bbd95aa5c2a3e77ea77}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}}
+\index{Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7@{Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Validate\+Header\+\_\+3\+D\+G\+S\+\_\+\+M\+D\+L7 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Header\+\_\+\+M\+D\+L7} $\ast$}]{pc\+Header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a9e9ce1d177c90bbd95aa5c2a3e77ea77}
+Validate the header data structure of a game studio M\+D\+L7 file 
+\begin{DoxyParams}{Parameters}
+{\em pc\+Header} & Input header to be validated \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_m_d_l_importer_a1bbf32ec8ccba826b752f946dad2af5d}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!Validate\+Header\+\_\+\+Quake1@{Validate\+Header\+\_\+\+Quake1}}
+\index{Validate\+Header\+\_\+\+Quake1@{Validate\+Header\+\_\+\+Quake1}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{Validate\+Header\+\_\+\+Quake1}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D\+L\+Importer\+::\+Validate\+Header\+\_\+\+Quake1 (
+\begin{DoxyParamCaption}
+\item[{const {\bf M\+D\+L\+::\+Header} $\ast$}]{pc\+Header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a1bbf32ec8ccba826b752f946dad2af5d}
+Validate the header data structure of a Quake 1 model 
+\begin{DoxyParams}{Parameters}
+{\em pc\+Header} & Input header to be validated \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_m_d_l_importer_a4c132778226da8c47fa3bc964c2cca73}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!config\+Frame\+I\+D@{config\+Frame\+I\+D}}
+\index{config\+Frame\+I\+D@{config\+Frame\+I\+D}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{config\+Frame\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+M\+D\+L\+Importer\+::config\+Frame\+I\+D\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a4c132778226da8c47fa3bc964c2cca73}
+Configuration option\+: frame to be loaded \hypertarget{class_assimp_1_1_m_d_l_importer_ab551f430fb4e07102424d27ae788fbf7}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!config\+Palette@{config\+Palette}}
+\index{config\+Palette@{config\+Palette}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{config\+Palette}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+M\+D\+L\+Importer\+::config\+Palette\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_ab551f430fb4e07102424d27ae788fbf7}
+Configuration option\+: palette to be used to decode palletized images \hypertarget{class_assimp_1_1_m_d_l_importer_a1690abad19b3d5cab5e9880b2fdcfa94}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!i\+File\+Size@{i\+File\+Size}}
+\index{i\+File\+Size@{i\+File\+Size}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{i\+File\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+M\+D\+L\+Importer\+::i\+File\+Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a1690abad19b3d5cab5e9880b2fdcfa94}
+Size of the input file in bytes \hypertarget{class_assimp_1_1_m_d_l_importer_af4fd7e31090f7e9cebaf212af72ee801}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!i\+G\+S\+File\+Version@{i\+G\+S\+File\+Version}}
+\index{i\+G\+S\+File\+Version@{i\+G\+S\+File\+Version}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{i\+G\+S\+File\+Version}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+::\+M\+D\+L\+Importer\+::i\+G\+S\+File\+Version\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_af4fd7e31090f7e9cebaf212af72ee801}
+For Game\+Studio M\+D\+L files\+: The number in the magic word, either 3,4 or 5 (M\+D\+L7 doesn't need this, the format has a separate loader) \hypertarget{class_assimp_1_1_m_d_l_importer_ac33a21b57e203a8d12fa632460191f21}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!m\+Buffer@{m\+Buffer}}
+\index{m\+Buffer@{m\+Buffer}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{m\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Assimp\+::\+M\+D\+L\+Importer\+::m\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_ac33a21b57e203a8d12fa632460191f21}
+Buffer to hold the loaded file \hypertarget{class_assimp_1_1_m_d_l_importer_a5799905b6ba533b0f066684b859bc3d5}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!p\+I\+O\+Handler@{p\+I\+O\+Handler}}
+\index{p\+I\+O\+Handler@{p\+I\+O\+Handler}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{p\+I\+O\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+O\+System}$\ast$ Assimp\+::\+M\+D\+L\+Importer\+::p\+I\+O\+Handler\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a5799905b6ba533b0f066684b859bc3d5}
+Output I/\+O handler. used to load external lmp files \hypertarget{class_assimp_1_1_m_d_l_importer_a7c9f90a45d7a42bfc37d53bd8d7452e8}{\index{Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}!p\+Scene@{p\+Scene}}
+\index{p\+Scene@{p\+Scene}!Assimp\+::\+M\+D\+L\+Importer@{Assimp\+::\+M\+D\+L\+Importer}}
+\subsubsection[{p\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Scene}$\ast$ Assimp\+::\+M\+D\+L\+Importer\+::p\+Scene\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_m_d_l_importer_a7c9f90a45d7a42bfc37d53bd8d7452e8}
+Output scene to be filled 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_m_d_l_loader_8h}{M\+D\+L\+Loader.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_m_d_l_loader_8cpp}{M\+D\+L\+Loader.\+cpp}\item 
+assimp/assimp-\/3.\+1.\+1/code/M\+D\+L\+Material\+Loader.\+cpp\end{DoxyCompactItemize}

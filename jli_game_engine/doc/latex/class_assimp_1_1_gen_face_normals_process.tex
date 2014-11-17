@@ -1,0 +1,73 @@
+\hypertarget{class_assimp_1_1_gen_face_normals_process}{\section{Assimp\+:\+:Gen\+Face\+Normals\+Process Class Reference}
+\label{class_assimp_1_1_gen_face_normals_process}\index{Assimp\+::\+Gen\+Face\+Normals\+Process@{Assimp\+::\+Gen\+Face\+Normals\+Process}}
+}
+
+
+{\ttfamily \#include $<$Gen\+Face\+Normals\+Process.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Gen\+Face\+Normals\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Gen\+Face\+Normals\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_gen_face_normals_process_a606f7e642574e2e266d1b6cc41392287}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_gen_face_normals_process_a13bd798170faeab9674bfbb48135b97d}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_assimp_1_1_gen_face_normals_process}{Gen\+Face\+Normals\+Process} computes face normals for all faces of all meshes 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_gen_face_normals_process_a13bd798170faeab9674bfbb48135b97d}{\index{Assimp\+::\+Gen\+Face\+Normals\+Process@{Assimp\+::\+Gen\+Face\+Normals\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Gen\+Face\+Normals\+Process@{Assimp\+::\+Gen\+Face\+Normals\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Gen\+Face\+Normals\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_gen_face_normals_process_a13bd798170faeab9674bfbb48135b97d}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_gen_face_normals_process_a606f7e642574e2e266d1b6cc41392287}{\index{Assimp\+::\+Gen\+Face\+Normals\+Process@{Assimp\+::\+Gen\+Face\+Normals\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Gen\+Face\+Normals\+Process@{Assimp\+::\+Gen\+Face\+Normals\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Gen\+Face\+Normals\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_gen_face_normals_process_a606f7e642574e2e266d1b6cc41392287}
+Returns whether the processing step is present in the given flag field. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Gen\+Face\+Normals\+Process.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Gen\+Face\+Normals\+Process.\+cpp\end{DoxyCompactItemize}

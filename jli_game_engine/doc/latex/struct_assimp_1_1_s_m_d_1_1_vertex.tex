@@ -1,0 +1,42 @@
+\hypertarget{struct_assimp_1_1_s_m_d_1_1_vertex}{\section{Assimp\+:\+:S\+M\+D\+:\+:Vertex Struct Reference}
+\label{struct_assimp_1_1_s_m_d_1_1_vertex}\index{Assimp\+::\+S\+M\+D\+::\+Vertex@{Assimp\+::\+S\+M\+D\+::\+Vertex}}
+}
+
+
+{\ttfamily \#include $<$S\+M\+D\+Loader.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:S\+M\+D\+:\+:Vertex\+:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_s_m_d_1_1_vertex_a321842c641f37427c87cedc7a7e0f712}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} \hyperlink{struct_assimp_1_1_s_m_d_1_1_vertex_a321842c641f37427c87cedc7a7e0f712}{pos}}\label{struct_assimp_1_1_s_m_d_1_1_vertex_a321842c641f37427c87cedc7a7e0f712}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_assimp_1_1_s_m_d_1_1_vertex}{Vertex} position, normal and texture coordinate. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_s_m_d_1_1_vertex_ac5d0d909358e8a5c5c3cb765a2abf655}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries nor}}\label{struct_assimp_1_1_s_m_d_1_1_vertex_ac5d0d909358e8a5c5c3cb765a2abf655}
+
+\item 
+\hypertarget{struct_assimp_1_1_s_m_d_1_1_vertex_a57708390849807a0fadc5f5f46d9f21a}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries uv}}\label{struct_assimp_1_1_s_m_d_1_1_vertex_a57708390849807a0fadc5f5f46d9f21a}
+
+\item 
+\hypertarget{struct_assimp_1_1_s_m_d_1_1_vertex_ae50d685db6ae4a9012e4e89968423672}{unsigned int \hyperlink{struct_assimp_1_1_s_m_d_1_1_vertex_ae50d685db6ae4a9012e4e89968423672}{i\+Parent\+Node}}\label{struct_assimp_1_1_s_m_d_1_1_vertex_ae50d685db6ae4a9012e4e89968423672}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_assimp_1_1_s_m_d_1_1_vertex}{Vertex} parent node. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair\\*
+$<$ unsigned int, float $>$ $>$ \hyperlink{struct_assimp_1_1_s_m_d_1_1_vertex_a7811d20e6dfde235c93223dd16b37bc9}{ai\+Bone\+Links}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure for a vertex in a S\+M\+D file 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_assimp_1_1_s_m_d_1_1_vertex_a7811d20e6dfde235c93223dd16b37bc9}{\index{Assimp\+::\+S\+M\+D\+::\+Vertex@{Assimp\+::\+S\+M\+D\+::\+Vertex}!ai\+Bone\+Links@{ai\+Bone\+Links}}
+\index{ai\+Bone\+Links@{ai\+Bone\+Links}!Assimp\+::\+S\+M\+D\+::\+Vertex@{Assimp\+::\+S\+M\+D\+::\+Vertex}}
+\subsubsection[{ai\+Bone\+Links}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$unsigned int, float$>$ $>$ Assimp\+::\+S\+M\+D\+::\+Vertex\+::ai\+Bone\+Links}}\label{struct_assimp_1_1_s_m_d_1_1_vertex_a7811d20e6dfde235c93223dd16b37bc9}
+Links to bones\+: pair.\+first is the bone index, pair.\+second is the vertex weight. W\+A\+R\+N\+: The remaining weight (to reach 1.\+0f) is assigned to the parent node/bone 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_s_m_d_loader_8h}{S\+M\+D\+Loader.\+h}\end{DoxyCompactItemize}

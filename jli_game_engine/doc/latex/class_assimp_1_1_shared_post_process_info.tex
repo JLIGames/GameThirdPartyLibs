@@ -1,0 +1,59 @@
+\hypertarget{class_assimp_1_1_shared_post_process_info}{\section{Assimp\+:\+:Shared\+Post\+Process\+Info Class Reference}
+\label{class_assimp_1_1_shared_post_process_info}\index{Assimp\+::\+Shared\+Post\+Process\+Info@{Assimp\+::\+Shared\+Post\+Process\+Info}}
+}
+
+
+{\ttfamily \#include $<$Base\+Process.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_assimp_1_1_shared_post_process_info_1_1_base}{Base}
+\item 
+struct \hyperlink{struct_assimp_1_1_shared_post_process_info_1_1_t_heap_data}{T\+Heap\+Data}
+\begin{DoxyCompactList}\small\item\em Represents data that is allocated on the heap, thus needs to be deleted. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_assimp_1_1_shared_post_process_info_1_1_t_static_data}{T\+Static\+Data}
+\begin{DoxyCompactList}\small\item\em Represents static, by-\/value data not allocated on the heap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_aa52493ab5a81f990d9102de06c78b8e5}{typedef unsigned int {\bfseries Key\+Type}}\label{class_assimp_1_1_shared_post_process_info_aa52493ab5a81f990d9102de06c78b8e5}
+
+\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_a9363375c67a1abc41ef50cddd5f7296b}{typedef std\+::map$<$ Key\+Type, \hyperlink{struct_assimp_1_1_shared_post_process_info_1_1_base}{Base} $\ast$ $>$ {\bfseries Property\+Map}}\label{class_assimp_1_1_shared_post_process_info_a9363375c67a1abc41ef50cddd5f7296b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_adae75c16fac4d25a482e0486f7667136}{\hyperlink{class_assimp_1_1_shared_post_process_info_adae75c16fac4d25a482e0486f7667136}{$\sim$\+Shared\+Post\+Process\+Info} ()}\label{class_assimp_1_1_shared_post_process_info_adae75c16fac4d25a482e0486f7667136}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_a41010c4a2a35a056d124a35438591b9c}{void \hyperlink{class_assimp_1_1_shared_post_process_info_a41010c4a2a35a056d124a35438591b9c}{Clean} ()}\label{class_assimp_1_1_shared_post_process_info_a41010c4a2a35a056d124a35438591b9c}
+
+\begin{DoxyCompactList}\small\item\em Remove all stored properties from the table. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_a3b59e81c3a4e0d515022d238ce3538c7}{{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_assimp_1_1_shared_post_process_info_a3b59e81c3a4e0d515022d238ce3538c7}{Add\+Property} (const char $\ast$name, T $\ast$in)}\label{class_assimp_1_1_shared_post_process_info_a3b59e81c3a4e0d515022d238ce3538c7}
+
+\begin{DoxyCompactList}\small\item\em Add a heap property to the list. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_a61a4c99db2740e9b213d424c4933656f}{{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_assimp_1_1_shared_post_process_info_a61a4c99db2740e9b213d424c4933656f}{Add\+Property} (const char $\ast$name, T in)}\label{class_assimp_1_1_shared_post_process_info_a61a4c99db2740e9b213d424c4933656f}
+
+\begin{DoxyCompactList}\small\item\em Add a static by-\/value property to the list. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_a94ff656ee1eb86ef103f79e5ffc256fa}{{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{class_assimp_1_1_shared_post_process_info_a94ff656ee1eb86ef103f79e5ffc256fa}{Get\+Property} (const char $\ast$name, T $\ast$\&out) const }\label{class_assimp_1_1_shared_post_process_info_a94ff656ee1eb86ef103f79e5ffc256fa}
+
+\begin{DoxyCompactList}\small\item\em Get a heap property. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_a469056d58e0cb598518c4051d600698a}{{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{class_assimp_1_1_shared_post_process_info_a469056d58e0cb598518c4051d600698a}{Get\+Property} (const char $\ast$name, T \&out) const }\label{class_assimp_1_1_shared_post_process_info_a469056d58e0cb598518c4051d600698a}
+
+\begin{DoxyCompactList}\small\item\em Get a static, by-\/value property. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_shared_post_process_info_ae29aedfb4b675f3b8f352ee881af1b36}{void \hyperlink{class_assimp_1_1_shared_post_process_info_ae29aedfb4b675f3b8f352ee881af1b36}{Remove\+Property} (const char $\ast$name)}\label{class_assimp_1_1_shared_post_process_info_ae29aedfb4b675f3b8f352ee881af1b36}
+
+\begin{DoxyCompactList}\small\item\em Remove a property of a specific type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to allow post-\/processing steps to interact with each other.
+
+The class maintains a simple property list that can be used by pp-\/steps to provide additional information to other steps. This is primarily intended for cross-\/step optimizations. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Base\+Process.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+digraph "assimp/assimp-3.1.1/contrib/cppunit-1.12.1/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5ca3a83fce599742a3f894937df3e310 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="cppunit-1.12.1" fontname="Helvetica", fontsize="10", URL="dir_5ca3a83fce599742a3f894937df3e310.html"]
+  subgraph clusterdir_2cc0dedb45bbf1e4b870d3c0924f4523 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2cc0dedb45bbf1e4b870d3c0924f4523.html"];
+    dir_2cc0dedb45bbf1e4b870d3c0924f4523 [shape=plaintext label="src"];
+    dir_1de6f8d8f8c471e0078eeb228dd03f95 [shape=box label="cppunit" color="black" fillcolor="white" style="filled" URL="dir_1de6f8d8f8c471e0078eeb228dd03f95.html"];
+  }
+  }
+}

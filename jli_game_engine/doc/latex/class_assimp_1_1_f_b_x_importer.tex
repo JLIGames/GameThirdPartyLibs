@@ -1,0 +1,146 @@
+\hypertarget{class_assimp_1_1_f_b_x_importer}{\section{Assimp\+:\+:F\+B\+X\+Importer Class Reference}
+\label{class_assimp_1_1_f_b_x_importer}\index{Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}}
+}
+
+
+{\ttfamily \#include $<$F\+B\+X\+Importer.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:F\+B\+X\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:F\+B\+X\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_f_b_x_importer_ac3d4ebf6c87167a5c509bc65909809be}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool check\+Sig) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_f_b_x_importer_a21defc65e3e3e00208c66ca0ea67f376}{Get\+Info} () const 
+\item 
+void \hyperlink{class_assimp_1_1_f_b_x_importer_aa0b027a6c4fe87c01dc43cacd2f17116}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+void \hyperlink{class_assimp_1_1_f_b_x_importer_aa6fff384b6fe9956ab68650d7f1e1848}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Load the Autodesk F\+B\+X file format.
+
+See \href{http://en.wikipedia.org/wiki/FBX}{\tt http\+://en.\+wikipedia.\+org/wiki/\+F\+B\+X} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_f_b_x_importer_ac3d4ebf6c87167a5c509bc65909809be}{\index{Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool F\+B\+X\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_f_b_x_importer_ac3d4ebf6c87167a5c509bc65909809be}
+Returns whether the class can handle the format of the given file.
+
+The implementation should be as quick as possible. A check for the file extension is enough. If no suitable loader is found with this strategy, \hyperlink{class_assimp_1_1_f_b_x_importer_ac3d4ebf6c87167a5c509bc65909809be}{Can\+Read()} is called again, the 'check\+Sig' parameter set to true this time. Now the implementation is expected to perform a full check of the file structure, possibly searching the first bytes of the file for magic identifiers or keywords.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Path and file name of the file to be examined. \\
+\hline
+{\em p\+I\+O\+Handler} & The I\+O handler to use for accessing any file. \\
+\hline
+{\em check\+Sig} & Set to true if this method is called a second time. This time, the implementation may take more time to examine the contents of the file to be loaded for magic bytes, keywords, etc to be able to load files with unknown/not existent file extensions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the class can read this file, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_f_b_x_importer_a21defc65e3e3e00208c66ca0ea67f376}{\index{Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}!Get\+Info@{Get\+Info}}
+\index{Get\+Info@{Get\+Info}!Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}}
+\subsubsection[{Get\+Info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Importer\+Desc} $\ast$ F\+B\+X\+Importer\+::\+Get\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_f_b_x_importer_a21defc65e3e3e00208c66ca0ea67f376}
+Called by \#\+Importer\+::\+Get\+Importer\+Info to get a description of some loader features. Importers must provide this information. 
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a070b8c3f63767ad535c8ac509b725fc4}{Assimp\+::\+Base\+Importer}.
+
+\hypertarget{class_assimp_1_1_f_b_x_importer_aa6fff384b6fe9956ab68650d7f1e1848}{\index{Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void F\+B\+X\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_f_b_x_importer_aa6fff384b6fe9956ab68650d7f1e1848}
+Imports the given file into the given scene structure. The function is expected to throw an Import\+Error\+Exception if there is an error. If it terminates normally, the data in \hyperlink{structai_scene}{ai\+Scene} is expected to be correct. Override this function to implement the actual importing. ~\newline
+ The output scene must meet the following requirements\+:~\newline
+ 
+\begin{DoxyItemize}
+\item At least a root node must be there, even if its only purpose is to reference one mesh. 
+\item \hyperlink{structai_mesh_a99d66ac0a444068c1b252b30265cbf53}{ai\+Mesh\+::m\+Primitive\+Types} may be 0. The types of primitives in the mesh are determined automatically in this case. 
+\item the vertex data is stored in a pseudo-\/indexed \char`\"{}verbose\char`\"{} format. In fact this means that every vertex that is referenced by a face is unique. Or the other way round\+: a vertex index may not occur twice in a single \hyperlink{structai_mesh}{ai\+Mesh}. 
+\item \hyperlink{structai_animation_ae2bbc49320b4b75c05e23e0ab704ece7}{ai\+Animation\+::m\+Duration} may be -\/1. \hyperlink{class_assimp}{Assimp} determines the length of the animation automatically in this case as the length of the longest animation channel. 
+\item \hyperlink{structai_mesh_ab2a81bfe1731f01271ebab274a8f01c4}{ai\+Mesh\+::m\+Bitangents} may be N\+U\+L\+L if tangents and normals are given. In this case bitangents are computed as the cross product between normal and tangent. 
+\item There needn't be a material. If none is there a default material is generated. However, it is recommended practice for loaders to generate a default material for yourself that matches the default material setting for the file format better than \hyperlink{class_assimp}{Assimp}'s generic default material. Note that default materials {\itshape should} be named A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E if they're just color-\/shaded or A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E if they define a (dummy) texture.  
+\end{DoxyItemize}If the A\+I\+\_\+\+S\+C\+E\+N\+E\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+T\+E-\/\+Flag is {\bfseries not} set\+:
+\begin{DoxyItemize}
+\item at least one mesh must be there 
+\item there may be no meshes with 0 vertices or faces 
+\end{DoxyItemize}This won't be checked (except by the validation step)\+: \hyperlink{class_assimp}{Assimp} will crash if one of the conditions is not met!
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Path of the file to be imported. \\
+\hline
+{\em p\+Scene} & The scene object to hold the imported data. N\+U\+L\+L is not a valid parameter. \\
+\hline
+{\em p\+I\+O\+Handler} & The I\+O handler to use for any file access. N\+U\+L\+L is not a valid parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_f_b_x_importer_aa0b027a6c4fe87c01dc43cacd2f17116}{\index{Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+F\+B\+X\+Importer@{Assimp\+::\+F\+B\+X\+Importer}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void F\+B\+X\+Importer\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_f_b_x_importer_aa0b027a6c4fe87c01dc43cacd2f17116}
+Called prior to \hyperlink{class_assimp_1_1_base_importer_a5e9568561199cd13f2935ef01ee5280c}{Read\+File()}. The function is a request to the importer to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & \hyperlink{class_assimp_1_1_importer}{Importer} instance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_importer_a2ecaa6b808b2b282cb6aa321970a2ad3}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_importer_8h}{F\+B\+X\+Importer.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_f_b_x_importer_8cpp}{F\+B\+X\+Importer.\+cpp}\end{DoxyCompactItemize}

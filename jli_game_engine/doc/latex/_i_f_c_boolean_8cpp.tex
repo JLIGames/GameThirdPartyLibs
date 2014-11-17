@@ -1,0 +1,57 @@
+\hypertarget{_i_f_c_boolean_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+I\+F\+C\+Boolean.cpp File Reference}
+\label{_i_f_c_boolean_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+I\+F\+C\+Boolean.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+I\+F\+C\+Boolean.\+cpp}}
+}
+
+
+Implements a subset of Ifc boolean operations.  
+
+
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\+F\+C\+Util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Poly\+Tools.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Process\+Helper.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iterator$>$}\\*
+Include dependency graph for I\+F\+C\+Boolean.\+cpp\+:
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_a3f5816d09c9e0c73df122053642c5618}{enum {\bfseries Intersect} \{ {\bfseries Intersect\+\_\+\+No}, 
+{\bfseries Intersect\+\_\+\+Lies\+On\+Plane}, 
+{\bfseries Intersect\+\_\+\+Yes}
+ \}}\label{namespace_assimp_1_1_i_f_c_a3f5816d09c9e0c73df122053642c5618}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_a51fcb3990695bd5b6ad3f061b2f7d5be}{Intersect {\bfseries Assimp\+::\+I\+F\+C\+::\+Intersect\+Segment\+Plane} (const Ifc\+Vector3 \&p, const Ifc\+Vector3 \&n, const Ifc\+Vector3 \&e0, const Ifc\+Vector3 \&e1, Ifc\+Vector3 \&out)}\label{namespace_assimp_1_1_i_f_c_a51fcb3990695bd5b6ad3f061b2f7d5be}
+
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_af75596a8697676c11a1a5c517a3e053e}{void {\bfseries Assimp\+::\+I\+F\+C\+::\+Process\+Boolean\+Half\+Space\+Difference} (const Ifc\+Half\+Space\+Solid $\ast$hs, Temp\+Mesh \&result, const Temp\+Mesh \&first\+\_\+operand, Conversion\+Data \&conv)}\label{namespace_assimp_1_1_i_f_c_af75596a8697676c11a1a5c517a3e053e}
+
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_ae79f94aa17dbd71add363e11c4f3978a}{bool {\bfseries Assimp\+::\+I\+F\+C\+::\+Intersects\+Boundary\+Profile} (const Ifc\+Vector3 \&e0, const Ifc\+Vector3 \&e1, const std\+::vector$<$ Ifc\+Vector3 $>$ \&boundary, std\+::vector$<$ size\+\_\+t $>$ \&intersected\+\_\+boundary\+\_\+segments, std\+::vector$<$ Ifc\+Vector3 $>$ \&intersected\+\_\+boundary\+\_\+points, bool half\+\_\+open=false, bool $\ast$e0\+\_\+hits\+\_\+border=N\+U\+L\+L)}\label{namespace_assimp_1_1_i_f_c_ae79f94aa17dbd71add363e11c4f3978a}
+
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_a6b531f3248ef97ea780784b9b066a65e}{bool {\bfseries Assimp\+::\+I\+F\+C\+::\+Point\+In\+Poly} (const Ifc\+Vector3 \&p, const std\+::vector$<$ Ifc\+Vector3 $>$ \&boundary)}\label{namespace_assimp_1_1_i_f_c_a6b531f3248ef97ea780784b9b066a65e}
+
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_a04538f61b5216b3ea4c3f3b9b0285875}{void {\bfseries Assimp\+::\+I\+F\+C\+::\+Process\+Polygonal\+Bounded\+Boolean\+Half\+Space\+Difference} (const Ifc\+Polygonal\+Bounded\+Half\+Space $\ast$hs, Temp\+Mesh \&result, const Temp\+Mesh \&first\+\_\+operand, Conversion\+Data \&conv)}\label{namespace_assimp_1_1_i_f_c_a04538f61b5216b3ea4c3f3b9b0285875}
+
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_a713192e45706c2100f13e9dd457631cd}{void {\bfseries Assimp\+::\+I\+F\+C\+::\+Process\+Boolean\+Extruded\+Area\+Solid\+Difference} (const Ifc\+Extruded\+Area\+Solid $\ast$as, Temp\+Mesh \&result, const Temp\+Mesh \&first\+\_\+operand, Conversion\+Data \&conv)}\label{namespace_assimp_1_1_i_f_c_a713192e45706c2100f13e9dd457631cd}
+
+\item 
+\hypertarget{namespace_assimp_1_1_i_f_c_a4c404fd7247b76e0be8e675689513703}{void {\bfseries Assimp\+::\+I\+F\+C\+::\+Process\+Boolean} (const Ifc\+Boolean\+Result \&boolean, Temp\+Mesh \&result, Conversion\+Data \&conv)}\label{namespace_assimp_1_1_i_f_c_a4c404fd7247b76e0be8e675689513703}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a subset of Ifc boolean operations. 
+

@@ -1,0 +1,25 @@
+digraph "Assimp::IFC::IfcPath"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::IFC::IfcPath",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::IFC::IfcTopological\lRepresentationItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_i_f_c_1_1_ifc_topological_representation_item.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::IFC::IfcRepresentationItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_i_f_c_1_1_ifc_representation_item.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::STEP::ObjectHelper\l\< IfcRepresentationItem, 0 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_s_t_e_p_1_1_object_helper.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::STEP::Object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_s_t_e_p_1_1_object.html"];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::STEP::ObjectHelper\l\< IfcTopologicalRepresentationItem, 0 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_s_t_e_p_1_1_object_helper.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::STEP::ObjectHelper\l\< IfcPath, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_s_t_e_p_1_1_object_helper.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" EdgeList" ];
+  Node8 [label="Assimp::STEP::ListOf\l\< Assimp::STEP::Lazy\l\< Assimp::IFC::IfcOrientedEdge\l \>, 1, 0 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_s_t_e_p_1_1_list_of.html"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="std::vector\< Assimp\l::STEP::Lazy\< Assimp\l::IFC::IfcOrientedEdge\l \>::Out \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

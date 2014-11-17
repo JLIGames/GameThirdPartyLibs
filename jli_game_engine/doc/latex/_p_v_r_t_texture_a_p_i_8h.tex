@@ -1,0 +1,37 @@
+\hypertarget{_p_v_r_t_texture_a_p_i_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+O\+G\+L\+E\+S/\+P\+V\+R\+T\+Texture\+A\+P\+I.h File Reference}
+\label{_p_v_r_t_texture_a_p_i_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S/\+P\+V\+R\+T\+Texture\+A\+P\+I.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S/\+P\+V\+R\+T\+Texture\+A\+P\+I.\+h}}
+}
+
+
+O\+G\+L\+E\+S texture loading.  
+
+
+{\ttfamily \#include \char`\"{}../\+P\+V\+R\+T\+Error.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Texture\+A\+P\+I.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{singleton_c_p_v_r_t_map}{C\+P\+V\+R\+T\+Map$<$ Key\+Type, Data\+Type $>$}
+\begin{DoxyCompactList}\small\item\em Expanding map template class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{group___a_p_i___o_g_l_e_s_ga49dc74480ad4ec5a2f393f641117d54f}{P\+V\+R\+T\+Texture\+Load\+From\+Pointer} (const void $\ast$pointer, G\+Luint $\ast$const tex\+Name, const void $\ast$ps\+Texture\+Header=N\+U\+L\+L, bool b\+Allow\+Decompress=true, const unsigned int n\+Load\+From\+Level=0, const void $\ast$const tex\+Ptr=0, \hyperlink{singleton_c_p_v_r_t_map}{C\+P\+V\+R\+T\+Map}$<$ unsigned int, \hyperlink{singleton_c_p_v_r_t_map}{C\+P\+V\+R\+T\+Map}$<$ unsigned int, struct \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} $>$ $>$ $\ast$p\+Meta\+Data=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Allows textures to be stored in C header files and loaded in. Can load parts of a mipmaped texture (ie skipping the highest detailed levels). Sets the texture M\+I\+N/\+M\+A\+G filter to G\+L\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+N\+E\+A\+R\+E\+S\+T/\+G\+L\+\_\+\+L\+I\+N\+E\+A\+R if mipmaps are present, G\+L\+\_\+\+L\+I\+N\+E\+A\+R/\+G\+L\+\_\+\+L\+I\+N\+E\+A\+R otherwise. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{group___a_p_i___o_g_l_e_s_ga6eecac4c871ba7ccdd0ef4b057a7d596}{P\+V\+R\+T\+Texture\+Load\+From\+P\+V\+R} (const char $\ast$const filename, G\+Luint $\ast$const tex\+Name, const void $\ast$ps\+Texture\+Header=N\+U\+L\+L, bool b\+Allow\+Decompress=true, const unsigned int n\+Load\+From\+Level=0, \hyperlink{singleton_c_p_v_r_t_map}{C\+P\+V\+R\+T\+Map}$<$ unsigned int, \hyperlink{singleton_c_p_v_r_t_map}{C\+P\+V\+R\+T\+Map}$<$ unsigned int, struct \hyperlink{struct_meta_data_block}{Meta\+Data\+Block} $>$ $>$ $\ast$p\+Meta\+Data=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Allows textures to be stored in binary P\+V\+R files and loaded in. Can load parts of a mipmaped texture (ie skipping the highest detailed levels). Sets the texture M\+I\+N/\+M\+A\+G filter to G\+L\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+N\+E\+A\+R\+E\+S\+T/\+G\+L\+\_\+\+L\+I\+N\+E\+A\+R if mipmaps are present, G\+L\+\_\+\+L\+I\+N\+E\+A\+R/\+G\+L\+\_\+\+L\+I\+N\+E\+A\+R otherwise. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___a_p_i___o_g_l_e_s_gac4a10faa0f44d4808ae619086f605113}{P\+V\+R\+T\+Texture\+Format\+Get\+B\+P\+P} (const G\+Luint n\+Format, const G\+Luint n\+Type)
+\begin{DoxyCompactList}\small\item\em Returns the bits per pixel (B\+P\+P) of the format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+O\+G\+L\+E\+S texture loading. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}

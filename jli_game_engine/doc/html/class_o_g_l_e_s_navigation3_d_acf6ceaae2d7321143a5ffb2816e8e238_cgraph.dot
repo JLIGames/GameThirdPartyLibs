@@ -1,0 +1,43 @@
+digraph "OGLESNavigation3D::HandleInput"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLESNavigation3D::\lHandleInput",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PVRShell::PVRShellIsKeyPressed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#a3771f847321dbc7aa5a9d8647c49b38b",tooltip="Check if a key was pressed. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVRTMat4::Identity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat4.html#aec7e6d87fc29ef245978cbeaeedf15d7",tooltip="Generates an identity matrix. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OGLESNavigation3D::\lUpdate3dModelWorkingset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_navigation3_d.html#a3a81e8c4705f0a667467f0e7f92a9fe7"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OGLESNavigation3D::\lExtractViewFrustumPlanes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_navigation3_d.html#a923584d9685806b498aab0e6f99863af"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PVRTVec3::length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_vec3.html#aa2c1f573d504ea9ebe52d112cfd91222",tooltip="calculates the magnitude of the vector "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OGLESNavigation3D::\lBoundingBoxIntersectsFrustum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_navigation3_d.html#ac547c871368110414b5c9234d6ec2937"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PVRShell::PVRShellGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#ad58b00376cdae7a8aeea41fc17367bfd",tooltip="This function is used to get parameters from the PVRShell. It can be called from anywhere in the prog..."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PVRShell::PVRShellGetTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_r_shell.html#a62b50b284b42c0f9e037855a14d64bfe",tooltip="The number itself should be considered meaningless; an application should use this function to determ..."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PVRTVec2::lenSqr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_vec2.html#abc380c9802c88e2628f156ea82a2f76c",tooltip="calculates the square of the magnitude of the vector "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="OGLESNavigation3D::\lHandleMouseDrag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_navigation3_d.html#a03c65012cfbf20297bb24d0f9c4df412"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PVRTMat4::RotationZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat4.html#a9ff7a65314d7c112229914abf6e703ed",tooltip="Calculates a matrix corresponding to a rotation of angle degrees about the Z axis. "];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PVRTMat4::RotationY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat4.html#ae963b3a45f031ed3eb6c56f4ce9e5426",tooltip="Calculates a matrix corresponding to a rotation of angle degrees about the Y axis. "];
+  Node11 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PVRTMat4::RotationX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat4.html#a5fe3d2aedca6a9d96110ce0c8566e7af",tooltip="Calculates a matrix corresponding to a rotation of angle degrees about the X axis. "];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="OGLESNavigation3D::\lHandleMouseClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_navigation3_d.html#a23b052f7c3232ad7bfe47edb7182d58c"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PVRTMat3::Rotation2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat3.html#a189e048754f97d86a3bb1eeb7999a074",tooltip="Calculates a matrix corresponding to a rotation of angle degrees about the Z axis. "];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PVRTMat3::RotationZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat3.html#a9ea9ba33858e416d4ede0b184fab8bd7",tooltip="Calculates a matrix corresponding to a rotation of angle degrees about the Z axis. "];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="PVRTMat3::PVRTMat3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_v_r_t_mat3.html#a381d3dc7ce8f40208aebb1e7910cdaa4",tooltip="Blank constructor. "];
+  Node15 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,29 @@
+digraph "btGImpactCompoundShape"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="btGImpactCompoundShape",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="btGImpactShapeInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html",tooltip="Base class for gimpact shapes. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="btConcaveShape",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_set" ,fontname="Helvetica"];
+  Node4 [label="btGImpactQuantizedBvh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html",tooltip="Structure for containing Boxes. "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_primitive_manager" ,fontname="Helvetica"];
+  Node5 [label="btPrimitiveManagerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_primitive_manager_base.html",tooltip="Prototype Base class for primitive classification. "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_box_tree" ,fontname="Helvetica"];
+  Node6 [label="btQuantizedBvhTree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_quantized_bvh_tree.html",tooltip="Basic Box tree structure. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_node_array" ,fontname="Helvetica"];
+  Node7 [label="GIM_QUANTIZED_BVH_NODE\l_ARRAY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___q_u_a_n_t_i_z_e_d___b_v_h___n_o_d_e___a_r_r_a_y.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="btAlignedObjectArray\l\< BT_QUANTIZED_BVH_NODE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_childTransforms" ,fontname="Helvetica"];
+  Node9 [label="btAlignedObjectArray\l\< btTransform \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_childShapes" ,fontname="Helvetica"];
+  Node10 [label="btAlignedObjectArray\l\< btCollisionShape * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_primitive_manager" ,fontname="Helvetica"];
+  Node11 [label="btGImpactCompoundShape\l::CompoundPrimitiveManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_compound_shape_1_1_compound_primitive_manager.html",tooltip="compound primitive manager "];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_compoundShape" ,fontname="Helvetica"];
+}

@@ -1,0 +1,17 @@
+digraph "CModel::DeleteVbos"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CModel::DeleteVbos",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="OGLES2LightMap::ReleaseView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_light_map.html#a987002042458037be2df19f473984ae3"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="OGLES3LightMap::ReleaseView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_light_map.html#abaad822447b987cbf17cb89e8d035b21"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="OGLESStencilBuffer\l::ReleaseView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s_stencil_buffer.html#a0d28833f8f4908844b7838320e00ca05"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="OGLES2StencilBuffer\l::ReleaseView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s2_stencil_buffer.html#a6c1ffd6921af57bb68ba2ef5a238bdd5"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="OGLES3StencilBuffer\l::ReleaseView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_g_l_e_s3_stencil_buffer.html#a8c7aead3a329f976e034365fcbae2ca7"];
+}

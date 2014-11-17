@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/ChameleonMan/OGLES2/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e5e8a3b2a8cd6b9587bb5c3fa46c2525 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_e5e8a3b2a8cd6b9587bb5c3fa46c2525.html"]
+  subgraph clusterdir_bf61e8e5b8d66cd5e1d28ce3b35eebd5 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_bf61e8e5b8d66cd5e1d28ce3b35eebd5.html"];
+    dir_bf61e8e5b8d66cd5e1d28ce3b35eebd5 [shape=plaintext label="Android"];
+    dir_5872b266ba10898d9f9a105f8951dcf8 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_5872b266ba10898d9f9a105f8951dcf8.html"];
+  }
+  }
+}

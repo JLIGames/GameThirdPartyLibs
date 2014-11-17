@@ -1,0 +1,9 @@
+digraph "zlib/zlib-1.2.8/contrib/iostream2" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e0c029cd5149dae73dc2b47aa4b1f108 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_e0c029cd5149dae73dc2b47aa4b1f108.html"]
+  dir_216da6e19b2ed6d26f652968449f9a18 [shape=box, label="iostream2", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_216da6e19b2ed6d26f652968449f9a18.html"];
+  }
+}

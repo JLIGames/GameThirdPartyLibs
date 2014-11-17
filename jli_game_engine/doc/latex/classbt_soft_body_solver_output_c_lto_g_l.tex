@@ -1,0 +1,83 @@
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l}{\section{bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L Class Reference}
+\label{classbt_soft_body_solver_output_c_lto_g_l}\index{bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L@{bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L}}
+}
+
+
+{\ttfamily \#include $<$bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L\+:
+
+
+Collaboration diagram for bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_a38b710a54d801ca771a192e0fdddeee0}{{\bfseries bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L} (cl\+\_\+command\+\_\+queue cq\+Command\+Que, cl\+\_\+context cx\+Main\+Context)}\label{classbt_soft_body_solver_output_c_lto_g_l_a38b710a54d801ca771a192e0fdddeee0}
+
+\item 
+virtual void \hyperlink{classbt_soft_body_solver_output_c_lto_g_l_ab6f232898b815166551373a6c2d95b58}{copy\+Soft\+Body\+To\+Vertex\+Buffer} (const \hyperlink{classbt_soft_body}{bt\+Soft\+Body} $\ast$const soft\+Body, \hyperlink{classbt_vertex_buffer_descriptor}{bt\+Vertex\+Buffer\+Descriptor} $\ast$vertex\+Buffer)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_aa0a1401e61bfb5856789cdc83e8b35ba}{virtual bool {\bfseries check\+Initialized} ()}\label{classbt_soft_body_solver_output_c_lto_g_l_aa0a1401e61bfb5856789cdc83e8b35ba}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_a79b30ac51a34a83bff1157d0fc6192da}{virtual bool {\bfseries build\+Shaders} ()}\label{classbt_soft_body_solver_output_c_lto_g_l_a79b30ac51a34a83bff1157d0fc6192da}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_ab00f748915e812c08e2d21746b09b877}{void {\bfseries release\+Kernels} ()}\label{classbt_soft_body_solver_output_c_lto_g_l_ab00f748915e812c08e2d21746b09b877}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_a2056c3ef5cf8b8aa511dae3f1edd6cb3}{cl\+\_\+command\+\_\+queue {\bfseries m\+\_\+cq\+Command\+Que}}\label{classbt_soft_body_solver_output_c_lto_g_l_a2056c3ef5cf8b8aa511dae3f1edd6cb3}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_a4ad5da5de4efd90a262d050b806ca513}{cl\+\_\+context {\bfseries m\+\_\+cx\+Main\+Context}}\label{classbt_soft_body_solver_output_c_lto_g_l_a4ad5da5de4efd90a262d050b806ca513}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_ab27a637e6a862d6631c14708e973b7b7}{\hyperlink{class_c_l_functions}{C\+L\+Functions} {\bfseries cl\+Functions}}\label{classbt_soft_body_solver_output_c_lto_g_l_ab27a637e6a862d6631c14708e973b7b7}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_a92e45d1faba046fff346f3be0201fc5c}{cl\+\_\+kernel {\bfseries output\+To\+Vertex\+Array\+With\+Normals\+Kernel}}\label{classbt_soft_body_solver_output_c_lto_g_l_a92e45d1faba046fff346f3be0201fc5c}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_a8ff0a3f5498fe35986145a58a199af78}{cl\+\_\+kernel {\bfseries output\+To\+Vertex\+Array\+Without\+Normals\+Kernel}}\label{classbt_soft_body_solver_output_c_lto_g_l_a8ff0a3f5498fe35986145a58a199af78}
+
+\item 
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_ac66f59814bbba6c16f8b147bf934c930}{bool {\bfseries m\+\_\+shaders\+Initialized}}\label{classbt_soft_body_solver_output_c_lto_g_l_ac66f59814bbba6c16f8b147bf934c930}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to manage movement of data from a solver to a given target. This version is the C\+L to G\+L interop version. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_soft_body_solver_output_c_lto_g_l_ab6f232898b815166551373a6c2d95b58}{\index{bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L@{bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L}!copy\+Soft\+Body\+To\+Vertex\+Buffer@{copy\+Soft\+Body\+To\+Vertex\+Buffer}}
+\index{copy\+Soft\+Body\+To\+Vertex\+Buffer@{copy\+Soft\+Body\+To\+Vertex\+Buffer}!bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L@{bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L}}
+\subsubsection[{copy\+Soft\+Body\+To\+Vertex\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L\+::copy\+Soft\+Body\+To\+Vertex\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf bt\+Soft\+Body} $\ast$const}]{soft\+Body, }
+\item[{{\bf bt\+Vertex\+Buffer\+Descriptor} $\ast$}]{vertex\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classbt_soft_body_solver_output_c_lto_g_l_ab6f232898b815166551373a6c2d95b58}
+Output current computed vertex data to the vertex buffers for all cloths in the solver. 
+
+Implements \hyperlink{classbt_soft_body_solver_output_a7c3761747267f87da347aad276218663}{bt\+Soft\+Body\+Solver\+Output}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/\+Gpu\+Soft\+Body\+Solvers/\+Open\+C\+L/bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/\+Gpu\+Soft\+Body\+Solvers/\+Open\+C\+L/bt\+Soft\+Body\+Solver\+Output\+C\+Lto\+G\+L.\+cpp\end{DoxyCompactItemize}

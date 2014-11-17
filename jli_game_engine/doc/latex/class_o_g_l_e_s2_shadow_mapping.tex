@@ -1,0 +1,249 @@
+\hypertarget{class_o_g_l_e_s2_shadow_mapping}{\section{O\+G\+L\+E\+S2\+Shadow\+Mapping Class Reference}
+\label{class_o_g_l_e_s2_shadow_mapping}\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S2\+Shadow\+Mapping\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S2\+Shadow\+Mapping\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_a87d54db2842462beab0a62cc75d7b080}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_a6619d8fb2470311f0c4f76ca5e7c34bc}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_a8e2f72cc05060677b6f4d804c52e2044}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_a785b880be16fee1247cd880f7cb165fb}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_ac5ec67d502f806510955a3a7088aa2d4}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_a9f6be414ac7515d2af9974d68670fa45}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_abf19f148d40fa20fedec74d1884295b6}{Load\+Shaders} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_shadow_mapping_a75f53c87ca2d4ead3830430af9f17b61}{Load\+Vbos} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s2_shadow_mapping_aa9e277233ebfb8552db1b73d4ffb8934}{Set\+Up\+Matrices} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_shadow_mapping_a052536583d3c04b9847491f3bcbad4db}{Draw\+Scene\+With\+Shadow} (\hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} view\+Mat)
+\item 
+void \hyperlink{class_o_g_l_e_s2_shadow_mapping_acd8189bb445bf7e8cf839d0704309b5f}{Draw\+Mesh} (int i32\+Node\+Index)
+\item 
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a02e405b2616caab94b9b242f8b7fcb30}{void {\bfseries Render\+World} ()}\label{class_o_g_l_e_s2_shadow_mapping_a02e405b2616caab94b9b242f8b7fcb30}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_acd8189bb445bf7e8cf839d0704309b5f}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Draw\+Mesh@{Draw\+Mesh}}
+\index{Draw\+Mesh@{Draw\+Mesh}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Draw\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Draw\+Mesh (
+\begin{DoxyParamCaption}
+\item[{int}]{i32\+Node\+Index}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_shadow_mapping_acd8189bb445bf7e8cf839d0704309b5f}
+
+
+  Draw\+Mesh  i32\+Node\+Index \hyperlink{struct_node}{Node} index of the mesh to draw  Draws a \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} after the model view matrix has been set and the meterial prepared. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a052536583d3c04b9847491f3bcbad4db}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Draw\+Scene\+With\+Shadow@{Draw\+Scene\+With\+Shadow}}
+\index{Draw\+Scene\+With\+Shadow@{Draw\+Scene\+With\+Shadow}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Draw\+Scene\+With\+Shadow}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Draw\+Scene\+With\+Shadow (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+Mat4}}]{view\+Mat}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_shadow_mapping_a052536583d3c04b9847491f3bcbad4db}
+
+
+  Draw\+Scene\+With\+Shadow  view\+Mat The view matrix to use for rendering  Draws the scene with the shadow 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a87d54db2842462beab0a62cc75d7b080}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_shadow_mapping_a87d54db2842462beab0a62cc75d7b080}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_shadow_mapping_a87d54db2842462beab0a62cc75d7b080}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_shadow_mapping_a87d54db2842462beab0a62cc75d7b080}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a6619d8fb2470311f0c4f76ca5e7c34bc}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_shadow_mapping_a6619d8fb2470311f0c4f76ca5e7c34bc}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_shadow_mapping_a6619d8fb2470311f0c4f76ca5e7c34bc}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_abf19f148d40fa20fedec74d1884295b6}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Load\+Shaders@{Load\+Shaders}}
+\index{Load\+Shaders@{Load\+Shaders}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Load\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Load\+Shaders (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_shadow_mapping_abf19f148d40fa20fedec74d1884295b6}
+
+
+  Load\+Shaders  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads and compiles the shaders and links the shader programs required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a9f6be414ac7515d2af9974d68670fa45}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_shadow_mapping_a9f6be414ac7515d2af9974d68670fa45}
+
+
+  Load\+Textures  p\+Error\+Str A \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a75f53c87ca2d4ead3830430af9f17b61}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Load\+Vbos@{Load\+Vbos}}
+\index{Load\+Vbos@{Load\+Vbos}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Load\+Vbos}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Load\+Vbos (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_shadow_mapping_a75f53c87ca2d4ead3830430af9f17b61}
+
+
+  Load\+Vbos  Loads the mesh data required for this training course into vertex buffer objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a785b880be16fee1247cd880f7cb165fb}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_shadow_mapping_a785b880be16fee1247cd880f7cb165fb}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_shadow_mapping_a785b880be16fee1247cd880f7cb165fb}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_shadow_mapping_a785b880be16fee1247cd880f7cb165fb}{Quit\+Application()} will not be called. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_a8e2f72cc05060677b6f4d804c52e2044}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_shadow_mapping_a8e2f72cc05060677b6f4d804c52e2044}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_shadow_mapping_a8e2f72cc05060677b6f4d804c52e2044}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_ac5ec67d502f806510955a3a7088aa2d4}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_shadow_mapping_ac5ec67d502f806510955a3a7088aa2d4}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. Will also manage relevent O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_shadow_mapping_aa9e277233ebfb8552db1b73d4ffb8934}{\index{O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}!Set\+Up\+Matrices@{Set\+Up\+Matrices}}
+\index{Set\+Up\+Matrices@{Set\+Up\+Matrices}!O\+G\+L\+E\+S2\+Shadow\+Mapping@{O\+G\+L\+E\+S2\+Shadow\+Mapping}}
+\subsubsection[{Set\+Up\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Shadow\+Mapping\+::\+Set\+Up\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_shadow_mapping_aa9e277233ebfb8552db1b73d4ffb8934}
+
+
+  Set\+Up\+Matrices  Creates the view and projection matrices for the light and camera 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Intermediate/\+Shadow\+Mapping/\+O\+G\+L\+E\+S2/O\+G\+L\+E\+S2\+Shadow\+Mapping.\+cpp\end{DoxyCompactItemize}

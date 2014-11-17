@@ -1,0 +1,64 @@
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e}{\section{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E Struct Reference}
+\label{struct_o_p_c_o_d_e_c_r_e_a_t_e}\index{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E@{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E}}
+}
+
+
+\hyperlink{class_model}{Model} creation structure.  
+
+
+
+
+{\ttfamily \#include $<$O\+P\+C\+\_\+\+Base\+Model.\+h$>$}
+
+
+
+Collaboration diagram for O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_a7e0b19c00a6986b00db60be7bead9886}{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_a1797bb4e55484972aa0c83d830df6c05}{\hyperlink{class_mesh_interface}{Mesh\+Interface} $\ast$ \hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_a1797bb4e55484972aa0c83d830df6c05}{m\+I\+Mesh}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_a1797bb4e55484972aa0c83d830df6c05}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mesh}{Mesh} interface (access to triangles \& vertices) ($\ast$) \end{DoxyCompactList}\item 
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_ab64e53cba4de4c506a1c4f9458c0e399}{\hyperlink{struct_build_settings}{Build\+Settings} \hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_ab64e53cba4de4c506a1c4f9458c0e399}{m\+Settings}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_ab64e53cba4de4c506a1c4f9458c0e399}
+
+\begin{DoxyCompactList}\small\item\em Builder's settings. \end{DoxyCompactList}\item 
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_a5698360d25cc867eedc114ee0241383d}{bool \hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_a5698360d25cc867eedc114ee0241383d}{m\+No\+Leaf}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_a5698360d25cc867eedc114ee0241383d}
+
+\begin{DoxyCompactList}\small\item\em true =$>$ discard leaf nodes (else use a normal tree) \end{DoxyCompactList}\item 
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_a8e8a898314866de0c9cfaa0015293dbd}{bool \hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_a8e8a898314866de0c9cfaa0015293dbd}{m\+Quantized}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_a8e8a898314866de0c9cfaa0015293dbd}
+
+\begin{DoxyCompactList}\small\item\em true =$>$ quantize the tree (else use a normal tree) \end{DoxyCompactList}\item 
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_a929f76c3fef9815a8964b11c52f12150}{bool \hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_a929f76c3fef9815a8964b11c52f12150}{m\+Keep\+Original}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_a929f76c3fef9815a8964b11c52f12150}
+
+\begin{DoxyCompactList}\small\item\em true =$>$ keep a copy of the original tree (debug purpose) \end{DoxyCompactList}\item 
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_a4953a7541a5efbb8a07f70fa158ae400}{bool \hyperlink{struct_o_p_c_o_d_e_c_r_e_a_t_e_a4953a7541a5efbb8a07f70fa158ae400}{m\+Can\+Remap}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_a4953a7541a5efbb8a07f70fa158ae400}
+
+\begin{DoxyCompactList}\small\item\em true =$>$ allows O\+P\+C\+O\+D\+E to reorganize client arrays \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_model}{Model} creation structure. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_o_p_c_o_d_e_c_r_e_a_t_e_a7e0b19c00a6986b00db60be7bead9886}{\index{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E@{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E}!O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E@{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E}}
+\index{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E@{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E}!O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E@{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E}}
+\subsubsection[{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E\+::\+O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_o_p_c_o_d_e_c_r_e_a_t_e_a7e0b19c00a6986b00db60be7bead9886}
+
+
+Constructor. 
+
+Constructor. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___base_model_8h}{O\+P\+C\+\_\+\+Base\+Model.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___base_model_8cpp}{O\+P\+C\+\_\+\+Base\+Model.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,257 @@
+\hypertarget{class_o_b_b}{\section{O\+B\+B Class Reference}
+\label{class_o_b_b}\index{O\+B\+B@{O\+B\+B}}
+}
+
+
+Collaboration diagram for O\+B\+B\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_b_b_a623ea9ac0e503fc643e91105d8dd1c29}{inline\+\_\+ \hyperlink{class_o_b_b_a623ea9ac0e503fc643e91105d8dd1c29}{O\+B\+B} ()}\label{class_o_b_b_a623ea9ac0e503fc643e91105d8dd1c29}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_aeaefb4753bda0abd28f063d9c7ff9300}{inline\+\_\+ \hyperlink{class_o_b_b_aeaefb4753bda0abd28f063d9c7ff9300}{O\+B\+B} (const \hyperlink{class_point}{Point} \&center, const \hyperlink{class_point}{Point} \&extents, const \hyperlink{class_matrix3x3}{Matrix3x3} \&rot)}\label{class_o_b_b_aeaefb4753bda0abd28f063d9c7ff9300}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_af7e5c42b99c8b4376a68922c8d586b87}{inline\+\_\+ \hyperlink{class_o_b_b_af7e5c42b99c8b4376a68922c8d586b87}{$\sim$\+O\+B\+B} ()}\label{class_o_b_b_af7e5c42b99c8b4376a68922c8d586b87}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_o_b_b_a942af8b1f9fda0544de062a071c75204}{Set\+Empty} ()
+\item 
+bool \hyperlink{class_o_b_b_a509e791cfa67b4e168e33dc5db3674b8}{Contains\+Point} (const \hyperlink{class_point}{Point} \&p) const 
+\item 
+void \hyperlink{class_o_b_b_a86084565116d26baebe3ac3b7945000f}{Create} (const \hyperlink{class_a_a_b_b}{A\+A\+B\+B} \&aabb, const \hyperlink{class_matrix4x4}{Matrix4x4} \&mat)
+\item 
+inline\+\_\+ void \hyperlink{class_o_b_b_acf8fc783c04d70e3cdbc88a7a52d2eb0}{Rotate} (const \hyperlink{class_matrix4x4}{Matrix4x4} \&mtx, \hyperlink{class_o_b_b}{O\+B\+B} \&obb) const 
+\item 
+inline\+\_\+ \hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_o_b_b_a3bb702c4343f25d78dd7bec3a5359150}{Is\+Valid} () const 
+\item 
+bool \hyperlink{class_o_b_b_a4edd7fb37a2ecd2334bcdcace3cdcd08}{Compute\+Planes} (\hyperlink{class_plane}{Plane} $\ast$planes) const 
+\item 
+bool \hyperlink{class_o_b_b_ad9b5da33320f558b258c58726bcf4aed}{Compute\+Points} (\hyperlink{class_point}{Point} $\ast$pts) const 
+\item 
+bool \hyperlink{class_o_b_b_ac89ab861cbbfc1eb9a830d3dc6894d91}{Compute\+Vertex\+Normals} (\hyperlink{class_point}{Point} $\ast$pts) const 
+\item 
+const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{class_o_b_b_a3cb304bdb9371054780c97d29f695686}{Get\+Edges} () const 
+\item 
+const \hyperlink{class_point}{Point} $\ast$ \hyperlink{class_o_b_b_a71d63f343a1482d1f2227e2077c90192}{Get\+Local\+Edge\+Normals} () const 
+\item 
+void \hyperlink{class_o_b_b_a6e8844c4d4b064a2cfbd142589af22a2}{Compute\+World\+Edge\+Normal} (\hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} edge\+\_\+index, \hyperlink{class_point}{Point} \&world\+\_\+normal) const 
+\item 
+void \hyperlink{class_o_b_b_ad94c92759c88eead1a8eab29896f6b6e}{Compute\+L\+S\+S} (\hyperlink{class_l_s_s}{L\+S\+S} \&lss) const 
+\item 
+\hyperlink{_ice_types_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+O\+L} \hyperlink{class_o_b_b_af6e44c90fd7bfa6697b3a8e47fdd2517}{Is\+Inside} (const \hyperlink{class_o_b_b}{O\+B\+B} \&\hyperlink{structbox}{box}) const 
+\item 
+\hypertarget{class_o_b_b_a4d6d888b732b7764e58b73cba83e77f4}{inline\+\_\+ const \hyperlink{class_point}{Point} \& {\bfseries Get\+Center} () const }\label{class_o_b_b_a4d6d888b732b7764e58b73cba83e77f4}
+
+\item 
+\hypertarget{class_o_b_b_a477e282d9ef3bf14c26954680efb0d84}{inline\+\_\+ const \hyperlink{class_point}{Point} \& {\bfseries Get\+Extents} () const }\label{class_o_b_b_a477e282d9ef3bf14c26954680efb0d84}
+
+\item 
+\hypertarget{class_o_b_b_a2902f319a991ea9b72d008a4cafd0167}{inline\+\_\+ const \hyperlink{class_matrix3x3}{Matrix3x3} \& {\bfseries Get\+Rot} () const }\label{class_o_b_b_a2902f319a991ea9b72d008a4cafd0167}
+
+\item 
+\hypertarget{class_o_b_b_a0c73873d2bdec88f3c3fea69182ed3dc}{inline\+\_\+ void {\bfseries Get\+Rotated\+Extents} (\hyperlink{class_matrix3x3}{Matrix3x3} \&extents) const }\label{class_o_b_b_a0c73873d2bdec88f3c3fea69182ed3dc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_b_b_ae22187acfbcf25d8bee6499760f498ce}{\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_ae22187acfbcf25d8bee6499760f498ce}{m\+Center}}\label{class_o_b_b_ae22187acfbcf25d8bee6499760f498ce}
+
+\begin{DoxyCompactList}\small\item\em B for \hyperlink{class_box}{Box}. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_af3d0e54015e068ce9f9d3d8b7a8e84c5}{\hyperlink{class_point}{Point} \hyperlink{class_o_b_b_af3d0e54015e068ce9f9d3d8b7a8e84c5}{m\+Extents}}\label{class_o_b_b_af3d0e54015e068ce9f9d3d8b7a8e84c5}
+
+\begin{DoxyCompactList}\small\item\em B for Bounding. \end{DoxyCompactList}\item 
+\hypertarget{class_o_b_b_a777721a9bbdda31e6a73b42028576393}{\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_o_b_b_a777721a9bbdda31e6a73b42028576393}{m\+Rot}}\label{class_o_b_b_a777721a9bbdda31e6a73b42028576393}
+
+\begin{DoxyCompactList}\small\item\em O for Oriented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Oriented Bounding \hyperlink{class_box}{Box} (\hyperlink{class_o_b_b}{O\+B\+B}).
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_b_b_ad94c92759c88eead1a8eab29896f6b6e}{\index{O\+B\+B@{O\+B\+B}!Compute\+L\+S\+S@{Compute\+L\+S\+S}}
+\index{Compute\+L\+S\+S@{Compute\+L\+S\+S}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Compute\+L\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Compute\+L\+S\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+S\+S} \&}]{lss}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_ad94c92759c88eead1a8eab29896f6b6e}
+Computes an \hyperlink{class_l_s_s}{L\+S\+S} surrounding the \hyperlink{class_o_b_b}{O\+B\+B}. 
+\begin{DoxyParams}{Parameters}
+{\em lss} & \mbox{[}out\mbox{]} the \hyperlink{class_l_s_s}{L\+S\+S} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_a4edd7fb37a2ecd2334bcdcace3cdcd08}{\index{O\+B\+B@{O\+B\+B}!Compute\+Planes@{Compute\+Planes}}
+\index{Compute\+Planes@{Compute\+Planes}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Compute\+Planes}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Compute\+Planes (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} $\ast$}]{planes}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_a4edd7fb37a2ecd2334bcdcace3cdcd08}
+Computes the obb planes. 
+\begin{DoxyParams}{Parameters}
+{\em planes} & \mbox{[}out\mbox{]} 6 box planes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_ad9b5da33320f558b258c58726bcf4aed}{\index{O\+B\+B@{O\+B\+B}!Compute\+Points@{Compute\+Points}}
+\index{Compute\+Points@{Compute\+Points}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Compute\+Points}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Compute\+Points (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{pts}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_ad9b5da33320f558b258c58726bcf4aed}
+Computes the obb points. 
+\begin{DoxyParams}{Parameters}
+{\em pts} & \mbox{[}out\mbox{]} 8 box points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_ac89ab861cbbfc1eb9a830d3dc6894d91}{\index{O\+B\+B@{O\+B\+B}!Compute\+Vertex\+Normals@{Compute\+Vertex\+Normals}}
+\index{Compute\+Vertex\+Normals@{Compute\+Vertex\+Normals}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Compute\+Vertex\+Normals}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Compute\+Vertex\+Normals (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{pts}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_ac89ab861cbbfc1eb9a830d3dc6894d91}
+Computes vertex normals. 
+\begin{DoxyParams}{Parameters}
+{\em pts} & \mbox{[}out\mbox{]} 8 box points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_a6e8844c4d4b064a2cfbd142589af22a2}{\index{O\+B\+B@{O\+B\+B}!Compute\+World\+Edge\+Normal@{Compute\+World\+Edge\+Normal}}
+\index{Compute\+World\+Edge\+Normal@{Compute\+World\+Edge\+Normal}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Compute\+World\+Edge\+Normal}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Compute\+World\+Edge\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{edge\+\_\+index, }
+\item[{{\bf Point} \&}]{world\+\_\+normal}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_a6e8844c4d4b064a2cfbd142589af22a2}
+Returns world edge normal 
+\begin{DoxyParams}{Parameters}
+{\em edge\+\_\+index} & \mbox{[}in\mbox{]} 0 $<$= edge index $<$ 12 \\
+\hline
+{\em world\+\_\+normal} & \mbox{[}out\mbox{]} edge normal in world space \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_a509e791cfa67b4e168e33dc5db3674b8}{\index{O\+B\+B@{O\+B\+B}!Contains\+Point@{Contains\+Point}}
+\index{Contains\+Point@{Contains\+Point}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Contains\+Point}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Contains\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_a509e791cfa67b4e168e33dc5db3674b8}
+Tests if a point is contained within the \hyperlink{class_o_b_b}{O\+B\+B}. 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{[}in\mbox{]} the world point to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{class_o_b_b}{O\+B\+B} 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_a86084565116d26baebe3ac3b7945000f}{\index{O\+B\+B@{O\+B\+B}!Create@{Create}}
+\index{Create@{Create}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B} \&}]{aabb, }
+\item[{const {\bf Matrix4x4} \&}]{mat}
+\end{DoxyParamCaption}
+)}}\label{class_o_b_b_a86084565116d26baebe3ac3b7945000f}
+Builds an \hyperlink{class_o_b_b}{O\+B\+B} from an \hyperlink{class_a_a_b_b}{A\+A\+B\+B} and a world transform. 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & \mbox{[}in\mbox{]} the aabb \\
+\hline
+{\em mat} & \mbox{[}in\mbox{]} the world transform \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_a3cb304bdb9371054780c97d29f695686}{\index{O\+B\+B@{O\+B\+B}!Get\+Edges@{Get\+Edges}}
+\index{Get\+Edges@{Get\+Edges}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Get\+Edges}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf udword} $\ast$ O\+B\+B\+::\+Get\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_a3cb304bdb9371054780c97d29f695686}
+Returns edges. \begin{DoxyReturn}{Returns}
+24 indices (12 edges) indexing the list returned by \hyperlink{class_o_b_b_ad9b5da33320f558b258c58726bcf4aed}{Compute\+Points()} 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_a71d63f343a1482d1f2227e2077c90192}{\index{O\+B\+B@{O\+B\+B}!Get\+Local\+Edge\+Normals@{Get\+Local\+Edge\+Normals}}
+\index{Get\+Local\+Edge\+Normals@{Get\+Local\+Edge\+Normals}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Get\+Local\+Edge\+Normals}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Point} $\ast$ O\+B\+B\+::\+Get\+Local\+Edge\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_a71d63f343a1482d1f2227e2077c90192}
+Returns local edge normals. \begin{DoxyReturn}{Returns}
+edge normals in local space 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_af6e44c90fd7bfa6697b3a8e47fdd2517}{\index{O\+B\+B@{O\+B\+B}!Is\+Inside@{Is\+Inside}}
+\index{Is\+Inside@{Is\+Inside}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Is\+Inside}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} O\+B\+B\+::\+Is\+Inside (
+\begin{DoxyParamCaption}
+\item[{const {\bf O\+B\+B} \&}]{box}
+\end{DoxyParamCaption}
+) const}}\label{class_o_b_b_af6e44c90fd7bfa6697b3a8e47fdd2517}
+Checks the \hyperlink{class_o_b_b}{O\+B\+B} is inside another \hyperlink{class_o_b_b}{O\+B\+B}. 
+\begin{DoxyParams}{Parameters}
+{\em box} & \mbox{[}in\mbox{]} the other \hyperlink{class_o_b_b}{O\+B\+B} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E if we're inside the other box 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_a3bb702c4343f25d78dd7bec3a5359150}{\index{O\+B\+B@{O\+B\+B}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+O\+L} O\+B\+B\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_o_b_b_a3bb702c4343f25d78dd7bec3a5359150}
+Checks the \hyperlink{class_o_b_b}{O\+B\+B} is valid. \begin{DoxyReturn}{Returns}
+true if the box is valid 
+\end{DoxyReturn}
+\hypertarget{class_o_b_b_acf8fc783c04d70e3cdbc88a7a52d2eb0}{\index{O\+B\+B@{O\+B\+B}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Rotate}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void O\+B\+B\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4x4} \&}]{mtx, }
+\item[{{\bf O\+B\+B} \&}]{obb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_o_b_b_acf8fc783c04d70e3cdbc88a7a52d2eb0}
+Recomputes the \hyperlink{class_o_b_b}{O\+B\+B} after an arbitrary transform by a 4x4 matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mtx} & \mbox{[}in\mbox{]} the transform matrix \\
+\hline
+{\em obb} & \mbox{[}out\mbox{]} the transformed \hyperlink{class_o_b_b}{O\+B\+B} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_o_b_b_a942af8b1f9fda0544de062a071c75204}{\index{O\+B\+B@{O\+B\+B}!Set\+Empty@{Set\+Empty}}
+\index{Set\+Empty@{Set\+Empty}!O\+B\+B@{O\+B\+B}}
+\subsubsection[{Set\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Set\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_o_b_b_a942af8b1f9fda0544de062a071c75204}
+Setups an empty \hyperlink{class_o_b_b}{O\+B\+B}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\hyperlink{_ice_o_b_b_8h}{Ice\+O\+B\+B.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\hyperlink{_ice_o_b_b_8cpp}{Ice\+O\+B\+B.\+cpp}\end{DoxyCompactItemize}

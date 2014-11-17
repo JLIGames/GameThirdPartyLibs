@@ -1,0 +1,15 @@
+digraph "PVR/SDK_3.4/Examples/Beginner/02_IntroducingPVRShell/OGLES2" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e78ef17aad7a74cf84acc95959cc9eca {
+    graph [ bgcolor="#ddddee", pencolor="black", label="02_IntroducingPVRShell" fontname="Helvetica", fontsize="10", URL="dir_e78ef17aad7a74cf84acc95959cc9eca.html"]
+  subgraph clusterdir_ec7e3d3bbcfd0eeec8870e45406eac06 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ec7e3d3bbcfd0eeec8870e45406eac06.html"];
+    dir_ec7e3d3bbcfd0eeec8870e45406eac06 [shape=plaintext label="OGLES2"];
+    dir_66dd6b2f66bc66a88ea8c32516acf465 [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_66dd6b2f66bc66a88ea8c32516acf465.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_ec7e3d3bbcfd0eeec8870e45406eac06->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_001144_000133.html"];
+}

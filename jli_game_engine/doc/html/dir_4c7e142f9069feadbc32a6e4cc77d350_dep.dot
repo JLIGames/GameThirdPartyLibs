@@ -1,0 +1,14 @@
+digraph "assimp/assimp-3.1.1/contrib/poly2tri/poly2tri" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c01bad9a237735ceb605e19b9fbc23d4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="poly2tri" fontname="Helvetica", fontsize="10", URL="dir_c01bad9a237735ceb605e19b9fbc23d4.html"]
+  subgraph clusterdir_4c7e142f9069feadbc32a6e4cc77d350 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_4c7e142f9069feadbc32a6e4cc77d350.html"];
+    dir_4c7e142f9069feadbc32a6e4cc77d350 [shape=plaintext label="poly2tri"];
+    dir_dd3dba718535f603a56337606554b4ee [shape=box label="common" color="black" fillcolor="white" style="filled" URL="dir_dd3dba718535f603a56337606554b4ee.html"];
+    dir_cf56471d152c639f6efe4843678627d4 [shape=box label="sweep" color="black" fillcolor="white" style="filled" URL="dir_cf56471d152c639f6efe4843678627d4.html"];
+  }
+  }
+}

@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GIM_BOX_BOX_TRANSFORM\l_CACHE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___b_o_x___b_o_x___t_r_a_n_s_f_o_r_m___c_a_c_h_e.html",tooltip="Class for transforming a model1 to the space of model0. "];
+}

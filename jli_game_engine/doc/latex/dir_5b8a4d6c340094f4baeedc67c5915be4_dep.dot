@@ -1,0 +1,13 @@
+digraph "bullet/bullet-2.82-r2704/Test" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2af2a31b807ca3e166acbec98482e371 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="bullet-2.82-r2704" fontname="Helvetica", fontsize="10", URL="dir_2af2a31b807ca3e166acbec98482e371.html"]
+  subgraph clusterdir_5b8a4d6c340094f4baeedc67c5915be4 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_5b8a4d6c340094f4baeedc67c5915be4.html"];
+    dir_5b8a4d6c340094f4baeedc67c5915be4 [shape=plaintext label="Test"];
+    dir_67c225a56acec7bc6425c165c96913fd [shape=box label="Source" color="red" fillcolor="white" style="filled" URL="dir_67c225a56acec7bc6425c165c96913fd.html"];
+  }
+  }
+}

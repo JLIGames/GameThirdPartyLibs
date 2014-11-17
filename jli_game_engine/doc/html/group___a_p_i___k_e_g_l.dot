@@ -1,0 +1,9 @@
+digraph "API_KEGL"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="API_EAGL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___a_p_i___e_a_g_l.html",tooltip="EAGL API. "];
+  Node0 [label="API_KEGL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0->Node1 [shape=plaintext, label="PVRShellInitAPI", color="orange", dir="none", style="dashed"];
+}

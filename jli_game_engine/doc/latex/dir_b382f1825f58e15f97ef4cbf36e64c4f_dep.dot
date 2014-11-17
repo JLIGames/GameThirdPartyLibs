@@ -1,0 +1,10 @@
+digraph "bullet" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b382f1825f58e15f97ef4cbf36e64c4f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b382f1825f58e15f97ef4cbf36e64c4f.html"];
+    dir_b382f1825f58e15f97ef4cbf36e64c4f [shape=plaintext label="bullet"];
+    dir_2af2a31b807ca3e166acbec98482e371 [shape=box label="bullet-2.82-r2704" color="red" fillcolor="white" style="filled" URL="dir_2af2a31b807ca3e166acbec98482e371.html"];
+  }
+}

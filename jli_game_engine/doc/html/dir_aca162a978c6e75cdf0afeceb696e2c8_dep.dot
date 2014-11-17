@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Shell/OS/LinuxEWS" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_985c8e68b2bc71e5fc4eaa8a536394b7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OS" fontname="Helvetica", fontsize="10", URL="dir_985c8e68b2bc71e5fc4eaa8a536394b7.html"]
+  dir_aca162a978c6e75cdf0afeceb696e2c8 [shape=box, label="LinuxEWS", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_aca162a978c6e75cdf0afeceb696e2c8.html"];
+  }
+}

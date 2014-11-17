@@ -1,0 +1,11 @@
+digraph "XmlElement::XmlElement"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="XmlElement::XmlElement",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XmlElement::setContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_element.html#aaf32abf7cdaf31b8896f52a7859d9826",tooltip="Sets the content of the element. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XmlElement::content",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_element.html#a3fea4e46ca4e63ceb905a96a8f304381",tooltip="Returns the content of the element. "];
+}

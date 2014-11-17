@@ -1,0 +1,77 @@
+\hypertarget{classbt_hash_map}{\section{bt\+Hash\+Map$<$ Key, Value $>$ Class Template Reference}
+\label{classbt_hash_map}\index{bt\+Hash\+Map$<$ Key, Value $>$@{bt\+Hash\+Map$<$ Key, Value $>$}}
+}
+
+
+{\ttfamily \#include $<$bt\+Hash\+Map.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Hash\+Map$<$ Key, Value $>$\+:
+
+
+Collaboration diagram for bt\+Hash\+Map$<$ Key, Value $>$\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_hash_map_a15fc118df433a9b7f4350d42cd33bd13}{void {\bfseries insert} (const Key \&key, const \hyperlink{union_value}{Value} \&value)}\label{classbt_hash_map_a15fc118df433a9b7f4350d42cd33bd13}
+
+\item 
+\hypertarget{classbt_hash_map_aa42f8bdb95f77c52974d9998b41e0507}{void {\bfseries remove} (const Key \&key)}\label{classbt_hash_map_aa42f8bdb95f77c52974d9998b41e0507}
+
+\item 
+\hypertarget{classbt_hash_map_ac45fa2d9a1ddd65e119c5e102524fda4}{int {\bfseries size} () const }\label{classbt_hash_map_ac45fa2d9a1ddd65e119c5e102524fda4}
+
+\item 
+\hypertarget{classbt_hash_map_ad1652cb7b4807c2990f2f1938e207b2f}{const \hyperlink{union_value}{Value} $\ast$ {\bfseries get\+At\+Index} (int index) const }\label{classbt_hash_map_ad1652cb7b4807c2990f2f1938e207b2f}
+
+\item 
+\hypertarget{classbt_hash_map_a6a80cb0e97a1f5493877c78ceea058c2}{\hyperlink{union_value}{Value} $\ast$ {\bfseries get\+At\+Index} (int index)}\label{classbt_hash_map_a6a80cb0e97a1f5493877c78ceea058c2}
+
+\item 
+\hypertarget{classbt_hash_map_af195fa3847a1159b3dc161f32fd09004}{\hyperlink{union_value}{Value} $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (const Key \&key)}\label{classbt_hash_map_af195fa3847a1159b3dc161f32fd09004}
+
+\item 
+\hypertarget{classbt_hash_map_ab04b49625760144b1e8a66dc8b7bf6b9}{const \hyperlink{union_value}{Value} $\ast$ {\bfseries find} (const Key \&key) const }\label{classbt_hash_map_ab04b49625760144b1e8a66dc8b7bf6b9}
+
+\item 
+\hypertarget{classbt_hash_map_afe51e217996a94c176e59208b78ad90a}{\hyperlink{union_value}{Value} $\ast$ {\bfseries find} (const Key \&key)}\label{classbt_hash_map_afe51e217996a94c176e59208b78ad90a}
+
+\item 
+\hypertarget{classbt_hash_map_ac636345574da8fc308e6ecabbf428501}{int {\bfseries find\+Index} (const Key \&key) const }\label{classbt_hash_map_ac636345574da8fc308e6ecabbf428501}
+
+\item 
+\hypertarget{classbt_hash_map_a350c623ef89a0c7e8b542537f8d0c9f0}{void {\bfseries clear} ()}\label{classbt_hash_map_a350c623ef89a0c7e8b542537f8d0c9f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_hash_map_a5e5a1d837970bcad57b8c9bd5af043a7}{void {\bfseries grow\+Tables} (const Key \&)}\label{classbt_hash_map_a5e5a1d837970bcad57b8c9bd5af043a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_hash_map_aa67a61044c9c6f30ff5a96462ccf5556}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ int $>$ {\bfseries m\+\_\+hash\+Table}}\label{classbt_hash_map_aa67a61044c9c6f30ff5a96462ccf5556}
+
+\item 
+\hypertarget{classbt_hash_map_aa8840bc96694422fc0c87c5765542544}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ int $>$ {\bfseries m\+\_\+next}}\label{classbt_hash_map_aa8840bc96694422fc0c87c5765542544}
+
+\item 
+\hypertarget{classbt_hash_map_ad149907af1dbd16f562b044cafcf0f3d}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ \hyperlink{union_value}{Value} $>$ {\bfseries m\+\_\+value\+Array}}\label{classbt_hash_map_ad149907af1dbd16f562b044cafcf0f3d}
+
+\item 
+\hypertarget{classbt_hash_map_ac8ef0499e06dec182a648ae1c6696b90}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ Key $>$ {\bfseries m\+\_\+key\+Array}}\label{classbt_hash_map_ac8ef0499e06dec182a648ae1c6696b90}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Key, class Value$>$class bt\+Hash\+Map$<$ Key, Value $>$}
+
+The \hyperlink{classbt_hash_map}{bt\+Hash\+Map} template class implements a generic and lightweight hashmap. A basic sample of how to use \hyperlink{classbt_hash_map}{bt\+Hash\+Map} is located in Demos\textbackslash{}\+Basic\+Demo\textbackslash{}main.\+cpp 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Linear\+Math/bt\+Hash\+Map.\+h\end{DoxyCompactItemize}

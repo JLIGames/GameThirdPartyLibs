@@ -1,0 +1,205 @@
+\hypertarget{class_image}{\section{Image Struct Reference}
+\label{class_image}\index{Image@{Image}}
+}
+
+
+Collaboration diagram for Image\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_a1191ef79ad0978a37356835c5c388cbd}{{\bfseries Image} (int width\+\_\+, int height\+\_\+)}\label{class_image_a1191ef79ad0978a37356835c5c388cbd}
+
+\item 
+\hypertarget{class_image_a7cd59ec2f4a7f4f222b564bb6817d5e3}{{\bfseries Image} (int width\+\_\+, int height\+\_\+, int channels\+\_\+)}\label{class_image_a7cd59ec2f4a7f4f222b564bb6817d5e3}
+
+\item 
+\hypertarget{class_image_a1bb743835ed0bef2e8ae7378ed8a436d}{{\bfseries Image} (int width\+\_\+, int height\+\_\+, int channels\+\_\+, int bits\+\_\+)}\label{class_image_a1bb743835ed0bef2e8ae7378ed8a436d}
+
+\item 
+\hypertarget{class_image_a9700f58efb58b13e23666f19c67d3839}{{\bfseries Image} (const char $\ast$filename)}\label{class_image_a9700f58efb58b13e23666f19c67d3839}
+
+\item 
+\hypertarget{class_image_a34410a36b132ab597a8878d45facc89a}{{\bfseries Image} (const \hyperlink{class_image}{Image} \&image)}\label{class_image_a34410a36b132ab597a8878d45facc89a}
+
+\item 
+\hypertarget{class_image_a7a2b82cfaebc08e1184b3df9cbb890f7}{\hyperlink{class_image}{Image} \& {\bfseries operator=} (const \hyperlink{class_image}{Image} \&image)}\label{class_image_a7a2b82cfaebc08e1184b3df9cbb890f7}
+
+\item 
+\hypertarget{class_image_af2720a072812763395512fc3c8c21362}{int {\bfseries get\+Width} ()}\label{class_image_af2720a072812763395512fc3c8c21362}
+
+\item 
+\hypertarget{class_image_aa4e1f064e5e1f3f04ad605408f1ec3af}{int {\bfseries get\+Height} ()}\label{class_image_aa4e1f064e5e1f3f04ad605408f1ec3af}
+
+\item 
+\hypertarget{class_image_a074132850b855562d55cd7246a993141}{int {\bfseries get\+Channels} ()}\label{class_image_a074132850b855562d55cd7246a993141}
+
+\item 
+\hypertarget{class_image_ac1ebc069f90eca38273287af08ec534f}{int {\bfseries get\+Bits} ()}\label{class_image_ac1ebc069f90eca38273287af08ec534f}
+
+\item 
+\hypertarget{class_image_a258eb6a4161c857bbc13375253ba6071}{unsigned char $\ast$ {\bfseries get\+Pixels} ()}\label{class_image_a258eb6a4161c857bbc13375253ba6071}
+
+\item 
+\hypertarget{class_image_a00a4adea36bd158a73bed36a3290b7da}{void {\bfseries create} (int width\+\_\+, int height\+\_\+, int channels\+\_\+)}\label{class_image_a00a4adea36bd158a73bed36a3290b7da}
+
+\item 
+\hypertarget{class_image_a1c96dd09cc7096721a4a0492caa2d127}{void {\bfseries refresh} ()}\label{class_image_a1c96dd09cc7096721a4a0492caa2d127}
+
+\item 
+\hypertarget{class_image_ae1e16dcef3072e4e49ec2887a9c1245a}{void {\bfseries draw} ()}\label{class_image_ae1e16dcef3072e4e49ec2887a9c1245a}
+
+\item 
+\hypertarget{class_image_abc3be0249ac820c45866ea7cd4250f03}{void {\bfseries draw} (float x, float \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_image_abc3be0249ac820c45866ea7cd4250f03}
+
+\item 
+\hypertarget{class_image_abe24595a8568d420595c0df858dc8595}{void {\bfseries set\+Pixels} (unsigned char $\ast$new\+Pixels)}\label{class_image_abe24595a8568d420595c0df858dc8595}
+
+\item 
+\hypertarget{class_image_a48728c5c23505df992a61731a5e733c9}{bool {\bfseries good} ()}\label{class_image_a48728c5c23505df992a61731a5e733c9}
+
+\item 
+\hypertarget{class_image_a68eb3dab33d30bbba70e62e79c74c686}{bool {\bfseries bad} ()}\label{class_image_a68eb3dab33d30bbba70e62e79c74c686}
+
+\item 
+\hypertarget{class_image_a3a233515eb3a5f83917dc634c778db5a}{void {\bfseries clear} ()}\label{class_image_a3a233515eb3a5f83917dc634c778db5a}
+
+\item 
+\hypertarget{class_image_a72bb9d7bf80650506d74cce69592288c}{void {\bfseries clear} (\hyperlink{class_pixel}{Pixel} pixel)}\label{class_image_a72bb9d7bf80650506d74cce69592288c}
+
+\item 
+\hypertarget{class_image_a6dd07649b2fc807eccd736e844f3a913}{double {\bfseries get\+Pixel} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int channel)}\label{class_image_a6dd07649b2fc807eccd736e844f3a913}
+
+\item 
+\hypertarget{class_image_a89b59132b52aab611f109c1843d1ad58}{double {\bfseries get\+Pixel\+\_\+} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int channel)}\label{class_image_a89b59132b52aab611f109c1843d1ad58}
+
+\item 
+\hypertarget{class_image_aced5ca9315b5d4aa4157a3cd0c586fa7}{\hyperlink{class_pixel}{Pixel} {\bfseries get\+Pixel} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_image_aced5ca9315b5d4aa4157a3cd0c586fa7}
+
+\item 
+\hypertarget{class_image_aac73f6944c703ff956fc47a7828d0c0f}{\hyperlink{class_pixel}{Pixel} {\bfseries get\+Pixel\+\_\+} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_image_aac73f6944c703ff956fc47a7828d0c0f}
+
+\item 
+\hypertarget{class_image_a2fbe06ab0d10f6f7b86560d1209bed44}{\hyperlink{class_pixel}{Pixel} \& {\bfseries get\+Pixel} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, \hyperlink{class_pixel}{Pixel} \&pixel)}\label{class_image_a2fbe06ab0d10f6f7b86560d1209bed44}
+
+\item 
+\hypertarget{class_image_aa53ac30886b6f2f5f66fa2c10d2fc73e}{\hyperlink{class_pixel}{Pixel} \& {\bfseries get\+Pixel\+\_\+} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, \hyperlink{class_pixel}{Pixel} \&pixel)}\label{class_image_aa53ac30886b6f2f5f66fa2c10d2fc73e}
+
+\item 
+\hypertarget{class_image_ad26be53613cbe399c32f6efe08f13564}{void {\bfseries set\+Pixel} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int channel, double value)}\label{class_image_ad26be53613cbe399c32f6efe08f13564}
+
+\item 
+\hypertarget{class_image_a9ad64a83e37335dd21c65dd9b4abea45}{void {\bfseries set\+Pixel\+\_\+} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int channel, double value)}\label{class_image_a9ad64a83e37335dd21c65dd9b4abea45}
+
+\item 
+\hypertarget{class_image_ad37f9403f799f6343c0d21cc01e150bd}{void {\bfseries set\+Pixel} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, \hyperlink{class_pixel}{Pixel} pixel)}\label{class_image_ad37f9403f799f6343c0d21cc01e150bd}
+
+\item 
+\hypertarget{class_image_adaf0587e994cda89c0575f6b0a4982f3}{void {\bfseries set\+Pixel\+\_\+} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, \hyperlink{class_pixel}{Pixel} pixel)}\label{class_image_adaf0587e994cda89c0575f6b0a4982f3}
+
+\item 
+\hypertarget{class_image_a89d84b69283b6400eea03740daa30b78}{void {\bfseries set\+Pixel4} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, \hyperlink{class_pixel}{Pixel} pixel)}\label{class_image_a89d84b69283b6400eea03740daa30b78}
+
+\item 
+\hypertarget{class_image_ac3f04658d593d5c51c06e05eed5cca52}{void {\bfseries set\+Alpha} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, double value)}\label{class_image_ac3f04658d593d5c51c06e05eed5cca52}
+
+\item 
+\hypertarget{class_image_acf0b0681188e355150cc7c281d635606}{void {\bfseries gl\+Read\+Pixels\+Wrapper} ()}\label{class_image_acf0b0681188e355150cc7c281d635606}
+
+\item 
+\hypertarget{class_image_abf1d75c12cbffe7f6bf8d1701a93ffd3}{void {\bfseries gl\+Draw\+Pixels\+Wrapper} ()}\label{class_image_abf1d75c12cbffe7f6bf8d1701a93ffd3}
+
+\item 
+\hypertarget{class_image_a809ab8f3c45d5ddcdd8361744ad268a4}{void {\bfseries gl\+Tex\+Image2\+D\+Wrapper} ()}\label{class_image_a809ab8f3c45d5ddcdd8361744ad268a4}
+
+\item 
+\hypertarget{class_image_a863f2ddff2371d521264e0d5c7b97bd3}{void {\bfseries gl\+Tex\+Image\+Cube\+Wrapper} (int i)}\label{class_image_a863f2ddff2371d521264e0d5c7b97bd3}
+
+\item 
+\hypertarget{class_image_a4a3e8f3ca5aa6540ff67408966202c8e}{void {\bfseries gl\+Tex\+Sub\+Image2\+D\+Wrapper} (int x, int \hyperlink{_ice_utils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})}\label{class_image_a4a3e8f3ca5aa6540ff67408966202c8e}
+
+\item 
+\hypertarget{class_image_a6981c966ae9c29bd42e6a56855ef9dd7}{int {\bfseries read} (const char $\ast$filename)}\label{class_image_a6981c966ae9c29bd42e6a56855ef9dd7}
+
+\item 
+\hypertarget{class_image_a867f786b6bd5479d5090a8cc93df0abe}{int {\bfseries read} (const char $\ast$filename, const char $\ast$alphaname)}\label{class_image_a867f786b6bd5479d5090a8cc93df0abe}
+
+\item 
+\hypertarget{class_image_a3594d16c81ed43e10d7d6640ad31fa17}{int {\bfseries write} (const char $\ast$filename)}\label{class_image_a3594d16c81ed43e10d7d6640ad31fa17}
+
+\item 
+\hypertarget{class_image_ad48372726f0de41af8218a54952aff8c}{int {\bfseries read\+Palette\+B\+M\+P} (F\+I\+L\+E $\ast$fp, \hyperlink{struct_r_g_b_q_u_a_d}{R\+G\+B\+Q\+U\+A\+D} $\ast$\&palette, int bit\+\_\+count)}\label{class_image_ad48372726f0de41af8218a54952aff8c}
+
+\item 
+\hypertarget{class_image_a700fed9e67778e4f9ff970c9b89fe8ac}{int {\bfseries read\+B\+M\+P} (const char $\ast$filename)}\label{class_image_a700fed9e67778e4f9ff970c9b89fe8ac}
+
+\item 
+\hypertarget{class_image_a14d2da9ff4c4251150854ecc7575a716}{int {\bfseries read\+B\+M\+P} (F\+I\+L\+E $\ast$\hyperlink{structfile}{file}, F\+I\+L\+E $\ast$file\+\_\+a, bool b\+Base\+Img)}\label{class_image_a14d2da9ff4c4251150854ecc7575a716}
+
+\item 
+\hypertarget{class_image_a38cc55ab27b9d316216abadb902afd89}{int {\bfseries write\+B\+M\+P} (const char $\ast$filename)}\label{class_image_a38cc55ab27b9d316216abadb902afd89}
+
+\item 
+\hypertarget{class_image_ac830ea296ba4c01df041bab58495c0ce}{int {\bfseries write\+B\+M\+P} (F\+I\+L\+E $\ast$\hyperlink{structfile}{file})}\label{class_image_ac830ea296ba4c01df041bab58495c0ce}
+
+\item 
+\hypertarget{class_image_a4f2cdbf8975e58cc0fa75519782c6c4d}{int {\bfseries read\+P\+N\+M} (const char $\ast$filename)}\label{class_image_a4f2cdbf8975e58cc0fa75519782c6c4d}
+
+\item 
+\hypertarget{class_image_ab0024b16395f59064487844d54447373}{int {\bfseries read\+P\+N\+M} (F\+I\+L\+E $\ast$\hyperlink{structfile}{file})}\label{class_image_ab0024b16395f59064487844d54447373}
+
+\item 
+\hypertarget{class_image_a0d50b7a06d53154316fe61cb0760cda9}{int {\bfseries write\+P\+N\+M} (const char $\ast$filename)}\label{class_image_a0d50b7a06d53154316fe61cb0760cda9}
+
+\item 
+\hypertarget{class_image_a626f849d3434edb68217a517858b61b2}{int {\bfseries write\+P\+N\+M} (F\+I\+L\+E $\ast$\hyperlink{structfile}{file})}\label{class_image_a626f849d3434edb68217a517858b61b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_a5b36f5484a163a568f8de78549a2ece8}{\hyperlink{structpng__image}{png\+\_\+image} {\bfseries image}}\label{class_image_a5b36f5484a163a568f8de78549a2ece8}
+
+\item 
+\hypertarget{class_image_a7d337417a1baabade6a944a0cf44e2ec}{png\+\_\+uint\+\_\+32 {\bfseries opts}}\label{class_image_a7d337417a1baabade6a944a0cf44e2ec}
+
+\item 
+\hypertarget{class_image_adcf8dc6e690ecc7babe7e2498f5d9fe9}{const char $\ast$ {\bfseries file\+\_\+name}}\label{class_image_adcf8dc6e690ecc7babe7e2498f5d9fe9}
+
+\item 
+\hypertarget{class_image_a9e990c6205d70af92d61af7e183a6f69}{int {\bfseries stride\+\_\+extra}}\label{class_image_a9e990c6205d70af92d61af7e183a6f69}
+
+\item 
+\hypertarget{class_image_a8a3a72fa96f5a0c64078b8ecfa87d2d8}{F\+I\+L\+E $\ast$ {\bfseries input\+\_\+file}}\label{class_image_a8a3a72fa96f5a0c64078b8ecfa87d2d8}
+
+\item 
+\hypertarget{class_image_a30fa860fa46d252f004f32955062e1e0}{png\+\_\+voidp {\bfseries input\+\_\+memory}}\label{class_image_a30fa860fa46d252f004f32955062e1e0}
+
+\item 
+\hypertarget{class_image_a8bd1f7c1091a63eb373567b12402edf9}{png\+\_\+size\+\_\+t {\bfseries input\+\_\+memory\+\_\+size}}\label{class_image_a8bd1f7c1091a63eb373567b12402edf9}
+
+\item 
+\hypertarget{class_image_add50466b796c295c6b2137c2c807b10b}{png\+\_\+bytep {\bfseries buffer}}\label{class_image_add50466b796c295c6b2137c2c807b10b}
+
+\item 
+\hypertarget{class_image_a31b346c1eb06c8dd75a8a71752b73faa}{ptrdiff\+\_\+t {\bfseries stride}}\label{class_image_a31b346c1eb06c8dd75a8a71752b73faa}
+
+\item 
+\hypertarget{class_image_aa0f5f989c6f446ba9417aa3fe9cf5242}{png\+\_\+size\+\_\+t {\bfseries bufsize}}\label{class_image_aa0f5f989c6f446ba9417aa3fe9cf5242}
+
+\item 
+\hypertarget{class_image_a9ada14bcaf1f4d4a39d1bdb164e1e179}{png\+\_\+size\+\_\+t {\bfseries allocsize}}\label{class_image_a9ada14bcaf1f4d4a39d1bdb164e1e179}
+
+\item 
+\hypertarget{class_image_aecdcba8871464c0d740dbd36fdace514}{char {\bfseries tmpfile\+\_\+name} \mbox{[}32\mbox{]}}\label{class_image_aecdcba8871464c0d740dbd36fdace514}
+
+\item 
+\hypertarget{class_image_a9c22363ea438c660307bdf2391166da0}{png\+\_\+uint\+\_\+16 {\bfseries colormap} \mbox{[}256 $\ast$4\mbox{]}}\label{class_image_a9c22363ea438c660307bdf2391166da0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/sph/common/image.\+h\item 
+png/lpng1612/contrib/libtests/pngstest.\+c\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/sph/common/image.\+cpp\end{DoxyCompactItemize}

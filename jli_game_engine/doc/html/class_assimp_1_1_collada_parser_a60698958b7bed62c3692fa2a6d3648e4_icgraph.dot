@@ -1,0 +1,33 @@
+digraph "Assimp::ColladaParser::ReadFloatFromTextContent"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ColladaParser\l::ReadFloatFromTextContent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::ColladaParser\l::ReadLight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a28db9d9859f8bb5aeae38eab4af46385"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::ColladaParser\l::ReadLightLibrary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a3ed3dbf44b1cff5bef102b650af346e6"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Assimp::ColladaParser\l::ReadStructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a33b811a5865cf91cdbb264c49e2c05ae"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Assimp::ColladaParser\l::ReadContents",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a1744f170a70bdbfbe6a3877a570f7546"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Assimp::ColladaParser\l::ColladaParser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a1567efb45f7129a79e9c93a782338b37"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Assimp::ColladaParser\l::ReadCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a4ea0767990fd3e1060444dda2c49e078"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Assimp::ColladaParser\l::ReadCameraLibrary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#ad71f311f965c39f935a80b6dcac5dfdb"];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Assimp::ColladaParser\l::ReadSamplerProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a8a57d9126cf0907adf1abb6d58040ab2"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Assimp::ColladaParser\l::ReadEffectColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#ac612c933ce6683da5eec958a76a31ca2"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Assimp::ColladaParser\l::ReadEffectProfileCommon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#ae2970e21c607b0f6b9fe42c8536f0442"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Assimp::ColladaParser\l::ReadEffect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a64921d31969c8c90729ecafcdc8d1cbb"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Assimp::ColladaParser\l::ReadEffectLibrary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a39a241eb37d2b45fe1b04cfb755b4afc"];
+  Node13 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

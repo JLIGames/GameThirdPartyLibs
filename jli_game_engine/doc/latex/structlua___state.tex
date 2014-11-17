@@ -1,0 +1,77 @@
+\hypertarget{structlua___state}{\section{lua\+\_\+\+State Struct Reference}
+\label{structlua___state}\index{lua\+\_\+\+State@{lua\+\_\+\+State}}
+}
+
+
+Collaboration diagram for lua\+\_\+\+State\+:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structlua___state_ad5311df12c1bfa3c4e11b7a1dbecaeda}{{\bfseries Common\+Header}}\label{structlua___state_ad5311df12c1bfa3c4e11b7a1dbecaeda}
+
+\item 
+\hypertarget{structlua___state_a563f8f114867e0b03405680633672102}{lu\+\_\+byte {\bfseries status}}\label{structlua___state_a563f8f114867e0b03405680633672102}
+
+\item 
+\hypertarget{structlua___state_a195f448e76fd404953fa1962d28212a3}{\hyperlink{structlua___t_value}{Stk\+Id} {\bfseries top}}\label{structlua___state_a195f448e76fd404953fa1962d28212a3}
+
+\item 
+\hypertarget{structlua___state_a63c9e91949432bcef6251366fbac6c9e}{\hyperlink{structglobal___state}{global\+\_\+\+State} $\ast$ {\bfseries l\+\_\+\+G}}\label{structlua___state_a63c9e91949432bcef6251366fbac6c9e}
+
+\item 
+\hypertarget{structlua___state_a7fbb5727050853f411ad64b4be9ab5c8}{\hyperlink{struct_call_info}{Call\+Info} $\ast$ {\bfseries ci}}\label{structlua___state_a7fbb5727050853f411ad64b4be9ab5c8}
+
+\item 
+\hypertarget{structlua___state_a432a65b4dfa167b9e80ca0abe1fc119e}{const Instruction $\ast$ {\bfseries oldpc}}\label{structlua___state_a432a65b4dfa167b9e80ca0abe1fc119e}
+
+\item 
+\hypertarget{structlua___state_a797a585a2bdb638bd1ca78c15bbe46fb}{\hyperlink{structlua___t_value}{Stk\+Id} {\bfseries stack\+\_\+last}}\label{structlua___state_a797a585a2bdb638bd1ca78c15bbe46fb}
+
+\item 
+\hypertarget{structlua___state_a27e1d5122ef7fffae7542814c72fdd2f}{\hyperlink{structlua___t_value}{Stk\+Id} {\bfseries stack}}\label{structlua___state_a27e1d5122ef7fffae7542814c72fdd2f}
+
+\item 
+\hypertarget{structlua___state_a44530127453a374634f7ad22eee9ec6c}{int {\bfseries stacksize}}\label{structlua___state_a44530127453a374634f7ad22eee9ec6c}
+
+\item 
+\hypertarget{structlua___state_a24099a91bbfa23048f1b940f26819f44}{unsigned short {\bfseries nny}}\label{structlua___state_a24099a91bbfa23048f1b940f26819f44}
+
+\item 
+\hypertarget{structlua___state_ac388127d044b54d2e9779beb44398845}{unsigned short {\bfseries n\+Ccalls}}\label{structlua___state_ac388127d044b54d2e9779beb44398845}
+
+\item 
+\hypertarget{structlua___state_a1d4ee1613c41d6100db9e0c73217b41f}{lu\+\_\+byte {\bfseries hookmask}}\label{structlua___state_a1d4ee1613c41d6100db9e0c73217b41f}
+
+\item 
+\hypertarget{structlua___state_ac2903d4a712ca1c2d114f541636490f5}{lu\+\_\+byte {\bfseries allowhook}}\label{structlua___state_ac2903d4a712ca1c2d114f541636490f5}
+
+\item 
+\hypertarget{structlua___state_a5d760c922e94390cd270ebb4ca4bc848}{int {\bfseries basehookcount}}\label{structlua___state_a5d760c922e94390cd270ebb4ca4bc848}
+
+\item 
+\hypertarget{structlua___state_a8824aded162dcdb9d3a142a90819e372}{int {\bfseries hookcount}}\label{structlua___state_a8824aded162dcdb9d3a142a90819e372}
+
+\item 
+\hypertarget{structlua___state_a89d3fb3ecb6831d1c5c51b4a87ace8ed}{lua\+\_\+\+Hook {\bfseries hook}}\label{structlua___state_a89d3fb3ecb6831d1c5c51b4a87ace8ed}
+
+\item 
+\hypertarget{structlua___state_a9055a00dd8a0fd55fd2df6554b8a2d58}{\hyperlink{union_g_c_object}{G\+C\+Object} $\ast$ {\bfseries openupval}}\label{structlua___state_a9055a00dd8a0fd55fd2df6554b8a2d58}
+
+\item 
+\hypertarget{structlua___state_a0d446661e92287c8409076c970771217}{\hyperlink{union_g_c_object}{G\+C\+Object} $\ast$ {\bfseries gclist}}\label{structlua___state_a0d446661e92287c8409076c970771217}
+
+\item 
+\hypertarget{structlua___state_ae4bbd2199ffd804fe64142c3d5ecb249}{struct \hyperlink{structlua__longjmp}{lua\+\_\+longjmp} $\ast$ {\bfseries error\+Jmp}}\label{structlua___state_ae4bbd2199ffd804fe64142c3d5ecb249}
+
+\item 
+\hypertarget{structlua___state_a09de3a7c6d3bcb6c2b0d26a81bb8d44b}{ptrdiff\+\_\+t {\bfseries errfunc}}\label{structlua___state_a09de3a7c6d3bcb6c2b0d26a81bb8d44b}
+
+\item 
+\hypertarget{structlua___state_a8c707493c7e45c7e0467381f5a80175d}{\hyperlink{struct_call_info}{Call\+Info} {\bfseries base\+\_\+ci}}\label{structlua___state_a8c707493c7e45c7e0467381f5a80175d}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lua/lua-\/5.\+2.\+3/src/lstate.\+h\end{DoxyCompactItemize}

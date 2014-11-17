@@ -1,0 +1,13 @@
+digraph "getPointer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="getPointer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_abstract_factory_object_8h.html#a9049a0e41e1d76a242f00ea7ec323f18"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="operator\<",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_abstract_factory_object_8h.html#a8571ca8b7756e403fa9ebfa9e6251ef7"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="operator\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_abstract_factory_object_8h.html#a836cb090770eea9f6f73b2abbb4f025d"];
+}

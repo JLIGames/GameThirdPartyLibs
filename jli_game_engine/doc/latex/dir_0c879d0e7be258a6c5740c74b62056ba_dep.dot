@@ -1,0 +1,18 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/FresnelReflections/OGLES2" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_193b3429d352b416d5f532e39b39a334 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="FresnelReflections" fontname="Helvetica", fontsize="10", URL="dir_193b3429d352b416d5f532e39b39a334.html"]
+  subgraph clusterdir_0c879d0e7be258a6c5740c74b62056ba {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0c879d0e7be258a6c5740c74b62056ba.html"];
+    dir_0c879d0e7be258a6c5740c74b62056ba [shape=plaintext label="OGLES2"];
+    dir_875a4284c0bd3cc8bcdfcf761bdc9558 [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_875a4284c0bd3cc8bcdfcf761bdc9558.html"];
+    dir_75e0826408799a2676f09df10427c361 [shape=box label="Content" color="black" fillcolor="white" style="filled" URL="dir_75e0826408799a2676f09df10427c361.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_0c879d0e7be258a6c5740c74b62056ba->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000665_000133.html"];
+  dir_0c879d0e7be258a6c5740c74b62056ba->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_000665_001762.html"];
+}

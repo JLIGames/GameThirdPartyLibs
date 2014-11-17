@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/StencilBuffer/OGLES2/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_70b2f08a17966ae94d8e77667e1aabbc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_70b2f08a17966ae94d8e77667e1aabbc.html"]
+  subgraph clusterdir_d5cb310afc1895b5cf561285889f812e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d5cb310afc1895b5cf561285889f812e.html"];
+    dir_d5cb310afc1895b5cf561285889f812e [shape=plaintext label="com"];
+    dir_61a22ef58eb4e2e279328577ca05b275 [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_61a22ef58eb4e2e279328577ca05b275.html"];
+  }
+  }
+}

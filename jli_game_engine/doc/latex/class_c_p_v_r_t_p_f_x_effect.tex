@@ -1,0 +1,521 @@
+\hypertarget{class_c_p_v_r_t_p_f_x_effect}{\section{C\+P\+V\+R\+T\+P\+F\+X\+Effect Class Reference}
+\label{class_c_p_v_r_t_p_f_x_effect}\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+}
+
+
+P\+F\+X effect.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+P\+F\+X\+Parser\+A\+P\+I.\+h$>$}
+
+
+
+Collaboration diagram for C\+P\+V\+R\+T\+P\+F\+X\+Effect\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_v_r_t_p_f_x_effect_a03a1b67e3020138caf10cde2846c008e}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} ()
+\begin{DoxyCompactList}\small\item\em Sets the context to N\+U\+L\+L and initialises the member variables to zero. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_p_f_x_effect_a97850cdfaca8d60704f46775957e7afc}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} (\hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} \&s\+Context)
+\begin{DoxyCompactList}\small\item\em Sets the context and initialises the member variables to zero. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_v_r_t_p_f_x_effect_aa276e3a5b8efe4ef748f106fdc37aa37}{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Effect} ()
+\begin{DoxyCompactList}\small\item\em Calls \hyperlink{class_c_p_v_r_t_p_f_x_effect_ab54c25a5a7640077db0cd241cefa3671}{Destroy()}. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_p_f_x_effect_a7335d99bda5a7c05b0e7347292a08d0a}{Load} (\hyperlink{class_c_p_v_r_t_p_f_x_parser}{C\+P\+V\+R\+T\+P\+F\+X\+Parser} \&src, const char $\ast$const psz\+Effect, const char $\ast$const psz\+File\+Name, \hyperlink{class_p_v_r_t_p_f_x_effect_delegate}{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate} $\ast$p\+Delegate, unsigned int \&ui\+Unknown\+Uniforms, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Return\+Error)
+\begin{DoxyCompactList}\small\item\em Loads the specified effect from the \hyperlink{class_c_p_v_r_t_p_f_x_parser}{C\+P\+V\+R\+T\+P\+F\+X\+Parser} object. Compiles and links the shaders. Initialises texture data. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_p_f_x_effect_ab54c25a5a7640077db0cd241cefa3671}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Deletes the gl program object and texture data. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_p_f_x_effect_a66c1e23696dd3c0acda2becdac348c69}{Activate} (const int i32\+Render\+Texture\+Id=-\/1, const unsigned int ui32\+Replacement\+Texture=0)
+\begin{DoxyCompactList}\small\item\em Selects the gl program object and binds the textures. If the render target texture for the current render pass is required in this effect (and therefore cannot be sampled), load the replacement texture instead. \end{DoxyCompactList}\item 
+const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}\\*
+$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_texture}{S\+P\+V\+R\+T\+P\+F\+X\+Texture} $>$ \& \hyperlink{class_c_p_v_r_t_p_f_x_effect_a7aa24a05385a6cc26a33d3ab5bea27d7}{Get\+Texture\+Array} () const 
+\begin{DoxyCompactList}\small\item\em Gets the texture data array. \end{DoxyCompactList}\item 
+const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}\\*
+$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_uniform}{S\+P\+V\+R\+T\+P\+F\+X\+Uniform} $>$ \& \hyperlink{class_c_p_v_r_t_p_f_x_effect_ab9f4ce64c4bd31eb5fb45d86f4239bed}{Get\+Uniform\+Array} () const 
+\begin{DoxyCompactList}\small\item\em Returns a list of known semantics. \end{DoxyCompactList}\item 
+const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}\\*
+$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_uniform_semantic}{S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic} $>$ \& \hyperlink{class_c_p_v_r_t_p_f_x_effect_a3d05fab446c9120e3cfaf068fbb5cf72}{Get\+Semantic\+Array} () const 
+\begin{DoxyCompactList}\small\item\em Gets the array of registered semantics which will be used to match P\+F\+X code. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_p_f_x_effect_a2c856bbaad1a9f8655eb0d46b60a7eb9}{Set\+Texture} (const unsigned int n\+Idx, const G\+Luint ui, const unsigned int u32flags=0)
+\begin{DoxyCompactList}\small\item\em Sets the textrue and applys the filtering. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_p_f_x_effect_a3b08f2f371bf7aad946a8783631371a2}{Set\+Default\+Uniform\+Value} (const char $\ast$const psz\+Name, const \hyperlink{struct_s_p_v_r_t_semantic_default_data}{S\+P\+V\+R\+T\+Semantic\+Default\+Data} $\ast$ps\+Default\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the dafault value for the uniform semantic. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_p_f_x_effect_a50041cb94518a8c4204e7b188cb45bff}{Register\+Uniform\+Semantic} (const \hyperlink{struct_s_p_v_r_t_p_f_x_uniform_semantic}{S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic} $\ast$const ps\+Uniforms, unsigned int ui\+Num\+Uniforms, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Return\+Error)
+\begin{DoxyCompactList}\small\item\em Registers a user-\/provided uniform semantic. \end{DoxyCompactList}\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_c_p_v_r_t_p_f_x_effect_a8cd988fd9b9fc6712221484cad2fe63e}{Remove\+Uniform\+Semantic} (unsigned int ui\+Semantic\+I\+D, \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Return\+Error)
+\begin{DoxyCompactList}\small\item\em Removes a given semantic I\+D from the 'known' semantic list and re-\/parses the effect to update the uniform table. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_v_r_t_p_f_x_effect_aeef3d3fb27e6eb06374e398cfb9eb70d}{Set\+Context} (\hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$const p\+Context)
+\begin{DoxyCompactList}\small\item\em Sets the context for this effect. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_effect_a69ced662214587ef4bef6d7d24a5f4d5}{Get\+Program\+Handle} () const 
+\begin{DoxyCompactList}\small\item\em Returns the O\+G\+L program handle. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_p_v_r_t_p_f_x_effect_a988a10ab800423f363b7fb8a140dbc39}{Get\+Effect\+Index} () const 
+\begin{DoxyCompactList}\small\item\em Gets the active effect index within the P\+F\+X file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_ab12644ddc3b426ca11a09ddda24847c3}{bool {\bfseries m\+\_\+b\+Loaded}}\label{class_c_p_v_r_t_p_f_x_effect_ab12644ddc3b426ca11a09ddda24847c3}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a6d3c027f051810ba226e43eb262872da}{\hyperlink{struct_s_p_v_r_t_context}{S\+P\+V\+R\+T\+Context} $\ast$ {\bfseries m\+\_\+ps\+Context}}\label{class_c_p_v_r_t_p_f_x_effect_a6d3c027f051810ba226e43eb262872da}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a9311c47c27000a82503b00036955c3c4}{\hyperlink{class_c_p_v_r_t_p_f_x_parser}{C\+P\+V\+R\+T\+P\+F\+X\+Parser} $\ast$ {\bfseries m\+\_\+p\+Parser}}\label{class_c_p_v_r_t_p_f_x_effect_a9311c47c27000a82503b00036955c3c4}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a7f10d8c173ce28907d336dbc4c05e74d}{unsigned int {\bfseries m\+\_\+n\+Effect}}\label{class_c_p_v_r_t_p_f_x_effect_a7f10d8c173ce28907d336dbc4c05e74d}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a4f842c3a525b0ccbdebbead196e18b36}{G\+Luint {\bfseries m\+\_\+ui\+Program}}\label{class_c_p_v_r_t_p_f_x_effect_a4f842c3a525b0ccbdebbead196e18b36}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a298e2fd65258370518c4ac1670681520}{\hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_texture}{S\+P\+V\+R\+T\+P\+F\+X\+Texture} $>$ {\bfseries m\+\_\+\+Textures}}\label{class_c_p_v_r_t_p_f_x_effect_a298e2fd65258370518c4ac1670681520}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a741d6896eeb3b740028dbc8e29c73eac}{\hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_uniform}{S\+P\+V\+R\+T\+P\+F\+X\+Uniform} $>$ {\bfseries m\+\_\+\+Uniforms}}\label{class_c_p_v_r_t_p_f_x_effect_a741d6896eeb3b740028dbc8e29c73eac}
+
+\item 
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_aca70e6d60db356114e46c86bcb7c35f6}{\hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array}\\*
+$<$ \hyperlink{struct_s_p_v_r_t_p_f_x_uniform_semantic}{S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic} $>$ {\bfseries m\+\_\+\+Semantics}}\label{class_c_p_v_r_t_p_f_x_effect_aca70e6d60db356114e46c86bcb7c35f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+F\+X effect. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a03a1b67e3020138caf10cde2846c008e}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{C\+P\+V\+R\+T\+P\+F\+X\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+C\+P\+V\+R\+T\+P\+F\+X\+Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a03a1b67e3020138caf10cde2846c008e}
+
+
+Sets the context to N\+U\+L\+L and initialises the member variables to zero. 
+
+
+
+
+
+
+
+  \hyperlink{class_c_p_v_r_t_p_f_x_effect}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} Constructor  Sets the context and initialises the member variables to zero. \hypertarget{class_c_p_v_r_t_p_f_x_effect_a97850cdfaca8d60704f46775957e7afc}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{C\+P\+V\+R\+T\+P\+F\+X\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+C\+P\+V\+R\+T\+P\+F\+X\+Effect (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+V\+R\+T\+Context} \&}]{s\+Context}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a97850cdfaca8d60704f46775957e7afc}
+
+
+Sets the context and initialises the member variables to zero. 
+
+
+
+
+
+
+
+  \hyperlink{class_c_p_v_r_t_p_f_x_effect}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} Constructor  Sets the context and initialises the member variables to zero. \hypertarget{class_c_p_v_r_t_p_f_x_effect_aa276e3a5b8efe4ef748f106fdc37aa37}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!````~C\+P\+V\+R\+T\+P\+F\+X\+Effect@{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\index{````~C\+P\+V\+R\+T\+P\+F\+X\+Effect@{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Effect}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::$\sim$\+C\+P\+V\+R\+T\+P\+F\+X\+Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_aa276e3a5b8efe4ef748f106fdc37aa37}
+
+
+Calls \hyperlink{class_c_p_v_r_t_p_f_x_effect_ab54c25a5a7640077db0cd241cefa3671}{Destroy()}. 
+
+
+
+
+
+
+
+  \hyperlink{class_c_p_v_r_t_p_f_x_effect}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} Destructor  Calls \hyperlink{class_c_p_v_r_t_p_f_x_effect_ab54c25a5a7640077db0cd241cefa3671}{Destroy()}. 
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a66c1e23696dd3c0acda2becdac348c69}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Activate@{Activate}}
+\index{Activate@{Activate}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Activate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Activate (
+\begin{DoxyParamCaption}
+\item[{const int}]{i32\+Render\+Texture\+Id = {\ttfamily -\/1}, }
+\item[{const unsigned int}]{ui32\+Replacement\+Texture = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a66c1e23696dd3c0acda2becdac348c69}
+
+
+Selects the gl program object and binds the textures. If the render target texture for the current render pass is required in this effect (and therefore cannot be sampled), load the replacement texture instead. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i32\+Render\+Texture\+Id} & The I\+D of the render target of the current task \\
+\hline
+\mbox{\tt in}  & {\em ui32\+Replacement\+Texture} & The I\+D of the texture that should be used instead \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+P\+V\+R\+T\+Error P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if activate succeeded
+\end{DoxyReturn}
+
+
+  Activate  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if activate succeeded  Selects the gl program object and binds the textures. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_ab54c25a5a7640077db0cd241cefa3671}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_ab54c25a5a7640077db0cd241cefa3671}
+
+
+Deletes the gl program object and texture data. 
+
+
+
+
+
+
+
+  Destroy  Deletes the gl program object and texture data. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a988a10ab800423f363b7fb8a140dbc39}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Get\+Effect\+Index@{Get\+Effect\+Index}}
+\index{Get\+Effect\+Index@{Get\+Effect\+Index}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Get\+Effect\+Index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Get\+Effect\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_effect_a988a10ab800423f363b7fb8a140dbc39}
+
+
+Gets the active effect index within the P\+F\+X file. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+unsigned int
+\end{DoxyReturn}
+
+
+  Get\+Effect\+Index  unsigned int  Gets the active effect index within the P\+F\+X file. \hypertarget{class_c_p_v_r_t_p_f_x_effect_a69ced662214587ef4bef6d7d24a5f4d5}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Get\+Program\+Handle@{Get\+Program\+Handle}}
+\index{Get\+Program\+Handle@{Get\+Program\+Handle}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Get\+Program\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Get\+Program\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_effect_a69ced662214587ef4bef6d7d24a5f4d5}
+
+
+Returns the O\+G\+L program handle. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+unsigned int
+\end{DoxyReturn}
+
+
+  Get\+Program\+Handle  unsigned int  Returns the O\+G\+L program handle. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a3d05fab446c9120e3cfaf068fbb5cf72}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Get\+Semantic\+Array@{Get\+Semantic\+Array}}
+\index{Get\+Semantic\+Array@{Get\+Semantic\+Array}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Get\+Semantic\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+P\+V\+R\+T\+Array}$<$ {\bf S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic} $>$ \& C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Get\+Semantic\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_effect_a3d05fab446c9120e3cfaf068fbb5cf72}
+
+
+Gets the array of registered semantics which will be used to match P\+F\+X code. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array$<$\+S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic$>$}\&
+\end{DoxyReturn}
+
+
+  Get\+Semantic\+Array  const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array$<$\+S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic$>$}\&  Gets the array of registered semantics which will be used to match P\+F\+X code. \hypertarget{class_c_p_v_r_t_p_f_x_effect_a7aa24a05385a6cc26a33d3ab5bea27d7}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Get\+Texture\+Array@{Get\+Texture\+Array}}
+\index{Get\+Texture\+Array@{Get\+Texture\+Array}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Get\+Texture\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+P\+V\+R\+T\+Array}$<$ {\bf S\+P\+V\+R\+T\+P\+F\+X\+Texture} $>$ \& C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Get\+Texture\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_effect_a7aa24a05385a6cc26a33d3ab5bea27d7}
+
+
+Gets the texture data array. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+S\+P\+V\+R\+T\+P\+F\+X\+Texture$\ast$ pointer to the texture data array
+\end{DoxyReturn}
+
+
+  Get\+Texture\+Array  n\+Count number of textures  S\+P\+V\+R\+T\+P\+F\+X\+Texture$\ast$ pointer to the texture data array  Gets the texture data array. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_ab9f4ce64c4bd31eb5fb45d86f4239bed}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Get\+Uniform\+Array@{Get\+Uniform\+Array}}
+\index{Get\+Uniform\+Array@{Get\+Uniform\+Array}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Get\+Uniform\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+P\+V\+R\+T\+Array}$<$ {\bf S\+P\+V\+R\+T\+P\+F\+X\+Uniform} $>$ \& C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Get\+Uniform\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_p_v_r_t_p_f_x_effect_ab9f4ce64c4bd31eb5fb45d86f4239bed}
+
+
+Returns a list of known semantics. 
+
+
+
+ \begin{DoxyReturn}{Returns}
+const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array$<$\+S\+P\+V\+R\+T\+P\+F\+X\+Uniform$>$}\&
+\end{DoxyReturn}
+
+
+  Get\+Uniform\+Array  const \hyperlink{class_c_p_v_r_t_array}{C\+P\+V\+R\+T\+Array$<$\+S\+P\+V\+R\+T\+P\+F\+X\+Uniform$>$}\&  Returns a list of known semantics. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a7335d99bda5a7c05b0e7347292a08d0a}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Load@{Load}}
+\index{Load@{Load}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Load (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+P\+F\+X\+Parser} \&}]{src, }
+\item[{const char $\ast$const}]{psz\+Effect, }
+\item[{const char $\ast$const}]{psz\+File\+Name, }
+\item[{{\bf P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate} $\ast$}]{p\+Delegate, }
+\item[{unsigned int \&}]{ui\+Unknown\+Uniforms, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Return\+Error}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a7335d99bda5a7c05b0e7347292a08d0a}
+
+
+Loads the specified effect from the \hyperlink{class_c_p_v_r_t_p_f_x_parser}{C\+P\+V\+R\+T\+P\+F\+X\+Parser} object. Compiles and links the shaders. Initialises texture data. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & P\+F\+X Parser Object \\
+\hline
+\mbox{\tt in}  & {\em psz\+Effect} & Effect name \\
+\hline
+\mbox{\tt in}  & {\em psz\+File\+Name} & Effect file name \\
+\hline
+\mbox{\tt in}  & {\em p\+Delegate} & A delegate which will receive callbacks \\
+\hline
+\mbox{\tt out}  & {\em ui\+Unknown\+Uniforms} & Number of unknown uniforms found \\
+\hline
+\mbox{\tt out}  & {\em p\+Return\+Error} & Error string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if load succeeded
+\end{DoxyReturn}
+
+
+  Load  src P\+F\+X Parser Object  psz\+Effect Effect name  psz\+File\+Name Effect file name  p\+Return\+Error Error string  E\+P\+V\+R\+T\+Error P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S if load succeeded  Loads the specified effect from the \hyperlink{class_c_p_v_r_t_p_f_x_parser}{C\+P\+V\+R\+T\+P\+F\+X\+Parser} object. Compiles and links the shaders. Initialises texture data. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a50041cb94518a8c4204e7b188cb45bff}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Register\+Uniform\+Semantic@{Register\+Uniform\+Semantic}}
+\index{Register\+Uniform\+Semantic@{Register\+Uniform\+Semantic}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Register\+Uniform\+Semantic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Register\+Uniform\+Semantic (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+V\+R\+T\+P\+F\+X\+Uniform\+Semantic} $\ast$const}]{ps\+Uniforms, }
+\item[{unsigned int}]{ui\+Num\+Uniforms, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Return\+Error}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a50041cb94518a8c4204e7b188cb45bff}
+
+
+Registers a user-\/provided uniform semantic. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ps\+Uniforms} & Array of semantics to register \\
+\hline
+\mbox{\tt in}  & {\em ui\+Num\+Uniforms} & Number provided \\
+\hline
+\mbox{\tt out}  & {\em p\+Return\+Error} & Human-\/readable error if any \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S on success
+\end{DoxyReturn}
+
+
+  Register\+Uniform\+Semantic  ps\+Uniforms  ui\+Num\+Uniforms  E\+P\+V\+R\+T\+Error  Registers a user-\/provided uniform semantic. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_a8cd988fd9b9fc6712221484cad2fe63e}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Remove\+Uniform\+Semantic@{Remove\+Uniform\+Semantic}}
+\index{Remove\+Uniform\+Semantic@{Remove\+Uniform\+Semantic}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Remove\+Uniform\+Semantic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Remove\+Uniform\+Semantic (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Semantic\+I\+D, }
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Return\+Error}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a8cd988fd9b9fc6712221484cad2fe63e}
+
+
+Removes a given semantic I\+D from the 'known' semantic list and re-\/parses the effect to update the uniform table. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Semantic\+I\+D} & \\
+\hline
+\mbox{\tt out}  & {\em p\+Return\+Error} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S on success
+\end{DoxyReturn}
+
+
+  Remove\+Uniform\+Semantic  ui\+Semantic\+I\+D  p\+Return\+Error  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S on success  Removes a given semantic I\+D from the 'known' semantic list and re-\/parses the effect to update the uniform table. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_p_f_x_effect_aeef3d3fb27e6eb06374e398cfb9eb70d}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Set\+Context@{Set\+Context}}
+\index{Set\+Context@{Set\+Context}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Set\+Context}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Set\+Context (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+V\+R\+T\+Context} $\ast$const}]{p\+Context}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_aeef3d3fb27e6eb06374e398cfb9eb70d}
+
+
+Sets the context for this effect. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Context} & context pointer\\
+\hline
+\end{DoxyParams}
+
+
+  Set\+Context  p\+Context  \hypertarget{class_c_p_v_r_t_p_f_x_effect_a3b08f2f371bf7aad946a8783631371a2}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Set\+Default\+Uniform\+Value@{Set\+Default\+Uniform\+Value}}
+\index{Set\+Default\+Uniform\+Value@{Set\+Default\+Uniform\+Value}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Set\+Default\+Uniform\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Set\+Default\+Uniform\+Value (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{psz\+Name, }
+\item[{const {\bf S\+P\+V\+R\+T\+Semantic\+Default\+Data} $\ast$}]{ps\+Default\+Value}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a3b08f2f371bf7aad946a8783631371a2}
+
+
+Sets the dafault value for the uniform semantic. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+Name} & name of uniform \\
+\hline
+\mbox{\tt in}  & {\em ps\+Default\+Value} & pointer to default value\\
+\hline
+\end{DoxyParams}
+
+
+  Set\+Default\+Semantic\+Value  psz\+Name name of uniform  ps\+Default\+Value pointer to default value  Sets the default value for the uniform semantic. \hypertarget{class_c_p_v_r_t_p_f_x_effect_a2c856bbaad1a9f8655eb0d46b60a7eb9}{\index{C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}!Set\+Texture@{Set\+Texture}}
+\index{Set\+Texture@{Set\+Texture}!C\+P\+V\+R\+T\+P\+F\+X\+Effect@{C\+P\+V\+R\+T\+P\+F\+X\+Effect}}
+\subsubsection[{Set\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+P\+F\+X\+Effect\+::\+Set\+Texture (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{n\+Idx, }
+\item[{const G\+Luint}]{ui, }
+\item[{const unsigned int}]{u32flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_p_f_x_effect_a2c856bbaad1a9f8655eb0d46b60a7eb9}
+
+
+Sets the textrue and applys the filtering. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n\+Idx} & texture number \\
+\hline
+\mbox{\tt in}  & {\em ui} & opengl texture handle \\
+\hline
+\mbox{\tt in}  & {\em u32flags} & texture flags\\
+\hline
+\end{DoxyParams}
+
+
+  Set\+Texture  n\+Idx texture number  ui opengl texture handle  u32flags texture flags  Sets the textrue and applys the filtering. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S2/\hyperlink{_p_v_r_t_p_f_x_parser_a_p_i_8h}{P\+V\+R\+T\+P\+F\+X\+Parser\+A\+P\+I.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S2/P\+V\+R\+T\+P\+F\+X\+Parser\+A\+P\+I.\+cpp\end{DoxyCompactItemize}

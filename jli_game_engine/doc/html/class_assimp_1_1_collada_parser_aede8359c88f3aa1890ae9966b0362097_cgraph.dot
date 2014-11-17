@@ -1,0 +1,23 @@
+digraph "Assimp::ColladaParser::ReadBoolFromTextContent"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::ColladaParser\l::ReadBoolFromTextContent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::ColladaParser\l::GetTextContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a7d95361d1faa2db22bbb60956e97d78e"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::ColladaParser\l::TestTextContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#ae17c01f640367946ea94b7288ea3bfe6"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="irr::io::IIrrXMLReader\l::getNodeType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#a3482e8e6bdc15965fc6a0bcef6e9a8e0",tooltip="Returns the type of the current XML node. "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="irr::io::IIrrXMLReader\l::isEmptyElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#a3c85b144e0376c9ff90bce1bbbc338a9",tooltip="Returns if an element is an empty element, like <foo> "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="irr::io::IIrrXMLReader\l::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#a157f458f7dabeeff173f72a0fb443a8e",tooltip="Reads forward to the next xml node. "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="irr::io::IIrrXMLReader\l::getNodeData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1io_1_1_i_irr_x_m_l_reader.html#aecbe0698e8f9acf88e27dd53da984210",tooltip="Returns data of the current node. "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Assimp::ColladaParser\l::ThrowException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_collada_parser.html#a5bee81038d013b75b112a76bf5f7b587"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Assimp::ASSIMP_strincmp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a5718d462fef0070afea1d4ac4e65d4d8",tooltip="Helper function to do platform independent string comparison. "];
+}

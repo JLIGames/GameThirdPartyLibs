@@ -1,0 +1,127 @@
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency}{\section{Assimp\+:\+:Vertex\+Triangle\+Adjacency Class Reference}
+\label{class_assimp_1_1_vertex_triangle_adjacency}\index{Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}}
+}
+
+
+The \hyperlink{class_assimp_1_1_vertex_triangle_adjacency}{Vertex\+Triangle\+Adjacency} class computes a vertex-\/triangle adjacency map from a given index buffer.  
+
+
+
+
+{\ttfamily \#include $<$Vertex\+Triangle\+Adjacency.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_vertex_triangle_adjacency_a68ee4678c25fe13b4c4c5c9cd64ebb7b}{Vertex\+Triangle\+Adjacency} (\hyperlink{structai_face}{ai\+Face} $\ast$pc\+Faces, unsigned int i\+Num\+Faces, unsigned int \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_aff248d29bb6a3804ae2ae90272c5625d}{i\+Num\+Vertices}=0, bool b\+Compute\+Num\+Triangles=true)
+\begin{DoxyCompactList}\small\item\em Construction from an existing index buffer. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_ac0a8e79b69b698a405d6ac11f77d3953}{\hyperlink{class_assimp_1_1_vertex_triangle_adjacency_ac0a8e79b69b698a405d6ac11f77d3953}{$\sim$\+Vertex\+Triangle\+Adjacency} ()}\label{class_assimp_1_1_vertex_triangle_adjacency_ac0a8e79b69b698a405d6ac11f77d3953}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+unsigned int $\ast$ \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_a3be48abc5efab1bc36d96301cc0fbb1f}{Get\+Adjacent\+Triangles} (unsigned int i\+Vert\+Index) const 
+\begin{DoxyCompactList}\small\item\em Get all triangles adjacent to a vertex. \end{DoxyCompactList}\item 
+unsigned int \& \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_ad56cc55f0959685bf56186796559b608}{Get\+Num\+Triangles\+Ptr} (unsigned int i\+Vert\+Index)
+\begin{DoxyCompactList}\small\item\em Get the number of triangles that are referenced by a vertex. This function returns a reference that can be modified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_a3fbbefa87fbbe4d55d4982e1cd32a9d0}{unsigned int $\ast$ \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_a3fbbefa87fbbe4d55d4982e1cd32a9d0}{m\+Offset\+Table}}\label{class_assimp_1_1_vertex_triangle_adjacency_a3fbbefa87fbbe4d55d4982e1cd32a9d0}
+
+\begin{DoxyCompactList}\small\item\em Offset table. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_a9cd119269d6c1f74dceb19fec8847f07}{unsigned int $\ast$ \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_a9cd119269d6c1f74dceb19fec8847f07}{m\+Adjacency\+Table}}\label{class_assimp_1_1_vertex_triangle_adjacency_a9cd119269d6c1f74dceb19fec8847f07}
+
+\begin{DoxyCompactList}\small\item\em Adjacency table. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_ac358d030371beb7e2e5bcb38860a0e15}{unsigned int $\ast$ \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_ac358d030371beb7e2e5bcb38860a0e15}{m\+Live\+Triangles}}\label{class_assimp_1_1_vertex_triangle_adjacency_ac358d030371beb7e2e5bcb38860a0e15}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_table}{Table} containing the number of referenced triangles per vertex. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_aff248d29bb6a3804ae2ae90272c5625d}{unsigned int \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_aff248d29bb6a3804ae2ae90272c5625d}{i\+Num\+Vertices}}\label{class_assimp_1_1_vertex_triangle_adjacency_aff248d29bb6a3804ae2ae90272c5625d}
+
+\begin{DoxyCompactList}\small\item\em Debug\+: Number of referenced vertices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_assimp_1_1_vertex_triangle_adjacency}{Vertex\+Triangle\+Adjacency} class computes a vertex-\/triangle adjacency map from a given index buffer. 
+
+\begin{DoxyNote}{Note}
+Although it is called \hyperlink{class_assimp_1_1_vertex_triangle_adjacency_a68ee4678c25fe13b4c4c5c9cd64ebb7b}{Vertex\+Triangle\+Adjacency}, the current version does also support arbitrary polygons. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_a68ee4678c25fe13b4c4c5c9cd64ebb7b}{\index{Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}!Vertex\+Triangle\+Adjacency@{Vertex\+Triangle\+Adjacency}}
+\index{Vertex\+Triangle\+Adjacency@{Vertex\+Triangle\+Adjacency}!Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}}
+\subsubsection[{Vertex\+Triangle\+Adjacency}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+Triangle\+Adjacency\+::\+Vertex\+Triangle\+Adjacency (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Face} $\ast$}]{pc\+Faces, }
+\item[{unsigned int}]{i\+Num\+Faces, }
+\item[{unsigned int}]{i\+Num\+Vertices = {\ttfamily 0}, }
+\item[{bool}]{b\+Compute\+Num\+Triangles = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_vertex_triangle_adjacency_a68ee4678c25fe13b4c4c5c9cd64ebb7b}
+
+
+Construction from an existing index buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Faces} & \hyperlink{struct_index}{Index} buffer \\
+\hline
+{\em i\+Num\+Faces} & Number of faces in the buffer \\
+\hline
+{\em i\+Num\+Vertices} & Number of referenced vertices. This value is computed automatically if 0 is specified. \\
+\hline
+{\em b\+Compute\+Num\+Triangles} & If you want the class to compute a list containing the number of referenced triangles per vertex per vertex -\/ pass true. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_a3be48abc5efab1bc36d96301cc0fbb1f}{\index{Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}!Get\+Adjacent\+Triangles@{Get\+Adjacent\+Triangles}}
+\index{Get\+Adjacent\+Triangles@{Get\+Adjacent\+Triangles}!Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}}
+\subsubsection[{Get\+Adjacent\+Triangles}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int$\ast$ Assimp\+::\+Vertex\+Triangle\+Adjacency\+::\+Get\+Adjacent\+Triangles (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i\+Vert\+Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_vertex_triangle_adjacency_a3be48abc5efab1bc36d96301cc0fbb1f}
+
+
+Get all triangles adjacent to a vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Vert\+Index} & \hyperlink{struct_index}{Index} of the vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the adjacency list. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_vertex_triangle_adjacency_ad56cc55f0959685bf56186796559b608}{\index{Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}!Get\+Num\+Triangles\+Ptr@{Get\+Num\+Triangles\+Ptr}}
+\index{Get\+Num\+Triangles\+Ptr@{Get\+Num\+Triangles\+Ptr}!Assimp\+::\+Vertex\+Triangle\+Adjacency@{Assimp\+::\+Vertex\+Triangle\+Adjacency}}
+\subsubsection[{Get\+Num\+Triangles\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int\& Assimp\+::\+Vertex\+Triangle\+Adjacency\+::\+Get\+Num\+Triangles\+Ptr (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i\+Vert\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_vertex_triangle_adjacency_ad56cc55f0959685bf56186796559b608}
+
+
+Get the number of triangles that are referenced by a vertex. This function returns a reference that can be modified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Vert\+Index} & \hyperlink{struct_index}{Index} of the vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of referenced triangles 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Vertex\+Triangle\+Adjacency.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Vertex\+Triangle\+Adjacency.\+cpp\end{DoxyCompactItemize}

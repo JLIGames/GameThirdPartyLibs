@@ -1,0 +1,19 @@
+digraph "PVRTTextureTile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PVRTTextureTile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PVRTGetFormatMinDims",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_texture_8h.html#a9b054db94257b8cfc7b77c7b12d80a6d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PVRTGetBitsPerPixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_texture_8h.html#ad4283ff9a9129c353611308560402638"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PVRTTextureCreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_texture_8h.html#a66eefac7cb79607fbf7a5543132e8bc8"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PVRTTextureLoadTiled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_texture_8h.html#adcbee79fac67e614ffb996ab4469ebe8"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PVRTTextureDeTwiddle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_texture_8h.html#a4891b7a71bc2bdc37d742b085c465de7"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="PVRTTextureTwiddle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_texture_8h.html#a471b5d3ea140f737d953161c343fbff6"];
+}

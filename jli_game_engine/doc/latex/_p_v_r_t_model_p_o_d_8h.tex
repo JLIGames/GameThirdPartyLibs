@@ -1,0 +1,540 @@
+\hypertarget{_p_v_r_t_model_p_o_d_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Model\+P\+O\+D.h File Reference}
+\label{_p_v_r_t_model_p_o_d_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+}
+
+
+Code to load P\+O\+D files -\/ models exported from M\+A\+X.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Vector.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Error.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Vertex.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Bone\+Batch.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Model\+P\+O\+D.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data}
+\begin{DoxyCompactList}\small\item\em A class for representing P\+O\+D data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_camera}{S\+P\+O\+D\+Camera}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D camera data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_light}{S\+P\+O\+D\+Light}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D light data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D mesh data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D node data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_texture}{S\+P\+O\+D\+Texture}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D texture data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_material}{S\+P\+O\+D\+Material}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D material data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_o_d_scene}{S\+P\+O\+D\+Scene}
+\begin{DoxyCompactList}\small\item\em Struct for storing P\+O\+D scene data. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D}
+\begin{DoxyCompactList}\small\item\em A class for loading and storing data from P\+O\+D files/headers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_v_r_t_model_p_o_d_8h_a30014303fdcff2f79e5faddc3fc18f15}{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N}~(\char`\"{}A\+B.\+P\+O\+D.\+2.\+0\char`\"{})
+\item 
+\#define \hyperlink{_p_v_r_t_model_p_o_d_8h_a79bbf308573cd2f1a98829be858ed555}{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D}~(0x00000001)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20e}{E\+P\+O\+D\+Light\+Type} \{ \hyperlink{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20eaa387a18b4beb2a7a04b11383d78c1c9b}{e\+P\+O\+D\+Point} =0, 
+\hyperlink{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20eae2ce187fef654b4b0a7326e9f0809bbf}{e\+P\+O\+D\+Directional}, 
+\hyperlink{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20ea091231664a2f90047eab9d8ecde7a6a9}{e\+P\+O\+D\+Spot}, 
+{\bfseries e\+Num\+P\+O\+D\+Light\+Types}
+ \}
+\item 
+enum \hyperlink{_p_v_r_t_model_p_o_d_8h_a222712303f6d58c52799b3affd4cd7c1}{E\+P\+O\+D\+Primitive\+Type} \{ \hyperlink{_p_v_r_t_model_p_o_d_8h_a222712303f6d58c52799b3affd4cd7c1ad8f6686b76ee622b71e9063cb59f8be8}{e\+P\+O\+D\+Triangles} =0, 
+{\bfseries e\+Num\+P\+O\+D\+Primitive\+Types}
+ \}
+\item 
+enum \hyperlink{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627e}{E\+P\+O\+D\+Animation\+Data} \{ \hyperlink{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea968e18cfd1127e63c90e4fa21933de0c}{e\+P\+O\+D\+Has\+Position\+Ani} = 0x01, 
+\hyperlink{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627eae9e73a6736fad9308c8deaa2d64760ea}{e\+P\+O\+D\+Has\+Rotation\+Ani} = 0x02, 
+\hyperlink{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea8bb1fc9e396ca06e516d958e1ebb7462}{e\+P\+O\+D\+Has\+Scale\+Ani} = 0x04, 
+\hyperlink{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea7648ae537846dae2b48fd2ef4d8e70ef}{e\+P\+O\+D\+Has\+Matrix\+Ani} = 0x08
+ \}
+\item 
+enum \hyperlink{_p_v_r_t_model_p_o_d_8h_a4b856a4b467886cb4c175215d91f884e}{E\+P\+O\+D\+Material\+Flag} \{ \hyperlink{_p_v_r_t_model_p_o_d_8h_a4b856a4b467886cb4c175215d91f884eac6982127aff684c81bfc87668a84b4f1}{e\+P\+O\+D\+Enable\+Blending} = 0x01
+ \}
+\item 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a5bc1898bff328690e988c89a5d4264fd}{enum {\bfseries E\+P\+O\+D\+Blend\+Func} \{ \\*
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+Z\+E\+R\+O} =0, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+B\+L\+E\+N\+D\+\_\+\+F\+A\+C\+T\+O\+R}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+B\+L\+E\+N\+D\+\_\+\+F\+A\+C\+T\+O\+R}, 
+\\*
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+S\+R\+C\+\_\+\+C\+O\+L\+O\+R} = 0x0300, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+R\+C\+\_\+\+C\+O\+L\+O\+R}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+S\+R\+C\+\_\+\+A\+L\+P\+H\+A}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+R\+C\+\_\+\+A\+L\+P\+H\+A}, 
+\\*
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+D\+S\+T\+\_\+\+A\+L\+P\+H\+A}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+D\+S\+T\+\_\+\+A\+L\+P\+H\+A}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+D\+S\+T\+\_\+\+C\+O\+L\+O\+R}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+D\+S\+T\+\_\+\+C\+O\+L\+O\+R}, 
+\\*
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+S\+R\+C\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+A\+T\+U\+R\+A\+T\+E}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+C\+O\+L\+O\+R} = 0x8001, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+C\+O\+L\+O\+R}, 
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+L\+P\+H\+A}, 
+\\*
+{\bfseries e\+P\+O\+D\+Blend\+Func\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+L\+P\+H\+A}
+ \}}\label{_p_v_r_t_model_p_o_d_8h_a5bc1898bff328690e988c89a5d4264fd}
+
+\item 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_acc3655e01fcfe03b6bffc98bf01c6719}{enum {\bfseries E\+P\+O\+D\+Blend\+Op} \{ \\*
+{\bfseries e\+P\+O\+D\+Blend\+Op\+\_\+\+A\+D\+D} = 0x8006, 
+{\bfseries e\+P\+O\+D\+Blend\+Op\+\_\+\+M\+I\+N}, 
+{\bfseries e\+P\+O\+D\+Blend\+Op\+\_\+\+M\+A\+X}, 
+{\bfseries e\+P\+O\+D\+Blend\+Op\+\_\+\+S\+U\+B\+T\+R\+A\+C\+T} = 0x800\+A, 
+\\*
+{\bfseries e\+P\+O\+D\+Blend\+Op\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+S\+U\+B\+T\+R\+A\+C\+T}
+ \}}\label{_p_v_r_t_model_p_o_d_8h_acc3655e01fcfe03b6bffc98bf01c6719}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+V\+R\+Tuint32 \hyperlink{_p_v_r_t_model_p_o_d_8h_a0557f2e1c988889a4fc892a6b338647e}{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size} (const E\+P\+V\+R\+T\+Data\+Type type)
+\item 
+P\+V\+R\+Tuint32 \hyperlink{_p_v_r_t_model_p_o_d_8h_aae6eb9bfd8b6d6f279f3329fad8a7fdb}{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count} (const E\+P\+V\+R\+T\+Data\+Type type)
+\item 
+P\+V\+R\+Tuint32 \hyperlink{_p_v_r_t_model_p_o_d_8h_ad517185a60782addb012a3e019716846}{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride} (const \hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data} \&data)
+\item 
+P\+V\+R\+Tuint32 \hyperlink{_p_v_r_t_model_p_o_d_8h_ab72eb36dc0610ff9ebd27bfac9641a60}{P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size} (P\+V\+R\+Tuint32 $\ast$p\+Anim\+Data\+Idx, P\+V\+R\+Tuint32 ui32\+Frames, P\+V\+R\+Tuint32 ui32\+Components)
+\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{_p_v_r_t_model_p_o_d_8h_af20fe002907f6754694ec5d04ff2237d}{P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data} (\hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&mesh, const E\+P\+V\+R\+T\+Data\+Type e\+New\+Type)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_adfd30b48777182094af212a5c1ebee45}{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert} (\hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data} \&data, const unsigned int n\+Cnt, const E\+P\+V\+R\+T\+Data\+Type e\+New\+Type)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a4bd5141d2fedb80acc1a906cfe3db121}{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred} (\hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data} \&data, const unsigned int n\+Cnt, const int $\ast$p\+Channels)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a96ac21525874d0eaf8f7868b313915f0}{P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces} (\hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&mesh, const int i32\+El1, const int i32\+El2, const int i32\+El3)
+\item 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a83369ad9269882d88117d1963d303906}{void {\bfseries P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Interleaved} (\hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&mesh, unsigned int ui32\+Align\+To\+N\+Bytes=1)}\label{_p_v_r_t_model_p_o_d_8h_a83369ad9269882d88117d1963d303906}
+
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a27d8126aaa92baac506136eceebea39b}{P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index} (\hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&mesh)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a9c23c383a5d242b71146b83613f503cf}{P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips} (\hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&mesh)
+\item 
+unsigned int \hyperlink{_p_v_r_t_model_p_o_d_8h_a30211d755b5779ba7f85269a248b9254}{P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices} (const \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&mesh)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a078000003606c119f6e9efdd21b5a68d}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data} (const \hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data} \&in, \hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data} \&out, unsigned int ui32\+No, bool b\+Interleaved)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a56165d1f6122f5a1d458501b2ba39038}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node} (const \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&in, \hyperlink{struct_s_p_o_d_node}{S\+P\+O\+D\+Node} \&out, int n\+Num\+Frames)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_aaf84be3da8f92a37ea4d3a573a3b8a3c}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh} (const \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&in, \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&out)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a36fb704d720f196a70c771c146b8b804}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture} (const \hyperlink{struct_s_p_o_d_texture}{S\+P\+O\+D\+Texture} \&in, \hyperlink{struct_s_p_o_d_texture}{S\+P\+O\+D\+Texture} \&out)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a17112109b29de92e178d9d01b9c19181}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material} (const \hyperlink{struct_s_p_o_d_material}{S\+P\+O\+D\+Material} \&in, \hyperlink{struct_s_p_o_d_material}{S\+P\+O\+D\+Material} \&out)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_afff74433595f2f0680f95a93bfbb704f}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera} (const \hyperlink{struct_s_p_o_d_camera}{S\+P\+O\+D\+Camera} \&in, \hyperlink{struct_s_p_o_d_camera}{S\+P\+O\+D\+Camera} \&out, int n\+Num\+Frames)
+\item 
+void \hyperlink{_p_v_r_t_model_p_o_d_8h_a984afc3ed67758f537a0825ad144cd9f}{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light} (const \hyperlink{struct_s_p_o_d_light}{S\+P\+O\+D\+Light} \&in, \hyperlink{struct_s_p_o_d_light}{S\+P\+O\+D\+Light} \&out)
+\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{_p_v_r_t_model_p_o_d_8h_a28d7bc51f67815c37f900645f1affc8c}{P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space} (\hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} \&in, \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} \&out)
+\item 
+\hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{_p_v_r_t_model_p_o_d_8h_a0ce6de396fd379e1f906c8e1c3792dcf}{P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials} (const \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} \&src, \hyperlink{class_c_p_v_r_t_model_p_o_d}{C\+P\+V\+R\+T\+Model\+P\+O\+D} \&dst)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Code to load P\+O\+D files -\/ models exported from M\+A\+X. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a30014303fdcff2f79e5faddc3fc18f15}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N@{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N}}
+\index{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N@{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N~(\char`\"{}A\+B.\+P\+O\+D.\+2.\+0\char`\"{})}}\label{_p_v_r_t_model_p_o_d_8h_a30014303fdcff2f79e5faddc3fc18f15}
+P\+O\+D file version string \hypertarget{_p_v_r_t_model_p_o_d_8h_a79bbf308573cd2f1a98829be858ed555}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D@{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D}}
+\index{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D@{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D\+S\+F\+\_\+\+F\+I\+X\+E\+D~(0x00000001)}}\label{_p_v_r_t_model_p_o_d_8h_a79bbf308573cd2f1a98829be858ed555}
+P\+V\+R\+T\+M\+O\+D\+E\+L\+P\+O\+D Fixed-\/point 16.\+16 data (otherwise float) flag 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627e}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!E\+P\+O\+D\+Animation\+Data@{E\+P\+O\+D\+Animation\+Data}}
+\index{E\+P\+O\+D\+Animation\+Data@{E\+P\+O\+D\+Animation\+Data}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{E\+P\+O\+D\+Animation\+Data}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+P\+O\+D\+Animation\+Data}}}\label{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+P\+O\+D\+Has\+Position\+Ani@{e\+P\+O\+D\+Has\+Position\+Ani}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Has\+Position\+Ani@{e\+P\+O\+D\+Has\+Position\+Ani}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea968e18cfd1127e63c90e4fa21933de0c}{e\+P\+O\+D\+Has\+Position\+Ani}\label{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea968e18cfd1127e63c90e4fa21933de0c}
+}]Position animation \index{e\+P\+O\+D\+Has\+Rotation\+Ani@{e\+P\+O\+D\+Has\+Rotation\+Ani}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Has\+Rotation\+Ani@{e\+P\+O\+D\+Has\+Rotation\+Ani}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627eae9e73a6736fad9308c8deaa2d64760ea}{e\+P\+O\+D\+Has\+Rotation\+Ani}\label{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627eae9e73a6736fad9308c8deaa2d64760ea}
+}]Rotation animation \index{e\+P\+O\+D\+Has\+Scale\+Ani@{e\+P\+O\+D\+Has\+Scale\+Ani}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Has\+Scale\+Ani@{e\+P\+O\+D\+Has\+Scale\+Ani}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea8bb1fc9e396ca06e516d958e1ebb7462}{e\+P\+O\+D\+Has\+Scale\+Ani}\label{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea8bb1fc9e396ca06e516d958e1ebb7462}
+}]Scale animation \index{e\+P\+O\+D\+Has\+Matrix\+Ani@{e\+P\+O\+D\+Has\+Matrix\+Ani}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Has\+Matrix\+Ani@{e\+P\+O\+D\+Has\+Matrix\+Ani}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea7648ae537846dae2b48fd2ef4d8e70ef}{e\+P\+O\+D\+Has\+Matrix\+Ani}\label{_p_v_r_t_model_p_o_d_8h_a88f7ce8ba634ee797aa7cabf5abb627ea7648ae537846dae2b48fd2ef4d8e70ef}
+}]\hyperlink{class_matrix}{Matrix} animation \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20e}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!E\+P\+O\+D\+Light\+Type@{E\+P\+O\+D\+Light\+Type}}
+\index{E\+P\+O\+D\+Light\+Type@{E\+P\+O\+D\+Light\+Type}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{E\+P\+O\+D\+Light\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+P\+O\+D\+Light\+Type}}}\label{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+P\+O\+D\+Point@{e\+P\+O\+D\+Point}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Point@{e\+P\+O\+D\+Point}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20eaa387a18b4beb2a7a04b11383d78c1c9b}{e\+P\+O\+D\+Point}\label{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20eaa387a18b4beb2a7a04b11383d78c1c9b}
+}]\hyperlink{class_point}{Point} light \index{e\+P\+O\+D\+Directional@{e\+P\+O\+D\+Directional}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Directional@{e\+P\+O\+D\+Directional}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20eae2ce187fef654b4b0a7326e9f0809bbf}{e\+P\+O\+D\+Directional}\label{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20eae2ce187fef654b4b0a7326e9f0809bbf}
+}]Directional light \index{e\+P\+O\+D\+Spot@{e\+P\+O\+D\+Spot}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Spot@{e\+P\+O\+D\+Spot}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20ea091231664a2f90047eab9d8ecde7a6a9}{e\+P\+O\+D\+Spot}\label{_p_v_r_t_model_p_o_d_8h_ae3b0d193004346c05dccb13a8bf2f20ea091231664a2f90047eab9d8ecde7a6a9}
+}]Spot light \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a4b856a4b467886cb4c175215d91f884e}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!E\+P\+O\+D\+Material\+Flag@{E\+P\+O\+D\+Material\+Flag}}
+\index{E\+P\+O\+D\+Material\+Flag@{E\+P\+O\+D\+Material\+Flag}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{E\+P\+O\+D\+Material\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+P\+O\+D\+Material\+Flag}}}\label{_p_v_r_t_model_p_o_d_8h_a4b856a4b467886cb4c175215d91f884e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+P\+O\+D\+Enable\+Blending@{e\+P\+O\+D\+Enable\+Blending}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Enable\+Blending@{e\+P\+O\+D\+Enable\+Blending}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a4b856a4b467886cb4c175215d91f884eac6982127aff684c81bfc87668a84b4f1}{e\+P\+O\+D\+Enable\+Blending}\label{_p_v_r_t_model_p_o_d_8h_a4b856a4b467886cb4c175215d91f884eac6982127aff684c81bfc87668a84b4f1}
+}]Enable blending for this material \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a222712303f6d58c52799b3affd4cd7c1}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!E\+P\+O\+D\+Primitive\+Type@{E\+P\+O\+D\+Primitive\+Type}}
+\index{E\+P\+O\+D\+Primitive\+Type@{E\+P\+O\+D\+Primitive\+Type}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{E\+P\+O\+D\+Primitive\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+P\+O\+D\+Primitive\+Type}}}\label{_p_v_r_t_model_p_o_d_8h_a222712303f6d58c52799b3affd4cd7c1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+P\+O\+D\+Triangles@{e\+P\+O\+D\+Triangles}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!e\+P\+O\+D\+Triangles@{e\+P\+O\+D\+Triangles}}\item[{\em 
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a222712303f6d58c52799b3affd4cd7c1ad8f6686b76ee622b71e9063cb59f8be8}{e\+P\+O\+D\+Triangles}\label{_p_v_r_t_model_p_o_d_8h_a222712303f6d58c52799b3affd4cd7c1ad8f6686b76ee622b71e9063cb59f8be8}
+}]Triangles \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_model_p_o_d_8h_afff74433595f2f0680f95a93bfbb704f}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Camera} \&}]{in, }
+\item[{{\bf S\+P\+O\+D\+Camera} \&}]{out, }
+\item[{int}]{n\+Num\+Frames}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_afff74433595f2f0680f95a93bfbb704f}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Camera  in  out  n\+Num\+Frames The number of animation frames  Used to copy a pod camera 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a078000003606c119f6e9efdd21b5a68d}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+O\+D\+Data} \&}]{in, }
+\item[{{\bf C\+P\+O\+D\+Data} \&}]{out, }
+\item[{unsigned int}]{ui32\+No, }
+\item[{bool}]{b\+Interleaved}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a078000003606c119f6e9efdd21b5a68d}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+C\+P\+O\+D\+Data  in  out  ui32\+No  b\+Interleaved  Used to copy a \hyperlink{class_c_p_o_d_data}{C\+P\+O\+D\+Data} of a mesh 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a984afc3ed67758f537a0825ad144cd9f}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Light} \&}]{in, }
+\item[{{\bf S\+P\+O\+D\+Light} \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a984afc3ed67758f537a0825ad144cd9f}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Light  in  out  Used to copy a pod light 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a17112109b29de92e178d9d01b9c19181}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Material} \&}]{in, }
+\item[{{\bf S\+P\+O\+D\+Material} \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a17112109b29de92e178d9d01b9c19181}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Material  in  out  Used to copy a pod material 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_aaf84be3da8f92a37ea4d3a573a3b8a3c}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Mesh} \&}]{in, }
+\item[{{\bf S\+P\+O\+D\+Mesh} \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_aaf84be3da8f92a37ea4d3a573a3b8a3c}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Mesh  in  out  Used to copy a pod mesh 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a56165d1f6122f5a1d458501b2ba39038}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Node} \&}]{in, }
+\item[{{\bf S\+P\+O\+D\+Node} \&}]{out, }
+\item[{int}]{n\+Num\+Frames}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a56165d1f6122f5a1d458501b2ba39038}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Node  in  out  n\+Num\+Frames  Used to copy a pod node 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a36fb704d720f196a70c771c146b8b804}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture@{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Texture} \&}]{in, }
+\item[{{\bf S\+P\+O\+D\+Texture} \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a36fb704d720f196a70c771c146b8b804}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Copy\+Texture  in  out  Used to copy a pod texture 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a30211d755b5779ba7f85269a248b9254}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices@{P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices@{P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a30211d755b5779ba7f85269a248b9254}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Count\+Indices  mesh \hyperlink{class_mesh}{Mesh}  Number of indices used by mesh  Counts the number of indices of a mesh \hypertarget{_p_v_r_t_model_p_o_d_8h_adfd30b48777182094af212a5c1ebee45}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+O\+D\+Data} \&}]{data, }
+\item[{const unsigned int}]{n\+Cnt, }
+\item[{const E\+P\+V\+R\+T\+Data\+Type}]{e\+New\+Type}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_adfd30b48777182094af212a5c1ebee45}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Convert  data Data elements to convert  e\+New\+Type New type of elements  n\+Cnt Number of elements  Convert the format of the array of vectors. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a4bd5141d2fedb80acc1a906cfe3db121}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+O\+D\+Data} \&}]{data, }
+\item[{const unsigned int}]{n\+Cnt, }
+\item[{const int $\ast$}]{p\+Channels}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a4bd5141d2fedb80acc1a906cfe3db121}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Shred  data Data elements to modify  n\+Cnt Number of elements  p\+Channels A list of the wanted channels, e.\+g. \{'x', 'y', 0\}  Reduce the number of dimensions in 'data' using the requested channel array. The array should have a maximum length of 4 or be null terminated if less channels are wanted. It is also possible to negate an element, e.\+g. \{'x','y', -\/'z'\}. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_ad517185a60782addb012a3e019716846}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Tuint32 P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+O\+D\+Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_ad517185a60782addb012a3e019716846}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Stride  data Data elements  Size of the vector elements  Returns the size of the vector of data elements. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_aae6eb9bfd8b6d6f279f3329fad8a7fdb}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Tuint32 P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count (
+\begin{DoxyParamCaption}
+\item[{const E\+P\+V\+R\+T\+Data\+Type}]{type}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_aae6eb9bfd8b6d6f279f3329fad8a7fdb}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Component\+Count  type \hyperlink{struct_type}{Type} to get the number of components from  number of components in the data element  Returns the number of components in a data element. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a0557f2e1c988889a4fc892a6b338647e}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size@{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Tuint32 P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size (
+\begin{DoxyParamCaption}
+\item[{const E\+P\+V\+R\+T\+Data\+Type}]{type}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a0557f2e1c988889a4fc892a6b338647e}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Data\+Type\+Size  type \hyperlink{struct_type}{Type} to get the size of  Size of the data element  Returns the size of each data element. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a27d8126aaa92baac506136eceebea39b}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index@{P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index@{P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+O\+D\+Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a27d8126aaa92baac506136eceebea39b}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+De\+Index  mesh \hyperlink{class_mesh}{Mesh} to modify  De-\/indexes the supplied mesh. The mesh must be Interleaved before calling this function. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a28d7bc51f67815c37f900645f1affc8c}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space@{P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space@{P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+Model\+P\+O\+D} \&}]{in, }
+\item[{{\bf C\+P\+V\+R\+T\+Model\+P\+O\+D} \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a28d7bc51f67815c37f900645f1affc8c}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Flatten\+To\+World\+Space  in -\/ Source scene. All meshes must not be interleaved.  out  Used to flatten a pod scene to world space. All animation and skinning information will be removed. The returned position, normal, binormals and tangent data if present will be returned as floats regardless of the input data type. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_ab72eb36dc0610ff9ebd27bfac9641a60}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size@{P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size@{P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size}]{\setlength{\rightskip}{0pt plus 5cm}P\+V\+R\+Tuint32 P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size (
+\begin{DoxyParamCaption}
+\item[{P\+V\+R\+Tuint32 $\ast$}]{p\+Anim\+Data\+Idx, }
+\item[{P\+V\+R\+Tuint32}]{ui32\+Frames, }
+\item[{P\+V\+R\+Tuint32}]{ui32\+Components}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_ab72eb36dc0610ff9ebd27bfac9641a60}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Get\+Anim\+Array\+Size  p\+Anim\+Data\+Idx  ui32\+Frames  ui32\+Components  Size of the animation array  Calculates the size of an animation array 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a0ce6de396fd379e1f906c8e1c3792dcf}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials@{P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials@{P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+Model\+P\+O\+D} \&}]{src, }
+\item[{{\bf C\+P\+V\+R\+T\+Model\+P\+O\+D} \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a0ce6de396fd379e1f906c8e1c3792dcf}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Merge\+Materials  src -\/ Source scene  dst -\/ Destination scene  This function takes two scenes and merges the textures, P\+F\+X effects and blending parameters from the src materials into the dst materials if they have the same material name. \hypertarget{_p_v_r_t_model_p_o_d_8h_a96ac21525874d0eaf8f7868b313915f0}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces@{P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces@{P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+O\+D\+Mesh} \&}]{mesh, }
+\item[{const int}]{i32\+El1, }
+\item[{const int}]{i32\+El2, }
+\item[{const int}]{i32\+El3}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a96ac21525874d0eaf8f7868b313915f0}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Reorder\+Faces  mesh The mesh to re-\/order the faces of  i32\+El1 The first index to be written out  i32\+El2 The second index to be written out  i32\+El3 The third index to be written out  Reorders the face indices of a mesh. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_af20fe002907f6754694ec5d04ff2237d}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data@{P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data@{P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+P\+V\+R\+T\+Error} P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+O\+D\+Mesh} \&}]{mesh, }
+\item[{const E\+P\+V\+R\+T\+Data\+Type}]{e\+New\+Type}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_af20fe002907f6754694ec5d04ff2237d}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Scale\+And\+Convert\+Vtx\+Data  mesh P\+O\+D mesh to scale and convert the mesh data  e\+New\+Type The data type to scale and convert the vertex data to  P\+V\+R\+\_\+\+S\+U\+C\+C\+E\+S\+S on success and P\+V\+R\+\_\+\+F\+A\+I\+L on failure.  Scales the vertex data to fit within the range of the requested data type and then converts the data to that type. This function isn't currently compiled in for fixed point builds of the tools. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_model_p_o_d_8h_a9c23c383a5d242b71146b83613f503cf}{\index{P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}!P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips@{P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips}}
+\index{P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips@{P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips}!P\+V\+R\+T\+Model\+P\+O\+D.\+h@{P\+V\+R\+T\+Model\+P\+O\+D.\+h}}
+\subsubsection[{P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+O\+D\+Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_model_p_o_d_8h_a9c23c383a5d242b71146b83613f503cf}
+
+
+  P\+V\+R\+T\+Model\+P\+O\+D\+Toggle\+Strips  mesh \hyperlink{class_mesh}{Mesh} to modify  Converts the supplied mesh to or from strips. 
+
+Here is the call graph for this function\+:
+
+

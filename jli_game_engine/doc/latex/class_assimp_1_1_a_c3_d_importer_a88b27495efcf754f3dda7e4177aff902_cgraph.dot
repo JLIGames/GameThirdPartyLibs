@@ -1,0 +1,36 @@
+digraph "Assimp::AC3DImporter::InternReadFile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::AC3DImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::IOSystem::Open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816",tooltip="Open a new file with a given path. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::BaseImporter\l::TextFileToBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_base_importer.html#a8978de932cfe613f71283c1c5bff2974"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::IOStream::FileSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#aaa01183d197fb714f28d6c611b6fa058",tooltip="Returns filesize Returns the filesize. "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Assimp::IOStream::Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_o_stream.html#ae376f641020989d61863b9c6f55c7abf",tooltip="Read from the file. "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Assimp::BaseImporter\l::ConvertToUTF8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_base_importer.html#a3cd8c81533de987dd7acea6874ad918c"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Assimp::DefaultLogger::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_default_logger.html#a093cac26b06553ac774f84769cb0d691",tooltip="Getter for singleton instance. "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Assimp::Logger::debug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a3b10454ab4c0949f251062376d9c4161",tooltip="Writes a debug message. "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Assimp::Logger::OnDebug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aded6996d20f14204877097b88bd5eac6",tooltip="Called as a request to write a specific debug message. "];
+  Node6 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Assimp::ByteSwap::Swap2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_byte_swap.html#abacbb767ce53adb84d19e6adae7d5b1d"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Assimp::ASSIMP_itoa10",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_assimp.html#a95de3dd4de6a42bfed3eb0a9fcea48be",tooltip="itoa with a fixed base 10 &#39;itoa&#39; is not consistently available on all platforms so it is quite useful..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Assimp::Logger::info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a12b8a125083c47ac0bb6056f00761e52",tooltip="Writes a info message. "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Assimp::Logger::OnInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#aba81c4562ff8db83f06c6b62f2eb7983",tooltip="Called as a request to write a specific info message. "];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Assimp::Logger::warn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#a32bc5ee4b23df13551b83b925907f1b1",tooltip="Writes a warning message. "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Assimp::Logger::OnWarn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_logger.html#ab8066978dd37992f711d75d49cf4607b",tooltip="Called as a request to write a specific warn message. "];
+}

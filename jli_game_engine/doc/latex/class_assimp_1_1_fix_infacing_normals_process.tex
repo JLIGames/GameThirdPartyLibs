@@ -1,0 +1,101 @@
+\hypertarget{class_assimp_1_1_fix_infacing_normals_process}{\section{Assimp\+:\+:Fix\+Infacing\+Normals\+Process Class Reference}
+\label{class_assimp_1_1_fix_infacing_normals_process}\index{Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}}
+}
+
+
+{\ttfamily \#include $<$Fix\+Normals\+Step.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Fix\+Infacing\+Normals\+Process\+:
+
+
+Collaboration diagram for Assimp\+:\+:Fix\+Infacing\+Normals\+Process\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_fix_infacing_normals_process_a31727340b175508b2dcb9ca817f5285a}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+void \hyperlink{class_assimp_1_1_fix_infacing_normals_process_ad0302db8b379151827d779416a93adc7}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_fix_infacing_normals_process_a479b4fa281a8fd33d222764d963a33f1}{Process\+Mesh} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$p\+Mesh, unsigned int index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_assimp_1_1_fix_infacing_normals_process}{Fix\+Infacing\+Normals\+Process} tries to determine whether the normal vectors of an object are facing inwards. In this case they will be flipped. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_fix_infacing_normals_process_ad0302db8b379151827d779416a93adc7}{\index{Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Fix\+Infacing\+Normals\+Process\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_fix_infacing_normals_process_ad0302db8b379151827d779416a93adc7}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_fix_infacing_normals_process_a31727340b175508b2dcb9ca817f5285a}{\index{Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Fix\+Infacing\+Normals\+Process\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_fix_infacing_normals_process_a31727340b175508b2dcb9ca817f5285a}
+Returns whether the processing step is present in the given flag field. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_fix_infacing_normals_process_a479b4fa281a8fd33d222764d963a33f1}{\index{Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}!Process\+Mesh@{Process\+Mesh}}
+\index{Process\+Mesh@{Process\+Mesh}!Assimp\+::\+Fix\+Infacing\+Normals\+Process@{Assimp\+::\+Fix\+Infacing\+Normals\+Process}}
+\subsubsection[{Process\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}bool Fix\+Infacing\+Normals\+Process\+::\+Process\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{p\+Mesh, }
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_fix_infacing_normals_process_a479b4fa281a8fd33d222764d963a33f1}
+Executes the step on the given mesh 
+\begin{DoxyParams}{Parameters}
+{\em p\+Mesh} & The mesh to process. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Fix\+Normals\+Step.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Fix\+Normals\+Step.\+cpp\end{DoxyCompactItemize}

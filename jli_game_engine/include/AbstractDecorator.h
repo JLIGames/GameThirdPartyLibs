@@ -11,107 +11,117 @@
 
 #include "Util.h"
 #include "btAlignedObjectArray.h"
+#include "AbstractObject.h"
 
-template <class OBJECT>
-ATTRIBUTE_ALIGNED16(class) AbstractDecorator
+ATTRIBUTE_ALIGNED16(class) AbstractDecorator :
+public AbstractObject
 {
 protected:
-    AbstractDecorator();
-    AbstractDecorator(const AbstractDecorator &);
+    AbstractDecorator():m_pParent(NULL){}
     virtual ~AbstractDecorator(){}
 
     BT_DECLARE_ALIGNED_ALLOCATOR();
-
-    AbstractDecorator &operator=(const AbstractDecorator &rhs);
-
 public:
-    virtual void applyDecorator(const u32 index) = 0;
-
-    bool hasDecorator(OBJECT *object)const;
-    OBJECT*	getDecorator(const u32 index);
-    void addDecorator(OBJECT *object);
-    void removeDecorator(const u32 index);
-    void removeDecorator(OBJECT *object);
-    u32 decorators()const;
-
-    virtual void applyDecorators();
+    virtual AbstractObject *getParent()
+    {
+        return m_pParent;
+    }
+    
+    virtual const AbstractObject *getParent() const
+    {
+        return m_pParent;
+    }
+    
+    virtual bool hasParent()const
+    {
+        return (NULL != m_pParent);
+    }
+    
+    virtual void setParent(AbstractObject *parent)
+    {
+        jliAssertMsg(parent, "object is null");
+        
+        m_pParent = parent;
+    }
+    
+    virtual void removeParent()
+    {
+        m_pParent = NULL;
+    }
+    
+    virtual bool removeFromParent()
+    {
+        AbstractDecorator *parent = dynamic_cast<AbstractDecorator*>(getParent());
+        
+        if(parent && parent->hasChild(this))
+        {
+            parent->removeChild(this);
+            return true;
+        }
+        return false;
+    }
+    
+    bool hasChild(AbstractObject *object)const
+    {
+        jliAssertMsg(object, "object is null");
+        return (m_Decorators.size() != m_Decorators.findLinearSearch(object));
+    }
+    
+    AbstractObject*	getChild(const u32 index)
+    {
+        jliAssertMsg(index < m_Decorators.size(), "index must be smaller than the size of the array");
+        return m_Decorators.at(index);
+    }
+    
+    void addChild(AbstractDecorator *object)
+    {
+        jliAssertMsg(this != object, "cannot decorate self with self");
+        jliAssertMsg(!hasChild(object), "already has the decorator");
+        
+        AbstractObject *_this = dynamic_cast<AbstractObject*>(this);
+        
+        object->setParent(_this);
+        
+        m_Decorators.push_back(object);
+    }
+    
+    void removeChild(const u32 index)
+    {
+        jliAssertMsg(index < m_Decorators.size(), "index must be smaller than the size of the array");
+        removeChild(getChild(index));
+    }
+    
+    void removeChild(AbstractObject *object)
+    {
+        jliAssertMsg(object, "object is null");
+        m_Decorators.remove(object);
+    }
+    
+    void removeChildren()
+    {
+        m_Decorators.clear();
+    }
+    
+    u32 children()const
+    {
+        return m_Decorators.size();
+    }
+    
+    virtual void applyChild(const u32 index){}
+    virtual void applyChildren()
+    {
+        for (s32 i = 0; i < m_Decorators.size(); ++i)
+        {
+            applyChild(i);
+        }
+    }
 
 private:
-    btAlignedObjectArray<OBJECT*> m_Decorators;
+    AbstractDecorator(const AbstractDecorator &);
+    AbstractDecorator &operator=(const AbstractDecorator &rhs);
+    
+    btAlignedObjectArray<AbstractObject*> m_Decorators;
+    AbstractObject *m_pParent;
 };
-
-template <class OBJECT>
-AbstractDecorator<OBJECT>::AbstractDecorator()
-{
-    
-}
-
-template <class OBJECT>
-AbstractDecorator<OBJECT>::AbstractDecorator(const AbstractDecorator &copy)
-{
-    m_Decorators = copy.m_Decorators;
-}
-
-template <class OBJECT>
-AbstractDecorator<OBJECT> &AbstractDecorator<OBJECT>::operator=(const AbstractDecorator &rhs)
-{
-    if(this != &rhs)
-    {
-        m_Decorators = rhs.m_Decorators;
-    }
-    return *this;
-}
-
-template <class OBJECT>
-bool AbstractDecorator<OBJECT>::hasDecorator(OBJECT *object)const
-{
-    jliAssertMsg(object, "object is null");
-    return (m_Decorators.size() != m_Decorators.findLinearSearch(object));
-}
-
-template <class OBJECT>
-OBJECT*	AbstractDecorator<OBJECT>::getDecorator(const u32 index)
-{
-    jliAssertMsg(index < m_Decorators.size(), "index must be smaller than the size of the array");
-    return m_Decorators.at(index);
-}
-
-template <class OBJECT>
-void AbstractDecorator<OBJECT>::addDecorator(OBJECT *object)
-{
-    jliAssertMsg(this != object, "cannot decorate self with self");
-    jliAssertMsg(!hasDecorator(object), "already has the decorator");
-    
-    m_Decorators.push_back(object);
-}
-
-template <class OBJECT>
-void AbstractDecorator<OBJECT>::removeDecorator(const u32 index)
-{
-    jliAssertMsg(index < m_Decorators.size(), "index must be smaller than the size of the array");
-    removeDecorator(getDecorator(index));
-}
-
-template <class OBJECT>
-void AbstractDecorator<OBJECT>::removeDecorator(OBJECT *object)
-{
-    jliAssertMsg(object, "object is null");
-    m_Decorators.remove(object);
-}
-
-template <class OBJECT>
-u32 AbstractDecorator<OBJECT>::decorators()const
-{
-    return m_Decorators.size();
-}
-
-template <class OBJECT>
-void AbstractDecorator<OBJECT>::applyDecorators()
-{
-    for (s32 i = 0; i < m_Decorators.size(); ++i)
-    {
-        applyDecorator(i);
-    }
-}
 
 #endif

@@ -1,0 +1,250 @@
+\hypertarget{_p_v_r_t_misc_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Misc.h File Reference}
+\label{_p_v_r_t_misc_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Misc.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Misc.\+h}}
+}
+
+
+Miscellaneous functions used in 3\+D rendering.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Matrix.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Fixed\+Point.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Misc.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_p_v_r_t_misc_8h_a5f75257897167e433996ef152ab42599}{P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane} (\hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv\+Intersection, const \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} pf\+Plane\mbox{[}4\mbox{]}, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv0, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const pv1)
+\begin{DoxyCompactList}\small\item\em Calculates coords of the intersection of a line and an infinite plane. \end{DoxyCompactList}\item 
+int \hyperlink{_p_v_r_t_misc_8h_aacc2e1347108b455cf51f5db65ca0313}{P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane} (\hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$const pf\+Vtx, const int n\+Stride, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r4f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R4} $\ast$const pv\+Plane, const \hyperlink{class_p_v_r_t_m_a_t_r_i_xf}{P\+V\+R\+T\+M\+A\+T\+R\+I\+X} $\ast$const pm\+View\+Proj\+Inv, const \hyperlink{struct_p_v_r_t_v_e_c_t_o_r3f}{P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const p\+From, const \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} f\+Far)
+\begin{DoxyCompactList}\small\item\em Calculates world-\/space coords of a screen-\/filling representation of an infinite plane The resulting vertices run counter-\/clockwise around the screen, and can be simply drawn using non-\/indexed T\+R\+I\+A\+N\+G\+L\+E\+F\+A\+N. \end{DoxyCompactList}\item 
+void \hyperlink{_p_v_r_t_misc_8h_a6ab47a64fc4b3bdbf2ae273500078c83}{P\+V\+R\+T\+Create\+Skybox} (float scale, bool adjust\+U\+V, int texture\+Size, \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$$\ast$Vertices, \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$$\ast$U\+Vs)
+\begin{DoxyCompactList}\small\item\em Creates the vertices and texture coordinates for a skybox. \end{DoxyCompactList}\item 
+void \hyperlink{_p_v_r_t_misc_8h_a161566f65a6bd613272cea21ad0666fe}{P\+V\+R\+T\+Destroy\+Skybox} (\hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$Vertices, \hyperlink{group___a_p_i___o_g_l_e_s_ga06da457b7d3e93368ab904f89e1396be}{V\+E\+R\+T\+T\+Y\+P\+E} $\ast$U\+Vs)
+\begin{DoxyCompactList}\small\item\em Destroy the memory allocated for a skybox. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{_p_v_r_t_misc_8h_aba48dae67b986ff35ccf29867d6fc96d}{P\+V\+R\+T\+Get\+P\+O\+T\+Higher} (unsigned int ui\+Original\+Value, int i\+Times\+Higher)
+\begin{DoxyCompactList}\small\item\em When i\+Times\+Higher is one, this function will return the closest power-\/of-\/two value above the base value. For every increment beyond one for the i\+Times\+Higher value, the next highest power-\/of-\/two value will be calculated. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{_p_v_r_t_misc_8h_a4e9c002212fab646dc54d2431646d15e}{P\+V\+R\+T\+Get\+P\+O\+T\+Lower} (unsigned int ui\+Original\+Value, int i\+Times\+Lower)
+\begin{DoxyCompactList}\small\item\em When i\+Times\+Lower is one, this function will return the closest power-\/of-\/two value below the base value. For every increment beyond one for the i\+Times\+Lower value, the next lowest power-\/of-\/two value will be calculated. The lowest value that can be reached is 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Miscellaneous functions used in 3\+D rendering. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_t_misc_8h_a6ab47a64fc4b3bdbf2ae273500078c83}{\index{P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}!P\+V\+R\+T\+Create\+Skybox@{P\+V\+R\+T\+Create\+Skybox}}
+\index{P\+V\+R\+T\+Create\+Skybox@{P\+V\+R\+T\+Create\+Skybox}!P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}}
+\subsubsection[{P\+V\+R\+T\+Create\+Skybox}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Create\+Skybox (
+\begin{DoxyParamCaption}
+\item[{float}]{scale, }
+\item[{bool}]{adjust\+U\+V, }
+\item[{int}]{texture\+Size, }
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$$\ast$}]{Vertices, }
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$$\ast$}]{U\+Vs}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_misc_8h_a6ab47a64fc4b3bdbf2ae273500078c83}
+
+
+Creates the vertices and texture coordinates for a skybox. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & Scale the skybox \\
+\hline
+\mbox{\tt in}  & {\em adjust\+U\+V} & Adjust or not U\+Vs for P\+V\+R\+T compression \\
+\hline
+\mbox{\tt in}  & {\em texture\+Size} & Texture size in pixels \\
+\hline
+\mbox{\tt out}  & {\em Vertices} & Array of vertices \\
+\hline
+\mbox{\tt out}  & {\em U\+Vs} & Array of U\+Vs\\
+\hline
+\end{DoxyParams}
+
+
+  P\+V\+R\+T\+Create\+Skybox  scale Scale the skybox  adjust\+U\+V Adjust or not U\+Vs for P\+V\+R\+T compression  texture\+Size Texture size in pixels  Vertices Array of vertices  U\+Vs Array of U\+Vs  Creates the vertices and texture coordinates for a skybox 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_misc_8h_a161566f65a6bd613272cea21ad0666fe}{\index{P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}!P\+V\+R\+T\+Destroy\+Skybox@{P\+V\+R\+T\+Destroy\+Skybox}}
+\index{P\+V\+R\+T\+Destroy\+Skybox@{P\+V\+R\+T\+Destroy\+Skybox}!P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}}
+\subsubsection[{P\+V\+R\+T\+Destroy\+Skybox}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Destroy\+Skybox (
+\begin{DoxyParamCaption}
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$}]{Vertices, }
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$}]{U\+Vs}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_misc_8h_a161566f65a6bd613272cea21ad0666fe}
+
+
+Destroy the memory allocated for a skybox. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Vertices} & Vertices array to destroy \\
+\hline
+\mbox{\tt in}  & {\em U\+Vs} & U\+Vs array to destroy\\
+\hline
+\end{DoxyParams}
+
+
+  P\+V\+R\+T\+Destroy\+Skybox  Vertices Vertices array to destroy  U\+Vs U\+Vs array to destroy  Destroy the memory allocated for a skybox 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_misc_8h_aba48dae67b986ff35ccf29867d6fc96d}{\index{P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}!P\+V\+R\+T\+Get\+P\+O\+T\+Higher@{P\+V\+R\+T\+Get\+P\+O\+T\+Higher}}
+\index{P\+V\+R\+T\+Get\+P\+O\+T\+Higher@{P\+V\+R\+T\+Get\+P\+O\+T\+Higher}!P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}}
+\subsubsection[{P\+V\+R\+T\+Get\+P\+O\+T\+Higher}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int P\+V\+R\+T\+Get\+P\+O\+T\+Higher (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Original\+Value, }
+\item[{int}]{i\+Times\+Higher}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_misc_8h_aba48dae67b986ff35ccf29867d6fc96d}
+
+
+When i\+Times\+Higher is one, this function will return the closest power-\/of-\/two value above the base value. For every increment beyond one for the i\+Times\+Higher value, the next highest power-\/of-\/two value will be calculated. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Original\+Value} & Base value \\
+\hline
+\mbox{\tt in}  & {\em i\+Times\+Higher} & Multiplier\\
+\hline
+\end{DoxyParams}
+
+
+  P\+V\+R\+T\+Get\+P\+O\+T\+Higher  ui\+Original\+Value Base value  i\+Times\+Higher Multiplier  When i\+Times\+Higher is one, this function will return the closest power-\/of-\/two value above the base value. For every increment beyond one for the i\+Times\+Higher value, the next highest power-\/of-\/two value will be calculated. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_misc_8h_a4e9c002212fab646dc54d2431646d15e}{\index{P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}!P\+V\+R\+T\+Get\+P\+O\+T\+Lower@{P\+V\+R\+T\+Get\+P\+O\+T\+Lower}}
+\index{P\+V\+R\+T\+Get\+P\+O\+T\+Lower@{P\+V\+R\+T\+Get\+P\+O\+T\+Lower}!P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}}
+\subsubsection[{P\+V\+R\+T\+Get\+P\+O\+T\+Lower}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int P\+V\+R\+T\+Get\+P\+O\+T\+Lower (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Original\+Value, }
+\item[{int}]{i\+Times\+Lower}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_misc_8h_a4e9c002212fab646dc54d2431646d15e}
+
+
+When i\+Times\+Lower is one, this function will return the closest power-\/of-\/two value below the base value. For every increment beyond one for the i\+Times\+Lower value, the next lowest power-\/of-\/two value will be calculated. The lowest value that can be reached is 1. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ui\+Original\+Value} & Base value \\
+\hline
+\mbox{\tt in}  & {\em i\+Times\+Lower} & Multiplier\\
+\hline
+\end{DoxyParams}
+
+
+  P\+V\+R\+T\+Get\+P\+O\+T\+Lower  ui\+Original\+Value Base value  i\+Times\+Lower Multiplier  When i\+Times\+Lower is one, this function will return the closest power-\/of-\/two value below the base value. For every increment beyond one for the i\+Times\+Lower value, the next lowest power-\/of-\/two value will be calculated. The lowest value that can be reached is 1. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_misc_8h_aacc2e1347108b455cf51f5db65ca0313}{\index{P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}!P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane@{P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane}}
+\index{P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane@{P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane}!P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}}
+\subsubsection[{P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}int P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf V\+E\+R\+T\+T\+Y\+P\+E} $\ast$const}]{pf\+Vtx, }
+\item[{const int}]{n\+Stride, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R4} $\ast$const}]{pv\+Plane, }
+\item[{const {\bf P\+V\+R\+T\+M\+A\+T\+R\+I\+X} $\ast$const}]{pm\+View\+Proj\+Inv, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{p\+From, }
+\item[{const {\bf V\+E\+R\+T\+T\+Y\+P\+E}}]{f\+Far}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_misc_8h_aacc2e1347108b455cf51f5db65ca0313}
+
+
+Calculates world-\/space coords of a screen-\/filling representation of an infinite plane The resulting vertices run counter-\/clockwise around the screen, and can be simply drawn using non-\/indexed T\+R\+I\+A\+N\+G\+L\+E\+F\+A\+N. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em pf\+Vtx} & Position of the first of 3 floats to receive the position of vertex 0; up to 5 vertex positions will be written (5 is the maximum number of vertices required to draw an infinite polygon clipped to screen and far clip plane). \\
+\hline
+\mbox{\tt in}  & {\em n\+Stride} & Size of each vertex structure containing pf\+Vtx \\
+\hline
+\mbox{\tt in}  & {\em pv\+Plane} & Length 4 \mbox{[}A,B,C,D\mbox{]}, values for plane equation \\
+\hline
+\mbox{\tt in}  & {\em pm\+View\+Proj\+Inv} & The inverse of the View Projection matrix \\
+\hline
+\mbox{\tt in}  & {\em p\+From} & Position of the camera \\
+\hline
+\mbox{\tt in}  & {\em f\+Far} & Far clipping distance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of vertices in the polygon fan (Can be 0, 3, 4 or 5)
+\end{DoxyReturn}
+
+
+  P\+V\+R\+T\+Misc\+Calculate\+Infinite\+Plane  n\+Stride Size of each vertex structure containing pf\+Vtx  pv\+Plane Length 4 \mbox{[}A,B,C,D\mbox{]}, values for plane equation  pm\+View\+Proj\+Inv The inverse of the View Projection matrix  p\+From Position of the camera  f\+Far Far clipping distance  pf\+Vtx Position of the first of 3 floats to receive the position of vertex 0; up to 5 vertex positions will be written (5 is the maximum number of vertices required to draw an infinite polygon clipped to screen and far clip plane).  Number of vertices in the polygon fan (Can be 0, 3, 4 or 5)  Calculates world-\/space coords of a screen-\/filling representation of an infinite plane The resulting vertices run counter-\/clockwise around the screen, and can be simply drawn using non-\/indexed T\+R\+I\+A\+N\+G\+L\+E\+F\+A\+N 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{_p_v_r_t_misc_8h_a5f75257897167e433996ef152ab42599}{\index{P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}!P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane@{P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane}}
+\index{P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane@{P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane}!P\+V\+R\+T\+Misc.\+h@{P\+V\+R\+T\+Misc.\+h}}
+\subsubsection[{P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}void P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv\+Intersection, }
+\item[{const {\bf V\+E\+R\+T\+T\+Y\+P\+E}}]{pf\+Plane\mbox{[}4\mbox{]}, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv0, }
+\item[{const {\bf P\+V\+R\+T\+V\+E\+C\+T\+O\+R3} $\ast$const}]{pv1}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_t_misc_8h_a5f75257897167e433996ef152ab42599}
+
+
+Calculates coords of the intersection of a line and an infinite plane. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em pv\+Intersection} & The point of intersection \\
+\hline
+\mbox{\tt in}  & {\em pf\+Plane} & Length 4 \mbox{[}A,B,C,D\mbox{]}, values for plane equation \\
+\hline
+\mbox{\tt in}  & {\em pv0} & A point on the line \\
+\hline
+\mbox{\tt in}  & {\em pv1} & Another point on the line\\
+\hline
+\end{DoxyParams}
+
+
+  P\+V\+R\+T\+Misc\+Calculate\+Intersection\+Line\+Plane  pf\+Plane Length 4 \mbox{[}A,B,C,D\mbox{]}, values for plane equation  pv0 A point on the line  pv1 Another point on the line  pv\+Intersection The point of intersection  Calculates coords of the intersection of a line and an infinite plane 
+
+Here is the caller graph for this function\+:
+
+

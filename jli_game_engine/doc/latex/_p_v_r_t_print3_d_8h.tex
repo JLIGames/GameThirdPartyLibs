@@ -1,0 +1,90 @@
+\hypertarget{_p_v_r_t_print3_d_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Tools/\+P\+V\+R\+T\+Print3\+D.h File Reference}
+\label{_p_v_r_t_print3_d_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Print3\+D.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+P\+V\+R\+T\+Print3\+D.\+h}}
+}
+
+
+Code to print text through the 3\+D interface.  
+
+
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Error.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Matrix.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Vector.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+V\+R\+T\+Array.\+h\char`\"{}}\\*
+Include dependency graph for P\+V\+R\+T\+Print3\+D.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{singleton_c_p_v_r_t_map}{C\+P\+V\+R\+T\+Map$<$ Key\+Type, Data\+Type $>$}
+\begin{DoxyCompactList}\small\item\em Expanding map template class. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_v_r_t_print3_d_header}{S\+P\+V\+R\+T\+Print3\+D\+Header}
+\begin{DoxyCompactList}\small\item\em A structure for information describing the loaded font. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_p_v_r_t_print3_d_a_p_i_vertex}{S\+P\+V\+R\+T\+Print3\+D\+A\+P\+I\+Vertex}
+\begin{DoxyCompactList}\small\item\em A structure for Print3\+Ds vertex type. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_p_v_r_t_print3_d}{C\+P\+V\+R\+T\+Print3\+D}
+\begin{DoxyCompactList}\small\item\em Display text/logos on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_a0bc01ef5008278cf8988304c694c029d}{\#define {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+M\+A\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+L\+E\+\_\+\+L\+E\+T\+T\+E\+R\+S}~(0x\+F\+F\+F\+F $>$$>$ 2)}\label{_p_v_r_t_print3_d_8h_a0bc01ef5008278cf8988304c694c029d}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_p_v_r_t_print3_d_8h_a7fa478b74a9ab7264b2a9f17138207a8}{E\+P\+V\+R\+T\+Print3\+D\+Logo} \{ {\bfseries e\+P\+V\+R\+T\+Print3\+D\+Logo\+None} = 0x00, 
+{\bfseries e\+P\+V\+R\+T\+Print3\+D\+Logo\+Power\+V\+R} = 0x02, 
+{\bfseries e\+P\+V\+R\+T\+Print3\+D\+Logo\+I\+M\+G} = 0x04, 
+{\bfseries e\+P\+V\+R\+T\+Print3\+D\+S\+D\+K\+Logo} = e\+P\+V\+R\+T\+Print3\+D\+Logo\+Power\+V\+R
+ \}
+\begin{DoxyCompactList}\small\item\em Logo flags for Display\+Default\+Title. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_a24d3a97cdeffd7bcf069759761c6cbce}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+H\+E\+A\+D\+E\+R} = 0x\+F\+C\+F\+C0050}\label{_p_v_r_t_print3_d_8h_a24d3a97cdeffd7bcf069759761c6cbce}
+
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_adb15f5dfe518d0e297a10472ec34444e}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+C\+H\+A\+R\+L\+I\+S\+T} = 0x\+F\+C\+F\+C0051}\label{_p_v_r_t_print3_d_8h_adb15f5dfe518d0e297a10472ec34444e}
+
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_a92ffc3529616c2283c7386a14ad1dd05}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+R\+E\+C\+T\+S} = 0x\+F\+C\+F\+C0052}\label{_p_v_r_t_print3_d_8h_a92ffc3529616c2283c7386a14ad1dd05}
+
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_aa10f3d6411b6634f683c5993421197f8}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+M\+E\+T\+R\+I\+C\+S} = 0x\+F\+C\+F\+C0053}\label{_p_v_r_t_print3_d_8h_aa10f3d6411b6634f683c5993421197f8}
+
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_a0016e7efb9c8ea2e04b7dba3ea071a38}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+Y\+O\+F\+F\+S\+E\+T} = 0x\+F\+C\+F\+C0054}\label{_p_v_r_t_print3_d_8h_a0016e7efb9c8ea2e04b7dba3ea071a38}
+
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_a1756d6587e212dbc2d2b56280ccb792e}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+K\+E\+R\+N\+I\+N\+G} = 0x\+F\+C\+F\+C0055}\label{_p_v_r_t_print3_d_8h_a1756d6587e212dbc2d2b56280ccb792e}
+
+\item 
+\hypertarget{_p_v_r_t_print3_d_8h_a085a75430f1799cd14c7b598d283e53e}{const P\+V\+R\+Tuint32 {\bfseries P\+V\+R\+T\+P\+R\+I\+N\+T3\+D\+\_\+\+V\+E\+R\+S\+I\+O\+N} = 1}\label{_p_v_r_t_print3_d_8h_a085a75430f1799cd14c7b598d283e53e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Code to print text through the 3\+D interface. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_p_v_r_t_print3_d_8h_a7fa478b74a9ab7264b2a9f17138207a8}{\index{P\+V\+R\+T\+Print3\+D.\+h@{P\+V\+R\+T\+Print3\+D.\+h}!E\+P\+V\+R\+T\+Print3\+D\+Logo@{E\+P\+V\+R\+T\+Print3\+D\+Logo}}
+\index{E\+P\+V\+R\+T\+Print3\+D\+Logo@{E\+P\+V\+R\+T\+Print3\+D\+Logo}!P\+V\+R\+T\+Print3\+D.\+h@{P\+V\+R\+T\+Print3\+D.\+h}}
+\subsubsection[{E\+P\+V\+R\+T\+Print3\+D\+Logo}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+P\+V\+R\+T\+Print3\+D\+Logo}}}\label{_p_v_r_t_print3_d_8h_a7fa478b74a9ab7264b2a9f17138207a8}
+
+
+Logo flags for Display\+Default\+Title. 
+
+
+
+ 

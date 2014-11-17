@@ -1,0 +1,23 @@
+digraph "OGLES3Navigation3D::GetCameraFrame"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OGLES3Navigation3D\l::GetCameraFrame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CPVRTModelPOD::SetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a52258e72054fcc086efc2374648e141d",tooltip="Set the animation frame for which subsequent Get*() calls should return data. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CPVRTModelPOD::GetCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#aa96ff6f192ed302b0f0b5461c2b266d9",tooltip="Calculate the From, To and Up vectors for the given camera. Uses animation data. Note that even if th..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CPVRTModelPOD::GetWorldMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a275eceb98a361d91d77e15b54238a8de",tooltip="Generates the world matrix for the given Mesh Instance; applies the parent&#39;s transform too..."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CPVRTModelPOD::GetWorldMatrix\lNoCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a5d8930577009f9c922665522ca9bb1c3",tooltip="Generates the world matrix for the given Mesh Instance; applies the parent&#39;s transform too..."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="CPVRTModelPOD::GetTransformation\lMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#ab614a904956547c6cd7c623046f888b2",tooltip="Generates the world matrix for the given Mesh Instance; applies the parent&#39;s transform too..."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CPVRTModelPOD::GetScaling\lMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#aaf982331192d8590949796dd61777c8a",tooltip="Generates the world matrix for the given Mesh Instance; applies the parent&#39;s transform too..."];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CPVRTModelPOD::GetRotation\lMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a021fd16d1c7d7f3e09ba1e133289d0e7",tooltip="Generates the world matrix for the given Mesh Instance; applies the parent&#39;s transform too..."];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CPVRTModelPOD::GetTranslation\lMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_model_p_o_d.html#a5b9cdd65e3f36c6fe3c0a6937892d506",tooltip="Generates the world matrix for the given Mesh Instance; applies the parent&#39;s transform too..."];
+}

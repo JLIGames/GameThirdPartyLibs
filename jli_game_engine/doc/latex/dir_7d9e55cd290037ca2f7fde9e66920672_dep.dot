@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Shell/OS/LinuxX11" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_985c8e68b2bc71e5fc4eaa8a536394b7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="OS" fontname="Helvetica", fontsize="10", URL="dir_985c8e68b2bc71e5fc4eaa8a536394b7.html"]
+  dir_7d9e55cd290037ca2f7fde9e66920672 [shape=box, label="LinuxX11", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7d9e55cd290037ca2f7fde9e66920672.html"];
+  }
+}

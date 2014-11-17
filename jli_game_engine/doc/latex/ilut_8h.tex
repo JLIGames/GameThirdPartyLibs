@@ -1,0 +1,188 @@
+\hypertarget{ilut_8h}{\section{assimp/assimp-\/3.1.1/samples/\+Dev\+I\+L/include/\+I\+L/ilut.h File Reference}
+\label{ilut_8h}\index{assimp/assimp-\/3.\+1.\+1/samples/\+Dev\+I\+L/include/\+I\+L/ilut.\+h@{assimp/assimp-\/3.\+1.\+1/samples/\+Dev\+I\+L/include/\+I\+L/ilut.\+h}}
+}
+{\ttfamily \#include $<$I\+L/il.\+h$>$}\\*
+{\ttfamily \#include $<$I\+L/ilu.\+h$>$}\\*
+Include dependency graph for ilut.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ilut_8h_aa50f7ed90e0ca0c3de103e4b26f4285d}{\#define {\bfseries \+\_\+\+\_\+ilut\+\_\+h\+\_\+}}\label{ilut_8h_aa50f7ed90e0ca0c3de103e4b26f4285d}
+
+\item 
+\hypertarget{ilut_8h_ae6c4b8cb0f120575a7a7099b6eed005c}{\#define {\bfseries \+\_\+\+\_\+\+I\+L\+U\+T\+\_\+\+H\+\_\+\+\_\+}}\label{ilut_8h_ae6c4b8cb0f120575a7a7099b6eed005c}
+
+\item 
+\hypertarget{ilut_8h_a013e07948bfb4b7a24ad1f54042715e7}{\#define {\bfseries I\+L\+U\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+7\+\_\+8}~1}\label{ilut_8h_a013e07948bfb4b7a24ad1f54042715e7}
+
+\item 
+\hypertarget{ilut_8h_adefbf1d1dcdbb3d0558442931c86566b}{\#define {\bfseries I\+L\+U\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N}~178}\label{ilut_8h_adefbf1d1dcdbb3d0558442931c86566b}
+
+\item 
+\hypertarget{ilut_8h_a27b31187401461f239b307152cd72377}{\#define {\bfseries I\+L\+U\+T\+\_\+\+O\+P\+E\+N\+G\+L\+\_\+\+B\+I\+T}~0x00000001}\label{ilut_8h_a27b31187401461f239b307152cd72377}
+
+\item 
+\hypertarget{ilut_8h_a1bb4ec9cb19e64e89cdf1f5209afb82b}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+B\+I\+T}~0x00000002}\label{ilut_8h_a1bb4ec9cb19e64e89cdf1f5209afb82b}
+
+\item 
+\hypertarget{ilut_8h_a9a3bd6d521e7a9aa51085a0d4741e144}{\#define {\bfseries I\+L\+U\+T\+\_\+\+A\+L\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+B\+I\+T\+S}~0x000\+F\+F\+F\+F\+F}\label{ilut_8h_a9a3bd6d521e7a9aa51085a0d4741e144}
+
+\item 
+\hypertarget{ilut_8h_a6d836dd2ac39a5292d30de5843e50d77}{\#define {\bfseries I\+L\+U\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+U\+M}~0x0501}\label{ilut_8h_a6d836dd2ac39a5292d30de5843e50d77}
+
+\item 
+\hypertarget{ilut_8h_ae43d77fa0553fe8c253f5e8806cb362d}{\#define {\bfseries I\+L\+U\+T\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+M\+E\+M\+O\+R\+Y}~0x0502}\label{ilut_8h_ae43d77fa0553fe8c253f5e8806cb362d}
+
+\item 
+\hypertarget{ilut_8h_a691100a6f70adb6022a8e0fe6f475fc7}{\#define {\bfseries I\+L\+U\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+U\+E}~0x0505}\label{ilut_8h_a691100a6f70adb6022a8e0fe6f475fc7}
+
+\item 
+\hypertarget{ilut_8h_aba16e56f7f4217bfd5debecc009107fc}{\#define {\bfseries I\+L\+U\+T\+\_\+\+I\+L\+L\+E\+G\+A\+L\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N}~0x0506}\label{ilut_8h_aba16e56f7f4217bfd5debecc009107fc}
+
+\item 
+\hypertarget{ilut_8h_ac1208c92048493042002ee04ffae5ff2}{\#define {\bfseries I\+L\+U\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M}~0x0509}\label{ilut_8h_ac1208c92048493042002ee04ffae5ff2}
+
+\item 
+\hypertarget{ilut_8h_a10dd52f148da530cf3f60c6f235faeee}{\#define {\bfseries I\+L\+U\+T\+\_\+\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E}~0x050\+A}\label{ilut_8h_a10dd52f148da530cf3f60c6f235faeee}
+
+\item 
+\hypertarget{ilut_8h_a866096178f88b2e209a6dca0dba7965e}{\#define {\bfseries I\+L\+U\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+O\+W}~0x050\+E}\label{ilut_8h_a866096178f88b2e209a6dca0dba7965e}
+
+\item 
+\hypertarget{ilut_8h_aa6a0a8e8184b438c79fb800cbb1d9c48}{\#define {\bfseries I\+L\+U\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+U\+N\+D\+E\+R\+F\+L\+O\+W}~0x050\+F}\label{ilut_8h_aa6a0a8e8184b438c79fb800cbb1d9c48}
+
+\item 
+\hypertarget{ilut_8h_a2d9364be93a64ac91977f8d6dd55581d}{\#define {\bfseries I\+L\+U\+T\+\_\+\+B\+A\+D\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+S}~0x0511}\label{ilut_8h_a2d9364be93a64ac91977f8d6dd55581d}
+
+\item 
+\hypertarget{ilut_8h_aef3313552e255156136779607f5bf22b}{\#define {\bfseries I\+L\+U\+T\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D}~0x0550}\label{ilut_8h_aef3313552e255156136779607f5bf22b}
+
+\item 
+\hypertarget{ilut_8h_a89665182786af6586a822905c7ee384a}{\#define {\bfseries I\+L\+U\+T\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+M\+O\+D\+E}~0x0600}\label{ilut_8h_a89665182786af6586a822905c7ee384a}
+
+\item 
+\hypertarget{ilut_8h_a6087c73c7fbd0368859eb1f30e17de58}{\#define {\bfseries I\+L\+U\+T\+\_\+\+O\+P\+E\+N\+G\+L\+\_\+\+C\+O\+N\+V}~0x0610}\label{ilut_8h_a6087c73c7fbd0368859eb1f30e17de58}
+
+\item 
+\hypertarget{ilut_8h_aa81b313dfc2c8ebb8aa7581414b6b474}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+M\+I\+P\+L\+E\+V\+E\+L\+S}~0x0620}\label{ilut_8h_aa81b313dfc2c8ebb8aa7581414b6b474}
+
+\item 
+\hypertarget{ilut_8h_aa47500f27d99f49ae8fb80e925ac0b92}{\#define {\bfseries I\+L\+U\+T\+\_\+\+M\+A\+X\+T\+E\+X\+\_\+\+W\+I\+D\+T\+H}~0x0630}\label{ilut_8h_aa47500f27d99f49ae8fb80e925ac0b92}
+
+\item 
+\hypertarget{ilut_8h_a290a6ea2fac90cade560dbc85416cd6b}{\#define {\bfseries I\+L\+U\+T\+\_\+\+M\+A\+X\+T\+E\+X\+\_\+\+H\+E\+I\+G\+H\+T}~0x0631}\label{ilut_8h_a290a6ea2fac90cade560dbc85416cd6b}
+
+\item 
+\hypertarget{ilut_8h_a9db224559a9d5167f9b1fb29feb54274}{\#define {\bfseries I\+L\+U\+T\+\_\+\+M\+A\+X\+T\+E\+X\+\_\+\+D\+E\+P\+T\+H}~0x0632}\label{ilut_8h_a9db224559a9d5167f9b1fb29feb54274}
+
+\item 
+\hypertarget{ilut_8h_a2071104f65c6113d098304faec09b63b}{\#define {\bfseries I\+L\+U\+T\+\_\+\+G\+L\+\_\+\+U\+S\+E\+\_\+\+S3\+T\+C}~0x0634}\label{ilut_8h_a2071104f65c6113d098304faec09b63b}
+
+\item 
+\hypertarget{ilut_8h_ae419578aa1b4ab77f72a35b8ed038204}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+U\+S\+E\+\_\+\+D\+X\+T\+C}~0x0634}\label{ilut_8h_ae419578aa1b4ab77f72a35b8ed038204}
+
+\item 
+\hypertarget{ilut_8h_a24e1aa3435171d8417d266a173e9063f}{\#define {\bfseries I\+L\+U\+T\+\_\+\+G\+L\+\_\+\+G\+E\+N\+\_\+\+S3\+T\+C}~0x0635}\label{ilut_8h_a24e1aa3435171d8417d266a173e9063f}
+
+\item 
+\hypertarget{ilut_8h_a4aa67bbeb0fc132cf8290231ff49cde3}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+G\+E\+N\+\_\+\+D\+X\+T\+C}~0x0635}\label{ilut_8h_a4aa67bbeb0fc132cf8290231ff49cde3}
+
+\item 
+\hypertarget{ilut_8h_a7941ec36e77e6a323e5b1f8a34ff4cb2}{\#define {\bfseries I\+L\+U\+T\+\_\+\+S3\+T\+C\+\_\+\+F\+O\+R\+M\+A\+T}~0x0705}\label{ilut_8h_a7941ec36e77e6a323e5b1f8a34ff4cb2}
+
+\item 
+\hypertarget{ilut_8h_aae894202a7be6c0aad0ba50b62ae7cfc}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D\+X\+T\+C\+\_\+\+F\+O\+R\+M\+A\+T}~0x0705}\label{ilut_8h_aae894202a7be6c0aad0ba50b62ae7cfc}
+
+\item 
+\hypertarget{ilut_8h_a597b7736e42948fd209b3b5e033358ba}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+P\+O\+O\+L}~0x0706}\label{ilut_8h_a597b7736e42948fd209b3b5e033358ba}
+
+\item 
+\hypertarget{ilut_8h_a319e43a85c195b2225961e73ee8fc67d}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+A\+L\+P\+H\+A\+\_\+\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R}~0x0707}\label{ilut_8h_a319e43a85c195b2225961e73ee8fc67d}
+
+\item 
+\hypertarget{ilut_8h_af6977a0c4c5e50e408cf28e7888fd8ee}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D3\+D\+\_\+\+A\+L\+P\+H\+A\+\_\+\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+U\+R}~0x0707}\label{ilut_8h_af6977a0c4c5e50e408cf28e7888fd8ee}
+
+\item 
+\hypertarget{ilut_8h_a0bcf044610bfb5abb3f8e9d6bf913e07}{\#define {\bfseries I\+L\+U\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+F\+O\+R\+M\+A\+T}~0x0636}\label{ilut_8h_a0bcf044610bfb5abb3f8e9d6bf913e07}
+
+\item 
+\hypertarget{ilut_8h_af2a7e8ccb021e37348396ee984b4177d}{\#define {\bfseries I\+L\+U\+T\+\_\+\+G\+L\+\_\+\+A\+U\+T\+O\+D\+E\+T\+E\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T}~0x0807}\label{ilut_8h_af2a7e8ccb021e37348396ee984b4177d}
+
+\item 
+\hypertarget{ilut_8h_a2bc3f6b7c2108ad3fa3c3cb7b2dce0be}{\#define {\bfseries I\+L\+U\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M}~I\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M}\label{ilut_8h_a2bc3f6b7c2108ad3fa3c3cb7b2dce0be}
+
+\item 
+\hypertarget{ilut_8h_ab10b8fa5832baae5d23404b92e2a2916}{\#define {\bfseries I\+L\+U\+T\+\_\+\+V\+E\+N\+D\+O\+R}~I\+L\+\_\+\+V\+E\+N\+D\+O\+R}\label{ilut_8h_ab10b8fa5832baae5d23404b92e2a2916}
+
+\item 
+\hypertarget{ilut_8h_aad6a913feff5687db284d2684a9cf13d}{\#define {\bfseries I\+L\+U\+T\+\_\+\+O\+P\+E\+N\+G\+L}~0}\label{ilut_8h_aad6a913feff5687db284d2684a9cf13d}
+
+\item 
+\hypertarget{ilut_8h_a6164215c08a581a76faf8e233b53bffa}{\#define {\bfseries I\+L\+U\+T\+\_\+\+A\+L\+L\+E\+G\+R\+O}~1}\label{ilut_8h_a6164215c08a581a76faf8e233b53bffa}
+
+\item 
+\hypertarget{ilut_8h_a486bd768e754191fa871e7f078aca2e9}{\#define {\bfseries I\+L\+U\+T\+\_\+\+W\+I\+N32}~2}\label{ilut_8h_a486bd768e754191fa871e7f078aca2e9}
+
+\item 
+\hypertarget{ilut_8h_a956a3f2ece569f364ca2c0f8776fa482}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T3\+D8}~3}\label{ilut_8h_a956a3f2ece569f364ca2c0f8776fa482}
+
+\item 
+\hypertarget{ilut_8h_a8380f9636e6244571f51dd3c68d61d90}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T3\+D9}~4}\label{ilut_8h_a8380f9636e6244571f51dd3c68d61d90}
+
+\item 
+\hypertarget{ilut_8h_acff983bbfed7310c36c1e34473c17ca6}{\#define {\bfseries I\+L\+U\+T\+\_\+\+X11}~5}\label{ilut_8h_acff983bbfed7310c36c1e34473c17ca6}
+
+\item 
+\hypertarget{ilut_8h_a57565cba3dc5081961b73a02d05f1fb3}{\#define {\bfseries I\+L\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T3\+D10}~6}\label{ilut_8h_a57565cba3dc5081961b73a02d05f1fb3}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ilut_8h_ae5e935608cc26231c1b8675511aace55}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Disable} (I\+Lenum Mode)}\label{ilut_8h_ae5e935608cc26231c1b8675511aace55}
+
+\item 
+\hypertarget{ilut_8h_abf91b13adaaefc118f3bb55448b3cfd7}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Enable} (I\+Lenum Mode)}\label{ilut_8h_abf91b13adaaefc118f3bb55448b3cfd7}
+
+\item 
+\hypertarget{ilut_8h_a39ebcf7f52d58ef19a183f8a6e2f8774}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Get\+Boolean} (I\+Lenum Mode)}\label{ilut_8h_a39ebcf7f52d58ef19a183f8a6e2f8774}
+
+\item 
+\hypertarget{ilut_8h_a4707eeef11b351d99e2d9f8b9b296591}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Get\+Booleanv} (I\+Lenum Mode, I\+Lboolean $\ast$Param)}\label{ilut_8h_a4707eeef11b351d99e2d9f8b9b296591}
+
+\item 
+\hypertarget{ilut_8h_aff0384cb3a2109766ae0b6713abf569b}{I\+L\+A\+P\+I I\+Lint I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Get\+Integer} (I\+Lenum Mode)}\label{ilut_8h_aff0384cb3a2109766ae0b6713abf569b}
+
+\item 
+\hypertarget{ilut_8h_a8631c4d4645a6c944d4e6915fa93acf9}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Get\+Integerv} (I\+Lenum Mode, I\+Lint $\ast$Param)}\label{ilut_8h_a8631c4d4645a6c944d4e6915fa93acf9}
+
+\item 
+\hypertarget{ilut_8h_a36f2a9862e6847d2d4e0124053679079}{I\+L\+A\+P\+I I\+Lstring I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Get\+String} (I\+Lenum String\+Name)}\label{ilut_8h_a36f2a9862e6847d2d4e0124053679079}
+
+\item 
+\hypertarget{ilut_8h_a0ff2d8eaf788cfbeca6a3b01c05b463a}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Init} (void)}\label{ilut_8h_a0ff2d8eaf788cfbeca6a3b01c05b463a}
+
+\item 
+\hypertarget{ilut_8h_a380cabb84a566fdf4093f7ccb7bad927}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Is\+Disabled} (I\+Lenum Mode)}\label{ilut_8h_a380cabb84a566fdf4093f7ccb7bad927}
+
+\item 
+\hypertarget{ilut_8h_a220e694d487875fadc4a4b9ad84f17f6}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Is\+Enabled} (I\+Lenum Mode)}\label{ilut_8h_a220e694d487875fadc4a4b9ad84f17f6}
+
+\item 
+\hypertarget{ilut_8h_a151c9d072cecf5b5877002740af68567}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Pop\+Attrib} (void)}\label{ilut_8h_a151c9d072cecf5b5877002740af68567}
+
+\item 
+\hypertarget{ilut_8h_a7776c2ac7a0a59650f31d8db15f9ad96}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Push\+Attrib} (I\+Luint Bits)}\label{ilut_8h_a7776c2ac7a0a59650f31d8db15f9ad96}
+
+\item 
+\hypertarget{ilut_8h_adbbb8e588c8623c63bb2f676a5e17aec}{I\+L\+A\+P\+I void I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Set\+Integer} (I\+Lenum Mode, I\+Lint Param)}\label{ilut_8h_adbbb8e588c8623c63bb2f676a5e17aec}
+
+\item 
+\hypertarget{ilut_8h_a83b18a24f809aa2238fdb9c7c23aaa37}{I\+L\+A\+P\+I I\+Lboolean I\+L\+A\+P\+I\+E\+N\+T\+R\+Y {\bfseries ilut\+Renderer} (I\+Lenum Renderer)}\label{ilut_8h_a83b18a24f809aa2238fdb9c7c23aaa37}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main include file for I\+L\+U\+T 

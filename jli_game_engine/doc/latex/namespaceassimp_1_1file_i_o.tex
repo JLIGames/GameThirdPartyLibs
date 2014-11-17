@@ -1,0 +1,53 @@
+\hypertarget{namespaceassimp_1_1file_i_o}{\section{assimp\+:\+:file\+I\+O Namespace Reference}
+\label{namespaceassimp_1_1file_i_o}\index{assimp\+::file\+I\+O@{assimp\+::file\+I\+O}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structassimp_1_1file_i_o_1_1ai_file}{ai\+File}
+\item 
+struct \hyperlink{structassimp_1_1file_i_o_1_1ai_file_i_o}{ai\+File\+I\+O}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceassimp_1_1file_i_o_ae935201af1aa6ca18db7ed71b31e202a}{alias size\+\_\+t {\bfseries function} (\hyperlink{structassimp_1_1file_i_o_1_1ai_file}{ai\+File} $\ast$, char $\ast$, size\+\_\+t, size\+\_\+t) ai\+File\+Read\+Proc}\label{namespaceassimp_1_1file_i_o_ae935201af1aa6ca18db7ed71b31e202a}
+
+\item 
+\hypertarget{namespaceassimp_1_1file_i_o_a3413774a3e9b73743093d892c39dd9fa}{alias size\+\_\+t {\bfseries function} (\hyperlink{structassimp_1_1file_i_o_1_1ai_file}{ai\+File} $\ast$) ai\+File\+Tell\+Proc}\label{namespaceassimp_1_1file_i_o_a3413774a3e9b73743093d892c39dd9fa}
+
+\item 
+\hypertarget{namespaceassimp_1_1file_i_o_a5e06b8c129d5bbcbd5db89c29cd32c9f}{alias \hyperlink{namespaceassimp_1_1types_ac24c8c8413fff5748d90ed5ac59f36ec}{ai\+Return} {\bfseries function} (\hyperlink{structassimp_1_1file_i_o_1_1ai_file}{ai\+File} $\ast$, size\+\_\+t, \hyperlink{namespaceassimp_1_1types_a1fe9ed8ac4719b58cb780da43ff011e2}{ai\+Origin}) ai\+File\+Seek}\label{namespaceassimp_1_1file_i_o_a5e06b8c129d5bbcbd5db89c29cd32c9f}
+
+\item 
+\hypertarget{namespaceassimp_1_1file_i_o_acd14c025eda38db3dc2a16505284e871}{alias \hyperlink{structassimp_1_1file_i_o_1_1ai_file}{ai\+File} $\ast$ {\bfseries function} (\hyperlink{structassimp_1_1file_i_o_1_1ai_file_i_o}{ai\+File\+I\+O} $\ast$, char $\ast$, char $\ast$) ai\+File\+Open\+Proc}\label{namespaceassimp_1_1file_i_o_acd14c025eda38db3dc2a16505284e871}
+
+\item 
+\hypertarget{namespaceassimp_1_1file_i_o_adf0ac6eeafc434abac94d68603aa54a9}{alias void {\bfseries function} (\hyperlink{structassimp_1_1file_i_o_1_1ai_file_i_o}{ai\+File\+I\+O} $\ast$, \hyperlink{structassimp_1_1file_i_o_1_1ai_file}{ai\+File} $\ast$) ai\+File\+Close\+Proc}\label{namespaceassimp_1_1file_i_o_adf0ac6eeafc434abac94d68603aa54a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C}
+\item 
+alias char $\ast$ \hyperlink{namespaceassimp_1_1file_i_o_a8ab7edca38824d46ea9dfca09a051809}{ai\+User\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The data structures necessary to use Assimip with a custom I\+O system. 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceassimp_1_1file_i_o_a8ab7edca38824d46ea9dfca09a051809}{\index{assimp\+::file\+I\+O@{assimp\+::file\+I\+O}!ai\+User\+Data@{ai\+User\+Data}}
+\index{ai\+User\+Data@{ai\+User\+Data}!assimp\+::file\+I\+O@{assimp\+::file\+I\+O}}
+\subsubsection[{ai\+User\+Data}]{\setlength{\rightskip}{0pt plus 5cm}alias char$\ast$ assimp\+::file\+I\+O\+::ai\+User\+Data}}\label{namespaceassimp_1_1file_i_o_a8ab7edca38824d46ea9dfca09a051809}
+Represents user-\/defined data. \hypertarget{namespaceassimp_1_1file_i_o_a7bdf47244d462b41b2e5af64c3a13bf6}{\index{assimp\+::file\+I\+O@{assimp\+::file\+I\+O}!C@{C}}
+\index{C@{C}!assimp\+::file\+I\+O@{assimp\+::file\+I\+O}}
+\subsubsection[{C}]{\setlength{\rightskip}{0pt plus 5cm}assimp\+::file\+I\+O\+::\+C}}\label{namespaceassimp_1_1file_i_o_a7bdf47244d462b41b2e5af64c3a13bf6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+   
+   alias \textcolor{keywordtype}{size\_t} \textcolor{keyword}{function}( \hyperlink{structai_file}{aiFile}*, \textcolor{keywordtype}{char}*, size\_t, size\_t ) aiFileWriteProc
+\end{DoxyCode}

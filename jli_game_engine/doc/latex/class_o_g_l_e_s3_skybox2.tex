@@ -1,0 +1,234 @@
+\hypertarget{class_o_g_l_e_s3_skybox2}{\section{O\+G\+L\+E\+S3\+Skybox2 Class Reference}
+\label{class_o_g_l_e_s3_skybox2}\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S3\+Skybox2\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S3\+Skybox2\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s3_skybox2_ab2f6c9d8935d62344c37362b05631072}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s3_skybox2_a8ffd3e8419f04229f3a96afa67b51183}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s3_skybox2_a2bdba846a97b61e9e41976cbe39b66e8}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s3_skybox2_a3063bc3ff1826a9546bf5116df90437a}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s3_skybox2_a1e0c5d207ff576c3a4a6a8966a1a875b}{Render\+Scene} ()
+\item 
+void \hyperlink{class_o_g_l_e_s3_skybox2_a7944f5e6c3ca988fbe46f65eb5a2842d}{Draw\+Mesh} (\hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} $\ast$mesh)
+\item 
+\hypertarget{class_o_g_l_e_s3_skybox2_abf68ae250417cac07a65ec8d6566a81f}{void {\bfseries Compute\+View\+Matrix} ()}\label{class_o_g_l_e_s3_skybox2_abf68ae250417cac07a65ec8d6566a81f}
+
+\item 
+\hypertarget{class_o_g_l_e_s3_skybox2_a7f09fc6719049b92a64135fd3394950d}{void {\bfseries Draw\+Skybox} ()}\label{class_o_g_l_e_s3_skybox2_a7f09fc6719049b92a64135fd3394950d}
+
+\item 
+bool \hyperlink{class_o_g_l_e_s3_skybox2_a89970a57199b6188ddcbec16b94b6dc8}{Load\+Effect} (\hyperlink{class_c_p_v_r_t_p_f_x_effect}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} $\ast$$\ast$pp\+Effect, const char $\ast$psz\+Effect\+Name, const char $\ast$psz\+File\+Name)
+\item 
+bool \hyperlink{class_o_g_l_e_s3_skybox2_ad11b9e800ddac86d48e125f8f091129d}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$const p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s3_skybox2_a4a30e87c3eeec8c3dabcdbd9ba668568}{Destroy\+Effect} (\hyperlink{class_c_p_v_r_t_p_f_x_effect}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} $\ast$$\ast$pp\+Effect)
+\item 
+void \hyperlink{class_o_g_l_e_s3_skybox2_a50c3ba31407f8f209707526b08fe1e81}{Change\+Skybox\+To} (\hyperlink{class_c_p_v_r_t_p_f_x_effect}{C\+P\+V\+R\+T\+P\+F\+X\+Effect} $\ast$p\+Effect, G\+Luint ui32\+New\+Skybox)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s3_skybox2_a50c3ba31407f8f209707526b08fe1e81}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Change\+Skybox\+To@{Change\+Skybox\+To}}
+\index{Change\+Skybox\+To@{Change\+Skybox\+To}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Change\+Skybox\+To}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S3\+Skybox2\+::\+Change\+Skybox\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+P\+F\+X\+Effect} $\ast$}]{p\+Effect, }
+\item[{G\+Luint}]{ui32\+New\+Skybox}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s3_skybox2_a50c3ba31407f8f209707526b08fe1e81}
+
+
+  Change\+Skybox\+To  p\+Effect  ui32\+New\+Skybox  Changes the skybox to use the selected effect. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a4a30e87c3eeec8c3dabcdbd9ba668568}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Destroy\+Effect@{Destroy\+Effect}}
+\index{Destroy\+Effect@{Destroy\+Effect}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Destroy\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Destroy\+Effect (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+P\+F\+X\+Effect} $\ast$$\ast$}]{pp\+Effect}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s3_skybox2_a4a30e87c3eeec8c3dabcdbd9ba668568}
+
+
+  Destroy\+Effect  pp\+Effect  bool  Deletes an effect and releases resources. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a7944f5e6c3ca988fbe46f65eb5a2842d}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Draw\+Mesh@{Draw\+Mesh}}
+\index{Draw\+Mesh@{Draw\+Mesh}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Draw\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S3\+Skybox2\+::\+Draw\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+P\+O\+D\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s3_skybox2_a7944f5e6c3ca988fbe46f65eb5a2842d}
+
+
+  Draw\+Mesh  mesh The mesh to draw  Draws a \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} after the model view matrix has been set and the meterial prepared. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_ab2f6c9d8935d62344c37362b05631072}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s3_skybox2_ab2f6c9d8935d62344c37362b05631072}
+
+
+  Init\+Application  bool true if no error occurred  Code in \hyperlink{class_o_g_l_e_s3_skybox2_ab2f6c9d8935d62344c37362b05631072}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependent on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s3_skybox2_ab2f6c9d8935d62344c37362b05631072}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a8ffd3e8419f04229f3a96afa67b51183}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s3_skybox2_a8ffd3e8419f04229f3a96afa67b51183}
+
+
+  Init\+View  bool true if no error occurred  Code in \hyperlink{class_o_g_l_e_s3_skybox2_a8ffd3e8419f04229f3a96afa67b51183}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependent on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a89970a57199b6188ddcbec16b94b6dc8}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Load\+Effect@{Load\+Effect}}
+\index{Load\+Effect@{Load\+Effect}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Load\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Load\+Effect (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+P\+F\+X\+Effect} $\ast$$\ast$}]{pp\+Effect, }
+\item[{const char $\ast$}]{psz\+Effect\+Name, }
+\item[{const char $\ast$}]{psz\+File\+Name}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s3_skybox2_a89970a57199b6188ddcbec16b94b6dc8}
+
+
+  Load\+Effect  pp\+Effect  psz\+Effect\+Name  psz\+File\+Name  bool  Loads a P\+F\+X Effect. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_ad11b9e800ddac86d48e125f8f091129d}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$const}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s3_skybox2_ad11b9e800ddac86d48e125f8f091129d}
+
+
+  Load\+Textures  p\+Error\+Str  bool  Loads all of the required textures. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a3063bc3ff1826a9546bf5116df90437a}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s3_skybox2_a3063bc3ff1826a9546bf5116df90437a}
+
+
+  Quit\+Application  bool true if no error occurred  Code in \hyperlink{class_o_g_l_e_s3_skybox2_a3063bc3ff1826a9546bf5116df90437a}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s3_skybox2_a3063bc3ff1826a9546bf5116df90437a}{Quit\+Application()} will not be called. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a2bdba846a97b61e9e41976cbe39b66e8}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s3_skybox2_a2bdba846a97b61e9e41976cbe39b66e8}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s3_skybox2_a2bdba846a97b61e9e41976cbe39b66e8}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s3_skybox2_a1e0c5d207ff576c3a4a6a8966a1a875b}{\index{O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S3\+Skybox2@{O\+G\+L\+E\+S3\+Skybox2}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S3\+Skybox2\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s3_skybox2_a1e0c5d207ff576c3a4a6a8966a1a875b}
+
+
+  Render\+Scene  bool true if no error occurred  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. Will also manage relevant O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Advanced/\+Skybox2/\+O\+G\+L\+E\+S3/O\+G\+L\+E\+S3\+Skybox2.\+cpp\end{DoxyCompactItemize}

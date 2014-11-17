@@ -1,0 +1,20 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/EdgeDetection" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1fc4701d2c417cbbd376ebdde5d0b37f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Intermediate" fontname="Helvetica", fontsize="10", URL="dir_1fc4701d2c417cbbd376ebdde5d0b37f.html"]
+  subgraph clusterdir_d0b5273dd1948c046b60e06a5c0bf4af {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d0b5273dd1948c046b60e06a5c0bf4af.html"];
+    dir_d0b5273dd1948c046b60e06a5c0bf4af [shape=plaintext label="EdgeDetection"];
+    dir_438b71bb0cae7a5b39c8f3534b483a9b [shape=box label="OGLES2" color="red" fillcolor="white" style="filled" URL="dir_438b71bb0cae7a5b39c8f3534b483a9b.html"];
+    dir_d62a95c70ef5c8e88691bc8cb38b1195 [shape=box label="OGLES3" color="red" fillcolor="white" style="filled" URL="dir_d62a95c70ef5c8e88691bc8cb38b1195.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_d62a95c70ef5c8e88691bc8cb38b1195->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_001409_000133.html"];
+  dir_d62a95c70ef5c8e88691bc8cb38b1195->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_001409_001762.html"];
+  dir_438b71bb0cae7a5b39c8f3534b483a9b->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_001401_000133.html"];
+  dir_438b71bb0cae7a5b39c8f3534b483a9b->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_001401_001762.html"];
+}

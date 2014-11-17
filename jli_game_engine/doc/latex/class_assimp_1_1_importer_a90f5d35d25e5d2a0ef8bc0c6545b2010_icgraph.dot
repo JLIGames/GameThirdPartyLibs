@@ -1,0 +1,13 @@
+digraph "Assimp::Importer::GetPropertyBool"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::Importer::GetPropertyBool",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Assimp::FBXImporter\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_f_b_x_importer.html#aa0b027a6c4fe87c01dc43cacd2f17116"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Assimp::IFCImporter\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_i_f_c_importer.html#ad1e3ea4947b7f534975b060bf66aad33"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Assimp::Ogre::OgreImporter\l::SetupProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_ogre_1_1_ogre_importer.html#a766a089f91a75d1c32fcdf2f21e0d464",tooltip="BaseImporter override. "];
+}

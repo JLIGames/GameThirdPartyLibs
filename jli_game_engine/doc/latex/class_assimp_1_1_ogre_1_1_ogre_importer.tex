@@ -1,0 +1,95 @@
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_importer}{\section{Assimp\+:\+:Ogre\+:\+:Ogre\+Importer Class Reference}
+\label{class_assimp_1_1_ogre_1_1_ogre_importer}\index{Assimp\+::\+Ogre\+::\+Ogre\+Importer@{Assimp\+::\+Ogre\+::\+Ogre\+Importer}}
+}
+
+
+{\ttfamily \#include $<$Ogre\+Importer.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Ogre\+:\+:Ogre\+Importer\+:
+
+
+Collaboration diagram for Assimp\+:\+:Ogre\+:\+:Ogre\+Importer\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_a9b6609a0b257464d9a1092adf430ebef}{Can\+Read} (const std\+::string \&p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, bool check\+Sig) const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} override. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_af87c48299e8d92cd87d424b6ef71795b}{Intern\+Read\+File} (const std\+::string \&p\+File, \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} override. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_importer_ab7c09bcd61d6bebd1738439100a4c3a0}{virtual const \hyperlink{structai_importer_desc}{ai\+Importer\+Desc} $\ast$ \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_ab7c09bcd61d6bebd1738439100a4c3a0}{Get\+Info} () const }\label{class_assimp_1_1_ogre_1_1_ogre_importer_ab7c09bcd61d6bebd1738439100a4c3a0}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} override. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_importer_a766a089f91a75d1c32fcdf2f21e0d464}{virtual void \hyperlink{class_assimp_1_1_ogre_1_1_ogre_importer_a766a089f91a75d1c32fcdf2f21e0d464}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)}\label{class_assimp_1_1_ogre_1_1_ogre_importer_a766a089f91a75d1c32fcdf2f21e0d464}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} override. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp_1_1_importer}{Importer} for Ogre mesh, skeleton and material formats. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]Support vertex colors. 
+
+Support poses/animations from the mesh file. Currently only skeleton file animations are supported. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_importer_a9b6609a0b257464d9a1092adf430ebef}{\index{Assimp\+::\+Ogre\+::\+Ogre\+Importer@{Assimp\+::\+Ogre\+::\+Ogre\+Importer}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Assimp\+::\+Ogre\+::\+Ogre\+Importer@{Assimp\+::\+Ogre\+::\+Ogre\+Importer}}
+\subsubsection[{Can\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+Ogre\+::\+Ogre\+Importer\+::\+Can\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf Assimp\+::\+I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{bool}]{check\+Sig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_ogre_1_1_ogre_importer_a9b6609a0b257464d9a1092adf430ebef}
+
+
+\hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} override. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Read and validate first header chunk? \end{DoxyRefDesc}
+
+
+Implements \hyperlink{class_assimp_1_1_base_importer_a13588d3396ba5b7ed1f1cb46e0945cfd}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_ogre_1_1_ogre_importer_af87c48299e8d92cd87d424b6ef71795b}{\index{Assimp\+::\+Ogre\+::\+Ogre\+Importer@{Assimp\+::\+Ogre\+::\+Ogre\+Importer}!Intern\+Read\+File@{Intern\+Read\+File}}
+\index{Intern\+Read\+File@{Intern\+Read\+File}!Assimp\+::\+Ogre\+::\+Ogre\+Importer@{Assimp\+::\+Ogre\+::\+Ogre\+Importer}}
+\subsubsection[{Intern\+Read\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+Ogre\+::\+Ogre\+Importer\+::\+Intern\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+File, }
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene, }
+\item[{{\bf Assimp\+::\+I\+O\+System} $\ast$}]{p\+I\+O\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_ogre_1_1_ogre_importer_af87c48299e8d92cd87d424b6ef71795b}
+
+
+\hyperlink{class_assimp_1_1_base_importer}{Base\+Importer} override. 
+
+\begin{DoxyNote}{Note}
+Memory\+Stream\+Reader takes ownership of f.
+
+Xml\+Reader does not take ownership of f, hence the scoped ptr. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{class_assimp_1_1_base_importer_ac67d9f5ceb26353d27d6be06cccad398}{Assimp\+::\+Base\+Importer}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Importer.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Importer.\+cpp\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Material.\+cpp\end{DoxyCompactItemize}

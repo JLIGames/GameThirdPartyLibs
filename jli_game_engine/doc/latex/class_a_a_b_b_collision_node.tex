@@ -1,0 +1,48 @@
+\hypertarget{class_a_a_b_b_collision_node}{\section{A\+A\+B\+B\+Collision\+Node Class Reference}
+\label{class_a_a_b_b_collision_node}\index{A\+A\+B\+B\+Collision\+Node@{A\+A\+B\+B\+Collision\+Node}}
+}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_a_b_b_collision_node_ada461a1e7da4f92ef39f9a6aa4a012b8}{\+\_\+\+Build\+Collision\+Tree} (\hyperlink{class_a_a_b_b_collision_node}{A\+A\+B\+B\+Collision\+Node} $\ast$linear, const \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} box\+\_\+id, \hyperlink{_ice_types_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&current\+\_\+id, const \hyperlink{class_a_a_b_b_tree_node}{A\+A\+B\+B\+Tree\+Node} $\ast$current\+\_\+node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_a_a_b_b_collision_node_ada461a1e7da4f92ef39f9a6aa4a012b8}{\index{A\+A\+B\+B\+Collision\+Node@{A\+A\+B\+B\+Collision\+Node}!\+\_\+\+Build\+Collision\+Tree@{\+\_\+\+Build\+Collision\+Tree}}
+\index{\+\_\+\+Build\+Collision\+Tree@{\+\_\+\+Build\+Collision\+Tree}!A\+A\+B\+B\+Collision\+Node@{A\+A\+B\+B\+Collision\+Node}}
+\subsubsection[{\+\_\+\+Build\+Collision\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+Build\+Collision\+Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{linear, }
+\item[{const {\bf udword}}]{box\+\_\+id, }
+\item[{{\bf udword} \&}]{current\+\_\+id, }
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{current\+\_\+node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_a_a_b_b_collision_node_ada461a1e7da4f92ef39f9a6aa4a012b8}
+Builds an implicit tree from a standard one. An implicit tree is a complete tree (2$\ast$\+N-\/1 nodes) whose negative box pointers and primitive pointers have been made implicit, hence packing 3 pointers in one.
+
+Layout for implicit trees\+: \hyperlink{struct_node}{Node}\+:
+\begin{DoxyItemize}
+\item box
+\item data (32-\/bits value)
+\end{DoxyItemize}
+
+if data's L\+S\+B = 1 =$>$ remaining bits are a primitive pointer else remaining bits are a P-\/node pointer, and N = P + 1
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & \mbox{[}in\mbox{]} base address of destination nodes \\
+\hline
+{\em box\+\_\+id} & \mbox{[}in\mbox{]} index of destination node \\
+\hline
+{\em current\+\_\+id} & \mbox{[}in\mbox{]} current running index \\
+\hline
+{\em current\+\_\+node} & \mbox{[}in\mbox{]} current node from input tree \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___optimized_tree_8h}{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\hyperlink{_o_p_c___optimized_tree_8cpp}{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}\end{DoxyCompactItemize}

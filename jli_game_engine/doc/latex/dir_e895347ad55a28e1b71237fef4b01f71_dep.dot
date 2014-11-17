@@ -1,0 +1,13 @@
+digraph "theora/libtheora-1.1.1/doc" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_67164114db8055b3c4ba793f017b5b87 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libtheora-1.1.1" fontname="Helvetica", fontsize="10", URL="dir_67164114db8055b3c4ba793f017b5b87.html"]
+  subgraph clusterdir_e895347ad55a28e1b71237fef4b01f71 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e895347ad55a28e1b71237fef4b01f71.html"];
+    dir_e895347ad55a28e1b71237fef4b01f71 [shape=plaintext label="doc"];
+    dir_a2e9ec8fd951f90283938cc94e7024d6 [shape=box label="spec" color="black" fillcolor="white" style="filled" URL="dir_a2e9ec8fd951f90283938cc94e7024d6.html"];
+  }
+  }
+}

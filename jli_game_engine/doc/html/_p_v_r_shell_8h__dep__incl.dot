@@ -1,0 +1,15 @@
+digraph "PVR/SDK_3.4/Shell/PVRShell.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PVR/SDK_3.4/Shell/PVRShell.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PVR/SDK_3.4/Examples\l/Intermediate/ImageConvolution\l/OGLES3/CSImageConvolution.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_s_image_convolution_8h_source.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVR/SDK_3.4/Shell/API\l/EAGL/OpenGLSupport/EAGLView.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_e_a_g_l_view_8h.html",tooltip="Provides an EAGL surface to write an OpenGL scene into. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PVR/SDK_3.4/Shell/OS\l/iOS/AppController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$i_o_s_2_app_controller_8h.html",tooltip="Main controller for iOS apps. Manages the high-level tasks of the application such as bringing the vi..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PVR/SDK_3.4/Shell/OS\l/OSX/AppController.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_x_2_app_controller_8h.html",tooltip="Main controller for OSX apps. Manages the high-level tasks of the application such as bringing the vi..."];
+}

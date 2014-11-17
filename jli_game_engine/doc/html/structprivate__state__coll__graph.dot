@@ -1,0 +1,38 @@
+digraph "private_state"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="private_state",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bms" ,fontname="Helvetica"];
+  Node2 [label="bitrate_manager_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbitrate__manager__state.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vb" ,fontname="Helvetica"];
+  Node3 [label="vorbis_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__block.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" reap" ,fontname="Helvetica"];
+  Node4 [label="alloc_chain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structalloc__chain.html"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" opb" ,fontname="Helvetica"];
+  Node5 [label="oggpack_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structoggpack__buffer.html"];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vd" ,fontname="Helvetica"];
+  Node6 [label="vorbis_dsp_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__dsp__state.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vi" ,fontname="Helvetica"];
+  Node7 [label="vorbis_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy" ,fontname="Helvetica"];
+  Node8 [label="vorbis_look_psy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__look__psy.html"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vi" ,fontname="Helvetica"];
+  Node9 [label="vorbis_info_psy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__psy.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ve" ,fontname="Helvetica"];
+  Node10 [label="envelope_lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structenvelope__lookup.html"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" band" ,fontname="Helvetica"];
+  Node11 [label="envelope_band",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structenvelope__band.html"];
+  Node12 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mdct" ,fontname="Helvetica"];
+  Node12 [label="mdct_lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdct__lookup.html"];
+  Node13 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" filter" ,fontname="Helvetica"];
+  Node13 [label="envelope_filter_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structenvelope__filter__state.html"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fft_look" ,fontname="Helvetica"];
+  Node14 [label="drft_lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdrft__lookup.html"];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_g_look" ,fontname="Helvetica"];
+  Node15 [label="vorbis_look_psy_global",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__look__psy__global.html"];
+  Node16 -> Node15 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gi" ,fontname="Helvetica"];
+  Node16 [label="vorbis_info_psy_global",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__psy__global.html"];
+}

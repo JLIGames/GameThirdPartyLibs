@@ -1,0 +1,31 @@
+\hypertarget{class_spu_sample_task_process}{\section{Spu\+Sample\+Task\+Process Class Reference}
+\label{class_spu_sample_task_process}\index{Spu\+Sample\+Task\+Process@{Spu\+Sample\+Task\+Process}}
+}
+
+
+{\ttfamily \#include $<$Spu\+Sample\+Task\+Process.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_spu_sample_task_process_a8144853118a2787f3ebd8986ef07249f}{{\bfseries Spu\+Sample\+Task\+Process} (\hyperlink{classbt_thread_support_interface}{bt\+Thread\+Support\+Interface} $\ast$thread\+Interface, int max\+Num\+Outstanding\+Tasks)}\label{class_spu_sample_task_process_a8144853118a2787f3ebd8986ef07249f}
+
+\item 
+\hypertarget{class_spu_sample_task_process_a955dfb43d04179a0caef12dd9d339ebb}{void \hyperlink{class_spu_sample_task_process_a955dfb43d04179a0caef12dd9d339ebb}{initialize} ()}\label{class_spu_sample_task_process_a955dfb43d04179a0caef12dd9d339ebb}
+
+\begin{DoxyCompactList}\small\item\em call initialize in the beginning of the frame, before add\+Collision\+Pair\+To\+Task \end{DoxyCompactList}\item 
+\hypertarget{class_spu_sample_task_process_a2f9d210a42b8bd17d5a118c36fa57a38}{void {\bfseries issue\+Task} (void $\ast$sample\+Main\+Mem\+Ptr, int sample\+Value, int sample\+Command)}\label{class_spu_sample_task_process_a2f9d210a42b8bd17d5a118c36fa57a38}
+
+\item 
+\hypertarget{class_spu_sample_task_process_ad9804e89ae7a0a54c0d43bebd13f3cb9}{void \hyperlink{class_spu_sample_task_process_ad9804e89ae7a0a54c0d43bebd13f3cb9}{flush} ()}\label{class_spu_sample_task_process_ad9804e89ae7a0a54c0d43bebd13f3cb9}
+
+\begin{DoxyCompactList}\small\item\em call flush to submit potential outstanding work to S\+P\+Us and wait for all involved S\+P\+Us to be finished \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_spu_sample_task_process}{Spu\+Sample\+Task\+Process} handles S\+P\+U processing of collision pairs. When P\+P\+U issues a task, it will look for completed task buffers P\+P\+U will do postprocessing, dependent on workunit output (not likely) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/Spu\+Sample\+Task\+Process.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/Spu\+Sample\+Task\+Process.\+cpp\end{DoxyCompactItemize}

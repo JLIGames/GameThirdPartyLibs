@@ -1,0 +1,110 @@
+\hypertarget{class_catmull_clark_subdivider}{\section{Catmull\+Clark\+Subdivider Class Reference}
+\label{class_catmull_clark_subdivider}\index{Catmull\+Clark\+Subdivider@{Catmull\+Clark\+Subdivider}}
+}
+
+
+Inheritance diagram for Catmull\+Clark\+Subdivider\+:
+
+
+Collaboration diagram for Catmull\+Clark\+Subdivider\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_catmull_clark_subdivider_1_1_edge}{Edge}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_catmull_clark_subdivider_a3334094909ed4b86204fff5560836e5d}{typedef std\+::vector$<$ unsigned int $>$ {\bfseries U\+Int\+Vector}}\label{class_catmull_clark_subdivider_a3334094909ed4b86204fff5560836e5d}
+
+\item 
+\hypertarget{class_catmull_clark_subdivider_ac50b5bbf588a9c5d2b81e17915a4b147}{typedef std\+::map$<$ uint64\+\_\+t, \hyperlink{struct_catmull_clark_subdivider_1_1_edge}{Edge} $>$ {\bfseries Edge\+Map}}\label{class_catmull_clark_subdivider_ac50b5bbf588a9c5d2b81e17915a4b147}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_catmull_clark_subdivider_a3626843e8b19de31fd44d94487132c12}{Subdivide} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh, \hyperlink{structai_mesh}{ai\+Mesh} $\ast$\&out, unsigned int num, bool discard\+\_\+input)
+\item 
+void \hyperlink{class_catmull_clark_subdivider_a26357a64f91c069d1b99d61fe98d15bf}{Subdivide} (\hyperlink{structai_mesh}{ai\+Mesh} $\ast$$\ast$smesh, size\+\_\+t nmesh, \hyperlink{structai_mesh}{ai\+Mesh} $\ast$$\ast$out, unsigned int num, bool discard\+\_\+input)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Subdivider stub class to implement the Catmull-\/\+Clarke subdivision algorithm. The implementation is basing on recursive refinement. Directly evaluating the result is also possible and much quicker, but it depends on lengthy matrix lookup tables. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_catmull_clark_subdivider_a3626843e8b19de31fd44d94487132c12}{\index{Catmull\+Clark\+Subdivider@{Catmull\+Clark\+Subdivider}!Subdivide@{Subdivide}}
+\index{Subdivide@{Subdivide}!Catmull\+Clark\+Subdivider@{Catmull\+Clark\+Subdivider}}
+\subsubsection[{Subdivide}]{\setlength{\rightskip}{0pt plus 5cm}void Catmull\+Clark\+Subdivider\+::\+Subdivide (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$}]{mesh, }
+\item[{{\bf ai\+Mesh} $\ast$\&}]{out, }
+\item[{unsigned int}]{num, }
+\item[{bool}]{discard\+\_\+input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_catmull_clark_subdivider_a3626843e8b19de31fd44d94487132c12}
+Subdivide a mesh using the selected algorithm
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & First mesh to be subdivided. Must be in verbose format. \\
+\hline
+{\em out} & Receives the output mesh, allocated by me. \\
+\hline
+{\em num} & Number of subdivisions to perform. \\
+\hline
+{\em discard\+\_\+input} & If true is passed, the input mesh is deleted after the subdivision is complete. This can improve performance because it allows the optimization to reuse the existing mesh for intermediate results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+out!=mesh 
+\end{DoxyPrecond}
+
+
+Implements \hyperlink{class_assimp_1_1_subdivider_a4598b3ead068ae7f49bce239e33ee325}{Assimp\+::\+Subdivider}.
+
+\hypertarget{class_catmull_clark_subdivider_a26357a64f91c069d1b99d61fe98d15bf}{\index{Catmull\+Clark\+Subdivider@{Catmull\+Clark\+Subdivider}!Subdivide@{Subdivide}}
+\index{Subdivide@{Subdivide}!Catmull\+Clark\+Subdivider@{Catmull\+Clark\+Subdivider}}
+\subsubsection[{Subdivide}]{\setlength{\rightskip}{0pt plus 5cm}void Catmull\+Clark\+Subdivider\+::\+Subdivide (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Mesh} $\ast$$\ast$}]{smesh, }
+\item[{size\+\_\+t}]{nmesh, }
+\item[{{\bf ai\+Mesh} $\ast$$\ast$}]{out, }
+\item[{unsigned int}]{num, }
+\item[{bool}]{discard\+\_\+input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_catmull_clark_subdivider_a26357a64f91c069d1b99d61fe98d15bf}
+Subdivide multiple meshes using the selected algorithm. This avoids erroneous smoothing on objects consisting of multiple per-\/material meshes. Usually, most 3d modellers smooth on a per-\/object base, regardless the materials assigned to the meshes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em smesh} & Array of meshes to be subdivided. Must be in verbose format. \\
+\hline
+{\em nmesh} & Number of meshes in smesh. \\
+\hline
+{\em out} & Receives the output meshes. The array must be sufficiently large (at least {\ttfamily nmesh} elements) and may not overlap the input array. Output meshes map one-\/to-\/one to their corresponding input meshes. The meshes are allocated by the function. \\
+\hline
+{\em discard\+\_\+input} & If true is passed, input meshes are deleted after the subdivision is complete. This can improve performance because it allows the optimization of reusing existing meshes for intermediate results. \\
+\hline
+{\em num} & Number of subdivisions to perform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+nmesh != 0, smesh and out may not overlap 
+\end{DoxyPrecond}
+
+
+Implements \hyperlink{class_assimp_1_1_subdivider_a26a77d10069201eb198942c8b7459f0f}{Assimp\+::\+Subdivider}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Subdivision.\+cpp\end{DoxyCompactItemize}

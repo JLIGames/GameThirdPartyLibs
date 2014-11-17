@@ -1,0 +1,9 @@
+digraph "fmod/android/fmodstudioapi10503android/api/lowlevel/examples/eclipse/play_sound/obj/local/armeabi/objs-debug/stlport_shared/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a9b24e9b82208cb25c0c7bd1f3ece778 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="stlport_shared" fontname="Helvetica", fontsize="10", URL="dir_a9b24e9b82208cb25c0c7bd1f3ece778.html"]
+  dir_bc0f2e27f27c1bc778422ef86c9f21a8 [shape=box, label="src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bc0f2e27f27c1bc778422ef86c9f21a8.html"];
+  }
+}

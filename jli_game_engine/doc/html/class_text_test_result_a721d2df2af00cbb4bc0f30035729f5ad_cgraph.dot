@@ -1,0 +1,14 @@
+digraph "TextTestResult::addFailure"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TextTestResult::addFailure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestResultCollector\l::addFailure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result_collector.html#af53cbc55621f0eb0dc02d8b0203ea321",tooltip="Called when a failure occurs while running a test. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestSuccessListener\l::addFailure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_success_listener.html#a912bb5ea408b2be5b39cfb45e1bb402f",tooltip="Called when a failure occurs while running a test. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TestFailure::isError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_failure.html#a0b6c1ee50d2186a4918f015d7879e8dd",tooltip="Indicates if the failure is a failed assertion or an error. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

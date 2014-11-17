@@ -1,0 +1,146 @@
+\hypertarget{class_assimp_1_1_file_system_filter}{\section{Assimp\+:\+:File\+System\+Filter Class Reference}
+\label{class_assimp_1_1_file_system_filter}\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+}
+
+
+{\ttfamily \#include $<$File\+System\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:File\+System\+Filter\+:
+
+
+Collaboration diagram for Assimp\+:\+:File\+System\+Filter\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_file_system_filter_ac9329a3a44b37549cf7840bc69f96f3b}{File\+System\+Filter} (const std\+::string \&\hyperlink{structfile}{file}, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$old)
+\item 
+\hyperlink{class_assimp_1_1_file_system_filter_aae5aee345cad1f4f242d1ce392327f5a}{$\sim$\+File\+System\+Filter} ()
+\item 
+bool \hyperlink{class_assimp_1_1_file_system_filter_a8f5b19497580ed96318663277782641b}{Exists} (const char $\ast$p\+File) const 
+\item 
+char \hyperlink{class_assimp_1_1_file_system_filter_abb11e07d4b180b4aacef5b9b1c9958a6}{get\+Os\+Separator} () const 
+\item 
+\hyperlink{class_assimp_1_1_i_o_stream}{I\+O\+Stream} $\ast$ \hyperlink{class_assimp_1_1_file_system_filter_a47cd9fadf4090ad8a12ba925efed42e9}{Open} (const char $\ast$p\+File, const char $\ast$p\+Mode=\char`\"{}rb\char`\"{})
+\item 
+void \hyperlink{class_assimp_1_1_file_system_filter_a1cf69a7931a31596eefba4fc442bc90f}{Close} (\hyperlink{class_assimp_1_1_i_o_stream}{I\+O\+Stream} $\ast$p\+File)
+\item 
+bool \hyperlink{class_assimp_1_1_file_system_filter_ae4e3f3d8d868b1c09ad927419a4b14e6}{Compare\+Paths} (const char $\ast$one, const char $\ast$second) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_file}{File} system filter 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_file_system_filter_ac9329a3a44b37549cf7840bc69f96f3b}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!File\+System\+Filter@{File\+System\+Filter}}
+\index{File\+System\+Filter@{File\+System\+Filter}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{File\+System\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+File\+System\+Filter\+::\+File\+System\+Filter (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file, }
+\item[{{\bf I\+O\+System} $\ast$}]{old}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_file_system_filter_ac9329a3a44b37549cf7840bc69f96f3b}
+Constructor. 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_file_system_filter_aae5aee345cad1f4f242d1ce392327f5a}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!````~File\+System\+Filter@{$\sim$\+File\+System\+Filter}}
+\index{````~File\+System\+Filter@{$\sim$\+File\+System\+Filter}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{$\sim$\+File\+System\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}Assimp\+::\+File\+System\+Filter\+::$\sim$\+File\+System\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_assimp_1_1_file_system_filter_aae5aee345cad1f4f242d1ce392327f5a}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_file_system_filter_a1cf69a7931a31596eefba4fc442bc90f}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!Close@{Close}}
+\index{Close@{Close}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void Assimp\+::\+File\+System\+Filter\+::\+Close (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+Stream} $\ast$}]{p\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_file_system_filter_a1cf69a7931a31596eefba4fc442bc90f}
+Closes the given file and releases all resources associated with it. 
+
+Implements \hyperlink{class_assimp_1_1_i_o_system_a8c334d60f04bceeb6bd0157d21723f3e}{Assimp\+::\+I\+O\+System}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_file_system_filter_ae4e3f3d8d868b1c09ad927419a4b14e6}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!Compare\+Paths@{Compare\+Paths}}
+\index{Compare\+Paths@{Compare\+Paths}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{Compare\+Paths}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+File\+System\+Filter\+::\+Compare\+Paths (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{one, }
+\item[{const char $\ast$}]{second}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_file_system_filter_ae4e3f3d8d868b1c09ad927419a4b14e6}
+Compare two paths 
+
+Reimplemented from \hyperlink{class_assimp_1_1_i_o_system_aeb9bb9a0c240ea39d2a06845c7616ffc}{Assimp\+::\+I\+O\+System}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_file_system_filter_a8f5b19497580ed96318663277782641b}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!Exists@{Exists}}
+\index{Exists@{Exists}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+File\+System\+Filter\+::\+Exists (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_file_system_filter_a8f5b19497580ed96318663277782641b}
+Tests for the existence of a file at the given path. 
+
+Implements \hyperlink{class_assimp_1_1_i_o_system_a79f5fe8d2dbe1056c9418f7de9a72445}{Assimp\+::\+I\+O\+System}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_file_system_filter_abb11e07d4b180b4aacef5b9b1c9958a6}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!get\+Os\+Separator@{get\+Os\+Separator}}
+\index{get\+Os\+Separator@{get\+Os\+Separator}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{get\+Os\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}char Assimp\+::\+File\+System\+Filter\+::get\+Os\+Separator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_file_system_filter_abb11e07d4b180b4aacef5b9b1c9958a6}
+Returns the directory separator. 
+
+Implements \hyperlink{class_assimp_1_1_i_o_system_a40e412875b985bdb638f00ef0f20fff6}{Assimp\+::\+I\+O\+System}.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_file_system_filter_a47cd9fadf4090ad8a12ba925efed42e9}{\index{Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}!Open@{Open}}
+\index{Open@{Open}!Assimp\+::\+File\+System\+Filter@{Assimp\+::\+File\+System\+Filter}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+O\+Stream}$\ast$ Assimp\+::\+File\+System\+Filter\+::\+Open (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File, }
+\item[{const char $\ast$}]{p\+Mode = {\ttfamily \char`\"{}rb\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_assimp_1_1_file_system_filter_a47cd9fadf4090ad8a12ba925efed42e9}
+Open a new file with a given path. 
+
+Implements \hyperlink{class_assimp_1_1_i_o_system_ac512ece3b0701de5682553007a4c0816}{Assimp\+::\+I\+O\+System}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_file_system_filter_8h}{File\+System\+Filter.\+h}\end{DoxyCompactItemize}

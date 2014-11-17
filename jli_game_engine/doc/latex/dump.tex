@@ -1,0 +1,55 @@
+Generate a text or binary dump of a model. This is the core component of \hyperlink{class_assimp}{Assimp}'s internal regression test suite but it could also be useful for other developers to quickly examine the contents of a model. Note that text dumps are not intended to be used as intermediate format, \hyperlink{class_assimp}{Assimp} is not able to read them again, nor is the file format stable or well-\/defined. It may change with every revision without notice. Binary dumps ($\ast$.assbin) are backwards-\/ and forwards-\/compatible.
+
+\subsubsection*{Syntax\+:}
+
+
+\begin{DoxyCode}
+\hyperlink{namespaceassimp}{assimp} dump <model> [<out>] [-b] [-s] [common parameters]
+\end{DoxyCode}
+
+
+\subsubsection*{Parameters\+:}
+
+{\ttfamily  model~\newline
+}~\newline
+ Required. Relative or absolute path to the input model. 
+
+{\ttfamily  out~\newline
+}~\newline
+ Optional. Relative or absolute path to write the output dump to. If it is omitted, the dump is written to {\ttfamily $<$model$>$-\/dump.\+txt} 
+
+{\ttfamily -\/b~\newline
+ }~\newline
+ Optional. If this switch is specified, the dumb is written in binary format. The long form of this parameter is {\ttfamily --binary}. 
+
+{\ttfamily -\/s$<$n$>$~\newline
+ }~\newline
+ Optional. If this switch is specified, the dumb is shortened to include only min/max values for all vertex components and animation channels. The resulting file is much smaller, but the original model can't be reconstructed from it. This is used by \hyperlink{class_assimp}{Assimp}'s regression test suite, comparing those minidumps provides a fast way to verify whether a loader works correctly or not. The long form of this parameter is {\ttfamily --short}. 
+
+{\ttfamily  common parameters~\newline
+}~\newline
+ Optional. Import configuration \& postprocessing. See the \hyperlink{common}{common parameters page } for more information. 
+
+
+
+
+
+\subsubsection*{Sample\+:}
+
+
+\begin{DoxyCode}
+\hyperlink{namespaceassimp}{assimp} dump test.3ds test.txt -l -cfull
+\hyperlink{namespaceassimp}{assimp} dump test.3ds test.txt -include-\hyperlink{structlog}{log} -config=full
+\end{DoxyCode}
+
+
+Dumps 'test.\+3ds' to 'test.\+txt' after executing full post-\/processing on tehe imported data. The log output is included with the dump.
+
+
+\begin{DoxyCode}
+\hyperlink{namespaceassimp}{assimp} dump files\(\backslash\)*.*
+\hyperlink{namespaceassimp}{assimp} dump files\(\backslash\)*.* 
+\end{DoxyCode}
+
+
+Dumps all loadable model files in the 'files' subdir. The output dumps are named {\ttfamily $<$mode-\/file$>$-\/dump.\+txt}. The log is not included. 

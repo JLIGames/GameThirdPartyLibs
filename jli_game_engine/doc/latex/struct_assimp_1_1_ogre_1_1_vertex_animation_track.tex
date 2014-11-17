@@ -1,0 +1,88 @@
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track}{\section{Assimp\+:\+:Ogre\+:\+:Vertex\+Animation\+Track Struct Reference}
+\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track}\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}
+}
+
+
+Ogre \hyperlink{class_assimp_1_1_ogre_1_1_animation}{Animation} Track.  
+
+
+
+
+{\ttfamily \#include $<$Ogre\+Structs.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:Ogre\+:\+:Vertex\+Animation\+Track\+:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9}{Type} \{ \hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9ae5c3e8bc3e522a5086ebfa084d23ca12}{V\+A\+T\+\_\+\+N\+O\+N\+E} = 0, 
+\hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9a4c314a0ce45dbe5f5356453da2173164}{V\+A\+T\+\_\+\+M\+O\+R\+P\+H} = 1, 
+\hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9ad690c5c89b97848c9282a87caf73b790}{V\+A\+T\+\_\+\+P\+O\+S\+E} = 2, 
+\hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9af276d67e2c32d6c35a6b804ebc52fc0d}{V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a53a1dc9934421c13faee4ffab6c2a59a}{\hyperlink{structai_node_anim}{ai\+Node\+Anim} $\ast$ \hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a53a1dc9934421c13faee4ffab6c2a59a}{Convert\+To\+Assimp\+Animation\+Node} (\hyperlink{class_assimp_1_1_ogre_1_1_skeleton}{Skeleton} $\ast$skeleton)}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a53a1dc9934421c13faee4ffab6c2a59a}
+
+\begin{DoxyCompactList}\small\item\em Convert to \hyperlink{class_assimp}{Assimp} node animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a9244d521a7680d938bc202b4c99858b7}{\hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9}{Type} {\bfseries type}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a9244d521a7680d938bc202b4c99858b7}
+
+\item 
+uint16\+\_\+t \hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a1d6b6d6fdedfbae0ca8ef52775ace266}{target}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_assimp_1_1_vertex}{Vertex} data target. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a75ecca6de2e1a9523dcf1de574419796}{std\+::string \hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a75ecca6de2e1a9523dcf1de574419796}{bone\+Name}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a75ecca6de2e1a9523dcf1de574419796}
+
+\begin{DoxyCompactList}\small\item\em Only valid for V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a3569c61e2bde08ec3dc065a8f11f8263}{Pose\+Key\+Frame\+List \hyperlink{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a3569c61e2bde08ec3dc065a8f11f8263}{pose\+Key\+Frames}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a3569c61e2bde08ec3dc065a8f11f8263}
+
+\begin{DoxyCompactList}\small\item\em Only one of these will contain key frames, depending on the type enum. \end{DoxyCompactList}\item 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a524b809425ef7c6c6e63c1c0f3bed49b}{Morph\+Key\+Frame\+List {\bfseries morph\+Key\+Frames}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a524b809425ef7c6c6e63c1c0f3bed49b}
+
+\item 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a87bdaba770ac50de996427b2926cb185}{Transform\+Key\+Frame\+List {\bfseries transform\+Key\+Frames}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a87bdaba770ac50de996427b2926cb185}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ogre \hyperlink{class_assimp_1_1_ogre_1_1_animation}{Animation} Track. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9}{\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}!Type@{Type}}
+\index{Type@{Type}!Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track\+::\+Type}}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+A\+T\+\_\+\+N\+O\+N\+E@{V\+A\+T\+\_\+\+N\+O\+N\+E}!Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}!V\+A\+T\+\_\+\+N\+O\+N\+E@{V\+A\+T\+\_\+\+N\+O\+N\+E}}\item[{\em 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9ae5c3e8bc3e522a5086ebfa084d23ca12}{V\+A\+T\+\_\+\+N\+O\+N\+E}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9ae5c3e8bc3e522a5086ebfa084d23ca12}
+}]No animation. \index{V\+A\+T\+\_\+\+M\+O\+R\+P\+H@{V\+A\+T\+\_\+\+M\+O\+R\+P\+H}!Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}!V\+A\+T\+\_\+\+M\+O\+R\+P\+H@{V\+A\+T\+\_\+\+M\+O\+R\+P\+H}}\item[{\em 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9a4c314a0ce45dbe5f5356453da2173164}{V\+A\+T\+\_\+\+M\+O\+R\+P\+H}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9a4c314a0ce45dbe5f5356453da2173164}
+}]Morph animation is made up of many interpolated snapshot keyframes. \index{V\+A\+T\+\_\+\+P\+O\+S\+E@{V\+A\+T\+\_\+\+P\+O\+S\+E}!Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}!V\+A\+T\+\_\+\+P\+O\+S\+E@{V\+A\+T\+\_\+\+P\+O\+S\+E}}\item[{\em 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9ad690c5c89b97848c9282a87caf73b790}{V\+A\+T\+\_\+\+P\+O\+S\+E}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9ad690c5c89b97848c9282a87caf73b790}
+}]\hyperlink{class_assimp_1_1_ogre_1_1_pose}{Pose} animation is made up of a single delta pose keyframe. \index{V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M@{V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M}!Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}!V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M@{V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M}}\item[{\em 
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9af276d67e2c32d6c35a6b804ebc52fc0d}{V\+A\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a37591fc343c62d6911905ed23306f5e9af276d67e2c32d6c35a6b804ebc52fc0d}
+}]Keyframe that has its on pos, rot and scale for a time position. \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a1d6b6d6fdedfbae0ca8ef52775ace266}{\index{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}!target@{target}}
+\index{target@{target}!Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track@{Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Assimp\+::\+Ogre\+::\+Vertex\+Animation\+Track\+::target}}\label{struct_assimp_1_1_ogre_1_1_vertex_animation_track_a1d6b6d6fdedfbae0ca8ef52775ace266}
+
+
+\hyperlink{class_assimp_1_1_vertex}{Vertex} data target. 
+
+0 == shared geometry $>$0 == submesh index + 1 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Structs.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Ogre\+Structs.\+cpp\end{DoxyCompactItemize}

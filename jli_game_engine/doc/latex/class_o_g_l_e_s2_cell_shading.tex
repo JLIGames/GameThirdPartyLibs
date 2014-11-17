@@ -1,0 +1,204 @@
+\hypertarget{class_o_g_l_e_s2_cell_shading}{\section{O\+G\+L\+E\+S2\+Cell\+Shading Class Reference}
+\label{class_o_g_l_e_s2_cell_shading}\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S2\+Cell\+Shading\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S2\+Cell\+Shading\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_cell_shading_ae74bb52c59271d33c581c59506e8eea7}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_cell_shading_a40a9f7a741b24cf85232f58a9ad21da5}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_cell_shading_ae0151f54c484362573683259400cf3fb}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_cell_shading_a11eb74773ce02078940affd3a91552c7}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_cell_shading_a3d739582b1099ed60b30a953b616f5ac}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_cell_shading_af3bc77780a5d58bc79d1bd6ec49f0c27}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_cell_shading_a1b8727b496e112eedda5f130be182d91}{Load\+Shaders} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s2_cell_shading_a99432975bb4cade981869cacffcd5afa}{Load\+Vbos} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_cell_shading_a01b6507b73134a4324e1b06e503584d0}{Draw\+Mesh} (int i32\+Node\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s2_cell_shading_a01b6507b73134a4324e1b06e503584d0}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Draw\+Mesh@{Draw\+Mesh}}
+\index{Draw\+Mesh@{Draw\+Mesh}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Draw\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Draw\+Mesh (
+\begin{DoxyParamCaption}
+\item[{int}]{i32\+Node\+Index}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_cell_shading_a01b6507b73134a4324e1b06e503584d0}
+
+
+  Draw\+Mesh  i32\+Node\+Index \hyperlink{struct_node}{Node} index of the mesh to draw  Draws a \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} after the model view matrix has been set and the meterial prepared. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_ae74bb52c59271d33c581c59506e8eea7}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_cell_shading_ae74bb52c59271d33c581c59506e8eea7}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_cell_shading_ae74bb52c59271d33c581c59506e8eea7}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_cell_shading_ae74bb52c59271d33c581c59506e8eea7}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_a40a9f7a741b24cf85232f58a9ad21da5}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_cell_shading_a40a9f7a741b24cf85232f58a9ad21da5}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_cell_shading_a40a9f7a741b24cf85232f58a9ad21da5}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_a1b8727b496e112eedda5f130be182d91}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Load\+Shaders@{Load\+Shaders}}
+\index{Load\+Shaders@{Load\+Shaders}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Load\+Shaders}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Load\+Shaders (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_cell_shading_a1b8727b496e112eedda5f130be182d91}
+
+
+  Load\+Shaders  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads and compiles the shaders and links the shader programs required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_af3bc77780a5d58bc79d1bd6ec49f0c27}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_cell_shading_af3bc77780a5d58bc79d1bd6ec49f0c27}
+
+
+  Load\+Textures  p\+Error\+Str A string describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_a99432975bb4cade981869cacffcd5afa}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Load\+Vbos@{Load\+Vbos}}
+\index{Load\+Vbos@{Load\+Vbos}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Load\+Vbos}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Load\+Vbos (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_cell_shading_a99432975bb4cade981869cacffcd5afa}
+
+
+  Load\+Vbos  Loads the mesh data required for this training course into vertex buffer objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_a11eb74773ce02078940affd3a91552c7}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_cell_shading_a11eb74773ce02078940affd3a91552c7}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_cell_shading_a11eb74773ce02078940affd3a91552c7}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_cell_shading_a11eb74773ce02078940affd3a91552c7}{Quit\+Application()} will not be called.\+x 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_ae0151f54c484362573683259400cf3fb}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_cell_shading_ae0151f54c484362573683259400cf3fb}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_cell_shading_ae0151f54c484362573683259400cf3fb}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_cell_shading_a3d739582b1099ed60b30a953b616f5ac}{\index{O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S2\+Cell\+Shading@{O\+G\+L\+E\+S2\+Cell\+Shading}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Cell\+Shading\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_cell_shading_a3d739582b1099ed60b30a953b616f5ac}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. Will also manage relevent O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Intermediate/\+Cell\+Shading/\+O\+G\+L\+E\+S2/O\+G\+L\+E\+S2\+Cell\+Shading.\+cpp\end{DoxyCompactItemize}

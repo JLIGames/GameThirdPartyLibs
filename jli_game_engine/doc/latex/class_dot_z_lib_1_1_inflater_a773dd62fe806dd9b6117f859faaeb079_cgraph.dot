@@ -1,0 +1,15 @@
+digraph "DotZLib.Inflater.Add"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DotZLib.Inflater.Add",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DotZLib.CodecBase.copyInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#a8c827f091195356490e7f8b69e0546a7",tooltip="Copies a number of bytes to the internal codec buffer - ready for proccesing "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DotZLib.CodecBase.OnData\lAvailable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#a5c697195bc017ae951858e7c8948f9ae",tooltip="Fires the DataAvailable event "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DotZLib.CodecBase.resetOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#a801b625073b21aeaab52ebf9e96dd9c9",tooltip="Resets the internal output buffers to a known state - ready for processing "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="DotZLib.CodecBase.setChecksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#a5dfa2dddf3ac857652af7fd8e3d2034d",tooltip="Updates the running checksum property "];
+}

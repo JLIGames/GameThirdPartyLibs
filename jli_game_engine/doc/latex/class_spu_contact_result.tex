@@ -1,0 +1,56 @@
+\hypertarget{class_spu_contact_result}{\section{Spu\+Contact\+Result Class Reference}
+\label{class_spu_contact_result}\index{Spu\+Contact\+Result@{Spu\+Contact\+Result}}
+}
+
+
+{\ttfamily \#include $<$Spu\+Contact\+Result.\+h$>$}
+
+
+
+Inheritance diagram for Spu\+Contact\+Result\+:
+
+
+Collaboration diagram for Spu\+Contact\+Result\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_spu_contact_result_a925a45566ba702ecb97706fb684c7c69}{bt\+Persistent\+Manifold $\ast$ {\bfseries Get\+Spu\+Manifold} () const }\label{class_spu_contact_result_a925a45566ba702ecb97706fb684c7c69}
+
+\item 
+\hypertarget{class_spu_contact_result_a7e776f85c0ddf51cfa0b391e82c737d8}{virtual void \hyperlink{class_spu_contact_result_a7e776f85c0ddf51cfa0b391e82c737d8}{set\+Shape\+Identifiers\+A} (int part\+Id0, int index0)}\label{class_spu_contact_result_a7e776f85c0ddf51cfa0b391e82c737d8}
+
+\begin{DoxyCompactList}\small\item\em set\+Shape\+Identifiers\+A/\+B provides experimental support for per-\/triangle material / custom material combiner \end{DoxyCompactList}\item 
+\hypertarget{class_spu_contact_result_af740203419b21a7bd479ed701d85e3e3}{virtual void {\bfseries set\+Shape\+Identifiers\+B} (int part\+Id1, int index1)}\label{class_spu_contact_result_af740203419b21a7bd479ed701d85e3e3}
+
+\item 
+\hypertarget{class_spu_contact_result_ad7f7b13a470a2ecc15dc220712c38c1c}{void {\bfseries set\+Contact\+Info} (bt\+Persistent\+Manifold $\ast$spu\+Manifold, ppu\+\_\+address\+\_\+t manifold\+Address, const bt\+Transform \&world\+Trans0, const bt\+Transform \&world\+Trans1, bt\+Scalar restitution0, bt\+Scalar restitution1, bt\+Scalar friction0, bt\+Scalar friction01, bool is\+Swapped)}\label{class_spu_contact_result_ad7f7b13a470a2ecc15dc220712c38c1c}
+
+\item 
+void \hyperlink{class_spu_contact_result_a4a8870acdf01594bed6377d450583a95}{write\+Double\+Buffered\+Manifold} (bt\+Persistent\+Manifold $\ast$ls\+Manifold, bt\+Persistent\+Manifold $\ast$mm\+Manifold)
+\item 
+\hypertarget{class_spu_contact_result_ab92567512f398011215f0a6e0ed6eea6}{virtual void {\bfseries add\+Contact\+Point} (const bt\+Vector3 \&normal\+On\+B\+In\+World, const bt\+Vector3 \&point\+In\+World, bt\+Scalar depth)}\label{class_spu_contact_result_ab92567512f398011215f0a6e0ed6eea6}
+
+\item 
+\hypertarget{class_spu_contact_result_a800bdacef835a99296beed51a39eb9b5}{void {\bfseries flush} ()}\label{class_spu_contact_result_a800bdacef835a99296beed51a39eb9b5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_spu_contact_result}{Spu\+Contact\+Result} exports the contact points using double-\/buffered D\+M\+A transfers, only when needed So when an existing contact point is duplicated, no transfer/refresh is performed. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_spu_contact_result_a4a8870acdf01594bed6377d450583a95}{\index{Spu\+Contact\+Result@{Spu\+Contact\+Result}!write\+Double\+Buffered\+Manifold@{write\+Double\+Buffered\+Manifold}}
+\index{write\+Double\+Buffered\+Manifold@{write\+Double\+Buffered\+Manifold}!Spu\+Contact\+Result@{Spu\+Contact\+Result}}
+\subsubsection[{write\+Double\+Buffered\+Manifold}]{\setlength{\rightskip}{0pt plus 5cm}void Spu\+Contact\+Result\+::write\+Double\+Buffered\+Manifold (
+\begin{DoxyParamCaption}
+\item[{bt\+Persistent\+Manifold $\ast$}]{ls\+Manifold, }
+\item[{bt\+Persistent\+Manifold $\ast$}]{mm\+Manifold}
+\end{DoxyParamCaption}
+)}}\label{class_spu_contact_result_a4a8870acdf01594bed6377d450583a95}
+only write back the contact information on S\+P\+U. Other platforms avoid copying, and use the data in-\/place see Spu\+Fake\+Dma.\+cpp 'cell\+Dma\+Large\+Get\+Read\+Only' 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/\+Spu\+Narrow\+Phase\+Collision\+Task/Spu\+Contact\+Result.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Multi\+Threaded/\+Spu\+Narrow\+Phase\+Collision\+Task/Spu\+Contact\+Result.\+cpp\end{DoxyCompactItemize}

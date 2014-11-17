@@ -1,0 +1,18 @@
+digraph "TestSuiteBuilderContextBase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="TestSuiteBuilderContextBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_suite" ];
+  Node2 [label="TestSuite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_suite.html",tooltip="A Composite of Tests.It runs a collection of test cases. Here is an example. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="TestComposite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_composite.html",tooltip="A Composite of Tests. "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test.html",tooltip="Base class for all test objects.All test objects should be a subclass of Test. Some test objects..."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_factory" ];
+  Node5 [label="TestFixtureFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_fixture_factory.html",tooltip="Abstract TestFixture factory (Implementation). "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_namer" ];
+  Node6 [label="TestNamer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_namer.html",tooltip="Names a test or a fixture suite. "];
+}

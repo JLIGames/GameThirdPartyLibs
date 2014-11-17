@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/MultipleRenderTargets/OGLES3/Build/Android/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_99b8d586ecdabe5185ad449793f271bc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Android" fontname="Helvetica", fontsize="10", URL="dir_99b8d586ecdabe5185ad449793f271bc.html"]
+  subgraph clusterdir_067e7b194b69467a9d4a863a1fa595bb {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_067e7b194b69467a9d4a863a1fa595bb.html"];
+    dir_067e7b194b69467a9d4a863a1fa595bb [shape=plaintext label="src"];
+    dir_5ac6843ef8025f6ca3feb5a50f4b8809 [shape=box label="com" color="red" fillcolor="white" style="filled" URL="dir_5ac6843ef8025f6ca3feb5a50f4b8809.html"];
+  }
+  }
+}

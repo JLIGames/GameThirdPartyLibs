@@ -1,0 +1,445 @@
+\hypertarget{namespaceassimp_1_1material}{\section{assimp\+:\+:material Namespace Reference}
+\label{namespaceassimp_1_1material}\index{assimp\+::material@{assimp\+::material}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structassimp_1_1material_1_1ai_material}{ai\+Material}
+\item 
+struct \hyperlink{structassimp_1_1material_1_1ai_material_property}{ai\+Material\+Property}
+\item 
+struct \hyperlink{structassimp_1_1material_1_1ai_u_v_transform}{ai\+U\+V\+Transform}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3}{ai\+Texture\+Op} \+: uint \{ \\*
+\hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a54ec2cbf30b354b753b0e185531c4739}{Multiply} = 0x0, 
+\hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3ab1d93585972e3eb0c3c35991b3e9cc39}{Add} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3aabc06a2289691c9dd01d14b9d18b0240}{Subtract} = 0x2, 
+\hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a80cb06984fe800e37818f04c9e5ed7ba}{Divide} = 0x3, 
+\\*
+\hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3aa7b5c981daac442917e0cf8ac8986bc8}{Smooth\+Add} = 0x4, 
+\hyperlink{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a37683f00c832e15ae7aefd72051295ac}{Signed\+Add} = 0x5
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42b}{ai\+Texture\+Map\+Mode} \+: uint \{ \hyperlink{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42bac03e8aac23595136b2e8ae6c0216a2a8}{Wrap} = 0x0, 
+\hyperlink{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42bab79de0edb6004c453286fe5559d90059}{Clamp} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42ba5429563ef7144fbb6122b68f4f3b91ce}{Decal} = 0x3, 
+\hyperlink{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42baf71c152c20e0719f55db3933401bc499}{Mirror} = 0x2
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679}{ai\+Texture\+Mapping} \+: uint \{ \\*
+\hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a651a6dc2da0e6c12d6bd569155b6cd6a}{U\+V} = 0x0, 
+\hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a360d776c5aaa1419588c7323ef1cca6e}{S\+P\+H\+E\+R\+E} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a47dee946b0be7bdd5c4bb0f5e9ef2033}{C\+Y\+L\+I\+N\+D\+E\+R} = 0x2, 
+\hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a9c9d284b01915e6ca040fdc35ff81901}{B\+O\+X} = 0x3, 
+\\*
+\hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a1550da55ba97eaf075f6dd2d3ec97aeb}{P\+L\+A\+N\+E} = 0x4, 
+\hyperlink{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679adc9988884766d74c9fc93091e6d543d3}{O\+T\+H\+E\+R} = 0x5
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1b}{ai\+Texture\+Type} \+: uint \{ \\*
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba1797c0aa52852c234515fcccca915431}{N\+O\+N\+E} = 0x0, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bad2b9448197133f240aad98c045085855}{D\+I\+F\+F\+U\+S\+E} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba29903343224ae0b876810161accce75c}{S\+P\+E\+C\+U\+L\+A\+R} = 0x2, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba3138f86deeac2c72b77fc33dc021709b}{A\+M\+B\+I\+E\+N\+T} = 0x3, 
+\\*
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bab790f63a2ce3ddf214dc549567c72479}{E\+M\+I\+S\+S\+I\+V\+E} = 0x4, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bae0a5d182350c94f7525199b5dd3137f1}{H\+E\+I\+G\+H\+T} = 0x5, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1baa8bdf8dd08766359fa2125fc702808bc}{N\+O\+R\+M\+A\+L\+S} = 0x6, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba1e1bb05c8c1ccf2aa4186a40b4ca787c}{S\+H\+I\+N\+I\+N\+E\+S\+S} = 0x7, 
+\\*
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba2789759c7845fda949a3ae0a48457669}{O\+P\+A\+C\+I\+T\+Y} = 0x8, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bae5823a7e2efa4d5aa81d929eeaf6c072}{D\+I\+S\+P\+L\+A\+C\+E\+M\+E\+N\+T} = 0x9, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bab73548e0159145054ad94d2abad83417}{L\+I\+G\+H\+T\+M\+A\+P} = 0x\+A, 
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba273ee8811d5df261e6a7c7f52efad1ec}{R\+E\+F\+L\+E\+C\+T\+I\+O\+N} = 0x\+B, 
+\\*
+\hyperlink{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba3e6e78b0e68bed83be847364f5825b49}{U\+N\+K\+N\+O\+W\+N} = 0x\+C
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0}{ai\+Shading\+Mode} \+: uint \{ \\*
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0acf8c953c1aa623cac3059e1878974745}{Flat} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0aecd03e3cff10447a2ba41b3a9a2feb80}{Gouraud} = 0x2, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0adab047c759c806396402bc83eaefefca}{Phong} = 0x3, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a1db085775f8a1e79a92a9fcab496100a}{Blinn} = 0x4, 
+\\*
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a3f3936152e61ad1272858b220893c10c}{Toon} = 0x5, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a548951fc13398003562db497783cb2fd}{Oren\+Nayar} = 0x6, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a06ac4c3389d9958a64e1430602c86eb9}{Minnaert} = 0x7, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0af4fd8feb8966692f345e55868dc28eef}{Cook\+Torrance} = 0x8, 
+\\*
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0abeb3bc5fcce0d0c46d04ff78cd61dfe0}{No\+Shading} = 0x9, 
+\hyperlink{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0abe91fcdf16c1d76cc219d1f833cb4eed}{Fresnel} = 0xa
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8d}{ai\+Texture\+Flags} \+: uint \{ \hyperlink{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8da9659ad9ec6bbe7a8836a250bce874008}{Invert} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8daae9e40e6ecc702196aa5bee102f6d23f}{Use\+Alpha} = 0x2, 
+\hyperlink{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8da584fb90d91bf15981bf0543d97598def}{Ignore\+Alpha} = 0x4
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eb}{ai\+Blend\+Mode} \+: uint \{ \hyperlink{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eba3f08be388721c4fd720fb6338e6fb1dd}{Default} = 0x0, 
+\hyperlink{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eba33fafdf0c752b0c1ac11ff8cf2d216e7}{Additive} = 0x1
+ \}
+\item 
+enum \hyperlink{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702a}{ai\+Property\+Type\+Info} \+: uint \{ \hyperlink{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aaac72950dac730999f7bf4b9105eea1f8}{Float} = 0x1, 
+\hyperlink{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aae502a136ec8dd5e9a1553d66e38be8b7}{String} = 0x3, 
+\hyperlink{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aa3c09b591dd4a00f5ced8177bb235de6f}{Integer} = 0x4, 
+\hyperlink{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aa3ae6c3b2dd91e5161f86bc3c51590b35}{Buffer} = 0x5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C}
+\item 
+const char $\ast$ \hyperlink{namespaceassimp_1_1material_a6578b472c6e92eb5b2ecd848a52ffb83}{A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E} = \char`\"{}Textured\+Default\+Material\char`\"{}
+\item 
+const char $\ast$ \hyperlink{namespaceassimp_1_1material_a5548b5b36911f681f986f5c26acee9bd}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E} = \char`\"{}?mat.\+name\char`\"{}
+\item 
+\hypertarget{namespaceassimp_1_1material_a47f677d4eb22c68f9f5f8cd83ff6b449}{const char $\ast$ {\bfseries A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+W\+O\+S\+I\+D\+E\+D} = \char`\"{}\$mat.\+twosided\char`\"{}}\label{namespaceassimp_1_1material_a47f677d4eb22c68f9f5f8cd83ff6b449}
+
+\item 
+\hypertarget{namespaceassimp_1_1material_ac667eff514387bfba9ee746bbdc921df}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_ac667eff514387bfba9ee746bbdc921df}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+S\+H\+A\+D\+I\+N\+G\+\_\+\+M\+O\+D\+E\+L} = \char`\"{}\$mat.\+shadingm\char`\"{}}\label{namespaceassimp_1_1material_ac667eff514387bfba9ee746bbdc921df}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a4b6b4a4c9c01d594afe3e9b41b2522cb}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a4b6b4a4c9c01d594afe3e9b41b2522cb}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+I\+R\+E\+F\+R\+A\+M\+E} = \char`\"{}\$mat.\+wireframe\char`\"{}}\label{namespaceassimp_1_1material_a4b6b4a4c9c01d594afe3e9b41b2522cb}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a1b41469007e3fca0bbf63a363ded1e42}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a1b41469007e3fca0bbf63a363ded1e42}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+B\+L\+E\+N\+D\+\_\+\+F\+U\+N\+C} = \char`\"{}\$mat.\+blend\char`\"{}}\label{namespaceassimp_1_1material_a1b41469007e3fca0bbf63a363ded1e42}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_ae93ce797e2c62350d2d976dc5ee93f10}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_ae93ce797e2c62350d2d976dc5ee93f10}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+O\+P\+A\+C\+I\+T\+Y} = \char`\"{}\$mat.\+opacity\char`\"{}}\label{namespaceassimp_1_1material_ae93ce797e2c62350d2d976dc5ee93f10}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a49e003063ec2eb77723058f253cf0b4f}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a49e003063ec2eb77723058f253cf0b4f}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+B\+U\+M\+P\+S\+C\+A\+L\+I\+N\+G} = \char`\"{}\$mat.\+bumpscaling\char`\"{}}\label{namespaceassimp_1_1material_a49e003063ec2eb77723058f253cf0b4f}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a71a5d8fffbbd0ecb81e35749238fd4c8}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a71a5d8fffbbd0ecb81e35749238fd4c8}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+S\+H\+I\+N\+I\+N\+E\+S\+S} = \char`\"{}\$mat.\+shininess\char`\"{}}\label{namespaceassimp_1_1material_a71a5d8fffbbd0ecb81e35749238fd4c8}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a5f489a0ef5164ee867477f4e932d7ec4}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a5f489a0ef5164ee867477f4e932d7ec4}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+V\+I\+T\+Y} = \char`\"{}\$mat.\+reflectivity\char`\"{}}\label{namespaceassimp_1_1material_a5f489a0ef5164ee867477f4e932d7ec4}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_acd690fb7e88583b404d91c00a7ef9142}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_acd690fb7e88583b404d91c00a7ef9142}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+S\+H\+I\+N\+I\+N\+E\+S\+S\+\_\+\+S\+T\+R\+E\+N\+G\+T\+H} = \char`\"{}\$mat.\+shinpercent\char`\"{}}\label{namespaceassimp_1_1material_acd690fb7e88583b404d91c00a7ef9142}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a1ed9798a8e83bb9ad2eb4f18c19699dc}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a1ed9798a8e83bb9ad2eb4f18c19699dc}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+R\+E\+F\+R\+A\+C\+T\+I} = \char`\"{}\$mat.\+refracti\char`\"{}}\label{namespaceassimp_1_1material_a1ed9798a8e83bb9ad2eb4f18c19699dc}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_aa6270e511e434b591346e1a1a4a71568}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_aa6270e511e434b591346e1a1a4a71568}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+I\+F\+F\+U\+S\+E} = \char`\"{}\$clr.\+diffuse\char`\"{}}\label{namespaceassimp_1_1material_aa6270e511e434b591346e1a1a4a71568}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a842020907ae795f51f048a7a778303b9}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a842020907ae795f51f048a7a778303b9}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R\+\_\+\+A\+M\+B\+I\+E\+N\+T} = \char`\"{}\$clr.\+ambient\char`\"{}}\label{namespaceassimp_1_1material_a842020907ae795f51f048a7a778303b9}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a72f5d865c77e7bec31b3de2350eebaee}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a72f5d865c77e7bec31b3de2350eebaee}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+P\+E\+C\+U\+L\+A\+R} = \char`\"{}\$clr.\+specular\char`\"{}}\label{namespaceassimp_1_1material_a72f5d865c77e7bec31b3de2350eebaee}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a995c134e06e6e02b3052b37b505bd2f6}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a995c134e06e6e02b3052b37b505bd2f6}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+M\+I\+S\+S\+I\+V\+E} = \char`\"{}\$clr.\+emissive\char`\"{}}\label{namespaceassimp_1_1material_a995c134e06e6e02b3052b37b505bd2f6}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a4d4d2dd2da933d250e0410ddffb5eb4a}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a4d4d2dd2da933d250e0410ddffb5eb4a}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T} = \char`\"{}\$clr.\+transparent\char`\"{}}\label{namespaceassimp_1_1material_a4d4d2dd2da933d250e0410ddffb5eb4a}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_aceb845ca1b31120218e1da88af53a418}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_aceb845ca1b31120218e1da88af53a418}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+V\+E} = \char`\"{}\$clr.\+reflective\char`\"{}}\label{namespaceassimp_1_1material_aceb845ca1b31120218e1da88af53a418}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a55d2f805a84b89879fd0afc8a17bf0cb}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a55d2f805a84b89879fd0afc8a17bf0cb}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+I\+M\+A\+G\+E} = \char`\"{}?bg.\+global\char`\"{}}\label{namespaceassimp_1_1material_a55d2f805a84b89879fd0afc8a17bf0cb}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{namespaceassimp_1_1material_a267de50d6dfe754f700df9e231ea6b60}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E} = \char`\"{}\$tex.\+file\char`\"{}
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a53bd0cd4e85babdd5acf22d248673bd6}{const char $\ast$ {\bfseries A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+U\+V\+W\+S\+R\+C} = \char`\"{}\$tex.\+uvwsrc\char`\"{}}\label{namespaceassimp_1_1material_a53bd0cd4e85babdd5acf22d248673bd6}
+
+\item 
+\hypertarget{namespaceassimp_1_1material_a95d978ceb90c1951a17711536bcfddd5}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a95d978ceb90c1951a17711536bcfddd5}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+O\+P} = \char`\"{}\$tex.\+op\char`\"{}}\label{namespaceassimp_1_1material_a95d978ceb90c1951a17711536bcfddd5}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a4d2c3f763c92ab5b68c74fb5e9ec849b}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a4d2c3f763c92ab5b68c74fb5e9ec849b}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+M\+A\+P\+P\+I\+N\+G} = \char`\"{}\$tex.\+mapping\char`\"{}}\label{namespaceassimp_1_1material_a4d2c3f763c92ab5b68c74fb5e9ec849b}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a5f912828dfa7dabf473deb5290586e07}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a5f912828dfa7dabf473deb5290586e07}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+B\+L\+E\+N\+D} = \char`\"{}\$tex.\+blend\char`\"{}}\label{namespaceassimp_1_1material_a5f912828dfa7dabf473deb5290586e07}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a56291129e8f9b5f328dc23887f018ff8}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a56291129e8f9b5f328dc23887f018ff8}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+M\+A\+P\+P\+I\+N\+G\+M\+O\+D\+E\+\_\+\+U} = \char`\"{}\$tex.\+mapmodeu\char`\"{}}\label{namespaceassimp_1_1material_a56291129e8f9b5f328dc23887f018ff8}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_a7fc185a6d4e680c1404a5f77ac8422d3}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_a7fc185a6d4e680c1404a5f77ac8422d3}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+M\+A\+P\+P\+I\+N\+G\+M\+O\+D\+E\+\_\+\+V} = \char`\"{}\$tex.\+mapmodev\char`\"{}}\label{namespaceassimp_1_1material_a7fc185a6d4e680c1404a5f77ac8422d3}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_adde1ce46d96b4edfd9a8f0d27a9b26f6}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_adde1ce46d96b4edfd9a8f0d27a9b26f6}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+M\+A\+P\+\_\+\+A\+X\+I\+S} = \char`\"{}\$tex.\+mapaxis\char`\"{}}\label{namespaceassimp_1_1material_adde1ce46d96b4edfd9a8f0d27a9b26f6}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_ae89583f42aee11b7a5fbc9bd3f851664}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_ae89583f42aee11b7a5fbc9bd3f851664}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+U\+V\+T\+R\+A\+N\+S\+F\+O\+R\+M} = \char`\"{}\$tex.\+uvtrafo\char`\"{}}\label{namespaceassimp_1_1material_ae89583f42aee11b7a5fbc9bd3f851664}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\item 
+\hypertarget{namespaceassimp_1_1material_ae6d29c4b4bdbeacdc2631c72c0a4f08b}{const char $\ast$ \hyperlink{namespaceassimp_1_1material_ae6d29c4b4bdbeacdc2631c72c0a4f08b}{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+F\+L\+A\+G\+S} = \char`\"{}\$tex.\+flags\char`\"{}}\label{namespaceassimp_1_1material_ae6d29c4b4bdbeacdc2631c72c0a4f08b}
+
+\begin{DoxyCompactList}\small\item\em ditto \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the material system which stores the imported material information. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eb}{\index{assimp\+::material@{assimp\+::material}!ai\+Blend\+Mode@{ai\+Blend\+Mode}}
+\index{ai\+Blend\+Mode@{ai\+Blend\+Mode}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Blend\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Blend\+Mode} \+: uint}}\label{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eb}
+Defines alpha-\/blend flags.
+
+If you're familiar with Open\+G\+L or D3\+D, these flags aren't new to you. They define how the final color value of a pixel is computed, based on the previous color at that pixel and the new color value from the material.
+
+The basic blending formula is {\ttfamily Source\+Color $\ast$ Source\+Blend + Dest\+Color $\ast$ Dest\+Blend}, where {\ttfamily Dest\+Color} is the previous color in the framebuffer at this position and {\ttfamily Source\+Color} is the material color before the transparency calculation.
+
+This corresponds to the {\ttfamily A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+B\+L\+E\+N\+D\+\_\+\+F\+U\+N\+C} property. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Default@{Default}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Default@{Default}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eba3f08be388721c4fd720fb6338e6fb1dd}{Default}\label{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eba3f08be388721c4fd720fb6338e6fb1dd}
+}]Formula\+: {\ttfamily Source\+Color $\ast$ Source\+Alpha + Dest\+Color $\ast$ (1 -\/ Source\+Alpha)} \index{Additive@{Additive}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Additive@{Additive}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eba33fafdf0c752b0c1ac11ff8cf2d216e7}{Additive}\label{namespaceassimp_1_1material_a9f8c96d3f766b60d6a002a839366b1eba33fafdf0c752b0c1ac11ff8cf2d216e7}
+}]Additive blending.
+
+Formula\+: {\ttfamily Source\+Color$\ast$1 + Dest\+Color$\ast$1} \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702a}{\index{assimp\+::material@{assimp\+::material}!ai\+Property\+Type\+Info@{ai\+Property\+Type\+Info}}
+\index{ai\+Property\+Type\+Info@{ai\+Property\+Type\+Info}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Property\+Type\+Info}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Property\+Type\+Info} \+: uint}}\label{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702a}
+A very primitive R\+T\+T\+I system to store the data type of a material property. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Float@{Float}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Float@{Float}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aaac72950dac730999f7bf4b9105eea1f8}{Float}\label{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aaac72950dac730999f7bf4b9105eea1f8}
+}]Array of single-\/precision (32 bit) floats.
+
+It is possible to use {\ttfamily ai\+Get\+Material\+Integer\mbox{[}Array\mbox{]}()} to query properties stored in floating-\/point format. The material system performs the type conversion automatically. \index{String@{String}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!String@{String}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aae502a136ec8dd5e9a1553d66e38be8b7}{String}\label{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aae502a136ec8dd5e9a1553d66e38be8b7}
+}]\hyperlink{structai_string}{ai\+String} property.
+
+Arrays of strings aren't possible, {\ttfamily ai\+Get\+Material\+String()} must be used to query a string property. \index{Integer@{Integer}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Integer@{Integer}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aa3c09b591dd4a00f5ced8177bb235de6f}{Integer}\label{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aa3c09b591dd4a00f5ced8177bb235de6f}
+}]Array of (32 bit) integers.
+
+It is possible to use {\ttfamily ai\+Get\+Material\+Float\mbox{[}Array\mbox{]}()} to query properties stored in integer format. The material system performs the type conversion automatically. \index{Buffer@{Buffer}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Buffer@{Buffer}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aa3ae6c3b2dd91e5161f86bc3c51590b35}{Buffer}\label{namespaceassimp_1_1material_a9c77cffdda8a7bb8e6f97ff5e490702aa3ae6c3b2dd91e5161f86bc3c51590b35}
+}]Simple binary buffer, content undefined. Not convertible to anything. \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0}{\index{assimp\+::material@{assimp\+::material}!ai\+Shading\+Mode@{ai\+Shading\+Mode}}
+\index{ai\+Shading\+Mode@{ai\+Shading\+Mode}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Shading\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Shading\+Mode} \+: uint}}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0}
+Defines all shading models supported by the library
+
+The list of shading modes has been taken from Blender. See Blender documentation for more information. The A\+P\+I does not distinguish between \char`\"{}specular\char`\"{} and \char`\"{}diffuse\char`\"{} shaders (thus the specular term for diffuse shading models like Oren-\/\+Nayar remains undefined).
+
+Again, this value is just a hint. \hyperlink{class_assimp}{Assimp} tries to select the shader whose most common implementation matches the original rendering results of the 3\+D modeller which wrote a particular model as closely as possible. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Flat@{Flat}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Flat@{Flat}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0acf8c953c1aa623cac3059e1878974745}{Flat}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0acf8c953c1aa623cac3059e1878974745}
+}]Flat shading.
+
+Shading is done on per-\/face base diffuse only. Also known as »faceted shading«. \index{Gouraud@{Gouraud}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Gouraud@{Gouraud}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0aecd03e3cff10447a2ba41b3a9a2feb80}{Gouraud}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0aecd03e3cff10447a2ba41b3a9a2feb80}
+}]Simple Gouraud shading. \index{Phong@{Phong}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Phong@{Phong}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0adab047c759c806396402bc83eaefefca}{Phong}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0adab047c759c806396402bc83eaefefca}
+}]Phong-\/\+Shading. \index{Blinn@{Blinn}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Blinn@{Blinn}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a1db085775f8a1e79a92a9fcab496100a}{Blinn}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a1db085775f8a1e79a92a9fcab496100a}
+}]Phong-\/\+Blinn-\/\+Shading. \index{Toon@{Toon}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Toon@{Toon}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a3f3936152e61ad1272858b220893c10c}{Toon}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a3f3936152e61ad1272858b220893c10c}
+}]Per-\/pixel toon shading.
+
+Often referred to as »comic shading«. \index{Oren\+Nayar@{Oren\+Nayar}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Oren\+Nayar@{Oren\+Nayar}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a548951fc13398003562db497783cb2fd}{Oren\+Nayar}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a548951fc13398003562db497783cb2fd}
+}]Per-\/pixel Oren-\/\+Nayar shading.
+
+Extension to standard Lambertian shading, taking the roughness of the material into account. \index{Minnaert@{Minnaert}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Minnaert@{Minnaert}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a06ac4c3389d9958a64e1430602c86eb9}{Minnaert}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0a06ac4c3389d9958a64e1430602c86eb9}
+}]Per-\/pixel Minnaert shading.
+
+Extension to standard Lambertian shading, taking the \char`\"{}darkness\char`\"{} of the material into account. \index{Cook\+Torrance@{Cook\+Torrance}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Cook\+Torrance@{Cook\+Torrance}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0af4fd8feb8966692f345e55868dc28eef}{Cook\+Torrance}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0af4fd8feb8966692f345e55868dc28eef}
+}]Per-\/pixel Cook-\/\+Torrance shading.
+
+Special shader for metallic surfaces. \index{No\+Shading@{No\+Shading}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!No\+Shading@{No\+Shading}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0abeb3bc5fcce0d0c46d04ff78cd61dfe0}{No\+Shading}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0abeb3bc5fcce0d0c46d04ff78cd61dfe0}
+}]No shading at all.
+
+Constant light influence of 1. \index{Fresnel@{Fresnel}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Fresnel@{Fresnel}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0abe91fcdf16c1d76cc219d1f833cb4eed}{Fresnel}\label{namespaceassimp_1_1material_ad8134a703f92e7023813f2b34a0753c0abe91fcdf16c1d76cc219d1f833cb4eed}
+}]Fresnel shading. \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8d}{\index{assimp\+::material@{assimp\+::material}!ai\+Texture\+Flags@{ai\+Texture\+Flags}}
+\index{ai\+Texture\+Flags@{ai\+Texture\+Flags}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Texture\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Texture\+Flags} \+: uint}}\label{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8d}
+Defines some mixed flags for a particular texture.
+
+Usually you'll instruct your cg artists how textures have to look like and how they will be processed in your application. However, if you use \hyperlink{class_assimp}{Assimp} for completely generic loading purposes you might also need to process these flags in order to display as many 'unknown' 3\+D models as possible correctly.
+
+This corresponds to the {\ttfamily A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+F\+L\+A\+G\+S} property. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Invert@{Invert}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Invert@{Invert}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8da9659ad9ec6bbe7a8836a250bce874008}{Invert}\label{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8da9659ad9ec6bbe7a8836a250bce874008}
+}]The texture's color values have to be inverted (i.\+e. {\ttfamily 1-\/n} component-\/wise). \index{Use\+Alpha@{Use\+Alpha}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Use\+Alpha@{Use\+Alpha}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8daae9e40e6ecc702196aa5bee102f6d23f}{Use\+Alpha}\label{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8daae9e40e6ecc702196aa5bee102f6d23f}
+}]Explicit request to the application to process the alpha channel of the texture.
+
+Mutually exclusive with {\ttfamily Ignore\+Alpha}. These flags are set if the library can say for sure that the alpha channel is used/is not used. If the model format does not define this, it is left to the application to decide whether the texture alpha channel – if any – is evaluated or not. \index{Ignore\+Alpha@{Ignore\+Alpha}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Ignore\+Alpha@{Ignore\+Alpha}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8da584fb90d91bf15981bf0543d97598def}{Ignore\+Alpha}\label{namespaceassimp_1_1material_a6e22b08c06f24f15471e5c167a3d6c8da584fb90d91bf15981bf0543d97598def}
+}]Explicit request to the application to ignore the alpha channel of the texture.
+
+Mutually exclusive with {\ttfamily Use\+Alpha}. \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42b}{\index{assimp\+::material@{assimp\+::material}!ai\+Texture\+Map\+Mode@{ai\+Texture\+Map\+Mode}}
+\index{ai\+Texture\+Map\+Mode@{ai\+Texture\+Map\+Mode}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Texture\+Map\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Texture\+Map\+Mode} \+: uint}}\label{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42b}
+Defines how U\+V coordinates outside the {\ttfamily \mbox{[}0..1\mbox{]}} range are handled.
+
+Commonly refered to as 'wrapping mode'. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Wrap@{Wrap}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Wrap@{Wrap}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42bac03e8aac23595136b2e8ae6c0216a2a8}{Wrap}\label{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42bac03e8aac23595136b2e8ae6c0216a2a8}
+}]A texture coordinate {\ttfamily u $\vert$ v} is translated to {\ttfamily (u\%1) $\vert$ (v\%1)}. \index{Clamp@{Clamp}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Clamp@{Clamp}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42bab79de0edb6004c453286fe5559d90059}{Clamp}\label{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42bab79de0edb6004c453286fe5559d90059}
+}]Texture coordinates are clamped to the nearest valid value. \index{Decal@{Decal}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Decal@{Decal}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42ba5429563ef7144fbb6122b68f4f3b91ce}{Decal}\label{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42ba5429563ef7144fbb6122b68f4f3b91ce}
+}]If the texture coordinates for a pixel are outside {\ttfamily \mbox{[}0..1\mbox{]}}, the texture is not applied to that pixel. \index{Mirror@{Mirror}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Mirror@{Mirror}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42baf71c152c20e0719f55db3933401bc499}{Mirror}\label{namespaceassimp_1_1material_a0d8dbb0d9e989bf10557feef7350c42baf71c152c20e0719f55db3933401bc499}
+}]A texture coordinate {\ttfamily u $\vert$ v} becomes {\ttfamily (u\%1) $\vert$ (v\%1)} if {\ttfamily (u-\/(u\%1))\%2} is zero and {\ttfamily (1-\/(u\%1)) $\vert$ (1-\/(v\%1))} otherwise. \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679}{\index{assimp\+::material@{assimp\+::material}!ai\+Texture\+Mapping@{ai\+Texture\+Mapping}}
+\index{ai\+Texture\+Mapping@{ai\+Texture\+Mapping}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Texture\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Texture\+Mapping} \+: uint}}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679}
+Defines how the mapping coords for a texture are generated.
+
+Real-\/time applications typically require full U\+V coordinates, so the use of the {\ttfamily ai\+Process.\+Gen\+U\+V\+Coords} step is highly recommended. It generates proper U\+V channels for non-\/\+U\+V mapped objects, as long as an accurate description how the mapping should look like (e.\+g spherical) is given. See the {\ttfamily A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+M\+A\+P\+P\+I\+N\+G} property for more details. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+V@{U\+V}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!U\+V@{U\+V}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a651a6dc2da0e6c12d6bd569155b6cd6a}{U\+V}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a651a6dc2da0e6c12d6bd569155b6cd6a}
+}]The mapping coordinates are taken from an U\+V channel.
+
+The {\ttfamily A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+U\+V\+S\+R\+C} key specifies from which (remember, meshes can have more than one U\+V channel). \index{S\+P\+H\+E\+R\+E@{S\+P\+H\+E\+R\+E}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!S\+P\+H\+E\+R\+E@{S\+P\+H\+E\+R\+E}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a360d776c5aaa1419588c7323ef1cca6e}{S\+P\+H\+E\+R\+E}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a360d776c5aaa1419588c7323ef1cca6e}
+}]Spherical mapping. \index{C\+Y\+L\+I\+N\+D\+E\+R@{C\+Y\+L\+I\+N\+D\+E\+R}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!C\+Y\+L\+I\+N\+D\+E\+R@{C\+Y\+L\+I\+N\+D\+E\+R}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a47dee946b0be7bdd5c4bb0f5e9ef2033}{C\+Y\+L\+I\+N\+D\+E\+R}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a47dee946b0be7bdd5c4bb0f5e9ef2033}
+}]Cylindrical mapping. \index{B\+O\+X@{B\+O\+X}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!B\+O\+X@{B\+O\+X}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a9c9d284b01915e6ca040fdc35ff81901}{B\+O\+X}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a9c9d284b01915e6ca040fdc35ff81901}
+}]Cubic mapping. \index{P\+L\+A\+N\+E@{P\+L\+A\+N\+E}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!P\+L\+A\+N\+E@{P\+L\+A\+N\+E}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a1550da55ba97eaf075f6dd2d3ec97aeb}{P\+L\+A\+N\+E}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679a1550da55ba97eaf075f6dd2d3ec97aeb}
+}]Planar mapping. \index{O\+T\+H\+E\+R@{O\+T\+H\+E\+R}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!O\+T\+H\+E\+R@{O\+T\+H\+E\+R}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679adc9988884766d74c9fc93091e6d543d3}{O\+T\+H\+E\+R}\label{namespaceassimp_1_1material_ae0a6af9b6411ae81bf4227ab6b36f679adc9988884766d74c9fc93091e6d543d3}
+}]Undefined mapping. \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3}{\index{assimp\+::material@{assimp\+::material}!ai\+Texture\+Op@{ai\+Texture\+Op}}
+\index{ai\+Texture\+Op@{ai\+Texture\+Op}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Texture\+Op}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Texture\+Op} \+: uint}}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3}
+Defines how the Nth texture of a specific type is combined with the result of all previous layers.
+
+Example (left\+: key, right\+: value)\+: 
+\begin{DoxyPre} DiffColor0     - gray
+DiffTextureOp0 - aiTextureOpMultiply
+DiffTexture0   - tex1.png
+DiffTextureOp0 - aiTextureOpAdd
+DiffTexture1   - tex2.png\end{DoxyPre}
+ Written as equation, the final diffuse term for a specific pixel would be\+: 
+\begin{DoxyPre}diffFinal = DiffColor0 * sampleTex( DiffTexture0, UV0 ) +
+    sampleTex( DiffTexture1, UV0 ) * diffContrib;\end{DoxyPre}
+ where {\ttfamily diff\+Contrib} is the intensity of the incoming light for that pixel. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Multiply@{Multiply}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Multiply@{Multiply}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a54ec2cbf30b354b753b0e185531c4739}{Multiply}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a54ec2cbf30b354b753b0e185531c4739}
+}]{\ttfamily T = T1 $\ast$ T2} \index{Add@{Add}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Add@{Add}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3ab1d93585972e3eb0c3c35991b3e9cc39}{Add}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3ab1d93585972e3eb0c3c35991b3e9cc39}
+}]{\ttfamily T = T1 + T2} \index{Subtract@{Subtract}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Subtract@{Subtract}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3aabc06a2289691c9dd01d14b9d18b0240}{Subtract}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3aabc06a2289691c9dd01d14b9d18b0240}
+}]{\ttfamily T = T1 -\/ T2} \index{Divide@{Divide}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Divide@{Divide}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a80cb06984fe800e37818f04c9e5ed7ba}{Divide}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a80cb06984fe800e37818f04c9e5ed7ba}
+}]{\ttfamily T = T1 / T2} \index{Smooth\+Add@{Smooth\+Add}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Smooth\+Add@{Smooth\+Add}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3aa7b5c981daac442917e0cf8ac8986bc8}{Smooth\+Add}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3aa7b5c981daac442917e0cf8ac8986bc8}
+}]{\ttfamily T = ( T1 + T2 ) -\/ ( T1 $\ast$ T2 )} \index{Signed\+Add@{Signed\+Add}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!Signed\+Add@{Signed\+Add}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a37683f00c832e15ae7aefd72051295ac}{Signed\+Add}\label{namespaceassimp_1_1material_ab30a105144c2d883a472a0da51309df3a37683f00c832e15ae7aefd72051295ac}
+}]{\ttfamily T = T1 + ( T2 -\/ 0.\+5 )} \end{description}
+\end{Desc}
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1b}{\index{assimp\+::material@{assimp\+::material}!ai\+Texture\+Type@{ai\+Texture\+Type}}
+\index{ai\+Texture\+Type@{ai\+Texture\+Type}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{ai\+Texture\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf assimp\+::material\+::ai\+Texture\+Type} \+: uint}}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1b}
+Defines the purpose of a texture
+
+This is a very difficult topic. Different 3\+D packages support different kinds of textures. For very common texture types, such as bumpmaps, the rendering results depend on implementation details in the rendering pipelines of these applications. \hyperlink{class_assimp}{Assimp} loads all texture references from the model file and tries to determine which of the predefined texture types below is the best choice to match the original use of the texture as closely as possible.
+
+In content pipelines you'll usually define how textures have to be handled, and the artists working on models have to conform to this specification, regardless which 3\+D tool they're using. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+N\+E@{N\+O\+N\+E}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!N\+O\+N\+E@{N\+O\+N\+E}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba1797c0aa52852c234515fcccca915431}{N\+O\+N\+E}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba1797c0aa52852c234515fcccca915431}
+}]No texture, but the value to be used for {\ttfamily \hyperlink{structassimp_1_1material_1_1ai_material_property_a12b6a483209cee22013648d1a4388259}{ai\+Material\+Property.\+m\+Semantic}} for all material properties {\itshape not} related to textures. \index{D\+I\+F\+F\+U\+S\+E@{D\+I\+F\+F\+U\+S\+E}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!D\+I\+F\+F\+U\+S\+E@{D\+I\+F\+F\+U\+S\+E}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bad2b9448197133f240aad98c045085855}{D\+I\+F\+F\+U\+S\+E}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bad2b9448197133f240aad98c045085855}
+}]The texture is combined with the result of the diffuse lighting equation. \index{S\+P\+E\+C\+U\+L\+A\+R@{S\+P\+E\+C\+U\+L\+A\+R}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!S\+P\+E\+C\+U\+L\+A\+R@{S\+P\+E\+C\+U\+L\+A\+R}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba29903343224ae0b876810161accce75c}{S\+P\+E\+C\+U\+L\+A\+R}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba29903343224ae0b876810161accce75c}
+}]The texture is combined with the result of the specular lighting equation. \index{A\+M\+B\+I\+E\+N\+T@{A\+M\+B\+I\+E\+N\+T}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!A\+M\+B\+I\+E\+N\+T@{A\+M\+B\+I\+E\+N\+T}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba3138f86deeac2c72b77fc33dc021709b}{A\+M\+B\+I\+E\+N\+T}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba3138f86deeac2c72b77fc33dc021709b}
+}]The texture is combined with the result of the ambient lighting equation. \index{E\+M\+I\+S\+S\+I\+V\+E@{E\+M\+I\+S\+S\+I\+V\+E}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!E\+M\+I\+S\+S\+I\+V\+E@{E\+M\+I\+S\+S\+I\+V\+E}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bab790f63a2ce3ddf214dc549567c72479}{E\+M\+I\+S\+S\+I\+V\+E}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bab790f63a2ce3ddf214dc549567c72479}
+}]The texture is added to the result of the lighting calculation. It isn't influenced by incoming light. \index{H\+E\+I\+G\+H\+T@{H\+E\+I\+G\+H\+T}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!H\+E\+I\+G\+H\+T@{H\+E\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bae0a5d182350c94f7525199b5dd3137f1}{H\+E\+I\+G\+H\+T}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bae0a5d182350c94f7525199b5dd3137f1}
+}]The texture is a height map.
+
+By convention, higher grey-\/scale values stand for higher elevations from the base height. \index{N\+O\+R\+M\+A\+L\+S@{N\+O\+R\+M\+A\+L\+S}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!N\+O\+R\+M\+A\+L\+S@{N\+O\+R\+M\+A\+L\+S}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1baa8bdf8dd08766359fa2125fc702808bc}{N\+O\+R\+M\+A\+L\+S}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1baa8bdf8dd08766359fa2125fc702808bc}
+}]The texture is a (tangent space) normal-\/map.
+
+Again, there are several conventions for tangent-\/space normal maps. \hyperlink{class_assimp}{Assimp} does (intentionally) not differenciate here. \index{S\+H\+I\+N\+I\+N\+E\+S\+S@{S\+H\+I\+N\+I\+N\+E\+S\+S}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!S\+H\+I\+N\+I\+N\+E\+S\+S@{S\+H\+I\+N\+I\+N\+E\+S\+S}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba1e1bb05c8c1ccf2aa4186a40b4ca787c}{S\+H\+I\+N\+I\+N\+E\+S\+S}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba1e1bb05c8c1ccf2aa4186a40b4ca787c}
+}]The texture defines the glossiness of the material.
+
+The glossiness is in fact the exponent of the specular (phong) lighting equation. Usually there is a conversion function defined to map the linear color values in the texture to a suitable exponent. \index{O\+P\+A\+C\+I\+T\+Y@{O\+P\+A\+C\+I\+T\+Y}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!O\+P\+A\+C\+I\+T\+Y@{O\+P\+A\+C\+I\+T\+Y}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba2789759c7845fda949a3ae0a48457669}{O\+P\+A\+C\+I\+T\+Y}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba2789759c7845fda949a3ae0a48457669}
+}]The texture defines per-\/pixel opacity.
+
+Usually white means opaque and black means transparent. \index{D\+I\+S\+P\+L\+A\+C\+E\+M\+E\+N\+T@{D\+I\+S\+P\+L\+A\+C\+E\+M\+E\+N\+T}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!D\+I\+S\+P\+L\+A\+C\+E\+M\+E\+N\+T@{D\+I\+S\+P\+L\+A\+C\+E\+M\+E\+N\+T}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bae5823a7e2efa4d5aa81d929eeaf6c072}{D\+I\+S\+P\+L\+A\+C\+E\+M\+E\+N\+T}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bae5823a7e2efa4d5aa81d929eeaf6c072}
+}]Displacement texture.
+
+The exact purpose and format is application-\/dependent. Higher color values stand for higher vertex displacements. \index{L\+I\+G\+H\+T\+M\+A\+P@{L\+I\+G\+H\+T\+M\+A\+P}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!L\+I\+G\+H\+T\+M\+A\+P@{L\+I\+G\+H\+T\+M\+A\+P}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bab73548e0159145054ad94d2abad83417}{L\+I\+G\+H\+T\+M\+A\+P}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1bab73548e0159145054ad94d2abad83417}
+}]Lightmap or ambient occlusion texture.
+
+Both lightmaps and dedicated ambient occlusion maps are covered by this material property. The texture contains a scaling value for the final color value of a pixel. Its intensity is not affected by incoming light. \index{R\+E\+F\+L\+E\+C\+T\+I\+O\+N@{R\+E\+F\+L\+E\+C\+T\+I\+O\+N}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!R\+E\+F\+L\+E\+C\+T\+I\+O\+N@{R\+E\+F\+L\+E\+C\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba273ee8811d5df261e6a7c7f52efad1ec}{R\+E\+F\+L\+E\+C\+T\+I\+O\+N}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba273ee8811d5df261e6a7c7f52efad1ec}
+}]Reflection texture.
+
+Contains the color of a perfect mirror reflection. Rarely used, almost never for real-\/time applications. \index{U\+N\+K\+N\+O\+W\+N@{U\+N\+K\+N\+O\+W\+N}!assimp\+::material@{assimp\+::material}}\index{assimp\+::material@{assimp\+::material}!U\+N\+K\+N\+O\+W\+N@{U\+N\+K\+N\+O\+W\+N}}\item[{\em 
+\hypertarget{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba3e6e78b0e68bed83be847364f5825b49}{U\+N\+K\+N\+O\+W\+N}\label{namespaceassimp_1_1material_a034b83e48ea4f51696e276d3d5403f1ba3e6e78b0e68bed83be847364f5825b49}
+}]Unknown texture.
+
+A texture reference that does not match any of the definitions above is considered to be 'unknown'. It is still imported, but is excluded from any further postprocessing. \end{description}
+\end{Desc}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceassimp_1_1material_a6578b472c6e92eb5b2ecd848a52ffb83}{\index{assimp\+::material@{assimp\+::material}!A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E@{A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E}}
+\index{A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E@{A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ assimp\+::material\+::\+A\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+N\+A\+M\+E = \char`\"{}Textured\+Default\+Material\char`\"{}}}\label{namespaceassimp_1_1material_a6578b472c6e92eb5b2ecd848a52ffb83}
+Default material names for meshes with U\+V coordinates. \hypertarget{namespaceassimp_1_1material_a5548b5b36911f681f986f5c26acee9bd}{\index{assimp\+::material@{assimp\+::material}!A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E@{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E}}
+\index{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E@{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ assimp\+::material\+::\+A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+N\+A\+M\+E = \char`\"{}?mat.\+name\char`\"{}}}\label{namespaceassimp_1_1material_a5548b5b36911f681f986f5c26acee9bd}
+Standard material property keys. Always pass 0 for texture type and index when querying these keys. \hypertarget{namespaceassimp_1_1material_a267de50d6dfe754f700df9e231ea6b60}{\index{assimp\+::material@{assimp\+::material}!A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E@{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E}}
+\index{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E@{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ assimp\+::material\+::\+A\+I\+\_\+\+M\+A\+T\+K\+E\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E = \char`\"{}\$tex.\+file\char`\"{}}}\label{namespaceassimp_1_1material_a267de50d6dfe754f700df9e231ea6b60}
+
+
+ditto 
+
+Texture material property keys. Do not forget to specify texture type and index for these keys. \hypertarget{namespaceassimp_1_1material_aa0244e47e49ad5c13d1133205802f28d}{\index{assimp\+::material@{assimp\+::material}!C@{C}}
+\index{C@{C}!assimp\+::material@{assimp\+::material}}
+\subsubsection[{C}]{\setlength{\rightskip}{0pt plus 5cm}assimp\+::material\+::\+C}}\label{namespaceassimp_1_1material_aa0244e47e49ad5c13d1133205802f28d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+   
+   \textcolor{keyword}{const} \textcolor{keywordtype}{char}* AI\_DEFAULT\_MATERIAL\_NAME = \textcolor{stringliteral}{"aiDefaultMat"}
+\end{DoxyCode}

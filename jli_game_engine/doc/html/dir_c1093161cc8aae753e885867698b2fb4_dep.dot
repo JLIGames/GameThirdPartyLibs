@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Builds/Include/EWS" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6bdf203d9981a73bbf991fc0be7876c5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Include" fontname="Helvetica", fontsize="10", URL="dir_6bdf203d9981a73bbf991fc0be7876c5.html"]
+  dir_c1093161cc8aae753e885867698b2fb4 [shape=box, label="EWS", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c1093161cc8aae753e885867698b2fb4.html"];
+  }
+}

@@ -1,0 +1,62 @@
+\hypertarget{_f_b_x_tokenizer_8h}{\section{assimp/assimp-\/3.1.1/code/\+F\+B\+X\+Tokenizer.h File Reference}
+\label{_f_b_x_tokenizer_8h}\index{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Tokenizer.\+h@{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Tokenizer.\+h}}
+}
+
+
+F\+B\+X lexer.  
+
+
+{\ttfamily \#include $<$boost/shared\+\_\+ptr.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Compile\+Config.\+h\char`\"{}}\\*
+Include dependency graph for F\+B\+X\+Tokenizer.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_token}{Assimp\+::\+F\+B\+X\+::\+Token}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_b_x_tokenizer_8h_a181172fb6e93dbd42a5b6969d9e004c1}{\#define {\bfseries new\+\_\+\+Token}~new \hyperlink{struct_token}{Token}}\label{_f_b_x_tokenizer_8h_a181172fb6e93dbd42a5b6969d9e004c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a03e48417e85bb3dfa03a6b0f94f56828}{typedef const \hyperlink{struct_token}{Token} $\ast$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Token\+Ptr}}\label{namespace_assimp_1_1_f_b_x_a03e48417e85bb3dfa03a6b0f94f56828}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a1abd5560fd67ecc1a7d357cbf7f3658a}{typedef std\+::vector$<$ Token\+Ptr $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Token\+List}}\label{namespace_assimp_1_1_f_b_x_a1abd5560fd67ecc1a7d357cbf7f3658a}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Token\+Type} \{ \\*
+{\bfseries Token\+Type\+\_\+\+O\+P\+E\+N\+\_\+\+B\+R\+A\+C\+K\+E\+T} = 0, 
+{\bfseries Token\+Type\+\_\+\+C\+L\+O\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+T}, 
+{\bfseries Token\+Type\+\_\+\+D\+A\+T\+A}, 
+{\bfseries Token\+Type\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+A\+T\+A}, 
+\\*
+{\bfseries Token\+Type\+\_\+\+C\+O\+M\+M\+A}, 
+{\bfseries Token\+Type\+\_\+\+K\+E\+Y}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Assimp\+::\+F\+B\+X\+::\+Tokenize} (Token\+List \&output\+\_\+tokens, const char $\ast$input)
+\item 
+void {\bfseries Assimp\+::\+F\+B\+X\+::\+Tokenize\+Binary} (Token\+List \&output\+\_\+tokens, const char $\ast$input, unsigned int length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+B\+X lexer. 
+

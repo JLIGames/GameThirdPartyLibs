@@ -1,0 +1,20 @@
+digraph "CPVRTPrint3D::Print3D"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CPVRTPrint3D::Print3D",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPVRTArray::Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_array.html#ad1e3c37b05d484c9e5598899d6611440",tooltip="Clears the array. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PVRTUnicodeUTF16ToUTF32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_unicode_8h.html#a95d281fcb6af34263da50482cb8ec959",tooltip="Decodes a UTF16-encoded string in to Unicode code points (UTF32). If pUTF16 is not null terminated..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CPVRTArray::Append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_array.html#a1af5aeb05badf2783dbc7ec5b98cead2",tooltip="Appends an element to the end of the array, expanding it if necessary. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CPVRTPrint3D::Print3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_print3_d.html#afd98a5ba4e3f9183ceb615566a64f843",tooltip="Display 3D text on screen. CPVRTPrint3D::SetTextures(...) must have been called beforehand. This function accepts formatting in the printf way. "];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PVRTUnicodeUTF8ToUTF32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_v_r_t_unicode_8h.html#a54150f433be76ed547efa36329d48341",tooltip="Decodes a UTF8-encoded string in to Unicode code points (UTF32). If pUTF8 is not null terminated..."];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,30 @@
+\hypertarget{group___writing_test_result}{\section{Writing test result}
+\label{group___writing_test_result}\index{Writing test result@{Writing test result}}
+}
+Collaboration diagram for Writing test result\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_compiler_outputter}{Compiler\+Outputter}
+\begin{DoxyCompactList}\small\item\em Outputs a \hyperlink{class_test_result_collector}{Test\+Result\+Collector} in a compiler compatible format.
+
+Printing the test results in a compiler compatible format (assertion location has the same format as compiler error), allow you to use your I\+D\+E to jump to the assertion failure. Location format can be customized (see \hyperlink{class_compiler_outputter_a0d9e67c7bdcb443b0b2754d61a10790c}{set\+Location\+Format()} ). \end{DoxyCompactList}\item 
+class \hyperlink{class_outputter}{Outputter}
+\begin{DoxyCompactList}\small\item\em Abstract outputter to print test result summary. \end{DoxyCompactList}\item 
+class \hyperlink{class_test_result_collector}{Test\+Result\+Collector}
+\begin{DoxyCompactList}\small\item\em Collects test result.
+
+A \hyperlink{class_test_result_collector}{Test\+Result\+Collector} is a \hyperlink{class_test_listener}{Test\+Listener} which collects the results of executing a test case. It is an instance of the Collecting Parameter pattern. \end{DoxyCompactList}\item 
+class \hyperlink{class_text_outputter}{Text\+Outputter}
+\begin{DoxyCompactList}\small\item\em Prints a \hyperlink{class_test_result_collector}{Test\+Result\+Collector} to a text stream. \end{DoxyCompactList}\item 
+class \hyperlink{class_text_test_runner}{Text\+Test\+Runner}
+\begin{DoxyCompactList}\small\item\em A text mode test runner.
+
+The test runner manage the life cycle of the added tests. \end{DoxyCompactList}\item 
+class \hyperlink{class_xml_outputter}{Xml\+Outputter}
+\begin{DoxyCompactList}\small\item\em Outputs a \hyperlink{class_test_result_collector}{Test\+Result\+Collector} in X\+M\+L format.
+
+Save the test result as a X\+M\+L stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}

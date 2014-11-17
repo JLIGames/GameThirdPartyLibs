@@ -1,0 +1,65 @@
+\hypertarget{classjassimp_1_1_ai_bone}{\section{jassimp.\+Ai\+Bone Class Reference}
+\label{classjassimp_1_1_ai_bone}\index{jassimp.\+Ai\+Bone@{jassimp.\+Ai\+Bone}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classjassimp_1_1_ai_bone_aab43c52a9612b1fd88e750ab7b686e75}{get\+Name} ()
+\item 
+int \hyperlink{classjassimp_1_1_ai_bone_a351300746eaeac95964d9a77ef44b78a}{get\+Num\+Weights} ()
+\item 
+List$<$ \hyperlink{classjassimp_1_1_ai_bone_weight}{Ai\+Bone\+Weight} $>$ \hyperlink{classjassimp_1_1_ai_bone_ad4aab8406266be5173e7afe2ea2a5bf3}{get\+Bone\+Weights} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single bone of a mesh.
+
+A bone has a name by which it can be found in the frame hierarchy and by which it can be addressed by animations. In addition it has a number of influences on vertices.
+
+This class is designed to be mutable, i.\+e., the returned collections are writable and may be modified. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjassimp_1_1_ai_bone_ad4aab8406266be5173e7afe2ea2a5bf3}{\index{jassimp\+::\+Ai\+Bone@{jassimp\+::\+Ai\+Bone}!get\+Bone\+Weights@{get\+Bone\+Weights}}
+\index{get\+Bone\+Weights@{get\+Bone\+Weights}!jassimp\+::\+Ai\+Bone@{jassimp\+::\+Ai\+Bone}}
+\subsubsection[{get\+Bone\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Ai\+Bone\+Weight}$>$ jassimp.\+Ai\+Bone.\+get\+Bone\+Weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_bone_ad4aab8406266be5173e7afe2ea2a5bf3}
+Returns a list of bone weights.
+
+\begin{DoxyReturn}{Returns}
+the bone weights 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_bone_aab43c52a9612b1fd88e750ab7b686e75}{\index{jassimp\+::\+Ai\+Bone@{jassimp\+::\+Ai\+Bone}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jassimp\+::\+Ai\+Bone@{jassimp\+::\+Ai\+Bone}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String jassimp.\+Ai\+Bone.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_bone_aab43c52a9612b1fd88e750ab7b686e75}
+Returns the name of the bone.
+
+\begin{DoxyReturn}{Returns}
+the name 
+\end{DoxyReturn}
+\hypertarget{classjassimp_1_1_ai_bone_a351300746eaeac95964d9a77ef44b78a}{\index{jassimp\+::\+Ai\+Bone@{jassimp\+::\+Ai\+Bone}!get\+Num\+Weights@{get\+Num\+Weights}}
+\index{get\+Num\+Weights@{get\+Num\+Weights}!jassimp\+::\+Ai\+Bone@{jassimp\+::\+Ai\+Bone}}
+\subsubsection[{get\+Num\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}int jassimp.\+Ai\+Bone.\+get\+Num\+Weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjassimp_1_1_ai_bone_a351300746eaeac95964d9a77ef44b78a}
+Returns the number of bone weights.
+
+This method exists for compatibility with the native assimp A\+P\+I. The returned value is identical to {\ttfamily \hyperlink{classjassimp_1_1_ai_bone_ad4aab8406266be5173e7afe2ea2a5bf3}{get\+Bone\+Weights()}.size()}
+
+\begin{DoxyReturn}{Returns}
+the number of weights 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Ai\+Bone.\+java\end{DoxyCompactItemize}

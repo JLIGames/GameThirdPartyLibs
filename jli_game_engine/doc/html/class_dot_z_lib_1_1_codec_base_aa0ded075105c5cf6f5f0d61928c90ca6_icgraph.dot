@@ -1,0 +1,11 @@
+digraph "DotZLib.CodecBase.CleanUp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DotZLib.CodecBase.CleanUp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DotZLib.CodecBase.CodecBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#a1e372f5061c8f7c16a55bc41c55ebfa5",tooltip="Initializes a new instance of the CodeBase class. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DotZLib.CodecBase.Dispose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dot_z_lib_1_1_codec_base.html#ab4bdcee97631d9e80d2bceb01d01f368",tooltip="Releases any unmanaged resources and calls the CleanUp() method of the derived class ..."];
+}

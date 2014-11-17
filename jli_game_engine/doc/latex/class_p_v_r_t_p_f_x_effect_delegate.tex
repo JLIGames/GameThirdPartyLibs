@@ -1,0 +1,60 @@
+\hypertarget{class_p_v_r_t_p_f_x_effect_delegate}{\section{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate Class Reference}
+\label{class_p_v_r_t_p_f_x_effect_delegate}\index{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}}
+}
+
+
+Receives callbacks for effects.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+P\+F\+X\+Parser\+A\+P\+I.\+h$>$}
+
+
+
+Inheritance diagram for P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_p_v_r_t_error_8h_a9e837ff1a83f3a5f332bc4cc78454608}{E\+P\+V\+R\+T\+Error} \hyperlink{class_p_v_r_t_p_f_x_effect_delegate_abebd5d9925cdefba61ea5a72ad50feab}{P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture} (const \hyperlink{class_c_p_v_r_t_string_hash}{C\+P\+V\+R\+T\+String\+Hash} \&Texture\+Name, G\+Luint \&ui\+Handle, unsigned int \&ui\+Flags)=0
+\item 
+virtual \hyperlink{class_p_v_r_t_p_f_x_effect_delegate_ae241aaabe6abbedca2daa5b82071a94b}{$\sim$\+P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Receives callbacks for effects. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_p_v_r_t_p_f_x_effect_delegate_ae241aaabe6abbedca2daa5b82071a94b}{\index{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}!````~P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{$\sim$\+P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}}
+\index{````~P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{$\sim$\+P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}!P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}}
+\subsubsection[{$\sim$\+P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}]{\setlength{\rightskip}{0pt plus 5cm}virtual P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate\+::$\sim$\+P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_p_v_r_t_p_f_x_effect_delegate_ae241aaabe6abbedca2daa5b82071a94b}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_v_r_t_p_f_x_effect_delegate_abebd5d9925cdefba61ea5a72ad50feab}{\index{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}!P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture@{P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture}}
+\index{P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture@{P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture}!P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate@{P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate}}
+\subsubsection[{P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf E\+P\+V\+R\+T\+Error} P\+V\+R\+T\+P\+F\+X\+Effect\+Delegate\+::\+P\+V\+R\+T\+P\+F\+X\+On\+Load\+Texture (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+P\+V\+R\+T\+String\+Hash} \&}]{Texture\+Name, }
+\item[{G\+Luint \&}]{ui\+Handle, }
+\item[{unsigned int \&}]{ui\+Flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_p_v_r_t_p_f_x_effect_delegate_abebd5d9925cdefba61ea5a72ad50feab}
+Returns error if texture could not be loaded 
+
+Implemented in \hyperlink{class_o_g_l_e_s3_uniform_buffer_objects_a1e67140c3d440ca1ebe87e9a47697f05}{O\+G\+L\+E\+S3\+Uniform\+Buffer\+Objects}, \hyperlink{class_o_g_l_e_s3_multiple_render_targets_ac0b0f129337c632dd3eaa2c92f4d8e81}{O\+G\+L\+E\+S3\+Multiple\+Render\+Targets}, \hyperlink{class_o_g_l_e_s2_multiple_render_targets_a31e0cbbd733ee66cff38b85bb6455f84}{O\+G\+L\+E\+S2\+Multiple\+Render\+Targets}, \hyperlink{class_o_g_l_e_s2_tone_mapping_a1f8be1b9627360263ed24ac8d82534a3}{O\+G\+L\+E\+S2\+Tone\+Mapping}, \hyperlink{class_o_g_l_e_s2_introducing_p_f_x_a13c6eb452be5d14189fbd050ee6ae51d}{O\+G\+L\+E\+S2\+Introducing\+P\+F\+X}, \hyperlink{class_o_g_l_e_s3_introducing_p_f_x_aa25586d3be98ab288273c94cce4985f9}{O\+G\+L\+E\+S3\+Introducing\+P\+F\+X}, \hyperlink{class_o_g_l_e_s2_maximum_intensity_blend_a3477b27466041945ac77e639ca40182c}{O\+G\+L\+E\+S2\+Maximum\+Intensity\+Blend}, \hyperlink{class_o_g_l_e_s2_magic_lantern_a1acf935737794f6c7d6408aaa298d31b}{O\+G\+L\+E\+S2\+Magic\+Lantern}, and \hyperlink{class_o_g_l_e_s3_magic_lantern_a04772e79a905e4d11c59f3d69171097c}{O\+G\+L\+E\+S3\+Magic\+Lantern}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\+O\+G\+L\+E\+S2/\hyperlink{_p_v_r_t_p_f_x_parser_a_p_i_8h}{P\+V\+R\+T\+P\+F\+X\+Parser\+A\+P\+I.\+h}\end{DoxyCompactItemize}

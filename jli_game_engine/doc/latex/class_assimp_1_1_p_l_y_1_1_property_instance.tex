@@ -1,0 +1,59 @@
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance}{\section{Assimp\+:\+:P\+L\+Y\+:\+:Property\+Instance Class Reference}
+\label{class_assimp_1_1_p_l_y_1_1_property_instance}\index{Assimp\+::\+P\+L\+Y\+::\+Property\+Instance@{Assimp\+::\+P\+L\+Y\+::\+Property\+Instance}}
+}
+
+
+Instance of a property in a P\+L\+Y file.  
+
+
+
+
+{\ttfamily \#include $<$Ply\+Parser.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union_assimp_1_1_p_l_y_1_1_property_instance_1_1_value_union}{Value\+Union}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a3a5b9c3e06efab5402c3f5501db221dc}{\hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a3a5b9c3e06efab5402c3f5501db221dc}{Property\+Instance} ()}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a3a5b9c3e06efab5402c3f5501db221dc}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a33176438708b7b2daa868f6b6aa638d8}{static bool \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a33176438708b7b2daa868f6b6aa638d8}{Parse\+Instance} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out, const \hyperlink{class_assimp_1_1_p_l_y_1_1_property}{Property} $\ast$prop, \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance}{Property\+Instance} $\ast$p\+\_\+pc\+Out)}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a33176438708b7b2daa868f6b6aa638d8}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a property instance. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a298562245bfac53f75ec5064dadf1790}{static bool \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a298562245bfac53f75ec5064dadf1790}{Parse\+Instance\+Binary} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out, const \hyperlink{class_assimp_1_1_p_l_y_1_1_property}{Property} $\ast$prop, \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance}{Property\+Instance} $\ast$p\+\_\+pc\+Out, bool p\+\_\+b\+B\+E)}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a298562245bfac53f75ec5064dadf1790}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a property instance in binary format. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a06ac465347277e141e616a5bfd3de694}{static \hyperlink{union_assimp_1_1_p_l_y_1_1_property_instance_1_1_value_union}{Value\+Union} \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a06ac465347277e141e616a5bfd3de694}{Default\+Value} (E\+Data\+Type e\+Type)}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a06ac465347277e141e616a5bfd3de694}
+
+\begin{DoxyCompactList}\small\item\em Get the default value for a given data type. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a4c7105348cf6574bd1ee74dc01e99229}{static bool \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a4c7105348cf6574bd1ee74dc01e99229}{Parse\+Value} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out, E\+Data\+Type e\+Type, \hyperlink{union_assimp_1_1_p_l_y_1_1_property_instance_1_1_value_union}{Value\+Union} $\ast$out)}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a4c7105348cf6574bd1ee74dc01e99229}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a value. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a4ab7501c25c3cc1078b71b711981ecdf}{static bool \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a4ab7501c25c3cc1078b71b711981ecdf}{Parse\+Value\+Binary} (const char $\ast$p\+Cur, const char $\ast$$\ast$p\+Cur\+Out, E\+Data\+Type e\+Type, \hyperlink{union_assimp_1_1_p_l_y_1_1_property_instance_1_1_value_union}{Value\+Union} $\ast$out, bool p\+\_\+b\+B\+E)}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a4ab7501c25c3cc1078b71b711981ecdf}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a binary value. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a6acdcac7cb8af53ec7b1d211fc114ed1}{{\footnotesize template$<$typename T\+Y\+P\+E $>$ }\\static T\+Y\+P\+E \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a6acdcac7cb8af53ec7b1d211fc114ed1}{Convert\+To} (\hyperlink{union_assimp_1_1_p_l_y_1_1_property_instance_1_1_value_union}{Value\+Union} v, E\+Data\+Type e\+Type)}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a6acdcac7cb8af53ec7b1d211fc114ed1}
+
+\begin{DoxyCompactList}\small\item\em Convert a property value to a given type T\+Y\+P\+E. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_p_l_y_1_1_property_instance_a8374023d72a7143fea3752d3a058a860}{std\+::vector$<$ \hyperlink{union_assimp_1_1_p_l_y_1_1_property_instance_1_1_value_union}{Value\+Union} $>$ \hyperlink{class_assimp_1_1_p_l_y_1_1_property_instance_a8374023d72a7143fea3752d3a058a860}{av\+List}}\label{class_assimp_1_1_p_l_y_1_1_property_instance_a8374023d72a7143fea3752d3a058a860}
+
+\begin{DoxyCompactList}\small\item\em List of all values parsed. Contains only one value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance of a property in a P\+L\+Y file. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Ply\+Parser.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Ply\+Parser.\+cpp\end{DoxyCompactItemize}

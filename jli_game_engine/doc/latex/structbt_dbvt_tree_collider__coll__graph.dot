@@ -1,0 +1,35 @@
+digraph "btDbvtTreeCollider"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="btDbvtTreeCollider",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="btDbvt::ICollide",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_1_1_i_collide.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" proxy" ];
+  Node3 [label="btDbvtProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_proxy.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="btBroadphaseProxy",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" links" ];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" leaf" ];
+  Node5 [label="btDbvtNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_node.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" volume" ];
+  Node6 [label="btDbvtAabbMm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_aabb_mm.html"];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" childs\nparent" ];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pbp" ];
+  Node7 [label="btDbvtBroadphase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt_broadphase.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="btBroadphaseInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_broadphase_interface.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_paircache" ];
+  Node9 [label="btOverlappingPairCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_overlapping_pair_cache.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="btOverlappingPairCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_overlapping_pair_callback.html",tooltip="The btOverlappingPairCallback class is an additional optional broadphase user callback for adding/rem..."];
+  Node3 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_stageRoots" ];
+  Node11 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_sets" ];
+  Node11 [label="btDbvt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_dbvt.html"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rayTestStack" ];
+  Node12 [label="btAlignedObjectArray\l\< const btDbvtNode * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node13 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_stkStack" ];
+  Node13 [label="btAlignedObjectArray\l\< btDbvt::sStkNN \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html"];
+  Node5 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_root\nm_free" ];
+}

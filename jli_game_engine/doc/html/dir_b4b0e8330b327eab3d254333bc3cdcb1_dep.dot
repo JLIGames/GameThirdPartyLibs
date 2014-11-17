@@ -1,0 +1,9 @@
+digraph "platform/emscripten" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c5a52a81292cf9a5167198f4f346d6d9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="platform" fontname="Helvetica", fontsize="10", URL="dir_c5a52a81292cf9a5167198f4f346d6d9.html"]
+  dir_b4b0e8330b327eab3d254333bc3cdcb1 [shape=box, label="emscripten", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b4b0e8330b327eab3d254333bc3cdcb1.html"];
+  }
+}

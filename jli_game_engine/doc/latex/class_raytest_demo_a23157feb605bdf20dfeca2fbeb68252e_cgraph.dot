@@ -1,0 +1,33 @@
+digraph "RaytestDemo::initPhysics"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RaytestDemo::initPhysics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="btTriangleMesh::addTriangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_triangle_mesh.html#a28551d57ae59248a210163a504558583"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="btTriangleMesh::addIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_triangle_mesh.html#aceefc2d4c6a9abaff3bd58310533fd8a",tooltip="addIndex is an internal method, use addTriangle instead "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="btTriangleMesh::findOrAdd\lVertex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_triangle_mesh.html#a3b521a1faa5862a818d9f983230749a2",tooltip="findOrAddVertex is an internal method, use addTriangle instead "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="btAlignedObjectArray\l::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_aligned_object_array.html#a6bdd14c7599ecb95e8d83dd5a715f9b7",tooltip="return the number of elements in the array "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="btGImpactShapeInterface\l::updateBound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html#acb26c2d7a2aecabd06b996b72b848492",tooltip="performs refit operation "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="btGImpactShapeInterface\l::calcLocalAABB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html#a1712a4613e20aa9249514dcd97f0a086"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="btGImpactShapeInterface\l::lockChildShapes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_shape_interface.html#ae5de49e788c97a954ab9f2bde16adf60",tooltip="call when reading child shapes "];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="btGImpactQuantizedBvh\l::getNodeCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html#a5ffe3a11330ab3bce0d6eaffb9b3f689",tooltip="node count "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="btQuantizedBvhTree\l::getNodeCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_quantized_bvh_tree.html#a8f8b4acde8a974cb57d9d19b37009100",tooltip="node count "];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="btGImpactQuantizedBvh\l::buildSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html#a2f061fbf0c6d8a81438861be4add7968",tooltip="this rebuild the entire set "];
+  Node11 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="btQuantizedBvhTree\l::build_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_quantized_bvh_tree.html#aa2229fd3e3e2004cdf8151437535e936",tooltip="stackless build tree "];
+  Node12 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="btGImpactQuantizedBvh\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_g_impact_quantized_bvh.html#a71665f5245b8f7de1c54f107ef262cd0",tooltip="this attemps to refit the box set. "];
+}

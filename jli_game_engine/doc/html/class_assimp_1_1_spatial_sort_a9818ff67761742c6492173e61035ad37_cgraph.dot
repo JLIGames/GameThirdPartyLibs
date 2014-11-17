@@ -1,0 +1,11 @@
+digraph "Assimp::SpatialSort::Fill"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::SpatialSort\l::Fill",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assimp::SpatialSort\l::Append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_spatial_sort.html#acc7813f0ab385e7744890b92f12c8fd8"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Assimp::SpatialSort\l::Finalize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_spatial_sort.html#a28ddec1cbbce9f157dd1457f5f7f07d4"];
+}

@@ -1,0 +1,65 @@
+\hypertarget{_exporter_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+Exporter.cpp File Reference}
+\label{_exporter_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+Exporter.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+Exporter.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Default\+I\+O\+System.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Blob\+I\+O\+System.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Scene\+Combiner.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Base\+Process.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Importer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Join\+Vertices\+Process.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Make\+Verbose\+Format.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Convert\+To\+L\+H\+Process.\+h\char`\"{}}\\*
+Include dependency graph for Exporter.\+cpp\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_exporter_pimpl}{Assimp\+::\+Exporter\+Pimpl}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_exporter_8cpp_a42501906e7177175df4d9dd15bfd39d5}{\#define {\bfseries A\+S\+S\+I\+M\+P\+\_\+\+N\+U\+M\+\_\+\+E\+X\+P\+O\+R\+T\+E\+R\+S}~(sizeof(g\+Exporters)/sizeof(g\+Exporters\mbox{[}0\mbox{]}))}\label{_exporter_8cpp_a42501906e7177175df4d9dd15bfd39d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_ac346b524b4868a3700e756247dbaba15}{void {\bfseries Assimp\+::\+Get\+Post\+Processing\+Step\+Instance\+List} (std\+::vector$<$ Base\+Process $\ast$ $>$ \&out)}\label{namespace_assimp_ac346b524b4868a3700e756247dbaba15}
+
+\item 
+\hypertarget{namespace_assimp_ad31d6c4f86478e5424d71b5693993583}{void {\bfseries Assimp\+::\+Export\+Scene\+Collada} (const char $\ast$p\+File, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+System, const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)}\label{namespace_assimp_ad31d6c4f86478e5424d71b5693993583}
+
+\item 
+\hypertarget{namespace_assimp_a3ef2319b30736c8a8889b3b33434cb48}{void {\bfseries Assimp\+::\+Export\+Scene\+Obj} (const char $\ast$, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$, const \hyperlink{structai_scene}{ai\+Scene} $\ast$)}\label{namespace_assimp_a3ef2319b30736c8a8889b3b33434cb48}
+
+\item 
+\hypertarget{namespace_assimp_a5ef876901d5e55e2e97eb280f9e44602}{void {\bfseries Assimp\+::\+Export\+Scene\+S\+T\+L} (const char $\ast$, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$, const \hyperlink{structai_scene}{ai\+Scene} $\ast$)}\label{namespace_assimp_a5ef876901d5e55e2e97eb280f9e44602}
+
+\item 
+\hypertarget{namespace_assimp_ad67ca688ca641a50437c43d14eb010d3}{void {\bfseries Assimp\+::\+Export\+Scene\+S\+T\+L\+Binary} (const char $\ast$, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$, const \hyperlink{structai_scene}{ai\+Scene} $\ast$)}\label{namespace_assimp_ad67ca688ca641a50437c43d14eb010d3}
+
+\item 
+\hypertarget{namespace_assimp_a8692c74d797b3368f1cb9f7f65871673}{void {\bfseries Assimp\+::\+Export\+Scene\+Ply} (const char $\ast$, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$, const \hyperlink{structai_scene}{ai\+Scene} $\ast$)}\label{namespace_assimp_a8692c74d797b3368f1cb9f7f65871673}
+
+\item 
+\hypertarget{namespace_assimp_a4d11453b42e35cc6767f25d12008042b}{void {\bfseries Assimp\+::\+Export\+Scene3\+D\+S} (const char $\ast$, \hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$, const \hyperlink{structai_scene}{ai\+Scene} $\ast$)}\label{namespace_assimp_a4d11453b42e35cc6767f25d12008042b}
+
+\item 
+\hypertarget{_exporter_8cpp_a568410b6c0810ca0c04fceed37a1c515}{bool {\bfseries Is\+Verbose\+Format} (const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$mesh)}\label{_exporter_8cpp_a568410b6c0810ca0c04fceed37a1c515}
+
+\item 
+\hypertarget{_exporter_8cpp_abb0cc7dc911add292b80f5da53b4d592}{bool {\bfseries Is\+Verbose\+Format} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)}\label{_exporter_8cpp_abb0cc7dc911add292b80f5da53b4d592}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_assimp}{Assimp} export interface. While it's public interface bears many similarities to the import interface (in fact, it is largely symmetric), the internal implementations differs a lot. Exporters are considered stateless and are simple callbacks which we maintain in a global list along with their description strings.
+
+Here we implement only the C++ interface (\hyperlink{class_assimp_1_1_exporter}{Assimp\+::\+Exporter}). 

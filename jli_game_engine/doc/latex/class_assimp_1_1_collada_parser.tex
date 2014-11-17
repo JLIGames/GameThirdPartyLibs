@@ -1,0 +1,1269 @@
+\hypertarget{class_assimp_1_1_collada_parser}{\section{Assimp\+:\+:Collada\+Parser Class Reference}
+\label{class_assimp_1_1_collada_parser}\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+}
+
+
+{\ttfamily \#include $<$Collada\+Parser.\+h$>$}
+
+
+
+Collaboration diagram for Assimp\+:\+:Collada\+Parser\+:
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries U\+P\+\_\+\+X}, 
+{\bfseries U\+P\+\_\+\+Y}, 
+{\bfseries U\+P\+\_\+\+Z}
+ \}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_data}{Collada\+::\+Data} $>$ \hyperlink{class_assimp_1_1_collada_parser_a79a6311963fa5259e14edf7271063f03}{Data\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_accessor}{Collada\+::\+Accessor} $>$ \hyperlink{class_assimp_1_1_collada_parser_ae9cc736118cecbbebb1117247aa83ff7}{Accessor\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_parser_ae07977eafea3e73f8c2915319bbb143b}{Mesh\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$ $>$ \hyperlink{class_assimp_1_1_collada_parser_a21771be88a79eb4ae05001bd205020ad}{Node\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_image}{Collada\+::\+Image} $>$ \hyperlink{class_assimp_1_1_collada_parser_ace5e0dc4f9f8eaa8a1d9e3195b432cac}{Image\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_effect}{Collada\+::\+Effect} $>$ \hyperlink{class_assimp_1_1_collada_parser_a22fbbae8a9f57784034d89f1c8569515}{Effect\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_material}{Collada\+::\+Material} $>$ \hyperlink{class_assimp_1_1_collada_parser_ade2fe0008281313e1e5d4ba71fc8f0aa}{Material\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_light}{Collada\+::\+Light} $>$ \hyperlink{class_assimp_1_1_collada_parser_a873173a2311c52691fb25d153f376542}{Light\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_camera}{Collada\+::\+Camera} $>$ \hyperlink{class_assimp_1_1_collada_parser_a682434e214b9d9831166f0ac55b1aed4}{Camera\+Library}
+\item 
+typedef std\+::map$<$ std\+::string, \\*
+\hyperlink{struct_assimp_1_1_collada_1_1_controller}{Collada\+::\+Controller} $>$ \hyperlink{class_assimp_1_1_collada_parser_a2e216f3a8cc9f2953967c5ae59bed7c9}{Controller\+Library}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_collada_parser_a1567efb45f7129a79e9c93a782338b37}{Collada\+Parser} (\hyperlink{class_assimp_1_1_i_o_system}{I\+O\+System} $\ast$p\+I\+O\+Handler, const std\+::string \&p\+File)
+\item 
+\hyperlink{class_assimp_1_1_collada_parser_a563745bb6c9316cd0a934ebb8e934316}{$\sim$\+Collada\+Parser} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a1744f170a70bdbfbe6a3877a570f7546}{Read\+Contents} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a33b811a5865cf91cdbb264c49e2c05ae}{Read\+Structure} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a5fe8cbc6d83a5ff757506561bbaec862}{Read\+Asset\+Info} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ab75c82efe19ef5277cf117d01d88ea67}{Read\+Animation\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a3e3e2256d45f3a5aac3faa0bdcabdae1}{Read\+Animation} (\hyperlink{struct_assimp_1_1_collada_1_1_animation}{Collada\+::\+Animation} $\ast$p\+Parent)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ac10c36bcc44c65db3f903dd079c152e8}{Read\+Animation\+Sampler} (\hyperlink{struct_assimp_1_1_collada_1_1_animation_channel}{Collada\+::\+Animation\+Channel} \&p\+Channel)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ab644409f2ae7e067459e995eccd53198}{Read\+Controller\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a613453df5e1ab0a41eea3a4507006063}{Read\+Controller} (\hyperlink{struct_assimp_1_1_collada_1_1_controller}{Collada\+::\+Controller} \&p\+Controller)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a280ce3573d46ec83dc8eb863089960e5}{Read\+Controller\+Joints} (\hyperlink{struct_assimp_1_1_collada_1_1_controller}{Collada\+::\+Controller} \&p\+Controller)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a70836a0337c38cc67ddcf8c697680ab7}{Read\+Controller\+Weights} (\hyperlink{struct_assimp_1_1_collada_1_1_controller}{Collada\+::\+Controller} \&p\+Controller)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a41c9d5f640ea750fa7385fbec6ee98ad}{Read\+Image\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ad078882d986da195433443a017f8a9b4}{Read\+Image} (\hyperlink{struct_assimp_1_1_collada_1_1_image}{Collada\+::\+Image} \&p\+Image)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ab2b90003b26f3a5b3537625f6a754508}{Read\+Material\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a0fa365cfc4907a9b3ffe8a0ca119fb5f}{Read\+Material} (\hyperlink{struct_assimp_1_1_collada_1_1_material}{Collada\+::\+Material} \&p\+Material)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ad71f311f965c39f935a80b6dcac5dfdb}{Read\+Camera\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a4ea0767990fd3e1060444dda2c49e078}{Read\+Camera} (\hyperlink{struct_assimp_1_1_collada_1_1_camera}{Collada\+::\+Camera} \&p\+Camera)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a3ed3dbf44b1cff5bef102b650af346e6}{Read\+Light\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a28db9d9859f8bb5aeae38eab4af46385}{Read\+Light} (\hyperlink{struct_assimp_1_1_collada_1_1_light}{Collada\+::\+Light} \&p\+Light)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a39a241eb37d2b45fe1b04cfb755b4afc}{Read\+Effect\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a64921d31969c8c90729ecafcdc8d1cbb}{Read\+Effect} (\hyperlink{struct_assimp_1_1_collada_1_1_effect}{Collada\+::\+Effect} \&p\+Effect)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ae2970e21c607b0f6b9fe42c8536f0442}{Read\+Effect\+Profile\+Common} (\hyperlink{struct_assimp_1_1_collada_1_1_effect}{Collada\+::\+Effect} \&p\+Effect)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a8a57d9126cf0907adf1abb6d58040ab2}{Read\+Sampler\+Properties} (\hyperlink{struct_assimp_1_1_collada_1_1_sampler}{Collada\+::\+Sampler} \&p\+Sampler)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ac612c933ce6683da5eec958a76a31ca2}{Read\+Effect\+Color} (\hyperlink{structai_color4_d}{ai\+Color4\+D} \&p\+Color, \hyperlink{struct_assimp_1_1_collada_1_1_sampler}{Collada\+::\+Sampler} \&p\+Sampler)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a71b686fcd1efb902835bedde0a050bde}{Read\+Effect\+Float} (float \&p\+Float)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a99f6e4c2dc92d835e16a2db863337c0b}{Read\+Effect\+Param} (\hyperlink{struct_assimp_1_1_collada_1_1_effect_param}{Collada\+::\+Effect\+Param} \&p\+Param)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_aeab10c144dadce3626ab2d8432def349}{Read\+Geometry\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a516dbc59dcabe1474e3b802d13eac8e1}{Read\+Geometry} (\hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_acc839aeae53ac30f89bf23d8640e1d7c}{Read\+Mesh} (\hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ae0fa33fc8ea21a024f47c3712ee51739}{Read\+Source} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a33ce4f10dac72f4803668d921b7171b3}{Read\+Data\+Array} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a64ca79301f9a34d8ea3fbb6f0c52ff7c}{Read\+Accessor} (const std\+::string \&p\+I\+D)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a2035fdc6f9e56163b0f8a461e80dd5d8}{Read\+Vertex\+Data} (\hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a61108ba6075e2b2d90eea18eb7fbdb7f}{Read\+Index\+Data} (\hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_affc8d77d8f7f71cb5bc86cb1306f5614}{Read\+Input\+Channel} (std\+::vector$<$ \hyperlink{struct_assimp_1_1_collada_1_1_input_channel}{Collada\+::\+Input\+Channel} $>$ \&po\+Channels)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_aa6aaeaa74ed0e5fcc5ad1e596ce32444}{Read\+Primitives} (\hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Mesh, std\+::vector$<$ \hyperlink{struct_assimp_1_1_collada_1_1_input_channel}{Collada\+::\+Input\+Channel} $>$ \&p\+Per\+Index\+Channels, size\+\_\+t p\+Num\+Primitives, const std\+::vector$<$ size\+\_\+t $>$ \&p\+V\+Count, Collada\+::\+Primitive\+Type p\+Prim\+Type)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_aaa62c97eb41ea0791b48d280ca187ead}{Extract\+Data\+Object\+From\+Channel} (const \hyperlink{struct_assimp_1_1_collada_1_1_input_channel}{Collada\+::\+Input\+Channel} \&p\+Input, size\+\_\+t p\+Local\+Index, \hyperlink{struct_assimp_1_1_collada_1_1_mesh}{Collada\+::\+Mesh} $\ast$p\+Mesh)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a752dff96135606767463d3bc1097ef5b}{Read\+Scene\+Library} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a7d056e872b37fa305b2bd654b33798c3}{Read\+Scene\+Node} (\hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_acb87aa2fff3dc4d11a1f205d339e893e}{Read\+Node\+Transformation} (\hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node, Collada\+::\+Transform\+Type p\+Type)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ac35b135870cf8339a9e91b9ac48d153b}{Read\+Node\+Geometry} (\hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$p\+Node)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ad54b69580285d4d10d5f96a8a0c6d0a9}{Read\+Scene} ()
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_abb399e111c89474a2aee10715d055638}{void {\bfseries Read\+Material\+Vertex\+Input\+Binding} (\hyperlink{struct_assimp_1_1_collada_1_1_semantic_mapping_table}{Collada\+::\+Semantic\+Mapping\+Table} \&tbl)}\label{class_assimp_1_1_collada_parser_abb399e111c89474a2aee10715d055638}
+
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a5bee81038d013b75b112a76bf5f7b587}{Throw\+Exception} (const std\+::string \&p\+Error) const 
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a51ce3f8faeaf419017562a4250787e4d}{Skip\+Element} ()
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a8c220c9b3e052d3bdc39a7bf0810adb5}{Skip\+Element} (const char $\ast$p\+Element)
+\item 
+bool \hyperlink{class_assimp_1_1_collada_parser_ab88eb3deb2c29556cb306bc64ade7f2a}{Is\+Element} (const char $\ast$p\+Name) const 
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_ae4c2905dddcf1439987d19f447bf8064}{Test\+Opening} (const char $\ast$p\+Name)
+\item 
+void \hyperlink{class_assimp_1_1_collada_parser_a33ca34a65b5ce2a0cf3d12e546d599b2}{Test\+Closing} (const char $\ast$p\+Name)
+\item 
+int \hyperlink{class_assimp_1_1_collada_parser_a422a6b14b7f78c3cedf5e30fb2f55609}{Get\+Attribute} (const char $\ast$p\+Attr) const 
+\item 
+int \hyperlink{class_assimp_1_1_collada_parser_a489d5ed878b55e984146ba78915c0da8}{Test\+Attribute} (const char $\ast$p\+Attr) const 
+\item 
+const char $\ast$ \hyperlink{class_assimp_1_1_collada_parser_a7d95361d1faa2db22bbb60956e97d78e}{Get\+Text\+Content} ()
+\item 
+const char $\ast$ \hyperlink{class_assimp_1_1_collada_parser_ae17c01f640367946ea94b7288ea3bfe6}{Test\+Text\+Content} ()
+\item 
+bool \hyperlink{class_assimp_1_1_collada_parser_aede8359c88f3aa1890ae9966b0362097}{Read\+Bool\+From\+Text\+Content} ()
+\item 
+float \hyperlink{class_assimp_1_1_collada_parser_a60698958b7bed62c3692fa2a6d3648e4}{Read\+Float\+From\+Text\+Content} ()
+\item 
+\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \hyperlink{class_assimp_1_1_collada_parser_ace50fe275756ffb761c9214d31aa9bd3}{Calculate\+Result\+Transform} (const std\+::vector$<$ \hyperlink{struct_assimp_1_1_collada_1_1_transform}{Collada\+::\+Transform} $>$ \&p\+Transforms) const 
+\item 
+Collada\+::\+Input\+Type \hyperlink{class_assimp_1_1_collada_parser_a19e1f4a4b9f64cef91add1d6dcdc2234}{Get\+Type\+For\+Semantic} (const std\+::string \&p\+Semantic)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\const \hyperlink{struct_type}{Type} \& \hyperlink{class_assimp_1_1_collada_parser_a05be378a0b7cc6608e5842793ac66312}{Resolve\+Library\+Reference} (const std\+::map$<$ std\+::string, \hyperlink{struct_type}{Type} $>$ \&p\+Library, const std\+::string \&p\+U\+R\+L) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_assimp_1_1_collada_parser_afcdf4ce3664ba28ccc83c3e3e186bca7}{m\+File\+Name}
+\item 
+\hyperlink{classirr_1_1io_1_1_i_irr_x_m_l_reader}{irr\+::io\+::\+Irr\+X\+M\+L\+Reader} $\ast$ \hyperlink{class_assimp_1_1_collada_parser_a7a85f0a1e8a1cc3b057e2c9211b957c1}{m\+Reader}
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_a014c0ae203f22e25ef8bfdb063aa07d2}{\hyperlink{class_assimp_1_1_collada_parser_a79a6311963fa5259e14edf7271063f03}{Data\+Library} {\bfseries m\+Data\+Library}}\label{class_assimp_1_1_collada_parser_a014c0ae203f22e25ef8bfdb063aa07d2}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_af815f3e1c8372f66315e7c3ac60534a7}{\hyperlink{class_assimp_1_1_collada_parser_ae9cc736118cecbbebb1117247aa83ff7}{Accessor\+Library} {\bfseries m\+Accessor\+Library}}\label{class_assimp_1_1_collada_parser_af815f3e1c8372f66315e7c3ac60534a7}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_af274e379f138996c444d60410606a9a3}{\hyperlink{class_assimp_1_1_collada_parser_ae07977eafea3e73f8c2915319bbb143b}{Mesh\+Library} {\bfseries m\+Mesh\+Library}}\label{class_assimp_1_1_collada_parser_af274e379f138996c444d60410606a9a3}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_ae75c245187fed0d4723c98774d394a23}{\hyperlink{class_assimp_1_1_collada_parser_a21771be88a79eb4ae05001bd205020ad}{Node\+Library} {\bfseries m\+Node\+Library}}\label{class_assimp_1_1_collada_parser_ae75c245187fed0d4723c98774d394a23}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_abb6aa92653ca88121f7fcff072bdf116}{\hyperlink{class_assimp_1_1_collada_parser_ace5e0dc4f9f8eaa8a1d9e3195b432cac}{Image\+Library} {\bfseries m\+Image\+Library}}\label{class_assimp_1_1_collada_parser_abb6aa92653ca88121f7fcff072bdf116}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_ab03cf5acfa4311bb0b42ed0d9a615421}{\hyperlink{class_assimp_1_1_collada_parser_a22fbbae8a9f57784034d89f1c8569515}{Effect\+Library} {\bfseries m\+Effect\+Library}}\label{class_assimp_1_1_collada_parser_ab03cf5acfa4311bb0b42ed0d9a615421}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_a548792ef6c647d999dcfee731a0f8277}{\hyperlink{class_assimp_1_1_collada_parser_ade2fe0008281313e1e5d4ba71fc8f0aa}{Material\+Library} {\bfseries m\+Material\+Library}}\label{class_assimp_1_1_collada_parser_a548792ef6c647d999dcfee731a0f8277}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_a366a49acaba9da1e68142e574a2b6e65}{\hyperlink{class_assimp_1_1_collada_parser_a873173a2311c52691fb25d153f376542}{Light\+Library} {\bfseries m\+Light\+Library}}\label{class_assimp_1_1_collada_parser_a366a49acaba9da1e68142e574a2b6e65}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_acd4d614ca7181cfce184889cc664702c}{\hyperlink{class_assimp_1_1_collada_parser_a682434e214b9d9831166f0ac55b1aed4}{Camera\+Library} {\bfseries m\+Camera\+Library}}\label{class_assimp_1_1_collada_parser_acd4d614ca7181cfce184889cc664702c}
+
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_afc8255946f9f58148fdfecbc293aa272}{\hyperlink{class_assimp_1_1_collada_parser_a2e216f3a8cc9f2953967c5ae59bed7c9}{Controller\+Library} {\bfseries m\+Controller\+Library}}\label{class_assimp_1_1_collada_parser_afc8255946f9f58148fdfecbc293aa272}
+
+\item 
+\hyperlink{struct_assimp_1_1_collada_1_1_node}{Collada\+::\+Node} $\ast$ \hyperlink{class_assimp_1_1_collada_parser_aaa1d9b95575cdc3312544f22e38ba497}{m\+Root\+Node}
+\item 
+\hyperlink{struct_assimp_1_1_collada_1_1_animation}{Collada\+::\+Animation} \hyperlink{class_assimp_1_1_collada_parser_a4cf75e2eba91d97c265b165e30bcb220}{m\+Anims}
+\item 
+float \hyperlink{class_assimp_1_1_collada_parser_a5fb8bcd2987a267f75ad6a545b664fea}{m\+Unit\+Size}
+\item 
+enum Assimp\+::\+Collada\+Parser\+:: \{ ... \}  \hyperlink{class_assimp_1_1_collada_parser_a485cfd9e616deb9dfbc64095543aecf3}{m\+Up\+Direction}
+\item 
+Collada\+::\+Format\+Version \hyperlink{class_assimp_1_1_collada_parser_a519c82e2ac698efb01663da278ad2e40}{m\+Format}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_collada_parser_a8170d72d85780f69be2f95a5337c5813}{class {\bfseries Collada\+Loader}}\label{class_assimp_1_1_collada_parser_a8170d72d85780f69be2f95a5337c5813}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parser helper class for the Collada loader.
+
+Does all the X\+M\+L reading and builds internal data structures from it, but leaves the resolving of all the references to the loader. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_assimp_1_1_collada_parser_ae9cc736118cecbbebb1117247aa83ff7}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Accessor\+Library@{Accessor\+Library}}
+\index{Accessor\+Library@{Accessor\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Accessor\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Accessor}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Accessor\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ae9cc736118cecbbebb1117247aa83ff7}
+Same for accessors which define how the data in a data array is accessed. \hypertarget{class_assimp_1_1_collada_parser_a682434e214b9d9831166f0ac55b1aed4}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Camera\+Library@{Camera\+Library}}
+\index{Camera\+Library@{Camera\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Camera\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Camera}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Camera\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a682434e214b9d9831166f0ac55b1aed4}
+\hyperlink{class_camera}{Camera} library\+: surface material by I\+D \hypertarget{class_assimp_1_1_collada_parser_a2e216f3a8cc9f2953967c5ae59bed7c9}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Controller\+Library@{Controller\+Library}}
+\index{Controller\+Library@{Controller\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Controller\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Controller}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Controller\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a2e216f3a8cc9f2953967c5ae59bed7c9}
+Controller library\+: joint controllers by I\+D \hypertarget{class_assimp_1_1_collada_parser_a79a6311963fa5259e14edf7271063f03}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Data\+Library@{Data\+Library}}
+\index{Data\+Library@{Data\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Data\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Data}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Data\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a79a6311963fa5259e14edf7271063f03}
+All data arrays found in the file by I\+D. Might be referred to by actually everyone. Collada, you are a steaming pile of indirection. \hypertarget{class_assimp_1_1_collada_parser_a22fbbae8a9f57784034d89f1c8569515}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Effect\+Library@{Effect\+Library}}
+\index{Effect\+Library@{Effect\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Effect\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Effect}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Effect\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a22fbbae8a9f57784034d89f1c8569515}
+Effect library\+: surface attributes by I\+D \hypertarget{class_assimp_1_1_collada_parser_ace5e0dc4f9f8eaa8a1d9e3195b432cac}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Image\+Library@{Image\+Library}}
+\index{Image\+Library@{Image\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Image\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Image}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Image\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ace5e0dc4f9f8eaa8a1d9e3195b432cac}
+\hyperlink{class_image}{Image} library\+: stores texture properties by I\+D \hypertarget{class_assimp_1_1_collada_parser_a873173a2311c52691fb25d153f376542}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Light\+Library@{Light\+Library}}
+\index{Light\+Library@{Light\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Light\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Light}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Light\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a873173a2311c52691fb25d153f376542}
+Light library\+: surface light by I\+D \hypertarget{class_assimp_1_1_collada_parser_ade2fe0008281313e1e5d4ba71fc8f0aa}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Material\+Library@{Material\+Library}}
+\index{Material\+Library@{Material\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Material\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Material}$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Material\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ade2fe0008281313e1e5d4ba71fc8f0aa}
+Material library\+: surface material by I\+D \hypertarget{class_assimp_1_1_collada_parser_ae07977eafea3e73f8c2915319bbb143b}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Mesh\+Library@{Mesh\+Library}}
+\index{Mesh\+Library@{Mesh\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Mesh\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Mesh}$\ast$$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Mesh\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ae07977eafea3e73f8c2915319bbb143b}
+\hyperlink{class_mesh}{Mesh} library\+: mesh by I\+D \hypertarget{class_assimp_1_1_collada_parser_a21771be88a79eb4ae05001bd205020ad}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Node\+Library@{Node\+Library}}
+\index{Node\+Library@{Node\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Node\+Library}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Collada\+::\+Node}$\ast$$>$ {\bf Assimp\+::\+Collada\+Parser\+::\+Node\+Library}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a21771be88a79eb4ae05001bd205020ad}
+node library\+: root node of the hierarchy part by I\+D 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_assimp_1_1_collada_parser_a51ec70ba744a2b5dcb65847013b51b4b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a51ec70ba744a2b5dcb65847013b51b4b}
+Which is the up vector 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_collada_parser_a1567efb45f7129a79e9c93a782338b37}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Collada\+Parser@{Collada\+Parser}}
+\index{Collada\+Parser@{Collada\+Parser}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Collada\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}Collada\+Parser\+::\+Collada\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+O\+System} $\ast$}]{p\+I\+O\+Handler, }
+\item[{const std\+::string \&}]{p\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a1567efb45f7129a79e9c93a782338b37}
+Constructor from X\+M\+L file 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a563745bb6c9316cd0a934ebb8e934316}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!````~Collada\+Parser@{$\sim$\+Collada\+Parser}}
+\index{````~Collada\+Parser@{$\sim$\+Collada\+Parser}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{$\sim$\+Collada\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}Collada\+Parser\+::$\sim$\+Collada\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a563745bb6c9316cd0a934ebb8e934316}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_collada_parser_ace50fe275756ffb761c9214d31aa9bd3}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Calculate\+Result\+Transform@{Calculate\+Result\+Transform}}
+\index{Calculate\+Result\+Transform@{Calculate\+Result\+Transform}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Calculate\+Result\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Matrix4x4} Collada\+Parser\+::\+Calculate\+Result\+Transform (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Collada\+::\+Transform} $>$ \&}]{p\+Transforms}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ace50fe275756ffb761c9214d31aa9bd3}
+Calculates the resulting transformation from all the given transform steps 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_aaa62c97eb41ea0791b48d280ca187ead}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Extract\+Data\+Object\+From\+Channel@{Extract\+Data\+Object\+From\+Channel}}
+\index{Extract\+Data\+Object\+From\+Channel@{Extract\+Data\+Object\+From\+Channel}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Extract\+Data\+Object\+From\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Extract\+Data\+Object\+From\+Channel (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collada\+::\+Input\+Channel} \&}]{p\+Input, }
+\item[{size\+\_\+t}]{p\+Local\+Index, }
+\item[{{\bf Collada\+::\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_aaa62c97eb41ea0791b48d280ca187ead}
+Extracts a single object from an input channel and stores it in the appropriate mesh data array 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a422a6b14b7f78c3cedf5e30fb2f55609}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Get\+Attribute@{Get\+Attribute}}
+\index{Get\+Attribute@{Get\+Attribute}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Get\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}int Collada\+Parser\+::\+Get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Attr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a422a6b14b7f78c3cedf5e30fb2f55609}
+Checks the present element for the presence of the attribute, returns its index or throws an exception if not found 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a7d95361d1faa2db22bbb60956e97d78e}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Get\+Text\+Content@{Get\+Text\+Content}}
+\index{Get\+Text\+Content@{Get\+Text\+Content}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Get\+Text\+Content}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Collada\+Parser\+::\+Get\+Text\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a7d95361d1faa2db22bbb60956e97d78e}
+Reads the text contents of an element, throws an exception if not given. Skips leading whitespace. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a19e1f4a4b9f64cef91add1d6dcdc2234}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Get\+Type\+For\+Semantic@{Get\+Type\+For\+Semantic}}
+\index{Get\+Type\+For\+Semantic@{Get\+Type\+For\+Semantic}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Get\+Type\+For\+Semantic}]{\setlength{\rightskip}{0pt plus 5cm}Collada\+::\+Input\+Type Collada\+Parser\+::\+Get\+Type\+For\+Semantic (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+Semantic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a19e1f4a4b9f64cef91add1d6dcdc2234}
+Determines the input data type for the given semantic string 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ab88eb3deb2c29556cb306bc64ade7f2a}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Is\+Element@{Is\+Element}}
+\index{Is\+Element@{Is\+Element}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Is\+Element}]{\setlength{\rightskip}{0pt plus 5cm}bool Assimp\+::\+Collada\+Parser\+::\+Is\+Element (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ab88eb3deb2c29556cb306bc64ade7f2a}
+Compares the current xml element name to the given string and returns true if equal 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a64ca79301f9a34d8ea3fbb6f0c52ff7c}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Accessor@{Read\+Accessor}}
+\index{Read\+Accessor@{Read\+Accessor}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Accessor}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Accessor (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a64ca79301f9a34d8ea3fbb6f0c52ff7c}
+Reads an accessor and stores it in the global library under the given I\+D -\/ accessors use the I\+D of the parent $<$source$>$ element 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a3e3e2256d45f3a5aac3faa0bdcabdae1}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Animation@{Read\+Animation}}
+\index{Read\+Animation@{Read\+Animation}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Animation} $\ast$}]{p\+Parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a3e3e2256d45f3a5aac3faa0bdcabdae1}
+Reads an animation into the given parent structure 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ab75c82efe19ef5277cf117d01d88ea67}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Animation\+Library@{Read\+Animation\+Library}}
+\index{Read\+Animation\+Library@{Read\+Animation\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Animation\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Animation\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ab75c82efe19ef5277cf117d01d88ea67}
+Reads the animation library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ac10c36bcc44c65db3f903dd079c152e8}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Animation\+Sampler@{Read\+Animation\+Sampler}}
+\index{Read\+Animation\+Sampler@{Read\+Animation\+Sampler}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Animation\+Sampler}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Animation\+Sampler (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Animation\+Channel} \&}]{p\+Channel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ac10c36bcc44c65db3f903dd079c152e8}
+Reads an animation sampler into the given anim channel 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a5fe8cbc6d83a5ff757506561bbaec862}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Asset\+Info@{Read\+Asset\+Info}}
+\index{Read\+Asset\+Info@{Read\+Asset\+Info}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Asset\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Asset\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a5fe8cbc6d83a5ff757506561bbaec862}
+Reads asset informations such as coordinate system informations and legal blah 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_aede8359c88f3aa1890ae9966b0362097}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Bool\+From\+Text\+Content@{Read\+Bool\+From\+Text\+Content}}
+\index{Read\+Bool\+From\+Text\+Content@{Read\+Bool\+From\+Text\+Content}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Bool\+From\+Text\+Content}]{\setlength{\rightskip}{0pt plus 5cm}bool Collada\+Parser\+::\+Read\+Bool\+From\+Text\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_aede8359c88f3aa1890ae9966b0362097}
+Reads a single bool from current text content 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a4ea0767990fd3e1060444dda2c49e078}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Camera@{Read\+Camera}}
+\index{Read\+Camera@{Read\+Camera}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Camera} \&}]{p\+Camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a4ea0767990fd3e1060444dda2c49e078}
+Reads a camera entry into the given camera 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ad71f311f965c39f935a80b6dcac5dfdb}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Camera\+Library@{Read\+Camera\+Library}}
+\index{Read\+Camera\+Library@{Read\+Camera\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Camera\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Camera\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ad71f311f965c39f935a80b6dcac5dfdb}
+Reads the camera library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a1744f170a70bdbfbe6a3877a570f7546}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Contents@{Read\+Contents}}
+\index{Read\+Contents@{Read\+Contents}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Contents}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a1744f170a70bdbfbe6a3877a570f7546}
+Reads the contents of the file 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a613453df5e1ab0a41eea3a4507006063}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Controller@{Read\+Controller}}
+\index{Read\+Controller@{Read\+Controller}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Controller} \&}]{p\+Controller}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a613453df5e1ab0a41eea3a4507006063}
+Reads a controller into the given mesh structure 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a280ce3573d46ec83dc8eb863089960e5}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Controller\+Joints@{Read\+Controller\+Joints}}
+\index{Read\+Controller\+Joints@{Read\+Controller\+Joints}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Controller\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Controller\+Joints (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Controller} \&}]{p\+Controller}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a280ce3573d46ec83dc8eb863089960e5}
+Reads the joint definitions for the given controller 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ab644409f2ae7e067459e995eccd53198}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Controller\+Library@{Read\+Controller\+Library}}
+\index{Read\+Controller\+Library@{Read\+Controller\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Controller\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Controller\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ab644409f2ae7e067459e995eccd53198}
+Reads the skeleton controller library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a70836a0337c38cc67ddcf8c697680ab7}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Controller\+Weights@{Read\+Controller\+Weights}}
+\index{Read\+Controller\+Weights@{Read\+Controller\+Weights}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Controller\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Controller\+Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Controller} \&}]{p\+Controller}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a70836a0337c38cc67ddcf8c697680ab7}
+Reads the joint weights for the given controller 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a33ce4f10dac72f4803668d921b7171b3}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Data\+Array@{Read\+Data\+Array}}
+\index{Read\+Data\+Array@{Read\+Data\+Array}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Data\+Array}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Data\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a33ce4f10dac72f4803668d921b7171b3}
+Reads a data array holding a number of elements, and stores it in the global library. Currently supported are array of floats and arrays of strings. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a64921d31969c8c90729ecafcdc8d1cbb}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Effect@{Read\+Effect}}
+\index{Read\+Effect@{Read\+Effect}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Effect (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Effect} \&}]{p\+Effect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a64921d31969c8c90729ecafcdc8d1cbb}
+Reads an effect entry into the given effect 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ac612c933ce6683da5eec958a76a31ca2}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Effect\+Color@{Read\+Effect\+Color}}
+\index{Read\+Effect\+Color@{Read\+Effect\+Color}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Effect\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Effect\+Color (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Color4\+D} \&}]{p\+Color, }
+\item[{{\bf Collada\+::\+Sampler} \&}]{p\+Sampler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ac612c933ce6683da5eec958a76a31ca2}
+Reads an effect entry containing a color or a texture defining that color 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a71b686fcd1efb902835bedde0a050bde}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Effect\+Float@{Read\+Effect\+Float}}
+\index{Read\+Effect\+Float@{Read\+Effect\+Float}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Effect\+Float}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Effect\+Float (
+\begin{DoxyParamCaption}
+\item[{float \&}]{p\+Float}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a71b686fcd1efb902835bedde0a050bde}
+Reads an effect entry containing a float 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a39a241eb37d2b45fe1b04cfb755b4afc}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Effect\+Library@{Read\+Effect\+Library}}
+\index{Read\+Effect\+Library@{Read\+Effect\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Effect\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Effect\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a39a241eb37d2b45fe1b04cfb755b4afc}
+Reads the effect library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a99f6e4c2dc92d835e16a2db863337c0b}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Effect\+Param@{Read\+Effect\+Param}}
+\index{Read\+Effect\+Param@{Read\+Effect\+Param}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Effect\+Param}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Effect\+Param (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Effect\+Param} \&}]{p\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a99f6e4c2dc92d835e16a2db863337c0b}
+Reads an effect parameter specification of any kind 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ae2970e21c607b0f6b9fe42c8536f0442}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Effect\+Profile\+Common@{Read\+Effect\+Profile\+Common}}
+\index{Read\+Effect\+Profile\+Common@{Read\+Effect\+Profile\+Common}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Effect\+Profile\+Common}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Effect\+Profile\+Common (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Effect} \&}]{p\+Effect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ae2970e21c607b0f6b9fe42c8536f0442}
+Reads an C\+O\+M\+M\+O\+N effect profile 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a60698958b7bed62c3692fa2a6d3648e4}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Float\+From\+Text\+Content@{Read\+Float\+From\+Text\+Content}}
+\index{Read\+Float\+From\+Text\+Content@{Read\+Float\+From\+Text\+Content}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Float\+From\+Text\+Content}]{\setlength{\rightskip}{0pt plus 5cm}float Collada\+Parser\+::\+Read\+Float\+From\+Text\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a60698958b7bed62c3692fa2a6d3648e4}
+Reads a single float from current text content 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a516dbc59dcabe1474e3b802d13eac8e1}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Geometry@{Read\+Geometry}}
+\index{Read\+Geometry@{Read\+Geometry}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Geometry (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a516dbc59dcabe1474e3b802d13eac8e1}
+Reads a geometry from the geometry library. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_aeab10c144dadce3626ab2d8432def349}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Geometry\+Library@{Read\+Geometry\+Library}}
+\index{Read\+Geometry\+Library@{Read\+Geometry\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Geometry\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Geometry\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_aeab10c144dadce3626ab2d8432def349}
+Reads the geometry library contents 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ad078882d986da195433443a017f8a9b4}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Image@{Read\+Image}}
+\index{Read\+Image@{Read\+Image}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Image} \&}]{p\+Image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ad078882d986da195433443a017f8a9b4}
+Reads an image entry into the given image 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a41c9d5f640ea750fa7385fbec6ee98ad}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Image\+Library@{Read\+Image\+Library}}
+\index{Read\+Image\+Library@{Read\+Image\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Image\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Image\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a41c9d5f640ea750fa7385fbec6ee98ad}
+Reads the image library contents 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a61108ba6075e2b2d90eea18eb7fbdb7f}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Index\+Data@{Read\+Index\+Data}}
+\index{Read\+Index\+Data@{Read\+Index\+Data}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Index\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Index\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a61108ba6075e2b2d90eea18eb7fbdb7f}
+Reads input declarations of per-\/index mesh data into the given mesh 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_affc8d77d8f7f71cb5bc86cb1306f5614}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Input\+Channel@{Read\+Input\+Channel}}
+\index{Read\+Input\+Channel@{Read\+Input\+Channel}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Input\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Input\+Channel (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Collada\+::\+Input\+Channel} $>$ \&}]{po\+Channels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_affc8d77d8f7f71cb5bc86cb1306f5614}
+Reads a single input channel element and stores it in the given array, if valid 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a28db9d9859f8bb5aeae38eab4af46385}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Light@{Read\+Light}}
+\index{Read\+Light@{Read\+Light}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Light}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Light (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Light} \&}]{p\+Light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a28db9d9859f8bb5aeae38eab4af46385}
+Reads a light entry into the given light 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a3ed3dbf44b1cff5bef102b650af346e6}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Light\+Library@{Read\+Light\+Library}}
+\index{Read\+Light\+Library@{Read\+Light\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Light\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Light\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a3ed3dbf44b1cff5bef102b650af346e6}
+Reads the light library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a0fa365cfc4907a9b3ffe8a0ca119fb5f}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Material@{Read\+Material}}
+\index{Read\+Material@{Read\+Material}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Material}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Material (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Material} \&}]{p\+Material}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a0fa365cfc4907a9b3ffe8a0ca119fb5f}
+Reads a material entry into the given material 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ab2b90003b26f3a5b3537625f6a754508}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Material\+Library@{Read\+Material\+Library}}
+\index{Read\+Material\+Library@{Read\+Material\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Material\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Material\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ab2b90003b26f3a5b3537625f6a754508}
+Reads the material library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_acc839aeae53ac30f89bf23d8640e1d7c}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Mesh@{Read\+Mesh}}
+\index{Read\+Mesh@{Read\+Mesh}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_acc839aeae53ac30f89bf23d8640e1d7c}
+Reads a mesh from the geometry library 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ac35b135870cf8339a9e91b9ac48d153b}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Node\+Geometry@{Read\+Node\+Geometry}}
+\index{Read\+Node\+Geometry@{Read\+Node\+Geometry}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Node\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Node\+Geometry (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ac35b135870cf8339a9e91b9ac48d153b}
+Reads a mesh reference in a node and adds it to the node's mesh list 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_acb87aa2fff3dc4d11a1f205d339e893e}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Node\+Transformation@{Read\+Node\+Transformation}}
+\index{Read\+Node\+Transformation@{Read\+Node\+Transformation}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Node\+Transformation}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Node\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Node} $\ast$}]{p\+Node, }
+\item[{Collada\+::\+Transform\+Type}]{p\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_acb87aa2fff3dc4d11a1f205d339e893e}
+Reads a node transformation entry of the given type and adds it to the given node's transformation list. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_aa6aaeaa74ed0e5fcc5ad1e596ce32444}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Primitives@{Read\+Primitives}}
+\index{Read\+Primitives@{Read\+Primitives}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Primitives}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Primitives (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Mesh} $\ast$}]{p\+Mesh, }
+\item[{std\+::vector$<$ {\bf Collada\+::\+Input\+Channel} $>$ \&}]{p\+Per\+Index\+Channels, }
+\item[{size\+\_\+t}]{p\+Num\+Primitives, }
+\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{p\+V\+Count, }
+\item[{Collada\+::\+Primitive\+Type}]{p\+Prim\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_aa6aaeaa74ed0e5fcc5ad1e596ce32444}
+Reads a 
+
+primitive index list and assembles the mesh data into the given mesh 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a8a57d9126cf0907adf1abb6d58040ab2}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Sampler\+Properties@{Read\+Sampler\+Properties}}
+\index{Read\+Sampler\+Properties@{Read\+Sampler\+Properties}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Sampler\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Sampler\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Sampler} \&}]{p\+Sampler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a8a57d9126cf0907adf1abb6d58040ab2}
+Read sampler properties 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ad54b69580285d4d10d5f96a8a0c6d0a9}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Scene@{Read\+Scene}}
+\index{Read\+Scene@{Read\+Scene}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ad54b69580285d4d10d5f96a8a0c6d0a9}
+Reads the collada scene 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a752dff96135606767463d3bc1097ef5b}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Scene\+Library@{Read\+Scene\+Library}}
+\index{Read\+Scene\+Library@{Read\+Scene\+Library}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Scene\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Scene\+Library (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a752dff96135606767463d3bc1097ef5b}
+Reads the library of node hierarchies and scene parts 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a7d056e872b37fa305b2bd654b33798c3}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Scene\+Node@{Read\+Scene\+Node}}
+\index{Read\+Scene\+Node@{Read\+Scene\+Node}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Scene\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Scene\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Node} $\ast$}]{p\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a7d056e872b37fa305b2bd654b33798c3}
+Reads a scene node's contents including children and stores it in the given node 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ae0fa33fc8ea21a024f47c3712ee51739}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Source@{Read\+Source}}
+\index{Read\+Source@{Read\+Source}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Source}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ae0fa33fc8ea21a024f47c3712ee51739}
+Reads a source element -\/ a combination of raw data and an accessor defining things that should not be redefinable. Yes, that's another rant. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a33b811a5865cf91cdbb264c49e2c05ae}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Structure@{Read\+Structure}}
+\index{Read\+Structure@{Read\+Structure}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a33b811a5865cf91cdbb264c49e2c05ae}
+Reads the structure of the file 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a2035fdc6f9e56163b0f8a461e80dd5d8}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Read\+Vertex\+Data@{Read\+Vertex\+Data}}
+\index{Read\+Vertex\+Data@{Read\+Vertex\+Data}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Read\+Vertex\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Read\+Vertex\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Collada\+::\+Mesh} $\ast$}]{p\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a2035fdc6f9e56163b0f8a461e80dd5d8}
+Reads input declarations of per-\/vertex mesh data into the given mesh 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a05be378a0b7cc6608e5842793ac66312}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Resolve\+Library\+Reference@{Resolve\+Library\+Reference}}
+\index{Resolve\+Library\+Reference@{Resolve\+Library\+Reference}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Resolve\+Library\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ const {\bf Type} \& Assimp\+::\+Collada\+Parser\+::\+Resolve\+Library\+Reference (
+\begin{DoxyParamCaption}
+\item[{const std\+::map$<$ std\+::string, {\bf Type} $>$ \&}]{p\+Library, }
+\item[{const std\+::string \&}]{p\+U\+R\+L}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a05be378a0b7cc6608e5842793ac66312}
+Finds the item in the given library by its reference, throws if not found 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a51ce3f8faeaf419017562a4250787e4d}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Skip\+Element@{Skip\+Element}}
+\index{Skip\+Element@{Skip\+Element}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Skip\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Skip\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a51ce3f8faeaf419017562a4250787e4d}
+Skips all data until the end node of the current element 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a8c220c9b3e052d3bdc39a7bf0810adb5}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Skip\+Element@{Skip\+Element}}
+\index{Skip\+Element@{Skip\+Element}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Skip\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Skip\+Element (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a8c220c9b3e052d3bdc39a7bf0810adb5}
+Skips all data until the end node of the given element 
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a489d5ed878b55e984146ba78915c0da8}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Test\+Attribute@{Test\+Attribute}}
+\index{Test\+Attribute@{Test\+Attribute}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Test\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}int Collada\+Parser\+::\+Test\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Attr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a489d5ed878b55e984146ba78915c0da8}
+Returns the index of the named attribute or -\/1 if not found. Does not throw, therefore useful for optional attributes 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a33ca34a65b5ce2a0cf3d12e546d599b2}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Test\+Closing@{Test\+Closing}}
+\index{Test\+Closing@{Test\+Closing}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Test\+Closing}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Test\+Closing (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a33ca34a65b5ce2a0cf3d12e546d599b2}
+Tests for the closing tag of the given element, throws an exception if not found 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ae4c2905dddcf1439987d19f447bf8064}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Test\+Opening@{Test\+Opening}}
+\index{Test\+Opening@{Test\+Opening}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Test\+Opening}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Test\+Opening (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ae4c2905dddcf1439987d19f447bf8064}
+Tests for the opening tag of the given element, throws an exception if not found 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_ae17c01f640367946ea94b7288ea3bfe6}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Test\+Text\+Content@{Test\+Text\+Content}}
+\index{Test\+Text\+Content@{Test\+Text\+Content}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Test\+Text\+Content}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Collada\+Parser\+::\+Test\+Text\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_ae17c01f640367946ea94b7288ea3bfe6}
+Reads the text contents of an element, returns N\+U\+L\+L if not given. Skips leading whitespace. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_collada_parser_a5bee81038d013b75b112a76bf5f7b587}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!Throw\+Exception@{Throw\+Exception}}
+\index{Throw\+Exception@{Throw\+Exception}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{Throw\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}void Collada\+Parser\+::\+Throw\+Exception (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a5bee81038d013b75b112a76bf5f7b587}
+Aborts the file reading with an exception 
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_assimp_1_1_collada_parser_a4cf75e2eba91d97c265b165e30bcb220}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+Anims@{m\+Anims}}
+\index{m\+Anims@{m\+Anims}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+Anims}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collada\+::\+Animation} Assimp\+::\+Collada\+Parser\+::m\+Anims\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a4cf75e2eba91d97c265b165e30bcb220}
+Root animation container \hypertarget{class_assimp_1_1_collada_parser_afcdf4ce3664ba28ccc83c3e3e186bca7}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+File\+Name@{m\+File\+Name}}
+\index{m\+File\+Name@{m\+File\+Name}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Assimp\+::\+Collada\+Parser\+::m\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_afcdf4ce3664ba28ccc83c3e3e186bca7}
+Filename, for a verbose error message \hypertarget{class_assimp_1_1_collada_parser_a519c82e2ac698efb01663da278ad2e40}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+Format@{m\+Format}}
+\index{m\+Format@{m\+Format}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+Format}]{\setlength{\rightskip}{0pt plus 5cm}Collada\+::\+Format\+Version Assimp\+::\+Collada\+Parser\+::m\+Format\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a519c82e2ac698efb01663da278ad2e40}
+Collada file format version \hypertarget{class_assimp_1_1_collada_parser_a7a85f0a1e8a1cc3b057e2c9211b957c1}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+Reader@{m\+Reader}}
+\index{m\+Reader@{m\+Reader}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf irr\+::io\+::\+Irr\+X\+M\+L\+Reader}$\ast$ Assimp\+::\+Collada\+Parser\+::m\+Reader\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a7a85f0a1e8a1cc3b057e2c9211b957c1}
+X\+M\+L reader, member for everyday use \hypertarget{class_assimp_1_1_collada_parser_aaa1d9b95575cdc3312544f22e38ba497}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+Root\+Node@{m\+Root\+Node}}
+\index{m\+Root\+Node@{m\+Root\+Node}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+Root\+Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collada\+::\+Node}$\ast$ Assimp\+::\+Collada\+Parser\+::m\+Root\+Node\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_aaa1d9b95575cdc3312544f22e38ba497}
+Pointer to the root node. Don't delete, it just points to one of the nodes in the node library. \hypertarget{class_assimp_1_1_collada_parser_a5fb8bcd2987a267f75ad6a545b664fea}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+Unit\+Size@{m\+Unit\+Size}}
+\index{m\+Unit\+Size@{m\+Unit\+Size}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+Unit\+Size}]{\setlength{\rightskip}{0pt plus 5cm}float Assimp\+::\+Collada\+Parser\+::m\+Unit\+Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a5fb8bcd2987a267f75ad6a545b664fea}
+Size unit\+: how large compared to a meter \hypertarget{class_assimp_1_1_collada_parser_a485cfd9e616deb9dfbc64095543aecf3}{\index{Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}!m\+Up\+Direction@{m\+Up\+Direction}}
+\index{m\+Up\+Direction@{m\+Up\+Direction}!Assimp\+::\+Collada\+Parser@{Assimp\+::\+Collada\+Parser}}
+\subsubsection[{m\+Up\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   Assimp\+::\+Collada\+Parser\+::m\+Up\+Direction\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_assimp_1_1_collada_parser_a485cfd9e616deb9dfbc64095543aecf3}
+Which is the up vector 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_collada_parser_8h}{Collada\+Parser.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_collada_parser_8cpp}{Collada\+Parser.\+cpp}\end{DoxyCompactItemize}

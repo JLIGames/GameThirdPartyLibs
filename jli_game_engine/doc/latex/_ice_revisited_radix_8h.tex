@@ -1,0 +1,72 @@
+\hypertarget{_ice_revisited_radix_8h}{\section{bullet/bullet-\/2.82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Revisited\+Radix.h File Reference}
+\label{_ice_revisited_radix_8h}\index{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Revisited\+Radix.\+h@{bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+C\+D\+Test\+Framework/\+Opcode/\+Ice/\+Ice\+Revisited\+Radix.\+h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_radix_sort}{Radix\+Sort}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_ice_revisited_radix_8h_a2b568d29ccd612834516fd98a1fd9795}{\#define \hyperlink{_ice_revisited_radix_8h_a2b568d29ccd612834516fd98a1fd9795}{R\+A\+D\+I\+X\+\_\+\+L\+O\+C\+A\+L\+\_\+\+R\+A\+M}}\label{_ice_revisited_radix_8h_a2b568d29ccd612834516fd98a1fd9795}
+
+\begin{DoxyCompactList}\small\item\em Allocate histograms \& offsets locally. \end{DoxyCompactList}\item 
+\#define {\bfseries Stack\+Radix\+Sort}(name, ranks0, ranks1)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0}{Radix\+Hint} \{ \\*
+{\bfseries R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D}, 
+{\bfseries R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D}, 
+{\bfseries R\+A\+D\+I\+X\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+R\+D} = 0x7fffffff, 
+\hyperlink{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0a91fa3afcca04aadade3caad8b46d511b}{R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D}, 
+\\*
+\hyperlink{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0ab5aa0e5b59c1ae93140dd4a04f5c0900}{R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D}, 
+{\bfseries R\+A\+D\+I\+X\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+R\+D} = 0x7fffffff
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains source code from the article \char`\"{}\+Radix Sort Revisited\char`\"{}.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_ice_revisited_radix_8h_a3e406d7b8db5bf13a85bd21405e08fd4}{\index{Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}!Stack\+Radix\+Sort@{Stack\+Radix\+Sort}}
+\index{Stack\+Radix\+Sort@{Stack\+Radix\+Sort}!Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}}
+\subsubsection[{Stack\+Radix\+Sort}]{\setlength{\rightskip}{0pt plus 5cm}\#define Stack\+Radix\+Sort(
+\begin{DoxyParamCaption}
+\item[{}]{name, }
+\item[{}]{ranks0, }
+\item[{}]{ranks1}
+\end{DoxyParamCaption}
+)}}\label{_ice_revisited_radix_8h_a3e406d7b8db5bf13a85bd21405e08fd4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{class_radix_sort}{RadixSort} name;                                \(\backslash\)
+        name.SetRankBuffers(ranks0, ranks1);
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0}{\index{Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}!Radix\+Hint@{Radix\+Hint}}
+\index{Radix\+Hint@{Radix\+Hint}!Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}}
+\subsubsection[{Radix\+Hint}]{\setlength{\rightskip}{0pt plus 5cm}enum Radix\+Hint}}\label{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D@{R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D}!Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}}\index{Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}!R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D@{R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D}}\item[{\em 
+\hypertarget{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0a91fa3afcca04aadade3caad8b46d511b}{R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D}\label{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0a91fa3afcca04aadade3caad8b46d511b}
+}]Input values are signed. \index{R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D@{R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D}!Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}}\index{Ice\+Revisited\+Radix.\+h@{Ice\+Revisited\+Radix.\+h}!R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D@{R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D}}\item[{\em 
+\hypertarget{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0ab5aa0e5b59c1ae93140dd4a04f5c0900}{R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D}\label{_ice_revisited_radix_8h_acf223d4d688c445c2088d9b2d9aee8d0ab5aa0e5b59c1ae93140dd4a04f5c0900}
+}]Input values are unsigned. \end{description}
+\end{Desc}

@@ -1,0 +1,211 @@
+\hypertarget{classb_parse_1_1b_file}{\section{b\+Parse\+:\+:b\+File Class Reference}
+\label{classb_parse_1_1b_file}\index{b\+Parse\+::b\+File@{b\+Parse\+::b\+File}}
+}
+
+
+Inheritance diagram for b\+Parse\+:\+:b\+File\+:
+
+
+Collaboration diagram for b\+Parse\+:\+:b\+File\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb_parse_1_1b_file_a01b52b96559d09b6f485a2b6b30a7c35}{{\bfseries b\+File} (const char $\ast$filename, const char header\+String\mbox{[}7\mbox{]})}\label{classb_parse_1_1b_file_a01b52b96559d09b6f485a2b6b30a7c35}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a152c5119d0f19103820b67590367179c}{{\bfseries b\+File} (char $\ast$memory\+Buffer, int len, const char header\+String\mbox{[}7\mbox{]})}\label{classb_parse_1_1b_file_a152c5119d0f19103820b67590367179c}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ac452173b4b97b77a6557f1df03fe17c4}{\hyperlink{classb_parse_1_1b_d_n_a}{b\+D\+N\+A} $\ast$ {\bfseries get\+File\+D\+N\+A} ()}\label{classb_parse_1_1b_file_ac452173b4b97b77a6557f1df03fe17c4}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a20874bc488319e12f6f35ae4a912900b}{virtual void {\bfseries add\+Data\+Block} (char $\ast$data\+Block)=0}\label{classb_parse_1_1b_file_a20874bc488319e12f6f35ae4a912900b}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a02d2b991e11791c26c394f1812d30cb7}{int {\bfseries get\+Flags} () const }\label{classb_parse_1_1b_file_a02d2b991e11791c26c394f1812d30cb7}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_af57165d68bfb0faad353ae0f3d64b8e3}{\hyperlink{classbt_hash_map}{b\+Ptr\+Map} \& {\bfseries get\+Lib\+Pointers} ()}\label{classb_parse_1_1b_file_af57165d68bfb0faad353ae0f3d64b8e3}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ae87b7c44ec2198dad298e5434a9d89e3}{void $\ast$ {\bfseries find\+Lib\+Pointer} (void $\ast$ptr)}\label{classb_parse_1_1b_file_ae87b7c44ec2198dad298e5434a9d89e3}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_aecc27a47399e6b4b9c9c228897d9bfd0}{bool {\bfseries ok} ()}\label{classb_parse_1_1b_file_aecc27a47399e6b4b9c9c228897d9bfd0}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_aa1cf9d0f7fef00c210f8bb31f542cf9f}{virtual void {\bfseries parse} (int verbose\+Mode)=0}\label{classb_parse_1_1b_file_aa1cf9d0f7fef00c210f8bb31f542cf9f}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ad9e7d8f8bcf188598d3ea4dd6b7db5f8}{virtual int {\bfseries write} (const char $\ast$file\+Name, bool fixup\+Pointers=false)=0}\label{classb_parse_1_1b_file_ad9e7d8f8bcf188598d3ea4dd6b7db5f8}
+
+\item 
+virtual void \hyperlink{classb_parse_1_1b_file_a783f3e51f415da9508b4e3ad334bfd9e}{write\+Chunks} (F\+I\+L\+E $\ast$fp, bool fixup\+Pointers)
+\item 
+\hypertarget{classb_parse_1_1b_file_aef4111a6a1db20bb3e8ce490beebac07}{virtual void {\bfseries write\+D\+N\+A} (F\+I\+L\+E $\ast$fp)=0}\label{classb_parse_1_1b_file_aef4111a6a1db20bb3e8ce490beebac07}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a8363416a68247420e7eb8c4d047da519}{void {\bfseries update\+Old\+Pointers} ()}\label{classb_parse_1_1b_file_a8363416a68247420e7eb8c4d047da519}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a63c3401de979c154d289c4a87d53940a}{void \hyperlink{classb_parse_1_1b_file_a63c3401de979c154d289c4a87d53940a}{resolve\+Pointers} (int verbose\+Mode)}\label{classb_parse_1_1b_file_a63c3401de979c154d289c4a87d53940a}
+
+\begin{DoxyCompactList}\small\item\em Resolve pointers replaces the original pointers in structures, and linked lists by the new in-\/memory structures. \end{DoxyCompactList}\item 
+\hypertarget{classb_parse_1_1b_file_a5672615cad648147bab62149e4e9651f}{void {\bfseries dump\+Chunks} (\hyperlink{classb_parse_1_1b_d_n_a}{b\+D\+N\+A} $\ast$dna)}\label{classb_parse_1_1b_file_a5672615cad648147bab62149e4e9651f}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_accb2aa4350081543a47ee660e6915ea4}{int {\bfseries get\+Version} () const }\label{classb_parse_1_1b_file_accb2aa4350081543a47ee660e6915ea4}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_af7e8447195328adad9482aea02a3f95a}{void {\bfseries pre\+Swap} ()}\label{classb_parse_1_1b_file_af7e8447195328adad9482aea02a3f95a}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a2c447377e525ed6a88bcf0433a64b07c}{void {\bfseries write\+File} (const char $\ast$file\+Name)}\label{classb_parse_1_1b_file_a2c447377e525ed6a88bcf0433a64b07c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb_parse_1_1b_file_a89c668acca880b07a5ca643e2b1c4651}{int {\bfseries get\+Next\+Block} (\hyperlink{classb_parse_1_1b_chunk_ind}{b\+Chunk\+Ind} $\ast$data\+Chunk, const char $\ast$data\+Ptr, const int flags)}\label{classb_parse_1_1b_file_a89c668acca880b07a5ca643e2b1c4651}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_aae6245678a0e8bb644dd1ee57465c399}{void {\bfseries safe\+Swap\+Ptr} (char $\ast$dst, const char $\ast$src)}\label{classb_parse_1_1b_file_aae6245678a0e8bb644dd1ee57465c399}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a432a53521c83bfacc237a804baa2fdf8}{virtual void {\bfseries parse\+Header} ()}\label{classb_parse_1_1b_file_a432a53521c83bfacc237a804baa2fdf8}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a2e56087659bf18797b2be3faa497269f}{virtual void {\bfseries parse\+Data} ()=0}\label{classb_parse_1_1b_file_a2e56087659bf18797b2be3faa497269f}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ad0b066dbb1432fadc409459f1bf9b704}{void {\bfseries resolve\+Pointers\+Mismatch} ()}\label{classb_parse_1_1b_file_ad0b066dbb1432fadc409459f1bf9b704}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a29fd1be50eeeed19ca8ce9c54a8211d3}{void \hyperlink{classb_parse_1_1b_file_a29fd1be50eeeed19ca8ce9c54a8211d3}{resolve\+Pointers\+Chunk} (const \hyperlink{classb_parse_1_1b_chunk_ind}{b\+Chunk\+Ind} \&data\+Chunk, int verbose\+Mode)}\label{classb_parse_1_1b_file_a29fd1be50eeeed19ca8ce9c54a8211d3}
+
+\begin{DoxyCompactList}\small\item\em this loop only works fine if the Blender D\+N\+A structure of the file matches the headerfiles \end{DoxyCompactList}\item 
+\hypertarget{classb_parse_1_1b_file_ab87a35f4ea6fd5d3efefdb34c52aced6}{int {\bfseries resolve\+Pointers\+Struct\+Recursive} (char $\ast$strc\+Ptr, int old\+\_\+dna, int verbose\+Mode, int recursion)}\label{classb_parse_1_1b_file_ab87a35f4ea6fd5d3efefdb34c52aced6}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a4d4b84673c03817f2a4443207008df23}{void {\bfseries parse\+Struct} (char $\ast$strc\+Ptr, char $\ast$dt\+Ptr, int old\+\_\+dna, int new\+\_\+dna, bool fixup\+Pointers)}\label{classb_parse_1_1b_file_a4d4b84673c03817f2a4443207008df23}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_afa0359601d7a70315344d12342c09eee}{void {\bfseries get\+Matching\+File\+D\+N\+A} (short $\ast$old, const char $\ast$lookup\+Name, const char $\ast$lookup\+Type, char $\ast$strc\+Data, char $\ast$data, bool fixup\+Pointers)}\label{classb_parse_1_1b_file_afa0359601d7a70315344d12342c09eee}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ab1102226a3ea19917868f2917266a6ff}{char $\ast$ {\bfseries get\+File\+Element} (short $\ast$first\+Struct, char $\ast$lookup\+Name, char $\ast$lookup\+Type, char $\ast$data, short $\ast$$\ast$found\+Pos)}\label{classb_parse_1_1b_file_ab1102226a3ea19917868f2917266a6ff}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a251cab78d1f7b932dfd705b1b6409d4f}{void {\bfseries swap} (char $\ast$head, class \hyperlink{classb_parse_1_1b_chunk_ind}{b\+Chunk\+Ind} \&ch, bool ignore\+Endian\+Flag)}\label{classb_parse_1_1b_file_a251cab78d1f7b932dfd705b1b6409d4f}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ae64a2a1c675b615773064a534853327a}{void {\bfseries swap\+Data} (char $\ast$data, short type, int array\+Size, bool ignore\+Endian\+Flag)}\label{classb_parse_1_1b_file_ae64a2a1c675b615773064a534853327a}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_adee3d154d50396c03f06082d3e560fe7}{void {\bfseries swap\+Struct} (int dna\+\_\+nr, char $\ast$data, bool ignore\+Endian\+Flag)}\label{classb_parse_1_1b_file_adee3d154d50396c03f06082d3e560fe7}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a875ab7a243a64045fc7c5ba6221fb6ba}{void {\bfseries swap\+Len} (char $\ast$data\+Ptr)}\label{classb_parse_1_1b_file_a875ab7a243a64045fc7c5ba6221fb6ba}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ae836c09059c43f2f352f102796d80cf4}{void {\bfseries swap\+D\+N\+A} (char $\ast$ptr)}\label{classb_parse_1_1b_file_ae836c09059c43f2f352f102796d80cf4}
+
+\item 
+char $\ast$ \hyperlink{classb_parse_1_1b_file_a66f6614a7df03f089240fc25539f0fa1}{read\+Struct} (char $\ast$head, class \hyperlink{classb_parse_1_1b_chunk_ind}{b\+Chunk\+Ind} \&\hyperlink{structchunk}{chunk})
+\item 
+\hypertarget{classb_parse_1_1b_file_a21ece4c11349d31dc48eac217cf66dcc}{char $\ast$ {\bfseries get\+As\+String} (int \hyperlink{structcode}{code})}\label{classb_parse_1_1b_file_a21ece4c11349d31dc48eac217cf66dcc}
+
+\item 
+void \hyperlink{classb_parse_1_1b_file_a2a8cb9d151dfa612f0eb86a705f4bb5d}{parse\+Internal} (int verbose\+Mode, char $\ast$mem\+Dna, int mem\+Dna\+Length)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb_parse_1_1b_file_abae5bad41a43585e2eb24a1d146ae258}{char {\bfseries m\+\_\+header\+String} \mbox{[}7\mbox{]}}\label{classb_parse_1_1b_file_abae5bad41a43585e2eb24a1d146ae258}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ad0102f45f202315b4bab6ab15f998213}{bool {\bfseries m\+Owns\+Buffer}}\label{classb_parse_1_1b_file_ad0102f45f202315b4bab6ab15f998213}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a7fe9b9e8d5e2bf316dac3426685e7578}{char $\ast$ {\bfseries m\+File\+Buffer}}\label{classb_parse_1_1b_file_a7fe9b9e8d5e2bf316dac3426685e7578}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a06509c565bfcdc3b19f96aa4c9f5c956}{int {\bfseries m\+File\+Len}}\label{classb_parse_1_1b_file_a06509c565bfcdc3b19f96aa4c9f5c956}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a57d3b746d3b4d2666f857c2a7985c374}{int {\bfseries m\+Version}}\label{classb_parse_1_1b_file_a57d3b746d3b4d2666f857c2a7985c374}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a68b9f2596e8bebf9413efe4080aa2b5d}{\hyperlink{classbt_hash_map}{b\+Ptr\+Map} {\bfseries m\+Lib\+Pointers}}\label{classb_parse_1_1b_file_a68b9f2596e8bebf9413efe4080aa2b5d}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a4b453eb938ec99f8c74fd63689ee7636}{int {\bfseries m\+Data\+Start}}\label{classb_parse_1_1b_file_a4b453eb938ec99f8c74fd63689ee7636}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_aeefa3140671c40f276a7e1cda018d497}{\hyperlink{classb_parse_1_1b_d_n_a}{b\+D\+N\+A} $\ast$ {\bfseries m\+File\+D\+N\+A}}\label{classb_parse_1_1b_file_aeefa3140671c40f276a7e1cda018d497}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a13057d110a7584afb9caa9edc65258c2}{\hyperlink{classb_parse_1_1b_d_n_a}{b\+D\+N\+A} $\ast$ {\bfseries m\+Memory\+D\+N\+A}}\label{classb_parse_1_1b_file_a13057d110a7584afb9caa9edc65258c2}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a26c8befb4e7790a9c1dfd68b64ba4315}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ char $\ast$ $>$ {\bfseries m\+\_\+pointer\+Fixup\+Array}}\label{classb_parse_1_1b_file_a26c8befb4e7790a9c1dfd68b64ba4315}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a3190a5c1b55d135eb88762d01c8e1052}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ char $\ast$ $>$ {\bfseries m\+\_\+pointer\+Ptr\+Fixup\+Array}}\label{classb_parse_1_1b_file_a3190a5c1b55d135eb88762d01c8e1052}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a439e5beeb0b62d226b76374361c15d5a}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ \hyperlink{classb_parse_1_1b_chunk_ind}{b\+Chunk\+Ind} $>$ {\bfseries m\+\_\+chunks}}\label{classb_parse_1_1b_file_a439e5beeb0b62d226b76374361c15d5a}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a56687f687040b037acdd24e196cdda8b}{\hyperlink{classbt_hash_map}{bt\+Hash\+Map}$<$ \hyperlink{classbt_hash_ptr}{bt\+Hash\+Ptr}, \hyperlink{classb_parse_1_1b_chunk_ind}{b\+Chunk\+Ind} $>$ {\bfseries m\+\_\+chunk\+Ptr\+Ptr\+Map}}\label{classb_parse_1_1b_file_a56687f687040b037acdd24e196cdda8b}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_a03276b8f9ddd01c5f5e041747b3abb20}{\hyperlink{classbt_hash_map}{b\+Ptr\+Map} {\bfseries m\+Data\+Pointers}}\label{classb_parse_1_1b_file_a03276b8f9ddd01c5f5e041747b3abb20}
+
+\item 
+\hypertarget{classb_parse_1_1b_file_ae64c75b8f5fc03576fab4dfdf30dabcb}{int {\bfseries m\+Flags}}\label{classb_parse_1_1b_file_ae64c75b8f5fc03576fab4dfdf30dabcb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classb_parse_1_1b_file_a2a8cb9d151dfa612f0eb86a705f4bb5d}{\index{b\+Parse\+::b\+File@{b\+Parse\+::b\+File}!parse\+Internal@{parse\+Internal}}
+\index{parse\+Internal@{parse\+Internal}!b\+Parse\+::b\+File@{b\+Parse\+::b\+File}}
+\subsubsection[{parse\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void b\+File\+::parse\+Internal (
+\begin{DoxyParamCaption}
+\item[{int}]{verbose\+Mode, }
+\item[{char $\ast$}]{mem\+Dna, }
+\item[{int}]{mem\+Dna\+Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classb_parse_1_1b_file_a2a8cb9d151dfa612f0eb86a705f4bb5d}
+m\+File\+D\+N\+A-\/$>$init will convert part of D\+N\+A file endianness to current C\+P\+U endianness if necessary
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000016}{Todo}]we need a better version check, add version/sub version info from File\+Global into memory D\+N\+A/header files \end{DoxyRefDesc}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classb_parse_1_1b_file_a66f6614a7df03f089240fc25539f0fa1}{\index{b\+Parse\+::b\+File@{b\+Parse\+::b\+File}!read\+Struct@{read\+Struct}}
+\index{read\+Struct@{read\+Struct}!b\+Parse\+::b\+File@{b\+Parse\+::b\+File}}
+\subsubsection[{read\+Struct}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ b\+File\+::read\+Struct (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{head, }
+\item[{class {\bf b\+Chunk\+Ind} \&}]{chunk}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classb_parse_1_1b_file_a66f6614a7df03f089240fc25539f0fa1}
+don't try to convert Link block data, just memcpy it. Other data can be converted. \hypertarget{classb_parse_1_1b_file_a783f3e51f415da9508b4e3ad334bfd9e}{\index{b\+Parse\+::b\+File@{b\+Parse\+::b\+File}!write\+Chunks@{write\+Chunks}}
+\index{write\+Chunks@{write\+Chunks}!b\+Parse\+::b\+File@{b\+Parse\+::b\+File}}
+\subsubsection[{write\+Chunks}]{\setlength{\rightskip}{0pt plus 5cm}void b\+File\+::write\+Chunks (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{fp, }
+\item[{bool}]{fixup\+Pointers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classb_parse_1_1b_file_a783f3e51f415da9508b4e3ad334bfd9e}
+don't try to convert Link block data, just memcpy it. Other data can be converted. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+Serialize/\+Bullet\+File\+Loader/b\+File.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Extras/\+Serialize/\+Bullet\+File\+Loader/b\+File.\+cpp\end{DoxyCompactItemize}

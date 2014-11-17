@@ -1,0 +1,177 @@
+\hypertarget{_f_b_x_document_8h}{\section{assimp/assimp-\/3.1.1/code/\+F\+B\+X\+Document.h File Reference}
+\label{_f_b_x_document_8h}\index{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Document.\+h@{assimp/assimp-\/3.\+1.\+1/code/\+F\+B\+X\+Document.\+h}}
+}
+
+
+F\+B\+X D\+O\+M.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}F\+B\+X\+Properties.\+h\char`\"{}}\\*
+Include dependency graph for F\+B\+X\+Document.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_lazy_object}{Assimp\+::\+F\+B\+X\+::\+Lazy\+Object}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_object}{Assimp\+::\+F\+B\+X\+::\+Object}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_node_attribute}{Assimp\+::\+F\+B\+X\+::\+Node\+Attribute}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_camera_switcher}{Assimp\+::\+F\+B\+X\+::\+Camera\+Switcher}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_camera}{Assimp\+::\+F\+B\+X\+::\+Camera}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_null}{Assimp\+::\+F\+B\+X\+::\+Null}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_limb_node}{Assimp\+::\+F\+B\+X\+::\+Limb\+Node}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_light}{Assimp\+::\+F\+B\+X\+::\+Light}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_model}{Assimp\+::\+F\+B\+X\+::\+Model}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_texture}{Assimp\+::\+F\+B\+X\+::\+Texture}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_layered_texture}{Assimp\+::\+F\+B\+X\+::\+Layered\+Texture}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_material}{Assimp\+::\+F\+B\+X\+::\+Material}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_geometry}{Assimp\+::\+F\+B\+X\+::\+Geometry}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_mesh_geometry}{Assimp\+::\+F\+B\+X\+::\+Mesh\+Geometry}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_animation_curve}{Assimp\+::\+F\+B\+X\+::\+Animation\+Curve}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_animation_curve_node}{Assimp\+::\+F\+B\+X\+::\+Animation\+Curve\+Node}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_animation_layer}{Assimp\+::\+F\+B\+X\+::\+Animation\+Layer}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_animation_stack}{Assimp\+::\+F\+B\+X\+::\+Animation\+Stack}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_deformer}{Assimp\+::\+F\+B\+X\+::\+Deformer}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_cluster}{Assimp\+::\+F\+B\+X\+::\+Cluster}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_skin}{Assimp\+::\+F\+B\+X\+::\+Skin}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_connection}{Assimp\+::\+F\+B\+X\+::\+Connection}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_file_global_settings}{Assimp\+::\+F\+B\+X\+::\+File\+Global\+Settings}
+\item 
+class \hyperlink{class_assimp_1_1_f_b_x_1_1_document}{Assimp\+::\+F\+B\+X\+::\+Document}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_b_x_document_8h_a30b8f8e1150655d597b4b69113ada01f}{\#define {\bfseries fbx\+\_\+stringize}(a)~\#a}\label{_f_b_x_document_8h_a30b8f8e1150655d597b4b69113ada01f}
+
+\item 
+\#define {\bfseries fbx\+\_\+simple\+\_\+property}(name, type, default\+\_\+value)
+\item 
+\#define {\bfseries fbx\+\_\+simple\+\_\+enum\+\_\+property}(name, type, default\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a5a586d606b7f70710f7c230e15c74d88}{typedef std\+::fbx\+\_\+unordered\+\_\+map\\*
+$<$ std\+::string, const Texture $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Texture\+Map}}\label{namespace_assimp_1_1_f_b_x_a5a586d606b7f70710f7c230e15c74d88}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_acd6356084ee572b9ea3d594d78626898}{typedef std\+::fbx\+\_\+unordered\+\_\+map\\*
+$<$ std\+::string, const \\*
+Layered\+Texture $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Layered\+Texture\+Map}}\label{namespace_assimp_1_1_f_b_x_acd6356084ee572b9ea3d594d78626898}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_afc6d9e0e6a25ad2952c7cc56fe5d75c8}{typedef std\+::vector$<$ int $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Mat\+Index\+Array}}\label{namespace_assimp_1_1_f_b_x_afc6d9e0e6a25ad2952c7cc56fe5d75c8}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a58d245828e7f4c7c5c55d893a3c6ff54}{typedef std\+::vector$<$ uint64\+\_\+t $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Key\+Time\+List}}\label{namespace_assimp_1_1_f_b_x_a58d245828e7f4c7c5c55d893a3c6ff54}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_ab31b1a5fcfc6ec85230bc00ea32575da}{typedef std\+::vector$<$ float $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Key\+Value\+List}}\label{namespace_assimp_1_1_f_b_x_ab31b1a5fcfc6ec85230bc00ea32575da}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_ab5ba43428523cc552b9817d9bbef5e0b}{typedef std\+::map$<$ std\+::string, \\*
+const Animation\+Curve $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Animation\+Curve\+Map}}\label{namespace_assimp_1_1_f_b_x_ab5ba43428523cc552b9817d9bbef5e0b}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a1f36917ff8f38be8e011010bf7c0a417}{typedef std\+::vector$<$ const \\*
+Animation\+Curve\+Node $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Animation\+Curve\+Node\+List}}\label{namespace_assimp_1_1_f_b_x_a1f36917ff8f38be8e011010bf7c0a417}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a5b4642446c15491d24445cb9e304e8b1}{typedef std\+::vector$<$ const \\*
+Animation\+Layer $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Animation\+Layer\+List}}\label{namespace_assimp_1_1_f_b_x_a5b4642446c15491d24445cb9e304e8b1}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_aad95d8429bf7b24c3f6f1911f92ce750}{typedef std\+::vector$<$ float $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Weight\+Array}}\label{namespace_assimp_1_1_f_b_x_aad95d8429bf7b24c3f6f1911f92ce750}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a5dcec75e84eca6860715b9a0daa6b83b}{typedef std\+::vector$<$ unsigned int $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Weight\+Index\+Array}}\label{namespace_assimp_1_1_f_b_x_a5dcec75e84eca6860715b9a0daa6b83b}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a7a987602bd4571e5b40a79de9d0e2b4a}{typedef std\+::map$<$ uint64\+\_\+t, \\*
+Lazy\+Object $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Object\+Map}}\label{namespace_assimp_1_1_f_b_x_a7a987602bd4571e5b40a79de9d0e2b4a}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a3e33a58e064488174103b4a75b7c941d}{typedef std\+::fbx\+\_\+unordered\+\_\+map\\*
+$<$ std\+::string, \\*
+\hyperlink{classboost_1_1shared__ptr}{boost\+::shared\+\_\+ptr}$<$ const \\*
+Property\+Table $>$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Property\+Template\+Map}}\label{namespace_assimp_1_1_f_b_x_a3e33a58e064488174103b4a75b7c941d}
+
+\item 
+\hypertarget{namespace_assimp_1_1_f_b_x_a4c36eb5eb2aa62b7b30d503f77f6241c}{typedef std\+::multimap\\*
+$<$ uint64\+\_\+t, const Connection $\ast$ $>$ {\bfseries Assimp\+::\+F\+B\+X\+::\+Connection\+Map}}\label{namespace_assimp_1_1_f_b_x_a4c36eb5eb2aa62b7b30d503f77f6241c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+B\+X D\+O\+M. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_f_b_x_document_8h_ad0a6433d9e7c2a300517dd4c7238d408}{\index{F\+B\+X\+Document.\+h@{F\+B\+X\+Document.\+h}!fbx\+\_\+simple\+\_\+enum\+\_\+property@{fbx\+\_\+simple\+\_\+enum\+\_\+property}}
+\index{fbx\+\_\+simple\+\_\+enum\+\_\+property@{fbx\+\_\+simple\+\_\+enum\+\_\+property}!F\+B\+X\+Document.\+h@{F\+B\+X\+Document.\+h}}
+\subsubsection[{fbx\+\_\+simple\+\_\+enum\+\_\+property}]{\setlength{\rightskip}{0pt plus 5cm}\#define fbx\+\_\+simple\+\_\+enum\+\_\+property(
+\begin{DoxyParamCaption}
+\item[{}]{name, }
+\item[{}]{type, }
+\item[{}]{default\+\_\+value}
+\end{DoxyParamCaption}
+)}}\label{_f_b_x_document_8h_ad0a6433d9e7c2a300517dd4c7238d408}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+type name()\textcolor{keyword}{ const }\{ \(\backslash\)
+        const \textcolor{keywordtype}{int} ival = PropertyGet<int>(Props(), fbx\_stringize(name), \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(default\_value)); \(\backslash\)
+        if (ival < 0 || ival >= AI\_CONCAT(type, \_MAX)) \{ \(\backslash\)
+            ai\_assert(static\_cast<int>(default\_value) >= 0 && static\_cast<int>(default\_value) < AI\_CONCAT(
+      type, \_MAX)); \(\backslash\)
+            return \textcolor{keyword}{static\_cast<}type\textcolor{keyword}{>}(default\_value); \(\backslash\)
+        \} \(\backslash\)
+        return \textcolor{keyword}{static\_cast<}type\textcolor{keyword}{>}(ival); \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{_f_b_x_document_8h_ac013891e2994c3b712afd691f3fb04ae}{\index{F\+B\+X\+Document.\+h@{F\+B\+X\+Document.\+h}!fbx\+\_\+simple\+\_\+property@{fbx\+\_\+simple\+\_\+property}}
+\index{fbx\+\_\+simple\+\_\+property@{fbx\+\_\+simple\+\_\+property}!F\+B\+X\+Document.\+h@{F\+B\+X\+Document.\+h}}
+\subsubsection[{fbx\+\_\+simple\+\_\+property}]{\setlength{\rightskip}{0pt plus 5cm}\#define fbx\+\_\+simple\+\_\+property(
+\begin{DoxyParamCaption}
+\item[{}]{name, }
+\item[{}]{type, }
+\item[{}]{default\+\_\+value}
+\end{DoxyParamCaption}
+)}}\label{_f_b_x_document_8h_ac013891e2994c3b712afd691f3fb04ae}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+type name()\textcolor{keyword}{ const }\{ \(\backslash\)
+        return PropertyGet<type>(Props(), fbx\_stringize(name), (default\_value)); \(\backslash\)
+    \}
+\end{DoxyCode}

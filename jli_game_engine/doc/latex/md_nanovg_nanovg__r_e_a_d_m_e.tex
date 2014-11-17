@@ -1,0 +1,92 @@
+/work in progress.../
+
+\section*{Nano\+V\+G }
+
+Nano\+V\+G is small antialiased vector graphics rendering library for Open\+G\+L. It has lean A\+P\+I modeled after H\+T\+M\+L5 canvas A\+P\+I. It is aimed to be a practical and fun toolset for building scalable user interfaces and visualizations.
+
+\subsection*{Screenshot}
+
+
+
+\section*{Usage }
+
+The Nano\+V\+G A\+P\+I is modeled loosely on H\+T\+M\+L5 canvas A\+P\+I. If you know canvas, you're up to speed with Nano\+V\+G in no time.
+
+\subsection*{Creating drawing context}
+
+The drawing context is created using platform specific constructor function. If you're using the a Open\+G\+L 2.\+0 back-\/end the context is created as follows\+: ```\+C \#define N\+A\+N\+O\+V\+G\+\_\+\+G\+L2\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+O\+N // Use G\+L2 implementation. \#include \char`\"{}nanovg\+\_\+gl.\+h\char`\"{} ... struct N\+V\+Gcontext$\ast$ vg = nvg\+Create\+G\+L2(N\+V\+G\+\_\+\+A\+N\+T\+I\+A\+L\+I\+A\+S $\vert$ N\+V\+G\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+T\+R\+O\+K\+E\+S); ```
+
+The first parameter defines flags for creating the renderer.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily N\+V\+G\+\_\+\+A\+N\+T\+I\+A\+L\+I\+A\+S} means that the renderer adjusts the geometry to include anti-\/aliasing. If you're using M\+S\+A\+A, you can omit this flags.
+\item {\ttfamily N\+V\+G\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+T\+R\+O\+K\+E\+S} means that the render uses better quality rendering for (overlapping) strokes. The quality is mostly visible on wider strokes. If you want speed, you can omit this flag.
+\end{DoxyItemize}
+
+Currently there is an Open\+G\+L back-\/end for Nano\+V\+G\+: \href{/src/nanovg_gl.h}{\tt nanovg\+\_\+gl.\+h} for Open\+G\+L 2.\+0, Open\+G\+L E\+S 2.\+0, Open\+G\+L 3.\+2 core profile and Open\+G\+L E\+S 3. The implementation can be chosen using a define as in above example. See the header file and examples for further info.
+
+\subsection*{Drawing shapes with Nano\+V\+G}
+
+Drawing a simple shape using Nano\+V\+G consists of four steps\+: 1) begin a new shape, 2) define the path to draw, 3) set fill or stroke, 4) and finally fill or stroke the path.
+
+```\+C nvg\+Begin\+Path(vg); nvg\+Rect(vg, 100,100, 120,30); nvg\+Fill\+Color(vg, nvg\+R\+G\+B\+A(255,192,0,255)); nvg\+Fill(vg); ```
+
+Calling {\ttfamily nvg\+Begin\+Path()} will clear any existing paths and start drawing from blank slate. There are number of number of functions to define the path to draw, such as rectangle, rounded rectangle and ellipse, or you can use the common move\+To, line\+To, bezier\+To and arc\+To A\+P\+I to compose the paths step by step.
+
+\subsection*{Understanding Composite Paths}
+
+Because of the way the rendering backend is build in Nano\+V\+G, drawing a composite path, that is path consisting from multiple paths defining holes and fills, is a bit more involved. Nano\+V\+G uses even-\/odd filling rule and by default the paths are wound in counter clockwise order. Keep that in mind when drawing using the low level draw A\+P\+I. In order to wind one of the predefined shapes as a hole, you should call {\ttfamily nvg\+Path\+Winding(vg, N\+V\+G\+\_\+\+H\+O\+L\+E)}, or {\ttfamily nvg\+Path\+Winding(vg, N\+V\+G\+\_\+\+C\+W)} {\itshape after} defining the path.
+
+``` C nvg\+Begin\+Path(vg); nvg\+Rect(vg, 100,100, 120,30); nvg\+Circle(vg, 120,120, 5); nvg\+Path\+Winding(vg, N\+V\+G\+\_\+\+H\+O\+L\+E); // Mark circle as a hole. nvg\+Fill\+Color(vg, nvg\+R\+G\+B\+A(255,192,0,255)); nvg\+Fill(vg); ```
+
+\subsection*{Rendering is wrong, what to do?}
+
+
+\begin{DoxyItemize}
+\item make sure you have created Nano\+V\+G context using one of the {\ttfamily nvg\+Createxxx()} calls
+\item make sure you have initialised Open\+G\+L with stencil buffer
+\item make sure you have cleared stencil buffer
+\item make sure all rendering calls happen between {\ttfamily nvg\+Begin\+Frame()} and {\ttfamily nvg\+End\+Frame()}
+\item to eanble more checks for Open\+G\+L errors, add {\ttfamily N\+V\+G\+\_\+\+D\+E\+B\+U\+G} flag to {\ttfamily nvg\+Createxxx()}
+\item if the problem still persists, please report an issue!
+\end{DoxyItemize}
+
+\subsection*{Open\+G\+L state touched by the backend}
+
+The Open\+G\+L back-\/end touches following states\+:
+
+When textures are uploaded or updated, the following pixel store is set to defaults\+: {\ttfamily G\+L\+\_\+\+U\+N\+P\+A\+C\+K\+\_\+\+A\+L\+I\+G\+N\+M\+E\+N\+T}, {\ttfamily G\+L\+\_\+\+U\+N\+P\+A\+C\+K\+\_\+\+R\+O\+W\+\_\+\+L\+E\+N\+G\+T\+H}, {\ttfamily G\+L\+\_\+\+U\+N\+P\+A\+C\+K\+\_\+\+S\+K\+I\+P\+\_\+\+P\+I\+X\+E\+L\+S}, {\ttfamily G\+L\+\_\+\+U\+N\+P\+A\+C\+K\+\_\+\+S\+K\+I\+P\+\_\+\+R\+O\+W\+S}. Texture binding is also affected. Texture updates can happen when the user loads images, or when new font glyphs are added. Glyphs are added as needed between calls to {\ttfamily nvg\+Begin\+Frame()} and {\ttfamily nvg\+End\+Frame()}.
+
+The data for the whole frame is buffered and flushed in {\ttfamily nvg\+End\+Frame()}. The following code illustrates the Open\+G\+L state touched by the rendering code\+: ```\+C gl\+Use\+Program(prog); gl\+Blend\+Func(\+G\+L\+\_\+\+S\+R\+C\+\_\+\+A\+L\+P\+H\+A, G\+L\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+R\+C\+\_\+\+A\+L\+P\+H\+A); gl\+Enable(\+G\+L\+\_\+\+C\+U\+L\+L\+\_\+\+F\+A\+C\+E); gl\+Cull\+Face(\+G\+L\+\_\+\+B\+A\+C\+K); gl\+Front\+Face(\+G\+L\+\_\+\+C\+C\+W); gl\+Enable(\+G\+L\+\_\+\+B\+L\+E\+N\+D); gl\+Disable(\+G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+T\+E\+S\+T); gl\+Disable(\+G\+L\+\_\+\+S\+C\+I\+S\+S\+O\+R\+\_\+\+T\+E\+S\+T); gl\+Color\+Mask(\+G\+L\+\_\+\+T\+R\+U\+E, G\+L\+\_\+\+T\+R\+U\+E, G\+L\+\_\+\+T\+R\+U\+E, G\+L\+\_\+\+T\+R\+U\+E); gl\+Stencil\+Mask(0xffffffff); gl\+Stencil\+Op(\+G\+L\+\_\+\+K\+E\+E\+P, G\+L\+\_\+\+K\+E\+E\+P, G\+L\+\_\+\+K\+E\+E\+P); gl\+Stencil\+Func(\+G\+L\+\_\+\+A\+L\+W\+A\+Y\+S, 0, 0xffffffff); gl\+Active\+Texture(\+G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E0); gl\+Bind\+Buffer(\+G\+L\+\_\+\+U\+N\+I\+F\+O\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R, buf); gl\+Bind\+Vertex\+Array(arr); gl\+Bind\+Buffer(\+G\+L\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+B\+U\+F\+F\+E\+R, buf); gl\+Bind\+Texture(\+G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D, tex); ```
+
+\subsection*{A\+P\+I Reference}
+
+See the header file \href{/src/nanovg.h}{\tt nanovg.\+h} for A\+P\+I reference.
+
+\subsection*{Ports}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/cmaughan/nanovg}{\tt D\+X11 port} by \href{https://github.com/cmaughan}{\tt Chris Maughan}
+\item \href{https://github.com/bkaradzic/bgfx/tree/master/examples/20-nanovg}{\tt bgfx port} by \href{https://github.com/bkaradzic}{\tt Branimir Karadžić}
+\end{DoxyItemize}
+
+\subsection*{Projects using Nano\+V\+G}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/vinjn/island/blob/master/examples/01-processing/sketch2d.h}{\tt Processing A\+P\+I simulation by vinjn}
+\end{DoxyItemize}
+
+\subsection*{License}
+
+The library is licensed under \href{LICENSE.txt}{\tt zlib license}
+
+\subsection*{Discussions}
+
+\href{https://groups.google.com/forum/#!forum/nanovg}{\tt Nano\+V\+G mailing list}
+
+\subsection*{Links}
+
+Uses \href{http://nothings.org}{\tt stb\+\_\+truetype} (or, optionally, \href{http://freetype.org}{\tt freetype}) for font rendering. Uses \href{http://nothings.org}{\tt stb\+\_\+image} for image loading. 

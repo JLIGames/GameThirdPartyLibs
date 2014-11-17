@@ -1,0 +1,90 @@
+\hypertarget{classbt_hashed_overlapping_pair_cache}{\section{bt\+Hashed\+Overlapping\+Pair\+Cache Class Reference}
+\label{classbt_hashed_overlapping_pair_cache}\index{bt\+Hashed\+Overlapping\+Pair\+Cache@{bt\+Hashed\+Overlapping\+Pair\+Cache}}
+}
+
+
+Hash-\/space based \hyperlink{struct_pair}{Pair} Cache, thanks to Erin Catto, Box2\+D, \href{http://www.box2d.org,}{\tt http\+://www.\+box2d.\+org,} and Pierre Terdiman, Codercorner, \href{http://codercorner.com}{\tt http\+://codercorner.\+com}.  
+
+
+
+
+{\ttfamily \#include $<$bt\+Overlapping\+Pair\+Cache.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Hashed\+Overlapping\+Pair\+Cache\+:
+
+
+Collaboration diagram for bt\+Hashed\+Overlapping\+Pair\+Cache\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a088ca9c8bbd67fe82bb1ac8eb867cecf}{void {\bfseries remove\+Overlapping\+Pairs\+Containing\+Proxy} (bt\+Broadphase\+Proxy $\ast$proxy, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)}\label{classbt_hashed_overlapping_pair_cache_a088ca9c8bbd67fe82bb1ac8eb867cecf}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a9f2c753601f361e7ae34755e1938dcda}{virtual void $\ast$ {\bfseries remove\+Overlapping\+Pair} (bt\+Broadphase\+Proxy $\ast$proxy0, bt\+Broadphase\+Proxy $\ast$proxy1, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)}\label{classbt_hashed_overlapping_pair_cache_a9f2c753601f361e7ae34755e1938dcda}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_af7f1d9bd91c50ffb1234d2f899f96f8c}{S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries needs\+Broadphase\+Collision} (bt\+Broadphase\+Proxy $\ast$proxy0, bt\+Broadphase\+Proxy $\ast$proxy1) const }\label{classbt_hashed_overlapping_pair_cache_af7f1d9bd91c50ffb1234d2f899f96f8c}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a97935b649a0d10f831340d4f46cb82b6}{virtual bt\+Broadphase\+Pair $\ast$ {\bfseries add\+Overlapping\+Pair} (bt\+Broadphase\+Proxy $\ast$proxy0, bt\+Broadphase\+Proxy $\ast$proxy1)}\label{classbt_hashed_overlapping_pair_cache_a97935b649a0d10f831340d4f46cb82b6}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a14f6d7b7b16b7d032f8a9146c337d211}{void {\bfseries clean\+Proxy\+From\+Pairs} (bt\+Broadphase\+Proxy $\ast$proxy, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)}\label{classbt_hashed_overlapping_pair_cache_a14f6d7b7b16b7d032f8a9146c337d211}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_ae43638685e775e7de716d8b0ecb615ff}{virtual void {\bfseries process\+All\+Overlapping\+Pairs} (\hyperlink{structbt_overlap_callback}{bt\+Overlap\+Callback} $\ast$, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)}\label{classbt_hashed_overlapping_pair_cache_ae43638685e775e7de716d8b0ecb615ff}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a9c73398dc9892084bdb17847033f9c94}{virtual bt\+Broadphase\+Pair $\ast$ {\bfseries get\+Overlapping\+Pair\+Array\+Ptr} ()}\label{classbt_hashed_overlapping_pair_cache_a9c73398dc9892084bdb17847033f9c94}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a8bc1fb03edf04d7190905b1f89a6fa52}{const bt\+Broadphase\+Pair $\ast$ {\bfseries get\+Overlapping\+Pair\+Array\+Ptr} () const }\label{classbt_hashed_overlapping_pair_cache_a8bc1fb03edf04d7190905b1f89a6fa52}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_aaca68aaa41dacb5791fe90f7fc284e7c}{\hyperlink{classbt_aligned_object_array}{bt\+Broadphase\+Pair\+Array} \& {\bfseries get\+Overlapping\+Pair\+Array} ()}\label{classbt_hashed_overlapping_pair_cache_aaca68aaa41dacb5791fe90f7fc284e7c}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a961ac84996da5d933cdc5e11d0502f26}{const \hyperlink{classbt_aligned_object_array}{bt\+Broadphase\+Pair\+Array} \& {\bfseries get\+Overlapping\+Pair\+Array} () const }\label{classbt_hashed_overlapping_pair_cache_a961ac84996da5d933cdc5e11d0502f26}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a114297f90c75db7d8ab95b3a24084b6f}{void {\bfseries clean\+Overlapping\+Pair} (bt\+Broadphase\+Pair \&\hyperlink{structpair}{pair}, \hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher)}\label{classbt_hashed_overlapping_pair_cache_a114297f90c75db7d8ab95b3a24084b6f}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a386a5334130b85783393fc7c8fd05ffb}{bt\+Broadphase\+Pair $\ast$ {\bfseries find\+Pair} (bt\+Broadphase\+Proxy $\ast$proxy0, bt\+Broadphase\+Proxy $\ast$proxy1)}\label{classbt_hashed_overlapping_pair_cache_a386a5334130b85783393fc7c8fd05ffb}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a8ac591b051485e2f772e3535a5a06946}{int {\bfseries Get\+Count} () const }\label{classbt_hashed_overlapping_pair_cache_a8ac591b051485e2f772e3535a5a06946}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a423c20dadb90c50a5a889e4a649e35ff}{\hyperlink{structbt_overlap_filter_callback}{bt\+Overlap\+Filter\+Callback} $\ast$ {\bfseries get\+Overlap\+Filter\+Callback} ()}\label{classbt_hashed_overlapping_pair_cache_a423c20dadb90c50a5a889e4a649e35ff}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a9af1a20fd2d8c1d28423114760a72aa1}{void {\bfseries set\+Overlap\+Filter\+Callback} (\hyperlink{structbt_overlap_filter_callback}{bt\+Overlap\+Filter\+Callback} $\ast$callback)}\label{classbt_hashed_overlapping_pair_cache_a9af1a20fd2d8c1d28423114760a72aa1}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_ac18b70a1c5ea9f1007e8dc0fc208f0c1}{int {\bfseries get\+Num\+Overlapping\+Pairs} () const }\label{classbt_hashed_overlapping_pair_cache_ac18b70a1c5ea9f1007e8dc0fc208f0c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_ac071df80073cddd338ef5327a19f398f}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ int $>$ {\bfseries m\+\_\+hash\+Table}}\label{classbt_hashed_overlapping_pair_cache_ac071df80073cddd338ef5327a19f398f}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_a2d966f0e1420667e5e3257f9ba6b95e6}{\hyperlink{classbt_aligned_object_array}{bt\+Aligned\+Object\+Array}$<$ int $>$ {\bfseries m\+\_\+next}}\label{classbt_hashed_overlapping_pair_cache_a2d966f0e1420667e5e3257f9ba6b95e6}
+
+\item 
+\hypertarget{classbt_hashed_overlapping_pair_cache_ad1ec72194e97b9142c511ca46312fb74}{\hyperlink{classbt_overlapping_pair_callback}{bt\+Overlapping\+Pair\+Callback} $\ast$ {\bfseries m\+\_\+ghost\+Pair\+Callback}}\label{classbt_hashed_overlapping_pair_cache_ad1ec72194e97b9142c511ca46312fb74}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hash-\/space based \hyperlink{struct_pair}{Pair} Cache, thanks to Erin Catto, Box2\+D, \href{http://www.box2d.org,}{\tt http\+://www.\+box2d.\+org,} and Pierre Terdiman, Codercorner, \href{http://codercorner.com}{\tt http\+://codercorner.\+com}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Broadphase\+Collision/bt\+Overlapping\+Pair\+Cache.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Broadphase\+Collision/bt\+Overlapping\+Pair\+Cache.\+cpp\end{DoxyCompactItemize}

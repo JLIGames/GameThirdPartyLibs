@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Beginner/03_Texturing/OGLES/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_57dd84b079569a5762afcf67c432695b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_57dd84b079569a5762afcf67c432695b.html"]
+  subgraph clusterdir_81ca62733632bee2af8eb4e4687bcc1b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_81ca62733632bee2af8eb4e4687bcc1b.html"];
+    dir_81ca62733632bee2af8eb4e4687bcc1b [shape=plaintext label="com"];
+    dir_c7b58bf65a3c3b1dc1a6e5532952d877 [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_c7b58bf65a3c3b1dc1a6e5532952d877.html"];
+  }
+  }
+}

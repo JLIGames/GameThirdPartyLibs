@@ -1,0 +1,12 @@
+digraph "assimp/assimp-3.1.1/contrib/irrXML" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1510c05bdfd0076f7fcbe68696d9ed81 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_1510c05bdfd0076f7fcbe68696d9ed81.html"]
+  dir_8105aa23740fa89c47edef59a3c2e5cc [shape=box, label="irrXML", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8105aa23740fa89c47edef59a3c2e5cc.html"];
+  }
+  dir_5f48190eefbf2d9887c40319c3006284 [shape=box label="code" fillcolor="white" style="filled" color="red" URL="dir_5f48190eefbf2d9887c40319c3006284.html"];
+  dir_5f48190eefbf2d9887c40319c3006284->dir_8105aa23740fa89c47edef59a3c2e5cc [headlabel="1", labeldistance=1.5 headhref="dir_000004_000086.html"];
+  dir_8105aa23740fa89c47edef59a3c2e5cc->dir_5f48190eefbf2d9887c40319c3006284 [headlabel="1", labeldistance=1.5 headhref="dir_000086_000004.html"];
+}

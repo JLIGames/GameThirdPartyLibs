@@ -1,0 +1,24 @@
+digraph "codec_setup_info"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="codec_setup_info",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" book_param" ];
+  Node2 [label="static_codebook",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstatic__codebook.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_g_param" ];
+  Node3 [label="vorbis_info_psy_global",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__psy__global.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bi" ];
+  Node4 [label="bitrate_manager_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbitrate__manager__info.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mode_param" ];
+  Node5 [label="vorbis_info_mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__mode.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" hi" ];
+  Node6 [label="highlevel_encode_setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structhighlevel__encode__setup.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" block" ];
+  Node7 [label="highlevel_byblocktype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structhighlevel__byblocktype.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" psy_param" ];
+  Node8 [label="vorbis_info_psy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvorbis__info__psy.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fullbooks" ];
+  Node9 [label="codebook",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcodebook.html"];
+  Node2 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" c" ];
+}

@@ -12,6 +12,9 @@
 #include "Util.h"
 #include "btAlignedAllocator.h"
 
+/**
+ *  The description of AbstractObject
+ */
 ATTRIBUTE_ALIGNED16(class) AbstractObject
 {
 protected:
@@ -20,6 +23,7 @@ protected:
     BT_DECLARE_ALIGNED_ALLOCATOR();
 
     virtual const char *getName()const = 0;
+    virtual u32 getType()const = 0;
 };
 
 #endif

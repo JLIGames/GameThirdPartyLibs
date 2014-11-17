@@ -1,0 +1,16 @@
+digraph "3d_viewer.PyAssimp3DViewer.recursive_render"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="3d_viewer.PyAssimp3DViewer.recursive\l_render",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="fixed_pipeline_3d_viewer.\lGLRenderer.recursive_render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfixed__pipeline__3d__viewer_1_1_g_l_renderer.html#a3387a4806b9759ce0d59225ac7acfe97"];
+  Node2 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="fixed_pipeline_3d_viewer.\lGLRenderer.display",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfixed__pipeline__3d__viewer_1_1_g_l_renderer.html#af991fe369b4d64f2e5ebae70185b04e0"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="fixed_pipeline_3d_viewer.\lGLRenderer.render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfixed__pipeline__3d__viewer_1_1_g_l_renderer.html#a5dfe5225ce2a1e23d3b55fbe698c82fd"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

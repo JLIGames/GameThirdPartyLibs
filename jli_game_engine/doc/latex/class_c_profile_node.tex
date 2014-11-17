@@ -1,0 +1,99 @@
+\hypertarget{class_c_profile_node}{\section{C\+Profile\+Node Class Reference}
+\label{class_c_profile_node}\index{C\+Profile\+Node@{C\+Profile\+Node}}
+}
+
+
+A node in the Profile Hierarchy Tree.  
+
+
+
+
+{\ttfamily \#include $<$bt\+Quickprof.\+h$>$}
+
+
+
+Collaboration diagram for C\+Profile\+Node\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_profile_node_ab393ec70fb6ff1f0b840cafe0fe8e79d}{{\bfseries C\+Profile\+Node} (const char $\ast$name, \hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$parent)}\label{class_c_profile_node_ab393ec70fb6ff1f0b840cafe0fe8e79d}
+
+\item 
+\hypertarget{class_c_profile_node_a584af056fe36ae010ecf7a7708eb0017}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Get\+\_\+\+Sub\+\_\+\+Node} (const char $\ast$name)}\label{class_c_profile_node_a584af056fe36ae010ecf7a7708eb0017}
+
+\item 
+\hypertarget{class_c_profile_node_afe335d3cf4c294f6a2bae4595c8ccda6}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Get\+\_\+\+Parent} (void)}\label{class_c_profile_node_afe335d3cf4c294f6a2bae4595c8ccda6}
+
+\item 
+\hypertarget{class_c_profile_node_aac31b3576cef057f06b2ff4e930f6d0c}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Get\+\_\+\+Sibling} (void)}\label{class_c_profile_node_aac31b3576cef057f06b2ff4e930f6d0c}
+
+\item 
+\hypertarget{class_c_profile_node_a171b7886d2db03dcc36201af90a70db3}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Get\+\_\+\+Child} (void)}\label{class_c_profile_node_a171b7886d2db03dcc36201af90a70db3}
+
+\item 
+\hypertarget{class_c_profile_node_ac27e3242dddce582f00c547a1902f98b}{void {\bfseries Cleanup\+Memory} ()}\label{class_c_profile_node_ac27e3242dddce582f00c547a1902f98b}
+
+\item 
+\hypertarget{class_c_profile_node_a25a7a17877ad7f9d2c8877f2feb835b1}{void {\bfseries Reset} (void)}\label{class_c_profile_node_a25a7a17877ad7f9d2c8877f2feb835b1}
+
+\item 
+\hypertarget{class_c_profile_node_a84fa2b81790b80ea102e9a9c54b4575b}{void {\bfseries Call} (void)}\label{class_c_profile_node_a84fa2b81790b80ea102e9a9c54b4575b}
+
+\item 
+\hypertarget{class_c_profile_node_abd4c26ddcc6d0a465895464ac3462320}{bool {\bfseries Return} (void)}\label{class_c_profile_node_abd4c26ddcc6d0a465895464ac3462320}
+
+\item 
+\hypertarget{class_c_profile_node_a0af3916dd6cf018aee54a20c4a178050}{const char $\ast$ {\bfseries Get\+\_\+\+Name} (void)}\label{class_c_profile_node_a0af3916dd6cf018aee54a20c4a178050}
+
+\item 
+\hypertarget{class_c_profile_node_abfc5ebc32324b0881110e25cb3fc65e6}{int {\bfseries Get\+\_\+\+Total\+\_\+\+Calls} (void)}\label{class_c_profile_node_abfc5ebc32324b0881110e25cb3fc65e6}
+
+\item 
+\hypertarget{class_c_profile_node_a75c164c4bc98ef802f4b8690050c429a}{float {\bfseries Get\+\_\+\+Total\+\_\+\+Time} (void)}\label{class_c_profile_node_a75c164c4bc98ef802f4b8690050c429a}
+
+\item 
+\hypertarget{class_c_profile_node_a87e983052d7e2c9adb93a17dcbecb492}{void $\ast$ {\bfseries Get\+User\+Pointer} () const }\label{class_c_profile_node_a87e983052d7e2c9adb93a17dcbecb492}
+
+\item 
+\hypertarget{class_c_profile_node_a853e6dabe024e9fb334222cea7c788e2}{void {\bfseries Set\+User\+Pointer} (void $\ast$ptr)}\label{class_c_profile_node_a853e6dabe024e9fb334222cea7c788e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_profile_node_a55a4aeeef62619ec1ecabd18e7fd95b9}{const char $\ast$ {\bfseries Name}}\label{class_c_profile_node_a55a4aeeef62619ec1ecabd18e7fd95b9}
+
+\item 
+\hypertarget{class_c_profile_node_a2a19e52aa6b96174d010b3c48fccc8cd}{int {\bfseries Total\+Calls}}\label{class_c_profile_node_a2a19e52aa6b96174d010b3c48fccc8cd}
+
+\item 
+\hypertarget{class_c_profile_node_a006b92703a98e8c9f238a08749115125}{float {\bfseries Total\+Time}}\label{class_c_profile_node_a006b92703a98e8c9f238a08749115125}
+
+\item 
+\hypertarget{class_c_profile_node_a99f6de1d168f7d52a43dac96b43d4cc5}{unsigned long int {\bfseries Start\+Time}}\label{class_c_profile_node_a99f6de1d168f7d52a43dac96b43d4cc5}
+
+\item 
+\hypertarget{class_c_profile_node_adf5b1996ba56ff4dfcf3f67549844fa5}{int {\bfseries Recursion\+Counter}}\label{class_c_profile_node_adf5b1996ba56ff4dfcf3f67549844fa5}
+
+\item 
+\hypertarget{class_c_profile_node_a36e3ae90a4e4e94a147beac175f53857}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Parent}}\label{class_c_profile_node_a36e3ae90a4e4e94a147beac175f53857}
+
+\item 
+\hypertarget{class_c_profile_node_a1920ddb6de0e3608d4f37e0ba0dd6b29}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Child}}\label{class_c_profile_node_a1920ddb6de0e3608d4f37e0ba0dd6b29}
+
+\item 
+\hypertarget{class_c_profile_node_a2f9aaf0b48d6d702d78b29566dae6851}{\hyperlink{class_c_profile_node}{C\+Profile\+Node} $\ast$ {\bfseries Sibling}}\label{class_c_profile_node_a2f9aaf0b48d6d702d78b29566dae6851}
+
+\item 
+\hypertarget{class_c_profile_node_a3606c4f2ed8bdfc7ec605e2ba8e05199}{void $\ast$ {\bfseries m\+\_\+user\+Ptr}}\label{class_c_profile_node_a3606c4f2ed8bdfc7ec605e2ba8e05199}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node in the Profile Hierarchy Tree. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Linear\+Math/bt\+Quickprof.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/src/\+Linear\+Math/bt\+Quickprof.\+cpp\end{DoxyCompactItemize}

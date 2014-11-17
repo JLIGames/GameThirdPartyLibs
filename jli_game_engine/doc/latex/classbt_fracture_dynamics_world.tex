@@ -1,0 +1,80 @@
+\hypertarget{classbt_fracture_dynamics_world}{\section{bt\+Fracture\+Dynamics\+World Class Reference}
+\label{classbt_fracture_dynamics_world}\index{bt\+Fracture\+Dynamics\+World@{bt\+Fracture\+Dynamics\+World}}
+}
+
+
+{\ttfamily \#include $<$bt\+Fracture\+Dynamics\+World.\+h$>$}
+
+
+
+Inheritance diagram for bt\+Fracture\+Dynamics\+World\+:
+
+
+Collaboration diagram for bt\+Fracture\+Dynamics\+World\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbt_fracture_dynamics_world_a73bc1c14c37597ed32acbf95fd19ad89}{{\bfseries bt\+Fracture\+Dynamics\+World} (\hyperlink{classbt_dispatcher}{bt\+Dispatcher} $\ast$dispatcher, \hyperlink{classbt_broadphase_interface}{bt\+Broadphase\+Interface} $\ast$pair\+Cache, \hyperlink{classbt_constraint_solver}{bt\+Constraint\+Solver} $\ast$constraint\+Solver, \hyperlink{classbt_collision_configuration}{bt\+Collision\+Configuration} $\ast$collision\+Configuration)}\label{classbt_fracture_dynamics_world_a73bc1c14c37597ed32acbf95fd19ad89}
+
+\item 
+\hypertarget{classbt_fracture_dynamics_world_a5afb50ff2125a64fb902d8f839e97b62}{virtual void {\bfseries add\+Rigid\+Body} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body)}\label{classbt_fracture_dynamics_world_a5afb50ff2125a64fb902d8f839e97b62}
+
+\item 
+\hypertarget{classbt_fracture_dynamics_world_a5f53f422e5b4b6640c0202ffb1e7dbca}{virtual void {\bfseries remove\+Rigid\+Body} (\hyperlink{classbt_rigid_body}{bt\+Rigid\+Body} $\ast$body)}\label{classbt_fracture_dynamics_world_a5f53f422e5b4b6640c0202ffb1e7dbca}
+
+\item 
+\hypertarget{classbt_fracture_dynamics_world_a08785c7f23e9a18a31a1178804b26c69}{void {\bfseries solve\+Constraints} (\hyperlink{structbt_contact_solver_info}{bt\+Contact\+Solver\+Info} \&solver\+Info)}\label{classbt_fracture_dynamics_world_a08785c7f23e9a18a31a1178804b26c69}
+
+\item 
+\hypertarget{classbt_fracture_dynamics_world_ae5c5167fc97df9b76265437114cf5c0e}{void \hyperlink{classbt_fracture_dynamics_world_ae5c5167fc97df9b76265437114cf5c0e}{set\+Fracture\+Mode} (bool fracture)}\label{classbt_fracture_dynamics_world_ae5c5167fc97df9b76265437114cf5c0e}
+
+\begin{DoxyCompactList}\small\item\em either fracture or glue (!fracture) \end{DoxyCompactList}\item 
+\hypertarget{classbt_fracture_dynamics_world_a1a67cb7a030aca6ab0545d6d939f3792}{bool {\bfseries get\+Fracture\+Mode} () const }\label{classbt_fracture_dynamics_world_a1a67cb7a030aca6ab0545d6d939f3792}
+
+\item 
+void \hyperlink{classbt_fracture_dynamics_world_a3d74d45c8b89a854c8f0a8ab98bb7425}{glue\+Callback} ()
+\begin{DoxyCompactList}\small\item\em normally those callbacks are called internally by the 'solve\+Constraints' \end{DoxyCompactList}\item 
+\hypertarget{classbt_fracture_dynamics_world_a24ee585fe9e911ef6d61a154d757b5e8}{void \hyperlink{classbt_fracture_dynamics_world_a24ee585fe9e911ef6d61a154d757b5e8}{fracture\+Callback} ()}\label{classbt_fracture_dynamics_world_a24ee585fe9e911ef6d61a154d757b5e8}
+
+\begin{DoxyCompactList}\small\item\em normally those callbacks are called internally by the 'solve\+Constraints' \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classbt_fracture_dynamics_world}{bt\+Fracture\+Dynamics\+World} class enabled basic glue and fracture of objects. If/once this implementation is stablized/tested we might merge it into bt\+Discrete\+Dynamics\+World and remove the class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbt_fracture_dynamics_world_a3d74d45c8b89a854c8f0a8ab98bb7425}{\index{bt\+Fracture\+Dynamics\+World@{bt\+Fracture\+Dynamics\+World}!glue\+Callback@{glue\+Callback}}
+\index{glue\+Callback@{glue\+Callback}!bt\+Fracture\+Dynamics\+World@{bt\+Fracture\+Dynamics\+World}}
+\subsubsection[{glue\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void bt\+Fracture\+Dynamics\+World\+::glue\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbt_fracture_dynamics_world_a3d74d45c8b89a854c8f0a8ab98bb7425}
+
+
+normally those callbacks are called internally by the 'solve\+Constraints' 
+
+first build the islands based on axis aligned bounding box overlap
+
+iterate over all islands
+
+Then for each island that contains at least two objects and one fracture object
+
+glueing objects means creating a new compound and removing the old objects delay the removal of old objects to avoid array indexing problems
+
+todo\+: expose this as a callback 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Fracture\+Demo/bt\+Fracture\+Dynamics\+World.\+h\item 
+bullet/bullet-\/2.\+82-\/r2704/\+Demos/\+Fracture\+Demo/bt\+Fracture\+Dynamics\+World.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Assimp::StandardShapes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_standard_shapes.html",tooltip="Helper class to generate vertex buffers for standard geometric shapes, such as cylinders, cones, boxes, spheres, elipsoids ... . "];
+}

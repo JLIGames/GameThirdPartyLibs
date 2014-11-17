@@ -1,0 +1,536 @@
+\hypertarget{namespace_assimp_view}{\section{Assimp\+View Namespace Reference}
+\label{namespace_assimp_view}\index{Assimp\+View@{Assimp\+View}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_assimp_view_1_1_anim_evaluator}{Anim\+Evaluator}
+\item 
+class \hyperlink{class_assimp_view_1_1_scene_animator}{Scene\+Animator}
+\item 
+struct \hyperlink{struct_assimp_view_1_1_scene_anim_node}{Scene\+Anim\+Node}
+\item 
+struct \hyperlink{struct_assimp_view_1_1_sky_box_vertex}{Sky\+Box\+Vertex}
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_vertex}{Vertex} structure for the skybox. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_assimp_view_1_1_s_vertex}{S\+Vertex}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_view_a0b3ff1296514c5efc3a0a1cce5b6b0c6}{D\+W\+O\+R\+D W\+I\+N\+A\+P\+I {\bfseries Load\+Thread\+Proc} (L\+P\+V\+O\+I\+D lp\+Parameter)}\label{namespace_assimp_view_a0b3ff1296514c5efc3a0a1cce5b6b0c6}
+
+\item 
+\hypertarget{namespace_assimp_view_a0dcdd36d3efaf133afdeb1c8171aa99c}{int {\bfseries Load\+Asset} (void)}\label{namespace_assimp_view_a0dcdd36d3efaf133afdeb1c8171aa99c}
+
+\item 
+\hypertarget{namespace_assimp_view_a4bd378f5325df17ceee06bc5306590f9}{int {\bfseries Delete\+Asset} (void)}\label{namespace_assimp_view_a4bd378f5325df17ceee06bc5306590f9}
+
+\item 
+\hypertarget{namespace_assimp_view_aab249358c3cd02c77bf7fceee5d366eb}{int {\bfseries Calculate\+Bounds} (\hyperlink{structai_node}{ai\+Node} $\ast$pi\+Node, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$p\+\_\+av\+Out, const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \&pi\+Matrix)}\label{namespace_assimp_view_aab249358c3cd02c77bf7fceee5d366eb}
+
+\item 
+\hypertarget{namespace_assimp_view_a79d3473b78ae8c67ac6c174ff9142e56}{int {\bfseries Scale\+Asset} (void)}\label{namespace_assimp_view_a79d3473b78ae8c67ac6c174ff9142e56}
+
+\item 
+\hypertarget{namespace_assimp_view_aefe581eadd1ee130050c34a8cd12fe92}{int {\bfseries Generate\+Normals\+As\+Line\+List} (\hyperlink{class_asset_helper_1_1_mesh_helper}{Asset\+Helper\+::\+Mesh\+Helper} $\ast$pc\+Mesh, const \hyperlink{structai_mesh}{ai\+Mesh} $\ast$pc\+Source)}\label{namespace_assimp_view_aefe581eadd1ee130050c34a8cd12fe92}
+
+\item 
+\hypertarget{namespace_assimp_view_a3e4c2972743eec479f0cd70c392bb5cd}{int {\bfseries Create\+Asset\+Data} ()}\label{namespace_assimp_view_a3e4c2972743eec479f0cd70c392bb5cd}
+
+\item 
+\hypertarget{namespace_assimp_view_ab0ff0585af4fd7bc9cc997d921c3dd35}{int {\bfseries Delete\+Asset\+Data} (bool b\+No\+Materials)}\label{namespace_assimp_view_ab0ff0585af4fd7bc9cc997d921c3dd35}
+
+\item 
+\hypertarget{namespace_assimp_view_adfda41073783d171b69091f0be6df1e4}{int {\bfseries Setup\+F\+P\+S\+View} ()}\label{namespace_assimp_view_adfda41073783d171b69091f0be6df1e4}
+
+\item 
+\hypertarget{namespace_assimp_view_a3f70b13268f17a259f58ecd8c8e1c17f}{int {\bfseries Init\+D3\+D} (void)}\label{namespace_assimp_view_a3f70b13268f17a259f58ecd8c8e1c17f}
+
+\item 
+\hypertarget{namespace_assimp_view_a18747430a74dd28bf552f46fce9b27e4}{int {\bfseries Shutdown\+D3\+D} (void)}\label{namespace_assimp_view_a18747430a74dd28bf552f46fce9b27e4}
+
+\item 
+\hypertarget{namespace_assimp_view_a00af866ed06a26243da2e5de3c338174}{int {\bfseries Shutdown\+Device} (void)}\label{namespace_assimp_view_a00af866ed06a26243da2e5de3c338174}
+
+\item 
+\hypertarget{namespace_assimp_view_ad030a184f1fc2b77b810c4ccbbbc07a9}{int {\bfseries Create\+H\+U\+D\+Texture} ()}\label{namespace_assimp_view_ad030a184f1fc2b77b810c4ccbbbc07a9}
+
+\item 
+\hypertarget{namespace_assimp_view_a32b58627cff2ea792777a62b34f5134f}{int {\bfseries Create\+Device} (bool p\+\_\+b\+Multi\+Sample, bool p\+\_\+b\+Super\+Sample, bool b\+H\+W)}\label{namespace_assimp_view_a32b58627cff2ea792777a62b34f5134f}
+
+\item 
+\hypertarget{namespace_assimp_view_accb15a432e5f8c964e435e34d9fed591}{int {\bfseries Create\+Device} (void)}\label{namespace_assimp_view_accb15a432e5f8c964e435e34d9fed591}
+
+\item 
+\hypertarget{namespace_assimp_view_a16f425d5dd5706afbbe41d10e4359125}{int {\bfseries Get\+Projection\+Matrix} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \&p\+\_\+m\+Out)}\label{namespace_assimp_view_a16f425d5dd5706afbbe41d10e4359125}
+
+\item 
+\hypertarget{namespace_assimp_view_ae7be73bd02596d503e5f485eea58c224}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries Get\+Camera\+Matrix} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} \&p\+\_\+m\+Out)}\label{namespace_assimp_view_ae7be73bd02596d503e5f485eea58c224}
+
+\item 
+\hypertarget{namespace_assimp_view_acbf92f690a2b741806969d7e82ed954f}{void {\bfseries Get\+Node\+Count} (\hyperlink{structai_node}{ai\+Node} $\ast$pc\+Node, unsigned int $\ast$pi\+Cnt)}\label{namespace_assimp_view_acbf92f690a2b741806969d7e82ed954f}
+
+\item 
+\hypertarget{namespace_assimp_view_a0411436a4ce73d3e6ee06208cb733219}{void {\bfseries Update\+Color\+Fields\+In\+U\+I} ()}\label{namespace_assimp_view_a0411436a4ce73d3e6ee06208cb733219}
+
+\item 
+\hypertarget{namespace_assimp_view_a92d86f330de5e2884f7652d3acb9521c}{void {\bfseries Show\+Normal\+U\+I\+Components} ()}\label{namespace_assimp_view_a92d86f330de5e2884f7652d3acb9521c}
+
+\item 
+\hypertarget{namespace_assimp_view_aed07f86e96b4466a2d9c7a361f4ae683}{int C\+A\+L\+L\+B\+A\+C\+K {\bfseries Tree\+View\+Compare\+Func} (L\+P\+A\+R\+A\+M l\+Param1, L\+P\+A\+R\+A\+M l\+Param2, L\+P\+A\+R\+A\+M l\+Param\+Sort)}\label{namespace_assimp_view_aed07f86e96b4466a2d9c7a361f4ae683}
+
+\item 
+\hypertarget{namespace_assimp_view_a22e0e9f5e1f135f9c42400d52cf5928b}{I\+N\+T\+\_\+\+P\+T\+R C\+A\+L\+L\+B\+A\+C\+K {\bfseries Help\+Dialog\+Proc} (H\+W\+N\+D hwnd\+Dlg, U\+I\+N\+T u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}\label{namespace_assimp_view_a22e0e9f5e1f135f9c42400d52cf5928b}
+
+\item 
+\hypertarget{namespace_assimp_view_aa4b5477ebed50aebc3ceddb134844d6d}{void {\bfseries Handle\+Mouse\+Input\+F\+P\+S} (void)}\label{namespace_assimp_view_aa4b5477ebed50aebc3ceddb134844d6d}
+
+\item 
+\hypertarget{namespace_assimp_view_aae417247e4e2534d534c7eb7976fecc9}{void {\bfseries Handle\+Mouse\+Input\+Texture\+View} (void)}\label{namespace_assimp_view_aae417247e4e2534d534c7eb7976fecc9}
+
+\item 
+\hypertarget{namespace_assimp_view_ae7b604e060f22bb3ad25b738dc7d3803}{void {\bfseries Handle\+Mouse\+Input\+Light\+Rotate} (void)}\label{namespace_assimp_view_ae7b604e060f22bb3ad25b738dc7d3803}
+
+\item 
+\hypertarget{namespace_assimp_view_aea655a1ef75dbe3360d0e266d048bc90}{void {\bfseries Handle\+Mouse\+Input\+Sky\+Box} (void)}\label{namespace_assimp_view_aea655a1ef75dbe3360d0e266d048bc90}
+
+\item 
+\hypertarget{namespace_assimp_view_a015051dbc8973223479b6374fc525fd9}{void {\bfseries Handle\+Mouse\+Input\+Light\+Intensity\+And\+Color} (void)}\label{namespace_assimp_view_a015051dbc8973223479b6374fc525fd9}
+
+\item 
+\hypertarget{namespace_assimp_view_a060ddab8a5ae68820187f1e25ed43dff}{void {\bfseries Handle\+Mouse\+Input\+Local} (void)}\label{namespace_assimp_view_a060ddab8a5ae68820187f1e25ed43dff}
+
+\item 
+\hypertarget{namespace_assimp_view_ab16417edb0fd0d9753b255afa217ef47}{void {\bfseries Handle\+Keyboard\+Input\+F\+P\+S} (void)}\label{namespace_assimp_view_ab16417edb0fd0d9753b255afa217ef47}
+
+\item 
+\hypertarget{namespace_assimp_view_a88af2f0505513bab5f118ffe9da9a6ec}{void {\bfseries Handle\+Keyboard\+Input\+Texture\+View} (void)}\label{namespace_assimp_view_a88af2f0505513bab5f118ffe9da9a6ec}
+
+\item 
+\hypertarget{namespace_assimp_view_a8b428fdbba3301119f5864581dab1c26}{I\+N\+T\+\_\+\+P\+T\+R C\+A\+L\+L\+B\+A\+C\+K {\bfseries Log\+Dialog\+Proc} (H\+W\+N\+D hwnd\+Dlg, U\+I\+N\+T u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}\label{namespace_assimp_view_a8b428fdbba3301119f5864581dab1c26}
+
+\item 
+\hypertarget{namespace_assimp_view_a29e0574819cafc2592e40a3a6f7c16a4}{V\+O\+I\+D W\+I\+N\+A\+P\+I {\bfseries Fill\+Func} (D3\+D\+X\+V\+E\+C\+T\+O\+R4 $\ast$p\+Out, C\+O\+N\+S\+T D3\+D\+X\+V\+E\+C\+T\+O\+R2 $\ast$p\+Tex\+Coord, C\+O\+N\+S\+T D3\+D\+X\+V\+E\+C\+T\+O\+R2 $\ast$p\+Texel\+Size, L\+P\+V\+O\+I\+D p\+Data)}\label{namespace_assimp_view_a29e0574819cafc2592e40a3a6f7c16a4}
+
+\item 
+\hypertarget{namespace_assimp_view_a9d224ddb26d46d976d92b3ca8b520da9}{void {\bfseries Update\+History} ()}\label{namespace_assimp_view_a9d224ddb26d46d976d92b3ca8b520da9}
+
+\item 
+\hypertarget{namespace_assimp_view_a0a142d75277b8b1d3c5fda6c74d8831a}{void {\bfseries Save\+History} ()}\label{namespace_assimp_view_a0a142d75277b8b1d3c5fda6c74d8831a}
+
+\item 
+\hypertarget{namespace_assimp_view_aff2343c333f3ee81421edd973f946a14}{void {\bfseries Make\+File\+Associations} ()}\label{namespace_assimp_view_aff2343c333f3ee81421edd973f946a14}
+
+\item 
+\hypertarget{namespace_assimp_view_a7ed22b61273a67031f524f8a133b9512}{void {\bfseries Handle\+Command\+Line} (char $\ast$p\+\_\+sz\+Command)}\label{namespace_assimp_view_a7ed22b61273a67031f524f8a133b9512}
+
+\item 
+\hypertarget{namespace_assimp_view_abd29a922a06017436183880c9fbd17c0}{void {\bfseries Load\+Light\+Colors} ()}\label{namespace_assimp_view_abd29a922a06017436183880c9fbd17c0}
+
+\item 
+\hypertarget{namespace_assimp_view_a3614175c4c07d9e8e1729e037f222fe3}{void {\bfseries Save\+Light\+Colors} ()}\label{namespace_assimp_view_a3614175c4c07d9e8e1729e037f222fe3}
+
+\item 
+\hypertarget{namespace_assimp_view_a1c46490fa0bf10ceac6ed0e1b87a506a}{void {\bfseries Save\+Checker\+Pattern\+Colors} ()}\label{namespace_assimp_view_a1c46490fa0bf10ceac6ed0e1b87a506a}
+
+\item 
+\hypertarget{namespace_assimp_view_a025447881a68345b6120afbc23d10d5f}{void {\bfseries Load\+Checker\+Pattern\+Colors} ()}\label{namespace_assimp_view_a025447881a68345b6120afbc23d10d5f}
+
+\item 
+\hypertarget{namespace_assimp_view_aee19f737b400c69b7ea341b5e2a2cb1c}{void {\bfseries Update\+P\+P\+Settings} ()}\label{namespace_assimp_view_aee19f737b400c69b7ea341b5e2a2cb1c}
+
+\item 
+\hypertarget{namespace_assimp_view_a9f0ab484a7d0ef5d0d2b4fd4331f71af}{void {\bfseries Toggle\+Normals} ()}\label{namespace_assimp_view_a9f0ab484a7d0ef5d0d2b4fd4331f71af}
+
+\item 
+\hypertarget{namespace_assimp_view_a46f0a504feef90db665a0773259c4b20}{void {\bfseries Toggle\+Auto\+Rotate} ()}\label{namespace_assimp_view_a46f0a504feef90db665a0773259c4b20}
+
+\item 
+\hypertarget{namespace_assimp_view_af5d2f2a08c3924075ead198b22003e8a}{void {\bfseries Toggle\+F\+P\+S\+View} ()}\label{namespace_assimp_view_af5d2f2a08c3924075ead198b22003e8a}
+
+\item 
+\hypertarget{namespace_assimp_view_a39151fe3e6ca58d97c94e72bb206358c}{void {\bfseries Toggle\+Multiple\+Lights} ()}\label{namespace_assimp_view_a39151fe3e6ca58d97c94e72bb206358c}
+
+\item 
+\hypertarget{namespace_assimp_view_a632698b027fe6384c6dd7f425bf1d651}{void {\bfseries Toggle\+Light\+Rotate} ()}\label{namespace_assimp_view_a632698b027fe6384c6dd7f425bf1d651}
+
+\item 
+\hypertarget{namespace_assimp_view_a6a7dc3486a06a97793b86a34169859c9}{void {\bfseries Toggle\+Transparency} ()}\label{namespace_assimp_view_a6a7dc3486a06a97793b86a34169859c9}
+
+\item 
+\hypertarget{namespace_assimp_view_a27c136aa4c0de3bd51451074e023c9ac}{void {\bfseries Toggle\+Low\+Quality} ()}\label{namespace_assimp_view_a27c136aa4c0de3bd51451074e023c9ac}
+
+\item 
+\hypertarget{namespace_assimp_view_acffc81b99b36897773c18c2121591bb8}{void {\bfseries Toggle\+Specular} ()}\label{namespace_assimp_view_acffc81b99b36897773c18c2121591bb8}
+
+\item 
+\hypertarget{namespace_assimp_view_a55fc2c788e06cc7b273eec93e62abf68}{void {\bfseries Toggle\+Mats} ()}\label{namespace_assimp_view_a55fc2c788e06cc7b273eec93e62abf68}
+
+\item 
+\hypertarget{namespace_assimp_view_ae845377ce46dcc0e11aeebf540beed29}{void {\bfseries Toggle\+Culling} ()}\label{namespace_assimp_view_ae845377ce46dcc0e11aeebf540beed29}
+
+\item 
+\hypertarget{namespace_assimp_view_a64755b364f8f264ccc2ae1e739bd7385}{void {\bfseries Toggle\+Skeleton} ()}\label{namespace_assimp_view_a64755b364f8f264ccc2ae1e739bd7385}
+
+\item 
+\hypertarget{namespace_assimp_view_aea5d471b3aea37c7c109d78d5b6f5498}{void {\bfseries Toggle\+Wire\+Frame} ()}\label{namespace_assimp_view_aea5d471b3aea37c7c109d78d5b6f5498}
+
+\item 
+\hypertarget{namespace_assimp_view_ab9faceae7c0fa23494856e48a480a155}{void {\bfseries Toggle\+M\+S} ()}\label{namespace_assimp_view_ab9faceae7c0fa23494856e48a480a155}
+
+\item 
+\hypertarget{namespace_assimp_view_a3f46df056ebc6f0d8b239a8959b92862}{void {\bfseries Toggle\+U\+I\+State} ()}\label{namespace_assimp_view_a3f46df056ebc6f0d8b239a8959b92862}
+
+\item 
+\hypertarget{namespace_assimp_view_ab197a23b3ab9fd00b7009908b9f9a41d}{void {\bfseries Load\+B\+G\+Texture} ()}\label{namespace_assimp_view_ab197a23b3ab9fd00b7009908b9f9a41d}
+
+\item 
+\hypertarget{namespace_assimp_view_a63a45f238278d8992971b18594928636}{void {\bfseries Clear\+B\+G} ()}\label{namespace_assimp_view_a63a45f238278d8992971b18594928636}
+
+\item 
+\hypertarget{namespace_assimp_view_a31d4b242f39d3ffca0b27169753d31ee}{void {\bfseries Display\+Color\+Dialog} (D3\+D\+C\+O\+L\+O\+R $\ast$pclr\+Result)}\label{namespace_assimp_view_a31d4b242f39d3ffca0b27169753d31ee}
+
+\item 
+\hypertarget{namespace_assimp_view_a6a3c0edf0873e4b04c17c671154c4e96}{void {\bfseries Display\+Color\+Dialog} (D3\+D\+X\+V\+E\+C\+T\+O\+R4 $\ast$pclr\+Result)}\label{namespace_assimp_view_a6a3c0edf0873e4b04c17c671154c4e96}
+
+\item 
+\hypertarget{namespace_assimp_view_a6360a982c567fb98a758aa83ce639432}{void {\bfseries Choose\+B\+G\+Color} ()}\label{namespace_assimp_view_a6360a982c567fb98a758aa83ce639432}
+
+\item 
+\hypertarget{namespace_assimp_view_af126f4854fc59162b0e6f04f224b75c4}{void {\bfseries Load\+Skybox} ()}\label{namespace_assimp_view_af126f4854fc59162b0e6f04f224b75c4}
+
+\item 
+\hypertarget{namespace_assimp_view_a2739b16f811a776c1555177055290462}{void {\bfseries Save\+Screenshot} ()}\label{namespace_assimp_view_a2739b16f811a776c1555177055290462}
+
+\item 
+\hypertarget{namespace_assimp_view_a5c075b51dd3071d4171d585497823ba0}{void {\bfseries Add\+Texture\+Mem} (I\+Direct3\+D\+Texture9 $\ast$pc\+Tex, unsigned int \&out)}\label{namespace_assimp_view_a5c075b51dd3071d4171d585497823ba0}
+
+\item 
+\hypertarget{namespace_assimp_view_aed0181f19b919f988ff499b1cb3b0ecf}{void {\bfseries Display\+Memory\+Consumption} ()}\label{namespace_assimp_view_aed0181f19b919f988ff499b1cb3b0ecf}
+
+\item 
+\hypertarget{namespace_assimp_view_a49871f96bcd505ae3fa6f0693285d7de}{void {\bfseries Load\+History} ()}\label{namespace_assimp_view_a49871f96bcd505ae3fa6f0693285d7de}
+
+\item 
+\hypertarget{namespace_assimp_view_afd9341ac9f0b1408b928f5fb02f922e9}{void {\bfseries Clear\+History} ()}\label{namespace_assimp_view_afd9341ac9f0b1408b928f5fb02f922e9}
+
+\item 
+\hypertarget{namespace_assimp_view_a07d9a0540dffd7769fd70870aa489ace}{void {\bfseries Open\+Asset} ()}\label{namespace_assimp_view_a07d9a0540dffd7769fd70870aa489ace}
+
+\item 
+\hypertarget{namespace_assimp_view_a51cc79524f4f86d26a345651131daa41}{void {\bfseries Setup\+P\+P\+U\+I\+State} ()}\label{namespace_assimp_view_a51cc79524f4f86d26a345651131daa41}
+
+\item 
+\hypertarget{namespace_assimp_view_af573d891df6819469fcaef14dd2901df}{void {\bfseries Populate\+Export\+Menu} ()}\label{namespace_assimp_view_af573d891df6819469fcaef14dd2901df}
+
+\item 
+\hypertarget{namespace_assimp_view_a0032f2a1d7efc6ba8b7c8716976dbe94}{void {\bfseries Do\+Export} (size\+\_\+t format\+Id)}\label{namespace_assimp_view_a0032f2a1d7efc6ba8b7c8716976dbe94}
+
+\item 
+\hypertarget{namespace_assimp_view_a8752676716dc993ff28018daaaef5914}{void {\bfseries Init\+U\+I} ()}\label{namespace_assimp_view_a8752676716dc993ff28018daaaef5914}
+
+\item 
+\hypertarget{namespace_assimp_view_adf9624cc332b78e37b4b5d2d2c065c30}{I\+N\+T\+\_\+\+P\+T\+R C\+A\+L\+L\+B\+A\+C\+K {\bfseries S\+M\+Message\+Proc} (H\+W\+N\+D hwnd\+Dlg, U\+I\+N\+T u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}\label{namespace_assimp_view_adf9624cc332b78e37b4b5d2d2c065c30}
+
+\item 
+\hypertarget{namespace_assimp_view_a144c97315092d9892226f6496f426ea4}{I\+N\+T\+\_\+\+P\+T\+R C\+A\+L\+L\+B\+A\+C\+K {\bfseries Message\+Proc} (H\+W\+N\+D hwnd\+Dlg, U\+I\+N\+T u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}\label{namespace_assimp_view_a144c97315092d9892226f6496f426ea4}
+
+\item 
+\hypertarget{namespace_assimp_view_af26d959863794f6078183b192e75fbb4}{I\+N\+T\+\_\+\+P\+T\+R C\+A\+L\+L\+B\+A\+C\+K {\bfseries Progress\+Message\+Proc} (H\+W\+N\+D hwnd\+Dlg, U\+I\+N\+T u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}\label{namespace_assimp_view_af26d959863794f6078183b192e75fbb4}
+
+\item 
+\hypertarget{namespace_assimp_view_abe8e9eb85e63bd3efe4f8b8a373db376}{I\+N\+T\+\_\+\+P\+T\+R C\+A\+L\+L\+B\+A\+C\+K {\bfseries About\+Message\+Proc} (H\+W\+N\+D hwnd\+Dlg, U\+I\+N\+T u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}\label{namespace_assimp_view_abe8e9eb85e63bd3efe4f8b8a373db376}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_assimp_view_a5c7a8e0feb726227e47c854b431630c8}{H\+I\+N\+S\+T\+A\+N\+C\+E {\bfseries g\+\_\+h\+Instance} = N\+U\+L\+L}\label{namespace_assimp_view_a5c7a8e0feb726227e47c854b431630c8}
+
+\item 
+\hypertarget{namespace_assimp_view_a3dd7371be4095d34779604c78ae69039}{H\+W\+N\+D {\bfseries g\+\_\+h\+Dlg} = N\+U\+L\+L}\label{namespace_assimp_view_a3dd7371be4095d34779604c78ae69039}
+
+\item 
+\hypertarget{namespace_assimp_view_a7e22feb36d24ed2390cb6f9d287079c8}{I\+Direct3\+D9 $\ast$ {\bfseries g\+\_\+pi\+D3\+D} = N\+U\+L\+L}\label{namespace_assimp_view_a7e22feb36d24ed2390cb6f9d287079c8}
+
+\item 
+\hypertarget{namespace_assimp_view_a5577108758420bd4e083813c149063bc}{I\+Direct3\+D\+Device9 $\ast$ {\bfseries g\+\_\+pi\+Device} = N\+U\+L\+L}\label{namespace_assimp_view_a5577108758420bd4e083813c149063bc}
+
+\item 
+\hypertarget{namespace_assimp_view_a8d75cb3c8e13a69e9c58d9529d517f61}{I\+Direct3\+D\+Vertex\+Declaration9 $\ast$ {\bfseries g\+Default\+Vertex\+Decl} = N\+U\+L\+L}\label{namespace_assimp_view_a8d75cb3c8e13a69e9c58d9529d517f61}
+
+\item 
+\hypertarget{namespace_assimp_view_ad10e728d01222a3368ca06f24b364486}{double {\bfseries g\+\_\+f\+F\+P\+S} = 0.\+0f}\label{namespace_assimp_view_ad10e728d01222a3368ca06f24b364486}
+
+\item 
+\hypertarget{namespace_assimp_view_a3b918638d3d75db928cd695adead7f83}{char {\bfseries g\+\_\+sz\+File\+Name} \mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}}\label{namespace_assimp_view_a3b918638d3d75db928cd695adead7f83}
+
+\item 
+\hypertarget{namespace_assimp_view_a5fd9204dcef21cb64b84450edcc16a3c}{I\+D3\+D\+X\+Effect $\ast$ {\bfseries g\+\_\+pi\+Default\+Effect} = N\+U\+L\+L}\label{namespace_assimp_view_a5fd9204dcef21cb64b84450edcc16a3c}
+
+\item 
+\hypertarget{namespace_assimp_view_ae886e0b5f96dd4504eb597c9a994dd53}{I\+D3\+D\+X\+Effect $\ast$ {\bfseries g\+\_\+pi\+Normals\+Effect} = N\+U\+L\+L}\label{namespace_assimp_view_ae886e0b5f96dd4504eb597c9a994dd53}
+
+\item 
+\hypertarget{namespace_assimp_view_a9e1444206a0af0bf1c42f35b7ec19f71}{I\+D3\+D\+X\+Effect $\ast$ {\bfseries g\+\_\+pi\+Pass\+Through\+Effect} = N\+U\+L\+L}\label{namespace_assimp_view_a9e1444206a0af0bf1c42f35b7ec19f71}
+
+\item 
+\hypertarget{namespace_assimp_view_afe33ceb66146754a743e9a98023422d7}{I\+D3\+D\+X\+Effect $\ast$ {\bfseries g\+\_\+pi\+Pattern\+Effect} = N\+U\+L\+L}\label{namespace_assimp_view_afe33ceb66146754a743e9a98023422d7}
+
+\item 
+\hypertarget{namespace_assimp_view_af750cf0a030fb0b97be1ceae50e6ff72}{bool {\bfseries g\+\_\+b\+Mouse\+Pressed} = false}\label{namespace_assimp_view_af750cf0a030fb0b97be1ceae50e6ff72}
+
+\item 
+\hypertarget{namespace_assimp_view_af5dd87460f878b99e5d21ad832e2f13e}{bool {\bfseries g\+\_\+b\+Mouse\+Pressed\+R} = false}\label{namespace_assimp_view_af5dd87460f878b99e5d21ad832e2f13e}
+
+\item 
+\hypertarget{namespace_assimp_view_adc85e80270fa582e5791f7529420e54b}{bool {\bfseries g\+\_\+b\+Mouse\+Pressed\+M} = false}\label{namespace_assimp_view_adc85e80270fa582e5791f7529420e54b}
+
+\item 
+\hypertarget{namespace_assimp_view_a908795b1f472ef15b866cd88f6195e73}{bool {\bfseries g\+\_\+b\+Mouse\+Pressed\+Both} = false}\label{namespace_assimp_view_a908795b1f472ef15b866cd88f6195e73}
+
+\item 
+\hypertarget{namespace_assimp_view_a8d69997bc24f0858ef51f5fc6048a199}{float {\bfseries g\+\_\+f\+Elpased\+Time} = 0.\+0f}\label{namespace_assimp_view_a8d69997bc24f0858ef51f5fc6048a199}
+
+\item 
+\hypertarget{namespace_assimp_view_ad1d89505807069af96cb93afb5fa5005}{D3\+D\+C\+A\+P\+S9 {\bfseries g\+\_\+s\+Caps}}\label{namespace_assimp_view_ad1d89505807069af96cb93afb5fa5005}
+
+\item 
+\hypertarget{namespace_assimp_view_a079608ef6edc5719c8def7321782aef9}{bool {\bfseries g\+\_\+b\+Loading\+Finished} = false}\label{namespace_assimp_view_a079608ef6edc5719c8def7321782aef9}
+
+\item 
+\hypertarget{namespace_assimp_view_aaae641eee491214cd7756861e2d55193}{H\+A\+N\+D\+L\+E {\bfseries g\+\_\+h\+Thread\+Handle} = N\+U\+L\+L}\label{namespace_assimp_view_aaae641eee491214cd7756861e2d55193}
+
+\item 
+\hypertarget{namespace_assimp_view_a37224c28037c011f68841d45aca360e2}{float {\bfseries g\+\_\+f\+Wheel\+Pos} = -\/10.\+0f}\label{namespace_assimp_view_a37224c28037c011f68841d45aca360e2}
+
+\item 
+\hypertarget{namespace_assimp_view_a8d7e868a0caf1b12782b0a407ab3e2da}{bool {\bfseries g\+\_\+b\+Loading\+Canceled} = false}\label{namespace_assimp_view_a8d7e868a0caf1b12782b0a407ab3e2da}
+
+\item 
+\hypertarget{namespace_assimp_view_a23f24b28d368568073d4f85ffb786a94}{I\+Direct3\+D\+Texture9 $\ast$ {\bfseries g\+\_\+pc\+Texture} = N\+U\+L\+L}\label{namespace_assimp_view_a23f24b28d368568073d4f85ffb786a94}
+
+\item 
+\hypertarget{namespace_assimp_view_a941fcc8d3b6cb8cc7eb4563364d3eb93}{bool {\bfseries g\+\_\+b\+Play} = false}\label{namespace_assimp_view_a941fcc8d3b6cb8cc7eb4563364d3eb93}
+
+\item 
+\hypertarget{namespace_assimp_view_ae37d0e5215cfbf217ae009c90719563d}{double {\bfseries g\+\_\+d\+Current} = 0.}\label{namespace_assimp_view_ae37d0e5215cfbf217ae009c90719563d}
+
+\item 
+unsigned int {\bfseries ppsteps}
+\item 
+\hypertarget{namespace_assimp_view_aee1d960e847b91bb9e3f935ccebe82e0}{unsigned int {\bfseries ppstepsdefault} = ppsteps}\label{namespace_assimp_view_aee1d960e847b91bb9e3f935ccebe82e0}
+
+\item 
+\hypertarget{namespace_assimp_view_adae5b619a78a4ad637067c6f24ba6a68}{bool {\bfseries nopointslines} = false}\label{namespace_assimp_view_adae5b619a78a4ad637067c6f24ba6a68}
+
+\item 
+\hypertarget{namespace_assimp_view_abf4bbd176455f7ad75fba14dbc6aa9ab}{bool {\bfseries g\+\_\+b\+Was\+Flipped} = false}\label{namespace_assimp_view_abf4bbd176455f7ad75fba14dbc6aa9ab}
+
+\item 
+\hypertarget{namespace_assimp_view_a8de3f6cf7864f91ff3809a4729222b4d}{\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} {\bfseries g\+\_\+m\+World}}\label{namespace_assimp_view_a8de3f6cf7864f91ff3809a4729222b4d}
+
+\item 
+\hypertarget{namespace_assimp_view_ab8f38c1f43d181f545f12a3006dcf0df}{\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} {\bfseries g\+\_\+m\+World\+Rotate}}\label{namespace_assimp_view_ab8f38c1f43d181f545f12a3006dcf0df}
+
+\item 
+\hypertarget{namespace_assimp_view_a57c8925fb678c4860d726a66fdafc6b6}{\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries g\+\_\+v\+Rotate\+Speed} = \hyperlink{structai_vector3_d}{ai\+Vector3\+D}(0.\+5f,0.\+5f,0.\+5f)}\label{namespace_assimp_view_a57c8925fb678c4860d726a66fdafc6b6}
+
+\item 
+\hyperlink{structai_vector3_d}{ai\+Vector3\+D} {\bfseries g\+\_\+av\+Light\+Dirs} \mbox{[}1\mbox{]}
+\item 
+D3\+D\+C\+O\+L\+O\+R {\bfseries g\+\_\+av\+Light\+Colors} \mbox{[}3\mbox{]}
+\item 
+\hypertarget{namespace_assimp_view_ac8717bfea02c8742e8114c5c881075a0}{P\+O\+I\+N\+T {\bfseries g\+\_\+mouse\+Pos}}\label{namespace_assimp_view_ac8717bfea02c8742e8114c5c881075a0}
+
+\item 
+\hypertarget{namespace_assimp_view_a88f5b82662ff64ff17e42508d4537234}{P\+O\+I\+N\+T {\bfseries g\+\_\+\+Lastmouse\+Pos}}\label{namespace_assimp_view_a88f5b82662ff64ff17e42508d4537234}
+
+\item 
+\hypertarget{namespace_assimp_view_a0a4febab4d4db0b7900afe00f5bd5cc8}{bool {\bfseries g\+\_\+b\+F\+P\+S\+View} = false}\label{namespace_assimp_view_a0a4febab4d4db0b7900afe00f5bd5cc8}
+
+\item 
+\hypertarget{namespace_assimp_view_a96a748bf69b20f0a1a1f90a94ffb0da6}{bool {\bfseries g\+\_\+b\+Invert} = false}\label{namespace_assimp_view_a96a748bf69b20f0a1a1f90a94ffb0da6}
+
+\item 
+\hypertarget{namespace_assimp_view_ad16ed2532d62fa4bf997be21d8e25319}{E\+Click\+Pos {\bfseries g\+\_\+e\+Click} = E\+Click\+Pos\+\_\+\+Circle}\label{namespace_assimp_view_ad16ed2532d62fa4bf997be21d8e25319}
+
+\item 
+\hypertarget{namespace_assimp_view_a64120866283a7387037d11ffef980f2a}{unsigned int {\bfseries g\+\_\+i\+Current\+Color} = 0}\label{namespace_assimp_view_a64120866283a7387037d11ffef980f2a}
+
+\item 
+\hypertarget{namespace_assimp_view_a5aa0ae9b412ff1ad7bc12b8e2a09768e}{float {\bfseries g\+\_\+f\+Light\+Intensity} = 1.\+0f}\label{namespace_assimp_view_a5aa0ae9b412ff1ad7bc12b8e2a09768e}
+
+\item 
+\hypertarget{namespace_assimp_view_a7ca8e56b5001b88983590c932e61dc29}{float {\bfseries g\+\_\+f\+Light\+Color} = 1.\+0f}\label{namespace_assimp_view_a7ca8e56b5001b88983590c932e61dc29}
+
+\item 
+\hypertarget{namespace_assimp_view_a73631f45d30cd33ccdf56c04b0655f03}{\hyperlink{class_render_options}{Render\+Options} {\bfseries g\+\_\+s\+Options}}\label{namespace_assimp_view_a73631f45d30cd33ccdf56c04b0655f03}
+
+\item 
+\hypertarget{namespace_assimp_view_a070e59a743e2501cf889dfa3d5570734}{\hyperlink{class_camera}{Camera} {\bfseries g\+\_\+s\+Camera}}\label{namespace_assimp_view_a070e59a743e2501cf889dfa3d5570734}
+
+\item 
+\hypertarget{namespace_assimp_view_aad03e9819e00e1d1a13369570a101043}{\hyperlink{class_asset_helper}{Asset\+Helper} $\ast$ {\bfseries g\+\_\+pc\+Asset} = N\+U\+L\+L}\label{namespace_assimp_view_aad03e9819e00e1d1a13369570a101043}
+
+\item 
+\hypertarget{namespace_assimp_view_a25e4ded70ea1e5a7c99481dde05305de}{unsigned char $\ast$ {\bfseries g\+\_\+sz\+Image\+Mask} = N\+U\+L\+L}\label{namespace_assimp_view_a25e4ded70ea1e5a7c99481dde05305de}
+
+\item 
+\hypertarget{namespace_assimp_view_ac5e15bee8238946f296d49fba17ebf07}{float {\bfseries g\+\_\+f\+Load\+Time} = 0.\+0f}\label{namespace_assimp_view_ac5e15bee8238946f296d49fba17ebf07}
+
+\item 
+\hyperlink{struct_assimp_view_1_1_sky_box_vertex}{Sky\+Box\+Vertex} \hyperlink{namespace_assimp_view_a0861f5fdb463a7181ac999ec09cf07d3}{g\+\_\+cube\+Vertices\+\_\+indexed} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Vertices for the skybox. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{namespace_assimp_view_a11de3131b31c9e8a1371ae1f8ec30537}{g\+\_\+cube\+Indices} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Indices for the skybox. \end{DoxyCompactList}\item 
+\hypertarget{namespace_assimp_view_a198400db15e914f115fd357a8fe966c7}{C\+O\+L\+O\+R\+R\+E\+F {\bfseries g\+\_\+acl\+Custom\+Colors} \mbox{[}16\mbox{]} = \{0\}}\label{namespace_assimp_view_a198400db15e914f115fd357a8fe966c7}
+
+\item 
+\hypertarget{namespace_assimp_view_ac8c697d6793d38f52a5ac5081e65258a}{H\+K\+E\+Y {\bfseries g\+\_\+h\+Registry} = N\+U\+L\+L}\label{namespace_assimp_view_ac8c697d6793d38f52a5ac5081e65258a}
+
+\item 
+D3\+D\+X\+V\+E\+C\+T\+O\+R4 {\bfseries g\+\_\+acl\+Normal\+Colors} \mbox{[}14\mbox{]}
+\item 
+\hypertarget{namespace_assimp_view_aff3996cb80c2278bffe7c3b8975ca333}{std\+::vector$<$ std\+::string $>$ {\bfseries g\+\_\+a\+Previous\+Files}}\label{namespace_assimp_view_aff3996cb80c2278bffe7c3b8975ca333}
+
+\item 
+\hypertarget{namespace_assimp_view_a628857454474efe41071e5ddc03e5fea}{H\+M\+E\+N\+U {\bfseries g\+\_\+h\+History\+Menu} = N\+U\+L\+L}\label{namespace_assimp_view_a628857454474efe41071e5ddc03e5fea}
+
+\item 
+\hypertarget{namespace_assimp_view_ad4e6d2ae092c9ca5cc3be2e376d6115b}{float {\bfseries g\+\_\+f\+A\+C\+M\+R} = 3.\+0f}\label{namespace_assimp_view_ad4e6d2ae092c9ca5cc3be2e376d6115b}
+
+\item 
+\hypertarget{namespace_assimp_view_a30461de54349788ae23cf2232976fe21}{float {\bfseries g\+\_\+smooth\+Angle} = 80.f}\label{namespace_assimp_view_a30461de54349788ae23cf2232976fe21}
+
+\item 
+\hypertarget{namespace_assimp_view_ab04d1555e0886b33752d48547ff0992e}{std\+::string {\bfseries g\+\_\+sz\+Normals\+Shader}}\label{namespace_assimp_view_ab04d1555e0886b33752d48547ff0992e}
+
+\item 
+\hypertarget{namespace_assimp_view_a97233916bd76828aa8ce81dd30d90e81}{std\+::string {\bfseries g\+\_\+sz\+Skybox\+Shader}}\label{namespace_assimp_view_a97233916bd76828aa8ce81dd30d90e81}
+
+\item 
+\hypertarget{namespace_assimp_view_a6f668f073c0319479988851213c5955b}{std\+::string {\bfseries g\+\_\+sz\+Default\+Shader}}\label{namespace_assimp_view_a6f668f073c0319479988851213c5955b}
+
+\item 
+\hypertarget{namespace_assimp_view_a671cef1cc51b2f40542abccfc2af64cc}{std\+::string {\bfseries g\+\_\+sz\+Material\+Shader}}\label{namespace_assimp_view_a671cef1cc51b2f40542abccfc2af64cc}
+
+\item 
+\hypertarget{namespace_assimp_view_a9922409035d2403c2c42eaeeecbfce0a}{std\+::string {\bfseries g\+\_\+sz\+Pass\+Through\+Shader}}\label{namespace_assimp_view_a9922409035d2403c2c42eaeeecbfce0a}
+
+\item 
+\hypertarget{namespace_assimp_view_a5ccfda08205632d2d88eede5ae388ce9}{std\+::string {\bfseries g\+\_\+sz\+Checker\+Background\+Shader}}\label{namespace_assimp_view_a5ccfda08205632d2d88eede5ae388ce9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calculates a pose for a given time of an animation 
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_assimp_view_a73b373fa45f483893d5c22668c64818a}{\index{Assimp\+View@{Assimp\+View}!g\+\_\+acl\+Normal\+Colors@{g\+\_\+acl\+Normal\+Colors}}
+\index{g\+\_\+acl\+Normal\+Colors@{g\+\_\+acl\+Normal\+Colors}!Assimp\+View@{Assimp\+View}}
+\subsubsection[{g\+\_\+acl\+Normal\+Colors}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D\+X\+V\+E\+C\+T\+O\+R4 Assimp\+View\+::g\+\_\+acl\+Normal\+Colors\mbox{[}14\mbox{]}}}\label{namespace_assimp_view_a73b373fa45f483893d5c22668c64818a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+\{
+    D3DXVECTOR4(0xFF / 255.0f,0xFF / 255.0f,0xFF / 255.0f, 1.0f), 
+
+    D3DXVECTOR4(0xFF / 255.0f,0x00 / 255.0f,0x00 / 255.0f,1.0f), 
+    D3DXVECTOR4(0x00 / 255.0f,0xFF / 255.0f,0x00 / 255.0f,1.0f), 
+    D3DXVECTOR4(0x00 / 255.0f,0x00 / 255.0f,0xFF / 255.0f,1.0f), 
+
+    D3DXVECTOR4(0xFF / 255.0f,0xFF / 255.0f,0x00 / 255.0f,1.0f), 
+    D3DXVECTOR4(0xFF / 255.0f,0x00 / 255.0f,0xFF / 255.0f,1.0f), 
+    D3DXVECTOR4(0x00 / 255.0f,0xFF / 255.0f,0xFF / 255.0f,1.0f), 
+
+    D3DXVECTOR4(0xFF / 255.0f,0x60 / 255.0f,0x60 / 255.0f,1.0f), 
+    D3DXVECTOR4(0x60 / 255.0f,0xFF / 255.0f,0x60 / 255.0f,1.0f), 
+    D3DXVECTOR4(0x60 / 255.0f,0x60 / 255.0f,0xFF / 255.0f,1.0f), 
+
+    D3DXVECTOR4(0xA0 / 255.0f,0x00 / 255.0f,0x00 / 255.0f,1.0f), 
+    D3DXVECTOR4(0x00 / 255.0f,0xA0 / 255.0f,0x00 / 255.0f,1.0f), 
+    D3DXVECTOR4(0x00 / 255.0f,0x00 / 255.0f,0xA0 / 255.0f,1.0f), 
+
+    D3DXVECTOR4(0x88 / 255.0f,0x88 / 255.0f,0x88 / 255.0f, 1.0f) 
+\}
+\end{DoxyCode}
+\hypertarget{namespace_assimp_view_a7261b9fd2159053db3c27da499623a5b}{\index{Assimp\+View@{Assimp\+View}!g\+\_\+av\+Light\+Colors@{g\+\_\+av\+Light\+Colors}}
+\index{g\+\_\+av\+Light\+Colors@{g\+\_\+av\+Light\+Colors}!Assimp\+View@{Assimp\+View}}
+\subsubsection[{g\+\_\+av\+Light\+Colors}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D\+C\+O\+L\+O\+R Assimp\+View\+::g\+\_\+av\+Light\+Colors\mbox{[}3\mbox{]}}}\label{namespace_assimp_view_a7261b9fd2159053db3c27da499623a5b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+\{
+    D3DCOLOR\_ARGB(0xFF,0xFF,0xFF,0xFF),
+    D3DCOLOR\_ARGB(0xFF,0xFF,0x00,0x00),
+    D3DCOLOR\_ARGB(0xFF,0x05,0x05,0x05),
+\}
+\end{DoxyCode}
+\hypertarget{namespace_assimp_view_a8dd2ce06bec8d9560c917005cba476a1}{\index{Assimp\+View@{Assimp\+View}!g\+\_\+av\+Light\+Dirs@{g\+\_\+av\+Light\+Dirs}}
+\index{g\+\_\+av\+Light\+Dirs@{g\+\_\+av\+Light\+Dirs}!Assimp\+View@{Assimp\+View}}
+\subsubsection[{g\+\_\+av\+Light\+Dirs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\+Vector3\+D} Assimp\+View\+::g\+\_\+av\+Light\+Dirs\mbox{[}1\mbox{]}}}\label{namespace_assimp_view_a8dd2ce06bec8d9560c917005cba476a1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+\{   \hyperlink{structai_vector3_d}{aiVector3D}(-0.5f,0.6f,0.2f)  \}
+\end{DoxyCode}
+\hypertarget{namespace_assimp_view_a11de3131b31c9e8a1371ae1f8ec30537}{\index{Assimp\+View@{Assimp\+View}!g\+\_\+cube\+Indices@{g\+\_\+cube\+Indices}}
+\index{g\+\_\+cube\+Indices@{g\+\_\+cube\+Indices}!Assimp\+View@{Assimp\+View}}
+\subsubsection[{g\+\_\+cube\+Indices}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Assimp\+View\+::g\+\_\+cube\+Indices\mbox{[}$\,$\mbox{]}}}\label{namespace_assimp_view_a11de3131b31c9e8a1371ae1f8ec30537}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\{
+    0, 1, 2, 3, 2, 1,4, 5, 6,
+    7, 6, 5, 4, 6,  0, 1, 6, 0, 
+    5, 2, 7,3, 2, 7, 1, 6, 3,
+    7, 3, 6, 0, 2, 4, 5, 4, 2,  
+\}
+\end{DoxyCode}
+
+
+Indices for the skybox. 
+
+\hypertarget{namespace_assimp_view_a0861f5fdb463a7181ac999ec09cf07d3}{\index{Assimp\+View@{Assimp\+View}!g\+\_\+cube\+Vertices\+\_\+indexed@{g\+\_\+cube\+Vertices\+\_\+indexed}}
+\index{g\+\_\+cube\+Vertices\+\_\+indexed@{g\+\_\+cube\+Vertices\+\_\+indexed}!Assimp\+View@{Assimp\+View}}
+\subsubsection[{g\+\_\+cube\+Vertices\+\_\+indexed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sky\+Box\+Vertex} Assimp\+View\+::g\+\_\+cube\+Vertices\+\_\+indexed\mbox{[}$\,$\mbox{]}}}\label{namespace_assimp_view_a0861f5fdb463a7181ac999ec09cf07d3}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\{
+    \{ -1.0f, 1.0f, -1.0f,   -1.0f,1.0f,-1.0f \},     
+    \{ 1.0f, 1.0f,  -1.0f,   1.0f,1.0f,-1.0f \},      
+    \{ -1.0f, -1.0f, -1.0f,  -1.0f,-1.0f,-1.0f \},    
+    \{ 1.0f,-1.0f,-1.0f,      1.0f,-1.0f,-1.0f \},    
+    \{-1.0f, 1.0f, 1.0f,     -1.0f,1.0f,1.0f \},      
+    \{-1.0f,-1.0f, 1.0f,     -1.0f,-1.0f,1.0f \},     
+    \{ 1.0f, 1.0f, 1.0f,     1.0f,1.0f,1.0f \},       
+    \{ 1.0f,-1.0f, 1.0f,     1.0f,-1.0f,1.0f \}       
+\}
+\end{DoxyCode}
+
+
+Vertices for the skybox. 
+
+\hypertarget{namespace_assimp_view_a1bfafd36b59b7e363424a4ad9ec8b7fc}{\index{Assimp\+View@{Assimp\+View}!ppsteps@{ppsteps}}
+\index{ppsteps@{ppsteps}!Assimp\+View@{Assimp\+View}}
+\subsubsection[{ppsteps}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Assimp\+View\+::ppsteps}}\label{namespace_assimp_view_a1bfafd36b59b7e363424a4ad9ec8b7fc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a8857a0e30688127a82c7b8939958c6dc}{aiProcess\_CalcTangentSpace} | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a444a6c9d8b63e6dc9e1e2e1edd3cbcd4}{aiProcess\_JoinIdenticalVertices}    | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ae420ce22fbbac9d0fd21fd92f2b630fa}{aiProcess\_ValidateDataStructure}    | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a16979c68f93d283c6886abf580d557b1}{aiProcess\_ImproveCacheLocality}     | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a052d2921c33cd21141480b8f25524bb1}{aiProcess\_RemoveRedundantMaterials} | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0}{aiProcess\_FindDegenerates}          | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a42a93fc16a7a3b6df509bab503945421}{aiProcess\_FindInvalidData}          | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410aa4ae05f45c5682ab245cf8e87986426f}{aiProcess\_GenUVCoords}              | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a87577c60885b193571a10237341b237f}{aiProcess\_TransformUVCoords}        | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a4982e6ac69991617b1481bce00d1fc0e}{aiProcess\_FindInstances}            | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a9fc450a103aa2831c145c49bc56c9439}{aiProcess\_LimitBoneWeights}         | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410af5fe0d6ee720c91359dc61cb849f2ebf}{aiProcess\_OptimizeMeshes}           | 
+        \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ac662c1d8f4e37cdf2a54023b174da192}{aiProcess\_SplitByBoneCount}         | 
+        0
+\end{DoxyCode}

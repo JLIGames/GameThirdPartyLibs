@@ -1,0 +1,108 @@
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex}{\section{Assimp\+:\+:Split\+Large\+Meshes\+Process\+\_\+\+Vertex Class Reference}
+\label{class_assimp_1_1_split_large_meshes_process___vertex}\index{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}}
+}
+
+
+{\ttfamily \#include $<$Split\+Large\+Meshes.\+h$>$}
+
+
+
+Inheritance diagram for Assimp\+:\+:Split\+Large\+Meshes\+Process\+\_\+\+Vertex\+:
+
+
+Collaboration diagram for Assimp\+:\+:Split\+Large\+Meshes\+Process\+\_\+\+Vertex\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_a5a4336dc4ea51d01d608178ff5e7f944}{Is\+Active} (unsigned int p\+Flags) const 
+\item 
+virtual void \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_aa6836a25214b54e22265269e2ca45617}{Setup\+Properties} (const \hyperlink{class_assimp_1_1_importer}{Importer} $\ast$p\+Imp)
+\item 
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_a272f6fe074821efcfb61f1a30758fa1f}{void \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_a272f6fe074821efcfb61f1a30758fa1f}{Set\+Limit} (unsigned int l)}\label{class_assimp_1_1_split_large_meshes_process___vertex_a272f6fe074821efcfb61f1a30758fa1f}
+
+\begin{DoxyCompactList}\small\item\em Set the split limit -\/ needed for unit testing. \end{DoxyCompactList}\item 
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_a4c6080d505781be43201416b3e43ddc3}{unsigned int \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_a4c6080d505781be43201416b3e43ddc3}{Get\+Limit} () const }\label{class_assimp_1_1_split_large_meshes_process___vertex_a4c6080d505781be43201416b3e43ddc3}
+
+\begin{DoxyCompactList}\small\item\em Get the split limit. \end{DoxyCompactList}\item 
+void \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_ac99bf00815f6ee1091daa732034b0f9e}{Execute} (\hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)
+\item 
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_a5ebb4c94e6f4269c1d2a893000dca962}{void \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_a5ebb4c94e6f4269c1d2a893000dca962}{Split\+Mesh} (unsigned int a, \hyperlink{structai_mesh}{ai\+Mesh} $\ast$pc\+Mesh, std\+::vector$<$ std\+::pair$<$ \hyperlink{structai_mesh}{ai\+Mesh} $\ast$, unsigned int $>$ $>$ \&av\+List)}\label{class_assimp_1_1_split_large_meshes_process___vertex_a5ebb4c94e6f4269c1d2a893000dca962}
+
+\begin{DoxyCompactList}\small\item\em Apply the algorithm to a given mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_a237a050491263639b44306d49e5cd0eb}{unsigned int \hyperlink{class_assimp_1_1_split_large_meshes_process___vertex_a237a050491263639b44306d49e5cd0eb}{L\+I\+M\+I\+T}}\label{class_assimp_1_1_split_large_meshes_process___vertex_a237a050491263639b44306d49e5cd0eb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_triangle}{Triangle} limit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Post-\/processing filter to split large meshes into sub-\/meshes
+
+Applied A\+F\+T\+E\+R the Join\+Vertices-\/\+Step occurs. Returns U\+N\+I\+Q\+U\+E vertices, splits by vertex number. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_ac99bf00815f6ee1091daa732034b0f9e}{\index{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}!Execute@{Execute}}
+\index{Execute@{Execute}!Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Split\+Large\+Meshes\+Process\+\_\+\+Vertex\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\+Scene} $\ast$}]{p\+Scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_split_large_meshes_process___vertex_ac99bf00815f6ee1091daa732034b0f9e}
+Executes the post processing step on the given imported data. At the moment a process is not supposed to fail. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The imported data to work at. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ac2ec8dbb815e84a7af573fb3174279e7}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_a5a4336dc4ea51d01d608178ff5e7f944}{\index{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}}
+\subsubsection[{Is\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Split\+Large\+Meshes\+Process\+\_\+\+Vertex\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_split_large_meshes_process___vertex_a5a4336dc4ea51d01d608178ff5e7f944}
+Returns whether the processing step is present in the given flag field. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & The processing flags the importer was called with. A bitwise combination of \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the process is present in this flag fields, false if not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_assimp_1_1_base_process_ae707ad643e9c45c265f4c03f4c50a219}{Assimp\+::\+Base\+Process}.
+
+\hypertarget{class_assimp_1_1_split_large_meshes_process___vertex_aa6836a25214b54e22265269e2ca45617}{\index{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}!Setup\+Properties@{Setup\+Properties}}
+\index{Setup\+Properties@{Setup\+Properties}!Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex@{Assimp\+::\+Split\+Large\+Meshes\+Process\+\_\+\+Vertex}}
+\subsubsection[{Setup\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}void Split\+Large\+Meshes\+Process\+\_\+\+Vertex\+::\+Setup\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Importer} $\ast$}]{p\+Imp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_assimp_1_1_split_large_meshes_process___vertex_aa6836a25214b54e22265269e2ca45617}
+Called prior to \hyperlink{class_assimp_1_1_base_process_a21f3736d3f3a6df1b8edb5f2ab15c5ae}{Execute\+On\+Scene()}. The function is a request to the process to update its configuration basing on the \hyperlink{class_assimp_1_1_importer}{Importer}'s configuration property list. 
+
+Reimplemented from \hyperlink{class_assimp_1_1_base_process_aae14d0a8c5918642d4a272b7b74b5d70}{Assimp\+::\+Base\+Process}.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/Split\+Large\+Meshes.\+h\item 
+assimp/assimp-\/3.\+1.\+1/code/Split\+Large\+Meshes.\+cpp\end{DoxyCompactItemize}

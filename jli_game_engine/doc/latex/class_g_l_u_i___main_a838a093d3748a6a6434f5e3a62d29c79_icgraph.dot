@@ -1,0 +1,40 @@
+digraph "GLUI_Main::should_redraw_now"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GLUI_Main::should_redraw_now",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="GLUI_Control::redraw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___control.html#a7777125cd866884377899df625bad6cd"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="GLUI_Main::activate\l_control",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#aafe506d2f17957f0ff81b7168d12428a"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="GLUI_Main::mouse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#a4fb7819317131b79a65eeb414ab4e43b"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="GLUI_Main::deactivate\l_current_control",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___main.html#a819a4700253582ef4a49101c25b3a5a3"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="GLUI_Button::mouse\l_down_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___button.html#ad049e31e22fddf61df229c6fcef80f27"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="GLUI_Button::mouse\l_up_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___button.html#a731c78e9ae9fe92fe5e0eba47fc6c0cf"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="GLUI_Control::sync_live",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___control.html#a56a06a9b1272eb0a537ea01a6c002cf8"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="GLUI_EditText::key\l_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___edit_text.html#a92fcd78877375cb2bba3b5e9f88635b6"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="GLUI_EditText::deactivate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___edit_text.html#a4a83b7bc0b6d60e4fa0dd797b49255ab"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="GLUI_Mouse_Interaction\l::mouse_held_down_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___mouse___interaction.html#a91bf2ba2ff20dab94ef634e38fbfaa84"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="GLUI_RadioButton::mouse\l_up_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___radio_button.html#a2d6e08dc0802146227e8cd4f4d5ef571"];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="GLUI_Scrollbar::mouse\l_held_down_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___scrollbar.html#a7ab8e938ca0cbd466bf1951afc4397f8"];
+  Node2 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="GLUI_Spinner::mouse\l_held_down_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___spinner.html#aae95829438240c9b6a293905356e322c"];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="GLUI_StaticText::set_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___static_text.html#a2105e6f3f6061ccfaca8a24b2f984291"];
+  Node2 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="GLUI_Translation::iaction\l_mouse_down_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_u_i___translation.html#a92ca690a16b858d761aa9e12ac44ec13"];
+}

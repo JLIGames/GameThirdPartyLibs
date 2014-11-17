@@ -1,0 +1,209 @@
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h}{\section{theora/libtheora-\/1.1.1/include/theora/codec.h File Reference}
+\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+}
+{\ttfamily \#include $<$ogg/ogg.\+h$>$}\\*
+Include dependency graph for codec.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structth__img__plane}{th\+\_\+img\+\_\+plane}
+\item 
+struct \hyperlink{structth__info}{th\+\_\+info}
+\item 
+struct \hyperlink{structth__comment}{th\+\_\+comment}
+\item 
+struct \hyperlink{structth__quant__ranges}{th\+\_\+quant\+\_\+ranges}
+\item 
+struct \hyperlink{structth__quant__info}{th\+\_\+quant\+\_\+info}
+\item 
+struct \hyperlink{structth__huff__code}{th\+\_\+huff\+\_\+code}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a15352a6a862d25ab00a8f06ea65ee75b}{\#define {\bfseries \+\_\+\+O\+\_\+\+T\+H\+E\+O\+R\+A\+\_\+\+C\+O\+D\+E\+C\+\_\+\+H\+\_\+}~(1)}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a15352a6a862d25ab00a8f06ea65ee75b}
+
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a49bf449eae33c5320f0c308f32c6ae42}{T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S}~(80)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a2a44f48084e76a58cae48fb5d47cd422}{T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S}~(32)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Return codes}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4d8d8e34fc5ec39ffa05d61a310a0407}{T\+H\+\_\+\+E\+F\+A\+U\+L\+T}~(-\/1)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_afbbd9f19fbf292aeb62a37792cecb870}{T\+H\+\_\+\+E\+I\+N\+V\+A\+L}~(-\/10)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_af00f7ecc5242d12a717202537324a510}{T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R}~(-\/20)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a3dc08a00a9aba231be398f3e31726d9c}{T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T}~(-\/21)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_ac3a45ef2b24f75259258edc481e3a122}{T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N}~(-\/22)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a921c47accc17841f220af5a6afb79efe}{T\+H\+\_\+\+E\+I\+M\+P\+L}~(-\/23)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a6efb84e9c2213a8840003eee2847b27f}{T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T}~(-\/24)
+\item 
+\#define \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_ab10e7b64f17a02707fc9348ea9832d09}{T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E}~(1)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structth__img__plane}{th\+\_\+img\+\_\+plane} \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a343f7cfabad179cc4fe527cf06873f45}{th\+\_\+ycbcr\+\_\+buffer} \mbox{[}3\mbox{]}
+\item 
+typedef struct \hyperlink{structth__comment}{th\+\_\+comment} \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a96239eba5d663e3d9ccb40031b2dcfe4}{th\+\_\+comment}
+\item 
+typedef unsigned char \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a6a1426d16beef8a311d7f0e9d2e96326}{th\+\_\+quant\+\_\+base} \mbox{[}64\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0}{th\+\_\+colorspace} \{ \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0adb9a17a3283c8d490652e507db2427cf}{T\+H\+\_\+\+C\+S\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D}, 
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a1a19346bbfb8192baa4c185df73d3397}{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+M}, 
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a009021d50836ddb0ec6004a2803775fe}{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+B\+G}, 
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a0fa8ea07f583ee57943520ddb2f6e62e}{T\+H\+\_\+\+C\+S\+\_\+\+N\+S\+P\+A\+C\+E\+S}
+ \}
+\item 
+enum \hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bc}{th\+\_\+pixel\+\_\+fmt} \{ \\*
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bcafed7ad7ee4345930255827bff6055162}{T\+H\+\_\+\+P\+F\+\_\+420}, 
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca9e60af0159d42b20806d7eb4a8b833e6}{T\+H\+\_\+\+P\+F\+\_\+\+R\+S\+V\+D}, 
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca0271d01babf2f51512479f4a6245b9fa}{T\+H\+\_\+\+P\+F\+\_\+422}, 
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca2ac50ac048ea75501a5e0f99a63c8c86}{T\+H\+\_\+\+P\+F\+\_\+444}, 
+\\*
+\hyperlink{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca2d6d78b9df1df086bb60f32f963a31eb}{T\+H\+\_\+\+P\+F\+\_\+\+N\+F\+O\+R\+M\+A\+T\+S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Basic shared functions}\par
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{group__basefuncs_ga04846066738d9f2024fc9961162b2dbc}{th\+\_\+version\+\_\+string} (void)
+\item 
+ogg\+\_\+uint32\+\_\+t \hyperlink{group__basefuncs_gab723a75c0f95b3eb817f7f769846016b}{th\+\_\+version\+\_\+number} (void)
+\item 
+ogg\+\_\+int64\+\_\+t \hyperlink{group__basefuncs_ga95b10e76fc4c05d0240ea2dfd9fd62bd}{th\+\_\+granule\+\_\+frame} (void $\ast$\+\_\+encdec, ogg\+\_\+int64\+\_\+t \+\_\+granpos)
+\item 
+double \hyperlink{group__basefuncs_ga707e1e281de788af0df39ef00f3fb432}{th\+\_\+granule\+\_\+time} (void $\ast$\+\_\+encdec, ogg\+\_\+int64\+\_\+t \+\_\+granpos)
+\item 
+int \hyperlink{group__basefuncs_ga02f3f38261a9b39452d8a5e6f8737cc1}{th\+\_\+packet\+\_\+isheader} (\hyperlink{structogg__packet}{ogg\+\_\+packet} $\ast$\+\_\+op)
+\item 
+int \hyperlink{group__basefuncs_gafe95cfd06f0fef413266c9168a66248a}{th\+\_\+packet\+\_\+iskeyframe} (\hyperlink{structogg__packet}{ogg\+\_\+packet} $\ast$\+\_\+op)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Functions for manipulating header data}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__basefuncs_ga430d9c605816a6ca0bdce3a0b965b926}{th\+\_\+info\+\_\+init} (\hyperlink{structth__info}{th\+\_\+info} $\ast$\+\_\+info)
+\item 
+void \hyperlink{group__basefuncs_gab3d6441ab4a4969859ef5fd78a9e3c1c}{th\+\_\+info\+\_\+clear} (\hyperlink{structth__info}{th\+\_\+info} $\ast$\+\_\+info)
+\item 
+void \hyperlink{group__basefuncs_ga6c8ab25988e7ea9d7b1e31a54cf58f09}{th\+\_\+comment\+\_\+init} (\hyperlink{structth__comment}{th\+\_\+comment} $\ast$\+\_\+tc)
+\item 
+void \hyperlink{group__basefuncs_ga19a1f7b8032db957df151a34e5ac9272}{th\+\_\+comment\+\_\+add} (\hyperlink{structth__comment}{th\+\_\+comment} $\ast$\+\_\+tc, char $\ast$\+\_\+comment)
+\item 
+void \hyperlink{group__basefuncs_ga6c5edc201ca220a30787ca6c1ddcaeaf}{th\+\_\+comment\+\_\+add\+\_\+tag} (\hyperlink{structth__comment}{th\+\_\+comment} $\ast$\+\_\+tc, char $\ast$\+\_\+tag, char $\ast$\+\_\+val)
+\item 
+char $\ast$ \hyperlink{group__basefuncs_ga33c8b4f57a03217636d704c2ebb211fa}{th\+\_\+comment\+\_\+query} (\hyperlink{structth__comment}{th\+\_\+comment} $\ast$\+\_\+tc, char $\ast$\+\_\+tag, int \+\_\+count)
+\item 
+int \hyperlink{group__basefuncs_ga81d518dc4426f63ceaedcbe2668679fc}{th\+\_\+comment\+\_\+query\+\_\+count} (\hyperlink{structth__comment}{th\+\_\+comment} $\ast$\+\_\+tc, char $\ast$\+\_\+tag)
+\item 
+void \hyperlink{group__basefuncs_gae736c1afa514947a3feb223143af95e3}{th\+\_\+comment\+\_\+clear} (\hyperlink{structth__comment}{th\+\_\+comment} $\ast$\+\_\+tc)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The shared {\ttfamily libtheoradec} and {\ttfamily libtheoraenc} C A\+P\+I. You don't need to include this directly. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_ab10e7b64f17a02707fc9348ea9832d09}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E@{T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E}}
+\index{T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E@{T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+D\+U\+P\+F\+R\+A\+M\+E~(1)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_ab10e7b64f17a02707fc9348ea9832d09}
+The decoded packet represented a dropped frame. The player can continue to display the current frame, as the contents of the decoded frame buffer have not changed. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_af00f7ecc5242d12a717202537324a510}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R@{T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R}}
+\index{T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R@{T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+E\+R~(-\/20)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_af00f7ecc5242d12a717202537324a510}
+The contents of the header were incomplete, invalid, or unexpected. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a6efb84e9c2213a8840003eee2847b27f}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T@{T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T}}
+\index{T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T@{T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+E\+T~(-\/24)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a6efb84e9c2213a8840003eee2847b27f}
+There were errors in the video data packet. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4d8d8e34fc5ec39ffa05d61a310a0407}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+F\+A\+U\+L\+T@{T\+H\+\_\+\+E\+F\+A\+U\+L\+T}}
+\index{T\+H\+\_\+\+E\+F\+A\+U\+L\+T@{T\+H\+\_\+\+E\+F\+A\+U\+L\+T}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+F\+A\+U\+L\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+F\+A\+U\+L\+T~(-\/1)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4d8d8e34fc5ec39ffa05d61a310a0407}
+An invalid pointer was provided. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a921c47accc17841f220af5a6afb79efe}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+I\+M\+P\+L@{T\+H\+\_\+\+E\+I\+M\+P\+L}}
+\index{T\+H\+\_\+\+E\+I\+M\+P\+L@{T\+H\+\_\+\+E\+I\+M\+P\+L}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+I\+M\+P\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+I\+M\+P\+L~(-\/23)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a921c47accc17841f220af5a6afb79efe}
+The specified function is not implemented. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_afbbd9f19fbf292aeb62a37792cecb870}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+I\+N\+V\+A\+L@{T\+H\+\_\+\+E\+I\+N\+V\+A\+L}}
+\index{T\+H\+\_\+\+E\+I\+N\+V\+A\+L@{T\+H\+\_\+\+E\+I\+N\+V\+A\+L}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+I\+N\+V\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+I\+N\+V\+A\+L~(-\/10)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_afbbd9f19fbf292aeb62a37792cecb870}
+An invalid argument was provided. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a3dc08a00a9aba231be398f3e31726d9c}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T@{T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T}}
+\index{T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T@{T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+A\+T~(-\/21)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a3dc08a00a9aba231be398f3e31726d9c}
+The header does not belong to a Theora stream. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_ac3a45ef2b24f75259258edc481e3a122}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N@{T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N}}
+\index{T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N@{T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+E\+V\+E\+R\+S\+I\+O\+N~(-\/22)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_ac3a45ef2b24f75259258edc481e3a122}
+The bitstream version is too high. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a2a44f48084e76a58cae48fb5d47cd422}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S@{T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S}}
+\index{T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S@{T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+N\+D\+C\+T\+\_\+\+T\+O\+K\+E\+N\+S~(32)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a2a44f48084e76a58cae48fb5d47cd422}
+The number of D\+C\+T token values in each table. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a49bf449eae33c5320f0c308f32c6ae42}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S@{T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S}}
+\index{T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S@{T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+\_\+\+N\+H\+U\+F\+F\+M\+A\+N\+\_\+\+T\+A\+B\+L\+E\+S~(80)}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a49bf449eae33c5320f0c308f32c6ae42}
+The number of Huffman tables used by Theora. 
+
+\subsection{Typedef Documentation}
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a96239eba5d663e3d9ccb40031b2dcfe4}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!th\+\_\+comment@{th\+\_\+comment}}
+\index{th\+\_\+comment@{th\+\_\+comment}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{th\+\_\+comment}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf th\+\_\+comment} {\bf th\+\_\+comment}}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a96239eba5d663e3d9ccb40031b2dcfe4}
+The comment information.
+
+This structure holds the in-\/stream metadata corresponding to the 'comment' header packet. The comment header is meant to be used much like someone jotting a quick note on the label of a video. It should be a short, to the point text note that can be more than a couple words, but not more than a short paragraph.
+
+The metadata is stored as a series of (tag, value) pairs, in length-\/encoded string vectors. The first occurrence of the '=' character delimits the tag and value. A particular tag may occur more than once, and order is significant. The character set encoding for the strings is always U\+T\+F-\/8, but the tag names are limited to A\+S\+C\+I\+I, and treated as case-\/insensitive. See \href{http://www.theora.org/doc/Theora.pdf}{\tt the Theora specification}, Section 6.\+3.\+3 for details.
+
+In filling in this structure, \hyperlink{group__decfuncs_ga006d01d36fbe64768c571e6a12b7fc50}{th\+\_\+decode\+\_\+headerin()} will null-\/terminate the user\+\_\+comment strings for safety. However, the bitstream format itself treats them as 8-\/bit clean vectors, possibly containing null characters, and so the length array should be treated as their authoritative length. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a6a1426d16beef8a311d7f0e9d2e96326}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!th\+\_\+quant\+\_\+base@{th\+\_\+quant\+\_\+base}}
+\index{th\+\_\+quant\+\_\+base@{th\+\_\+quant\+\_\+base}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{th\+\_\+quant\+\_\+base}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char th\+\_\+quant\+\_\+base\mbox{[}64\mbox{]}}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a6a1426d16beef8a311d7f0e9d2e96326}
+A single base matrix. \hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a343f7cfabad179cc4fe527cf06873f45}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!th\+\_\+ycbcr\+\_\+buffer@{th\+\_\+ycbcr\+\_\+buffer}}
+\index{th\+\_\+ycbcr\+\_\+buffer@{th\+\_\+ycbcr\+\_\+buffer}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{th\+\_\+ycbcr\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf th\+\_\+img\+\_\+plane} th\+\_\+ycbcr\+\_\+buffer\mbox{[}3\mbox{]}}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a343f7cfabad179cc4fe527cf06873f45}
+A complete image buffer for an uncompressed frame. The chroma planes may be decimated by a factor of two in either direction, as indicated by \hyperlink{structth__info_a2301388ef3755c41ab12fd144c1fc54e}{th\+\_\+info\+::pixel\+\_\+fmt}. The width and height of the Y' plane must be multiples of 16. They may need to be cropped for display, using the rectangle specified by \hyperlink{structth__info_a5b3f834bcf141564e7bb14f49101870f}{th\+\_\+info\+::pic\+\_\+x}, \hyperlink{structth__info_a8aacc575cab2dfe3735001c2ad32aa14}{th\+\_\+info\+::pic\+\_\+y}, \hyperlink{structth__info_a5048edf77b141dd3e9a92ca85e317345}{th\+\_\+info\+::pic\+\_\+width}, and \hyperlink{structth__info_a775178474283c5990ba73f9ba7f6b88b}{th\+\_\+info\+::pic\+\_\+height}. All samples are 8 bits. \begin{DoxyNote}{Note}
+The term Y\+U\+V often used to describe a colorspace is ambiguous. The exact parameters of the R\+G\+B to Y\+U\+V conversion process aside, in many contexts the U and V channels actually have opposite meanings. To avoid this confusion, we are explicit\+: the name of the color channels are Y'Cb\+Cr, and they appear in that order, always. The prime symbol denotes that the Y channel is non-\/linear. Cb and Cr stand for \char`\"{}\+Chroma blue\char`\"{} and \char`\"{}\+Chroma red\char`\"{}, respectively. 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!th\+\_\+colorspace@{th\+\_\+colorspace}}
+\index{th\+\_\+colorspace@{th\+\_\+colorspace}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{th\+\_\+colorspace}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf th\+\_\+colorspace}}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0}
+The currently defined color space tags. See \href{http://www.theora.org/doc/Theora.pdf}{\tt the Theora specification}, Chapter 4, for exact details on the meaning of each of these color spaces. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+H\+\_\+\+C\+S\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D@{T\+H\+\_\+\+C\+S\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+C\+S\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D@{T\+H\+\_\+\+C\+S\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0adb9a17a3283c8d490652e507db2427cf}{T\+H\+\_\+\+C\+S\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0adb9a17a3283c8d490652e507db2427cf}
+}]The color space was not specified at the encoder. It may be conveyed by an external means. \index{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+M@{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+M}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+M@{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+M}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a1a19346bbfb8192baa4c185df73d3397}{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+M}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a1a19346bbfb8192baa4c185df73d3397}
+}]A color space designed for N\+T\+S\+C content. \index{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+B\+G@{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+B\+G}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+B\+G@{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+B\+G}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a009021d50836ddb0ec6004a2803775fe}{T\+H\+\_\+\+C\+S\+\_\+\+I\+T\+U\+\_\+\+R\+E\+C\+\_\+470\+B\+G}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a009021d50836ddb0ec6004a2803775fe}
+}]A color space designed for P\+A\+L/\+S\+E\+C\+A\+M content. \index{T\+H\+\_\+\+C\+S\+\_\+\+N\+S\+P\+A\+C\+E\+S@{T\+H\+\_\+\+C\+S\+\_\+\+N\+S\+P\+A\+C\+E\+S}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+C\+S\+\_\+\+N\+S\+P\+A\+C\+E\+S@{T\+H\+\_\+\+C\+S\+\_\+\+N\+S\+P\+A\+C\+E\+S}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a0fa8ea07f583ee57943520ddb2f6e62e}{T\+H\+\_\+\+C\+S\+\_\+\+N\+S\+P\+A\+C\+E\+S}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a4ce7a695ce353b1582d29b6c1ddf31a0a0fa8ea07f583ee57943520ddb2f6e62e}
+}]The total number of currently defined color spaces. \end{description}
+\end{Desc}
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bc}{\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!th\+\_\+pixel\+\_\+fmt@{th\+\_\+pixel\+\_\+fmt}}
+\index{th\+\_\+pixel\+\_\+fmt@{th\+\_\+pixel\+\_\+fmt}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}
+\subsubsection[{th\+\_\+pixel\+\_\+fmt}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf th\+\_\+pixel\+\_\+fmt}}}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bc}
+The currently defined pixel format tags. See \href{http://www.theora.org/doc/Theora.pdf}{\tt the Theora specification}, Section 4.\+4, for details on the precise sample locations. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+H\+\_\+\+P\+F\+\_\+420@{T\+H\+\_\+\+P\+F\+\_\+420}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+P\+F\+\_\+420@{T\+H\+\_\+\+P\+F\+\_\+420}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bcafed7ad7ee4345930255827bff6055162}{T\+H\+\_\+\+P\+F\+\_\+420}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bcafed7ad7ee4345930255827bff6055162}
+}]Chroma decimation by 2 in both the X and Y directions (4\+:2\+:0). The Cb and Cr chroma planes are half the width and half the height of the luma plane. \index{T\+H\+\_\+\+P\+F\+\_\+\+R\+S\+V\+D@{T\+H\+\_\+\+P\+F\+\_\+\+R\+S\+V\+D}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+P\+F\+\_\+\+R\+S\+V\+D@{T\+H\+\_\+\+P\+F\+\_\+\+R\+S\+V\+D}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca9e60af0159d42b20806d7eb4a8b833e6}{T\+H\+\_\+\+P\+F\+\_\+\+R\+S\+V\+D}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca9e60af0159d42b20806d7eb4a8b833e6}
+}]Currently reserved. \index{T\+H\+\_\+\+P\+F\+\_\+422@{T\+H\+\_\+\+P\+F\+\_\+422}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+P\+F\+\_\+422@{T\+H\+\_\+\+P\+F\+\_\+422}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca0271d01babf2f51512479f4a6245b9fa}{T\+H\+\_\+\+P\+F\+\_\+422}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca0271d01babf2f51512479f4a6245b9fa}
+}]Chroma decimation by 2 in the X direction (4\+:2\+:2). The Cb and Cr chroma planes are half the width of the luma plane, but full height. \index{T\+H\+\_\+\+P\+F\+\_\+444@{T\+H\+\_\+\+P\+F\+\_\+444}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+P\+F\+\_\+444@{T\+H\+\_\+\+P\+F\+\_\+444}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca2ac50ac048ea75501a5e0f99a63c8c86}{T\+H\+\_\+\+P\+F\+\_\+444}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca2ac50ac048ea75501a5e0f99a63c8c86}
+}]No chroma decimation (4\+:4\+:4). The Cb and Cr chroma planes are full width and full height. \index{T\+H\+\_\+\+P\+F\+\_\+\+N\+F\+O\+R\+M\+A\+T\+S@{T\+H\+\_\+\+P\+F\+\_\+\+N\+F\+O\+R\+M\+A\+T\+S}!theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}}\index{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h@{theora/libtheora-\/1.\+1.\+1/include/theora/codec.\+h}!T\+H\+\_\+\+P\+F\+\_\+\+N\+F\+O\+R\+M\+A\+T\+S@{T\+H\+\_\+\+P\+F\+\_\+\+N\+F\+O\+R\+M\+A\+T\+S}}\item[{\em 
+\hypertarget{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca2d6d78b9df1df086bb60f32f963a31eb}{T\+H\+\_\+\+P\+F\+\_\+\+N\+F\+O\+R\+M\+A\+T\+S}\label{theora_2libtheora-1_81_81_2include_2theora_2codec_8h_a5c9e7f2f0c7ed209c9ca3ed0abd328bca2d6d78b9df1df086bb60f32f963a31eb}
+}]The total number of currently defined pixel formats. \end{description}
+\end{Desc}

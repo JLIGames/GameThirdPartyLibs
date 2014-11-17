@@ -1,0 +1,18 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/Reflections/OGLES2" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_981e7afa61ac8a8a647f7378ab99426a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Reflections" fontname="Helvetica", fontsize="10", URL="dir_981e7afa61ac8a8a647f7378ab99426a.html"]
+  subgraph clusterdir_ac59739fcb9e9386d059d51a865f49ee {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ac59739fcb9e9386d059d51a865f49ee.html"];
+    dir_ac59739fcb9e9386d059d51a865f49ee [shape=plaintext label="OGLES2"];
+    dir_324d49de131f2365f2cb58df745889b6 [shape=box label="Build" color="red" fillcolor="white" style="filled" URL="dir_324d49de131f2365f2cb58df745889b6.html"];
+    dir_7b20558afe0ca8b035084a7644e66154 [shape=box label="Content" color="black" fillcolor="white" style="filled" URL="dir_7b20558afe0ca8b035084a7644e66154.html"];
+  }
+  }
+  dir_de41955a66a331b990d60d5323117a97 [shape=box label="Shell" fillcolor="white" style="filled" color="red" URL="dir_de41955a66a331b990d60d5323117a97.html"];
+  dir_5222bd6691dac9df766f8a52293393a2 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_5222bd6691dac9df766f8a52293393a2.html"];
+  dir_ac59739fcb9e9386d059d51a865f49ee->dir_de41955a66a331b990d60d5323117a97 [headlabel="1", labeldistance=1.5 headhref="dir_000695_000133.html"];
+  dir_ac59739fcb9e9386d059d51a865f49ee->dir_5222bd6691dac9df766f8a52293393a2 [headlabel="1", labeldistance=1.5 headhref="dir_000695_001762.html"];
+}

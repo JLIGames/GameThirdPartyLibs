@@ -1,0 +1,22 @@
+digraph "assimp/assimp-3.1.1/code/FBXUtil.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="assimp/assimp-3.1.1\l/code/FBXUtil.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="assimp/assimp-3.1.1\l/code/FBXBinaryTokenizer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_binary_tokenizer_8cpp.html",tooltip="Implementation of a fake lexer for binary fbx files - we emit tokens so the parser needs almost no sp..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="assimp/assimp-3.1.1\l/code/FBXConverter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_converter_8cpp.html",tooltip="Implementation of the FBX DOM -> aiScene converter. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="assimp/assimp-3.1.1\l/code/FBXDocument.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_document_8cpp.html",tooltip="Implementation of the FBX DOM classes. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="assimp/assimp-3.1.1\l/code/FBXDocumentUtil.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_document_util_8cpp.html",tooltip="Implementation of the FBX DOM utility functions declared in FBXDocumentUtil.h. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="assimp/assimp-3.1.1\l/code/FBXImporter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_importer_8cpp.html",tooltip="Implementation of the FBX importer. "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="assimp/assimp-3.1.1\l/code/FBXParser.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_parser_8cpp.html",tooltip="Implementation of the FBX parser and the rudimentary DOM that we use. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="assimp/assimp-3.1.1\l/code/FBXTokenizer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_tokenizer_8cpp.html",tooltip="Implementation of the FBX broadphase lexer. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="assimp/assimp-3.1.1\l/code/FBXUtil.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_f_b_x_util_8cpp.html",tooltip="Implementation of internal FBX utility functions. "];
+}

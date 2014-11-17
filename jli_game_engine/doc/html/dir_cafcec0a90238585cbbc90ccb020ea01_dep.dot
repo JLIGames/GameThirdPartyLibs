@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/MagicLantern/OGLES3/Build/Android/src/com/powervr/OGLES3MagicLantern" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_87038c11183f5b073f728e2b2277d1de {
+    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_87038c11183f5b073f728e2b2277d1de.html"]
+  dir_cafcec0a90238585cbbc90ccb020ea01 [shape=box, label="OGLES3MagicLantern", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_cafcec0a90238585cbbc90ccb020ea01.html"];
+  }
+}

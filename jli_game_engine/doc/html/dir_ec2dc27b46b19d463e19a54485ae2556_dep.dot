@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Intermediate/Refraction/OGLES2/Build/Android/src/com" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_cc19577030de20c66003168455b36188 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_cc19577030de20c66003168455b36188.html"]
+  subgraph clusterdir_ec2dc27b46b19d463e19a54485ae2556 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ec2dc27b46b19d463e19a54485ae2556.html"];
+    dir_ec2dc27b46b19d463e19a54485ae2556 [shape=plaintext label="com"];
+    dir_5254ec391475817fa9f9a7286bc5315d [shape=box label="powervr" color="red" fillcolor="white" style="filled" URL="dir_5254ec391475817fa9f9a7286bc5315d.html"];
+  }
+  }
+}

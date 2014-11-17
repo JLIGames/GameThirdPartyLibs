@@ -1,0 +1,108 @@
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser}{\section{Assimp\+:\+:M\+D5\+:\+:M\+D5\+Parser Class Reference}
+\label{class_assimp_1_1_m_d5_1_1_m_d5_parser}\index{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}}
+}
+
+
+{\ttfamily \#include $<$M\+D5\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_assimp_1_1_m_d5_1_1_m_d5_parser_a4c430ef141991859cf01cad03719c6a0}{M\+D5\+Parser} (char $\ast$\hyperlink{structbuffer}{buffer}, unsigned int file\+Size)
+\item 
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser_a91c4462a956cba866f4a593dd2dc7830}{void {\bfseries Report\+Error} (const char $\ast$error)}\label{class_assimp_1_1_m_d5_1_1_m_d5_parser_a91c4462a956cba866f4a593dd2dc7830}
+
+\item 
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser_a69fdc805a70e168932544f92312be304}{void {\bfseries Report\+Warning} (const char $\ast$warn)}\label{class_assimp_1_1_m_d5_1_1_m_d5_parser_a69fdc805a70e168932544f92312be304}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_assimp_1_1_m_d5_1_1_m_d5_parser_a1449e5901c91fd16186c48b752944c60}{Report\+Error} (const char $\ast$error, unsigned int line)
+\item 
+static void \hyperlink{class_assimp_1_1_m_d5_1_1_m_d5_parser_a36c97ec2e3054ba9b7fa40b143abdac1}{Report\+Warning} (const char $\ast$warn, unsigned int line)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser_a80f1763d724ad68ac829967e8388ebf4}{Section\+List \hyperlink{class_assimp_1_1_m_d5_1_1_m_d5_parser_a80f1763d724ad68ac829967e8388ebf4}{m\+Sections}}\label{class_assimp_1_1_m_d5_1_1_m_d5_parser_a80f1763d724ad68ac829967e8388ebf4}
+
+\begin{DoxyCompactList}\small\item\em List of all sections which have been read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parses the block structure of M\+D5\+M\+E\+S\+H and M\+D5\+A\+N\+I\+M files (but does no further processing) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser_a4c430ef141991859cf01cad03719c6a0}{\index{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}!M\+D5\+Parser@{M\+D5\+Parser}}
+\index{M\+D5\+Parser@{M\+D5\+Parser}!Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}}
+\subsubsection[{M\+D5\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}M\+D5\+Parser\+::\+M\+D5\+Parser (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{unsigned int}]{file\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_assimp_1_1_m_d5_1_1_m_d5_parser_a4c430ef141991859cf01cad03719c6a0}
+Constructs a new \hyperlink{class_assimp_1_1_m_d5_1_1_m_d5_parser}{M\+D5\+Parser} instance from an existing buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & \hyperlink{class_file}{File} buffer \\
+\hline
+{\em file\+Size} & Length of the file in bytes (excluding a terminal 0) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser_a1449e5901c91fd16186c48b752944c60}{\index{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}!Report\+Error@{Report\+Error}}
+\index{Report\+Error@{Report\+Error}!Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}}
+\subsubsection[{Report\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Parser\+::\+Report\+Error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{error, }
+\item[{unsigned int}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_m_d5_1_1_m_d5_parser_a1449e5901c91fd16186c48b752944c60}
+Report a specific error message and throw an exception 
+\begin{DoxyParams}{Parameters}
+{\em error} & Error message to be reported \\
+\hline
+{\em line} & \hyperlink{struct_index}{Index} of the line where the error occured \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_assimp_1_1_m_d5_1_1_m_d5_parser_a36c97ec2e3054ba9b7fa40b143abdac1}{\index{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}!Report\+Warning@{Report\+Warning}}
+\index{Report\+Warning@{Report\+Warning}!Assimp\+::\+M\+D5\+::\+M\+D5\+Parser@{Assimp\+::\+M\+D5\+::\+M\+D5\+Parser}}
+\subsubsection[{Report\+Warning}]{\setlength{\rightskip}{0pt plus 5cm}void M\+D5\+Parser\+::\+Report\+Warning (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{warn, }
+\item[{unsigned int}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_assimp_1_1_m_d5_1_1_m_d5_parser_a36c97ec2e3054ba9b7fa40b143abdac1}
+Report a specific warning 
+\begin{DoxyParams}{Parameters}
+{\em warn} & Warn message to be reported \\
+\hline
+{\em line} & \hyperlink{struct_index}{Index} of the line where the error occured \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_m_d5_parser_8h}{M\+D5\+Parser.\+h}\item 
+assimp/assimp-\/3.\+1.\+1/code/\hyperlink{_m_d5_parser_8cpp}{M\+D5\+Parser.\+cpp}\end{DoxyCompactItemize}

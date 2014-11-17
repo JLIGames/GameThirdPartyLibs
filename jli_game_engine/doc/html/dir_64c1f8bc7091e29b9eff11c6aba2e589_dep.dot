@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/Particles/OGLES/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f0d8865789b92be4aadac4274589c275 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_f0d8865789b92be4aadac4274589c275.html"]
+  subgraph clusterdir_64c1f8bc7091e29b9eff11c6aba2e589 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_64c1f8bc7091e29b9eff11c6aba2e589.html"];
+    dir_64c1f8bc7091e29b9eff11c6aba2e589 [shape=plaintext label="Android"];
+    dir_06efa3c5ba60700217121b29439a990a [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_06efa3c5ba60700217121b29439a990a.html"];
+  }
+  }
+}

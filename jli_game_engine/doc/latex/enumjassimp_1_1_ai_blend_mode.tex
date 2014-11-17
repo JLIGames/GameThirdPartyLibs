@@ -1,0 +1,67 @@
+\hypertarget{enumjassimp_1_1_ai_blend_mode}{\section{jassimp.\+Ai\+Blend\+Mode Enum Reference}
+\label{enumjassimp_1_1_ai_blend_mode}\index{jassimp.\+Ai\+Blend\+Mode@{jassimp.\+Ai\+Blend\+Mode}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{enumjassimp_1_1_ai_blend_mode}{Ai\+Blend\+Mode} \hyperlink{enumjassimp_1_1_ai_blend_mode_ac879b40417b787f111ac558b8cd6f9a0}{from\+Raw\+Value} (int raw\+Value)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{enumjassimp_1_1_ai_blend_mode_a86f3ba70030a6263ccdc6f4d558908c0}{D\+E\+F\+A\+U\+L\+T} =(0x0)
+\item 
+\hyperlink{enumjassimp_1_1_ai_blend_mode_a3f743f98809def27847bcd6aa40c986a}{A\+D\+D\+I\+T\+I\+V\+E} =(0x1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines alpha-\/blend flags.
+
+If you're familiar with Open\+G\+L or D3\+D, these flags aren't new to you. They define {\itshape how} the final color value of a pixel is computed, basing on the previous color at that pixel and the new color value from the material. The blend formula is\+: ~\newline
+{\ttfamily  Source\+Color $\ast$ Source\+Blend + Dest\+Color $\ast$ Dest\+Blend }~\newline
+ where {\ttfamily Dest\+Color} is the previous color in the framebuffer at this position and {\ttfamily Source\+Color} is the material color before the transparency calculation. 
+
+\subsection{Member Function Documentation}
+\hypertarget{enumjassimp_1_1_ai_blend_mode_ac879b40417b787f111ac558b8cd6f9a0}{\index{jassimp\+::\+Ai\+Blend\+Mode@{jassimp\+::\+Ai\+Blend\+Mode}!from\+Raw\+Value@{from\+Raw\+Value}}
+\index{from\+Raw\+Value@{from\+Raw\+Value}!jassimp\+::\+Ai\+Blend\+Mode@{jassimp\+::\+Ai\+Blend\+Mode}}
+\subsubsection[{from\+Raw\+Value}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Ai\+Blend\+Mode} jassimp.\+Ai\+Blend\+Mode.\+from\+Raw\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{raw\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{enumjassimp_1_1_ai_blend_mode_ac879b40417b787f111ac558b8cd6f9a0}
+Utility method for converting from c/c++ based integer enums to java enums.
+
+This method is intended to be used from J\+N\+I and my change based on implementation needs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Value} & an integer based enum value (as defined by assimp) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the enum value corresponding to raw\+Value 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{enumjassimp_1_1_ai_blend_mode_a3f743f98809def27847bcd6aa40c986a}{\index{jassimp\+::\+Ai\+Blend\+Mode@{jassimp\+::\+Ai\+Blend\+Mode}!A\+D\+D\+I\+T\+I\+V\+E@{A\+D\+D\+I\+T\+I\+V\+E}}
+\index{A\+D\+D\+I\+T\+I\+V\+E@{A\+D\+D\+I\+T\+I\+V\+E}!jassimp\+::\+Ai\+Blend\+Mode@{jassimp\+::\+Ai\+Blend\+Mode}}
+\subsubsection[{A\+D\+D\+I\+T\+I\+V\+E}]{\setlength{\rightskip}{0pt plus 5cm}jassimp.\+Ai\+Blend\+Mode.\+A\+D\+D\+I\+T\+I\+V\+E =(0x1)}}\label{enumjassimp_1_1_ai_blend_mode_a3f743f98809def27847bcd6aa40c986a}
+Additive blending.
+
+Formula\+: {\ttfamily  Source\+Color$\ast$1 + Dest\+Color$\ast$1 } \hypertarget{enumjassimp_1_1_ai_blend_mode_a86f3ba70030a6263ccdc6f4d558908c0}{\index{jassimp\+::\+Ai\+Blend\+Mode@{jassimp\+::\+Ai\+Blend\+Mode}!D\+E\+F\+A\+U\+L\+T@{D\+E\+F\+A\+U\+L\+T}}
+\index{D\+E\+F\+A\+U\+L\+T@{D\+E\+F\+A\+U\+L\+T}!jassimp\+::\+Ai\+Blend\+Mode@{jassimp\+::\+Ai\+Blend\+Mode}}
+\subsubsection[{D\+E\+F\+A\+U\+L\+T}]{\setlength{\rightskip}{0pt plus 5cm}jassimp.\+Ai\+Blend\+Mode.\+D\+E\+F\+A\+U\+L\+T =(0x0)}}\label{enumjassimp_1_1_ai_blend_mode_a86f3ba70030a6263ccdc6f4d558908c0}
+Default blending.
+
+Formula\+: {\ttfamily  Source\+Color$\ast$\+Source\+Alpha + Dest\+Color$\ast$(1-\/\+Source\+Alpha) } 
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+assimp/assimp-\/3.\+1.\+1/port/jassimp/jassimp/src/jassimp/Ai\+Blend\+Mode.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/FilmTV/OGLES2/Build/Android" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8da5a8fa5e6e074ba428396285e06fcc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Build" fontname="Helvetica", fontsize="10", URL="dir_8da5a8fa5e6e074ba428396285e06fcc.html"]
+  subgraph clusterdir_2bd42eff5a4c369f554f85e1049c0a5f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2bd42eff5a4c369f554f85e1049c0a5f.html"];
+    dir_2bd42eff5a4c369f554f85e1049c0a5f [shape=plaintext label="Android"];
+    dir_26256e7883c9706767235f904094f89d [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_26256e7883c9706767235f904094f89d.html"];
+  }
+  }
+}

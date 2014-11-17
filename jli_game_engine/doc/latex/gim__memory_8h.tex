@@ -1,0 +1,191 @@
+\hypertarget{gim__memory_8h}{\section{bullet/bullet-\/2.82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+memory.h File Reference}
+\label{gim__memory_8h}\index{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+memory.\+h@{bullet/bullet-\/2.\+82-\/r2704/src/\+Bullet\+Collision/\+Gimpact/gim\+\_\+memory.\+h}}
+}
+{\ttfamily \#include \char`\"{}gim\+\_\+math.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for gim\+\_\+memory.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{gim__memory_8h_aa7421a08567e946189db67fbebfb88e0}{\#define \hyperlink{gim__memory_8h_aa7421a08567e946189db67fbebfb88e0}{pf}(\+\_\+x, \+\_\+i)}\label{gim__memory_8h_aa7421a08567e946189db67fbebfb88e0}
+
+\begin{DoxyCompactList}\small\item\em Prefetch 64. \end{DoxyCompactList}\item 
+\hypertarget{gim__memory_8h_a6ce5894c6a3a65ce7e8fcbc8eaef6074}{\#define \hyperlink{gim__memory_8h_a6ce5894c6a3a65ce7e8fcbc8eaef6074}{pf2}(\+\_\+x, \+\_\+i)}\label{gim__memory_8h_a6ce5894c6a3a65ce7e8fcbc8eaef6074}
+
+\begin{DoxyCompactList}\small\item\em Prefetch 128. \end{DoxyCompactList}\item 
+\#define \hyperlink{gim__memory_8h_aca0752036bd69632cd86981add4145d2}{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S}(dest\+\_\+array, source\+\_\+array, element\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Functions for manip packed arrays of numbers. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1}(dest\+\_\+array, source\+\_\+array, element\+\_\+count, copy\+\_\+macro)
+\item 
+\#define {\bfseries G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y}(array, element\+\_\+count)
+\item 
+\#define {\bfseries G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y}(array, element\+\_\+count, constant)
+\item 
+\hypertarget{gim__memory_8h_a11f233ae5c2aec3c3e23efddcc9ee446}{\#define \hyperlink{gim__memory_8h_a11f233ae5c2aec3c3e23efddcc9ee446}{S\+I\+M\+D\+\_\+\+T}~G\+U\+I\+N\+T64}\label{gim__memory_8h_a11f233ae5c2aec3c3e23efddcc9ee446}
+
+\begin{DoxyCompactList}\small\item\em S\+I\+M\+D P\+O\+I\+N\+T\+E\+R I\+N\+T\+E\+G\+E\+R. \end{DoxyCompactList}\item 
+\hypertarget{gim__memory_8h_a62011a6b5f9fc8704da53e7287566f63}{\#define \hyperlink{gim__memory_8h_a62011a6b5f9fc8704da53e7287566f63}{S\+I\+M\+D\+\_\+\+T\+\_\+\+S\+I\+Z\+E}~sizeof(\hyperlink{gim__memory_8h_a11f233ae5c2aec3c3e23efddcc9ee446}{S\+I\+M\+D\+\_\+\+T})}\label{gim__memory_8h_a62011a6b5f9fc8704da53e7287566f63}
+
+\begin{DoxyCompactList}\small\item\em S\+I\+M\+D I\+N\+T\+E\+G\+E\+R S\+I\+Z\+E. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{gim__memory_8h_a75b96c337a421f8e07358673044c49eb}{typedef void $\ast$ \hyperlink{gim__memory_8h_a75b96c337a421f8e07358673044c49eb}{gim\+\_\+alloc\+\_\+function} (size\+\_\+t size)}\label{gim__memory_8h_a75b96c337a421f8e07358673044c49eb}
+
+\begin{DoxyCompactList}\small\item\em Function prototypes to allocate and free memory. \end{DoxyCompactList}\item 
+\hypertarget{gim__memory_8h_abe0c6f4f5aeabacf08e0247780296c7c}{typedef void $\ast$ {\bfseries gim\+\_\+alloca\+\_\+function} (size\+\_\+t size)}\label{gim__memory_8h_abe0c6f4f5aeabacf08e0247780296c7c}
+
+\item 
+\hypertarget{gim__memory_8h_a1b90d1e1a7cac84fa2f14e2f3d5dfa1f}{typedef void $\ast$ {\bfseries gim\+\_\+realloc\+\_\+function} (void $\ast$ptr, size\+\_\+t oldsize, size\+\_\+t newsize)}\label{gim__memory_8h_a1b90d1e1a7cac84fa2f14e2f3d5dfa1f}
+
+\item 
+\hypertarget{gim__memory_8h_ad980c62b1a8267a4d8d987e7f5f0726e}{typedef void {\bfseries gim\+\_\+free\+\_\+function} (void $\ast$ptr)}\label{gim__memory_8h_ad980c62b1a8267a4d8d987e7f5f0726e}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{gim__memory_8h_ab06620a60a4e323cc9ad65a0a9ec7223}{gim\+\_\+set\+\_\+alloc\+\_\+handler} (\hyperlink{gim__memory_8h_a75b96c337a421f8e07358673044c49eb}{gim\+\_\+alloc\+\_\+function} $\ast$fn)
+\item 
+\hypertarget{gim__memory_8h_a7dcd604d9ceec7706cc1f876ff765d5f}{void {\bfseries gim\+\_\+set\+\_\+alloca\+\_\+handler} (gim\+\_\+alloca\+\_\+function $\ast$fn)}\label{gim__memory_8h_a7dcd604d9ceec7706cc1f876ff765d5f}
+
+\item 
+\hypertarget{gim__memory_8h_ad3a7f41de88bf71c0e892a7e63b9efc8}{void {\bfseries gim\+\_\+set\+\_\+realloc\+\_\+handler} (gim\+\_\+realloc\+\_\+function $\ast$fn)}\label{gim__memory_8h_ad3a7f41de88bf71c0e892a7e63b9efc8}
+
+\item 
+\hypertarget{gim__memory_8h_a01027896349dc8e68e4bc348c320743e}{void {\bfseries gim\+\_\+set\+\_\+free\+\_\+handler} (gim\+\_\+free\+\_\+function $\ast$fn)}\label{gim__memory_8h_a01027896349dc8e68e4bc348c320743e}
+
+\item 
+\hypertarget{gim__memory_8h_af2a9dffc9a5aa9be9c1655761d3a5e60}{\hyperlink{gim__memory_8h_a75b96c337a421f8e07358673044c49eb}{gim\+\_\+alloc\+\_\+function} $\ast$ \hyperlink{gim__memory_8h_af2a9dffc9a5aa9be9c1655761d3a5e60}{gim\+\_\+get\+\_\+alloc\+\_\+handler} (void)}\label{gim__memory_8h_af2a9dffc9a5aa9be9c1655761d3a5e60}
+
+\begin{DoxyCompactList}\small\item\em get current memory management functions. \end{DoxyCompactList}\item 
+\hypertarget{gim__memory_8h_ab0d6fc9209ec488e5b0c026d3f8949a4}{gim\+\_\+alloca\+\_\+function $\ast$ {\bfseries gim\+\_\+get\+\_\+alloca\+\_\+handler} (void)}\label{gim__memory_8h_ab0d6fc9209ec488e5b0c026d3f8949a4}
+
+\item 
+\hypertarget{gim__memory_8h_a187e65baf5a8dac2f95a01b2fc85586e}{gim\+\_\+realloc\+\_\+function $\ast$ {\bfseries gim\+\_\+get\+\_\+realloc\+\_\+handler} (void)}\label{gim__memory_8h_a187e65baf5a8dac2f95a01b2fc85586e}
+
+\item 
+\hypertarget{gim__memory_8h_aac0bdae8ebf7f87da7e684f934e75ba7}{gim\+\_\+free\+\_\+function $\ast$ {\bfseries gim\+\_\+get\+\_\+free\+\_\+handler} (void)}\label{gim__memory_8h_aac0bdae8ebf7f87da7e684f934e75ba7}
+
+\item 
+\hypertarget{gim__memory_8h_abbd1086b0e4b8c13c44b9404b052ae56}{void $\ast$ \hyperlink{gim__memory_8h_abbd1086b0e4b8c13c44b9404b052ae56}{gim\+\_\+alloc} (size\+\_\+t size)}\label{gim__memory_8h_abbd1086b0e4b8c13c44b9404b052ae56}
+
+\begin{DoxyCompactList}\small\item\em Standar Memory functions. \end{DoxyCompactList}\item 
+\hypertarget{gim__memory_8h_a6310034b21f27acbe019161f4fc62190}{void $\ast$ {\bfseries gim\+\_\+alloca} (size\+\_\+t size)}\label{gim__memory_8h_a6310034b21f27acbe019161f4fc62190}
+
+\item 
+\hypertarget{gim__memory_8h_aac1131aa421c94a3bd0960d06c960cd3}{void $\ast$ {\bfseries gim\+\_\+realloc} (void $\ast$ptr, size\+\_\+t oldsize, size\+\_\+t newsize)}\label{gim__memory_8h_aac1131aa421c94a3bd0960d06c960cd3}
+
+\item 
+\hypertarget{gim__memory_8h_a9cc702a40a9546c29e440521ed164ccd}{void {\bfseries gim\+\_\+free} (void $\ast$ptr)}\label{gim__memory_8h_a9cc702a40a9546c29e440521ed164ccd}
+
+\item 
+\hypertarget{gim__memory_8h_a571acfe0be0c11b8363e09c54287064d}{void {\bfseries gim\+\_\+simd\+\_\+memcpy} (void $\ast$dst, const void $\ast$src, size\+\_\+t copysize)}\label{gim__memory_8h_a571acfe0be0c11b8363e09c54287064d}
+
+\item 
+\hypertarget{gim__memory_8h_a58c5f276d7c41fb5742e9d6c916a5958}{{\footnotesize template$<$class T $>$ }\\void {\bfseries gim\+\_\+swap\+\_\+elements} (T $\ast$\+\_\+array, size\+\_\+t \+\_\+i, size\+\_\+t \+\_\+j)}\label{gim__memory_8h_a58c5f276d7c41fb5742e9d6c916a5958}
+
+\item 
+\hypertarget{gim__memory_8h_a2b39aecc7f64ae6e7f3b6377a759423a}{{\footnotesize template$<$class T $>$ }\\void {\bfseries gim\+\_\+swap\+\_\+elements\+\_\+memcpy} (T $\ast$\+\_\+array, size\+\_\+t \+\_\+i, size\+\_\+t \+\_\+j)}\label{gim__memory_8h_a2b39aecc7f64ae6e7f3b6377a759423a}
+
+\item 
+\hypertarget{gim__memory_8h_ad6dd5e697dc7dae2fa285cb0e6197de8}{{\footnotesize template$<$int S\+I\+Z\+E$>$ }\\void {\bfseries gim\+\_\+swap\+\_\+elements\+\_\+ptr} (char $\ast$\+\_\+array, size\+\_\+t \+\_\+i, size\+\_\+t \+\_\+j)}\label{gim__memory_8h_ad6dd5e697dc7dae2fa285cb0e6197de8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Leon Najera 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{gim__memory_8h_a886382865f5fe1c597aa08a34d7b988f}{\index{gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}!G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y@{G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y}}
+\index{G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y@{G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y}!gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}}
+\subsubsection[{G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+I\+M\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+A\+R\+R\+A\+Y(
+\begin{DoxyParamCaption}
+\item[{}]{array, }
+\item[{}]{element\+\_\+count, }
+\item[{}]{constant}
+\end{DoxyParamCaption}
+)}}\label{gim__memory_8h_a886382865f5fe1c597aa08a34d7b988f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    for (GUINT \_i\_=0;\_i\_<element\_count ;++\_i\_)\(\backslash\)
+    \{\(\backslash\)
+        array[\_i\_] = constant;\(\backslash\)
+    \}\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__memory_8h_aca0752036bd69632cd86981add4145d2}{\index{gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}!G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S@{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S}}
+\index{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S@{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S}!gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}}
+\subsubsection[{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S(
+\begin{DoxyParamCaption}
+\item[{}]{dest\+\_\+array, }
+\item[{}]{source\+\_\+array, }
+\item[{}]{element\+\_\+count}
+\end{DoxyParamCaption}
+)}}\label{gim__memory_8h_aca0752036bd69632cd86981add4145d2}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    for (GUINT \_i\_=0;\_i\_<element\_count ;++\_i\_)\(\backslash\)
+    \{\(\backslash\)
+        dest\_array[\_i\_] = source\_array[\_i\_];\(\backslash\)
+    \}\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+Functions for manip packed arrays of numbers. 
+
+\hypertarget{gim__memory_8h_a1dc2653786f8495ac132ddba740e57d4}{\index{gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}!G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1@{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1}}
+\index{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1@{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1}!gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}}
+\subsubsection[{G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+I\+M\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+S\+\_\+1(
+\begin{DoxyParamCaption}
+\item[{}]{dest\+\_\+array, }
+\item[{}]{source\+\_\+array, }
+\item[{}]{element\+\_\+count, }
+\item[{}]{copy\+\_\+macro}
+\end{DoxyParamCaption}
+)}}\label{gim__memory_8h_a1dc2653786f8495ac132ddba740e57d4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    for (GUINT \_i\_=0;\_i\_<element\_count ;++\_i\_)\(\backslash\)
+    \{\(\backslash\)
+        copy\_macro(dest\_array[\_i\_],source\_array[\_i\_]);\(\backslash\)
+    \}\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+\hypertarget{gim__memory_8h_af3ca82093b7bc6abc17b3228fb45ced7}{\index{gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}!G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y@{G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y}}
+\index{G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y@{G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y}!gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}}
+\subsubsection[{G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+I\+M\+\_\+\+Z\+E\+R\+O\+\_\+\+A\+R\+R\+A\+Y(
+\begin{DoxyParamCaption}
+\item[{}]{array, }
+\item[{}]{element\+\_\+count}
+\end{DoxyParamCaption}
+)}}\label{gim__memory_8h_af3ca82093b7bc6abc17b3228fb45ced7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+    for (GUINT \_i\_=0;\_i\_<element\_count ;++\_i\_)\(\backslash\)
+    \{\(\backslash\)
+        array[\_i\_] = 0;\(\backslash\)
+    \}\(\backslash\)
+\}\(\backslash\)
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{gim__memory_8h_ab06620a60a4e323cc9ad65a0a9ec7223}{\index{gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}!gim\+\_\+set\+\_\+alloc\+\_\+handler@{gim\+\_\+set\+\_\+alloc\+\_\+handler}}
+\index{gim\+\_\+set\+\_\+alloc\+\_\+handler@{gim\+\_\+set\+\_\+alloc\+\_\+handler}!gim\+\_\+memory.\+h@{gim\+\_\+memory.\+h}}
+\subsubsection[{gim\+\_\+set\+\_\+alloc\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}void gim\+\_\+set\+\_\+alloc\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{{\bf gim\+\_\+alloc\+\_\+function} $\ast$}]{fn}
+\end{DoxyParamCaption}
+)}}\label{gim__memory_8h_ab06620a60a4e323cc9ad65a0a9ec7223}
+Memory Function Handlers set new memory management functions. if fn is 0, the default handlers are used. 

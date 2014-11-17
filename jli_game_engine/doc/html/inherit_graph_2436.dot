@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PlugInManager::PlugInInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_plug_in_manager_1_1_plug_in_info.html",tooltip="(INTERNAL) Information about a specific plug-in. "];
+}

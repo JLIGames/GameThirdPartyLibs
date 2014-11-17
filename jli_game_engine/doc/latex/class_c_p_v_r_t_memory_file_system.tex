@@ -1,0 +1,227 @@
+\hypertarget{class_c_p_v_r_t_memory_file_system}{\section{C\+P\+V\+R\+T\+Memory\+File\+System Class Reference}
+\label{class_c_p_v_r_t_memory_file_system}\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+}
+
+
+Memory file system for resource files.  
+
+
+
+
+{\ttfamily \#include $<$P\+V\+R\+T\+Memory\+File\+System.\+h$>$}
+
+
+
+Collaboration diagram for C\+P\+V\+R\+T\+Memory\+File\+System\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_p_v_r_t_memory_file_system_1_1_c_at_exit}{C\+At\+Exit}
+\begin{DoxyCompactList}\small\item\em Provides a deconstructor for platforms that don't support the atexit() function. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_c_p_v_r_t_memory_file_system_1_1_s_file_info}{S\+File\+Info}
+\begin{DoxyCompactList}\small\item\em Struct which contains information on a single file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_v_r_t_memory_file_system_a7a4dc2115292678d32102bc17143b2f7}{C\+P\+V\+R\+T\+Memory\+File\+System} (const char $\ast$psz\+Filename, const void $\ast$p\+Buffer, size\+\_\+t Size, bool b\+Copy=false)
+\begin{DoxyCompactList}\small\item\em Constructor. Creates a \hyperlink{class_c_p_v_r_t_memory_file_system}{C\+P\+V\+R\+T\+Memory\+File\+System} object based on the parameters supplied. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_p_v_r_t_memory_file_system_aadd3d773b85441690dff99b9546cd783}{Register\+Memory\+File} (const char $\ast$psz\+Filename, const void $\ast$p\+Buffer, size\+\_\+t Size, bool b\+Copy=false)
+\begin{DoxyCompactList}\small\item\em Registers a block of memory as a file that can be looked up by name. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_c_p_v_r_t_memory_file_system_afa181aafa268d81f0bff5f902ccbb180}{Get\+File} (const char $\ast$psz\+Filename, const void $\ast$$\ast$pp\+Buffer, size\+\_\+t $\ast$p\+Size)
+\begin{DoxyCompactList}\small\item\em Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its size on success. \end{DoxyCompactList}\item 
+static int \hyperlink{class_c_p_v_r_t_memory_file_system_a959b05ef8c43478d8c3a8e8c921fa31c}{Get\+Num\+Files} ()
+\begin{DoxyCompactList}\small\item\em Getter for the number of registered files. \end{DoxyCompactList}\item 
+static const char $\ast$ \hyperlink{class_c_p_v_r_t_memory_file_system_a638b43163ac8e0b70944050755f2c7c1}{Get\+Filename} (int i32\+Index)
+\begin{DoxyCompactList}\small\item\em Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its size on success. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_memory_file_system_a5deecc2c8013631b2feadf651de87e7a}{static \hyperlink{class_c_p_v_r_t_memory_file_system_1_1_c_at_exit}{C\+At\+Exit} {\bfseries s\+\_\+\+At\+Exit}}\label{class_c_p_v_r_t_memory_file_system_a5deecc2c8013631b2feadf651de87e7a}
+
+\item 
+\hypertarget{class_c_p_v_r_t_memory_file_system_a0bf3948fa5c2a200328bdac908529b7b}{static \hyperlink{struct_c_p_v_r_t_memory_file_system_1_1_s_file_info}{S\+File\+Info} $\ast$ {\bfseries s\+\_\+p\+File\+Info} = 0}\label{class_c_p_v_r_t_memory_file_system_a0bf3948fa5c2a200328bdac908529b7b}
+
+\item 
+\hypertarget{class_c_p_v_r_t_memory_file_system_a937a8bb2b86d29859db7c0723c991f47}{static int {\bfseries s\+\_\+i32\+Num\+Files} = 0}\label{class_c_p_v_r_t_memory_file_system_a937a8bb2b86d29859db7c0723c991f47}
+
+\item 
+\hypertarget{class_c_p_v_r_t_memory_file_system_a92744c81b8661dab0a04adbb9d03e7ad}{static int {\bfseries s\+\_\+i32\+Capacity} = 0}\label{class_c_p_v_r_t_memory_file_system_a92744c81b8661dab0a04adbb9d03e7ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_p_v_r_t_memory_file_system_a908fc0a9478e138edabd601087e25e9c}{class {\bfseries C\+At\+Exit}}\label{class_c_p_v_r_t_memory_file_system_a908fc0a9478e138edabd601087e25e9c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Memory file system for resource files. 
+
+
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_p_v_r_t_memory_file_system_a7a4dc2115292678d32102bc17143b2f7}{\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}!C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}!C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+\subsubsection[{C\+P\+V\+R\+T\+Memory\+File\+System}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+V\+R\+T\+Memory\+File\+System\+::\+C\+P\+V\+R\+T\+Memory\+File\+System (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\+Filename, }
+\item[{const void $\ast$}]{p\+Buffer, }
+\item[{size\+\_\+t}]{Size, }
+\item[{bool}]{b\+Copy = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_v_r_t_memory_file_system_a7a4dc2115292678d32102bc17143b2f7}
+
+
+Constructor. Creates a \hyperlink{class_c_p_v_r_t_memory_file_system}{C\+P\+V\+R\+T\+Memory\+File\+System} object based on the parameters supplied. 
+
+
+
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+Filename} & Name of file to register \\
+\hline
+\mbox{\tt in}  & {\em p\+Buffer} & Pointer to file data \\
+\hline
+\mbox{\tt in}  & {\em Size} & \hyperlink{class_file}{File} size \\
+\hline
+\mbox{\tt in}  & {\em b\+Copy} & Name and data should be copied? \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_p_v_r_t_memory_file_system_afa181aafa268d81f0bff5f902ccbb180}{\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}!Get\+File@{Get\+File}}
+\index{Get\+File@{Get\+File}!C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+\subsubsection[{Get\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+P\+V\+R\+T\+Memory\+File\+System\+::\+Get\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\+Filename, }
+\item[{const void $\ast$$\ast$}]{pp\+Buffer, }
+\item[{size\+\_\+t $\ast$}]{p\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_p_v_r_t_memory_file_system_afa181aafa268d81f0bff5f902ccbb180}
+
+
+Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its size on success. 
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+Filename} & Name of file to open \\
+\hline
+\mbox{\tt out}  & {\em pp\+Buffer} & Pointer to file data \\
+\hline
+\mbox{\tt out}  & {\em p\+Size} & \hyperlink{class_file}{File} size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file was found in memory, false otherwise
+\end{DoxyReturn}
+
+
+  Get\+File  psz\+Filename Name of file to open  pp\+Buffer Pointer to file data  p\+Size \hyperlink{class_file}{File} size  true if the file was found in memory, false otherwise  Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its size on success. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_c_p_v_r_t_memory_file_system_a638b43163ac8e0b70944050755f2c7c1}{\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+\subsubsection[{Get\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ C\+P\+V\+R\+T\+Memory\+File\+System\+::\+Get\+Filename (
+\begin{DoxyParamCaption}
+\item[{int}]{i32\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_p_v_r_t_memory_file_system_a638b43163ac8e0b70944050755f2c7c1}
+
+
+Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its size on success. 
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i32\+Index} & \hyperlink{struct_index}{Index} of file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the filename of the requested file
+\end{DoxyReturn}
+
+
+  Get\+Filename  i32\+Index \hyperlink{struct_index}{Index} of file  A pointer to the filename of the requested file  Looks up a file in the memory file system by name. Returns a pointer to the file data as well as its size on success. \hypertarget{class_c_p_v_r_t_memory_file_system_a959b05ef8c43478d8c3a8e8c921fa31c}{\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}!Get\+Num\+Files@{Get\+Num\+Files}}
+\index{Get\+Num\+Files@{Get\+Num\+Files}!C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+\subsubsection[{Get\+Num\+Files}]{\setlength{\rightskip}{0pt plus 5cm}int C\+P\+V\+R\+T\+Memory\+File\+System\+::\+Get\+Num\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_p_v_r_t_memory_file_system_a959b05ef8c43478d8c3a8e8c921fa31c}
+
+
+Getter for the number of registered files. 
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+The number of registered files
+\end{DoxyReturn}
+
+
+  Get\+Num\+Files  The number of registered files  Getter for the number of registered files \hypertarget{class_c_p_v_r_t_memory_file_system_aadd3d773b85441690dff99b9546cd783}{\index{C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}!Register\+Memory\+File@{Register\+Memory\+File}}
+\index{Register\+Memory\+File@{Register\+Memory\+File}!C\+P\+V\+R\+T\+Memory\+File\+System@{C\+P\+V\+R\+T\+Memory\+File\+System}}
+\subsubsection[{Register\+Memory\+File}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+V\+R\+T\+Memory\+File\+System\+::\+Register\+Memory\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\+Filename, }
+\item[{const void $\ast$}]{p\+Buffer, }
+\item[{size\+\_\+t}]{Size, }
+\item[{bool}]{b\+Copy = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_p_v_r_t_memory_file_system_aadd3d773b85441690dff99b9546cd783}
+
+
+Registers a block of memory as a file that can be looked up by name. 
+
+
+
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em psz\+Filename} & Name of file to register \\
+\hline
+\mbox{\tt in}  & {\em p\+Buffer} & Pointer to file data \\
+\hline
+\mbox{\tt in}  & {\em Size} & \hyperlink{class_file}{File} size \\
+\hline
+\mbox{\tt in}  & {\em b\+Copy} & Name and data should be copied?\\
+\hline
+\end{DoxyParams}
+
+
+  Register\+Memory\+File  psz\+Filename Name of file to register  p\+Buffer Pointer to file data  Size \hyperlink{class_file}{File} size  b\+Copy Name and data should be copied?  Registers a block of memory as a file that can be looked up by name. 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/\hyperlink{_p_v_r_t_memory_file_system_8h}{P\+V\+R\+T\+Memory\+File\+System.\+h}\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Tools/P\+V\+R\+T\+Resource\+File.\+cpp\end{DoxyCompactItemize}

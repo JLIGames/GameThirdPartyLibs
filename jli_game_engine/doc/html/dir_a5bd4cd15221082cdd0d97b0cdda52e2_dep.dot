@@ -1,0 +1,9 @@
+digraph "PVR/SDK_3.4/Examples/Advanced/ExampleUI/OGLES3/Build/Android/src/com/powervr/OGLES3ExampleUI" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_59c677f2f316852683528e3612f35adb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_59c677f2f316852683528e3612f35adb.html"]
+  dir_a5bd4cd15221082cdd0d97b0cdda52e2 [shape=box, label="OGLES3ExampleUI", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a5bd4cd15221082cdd0d97b0cdda52e2.html"];
+  }
+}

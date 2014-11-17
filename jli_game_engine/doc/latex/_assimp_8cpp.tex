@@ -1,0 +1,278 @@
+\hypertarget{_assimp_8cpp}{\section{assimp/assimp-\/3.1.1/code/\+Assimp.cpp File Reference}
+\label{_assimp_8cpp}\index{assimp/assimp-\/3.\+1.\+1/code/\+Assimp.\+cpp@{assimp/assimp-\/3.\+1.\+1/code/\+Assimp.\+cpp}}
+}
+
+
+Implementation of the Plain-\/\+C A\+P\+I.  
+
+
+{\ttfamily \#include \char`\"{}Assimp\+P\+C\+H.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/assimp/cimport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Generic\+Property.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+Interface\+I\+O\+Wrapper.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Importer.\+h\char`\"{}}\\*
+Include dependency graph for Assimp.\+cpp\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_assimp_1_1mpred}{Assimp\+::mpred}
+\item 
+class \hyperlink{class_log_to_callback_redirector}{Log\+To\+Callback\+Redirector}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_assimp}{Assimp}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_assimp_8cpp_aef2306ac1f6c43d2204a9970af84a193}{void {\bfseries Report\+Scene\+Not\+Found\+Error} ()}\label{_assimp_8cpp_aef2306ac1f6c43d2204a9970af84a193}
+
+\item 
+const \hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}{ai\+Import\+File} (const char $\ast$p\+File, unsigned int p\+Flags)
+\item 
+\hypertarget{_assimp_8cpp_a1efa3b99e9e44a25098ed34151b7a203}{const \hyperlink{structai_scene}{ai\+Scene} $\ast$ {\bfseries ai\+Import\+File\+Ex} (const char $\ast$p\+File, unsigned int p\+Flags, \hyperlink{structai_file_i_o}{ai\+File\+I\+O} $\ast$p\+F\+S)}\label{_assimp_8cpp_a1efa3b99e9e44a25098ed34151b7a203}
+
+\item 
+\hypertarget{_assimp_8cpp_a244718338d82dda83f6447a6e65fea91}{const \hyperlink{structai_scene}{ai\+Scene} $\ast$ {\bfseries ai\+Import\+File\+Ex\+With\+Properties} (const char $\ast$p\+File, unsigned int p\+Flags, \hyperlink{structai_file_i_o}{ai\+File\+I\+O} $\ast$p\+F\+S, const \hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$props)}\label{_assimp_8cpp_a244718338d82dda83f6447a6e65fea91}
+
+\item 
+const \hyperlink{structai_scene}{ai\+Scene} $\ast$ \hyperlink{_assimp_8cpp_a1b2a265a07ea1341276a8dcd7a2a3cc2}{ai\+Import\+File\+From\+Memory} (const char $\ast$p\+Buffer, unsigned int p\+Length, unsigned int p\+Flags, const char $\ast$p\+Hint)
+\item 
+\hypertarget{_assimp_8cpp_ade40d7094040cf8840ccc9bd3025f6af}{const \hyperlink{structai_scene}{ai\+Scene} $\ast$ {\bfseries ai\+Import\+File\+From\+Memory\+With\+Properties} (const char $\ast$p\+Buffer, unsigned int p\+Length, unsigned int p\+Flags, const char $\ast$p\+Hint, const \hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$props)}\label{_assimp_8cpp_ade40d7094040cf8840ccc9bd3025f6af}
+
+\item 
+\hypertarget{_assimp_8cpp_abc572528f8d274660828de08e82ae491}{void {\bfseries ai\+Release\+Import} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene)}\label{_assimp_8cpp_abc572528f8d274660828de08e82ae491}
+
+\item 
+\hypertarget{_assimp_8cpp_a683b19fdda7fec063d07a412268a7a24}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I const \hyperlink{structai_scene}{ai\+Scene} $\ast$ {\bfseries ai\+Apply\+Post\+Processing} (const \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+Scene, unsigned int p\+Flags)}\label{_assimp_8cpp_a683b19fdda7fec063d07a412268a7a24}
+
+\item 
+\hypertarget{_assimp_8cpp_aab53e8b41f615db0336bf845b4e017d7}{void {\bfseries Callback\+To\+Log\+Redirector} (const char $\ast$msg, char $\ast$dt)}\label{_assimp_8cpp_aab53e8b41f615db0336bf845b4e017d7}
+
+\item 
+\hypertarget{_assimp_8cpp_af936cd3606c392e8ab57d27fc6ae43d9}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I \hyperlink{structai_log_stream}{ai\+Log\+Stream} {\bfseries ai\+Get\+Predefined\+Log\+Stream} (ai\+Default\+Log\+Stream p\+Stream, const char $\ast$\hyperlink{structfile}{file})}\label{_assimp_8cpp_af936cd3606c392e8ab57d27fc6ae43d9}
+
+\item 
+\hypertarget{_assimp_8cpp_a775ac62607b198952861fa86d0c1cf12}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Attach\+Log\+Stream} (const \hyperlink{structai_log_stream}{ai\+Log\+Stream} $\ast$stream)}\label{_assimp_8cpp_a775ac62607b198952861fa86d0c1cf12}
+
+\item 
+\hypertarget{_assimp_8cpp_a8ba577aee1f86a7ce3b1b8dac238c68f}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I ai\+Return {\bfseries ai\+Detach\+Log\+Stream} (const \hyperlink{structai_log_stream}{ai\+Log\+Stream} $\ast$stream)}\label{_assimp_8cpp_a8ba577aee1f86a7ce3b1b8dac238c68f}
+
+\item 
+A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void \hyperlink{_assimp_8cpp_a8f1fe2e8ccc5f93484098114ae7071bf}{ai\+Detach\+All\+Log\+Streams} (void)
+\item 
+A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void \hyperlink{_assimp_8cpp_a54a7485c9422348b2f20adcbd192ed64}{ai\+Enable\+Verbose\+Logging} (ai\+Bool d)
+\item 
+const char $\ast$ \hyperlink{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}{ai\+Get\+Error\+String} ()
+\item 
+ai\+Bool \hyperlink{_assimp_8cpp_ae1d3a0603764b44b77aad1a464d888a1}{ai\+Is\+Extension\+Supported} (const char $\ast$sz\+Extension)
+\item 
+\hypertarget{_assimp_8cpp_a37e8595af2ade7b79bcd04bd876a0a9f}{void {\bfseries ai\+Get\+Extension\+List} (\hyperlink{structai_string}{ai\+String} $\ast$sz\+Out)}\label{_assimp_8cpp_a37e8595af2ade7b79bcd04bd876a0a9f}
+
+\item 
+void \hyperlink{_assimp_8cpp_afbe064a84a03a81226b6d4c807502104}{ai\+Get\+Memory\+Requirements} (const C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_scene}{ai\+Scene} $\ast$p\+In, C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{classai_memory_info}{ai\+Memory\+Info} $\ast$in)
+\item 
+A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I \hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$ \hyperlink{_assimp_8cpp_ab6085941982ef6158f3aa8be87470602}{ai\+Create\+Property\+Store} (void)
+\item 
+\hypertarget{_assimp_8cpp_ac7e29d2f3bd4366bead505ed53f07108}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Release\+Property\+Store} (\hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$p)}\label{_assimp_8cpp_ac7e29d2f3bd4366bead505ed53f07108}
+
+\item 
+\hypertarget{_assimp_8cpp_ac77c579622795108f082feb0e3739b77}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Set\+Import\+Property\+Integer} (\hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$p, const char $\ast$sz\+Name, int value)}\label{_assimp_8cpp_ac77c579622795108f082feb0e3739b77}
+
+\item 
+\hypertarget{_assimp_8cpp_a9e5ca27f8d8d87379573c875bf2f42cb}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Set\+Import\+Property\+Float} (\hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$p, const char $\ast$sz\+Name, float value)}\label{_assimp_8cpp_a9e5ca27f8d8d87379573c875bf2f42cb}
+
+\item 
+\hypertarget{_assimp_8cpp_a21268cb597b076a244545694863fe86f}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Set\+Import\+Property\+String} (\hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$p, const char $\ast$sz\+Name, const C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_string}{ai\+String} $\ast$st)}\label{_assimp_8cpp_a21268cb597b076a244545694863fe86f}
+
+\item 
+\hypertarget{_assimp_8cpp_adc1126509a686f4a41c584f369684502}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Set\+Import\+Property\+Matrix} (\hyperlink{structai_property_store}{ai\+Property\+Store} $\ast$p, const char $\ast$sz\+Name, const C\+\_\+\+S\+T\+R\+U\+C\+T \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat)}\label{_assimp_8cpp_adc1126509a686f4a41c584f369684502}
+
+\item 
+\hypertarget{_assimp_8cpp_ac54e5aad80038dad2d5d719b6857cbd9}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Create\+Quaternion\+From\+Matrix} (\hyperlink{structai_quaternion}{ai\+Quaternion} $\ast$\hyperlink{classquat}{quat}, const \hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat)}\label{_assimp_8cpp_ac54e5aad80038dad2d5d719b6857cbd9}
+
+\item 
+\hypertarget{_assimp_8cpp_a49e4401357fdd5eaa8e3e6d3e4191007}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Decompose\+Matrix} (const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$scaling, \hyperlink{structai_quaternion}{ai\+Quaternion} $\ast$rotation, \hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$position)}\label{_assimp_8cpp_a49e4401357fdd5eaa8e3e6d3e4191007}
+
+\item 
+\hypertarget{_assimp_8cpp_a1b173bd2b86b63583aad4e58dfb59218}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Transpose\+Matrix3} (\hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat)}\label{_assimp_8cpp_a1b173bd2b86b63583aad4e58dfb59218}
+
+\item 
+\hypertarget{_assimp_8cpp_af08afb4724119139f0f205e003bfdca1}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Transpose\+Matrix4} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat)}\label{_assimp_8cpp_af08afb4724119139f0f205e003bfdca1}
+
+\item 
+\hypertarget{_assimp_8cpp_a1911c0b33902e5781025960e3425ea31}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Transform\+Vec\+By\+Matrix3} (\hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$vec, const \hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat)}\label{_assimp_8cpp_a1911c0b33902e5781025960e3425ea31}
+
+\item 
+\hypertarget{_assimp_8cpp_af137c3a3de84b8f74be16eb47f23e642}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Transform\+Vec\+By\+Matrix4} (\hyperlink{structai_vector3_d}{ai\+Vector3\+D} $\ast$vec, const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat)}\label{_assimp_8cpp_af137c3a3de84b8f74be16eb47f23e642}
+
+\item 
+\hypertarget{_assimp_8cpp_a899ed2e59e2986da29ae563189e3c0a1}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Multiply\+Matrix4} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$dst, const \hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$src)}\label{_assimp_8cpp_a899ed2e59e2986da29ae563189e3c0a1}
+
+\item 
+\hypertarget{_assimp_8cpp_ab8c8ff2689cfa49d09ee9efe6eb3fe84}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Multiply\+Matrix3} (\hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$dst, const \hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$src)}\label{_assimp_8cpp_ab8c8ff2689cfa49d09ee9efe6eb3fe84}
+
+\item 
+\hypertarget{_assimp_8cpp_a19d7caadf4dd71dbb64c653f85a77f6a}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Identity\+Matrix3} (\hyperlink{structai_matrix3x3}{ai\+Matrix3x3} $\ast$mat)}\label{_assimp_8cpp_a19d7caadf4dd71dbb64c653f85a77f6a}
+
+\item 
+\hypertarget{_assimp_8cpp_a0f1747ff56446a78f2583b4cb4e74190}{A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void {\bfseries ai\+Identity\+Matrix4} (\hyperlink{structai_matrix4x4}{ai\+Matrix4x4} $\ast$mat)}\label{_assimp_8cpp_a0f1747ff56446a78f2583b4cb4e74190}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the Plain-\/\+C A\+P\+I. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_assimp_8cpp_ab6085941982ef6158f3aa8be87470602}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Create\+Property\+Store@{ai\+Create\+Property\+Store}}
+\index{ai\+Create\+Property\+Store@{ai\+Create\+Property\+Store}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Create\+Property\+Store}]{\setlength{\rightskip}{0pt plus 5cm}A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I {\bf ai\+Property\+Store}$\ast$ ai\+Create\+Property\+Store (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_ab6085941982ef6158f3aa8be87470602}
+Create an empty property store. Property stores are used to collect import settings. \begin{DoxyReturn}{Returns}
+New property store. Property stores need to be manually destroyed using the \#ai\+Release\+Property\+Store A\+P\+I function. 
+\end{DoxyReturn}
+\hypertarget{_assimp_8cpp_a8f1fe2e8ccc5f93484098114ae7071bf}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Detach\+All\+Log\+Streams@{ai\+Detach\+All\+Log\+Streams}}
+\index{ai\+Detach\+All\+Log\+Streams@{ai\+Detach\+All\+Log\+Streams}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Detach\+All\+Log\+Streams}]{\setlength{\rightskip}{0pt plus 5cm}A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void ai\+Detach\+All\+Log\+Streams (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_a8f1fe2e8ccc5f93484098114ae7071bf}
+Detach all active log streams from the libraries' logging system. This ensures that the logging system is terminated properly and all resources allocated by it are actually freed. If you attached a stream, don't forget to detach it again. \begin{DoxySeeAlso}{See also}
+ai\+Attach\+Log\+Stream 
+
+ai\+Detach\+Log\+Stream 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_assimp_8cpp_a54a7485c9422348b2f20adcbd192ed64}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Enable\+Verbose\+Logging@{ai\+Enable\+Verbose\+Logging}}
+\index{ai\+Enable\+Verbose\+Logging@{ai\+Enable\+Verbose\+Logging}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Enable\+Verbose\+Logging}]{\setlength{\rightskip}{0pt plus 5cm}A\+S\+S\+I\+M\+P\+\_\+\+A\+P\+I void ai\+Enable\+Verbose\+Logging (
+\begin{DoxyParamCaption}
+\item[{ai\+Bool}]{d}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_a54a7485c9422348b2f20adcbd192ed64}
+Enable verbose logging. Verbose logging includes debug-\/related stuff and detailed import statistics. This can have severe impact on import performance and memory consumption. However, it might be useful to find out why a file didn't read correctly. 
+\begin{DoxyParams}{Parameters}
+{\em d} & A\+I\+\_\+\+T\+R\+U\+E or A\+I\+\_\+\+F\+A\+L\+S\+E, your decision. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Get\+Error\+String@{ai\+Get\+Error\+String}}
+\index{ai\+Get\+Error\+String@{ai\+Get\+Error\+String}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Get\+Error\+String}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ ai\+Get\+Error\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}
+Returns the error text of the last failed import process.
+
+\begin{DoxyReturn}{Returns}
+A textual description of the error that occurred at the last import process. N\+U\+L\+L if there was no error. There can't be an error if you got a non-\/\+N\+U\+L\+L \hyperlink{structai_scene}{ai\+Scene} from \hyperlink{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}{ai\+Import\+File}/\#ai\+Import\+File\+Ex/\#ai\+Apply\+Post\+Processing. 
+\end{DoxyReturn}
+\hypertarget{_assimp_8cpp_afbe064a84a03a81226b6d4c807502104}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Get\+Memory\+Requirements@{ai\+Get\+Memory\+Requirements}}
+\index{ai\+Get\+Memory\+Requirements@{ai\+Get\+Memory\+Requirements}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Get\+Memory\+Requirements}]{\setlength{\rightskip}{0pt plus 5cm}void ai\+Get\+Memory\+Requirements (
+\begin{DoxyParamCaption}
+\item[{const C\+\_\+\+S\+T\+R\+U\+C\+T {\bf ai\+Scene} $\ast$}]{p\+In, }
+\item[{C\+\_\+\+S\+T\+R\+U\+C\+T {\bf ai\+Memory\+Info} $\ast$}]{in}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_afbe064a84a03a81226b6d4c807502104}
+Get the approximated storage required by an imported asset 
+\begin{DoxyParams}{Parameters}
+{\em p\+In} & Input asset. \\
+\hline
+{\em in} & Data structure to be filled. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Import\+File@{ai\+Import\+File}}
+\index{ai\+Import\+File@{ai\+Import\+File}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Import\+File}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Scene}$\ast$ ai\+Import\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File, }
+\item[{unsigned int}]{p\+Flags}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_a991846be600bc8a54f6878e5bca96907}
+Reads the given file and returns its content.
+
+If the call succeeds, the imported data is returned in an \hyperlink{structai_scene}{ai\+Scene} structure. The data is intended to be read-\/only, it stays property of the A\+S\+S\+I\+M\+P library and will be stable until ai\+Release\+Import() is called. After you're done with it, call ai\+Release\+Import() to free the resources associated with this file. If the import fails, N\+U\+L\+L is returned instead. Call \hyperlink{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}{ai\+Get\+Error\+String()} to retrieve a human-\/readable error text. 
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Path and filename of the file to be imported, expected to be a null-\/terminated c-\/string. N\+U\+L\+L is not a valid value. \\
+\hline
+{\em p\+Flags} & Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps} flags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the imported data or N\+U\+L\+L if the import failed. 
+\end{DoxyReturn}
+\hypertarget{_assimp_8cpp_a1b2a265a07ea1341276a8dcd7a2a3cc2}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Import\+File\+From\+Memory@{ai\+Import\+File\+From\+Memory}}
+\index{ai\+Import\+File\+From\+Memory@{ai\+Import\+File\+From\+Memory}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Import\+File\+From\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ai\+Scene}$\ast$ ai\+Import\+File\+From\+Memory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Buffer, }
+\item[{unsigned int}]{p\+Length, }
+\item[{unsigned int}]{p\+Flags, }
+\item[{const char $\ast$}]{p\+Hint}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_a1b2a265a07ea1341276a8dcd7a2a3cc2}
+Reads the given file from a given memory buffer,
+
+If the call succeeds, the contents of the file are returned as a pointer to an \hyperlink{structai_scene}{ai\+Scene} object. The returned data is intended to be read-\/only, the importer keeps ownership of the data and will destroy it upon destruction. If the import fails, N\+U\+L\+L is returned. A human-\/readable error description can be retrieved by calling \hyperlink{_assimp_8cpp_a2f826c7b55e774c32de6132e057a239f}{ai\+Get\+Error\+String()}. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer} & Pointer to the file data \\
+\hline
+{\em p\+Length} & Length of p\+Buffer, in bytes \\
+\hline
+{\em p\+Flags} & Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the \hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps} flags. If you wish to inspect the imported scene first in order to fine-\/tune your post-\/processing setup, consider to use ai\+Apply\+Post\+Processing(). \\
+\hline
+{\em p\+Hint} & An additional hint to the library. If this is a non empty string, the library looks for a loader to support the file extension specified by p\+Hint and passes the file to the first matching loader. If this loader is unable to completely the request, the library continues and tries to determine the file format on its own, a task that may or may not be successful. Check the return value, and you'll know ... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the imported data, N\+U\+L\+L if the import failed.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is a straightforward way to decode models from memory buffers, but it doesn't handle model formats that spread their data across multiple files or even directories. Examples include O\+B\+J or M\+D3, which outsource parts of their material info into external scripts. If you need full functionality, provide a custom I\+O\+System to make \hyperlink{class_assimp}{Assimp} find these files and use the regular ai\+Import\+File\+Ex()/ai\+Import\+File\+Ex\+With\+Properties() A\+P\+I. 
+\end{DoxyNote}
+\hypertarget{_assimp_8cpp_ae1d3a0603764b44b77aad1a464d888a1}{\index{Assimp.\+cpp@{Assimp.\+cpp}!ai\+Is\+Extension\+Supported@{ai\+Is\+Extension\+Supported}}
+\index{ai\+Is\+Extension\+Supported@{ai\+Is\+Extension\+Supported}!Assimp.\+cpp@{Assimp.\+cpp}}
+\subsubsection[{ai\+Is\+Extension\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}ai\+Bool ai\+Is\+Extension\+Supported (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+Extension}
+\end{DoxyParamCaption}
+)}}\label{_assimp_8cpp_ae1d3a0603764b44b77aad1a464d888a1}
+Returns whether a given file extension is supported by A\+S\+S\+I\+M\+P
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Extension} & Extension for which the function queries support for. Must include a leading dot '.'. Example\+: \char`\"{}.\+3ds\char`\"{}, \char`\"{}.\+md3\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+I\+\_\+\+T\+R\+U\+E if the file extension is supported. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+
+

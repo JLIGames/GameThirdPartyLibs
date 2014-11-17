@@ -1,0 +1,9 @@
+digraph "theora/libtheora-1.1.1/lib/x86" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c318bbd9acaa74aae2a1b3b25b1707fa {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_c318bbd9acaa74aae2a1b3b25b1707fa.html"]
+  dir_6e21f3b6dad1a94fa5b4e125a01b2fe7 [shape=box, label="x86", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6e21f3b6dad1a94fa5b4e125a01b2fe7.html"];
+  }
+}

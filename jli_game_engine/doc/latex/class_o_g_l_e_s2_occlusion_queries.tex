@@ -1,0 +1,312 @@
+\hypertarget{class_o_g_l_e_s2_occlusion_queries}{\section{O\+G\+L\+E\+S2\+Occlusion\+Queries Class Reference}
+\label{class_o_g_l_e_s2_occlusion_queries}\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+}
+
+
+Inheritance diagram for O\+G\+L\+E\+S2\+Occlusion\+Queries\+:
+
+
+Collaboration diagram for O\+G\+L\+E\+S2\+Occlusion\+Queries\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_ac242a2023c6aa02925bfce301db4d420}{Init\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_a886c285f3cba8d44b4d8d13e6ee4873d}{Init\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_a15a46c9465394c09b807d8ffe886b91d}{Release\+View} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_a607fb3d751d3c3e8cfb9b65cbdaf1292}{Quit\+Application} ()
+\item 
+virtual bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_abf4f321ccdc3cac3e81ee2124d2e1999}{Render\+Scene} ()
+\item 
+bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_adb8892fd76d90da64291cef73f45ab13}{Load\+Textures} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Str)
+\item 
+void \hyperlink{class_o_g_l_e_s2_occlusion_queries_a40331da65de0a0643069c7982dbe29ab}{Load\+Vbos} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_occlusion_queries_a894c65d44b2a3cefa5942ee69d6e055c}{Load\+Occlusion\+Query\+Data} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_occlusion_queries_a96be63a5ed92f586c5d0dbc260a7900f}{Update\+Occlusion\+Data} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_occlusion_queries_a723cf4c71acaf04ce0cfcb184c1b6dd9}{Update} ()
+\item 
+void \hyperlink{class_o_g_l_e_s2_occlusion_queries_a21a27436b5331cc6df532d610b69517f}{Calculate\+Bounding\+Box} (const \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh} \&\hyperlink{class_mesh}{Mesh}, \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&min\+Coord, \hyperlink{struct_p_v_r_t_vec3}{P\+V\+R\+T\+Vec3} \&max\+Coord)
+\item 
+void \hyperlink{class_o_g_l_e_s2_occlusion_queries_aaf75cde3880adcf33e2ec88a9774c5c1}{Render\+Bounding\+Box} (const unsigned int ui\+Effect\+Id, const G\+Luint vbo, const \hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} m\+Model, const \hyperlink{struct_p_v_r_t_vec4}{P\+V\+R\+T\+Vec4} v\+Colour, const bool b\+Wireframe)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_a07366f5e718deb30e905db48205fecde}{Render\+Scene\+With\+Effect} (const int ui\+Effect\+Id, const \hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \&m\+Projection, const \hyperlink{struct_p_v_r_t_mat4}{P\+V\+R\+T\+Mat4} \&m\+View)
+\item 
+bool \hyperlink{class_o_g_l_e_s2_occlusion_queries_a00b2e87abb2d3675088bc9158bea05b7}{Load\+P\+F\+X} (\hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} $\ast$p\+Error\+Msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ Class implementing the \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a21a27436b5331cc6df532d610b69517f}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Calculate\+Bounding\+Box@{Calculate\+Bounding\+Box}}
+\index{Calculate\+Bounding\+Box@{Calculate\+Bounding\+Box}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Calculate\+Bounding\+Box}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Calculate\+Bounding\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+P\+O\+D\+Mesh} \&}]{mesh, }
+\item[{{\bf P\+V\+R\+T\+Vec3} \&}]{min\+Coord, }
+\item[{{\bf P\+V\+R\+T\+Vec3} \&}]{max\+Coord}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a21a27436b5331cc6df532d610b69517f}
+
+
+  Calculate\+Bounding\+Box  Calculates the axis aligned bounding box for a \hyperlink{struct_s_p_o_d_mesh}{S\+P\+O\+D\+Mesh}. 
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_ac242a2023c6aa02925bfce301db4d420}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Init\+Application@{Init\+Application}}
+\index{Init\+Application@{Init\+Application}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Init\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Init\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_occlusion_queries_ac242a2023c6aa02925bfce301db4d420}
+
+
+  Init\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_occlusion_queries_ac242a2023c6aa02925bfce301db4d420}{Init\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, before the rendering context is created. Used to initialize variables that are not dependant on it (e.\+g. external modules, loading meshes, etc.) If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_occlusion_queries_ac242a2023c6aa02925bfce301db4d420}{Init\+Application()} will not be called again. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a1ecb1d7021a3cc3f533acddc5ba8c1ce}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a886c285f3cba8d44b4d8d13e6ee4873d}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Init\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Init\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_occlusion_queries_a886c285f3cba8d44b4d8d13e6ee4873d}
+
+
+  Init\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_occlusion_queries_a886c285f3cba8d44b4d8d13e6ee4873d}{Init\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} upon initialization or after a change in the rendering context. Used to initialize variables that are dependant on the rendering context (e.\+g. textures, vertex buffers, etc.) 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ad1b978ddb9fb35b1d426818b756230fd}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a894c65d44b2a3cefa5942ee69d6e055c}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Load\+Occlusion\+Query\+Data@{Load\+Occlusion\+Query\+Data}}
+\index{Load\+Occlusion\+Query\+Data@{Load\+Occlusion\+Query\+Data}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Load\+Occlusion\+Query\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Load\+Occlusion\+Query\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a894c65d44b2a3cefa5942ee69d6e055c}
+
+
+  Load\+Occlusion\+Query\+Data  Loads and calculates the data necessary for occlusion queries, which includes the bounding box information. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a00b2e87abb2d3675088bc9158bea05b7}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Load\+P\+F\+X@{Load\+P\+F\+X}}
+\index{Load\+P\+F\+X@{Load\+P\+F\+X}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Load\+P\+F\+X}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Load\+P\+F\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Msg}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a00b2e87abb2d3675088bc9158bea05b7}
+
+
+  Load\+P\+F\+X  bool true if no error occurred  Loads and compiles the shaders and links the shader programs required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_adb8892fd76d90da64291cef73f45ab13}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Load\+Textures}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Load\+Textures (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+P\+V\+R\+T\+String} $\ast$}]{p\+Error\+Str}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_adb8892fd76d90da64291cef73f45ab13}
+
+
+  Load\+Textures  p\+Error\+Str A \hyperlink{class_c_p_v_r_t_string}{C\+P\+V\+R\+T\+String} describing the error on failure  bool true if no error occured  Loads the textures required for this training course 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a40331da65de0a0643069c7982dbe29ab}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Load\+Vbos@{Load\+Vbos}}
+\index{Load\+Vbos@{Load\+Vbos}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Load\+Vbos}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Load\+Vbos (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a40331da65de0a0643069c7982dbe29ab}
+
+
+  Load\+Vbos  Loads the mesh data required for this training course into vertex buffer objects 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a607fb3d751d3c3e8cfb9b65cbdaf1292}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Quit\+Application@{Quit\+Application}}
+\index{Quit\+Application@{Quit\+Application}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Quit\+Application}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Quit\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_occlusion_queries_a607fb3d751d3c3e8cfb9b65cbdaf1292}
+
+
+  Quit\+Application  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_occlusion_queries_a607fb3d751d3c3e8cfb9b65cbdaf1292}{Quit\+Application()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} once per run, just before exiting the program. If the rendering context is lost, \hyperlink{class_o_g_l_e_s2_occlusion_queries_a607fb3d751d3c3e8cfb9b65cbdaf1292}{Quit\+Application()} will not be called.\+x 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_adeebed7c8025a7270cee6f9609a97d68}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a15a46c9465394c09b807d8ffe886b91d}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Release\+View@{Release\+View}}
+\index{Release\+View@{Release\+View}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Release\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Release\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_occlusion_queries_a15a46c9465394c09b807d8ffe886b91d}
+
+
+  Release\+View  bool true if no error occured  Code in \hyperlink{class_o_g_l_e_s2_occlusion_queries_a15a46c9465394c09b807d8ffe886b91d}{Release\+View()} will be called by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} when the application quits or before a change in the rendering context. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_a65a1e2efc768686903fd30c56218ed02}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_aaf75cde3880adcf33e2ec88a9774c5c1}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Render\+Bounding\+Box@{Render\+Bounding\+Box}}
+\index{Render\+Bounding\+Box@{Render\+Bounding\+Box}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Render\+Bounding\+Box}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Render\+Bounding\+Box (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{ui\+Effect\+Id, }
+\item[{const G\+Luint}]{vbo, }
+\item[{const {\bf P\+V\+R\+T\+Mat4}}]{m\+Model, }
+\item[{const {\bf P\+V\+R\+T\+Vec4}}]{v\+Colour, }
+\item[{const bool}]{b\+Wireframe}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_aaf75cde3880adcf33e2ec88a9774c5c1}
+
+
+  Render\+Bounding\+Box  Renders the whole bounding box cube as filled polygons. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_abf4f321ccdc3cac3e81ee2124d2e1999}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Render\+Scene@{Render\+Scene}}
+\index{Render\+Scene@{Render\+Scene}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Render\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Render\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_o_g_l_e_s2_occlusion_queries_abf4f321ccdc3cac3e81ee2124d2e1999}
+
+
+  Render\+Scene  bool true if no error occured  Main rendering loop function of the program. The shell will call this function every frame. egl\+Swap\+Buffers() will be performed by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} automatically. \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} will also manage important O\+S events. Will also manage relevent O\+S events. The user has access to these events through an abstraction layer provided by \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}. 
+
+Reimplemented from \hyperlink{class_p_v_r_shell_ae0eb5f797cbe993a22b8659f9c332578}{P\+V\+R\+Shell}.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a07366f5e718deb30e905db48205fecde}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Render\+Scene\+With\+Effect@{Render\+Scene\+With\+Effect}}
+\index{Render\+Scene\+With\+Effect@{Render\+Scene\+With\+Effect}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Render\+Scene\+With\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Render\+Scene\+With\+Effect (
+\begin{DoxyParamCaption}
+\item[{const int}]{ui\+Effect\+Id, }
+\item[{const {\bf P\+V\+R\+T\+Mat4} \&}]{m\+Projection, }
+\item[{const {\bf P\+V\+R\+T\+Mat4} \&}]{m\+View}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a07366f5e718deb30e905db48205fecde}
+
+
+  Render\+Scene\+With\+Effect  bool true if no error occured  Renders the whole scene with a single effect. 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a723cf4c71acaf04ce0cfcb184c1b6dd9}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Update@{Update}}
+\index{Update@{Update}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a723cf4c71acaf04ce0cfcb184c1b6dd9}
+
+
+  Update\+Timer  Updates timer information for camera animation 
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{class_o_g_l_e_s2_occlusion_queries_a96be63a5ed92f586c5d0dbc260a7900f}{\index{O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}!Update\+Occlusion\+Data@{Update\+Occlusion\+Data}}
+\index{Update\+Occlusion\+Data@{Update\+Occlusion\+Data}!O\+G\+L\+E\+S2\+Occlusion\+Queries@{O\+G\+L\+E\+S2\+Occlusion\+Queries}}
+\subsubsection[{Update\+Occlusion\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void O\+G\+L\+E\+S2\+Occlusion\+Queries\+::\+Update\+Occlusion\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_o_g_l_e_s2_occlusion_queries_a96be63a5ed92f586c5d0dbc260a7900f}
+
+
+  Update\+Occlusion\+Data  Reads back the occlusion query data from all query objects. 
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Examples/\+Intermediate/\+Occlusion\+Queries/\+O\+G\+L\+E\+S2/O\+G\+L\+E\+S2\+Occlusion\+Queries.\+cpp\end{DoxyCompactItemize}

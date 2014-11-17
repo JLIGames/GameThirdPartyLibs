@@ -1,0 +1,9 @@
+digraph "vorbis/libvorbis-1.3.3/lib/modes" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a5987fa2b7b09fbe0958b05a7bff368f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_a5987fa2b7b09fbe0958b05a7bff368f.html"]
+  dir_037576be86aec2b89574636b3f6fd2ad [shape=box, label="modes", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_037576be86aec2b89574636b3f6fd2ad.html"];
+  }
+}

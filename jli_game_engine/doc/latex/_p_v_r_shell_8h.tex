@@ -1,0 +1,494 @@
+\hypertarget{_p_v_r_shell_8h}{\section{P\+V\+R/\+S\+D\+K\+\_\+3.4/\+Shell/\+P\+V\+R\+Shell.h File Reference}
+\label{_p_v_r_shell_8h}\index{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Shell/\+P\+V\+R\+Shell.\+h@{P\+V\+R/\+S\+D\+K\+\_\+3.\+4/\+Shell/\+P\+V\+R\+Shell.\+h}}
+}
+
+
+Makes programming for 3\+D A\+P\+Is easier by wrapping surface initialization, Texture allocation and other functions for use by a demo.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+Include dependency graph for P\+V\+R\+Shell.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_cmd_line_opt}{S\+Cmd\+Line\+Opt}
+\begin{DoxyCompactList}\small\item\em Stores a variable name/value pair for an individual command-\/line option. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell}
+\begin{DoxyCompactList}\small\item\em Inherited by the application; responsible for abstracting the O\+S and A\+P\+I. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_v_r_shell_8h_a794faf1dcd6c17573c1dd988ce42cde3}{\#define {\bfseries E\+X\+I\+T\+\_\+\+N\+O\+E\+R\+R\+\_\+\+C\+O\+D\+E}~0}\label{_p_v_r_shell_8h_a794faf1dcd6c17573c1dd988ce42cde3}
+
+\item 
+\hypertarget{_p_v_r_shell_8h_a4c34e1dfb85755bcc0de307c63081c3b}{\#define {\bfseries E\+X\+I\+T\+\_\+\+E\+R\+R\+\_\+\+C\+O\+D\+E}~(!E\+X\+I\+T\+\_\+\+N\+O\+E\+R\+R\+\_\+\+C\+O\+D\+E)}\label{_p_v_r_shell_8h_a4c34e1dfb85755bcc0de307c63081c3b}
+
+\item 
+\hypertarget{_p_v_r_shell_8h_a5ba47b87778f3c433212710648ef07c7}{\#define {\bfseries P\+V\+R\+S\+H\+E\+L\+L\+\_\+\+U\+N\+R\+E\+F\+E\+R\+E\+N\+C\+E\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}(x)~((void) x)}\label{_p_v_r_shell_8h_a5ba47b87778f3c433212710648ef07c7}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$($\ast$ \hyperlink{_p_v_r_shell_8h_a4d494ca5d43f290e1a26b96c1b9884df}{P\+F\+N\+Load\+File\+Func} )(const char $\ast$, char $\ast$$\ast$p\+Data, size\+\_\+t \&size)
+\begin{DoxyCompactList}\small\item\em The Load\+File\+Func function pointer template. \end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{_p_v_r_shell_8h_aac6afef35cfba693e617d8e877880a0c}{P\+F\+N\+Release\+File\+Func} )(void $\ast$handle)
+\begin{DoxyCompactList}\small\item\em The Release\+File\+Func function pointer template. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159}{P\+V\+R\+Shell\+Key\+Name} \{ \\*
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ad8652ffb9431fdf50769ec697eb162dd}{P\+V\+R\+Shell\+Key\+Name\+Null}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a66e75361f220dba8102932bb149994fe}{P\+V\+R\+Shell\+Key\+Name\+Q\+U\+I\+T}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ac64b2480d9b47ac2c43457a7eba6c79a}{P\+V\+R\+Shell\+Key\+Name\+S\+E\+L\+E\+C\+T}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ae371785fd19ba4eea9a03396e0fb24d8}{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N1}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a99ce48161f80574d1ac19f4eefe25998}{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N2}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159abb09482ed3f63a22285cf2b3f3a4ff4e}{P\+V\+R\+Shell\+Key\+Name\+U\+P}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a1e76cce406cc4ac7999233f8e624fe58}{P\+V\+R\+Shell\+Key\+Name\+D\+O\+W\+N}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ac02bb7473771f33f08568f3f64afbeca}{P\+V\+R\+Shell\+Key\+Name\+L\+E\+F\+T}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a920ab18c90e66a253f51a5d576a6c93e}{P\+V\+R\+Shell\+Key\+Name\+R\+I\+G\+H\+T}, 
+\hyperlink{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a9cdbf796d3584e4d68729c1ef7c43aaf}{P\+V\+R\+Shell\+Key\+Name\+Screenshot}
+ \}
+\begin{DoxyCompactList}\small\item\em Key name. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984a}{P\+V\+R\+Shell\+Key\+Rotate} \{ \hyperlink{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa09c0e1299605dafeaf9d7ee493f17be7}{P\+V\+R\+Shell\+Key\+Rotate\+None} =0, 
+\hyperlink{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa7bff247b0fa2340432f21e2e5ce52755}{P\+V\+R\+Shell\+Key\+Rotate90}, 
+\hyperlink{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa93bf51efa6eeda5ba2c5210ea483718a}{P\+V\+R\+Shell\+Key\+Rotate180}, 
+\hyperlink{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aab7e1bc461bde6f51b080e69a68e9c957}{P\+V\+R\+Shell\+Key\+Rotate270}
+ \}
+\begin{DoxyCompactList}\small\item\em Key rotate. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928a}{E\+P\+V\+R\+Shell\+Button\+State} \{ \hyperlink{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aa7efae7208a52f08b0266e57285aaeba1}{e\+P\+V\+R\+Shell\+Button\+Left} = 0x1, 
+\hyperlink{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aae49cc1aac95376640c80379d8a6984c8}{e\+P\+V\+R\+Shell\+Button\+Right} = 0x2, 
+\hyperlink{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aa0c39369968749b564d5cc2a7305da844}{e\+P\+V\+R\+Shell\+Button\+Middle} = 0x4
+ \}
+\begin{DoxyCompactList}\small\item\em Pointer button mapping. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5}{pref\+Name\+Bool\+Enum} \{ \\*
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a224343683a8cfe24d648c5dda1e3f442}{pref\+Full\+Screen}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a38c29275b432f8a4b8a6b9f4459b3f4e}{pref\+Is\+Rotated}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a9a6744eaf5531e90a33a70a57b29b24d}{pref\+P\+Buffer\+Context}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a5c8175e71da30bcdd8aec40015430973}{pref\+Pixmap\+Context}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a574f976f10e30b86c5ff51ccfe908751}{pref\+Pixmap\+Disable\+Copy}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5aaa4fa7e8b201b9f85cb25616512e51fa}{pref\+Zbuffer\+Context}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5afd59655d42c5ad5fcf971a4ac827aa12}{pref\+Lockable\+Back\+Buffer}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6a341731082606ded5b2c74cab56b342}{pref\+Software\+Rendering}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a1c244861660e2b073eff47890c818289}{pref\+Stencil\+Buffer\+Context}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6e4a3f8c5e810b3e47194998aa19b0c7}{pref\+Alpha\+Format\+Pre}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5af4e850cb8c6d5a2c45761e761fd61469}{pref\+Power\+Saving}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6164b78cae914cc62f73b040f66c9aa1}{pref\+Output\+Info}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a4d7e6faa338c4b8708458b5a8ea86fb7}{pref\+No\+Shell\+Swap\+Buffer}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5abc6712aecbd6a255d56a898432900411}{pref\+Show\+Cursor}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a944ed1113202138d2d9af93275ce0bf2}{pref\+Force\+Frame\+Time}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6ed746f0e8aea567be2ff9e30c7f3a80}{pref\+Discard\+Color}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a161dfa64508b74604cf5944106bf20e0}{pref\+Discard\+Depth}, 
+\hyperlink{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6b34515242b3e4e05b5995156e62103e}{pref\+Discard\+Stencil}
+ \}
+\begin{DoxyCompactList}\small\item\em Boolean Shell preferences. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_a428ec8d292e36ac8dbc77044dc25075c}{pref\+Name\+Float\+Enum} \{ \hyperlink{_p_v_r_shell_8h_a428ec8d292e36ac8dbc77044dc25075cad9452577c1d9b837819c4f102ee16c90}{pref\+Quit\+After\+Time}
+ \}
+\begin{DoxyCompactList}\small\item\em Float Shell preferences. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054e}{pref\+Name\+Int\+Enum} \{ \\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eac36f263fe27802739740b20870dc0a2d}{pref\+E\+G\+L\+Major\+Version}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea37330319baef8da2c6ddf8a9fbe58d0e}{pref\+E\+G\+L\+Minor\+Version}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea240a0a7955ad85ebfc06308a482b48ab}{pref\+Api\+Major\+Version}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea008f1fe739e0cc2c2855cf40b55e0d66}{pref\+Api\+Minor\+Version}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea705d7672e82c03104d9f5d2c035fd4ca}{pref\+Width}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea43ff67072ddb6b2c60e63a7f8af4de4d}{pref\+Height}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eaaa66950ad7ebfcee0cd016c68e1c90b6}{pref\+Position\+X}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea6679cb6b247d08bc5f08bec5bce051c6}{pref\+Position\+Y}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea36e9df35268520181c60bd490c0a3c1b}{pref\+Quit\+After\+Frame}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea73fd0c1e68923aa4e737694517c7abee}{pref\+Swap\+Interval}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8c1f9a51dbf62ed3eb33a3ced4ea02e9}{pref\+Init\+Repeats}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eada6f472845acdf446e23c61c5fd96011}{pref\+A\+A\+Samples}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eae7c5076af7d939ca07c87402f999e76b}{pref\+Command\+Line\+Opt\+Num}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea538c25d0d1072c5aca11d5ac6cfb736b}{pref\+Color\+B\+P\+P}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8e06b5531f1465a3da0ea13246589fe7}{pref\+Depth\+B\+P\+P}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea95973c735d5873a72c46258df04b51ad}{pref\+Rotate\+Keys}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eaa87ddb143a3cc894dd2a36d6115a87e7}{pref\+Button\+State}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea76a0b48db5bfa071ffc631b052f9948d}{pref\+Capture\+Frame\+Start}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea248f976e3911a6293638b7e7d8b98bfb}{pref\+Capture\+Frame\+Stop}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8f9ce3e476b89b8216a46a5d7a7bada3}{pref\+Capture\+Frame\+Scale}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea3143433874d0d3ecfb861f0501723e0f}{pref\+Priority}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea0af6831f9c007f77979b5851e978f8ae}{pref\+Config}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8e26d635bbf7ddc37d795301f7ceff99}{pref\+Requested\+Config}, 
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea99c88f2a7ee686cbaa327c420fff5413}{pref\+Native\+Display}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea05aadd7ded510a440923e0de6e4aba14}{pref\+Frame\+Time\+Value}
+ \}
+\begin{DoxyCompactList}\small\item\em Integer Shell preferences. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330}{pref\+Name\+Ptr\+Enum} \{ \\*
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330ab42b1354ec1c5374a82f3c00a712a079}{pref\+D3\+D\+Device}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a223c788a628141d9ca07a0c24a0e7060}{pref\+E\+G\+L\+Display}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a419363d058c2445ff7e102e73a5906ed}{pref\+E\+G\+L\+Surface}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a05e7a33280b82329d908c9d721a1e4dd}{pref\+H\+I\+N\+S\+T\+A\+N\+C\+E}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330ab493d7d51903359208392a5b2f2e3c3b}{pref\+Native\+Window\+Type}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a1c0d0e5bd97ba9a73510d0afd287bf39}{pref\+Accelerometer}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a5eebbd62467a34faf59c971b094d5ff8}{pref\+Pointer\+Location}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a833824b5e88e84bdf749a2064d0e6858}{pref\+P\+V\+R2\+D\+Context}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a1c2c96b85ff37ad1bc3277dd8baa3885}{pref\+Load\+File\+Func}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a3986751db20ae0c4e71f919d0dfb430c}{pref\+Release\+File\+Func}, 
+\hyperlink{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330adb1ef5ec990dcf9fb1227ce6008532c4}{pref\+Android\+Native\+Activity}
+ \}
+\begin{DoxyCompactList}\small\item\em Pointers/\+Handlers Shell preferences. \end{DoxyCompactList}\item 
+enum \hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73}{pref\+Name\+Const\+Ptr\+Enum} \{ \\*
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a3bc4a92d518f7d1ca2f256a6dbf44802}{pref\+App\+Name}, 
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a760d887df87c19bb57ecf134e6ea9cae}{pref\+Read\+Path}, 
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2d0755cb2dd0c901f1856c16b150def4}{pref\+Write\+Path}, 
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2afe2b3474e19f05604da0240806d218}{pref\+Command\+Line}, 
+\\*
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a7bd533815e0ade3416ac22d100b25209}{pref\+Command\+Line\+Opts}, 
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2717bfc68b5505d2f58a4be201effc3e}{pref\+Exit\+Message}, 
+\hyperlink{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a373a94f424db97d0e45fe24816d0186a}{pref\+Version}
+ \}
+\begin{DoxyCompactList}\small\item\em Constant pointers Shell preferences. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} $\ast$ \hyperlink{_p_v_r_shell_8h_a963ddeb8f7ef183611ef73625f48840c}{New\+Demo} ()
+\begin{DoxyCompactList}\small\item\em This function must be implemented by the user of the shell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Makes programming for 3\+D A\+P\+Is easier by wrapping surface initialization, Texture allocation and other functions for use by a demo. 
+
+
+
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Imagination Technologies Limited. 
+\end{DoxyCopyright}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_p_v_r_shell_8h_a4d494ca5d43f290e1a26b96c1b9884df}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+F\+N\+Load\+File\+Func@{P\+F\+N\+Load\+File\+Func}}
+\index{P\+F\+N\+Load\+File\+Func@{P\+F\+N\+Load\+File\+Func}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{P\+F\+N\+Load\+File\+Func}]{\setlength{\rightskip}{0pt plus 5cm}P\+F\+N\+Load\+File\+Func}}\label{_p_v_r_shell_8h_a4d494ca5d43f290e1a26b96c1b9884df}
+
+
+The Load\+File\+Func function pointer template. 
+
+
+
+ \hypertarget{_p_v_r_shell_8h_aac6afef35cfba693e617d8e877880a0c}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+F\+N\+Release\+File\+Func@{P\+F\+N\+Release\+File\+Func}}
+\index{P\+F\+N\+Release\+File\+Func@{P\+F\+N\+Release\+File\+Func}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{P\+F\+N\+Release\+File\+Func}]{\setlength{\rightskip}{0pt plus 5cm}P\+F\+N\+Release\+File\+Func}}\label{_p_v_r_shell_8h_aac6afef35cfba693e617d8e877880a0c}
+
+
+The Release\+File\+Func function pointer template. 
+
+
+
+ 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928a}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!E\+P\+V\+R\+Shell\+Button\+State@{E\+P\+V\+R\+Shell\+Button\+State}}
+\index{E\+P\+V\+R\+Shell\+Button\+State@{E\+P\+V\+R\+Shell\+Button\+State}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{E\+P\+V\+R\+Shell\+Button\+State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+P\+V\+R\+Shell\+Button\+State}}}\label{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928a}
+
+
+Pointer button mapping. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{e\+P\+V\+R\+Shell\+Button\+Left@{e\+P\+V\+R\+Shell\+Button\+Left}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!e\+P\+V\+R\+Shell\+Button\+Left@{e\+P\+V\+R\+Shell\+Button\+Left}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aa7efae7208a52f08b0266e57285aaeba1}{e\+P\+V\+R\+Shell\+Button\+Left}\label{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aa7efae7208a52f08b0266e57285aaeba1}
+}]Left button \index{e\+P\+V\+R\+Shell\+Button\+Right@{e\+P\+V\+R\+Shell\+Button\+Right}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!e\+P\+V\+R\+Shell\+Button\+Right@{e\+P\+V\+R\+Shell\+Button\+Right}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aae49cc1aac95376640c80379d8a6984c8}{e\+P\+V\+R\+Shell\+Button\+Right}\label{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aae49cc1aac95376640c80379d8a6984c8}
+}]Right button \index{e\+P\+V\+R\+Shell\+Button\+Middle@{e\+P\+V\+R\+Shell\+Button\+Middle}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!e\+P\+V\+R\+Shell\+Button\+Middle@{e\+P\+V\+R\+Shell\+Button\+Middle}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aa0c39369968749b564d5cc2a7305da844}{e\+P\+V\+R\+Shell\+Button\+Middle}\label{_p_v_r_shell_8h_afff99aee36584bf13e82e5b5c1fb928aa0c39369968749b564d5cc2a7305da844}
+}]Middle button \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Name\+Bool\+Enum@{pref\+Name\+Bool\+Enum}}
+\index{pref\+Name\+Bool\+Enum@{pref\+Name\+Bool\+Enum}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{pref\+Name\+Bool\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf pref\+Name\+Bool\+Enum}}}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5}
+
+
+Boolean Shell preferences. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{pref\+Full\+Screen@{pref\+Full\+Screen}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Full\+Screen@{pref\+Full\+Screen}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a224343683a8cfe24d648c5dda1e3f442}{pref\+Full\+Screen}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a224343683a8cfe24d648c5dda1e3f442}
+}]Set to\+: 1 for full-\/screen rendering; 0 for windowed \index{pref\+Is\+Rotated@{pref\+Is\+Rotated}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Is\+Rotated@{pref\+Is\+Rotated}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a38c29275b432f8a4b8a6b9f4459b3f4e}{pref\+Is\+Rotated}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a38c29275b432f8a4b8a6b9f4459b3f4e}
+}]Query this to learn whether screen is rotated \index{pref\+P\+Buffer\+Context@{pref\+P\+Buffer\+Context}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+P\+Buffer\+Context@{pref\+P\+Buffer\+Context}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a9a6744eaf5531e90a33a70a57b29b24d}{pref\+P\+Buffer\+Context}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a9a6744eaf5531e90a33a70a57b29b24d}
+}]1 if you need pbuffer support (default is pbuffer not needed) \index{pref\+Pixmap\+Context@{pref\+Pixmap\+Context}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Pixmap\+Context@{pref\+Pixmap\+Context}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a5c8175e71da30bcdd8aec40015430973}{pref\+Pixmap\+Context}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a5c8175e71da30bcdd8aec40015430973}
+}]1 to use a pixmap as a render-\/target (default off) \index{pref\+Pixmap\+Disable\+Copy@{pref\+Pixmap\+Disable\+Copy}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Pixmap\+Disable\+Copy@{pref\+Pixmap\+Disable\+Copy}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a574f976f10e30b86c5ff51ccfe908751}{pref\+Pixmap\+Disable\+Copy}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a574f976f10e30b86c5ff51ccfe908751}
+}]1 to disable the copy if pixmaps are used \index{pref\+Zbuffer\+Context@{pref\+Zbuffer\+Context}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Zbuffer\+Context@{pref\+Zbuffer\+Context}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5aaa4fa7e8b201b9f85cb25616512e51fa}{pref\+Zbuffer\+Context}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5aaa4fa7e8b201b9f85cb25616512e51fa}
+}]1 if you wish to have zbuffer support (default to on) \index{pref\+Lockable\+Back\+Buffer@{pref\+Lockable\+Back\+Buffer}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Lockable\+Back\+Buffer@{pref\+Lockable\+Back\+Buffer}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5afd59655d42c5ad5fcf971a4ac827aa12}{pref\+Lockable\+Back\+Buffer}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5afd59655d42c5ad5fcf971a4ac827aa12}
+}]D\+X9 only\+: true to use D3\+D\+P\+R\+E\+S\+E\+N\+T\+F\+L\+A\+G\+\_\+\+L\+O\+C\+K\+A\+B\+L\+E\+\_\+\+B\+A\+C\+K\+B\+U\+F\+F\+E\+R (default\+: false) \index{pref\+Software\+Rendering@{pref\+Software\+Rendering}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Software\+Rendering@{pref\+Software\+Rendering}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6a341731082606ded5b2c74cab56b342}{pref\+Software\+Rendering}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6a341731082606ded5b2c74cab56b342}
+}]1 to select software rendering (default\+: off, i.\+e. use hardware) \index{pref\+Stencil\+Buffer\+Context@{pref\+Stencil\+Buffer\+Context}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Stencil\+Buffer\+Context@{pref\+Stencil\+Buffer\+Context}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a1c244861660e2b073eff47890c818289}{pref\+Stencil\+Buffer\+Context}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a1c244861660e2b073eff47890c818289}
+}]1 if you wish to have stencil support (default\+: off) \index{pref\+Alpha\+Format\+Pre@{pref\+Alpha\+Format\+Pre}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Alpha\+Format\+Pre@{pref\+Alpha\+Format\+Pre}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6e4a3f8c5e810b3e47194998aa19b0c7}{pref\+Alpha\+Format\+Pre}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6e4a3f8c5e810b3e47194998aa19b0c7}
+}]E\+G\+L only\+: 1 to create the E\+G\+L surface with E\+G\+L\+\_\+\+A\+L\+P\+H\+A\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E (default\+: 0) \index{pref\+Power\+Saving@{pref\+Power\+Saving}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Power\+Saving@{pref\+Power\+Saving}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5af4e850cb8c6d5a2c45761e761fd61469}{pref\+Power\+Saving}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5af4e850cb8c6d5a2c45761e761fd61469}
+}]If true then the app will go into powersaving mode (if available) when not in use. \index{pref\+Output\+Info@{pref\+Output\+Info}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Output\+Info@{pref\+Output\+Info}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6164b78cae914cc62f73b040f66c9aa1}{pref\+Output\+Info}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6164b78cae914cc62f73b040f66c9aa1}
+}]If true then the app will output helpful information such as colour buffer format via P\+V\+R\+Shell\+Output\+Debug. \index{pref\+No\+Shell\+Swap\+Buffer@{pref\+No\+Shell\+Swap\+Buffer}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+No\+Shell\+Swap\+Buffer@{pref\+No\+Shell\+Swap\+Buffer}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a4d7e6faa338c4b8708458b5a8ea86fb7}{pref\+No\+Shell\+Swap\+Buffer}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a4d7e6faa338c4b8708458b5a8ea86fb7}
+}]E\+G\+L\+: If true then the shell won't call eglswapbuffers at the end of each frame. \index{pref\+Show\+Cursor@{pref\+Show\+Cursor}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Show\+Cursor@{pref\+Show\+Cursor}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5abc6712aecbd6a255d56a898432900411}{pref\+Show\+Cursor}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5abc6712aecbd6a255d56a898432900411}
+}]Set to\+: 1 to show the cursor; 0 to hide it. \index{pref\+Force\+Frame\+Time@{pref\+Force\+Frame\+Time}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Force\+Frame\+Time@{pref\+Force\+Frame\+Time}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a944ed1113202138d2d9af93275ce0bf2}{pref\+Force\+Frame\+Time}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a944ed1113202138d2d9af93275ce0bf2}
+}]If true will alter P\+V\+R\+Shell\+Get\+Time behaviour to be frame based. This is for debugging purposes. \index{pref\+Discard\+Color@{pref\+Discard\+Color}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Discard\+Color@{pref\+Discard\+Color}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6ed746f0e8aea567be2ff9e30c7f3a80}{pref\+Discard\+Color}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6ed746f0e8aea567be2ff9e30c7f3a80}
+}]G\+L\+E\+S\+: Whether or not to discard color data at the end of a render, to save bandwidth. Requires specific functionality. (default\+: false) \index{pref\+Discard\+Depth@{pref\+Discard\+Depth}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Discard\+Depth@{pref\+Discard\+Depth}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a161dfa64508b74604cf5944106bf20e0}{pref\+Discard\+Depth}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a161dfa64508b74604cf5944106bf20e0}
+}]G\+L\+E\+S\+: Whether or not to discard depth data at the end of a render, to save bandwidth. Requires specific functionality. (default\+: true) \index{pref\+Discard\+Stencil@{pref\+Discard\+Stencil}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Discard\+Stencil@{pref\+Discard\+Stencil}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6b34515242b3e4e05b5995156e62103e}{pref\+Discard\+Stencil}\label{_p_v_r_shell_8h_a3fa86f089e589b4785ebb9a217b9f8c5a6b34515242b3e4e05b5995156e62103e}
+}]G\+L\+E\+S\+: Whether or not to discard stencil data at the end of a render, to save bandwidth. Requires specific functionality. (default\+: true) \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Name\+Const\+Ptr\+Enum@{pref\+Name\+Const\+Ptr\+Enum}}
+\index{pref\+Name\+Const\+Ptr\+Enum@{pref\+Name\+Const\+Ptr\+Enum}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{pref\+Name\+Const\+Ptr\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf pref\+Name\+Const\+Ptr\+Enum}}}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73}
+
+
+Constant pointers Shell preferences. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{pref\+App\+Name@{pref\+App\+Name}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+App\+Name@{pref\+App\+Name}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a3bc4a92d518f7d1ca2f256a6dbf44802}{pref\+App\+Name}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a3bc4a92d518f7d1ca2f256a6dbf44802}
+}]ptr\+Value is char$\ast$ \index{pref\+Read\+Path@{pref\+Read\+Path}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Read\+Path@{pref\+Read\+Path}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a760d887df87c19bb57ecf134e6ea9cae}{pref\+Read\+Path}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a760d887df87c19bb57ecf134e6ea9cae}
+}]ptr\+Value is char$\ast$; will include a trailing slash \index{pref\+Write\+Path@{pref\+Write\+Path}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Write\+Path@{pref\+Write\+Path}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2d0755cb2dd0c901f1856c16b150def4}{pref\+Write\+Path}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2d0755cb2dd0c901f1856c16b150def4}
+}]ptr\+Value is char$\ast$; will include a trailing slash \index{pref\+Command\+Line@{pref\+Command\+Line}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Command\+Line@{pref\+Command\+Line}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2afe2b3474e19f05604da0240806d218}{pref\+Command\+Line}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2afe2b3474e19f05604da0240806d218}
+}]used to retrieve the entire application command line \index{pref\+Command\+Line\+Opts@{pref\+Command\+Line\+Opts}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Command\+Line\+Opts@{pref\+Command\+Line\+Opts}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a7bd533815e0ade3416ac22d100b25209}{pref\+Command\+Line\+Opts}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a7bd533815e0ade3416ac22d100b25209}
+}]ptr\+Value is S\+Cmd\+Line\+Opt$\ast$; retrieves an array of arg/value pairs (parsed from the command line) \index{pref\+Exit\+Message@{pref\+Exit\+Message}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Exit\+Message@{pref\+Exit\+Message}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2717bfc68b5505d2f58a4be201effc3e}{pref\+Exit\+Message}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a2717bfc68b5505d2f58a4be201effc3e}
+}]ptr\+Value is char$\ast$; gives the shell a message to show on exit, typically an error \index{pref\+Version@{pref\+Version}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Version@{pref\+Version}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a373a94f424db97d0e45fe24816d0186a}{pref\+Version}\label{_p_v_r_shell_8h_af13725186b1491b5d72cd42920b7bc73a373a94f424db97d0e45fe24816d0186a}
+}]ptr\+Value is char$\ast$ \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_a428ec8d292e36ac8dbc77044dc25075c}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Name\+Float\+Enum@{pref\+Name\+Float\+Enum}}
+\index{pref\+Name\+Float\+Enum@{pref\+Name\+Float\+Enum}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{pref\+Name\+Float\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf pref\+Name\+Float\+Enum}}}\label{_p_v_r_shell_8h_a428ec8d292e36ac8dbc77044dc25075c}
+
+
+Float Shell preferences. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{pref\+Quit\+After\+Time@{pref\+Quit\+After\+Time}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Quit\+After\+Time@{pref\+Quit\+After\+Time}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a428ec8d292e36ac8dbc77044dc25075cad9452577c1d9b837819c4f102ee16c90}{pref\+Quit\+After\+Time}\label{_p_v_r_shell_8h_a428ec8d292e36ac8dbc77044dc25075cad9452577c1d9b837819c4f102ee16c90}
+}]Shell will quit after this number of seconds (-\/1 to disable) \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054e}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Name\+Int\+Enum@{pref\+Name\+Int\+Enum}}
+\index{pref\+Name\+Int\+Enum@{pref\+Name\+Int\+Enum}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{pref\+Name\+Int\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf pref\+Name\+Int\+Enum}}}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054e}
+
+
+Integer Shell preferences. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{pref\+E\+G\+L\+Major\+Version@{pref\+E\+G\+L\+Major\+Version}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+E\+G\+L\+Major\+Version@{pref\+E\+G\+L\+Major\+Version}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eac36f263fe27802739740b20870dc0a2d}{pref\+E\+G\+L\+Major\+Version}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eac36f263fe27802739740b20870dc0a2d}
+}]E\+G\+L\+: returns the major version as returned by egl\+Initialize() \index{pref\+E\+G\+L\+Minor\+Version@{pref\+E\+G\+L\+Minor\+Version}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+E\+G\+L\+Minor\+Version@{pref\+E\+G\+L\+Minor\+Version}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea37330319baef8da2c6ddf8a9fbe58d0e}{pref\+E\+G\+L\+Minor\+Version}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea37330319baef8da2c6ddf8a9fbe58d0e}
+}]E\+G\+L\+: returns the major version as returned by egl\+Initialize() \index{pref\+Api\+Major\+Version@{pref\+Api\+Major\+Version}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Api\+Major\+Version@{pref\+Api\+Major\+Version}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea240a0a7955ad85ebfc06308a482b48ab}{pref\+Api\+Major\+Version}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea240a0a7955ad85ebfc06308a482b48ab}
+}]E\+G\+L\+: returns the Open\+G\+L major version required \index{pref\+Api\+Minor\+Version@{pref\+Api\+Minor\+Version}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Api\+Minor\+Version@{pref\+Api\+Minor\+Version}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea008f1fe739e0cc2c2855cf40b55e0d66}{pref\+Api\+Minor\+Version}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea008f1fe739e0cc2c2855cf40b55e0d66}
+}]E\+G\+L\+: returns the Open\+G\+L minor version required \index{pref\+Width@{pref\+Width}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Width@{pref\+Width}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea705d7672e82c03104d9f5d2c035fd4ca}{pref\+Width}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea705d7672e82c03104d9f5d2c035fd4ca}
+}]Width of render target \index{pref\+Height@{pref\+Height}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Height@{pref\+Height}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea43ff67072ddb6b2c60e63a7f8af4de4d}{pref\+Height}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea43ff67072ddb6b2c60e63a7f8af4de4d}
+}]Height of render target \index{pref\+Position\+X@{pref\+Position\+X}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Position\+X@{pref\+Position\+X}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eaaa66950ad7ebfcee0cd016c68e1c90b6}{pref\+Position\+X}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eaaa66950ad7ebfcee0cd016c68e1c90b6}
+}]X position of the window \index{pref\+Position\+Y@{pref\+Position\+Y}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Position\+Y@{pref\+Position\+Y}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea6679cb6b247d08bc5f08bec5bce051c6}{pref\+Position\+Y}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea6679cb6b247d08bc5f08bec5bce051c6}
+}]Y position of the window \index{pref\+Quit\+After\+Frame@{pref\+Quit\+After\+Frame}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Quit\+After\+Frame@{pref\+Quit\+After\+Frame}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea36e9df35268520181c60bd490c0a3c1b}{pref\+Quit\+After\+Frame}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea36e9df35268520181c60bd490c0a3c1b}
+}]Shell will quit after this number of frames (-\/1 to disable) \index{pref\+Swap\+Interval@{pref\+Swap\+Interval}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Swap\+Interval@{pref\+Swap\+Interval}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea73fd0c1e68923aa4e737694517c7abee}{pref\+Swap\+Interval}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea73fd0c1e68923aa4e737694517c7abee}
+}]0 to preventing waiting for monitor vertical syncs \index{pref\+Init\+Repeats@{pref\+Init\+Repeats}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Init\+Repeats@{pref\+Init\+Repeats}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8c1f9a51dbf62ed3eb33a3ced4ea02e9}{pref\+Init\+Repeats}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8c1f9a51dbf62ed3eb33a3ced4ea02e9}
+}]Number of times to reinitialise (if $>$0 when app returns false from Render\+Scene(), shell will Release\+View(), Init\+View() then re-\/enter Render\+Scene() loop). Decrements on each initialisation. \index{pref\+A\+A\+Samples@{pref\+A\+A\+Samples}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+A\+A\+Samples@{pref\+A\+A\+Samples}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eada6f472845acdf446e23c61c5fd96011}{pref\+A\+A\+Samples}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eada6f472845acdf446e23c61c5fd96011}
+}]Set to\+: 0 to disable full-\/screen anti-\/aliasing; 2 for 2x; 4 for 4x; 8 for 8x. \index{pref\+Command\+Line\+Opt\+Num@{pref\+Command\+Line\+Opt\+Num}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Command\+Line\+Opt\+Num@{pref\+Command\+Line\+Opt\+Num}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eae7c5076af7d939ca07c87402f999e76b}{pref\+Command\+Line\+Opt\+Num}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eae7c5076af7d939ca07c87402f999e76b}
+}]Returns the length of the array returned by pref\+Command\+Line\+Opts \index{pref\+Color\+B\+P\+P@{pref\+Color\+B\+P\+P}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Color\+B\+P\+P@{pref\+Color\+B\+P\+P}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea538c25d0d1072c5aca11d5ac6cfb736b}{pref\+Color\+B\+P\+P}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea538c25d0d1072c5aca11d5ac6cfb736b}
+}]Allows you to specify a desired color buffer size e.\+g. 16, 32. \index{pref\+Depth\+B\+P\+P@{pref\+Depth\+B\+P\+P}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Depth\+B\+P\+P@{pref\+Depth\+B\+P\+P}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8e06b5531f1465a3da0ea13246589fe7}{pref\+Depth\+B\+P\+P}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8e06b5531f1465a3da0ea13246589fe7}
+}]Allows you to specify a desired depth buffer size e.\+g. 16, 24. \index{pref\+Rotate\+Keys@{pref\+Rotate\+Keys}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Rotate\+Keys@{pref\+Rotate\+Keys}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea95973c735d5873a72c46258df04b51ad}{pref\+Rotate\+Keys}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea95973c735d5873a72c46258df04b51ad}
+}]Allows you to specify and retrieve how the keyboard input is transformed \index{pref\+Button\+State@{pref\+Button\+State}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Button\+State@{pref\+Button\+State}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eaa87ddb143a3cc894dd2a36d6115a87e7}{pref\+Button\+State}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054eaa87ddb143a3cc894dd2a36d6115a87e7}
+}]pointer button state \index{pref\+Capture\+Frame\+Start@{pref\+Capture\+Frame\+Start}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Capture\+Frame\+Start@{pref\+Capture\+Frame\+Start}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea76a0b48db5bfa071ffc631b052f9948d}{pref\+Capture\+Frame\+Start}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea76a0b48db5bfa071ffc631b052f9948d}
+}]The frame to start capturing screenshots from \index{pref\+Capture\+Frame\+Stop@{pref\+Capture\+Frame\+Stop}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Capture\+Frame\+Stop@{pref\+Capture\+Frame\+Stop}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea248f976e3911a6293638b7e7d8b98bfb}{pref\+Capture\+Frame\+Stop}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea248f976e3911a6293638b7e7d8b98bfb}
+}]The frame to stop capturing screenshots at \index{pref\+Capture\+Frame\+Scale@{pref\+Capture\+Frame\+Scale}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Capture\+Frame\+Scale@{pref\+Capture\+Frame\+Scale}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8f9ce3e476b89b8216a46a5d7a7bada3}{pref\+Capture\+Frame\+Scale}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8f9ce3e476b89b8216a46a5d7a7bada3}
+}]Pixel-\/replicate saved screenshots this many times; default 1 for no scale \index{pref\+Priority@{pref\+Priority}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Priority@{pref\+Priority}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea3143433874d0d3ecfb861f0501723e0f}{pref\+Priority}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea3143433874d0d3ecfb861f0501723e0f}
+}]E\+G\+L\+: If supported will set the egl context priority; 0 for low, 1 for med and 2 for high. \index{pref\+Config@{pref\+Config}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Config@{pref\+Config}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea0af6831f9c007f77979b5851e978f8ae}{pref\+Config}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea0af6831f9c007f77979b5851e978f8ae}
+}]E\+G\+L\+: Get the chosen E\+G\+L config. \index{pref\+Requested\+Config@{pref\+Requested\+Config}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Requested\+Config@{pref\+Requested\+Config}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8e26d635bbf7ddc37d795301f7ceff99}{pref\+Requested\+Config}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea8e26d635bbf7ddc37d795301f7ceff99}
+}]E\+G\+L\+: Force the shell to use a particular E\+G\+L config. \index{pref\+Native\+Display@{pref\+Native\+Display}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Native\+Display@{pref\+Native\+Display}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea99c88f2a7ee686cbaa327c420fff5413}{pref\+Native\+Display}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea99c88f2a7ee686cbaa327c420fff5413}
+}]E\+G\+L\+: Allows you to specify the native display to use if the device has more that one. \index{pref\+Frame\+Time\+Value@{pref\+Frame\+Time\+Value}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Frame\+Time\+Value@{pref\+Frame\+Time\+Value}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea05aadd7ded510a440923e0de6e4aba14}{pref\+Frame\+Time\+Value}\label{_p_v_r_shell_8h_a78ec4653192043575302f1448ae7054ea05aadd7ded510a440923e0de6e4aba14}
+}]An integer value to say how long you wish one frame to last for (in ms) when force frame time is enabled. \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Name\+Ptr\+Enum@{pref\+Name\+Ptr\+Enum}}
+\index{pref\+Name\+Ptr\+Enum@{pref\+Name\+Ptr\+Enum}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{pref\+Name\+Ptr\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf pref\+Name\+Ptr\+Enum}}}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330}
+
+
+Pointers/\+Handlers Shell preferences. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{pref\+D3\+D\+Device@{pref\+D3\+D\+Device}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+D3\+D\+Device@{pref\+D3\+D\+Device}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330ab42b1354ec1c5374a82f3c00a712a079}{pref\+D3\+D\+Device}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330ab42b1354ec1c5374a82f3c00a712a079}
+}]D3\+D\+: returns the device pointer \index{pref\+E\+G\+L\+Display@{pref\+E\+G\+L\+Display}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+E\+G\+L\+Display@{pref\+E\+G\+L\+Display}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a223c788a628141d9ca07a0c24a0e7060}{pref\+E\+G\+L\+Display}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a223c788a628141d9ca07a0c24a0e7060}
+}]E\+G\+L\+: returns the E\+G\+L\+Display \index{pref\+E\+G\+L\+Surface@{pref\+E\+G\+L\+Surface}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+E\+G\+L\+Surface@{pref\+E\+G\+L\+Surface}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a419363d058c2445ff7e102e73a5906ed}{pref\+E\+G\+L\+Surface}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a419363d058c2445ff7e102e73a5906ed}
+}]E\+G\+L\+: returns the E\+G\+L\+Surface \index{pref\+H\+I\+N\+S\+T\+A\+N\+C\+E@{pref\+H\+I\+N\+S\+T\+A\+N\+C\+E}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+H\+I\+N\+S\+T\+A\+N\+C\+E@{pref\+H\+I\+N\+S\+T\+A\+N\+C\+E}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a05e7a33280b82329d908c9d721a1e4dd}{pref\+H\+I\+N\+S\+T\+A\+N\+C\+E}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a05e7a33280b82329d908c9d721a1e4dd}
+}]Windows\+: returns the application instance handle \index{pref\+Native\+Window\+Type@{pref\+Native\+Window\+Type}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Native\+Window\+Type@{pref\+Native\+Window\+Type}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330ab493d7d51903359208392a5b2f2e3c3b}{pref\+Native\+Window\+Type}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330ab493d7d51903359208392a5b2f2e3c3b}
+}]Returns the window handle \index{pref\+Accelerometer@{pref\+Accelerometer}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Accelerometer@{pref\+Accelerometer}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a1c0d0e5bd97ba9a73510d0afd287bf39}{pref\+Accelerometer}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a1c0d0e5bd97ba9a73510d0afd287bf39}
+}]Accelerometer values \index{pref\+Pointer\+Location@{pref\+Pointer\+Location}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Pointer\+Location@{pref\+Pointer\+Location}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a5eebbd62467a34faf59c971b094d5ff8}{pref\+Pointer\+Location}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a5eebbd62467a34faf59c971b094d5ff8}
+}]Mouse pointer/touch location values \index{pref\+P\+V\+R2\+D\+Context@{pref\+P\+V\+R2\+D\+Context}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+P\+V\+R2\+D\+Context@{pref\+P\+V\+R2\+D\+Context}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a833824b5e88e84bdf749a2064d0e6858}{pref\+P\+V\+R2\+D\+Context}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a833824b5e88e84bdf749a2064d0e6858}
+}]P\+V\+R2\+D\+: returns the P\+V\+R2\+D context \index{pref\+Load\+File\+Func@{pref\+Load\+File\+Func}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Load\+File\+Func@{pref\+Load\+File\+Func}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a1c2c96b85ff37ad1bc3277dd8baa3885}{pref\+Load\+File\+Func}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a1c2c96b85ff37ad1bc3277dd8baa3885}
+}]A pointer to a function that can be used to load external files on platforms that don't allow the use of fopen. The ptr returned is of the type P\+F\+N\+Load\+File\+Func defined below. \index{pref\+Release\+File\+Func@{pref\+Release\+File\+Func}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Release\+File\+Func@{pref\+Release\+File\+Func}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a3986751db20ae0c4e71f919d0dfb430c}{pref\+Release\+File\+Func}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330a3986751db20ae0c4e71f919d0dfb430c}
+}]A pointer to a function that is used to release any data allocated by the load file function. The ptr returned is of the type P\+F\+N\+Release\+File\+Func defined below. \index{pref\+Android\+Native\+Activity@{pref\+Android\+Native\+Activity}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!pref\+Android\+Native\+Activity@{pref\+Android\+Native\+Activity}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330adb1ef5ec990dcf9fb1227ce6008532c4}{pref\+Android\+Native\+Activity}\label{_p_v_r_shell_8h_a946b110b552f1d833e359e6517647330adb1ef5ec990dcf9fb1227ce6008532c4}
+}]Android\+: A pointer to the A\+Native\+Activity struct for the application. Your application will need to include android\+\_\+native\+\_\+app\+\_\+glue.\+h to cast the pointer to A\+Native\+Activity. \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name@{P\+V\+R\+Shell\+Key\+Name}}
+\index{P\+V\+R\+Shell\+Key\+Name@{P\+V\+R\+Shell\+Key\+Name}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{P\+V\+R\+Shell\+Key\+Name}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf P\+V\+R\+Shell\+Key\+Name}}}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159}
+
+
+Key name. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\+V\+R\+Shell\+Key\+Name\+Null@{P\+V\+R\+Shell\+Key\+Name\+Null}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+Null@{P\+V\+R\+Shell\+Key\+Name\+Null}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ad8652ffb9431fdf50769ec697eb162dd}{P\+V\+R\+Shell\+Key\+Name\+Null}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ad8652ffb9431fdf50769ec697eb162dd}
+}]Null key value \index{P\+V\+R\+Shell\+Key\+Name\+Q\+U\+I\+T@{P\+V\+R\+Shell\+Key\+Name\+Q\+U\+I\+T}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+Q\+U\+I\+T@{P\+V\+R\+Shell\+Key\+Name\+Q\+U\+I\+T}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a66e75361f220dba8102932bb149994fe}{P\+V\+R\+Shell\+Key\+Name\+Q\+U\+I\+T}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a66e75361f220dba8102932bb149994fe}
+}]Q\+U\+I\+T key value \index{P\+V\+R\+Shell\+Key\+Name\+S\+E\+L\+E\+C\+T@{P\+V\+R\+Shell\+Key\+Name\+S\+E\+L\+E\+C\+T}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+S\+E\+L\+E\+C\+T@{P\+V\+R\+Shell\+Key\+Name\+S\+E\+L\+E\+C\+T}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ac64b2480d9b47ac2c43457a7eba6c79a}{P\+V\+R\+Shell\+Key\+Name\+S\+E\+L\+E\+C\+T}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ac64b2480d9b47ac2c43457a7eba6c79a}
+}]S\+E\+L\+E\+C\+T key value \index{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N1@{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N1}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N1@{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N1}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ae371785fd19ba4eea9a03396e0fb24d8}{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N1}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ae371785fd19ba4eea9a03396e0fb24d8}
+}]A\+C\+T\+I\+O\+N1 key value \index{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N2@{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N2}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N2@{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N2}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a99ce48161f80574d1ac19f4eefe25998}{P\+V\+R\+Shell\+Key\+Name\+A\+C\+T\+I\+O\+N2}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a99ce48161f80574d1ac19f4eefe25998}
+}]A\+C\+T\+I\+O\+N2 key value \index{P\+V\+R\+Shell\+Key\+Name\+U\+P@{P\+V\+R\+Shell\+Key\+Name\+U\+P}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+U\+P@{P\+V\+R\+Shell\+Key\+Name\+U\+P}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159abb09482ed3f63a22285cf2b3f3a4ff4e}{P\+V\+R\+Shell\+Key\+Name\+U\+P}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159abb09482ed3f63a22285cf2b3f3a4ff4e}
+}]U\+P key \index{P\+V\+R\+Shell\+Key\+Name\+D\+O\+W\+N@{P\+V\+R\+Shell\+Key\+Name\+D\+O\+W\+N}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+D\+O\+W\+N@{P\+V\+R\+Shell\+Key\+Name\+D\+O\+W\+N}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a1e76cce406cc4ac7999233f8e624fe58}{P\+V\+R\+Shell\+Key\+Name\+D\+O\+W\+N}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a1e76cce406cc4ac7999233f8e624fe58}
+}]D\+O\+W\+N key \index{P\+V\+R\+Shell\+Key\+Name\+L\+E\+F\+T@{P\+V\+R\+Shell\+Key\+Name\+L\+E\+F\+T}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+L\+E\+F\+T@{P\+V\+R\+Shell\+Key\+Name\+L\+E\+F\+T}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ac02bb7473771f33f08568f3f64afbeca}{P\+V\+R\+Shell\+Key\+Name\+L\+E\+F\+T}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159ac02bb7473771f33f08568f3f64afbeca}
+}]L\+E\+F\+T key \index{P\+V\+R\+Shell\+Key\+Name\+R\+I\+G\+H\+T@{P\+V\+R\+Shell\+Key\+Name\+R\+I\+G\+H\+T}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+R\+I\+G\+H\+T@{P\+V\+R\+Shell\+Key\+Name\+R\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a920ab18c90e66a253f51a5d576a6c93e}{P\+V\+R\+Shell\+Key\+Name\+R\+I\+G\+H\+T}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a920ab18c90e66a253f51a5d576a6c93e}
+}]R\+I\+G\+H\+T key \index{P\+V\+R\+Shell\+Key\+Name\+Screenshot@{P\+V\+R\+Shell\+Key\+Name\+Screenshot}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Name\+Screenshot@{P\+V\+R\+Shell\+Key\+Name\+Screenshot}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a9cdbf796d3584e4d68729c1ef7c43aaf}{P\+V\+R\+Shell\+Key\+Name\+Screenshot}\label{_p_v_r_shell_8h_afe6e702981239131fb8bb06574e35159a9cdbf796d3584e4d68729c1ef7c43aaf}
+}]S\+C\+R\+E\+E\+N\+S\+H\+O\+T key \end{description}
+\end{Desc}
+\hypertarget{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984a}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Rotate@{P\+V\+R\+Shell\+Key\+Rotate}}
+\index{P\+V\+R\+Shell\+Key\+Rotate@{P\+V\+R\+Shell\+Key\+Rotate}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{P\+V\+R\+Shell\+Key\+Rotate}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf P\+V\+R\+Shell\+Key\+Rotate}}}\label{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984a}
+
+
+Key rotate. 
+
+
+
+ \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\+V\+R\+Shell\+Key\+Rotate\+None@{P\+V\+R\+Shell\+Key\+Rotate\+None}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Rotate\+None@{P\+V\+R\+Shell\+Key\+Rotate\+None}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa09c0e1299605dafeaf9d7ee493f17be7}{P\+V\+R\+Shell\+Key\+Rotate\+None}\label{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa09c0e1299605dafeaf9d7ee493f17be7}
+}]Rotate key none = 0. \index{P\+V\+R\+Shell\+Key\+Rotate90@{P\+V\+R\+Shell\+Key\+Rotate90}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Rotate90@{P\+V\+R\+Shell\+Key\+Rotate90}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa7bff247b0fa2340432f21e2e5ce52755}{P\+V\+R\+Shell\+Key\+Rotate90}\label{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa7bff247b0fa2340432f21e2e5ce52755}
+}]Rotate key 90 \index{P\+V\+R\+Shell\+Key\+Rotate180@{P\+V\+R\+Shell\+Key\+Rotate180}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Rotate180@{P\+V\+R\+Shell\+Key\+Rotate180}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa93bf51efa6eeda5ba2c5210ea483718a}{P\+V\+R\+Shell\+Key\+Rotate180}\label{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aa93bf51efa6eeda5ba2c5210ea483718a}
+}]Rotate key 180 \index{P\+V\+R\+Shell\+Key\+Rotate270@{P\+V\+R\+Shell\+Key\+Rotate270}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!P\+V\+R\+Shell\+Key\+Rotate270@{P\+V\+R\+Shell\+Key\+Rotate270}}\item[{\em 
+\hypertarget{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aab7e1bc461bde6f51b080e69a68e9c957}{P\+V\+R\+Shell\+Key\+Rotate270}\label{_p_v_r_shell_8h_a0dd1e43d52218ef08cf887ac1657984aab7e1bc461bde6f51b080e69a68e9c957}
+}]Rotate key 270 \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_v_r_shell_8h_a963ddeb8f7ef183611ef73625f48840c}{\index{P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}!New\+Demo@{New\+Demo}}
+\index{New\+Demo@{New\+Demo}!P\+V\+R\+Shell.\+h@{P\+V\+R\+Shell.\+h}}
+\subsubsection[{New\+Demo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+V\+R\+Shell}$\ast$ New\+Demo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_p_v_r_shell_8h_a963ddeb8f7ef183611ef73625f48840c}
+
+
+This function must be implemented by the user of the shell. 
+
+
+
+
+
+The user should return its \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} object defining the behaviour of the application. \begin{DoxyReturn}{Returns}
+The demo supplied by the user
+\end{DoxyReturn}
+
+
+  New\+Demo  P\+V\+R\+Shell$\ast$ The demo supplied by the user  This function must be implemented by the user of the shell. The user should return its \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} object defining the behaviour of the application.
+
+
+
+  New\+Demo  The demo supplied by the user  This function must be implemented by the user of the shell. The user should return its \hyperlink{class_p_v_r_shell}{P\+V\+R\+Shell} object defining the behaviour of the application 
