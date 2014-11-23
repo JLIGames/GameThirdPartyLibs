@@ -1,0 +1,362 @@
+\hypertarget{classjli_1_1_abstract_factory_object}{\section{jli\+:\+:Abstract\+Factory\+Object Class Reference}
+\label{classjli_1_1_abstract_factory_object}\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+}
+
+
+{\ttfamily \#include $<$Abstract\+Factory\+Object.\+h$>$}
+
+Inheritance diagram for jli\+:\+:Abstract\+Factory\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classjli_1_1_abstract_factory_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_ab78cb20b22a26275e80a1dd33566024c}{get\+Name} () const 
+\item 
+virtual u32 \hyperlink{classjli_1_1_abstract_factory_object_a1a69b8811cdf0ccc7facb9b1cb396aae}{get\+Type} () const 
+\item 
+virtual \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_af2f25dcc27827022294a2078ef35b9d3}{create} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&builder) const 
+\item 
+virtual \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_a1884315c8cd248335161e6f52a3519de}{clone} (bool shared=false) const 
+\item 
+virtual void \hyperlink{classjli_1_1_abstract_factory_object_a40ffbc527e0d7e3d5a6adf241a63ac25}{destroy} ()
+\item 
+virtual s32 \hyperlink{classjli_1_1_abstract_factory_object_a37d06a25aaf9400a2f5b0a7ee110b236}{calculate\+Serialize\+Buffer\+Size} () const =0
+\item 
+virtual void \hyperlink{classjli_1_1_abstract_factory_object_a9971edc5976c06cbfae1b0ae80722a43}{serialize} (void $\ast$data\+Buffer, bt\+Serializer $\ast$serializer) const =0
+\item 
+const void $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_aa32d6469cb7cc3dab360993a7e1a276e}{get\+Pointer} () const 
+\item 
+const u64 \hyperlink{classjli_1_1_abstract_factory_object_ab96c5857b75e6446fa38e056fefd7052}{get\+Pointer\+Value} () const 
+\item 
+bool \hyperlink{classjli_1_1_abstract_factory_object_a0dffe2fef49472131fdc99a04a16aa00}{operator==} (const \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{classjli_1_1_abstract_factory_object_aba24919cc7fa9fee04ed0b6bbeaee0e9}{operator$<$} (const \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{classjli_1_1_abstract_factory_object_ae1685aa78a6af563734076dcd756450e}{operator$>$} (const \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{classjli_1_1_abstract_factory_object_a3acdcb151e49d7a3c4bdb9ccc2462e14}{operator!=} (const \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{classjli_1_1_abstract_factory_object_ab7e3ebdf2d0fa3b005c5d050960953a2}{operator$<$=} (const \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{classjli_1_1_abstract_factory_object_a8c1661352be79b3aca8b3ff7f1a129a8}{operator$>$=} (const \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+virtual void \hyperlink{classjli_1_1_abstract_factory_object_a5476ff6659ee05240662379cde28e7a8}{serialize\+Object} (class bt\+Serializer $\ast$serializer) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjli_1_1_abstract_factory_object_acfc5faa7803ffeb549cbb9f72f3cf760}{Abstract\+Factory\+Object} (const void $\ast$ptr)
+\item 
+virtual \hyperlink{classjli_1_1_abstract_factory_object_a0a2163c016c278297e5fd96171f8f6e5}{$\sim$\+Abstract\+Factory\+Object} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjli_1_1_abstract_factory_object_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file Abstract\+Factory\+Object.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjli_1_1_abstract_factory_object_acfc5faa7803ffeb549cbb9f72f3cf760}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!Abstract\+Factory\+Object@{Abstract\+Factory\+Object}}
+\index{Abstract\+Factory\+Object@{Abstract\+Factory\+Object}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Abstract\+Factory\+Object\+::\+Abstract\+Factory\+Object (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classjli_1_1_abstract_factory_object_acfc5faa7803ffeb549cbb9f72f3cf760}
+
+
+Definition at line 20 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a0a2163c016c278297e5fd96171f8f6e5}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}}
+\index{````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{$\sim$\+Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Abstract\+Factory\+Object\+::$\sim$\+Abstract\+Factory\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_a0a2163c016c278297e5fd96171f8f6e5}
+
+
+Definition at line 23 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjli_1_1_abstract_factory_object_a37d06a25aaf9400a2f5b0a7ee110b236}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{calculate\+Serialize\+Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual s32 jli\+::\+Abstract\+Factory\+Object\+::calculate\+Serialize\+Buffer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classjli_1_1_abstract_factory_object_a37d06a25aaf9400a2f5b0a7ee110b236}
+function is used to calculate the buffer size of this object.
+
+\begin{DoxyReturn}{Returns}
+the buffer size of this object. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classjli_1_1_abstract_builder_a107ab66007cc293eb54c74e466c5d30a}{jli\+::\+Abstract\+Builder}.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a1884315c8cd248335161e6f52a3519de}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!clone@{clone}}
+\index{clone@{clone}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+Abstract\+Factory\+Object\+::clone (
+\begin{DoxyParamCaption}
+\item[{bool}]{shared = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_a1884315c8cd248335161e6f52a3519de}
+Clones an object. It is possible to share the instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shared} & used to determine whether or not to create a shared object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a clone of the original object or another instance. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_af2f25dcc27827022294a2078ef35b9d3}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!create@{create}}
+\index{create@{create}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+Abstract\+Factory\+Object\+::create (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Builder} \&}]{builder}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_af2f25dcc27827022294a2078ef35b9d3}
+Creates an object. This is the central place where all of the objects will be created in the world
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & The builder class to construct the instance from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new instance based on the builder's type. 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a40ffbc527e0d7e3d5a6adf241a63ac25}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!destroy@{destroy}}
+\index{destroy@{destroy}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+Abstract\+Factory\+Object\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_a40ffbc527e0d7e3d5a6adf241a63ac25}
+used to destroy this instance from the factory. 
+
+Definition at line 47 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_ab78cb20b22a26275e80a1dd33566024c}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ jli\+::\+Abstract\+Factory\+Object\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_ab78cb20b22a26275e80a1dd33566024c}
+The name of this Class
+
+\begin{DoxyReturn}{Returns}
+the name of this class 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classjli_1_1_abstract_builder_a390358e86d1f93a41660bd40ec6e69dc}{jli\+::\+Abstract\+Builder}.
+
+
+
+Definition at line 27 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_aa32d6469cb7cc3dab360993a7e1a276e}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{get\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void $\ast$ jli\+::\+Abstract\+Factory\+Object\+::get\+Pointer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_aa32d6469cb7cc3dab360993a7e1a276e}
+The pointer stored by this class. 
+
+Definition at line 52 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_ab96c5857b75e6446fa38e056fefd7052}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{get\+Pointer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const u64 jli\+::\+Abstract\+Factory\+Object\+::get\+Pointer\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_ab96c5857b75e6446fa38e056fefd7052}
+The u64 value of this pointer;
+
+\begin{DoxyReturn}{Returns}
+the u64 value of this pointer. 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a1a69b8811cdf0ccc7facb9b1cb396aae}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::\+Abstract\+Factory\+Object\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_a1a69b8811cdf0ccc7facb9b1cb396aae}
+The type of this Class
+
+\begin{DoxyReturn}{Returns}
+the type of this class 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classjli_1_1_abstract_builder_a826f70c995257424b7d81ab2d4706ccf}{jli\+::\+Abstract\+Builder}.
+
+
+
+Definition at line 32 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a3acdcb151e49d7a3c4bdb9ccc2462e14}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+Abstract\+Factory\+Object\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_a3acdcb151e49d7a3c4bdb9ccc2462e14}
+
+
+Definition at line 77 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_aba24919cc7fa9fee04ed0b6bbeaee0e9}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+Abstract\+Factory\+Object\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_aba24919cc7fa9fee04ed0b6bbeaee0e9}
+
+
+Definition at line 67 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_ab7e3ebdf2d0fa3b005c5d050960953a2}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+Abstract\+Factory\+Object\+::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_ab7e3ebdf2d0fa3b005c5d050960953a2}
+
+
+Definition at line 82 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a0dffe2fef49472131fdc99a04a16aa00}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator==@{operator==}}
+\index{operator==@{operator==}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+Abstract\+Factory\+Object\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_a0dffe2fef49472131fdc99a04a16aa00}
+
+
+Definition at line 62 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_ae1685aa78a6af563734076dcd756450e}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+Abstract\+Factory\+Object\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_ae1685aa78a6af563734076dcd756450e}
+
+
+Definition at line 72 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a8c1661352be79b3aca8b3ff7f1a129a8}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+Abstract\+Factory\+Object\+::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_abstract_factory_object_a8c1661352be79b3aca8b3ff7f1a129a8}
+
+
+Definition at line 87 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a9971edc5976c06cbfae1b0ae80722a43}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!serialize@{serialize}}
+\index{serialize@{serialize}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void jli\+::\+Abstract\+Factory\+Object\+::serialize (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data\+Buffer, }
+\item[{bt\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classjli_1_1_abstract_factory_object_a9971edc5976c06cbfae1b0ae80722a43}
+Abstract function which needs to be implemented by the base class. This can be used to save the current state of the object to disk.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & The buffer to store the data when it is finished serializing. \\
+\hline
+{\em serializer} & The pointer to the serializer. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classjli_1_1_abstract_builder_a03c8719c6b852d1a21b1c7e0b7469fc0}{jli\+::\+Abstract\+Builder}.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a5476ff6659ee05240662379cde28e7a8}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{serialize\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+Abstract\+Factory\+Object\+::serialize\+Object (
+\begin{DoxyParamCaption}
+\item[{class bt\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_a5476ff6659ee05240662379cde28e7a8}
+
+
+Definition at line 92 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classjli_1_1_abstract_factory_object_acb96ebb09abe8f2a37a915a842babfac}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{World\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf World\+Factory}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classjli_1_1_abstract_factory_object_acb96ebb09abe8f2a37a915a842babfac}
+
+
+Definition at line 28 of file Abstract\+Factory\+Object.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjli_1_1_abstract_factory_object_ab543e65fa384673f153c01947e3573a1}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!m\+\_\+pointer@{m\+\_\+pointer}}
+\index{m\+\_\+pointer@{m\+\_\+pointer}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{m\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ jli\+::\+Abstract\+Factory\+Object\+::m\+\_\+pointer}}\label{classjli_1_1_abstract_factory_object_ab543e65fa384673f153c01947e3573a1}
+
+
+Definition at line 118 of file Abstract\+Factory\+Object.\+h.
+
+\hypertarget{classjli_1_1_abstract_factory_object_a12422dceb4d3678e0c2beef4204538ea}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}}
+\index{m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{m\+\_\+pointer\+Val}]{\setlength{\rightskip}{0pt plus 5cm}u64 jli\+::\+Abstract\+Factory\+Object\+::m\+\_\+pointer\+Val}}\label{classjli_1_1_abstract_factory_object_a12422dceb4d3678e0c2beef4204538ea}
+
+
+Definition at line 119 of file Abstract\+Factory\+Object.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_abstract_factory_object_8h}{Abstract\+Factory\+Object.\+h}\item 
+/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_abstract_factory_object_8cpp}{Abstract\+Factory\+Object.\+cpp}\end{DoxyCompactItemize}

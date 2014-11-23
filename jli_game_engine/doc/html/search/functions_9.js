@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['remove_5finternal',['remove_Internal',['../classjli_1_1_world_factory.html#ac3348faaa06a437c9bdff93f0245d1e1',1,'jli::WorldFactory']]],
-  ['resourcebuilder',['ResourceBuilder',['../namespacejli.html#ae9f9f7477ddfe0b9d4ac195927e749b4',1,'jli::ResourceBuilder()'],['../namespacejli.html#ac25c61dfb7fd3cd0172ccf6a5d6d9598',1,'jli::ResourceBuilder(const ResourceBuilder &amp;)'],['../namespacejli.html#a2f0f2d3abddab36a2e632d5fe25bdea7',1,'jli::ResourceBuilder(const AbstractBuilder &amp;)']]]
+  ['material',['Material',['../namespacejli.html#a007372827318c5314719b1f97041f45c',1,'jli::Material()'],['../namespacejli.html#a60fe526f7e6659ff8ae5f9cae7fb4c10',1,'jli::Material(const AbstractBuilder &amp;)'],['../namespacejli.html#a2a281e85f9e15afd7c78051b8be24bb6',1,'jli::Material(const Material &amp;)']]],
+  ['materialbuilder',['MaterialBuilder',['../namespacejli.html#abbc4482d10b2fab1145308318ec6ef4e',1,'jli::MaterialBuilder()'],['../namespacejli.html#ad3851357f4c908c0673c097c941828d6',1,'jli::MaterialBuilder(const MaterialBuilder &amp;)'],['../namespacejli.html#a8fb3dd20b46500cee7e4feb50df32824',1,'jli::MaterialBuilder(const AbstractBuilder &amp;)']]],
+  ['materialproperty',['MaterialProperty',['../namespacejli.html#aac4773f4081fe5e6116c6e85803b59e0',1,'jli::MaterialProperty()'],['../namespacejli.html#acba837966af210890b7418fc4926d2eb',1,'jli::MaterialProperty(const AbstractBuilder &amp;)'],['../namespacejli.html#afb1bbc3b06ceaaf5d288bdf3c615d1d7',1,'jli::MaterialProperty(const MaterialProperty &amp;)']]],
+  ['materialpropertybuilder',['MaterialPropertyBuilder',['../namespacejli.html#a96c22be2baa4ce5a1d9759cb6165b155',1,'jli::MaterialPropertyBuilder()'],['../namespacejli.html#aac6faf9ab92632aac5d6e880e2b00c6f',1,'jli::MaterialPropertyBuilder(const MaterialPropertyBuilder &amp;)'],['../namespacejli.html#a3e8b5f64fd8e55aabc11e1bd4d65035d',1,'jli::MaterialPropertyBuilder(const AbstractBuilder &amp;)']]]
 ];

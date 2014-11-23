@@ -11,56 +11,340 @@
 \item 
 class \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder}
 \item 
-class \hyperlink{classjli_1_1_node}{Node}
+class \hyperlink{classjli_1_1_abstract_decorator}{Abstract\+Decorator}
 \item 
-class \hyperlink{classjli_1_1_scene}{Scene}
+class \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}
+\item 
+class \hyperlink{classjli_1_1_telegram}{Telegram}
 \item 
 class \hyperlink{classjli_1_1_world}{World}
 \item 
 class \hyperlink{classjli_1_1_world_factory}{World\+Factory}
+\item 
+class \hyperlink{classjli_1_1_world_input}{World\+Input}
+\item 
+class \hyperlink{classjli_1_1_world_lua_virtual_machine}{World\+Lua\+Virtual\+Machine}
+\item 
+class \hyperlink{classjli_1_1_world_my_s_q_l}{World\+My\+S\+Q\+L}
+\item 
+class \hyperlink{classjli_1_1_world_sound}{World\+Sound}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} (const void $\ast$ptr)
+\hyperlink{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+Object
 \item 
-virtual \hyperlink{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}{$\sim$\+Abstract\+Factory\+Object} ()
+\hyperlink{namespacejli_a4eb9a23f0614497a7922d323a49cb822}{Abstract\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_ad1a3c0146786fe6995fb9696c653555f}{Abstract\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a42235253cee125ef6fe3f35d61cb6a12}{Abstract\+Physics\+Body} (const Abstract\+Physics\+Body \&)
 \item 
 \hyperlink{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
 \item 
-virtual const char $\ast$ \hyperlink{namespacejli_ab59410e766fae1d158793c2a0c70be5e}{get\+Name} () const 
+virtual \hyperlink{namespacejli_aacaf3d149e42af3ba68c1225ccbe6797}{$\sim$\+Abstract\+Physics\+Body} ()
 \item 
-virtual u32 \hyperlink{namespacejli_acf2403453223c37b2cbf466e23515b6e}{get\+Type} () const 
-\item 
-virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}{create} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&builder) const 
-\item 
-virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{namespacejli_a5100077139d5c7339602ada53ab27663}{clone} (bool shared=false) const 
-\item 
-virtual void \hyperlink{namespacejli_ace155e097623e08835596243e115d880}{destroy} ()
+\hyperlink{namespacejli_a4eb9a23f0614497a7922d323a49cb822}{Abstract\+Physics\+Body} \& \hyperlink{namespacejli_abf374f753c2ae3833479fc522c07b7a9}{operator=} (const \hyperlink{namespacejli_a4eb9a23f0614497a7922d323a49cb822}{Abstract\+Physics\+Body} \&)
 \item 
 virtual s32 \hyperlink{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}{calculate\+Serialize\+Buffer\+Size} () const =0
 \item 
-virtual void \hyperlink{namespacejli_ac4ecbc29085e60be91b1eee948d37851}{serialize} (void $\ast$data\+Buffer, bt\+Serializer $\ast$serializer) const =0
+virtual void \hyperlink{namespacejli_aa823f0f9cca7324a986925864ae004f6}{serialize} (void $\ast$, bt\+Serializer $\ast$) const =0
 \item 
-const void $\ast$ \hyperlink{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}{get\+Pointer} () const 
+virtual const char $\ast$ \hyperlink{namespacejli_a3b3d389101633767ffe8029193e7ce05}{get\+Name} () const =0
 \item 
-const u64 \hyperlink{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}{get\+Pointer\+Value} () const 
+virtual u32 \hyperlink{namespacejli_ab742f1c07eed63b74053aa01c3193d1f}{get\+Type} () const =0
 \item 
-bool \hyperlink{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}{operator==} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\hyperlink{namespacejli_ac1d6edc4f796157e771fb531302807c5}{Action} ()
 \item 
-bool \hyperlink{namespacejli_a5c433a85502a8c96877ad59022bf1024}{operator$<$} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\hyperlink{namespacejli_a372d9d21f05940e5e2e7728e51e5497e}{Action} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
 \item 
-bool \hyperlink{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}{operator$>$} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\hyperlink{namespacejli_a56537e2852192599346977eae126cf3f}{Action} (const Action \&)
 \item 
-bool \hyperlink{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}{operator!=} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+virtual \hyperlink{namespacejli_a366502b547b6ed3de30f23020a65df04}{$\sim$\+Action} ()
 \item 
-bool \hyperlink{namespacejli_a53a743e411edf86856cbb4ce21a6939d}{operator$<$=} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\hyperlink{namespacejli_ac1d6edc4f796157e771fb531302807c5}{Action} \& \hyperlink{namespacejli_a3652a77b1603e782ad8ac9ff69eb0f83}{operator=} (const \hyperlink{namespacejli_ac1d6edc4f796157e771fb531302807c5}{Action} \&)
 \item 
-bool \hyperlink{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}{operator$>$=} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\hyperlink{namespacejli_add5250909a3a5a38d28295b426e43da7}{Action\+Builder} ()
 \item 
-virtual void \hyperlink{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}{serialize\+Object} (class bt\+Serializer $\ast$serializer) const 
+\hyperlink{namespacejli_a96508fbaf421e7088d0213d649abf7ba}{Action\+Builder} (const Action\+Builder \&)
 \item 
-\hyperlink{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+Object
+\hyperlink{namespacejli_ab6f83e83f1cecc616fbcc6dab3d26954}{Action\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_ab2e77266449aea2fbf9db5435931dc84}{$\sim$\+Action\+Builder} ()
+\item 
+\hyperlink{namespacejli_add5250909a3a5a38d28295b426e43da7}{Action\+Builder} \& \hyperlink{namespacejli_a52eac4944ed6adea3292bb7646e89bb1}{operator=} (const \hyperlink{namespacejli_add5250909a3a5a38d28295b426e43da7}{Action\+Builder} \&)
+\item 
+virtual u32 \hyperlink{namespacejli_ad74268a8f5493ee3df657a346cd64d30}{get\+Object\+Type} () const 
+\item 
+\hyperlink{namespacejli_a98e0507c420540776aa9f21e81027e0c}{Base\+Rigid\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a4637557b69faf270ee5531c61586f09c}{Base\+Rigid\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a704fd69b6e610f90f51f7a734f7a6b0a}{Base\+Rigid\+Physics\+Body} (const Base\+Rigid\+Physics\+Body \&)
+\item 
+virtual \hyperlink{namespacejli_ae945134a5ad3fd6da757b1f5ee871427}{$\sim$\+Base\+Rigid\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a98e0507c420540776aa9f21e81027e0c}{Base\+Rigid\+Physics\+Body} \& \hyperlink{namespacejli_a153d8db97f7793fc3526297dbedca3ec}{operator=} (const \hyperlink{namespacejli_a98e0507c420540776aa9f21e81027e0c}{Base\+Rigid\+Physics\+Body} \&)
+\item 
+\hyperlink{namespacejli_a4cdb474048fb5433420b96f927f9b817}{Base\+Rigid\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a9d0fc4e31b13024aaba83ef9f40cd75d}{Base\+Rigid\+Physics\+Body\+Builder} (const Base\+Rigid\+Physics\+Body\+Builder \&)
+\item 
+\hyperlink{namespacejli_a33f960117cd9048adfccf6245c42ae26}{Base\+Rigid\+Physics\+Body\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aa360c529f2548e88d8d5eec1d6db6616}{$\sim$\+Base\+Rigid\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a4cdb474048fb5433420b96f927f9b817}{Base\+Rigid\+Physics\+Body\+Builder} \& \hyperlink{namespacejli_aee6a533641209a3c27bea0b636e4ab99}{operator=} (const \hyperlink{namespacejli_a4cdb474048fb5433420b96f927f9b817}{Base\+Rigid\+Physics\+Body\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a3d48c62c93d7ecba8820d383c7cba343}{Base\+Soft\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a7f4a9767fe65c22c074c745dcc46151c}{Base\+Soft\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a7cf91482407d32cbaf787910189561a5}{Base\+Soft\+Physics\+Body} (const Base\+Soft\+Physics\+Body \&)
+\item 
+virtual \hyperlink{namespacejli_a6111032c62909d367a361b2b6b75d5ef}{$\sim$\+Base\+Soft\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a3d48c62c93d7ecba8820d383c7cba343}{Base\+Soft\+Physics\+Body} \& \hyperlink{namespacejli_a523e9bc6d65436e210ed19241efba3ed}{operator=} (const \hyperlink{namespacejli_a3d48c62c93d7ecba8820d383c7cba343}{Base\+Soft\+Physics\+Body} \&)
+\item 
+\hyperlink{namespacejli_a1fb70667531e9332328b61412d87922e}{Base\+Soft\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_ae5adda75064876641e3883645ef02c6e}{Base\+Soft\+Physics\+Body\+Builder} (const Base\+Soft\+Physics\+Body\+Builder \&)
+\item 
+\hyperlink{namespacejli_ab6e0fdaf5bc7026f1fe3f27d94191077}{Base\+Soft\+Physics\+Body\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_ac83094dcec9a714f2e82ea1001bbdea3}{$\sim$\+Base\+Soft\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a1fb70667531e9332328b61412d87922e}{Base\+Soft\+Physics\+Body\+Builder} \& \hyperlink{namespacejli_ade54634c2d0015f83656062ee83950e5}{operator=} (const \hyperlink{namespacejli_a1fb70667531e9332328b61412d87922e}{Base\+Soft\+Physics\+Body\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ad3d15c9bf468345cc46e47bf7dd7d3e3}{Camera} ()
+\item 
+\hyperlink{namespacejli_a97fa95992b76788ae3feb7c62ddd6168}{Camera} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a987bfeb3ffde7a3a032e131c6c356c53}{Camera} (const Camera \&)
+\item 
+virtual \hyperlink{namespacejli_a9407d365ccc6d206674e5a5869758943}{$\sim$\+Camera} ()
+\item 
+\hyperlink{namespacejli_ad3d15c9bf468345cc46e47bf7dd7d3e3}{Camera} \& \hyperlink{namespacejli_ae0ca0605362d0f66744c6b8c44e73adb}{operator=} (const \hyperlink{namespacejli_ad3d15c9bf468345cc46e47bf7dd7d3e3}{Camera} \&)
+\item 
+\hyperlink{namespacejli_ac774207b2ca46f60adc7d58d5252ebec}{Camera\+Builder} ()
+\item 
+\hyperlink{namespacejli_a8fe2558f8fe1d572700b414f9c0ccdf0}{Camera\+Builder} (const Camera\+Builder \&)
+\item 
+\hyperlink{namespacejli_a2dd10cbeedd42092b35159fd713834f3}{Camera\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_af4eb98dba938417574ac1607e82a5da6}{$\sim$\+Camera\+Builder} ()
+\item 
+\hyperlink{namespacejli_ac774207b2ca46f60adc7d58d5252ebec}{Camera\+Builder} \& \hyperlink{namespacejli_a75dbc7e82adc58eea850e84fbc0db767}{operator=} (const \hyperlink{namespacejli_ac774207b2ca46f60adc7d58d5252ebec}{Camera\+Builder} \&)
+\item 
+\hyperlink{namespacejli_af69056b00744493ba074ef13e82b0bec}{Clock} ()
+\item 
+\hyperlink{namespacejli_a334855814780bf6b3108045f5bf20c40}{Clock} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a7ce97585499e25f837d2b1a14a4af4ce}{Clock} (const Clock \&)
+\item 
+virtual \hyperlink{namespacejli_aad1ce3f2fd2e7830b0fed2a040647134}{$\sim$\+Clock} ()
+\item 
+\hyperlink{namespacejli_af69056b00744493ba074ef13e82b0bec}{Clock} \& \hyperlink{namespacejli_a1ff847178b6d16582b0c1ca11c646090}{operator=} (const \hyperlink{namespacejli_af69056b00744493ba074ef13e82b0bec}{Clock} \&)
+\item 
+\hyperlink{namespacejli_af9355f336950e30078eac279a96a7375}{Clock\+Builder} ()
+\item 
+\hyperlink{namespacejli_a59f88ada47f2f75bad05d58b79344dd1}{Clock\+Builder} (const Clock\+Builder \&)
+\item 
+\hyperlink{namespacejli_a6eb2d97c9c7e59378580ac6637daf99c}{Clock\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aedf4fd3834c4b8806fa9a257d496df30}{$\sim$\+Clock\+Builder} ()
+\item 
+\hyperlink{namespacejli_af9355f336950e30078eac279a96a7375}{Clock\+Builder} \& \hyperlink{namespacejli_ab2df9e6084dba760e66f854ddaed69ff}{operator=} (const \hyperlink{namespacejli_af9355f336950e30078eac279a96a7375}{Clock\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ade7f2a4f2880c0d04736c3677ff61c1a}{Collision\+Response} ()
+\item 
+\hyperlink{namespacejli_a5253cd6674cbb5acad943c6652f1941d}{Collision\+Response} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_aa016cba40071d115792a6ab008cc30c5}{Collision\+Response} (const Collision\+Response \&)
+\item 
+virtual \hyperlink{namespacejli_ad8c3da9eb7afceee20db6db716280ce0}{$\sim$\+Collision\+Response} ()
+\item 
+\hyperlink{namespacejli_ade7f2a4f2880c0d04736c3677ff61c1a}{Collision\+Response} \& \hyperlink{namespacejli_ac9b74cda6418ae6175a9178669229562}{operator=} (const \hyperlink{namespacejli_ade7f2a4f2880c0d04736c3677ff61c1a}{Collision\+Response} \&)
+\item 
+\hyperlink{namespacejli_aba46547ac77fd775617b1e9c5c4c3807}{Collision\+Response\+Builder} ()
+\item 
+\hyperlink{namespacejli_ade55a82bdee00c30fda3b15d26caca25}{Collision\+Response\+Builder} (const Collision\+Response\+Builder \&)
+\item 
+\hyperlink{namespacejli_a921545297d17ff8c23fcab0bb4a2a67f}{Collision\+Response\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a92b1a214131802c7cde48d0908a810e1}{$\sim$\+Collision\+Response\+Builder} ()
+\item 
+\hyperlink{namespacejli_aba46547ac77fd775617b1e9c5c4c3807}{Collision\+Response\+Builder} \& \hyperlink{namespacejli_ad3d3c1fad0e4aea9e098049aded55a07}{operator=} (const \hyperlink{namespacejli_aba46547ac77fd775617b1e9c5c4c3807}{Collision\+Response\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a1d29d42a67cba1e824b2bbef37ad3ac7}{Cubic\+Texture} ()
+\item 
+\hyperlink{namespacejli_afcdf119bfd2e7541a5d202805d6f07ad}{Cubic\+Texture} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a224b5438fe535ded0127d92bd9e595dc}{Cubic\+Texture} (const Cubic\+Texture \&)
+\item 
+virtual \hyperlink{namespacejli_a64fcdd5d3fead8d1be7f29da5ee2d330}{$\sim$\+Cubic\+Texture} ()
+\item 
+\hyperlink{namespacejli_a1d29d42a67cba1e824b2bbef37ad3ac7}{Cubic\+Texture} \& \hyperlink{namespacejli_ad7545b9768425cea8f01be5265c970c8}{operator=} (const \hyperlink{namespacejli_a1d29d42a67cba1e824b2bbef37ad3ac7}{Cubic\+Texture} \&)
+\item 
+\hyperlink{namespacejli_a2a86125c6b724a9338c6950c2d88ba63}{Cubic\+Texture\+Builder} ()
+\item 
+\hyperlink{namespacejli_a5f17b78a514c78975beb02040161f8f7}{Cubic\+Texture\+Builder} (const Cubic\+Texture\+Builder \&)
+\item 
+\hyperlink{namespacejli_a2640ff46287ef90c9cbe4d81d3e87c46}{Cubic\+Texture\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aa2eeb6eccc9f5dd78d8a050d1c00eafc}{$\sim$\+Cubic\+Texture\+Builder} ()
+\item 
+\hyperlink{namespacejli_a2a86125c6b724a9338c6950c2d88ba63}{Cubic\+Texture\+Builder} \& \hyperlink{namespacejli_a23318afe35b09c9c6d4fb466724ad63a}{operator=} (const \hyperlink{namespacejli_a2a86125c6b724a9338c6950c2d88ba63}{Cubic\+Texture\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a3bc1a43f8a3bfe33e3874a74ebfde685}{Dynamic\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a624a3cdacc2bbdd8f5aa1bfa94d65e78}{Dynamic\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a3bdc7905c274142d7f2930b7632bb0bc}{Dynamic\+Physics\+Body} (const Dynamic\+Physics\+Body \&)
+\item 
+virtual \hyperlink{namespacejli_a69f8874be747ab0e2f52c063ff30cf8a}{$\sim$\+Dynamic\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a3bc1a43f8a3bfe33e3874a74ebfde685}{Dynamic\+Physics\+Body} \& \hyperlink{namespacejli_aebf62cef126edcd79bdabcfa87a74074}{operator=} (const \hyperlink{namespacejli_a3bc1a43f8a3bfe33e3874a74ebfde685}{Dynamic\+Physics\+Body} \&)
+\item 
+\hyperlink{namespacejli_a2f8ceeb7f6753810b5778f1f4e2ffcff}{Dynamic\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a925718f179e05461f123aec7d49e2302}{Dynamic\+Physics\+Body\+Builder} (const Dynamic\+Physics\+Body\+Builder \&)
+\item 
+\hyperlink{namespacejli_a09d63a7b6aeebc6c1adc2d29cad4a436}{Dynamic\+Physics\+Body\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a08c80dbab444bb2250f72c44561b3137}{$\sim$\+Dynamic\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a2f8ceeb7f6753810b5778f1f4e2ffcff}{Dynamic\+Physics\+Body\+Builder} \& \hyperlink{namespacejli_ab8cc09c315dd5eeaa1e5db63da094b52}{operator=} (const \hyperlink{namespacejli_a2f8ceeb7f6753810b5778f1f4e2ffcff}{Dynamic\+Physics\+Body\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ac063e70317c4eccadadf9d805956a87b}{Geometry} ()
+\item 
+\hyperlink{namespacejli_a552c53ee3e235bf331151d3790926346}{Geometry} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a3f790419c37591e236dbbeb4b11527df}{Geometry} (const Geometry \&)
+\item 
+virtual \hyperlink{namespacejli_a9cc315b0120d6422b18074d035e375dd}{$\sim$\+Geometry} ()
+\item 
+\hyperlink{namespacejli_ac063e70317c4eccadadf9d805956a87b}{Geometry} \& \hyperlink{namespacejli_a35f6fd9cb84a92ee1a41e074d4ec09bf}{operator=} (const \hyperlink{namespacejli_ac063e70317c4eccadadf9d805956a87b}{Geometry} \&)
+\item 
+\hyperlink{namespacejli_a0e63e2a5bcaa55a7526257c8e6a91531}{Geometry\+Builder} ()
+\item 
+\hyperlink{namespacejli_a3d074d26030ba005edd7dc2d2ecf5e55}{Geometry\+Builder} (const Geometry\+Builder \&)
+\item 
+\hyperlink{namespacejli_a004bdd1f9192de71fa05cffd2893f2f4}{Geometry\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aa459cb842ce78ca87f46e048d1f0181b}{$\sim$\+Geometry\+Builder} ()
+\item 
+\hyperlink{namespacejli_a0e63e2a5bcaa55a7526257c8e6a91531}{Geometry\+Builder} \& \hyperlink{namespacejli_a73c17d348157cd5a98476f9bb232ffb3}{operator=} (const \hyperlink{namespacejli_a0e63e2a5bcaa55a7526257c8e6a91531}{Geometry\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a7caf1415906897121ee3e6de60a329c8}{Ghost\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_afb5a03f7022ad75046c07614859007b4}{Ghost\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ad74fccf745d72bb59ea02ffcf00325ba}{Ghost\+Physics\+Body} (const Ghost\+Physics\+Body \&)
+\item 
+virtual \hyperlink{namespacejli_abfb169533b2b5c29c2006d9db4a7f886}{$\sim$\+Ghost\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a7caf1415906897121ee3e6de60a329c8}{Ghost\+Physics\+Body} \& \hyperlink{namespacejli_ad382a206eb3ee58d6d77638319d16a92}{operator=} (const \hyperlink{namespacejli_a7caf1415906897121ee3e6de60a329c8}{Ghost\+Physics\+Body} \&)
+\item 
+\hyperlink{namespacejli_a3aff4e56b78db8f38ca21c4215ef5c05}{Ghost\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_ac715c051dda98c145182dfd6797b21d4}{Ghost\+Physics\+Body\+Builder} (const Ghost\+Physics\+Body\+Builder \&)
+\item 
+\hyperlink{namespacejli_a87d58ccea384f9c099a54185ac2b10e1}{Ghost\+Physics\+Body\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a7dd6a4d9cc536d96cbb275a6bdc103c7}{$\sim$\+Ghost\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a3aff4e56b78db8f38ca21c4215ef5c05}{Ghost\+Physics\+Body\+Builder} \& \hyperlink{namespacejli_a00a7b4875cc46a0309f9372b44b119b1}{operator=} (const \hyperlink{namespacejli_a3aff4e56b78db8f38ca21c4215ef5c05}{Ghost\+Physics\+Body\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a7a3913d5239a7a26f7b249c8352cfb7e}{Kinematic\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_ad12a03a0d7f868a1a84fe43d58c4c168}{Kinematic\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a5ddb3c57d768905fbeb013afc3e17197}{Kinematic\+Physics\+Body} (const Kinematic\+Physics\+Body \&)
+\item 
+virtual \hyperlink{namespacejli_afe5fa54bbd9c734f8154e094f50b8344}{$\sim$\+Kinematic\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_a7a3913d5239a7a26f7b249c8352cfb7e}{Kinematic\+Physics\+Body} \& \hyperlink{namespacejli_a9dd32a4ec75ec13088b16fd9814601cd}{operator=} (const \hyperlink{namespacejli_a7a3913d5239a7a26f7b249c8352cfb7e}{Kinematic\+Physics\+Body} \&)
+\item 
+\hyperlink{namespacejli_a7c18f18400fc9c3348d7888cd25a57d7}{Kinematic\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a41d3966b2a78be58e202899d74ba0875}{Kinematic\+Physics\+Body\+Builder} (const Kinematic\+Physics\+Body\+Builder \&)
+\item 
+\hyperlink{namespacejli_a50acbc03a306ce042f59e76accc35c43}{Kinematic\+Physics\+Body\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a4e01e4f68c5489e4b57284f99bddba69}{$\sim$\+Kinematic\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a7c18f18400fc9c3348d7888cd25a57d7}{Kinematic\+Physics\+Body\+Builder} \& \hyperlink{namespacejli_ab7a97bb558d975fef79c14180602daf6}{operator=} (const \hyperlink{namespacejli_a7c18f18400fc9c3348d7888cd25a57d7}{Kinematic\+Physics\+Body\+Builder} \&)
+\item 
+\hyperlink{namespacejli_aa743de893683a76d6d6862899d5c9c95}{Light} ()
+\item 
+\hyperlink{namespacejli_a4df8986faaac7b2936c1b4c2570e30ea}{Light} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_aa3b8b43415275515956d5c46a0715ccb}{Light} (const Light \&)
+\item 
+virtual \hyperlink{namespacejli_aae4231474bb8c3e59ac1454da254b3a7}{$\sim$\+Light} ()
+\item 
+\hyperlink{namespacejli_aa743de893683a76d6d6862899d5c9c95}{Light} \& \hyperlink{namespacejli_a7a1252c0a9ccb9ee23d13cf04ebb17dd}{operator=} (const \hyperlink{namespacejli_aa743de893683a76d6d6862899d5c9c95}{Light} \&)
+\item 
+\hyperlink{namespacejli_ab74bc38edd1ef6ffefa07b38a456dbf4}{Light\+Builder} ()
+\item 
+\hyperlink{namespacejli_a1db92fb58477bc8af86269d5cddc8685}{Light\+Builder} (const Light\+Builder \&)
+\item 
+\hyperlink{namespacejli_ae17e3ea054277db213f8262dc1f99949}{Light\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a82b7beb28538effa192372c918468b1d}{$\sim$\+Light\+Builder} ()
+\item 
+\hyperlink{namespacejli_ab74bc38edd1ef6ffefa07b38a456dbf4}{Light\+Builder} \& \hyperlink{namespacejli_a45c9337ab49b0aacc1d8064bb940a7f7}{operator=} (const \hyperlink{namespacejli_ab74bc38edd1ef6ffefa07b38a456dbf4}{Light\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a007372827318c5314719b1f97041f45c}{Material} ()
+\item 
+\hyperlink{namespacejli_a60fe526f7e6659ff8ae5f9cae7fb4c10}{Material} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a2a281e85f9e15afd7c78051b8be24bb6}{Material} (const Material \&)
+\item 
+virtual \hyperlink{namespacejli_aeb5589dfed522420ea6a33236bde9a6b}{$\sim$\+Material} ()
+\item 
+\hyperlink{namespacejli_a007372827318c5314719b1f97041f45c}{Material} \& \hyperlink{namespacejli_ae9804996da5acf53e3b4b19831db4431}{operator=} (const \hyperlink{namespacejli_a007372827318c5314719b1f97041f45c}{Material} \&)
+\item 
+\hyperlink{namespacejli_abbc4482d10b2fab1145308318ec6ef4e}{Material\+Builder} ()
+\item 
+\hyperlink{namespacejli_ad3851357f4c908c0673c097c941828d6}{Material\+Builder} (const Material\+Builder \&)
+\item 
+\hyperlink{namespacejli_a8fb3dd20b46500cee7e4feb50df32824}{Material\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aaf5dad0f1e903db02a6b170d69f35c37}{$\sim$\+Material\+Builder} ()
+\item 
+\hyperlink{namespacejli_abbc4482d10b2fab1145308318ec6ef4e}{Material\+Builder} \& \hyperlink{namespacejli_a786eb560b2617f0b8e9324d7d9cc9339}{operator=} (const \hyperlink{namespacejli_abbc4482d10b2fab1145308318ec6ef4e}{Material\+Builder} \&)
+\item 
+\hyperlink{namespacejli_aac4773f4081fe5e6116c6e85803b59e0}{Material\+Property} ()
+\item 
+\hyperlink{namespacejli_acba837966af210890b7418fc4926d2eb}{Material\+Property} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_afb1bbc3b06ceaaf5d288bdf3c615d1d7}{Material\+Property} (const Material\+Property \&)
+\item 
+virtual \hyperlink{namespacejli_a79beb0a52804d6f437114e88a6a133f3}{$\sim$\+Material\+Property} ()
+\item 
+\hyperlink{namespacejli_aac4773f4081fe5e6116c6e85803b59e0}{Material\+Property} \& \hyperlink{namespacejli_aeefe2ec73e0e0a8ec963ff328b8b7008}{operator=} (const \hyperlink{namespacejli_aac4773f4081fe5e6116c6e85803b59e0}{Material\+Property} \&)
+\item 
+\hyperlink{namespacejli_a96c22be2baa4ce5a1d9759cb6165b155}{Material\+Property\+Builder} ()
+\item 
+\hyperlink{namespacejli_aac6faf9ab92632aac5d6e880e2b00c6f}{Material\+Property\+Builder} (const Material\+Property\+Builder \&)
+\item 
+\hyperlink{namespacejli_a3e8b5f64fd8e55aabc11e1bd4d65035d}{Material\+Property\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a7bde168b5814dd6f64f8b5259e0b0ff6}{$\sim$\+Material\+Property\+Builder} ()
+\item 
+\hyperlink{namespacejli_a96c22be2baa4ce5a1d9759cb6165b155}{Material\+Property\+Builder} \& \hyperlink{namespacejli_aa54ffee03b6511da6a96faa055b0275f}{operator=} (const \hyperlink{namespacejli_a96c22be2baa4ce5a1d9759cb6165b155}{Material\+Property\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ad3ae8427886d6e7375c62a7fb2100c4c}{Node} ()
+\item 
+\hyperlink{namespacejli_ac427b39c9353f0301e191f76d360d4f1}{Node} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ad63185457aa77be28b780050799426f3}{Node} (const Node \&)
+\item 
+virtual \hyperlink{namespacejli_ac46db977b2fba42d8384ccab749c9cd4}{$\sim$\+Node} ()
+\item 
+\hyperlink{namespacejli_ad3ae8427886d6e7375c62a7fb2100c4c}{Node} \& \hyperlink{namespacejli_a89c4ecf3f3675ba37131cae61a631143}{operator=} (const \hyperlink{namespacejli_ad3ae8427886d6e7375c62a7fb2100c4c}{Node} \&)
 \item 
 \hyperlink{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{Node\+Builder} ()
 \item 
@@ -72,7 +356,115 @@ virtual \hyperlink{namespacejli_ac5033296b7700d3610c8d224889de6c6}{$\sim$\+Node\
 \item 
 \hyperlink{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{Node\+Builder} \& \hyperlink{namespacejli_a290ea917337c90571eb741852c146180}{operator=} (const \hyperlink{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{Node\+Builder} \&)
 \item 
-virtual u32 \hyperlink{namespacejli_ad74268a8f5493ee3df657a346cd64d30}{get\+Object\+Type} () const 
+\hyperlink{namespacejli_ab1f3dc735d96dcdd2317b120e891fe1d}{Particle\+Emitter} ()
+\item 
+\hyperlink{namespacejli_a67f3ed93a69d21806745184d7cb360d4}{Particle\+Emitter} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a94ad1ef2b2c9ae784aced6edf424e99f}{Particle\+Emitter} (const Particle\+Emitter \&)
+\item 
+virtual \hyperlink{namespacejli_a384ce52e7a05b4b95159acd26146f2fc}{$\sim$\+Particle\+Emitter} ()
+\item 
+\hyperlink{namespacejli_ab1f3dc735d96dcdd2317b120e891fe1d}{Particle\+Emitter} \& \hyperlink{namespacejli_ac893115fd88948e8e12c6f372b374892}{operator=} (const \hyperlink{namespacejli_ab1f3dc735d96dcdd2317b120e891fe1d}{Particle\+Emitter} \&)
+\item 
+\hyperlink{namespacejli_a924f0dead47ff62cb75f7887a1790c88}{Particle\+Emitter\+Builder} ()
+\item 
+\hyperlink{namespacejli_a544df46fc4d6629db7189ee3abaca6d1}{Particle\+Emitter\+Builder} (const Particle\+Emitter\+Builder \&)
+\item 
+\hyperlink{namespacejli_aaa81a58aa861c9250324078f76f6e673}{Particle\+Emitter\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aacab585b70e497e16db1e432f1d9a8ce}{$\sim$\+Particle\+Emitter\+Builder} ()
+\item 
+\hyperlink{namespacejli_a924f0dead47ff62cb75f7887a1790c88}{Particle\+Emitter\+Builder} \& \hyperlink{namespacejli_a4ffcb7b3f0bada7c0e33cc9ffc502c11}{operator=} (const \hyperlink{namespacejli_a924f0dead47ff62cb75f7887a1790c88}{Particle\+Emitter\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a87bec69a241d3a7d72c6a92035e457d7}{Physics\+Contact} ()
+\item 
+\hyperlink{namespacejli_ac44112ea315e999b0803a46be73ec2ea}{Physics\+Contact} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a6c69c031c6a878af0fd0c049d6373d72}{Physics\+Contact} (const Physics\+Contact \&)
+\item 
+virtual \hyperlink{namespacejli_a8c00d7a02e65a5f0bbb102633d1ec822}{$\sim$\+Physics\+Contact} ()
+\item 
+\hyperlink{namespacejli_a87bec69a241d3a7d72c6a92035e457d7}{Physics\+Contact} \& \hyperlink{namespacejli_a954927e0e64c45ab4101c5f1a225bc8b}{operator=} (const \hyperlink{namespacejli_a87bec69a241d3a7d72c6a92035e457d7}{Physics\+Contact} \&)
+\item 
+\hyperlink{namespacejli_aea643af7d1f6e26fbfe89083f21af41e}{Physics\+Contact\+Builder} ()
+\item 
+\hyperlink{namespacejli_a1ba1e346098dfdff4672e3751cc5af01}{Physics\+Contact\+Builder} (const Physics\+Contact\+Builder \&)
+\item 
+\hyperlink{namespacejli_aa47f3bd4a0fff03f0bfed6cb895496a5}{Physics\+Contact\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aa54009c7e43166072a32826d3baa4975}{$\sim$\+Physics\+Contact\+Builder} ()
+\item 
+\hyperlink{namespacejli_aea643af7d1f6e26fbfe89083f21af41e}{Physics\+Contact\+Builder} \& \hyperlink{namespacejli_af5f2d415ac3003221faf09452f3e0e52}{operator=} (const \hyperlink{namespacejli_aea643af7d1f6e26fbfe89083f21af41e}{Physics\+Contact\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a0a08739050a9f0d65a42f52165e144da}{Physics\+Field} ()
+\item 
+\hyperlink{namespacejli_a7de2a9a810c6e0c8ae0cf9f9b5e45dd2}{Physics\+Field} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a81ad65e3c5a7904b33ac3905d1ad36a1}{Physics\+Field} (const Physics\+Field \&)
+\item 
+virtual \hyperlink{namespacejli_aec2c4f308d34637940e5e64cdc8c0f86}{$\sim$\+Physics\+Field} ()
+\item 
+\hyperlink{namespacejli_a0a08739050a9f0d65a42f52165e144da}{Physics\+Field} \& \hyperlink{namespacejli_a128ad3fb294f27690b42d3bdb3d467cd}{operator=} (const \hyperlink{namespacejli_a0a08739050a9f0d65a42f52165e144da}{Physics\+Field} \&)
+\item 
+\hyperlink{namespacejli_a3993b3872eea01dec1c9bd07bb35aae8}{Physics\+Field\+Builder} ()
+\item 
+\hyperlink{namespacejli_a39d15433c9d678a3a3c08b94e29460f0}{Physics\+Field\+Builder} (const Physics\+Field\+Builder \&)
+\item 
+\hyperlink{namespacejli_acc1e7447340e93ed56fa2d461b7364fb}{Physics\+Field\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a1e88f936038ad9dcf194653553aaa9d6}{$\sim$\+Physics\+Field\+Builder} ()
+\item 
+\hyperlink{namespacejli_a3993b3872eea01dec1c9bd07bb35aae8}{Physics\+Field\+Builder} \& \hyperlink{namespacejli_a8eb5ca2da7648ae789063468ec4d5b1c}{operator=} (const \hyperlink{namespacejli_a3993b3872eea01dec1c9bd07bb35aae8}{Physics\+Field\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a5d762365fd3979a5b8f4eebe8a916892}{Physics\+Shape} ()
+\item 
+\hyperlink{namespacejli_a2c1e26825311f621ee078252a29461ca}{Physics\+Shape} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a972bcb3073388c79c38278a37c0fba83}{Physics\+Shape} (const Physics\+Shape \&)
+\item 
+virtual \hyperlink{namespacejli_afd6ccdd598deb11b40538c5fad1b5477}{$\sim$\+Physics\+Shape} ()
+\item 
+\hyperlink{namespacejli_a5d762365fd3979a5b8f4eebe8a916892}{Physics\+Shape} \& \hyperlink{namespacejli_a7e2664c542fe138299889c24fca38c7e}{operator=} (const \hyperlink{namespacejli_a5d762365fd3979a5b8f4eebe8a916892}{Physics\+Shape} \&)
+\item 
+\hyperlink{namespacejli_a24992ac1c3858db95ba078eac205adc7}{Physics\+Shape\+Builder} ()
+\item 
+\hyperlink{namespacejli_af8521f0e610100e574ceb1c001582b5a}{Physics\+Shape\+Builder} (const Physics\+Shape\+Builder \&)
+\item 
+\hyperlink{namespacejli_a7506589a40ec7b7bd1b48d258fdc1330}{Physics\+Shape\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_ae1e0786ad4fd198909d0c1c625a624cc}{$\sim$\+Physics\+Shape\+Builder} ()
+\item 
+\hyperlink{namespacejli_a24992ac1c3858db95ba078eac205adc7}{Physics\+Shape\+Builder} \& \hyperlink{namespacejli_af6d5c0ddeeb0d245763a8bdccf963738}{operator=} (const \hyperlink{namespacejli_a24992ac1c3858db95ba078eac205adc7}{Physics\+Shape\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a84f1f097c95cf1e48c0df5bec2f2b262}{Physics\+World} ()
+\item 
+\hyperlink{namespacejli_ad987fadc433080865f227046a5f33d25}{Physics\+World} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a8aed3494aa3e6d4360421e5b935c5b94}{Physics\+World} (const Physics\+World \&)
+\item 
+virtual \hyperlink{namespacejli_a1ac2ddeeb10a25593e741142a7d1524e}{$\sim$\+Physics\+World} ()
+\item 
+\hyperlink{namespacejli_a84f1f097c95cf1e48c0df5bec2f2b262}{Physics\+World} \& \hyperlink{namespacejli_af199e55a0897e5102c8314f78c34775c}{operator=} (const \hyperlink{namespacejli_a84f1f097c95cf1e48c0df5bec2f2b262}{Physics\+World} \&)
+\item 
+\hyperlink{namespacejli_aa97fa0da471fb9eb0a9d7db6acd73389}{Physics\+World\+Builder} ()
+\item 
+\hyperlink{namespacejli_a48223b78110a9d35f603997bd29107cf}{Physics\+World\+Builder} (const Physics\+World\+Builder \&)
+\item 
+\hyperlink{namespacejli_a6ccccef1adeea86e63074e58e0c2f6cc}{Physics\+World\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aee777c7761e80a169373be5f6d1f2c58}{$\sim$\+Physics\+World\+Builder} ()
+\item 
+\hyperlink{namespacejli_aa97fa0da471fb9eb0a9d7db6acd73389}{Physics\+World\+Builder} \& \hyperlink{namespacejli_a4f5fac6387bb41472fedc1ff5cf86955}{operator=} (const \hyperlink{namespacejli_aa97fa0da471fb9eb0a9d7db6acd73389}{Physics\+World\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a4726f256ac2f44778dafed297f23afd8}{Resource} ()
+\item 
+\hyperlink{namespacejli_a9ad3207aaa7ced8efc757bbb0464a0d7}{Resource} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a81283b9d009d7035c20bcc160a4093ce}{Resource} (const Resource \&)
+\item 
+virtual \hyperlink{namespacejli_aea5d50a87798b1ed6aa82171cb6f666d}{$\sim$\+Resource} ()
+\item 
+\hyperlink{namespacejli_a4726f256ac2f44778dafed297f23afd8}{Resource} \& \hyperlink{namespacejli_aa42f10f677bd4750e4a4e5ece8523ab0}{operator=} (const \hyperlink{namespacejli_a4726f256ac2f44778dafed297f23afd8}{Resource} \&)
 \item 
 \hyperlink{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{Resource\+Builder} ()
 \item 
@@ -84,6 +476,16 @@ virtual \hyperlink{namespacejli_a7e46cbc7bc71f3c538261e41816e87b0}{$\sim$\+Resou
 \item 
 \hyperlink{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{Resource\+Builder} \& \hyperlink{namespacejli_a544c167a86203fa931b358dc2e77df53}{operator=} (const \hyperlink{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{Resource\+Builder} \&)
 \item 
+\hyperlink{namespacejli_abef8701bc66efaecdfb9b759f7523e9d}{Scene} ()
+\item 
+\hyperlink{namespacejli_afbad74f1983633db64663db362041720}{Scene} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a4e0a2f2e6f43f3cf5e866f662dfa011a}{Scene} (const Scene \&)
+\item 
+virtual \hyperlink{namespacejli_a59998f54275bafbf74434f6954f9cd2e}{$\sim$\+Scene} ()
+\item 
+\hyperlink{namespacejli_abef8701bc66efaecdfb9b759f7523e9d}{Scene} \& \hyperlink{namespacejli_a87277a99c7a713dc593e70bbab6bf0f8}{operator=} (const \hyperlink{namespacejli_abef8701bc66efaecdfb9b759f7523e9d}{Scene} \&)
+\item 
 \hyperlink{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{Scene\+Builder} ()
 \item 
 \hyperlink{namespacejli_a08327fcbf8005b89aa48e20217b34adc}{Scene\+Builder} (const Scene\+Builder \&)
@@ -93,36 +495,188 @@ virtual \hyperlink{namespacejli_a7e46cbc7bc71f3c538261e41816e87b0}{$\sim$\+Resou
 virtual \hyperlink{namespacejli_a99a07c08fdc61e92c99f5a47bc3430fa}{$\sim$\+Scene\+Builder} ()
 \item 
 \hyperlink{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{Scene\+Builder} \& \hyperlink{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}{operator=} (const \hyperlink{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{Scene\+Builder} \&)
-\end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
 \item 
-\begin{tabbing}
-xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
-union \{\\
-\>const void $\ast$ \hyperlink{namespacejli_ada77c3ed1019f3c21042f228b25756d7}{jli::m\_pointer}\\
-\>u64 \hyperlink{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}{jli::m\_pointerVal}\\
-\}; \\
-
-\end{tabbing}\end{DoxyCompactItemize}
+\hyperlink{namespacejli_adde185173fc24f7fd6b0d882a8fa471a}{Sound} ()
+\item 
+\hyperlink{namespacejli_a0607478917c0dad447f434e0618be1d2}{Sound} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_aa43a8bc567a341ac22b4eb9777fa180f}{Sound} (const Sound \&)
+\item 
+virtual \hyperlink{namespacejli_a7ea6e34ab8f27d80c3a1e815d66ac26a}{$\sim$\+Sound} ()
+\item 
+\hyperlink{namespacejli_adde185173fc24f7fd6b0d882a8fa471a}{Sound} \& \hyperlink{namespacejli_aca4f80875a035dcd8150d8b0b9d9bc4f}{operator=} (const \hyperlink{namespacejli_adde185173fc24f7fd6b0d882a8fa471a}{Sound} \&)
+\item 
+\hyperlink{namespacejli_a8f4ec8e64074533a36d1da7cbb34cae1}{Sound\+Builder} ()
+\item 
+\hyperlink{namespacejli_a7e154f53d97abf9172ea552b57209ba2}{Sound\+Builder} (const Sound\+Builder \&)
+\item 
+\hyperlink{namespacejli_a8c348a752b55a388831e7ebcb7243a4c}{Sound\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aeb7223070a119168071589071c350f6c}{$\sim$\+Sound\+Builder} ()
+\item 
+\hyperlink{namespacejli_a8f4ec8e64074533a36d1da7cbb34cae1}{Sound\+Builder} \& \hyperlink{namespacejli_a4642ebecf1bc8e3cbbca8668ce172e0c}{operator=} (const \hyperlink{namespacejli_a8f4ec8e64074533a36d1da7cbb34cae1}{Sound\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ad40db8a38a4421bea677d34ce2b1a759}{State\+Builder} ()
+\item 
+\hyperlink{namespacejli_ad355813d947603bb1653a849bdce8091}{State\+Builder} (const State\+Builder \&)
+\item 
+\hyperlink{namespacejli_a6f4e96c0388922376eeaf52b342b2233}{State\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_af5aa191371c58b35a5415c56a8576f0f}{$\sim$\+State\+Builder} ()
+\item 
+\hyperlink{namespacejli_ad40db8a38a4421bea677d34ce2b1a759}{State\+Builder} \& \hyperlink{namespacejli_a5a2ca8f8cf2bfa115387afadf12aadd1}{operator=} (const \hyperlink{namespacejli_ad40db8a38a4421bea677d34ce2b1a759}{State\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a2741aa0af34261449ffb4e682da8da60}{State\+Machine\+Builder} ()
+\item 
+\hyperlink{namespacejli_a1d402cd86e45b64067f92d2de20fa40e}{State\+Machine\+Builder} (const State\+Machine\+Builder \&)
+\item 
+\hyperlink{namespacejli_a7f6d0afcc738da76220f8c684470ca9d}{State\+Machine\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aea2716e299add44b8e1341fe4935a9c3}{$\sim$\+State\+Machine\+Builder} ()
+\item 
+\hyperlink{namespacejli_a2741aa0af34261449ffb4e682da8da60}{State\+Machine\+Builder} \& \hyperlink{namespacejli_a74af49a3892d7ef3e0306ade05373ae3}{operator=} (const \hyperlink{namespacejli_a2741aa0af34261449ffb4e682da8da60}{State\+Machine\+Builder} \&)
+\item 
+\hyperlink{namespacejli_ad822c5d839081469262a5ecfb9e43300}{Static\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_aa3b66cd0bcb85cde0b026378b8698ced}{Static\+Physics\+Body} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a1ecd15da820fd35a39a0ca4cfbadc8a6}{Static\+Physics\+Body} (const Static\+Physics\+Body \&)
+\item 
+virtual \hyperlink{namespacejli_a8c77bdf3068b35d9b32d161af44526fb}{$\sim$\+Static\+Physics\+Body} ()
+\item 
+\hyperlink{namespacejli_ad822c5d839081469262a5ecfb9e43300}{Static\+Physics\+Body} \& \hyperlink{namespacejli_a1d3143a4538bad208106f20802c61410}{operator=} (const \hyperlink{namespacejli_ad822c5d839081469262a5ecfb9e43300}{Static\+Physics\+Body} \&)
+\item 
+\hyperlink{namespacejli_a61d1e7bbc9ec250a28840043945bacf6}{Static\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a288d8c8251dd2f9bb8c0ca98f2ce1511}{Static\+Physics\+Body\+Builder} (const Static\+Physics\+Body\+Builder \&)
+\item 
+\hyperlink{namespacejli_a1deaebc549d4295ebb15599ea42c2886}{Static\+Physics\+Body\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a3d75417d1f7a0f1d49f63e50786ba350}{$\sim$\+Static\+Physics\+Body\+Builder} ()
+\item 
+\hyperlink{namespacejli_a61d1e7bbc9ec250a28840043945bacf6}{Static\+Physics\+Body\+Builder} \& \hyperlink{namespacejli_a8e836a4d6f8f6e2eeec528042fcba3a9}{operator=} (const \hyperlink{namespacejli_a61d1e7bbc9ec250a28840043945bacf6}{Static\+Physics\+Body\+Builder} \&)
+\item 
+\hyperlink{namespacejli_af439880a37381b944f022b137ba60090}{Texture} ()
+\item 
+\hyperlink{namespacejli_adf2c12e5f65a2d23492face6497e8235}{Texture} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a462331f43eddfc32abbc9c9863d13153}{Texture} (const Texture \&)
+\item 
+virtual \hyperlink{namespacejli_a8b40adac0117494874828b61e808bf52}{$\sim$\+Texture} ()
+\item 
+\hyperlink{namespacejli_af439880a37381b944f022b137ba60090}{Texture} \& \hyperlink{namespacejli_a833cb9a4318c25680adcbaca8367e96f}{operator=} (const \hyperlink{namespacejli_af439880a37381b944f022b137ba60090}{Texture} \&)
+\item 
+\hyperlink{namespacejli_a230c95f463f356da9b09f9d5c01a886a}{Texture\+Builder} ()
+\item 
+\hyperlink{namespacejli_a0c4653b87b22d6e74ffe6121e28fd31b}{Texture\+Builder} (const Texture\+Builder \&)
+\item 
+\hyperlink{namespacejli_abd8c35fc3a2907805338a117b15c0b36}{Texture\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a14d66bbbc1cec1be6fc3808a185f17de}{$\sim$\+Texture\+Builder} ()
+\item 
+\hyperlink{namespacejli_a230c95f463f356da9b09f9d5c01a886a}{Texture\+Builder} \& \hyperlink{namespacejli_af2a4079c16f2a4cb961a477ea58ffe55}{operator=} (const \hyperlink{namespacejli_a230c95f463f356da9b09f9d5c01a886a}{Texture\+Builder} \&)
+\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\hypertarget{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{\index{jli@{jli}!Abstract\+Factory\+Object@{Abstract\+Factory\+Object}}
-\index{Abstract\+Factory\+Object@{Abstract\+Factory\+Object}!jli@{jli}}
-\subsubsection[{Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Factory\+Object\+::\+Abstract\+Factory\+Object (
+\hypertarget{namespacejli_a4eb9a23f0614497a7922d323a49cb822}{\index{jli@{jli}!Abstract\+Physics\+Body@{Abstract\+Physics\+Body}}
+\index{Abstract\+Physics\+Body@{Abstract\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Abstract\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Abstract\+Physics\+Body\+::\+Abstract\+Physics\+Body (
 \begin{DoxyParamCaption}
-\item[{const void $\ast$}]{ptr}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}
+)}}\label{namespacejli_a4eb9a23f0614497a7922d323a49cb822}
 
 
-Definition at line 20 of file Abstract\+Factory\+Object.\+cpp.
+Definition at line 14 of file Abstract\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_ad1a3c0146786fe6995fb9696c653555f}{\index{jli@{jli}!Abstract\+Physics\+Body@{Abstract\+Physics\+Body}}
+\index{Abstract\+Physics\+Body@{Abstract\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Abstract\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Abstract\+Physics\+Body\+::\+Abstract\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad1a3c0146786fe6995fb9696c653555f}
 
 
+Definition at line 20 of file Abstract\+Physics\+Body.\+cpp.
 
-Here is the caller graph for this function\+:
+\hypertarget{namespacejli_a42235253cee125ef6fe3f35d61cb6a12}{\index{jli@{jli}!Abstract\+Physics\+Body@{Abstract\+Physics\+Body}}
+\index{Abstract\+Physics\+Body@{Abstract\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Abstract\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Abstract\+Physics\+Body\+::\+Abstract\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a42235253cee125ef6fe3f35d61cb6a12}
 
+
+Definition at line 26 of file Abstract\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_ac1d6edc4f796157e771fb531302807c5}{\index{jli@{jli}!Action@{Action}}
+\index{Action@{Action}!jli@{jli}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+::\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ac1d6edc4f796157e771fb531302807c5}
+
+
+Definition at line 14 of file Action.\+cpp.
+
+\hypertarget{namespacejli_a372d9d21f05940e5e2e7728e51e5497e}{\index{jli@{jli}!Action@{Action}}
+\index{Action@{Action}!jli@{jli}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+::\+Action (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a372d9d21f05940e5e2e7728e51e5497e}
+
+
+Definition at line 20 of file Action.\+cpp.
+
+\hypertarget{namespacejli_a56537e2852192599346977eae126cf3f}{\index{jli@{jli}!Action@{Action}}
+\index{Action@{Action}!jli@{jli}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+::\+Action (
+\begin{DoxyParamCaption}
+\item[{const Action \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a56537e2852192599346977eae126cf3f}
+
+
+Definition at line 26 of file Action.\+cpp.
+
+\hypertarget{namespacejli_add5250909a3a5a38d28295b426e43da7}{\index{jli@{jli}!Action\+Builder@{Action\+Builder}}
+\index{Action\+Builder@{Action\+Builder}!jli@{jli}}
+\subsubsection[{Action\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+Builder\+::\+Action\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_add5250909a3a5a38d28295b426e43da7}
+
+
+Definition at line 46 of file Action\+Builder.\+h.
+
+\hypertarget{namespacejli_a96508fbaf421e7088d0213d649abf7ba}{\index{jli@{jli}!Action\+Builder@{Action\+Builder}}
+\index{Action\+Builder@{Action\+Builder}!jli@{jli}}
+\subsubsection[{Action\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+Builder\+::\+Action\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Action\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a96508fbaf421e7088d0213d649abf7ba}
+
+
+Definition at line 50 of file Action\+Builder.\+h.
+
+\hypertarget{namespacejli_ab6f83e83f1cecc616fbcc6dab3d26954}{\index{jli@{jli}!Action\+Builder@{Action\+Builder}}
+\index{Action\+Builder@{Action\+Builder}!jli@{jli}}
+\subsubsection[{Action\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+Builder\+::\+Action\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab6f83e83f1cecc616fbcc6dab3d26954}
+
+
+Definition at line 55 of file Action\+Builder.\+h.
 
 \hypertarget{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}{\index{jli@{jli}!A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}}
 \index{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}!jli@{jli}}
@@ -135,10 +689,137 @@ Here is the caller graph for this function\+:
 
 Definition at line 17 of file Abstract\+Object.\+h.
 
+\hypertarget{namespacejli_a98e0507c420540776aa9f21e81027e0c}{\index{jli@{jli}!Base\+Rigid\+Physics\+Body@{Base\+Rigid\+Physics\+Body}}
+\index{Base\+Rigid\+Physics\+Body@{Base\+Rigid\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Base\+Rigid\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+::\+Base\+Rigid\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a98e0507c420540776aa9f21e81027e0c}
 
 
-Here is the call graph for this function\+:
+Definition at line 14 of file Base\+Rigid\+Physics\+Body.\+cpp.
 
+\hypertarget{namespacejli_a4637557b69faf270ee5531c61586f09c}{\index{jli@{jli}!Base\+Rigid\+Physics\+Body@{Base\+Rigid\+Physics\+Body}}
+\index{Base\+Rigid\+Physics\+Body@{Base\+Rigid\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Base\+Rigid\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+::\+Base\+Rigid\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a4637557b69faf270ee5531c61586f09c}
+
+
+Definition at line 20 of file Base\+Rigid\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a704fd69b6e610f90f51f7a734f7a6b0a}{\index{jli@{jli}!Base\+Rigid\+Physics\+Body@{Base\+Rigid\+Physics\+Body}}
+\index{Base\+Rigid\+Physics\+Body@{Base\+Rigid\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Base\+Rigid\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+::\+Base\+Rigid\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Base\+Rigid\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a704fd69b6e610f90f51f7a734f7a6b0a}
+
+
+Definition at line 26 of file Base\+Rigid\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a4cdb474048fb5433420b96f927f9b817}{\index{jli@{jli}!Base\+Rigid\+Physics\+Body\+Builder@{Base\+Rigid\+Physics\+Body\+Builder}}
+\index{Base\+Rigid\+Physics\+Body\+Builder@{Base\+Rigid\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Base\+Rigid\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+Builder\+::\+Base\+Rigid\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a4cdb474048fb5433420b96f927f9b817}
+
+
+Definition at line 14 of file Base\+Rigid\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a9d0fc4e31b13024aaba83ef9f40cd75d}{\index{jli@{jli}!Base\+Rigid\+Physics\+Body\+Builder@{Base\+Rigid\+Physics\+Body\+Builder}}
+\index{Base\+Rigid\+Physics\+Body\+Builder@{Base\+Rigid\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Base\+Rigid\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+Builder\+::\+Base\+Rigid\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Base\+Rigid\+Physics\+Body\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a9d0fc4e31b13024aaba83ef9f40cd75d}
+
+
+Definition at line 18 of file Base\+Rigid\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a33f960117cd9048adfccf6245c42ae26}{\index{jli@{jli}!Base\+Rigid\+Physics\+Body\+Builder@{Base\+Rigid\+Physics\+Body\+Builder}}
+\index{Base\+Rigid\+Physics\+Body\+Builder@{Base\+Rigid\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Base\+Rigid\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+Builder\+::\+Base\+Rigid\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a33f960117cd9048adfccf6245c42ae26}
+
+
+Definition at line 23 of file Base\+Rigid\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a3d48c62c93d7ecba8820d383c7cba343}{\index{jli@{jli}!Base\+Soft\+Physics\+Body@{Base\+Soft\+Physics\+Body}}
+\index{Base\+Soft\+Physics\+Body@{Base\+Soft\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Base\+Soft\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+::\+Base\+Soft\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a3d48c62c93d7ecba8820d383c7cba343}
+
+
+Definition at line 14 of file Base\+Soft\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a7f4a9767fe65c22c074c745dcc46151c}{\index{jli@{jli}!Base\+Soft\+Physics\+Body@{Base\+Soft\+Physics\+Body}}
+\index{Base\+Soft\+Physics\+Body@{Base\+Soft\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Base\+Soft\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+::\+Base\+Soft\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7f4a9767fe65c22c074c745dcc46151c}
+
+
+Definition at line 20 of file Base\+Soft\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a7cf91482407d32cbaf787910189561a5}{\index{jli@{jli}!Base\+Soft\+Physics\+Body@{Base\+Soft\+Physics\+Body}}
+\index{Base\+Soft\+Physics\+Body@{Base\+Soft\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Base\+Soft\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+::\+Base\+Soft\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Base\+Soft\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7cf91482407d32cbaf787910189561a5}
+
+
+Definition at line 26 of file Base\+Soft\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a1fb70667531e9332328b61412d87922e}{\index{jli@{jli}!Base\+Soft\+Physics\+Body\+Builder@{Base\+Soft\+Physics\+Body\+Builder}}
+\index{Base\+Soft\+Physics\+Body\+Builder@{Base\+Soft\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Base\+Soft\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+Builder\+::\+Base\+Soft\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a1fb70667531e9332328b61412d87922e}
+
+
+Definition at line 14 of file Base\+Soft\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ae5adda75064876641e3883645ef02c6e}{\index{jli@{jli}!Base\+Soft\+Physics\+Body\+Builder@{Base\+Soft\+Physics\+Body\+Builder}}
+\index{Base\+Soft\+Physics\+Body\+Builder@{Base\+Soft\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Base\+Soft\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+Builder\+::\+Base\+Soft\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Base\+Soft\+Physics\+Body\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ae5adda75064876641e3883645ef02c6e}
+
+
+Definition at line 18 of file Base\+Soft\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ab6e0fdaf5bc7026f1fe3f27d94191077}{\index{jli@{jli}!Base\+Soft\+Physics\+Body\+Builder@{Base\+Soft\+Physics\+Body\+Builder}}
+\index{Base\+Soft\+Physics\+Body\+Builder@{Base\+Soft\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Base\+Soft\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+Builder\+::\+Base\+Soft\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab6e0fdaf5bc7026f1fe3f27d94191077}
+
+
+Definition at line 23 of file Base\+Soft\+Physics\+Body\+Builder.\+cpp.
 
 \hypertarget{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{\index{jli@{jli}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}}
 \index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}!jli@{jli}}
@@ -146,12 +827,7 @@ Here is the call graph for this function\+:
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}
-
-
-Here is the caller graph for this function\+:
-
-
+)}}\label{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}
 \hypertarget{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}{\index{jli@{jli}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
 \index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!jli@{jli}}
 \subsubsection[{calculate\+Serialize\+Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::calculate\+Serialize\+Buffer\+Size (
@@ -159,74 +835,409 @@ Here is the caller graph for this function\+:
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}
-function is used to calculate the buffer size of this object.
-
-\begin{DoxyReturn}{Returns}
-the buffer size of this object. 
-\end{DoxyReturn}
-
-
-Here is the caller graph for this function\+:
-
-
-\hypertarget{namespacejli_a5100077139d5c7339602ada53ab27663}{\index{jli@{jli}!clone@{clone}}
-\index{clone@{clone}!jli@{jli}}
-\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Abstract\+Factory\+Object}$\ast$ jli\+::clone (
-\begin{DoxyParamCaption}
-\item[{bool}]{shared = {\ttfamily false}}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a5100077139d5c7339602ada53ab27663}
-Clones an object. It is possible to share the instance.
-
-
-\begin{DoxyParams}{Parameters}
-{\em shared} & used to determine whether or not to create a shared object\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-a clone of the original object or another instance. 
-\end{DoxyReturn}
-\hypertarget{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}{\index{jli@{jli}!create@{create}}
-\index{create@{create}!jli@{jli}}
-\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Abstract\+Factory\+Object}$\ast$ jli\+::create (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Builder \&}]{builder}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}
-Creates an object. This is the central place where all of the objects will be created in the world
-
-
-\begin{DoxyParams}{Parameters}
-{\em builder} & The builder class to construct the instance from.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-a new instance based on the builder's type. 
-\end{DoxyReturn}
-\hypertarget{namespacejli_ace155e097623e08835596243e115d880}{\index{jli@{jli}!destroy@{destroy}}
-\index{destroy@{destroy}!jli@{jli}}
-\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void jli\+::destroy (
+\hypertarget{namespacejli_ad3d15c9bf468345cc46e47bf7dd7d3e3}{\index{jli@{jli}!Camera@{Camera}}
+\index{Camera@{Camera}!jli@{jli}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+::\+Camera (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ace155e097623e08835596243e115d880}
-used to destroy this instance from the factory. \hypertarget{namespacejli_ab59410e766fae1d158793c2a0c70be5e}{\index{jli@{jli}!get\+Name@{get\+Name}}
+)}}\label{namespacejli_ad3d15c9bf468345cc46e47bf7dd7d3e3}
+
+
+Definition at line 14 of file Camera.\+cpp.
+
+\hypertarget{namespacejli_a97fa95992b76788ae3feb7c62ddd6168}{\index{jli@{jli}!Camera@{Camera}}
+\index{Camera@{Camera}!jli@{jli}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a97fa95992b76788ae3feb7c62ddd6168}
+
+
+Definition at line 20 of file Camera.\+cpp.
+
+\hypertarget{namespacejli_a987bfeb3ffde7a3a032e131c6c356c53}{\index{jli@{jli}!Camera@{Camera}}
+\index{Camera@{Camera}!jli@{jli}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+\item[{const Camera \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a987bfeb3ffde7a3a032e131c6c356c53}
+
+
+Definition at line 26 of file Camera.\+cpp.
+
+\hypertarget{namespacejli_ac774207b2ca46f60adc7d58d5252ebec}{\index{jli@{jli}!Camera\+Builder@{Camera\+Builder}}
+\index{Camera\+Builder@{Camera\+Builder}!jli@{jli}}
+\subsubsection[{Camera\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+Builder\+::\+Camera\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ac774207b2ca46f60adc7d58d5252ebec}
+
+
+Definition at line 14 of file Camera\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a8fe2558f8fe1d572700b414f9c0ccdf0}{\index{jli@{jli}!Camera\+Builder@{Camera\+Builder}}
+\index{Camera\+Builder@{Camera\+Builder}!jli@{jli}}
+\subsubsection[{Camera\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+Builder\+::\+Camera\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Camera\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a8fe2558f8fe1d572700b414f9c0ccdf0}
+
+
+Definition at line 18 of file Camera\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a2dd10cbeedd42092b35159fd713834f3}{\index{jli@{jli}!Camera\+Builder@{Camera\+Builder}}
+\index{Camera\+Builder@{Camera\+Builder}!jli@{jli}}
+\subsubsection[{Camera\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+Builder\+::\+Camera\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2dd10cbeedd42092b35159fd713834f3}
+
+
+Definition at line 23 of file Camera\+Builder.\+cpp.
+
+\hypertarget{namespacejli_af69056b00744493ba074ef13e82b0bec}{\index{jli@{jli}!Clock@{Clock}}
+\index{Clock@{Clock}!jli@{jli}}
+\subsubsection[{Clock}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+::\+Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_af69056b00744493ba074ef13e82b0bec}
+
+
+Definition at line 14 of file Clock.\+cpp.
+
+\hypertarget{namespacejli_a334855814780bf6b3108045f5bf20c40}{\index{jli@{jli}!Clock@{Clock}}
+\index{Clock@{Clock}!jli@{jli}}
+\subsubsection[{Clock}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+::\+Clock (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a334855814780bf6b3108045f5bf20c40}
+
+
+Definition at line 20 of file Clock.\+cpp.
+
+\hypertarget{namespacejli_a7ce97585499e25f837d2b1a14a4af4ce}{\index{jli@{jli}!Clock@{Clock}}
+\index{Clock@{Clock}!jli@{jli}}
+\subsubsection[{Clock}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+::\+Clock (
+\begin{DoxyParamCaption}
+\item[{const Clock \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7ce97585499e25f837d2b1a14a4af4ce}
+
+
+Definition at line 26 of file Clock.\+cpp.
+
+\hypertarget{namespacejli_af9355f336950e30078eac279a96a7375}{\index{jli@{jli}!Clock\+Builder@{Clock\+Builder}}
+\index{Clock\+Builder@{Clock\+Builder}!jli@{jli}}
+\subsubsection[{Clock\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+Builder\+::\+Clock\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_af9355f336950e30078eac279a96a7375}
+
+
+Definition at line 14 of file Clock\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a59f88ada47f2f75bad05d58b79344dd1}{\index{jli@{jli}!Clock\+Builder@{Clock\+Builder}}
+\index{Clock\+Builder@{Clock\+Builder}!jli@{jli}}
+\subsubsection[{Clock\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+Builder\+::\+Clock\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Clock\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a59f88ada47f2f75bad05d58b79344dd1}
+
+
+Definition at line 18 of file Clock\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a6eb2d97c9c7e59378580ac6637daf99c}{\index{jli@{jli}!Clock\+Builder@{Clock\+Builder}}
+\index{Clock\+Builder@{Clock\+Builder}!jli@{jli}}
+\subsubsection[{Clock\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+Builder\+::\+Clock\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a6eb2d97c9c7e59378580ac6637daf99c}
+
+
+Definition at line 23 of file Clock\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ade7f2a4f2880c0d04736c3677ff61c1a}{\index{jli@{jli}!Collision\+Response@{Collision\+Response}}
+\index{Collision\+Response@{Collision\+Response}!jli@{jli}}
+\subsubsection[{Collision\+Response}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+::\+Collision\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ade7f2a4f2880c0d04736c3677ff61c1a}
+
+
+Definition at line 14 of file Collision\+Response.\+cpp.
+
+\hypertarget{namespacejli_a5253cd6674cbb5acad943c6652f1941d}{\index{jli@{jli}!Collision\+Response@{Collision\+Response}}
+\index{Collision\+Response@{Collision\+Response}!jli@{jli}}
+\subsubsection[{Collision\+Response}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+::\+Collision\+Response (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a5253cd6674cbb5acad943c6652f1941d}
+
+
+Definition at line 20 of file Collision\+Response.\+cpp.
+
+\hypertarget{namespacejli_aa016cba40071d115792a6ab008cc30c5}{\index{jli@{jli}!Collision\+Response@{Collision\+Response}}
+\index{Collision\+Response@{Collision\+Response}!jli@{jli}}
+\subsubsection[{Collision\+Response}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+::\+Collision\+Response (
+\begin{DoxyParamCaption}
+\item[{const Collision\+Response \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aa016cba40071d115792a6ab008cc30c5}
+
+
+Definition at line 26 of file Collision\+Response.\+cpp.
+
+\hypertarget{namespacejli_aba46547ac77fd775617b1e9c5c4c3807}{\index{jli@{jli}!Collision\+Response\+Builder@{Collision\+Response\+Builder}}
+\index{Collision\+Response\+Builder@{Collision\+Response\+Builder}!jli@{jli}}
+\subsubsection[{Collision\+Response\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+Builder\+::\+Collision\+Response\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aba46547ac77fd775617b1e9c5c4c3807}
+
+
+Definition at line 14 of file Collision\+Response\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ade55a82bdee00c30fda3b15d26caca25}{\index{jli@{jli}!Collision\+Response\+Builder@{Collision\+Response\+Builder}}
+\index{Collision\+Response\+Builder@{Collision\+Response\+Builder}!jli@{jli}}
+\subsubsection[{Collision\+Response\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+Builder\+::\+Collision\+Response\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Collision\+Response\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ade55a82bdee00c30fda3b15d26caca25}
+
+
+Definition at line 18 of file Collision\+Response\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a921545297d17ff8c23fcab0bb4a2a67f}{\index{jli@{jli}!Collision\+Response\+Builder@{Collision\+Response\+Builder}}
+\index{Collision\+Response\+Builder@{Collision\+Response\+Builder}!jli@{jli}}
+\subsubsection[{Collision\+Response\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+Builder\+::\+Collision\+Response\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a921545297d17ff8c23fcab0bb4a2a67f}
+
+
+Definition at line 23 of file Collision\+Response\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a1d29d42a67cba1e824b2bbef37ad3ac7}{\index{jli@{jli}!Cubic\+Texture@{Cubic\+Texture}}
+\index{Cubic\+Texture@{Cubic\+Texture}!jli@{jli}}
+\subsubsection[{Cubic\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+::\+Cubic\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a1d29d42a67cba1e824b2bbef37ad3ac7}
+
+
+Definition at line 14 of file Cubic\+Texture.\+cpp.
+
+\hypertarget{namespacejli_afcdf119bfd2e7541a5d202805d6f07ad}{\index{jli@{jli}!Cubic\+Texture@{Cubic\+Texture}}
+\index{Cubic\+Texture@{Cubic\+Texture}!jli@{jli}}
+\subsubsection[{Cubic\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+::\+Cubic\+Texture (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_afcdf119bfd2e7541a5d202805d6f07ad}
+
+
+Definition at line 20 of file Cubic\+Texture.\+cpp.
+
+\hypertarget{namespacejli_a224b5438fe535ded0127d92bd9e595dc}{\index{jli@{jli}!Cubic\+Texture@{Cubic\+Texture}}
+\index{Cubic\+Texture@{Cubic\+Texture}!jli@{jli}}
+\subsubsection[{Cubic\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+::\+Cubic\+Texture (
+\begin{DoxyParamCaption}
+\item[{const Cubic\+Texture \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a224b5438fe535ded0127d92bd9e595dc}
+
+
+Definition at line 26 of file Cubic\+Texture.\+cpp.
+
+\hypertarget{namespacejli_a2a86125c6b724a9338c6950c2d88ba63}{\index{jli@{jli}!Cubic\+Texture\+Builder@{Cubic\+Texture\+Builder}}
+\index{Cubic\+Texture\+Builder@{Cubic\+Texture\+Builder}!jli@{jli}}
+\subsubsection[{Cubic\+Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+Builder\+::\+Cubic\+Texture\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2a86125c6b724a9338c6950c2d88ba63}
+
+
+Definition at line 14 of file Cubic\+Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a5f17b78a514c78975beb02040161f8f7}{\index{jli@{jli}!Cubic\+Texture\+Builder@{Cubic\+Texture\+Builder}}
+\index{Cubic\+Texture\+Builder@{Cubic\+Texture\+Builder}!jli@{jli}}
+\subsubsection[{Cubic\+Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+Builder\+::\+Cubic\+Texture\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Cubic\+Texture\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a5f17b78a514c78975beb02040161f8f7}
+
+
+Definition at line 18 of file Cubic\+Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a2640ff46287ef90c9cbe4d81d3e87c46}{\index{jli@{jli}!Cubic\+Texture\+Builder@{Cubic\+Texture\+Builder}}
+\index{Cubic\+Texture\+Builder@{Cubic\+Texture\+Builder}!jli@{jli}}
+\subsubsection[{Cubic\+Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+Builder\+::\+Cubic\+Texture\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2640ff46287ef90c9cbe4d81d3e87c46}
+
+
+Definition at line 23 of file Cubic\+Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a3bc1a43f8a3bfe33e3874a74ebfde685}{\index{jli@{jli}!Dynamic\+Physics\+Body@{Dynamic\+Physics\+Body}}
+\index{Dynamic\+Physics\+Body@{Dynamic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Dynamic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+::\+Dynamic\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a3bc1a43f8a3bfe33e3874a74ebfde685}
+
+
+Definition at line 14 of file Dynamic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a624a3cdacc2bbdd8f5aa1bfa94d65e78}{\index{jli@{jli}!Dynamic\+Physics\+Body@{Dynamic\+Physics\+Body}}
+\index{Dynamic\+Physics\+Body@{Dynamic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Dynamic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+::\+Dynamic\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a624a3cdacc2bbdd8f5aa1bfa94d65e78}
+
+
+Definition at line 20 of file Dynamic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a3bdc7905c274142d7f2930b7632bb0bc}{\index{jli@{jli}!Dynamic\+Physics\+Body@{Dynamic\+Physics\+Body}}
+\index{Dynamic\+Physics\+Body@{Dynamic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Dynamic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+::\+Dynamic\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Dynamic\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a3bdc7905c274142d7f2930b7632bb0bc}
+
+
+Definition at line 26 of file Dynamic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a2f8ceeb7f6753810b5778f1f4e2ffcff}{\index{jli@{jli}!Dynamic\+Physics\+Body\+Builder@{Dynamic\+Physics\+Body\+Builder}}
+\index{Dynamic\+Physics\+Body\+Builder@{Dynamic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Dynamic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+Builder\+::\+Dynamic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2f8ceeb7f6753810b5778f1f4e2ffcff}
+
+
+Definition at line 14 of file Dynamic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a925718f179e05461f123aec7d49e2302}{\index{jli@{jli}!Dynamic\+Physics\+Body\+Builder@{Dynamic\+Physics\+Body\+Builder}}
+\index{Dynamic\+Physics\+Body\+Builder@{Dynamic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Dynamic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+Builder\+::\+Dynamic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Dynamic\+Physics\+Body\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a925718f179e05461f123aec7d49e2302}
+
+
+Definition at line 18 of file Dynamic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a09d63a7b6aeebc6c1adc2d29cad4a436}{\index{jli@{jli}!Dynamic\+Physics\+Body\+Builder@{Dynamic\+Physics\+Body\+Builder}}
+\index{Dynamic\+Physics\+Body\+Builder@{Dynamic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Dynamic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+Builder\+::\+Dynamic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a09d63a7b6aeebc6c1adc2d29cad4a436}
+
+
+Definition at line 23 of file Dynamic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ac063e70317c4eccadadf9d805956a87b}{\index{jli@{jli}!Geometry@{Geometry}}
+\index{Geometry@{Geometry}!jli@{jli}}
+\subsubsection[{Geometry}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+::\+Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ac063e70317c4eccadadf9d805956a87b}
+
+
+Definition at line 14 of file Geometry.\+cpp.
+
+\hypertarget{namespacejli_a552c53ee3e235bf331151d3790926346}{\index{jli@{jli}!Geometry@{Geometry}}
+\index{Geometry@{Geometry}!jli@{jli}}
+\subsubsection[{Geometry}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+::\+Geometry (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a552c53ee3e235bf331151d3790926346}
+
+
+Definition at line 20 of file Geometry.\+cpp.
+
+\hypertarget{namespacejli_a3f790419c37591e236dbbeb4b11527df}{\index{jli@{jli}!Geometry@{Geometry}}
+\index{Geometry@{Geometry}!jli@{jli}}
+\subsubsection[{Geometry}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+::\+Geometry (
+\begin{DoxyParamCaption}
+\item[{const Geometry \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a3f790419c37591e236dbbeb4b11527df}
+
+
+Definition at line 26 of file Geometry.\+cpp.
+
+\hypertarget{namespacejli_a0e63e2a5bcaa55a7526257c8e6a91531}{\index{jli@{jli}!Geometry\+Builder@{Geometry\+Builder}}
+\index{Geometry\+Builder@{Geometry\+Builder}!jli@{jli}}
+\subsubsection[{Geometry\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+Builder\+::\+Geometry\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a0e63e2a5bcaa55a7526257c8e6a91531}
+
+
+Definition at line 14 of file Geometry\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a3d074d26030ba005edd7dc2d2ecf5e55}{\index{jli@{jli}!Geometry\+Builder@{Geometry\+Builder}}
+\index{Geometry\+Builder@{Geometry\+Builder}!jli@{jli}}
+\subsubsection[{Geometry\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+Builder\+::\+Geometry\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Geometry\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a3d074d26030ba005edd7dc2d2ecf5e55}
+
+
+Definition at line 18 of file Geometry\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a004bdd1f9192de71fa05cffd2893f2f4}{\index{jli@{jli}!Geometry\+Builder@{Geometry\+Builder}}
+\index{Geometry\+Builder@{Geometry\+Builder}!jli@{jli}}
+\subsubsection[{Geometry\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+Builder\+::\+Geometry\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a004bdd1f9192de71fa05cffd2893f2f4}
+
+
+Definition at line 23 of file Geometry\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a3b3d389101633767ffe8029193e7ce05}{\index{jli@{jli}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!jli@{jli}}
 \subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ jli\+::get\+Name (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ab59410e766fae1d158793c2a0c70be5e}
-The name of this Class
-
-\begin{DoxyReturn}{Returns}
-the name of this class 
-\end{DoxyReturn}
-
-
-Here is the caller graph for this function\+:
-
-
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_a3b3d389101633767ffe8029193e7ce05}
 \hypertarget{namespacejli_ad74268a8f5493ee3df657a346cd64d30}{\index{jli@{jli}!get\+Object\+Type@{get\+Object\+Type}}
 \index{get\+Object\+Type@{get\+Object\+Type}!jli@{jli}}
 \subsubsection[{get\+Object\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::get\+Object\+Type (
@@ -234,54 +1245,375 @@ Here is the caller graph for this function\+:
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ad74268a8f5493ee3df657a346cd64d30}
-\hypertarget{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}{\index{jli@{jli}!get\+Pointer@{get\+Pointer}}
-\index{get\+Pointer@{get\+Pointer}!jli@{jli}}
-\subsubsection[{get\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void $\ast$ Abstract\+Factory\+Object\+::get\+Pointer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}
-The pointer stored by this class. 
-
-Definition at line 52 of file Abstract\+Factory\+Object.\+cpp.
-
-
-
-Here is the caller graph for this function\+:
-
-
-\hypertarget{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}{\index{jli@{jli}!get\+Pointer\+Value@{get\+Pointer\+Value}}
-\index{get\+Pointer\+Value@{get\+Pointer\+Value}!jli@{jli}}
-\subsubsection[{get\+Pointer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const u64 Abstract\+Factory\+Object\+::get\+Pointer\+Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}
-The u64 value of this pointer;
-
-\begin{DoxyReturn}{Returns}
-the u64 value of this pointer. 
-\end{DoxyReturn}
-
-
-Definition at line 57 of file Abstract\+Factory\+Object.\+cpp.
-
-\hypertarget{namespacejli_acf2403453223c37b2cbf466e23515b6e}{\index{jli@{jli}!get\+Type@{get\+Type}}
+\hypertarget{namespacejli_ab742f1c07eed63b74053aa01c3193d1f}{\index{jli@{jli}!get\+Type@{get\+Type}}
 \index{get\+Type@{get\+Type}!jli@{jli}}
 \subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::get\+Type (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_acf2403453223c37b2cbf466e23515b6e}
-The type of this Class
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_ab742f1c07eed63b74053aa01c3193d1f}
+\hypertarget{namespacejli_a7caf1415906897121ee3e6de60a329c8}{\index{jli@{jli}!Ghost\+Physics\+Body@{Ghost\+Physics\+Body}}
+\index{Ghost\+Physics\+Body@{Ghost\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Ghost\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+::\+Ghost\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7caf1415906897121ee3e6de60a329c8}
 
-\begin{DoxyReturn}{Returns}
-the type of this class 
-\end{DoxyReturn}
+
+Definition at line 14 of file Ghost\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_afb5a03f7022ad75046c07614859007b4}{\index{jli@{jli}!Ghost\+Physics\+Body@{Ghost\+Physics\+Body}}
+\index{Ghost\+Physics\+Body@{Ghost\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Ghost\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+::\+Ghost\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_afb5a03f7022ad75046c07614859007b4}
 
 
-Here is the caller graph for this function\+:
+Definition at line 20 of file Ghost\+Physics\+Body.\+cpp.
 
+\hypertarget{namespacejli_ad74fccf745d72bb59ea02ffcf00325ba}{\index{jli@{jli}!Ghost\+Physics\+Body@{Ghost\+Physics\+Body}}
+\index{Ghost\+Physics\+Body@{Ghost\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Ghost\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+::\+Ghost\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Ghost\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad74fccf745d72bb59ea02ffcf00325ba}
+
+
+Definition at line 26 of file Ghost\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a3aff4e56b78db8f38ca21c4215ef5c05}{\index{jli@{jli}!Ghost\+Physics\+Body\+Builder@{Ghost\+Physics\+Body\+Builder}}
+\index{Ghost\+Physics\+Body\+Builder@{Ghost\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Ghost\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+Builder\+::\+Ghost\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a3aff4e56b78db8f38ca21c4215ef5c05}
+
+
+Definition at line 14 of file Ghost\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ac715c051dda98c145182dfd6797b21d4}{\index{jli@{jli}!Ghost\+Physics\+Body\+Builder@{Ghost\+Physics\+Body\+Builder}}
+\index{Ghost\+Physics\+Body\+Builder@{Ghost\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Ghost\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+Builder\+::\+Ghost\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Ghost\+Physics\+Body\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ac715c051dda98c145182dfd6797b21d4}
+
+
+Definition at line 18 of file Ghost\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a87d58ccea384f9c099a54185ac2b10e1}{\index{jli@{jli}!Ghost\+Physics\+Body\+Builder@{Ghost\+Physics\+Body\+Builder}}
+\index{Ghost\+Physics\+Body\+Builder@{Ghost\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Ghost\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+Builder\+::\+Ghost\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a87d58ccea384f9c099a54185ac2b10e1}
+
+
+Definition at line 23 of file Ghost\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a7a3913d5239a7a26f7b249c8352cfb7e}{\index{jli@{jli}!Kinematic\+Physics\+Body@{Kinematic\+Physics\+Body}}
+\index{Kinematic\+Physics\+Body@{Kinematic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Kinematic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+::\+Kinematic\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7a3913d5239a7a26f7b249c8352cfb7e}
+
+
+Definition at line 14 of file Kinematic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_ad12a03a0d7f868a1a84fe43d58c4c168}{\index{jli@{jli}!Kinematic\+Physics\+Body@{Kinematic\+Physics\+Body}}
+\index{Kinematic\+Physics\+Body@{Kinematic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Kinematic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+::\+Kinematic\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad12a03a0d7f868a1a84fe43d58c4c168}
+
+
+Definition at line 20 of file Kinematic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a5ddb3c57d768905fbeb013afc3e17197}{\index{jli@{jli}!Kinematic\+Physics\+Body@{Kinematic\+Physics\+Body}}
+\index{Kinematic\+Physics\+Body@{Kinematic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Kinematic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+::\+Kinematic\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Kinematic\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a5ddb3c57d768905fbeb013afc3e17197}
+
+
+Definition at line 26 of file Kinematic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a7c18f18400fc9c3348d7888cd25a57d7}{\index{jli@{jli}!Kinematic\+Physics\+Body\+Builder@{Kinematic\+Physics\+Body\+Builder}}
+\index{Kinematic\+Physics\+Body\+Builder@{Kinematic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Kinematic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+Builder\+::\+Kinematic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a7c18f18400fc9c3348d7888cd25a57d7}
+
+
+Definition at line 14 of file Kinematic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a41d3966b2a78be58e202899d74ba0875}{\index{jli@{jli}!Kinematic\+Physics\+Body\+Builder@{Kinematic\+Physics\+Body\+Builder}}
+\index{Kinematic\+Physics\+Body\+Builder@{Kinematic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Kinematic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+Builder\+::\+Kinematic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Kinematic\+Physics\+Body\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a41d3966b2a78be58e202899d74ba0875}
+
+
+Definition at line 18 of file Kinematic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a50acbc03a306ce042f59e76accc35c43}{\index{jli@{jli}!Kinematic\+Physics\+Body\+Builder@{Kinematic\+Physics\+Body\+Builder}}
+\index{Kinematic\+Physics\+Body\+Builder@{Kinematic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Kinematic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+Builder\+::\+Kinematic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a50acbc03a306ce042f59e76accc35c43}
+
+
+Definition at line 23 of file Kinematic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aa743de893683a76d6d6862899d5c9c95}{\index{jli@{jli}!Light@{Light}}
+\index{Light@{Light}!jli@{jli}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+::\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aa743de893683a76d6d6862899d5c9c95}
+
+
+Definition at line 14 of file Light.\+cpp.
+
+\hypertarget{namespacejli_a4df8986faaac7b2936c1b4c2570e30ea}{\index{jli@{jli}!Light@{Light}}
+\index{Light@{Light}!jli@{jli}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+::\+Light (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a4df8986faaac7b2936c1b4c2570e30ea}
+
+
+Definition at line 20 of file Light.\+cpp.
+
+\hypertarget{namespacejli_aa3b8b43415275515956d5c46a0715ccb}{\index{jli@{jli}!Light@{Light}}
+\index{Light@{Light}!jli@{jli}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+::\+Light (
+\begin{DoxyParamCaption}
+\item[{const Light \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aa3b8b43415275515956d5c46a0715ccb}
+
+
+Definition at line 26 of file Light.\+cpp.
+
+\hypertarget{namespacejli_ab74bc38edd1ef6ffefa07b38a456dbf4}{\index{jli@{jli}!Light\+Builder@{Light\+Builder}}
+\index{Light\+Builder@{Light\+Builder}!jli@{jli}}
+\subsubsection[{Light\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+Builder\+::\+Light\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab74bc38edd1ef6ffefa07b38a456dbf4}
+
+
+Definition at line 14 of file Light\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a1db92fb58477bc8af86269d5cddc8685}{\index{jli@{jli}!Light\+Builder@{Light\+Builder}}
+\index{Light\+Builder@{Light\+Builder}!jli@{jli}}
+\subsubsection[{Light\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+Builder\+::\+Light\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Light\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a1db92fb58477bc8af86269d5cddc8685}
+
+
+Definition at line 18 of file Light\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ae17e3ea054277db213f8262dc1f99949}{\index{jli@{jli}!Light\+Builder@{Light\+Builder}}
+\index{Light\+Builder@{Light\+Builder}!jli@{jli}}
+\subsubsection[{Light\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+Builder\+::\+Light\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ae17e3ea054277db213f8262dc1f99949}
+
+
+Definition at line 23 of file Light\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a007372827318c5314719b1f97041f45c}{\index{jli@{jli}!Material@{Material}}
+\index{Material@{Material}!jli@{jli}}
+\subsubsection[{Material}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+::\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a007372827318c5314719b1f97041f45c}
+
+
+Definition at line 14 of file Material.\+cpp.
+
+\hypertarget{namespacejli_a60fe526f7e6659ff8ae5f9cae7fb4c10}{\index{jli@{jli}!Material@{Material}}
+\index{Material@{Material}!jli@{jli}}
+\subsubsection[{Material}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+::\+Material (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a60fe526f7e6659ff8ae5f9cae7fb4c10}
+
+
+Definition at line 20 of file Material.\+cpp.
+
+\hypertarget{namespacejli_a2a281e85f9e15afd7c78051b8be24bb6}{\index{jli@{jli}!Material@{Material}}
+\index{Material@{Material}!jli@{jli}}
+\subsubsection[{Material}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+::\+Material (
+\begin{DoxyParamCaption}
+\item[{const Material \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a2a281e85f9e15afd7c78051b8be24bb6}
+
+
+Definition at line 26 of file Material.\+cpp.
+
+\hypertarget{namespacejli_abbc4482d10b2fab1145308318ec6ef4e}{\index{jli@{jli}!Material\+Builder@{Material\+Builder}}
+\index{Material\+Builder@{Material\+Builder}!jli@{jli}}
+\subsubsection[{Material\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Builder\+::\+Material\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_abbc4482d10b2fab1145308318ec6ef4e}
+
+
+Definition at line 14 of file Material\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ad3851357f4c908c0673c097c941828d6}{\index{jli@{jli}!Material\+Builder@{Material\+Builder}}
+\index{Material\+Builder@{Material\+Builder}!jli@{jli}}
+\subsubsection[{Material\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Builder\+::\+Material\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Material\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ad3851357f4c908c0673c097c941828d6}
+
+
+Definition at line 18 of file Material\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a8fb3dd20b46500cee7e4feb50df32824}{\index{jli@{jli}!Material\+Builder@{Material\+Builder}}
+\index{Material\+Builder@{Material\+Builder}!jli@{jli}}
+\subsubsection[{Material\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Builder\+::\+Material\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a8fb3dd20b46500cee7e4feb50df32824}
+
+
+Definition at line 23 of file Material\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aac4773f4081fe5e6116c6e85803b59e0}{\index{jli@{jli}!Material\+Property@{Material\+Property}}
+\index{Material\+Property@{Material\+Property}!jli@{jli}}
+\subsubsection[{Material\+Property}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+::\+Material\+Property (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aac4773f4081fe5e6116c6e85803b59e0}
+
+
+Definition at line 14 of file Material\+Property.\+cpp.
+
+\hypertarget{namespacejli_acba837966af210890b7418fc4926d2eb}{\index{jli@{jli}!Material\+Property@{Material\+Property}}
+\index{Material\+Property@{Material\+Property}!jli@{jli}}
+\subsubsection[{Material\+Property}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+::\+Material\+Property (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_acba837966af210890b7418fc4926d2eb}
+
+
+Definition at line 20 of file Material\+Property.\+cpp.
+
+\hypertarget{namespacejli_afb1bbc3b06ceaaf5d288bdf3c615d1d7}{\index{jli@{jli}!Material\+Property@{Material\+Property}}
+\index{Material\+Property@{Material\+Property}!jli@{jli}}
+\subsubsection[{Material\+Property}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+::\+Material\+Property (
+\begin{DoxyParamCaption}
+\item[{const Material\+Property \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_afb1bbc3b06ceaaf5d288bdf3c615d1d7}
+
+
+Definition at line 26 of file Material\+Property.\+cpp.
+
+\hypertarget{namespacejli_a96c22be2baa4ce5a1d9759cb6165b155}{\index{jli@{jli}!Material\+Property\+Builder@{Material\+Property\+Builder}}
+\index{Material\+Property\+Builder@{Material\+Property\+Builder}!jli@{jli}}
+\subsubsection[{Material\+Property\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+Builder\+::\+Material\+Property\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a96c22be2baa4ce5a1d9759cb6165b155}
+
+
+Definition at line 14 of file Material\+Property\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aac6faf9ab92632aac5d6e880e2b00c6f}{\index{jli@{jli}!Material\+Property\+Builder@{Material\+Property\+Builder}}
+\index{Material\+Property\+Builder@{Material\+Property\+Builder}!jli@{jli}}
+\subsubsection[{Material\+Property\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+Builder\+::\+Material\+Property\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Material\+Property\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aac6faf9ab92632aac5d6e880e2b00c6f}
+
+
+Definition at line 18 of file Material\+Property\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a3e8b5f64fd8e55aabc11e1bd4d65035d}{\index{jli@{jli}!Material\+Property\+Builder@{Material\+Property\+Builder}}
+\index{Material\+Property\+Builder@{Material\+Property\+Builder}!jli@{jli}}
+\subsubsection[{Material\+Property\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+Builder\+::\+Material\+Property\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a3e8b5f64fd8e55aabc11e1bd4d65035d}
+
+
+Definition at line 23 of file Material\+Property\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ad3ae8427886d6e7375c62a7fb2100c4c}{\index{jli@{jli}!Node@{Node}}
+\index{Node@{Node}!jli@{jli}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad3ae8427886d6e7375c62a7fb2100c4c}
+
+
+Definition at line 14 of file Node.\+cpp.
+
+\hypertarget{namespacejli_ac427b39c9353f0301e191f76d360d4f1}{\index{jli@{jli}!Node@{Node}}
+\index{Node@{Node}!jli@{jli}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::\+Node (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ac427b39c9353f0301e191f76d360d4f1}
+
+
+Definition at line 20 of file Node.\+cpp.
+
+\hypertarget{namespacejli_ad63185457aa77be28b780050799426f3}{\index{jli@{jli}!Node@{Node}}
+\index{Node@{Node}!jli@{jli}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::\+Node (
+\begin{DoxyParamCaption}
+\item[{const Node \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad63185457aa77be28b780050799426f3}
+
+
+Definition at line 26 of file Node.\+cpp.
 
 \hypertarget{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{\index{jli@{jli}!Node\+Builder@{Node\+Builder}}
 \index{Node\+Builder@{Node\+Builder}!jli@{jli}}
@@ -293,11 +1625,6 @@ Here is the caller graph for this function\+:
 
 
 Definition at line 14 of file Node\+Builder.\+cpp.
-
-
-
-Here is the caller graph for this function\+:
-
 
 \hypertarget{namespacejli_a75dc0cad5c84f4d244d951b48255c6e4}{\index{jli@{jli}!Node\+Builder@{Node\+Builder}}
 \index{Node\+Builder@{Node\+Builder}!jli@{jli}}
@@ -321,58 +1648,356 @@ Definition at line 18 of file Node\+Builder.\+cpp.
 
 Definition at line 23 of file Node\+Builder.\+cpp.
 
-\hypertarget{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}{\index{jli@{jli}!operator"!=@{operator"!=}}
-\index{operator"!=@{operator"!=}!jli@{jli}}
-\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator!= (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}
-
-
-Definition at line 77 of file Abstract\+Factory\+Object.\+cpp.
-
-\hypertarget{namespacejli_a5c433a85502a8c96877ad59022bf1024}{\index{jli@{jli}!operator$<$@{operator$<$}}
-\index{operator$<$@{operator$<$}!jli@{jli}}
-\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$<$ (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{namespacejli_a5c433a85502a8c96877ad59022bf1024}
-
-
-Definition at line 67 of file Abstract\+Factory\+Object.\+cpp.
-
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{namespacejli_a53a743e411edf86856cbb4ce21a6939d}{\index{jli@{jli}!operator$<$=@{operator$<$=}}
-\index{operator$<$=@{operator$<$=}!jli@{jli}}
-\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$<$= (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{namespacejli_a53a743e411edf86856cbb4ce21a6939d}
-
-
-Definition at line 82 of file Abstract\+Factory\+Object.\+cpp.
-
-\hypertarget{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}{\index{jli@{jli}!operator=@{operator=}}
+\hypertarget{namespacejli_a1d3143a4538bad208106f20802c61410}{\index{jli@{jli}!operator=@{operator=}}
 \index{operator=@{operator=}!jli@{jli}}
-\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene\+Builder}\& jli\+::operator= (
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Static\+Physics\+Body}\& jli\+::operator= (
 \begin{DoxyParamCaption}
-\item[{const Scene\+Builder \&}]{}
+\item[{const Static\+Physics\+Body \&}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}
-\hypertarget{namespacejli_a544c167a86203fa931b358dc2e77df53}{\index{jli@{jli}!operator=@{operator=}}
+)}}\label{namespacejli_a1d3143a4538bad208106f20802c61410}
+\hypertarget{namespacejli_a3652a77b1603e782ad8ac9ff69eb0f83}{\index{jli@{jli}!operator=@{operator=}}
 \index{operator=@{operator=}!jli@{jli}}
-\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\+Builder}\& jli\+::operator= (
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action}\& jli\+::operator= (
 \begin{DoxyParamCaption}
-\item[{const Resource\+Builder \&}]{}
+\item[{const Action \&}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a544c167a86203fa931b358dc2e77df53}
+)}}\label{namespacejli_a3652a77b1603e782ad8ac9ff69eb0f83}
+\hypertarget{namespacejli_a833cb9a4318c25680adcbaca8367e96f}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Texture \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a833cb9a4318c25680adcbaca8367e96f}
+\hypertarget{namespacejli_ac9b74cda6418ae6175a9178669229562}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collision\+Response}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Collision\+Response \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ac9b74cda6418ae6175a9178669229562}
+\hypertarget{namespacejli_ae9804996da5acf53e3b4b19831db4431}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Material \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ae9804996da5acf53e3b4b19831db4431}
+\hypertarget{namespacejli_a523e9bc6d65436e210ed19241efba3ed}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Soft\+Physics\+Body}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Base\+Soft\+Physics\+Body \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a523e9bc6d65436e210ed19241efba3ed}
+\hypertarget{namespacejli_aeefe2ec73e0e0a8ec963ff328b8b7008}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material\+Property}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Material\+Property \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aeefe2ec73e0e0a8ec963ff328b8b7008}
+\hypertarget{namespacejli_ad7545b9768425cea8f01be5265c970c8}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cubic\+Texture}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Cubic\+Texture \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad7545b9768425cea8f01be5265c970c8}
+\hypertarget{namespacejli_ac893115fd88948e8e12c6f372b374892}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle\+Emitter}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Particle\+Emitter \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ac893115fd88948e8e12c6f372b374892}
+\hypertarget{namespacejli_aebf62cef126edcd79bdabcfa87a74074}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dynamic\+Physics\+Body}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Dynamic\+Physics\+Body \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aebf62cef126edcd79bdabcfa87a74074}
+\hypertarget{namespacejli_a954927e0e64c45ab4101c5f1a225bc8b}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+Contact}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Contact \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a954927e0e64c45ab4101c5f1a225bc8b}
+\hypertarget{namespacejli_a128ad3fb294f27690b42d3bdb3d467cd}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+Field}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Field \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a128ad3fb294f27690b42d3bdb3d467cd}
+\hypertarget{namespacejli_ae0ca0605362d0f66744c6b8c44e73adb}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Camera \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ae0ca0605362d0f66744c6b8c44e73adb}
+\hypertarget{namespacejli_a7e2664c542fe138299889c24fca38c7e}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+Shape}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Shape \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7e2664c542fe138299889c24fca38c7e}
+\hypertarget{namespacejli_af199e55a0897e5102c8314f78c34775c}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+World}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+World \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_af199e55a0897e5102c8314f78c34775c}
+\hypertarget{namespacejli_ad382a206eb3ee58d6d77638319d16a92}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ghost\+Physics\+Body}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Ghost\+Physics\+Body \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad382a206eb3ee58d6d77638319d16a92}
+\hypertarget{namespacejli_a153d8db97f7793fc3526297dbedca3ec}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Rigid\+Physics\+Body}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Base\+Rigid\+Physics\+Body \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a153d8db97f7793fc3526297dbedca3ec}
+\hypertarget{namespacejli_abf374f753c2ae3833479fc522c07b7a9}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Physics\+Body}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Physics\+Body \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_abf374f753c2ae3833479fc522c07b7a9}
+\hypertarget{namespacejli_a1ff847178b6d16582b0c1ca11c646090}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clock}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Clock \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a1ff847178b6d16582b0c1ca11c646090}
+\hypertarget{namespacejli_a9dd32a4ec75ec13088b16fd9814601cd}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kinematic\+Physics\+Body}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Kinematic\+Physics\+Body \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a9dd32a4ec75ec13088b16fd9814601cd}
+\hypertarget{namespacejli_aca4f80875a035dcd8150d8b0b9d9bc4f}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Sound \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aca4f80875a035dcd8150d8b0b9d9bc4f}
+\hypertarget{namespacejli_a7a1252c0a9ccb9ee23d13cf04ebb17dd}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Light \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7a1252c0a9ccb9ee23d13cf04ebb17dd}
+\hypertarget{namespacejli_aa42f10f677bd4750e4a4e5ece8523ab0}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Resource \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aa42f10f677bd4750e4a4e5ece8523ab0}
+\hypertarget{namespacejli_a35f6fd9cb84a92ee1a41e074d4ec09bf}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geometry}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Geometry \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a35f6fd9cb84a92ee1a41e074d4ec09bf}
+\hypertarget{namespacejli_a8e836a4d6f8f6e2eeec528042fcba3a9}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Static\+Physics\+Body\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Static\+Physics\+Body\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a8e836a4d6f8f6e2eeec528042fcba3a9}
+\hypertarget{namespacejli_af2a4079c16f2a4cb961a477ea58ffe55}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Texture\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_af2a4079c16f2a4cb961a477ea58ffe55}
+\hypertarget{namespacejli_aee6a533641209a3c27bea0b636e4ab99}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Rigid\+Physics\+Body\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Base\+Rigid\+Physics\+Body\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aee6a533641209a3c27bea0b636e4ab99}
+\hypertarget{namespacejli_a5a2ca8f8cf2bfa115387afadf12aadd1}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const State\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a5a2ca8f8cf2bfa115387afadf12aadd1}
+\hypertarget{namespacejli_a786eb560b2617f0b8e9324d7d9cc9339}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Material\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a786eb560b2617f0b8e9324d7d9cc9339}
+\hypertarget{namespacejli_ad3d3c1fad0e4aea9e098049aded55a07}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collision\+Response\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Collision\+Response\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ad3d3c1fad0e4aea9e098049aded55a07}
+\hypertarget{namespacejli_aa54ffee03b6511da6a96faa055b0275f}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material\+Property\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Material\+Property\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aa54ffee03b6511da6a96faa055b0275f}
+\hypertarget{namespacejli_a45c9337ab49b0aacc1d8064bb940a7f7}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Light\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a45c9337ab49b0aacc1d8064bb940a7f7}
+\hypertarget{namespacejli_a89c4ecf3f3675ba37131cae61a631143}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Node \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a89c4ecf3f3675ba37131cae61a631143}
+\hypertarget{namespacejli_a23318afe35b09c9c6d4fb466724ad63a}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cubic\+Texture\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Cubic\+Texture\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a23318afe35b09c9c6d4fb466724ad63a}
+\hypertarget{namespacejli_a87277a99c7a713dc593e70bbab6bf0f8}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Scene \&}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a87277a99c7a713dc593e70bbab6bf0f8}
+\hypertarget{namespacejli_ade54634c2d0015f83656062ee83950e5}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Soft\+Physics\+Body\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Base\+Soft\+Physics\+Body\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ade54634c2d0015f83656062ee83950e5}
+\hypertarget{namespacejli_a4ffcb7b3f0bada7c0e33cc9ffc502c11}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle\+Emitter\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Particle\+Emitter\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a4ffcb7b3f0bada7c0e33cc9ffc502c11}
+\hypertarget{namespacejli_a52eac4944ed6adea3292bb7646e89bb1}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Action\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a52eac4944ed6adea3292bb7646e89bb1}
+\hypertarget{namespacejli_af5f2d415ac3003221faf09452f3e0e52}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+Contact\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Contact\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_af5f2d415ac3003221faf09452f3e0e52}
+\hypertarget{namespacejli_ab8cc09c315dd5eeaa1e5db63da094b52}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dynamic\+Physics\+Body\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Dynamic\+Physics\+Body\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab8cc09c315dd5eeaa1e5db63da094b52}
+\hypertarget{namespacejli_a8eb5ca2da7648ae789063468ec4d5b1c}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+Field\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Field\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a8eb5ca2da7648ae789063468ec4d5b1c}
+\hypertarget{namespacejli_af6d5c0ddeeb0d245763a8bdccf963738}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+Shape\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Shape\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_af6d5c0ddeeb0d245763a8bdccf963738}
+\hypertarget{namespacejli_a73c17d348157cd5a98476f9bb232ffb3}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geometry\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Geometry\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a73c17d348157cd5a98476f9bb232ffb3}
+\hypertarget{namespacejli_a4f5fac6387bb41472fedc1ff5cf86955}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics\+World\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Physics\+World\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a4f5fac6387bb41472fedc1ff5cf86955}
+\hypertarget{namespacejli_a75dbc7e82adc58eea850e84fbc0db767}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Camera\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a75dbc7e82adc58eea850e84fbc0db767}
+\hypertarget{namespacejli_a00a7b4875cc46a0309f9372b44b119b1}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ghost\+Physics\+Body\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Ghost\+Physics\+Body\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a00a7b4875cc46a0309f9372b44b119b1}
+\hypertarget{namespacejli_a4642ebecf1bc8e3cbbca8668ce172e0c}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Sound\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a4642ebecf1bc8e3cbbca8668ce172e0c}
+\hypertarget{namespacejli_ab7a97bb558d975fef79c14180602daf6}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kinematic\+Physics\+Body\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Kinematic\+Physics\+Body\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab7a97bb558d975fef79c14180602daf6}
+\hypertarget{namespacejli_a74af49a3892d7ef3e0306ade05373ae3}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\+Machine\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const State\+Machine\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a74af49a3892d7ef3e0306ade05373ae3}
+\hypertarget{namespacejli_ab2df9e6084dba760e66f854ddaed69ff}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clock\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Clock\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab2df9e6084dba760e66f854ddaed69ff}
 \hypertarget{namespacejli_a290ea917337c90571eb741852c146180}{\index{jli@{jli}!operator=@{operator=}}
 \index{operator=@{operator=}!jli@{jli}}
 \subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Builder}\& jli\+::operator= (
@@ -380,48 +2005,382 @@ Definition at line 82 of file Abstract\+Factory\+Object.\+cpp.
 \item[{const Node\+Builder \&}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a290ea917337c90571eb741852c146180}
-\hypertarget{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}{\index{jli@{jli}!operator==@{operator==}}
-\index{operator==@{operator==}!jli@{jli}}
-\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator== (
+\hypertarget{namespacejli_a544c167a86203fa931b358dc2e77df53}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\+Builder}\& jli\+::operator= (
 \begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\item[{const Resource\+Builder \&}]{}
 \end{DoxyParamCaption}
-) const}}\label{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}
-
-
-Definition at line 62 of file Abstract\+Factory\+Object.\+cpp.
-
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}{\index{jli@{jli}!operator$>$@{operator$>$}}
-\index{operator$>$@{operator$>$}!jli@{jli}}
-\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$>$ (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a544c167a86203fa931b358dc2e77df53}
+\hypertarget{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene\+Builder}\& jli\+::operator= (
 \begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\item[{const Scene\+Builder \&}]{}
 \end{DoxyParamCaption}
-) const}}\label{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}
-
-
-Definition at line 72 of file Abstract\+Factory\+Object.\+cpp.
-
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}{\index{jli@{jli}!operator$>$=@{operator$>$=}}
-\index{operator$>$=@{operator$>$=}!jli@{jli}}
-\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$>$= (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}
+\hypertarget{namespacejli_ab1f3dc735d96dcdd2317b120e891fe1d}{\index{jli@{jli}!Particle\+Emitter@{Particle\+Emitter}}
+\index{Particle\+Emitter@{Particle\+Emitter}!jli@{jli}}
+\subsubsection[{Particle\+Emitter}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+::\+Particle\+Emitter (
 \begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
+{}
 \end{DoxyParamCaption}
-) const}}\label{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}
+)}}\label{namespacejli_ab1f3dc735d96dcdd2317b120e891fe1d}
 
 
-Definition at line 87 of file Abstract\+Factory\+Object.\+cpp.
+Definition at line 14 of file Particle\+Emitter.\+cpp.
+
+\hypertarget{namespacejli_a67f3ed93a69d21806745184d7cb360d4}{\index{jli@{jli}!Particle\+Emitter@{Particle\+Emitter}}
+\index{Particle\+Emitter@{Particle\+Emitter}!jli@{jli}}
+\subsubsection[{Particle\+Emitter}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+::\+Particle\+Emitter (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a67f3ed93a69d21806745184d7cb360d4}
+
+
+Definition at line 20 of file Particle\+Emitter.\+cpp.
+
+\hypertarget{namespacejli_a94ad1ef2b2c9ae784aced6edf424e99f}{\index{jli@{jli}!Particle\+Emitter@{Particle\+Emitter}}
+\index{Particle\+Emitter@{Particle\+Emitter}!jli@{jli}}
+\subsubsection[{Particle\+Emitter}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+::\+Particle\+Emitter (
+\begin{DoxyParamCaption}
+\item[{const Particle\+Emitter \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a94ad1ef2b2c9ae784aced6edf424e99f}
+
+
+Definition at line 26 of file Particle\+Emitter.\+cpp.
+
+\hypertarget{namespacejli_a924f0dead47ff62cb75f7887a1790c88}{\index{jli@{jli}!Particle\+Emitter\+Builder@{Particle\+Emitter\+Builder}}
+\index{Particle\+Emitter\+Builder@{Particle\+Emitter\+Builder}!jli@{jli}}
+\subsubsection[{Particle\+Emitter\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+Builder\+::\+Particle\+Emitter\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a924f0dead47ff62cb75f7887a1790c88}
+
+
+Definition at line 14 of file Particle\+Emitter\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a544df46fc4d6629db7189ee3abaca6d1}{\index{jli@{jli}!Particle\+Emitter\+Builder@{Particle\+Emitter\+Builder}}
+\index{Particle\+Emitter\+Builder@{Particle\+Emitter\+Builder}!jli@{jli}}
+\subsubsection[{Particle\+Emitter\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+Builder\+::\+Particle\+Emitter\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Particle\+Emitter\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a544df46fc4d6629db7189ee3abaca6d1}
+
+
+Definition at line 18 of file Particle\+Emitter\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aaa81a58aa861c9250324078f76f6e673}{\index{jli@{jli}!Particle\+Emitter\+Builder@{Particle\+Emitter\+Builder}}
+\index{Particle\+Emitter\+Builder@{Particle\+Emitter\+Builder}!jli@{jli}}
+\subsubsection[{Particle\+Emitter\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+Builder\+::\+Particle\+Emitter\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aaa81a58aa861c9250324078f76f6e673}
+
+
+Definition at line 23 of file Particle\+Emitter\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a87bec69a241d3a7d72c6a92035e457d7}{\index{jli@{jli}!Physics\+Contact@{Physics\+Contact}}
+\index{Physics\+Contact@{Physics\+Contact}!jli@{jli}}
+\subsubsection[{Physics\+Contact}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+::\+Physics\+Contact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a87bec69a241d3a7d72c6a92035e457d7}
+
+
+Definition at line 14 of file Physics\+Contact.\+cpp.
+
+\hypertarget{namespacejli_ac44112ea315e999b0803a46be73ec2ea}{\index{jli@{jli}!Physics\+Contact@{Physics\+Contact}}
+\index{Physics\+Contact@{Physics\+Contact}!jli@{jli}}
+\subsubsection[{Physics\+Contact}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+::\+Physics\+Contact (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ac44112ea315e999b0803a46be73ec2ea}
+
+
+Definition at line 20 of file Physics\+Contact.\+cpp.
+
+\hypertarget{namespacejli_a6c69c031c6a878af0fd0c049d6373d72}{\index{jli@{jli}!Physics\+Contact@{Physics\+Contact}}
+\index{Physics\+Contact@{Physics\+Contact}!jli@{jli}}
+\subsubsection[{Physics\+Contact}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+::\+Physics\+Contact (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Contact \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a6c69c031c6a878af0fd0c049d6373d72}
+
+
+Definition at line 26 of file Physics\+Contact.\+cpp.
+
+\hypertarget{namespacejli_aea643af7d1f6e26fbfe89083f21af41e}{\index{jli@{jli}!Physics\+Contact\+Builder@{Physics\+Contact\+Builder}}
+\index{Physics\+Contact\+Builder@{Physics\+Contact\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Contact\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+Builder\+::\+Physics\+Contact\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aea643af7d1f6e26fbfe89083f21af41e}
+
+
+Definition at line 14 of file Physics\+Contact\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a1ba1e346098dfdff4672e3751cc5af01}{\index{jli@{jli}!Physics\+Contact\+Builder@{Physics\+Contact\+Builder}}
+\index{Physics\+Contact\+Builder@{Physics\+Contact\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Contact\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+Builder\+::\+Physics\+Contact\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Contact\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a1ba1e346098dfdff4672e3751cc5af01}
+
+
+Definition at line 18 of file Physics\+Contact\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aa47f3bd4a0fff03f0bfed6cb895496a5}{\index{jli@{jli}!Physics\+Contact\+Builder@{Physics\+Contact\+Builder}}
+\index{Physics\+Contact\+Builder@{Physics\+Contact\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Contact\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+Builder\+::\+Physics\+Contact\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aa47f3bd4a0fff03f0bfed6cb895496a5}
+
+
+Definition at line 23 of file Physics\+Contact\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a0a08739050a9f0d65a42f52165e144da}{\index{jli@{jli}!Physics\+Field@{Physics\+Field}}
+\index{Physics\+Field@{Physics\+Field}!jli@{jli}}
+\subsubsection[{Physics\+Field}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+::\+Physics\+Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a0a08739050a9f0d65a42f52165e144da}
+
+
+Definition at line 14 of file Physics\+Field.\+cpp.
+
+\hypertarget{namespacejli_a7de2a9a810c6e0c8ae0cf9f9b5e45dd2}{\index{jli@{jli}!Physics\+Field@{Physics\+Field}}
+\index{Physics\+Field@{Physics\+Field}!jli@{jli}}
+\subsubsection[{Physics\+Field}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+::\+Physics\+Field (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a7de2a9a810c6e0c8ae0cf9f9b5e45dd2}
+
+
+Definition at line 20 of file Physics\+Field.\+cpp.
+
+\hypertarget{namespacejli_a81ad65e3c5a7904b33ac3905d1ad36a1}{\index{jli@{jli}!Physics\+Field@{Physics\+Field}}
+\index{Physics\+Field@{Physics\+Field}!jli@{jli}}
+\subsubsection[{Physics\+Field}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+::\+Physics\+Field (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Field \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a81ad65e3c5a7904b33ac3905d1ad36a1}
+
+
+Definition at line 26 of file Physics\+Field.\+cpp.
+
+\hypertarget{namespacejli_a3993b3872eea01dec1c9bd07bb35aae8}{\index{jli@{jli}!Physics\+Field\+Builder@{Physics\+Field\+Builder}}
+\index{Physics\+Field\+Builder@{Physics\+Field\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Field\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+Builder\+::\+Physics\+Field\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a3993b3872eea01dec1c9bd07bb35aae8}
+
+
+Definition at line 14 of file Physics\+Field\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a39d15433c9d678a3a3c08b94e29460f0}{\index{jli@{jli}!Physics\+Field\+Builder@{Physics\+Field\+Builder}}
+\index{Physics\+Field\+Builder@{Physics\+Field\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Field\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+Builder\+::\+Physics\+Field\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Field\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a39d15433c9d678a3a3c08b94e29460f0}
+
+
+Definition at line 18 of file Physics\+Field\+Builder.\+cpp.
+
+\hypertarget{namespacejli_acc1e7447340e93ed56fa2d461b7364fb}{\index{jli@{jli}!Physics\+Field\+Builder@{Physics\+Field\+Builder}}
+\index{Physics\+Field\+Builder@{Physics\+Field\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Field\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+Builder\+::\+Physics\+Field\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_acc1e7447340e93ed56fa2d461b7364fb}
+
+
+Definition at line 23 of file Physics\+Field\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a5d762365fd3979a5b8f4eebe8a916892}{\index{jli@{jli}!Physics\+Shape@{Physics\+Shape}}
+\index{Physics\+Shape@{Physics\+Shape}!jli@{jli}}
+\subsubsection[{Physics\+Shape}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+::\+Physics\+Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a5d762365fd3979a5b8f4eebe8a916892}
+
+
+Definition at line 14 of file Physics\+Shape.\+cpp.
+
+\hypertarget{namespacejli_a2c1e26825311f621ee078252a29461ca}{\index{jli@{jli}!Physics\+Shape@{Physics\+Shape}}
+\index{Physics\+Shape@{Physics\+Shape}!jli@{jli}}
+\subsubsection[{Physics\+Shape}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+::\+Physics\+Shape (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a2c1e26825311f621ee078252a29461ca}
+
+
+Definition at line 20 of file Physics\+Shape.\+cpp.
+
+\hypertarget{namespacejli_a972bcb3073388c79c38278a37c0fba83}{\index{jli@{jli}!Physics\+Shape@{Physics\+Shape}}
+\index{Physics\+Shape@{Physics\+Shape}!jli@{jli}}
+\subsubsection[{Physics\+Shape}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+::\+Physics\+Shape (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Shape \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a972bcb3073388c79c38278a37c0fba83}
+
+
+Definition at line 26 of file Physics\+Shape.\+cpp.
+
+\hypertarget{namespacejli_a24992ac1c3858db95ba078eac205adc7}{\index{jli@{jli}!Physics\+Shape\+Builder@{Physics\+Shape\+Builder}}
+\index{Physics\+Shape\+Builder@{Physics\+Shape\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Shape\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+Builder\+::\+Physics\+Shape\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a24992ac1c3858db95ba078eac205adc7}
+
+
+Definition at line 14 of file Physics\+Shape\+Builder.\+cpp.
+
+\hypertarget{namespacejli_af8521f0e610100e574ceb1c001582b5a}{\index{jli@{jli}!Physics\+Shape\+Builder@{Physics\+Shape\+Builder}}
+\index{Physics\+Shape\+Builder@{Physics\+Shape\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Shape\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+Builder\+::\+Physics\+Shape\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Physics\+Shape\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_af8521f0e610100e574ceb1c001582b5a}
+
+
+Definition at line 18 of file Physics\+Shape\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a7506589a40ec7b7bd1b48d258fdc1330}{\index{jli@{jli}!Physics\+Shape\+Builder@{Physics\+Shape\+Builder}}
+\index{Physics\+Shape\+Builder@{Physics\+Shape\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+Shape\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+Builder\+::\+Physics\+Shape\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a7506589a40ec7b7bd1b48d258fdc1330}
+
+
+Definition at line 23 of file Physics\+Shape\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a84f1f097c95cf1e48c0df5bec2f2b262}{\index{jli@{jli}!Physics\+World@{Physics\+World}}
+\index{Physics\+World@{Physics\+World}!jli@{jli}}
+\subsubsection[{Physics\+World}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+::\+Physics\+World (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a84f1f097c95cf1e48c0df5bec2f2b262}
+
+
+Definition at line 14 of file Physics\+World.\+cpp.
+
+\hypertarget{namespacejli_ad987fadc433080865f227046a5f33d25}{\index{jli@{jli}!Physics\+World@{Physics\+World}}
+\index{Physics\+World@{Physics\+World}!jli@{jli}}
+\subsubsection[{Physics\+World}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+::\+Physics\+World (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad987fadc433080865f227046a5f33d25}
+
+
+Definition at line 20 of file Physics\+World.\+cpp.
+
+\hypertarget{namespacejli_a8aed3494aa3e6d4360421e5b935c5b94}{\index{jli@{jli}!Physics\+World@{Physics\+World}}
+\index{Physics\+World@{Physics\+World}!jli@{jli}}
+\subsubsection[{Physics\+World}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+::\+Physics\+World (
+\begin{DoxyParamCaption}
+\item[{const Physics\+World \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a8aed3494aa3e6d4360421e5b935c5b94}
+
+
+Definition at line 26 of file Physics\+World.\+cpp.
+
+\hypertarget{namespacejli_aa97fa0da471fb9eb0a9d7db6acd73389}{\index{jli@{jli}!Physics\+World\+Builder@{Physics\+World\+Builder}}
+\index{Physics\+World\+Builder@{Physics\+World\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+World\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+Builder\+::\+Physics\+World\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aa97fa0da471fb9eb0a9d7db6acd73389}
+
+
+Definition at line 14 of file Physics\+World\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a48223b78110a9d35f603997bd29107cf}{\index{jli@{jli}!Physics\+World\+Builder@{Physics\+World\+Builder}}
+\index{Physics\+World\+Builder@{Physics\+World\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+World\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+Builder\+::\+Physics\+World\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Physics\+World\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a48223b78110a9d35f603997bd29107cf}
+
+
+Definition at line 18 of file Physics\+World\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a6ccccef1adeea86e63074e58e0c2f6cc}{\index{jli@{jli}!Physics\+World\+Builder@{Physics\+World\+Builder}}
+\index{Physics\+World\+Builder@{Physics\+World\+Builder}!jli@{jli}}
+\subsubsection[{Physics\+World\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+Builder\+::\+Physics\+World\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a6ccccef1adeea86e63074e58e0c2f6cc}
+
+
+Definition at line 23 of file Physics\+World\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a4726f256ac2f44778dafed297f23afd8}{\index{jli@{jli}!Resource@{Resource}}
+\index{Resource@{Resource}!jli@{jli}}
+\subsubsection[{Resource}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+::\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a4726f256ac2f44778dafed297f23afd8}
+
+
+Definition at line 14 of file Resource.\+cpp.
+
+\hypertarget{namespacejli_a9ad3207aaa7ced8efc757bbb0464a0d7}{\index{jli@{jli}!Resource@{Resource}}
+\index{Resource@{Resource}!jli@{jli}}
+\subsubsection[{Resource}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+::\+Resource (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a9ad3207aaa7ced8efc757bbb0464a0d7}
+
+
+Definition at line 20 of file Resource.\+cpp.
+
+\hypertarget{namespacejli_a81283b9d009d7035c20bcc160a4093ce}{\index{jli@{jli}!Resource@{Resource}}
+\index{Resource@{Resource}!jli@{jli}}
+\subsubsection[{Resource}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+::\+Resource (
+\begin{DoxyParamCaption}
+\item[{const Resource \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a81283b9d009d7035c20bcc160a4093ce}
+
+
+Definition at line 26 of file Resource.\+cpp.
 
 \hypertarget{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{\index{jli@{jli}!Resource\+Builder@{Resource\+Builder}}
 \index{Resource\+Builder@{Resource\+Builder}!jli@{jli}}
@@ -433,11 +2392,6 @@ Definition at line 87 of file Abstract\+Factory\+Object.\+cpp.
 
 
 Definition at line 15 of file Resource\+Builder.\+cpp.
-
-
-
-Here is the caller graph for this function\+:
-
 
 \hypertarget{namespacejli_ac25c61dfb7fd3cd0172ccf6a5d6d9598}{\index{jli@{jli}!Resource\+Builder@{Resource\+Builder}}
 \index{Resource\+Builder@{Resource\+Builder}!jli@{jli}}
@@ -461,6 +2415,39 @@ Definition at line 19 of file Resource\+Builder.\+cpp.
 
 Definition at line 24 of file Resource\+Builder.\+cpp.
 
+\hypertarget{namespacejli_abef8701bc66efaecdfb9b759f7523e9d}{\index{jli@{jli}!Scene@{Scene}}
+\index{Scene@{Scene}!jli@{jli}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_abef8701bc66efaecdfb9b759f7523e9d}
+
+
+Definition at line 14 of file Scene.\+cpp.
+
+\hypertarget{namespacejli_afbad74f1983633db64663db362041720}{\index{jli@{jli}!Scene@{Scene}}
+\index{Scene@{Scene}!jli@{jli}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_afbad74f1983633db64663db362041720}
+
+
+Definition at line 20 of file Scene.\+cpp.
+
+\hypertarget{namespacejli_a4e0a2f2e6f43f3cf5e866f662dfa011a}{\index{jli@{jli}!Scene@{Scene}}
+\index{Scene@{Scene}!jli@{jli}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+\item[{const Scene \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a4e0a2f2e6f43f3cf5e866f662dfa011a}
+
+
+Definition at line 26 of file Scene.\+cpp.
+
 \hypertarget{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{\index{jli@{jli}!Scene\+Builder@{Scene\+Builder}}
 \index{Scene\+Builder@{Scene\+Builder}!jli@{jli}}
 \subsubsection[{Scene\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+Builder\+::\+Scene\+Builder (
@@ -471,11 +2458,6 @@ Definition at line 24 of file Resource\+Builder.\+cpp.
 
 
 Definition at line 15 of file Scene\+Builder.\+cpp.
-
-
-
-Here is the caller graph for this function\+:
-
 
 \hypertarget{namespacejli_a08327fcbf8005b89aa48e20217b34adc}{\index{jli@{jli}!Scene\+Builder@{Scene\+Builder}}
 \index{Scene\+Builder@{Scene\+Builder}!jli@{jli}}
@@ -499,54 +2481,607 @@ Definition at line 19 of file Scene\+Builder.\+cpp.
 
 Definition at line 24 of file Scene\+Builder.\+cpp.
 
-\hypertarget{namespacejli_ac4ecbc29085e60be91b1eee948d37851}{\index{jli@{jli}!serialize@{serialize}}
+\hypertarget{namespacejli_aa823f0f9cca7324a986925864ae004f6}{\index{jli@{jli}!serialize@{serialize}}
 \index{serialize@{serialize}!jli@{jli}}
 \subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::serialize (
 \begin{DoxyParamCaption}
-\item[{void $\ast$}]{data\+Buffer, }
-\item[{bt\+Serializer $\ast$}]{serializer}
+\item[{void $\ast$}]{, }
+\item[{bt\+Serializer $\ast$}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_ac4ecbc29085e60be91b1eee948d37851}
-Abstract function which needs to be implemented by the base class. This can be used to save the current state of the object to disk.
-
-
-\begin{DoxyParams}{Parameters}
-{\em data\+Buffer} & The buffer to store the data when it is finished serializing. \\
-\hline
-{\em serializer} & The pointer to the serializer. \\
-\hline
-\end{DoxyParams}
-
-
-Here is the caller graph for this function\+:
-
-
-\hypertarget{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}{\index{jli@{jli}!serialize\+Object@{serialize\+Object}}
-\index{serialize\+Object@{serialize\+Object}!jli@{jli}}
-\subsubsection[{serialize\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void Abstract\+Factory\+Object\+::serialize\+Object (
-\begin{DoxyParamCaption}
-\item[{class bt\+Serializer $\ast$}]{serializer}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}
-
-
-Definition at line 92 of file Abstract\+Factory\+Object.\+cpp.
-
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}{\index{jli@{jli}!````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}}
-\index{````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}!jli@{jli}}
-\subsubsection[{$\sim$\+Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Factory\+Object\+::$\sim$\+Abstract\+Factory\+Object (
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_aa823f0f9cca7324a986925864ae004f6}
+\hypertarget{namespacejli_adde185173fc24f7fd6b0d882a8fa471a}{\index{jli@{jli}!Sound@{Sound}}
+\index{Sound@{Sound}!jli@{jli}}
+\subsubsection[{Sound}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+::\+Sound (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}
+)}}\label{namespacejli_adde185173fc24f7fd6b0d882a8fa471a}
 
 
-Definition at line 23 of file Abstract\+Factory\+Object.\+cpp.
+Definition at line 14 of file Sound.\+cpp.
+
+\hypertarget{namespacejli_a0607478917c0dad447f434e0618be1d2}{\index{jli@{jli}!Sound@{Sound}}
+\index{Sound@{Sound}!jli@{jli}}
+\subsubsection[{Sound}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+::\+Sound (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a0607478917c0dad447f434e0618be1d2}
+
+
+Definition at line 20 of file Sound.\+cpp.
+
+\hypertarget{namespacejli_aa43a8bc567a341ac22b4eb9777fa180f}{\index{jli@{jli}!Sound@{Sound}}
+\index{Sound@{Sound}!jli@{jli}}
+\subsubsection[{Sound}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+::\+Sound (
+\begin{DoxyParamCaption}
+\item[{const Sound \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aa43a8bc567a341ac22b4eb9777fa180f}
+
+
+Definition at line 26 of file Sound.\+cpp.
+
+\hypertarget{namespacejli_a8f4ec8e64074533a36d1da7cbb34cae1}{\index{jli@{jli}!Sound\+Builder@{Sound\+Builder}}
+\index{Sound\+Builder@{Sound\+Builder}!jli@{jli}}
+\subsubsection[{Sound\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+Builder\+::\+Sound\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a8f4ec8e64074533a36d1da7cbb34cae1}
+
+
+Definition at line 14 of file Sound\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a7e154f53d97abf9172ea552b57209ba2}{\index{jli@{jli}!Sound\+Builder@{Sound\+Builder}}
+\index{Sound\+Builder@{Sound\+Builder}!jli@{jli}}
+\subsubsection[{Sound\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+Builder\+::\+Sound\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Sound\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a7e154f53d97abf9172ea552b57209ba2}
+
+
+Definition at line 18 of file Sound\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a8c348a752b55a388831e7ebcb7243a4c}{\index{jli@{jli}!Sound\+Builder@{Sound\+Builder}}
+\index{Sound\+Builder@{Sound\+Builder}!jli@{jli}}
+\subsubsection[{Sound\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+Builder\+::\+Sound\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a8c348a752b55a388831e7ebcb7243a4c}
+
+
+Definition at line 23 of file Sound\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ad40db8a38a4421bea677d34ce2b1a759}{\index{jli@{jli}!State\+Builder@{State\+Builder}}
+\index{State\+Builder@{State\+Builder}!jli@{jli}}
+\subsubsection[{State\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Builder\+::\+State\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ad40db8a38a4421bea677d34ce2b1a759}
+
+
+Definition at line 14 of file State\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ad355813d947603bb1653a849bdce8091}{\index{jli@{jli}!State\+Builder@{State\+Builder}}
+\index{State\+Builder@{State\+Builder}!jli@{jli}}
+\subsubsection[{State\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Builder\+::\+State\+Builder (
+\begin{DoxyParamCaption}
+\item[{const State\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ad355813d947603bb1653a849bdce8091}
+
+
+Definition at line 18 of file State\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a6f4e96c0388922376eeaf52b342b2233}{\index{jli@{jli}!State\+Builder@{State\+Builder}}
+\index{State\+Builder@{State\+Builder}!jli@{jli}}
+\subsubsection[{State\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Builder\+::\+State\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a6f4e96c0388922376eeaf52b342b2233}
+
+
+Definition at line 23 of file State\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a2741aa0af34261449ffb4e682da8da60}{\index{jli@{jli}!State\+Machine\+Builder@{State\+Machine\+Builder}}
+\index{State\+Machine\+Builder@{State\+Machine\+Builder}!jli@{jli}}
+\subsubsection[{State\+Machine\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Machine\+Builder\+::\+State\+Machine\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2741aa0af34261449ffb4e682da8da60}
+
+
+Definition at line 14 of file State\+Machine\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a1d402cd86e45b64067f92d2de20fa40e}{\index{jli@{jli}!State\+Machine\+Builder@{State\+Machine\+Builder}}
+\index{State\+Machine\+Builder@{State\+Machine\+Builder}!jli@{jli}}
+\subsubsection[{State\+Machine\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Machine\+Builder\+::\+State\+Machine\+Builder (
+\begin{DoxyParamCaption}
+\item[{const State\+Machine\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a1d402cd86e45b64067f92d2de20fa40e}
+
+
+Definition at line 18 of file State\+Machine\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a7f6d0afcc738da76220f8c684470ca9d}{\index{jli@{jli}!State\+Machine\+Builder@{State\+Machine\+Builder}}
+\index{State\+Machine\+Builder@{State\+Machine\+Builder}!jli@{jli}}
+\subsubsection[{State\+Machine\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Machine\+Builder\+::\+State\+Machine\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a7f6d0afcc738da76220f8c684470ca9d}
+
+
+Definition at line 23 of file State\+Machine\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ad822c5d839081469262a5ecfb9e43300}{\index{jli@{jli}!Static\+Physics\+Body@{Static\+Physics\+Body}}
+\index{Static\+Physics\+Body@{Static\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Static\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+::\+Static\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_ad822c5d839081469262a5ecfb9e43300}
+
+
+Definition at line 14 of file Static\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_aa3b66cd0bcb85cde0b026378b8698ced}{\index{jli@{jli}!Static\+Physics\+Body@{Static\+Physics\+Body}}
+\index{Static\+Physics\+Body@{Static\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Static\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+::\+Static\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_aa3b66cd0bcb85cde0b026378b8698ced}
+
+
+Definition at line 20 of file Static\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a1ecd15da820fd35a39a0ca4cfbadc8a6}{\index{jli@{jli}!Static\+Physics\+Body@{Static\+Physics\+Body}}
+\index{Static\+Physics\+Body@{Static\+Physics\+Body}!jli@{jli}}
+\subsubsection[{Static\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+::\+Static\+Physics\+Body (
+\begin{DoxyParamCaption}
+\item[{const Static\+Physics\+Body \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a1ecd15da820fd35a39a0ca4cfbadc8a6}
+
+
+Definition at line 26 of file Static\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a61d1e7bbc9ec250a28840043945bacf6}{\index{jli@{jli}!Static\+Physics\+Body\+Builder@{Static\+Physics\+Body\+Builder}}
+\index{Static\+Physics\+Body\+Builder@{Static\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Static\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+Builder\+::\+Static\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a61d1e7bbc9ec250a28840043945bacf6}
+
+
+Definition at line 14 of file Static\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a288d8c8251dd2f9bb8c0ca98f2ce1511}{\index{jli@{jli}!Static\+Physics\+Body\+Builder@{Static\+Physics\+Body\+Builder}}
+\index{Static\+Physics\+Body\+Builder@{Static\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Static\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+Builder\+::\+Static\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Static\+Physics\+Body\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a288d8c8251dd2f9bb8c0ca98f2ce1511}
+
+
+Definition at line 18 of file Static\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a1deaebc549d4295ebb15599ea42c2886}{\index{jli@{jli}!Static\+Physics\+Body\+Builder@{Static\+Physics\+Body\+Builder}}
+\index{Static\+Physics\+Body\+Builder@{Static\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{Static\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+Builder\+::\+Static\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a1deaebc549d4295ebb15599ea42c2886}
+
+
+Definition at line 23 of file Static\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_af439880a37381b944f022b137ba60090}{\index{jli@{jli}!Texture@{Texture}}
+\index{Texture@{Texture}!jli@{jli}}
+\subsubsection[{Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+::\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_af439880a37381b944f022b137ba60090}
+
+
+Definition at line 14 of file Texture.\+cpp.
+
+\hypertarget{namespacejli_adf2c12e5f65a2d23492face6497e8235}{\index{jli@{jli}!Texture@{Texture}}
+\index{Texture@{Texture}!jli@{jli}}
+\subsubsection[{Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+::\+Texture (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_adf2c12e5f65a2d23492face6497e8235}
+
+
+Definition at line 20 of file Texture.\+cpp.
+
+\hypertarget{namespacejli_a462331f43eddfc32abbc9c9863d13153}{\index{jli@{jli}!Texture@{Texture}}
+\index{Texture@{Texture}!jli@{jli}}
+\subsubsection[{Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+::\+Texture (
+\begin{DoxyParamCaption}
+\item[{const Texture \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a462331f43eddfc32abbc9c9863d13153}
+
+
+Definition at line 26 of file Texture.\+cpp.
+
+\hypertarget{namespacejli_a230c95f463f356da9b09f9d5c01a886a}{\index{jli@{jli}!Texture\+Builder@{Texture\+Builder}}
+\index{Texture\+Builder@{Texture\+Builder}!jli@{jli}}
+\subsubsection[{Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+Builder\+::\+Texture\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a230c95f463f356da9b09f9d5c01a886a}
+
+
+Definition at line 14 of file Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a0c4653b87b22d6e74ffe6121e28fd31b}{\index{jli@{jli}!Texture\+Builder@{Texture\+Builder}}
+\index{Texture\+Builder@{Texture\+Builder}!jli@{jli}}
+\subsubsection[{Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+Builder\+::\+Texture\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Texture\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a0c4653b87b22d6e74ffe6121e28fd31b}
+
+
+Definition at line 18 of file Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_abd8c35fc3a2907805338a117b15c0b36}{\index{jli@{jli}!Texture\+Builder@{Texture\+Builder}}
+\index{Texture\+Builder@{Texture\+Builder}!jli@{jli}}
+\subsubsection[{Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+Builder\+::\+Texture\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_abd8c35fc3a2907805338a117b15c0b36}
+
+
+Definition at line 23 of file Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aacaf3d149e42af3ba68c1225ccbe6797}{\index{jli@{jli}!````~Abstract\+Physics\+Body@{$\sim$\+Abstract\+Physics\+Body}}
+\index{````~Abstract\+Physics\+Body@{$\sim$\+Abstract\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Abstract\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Abstract\+Physics\+Body\+::$\sim$\+Abstract\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_aacaf3d149e42af3ba68c1225ccbe6797}
+
+
+Definition at line 32 of file Abstract\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a366502b547b6ed3de30f23020a65df04}{\index{jli@{jli}!````~Action@{$\sim$\+Action}}
+\index{````~Action@{$\sim$\+Action}!jli@{jli}}
+\subsubsection[{$\sim$\+Action}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+::$\sim$\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a366502b547b6ed3de30f23020a65df04}
+
+
+Definition at line 32 of file Action.\+cpp.
+
+\hypertarget{namespacejli_ab2e77266449aea2fbf9db5435931dc84}{\index{jli@{jli}!````~Action\+Builder@{$\sim$\+Action\+Builder}}
+\index{````~Action\+Builder@{$\sim$\+Action\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Action\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Action\+Builder\+::$\sim$\+Action\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_ab2e77266449aea2fbf9db5435931dc84}
+
+
+Definition at line 60 of file Action\+Builder.\+h.
+
+\hypertarget{namespacejli_ae945134a5ad3fd6da757b1f5ee871427}{\index{jli@{jli}!````~Base\+Rigid\+Physics\+Body@{$\sim$\+Base\+Rigid\+Physics\+Body}}
+\index{````~Base\+Rigid\+Physics\+Body@{$\sim$\+Base\+Rigid\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Base\+Rigid\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+::$\sim$\+Base\+Rigid\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ae945134a5ad3fd6da757b1f5ee871427}
+
+
+Definition at line 32 of file Base\+Rigid\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_aa360c529f2548e88d8d5eec1d6db6616}{\index{jli@{jli}!````~Base\+Rigid\+Physics\+Body\+Builder@{$\sim$\+Base\+Rigid\+Physics\+Body\+Builder}}
+\index{````~Base\+Rigid\+Physics\+Body\+Builder@{$\sim$\+Base\+Rigid\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Base\+Rigid\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Rigid\+Physics\+Body\+Builder\+::$\sim$\+Base\+Rigid\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aa360c529f2548e88d8d5eec1d6db6616}
+
+
+Definition at line 28 of file Base\+Rigid\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a6111032c62909d367a361b2b6b75d5ef}{\index{jli@{jli}!````~Base\+Soft\+Physics\+Body@{$\sim$\+Base\+Soft\+Physics\+Body}}
+\index{````~Base\+Soft\+Physics\+Body@{$\sim$\+Base\+Soft\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Base\+Soft\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+::$\sim$\+Base\+Soft\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a6111032c62909d367a361b2b6b75d5ef}
+
+
+Definition at line 32 of file Base\+Soft\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_ac83094dcec9a714f2e82ea1001bbdea3}{\index{jli@{jli}!````~Base\+Soft\+Physics\+Body\+Builder@{$\sim$\+Base\+Soft\+Physics\+Body\+Builder}}
+\index{````~Base\+Soft\+Physics\+Body\+Builder@{$\sim$\+Base\+Soft\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Base\+Soft\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Base\+Soft\+Physics\+Body\+Builder\+::$\sim$\+Base\+Soft\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_ac83094dcec9a714f2e82ea1001bbdea3}
+
+
+Definition at line 28 of file Base\+Soft\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a9407d365ccc6d206674e5a5869758943}{\index{jli@{jli}!````~Camera@{$\sim$\+Camera}}
+\index{````~Camera@{$\sim$\+Camera}!jli@{jli}}
+\subsubsection[{$\sim$\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+::$\sim$\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a9407d365ccc6d206674e5a5869758943}
+
+
+Definition at line 32 of file Camera.\+cpp.
+
+\hypertarget{namespacejli_af4eb98dba938417574ac1607e82a5da6}{\index{jli@{jli}!````~Camera\+Builder@{$\sim$\+Camera\+Builder}}
+\index{````~Camera\+Builder@{$\sim$\+Camera\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Camera\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Camera\+Builder\+::$\sim$\+Camera\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_af4eb98dba938417574ac1607e82a5da6}
+
+
+Definition at line 28 of file Camera\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aad1ce3f2fd2e7830b0fed2a040647134}{\index{jli@{jli}!````~Clock@{$\sim$\+Clock}}
+\index{````~Clock@{$\sim$\+Clock}!jli@{jli}}
+\subsubsection[{$\sim$\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+::$\sim$\+Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_aad1ce3f2fd2e7830b0fed2a040647134}
+
+
+Definition at line 32 of file Clock.\+cpp.
+
+\hypertarget{namespacejli_aedf4fd3834c4b8806fa9a257d496df30}{\index{jli@{jli}!````~Clock\+Builder@{$\sim$\+Clock\+Builder}}
+\index{````~Clock\+Builder@{$\sim$\+Clock\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Clock\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Clock\+Builder\+::$\sim$\+Clock\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aedf4fd3834c4b8806fa9a257d496df30}
+
+
+Definition at line 28 of file Clock\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ad8c3da9eb7afceee20db6db716280ce0}{\index{jli@{jli}!````~Collision\+Response@{$\sim$\+Collision\+Response}}
+\index{````~Collision\+Response@{$\sim$\+Collision\+Response}!jli@{jli}}
+\subsubsection[{$\sim$\+Collision\+Response}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+::$\sim$\+Collision\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ad8c3da9eb7afceee20db6db716280ce0}
+
+
+Definition at line 32 of file Collision\+Response.\+cpp.
+
+\hypertarget{namespacejli_a92b1a214131802c7cde48d0908a810e1}{\index{jli@{jli}!````~Collision\+Response\+Builder@{$\sim$\+Collision\+Response\+Builder}}
+\index{````~Collision\+Response\+Builder@{$\sim$\+Collision\+Response\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Collision\+Response\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Collision\+Response\+Builder\+::$\sim$\+Collision\+Response\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a92b1a214131802c7cde48d0908a810e1}
+
+
+Definition at line 28 of file Collision\+Response\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a64fcdd5d3fead8d1be7f29da5ee2d330}{\index{jli@{jli}!````~Cubic\+Texture@{$\sim$\+Cubic\+Texture}}
+\index{````~Cubic\+Texture@{$\sim$\+Cubic\+Texture}!jli@{jli}}
+\subsubsection[{$\sim$\+Cubic\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+::$\sim$\+Cubic\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a64fcdd5d3fead8d1be7f29da5ee2d330}
+
+
+Definition at line 32 of file Cubic\+Texture.\+cpp.
+
+\hypertarget{namespacejli_aa2eeb6eccc9f5dd78d8a050d1c00eafc}{\index{jli@{jli}!````~Cubic\+Texture\+Builder@{$\sim$\+Cubic\+Texture\+Builder}}
+\index{````~Cubic\+Texture\+Builder@{$\sim$\+Cubic\+Texture\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Cubic\+Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Cubic\+Texture\+Builder\+::$\sim$\+Cubic\+Texture\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aa2eeb6eccc9f5dd78d8a050d1c00eafc}
+
+
+Definition at line 28 of file Cubic\+Texture\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a69f8874be747ab0e2f52c063ff30cf8a}{\index{jli@{jli}!````~Dynamic\+Physics\+Body@{$\sim$\+Dynamic\+Physics\+Body}}
+\index{````~Dynamic\+Physics\+Body@{$\sim$\+Dynamic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Dynamic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+::$\sim$\+Dynamic\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a69f8874be747ab0e2f52c063ff30cf8a}
+
+
+Definition at line 32 of file Dynamic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a08c80dbab444bb2250f72c44561b3137}{\index{jli@{jli}!````~Dynamic\+Physics\+Body\+Builder@{$\sim$\+Dynamic\+Physics\+Body\+Builder}}
+\index{````~Dynamic\+Physics\+Body\+Builder@{$\sim$\+Dynamic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Dynamic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Dynamic\+Physics\+Body\+Builder\+::$\sim$\+Dynamic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a08c80dbab444bb2250f72c44561b3137}
+
+
+Definition at line 28 of file Dynamic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a9cc315b0120d6422b18074d035e375dd}{\index{jli@{jli}!````~Geometry@{$\sim$\+Geometry}}
+\index{````~Geometry@{$\sim$\+Geometry}!jli@{jli}}
+\subsubsection[{$\sim$\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+::$\sim$\+Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a9cc315b0120d6422b18074d035e375dd}
+
+
+Definition at line 32 of file Geometry.\+cpp.
+
+\hypertarget{namespacejli_aa459cb842ce78ca87f46e048d1f0181b}{\index{jli@{jli}!````~Geometry\+Builder@{$\sim$\+Geometry\+Builder}}
+\index{````~Geometry\+Builder@{$\sim$\+Geometry\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Geometry\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Geometry\+Builder\+::$\sim$\+Geometry\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aa459cb842ce78ca87f46e048d1f0181b}
+
+
+Definition at line 28 of file Geometry\+Builder.\+cpp.
+
+\hypertarget{namespacejli_abfb169533b2b5c29c2006d9db4a7f886}{\index{jli@{jli}!````~Ghost\+Physics\+Body@{$\sim$\+Ghost\+Physics\+Body}}
+\index{````~Ghost\+Physics\+Body@{$\sim$\+Ghost\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Ghost\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+::$\sim$\+Ghost\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_abfb169533b2b5c29c2006d9db4a7f886}
+
+
+Definition at line 32 of file Ghost\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a7dd6a4d9cc536d96cbb275a6bdc103c7}{\index{jli@{jli}!````~Ghost\+Physics\+Body\+Builder@{$\sim$\+Ghost\+Physics\+Body\+Builder}}
+\index{````~Ghost\+Physics\+Body\+Builder@{$\sim$\+Ghost\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Ghost\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Ghost\+Physics\+Body\+Builder\+::$\sim$\+Ghost\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a7dd6a4d9cc536d96cbb275a6bdc103c7}
+
+
+Definition at line 28 of file Ghost\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_afe5fa54bbd9c734f8154e094f50b8344}{\index{jli@{jli}!````~Kinematic\+Physics\+Body@{$\sim$\+Kinematic\+Physics\+Body}}
+\index{````~Kinematic\+Physics\+Body@{$\sim$\+Kinematic\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Kinematic\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+::$\sim$\+Kinematic\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_afe5fa54bbd9c734f8154e094f50b8344}
+
+
+Definition at line 32 of file Kinematic\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a4e01e4f68c5489e4b57284f99bddba69}{\index{jli@{jli}!````~Kinematic\+Physics\+Body\+Builder@{$\sim$\+Kinematic\+Physics\+Body\+Builder}}
+\index{````~Kinematic\+Physics\+Body\+Builder@{$\sim$\+Kinematic\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Kinematic\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Kinematic\+Physics\+Body\+Builder\+::$\sim$\+Kinematic\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a4e01e4f68c5489e4b57284f99bddba69}
+
+
+Definition at line 28 of file Kinematic\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aae4231474bb8c3e59ac1454da254b3a7}{\index{jli@{jli}!````~Light@{$\sim$\+Light}}
+\index{````~Light@{$\sim$\+Light}!jli@{jli}}
+\subsubsection[{$\sim$\+Light}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+::$\sim$\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_aae4231474bb8c3e59ac1454da254b3a7}
+
+
+Definition at line 32 of file Light.\+cpp.
+
+\hypertarget{namespacejli_a82b7beb28538effa192372c918468b1d}{\index{jli@{jli}!````~Light\+Builder@{$\sim$\+Light\+Builder}}
+\index{````~Light\+Builder@{$\sim$\+Light\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Light\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Light\+Builder\+::$\sim$\+Light\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a82b7beb28538effa192372c918468b1d}
+
+
+Definition at line 28 of file Light\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aeb5589dfed522420ea6a33236bde9a6b}{\index{jli@{jli}!````~Material@{$\sim$\+Material}}
+\index{````~Material@{$\sim$\+Material}!jli@{jli}}
+\subsubsection[{$\sim$\+Material}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+::$\sim$\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_aeb5589dfed522420ea6a33236bde9a6b}
+
+
+Definition at line 32 of file Material.\+cpp.
+
+\hypertarget{namespacejli_aaf5dad0f1e903db02a6b170d69f35c37}{\index{jli@{jli}!````~Material\+Builder@{$\sim$\+Material\+Builder}}
+\index{````~Material\+Builder@{$\sim$\+Material\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Material\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Builder\+::$\sim$\+Material\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aaf5dad0f1e903db02a6b170d69f35c37}
+
+
+Definition at line 28 of file Material\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a79beb0a52804d6f437114e88a6a133f3}{\index{jli@{jli}!````~Material\+Property@{$\sim$\+Material\+Property}}
+\index{````~Material\+Property@{$\sim$\+Material\+Property}!jli@{jli}}
+\subsubsection[{$\sim$\+Material\+Property}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+::$\sim$\+Material\+Property (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a79beb0a52804d6f437114e88a6a133f3}
+
+
+Definition at line 32 of file Material\+Property.\+cpp.
+
+\hypertarget{namespacejli_a7bde168b5814dd6f64f8b5259e0b0ff6}{\index{jli@{jli}!````~Material\+Property\+Builder@{$\sim$\+Material\+Property\+Builder}}
+\index{````~Material\+Property\+Builder@{$\sim$\+Material\+Property\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Material\+Property\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Material\+Property\+Builder\+::$\sim$\+Material\+Property\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a7bde168b5814dd6f64f8b5259e0b0ff6}
+
+
+Definition at line 28 of file Material\+Property\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ac46db977b2fba42d8384ccab749c9cd4}{\index{jli@{jli}!````~Node@{$\sim$\+Node}}
+\index{````~Node@{$\sim$\+Node}!jli@{jli}}
+\subsubsection[{$\sim$\+Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::$\sim$\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ac46db977b2fba42d8384ccab749c9cd4}
+
+
+Definition at line 32 of file Node.\+cpp.
 
 \hypertarget{namespacejli_ac5033296b7700d3610c8d224889de6c6}{\index{jli@{jli}!````~Node\+Builder@{$\sim$\+Node\+Builder}}
 \index{````~Node\+Builder@{$\sim$\+Node\+Builder}!jli@{jli}}
@@ -559,6 +3094,127 @@ Definition at line 23 of file Abstract\+Factory\+Object.\+cpp.
 
 Definition at line 28 of file Node\+Builder.\+cpp.
 
+\hypertarget{namespacejli_a384ce52e7a05b4b95159acd26146f2fc}{\index{jli@{jli}!````~Particle\+Emitter@{$\sim$\+Particle\+Emitter}}
+\index{````~Particle\+Emitter@{$\sim$\+Particle\+Emitter}!jli@{jli}}
+\subsubsection[{$\sim$\+Particle\+Emitter}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+::$\sim$\+Particle\+Emitter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a384ce52e7a05b4b95159acd26146f2fc}
+
+
+Definition at line 32 of file Particle\+Emitter.\+cpp.
+
+\hypertarget{namespacejli_aacab585b70e497e16db1e432f1d9a8ce}{\index{jli@{jli}!````~Particle\+Emitter\+Builder@{$\sim$\+Particle\+Emitter\+Builder}}
+\index{````~Particle\+Emitter\+Builder@{$\sim$\+Particle\+Emitter\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Particle\+Emitter\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Particle\+Emitter\+Builder\+::$\sim$\+Particle\+Emitter\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aacab585b70e497e16db1e432f1d9a8ce}
+
+
+Definition at line 28 of file Particle\+Emitter\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a8c00d7a02e65a5f0bbb102633d1ec822}{\index{jli@{jli}!````~Physics\+Contact@{$\sim$\+Physics\+Contact}}
+\index{````~Physics\+Contact@{$\sim$\+Physics\+Contact}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+Contact}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+::$\sim$\+Physics\+Contact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a8c00d7a02e65a5f0bbb102633d1ec822}
+
+
+Definition at line 32 of file Physics\+Contact.\+cpp.
+
+\hypertarget{namespacejli_aa54009c7e43166072a32826d3baa4975}{\index{jli@{jli}!````~Physics\+Contact\+Builder@{$\sim$\+Physics\+Contact\+Builder}}
+\index{````~Physics\+Contact\+Builder@{$\sim$\+Physics\+Contact\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+Contact\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Contact\+Builder\+::$\sim$\+Physics\+Contact\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aa54009c7e43166072a32826d3baa4975}
+
+
+Definition at line 28 of file Physics\+Contact\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aec2c4f308d34637940e5e64cdc8c0f86}{\index{jli@{jli}!````~Physics\+Field@{$\sim$\+Physics\+Field}}
+\index{````~Physics\+Field@{$\sim$\+Physics\+Field}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+Field}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+::$\sim$\+Physics\+Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_aec2c4f308d34637940e5e64cdc8c0f86}
+
+
+Definition at line 32 of file Physics\+Field.\+cpp.
+
+\hypertarget{namespacejli_a1e88f936038ad9dcf194653553aaa9d6}{\index{jli@{jli}!````~Physics\+Field\+Builder@{$\sim$\+Physics\+Field\+Builder}}
+\index{````~Physics\+Field\+Builder@{$\sim$\+Physics\+Field\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+Field\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Field\+Builder\+::$\sim$\+Physics\+Field\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a1e88f936038ad9dcf194653553aaa9d6}
+
+
+Definition at line 28 of file Physics\+Field\+Builder.\+cpp.
+
+\hypertarget{namespacejli_afd6ccdd598deb11b40538c5fad1b5477}{\index{jli@{jli}!````~Physics\+Shape@{$\sim$\+Physics\+Shape}}
+\index{````~Physics\+Shape@{$\sim$\+Physics\+Shape}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+Shape}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+::$\sim$\+Physics\+Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_afd6ccdd598deb11b40538c5fad1b5477}
+
+
+Definition at line 32 of file Physics\+Shape.\+cpp.
+
+\hypertarget{namespacejli_ae1e0786ad4fd198909d0c1c625a624cc}{\index{jli@{jli}!````~Physics\+Shape\+Builder@{$\sim$\+Physics\+Shape\+Builder}}
+\index{````~Physics\+Shape\+Builder@{$\sim$\+Physics\+Shape\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+Shape\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+Shape\+Builder\+::$\sim$\+Physics\+Shape\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_ae1e0786ad4fd198909d0c1c625a624cc}
+
+
+Definition at line 28 of file Physics\+Shape\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a1ac2ddeeb10a25593e741142a7d1524e}{\index{jli@{jli}!````~Physics\+World@{$\sim$\+Physics\+World}}
+\index{````~Physics\+World@{$\sim$\+Physics\+World}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+World}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+::$\sim$\+Physics\+World (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a1ac2ddeeb10a25593e741142a7d1524e}
+
+
+Definition at line 32 of file Physics\+World.\+cpp.
+
+\hypertarget{namespacejli_aee777c7761e80a169373be5f6d1f2c58}{\index{jli@{jli}!````~Physics\+World\+Builder@{$\sim$\+Physics\+World\+Builder}}
+\index{````~Physics\+World\+Builder@{$\sim$\+Physics\+World\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Physics\+World\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Physics\+World\+Builder\+::$\sim$\+Physics\+World\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aee777c7761e80a169373be5f6d1f2c58}
+
+
+Definition at line 28 of file Physics\+World\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aea5d50a87798b1ed6aa82171cb6f666d}{\index{jli@{jli}!````~Resource@{$\sim$\+Resource}}
+\index{````~Resource@{$\sim$\+Resource}!jli@{jli}}
+\subsubsection[{$\sim$\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+::$\sim$\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_aea5d50a87798b1ed6aa82171cb6f666d}
+
+
+Definition at line 32 of file Resource.\+cpp.
+
 \hypertarget{namespacejli_a7e46cbc7bc71f3c538261e41816e87b0}{\index{jli@{jli}!````~Resource\+Builder@{$\sim$\+Resource\+Builder}}
 \index{````~Resource\+Builder@{$\sim$\+Resource\+Builder}!jli@{jli}}
 \subsubsection[{$\sim$\+Resource\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+Builder\+::$\sim$\+Resource\+Builder (
@@ -569,6 +3225,17 @@ Definition at line 28 of file Node\+Builder.\+cpp.
 
 
 Definition at line 29 of file Resource\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a59998f54275bafbf74434f6954f9cd2e}{\index{jli@{jli}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!jli@{jli}}
+\subsubsection[{$\sim$\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+::$\sim$\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a59998f54275bafbf74434f6954f9cd2e}
+
+
+Definition at line 32 of file Scene.\+cpp.
 
 \hypertarget{namespacejli_a99a07c08fdc61e92c99f5a47bc3430fa}{\index{jli@{jli}!````~Scene\+Builder@{$\sim$\+Scene\+Builder}}
 \index{````~Scene\+Builder@{$\sim$\+Scene\+Builder}!jli@{jli}}
@@ -581,21 +3248,91 @@ Definition at line 29 of file Resource\+Builder.\+cpp.
 
 Definition at line 29 of file Scene\+Builder.\+cpp.
 
+\hypertarget{namespacejli_a7ea6e34ab8f27d80c3a1e815d66ac26a}{\index{jli@{jli}!````~Sound@{$\sim$\+Sound}}
+\index{````~Sound@{$\sim$\+Sound}!jli@{jli}}
+\subsubsection[{$\sim$\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+::$\sim$\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a7ea6e34ab8f27d80c3a1e815d66ac26a}
 
 
-\subsection{Variable Documentation}
-\hypertarget{namespacejli_aff4f5efdf0c1b14426767392522ff622}{\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }}\label{namespacejli_aff4f5efdf0c1b14426767392522ff622}
-\hypertarget{namespacejli_ada77c3ed1019f3c21042f228b25756d7}{\index{jli@{jli}!m\+\_\+pointer@{m\+\_\+pointer}}
-\index{m\+\_\+pointer@{m\+\_\+pointer}!jli@{jli}}
-\subsubsection[{m\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ jli\+::m\+\_\+pointer}}\label{namespacejli_ada77c3ed1019f3c21042f228b25756d7}
+Definition at line 32 of file Sound.\+cpp.
+
+\hypertarget{namespacejli_aeb7223070a119168071589071c350f6c}{\index{jli@{jli}!````~Sound\+Builder@{$\sim$\+Sound\+Builder}}
+\index{````~Sound\+Builder@{$\sim$\+Sound\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Sound\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Sound\+Builder\+::$\sim$\+Sound\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aeb7223070a119168071589071c350f6c}
 
 
-Definition at line 120 of file Abstract\+Factory\+Object.\+h.
+Definition at line 28 of file Sound\+Builder.\+cpp.
 
-\hypertarget{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}{\index{jli@{jli}!m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}}
-\index{m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}!jli@{jli}}
-\subsubsection[{m\+\_\+pointer\+Val}]{\setlength{\rightskip}{0pt plus 5cm}u64 jli\+::m\+\_\+pointer\+Val}}\label{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}
+\hypertarget{namespacejli_af5aa191371c58b35a5415c56a8576f0f}{\index{jli@{jli}!````~State\+Builder@{$\sim$\+State\+Builder}}
+\index{````~State\+Builder@{$\sim$\+State\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+State\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Builder\+::$\sim$\+State\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_af5aa191371c58b35a5415c56a8576f0f}
 
 
-Definition at line 121 of file Abstract\+Factory\+Object.\+h.
+Definition at line 28 of file State\+Builder.\+cpp.
+
+\hypertarget{namespacejli_aea2716e299add44b8e1341fe4935a9c3}{\index{jli@{jli}!````~State\+Machine\+Builder@{$\sim$\+State\+Machine\+Builder}}
+\index{````~State\+Machine\+Builder@{$\sim$\+State\+Machine\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+State\+Machine\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+State\+Machine\+Builder\+::$\sim$\+State\+Machine\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_aea2716e299add44b8e1341fe4935a9c3}
+
+
+Definition at line 28 of file State\+Machine\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a8c77bdf3068b35d9b32d161af44526fb}{\index{jli@{jli}!````~Static\+Physics\+Body@{$\sim$\+Static\+Physics\+Body}}
+\index{````~Static\+Physics\+Body@{$\sim$\+Static\+Physics\+Body}!jli@{jli}}
+\subsubsection[{$\sim$\+Static\+Physics\+Body}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+::$\sim$\+Static\+Physics\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a8c77bdf3068b35d9b32d161af44526fb}
+
+
+Definition at line 32 of file Static\+Physics\+Body.\+cpp.
+
+\hypertarget{namespacejli_a3d75417d1f7a0f1d49f63e50786ba350}{\index{jli@{jli}!````~Static\+Physics\+Body\+Builder@{$\sim$\+Static\+Physics\+Body\+Builder}}
+\index{````~Static\+Physics\+Body\+Builder@{$\sim$\+Static\+Physics\+Body\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Static\+Physics\+Body\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Static\+Physics\+Body\+Builder\+::$\sim$\+Static\+Physics\+Body\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a3d75417d1f7a0f1d49f63e50786ba350}
+
+
+Definition at line 28 of file Static\+Physics\+Body\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a8b40adac0117494874828b61e808bf52}{\index{jli@{jli}!````~Texture@{$\sim$\+Texture}}
+\index{````~Texture@{$\sim$\+Texture}!jli@{jli}}
+\subsubsection[{$\sim$\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+::$\sim$\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a8b40adac0117494874828b61e808bf52}
+
+
+Definition at line 32 of file Texture.\+cpp.
+
+\hypertarget{namespacejli_a14d66bbbc1cec1be6fc3808a185f17de}{\index{jli@{jli}!````~Texture\+Builder@{$\sim$\+Texture\+Builder}}
+\index{````~Texture\+Builder@{$\sim$\+Texture\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Texture\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Texture\+Builder\+::$\sim$\+Texture\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a14d66bbbc1cec1be6fc3808a185f17de}
+
+
+Definition at line 28 of file Texture\+Builder.\+cpp.
 

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['m_5fobjectduplicatemap',['m_ObjectDuplicateMap',['../classjli_1_1_world_factory.html#a67d271ea8de7eaee463069a9e3e46f4e',1,'jli::WorldFactory']]],
-  ['m_5fobjectlist',['m_ObjectList',['../classjli_1_1_world_factory.html#ac1a42314be66db6555d7723a35d2cdbc',1,'jli::WorldFactory']]],
-  ['m_5fpointer',['m_pointer',['../namespacejli.html#ada77c3ed1019f3c21042f228b25756d7',1,'jli']]],
-  ['m_5fpointerval',['m_pointerVal',['../namespacejli.html#a33c35463a7c7fe6bdede0f192fe9d7c6',1,'jli']]]
+  ['jli',['jli',['../namespacejli.html',1,'']]],
+  ['jliengine_2eh',['JLIEngine.h',['../_j_l_i_engine_8h.html',1,'']]],
+  ['jliobjectenumtype',['jliObjectEnumType',['../namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69b',1,'jli::type']]],
+  ['type',['type',['../namespacejli_1_1type.html',1,'jli']]]
 ];

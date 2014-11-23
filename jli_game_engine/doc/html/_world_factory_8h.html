@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: WorldFactory.h File Reference</title>
+<title>JLI Engine: /Users/jamesfolk/Dropbox/GameDevelopment/mygames/third_party/jli_game_engine/src/WorldFactory.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">JLI Engine
    </div>
   </td>
  </tr>
@@ -61,7 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -78,6 +77,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -94,20 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;btSerializer.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_abstract_builder_8h_source.html">AbstractBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_abstract_factory_object_8h_source.html">AbstractFactoryObject.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for WorldFactory.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_world_factory_8h__incl.png" border="0" usemap="#_world_factory_8h" alt=""/></div>
-<map name="_world_factory_8h" id="_world_factory_8h">
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="_world_factory_8h__dep__incl.png" border="0" usemap="#_world_factory_8hdep" alt=""/></div>
-<map name="_world_factory_8hdep" id="_world_factory_8hdep">
-</map>
-</div>
 </div>
 <p><a href="_world_factory_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -126,14 +115,75 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a902d3ca40483b7825e5d9d0d81d6d69b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69b">jli::type::jliObjectEnumType</a> { <br />
-&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae6c48303b9c692c5173e55a981110620">jli::type::None</a>, 
-<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baeccf415a85af4bc021b58a1574546940">jli::type::Resource</a>, 
-<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baadc0c64c71ba08b308c338a803b6609d">jli::type::ResourceBuilder</a>, 
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae6c48303b9c692c5173e55a981110620">jli::type::None</a> = 0, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba26652d2358f64bfeacbd28d45b04de9b">jli::type::Action</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba2b9f17bb6f62d75478917c6ca069ce57">jli::type::ActionBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba6102841e093bd178e9813cb0c4f7b1f3">jli::type::BaseRigidPhysicsBody</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba2f2165932a26418fd59ea6c7bc89e964">jli::type::BaseRigidPhysicsBodyBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba96c878bbb211efa31e570af74887ca0d">jli::type::BaseSoftPhysicsBody</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba94003630971b59cc9ad1b1b415625c89">jli::type::BaseSoftPhysicsBodyBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba6fa39e52b482b8761e10ba24d2870b68">jli::type::Camera</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba02043d3bb24513a0c0f29b5d83a1f8b2">jli::type::CameraBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba5f948ce9d42d78bd85320246c82c3225">jli::type::CollisionResponse</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba7e54ce68e7f8608dedaa8f3dec0987ca">jli::type::CollisionResponseBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bada26095235773e5689c2f2e4741c8f2a">jli::type::CubicTexture</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba8ebec8a816c4aafe8cdb6cd9bfcc5614">jli::type::CubicTextureBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba22fa77c73477d9c55163e5fd4927dd01">jli::type::DynamicPhysicsBody</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba49da4d78c0fd18ed036d498f88e6cf4c">jli::type::DynamicPhysicsBodyBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba661d6759bff7f76e3f4baa42b6a764ef">jli::type::Geometry</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bac1966db843a60aafdd38b4bec164e179">jli::type::GeometryBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba1fd77f651d712ffc56987e7aa4c009ec">jli::type::GhostPhysicsBody</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bac3eb36e6ac720a90d90f058cd702ab18">jli::type::GhostPhysicsBodyBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae77c8d5cb7776d3aa9e53dab6314e24c">jli::type::KinematicPhysicsBody</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba2722d9bb34cba5f60ec72674929f47af">jli::type::KinematicPhysicsBodyBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baf9511f5cd3bc1f443b074fad1a4485a3">jli::type::Light</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba17f001a26e68d3759d7f4610e7fff2af">jli::type::LightBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba12494b704669602c9c7605227a617e69">jli::type::Material</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba7beeabe3dd748238ef0bb763533f2875">jli::type::MaterialBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba189a749d869e0988c5e3453c1421fb60">jli::type::MaterialProperty</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba3f6f5d63b29a90b1d45c22946a7a128c">jli::type::MaterialPropertyBuilder</a>, 
 <a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba735aa3ae541e9530e6323ab2ee587711">jli::type::Node</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba8e818e8f1a0ae33f40c50c993b566fec">jli::type::NodeBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baf6d3c9826b79a8381abdb804a7b8e538">jli::type::ParticleEmitter</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baae1b2b9da2f21284e6a00d5446dc7f55">jli::type::ParticleEmitterBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba3f4c1a1bdaae7466ee800a5afe31c4e8">jli::type::PhysicsContact</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba2076ac167f5c7481df3539529ddd2080">jli::type::PhysicsContactBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae720bdba2a87e00dd47205d0878fdf79">jli::type::PhysicsField</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba648ff480ffec136a5570088f83b5439a">jli::type::PhysicsFieldBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba59ca0ace858eea6d90e7f1e2913b1191">jli::type::PhysicsShape</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba1e62e0e55b50a422056d4aa0beda9990">jli::type::PhysicsShapeBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba069e44848721c10ccb1914c204657671">jli::type::PhysicsWorld</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba0a2a3e8bdd2f07716cefa85e60903262">jli::type::PhysicsWorldBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baeccf415a85af4bc021b58a1574546940">jli::type::Resource</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69baadc0c64c71ba08b308c338a803b6609d">jli::type::ResourceBuilder</a>, 
 <a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba6bd816e7414c4f5cd1642695386c2768">jli::type::Scene</a>, 
-<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bacfb929a589abdf0990328cda488f57cc">jli::type::SceneBuilder</a>
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bacfb929a589abdf0990328cda488f57cc">jli::type::SceneBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba9bb088ba7498a98e8b0aa786a702437c">jli::type::Sound</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bafb222a9dae07ff5e61fd4253982adf23">jli::type::SoundBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bad7c3c56888e183556a1dd345a189489f">jli::type::State</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba5c638247e58cdfe58f0f5288ea04c706">jli::type::StateBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba5a1bcc9932a465f669b8887466b2fcc3">jli::type::StateMachine</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba93452057d91e32d3ecf892a0c34185f5">jli::type::StateMachineBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba9fdadb55949ef2901ed9843d05d6315c">jli::type::StaticPhysicsBody</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba831095597311a6d7948a6062d8c59a07">jli::type::StaticPhysicsBodyBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae6fd437d0fd5b123b8d109aff27b8d03">jli::type::Texture</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba7eead20cbc81fdf76d9059161f6310c8">jli::type::TextureBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba9c1b72156682cedc03147f04e9b236c3">jli::type::Clock</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bad384379887a317755954fbc145bb843a">jli::type::ClockBuilder</a>, 
+<a class="el" href="namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae3c15eb4950ec6f1a27e4dfcf395c274">jli::type::NumberOfTypes</a>
 <br />
  }</td></tr>
 <tr class="separator:a902d3ca40483b7825e5d9d0d81d6d69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +191,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 22 2014 00:38:50 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 23 2014 14:10:14 for JLI Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -43,12 +43,14 @@ namespace jli
     m_WorldMySQL(new WorldMySQL()),
     m_WorldInput(new WorldInput()),
     m_WorldSound(new WorldSound()),
-    m_WorldLuaVirtualMachine(new WorldLuaVirtualMachine())
+    m_WorldLuaVirtualMachine(new WorldLuaVirtualMachine()),
+    m_worldClock(new Clock())
     {
     }
     
     World::~World()
     {
+        delete m_worldClock;
         delete m_WorldLuaVirtualMachine;
         delete m_WorldSound;
         delete m_WorldInput;
@@ -79,5 +81,10 @@ namespace jli
     WorldLuaVirtualMachine *const World::getWorldLuaVirtualMachine()const
     {
         return m_WorldLuaVirtualMachine;
+    }
+    
+    Clock *const World::getWorldClock()const
+    {
+        return m_worldClock;
     }
 }

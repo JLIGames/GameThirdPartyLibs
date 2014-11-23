@@ -6,7 +6,7 @@ LOCAL_MODULE    := jli
 
 LOCAL_C_INCLUDES := \
 $(LOCAL_PATH)/../../platform/core/ \
-$(LOCAL_PATH)/include
+$(LOCAL_PATH)/src \
 
 LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
 

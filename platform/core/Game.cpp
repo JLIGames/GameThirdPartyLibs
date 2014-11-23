@@ -2,7 +2,7 @@
 #include "File.h"
 #include "Input.h"
 #include "Log.h"
-#include "Sound.h"
+#include "SoundCore.h"
 #include "Game.h"
 #include "Util.h"
 

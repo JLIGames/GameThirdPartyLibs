@@ -1,66 +1,17 @@
-\hypertarget{_abstract_factory_object_8h}{\section{Abstract\+Factory\+Object.\+h File Reference}
-\label{_abstract_factory_object_8h}\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
+\hypertarget{_abstract_factory_object_8h}{\section{/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\+Abstract\+Factory\+Object.h File Reference}
+\label{_abstract_factory_object_8h}\index{/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\+Abstract\+Factory\+Object.\+h@{/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\+Abstract\+Factory\+Object.\+h}}
 }
 {\ttfamily \#include \char`\"{}bt\+Aligned\+Object\+Array.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Abstract\+Object.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}bt\+Serializer.\+h\char`\"{}}\\*
-Include dependency graph for Abstract\+Factory\+Object.\+h\+:
-This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjli_1_1_abstract_factory_object}{jli\+::\+Abstract\+Factory\+Object}
+\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
  \hyperlink{namespacejli}{jli}
 \end{DoxyCompactItemize}
-\subsection*{Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{jli\+::\+Abstract\+Factory\+Object} (const void $\ast$ptr)
-\item 
-virtual \hyperlink{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}{jli\+::$\sim$\+Abstract\+Factory\+Object} ()
-\item 
-\hyperlink{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{jli\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
-\item 
-virtual const char $\ast$ \hyperlink{namespacejli_ab59410e766fae1d158793c2a0c70be5e}{jli\+::get\+Name} () const 
-\item 
-virtual u32 \hyperlink{namespacejli_acf2403453223c37b2cbf466e23515b6e}{jli\+::get\+Type} () const 
-\item 
-virtual Abstract\+Factory\+Object $\ast$ \hyperlink{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}{jli\+::create} (const Abstract\+Builder \&builder) const 
-\item 
-virtual Abstract\+Factory\+Object $\ast$ \hyperlink{namespacejli_a5100077139d5c7339602ada53ab27663}{jli\+::clone} (bool shared=false) const 
-\item 
-virtual void \hyperlink{namespacejli_ace155e097623e08835596243e115d880}{jli\+::destroy} ()
-\item 
-virtual s32 \hyperlink{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}{jli\+::calculate\+Serialize\+Buffer\+Size} () const =0
-\item 
-virtual void \hyperlink{namespacejli_ac4ecbc29085e60be91b1eee948d37851}{jli\+::serialize} (void $\ast$data\+Buffer, bt\+Serializer $\ast$serializer) const =0
-\item 
-const void $\ast$ \hyperlink{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}{jli\+::get\+Pointer} () const 
-\item 
-const u64 \hyperlink{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}{jli\+::get\+Pointer\+Value} () const 
-\item 
-bool \hyperlink{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}{jli\+::operator==} (const Abstract\+Factory\+Object \&rhs) const 
-\item 
-bool \hyperlink{namespacejli_a5c433a85502a8c96877ad59022bf1024}{jli\+::operator$<$} (const Abstract\+Factory\+Object \&rhs) const 
-\item 
-bool \hyperlink{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}{jli\+::operator$>$} (const Abstract\+Factory\+Object \&rhs) const 
-\item 
-bool \hyperlink{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}{jli\+::operator!=} (const Abstract\+Factory\+Object \&rhs) const 
-\item 
-bool \hyperlink{namespacejli_a53a743e411edf86856cbb4ce21a6939d}{jli\+::operator$<$=} (const Abstract\+Factory\+Object \&rhs) const 
-\item 
-bool \hyperlink{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}{jli\+::operator$>$=} (const Abstract\+Factory\+Object \&rhs) const 
-\item 
-virtual void \hyperlink{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}{jli\+::serialize\+Object} (class bt\+Serializer $\ast$serializer) const 
-\end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-\begin{tabbing}
-xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
-union \{\\
-\>const void $\ast$ \hyperlink{namespacejli_ada77c3ed1019f3c21042f228b25756d7}{jli::m\_pointer}\\
-\>u64 \hyperlink{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}{jli::m\_pointerVal}\\
-\}; \\
-
-\end{tabbing}\end{DoxyCompactItemize}

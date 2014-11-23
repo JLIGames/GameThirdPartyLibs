@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node',['Node',['../classjli_1_1_node.html',1,'jli']]]
+  ['telegram',['Telegram',['../classjli_1_1_telegram.html',1,'jli']]]
 ];

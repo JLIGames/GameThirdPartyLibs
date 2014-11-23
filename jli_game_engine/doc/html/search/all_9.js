@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['node',['Node',['../classjli_1_1_node.html',1,'jli']]],
-  ['node',['Node',['../classjli_1_1_node.html#ad3ae8427886d6e7375c62a7fb2100c4c',1,'jli::Node::Node()'],['../classjli_1_1_node.html#ac427b39c9353f0301e191f76d360d4f1',1,'jli::Node::Node(const AbstractBuilder &amp;)'],['../classjli_1_1_node.html#ad63185457aa77be28b780050799426f3',1,'jli::Node::Node(const Node &amp;)'],['../namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba735aa3ae541e9530e6323ab2ee587711',1,'jli::type::Node()']]],
-  ['node_2ecpp',['Node.cpp',['../_node_8cpp.html',1,'']]],
-  ['node_2eh',['Node.h',['../_node_8h.html',1,'']]],
-  ['nodebuilder',['NodeBuilder',['../namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba8e818e8f1a0ae33f40c50c993b566fec',1,'jli::type::NodeBuilder()'],['../namespacejli.html#a1a43fda7f472452c5ded41130fe22e58',1,'jli::NodeBuilder()'],['../namespacejli.html#a75dc0cad5c84f4d244d951b48255c6e4',1,'jli::NodeBuilder(const NodeBuilder &amp;)'],['../namespacejli.html#a3250e1d2e7ab6f0467839d9ff2f57dcb',1,'jli::NodeBuilder(const AbstractBuilder &amp;)']]],
-  ['nodebuilder_2ecpp',['NodeBuilder.cpp',['../_node_builder_8cpp.html',1,'']]],
-  ['nodebuilder_2eh',['NodeBuilder.h',['../_node_builder_8h.html',1,'']]],
-  ['none',['None',['../namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae6c48303b9c692c5173e55a981110620',1,'jli::type']]]
+  ['kinematicphysicsbody',['KinematicPhysicsBody',['../namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69bae77c8d5cb7776d3aa9e53dab6314e24c',1,'jli::type::KinematicPhysicsBody()'],['../namespacejli.html#a7a3913d5239a7a26f7b249c8352cfb7e',1,'jli::KinematicPhysicsBody()'],['../namespacejli.html#ad12a03a0d7f868a1a84fe43d58c4c168',1,'jli::KinematicPhysicsBody(const AbstractBuilder &amp;)'],['../namespacejli.html#a5ddb3c57d768905fbeb013afc3e17197',1,'jli::KinematicPhysicsBody(const KinematicPhysicsBody &amp;)']]],
+  ['kinematicphysicsbody_2ecpp',['KinematicPhysicsBody.cpp',['../_kinematic_physics_body_8cpp.html',1,'']]],
+  ['kinematicphysicsbody_2eh',['KinematicPhysicsBody.h',['../_kinematic_physics_body_8h.html',1,'']]],
+  ['kinematicphysicsbodybuilder',['KinematicPhysicsBodyBuilder',['../namespacejli_1_1type.html#a902d3ca40483b7825e5d9d0d81d6d69ba2722d9bb34cba5f60ec72674929f47af',1,'jli::type::KinematicPhysicsBodyBuilder()'],['../namespacejli.html#a7c18f18400fc9c3348d7888cd25a57d7',1,'jli::KinematicPhysicsBodyBuilder()'],['../namespacejli.html#a41d3966b2a78be58e202899d74ba0875',1,'jli::KinematicPhysicsBodyBuilder(const KinematicPhysicsBodyBuilder &amp;)'],['../namespacejli.html#a50acbc03a306ce042f59e76accc35c43',1,'jli::KinematicPhysicsBodyBuilder(const AbstractBuilder &amp;)']]],
+  ['kinematicphysicsbodybuilder_2ecpp',['KinematicPhysicsBodyBuilder.cpp',['../_kinematic_physics_body_builder_8cpp.html',1,'']]],
+  ['kinematicphysicsbodybuilder_2eh',['KinematicPhysicsBodyBuilder.h',['../_kinematic_physics_body_builder_8h.html',1,'']]]
 ];

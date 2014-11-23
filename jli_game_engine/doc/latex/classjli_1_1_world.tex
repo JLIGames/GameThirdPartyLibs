@@ -12,25 +12,35 @@
 \item 
 virtual \hyperlink{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}{$\sim$\+World} ()
 \item 
-\hyperlink{classjli_1_1_world_factory}{World\+Factory} $\ast$ \hyperlink{classjli_1_1_world_add5ebedf8f6abde2bf680200ab40a680}{get\+World\+Factory} ()
+\hyperlink{classjli_1_1_world_factory}{World\+Factory} $\ast$const \hyperlink{classjli_1_1_world_aef4b78708b5daf80703d8a57f2b0f5ae}{get\+World\+Factory} () const 
+\item 
+\hyperlink{classjli_1_1_world_my_s_q_l}{World\+My\+S\+Q\+L} $\ast$const \hyperlink{classjli_1_1_world_ae8b75d8993a718753d589d49f2c00094}{get\+World\+My\+S\+Q\+L} () const 
+\item 
+\hyperlink{classjli_1_1_world_input}{World\+Input} $\ast$const \hyperlink{classjli_1_1_world_aeee764fef2643e963d08df7c891f4a26}{get\+World\+Input} () const 
+\item 
+\hyperlink{classjli_1_1_world_sound}{World\+Sound} $\ast$const \hyperlink{classjli_1_1_world_a00a7fc82c5723b567fa118e029712d34}{get\+World\+Sound} () const 
+\item 
+\hyperlink{classjli_1_1_world_lua_virtual_machine}{World\+Lua\+Virtual\+Machine} $\ast$const \hyperlink{classjli_1_1_world_a4a11fef67cef6d596344a5f5db79b4fb}{get\+World\+Lua\+Virtual\+Machine} () const 
+\item 
+\hyperlink{namespacejli_af69056b00744493ba074ef13e82b0bec}{Clock} $\ast$const \hyperlink{classjli_1_1_world_a4e35bb1d091a72f667de5c4cbc6e04b8}{get\+World\+Clock} () const 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classjli_1_1_world_a9d8f58d1514737cf00f71aee3ad3c9cd}{create\+Instance} ()
+static void \hyperlink{classjli_1_1_world_af250acadd5336ddfebbff7c934c4d410}{create\+Instance} ()
 \item 
-static void \hyperlink{classjli_1_1_world_a5cd566fc8e6f41ed5d0de5c8f6cbacf8}{destroy\+Instance} ()
+static void \hyperlink{classjli_1_1_world_afbf269b5621c765b5eadbdfc0bbc7457}{destroy\+Instance} ()
 \item 
-static \hyperlink{classjli_1_1_world}{World} $\ast$const \hyperlink{classjli_1_1_world_af43874b37ad02a3f2f43efdc10ae0282}{get\+Instance} ()
+static \hyperlink{classjli_1_1_world}{World} $\ast$const \hyperlink{classjli_1_1_world_a206e13757c28b84d9739b052a2e37e99}{get\+Instance} ()
 \item 
-static bool \hyperlink{classjli_1_1_world_a3e3e98121757b9be15170c9b1f83745d}{has\+Instance} ()
+static bool \hyperlink{classjli_1_1_world_a730a4745d8a020a240d8445761ab69a8}{has\+Instance} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 19 of file World.\+h.
+Definition at line 24 of file World.\+h.
 
 
 
@@ -44,12 +54,7 @@ Definition at line 19 of file World.\+h.
 )}}\label{classjli_1_1_world_ab340b6a4f69503333397ec65b091414a}
 
 
-Definition at line 15 of file World.\+cpp.
-
-
-
-Here is the caller graph for this function\+:
-
+Definition at line 41 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}{\index{jli\+::\+World@{jli\+::\+World}!````~World@{$\sim$\+World}}
 \index{````~World@{$\sim$\+World}!jli\+::\+World@{jli\+::\+World}}
@@ -60,74 +65,124 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}
 
 
-Definition at line 20 of file World.\+cpp.
+Definition at line 51 of file World.\+cpp.
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classjli_1_1_world_a9d8f58d1514737cf00f71aee3ad3c9cd}{\index{jli\+::\+World@{jli\+::\+World}!create\+Instance@{create\+Instance}}
+\hypertarget{classjli_1_1_world_af250acadd5336ddfebbff7c934c4d410}{\index{jli\+::\+World@{jli\+::\+World}!create\+Instance@{create\+Instance}}
 \index{create\+Instance@{create\+Instance}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{create\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static void jli\+::\+World\+::create\+Instance (
+\subsubsection[{create\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+::create\+Instance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjli_1_1_world_a9d8f58d1514737cf00f71aee3ad3c9cd}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjli_1_1_world_af250acadd5336ddfebbff7c934c4d410}
 
 
-Definition at line 22 of file World.\+h.
+Definition at line 15 of file World.\+cpp.
 
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{classjli_1_1_world_a5cd566fc8e6f41ed5d0de5c8f6cbacf8}{\index{jli\+::\+World@{jli\+::\+World}!destroy\+Instance@{destroy\+Instance}}
+\hypertarget{classjli_1_1_world_afbf269b5621c765b5eadbdfc0bbc7457}{\index{jli\+::\+World@{jli\+::\+World}!destroy\+Instance@{destroy\+Instance}}
 \index{destroy\+Instance@{destroy\+Instance}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{destroy\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static void jli\+::\+World\+::destroy\+Instance (
+\subsubsection[{destroy\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+::destroy\+Instance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjli_1_1_world_a5cd566fc8e6f41ed5d0de5c8f6cbacf8}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjli_1_1_world_afbf269b5621c765b5eadbdfc0bbc7457}
 
 
-Definition at line 30 of file World.\+h.
+Definition at line 23 of file World.\+cpp.
 
-\hypertarget{classjli_1_1_world_af43874b37ad02a3f2f43efdc10ae0282}{\index{jli\+::\+World@{jli\+::\+World}!get\+Instance@{get\+Instance}}
+\hypertarget{classjli_1_1_world_a206e13757c28b84d9739b052a2e37e99}{\index{jli\+::\+World@{jli\+::\+World}!get\+Instance@{get\+Instance}}
 \index{get\+Instance@{get\+Instance}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf World}$\ast$ const jli\+::\+World\+::get\+Instance (
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World} $\ast$const jli\+::\+World\+::get\+Instance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjli_1_1_world_af43874b37ad02a3f2f43efdc10ae0282}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjli_1_1_world_a206e13757c28b84d9739b052a2e37e99}
 
 
-Definition at line 36 of file World.\+h.
+Definition at line 29 of file World.\+cpp.
 
-\hypertarget{classjli_1_1_world_add5ebedf8f6abde2bf680200ab40a680}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Factory@{get\+World\+Factory}}
+\hypertarget{classjli_1_1_world_a4e35bb1d091a72f667de5c4cbc6e04b8}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Clock@{get\+World\+Clock}}
+\index{get\+World\+Clock@{get\+World\+Clock}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+World\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clock} $\ast$const jli\+::\+World\+::get\+World\+Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_a4e35bb1d091a72f667de5c4cbc6e04b8}
+
+
+Definition at line 86 of file World.\+cpp.
+
+\hypertarget{classjli_1_1_world_aef4b78708b5daf80703d8a57f2b0f5ae}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Factory@{get\+World\+Factory}}
 \index{get\+World\+Factory@{get\+World\+Factory}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{get\+World\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+Factory} $\ast$ jli\+::\+World\+::get\+World\+Factory (
+\subsubsection[{get\+World\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+Factory} $\ast$const jli\+::\+World\+::get\+World\+Factory (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classjli_1_1_world_add5ebedf8f6abde2bf680200ab40a680}
+) const}}\label{classjli_1_1_world_aef4b78708b5daf80703d8a57f2b0f5ae}
 
 
-Definition at line 25 of file World.\+cpp.
+Definition at line 61 of file World.\+cpp.
 
-\hypertarget{classjli_1_1_world_a3e3e98121757b9be15170c9b1f83745d}{\index{jli\+::\+World@{jli\+::\+World}!has\+Instance@{has\+Instance}}
+\hypertarget{classjli_1_1_world_aeee764fef2643e963d08df7c891f4a26}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Input@{get\+World\+Input}}
+\index{get\+World\+Input@{get\+World\+Input}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+World\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+Input} $\ast$const jli\+::\+World\+::get\+World\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_aeee764fef2643e963d08df7c891f4a26}
+
+
+Definition at line 71 of file World.\+cpp.
+
+\hypertarget{classjli_1_1_world_a4a11fef67cef6d596344a5f5db79b4fb}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Lua\+Virtual\+Machine@{get\+World\+Lua\+Virtual\+Machine}}
+\index{get\+World\+Lua\+Virtual\+Machine@{get\+World\+Lua\+Virtual\+Machine}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+World\+Lua\+Virtual\+Machine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+Lua\+Virtual\+Machine} $\ast$const jli\+::\+World\+::get\+World\+Lua\+Virtual\+Machine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_a4a11fef67cef6d596344a5f5db79b4fb}
+
+
+Definition at line 81 of file World.\+cpp.
+
+\hypertarget{classjli_1_1_world_ae8b75d8993a718753d589d49f2c00094}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+My\+S\+Q\+L@{get\+World\+My\+S\+Q\+L}}
+\index{get\+World\+My\+S\+Q\+L@{get\+World\+My\+S\+Q\+L}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+World\+My\+S\+Q\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+My\+S\+Q\+L} $\ast$const jli\+::\+World\+::get\+World\+My\+S\+Q\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_ae8b75d8993a718753d589d49f2c00094}
+
+
+Definition at line 66 of file World.\+cpp.
+
+\hypertarget{classjli_1_1_world_a00a7fc82c5723b567fa118e029712d34}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Sound@{get\+World\+Sound}}
+\index{get\+World\+Sound@{get\+World\+Sound}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+World\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+Sound} $\ast$const jli\+::\+World\+::get\+World\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_a00a7fc82c5723b567fa118e029712d34}
+
+
+Definition at line 76 of file World.\+cpp.
+
+\hypertarget{classjli_1_1_world_a730a4745d8a020a240d8445761ab69a8}{\index{jli\+::\+World@{jli\+::\+World}!has\+Instance@{has\+Instance}}
 \index{has\+Instance@{has\+Instance}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{has\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static bool jli\+::\+World\+::has\+Instance (
+\subsubsection[{has\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+World\+::has\+Instance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classjli_1_1_world_a3e3e98121757b9be15170c9b1f83745d}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjli_1_1_world_a730a4745d8a020a240d8445761ab69a8}
 
 
-Definition at line 43 of file World.\+h.
+Definition at line 36 of file World.\+cpp.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{_world_8h}{World.\+h}\item 
-\hyperlink{_world_8cpp}{World.\+cpp}\end{DoxyCompactItemize}
+/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_8h}{World.\+h}\item 
+/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_8cpp}{World.\+cpp}\end{DoxyCompactItemize}

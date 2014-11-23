@@ -17,6 +17,7 @@
 #include "WorldInput.h"
 #include "WorldSound.h"
 #include "WorldLuaVirtualMachine.h"
+#include "Clock.h"
 
 namespace jli
 {
@@ -37,6 +38,7 @@ namespace jli
         WorldInput *const getWorldInput()const;
         WorldSound *const getWorldSound()const;
         WorldLuaVirtualMachine *const getWorldLuaVirtualMachine()const;
+        Clock *const getWorldClock()const;
     protected:
     private:
         World(const World &);
@@ -48,6 +50,7 @@ namespace jli
         WorldInput *m_WorldInput;
         WorldSound *m_WorldSound;
         WorldLuaVirtualMachine *m_WorldLuaVirtualMachine;
+        Clock *m_worldClock;
     };
 }
 
