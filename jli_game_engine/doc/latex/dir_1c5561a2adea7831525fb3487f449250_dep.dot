@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/PVRScopeRemote/OGLES3/BuildDeveloper/Android/src/com/powervr/OGLES3PVRScopeRemote" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_be0e74c074a1a40fb6d0b065064462f7 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_be0e74c074a1a40fb6d0b065064462f7.html"]
-  dir_1c5561a2adea7831525fb3487f449250 [shape=box, label="OGLES3PVRScopeRemote", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1c5561a2adea7831525fb3487f449250.html"];
-  }
-}

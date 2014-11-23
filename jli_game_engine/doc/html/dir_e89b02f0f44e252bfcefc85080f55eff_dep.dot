@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/Demos/ConstraintDemo" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_fbeee990c6fb95278eb756dfe9f9c37f {
-    graph [ bgcolor="#ddddee", pencolor="black", label="Demos" fontname="Helvetica", fontsize="10", URL="dir_fbeee990c6fb95278eb756dfe9f9c37f.html"]
-  dir_e89b02f0f44e252bfcefc85080f55eff [shape=box, label="ConstraintDemo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e89b02f0f44e252bfcefc85080f55eff.html"];
-  }
-}

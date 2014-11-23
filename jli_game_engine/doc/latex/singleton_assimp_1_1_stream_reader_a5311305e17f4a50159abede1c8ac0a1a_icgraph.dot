@@ -1,9 +1,0 @@
-digraph "Assimp::StreamReader::SetPtr"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Assimp::StreamReader\l::SetPtr",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="Assimp::StreamReader\l::CopyAndAdvance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$singleton_assimp_1_1_stream_reader.html#a1f2f70172ac9209ff4b460b751676f0b"];
-}

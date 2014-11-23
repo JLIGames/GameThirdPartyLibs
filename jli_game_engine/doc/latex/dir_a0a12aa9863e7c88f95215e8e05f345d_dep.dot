@@ -1,9 +1,0 @@
-digraph "assimp/assimp-3.1.1/port/PyAssimp/scripts" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_ead026bc2ddb45bf71e7a212b20e8182 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="PyAssimp" fontname="Helvetica", fontsize="10", URL="dir_ead026bc2ddb45bf71e7a212b20e8182.html"]
-  dir_a0a12aa9863e7c88f95215e8e05f345d [shape=box, label="scripts", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a0a12aa9863e7c88f95215e8e05f345d.html"];
-  }
-}

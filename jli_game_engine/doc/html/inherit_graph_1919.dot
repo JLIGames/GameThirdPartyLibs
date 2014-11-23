@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="FMOD_DSP_PARAMETER\l_SIDECHAIN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_f_m_o_d___d_s_p___p_a_r_a_m_e_t_e_r___s_i_d_e_c_h_a_i_n.html"];
-}

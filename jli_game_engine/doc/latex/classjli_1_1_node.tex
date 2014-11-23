@@ -1,0 +1,168 @@
+\hypertarget{classjli_1_1_node}{\section{jli\+:\+:Node Class Reference}
+\label{classjli_1_1_node}\index{jli\+::\+Node@{jli\+::\+Node}}
+}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+
+
+Inheritance diagram for jli\+:\+:Node\+:
+
+
+Collaboration diagram for jli\+:\+:Node\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjli_1_1_node_ad3ae8427886d6e7375c62a7fb2100c4c}{Node} ()
+\item 
+\hyperlink{classjli_1_1_node_ac427b39c9353f0301e191f76d360d4f1}{Node} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{classjli_1_1_node_ad63185457aa77be28b780050799426f3}{Node} (const \hyperlink{classjli_1_1_node}{Node} \&)
+\item 
+virtual \hyperlink{classjli_1_1_node_ac46db977b2fba42d8384ccab749c9cd4}{$\sim$\+Node} ()
+\item 
+\hyperlink{classjli_1_1_node}{Node} \& \hyperlink{classjli_1_1_node_abbd88d2e7fcd847329cfc29f6919c40d}{operator=} (const \hyperlink{classjli_1_1_node}{Node} \&)
+\item 
+virtual s32 \hyperlink{classjli_1_1_node_a8075e2769a86cb0e9fa51840da53513b}{calculate\+Serialize\+Buffer\+Size} () const 
+\item 
+virtual void \hyperlink{classjli_1_1_node_a1dc93453f2923153cd37293bb56e6c54}{serialize} (void $\ast$, bt\+Serializer $\ast$) const 
+\item 
+virtual const char $\ast$ \hyperlink{classjli_1_1_node_aed60180fffdc02a1d7d598cd0595b9aa}{get\+Name} () const 
+\item 
+virtual u32 \hyperlink{classjli_1_1_node_a533217d7405544590a6a28fdaeec9208}{get\+Type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjli_1_1_node_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjli_1_1_node_ad3ae8427886d6e7375c62a7fb2100c4c}{\index{jli\+::\+Node@{jli\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_node_ad3ae8427886d6e7375c62a7fb2100c4c}
+
+
+Definition at line 14 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_ac427b39c9353f0301e191f76d360d4f1}{\index{jli\+::\+Node@{jli\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Builder} \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_node_ac427b39c9353f0301e191f76d360d4f1}
+
+
+Definition at line 20 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_ad63185457aa77be28b780050799426f3}{\index{jli\+::\+Node@{jli\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Node} \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_node_ad63185457aa77be28b780050799426f3}
+
+
+Definition at line 26 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_ac46db977b2fba42d8384ccab749c9cd4}{\index{jli\+::\+Node@{jli\+::\+Node}!````~Node@{$\sim$\+Node}}
+\index{````~Node@{$\sim$\+Node}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{$\sim$\+Node}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+::$\sim$\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_node_ac46db977b2fba42d8384ccab749c9cd4}
+
+
+Definition at line 32 of file Node.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjli_1_1_node_a8075e2769a86cb0e9fa51840da53513b}{\index{jli\+::\+Node@{jli\+::\+Node}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{calculate\+Serialize\+Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::\+Node\+::calculate\+Serialize\+Buffer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_node_a8075e2769a86cb0e9fa51840da53513b}
+
+
+Definition at line 46 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_aed60180fffdc02a1d7d598cd0595b9aa}{\index{jli\+::\+Node@{jli\+::\+Node}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ jli\+::\+Node\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_node_aed60180fffdc02a1d7d598cd0595b9aa}
+
+
+Definition at line 57 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_a533217d7405544590a6a28fdaeec9208}{\index{jli\+::\+Node@{jli\+::\+Node}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::\+Node\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_node_a533217d7405544590a6a28fdaeec9208}
+
+
+Definition at line 62 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_abbd88d2e7fcd847329cfc29f6919c40d}{\index{jli\+::\+Node@{jli\+::\+Node}!operator=@{operator=}}
+\index{operator=@{operator=}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} \& jli\+::\+Node\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Node} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_node_abbd88d2e7fcd847329cfc29f6919c40d}
+
+
+Definition at line 37 of file Node.\+cpp.
+
+\hypertarget{classjli_1_1_node_a1dc93453f2923153cd37293bb56e6c54}{\index{jli\+::\+Node@{jli\+::\+Node}!serialize@{serialize}}
+\index{serialize@{serialize}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+Node\+::serialize (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data\+Buffer, }
+\item[{bt\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_node_a1dc93453f2923153cd37293bb56e6c54}
+
+
+Definition at line 52 of file Node.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classjli_1_1_node_acb96ebb09abe8f2a37a915a842babfac}{\index{jli\+::\+Node@{jli\+::\+Node}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!jli\+::\+Node@{jli\+::\+Node}}
+\subsubsection[{World\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf World\+Factory}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classjli_1_1_node_acb96ebb09abe8f2a37a915a842babfac}
+
+
+Definition at line 20 of file Node.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_node_8h}{Node.\+h}\item 
+\hyperlink{_node_8cpp}{Node.\+cpp}\end{DoxyCompactItemize}

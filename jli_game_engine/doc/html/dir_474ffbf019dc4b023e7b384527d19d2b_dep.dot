@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/Bumpmap/OGLES2/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_f716170ab84355988d84bf041c926de9 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES2" fontname="Helvetica", fontsize="10", URL="dir_f716170ab84355988d84bf041c926de9.html"]
-  dir_474ffbf019dc4b023e7b384527d19d2b [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_474ffbf019dc4b023e7b384527d19d2b.html"];
-  }
-}

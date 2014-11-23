@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Builds/Windows/Resources" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_00a996bf832e45c141c9adeeb7e4f0af {
-    graph [ bgcolor="#ddddee", pencolor="black", label="Windows" fontname="Helvetica", fontsize="10", URL="dir_00a996bf832e45c141c9adeeb7e4f0af.html"]
-  dir_9371c39251a3cc2180d05bd7687ecc24 [shape=box, label="Resources", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9371c39251a3cc2180d05bd7687ecc24.html"];
-  }
-}

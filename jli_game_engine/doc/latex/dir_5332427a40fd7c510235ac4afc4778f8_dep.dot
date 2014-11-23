@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/Iridescence/OGLES3/Build/Android/src/com/powervr/OGLES3Iridescence" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_45acd03636c7663fba8b957debba3477 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_45acd03636c7663fba8b957debba3477.html"]
-  dir_5332427a40fd7c510235ac4afc4778f8 [shape=box, label="OGLES3Iridescence", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5332427a40fd7c510235ac4afc4778f8.html"];
-  }
-}

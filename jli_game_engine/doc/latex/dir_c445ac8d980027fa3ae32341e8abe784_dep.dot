@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/DisplacementMap/OGLES3/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_a7c520634e9fb7fefb970da48b4837ec {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_a7c520634e9fb7fefb970da48b4837ec.html"]
-  dir_c445ac8d980027fa3ae32341e8abe784 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c445ac8d980027fa3ae32341e8abe784.html"];
-  }
-}

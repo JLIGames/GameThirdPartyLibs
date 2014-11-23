@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/ShadowVolume/OGLES2/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_8598ca50f1bbfa2f894215514bc37976 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES2" fontname="Helvetica", fontsize="10", URL="dir_8598ca50f1bbfa2f894215514bc37976.html"]
-  dir_6d209fdf98668f07e44dc08e1fc5a80e [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6d209fdf98668f07e44dc08e1fc5a80e.html"];
-  }
-}

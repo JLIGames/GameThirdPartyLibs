@@ -1,9 +1,0 @@
-digraph "vorbis/libvorbis-1.3.3/vq" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_465e7e0d29f66b77a98aa16791989bef {
-    graph [ bgcolor="#ddddee", pencolor="black", label="libvorbis-1.3.3" fontname="Helvetica", fontsize="10", URL="dir_465e7e0d29f66b77a98aa16791989bef.html"]
-  dir_0d2103ca0a1ce159abcc914a272fbc54 [shape=box, label="vq", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0d2103ca0a1ce159abcc914a272fbc54.html"];
-  }
-}

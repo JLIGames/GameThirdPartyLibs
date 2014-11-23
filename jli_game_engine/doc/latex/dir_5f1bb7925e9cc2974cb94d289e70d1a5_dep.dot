@@ -1,9 +1,0 @@
-digraph "theora/libtheora-1.1.1/include/theora" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_660faa87ecdc6733f7471c0aed65ffb2 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_660faa87ecdc6733f7471c0aed65ffb2.html"]
-  dir_5f1bb7925e9cc2974cb94d289e70d1a5 [shape=box, label="theora", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5f1bb7925e9cc2974cb94d289e70d1a5.html"];
-  }
-}

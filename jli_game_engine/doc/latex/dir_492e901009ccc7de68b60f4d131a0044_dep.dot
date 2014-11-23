@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Shell/OS/Windows" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_985c8e68b2bc71e5fc4eaa8a536394b7 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OS" fontname="Helvetica", fontsize="10", URL="dir_985c8e68b2bc71e5fc4eaa8a536394b7.html"]
-  dir_492e901009ccc7de68b60f4d131a0044 [shape=box, label="Windows", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_492e901009ccc7de68b60f4d131a0044.html"];
-  }
-}

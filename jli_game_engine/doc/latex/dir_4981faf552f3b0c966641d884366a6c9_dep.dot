@@ -1,9 +1,0 @@
-digraph "assimp/assimp-3.1.1/CMakeFiles/CheckTypeSize" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_93c2fd4b0dd4664e3ef160f2baff9086 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="CMakeFiles" fontname="Helvetica", fontsize="10", URL="dir_93c2fd4b0dd4664e3ef160f2baff9086.html"]
-  dir_4981faf552f3b0c966641d884366a6c9 [shape=box, label="CheckTypeSize", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4981faf552f3b0c966641d884366a6c9.html"];
-  }
-}

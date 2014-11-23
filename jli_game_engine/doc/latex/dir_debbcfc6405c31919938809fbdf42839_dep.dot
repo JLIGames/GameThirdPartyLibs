@@ -1,9 +1,0 @@
-digraph "assimp/assimp-3.1.1/contrib/cppunit-1.12.1/include/cppunit/ui/qt" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_921e2aa9ce1863c443d5d38f8742af5a {
-    graph [ bgcolor="#ddddee", pencolor="black", label="ui" fontname="Helvetica", fontsize="10", URL="dir_921e2aa9ce1863c443d5d38f8742af5a.html"]
-  dir_debbcfc6405c31919938809fbdf42839 [shape=box, label="qt", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_debbcfc6405c31919938809fbdf42839.html"];
-  }
-}

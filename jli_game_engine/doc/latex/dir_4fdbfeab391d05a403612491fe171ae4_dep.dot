@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/Demos/NativeClient/bin_html" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_42aea131fad106a51be8cf647bf78411 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="NativeClient" fontname="Helvetica", fontsize="10", URL="dir_42aea131fad106a51be8cf647bf78411.html"]
-  dir_4fdbfeab391d05a403612491fe171ae4 [shape=box, label="bin_html", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4fdbfeab391d05a403612491fe171ae4.html"];
-  }
-}

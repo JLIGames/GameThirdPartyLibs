@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="btSoftBodyLinkDataOpenCLSIMDAware\l::NumBatchesVerticesPair",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_link_data_open_c_l_s_i_m_d_aware_1_1_num_batches_vertices_pair.html"];
-}

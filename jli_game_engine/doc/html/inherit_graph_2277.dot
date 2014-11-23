@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="MfcTestRunner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mfc_test_runner.html",tooltip="MFC test runner.Use this to launch the MFC TestRunner. Usually called from you CWinApp subclass: ..."];
-}

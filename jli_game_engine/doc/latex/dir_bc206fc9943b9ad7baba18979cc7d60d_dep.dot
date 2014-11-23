@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Beginner/06_IntroducingPrint3D/OGLES3/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_d1762a25d22ae4f484619535de1da55e {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_d1762a25d22ae4f484619535de1da55e.html"]
-  dir_bc206fc9943b9ad7baba18979cc7d60d [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bc206fc9943b9ad7baba18979cc7d60d.html"];
-  }
-}

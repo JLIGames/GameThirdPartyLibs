@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Tools/CameraInterface/Android/Build/src/com/powervr/CameraInterface" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_68f657f2e9a65f80c663f391be2598f8 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_68f657f2e9a65f80c663f391be2598f8.html"]
-  dir_e12cce8593e3878b3043908932e4b808 [shape=box, label="CameraInterface", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e12cce8593e3878b3043908932e4b808.html"];
-  }
-}

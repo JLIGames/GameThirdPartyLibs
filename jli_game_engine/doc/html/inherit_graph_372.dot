@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Assimp::PLY::ElementInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_p_l_y_1_1_element_instance.html",tooltip="Class for an element instance in a PLY file. "];
-}

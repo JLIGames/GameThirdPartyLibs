@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Beginner/01_HelloAPI/OGLES/Build/Android/src/com/powervr/OGLESHelloAPI" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_6ea2bfc194b2d155775b3fbe53923115 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_6ea2bfc194b2d155775b3fbe53923115.html"]
-  dir_0b2cb020838a67b78707b403a458e245 [shape=box, label="OGLESHelloAPI", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0b2cb020838a67b78707b403a458e245.html"];
-  }
-}

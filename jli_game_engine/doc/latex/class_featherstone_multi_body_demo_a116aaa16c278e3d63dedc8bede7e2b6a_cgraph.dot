@@ -1,9 +1,0 @@
-digraph "FeatherstoneMultiBodyDemo::initPhysics"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="FeatherstoneMultiBodyDemo\l::initPhysics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="btSoftRigidDynamicsWorld\l::removeCollisionObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_soft_rigid_dynamics_world.html#af2b8c217f386bb37cab6512294281c7e",tooltip="removeCollisionObject will first check if it is a rigid body, if so call removeRigidBody otherwise ca..."];
-}

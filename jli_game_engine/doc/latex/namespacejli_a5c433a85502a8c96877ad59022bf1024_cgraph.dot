@@ -1,0 +1,9 @@
+digraph "jli::operator&lt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jli::operator\<",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jli::getPointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#a71c999372e54bb90fb3bfd8de1546d43"];
+}

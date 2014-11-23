@@ -1,9 +1,0 @@
-digraph "png/lpng1612/contrib/pngminim/decoder" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_23bb6e86d6858176ad9e84456f3979ab {
-    graph [ bgcolor="#ddddee", pencolor="black", label="pngminim" fontname="Helvetica", fontsize="10", URL="dir_23bb6e86d6858176ad9e84456f3979ab.html"]
-  dir_380d504c30b7837beaf0f239bc2ce6bc [shape=box, label="decoder", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_380d504c30b7837beaf0f239bc2ce6bc.html"];
-  }
-}

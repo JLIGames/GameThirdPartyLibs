@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/LightMap/OGLES3/Build/Android/src/com/powervr/OGLES3LightMap" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_9ccda9242161e1f0cb15265640b9a319 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_9ccda9242161e1f0cb15265640b9a319.html"]
-  dir_94528aa5377bcecc74c9257a9324446a [shape=box, label="OGLES3LightMap", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_94528aa5377bcecc74c9257a9324446a.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "json/jsoncpp-src-0.5.0/scons-tools" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_51686e203cd5569fcb86b843e97384be {
-    graph [ bgcolor="#ddddee", pencolor="black", label="jsoncpp-src-0.5.0" fontname="Helvetica", fontsize="10", URL="dir_51686e203cd5569fcb86b843e97384be.html"]
-  dir_cdb64e712a1da985bd67a66c9de112e8 [shape=box, label="scons-tools", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_cdb64e712a1da985bd67a66c9de112e8.html"];
-  }
-}

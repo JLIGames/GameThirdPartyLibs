@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/UserClipPlanes/OGLES/Build/Android/src/com/powervr/OGLESUserClipPlanes" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_f00a134c12d7f7e43972315358321726 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_f00a134c12d7f7e43972315358321726.html"]
-  dir_ba930ed4cac8e616eaa515ed7100d967 [shape=box, label="OGLESUserClipPlanes", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ba930ed4cac8e616eaa515ed7100d967.html"];
-  }
-}

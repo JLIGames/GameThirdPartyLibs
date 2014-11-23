@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/src/BulletDynamics/MLCPSolvers" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_af43208036bf704b5e7ab06051c07d0a {
-    graph [ bgcolor="#ddddee", pencolor="black", label="BulletDynamics" fontname="Helvetica", fontsize="10", URL="dir_af43208036bf704b5e7ab06051c07d0a.html"]
-  dir_8d21fb7a977018824565703b7164240f [shape=box, label="MLCPSolvers", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8d21fb7a977018824565703b7164240f.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/ParticleSystem/OGLES3/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_00293e979c21d81b3743df9fd3c5c7ba {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_00293e979c21d81b3743df9fd3c5c7ba.html"]
-  dir_8fd3301422113eb4e7e3d6123b211f1f [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8fd3301422113eb4e7e3d6123b211f1f.html"];
-  }
-}

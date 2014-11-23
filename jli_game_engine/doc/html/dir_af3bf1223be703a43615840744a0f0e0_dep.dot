@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Beginner/06_IntroducingPrint3D/OGLES3/Build/Android/src/com/powervr/OGLES3IntroducingPrint3D" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_ffd47cf8d786021db808314d5c6d2bd0 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_ffd47cf8d786021db808314d5c6d2bd0.html"]
-  dir_af3bf1223be703a43615840744a0f0e0 [shape=box, label="OGLES3IntroducingPrint3D", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_af3bf1223be703a43615840744a0f0e0.html"];
-  }
-}

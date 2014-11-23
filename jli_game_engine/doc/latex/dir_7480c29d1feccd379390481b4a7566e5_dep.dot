@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/src/BulletMultiThreaded/GpuSoftBodySolvers/Shared" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_78fa3e321d72f03f45b655db8f159619 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="GpuSoftBodySolvers" fontname="Helvetica", fontsize="10", URL="dir_78fa3e321d72f03f45b655db8f159619.html"]
-  dir_7480c29d1feccd379390481b4a7566e5 [shape=box, label="Shared", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7480c29d1feccd379390481b4a7566e5.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/FilmTV/OGLES/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_3105a74b6efafb0a87936f943c133bcf {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES" fontname="Helvetica", fontsize="10", URL="dir_3105a74b6efafb0a87936f943c133bcf.html"]
-  dir_70e3b1f649c69443171fa3267c05a232 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_70e3b1f649c69443171fa3267c05a232.html"];
-  }
-}

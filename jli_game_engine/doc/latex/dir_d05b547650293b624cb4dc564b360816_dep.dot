@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/AlphaBlend/OGLES/Build/Android/src/com/powervr/OGLESAlphaBlend" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_9c6961919d67774f21146d598c4c06a2 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_9c6961919d67774f21146d598c4c06a2.html"]
-  dir_d05b547650293b624cb4dc564b360816 [shape=box, label="OGLESAlphaBlend", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d05b547650293b624cb4dc564b360816.html"];
-  }
-}

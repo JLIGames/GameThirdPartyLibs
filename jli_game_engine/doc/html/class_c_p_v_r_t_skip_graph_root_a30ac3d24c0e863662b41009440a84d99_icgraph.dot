@@ -1,9 +1,0 @@
-digraph "CPVRTSkipGraphRoot::RetreiveSortedDependencyList"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="CPVRTSkipGraphRoot\l::RetreiveSortedDependencyList",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="CPVRTPFXParser::Retrieve\lRenderPassDependencies",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_p_f_x_parser.html#a50400904966afcd4f0b80b8298762cca",tooltip="Takes an array of strings containing the names of active effects for this PFX in a given application ..."];
-}

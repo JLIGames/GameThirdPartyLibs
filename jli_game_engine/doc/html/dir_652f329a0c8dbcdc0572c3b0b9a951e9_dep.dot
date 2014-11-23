@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Builds/Include/GLES3" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_6bdf203d9981a73bbf991fc0be7876c5 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="Include" fontname="Helvetica", fontsize="10", URL="dir_6bdf203d9981a73bbf991fc0be7876c5.html"]
-  dir_652f329a0c8dbcdc0572c3b0b9a951e9 [shape=box, label="GLES3", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_652f329a0c8dbcdc0572c3b0b9a951e9.html"];
-  }
-}

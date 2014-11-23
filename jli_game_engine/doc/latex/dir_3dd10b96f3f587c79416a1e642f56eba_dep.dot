@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/Extras/Serialize/ReadBulletSample" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_3f5a2536fb21792f4dbeb795295f94e6 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="Serialize" fontname="Helvetica", fontsize="10", URL="dir_3f5a2536fb21792f4dbeb795295f94e6.html"]
-  dir_3dd10b96f3f587c79416a1e642f56eba [shape=box, label="ReadBulletSample", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3dd10b96f3f587c79416a1e642f56eba.html"];
-  }
-}

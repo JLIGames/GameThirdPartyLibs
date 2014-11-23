@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/Test/Source/Tests" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_67c225a56acec7bc6425c165c96913fd {
-    graph [ bgcolor="#ddddee", pencolor="black", label="Source" fontname="Helvetica", fontsize="10", URL="dir_67c225a56acec7bc6425c165c96913fd.html"]
-  dir_157cc9bee82e2ee05958203b5893dd7e [shape=box, label="Tests", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_157cc9bee82e2ee05958203b5893dd7e.html"];
-  }
-}

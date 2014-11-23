@@ -1,0 +1,601 @@
+\hypertarget{namespacejli}{\section{jli Namespace Reference}
+\label{namespacejli}\index{jli@{jli}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacejli_1_1type}{type}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder}
+\item 
+class \hyperlink{classjli_1_1_node}{Node}
+\item 
+class \hyperlink{classjli_1_1_scene}{Scene}
+\item 
+class \hyperlink{classjli_1_1_world}{World}
+\item 
+class \hyperlink{classjli_1_1_world_factory}{World\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} (const void $\ast$ptr)
+\item 
+virtual \hyperlink{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}{$\sim$\+Abstract\+Factory\+Object} ()
+\item 
+\hyperlink{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
+\item 
+virtual const char $\ast$ \hyperlink{namespacejli_ab59410e766fae1d158793c2a0c70be5e}{get\+Name} () const 
+\item 
+virtual u32 \hyperlink{namespacejli_acf2403453223c37b2cbf466e23515b6e}{get\+Type} () const 
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}{create} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&builder) const 
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{namespacejli_a5100077139d5c7339602ada53ab27663}{clone} (bool shared=false) const 
+\item 
+virtual void \hyperlink{namespacejli_ace155e097623e08835596243e115d880}{destroy} ()
+\item 
+virtual s32 \hyperlink{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}{calculate\+Serialize\+Buffer\+Size} () const =0
+\item 
+virtual void \hyperlink{namespacejli_ac4ecbc29085e60be91b1eee948d37851}{serialize} (void $\ast$data\+Buffer, bt\+Serializer $\ast$serializer) const =0
+\item 
+const void $\ast$ \hyperlink{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}{get\+Pointer} () const 
+\item 
+const u64 \hyperlink{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}{get\+Pointer\+Value} () const 
+\item 
+bool \hyperlink{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}{operator==} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a5c433a85502a8c96877ad59022bf1024}{operator$<$} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}{operator$>$} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}{operator!=} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a53a743e411edf86856cbb4ce21a6939d}{operator$<$=} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}{operator$>$=} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&rhs) const 
+\item 
+virtual void \hyperlink{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}{serialize\+Object} (class bt\+Serializer $\ast$serializer) const 
+\item 
+\hyperlink{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+Object
+\item 
+\hyperlink{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{Node\+Builder} ()
+\item 
+\hyperlink{namespacejli_a75dc0cad5c84f4d244d951b48255c6e4}{Node\+Builder} (const Node\+Builder \&)
+\item 
+\hyperlink{namespacejli_a3250e1d2e7ab6f0467839d9ff2f57dcb}{Node\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_ac5033296b7700d3610c8d224889de6c6}{$\sim$\+Node\+Builder} ()
+\item 
+\hyperlink{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{Node\+Builder} \& \hyperlink{namespacejli_a290ea917337c90571eb741852c146180}{operator=} (const \hyperlink{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{Node\+Builder} \&)
+\item 
+virtual u32 \hyperlink{namespacejli_ad74268a8f5493ee3df657a346cd64d30}{get\+Object\+Type} () const 
+\item 
+\hyperlink{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{Resource\+Builder} ()
+\item 
+\hyperlink{namespacejli_ac25c61dfb7fd3cd0172ccf6a5d6d9598}{Resource\+Builder} (const Resource\+Builder \&)
+\item 
+\hyperlink{namespacejli_a2f0f2d3abddab36a2e632d5fe25bdea7}{Resource\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a7e46cbc7bc71f3c538261e41816e87b0}{$\sim$\+Resource\+Builder} ()
+\item 
+\hyperlink{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{Resource\+Builder} \& \hyperlink{namespacejli_a544c167a86203fa931b358dc2e77df53}{operator=} (const \hyperlink{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{Resource\+Builder} \&)
+\item 
+\hyperlink{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{Scene\+Builder} ()
+\item 
+\hyperlink{namespacejli_a08327fcbf8005b89aa48e20217b34adc}{Scene\+Builder} (const Scene\+Builder \&)
+\item 
+\hyperlink{namespacejli_a2f38a2d72a581791a6deeebca04d5daf}{Scene\+Builder} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_a99a07c08fdc61e92c99f5a47bc3430fa}{$\sim$\+Scene\+Builder} ()
+\item 
+\hyperlink{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{Scene\+Builder} \& \hyperlink{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}{operator=} (const \hyperlink{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{Scene\+Builder} \&)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const void $\ast$ \hyperlink{namespacejli_ada77c3ed1019f3c21042f228b25756d7}{jli::m\_pointer}\\
+\>u64 \hyperlink{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}{jli::m\_pointerVal}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{\index{jli@{jli}!Abstract\+Factory\+Object@{Abstract\+Factory\+Object}}
+\index{Abstract\+Factory\+Object@{Abstract\+Factory\+Object}!jli@{jli}}
+\subsubsection[{Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Factory\+Object\+::\+Abstract\+Factory\+Object (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}
+
+
+Definition at line 20 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}{\index{jli@{jli}!A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}}
+\index{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}!jli@{jli}}
+\subsubsection[{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16 (
+\begin{DoxyParamCaption}
+\item[{class}]{}
+\end{DoxyParamCaption}
+)}}\label{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}
+
+
+Definition at line 17 of file Abstract\+Object.\+h.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{\index{jli@{jli}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}!jli@{jli}}
+\subsubsection[{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}{\index{jli@{jli}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!jli@{jli}}
+\subsubsection[{calculate\+Serialize\+Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::calculate\+Serialize\+Buffer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}
+function is used to calculate the buffer size of this object.
+
+\begin{DoxyReturn}{Returns}
+the buffer size of this object. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a5100077139d5c7339602ada53ab27663}{\index{jli@{jli}!clone@{clone}}
+\index{clone@{clone}!jli@{jli}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Abstract\+Factory\+Object}$\ast$ jli\+::clone (
+\begin{DoxyParamCaption}
+\item[{bool}]{shared = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a5100077139d5c7339602ada53ab27663}
+Clones an object. It is possible to share the instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shared} & used to determine whether or not to create a shared object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a clone of the original object or another instance. 
+\end{DoxyReturn}
+\hypertarget{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}{\index{jli@{jli}!create@{create}}
+\index{create@{create}!jli@{jli}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Abstract\+Factory\+Object}$\ast$ jli\+::create (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}
+Creates an object. This is the central place where all of the objects will be created in the world
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & The builder class to construct the instance from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new instance based on the builder's type. 
+\end{DoxyReturn}
+\hypertarget{namespacejli_ace155e097623e08835596243e115d880}{\index{jli@{jli}!destroy@{destroy}}
+\index{destroy@{destroy}!jli@{jli}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void jli\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ace155e097623e08835596243e115d880}
+used to destroy this instance from the factory. \hypertarget{namespacejli_ab59410e766fae1d158793c2a0c70be5e}{\index{jli@{jli}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jli@{jli}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ jli\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ab59410e766fae1d158793c2a0c70be5e}
+The name of this Class
+
+\begin{DoxyReturn}{Returns}
+the name of this class 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_ad74268a8f5493ee3df657a346cd64d30}{\index{jli@{jli}!get\+Object\+Type@{get\+Object\+Type}}
+\index{get\+Object\+Type@{get\+Object\+Type}!jli@{jli}}
+\subsubsection[{get\+Object\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::get\+Object\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_ad74268a8f5493ee3df657a346cd64d30}
+\hypertarget{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}{\index{jli@{jli}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!jli@{jli}}
+\subsubsection[{get\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void $\ast$ Abstract\+Factory\+Object\+::get\+Pointer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}
+The pointer stored by this class. 
+
+Definition at line 52 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}{\index{jli@{jli}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!jli@{jli}}
+\subsubsection[{get\+Pointer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const u64 Abstract\+Factory\+Object\+::get\+Pointer\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}
+The u64 value of this pointer;
+
+\begin{DoxyReturn}{Returns}
+the u64 value of this pointer. 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{namespacejli_acf2403453223c37b2cbf466e23515b6e}{\index{jli@{jli}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!jli@{jli}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_acf2403453223c37b2cbf466e23515b6e}
+The type of this Class
+
+\begin{DoxyReturn}{Returns}
+the type of this class 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a1a43fda7f472452c5ded41130fe22e58}{\index{jli@{jli}!Node\+Builder@{Node\+Builder}}
+\index{Node\+Builder@{Node\+Builder}!jli@{jli}}
+\subsubsection[{Node\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+Builder\+::\+Node\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a1a43fda7f472452c5ded41130fe22e58}
+
+
+Definition at line 14 of file Node\+Builder.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a75dc0cad5c84f4d244d951b48255c6e4}{\index{jli@{jli}!Node\+Builder@{Node\+Builder}}
+\index{Node\+Builder@{Node\+Builder}!jli@{jli}}
+\subsubsection[{Node\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+Builder\+::\+Node\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Node\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a75dc0cad5c84f4d244d951b48255c6e4}
+
+
+Definition at line 18 of file Node\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a3250e1d2e7ab6f0467839d9ff2f57dcb}{\index{jli@{jli}!Node\+Builder@{Node\+Builder}}
+\index{Node\+Builder@{Node\+Builder}!jli@{jli}}
+\subsubsection[{Node\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+Builder\+::\+Node\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a3250e1d2e7ab6f0467839d9ff2f57dcb}
+
+
+Definition at line 23 of file Node\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}{\index{jli@{jli}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!jli@{jli}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}
+
+
+Definition at line 77 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{namespacejli_a5c433a85502a8c96877ad59022bf1024}{\index{jli@{jli}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!jli@{jli}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a5c433a85502a8c96877ad59022bf1024}
+
+
+Definition at line 67 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{namespacejli_a53a743e411edf86856cbb4ce21a6939d}{\index{jli@{jli}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!jli@{jli}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a53a743e411edf86856cbb4ce21a6939d}
+
+
+Definition at line 82 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Scene\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ab76ae2c8b17665d1e78209f9c76653e8}
+\hypertarget{namespacejli_a544c167a86203fa931b358dc2e77df53}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Resource\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a544c167a86203fa931b358dc2e77df53}
+\hypertarget{namespacejli_a290ea917337c90571eb741852c146180}{\index{jli@{jli}!operator=@{operator=}}
+\index{operator=@{operator=}!jli@{jli}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Builder}\& jli\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const Node\+Builder \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a290ea917337c90571eb741852c146180}
+\hypertarget{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}{\index{jli@{jli}!operator==@{operator==}}
+\index{operator==@{operator==}!jli@{jli}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}
+
+
+Definition at line 62 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}{\index{jli@{jli}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!jli@{jli}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}
+
+
+Definition at line 72 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}{\index{jli@{jli}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!jli@{jli}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Abstract\+Factory\+Object\+::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Factory\+Object \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}
+
+
+Definition at line 87 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}{\index{jli@{jli}!Resource\+Builder@{Resource\+Builder}}
+\index{Resource\+Builder@{Resource\+Builder}!jli@{jli}}
+\subsubsection[{Resource\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+Builder\+::\+Resource\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ae9f9f7477ddfe0b9d4ac195927e749b4}
+
+
+Definition at line 15 of file Resource\+Builder.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_ac25c61dfb7fd3cd0172ccf6a5d6d9598}{\index{jli@{jli}!Resource\+Builder@{Resource\+Builder}}
+\index{Resource\+Builder@{Resource\+Builder}!jli@{jli}}
+\subsubsection[{Resource\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+Builder\+::\+Resource\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Resource\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_ac25c61dfb7fd3cd0172ccf6a5d6d9598}
+
+
+Definition at line 19 of file Resource\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a2f0f2d3abddab36a2e632d5fe25bdea7}{\index{jli@{jli}!Resource\+Builder@{Resource\+Builder}}
+\index{Resource\+Builder@{Resource\+Builder}!jli@{jli}}
+\subsubsection[{Resource\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+Builder\+::\+Resource\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2f0f2d3abddab36a2e632d5fe25bdea7}
+
+
+Definition at line 24 of file Resource\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a416f25c3329cd3e760e1a184b62e7223}{\index{jli@{jli}!Scene\+Builder@{Scene\+Builder}}
+\index{Scene\+Builder@{Scene\+Builder}!jli@{jli}}
+\subsubsection[{Scene\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+Builder\+::\+Scene\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a416f25c3329cd3e760e1a184b62e7223}
+
+
+Definition at line 15 of file Scene\+Builder.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a08327fcbf8005b89aa48e20217b34adc}{\index{jli@{jli}!Scene\+Builder@{Scene\+Builder}}
+\index{Scene\+Builder@{Scene\+Builder}!jli@{jli}}
+\subsubsection[{Scene\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+Builder\+::\+Scene\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Scene\+Builder \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a08327fcbf8005b89aa48e20217b34adc}
+
+
+Definition at line 19 of file Scene\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a2f38a2d72a581791a6deeebca04d5daf}{\index{jli@{jli}!Scene\+Builder@{Scene\+Builder}}
+\index{Scene\+Builder@{Scene\+Builder}!jli@{jli}}
+\subsubsection[{Scene\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+Builder\+::\+Scene\+Builder (
+\begin{DoxyParamCaption}
+\item[{const Abstract\+Builder \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{namespacejli_a2f38a2d72a581791a6deeebca04d5daf}
+
+
+Definition at line 24 of file Scene\+Builder.\+cpp.
+
+\hypertarget{namespacejli_ac4ecbc29085e60be91b1eee948d37851}{\index{jli@{jli}!serialize@{serialize}}
+\index{serialize@{serialize}!jli@{jli}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::serialize (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data\+Buffer, }
+\item[{bt\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{namespacejli_ac4ecbc29085e60be91b1eee948d37851}
+Abstract function which needs to be implemented by the base class. This can be used to save the current state of the object to disk.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & The buffer to store the data when it is finished serializing. \\
+\hline
+{\em serializer} & The pointer to the serializer. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}{\index{jli@{jli}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!jli@{jli}}
+\subsubsection[{serialize\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void Abstract\+Factory\+Object\+::serialize\+Object (
+\begin{DoxyParamCaption}
+\item[{class bt\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}
+
+
+Definition at line 92 of file Abstract\+Factory\+Object.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}{\index{jli@{jli}!````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}}
+\index{````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}!jli@{jli}}
+\subsubsection[{$\sim$\+Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Factory\+Object\+::$\sim$\+Abstract\+Factory\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}
+
+
+Definition at line 23 of file Abstract\+Factory\+Object.\+cpp.
+
+\hypertarget{namespacejli_ac5033296b7700d3610c8d224889de6c6}{\index{jli@{jli}!````~Node\+Builder@{$\sim$\+Node\+Builder}}
+\index{````~Node\+Builder@{$\sim$\+Node\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Node\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Node\+Builder\+::$\sim$\+Node\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_ac5033296b7700d3610c8d224889de6c6}
+
+
+Definition at line 28 of file Node\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a7e46cbc7bc71f3c538261e41816e87b0}{\index{jli@{jli}!````~Resource\+Builder@{$\sim$\+Resource\+Builder}}
+\index{````~Resource\+Builder@{$\sim$\+Resource\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Resource\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Resource\+Builder\+::$\sim$\+Resource\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a7e46cbc7bc71f3c538261e41816e87b0}
+
+
+Definition at line 29 of file Resource\+Builder.\+cpp.
+
+\hypertarget{namespacejli_a99a07c08fdc61e92c99f5a47bc3430fa}{\index{jli@{jli}!````~Scene\+Builder@{$\sim$\+Scene\+Builder}}
+\index{````~Scene\+Builder@{$\sim$\+Scene\+Builder}!jli@{jli}}
+\subsubsection[{$\sim$\+Scene\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+Scene\+Builder\+::$\sim$\+Scene\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{namespacejli_a99a07c08fdc61e92c99f5a47bc3430fa}
+
+
+Definition at line 29 of file Scene\+Builder.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacejli_aff4f5efdf0c1b14426767392522ff622}{\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }}\label{namespacejli_aff4f5efdf0c1b14426767392522ff622}
+\hypertarget{namespacejli_ada77c3ed1019f3c21042f228b25756d7}{\index{jli@{jli}!m\+\_\+pointer@{m\+\_\+pointer}}
+\index{m\+\_\+pointer@{m\+\_\+pointer}!jli@{jli}}
+\subsubsection[{m\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ jli\+::m\+\_\+pointer}}\label{namespacejli_ada77c3ed1019f3c21042f228b25756d7}
+
+
+Definition at line 120 of file Abstract\+Factory\+Object.\+h.
+
+\hypertarget{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}{\index{jli@{jli}!m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}}
+\index{m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}!jli@{jli}}
+\subsubsection[{m\+\_\+pointer\+Val}]{\setlength{\rightskip}{0pt plus 5cm}u64 jli\+::m\+\_\+pointer\+Val}}\label{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}
+
+
+Definition at line 121 of file Abstract\+Factory\+Object.\+h.
+

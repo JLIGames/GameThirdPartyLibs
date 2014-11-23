@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/AnisotropicLighting/OGLES3/Build/Android/src/com/powervr/OGLES3AnisotropicLighting" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_446af5985d5a9a11540896eb0fc23d61 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_446af5985d5a9a11540896eb0fc23d61.html"]
-  dir_669cf57657804aff83981292447656cc [shape=box, label="OGLES3AnisotropicLighting", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_669cf57657804aff83981292447656cc.html"];
-  }
-}

@@ -1,0 +1,17 @@
+digraph "jli::WorldFactory::size"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jli::WorldFactory::size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jli::WorldFactory::\ldestroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_world_factory.html#ac40ef526c98ded68e2be556995147ca5"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jli::WorldFactory::\ldestroyAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_world_factory.html#a17880329ad38799467c11830c8b2b39e"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="jli::WorldFactory::\l~WorldFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_world_factory.html#ab07df554e2f6d0777470dc426020ceeb"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="jli::WorldFactory::\lremove_Internal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_world_factory.html#ac3348faaa06a437c9bdff93f0245d1e1"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="jli::WorldFactory::\ldestroyInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_world_factory.html#a715756195f93bfec6f6c54640e5e09e5"];
+}

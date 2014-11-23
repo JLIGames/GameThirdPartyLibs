@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/Extras/Serialize/HeaderGenerator" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_3f5a2536fb21792f4dbeb795295f94e6 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="Serialize" fontname="Helvetica", fontsize="10", URL="dir_3f5a2536fb21792f4dbeb795295f94e6.html"]
-  dir_52f407722b03c7995e0172572f2191d1 [shape=box, label="HeaderGenerator", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_52f407722b03c7995e0172572f2191d1.html"];
-  }
-}

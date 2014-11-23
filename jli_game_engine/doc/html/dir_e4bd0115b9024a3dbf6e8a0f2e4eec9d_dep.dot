@@ -1,9 +1,0 @@
-digraph "zlib/zlib-1.2.8/contrib/puff" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_e0c029cd5149dae73dc2b47aa4b1f108 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_e0c029cd5149dae73dc2b47aa4b1f108.html"]
-  dir_e4bd0115b9024a3dbf6e8a0f2e4eec9d [shape=box, label="puff", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e4bd0115b9024a3dbf6e8a0f2e4eec9d.html"];
-  }
-}

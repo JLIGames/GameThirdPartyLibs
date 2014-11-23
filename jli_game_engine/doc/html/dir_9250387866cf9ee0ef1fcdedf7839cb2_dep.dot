@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/Navigation3D/OGLES2/Build/Android/src/com/powervr/OGLES2Navigation3D" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_c6d19970d3b76d6d783d8d39725bc94c {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_c6d19970d3b76d6d783d8d39725bc94c.html"]
-  dir_9250387866cf9ee0ef1fcdedf7839cb2 [shape=box, label="OGLES2Navigation3D", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9250387866cf9ee0ef1fcdedf7839cb2.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "Assimp::HMPImporter::InternReadFile_HMP7"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Assimp::HMPImporter\l::InternReadFile_HMP7",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Assimp::HMPImporter\l::InternReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assimp_1_1_h_m_p_importer.html#a11a230b849809ebaa0fde85f7869f14d"];
-}

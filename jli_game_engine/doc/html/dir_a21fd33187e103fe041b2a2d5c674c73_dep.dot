@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/ParallaxBumpMap/OGLES2/Build/Android/src/com/powervr/OGLES2ParallaxBumpMap" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_7630045bc10009ab3b4454a30d1beb6b {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_7630045bc10009ab3b4454a30d1beb6b.html"]
-  dir_a21fd33187e103fe041b2a2d5c674c73 [shape=box, label="OGLES2ParallaxBumpMap", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a21fd33187e103fe041b2a2d5c674c73.html"];
-  }
-}

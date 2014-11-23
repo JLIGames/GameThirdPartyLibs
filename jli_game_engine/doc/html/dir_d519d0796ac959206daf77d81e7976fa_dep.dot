@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/UnitTests/cppunit/include/cppunit/config" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c {
-    graph [ bgcolor="#ddddee", pencolor="black", label="cppunit" fontname="Helvetica", fontsize="10", URL="dir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c.html"]
-  dir_d519d0796ac959206daf77d81e7976fa [shape=box, label="config", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d519d0796ac959206daf77d81e7976fa.html"];
-  }
-}

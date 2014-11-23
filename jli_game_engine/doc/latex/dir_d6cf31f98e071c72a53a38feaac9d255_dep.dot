@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/MaximumIntensityProjection/OGLES2/Build/Android/src/com/powervr/OGLES2MaximumIntensityProjection" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_86ce3f63ab493360fd6808061335adab {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_86ce3f63ab493360fd6808061335adab.html"]
-  dir_d6cf31f98e071c72a53a38feaac9d255 [shape=box, label="OGLES2MaximumIntensityProjection", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d6cf31f98e071c72a53a38feaac9d255.html"];
-  }
-}

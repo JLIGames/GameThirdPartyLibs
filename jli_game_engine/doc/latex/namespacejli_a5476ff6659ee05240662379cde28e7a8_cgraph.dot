@@ -1,0 +1,15 @@
+digraph "jli::serializeObject"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jli::serializeObject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jli::calculateSerializeBufferSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#ac890212c241245d9df88622409fcdb0e"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="jli::serialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#adecea6cebced1a5f22d541b2e85e9250"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="jli::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#ab78cb20b22a26275e80a1dd33566024c"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="jli::getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#acf2403453223c37b2cbf466e23515b6e"];
+}

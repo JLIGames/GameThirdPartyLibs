@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['remove_5finternal',['remove_Internal',['../class_abstract_factory.html#a7523badc673ee68bfa4b7640b96e4bfa',1,'AbstractFactory::remove_Internal()'],['../class_abstract_shared_factory.html#a3ce56d54b55727bf1dab3b32dd07d9ed',1,'AbstractSharedFactory::remove_Internal()']]],
-  ['removechild',['removeChild',['../_abstract_decorator_8h.html#a9823a90d55a3b5f33a24cdaf86de2f71',1,'removeChild(const u32 index):&#160;AbstractDecorator.h'],['../_abstract_decorator_8h.html#afe9b3ded557d9f56981ffb2531aebb3f',1,'removeChild(AbstractObject *object):&#160;AbstractDecorator.h']]],
-  ['removechildren',['removeChildren',['../_abstract_decorator_8h.html#ae60dde18aad3927816e30b7cbe4d98c6',1,'AbstractDecorator.h']]],
-  ['removefromparent',['removeFromParent',['../_abstract_decorator_8h.html#a7ad72c4e9256314a9be2823d000b8dbe',1,'AbstractDecorator.h']]],
-  ['removeparent',['removeParent',['../_abstract_decorator_8h.html#a5599c2c574a15113b5044edf47ecdd1f',1,'AbstractDecorator.h']]]
+  ['operator_21_3d',['operator!=',['../namespacejli.html#a785b4d4ce01e29508a7d7a9170f828a9',1,'jli']]],
+  ['operator_3c',['operator&lt;',['../namespacejli.html#a5c433a85502a8c96877ad59022bf1024',1,'jli']]],
+  ['operator_3c_3d',['operator&lt;=',['../namespacejli.html#a53a743e411edf86856cbb4ce21a6939d',1,'jli']]],
+  ['operator_3d',['operator=',['../classjli_1_1_abstract_builder.html#af22cd8c52e03a1ce5adad70b6b9c06cf',1,'jli::AbstractBuilder::operator=()'],['../classjli_1_1_node.html#abbd88d2e7fcd847329cfc29f6919c40d',1,'jli::Node::operator=()'],['../classjli_1_1_scene.html#ad7e5d257a4818d182f41a82ef7347f46',1,'jli::Scene::operator=()'],['../namespacejli.html#a290ea917337c90571eb741852c146180',1,'jli::operator=(const NodeBuilder &amp;)'],['../namespacejli.html#a544c167a86203fa931b358dc2e77df53',1,'jli::operator=(const ResourceBuilder &amp;)'],['../namespacejli.html#ab76ae2c8b17665d1e78209f9c76653e8',1,'jli::operator=(const SceneBuilder &amp;)']]],
+  ['operator_3d_3d',['operator==',['../namespacejli.html#a1ad4a8b528799f8baf60a8a63d5be679',1,'jli']]],
+  ['operator_3e',['operator&gt;',['../namespacejli.html#a41c55cdd32eb0bf43523ae6215185fcf',1,'jli']]],
+  ['operator_3e_3d',['operator&gt;=',['../namespacejli.html#a4c2ff4664aaa419bc99fe70d4dfb5694',1,'jli']]]
 ];

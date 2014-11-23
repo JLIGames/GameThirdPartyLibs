@@ -3,7 +3,11 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="AbstractObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="AbstractFactoryObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="AbstractBehavior\< OWNER\l_TYPE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_abstract_behavior.html"];
+  Node2 [label="jli::AbstractBuilder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_abstract_builder.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jli::Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_node.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="jli::Scene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjli_1_1_scene.html"];
 }

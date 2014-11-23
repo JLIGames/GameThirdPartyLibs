@@ -1,43 +1,57 @@
-\hypertarget{_abstract_factory_object_8h}{\section{include/\+Abstract\+Factory\+Object.h File Reference}
-\label{_abstract_factory_object_8h}\index{include/\+Abstract\+Factory\+Object.\+h@{include/\+Abstract\+Factory\+Object.\+h}}
+\hypertarget{_abstract_factory_object_8h}{\section{Abstract\+Factory\+Object.\+h File Reference}
+\label{_abstract_factory_object_8h}\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
 }
 {\ttfamily \#include \char`\"{}bt\+Aligned\+Object\+Array.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}bt\+Aligned\+Allocator.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Abstract\+Object.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Abstract\+Builder.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Abstract\+Factory.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Abstract\+Decorator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}bt\+Serializer.\+h\char`\"{}}\\*
 Include dependency graph for Abstract\+Factory\+Object.\+h\+:
 This graph shows which files directly or indirectly include this file\+:
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacejli}{jli}
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{_abstract_factory_object_8h_adba51f7c85c1b8bac9fe480f3fe8c52d}{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+Factory\+Object
+\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{jli\+::\+Abstract\+Factory\+Object} (const void $\ast$ptr)
 \item 
-virtual \hyperlink{_abstract_factory_object_8h_a8a59e67338227437995ab35616fec7cf}{$\sim$\+Abstract\+Factory\+Object} ()
+virtual \hyperlink{namespacejli_a31cbc80d5096c1b894029295d6aa6c6b}{jli\+::$\sim$\+Abstract\+Factory\+Object} ()
 \item 
-\hyperlink{_abstract_factory_object_8h_a073043644ede242268123f98ca10ec2d}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
+\hyperlink{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{jli\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
 \item 
-virtual const char $\ast$ \hyperlink{_abstract_factory_object_8h_a144500b31544cf7c45c8562ebd9985fe}{get\+Name} () const =0
+virtual const char $\ast$ \hyperlink{namespacejli_ab59410e766fae1d158793c2a0c70be5e}{jli\+::get\+Name} () const 
 \item 
-virtual u32 \hyperlink{_abstract_factory_object_8h_a5743fdb7978066dd207347b402a54872}{get\+Type} () const =0
+virtual u32 \hyperlink{namespacejli_acf2403453223c37b2cbf466e23515b6e}{jli\+::get\+Type} () const 
 \item 
-const void $\ast$ \hyperlink{_abstract_factory_object_8h_ace390c2a6dca371b9715797e040fe5fc}{get\+Pointer} () const 
+virtual Abstract\+Factory\+Object $\ast$ \hyperlink{namespacejli_a35ff60e4cedaf47ba2d630f2201ecd2c}{jli\+::create} (const Abstract\+Builder \&builder) const 
 \item 
-const u64 \hyperlink{_abstract_factory_object_8h_a855de9af90ee51333bfc218bb3dabfe0}{get\+Pointer\+Value} () const 
+virtual Abstract\+Factory\+Object $\ast$ \hyperlink{namespacejli_a5100077139d5c7339602ada53ab27663}{jli\+::clone} (bool shared=false) const 
 \item 
-bool \hyperlink{_abstract_factory_object_8h_a9049a0e41e1d76a242f00ea7ec323f18}{operator==} (const Abstract\+Factory\+Object \&rhs) const 
+virtual void \hyperlink{namespacejli_ace155e097623e08835596243e115d880}{jli\+::destroy} ()
 \item 
-bool \hyperlink{_abstract_factory_object_8h_a8571ca8b7756e403fa9ebfa9e6251ef7}{operator$<$} (const Abstract\+Factory\+Object \&rhs) const 
+virtual s32 \hyperlink{namespacejli_a643ba9aff12ba46ade9719f4d8c08303}{jli\+::calculate\+Serialize\+Buffer\+Size} () const =0
 \item 
-bool \hyperlink{_abstract_factory_object_8h_a836cb090770eea9f6f73b2abbb4f025d}{operator$>$} (const Abstract\+Factory\+Object \&rhs) const 
+virtual void \hyperlink{namespacejli_ac4ecbc29085e60be91b1eee948d37851}{jli\+::serialize} (void $\ast$data\+Buffer, bt\+Serializer $\ast$serializer) const =0
 \item 
-bool \hyperlink{_abstract_factory_object_8h_a057c9b3132d404708c7abaad852bac57}{operator!=} (const Abstract\+Factory\+Object \&rhs) const 
+const void $\ast$ \hyperlink{namespacejli_a71c999372e54bb90fb3bfd8de1546d43}{jli\+::get\+Pointer} () const 
 \item 
-bool \hyperlink{_abstract_factory_object_8h_a12b98a99d73da35400d2c0a71eb1351b}{operator$<$=} (const Abstract\+Factory\+Object \&rhs) const 
+const u64 \hyperlink{namespacejli_a9068d3abab2ee4b22d121a9af3ece697}{jli\+::get\+Pointer\+Value} () const 
 \item 
-bool \hyperlink{_abstract_factory_object_8h_ad0e44fa5a5c85ba7e8eb2369bf6a03e7}{operator$>$=} (const Abstract\+Factory\+Object \&rhs) const 
+bool \hyperlink{namespacejli_a1ad4a8b528799f8baf60a8a63d5be679}{jli\+::operator==} (const Abstract\+Factory\+Object \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a5c433a85502a8c96877ad59022bf1024}{jli\+::operator$<$} (const Abstract\+Factory\+Object \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a41c55cdd32eb0bf43523ae6215185fcf}{jli\+::operator$>$} (const Abstract\+Factory\+Object \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a785b4d4ce01e29508a7d7a9170f828a9}{jli\+::operator!=} (const Abstract\+Factory\+Object \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a53a743e411edf86856cbb4ce21a6939d}{jli\+::operator$<$=} (const Abstract\+Factory\+Object \&rhs) const 
+\item 
+bool \hyperlink{namespacejli_a4c2ff4664aaa419bc99fe70d4dfb5694}{jli\+::operator$>$=} (const Abstract\+Factory\+Object \&rhs) const 
+\item 
+virtual void \hyperlink{namespacejli_a8e31f25cfa59439a2b75c8abd658fba7}{jli\+::serialize\+Object} (class bt\+Serializer $\ast$serializer) const 
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -45,137 +59,8 @@ bool \hyperlink{_abstract_factory_object_8h_ad0e44fa5a5c85ba7e8eb2369bf6a03e7}{o
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 union \{\\
-\>const void $\ast$ \hyperlink{_abstract_factory_object_8h_a1b73899714368acfe969845a937a5939}{m\_pointer}\\
-\>u64 \hyperlink{_abstract_factory_object_8h_a5303a4695709a8280284911716ec780e}{m\_pointerVal}\\
+\>const void $\ast$ \hyperlink{namespacejli_ada77c3ed1019f3c21042f228b25756d7}{jli::m\_pointer}\\
+\>u64 \hyperlink{namespacejli_a33c35463a7c7fe6bdede0f192fe9d7c6}{jli::m\_pointerVal}\\
 \}; \\
 
 \end{tabbing}\end{DoxyCompactItemize}
-
-
-\subsection{Function Documentation}
-\hypertarget{_abstract_factory_object_8h_adba51f7c85c1b8bac9fe480f3fe8c52d}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}}
-\index{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16@{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16}]{\setlength{\rightskip}{0pt plus 5cm}A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16 (
-\begin{DoxyParamCaption}
-\item[{class}]{}
-\end{DoxyParamCaption}
-)}}\label{_abstract_factory_object_8h_adba51f7c85c1b8bac9fe480f3fe8c52d}
-\hypertarget{_abstract_factory_object_8h_a073043644ede242268123f98ca10ec2d}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}}
-\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{_abstract_factory_object_8h_a073043644ede242268123f98ca10ec2d}
-\hypertarget{_abstract_factory_object_8h_a144500b31544cf7c45c8562ebd9985fe}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!get\+Name@{get\+Name}}
-\index{get\+Name@{get\+Name}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ get\+Name (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_factory_object_8h_a144500b31544cf7c45c8562ebd9985fe}
-
-
-Here is the caller graph for this function\+:
-
-
-\hypertarget{_abstract_factory_object_8h_ace390c2a6dca371b9715797e040fe5fc}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!get\+Pointer@{get\+Pointer}}
-\index{get\+Pointer@{get\+Pointer}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{get\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ get\+Pointer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_ace390c2a6dca371b9715797e040fe5fc}
-
-
-Here is the caller graph for this function\+:
-
-
-\hypertarget{_abstract_factory_object_8h_a855de9af90ee51333bfc218bb3dabfe0}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!get\+Pointer\+Value@{get\+Pointer\+Value}}
-\index{get\+Pointer\+Value@{get\+Pointer\+Value}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{get\+Pointer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const u64 get\+Pointer\+Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_a855de9af90ee51333bfc218bb3dabfe0}
-\hypertarget{_abstract_factory_object_8h_a5743fdb7978066dd207347b402a54872}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!get\+Type@{get\+Type}}
-\index{get\+Type@{get\+Type}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual u32 get\+Type (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{_abstract_factory_object_8h_a5743fdb7978066dd207347b402a54872}
-\hypertarget{_abstract_factory_object_8h_a057c9b3132d404708c7abaad852bac57}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!operator"!=@{operator"!=}}
-\index{operator"!=@{operator"!=}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_a057c9b3132d404708c7abaad852bac57}
-\hypertarget{_abstract_factory_object_8h_a8571ca8b7756e403fa9ebfa9e6251ef7}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!operator$<$@{operator$<$}}
-\index{operator$<$@{operator$<$}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_a8571ca8b7756e403fa9ebfa9e6251ef7}
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{_abstract_factory_object_8h_a12b98a99d73da35400d2c0a71eb1351b}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!operator$<$=@{operator$<$=}}
-\index{operator$<$=@{operator$<$=}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$= (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_a12b98a99d73da35400d2c0a71eb1351b}
-\hypertarget{_abstract_factory_object_8h_a9049a0e41e1d76a242f00ea7ec323f18}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!operator==@{operator==}}
-\index{operator==@{operator==}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_a9049a0e41e1d76a242f00ea7ec323f18}
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{_abstract_factory_object_8h_a836cb090770eea9f6f73b2abbb4f025d}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!operator$>$@{operator$>$}}
-\index{operator$>$@{operator$>$}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$ (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_a836cb090770eea9f6f73b2abbb4f025d}
-
-
-Here is the call graph for this function\+:
-
-
-\hypertarget{_abstract_factory_object_8h_ad0e44fa5a5c85ba7e8eb2369bf6a03e7}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!operator$>$=@{operator$>$=}}
-\index{operator$>$=@{operator$>$=}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$= (
-\begin{DoxyParamCaption}
-\item[{const Abstract\+Factory\+Object \&}]{rhs}
-\end{DoxyParamCaption}
-) const}}\label{_abstract_factory_object_8h_ad0e44fa5a5c85ba7e8eb2369bf6a03e7}
-\hypertarget{_abstract_factory_object_8h_a8a59e67338227437995ab35616fec7cf}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}}
-\index{````~Abstract\+Factory\+Object@{$\sim$\+Abstract\+Factory\+Object}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{$\sim$\+Abstract\+Factory\+Object}]{\setlength{\rightskip}{0pt plus 5cm}virtual $\sim$Abstract\+Factory\+Object (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{_abstract_factory_object_8h_a8a59e67338227437995ab35616fec7cf}
-
-
-\subsection{Variable Documentation}
-\hypertarget{_abstract_factory_object_8h_a5a80141b27ec27d277dcdb14c9d03061}{\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }}\label{_abstract_factory_object_8h_a5a80141b27ec27d277dcdb14c9d03061}
-\hypertarget{_abstract_factory_object_8h_a1b73899714368acfe969845a937a5939}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!m\+\_\+pointer@{m\+\_\+pointer}}
-\index{m\+\_\+pointer@{m\+\_\+pointer}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{m\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ m\+\_\+pointer}}\label{_abstract_factory_object_8h_a1b73899714368acfe969845a937a5939}
-\hypertarget{_abstract_factory_object_8h_a5303a4695709a8280284911716ec780e}{\index{Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}!m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}}
-\index{m\+\_\+pointer\+Val@{m\+\_\+pointer\+Val}!Abstract\+Factory\+Object.\+h@{Abstract\+Factory\+Object.\+h}}
-\subsubsection[{m\+\_\+pointer\+Val}]{\setlength{\rightskip}{0pt plus 5cm}u64 m\+\_\+pointer\+Val}}\label{_abstract_factory_object_8h_a5303a4695709a8280284911716ec780e}

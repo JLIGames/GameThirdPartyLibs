@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/Coverflow/OGLES3/Build/Android/src/com/powervr/OGLES3Coverflow" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_e2453f2720e609178cc1f8ba82cfcf8d {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_e2453f2720e609178cc1f8ba82cfcf8d.html"]
-  dir_3f0ca80fe146be77ec2325361d3ee20c [shape=box, label="OGLES3Coverflow", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3f0ca80fe146be77ec2325361d3ee20c.html"];
-  }
-}

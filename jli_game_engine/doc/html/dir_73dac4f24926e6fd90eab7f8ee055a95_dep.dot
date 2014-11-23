@@ -1,9 +1,0 @@
-digraph "png/lpng1612/contrib/gregbook" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_1bdd4d8401a0ccf8f6cce33345e3b469 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_1bdd4d8401a0ccf8f6cce33345e3b469.html"]
-  dir_73dac4f24926e6fd90eab7f8ee055a95 [shape=box, label="gregbook", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_73dac4f24926e6fd90eab7f8ee055a95.html"];
-  }
-}

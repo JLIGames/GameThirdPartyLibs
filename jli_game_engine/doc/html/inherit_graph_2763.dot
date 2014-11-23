@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="SWIGTYPE_p_aiImporterDesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_w_i_g_t_y_p_e__p__ai_importer_desc.html"];
-}

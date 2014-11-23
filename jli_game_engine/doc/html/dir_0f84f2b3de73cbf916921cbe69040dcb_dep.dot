@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/Fur/OGLES/Build/Android/src/com/powervr/OGLESFur" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_8fc08daed01161f97846cd3f89db56ae {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_8fc08daed01161f97846cd3f89db56ae.html"]
-  dir_0f84f2b3de73cbf916921cbe69040dcb [shape=box, label="OGLESFur", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0f84f2b3de73cbf916921cbe69040dcb.html"];
-  }
-}

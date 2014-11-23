@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/Skybox/OGLES/Build/Android/src/com/powervr/OGLESSkybox" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_8fde54caadd24c7afff1a8ef8627df90 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_8fde54caadd24c7afff1a8ef8627df90.html"]
-  dir_90366784f6c2d6609b3176d23075a45a [shape=box, label="OGLESSkybox", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_90366784f6c2d6609b3176d23075a45a.html"];
-  }
-}

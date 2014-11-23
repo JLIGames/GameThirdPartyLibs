@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/Skinning/OGLES2/Build/Android/src/com/powervr/OGLES2Skinning" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_90eca27c07cecd0e7a28cb97d471e137 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_90eca27c07cecd0e7a28cb97d471e137.html"]
-  dir_6b2087ec5bb4a759a7f7f182948d45ff [shape=box, label="OGLES2Skinning", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6b2087ec5bb4a759a7f7f182948d45ff.html"];
-  }
-}

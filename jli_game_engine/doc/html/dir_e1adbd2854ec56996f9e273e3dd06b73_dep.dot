@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/EvilSkull/OGLES/Build/Android/src/com/powervr/OGLESEvilSkull" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_0d182e0c68a47bf9c8c94f9a44ea1918 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_0d182e0c68a47bf9c8c94f9a44ea1918.html"]
-  dir_e1adbd2854ec56996f9e273e3dd06b73 [shape=box, label="OGLESEvilSkull", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e1adbd2854ec56996f9e273e3dd06b73.html"];
-  }
-}

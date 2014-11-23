@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="GIM_TRIANGLE_CONTACT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_g_i_m___t_r_i_a_n_g_l_e___c_o_n_t_a_c_t.html",tooltip="Structure for collision. "];
-}

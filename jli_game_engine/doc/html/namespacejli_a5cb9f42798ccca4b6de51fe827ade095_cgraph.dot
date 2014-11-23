@@ -1,0 +1,13 @@
+digraph "jli::ATTRIBUTE_ALIGNED16"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jli::ATTRIBUTE_ALIGNED16",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jli::BT_DECLARE_ALIGNED\l_ALLOCATOR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#a570a0b81268f888f69ad4c8b7fe6edae"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jli::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#ab59410e766fae1d158793c2a0c70be5e"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="jli::getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejli.html#acf2403453223c37b2cbf466e23515b6e"];
+}

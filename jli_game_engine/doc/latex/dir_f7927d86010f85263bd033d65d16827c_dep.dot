@@ -1,9 +1,0 @@
-digraph "fmod/android/fmodstudioapi10503android/api/lowlevel/inc" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_0c8edc3481e202ca49e8214ff5158b73 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="lowlevel" fontname="Helvetica", fontsize="10", URL="dir_0c8edc3481e202ca49e8214ff5158b73.html"]
-  dir_f7927d86010f85263bd033d65d16827c [shape=box, label="inc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f7927d86010f85263bd033d65d16827c.html"];
-  }
-}

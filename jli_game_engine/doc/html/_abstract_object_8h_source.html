@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>My Project: include/AbstractObject.h Source File</title>
+<title>My Project: AbstractObject.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -63,12 +64,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -77,11 +79,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">AbstractObject.h</div>  </div>
@@ -101,26 +98,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Util.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;btAlignedAllocator.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_abstract_object_8h.html#a8f92ae0b09971ae548363690abb96443">   18</a></span>&#160;<a class="code" href="_abstract_object_8h.html#a8f92ae0b09971ae548363690abb96443">ATTRIBUTE_ALIGNED16</a>(<span class="keyword">class</span>) AbstractObject</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> ~AbstractObject(){}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="_abstract_builder_8h.html#a073043644ede242268123f98ca10ec2d">BT_DECLARE_ALIGNED_ALLOCATOR</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="_abstract_factory_object_8h.html#a144500b31544cf7c45c8562ebd9985fe">getName</a>()<span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> u32 <a class="code" href="_abstract_builder_8h.html#a5743fdb7978066dd207347b402a54872">getType</a>()<span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejli.html">jli</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">   17</a></span>&#160;    <a class="code" href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">ATTRIBUTE_ALIGNED16</a>(<span class="keyword">class</span>) AbstractObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> ~AbstractObject(){}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="namespacejli.html#a570a0b81268f888f69ad4c8b7fe6edae">BT_DECLARE_ALIGNED_ALLOCATOR</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="namespacejli.html#ab59410e766fae1d158793c2a0c70be5e">getName</a>()<span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> u32 <a class="code" href="namespacejli.html#acf2403453223c37b2cbf466e23515b6e">getType</a>()<span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="_abstract_builder_8h_html_a5743fdb7978066dd207347b402a54872"><div class="ttname"><a href="_abstract_builder_8h.html#a5743fdb7978066dd207347b402a54872">getType</a></div><div class="ttdeci">virtual u32 getType() const =0</div></div>
-<div class="ttc" id="_abstract_factory_object_8h_html_a144500b31544cf7c45c8562ebd9985fe"><div class="ttname"><a href="_abstract_factory_object_8h.html#a144500b31544cf7c45c8562ebd9985fe">getName</a></div><div class="ttdeci">virtual const char * getName() const =0</div></div>
-<div class="ttc" id="_abstract_builder_8h_html_a073043644ede242268123f98ca10ec2d"><div class="ttname"><a href="_abstract_builder_8h.html#a073043644ede242268123f98ca10ec2d">BT_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">BT_DECLARE_ALIGNED_ALLOCATOR()</div></div>
-<div class="ttc" id="_abstract_object_8h_html_a8f92ae0b09971ae548363690abb96443"><div class="ttname"><a href="_abstract_object_8h.html#a8f92ae0b09971ae548363690abb96443">ATTRIBUTE_ALIGNED16</a></div><div class="ttdeci">ATTRIBUTE_ALIGNED16(class) AbstractObject</div><div class="ttdef"><b>Definition:</b> AbstractObject.h:18</div></div>
+<div class="ttc" id="namespacejli_html"><div class="ttname"><a href="namespacejli.html">jli</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_builder_8cpp_source.html#l00013">AbstractBuilder.cpp:13</a></div></div>
+<div class="ttc" id="namespacejli_html_a570a0b81268f888f69ad4c8b7fe6edae"><div class="ttname"><a href="namespacejli.html#a570a0b81268f888f69ad4c8b7fe6edae">jli::BT_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">BT_DECLARE_ALIGNED_ALLOCATOR()</div></div>
+<div class="ttc" id="namespacejli_html_acf2403453223c37b2cbf466e23515b6e"><div class="ttname"><a href="namespacejli.html#acf2403453223c37b2cbf466e23515b6e">jli::getType</a></div><div class="ttdeci">virtual u32 getType() const </div></div>
+<div class="ttc" id="namespacejli_html_ab59410e766fae1d158793c2a0c70be5e"><div class="ttname"><a href="namespacejli.html#ab59410e766fae1d158793c2a0c70be5e">jli::getName</a></div><div class="ttdeci">virtual const char * getName() const </div></div>
+<div class="ttc" id="namespacejli_html_a5cb9f42798ccca4b6de51fe827ade095"><div class="ttname"><a href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">jli::ATTRIBUTE_ALIGNED16</a></div><div class="ttdeci">ATTRIBUTE_ALIGNED16(class) AbstractObject</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_object_8h_source.html#l00017">AbstractObject.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 17 2014 12:25:39 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 22 2014 00:38:50 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

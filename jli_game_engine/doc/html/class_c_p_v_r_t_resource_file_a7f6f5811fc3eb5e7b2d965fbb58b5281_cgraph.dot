@@ -1,9 +1,0 @@
-digraph "CPVRTResourceFile::~CPVRTResourceFile"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="CPVRTResourceFile::\l~CPVRTResourceFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="CPVRTResourceFile::\lClose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_p_v_r_t_resource_file.html#a3755e05b721b83a2fe20c81c9376bab3",tooltip="Closes the file. "];
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/MaximumIntensityProjection/OGLES2/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_d908b6d0062110e162ff4ea8a16e1544 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES2" fontname="Helvetica", fontsize="10", URL="dir_d908b6d0062110e162ff4ea8a16e1544.html"]
-  dir_b4a25528e8d52cc1bc9a7c72b770eed3 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b4a25528e8d52cc1bc9a7c72b770eed3.html"];
-  }
-}

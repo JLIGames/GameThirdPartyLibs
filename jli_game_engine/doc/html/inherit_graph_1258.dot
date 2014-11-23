@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="btSoftBody::Joint::\leType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbt_soft_body_1_1_joint_1_1e_type.html"];
-}

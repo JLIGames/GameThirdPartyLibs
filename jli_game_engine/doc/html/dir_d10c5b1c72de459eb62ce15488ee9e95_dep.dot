@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/src/BulletCollision/NarrowPhaseCollision" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_169d553c9f6b1b109a900f38b48f3038 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="BulletCollision" fontname="Helvetica", fontsize="10", URL="dir_169d553c9f6b1b109a900f38b48f3038.html"]
-  dir_d10c5b1c72de459eb62ce15488ee9e95 [shape=box, label="NarrowPhaseCollision", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d10c5b1c72de459eb62ce15488ee9e95.html"];
-  }
-}

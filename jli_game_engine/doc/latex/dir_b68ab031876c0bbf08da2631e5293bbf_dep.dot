@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/ChameleonMan/OGLES3/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_6ada538830bc2b45d445d95778a45767 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_6ada538830bc2b45d445d95778a45767.html"]
-  dir_b68ab031876c0bbf08da2631e5293bbf [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b68ab031876c0bbf08da2631e5293bbf.html"];
-  }
-}

@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Assimp::MDL::TexCoord_MDL3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_assimp_1_1_m_d_l_1_1_tex_coord___m_d_l3.html",tooltip="Data structure for an UV coordinate in the 3DGS MDL3 format. "];
-}

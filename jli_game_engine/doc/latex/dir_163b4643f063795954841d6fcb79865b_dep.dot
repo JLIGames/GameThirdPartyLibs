@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/EvilSkull/OGLES/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_1fc11a9b25b9624ec61dd8fe1f56ecea {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES" fontname="Helvetica", fontsize="10", URL="dir_1fc11a9b25b9624ec61dd8fe1f56ecea.html"]
-  dir_163b4643f063795954841d6fcb79865b [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_163b4643f063795954841d6fcb79865b.html"];
-  }
-}

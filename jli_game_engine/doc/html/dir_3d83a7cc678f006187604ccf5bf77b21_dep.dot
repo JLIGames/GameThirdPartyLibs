@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/ImageConvolution/OGLES3/Build/Android/src/com/powervr/OGLES3ImageConvolution" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_8c37235e863b7c61f023cfe305545d2d {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_8c37235e863b7c61f023cfe305545d2d.html"]
-  dir_3d83a7cc678f006187604ccf5bf77b21 [shape=box, label="OGLES3ImageConvolution", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3d83a7cc678f006187604ccf5bf77b21.html"];
-  }
-}

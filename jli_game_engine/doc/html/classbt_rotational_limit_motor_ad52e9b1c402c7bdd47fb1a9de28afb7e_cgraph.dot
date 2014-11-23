@@ -1,9 +1,0 @@
-digraph "btRotationalLimitMotor::solveAngularLimits"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="btRotationalLimitMotor\l::solveAngularLimits",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="btRotationalLimitMotor\l::needApplyTorques",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbt_rotational_limit_motor.html#af8f10179d361ad46f5a4636822af6d7d",tooltip="Need apply correction. "];
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Beginner/04_BasicTnL/OGLES3/Build/Android/src/com/powervr/OGLES3BasicTnL" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_1ea55fea4ea5796f9d5e15baea925007 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_1ea55fea4ea5796f9d5e15baea925007.html"]
-  dir_79b8564b0f4d1f744d472a00dcd4b9dc [shape=box, label="OGLES3BasicTnL", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_79b8564b0f4d1f744d472a00dcd4b9dc.html"];
-  }
-}

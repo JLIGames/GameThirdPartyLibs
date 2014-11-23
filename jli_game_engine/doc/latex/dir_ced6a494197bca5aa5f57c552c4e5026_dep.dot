@@ -1,9 +1,0 @@
-digraph "vorbis/libvorbis-1.3.3/macos/compat/sys" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_1ca5e4a92f36b227642f2092a30eee86 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="compat" fontname="Helvetica", fontsize="10", URL="dir_1ca5e4a92f36b227642f2092a30eee86.html"]
-  dir_ced6a494197bca5aa5f57c552c4e5026 [shape=box, label="sys", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ced6a494197bca5aa5f57c552c4e5026.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/Mouse/OGLES/Build/Android/src/com/powervr/OGLESMouse" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_b7ef8fc13b98687e1c23bc67ae87e290 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_b7ef8fc13b98687e1c23bc67ae87e290.html"]
-  dir_69bebb29bfa5a3bb9e648638cd640a7e [shape=box, label="OGLESMouse", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_69bebb29bfa5a3bb9e648638cd640a7e.html"];
-  }
-}

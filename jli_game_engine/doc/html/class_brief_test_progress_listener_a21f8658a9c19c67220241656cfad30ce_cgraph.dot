@@ -1,9 +1,0 @@
-digraph "BriefTestProgressListener::addFailure"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="BriefTestProgressListener\l::addFailure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="TestFailure::isError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_failure.html#a0b6c1ee50d2186a4918f015d7879e8dd",tooltip="Indicates if the failure is a failed assertion or an error. "];
-}

@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/src/vectormath/scalar" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_c38dceb2522acbad286a7232f08ab19b {
-    graph [ bgcolor="#ddddee", pencolor="black", label="vectormath" fontname="Helvetica", fontsize="10", URL="dir_c38dceb2522acbad286a7232f08ab19b.html"]
-  dir_aee98713df1e6bd2874bf9f6c08c811f [shape=box, label="scalar", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_aee98713df1e6bd2874bf9f6c08c811f.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "jpg/jpeg-9a" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_56dbbdc39b089bc0b46773660ce64bd1 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="jpg" fontname="Helvetica", fontsize="10", URL="dir_56dbbdc39b089bc0b46773660ce64bd1.html"]
-  dir_be28a2a08ecf939ee5769ee81009f436 [shape=box, label="jpeg-9a", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_be28a2a08ecf939ee5769ee81009f436.html"];
-  }
-}

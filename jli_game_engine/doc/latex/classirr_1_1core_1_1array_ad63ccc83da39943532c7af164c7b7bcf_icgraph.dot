@@ -1,9 +1,0 @@
-digraph "irr::core::array::size"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="irr::core::array::size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="irr::core::array\< SAttribute\l \>::set_pointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classirr_1_1core_1_1array.html#ad0efa8d2ea5078580e5cea1848992a88"];
-}

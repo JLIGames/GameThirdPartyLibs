@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/Lighting/OGLES/Build/Android/src/com/powervr/OGLESLighting" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_9bd6fbf09b6a6645ef04d0e6cd51a827 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_9bd6fbf09b6a6645ef04d0e6cd51a827.html"]
-  dir_b4be2f788844affd129045990dec0abc [shape=box, label="OGLESLighting", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b4be2f788844affd129045990dec0abc.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "assimp/assimp-3.1.1/samples/DevIL/include/IL" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_1f02ac1e76808bcb7c03347ced07e26d {
-    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_1f02ac1e76808bcb7c03347ced07e26d.html"]
-  dir_86a32687dbebdd181f31e18acd7921a9 [shape=box, label="IL", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_86a32687dbebdd181f31e18acd7921a9.html"];
-  }
-}

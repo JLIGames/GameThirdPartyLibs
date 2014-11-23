@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/UnitTests/cppunit/include/cppunit/portability" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c {
-    graph [ bgcolor="#ddddee", pencolor="black", label="cppunit" fontname="Helvetica", fontsize="10", URL="dir_cdf1baf3b7fcc57e2a6bfc8fb31f3e6c.html"]
-  dir_91697d268417c1f94b1b9c4f4d3a4db4 [shape=box, label="portability", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_91697d268417c1f94b1b9c4f4d3a4db4.html"];
-  }
-}

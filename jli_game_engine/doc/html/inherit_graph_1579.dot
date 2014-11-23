@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="comparer_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcomparer__context.html",tooltip="Record our way through the files to be compared and dump useful information if we fail..."];
-}

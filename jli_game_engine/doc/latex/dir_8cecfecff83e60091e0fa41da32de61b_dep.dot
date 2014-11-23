@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/PolyBump/OGLES/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_5e8426eff5c172dfabb9bd661100d2d5 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES" fontname="Helvetica", fontsize="10", URL="dir_5e8426eff5c172dfabb9bd661100d2d5.html"]
-  dir_8cecfecff83e60091e0fa41da32de61b [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8cecfecff83e60091e0fa41da32de61b.html"];
-  }
-}

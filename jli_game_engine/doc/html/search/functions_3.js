@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['destroy',['destroy',['../class_abstract_factory.html#ab8b44e874d336d38f17b5c1287843db2',1,'AbstractFactory::destroy()'],['../class_abstract_shared_factory.html#a5b129772c8bcea8a059dbc21fb07ddce',1,'AbstractSharedFactory::destroy()']]],
-  ['destroyall',['destroyAll',['../class_abstract_factory.html#a099a2afe22d8325769acd22632de7663',1,'AbstractFactory::destroyAll()'],['../class_abstract_shared_factory.html#ae61501ab1af1ed320eac60d343e4f6b2',1,'AbstractSharedFactory::destroyAll(OBJECT_TYPE *)'],['../class_abstract_shared_factory.html#aacc07c2878fdf2500c8f32c71bf072b6',1,'AbstractSharedFactory::destroyAll()']]],
-  ['destroyinstance',['destroyInstance',['../class_abstract_singleton.html#ac6ae218bcc99c7a2ed6f4254b7e944fb',1,'AbstractSingleton']]]
+  ['destroy',['destroy',['../classjli_1_1_world_factory.html#ac40ef526c98ded68e2be556995147ca5',1,'jli::WorldFactory::destroy()'],['../namespacejli.html#ace155e097623e08835596243e115d880',1,'jli::destroy()']]],
+  ['destroyall',['destroyAll',['../classjli_1_1_world_factory.html#a17880329ad38799467c11830c8b2b39e',1,'jli::WorldFactory']]],
+  ['destroyinstance',['destroyInstance',['../classjli_1_1_world.html#a5cd566fc8e6f41ed5d0de5c8f6cbacf8',1,'jli::World::destroyInstance()'],['../classjli_1_1_world_factory.html#a715756195f93bfec6f6c54640e5e09e5',1,'jli::WorldFactory::destroyInstance()']]]
 ];

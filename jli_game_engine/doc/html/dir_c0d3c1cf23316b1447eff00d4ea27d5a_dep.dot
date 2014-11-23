@@ -1,9 +1,0 @@
-digraph "ogg/libogg-1.3.2/include/ogg" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_ddaf9ca22a3b5ade7adecf2758eebf3c {
-    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_ddaf9ca22a3b5ade7adecf2758eebf3c.html"]
-  dir_c0d3c1cf23316b1447eff00d4ea27d5a [shape=box, label="ogg", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c0d3c1cf23316b1447eff00d4ea27d5a.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Beginner/07_IntroducingPOD/OGLES2/Build/Android/src/com/powervr/OGLES2IntroducingPOD" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_cec7e573c84edaaaf5cdc45d8b7f2412 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_cec7e573c84edaaaf5cdc45d8b7f2412.html"]
-  dir_d671b910b1589b3613a6613cb5733cf7 [shape=box, label="OGLES2IntroducingPOD", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d671b910b1589b3613a6613cb5733cf7.html"];
-  }
-}

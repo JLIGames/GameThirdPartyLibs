@@ -67,6 +67,11 @@ public:
         return (m_Decorators.size() != m_Decorators.findLinearSearch(object));
     }
     
+    bool hasChildren()const
+    {
+        return (m_Decorators.size() > 0);
+    }
+    
     AbstractObject*	getChild(const u32 index)
     {
         jliAssertMsg(index < m_Decorators.size(), "index must be smaller than the size of the array");

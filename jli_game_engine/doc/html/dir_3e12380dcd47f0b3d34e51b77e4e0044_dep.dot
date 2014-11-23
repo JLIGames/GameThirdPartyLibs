@@ -1,9 +1,0 @@
-digraph "jli_game_engine/include" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_fa305a6743bf9d7c8c08216ef1410eed {
-    graph [ bgcolor="#ddddee", pencolor="black", label="jli_game_engine" fontname="Helvetica", fontsize="10", URL="dir_fa305a6743bf9d7c8c08216ef1410eed.html"]
-  dir_3e12380dcd47f0b3d34e51b77e4e0044 [shape=box, label="include", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3e12380dcd47f0b3d34e51b77e4e0044.html"];
-  }
-}

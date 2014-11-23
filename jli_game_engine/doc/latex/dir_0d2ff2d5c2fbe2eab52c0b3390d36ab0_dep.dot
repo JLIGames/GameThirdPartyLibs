@@ -1,9 +1,0 @@
-digraph "bullet/bullet-2.82-r2704/src/MiniCL/MiniCLTask" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_bab2168879f8f81f580ffc3e986389f8 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="MiniCL" fontname="Helvetica", fontsize="10", URL="dir_bab2168879f8f81f580ffc3e986389f8.html"]
-  dir_0d2ff2d5c2fbe2eab52c0b3390d36ab0 [shape=box, label="MiniCLTask", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0d2ff2d5c2fbe2eab52c0b3390d36ab0.html"];
-  }
-}

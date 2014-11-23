@@ -1,9 +1,0 @@
-digraph "PLANE_CLIP_SEGMENT2"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="PLANE_CLIP_SEGMENT2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="PLANE_CLIP_SEGMENT\l_CLOSEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gim__basic__geometry__operations_8h.html#a43c5e116fb5e9caa159d3fd3d32eace7",tooltip="Confirms if the plane intersect the edge or not. "];
-}

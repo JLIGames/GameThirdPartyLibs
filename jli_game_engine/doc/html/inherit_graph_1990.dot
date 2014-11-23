@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="GIM_PRIMITIVE_MANAGER\l_PROTOTYPE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_i_m___p_r_i_m_i_t_i_v_e___m_a_n_a_g_e_r___p_r_o_t_o_t_y_p_e.html",tooltip="Prototype Base class for primitive classification. "];
-}

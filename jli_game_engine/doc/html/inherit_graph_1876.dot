@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="fixed_pipeline_3d_viewer.\lGLRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfixed__pipeline__3d__viewer_1_1_g_l_renderer.html"];
-}

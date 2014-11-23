@@ -1,9 +1,0 @@
-digraph "zlib/zlib-1.2.8/contrib/untgz" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_e0c029cd5149dae73dc2b47aa4b1f108 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="contrib" fontname="Helvetica", fontsize="10", URL="dir_e0c029cd5149dae73dc2b47aa4b1f108.html"]
-  dir_e6c8dc50db3ead1e3540f2492e1b5a99 [shape=box, label="untgz", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e6c8dc50db3ead1e3540f2492e1b5a99.html"];
-  }
-}

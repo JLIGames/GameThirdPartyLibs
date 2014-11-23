@@ -1,0 +1,474 @@
+\hypertarget{classjli_1_1_world_factory}{\section{jli\+:\+:World\+Factory Class Reference}
+\label{classjli_1_1_world_factory}\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+}
+
+
+{\ttfamily \#include $<$World\+Factory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_ae84dad80ebffaf34cdc7fe95d1e7a66e}{create} (const u32 type)
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a7907b82e19f4bbb1f5c98fbceaf7d961}{create} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_aadc177f52ddc2a0d53259ea99fbf90df}{clone} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&, bool=false)
+\item 
+virtual bool \hyperlink{classjli_1_1_world_factory_a29af5f1c2a8f5e57c0dc4e9764715797}{has} (\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$) const 
+\item 
+virtual void \hyperlink{classjli_1_1_world_factory_a715756195f93bfec6f6c54640e5e09e5}{destroy\+Instance} (\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$)
+\item 
+virtual void \hyperlink{classjli_1_1_world_factory_ac40ef526c98ded68e2be556995147ca5}{destroy} (\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$)
+\item 
+virtual void \hyperlink{classjli_1_1_world_factory_a17880329ad38799467c11830c8b2b39e}{destroy\+All} ()
+\item 
+virtual s32 \hyperlink{classjli_1_1_world_factory_a56279adb8ce6f7072739a5b7eeccd45b}{size} ()
+\item 
+virtual s32 \hyperlink{classjli_1_1_world_factory_a6305d49494b83a45f77c4065efe595d3}{instances} (const u32)
+\item 
+virtual s32 \hyperlink{classjli_1_1_world_factory_a352be79efeb80d15cf9e7c9cafc8d47a}{instances} (\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$)
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a44235d0cb9e7e11fa7df8b2c7c84e77b}{get} (const u32) const 
+\item 
+virtual void \hyperlink{classjli_1_1_world_factory_afc3c3ab16e547f8efb70df6c0a6c9acc}{get\+All} (bt\+Aligned\+Object\+Array$<$ \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ $>$ \&) const 
+\item 
+virtual s32 \hyperlink{classjli_1_1_world_factory_a36ed5d3e23a486003b5490dbd117c308}{index} (\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$) const 
+\item 
+virtual void \hyperlink{classjli_1_1_world_factory_a4cb7bc0a2b06508944575416716a2630}{serialize} (bt\+Serializer $\ast$serializer)
+\item 
+\hyperlink{classjli_1_1_world_factory_aa0743bb8d687c225a725d68360c84cee}{World\+Factory} ()
+\item 
+virtual \hyperlink{classjli_1_1_world_factory_ab07df554e2f6d0777470dc426020ceeb}{$\sim$\+World\+Factory} ()
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a1651da687bf991ffafa8f02bc3eb9707}{ctor} (const u32 \&)
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a0b8a82380ee533205802acb2c58af331}{ctor} (const \hyperlink{classjli_1_1_abstract_builder}{jli\+::\+Abstract\+Builder} \&)
+\item 
+virtual \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a62f73f5ea8689adf2652de1111f05915}{ctor} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&)
+\item 
+\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a950011f467778776bffd2fe0a149293a}{create\+\_\+\+Internal} (const u32)
+\item 
+\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_a0bbb3e37df86e691253179a12bdc191d}{create\+\_\+\+Internal} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&)
+\item 
+\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_world_factory_aa0f13c33f5e308f48ef1db874bc897fb}{clone\+\_\+\+Internal} (const \hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} \&, bool)
+\item 
+void \hyperlink{classjli_1_1_world_factory_ac3348faaa06a437c9bdff93f0245d1e1}{remove\+\_\+\+Internal} (\hyperlink{namespacejli_aee55f3bcfb22fdfec10eadeec1618fec}{Abstract\+Factory\+Object} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Object\+List \hyperlink{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}{m\+\_\+\+Object\+List}
+\item 
+Object\+Duplicate\+Map \hyperlink{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}{m\+\_\+\+Object\+Duplicate\+Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file World\+Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjli_1_1_world_factory_aa0743bb8d687c225a725d68360c84cee}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{World\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+World\+Factory\+::\+World\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_factory_aa0743bb8d687c225a725d68360c84cee}
+
+
+Definition at line 132 of file World\+Factory.\+cpp.
+
+\hypertarget{classjli_1_1_world_factory_ab07df554e2f6d0777470dc426020ceeb}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!````~World\+Factory@{$\sim$\+World\+Factory}}
+\index{````~World\+Factory@{$\sim$\+World\+Factory}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{$\sim$\+World\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+World\+Factory\+::$\sim$\+World\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_ab07df554e2f6d0777470dc426020ceeb}
+
+
+Definition at line 137 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjli_1_1_world_factory_aadc177f52ddc2a0d53259ea99fbf90df}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!clone@{clone}}
+\index{clone@{clone}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::clone (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{object, }
+\item[{bool}]{share = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_aadc177f52ddc2a0d53259ea99fbf90df}
+
+
+Definition at line 33 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_aa0f13c33f5e308f48ef1db874bc897fb}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!clone\+\_\+\+Internal@{clone\+\_\+\+Internal}}
+\index{clone\+\_\+\+Internal@{clone\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{clone\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::clone\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{copy, }
+\item[{bool}]{share}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_factory_aa0f13c33f5e308f48ef1db874bc897fb}
+
+
+Definition at line 266 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_ae84dad80ebffaf34cdc7fe95d1e7a66e}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create@{create}}
+\index{create@{create}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::create (
+\begin{DoxyParamCaption}
+\item[{const u32}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_ae84dad80ebffaf34cdc7fe95d1e7a66e}
+
+
+Definition at line 24 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a7907b82e19f4bbb1f5c98fbceaf7d961}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create@{create}}
+\index{create@{create}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::create (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Builder} \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a7907b82e19f4bbb1f5c98fbceaf7d961}
+
+
+Definition at line 28 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a950011f467778776bffd2fe0a149293a}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create\+\_\+\+Internal@{create\+\_\+\+Internal}}
+\index{create\+\_\+\+Internal@{create\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{create\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::create\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{const u32}]{type}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_factory_a950011f467778776bffd2fe0a149293a}
+
+
+Definition at line 239 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a0bbb3e37df86e691253179a12bdc191d}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create\+\_\+\+Internal@{create\+\_\+\+Internal}}
+\index{create\+\_\+\+Internal@{create\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{create\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::create\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Builder} \&}]{builder}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_factory_a0bbb3e37df86e691253179a12bdc191d}
+
+
+Definition at line 252 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a1651da687bf991ffafa8f02bc3eb9707}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!ctor@{ctor}}
+\index{ctor@{ctor}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{ctor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::ctor (
+\begin{DoxyParamCaption}
+\item[{const u32 \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a1651da687bf991ffafa8f02bc3eb9707}
+!!\+T\+O\+D\+O\+: implement the create types... 
+
+Definition at line 142 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a0b8a82380ee533205802acb2c58af331}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!ctor@{ctor}}
+\index{ctor@{ctor}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{ctor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::ctor (
+\begin{DoxyParamCaption}
+\item[{const {\bf jli\+::\+Abstract\+Builder} \&}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a0b8a82380ee533205802acb2c58af331}
+!!\+T\+O\+D\+O\+: implement the create types... 
+
+Definition at line 175 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a62f73f5ea8689adf2652de1111f05915}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!ctor@{ctor}}
+\index{ctor@{ctor}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{ctor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::ctor (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Factory\+Object} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a62f73f5ea8689adf2652de1111f05915}
+!!\+T\+O\+D\+O\+: implement the clone types... 
+
+Definition at line 208 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_ac40ef526c98ded68e2be556995147ca5}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!destroy@{destroy}}
+\index{destroy@{destroy}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Factory\+::destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Factory\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_ac40ef526c98ded68e2be556995147ca5}
+
+
+Definition at line 48 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a17880329ad38799467c11830c8b2b39e}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!destroy\+All@{destroy\+All}}
+\index{destroy\+All@{destroy\+All}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{destroy\+All}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Factory\+::destroy\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a17880329ad38799467c11830c8b2b39e}
+
+
+Definition at line 64 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a715756195f93bfec6f6c54640e5e09e5}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!destroy\+Instance@{destroy\+Instance}}
+\index{destroy\+Instance@{destroy\+Instance}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{destroy\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Factory\+::destroy\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Factory\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a715756195f93bfec6f6c54640e5e09e5}
+
+
+Definition at line 43 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a44235d0cb9e7e11fa7df8b2c7c84e77b}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!get@{get}}
+\index{get@{get}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Factory\+Object} $\ast$ jli\+::\+World\+Factory\+::get (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a44235d0cb9e7e11fa7df8b2c7c84e77b}
+
+
+Definition at line 105 of file World\+Factory.\+cpp.
+
+\hypertarget{classjli_1_1_world_factory_afc3c3ab16e547f8efb70df6c0a6c9acc}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!get\+All@{get\+All}}
+\index{get\+All@{get\+All}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{get\+All}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Factory\+::get\+All (
+\begin{DoxyParamCaption}
+\item[{bt\+Aligned\+Object\+Array$<$ {\bf Abstract\+Factory\+Object} $\ast$ $>$ \&}]{objects}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_afc3c3ab16e547f8efb70df6c0a6c9acc}
+
+
+Definition at line 112 of file World\+Factory.\+cpp.
+
+\hypertarget{classjli_1_1_world_factory_a29af5f1c2a8f5e57c0dc4e9764715797}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!has@{has}}
+\index{has@{has}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{has}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+World\+Factory\+::has (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Factory\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a29af5f1c2a8f5e57c0dc4e9764715797}
+
+
+Definition at line 38 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a36ed5d3e23a486003b5490dbd117c308}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!index@{index}}
+\index{index@{index}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::\+World\+Factory\+::index (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Factory\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a36ed5d3e23a486003b5490dbd117c308}
+
+
+Definition at line 117 of file World\+Factory.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a6305d49494b83a45f77c4065efe595d3}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!instances@{instances}}
+\index{instances@{instances}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{instances}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::\+World\+Factory\+::instances (
+\begin{DoxyParamCaption}
+\item[{const u32}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a6305d49494b83a45f77c4065efe595d3}
+
+
+Definition at line 76 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a352be79efeb80d15cf9e7c9cafc8d47a}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!instances@{instances}}
+\index{instances@{instances}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{instances}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::\+World\+Factory\+::instances (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Factory\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a352be79efeb80d15cf9e7c9cafc8d47a}
+
+
+Definition at line 93 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_ac3348faaa06a437c9bdff93f0245d1e1}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!remove\+\_\+\+Internal@{remove\+\_\+\+Internal}}
+\index{remove\+\_\+\+Internal@{remove\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{remove\+\_\+\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Factory\+::remove\+\_\+\+Internal (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Factory\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_factory_ac3348faaa06a437c9bdff93f0245d1e1}
+
+
+Definition at line 283 of file World\+Factory.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+
+
+
+
+Here is the caller graph for this function\+:
+
+
+\hypertarget{classjli_1_1_world_factory_a4cb7bc0a2b06508944575416716a2630}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!serialize@{serialize}}
+\index{serialize@{serialize}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Factory\+::serialize (
+\begin{DoxyParamCaption}
+\item[{bt\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a4cb7bc0a2b06508944575416716a2630}
+
+
+Definition at line 124 of file World\+Factory.\+cpp.
+
+\hypertarget{classjli_1_1_world_factory_a56279adb8ce6f7072739a5b7eeccd45b}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!size@{size}}
+\index{size@{size}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}s32 jli\+::\+World\+Factory\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a56279adb8ce6f7072739a5b7eeccd45b}
+
+
+Definition at line 71 of file World\+Factory.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!m\+\_\+\+Object\+Duplicate\+Map@{m\+\_\+\+Object\+Duplicate\+Map}}
+\index{m\+\_\+\+Object\+Duplicate\+Map@{m\+\_\+\+Object\+Duplicate\+Map}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{m\+\_\+\+Object\+Duplicate\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Object\+Duplicate\+Map jli\+::\+World\+Factory\+::m\+\_\+\+Object\+Duplicate\+Map}}\label{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}
+
+
+Definition at line 78 of file World\+Factory.\+h.
+
+\hypertarget{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!m\+\_\+\+Object\+List@{m\+\_\+\+Object\+List}}
+\index{m\+\_\+\+Object\+List@{m\+\_\+\+Object\+List}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{m\+\_\+\+Object\+List}]{\setlength{\rightskip}{0pt plus 5cm}Object\+List jli\+::\+World\+Factory\+::m\+\_\+\+Object\+List}}\label{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}
+
+
+Definition at line 77 of file World\+Factory.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_world_factory_8h}{World\+Factory.\+h}\item 
+\hyperlink{_world_factory_8cpp}{World\+Factory.\+cpp}\end{DoxyCompactItemize}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/AntialiasedLines/OGLES/Build/Android/src/com/powervr/OGLESAntialiasedLines" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_29db9058379355ac449370442b783c9b {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_29db9058379355ac449370442b783c9b.html"]
-  dir_a76b01209fedd44ce90d4e43ec1312db [shape=box, label="OGLESAntialiasedLines", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a76b01209fedd44ce90d4e43ec1312db.html"];
-  }
-}

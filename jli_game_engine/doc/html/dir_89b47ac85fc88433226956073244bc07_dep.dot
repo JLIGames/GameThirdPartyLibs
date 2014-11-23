@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/CellShading/OGLES2/Build/Android/src/com/powervr/OGLES2CellShading" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_c207d1995abf4d21325423656e3b597d {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_c207d1995abf4d21325423656e3b597d.html"]
-  dir_89b47ac85fc88433226956073244bc07 [shape=box, label="OGLES2CellShading", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_89b47ac85fc88433226956073244bc07.html"];
-  }
-}

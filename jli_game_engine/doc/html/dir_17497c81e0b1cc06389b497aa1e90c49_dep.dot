@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Advanced/PVRScopeRemote/OGLES3/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_f687aeabb004986937c38bdee36d3ea6 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES3" fontname="Helvetica", fontsize="10", URL="dir_f687aeabb004986937c38bdee36d3ea6.html"]
-  dir_17497c81e0b1cc06389b497aa1e90c49 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_17497c81e0b1cc06389b497aa1e90c49.html"];
-  }
-}

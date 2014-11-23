@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="AutoRegisterSuite\<\l TestCaseType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_auto_register_suite.html",tooltip="(Implementation) Automatically register the test suite of the specified type. "];
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/Bumpmap/OGLES3/Build/Android/src/com/powervr/OGLES3Bumpmap" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_6af6b7fc2931b98529c4f01f47197b74 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="powervr" fontname="Helvetica", fontsize="10", URL="dir_6af6b7fc2931b98529c4f01f47197b74.html"]
-  dir_8386062c95395b2f73a4d6b6d94fc052 [shape=box, label="OGLES3Bumpmap", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8386062c95395b2f73a4d6b6d94fc052.html"];
-  }
-}

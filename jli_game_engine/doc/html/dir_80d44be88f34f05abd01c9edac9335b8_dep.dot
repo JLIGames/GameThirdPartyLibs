@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Examples/Intermediate/StencilBuffer/OGLES/Content" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_25b10753d8220cfc66c02b27faf5c995 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="OGLES" fontname="Helvetica", fontsize="10", URL="dir_25b10753d8220cfc66c02b27faf5c995.html"]
-  dir_80d44be88f34f05abd01c9edac9335b8 [shape=box, label="Content", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_80d44be88f34f05abd01c9edac9335b8.html"];
-  }
-}

@@ -1,9 +1,0 @@
-digraph "PVR/SDK_3.4/Shell/API/KEGL" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_42ad26a6aa1f1f4d0ca646914997eecd {
-    graph [ bgcolor="#ddddee", pencolor="black", label="API" fontname="Helvetica", fontsize="10", URL="dir_42ad26a6aa1f1f4d0ca646914997eecd.html"]
-  dir_29600e7a974ca78d5a2d6d7dfe726d61 [shape=box, label="KEGL", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_29600e7a974ca78d5a2d6d7dfe726d61.html"];
-  }
-}
