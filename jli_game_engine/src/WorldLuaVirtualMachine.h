@@ -46,7 +46,7 @@ namespace jli
         void init();
         void unInit();
         
-        void getError(int error);
+        void getError(const char *code, int error);
         bool compile();
         
         lua_State *m_lua_State;

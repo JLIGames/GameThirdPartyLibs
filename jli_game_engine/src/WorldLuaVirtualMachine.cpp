@@ -86,9 +86,9 @@ namespace jli
         }
     }
     
-    void WorldLuaVirtualMachine::getError(int error)
+    void WorldLuaVirtualMachine::getError(const char *code, int error)
     {
-        Log("LuaVM ERROR \'%s\'.", lua_tostring( m_lua_State, -1 ));
+        Log("\nLuaVM ERROR %d\nLUA Function \'%s\'\nLuaVM ERROR MSG \'%s\'\n", error, code, lua_tostring( m_lua_State, -1 ));
         
         lua_pop( m_lua_State, 1 );
     }
@@ -99,7 +99,7 @@ namespace jli
         
         if( error_code )
         {
-            getError(error_code);
+            getError("NONE", error_code);
             return false;
         }
         
@@ -113,7 +113,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 0, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -135,7 +135,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -154,7 +154,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -176,7 +176,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -195,7 +195,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -214,7 +214,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -239,7 +239,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -258,7 +258,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -277,7 +277,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
@@ -298,7 +298,7 @@ namespace jli
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
-            getError(error_code);
+            getError(code, error_code);
             return false;
         }
         
