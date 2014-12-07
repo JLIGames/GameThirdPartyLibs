@@ -82,7 +82,7 @@ public:
 
 
 	//debugging
-	virtual const char*	getName()const {return "Convex";}
+	virtual const char*	getClassName()const {return "Convex";}
 
 	
 	virtual int	getNumVertices() const;

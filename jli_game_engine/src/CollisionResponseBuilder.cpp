@@ -50,16 +50,16 @@ namespace jli
     
     u32 CollisionResponseBuilder::getObjectType()const
     {
-        return type::CollisionResponse;
+        return JLI_OBJECT_TYPE_CollisionResponse;
     }
     
-    const char *CollisionResponseBuilder::getName()const
+    const char *CollisionResponseBuilder::getClassName()const
     {
         return "CollisionResponseBuilder";
     }
     
     u32 CollisionResponseBuilder::getType()const
     {
-        return type::CollisionResponseBuilder;
+        return JLI_OBJECT_TYPE_CollisionResponseBuilder;
     }
 }

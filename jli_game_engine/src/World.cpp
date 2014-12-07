@@ -44,12 +44,17 @@ namespace jli
     m_WorldInput(new WorldInput()),
     m_WorldSound(new WorldSound()),
     m_WorldLuaVirtualMachine(new WorldLuaVirtualMachine()),
-    m_worldClock(new Clock())
+    m_worldClock(new Clock()),
+    m_stateMachine(new WorldStateMachine()),
+    m_Name("World")
     {
+        WorldState *state = dynamic_cast<jli::WorldState*>(getWorldFactory()->create(jli::JLI_OBJECT_TYPE_WorldState));
+        m_stateMachine->pushState(state);
     }
     
     World::~World()
     {
+        delete m_stateMachine;
         delete m_worldClock;
         delete m_WorldLuaVirtualMachine;
         delete m_WorldSound;
@@ -86,5 +91,46 @@ namespace jli
     Clock *const World::getWorldClock()const
     {
         return m_worldClock;
+    }
+    
+//    WorldStateMachine *const World::getStateMachine()const
+//    {
+//        return m_stateMachine;
+//    }
+    
+    void World::pushState(WorldState *state)
+    {
+        m_stateMachine->pushState(state);
+    }
+    
+    void World::addCamera(Camera *camera)
+    {
+        m_cameraArray.push_back(camera);
+    }
+    
+    void World::removeCamera(Camera *camera)
+    {
+        m_cameraArray.remove(camera);
+    }
+    
+    void World::update(f32 timeStep)
+    {
+        m_stateMachine->update(timeStep);
+    }
+    
+    void World::render()
+    {
+        for(s32 index; index < m_cameraArray.size(); ++index)
+        {
+            m_cameraArray[index]->render();
+        }
+    }
+    void World::setName(const char *name)
+    {
+        m_Name = name;
+    }
+    const char *World::getName()const
+    {
+        return m_Name.c_str();
     }
 }

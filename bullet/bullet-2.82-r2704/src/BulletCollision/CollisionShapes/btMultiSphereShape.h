@@ -66,7 +66,7 @@ public:
 	}
 
 
-	virtual const char*	getName()const 
+	virtual const char*	getClassName()const 
 	{
 		return "MultiSphere";
 	}

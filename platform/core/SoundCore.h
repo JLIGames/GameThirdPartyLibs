@@ -7,11 +7,11 @@
 #include "fmod_errors.h"
 #endif
 
-class Sound// : public AbstractSingleton<Sound>
+class SoundCore// : public AbstractSingleton<SoundCore>
 {
 public:
-    Sound();
-    ~Sound();
+    SoundCore();
+    ~SoundCore();
 
     void update();
     

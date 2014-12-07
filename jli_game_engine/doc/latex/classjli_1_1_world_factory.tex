@@ -5,6 +5,14 @@
 
 {\ttfamily \#include $<$World\+Factory.\+h$>$}
 
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef bt\+Aligned\+Object\+Array\\*
+$<$ \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} $\ast$ $>$ \hyperlink{classjli_1_1_world_factory_ab7d8f835ed36ede3da410326c80709c8}{Object\+List}
+\item 
+typedef bt\+Hash\+Map$<$ bt\+Hash\+Ptr, s32 $>$ \hyperlink{classjli_1_1_world_factory_ac26bf6a5e096985680e8a45b33f7873c}{Object\+Duplicate\+Map}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -57,16 +65,33 @@ void \hyperlink{classjli_1_1_world_factory_ac3348faaa06a437c9bdff93f0245d1e1}{re
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Object\+List \hyperlink{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}{m\+\_\+\+Object\+List}
+\hyperlink{classjli_1_1_world_factory_ab7d8f835ed36ede3da410326c80709c8}{Object\+List} \hyperlink{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}{m\+\_\+\+Object\+List}
 \item 
-Object\+Duplicate\+Map \hyperlink{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}{m\+\_\+\+Object\+Duplicate\+Map}
+\hyperlink{classjli_1_1_world_factory_ac26bf6a5e096985680e8a45b33f7873c}{Object\+Duplicate\+Map} \hyperlink{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}{m\+\_\+\+Object\+Duplicate\+Map}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 88 of file World\+Factory.\+h.
+Definition at line 94 of file World\+Factory.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classjli_1_1_world_factory_ac26bf6a5e096985680e8a45b33f7873c}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!Object\+Duplicate\+Map@{Object\+Duplicate\+Map}}
+\index{Object\+Duplicate\+Map@{Object\+Duplicate\+Map}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{Object\+Duplicate\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef bt\+Hash\+Map$<$bt\+Hash\+Ptr, s32$>$ {\bf jli\+::\+World\+Factory\+::\+Object\+Duplicate\+Map}}}\label{classjli_1_1_world_factory_ac26bf6a5e096985680e8a45b33f7873c}
+
+
+Definition at line 98 of file World\+Factory.\+h.
+
+\hypertarget{classjli_1_1_world_factory_ab7d8f835ed36ede3da410326c80709c8}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!Object\+List@{Object\+List}}
+\index{Object\+List@{Object\+List}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
+\subsubsection[{Object\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef bt\+Aligned\+Object\+Array$<${\bf Abstract\+Factory\+Object}$\ast$$>$ {\bf jli\+::\+World\+Factory\+::\+Object\+List}}}\label{classjli_1_1_world_factory_ab7d8f835ed36ede3da410326c80709c8}
+
+
+Definition at line 97 of file World\+Factory.\+h.
 
 
 
@@ -80,7 +105,7 @@ Definition at line 88 of file World\+Factory.\+h.
 )}}\label{classjli_1_1_world_factory_aa0743bb8d687c225a725d68360c84cee}
 
 
-Definition at line 132 of file World\+Factory.\+cpp.
+Definition at line 186 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_ab07df554e2f6d0777470dc426020ceeb}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!````~World\+Factory@{$\sim$\+World\+Factory}}
 \index{````~World\+Factory@{$\sim$\+World\+Factory}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -91,7 +116,7 @@ Definition at line 132 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_ab07df554e2f6d0777470dc426020ceeb}
 
 
-Definition at line 137 of file World\+Factory.\+cpp.
+Definition at line 191 of file World\+Factory.\+cpp.
 
 
 
@@ -106,7 +131,7 @@ Definition at line 137 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_aadc177f52ddc2a0d53259ea99fbf90df}
 
 
-Definition at line 33 of file World\+Factory.\+cpp.
+Definition at line 87 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_aa0f13c33f5e308f48ef1db874bc897fb}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!clone\+\_\+\+Internal@{clone\+\_\+\+Internal}}
 \index{clone\+\_\+\+Internal@{clone\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -118,7 +143,7 @@ Definition at line 33 of file World\+Factory.\+cpp.
 )}}\label{classjli_1_1_world_factory_aa0f13c33f5e308f48ef1db874bc897fb}
 
 
-Definition at line 700 of file World\+Factory.\+cpp.
+Definition at line 752 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_ae84dad80ebffaf34cdc7fe95d1e7a66e}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create@{create}}
 \index{create@{create}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -129,7 +154,7 @@ Definition at line 700 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_ae84dad80ebffaf34cdc7fe95d1e7a66e}
 
 
-Definition at line 24 of file World\+Factory.\+cpp.
+Definition at line 78 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a7907b82e19f4bbb1f5c98fbceaf7d961}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create@{create}}
 \index{create@{create}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -140,7 +165,7 @@ Definition at line 24 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a7907b82e19f4bbb1f5c98fbceaf7d961}
 
 
-Definition at line 28 of file World\+Factory.\+cpp.
+Definition at line 82 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a950011f467778776bffd2fe0a149293a}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create\+\_\+\+Internal@{create\+\_\+\+Internal}}
 \index{create\+\_\+\+Internal@{create\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -151,7 +176,7 @@ Definition at line 28 of file World\+Factory.\+cpp.
 )}}\label{classjli_1_1_world_factory_a950011f467778776bffd2fe0a149293a}
 
 
-Definition at line 673 of file World\+Factory.\+cpp.
+Definition at line 725 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a0bbb3e37df86e691253179a12bdc191d}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!create\+\_\+\+Internal@{create\+\_\+\+Internal}}
 \index{create\+\_\+\+Internal@{create\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -162,7 +187,7 @@ Definition at line 673 of file World\+Factory.\+cpp.
 )}}\label{classjli_1_1_world_factory_a0bbb3e37df86e691253179a12bdc191d}
 
 
-Definition at line 686 of file World\+Factory.\+cpp.
+Definition at line 738 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a1651da687bf991ffafa8f02bc3eb9707}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!ctor@{ctor}}
 \index{ctor@{ctor}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -173,7 +198,7 @@ Definition at line 686 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a1651da687bf991ffafa8f02bc3eb9707}
 !!\+T\+O\+D\+O\+: implement the create types... 
 
-Definition at line 142 of file World\+Factory.\+cpp.
+Definition at line 196 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a0b8a82380ee533205802acb2c58af331}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!ctor@{ctor}}
 \index{ctor@{ctor}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -184,7 +209,7 @@ Definition at line 142 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a0b8a82380ee533205802acb2c58af331}
 !!\+T\+O\+D\+O\+: implement the create types... 
 
-Definition at line 319 of file World\+Factory.\+cpp.
+Definition at line 407 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a62f73f5ea8689adf2652de1111f05915}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!ctor@{ctor}}
 \index{ctor@{ctor}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -195,7 +220,7 @@ Definition at line 319 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a62f73f5ea8689adf2652de1111f05915}
 !!\+T\+O\+D\+O\+: implement the clone types... 
 
-Definition at line 498 of file World\+Factory.\+cpp.
+Definition at line 567 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_ac40ef526c98ded68e2be556995147ca5}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!destroy@{destroy}}
 \index{destroy@{destroy}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -206,7 +231,7 @@ Definition at line 498 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_ac40ef526c98ded68e2be556995147ca5}
 
 
-Definition at line 48 of file World\+Factory.\+cpp.
+Definition at line 102 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a17880329ad38799467c11830c8b2b39e}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!destroy\+All@{destroy\+All}}
 \index{destroy\+All@{destroy\+All}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -217,7 +242,7 @@ Definition at line 48 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a17880329ad38799467c11830c8b2b39e}
 
 
-Definition at line 64 of file World\+Factory.\+cpp.
+Definition at line 118 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a715756195f93bfec6f6c54640e5e09e5}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!destroy\+Instance@{destroy\+Instance}}
 \index{destroy\+Instance@{destroy\+Instance}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -228,7 +253,7 @@ Definition at line 64 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a715756195f93bfec6f6c54640e5e09e5}
 
 
-Definition at line 43 of file World\+Factory.\+cpp.
+Definition at line 97 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a44235d0cb9e7e11fa7df8b2c7c84e77b}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!get@{get}}
 \index{get@{get}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -239,7 +264,7 @@ Definition at line 43 of file World\+Factory.\+cpp.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a44235d0cb9e7e11fa7df8b2c7c84e77b}
 
 
-Definition at line 105 of file World\+Factory.\+cpp.
+Definition at line 159 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_afc3c3ab16e547f8efb70df6c0a6c9acc}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!get\+All@{get\+All}}
 \index{get\+All@{get\+All}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -250,7 +275,7 @@ Definition at line 105 of file World\+Factory.\+cpp.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_afc3c3ab16e547f8efb70df6c0a6c9acc}
 
 
-Definition at line 112 of file World\+Factory.\+cpp.
+Definition at line 166 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a29af5f1c2a8f5e57c0dc4e9764715797}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!has@{has}}
 \index{has@{has}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -261,7 +286,7 @@ Definition at line 112 of file World\+Factory.\+cpp.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a29af5f1c2a8f5e57c0dc4e9764715797}
 
 
-Definition at line 38 of file World\+Factory.\+cpp.
+Definition at line 92 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a36ed5d3e23a486003b5490dbd117c308}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!index@{index}}
 \index{index@{index}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -272,7 +297,7 @@ Definition at line 38 of file World\+Factory.\+cpp.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a36ed5d3e23a486003b5490dbd117c308}
 
 
-Definition at line 117 of file World\+Factory.\+cpp.
+Definition at line 171 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a6305d49494b83a45f77c4065efe595d3}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!instances@{instances}}
 \index{instances@{instances}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -283,7 +308,7 @@ Definition at line 117 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a6305d49494b83a45f77c4065efe595d3}
 
 
-Definition at line 76 of file World\+Factory.\+cpp.
+Definition at line 130 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a352be79efeb80d15cf9e7c9cafc8d47a}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!instances@{instances}}
 \index{instances@{instances}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -294,7 +319,7 @@ Definition at line 76 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a352be79efeb80d15cf9e7c9cafc8d47a}
 
 
-Definition at line 93 of file World\+Factory.\+cpp.
+Definition at line 147 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_ac3348faaa06a437c9bdff93f0245d1e1}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!remove\+\_\+\+Internal@{remove\+\_\+\+Internal}}
 \index{remove\+\_\+\+Internal@{remove\+\_\+\+Internal}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -305,7 +330,7 @@ Definition at line 93 of file World\+Factory.\+cpp.
 )}}\label{classjli_1_1_world_factory_ac3348faaa06a437c9bdff93f0245d1e1}
 
 
-Definition at line 717 of file World\+Factory.\+cpp.
+Definition at line 769 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a4cb7bc0a2b06508944575416716a2630}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!serialize@{serialize}}
 \index{serialize@{serialize}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -316,7 +341,7 @@ Definition at line 717 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a4cb7bc0a2b06508944575416716a2630}
 
 
-Definition at line 124 of file World\+Factory.\+cpp.
+Definition at line 178 of file World\+Factory.\+cpp.
 
 \hypertarget{classjli_1_1_world_factory_a56279adb8ce6f7072739a5b7eeccd45b}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!size@{size}}
 \index{size@{size}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
@@ -327,28 +352,28 @@ Definition at line 124 of file World\+Factory.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_factory_a56279adb8ce6f7072739a5b7eeccd45b}
 
 
-Definition at line 71 of file World\+Factory.\+cpp.
+Definition at line 125 of file World\+Factory.\+cpp.
 
 
 
 \subsection{Member Data Documentation}
 \hypertarget{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!m\+\_\+\+Object\+Duplicate\+Map@{m\+\_\+\+Object\+Duplicate\+Map}}
 \index{m\+\_\+\+Object\+Duplicate\+Map@{m\+\_\+\+Object\+Duplicate\+Map}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
-\subsubsection[{m\+\_\+\+Object\+Duplicate\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Object\+Duplicate\+Map jli\+::\+World\+Factory\+::m\+\_\+\+Object\+Duplicate\+Map}}\label{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}
+\subsubsection[{m\+\_\+\+Object\+Duplicate\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Duplicate\+Map} jli\+::\+World\+Factory\+::m\+\_\+\+Object\+Duplicate\+Map}}\label{classjli_1_1_world_factory_a67d271ea8de7eaee463069a9e3e46f4e}
 
 
-Definition at line 129 of file World\+Factory.\+h.
+Definition at line 136 of file World\+Factory.\+h.
 
 \hypertarget{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}{\index{jli\+::\+World\+Factory@{jli\+::\+World\+Factory}!m\+\_\+\+Object\+List@{m\+\_\+\+Object\+List}}
 \index{m\+\_\+\+Object\+List@{m\+\_\+\+Object\+List}!jli\+::\+World\+Factory@{jli\+::\+World\+Factory}}
-\subsubsection[{m\+\_\+\+Object\+List}]{\setlength{\rightskip}{0pt plus 5cm}Object\+List jli\+::\+World\+Factory\+::m\+\_\+\+Object\+List}}\label{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}
+\subsubsection[{m\+\_\+\+Object\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+List} jli\+::\+World\+Factory\+::m\+\_\+\+Object\+List}}\label{classjli_1_1_world_factory_ac1a42314be66db6555d7723a35d2cdbc}
 
 
-Definition at line 128 of file World\+Factory.\+h.
+Definition at line 135 of file World\+Factory.\+h.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_factory_8h}{World\+Factory.\+h}\item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_factory_8cpp}{World\+Factory.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{_world_factory_8h}{World\+Factory.\+h}\item 
+\hyperlink{_world_factory_8cpp}{World\+Factory.\+cpp}\end{DoxyCompactItemize}

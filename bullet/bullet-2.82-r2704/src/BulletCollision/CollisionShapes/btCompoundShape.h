@@ -148,7 +148,7 @@ public:
 	{
 		return m_collisionMargin;
 	}
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "Compound";
 	}

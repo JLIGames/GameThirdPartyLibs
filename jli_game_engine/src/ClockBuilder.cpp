@@ -50,16 +50,16 @@ namespace jli
     
     u32 ClockBuilder::getObjectType()const
     {
-        return type::Clock;
+        return JLI_OBJECT_TYPE_Clock;
     }
     
-    const char *ClockBuilder::getName()const
+    const char *ClockBuilder::getClassName()const
     {
         return "ClockBuilder";
     }
     
     u32 ClockBuilder::getType()const
     {
-        return type::ClockBuilder;
+        return JLI_OBJECT_TYPE_ClockBuilder;
     }
 }

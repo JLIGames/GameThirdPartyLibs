@@ -50,16 +50,16 @@ namespace jli
     
     u32 ParticleEmitterBuilder::getObjectType()const
     {
-        return type::ParticleEmitter;
+        return JLI_OBJECT_TYPE_ParticleEmitter;
     }
     
-    const char *ParticleEmitterBuilder::getName()const
+    const char *ParticleEmitterBuilder::getClassName()const
     {
         return "ParticleEmitterBuilder";
     }
     
     u32 ParticleEmitterBuilder::getType()const
     {
-        return type::ParticleEmitterBuilder;
+        return JLI_OBJECT_TYPE_ParticleEmitterBuilder;
     }
 }

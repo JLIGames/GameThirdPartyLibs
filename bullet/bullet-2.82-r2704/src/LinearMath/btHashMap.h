@@ -120,7 +120,7 @@ class btHashPtr
 
 public:
 
-	btHashPtr(const void* ptr)
+	btHashPtr(const void* ptr = NULL)
 		:m_pointer(ptr)
 	{
 	}
@@ -129,6 +129,11 @@ public:
 	{
 		return m_pointer;
 	}
+    
+    void setPointer(const void *ptr)
+    {
+        m_pointer = ptr;
+    }
 
 	bool equals(const btHashPtr& other) const
 	{

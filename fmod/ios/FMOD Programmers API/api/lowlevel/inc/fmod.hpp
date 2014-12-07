@@ -201,7 +201,7 @@ namespace FMOD
         FMOD_RESULT F_API setSubSound            (int index, Sound *subsound);
         FMOD_RESULT F_API getSubSound            (int index, Sound **subsound);
         FMOD_RESULT F_API getSubSoundParent      (Sound **parentsound);
-        FMOD_RESULT F_API getName                (char *name, int namelen);
+        FMOD_RESULT F_API getClassName                (char *name, int namelen);
         FMOD_RESULT F_API getLength              (unsigned int *length, FMOD_TIMEUNIT lengthtype);
         FMOD_RESULT F_API getFormat              (FMOD_SOUND_TYPE *type, FMOD_SOUND_FORMAT *format, int *channels, int *bits);
         FMOD_RESULT F_API getNumSubSounds        (int *numsubsounds);
@@ -379,7 +379,7 @@ namespace FMOD
         FMOD_RESULT F_API getParentGroup          (ChannelGroup **group);
 
         // Information only functions.
-        FMOD_RESULT F_API getName                 (char *name, int namelen);
+        FMOD_RESULT F_API getClassName                 (char *name, int namelen);
         FMOD_RESULT F_API getNumChannels          (int *numchannels);
         FMOD_RESULT F_API getChannel              (int index, Channel **channel);
     };
@@ -410,7 +410,7 @@ namespace FMOD
         FMOD_RESULT F_API stop                   ();
 
         // Information only functions.
-        FMOD_RESULT F_API getName                (char *name, int namelen);
+        FMOD_RESULT F_API getClassName                (char *name, int namelen);
         FMOD_RESULT F_API getNumSounds           (int *numsounds);
         FMOD_RESULT F_API getSound               (int index, Sound **sound);
         FMOD_RESULT F_API getNumPlaying          (int *numplaying);

@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *CollisionResponse::getName()const
+    const char *CollisionResponse::getClassName()const
     {
         return "CollisionResponse";
     }
     
     u32 CollisionResponse::getType()const
     {
-        return type::CollisionResponse;
+        return JLI_OBJECT_TYPE_CollisionResponse;
     }
 }

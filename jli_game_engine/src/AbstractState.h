@@ -18,7 +18,8 @@ namespace jli
     class Telegram;
     
     template <class OBJECT_TYPE>
-    ATTRIBUTE_ALIGNED16(class) AbstractState
+    ATTRIBUTE_ALIGNED16(class) AbstractState:
+    public AbstractFactoryObject
     {
     protected:
         AbstractState();
@@ -49,6 +50,7 @@ namespace jli
 
     template <class OBJECT_TYPE>
     AbstractState<OBJECT_TYPE>::AbstractState():
+    AbstractFactoryObject(this),
     m_isFinished(false),
     m_isInUse(false)
     {
@@ -57,6 +59,7 @@ namespace jli
 
     template <class OBJECT_TYPE>
     AbstractState<OBJECT_TYPE>::AbstractState(const AbstractBuilder &builder):
+    AbstractFactoryObject(this),
     m_isFinished(false),
     m_isInUse(false)
     {
@@ -65,6 +68,7 @@ namespace jli
 
     template <class OBJECT_TYPE>
     AbstractState<OBJECT_TYPE>::AbstractState(const AbstractState &copy):
+    AbstractFactoryObject(this),
     m_isFinished(copy.m_isFinished),
     m_isInUse(false)
     {

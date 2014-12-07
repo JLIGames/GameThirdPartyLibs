@@ -78,7 +78,7 @@ public:
 	void	partialRefitTree(const btVector3& aabbMin,const btVector3& aabbMax);
 
 	//debugging
-	virtual const char*	getName()const {return "BVHTRIANGLEMESH";}
+	virtual const char*	getClassName()const {return "BVHTRIANGLEMESH";}
 
 
 	virtual void	setLocalScaling(const btVector3& scaling);

@@ -37,14 +37,14 @@ namespace jli
          *
          *  @return the name of this class
          */
-        virtual const char *getName()const;
+        virtual const char *getClassName()const = 0;
         
         /**
          *  The type of this Class
          *
          *  @return the type of this class
          */
-        virtual u32 getType()const;
+        virtual u32 getType()const = 0;
         
         /**
          *  Creates an object. This is the central place where all of the objects will be created in the world

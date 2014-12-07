@@ -50,16 +50,16 @@ namespace jli
     
     u32 PhysicsShapeBuilder::getObjectType()const
     {
-        return type::PhysicsShape;
+        return JLI_OBJECT_TYPE_PhysicsShape;
     }
     
-    const char *PhysicsShapeBuilder::getName()const
+    const char *PhysicsShapeBuilder::getClassName()const
     {
         return "PhysicsShapeBuilder";
     }
     
     u32 PhysicsShapeBuilder::getType()const
     {
-        return type::PhysicsShapeBuilder;
+        return JLI_OBJECT_TYPE_PhysicsShapeBuilder;
     }
 }

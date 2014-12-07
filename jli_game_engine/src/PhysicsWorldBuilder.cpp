@@ -50,16 +50,16 @@ namespace jli
     
     u32 PhysicsWorldBuilder::getObjectType()const
     {
-        return type::PhysicsWorld;
+        return JLI_OBJECT_TYPE_PhysicsWorld;
     }
     
-    const char *PhysicsWorldBuilder::getName()const
+    const char *PhysicsWorldBuilder::getClassName()const
     {
         return "PhysicsWorldBuilder";
     }
     
     u32 PhysicsWorldBuilder::getType()const
     {
-        return type::PhysicsWorldBuilder;
+        return JLI_OBJECT_TYPE_PhysicsWorldBuilder;
     }
 }

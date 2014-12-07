@@ -75,7 +75,7 @@ public:
 			aabbMax = center + extent;
 	}
 
-	virtual const char*	getName()const 
+	virtual const char*	getClassName()const 
 	{
 		return "CapsuleShape";
 	}
@@ -133,7 +133,7 @@ public:
 	btCapsuleShapeX(btScalar radius,btScalar height);
 		
 	//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "CapsuleX";
 	}
@@ -150,7 +150,7 @@ public:
 	btCapsuleShapeZ(btScalar radius,btScalar height);
 
 		//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "CapsuleZ";
 	}

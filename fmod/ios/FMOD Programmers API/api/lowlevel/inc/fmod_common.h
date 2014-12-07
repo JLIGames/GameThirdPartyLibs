@@ -844,7 +844,7 @@ typedef enum
     <br>
     FMOD_LOWMEM is used on a sound if you want to minimize the memory overhead, by having FMOD not allocate memory for certain 
     features that are not likely to be used in a game environment.  These are :<br>
-    1. Sound::getName functionality is removed.  256 bytes per sound is saved.<br>
+    1. Sound::getClassName functionality is removed.  256 bytes per sound is saved.<br>
 
     [SEE_ALSO]
     System::createSound
@@ -886,7 +886,7 @@ typedef enum
 #define FMOD_3D_IGNOREGEOMETRY         0x40000000  /* Is not affect by geometry occlusion.  If not specified in Sound::setMode, or Channel::setMode, the flag is cleared and it is affected by geometry again. */
 /* Unused                              0x01000000  Used to be FMOD_UNICODE */
 #define FMOD_IGNORETAGS                0x02000000  /* Skips id3v2/asf/etc tag checks when opening a sound, to reduce seek/read overhead when opening files (helps with CD performance). */
-#define FMOD_LOWMEM                    0x08000000  /* Removes some features from samples to give a lower memory overhead, like Sound::getName.  See remarks. */
+#define FMOD_LOWMEM                    0x08000000  /* Removes some features from samples to give a lower memory overhead, like Sound::getClassName.  See remarks. */
 #define FMOD_LOADSECONDARYRAM          0x20000000  /* Load sound into the secondary RAM of supported platform. On PS3, sounds will be loaded into RSX/VRAM. */
 #define FMOD_VIRTUAL_PLAYFROMSTART     0x80000000  /* For sounds that start virtual (due to being quiet or low importance), instead of swapping back to audible, and playing at the correct offset according to time, this flag makes the sound play from the start. */
 /* [DEFINE_END] */

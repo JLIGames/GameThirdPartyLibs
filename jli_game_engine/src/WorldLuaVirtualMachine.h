@@ -9,6 +9,13 @@
 #ifndef __JLIGameEngineTest__WorldLuaVirtualMachine__
 #define __JLIGameEngineTest__WorldLuaVirtualMachine__
 
+#include "lua.hpp"
+#include "Util.h"
+
+#include "AbstractState.h"
+#include "Scene.h"
+#include "Node.h"
+
 namespace jli
 {
     class WorldLuaVirtualMachine
@@ -18,7 +25,28 @@ namespace jli
         virtual ~WorldLuaVirtualMachine();
         
         //TODO: fill in specific methods for WorldLuaVirtualMachine
+        
+        void reset();
+        
+        bool execute(const char *);
+        bool execute(const char *, f32);
+        bool execute(const char *, const Telegram &, bool &);
+        
+        bool execute(const char *, Scene *);
+        bool execute(const char *, Scene *, f32);
+        bool execute(const char *, Scene *, const Telegram &, bool &);
+        
+        bool execute(const char *, Node *);
+        bool execute(const char *, Node *, f32);
+        bool execute(const char *, Node *, const Telegram &, bool &);
     protected:
+        void init();
+        void unInit();
+        
+        void getError(int error);
+        bool compile();
+        
+        lua_State *m_lua_State;
     private:
         WorldLuaVirtualMachine(const WorldLuaVirtualMachine &);
         WorldLuaVirtualMachine &operator=(const WorldLuaVirtualMachine &);

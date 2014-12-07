@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *PhysicsField::getName()const
+    const char *PhysicsField::getClassName()const
     {
         return "PhysicsField";
     }
     
     u32 PhysicsField::getType()const
     {
-        return type::PhysicsField;
+        return JLI_OBJECT_TYPE_PhysicsField;
     }
 }

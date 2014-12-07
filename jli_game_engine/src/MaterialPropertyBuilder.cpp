@@ -50,16 +50,16 @@ namespace jli
     
     u32 MaterialPropertyBuilder::getObjectType()const
     {
-        return type::MaterialProperty;
+        return JLI_OBJECT_TYPE_MaterialProperty;
     }
     
-    const char *MaterialPropertyBuilder::getName()const
+    const char *MaterialPropertyBuilder::getClassName()const
     {
         return "MaterialPropertyBuilder";
     }
     
     u32 MaterialPropertyBuilder::getType()const
     {
-        return type::MaterialPropertyBuilder;
+        return JLI_OBJECT_TYPE_MaterialPropertyBuilder;
     }
 }

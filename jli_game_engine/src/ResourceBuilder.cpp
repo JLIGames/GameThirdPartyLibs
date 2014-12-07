@@ -51,16 +51,16 @@ namespace jli
     
     u32 ResourceBuilder::getObjectType()const
     {
-        return type::Resource;
+        return JLI_OBJECT_TYPE_Resource;
     }
     
-    const char *ResourceBuilder::getName()const
+    const char *ResourceBuilder::getClassName()const
     {
         return "ResourceBuilder";
     }
     
     u32 ResourceBuilder::getType()const
     {
-        return type::ResourceBuilder;
+        return JLI_OBJECT_TYPE_ResourceBuilder;
     }
 }

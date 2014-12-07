@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Sound::getName()const
+    const char *Sound::getClassName()const
     {
         return "Sound";
     }
     
     u32 Sound::getType()const
     {
-        return type::Sound;
+        return JLI_OBJECT_TYPE_Sound;
     }
 }

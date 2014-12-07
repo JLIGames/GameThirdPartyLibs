@@ -13,6 +13,8 @@
 #include "AbstractBuilder.h"
 #include "AbstractDecorator.h"
 
+#include  <string>
+
 namespace jli
 {
     ATTRIBUTE_ALIGNED16(class) Node:
@@ -32,12 +34,28 @@ namespace jli
         virtual	s32	calculateSerializeBufferSize() const;
         virtual	void serialize(void*, btSerializer*) const;
         
-        virtual const char *getName()const;
+        virtual const char *getClassName()const;
         virtual u32 getType()const;
         
         //TODO: fill in specific methods for Node
+        
+        /**
+         *  The name for the Node instance.
+         *
+         *  @param name The name to set to this Node instance.
+         */
+        void setName(const char *name);
+        
+        
+        /**
+         *  The name for the Node instance.
+         *
+         *  @return The name to set to this Node instance.
+         */
+        const char *getName()const;
     protected:
     private:
+        std::string m_Name;
     };
 }
 

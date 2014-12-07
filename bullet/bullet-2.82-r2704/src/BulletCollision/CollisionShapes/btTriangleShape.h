@@ -160,7 +160,7 @@ BT_DECLARE_ALIGNED_ALLOCATOR();
 		return false;
 	}
 		//debugging
-		virtual const char*	getName()const
+		virtual const char*	getClassName()const
 		{
 			return "Triangle";
 		}

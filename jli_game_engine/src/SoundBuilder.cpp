@@ -50,16 +50,16 @@ namespace jli
     
     u32 SoundBuilder::getObjectType()const
     {
-        return type::Sound;
+        return JLI_OBJECT_TYPE_Sound;
     }
     
-    const char *SoundBuilder::getName()const
+    const char *SoundBuilder::getClassName()const
     {
         return "SoundBuilder";
     }
     
     u32 SoundBuilder::getType()const
     {
-        return type::SoundBuilder;
+        return JLI_OBJECT_TYPE_SoundBuilder;
     }
 }

@@ -50,16 +50,16 @@ namespace jli
     
     u32 NodeBuilder::getObjectType()const
     {
-        return type::Node;
+        return JLI_OBJECT_TYPE_Node;
     }
     
-    const char *NodeBuilder::getName()const
+    const char *NodeBuilder::getClassName()const
     {
         return "NodeBuilder";
     }
     
     u32 NodeBuilder::getType()const
     {
-        return type::NodeBuilder;
+        return JLI_OBJECT_TYPE_NodeBuilder;
     }
 }

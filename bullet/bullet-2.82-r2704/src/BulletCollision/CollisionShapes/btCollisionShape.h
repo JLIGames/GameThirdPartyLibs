@@ -111,7 +111,7 @@ public:
 
 
 //debugging support
-	virtual const char*	getName()const =0 ;
+	virtual const char*	getClassName()const =0 ;
 #endif //__SPU__
 
 	

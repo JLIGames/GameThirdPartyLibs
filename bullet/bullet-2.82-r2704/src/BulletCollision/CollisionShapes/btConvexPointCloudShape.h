@@ -91,7 +91,7 @@ public:
 
 
 	//debugging
-	virtual const char*	getName()const {return "ConvexPointCloud";}
+	virtual const char*	getClassName()const {return "ConvexPointCloud";}
 
 	virtual int	getNumVertices() const;
 	virtual int getNumEdges() const;

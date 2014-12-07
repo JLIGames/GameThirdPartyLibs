@@ -10,7 +10,7 @@ void ERRCHECK_fn(FMOD_RESULT result, const char *file, int line)
 }
 #define ERRCHECK(_result) ERRCHECK_fn(_result, __FILE__, __LINE__)
 
-Sound::Sound()
+SoundCore::SoundCore()
 {
     FMOD_RESULT   result        = FMOD_OK;
     unsigned int  version       = 0;
@@ -19,7 +19,7 @@ Sound::Sound()
     result = m_System->getVersion(&version);
     result = m_System->init(100, FMOD_INIT_NORMAL | FMOD_INIT_PROFILE_ENABLE, 0);
 }
-Sound::~Sound()
+SoundCore::~SoundCore()
 {
     FMOD_RESULT   result        = FMOD_OK;
 
@@ -29,7 +29,7 @@ Sound::~Sound()
     ERRCHECK(result);
 }
 
-void Sound::update()
+void SoundCore::update()
 {
     FMOD_RESULT result = m_System->update();
     ERRCHECK(result);

@@ -1,14 +1,9 @@
-\hypertarget{_abstract_state_8h}{\section{/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\+Abstract\+State.h File Reference}
-\label{_abstract_state_8h}\index{/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\+Abstract\+State.\+h@{/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\+Abstract\+State.\+h}}
+\hypertarget{_abstract_state_8h}{\section{Abstract\+State.\+h File Reference}
+\label{_abstract_state_8h}\index{Abstract\+State.\+h@{Abstract\+State.\+h}}
 }
 {\ttfamily \#include \char`\"{}bt\+Aligned\+Allocator.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Abstract\+Builder.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\\*
-\subsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-class \hyperlink{classjli_1_1_telegram}{jli\+::\+Telegram}
-\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,5 +12,37 @@ class \hyperlink{classjli_1_1_telegram}{jli\+::\+Telegram}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacejli_a5cb9f42798ccca4b6de51fe827ade095}{jli\+::\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16} (class) Abstract\+Object
+{\footnotesize template$<$class O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $>$ }\\A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D16(class) \\*
+Abstract\+State \hyperlink{namespacejli_afb90c6843a57abb6648df522fd034666}{jli\+::\+Abstract\+State} (const Abstract\+Builder \&builder)
+\item 
+\hyperlink{namespacejli_ac1726cb5b995ec49ba12eea96abfc7b2}{jli\+::\+Abstract\+State} (const Abstract\+State \&copy)
+\item 
+virtual \hyperlink{namespacejli_a4f29ddbfb1999ccb9059334002f37aaf}{jli\+::$\sim$\+Abstract\+State} ()=0
+\item 
+\hyperlink{namespacejli_a570a0b81268f888f69ad4c8b7fe6edae}{jli\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R} ()
+\item 
+Abstract\+State \& \hyperlink{namespacejli_a11ea974b98a56570306c45017bb5fcf4}{jli\+::operator=} (const Abstract\+State \&)
+\item 
+virtual bool \hyperlink{namespacejli_a03fa79fbaafd83709515e1115c5a3986}{jli\+::is\+Finished} () const 
+\item 
+virtual void \hyperlink{namespacejli_abe513ad11f4f190e62b972f4f8893aea}{jli\+::enable\+Finished} (const bool=true)
+\item 
+virtual bool \hyperlink{namespacejli_ac98ddd4e4925a857a8935b40178b2718}{jli\+::is\+In\+Use} () const 
+\item 
+virtual void \hyperlink{namespacejli_a28a9fe0627a5e67e2e4a15a3663f7bc4}{jli\+::enable\+In\+Use} (const bool=true)
+\item 
+virtual void \hyperlink{namespacejli_aaa622c9ff88b18070c8c1c970b4a26f8}{jli\+::enter} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)=0
+\item 
+virtual void \hyperlink{namespacejli_a922c317a977284f6b6e24ed5c655dd12}{jli\+::update} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$, f32)=0
+\item 
+virtual void \hyperlink{namespacejli_ad265e81449125b1850fe3a2874dae6f6}{jli\+::exit} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$)=0
+\item 
+virtual bool \hyperlink{namespacejli_ad9966e101b766e590473468c68125124}{jli\+::on\+Message} (O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+P\+E $\ast$, const Telegram \&)=0
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacejli_a7e38adefffab3bce7cc5e105213c0989}{jli\+::m\+\_\+is\+Finished}
+\item 
+bool \hyperlink{namespacejli_a3d9eb1afcfa6575a74fcbea812335204}{jli\+::m\+\_\+is\+In\+Use}
 \end{DoxyCompactItemize}

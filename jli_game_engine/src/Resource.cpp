@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Resource::getName()const
+    const char *Resource::getClassName()const
     {
         return "Resource";
     }
     
     u32 Resource::getType()const
     {
-        return type::Resource;
+        return JLI_OBJECT_TYPE_Resource;
     }
 }

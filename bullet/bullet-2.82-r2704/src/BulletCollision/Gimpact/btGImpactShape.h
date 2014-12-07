@@ -521,7 +521,7 @@ public:
 	//! Calculates the exact inertia tensor for this shape
 	virtual void	calculateLocalInertia(btScalar mass,btVector3& inertia) const;
 
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "GImpactCompound";
 	}
@@ -835,7 +835,7 @@ public:
 
 
 
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "GImpactMeshShapePart";
 	}
@@ -1153,7 +1153,7 @@ public:
 	}
 
 
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "GImpactMesh";
 	}

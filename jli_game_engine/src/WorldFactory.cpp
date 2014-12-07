@@ -10,12 +10,66 @@
 
 #pragma mark Start type includes
 
-#include "Resource.h"
-#include "ResourceBuilder.h"
+#include "Action.h"
+#include "ActionBuilder.h"
+#include "Camera.h"
+#include "CameraBuilder.h"
+#include "Clock.h"
+#include "ClockBuilder.h"
+#include "CollisionResponse.h"
+#include "CollisionResponseBuilder.h"
+#include "CubicTexture.h"
+#include "CubicTextureBuilder.h"
+#include "DynamicPhysicsBody.h"
+#include "DynamicPhysicsBodyBuilder.h"
+#include "Geometry.h"
+#include "GeometryBuilder.h"
+#include "GhostPhysicsBody.h"
+#include "GhostPhysicsBodyBuilder.h"
+#include "KinematicPhysicsBody.h"
+#include "KinematicPhysicsBodyBuilder.h"
+#include "Light.h"
+#include "LightBuilder.h"
+#include "Material.h"
+#include "MaterialBuilder.h"
+#include "MaterialProperty.h"
+#include "MaterialPropertyBuilder.h"
 #include "Node.h"
 #include "NodeBuilder.h"
+#include "NodeState.h"
+#include "NodeStateBuilder.h"
+#include "NodeStateMachine.h"
+#include "NodeStateMachineBuilder.h"
+#include "ParticleEmitter.h"
+#include "ParticleEmitterBuilder.h"
+#include "PhysicsContact.h"
+#include "PhysicsContactBuilder.h"
+#include "PhysicsField.h"
+#include "PhysicsFieldBuilder.h"
+#include "PhysicsShape.h"
+#include "PhysicsShapeBuilder.h"
+#include "PhysicsWorld.h"
+#include "PhysicsWorldBuilder.h"
+#include "Resource.h"
+#include "ResourceBuilder.h"
+#include "RigidPhysicsBody.h"
+#include "RigidPhysicsBodyBuilder.h"
 #include "Scene.h"
 #include "SceneBuilder.h"
+#include "SceneState.h"
+#include "SceneStateBuilder.h"
+#include "SceneStateMachine.h"
+#include "SceneStateMachineBuilder.h"
+#include "SoftPhysicsBody.h"
+#include "SoftPhysicsBodyBuilder.h"
+#include "Sound.h"
+#include "SoundBuilder.h"
+#include "Texture.h"
+#include "TextureBuilder.h"
+#include "WorldState.h"
+#include "WorldStateBuilder.h"
+#include "WorldStateMachine.h"
+#include "WorldStateMachineBuilder.h"
 
 #pragma mark End type includes
 
@@ -147,168 +201,202 @@ namespace jli
         
         switch (type)
         {
-            case type::Action:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_Action:
+                obj = new Action();
                 break;
-            case type::ActionBuilder:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_ActionBuilder:
+                obj = new ActionBuilder();
                 break;
-            case type::BaseRigidPhysicsBody:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_Camera:
+		obj = new Camera();
                 break;
-            case type::BaseRigidPhysicsBodyBuilder:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CameraBuilder:
+		obj = new CameraBuilder();
                 break;
-            case type::BaseSoftPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Clock:
+                obj = new Clock();
                 break;
-            case type::BaseSoftPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ClockBuilder:
+                obj = new ClockBuilder();
                 break;
-            case type::Camera:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CollisionResponse:
+		obj = new CollisionResponse();
                 break;
-            case type::CameraBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CollisionResponseBuilder:
+		obj = new CollisionResponseBuilder();
                 break;
-            case type::Clock:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CubicTexture:
+		obj = new CubicTexture();
                 break;
-            case type::ClockBuilder:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CubicTextureBuilder:
+		obj = new CubicTextureBuilder();
                 break;
-            case type::CollisionResponse:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_DynamicPhysicsBody:
+		obj = new DynamicPhysicsBody();
                 break;
-            case type::CollisionResponseBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_DynamicPhysicsBodyBuilder:
+		obj = new DynamicPhysicsBodyBuilder();
                 break;
-            case type::CubicTexture:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Geometry:
+		obj = new Geometry();
                 break;
-            case type::CubicTextureBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GeometryBuilder:
+		obj = new GeometryBuilder();
                 break;
-            case type::DynamicPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GhostPhysicsBody:
+		obj = new GhostPhysicsBody();
                 break;
-            case type::DynamicPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GhostPhysicsBodyBuilder:
+		obj = new GhostPhysicsBodyBuilder();
                 break;
-            case type::Geometry:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_KinematicPhysicsBody:
+		obj = new KinematicPhysicsBody();
                 break;
-            case type::GeometryBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_KinematicPhysicsBodyBuilder:
+		obj = new KinematicPhysicsBodyBuilder();
                 break;
-            case type::GhostPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Light:
+		obj = new Light();
                 break;
-            case type::GhostPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_LightBuilder:
+		obj = new LightBuilder();
                 break;
-            case type::KinematicPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Material:
+		obj = new Material();
                 break;
-            case type::KinematicPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialBuilder:
+		obj = new MaterialBuilder();
                 break;
-            case type::Light:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialProperty:
+		obj = new MaterialProperty();
                 break;
-            case type::LightBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialPropertyBuilder:
+		obj = new MaterialPropertyBuilder();
                 break;
-            case type::Material:
-		obj = NULL;
-                break;
-            case type::MaterialBuilder:
-		obj = NULL;
-                break;
-            case type::MaterialProperty:
-		obj = NULL;
-                break;
-            case type::MaterialPropertyBuilder:
-		obj = NULL;
-                break;
-            case type::Node:
+            case JLI_OBJECT_TYPE_Node:
                 obj = new Node();
                 break;
-            case type::NodeBuilder:
+            case JLI_OBJECT_TYPE_NodeBuilder:
                 obj = new NodeBuilder();
                 break;
-            case type::ParticleEmitter:
-		obj = NULL;
+                
+                
+                
+            case JLI_OBJECT_TYPE_NodeState:
+                obj = new NodeState();
                 break;
-            case type::ParticleEmitterBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_NodeStateBuilder:
+                obj = new NodeStateBuilder();
                 break;
-            case type::PhysicsContact:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_NodeStateMachine:
+                obj = new NodeStateMachine();
                 break;
-            case type::PhysicsContactBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_NodeStateMachineBuilder:
+                obj = new NodeStateMachineBuilder();
                 break;
-            case type::PhysicsField:
-		obj = NULL;
+                
+                
+                
+            case JLI_OBJECT_TYPE_ParticleEmitter:
+		obj = new ParticleEmitter();
                 break;
-            case type::PhysicsFieldBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ParticleEmitterBuilder:
+		obj = new ParticleEmitterBuilder();
                 break;
-            case type::PhysicsShape:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsContact:
+		obj = new PhysicsContact();
                 break;
-            case type::PhysicsShapeBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsContactBuilder:
+		obj = new PhysicsContactBuilder();
                 break;
-            case type::PhysicsWorld:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsField:
+		obj = new PhysicsField();
                 break;
-            case type::PhysicsWorldBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsFieldBuilder:
+		obj = new PhysicsFieldBuilder();
                 break;
-            case type::Resource:
+            case JLI_OBJECT_TYPE_PhysicsShape:
+		obj = new PhysicsShape();
+                break;
+            case JLI_OBJECT_TYPE_PhysicsShapeBuilder:
+		obj = new PhysicsShapeBuilder();
+                break;
+            case JLI_OBJECT_TYPE_PhysicsWorld:
+		obj = new PhysicsWorld();
+                break;
+            case JLI_OBJECT_TYPE_PhysicsWorldBuilder:
+		obj = new PhysicsWorldBuilder();
+                break;
+            case JLI_OBJECT_TYPE_Resource:
                 obj = new Resource();
                 break;
-            case type::ResourceBuilder:
+            case JLI_OBJECT_TYPE_ResourceBuilder:
                 obj = new ResourceBuilder();
                 break;
-            case type::Scene:
+            case JLI_OBJECT_TYPE_RigidPhysicsBody:
+                obj = new RigidPhysicsBody();
+                break;
+            case JLI_OBJECT_TYPE_RigidPhysicsBodyBuilder:
+                obj = new RigidPhysicsBodyBuilder();
+                break;
+            case JLI_OBJECT_TYPE_Scene:
                 obj = new Scene();
                 break;
-            case type::SceneBuilder:
+            case JLI_OBJECT_TYPE_SceneBuilder:
                 obj = new SceneBuilder();
                 break;
-            case type::Sound:
-		obj = NULL;
+                
+                
+            case JLI_OBJECT_TYPE_SceneState:
+                obj = new SceneState();
                 break;
-            case type::SoundBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SceneStateBuilder:
+                obj = new SceneStateBuilder();
                 break;
-            case type::State:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SceneStateMachine:
+                obj = new SceneStateMachine();
                 break;
-            case type::StateBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SceneStateMachineBuilder:
+                obj = new SceneStateMachineBuilder();
                 break;
-            case type::StateMachine:
-		obj = NULL;
+                
+                
+                
+            case JLI_OBJECT_TYPE_SoftPhysicsBody:
+                obj = new SoftPhysicsBody();
                 break;
-            case type::StateMachineBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoftPhysicsBodyBuilder:
+                obj = new SoftPhysicsBodyBuilder();
                 break;
-            case type::StaticPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Sound:
+		obj = new Sound();
                 break;
-            case type::StaticPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoundBuilder:
+		obj = new SoundBuilder();
                 break;
-            case type::Texture:
-		obj = NULL;
+            
+            case JLI_OBJECT_TYPE_Texture:
+		obj = new Texture();
                 break;
-            case type::TextureBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_TextureBuilder:
+		obj = new TextureBuilder();
                 break;
+                
+            case JLI_OBJECT_TYPE_WorldState:
+                obj = new WorldState();
+                break;
+            case JLI_OBJECT_TYPE_WorldStateBuilder:
+                obj = new WorldStateBuilder();
+                break;
+            case JLI_OBJECT_TYPE_WorldStateMachine:
+                obj = new WorldStateMachine();
+                break;
+            case JLI_OBJECT_TYPE_WorldStateMachineBuilder:
+                obj = new WorldStateMachineBuilder();
+                break;
+                
+                
+                
             default:
                 obj = NULL;
                 break;
@@ -324,169 +412,150 @@ namespace jli
         
         switch (builder.getObjectType())
         {
-            case type::Action:
-		    obj = NULL;
+            case JLI_OBJECT_TYPE_Action:
+		    obj = new Action(builder);
                 break;
-            case type::ActionBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ActionBuilder:
+		obj = new ActionBuilder(builder);
                 break;
-            case type::BaseRigidPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Camera:
+		obj = new Camera(builder);
                 break;
-            case type::BaseRigidPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CameraBuilder:
+		obj = new CameraBuilder(builder);
                 break;
-            case type::BaseSoftPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Clock:
+                obj = new Clock(builder);
                 break;
-            case type::BaseSoftPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ClockBuilder:
+                obj = new ClockBuilder(builder);
                 break;
-            case type::Camera:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CollisionResponse:
+		obj = new CollisionResponse(builder);
                 break;
-            case type::CameraBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CollisionResponseBuilder:
+		obj = new CollisionResponseBuilder(builder);
                 break;
-            case type::Clock:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CubicTexture:
+		obj = new CubicTexture(builder);
                 break;
-            case type::ClockBuilder:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CubicTextureBuilder:
+		obj = new CubicTextureBuilder(builder);
                 break;
-            case type::CollisionResponse:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_DynamicPhysicsBody:
+		obj = new DynamicPhysicsBody(builder);
                 break;
-            case type::CollisionResponseBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_DynamicPhysicsBodyBuilder:
+		obj = new DynamicPhysicsBodyBuilder(builder);
                 break;
-            case type::CubicTexture:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Geometry:
+		obj = new Geometry(builder);
                 break;
-            case type::CubicTextureBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GeometryBuilder:
+		obj = new GeometryBuilder(builder);
                 break;
-            case type::DynamicPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GhostPhysicsBody:
+		obj = new GhostPhysicsBody(builder);
                 break;
-            case type::DynamicPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GhostPhysicsBodyBuilder:
+		obj = new GhostPhysicsBodyBuilder(builder);
                 break;
-            case type::Geometry:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_KinematicPhysicsBody:
+		obj = new KinematicPhysicsBody(builder);
                 break;
-            case type::GeometryBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_KinematicPhysicsBodyBuilder:
+		obj = new KinematicPhysicsBodyBuilder(builder);
                 break;
-            case type::GhostPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Light:
+		obj = new Light(builder);
                 break;
-            case type::GhostPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_LightBuilder:
+		obj = new LightBuilder(builder);
                 break;
-            case type::KinematicPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Material:
+		obj = new Material(builder);
                 break;
-            case type::KinematicPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialBuilder:
+		obj = new MaterialBuilder(builder);
                 break;
-            case type::Light:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialProperty:
+		obj = new MaterialProperty(builder);
                 break;
-            case type::LightBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialPropertyBuilder:
+		obj = new MaterialPropertyBuilder(builder);
                 break;
-            case type::Material:
-		obj = NULL;
-                break;
-            case type::MaterialBuilder:
-		obj = NULL;
-                break;
-            case type::MaterialProperty:
-		obj = NULL;
-                break;
-            case type::MaterialPropertyBuilder:
-		obj = NULL;
-                break;
-            case type::Node:
+            case JLI_OBJECT_TYPE_Node:
                 obj = new Node(builder);
                 break;
-            case type::NodeBuilder:
+            case JLI_OBJECT_TYPE_NodeBuilder:
                 obj = new NodeBuilder(builder);
                 break;
-            case type::ParticleEmitter:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ParticleEmitter:
+		obj = new ParticleEmitter(builder);
                 break;
-            case type::ParticleEmitterBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ParticleEmitterBuilder:
+		obj = new ParticleEmitterBuilder(builder);
                 break;
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsContact:
+		obj = new PhysicsContact(builder);
                 break;
-            case type::PhysicsContact:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsContactBuilder:
+		obj = new PhysicsContactBuilder(builder);
                 break;
-            case type::PhysicsContactBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsField:
+		obj = new PhysicsField(builder);
                 break;
-            case type::PhysicsField:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsFieldBuilder:
+		obj = new PhysicsFieldBuilder(builder);
                 break;
-            case type::PhysicsFieldBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsShape:
+		obj = new PhysicsShape(builder);
                 break;
-            case type::PhysicsShape:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsShapeBuilder:
+		obj = new PhysicsShapeBuilder(builder);
                 break;
-            case type::PhysicsShapeBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsWorld:
+		obj = new PhysicsWorld(builder);
                 break;
-            case type::PhysicsWorld:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsWorldBuilder:
+		obj = new PhysicsWorldBuilder(builder);
                 break;
-            case type::PhysicsWorldBuilder:
-		obj = NULL;
-                break;
-            case type::Resource:
+            case JLI_OBJECT_TYPE_Resource:
                 obj = new Resource(builder);
                 break;
-            case type::ResourceBuilder:
+            case JLI_OBJECT_TYPE_ResourceBuilder:
                 obj = new ResourceBuilder(builder);
                 break;
-            case type::Scene:
+            case JLI_OBJECT_TYPE_RigidPhysicsBody:
+                obj = new RigidPhysicsBody(builder);
+                break;
+            case JLI_OBJECT_TYPE_RigidPhysicsBodyBuilder:
+                obj = new RigidPhysicsBodyBuilder(builder);
+                break;
+            case JLI_OBJECT_TYPE_Scene:
                 obj = new Scene(builder);
                 break;
-            case type::SceneBuilder:
+            case JLI_OBJECT_TYPE_SceneBuilder:
                 obj = new SceneBuilder(builder);
                 break;
-            case type::Sound:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoftPhysicsBody:
+                obj = new SoftPhysicsBody(builder);
                 break;
-            case type::SoundBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoftPhysicsBodyBuilder:
+                obj = new SoftPhysicsBodyBuilder(builder);
                 break;
-            case type::State:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Sound:
+		obj = new Sound(builder);
                 break;
-            case type::StateBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoundBuilder:
+		obj = new SoundBuilder(builder);
                 break;
-            case type::StateMachine:
-		obj = NULL;
+            
+            case JLI_OBJECT_TYPE_Texture:
+		obj = new Texture(builder);
                 break;
-            case type::StateMachineBuilder:
-		obj = NULL;
-                break;
-            case type::StaticPhysicsBody:
-		obj = NULL;
-                break;
-            case type::StaticPhysicsBodyBuilder:
-		obj = NULL;
-                break;
-            case type::Texture:
-		obj = NULL;
-                break;
-            case type::TextureBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_TextureBuilder:
+		obj = new TextureBuilder(builder);
                 break;
             default:
                 obj = NULL;
@@ -502,167 +571,150 @@ namespace jli
         //!!!TODO: implement the clone types...
         switch (object.getType())
         {
-            case type::Action:
-		    obj = NULL;
+            case JLI_OBJECT_TYPE_Action:
+		    obj = new Action(*dynamic_cast<const Action*>(&object));
                 break;
-            case type::ActionBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ActionBuilder:
+		obj = new ActionBuilder(*dynamic_cast<const ActionBuilder*>(&object));
                 break;
-            case type::BaseRigidPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Camera:
+		obj = new Camera(*dynamic_cast<const Camera*>(&object));
                 break;
-            case type::BaseRigidPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CameraBuilder:
+		obj = new CameraBuilder(*dynamic_cast<const CameraBuilder*>(&object));
                 break;
-            case type::BaseSoftPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Clock:
+                obj = new Clock(*dynamic_cast<const Clock*>(&object));
                 break;
-            case type::BaseSoftPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ClockBuilder:
+                obj = new ClockBuilder(*dynamic_cast<const ClockBuilder*>(&object));
                 break;
-            case type::Camera:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CollisionResponse:
+		obj = new CollisionResponse(*dynamic_cast<const CollisionResponse*>(&object));
                 break;
-            case type::CameraBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_CollisionResponseBuilder:
+		obj = new CollisionResponseBuilder(*dynamic_cast<const CollisionResponseBuilder*>(&object));
                 break;
-            case type::Clock:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CubicTexture:
+		obj = new CubicTexture(*dynamic_cast<const CubicTexture*>(&object));
                 break;
-            case type::ClockBuilder:
-                obj = NULL;
+            case JLI_OBJECT_TYPE_CubicTextureBuilder:
+		obj = new CubicTextureBuilder(*dynamic_cast<const CubicTextureBuilder*>(&object));
                 break;
-            case type::CollisionResponse:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_DynamicPhysicsBody:
+		obj = new DynamicPhysicsBody(*dynamic_cast<const DynamicPhysicsBody*>(&object));
                 break;
-            case type::CollisionResponseBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_DynamicPhysicsBodyBuilder:
+		obj = new DynamicPhysicsBodyBuilder(*dynamic_cast<const DynamicPhysicsBodyBuilder*>(&object));
                 break;
-            case type::CubicTexture:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Geometry:
+		obj = new Geometry(*dynamic_cast<const Geometry*>(&object));
                 break;
-            case type::CubicTextureBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GeometryBuilder:
+		obj = new GeometryBuilder(*dynamic_cast<const GeometryBuilder*>(&object));
                 break;
-            case type::DynamicPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GhostPhysicsBody:
+		obj = new GhostPhysicsBody(*dynamic_cast<const GhostPhysicsBody*>(&object));
                 break;
-            case type::DynamicPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_GhostPhysicsBodyBuilder:
+		obj = new GhostPhysicsBodyBuilder(*dynamic_cast<const GhostPhysicsBodyBuilder*>(&object));
                 break;
-            case type::Geometry:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_KinematicPhysicsBody:
+		obj = new KinematicPhysicsBody(*dynamic_cast<const KinematicPhysicsBody*>(&object));
                 break;
-            case type::GeometryBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_KinematicPhysicsBodyBuilder:
+		obj = new KinematicPhysicsBodyBuilder(*dynamic_cast<const KinematicPhysicsBodyBuilder*>(&object));
                 break;
-            case type::GhostPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Light:
+		obj = new Light(*dynamic_cast<const Light*>(&object));
                 break;
-            case type::GhostPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_LightBuilder:
+		obj = new LightBuilder(*dynamic_cast<const LightBuilder*>(&object));
                 break;
-            case type::KinematicPhysicsBody:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Material:
+		obj = new Material(*dynamic_cast<const Material*>(&object));
                 break;
-            case type::KinematicPhysicsBodyBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialBuilder:
+		obj = new MaterialBuilder(*dynamic_cast<const MaterialBuilder*>(&object));
                 break;
-            case type::Light:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialProperty:
+		obj = new MaterialProperty(*dynamic_cast<const MaterialProperty*>(&object));
                 break;
-            case type::LightBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_MaterialPropertyBuilder:
+		obj = new MaterialPropertyBuilder(*dynamic_cast<const MaterialPropertyBuilder*>(&object));
                 break;
-            case type::Material:
-		obj = NULL;
-                break;
-            case type::MaterialBuilder:
-		obj = NULL;
-                break;
-            case type::MaterialProperty:
-		obj = NULL;
-                break;
-            case type::MaterialPropertyBuilder:
-		obj = NULL;
-                break;
-            case type::Node:
+            case JLI_OBJECT_TYPE_Node:
                 obj = new Node(*dynamic_cast<const Node*>(&object));
                 break;
-            case type::NodeBuilder:
-			    obj = new NodeBuilder(*dynamic_cast<const NodeBuilder*>(&object));
+            case JLI_OBJECT_TYPE_NodeBuilder:
+                obj = new NodeBuilder(*dynamic_cast<const NodeBuilder*>(&object));
                 break;
-            case type::ParticleEmitter:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ParticleEmitter:
+		obj = new ParticleEmitter(*dynamic_cast<const ParticleEmitter*>(&object));
                 break;
-            case type::ParticleEmitterBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_ParticleEmitterBuilder:
+		obj = new ParticleEmitterBuilder(*dynamic_cast<const ParticleEmitterBuilder*>(&object));
                 break;
-            case type::PhysicsContact:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsContact:
+		obj = new PhysicsContact(*dynamic_cast<const PhysicsContact*>(&object));
                 break;
-            case type::PhysicsContactBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsContactBuilder:
+		obj = new PhysicsContactBuilder(*dynamic_cast<const PhysicsContactBuilder*>(&object));
                 break;
-            case type::PhysicsField:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsField:
+		obj = new PhysicsField(*dynamic_cast<const PhysicsField*>(&object));
                 break;
-            case type::PhysicsFieldBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsFieldBuilder:
+		obj = new PhysicsFieldBuilder(*dynamic_cast<const PhysicsFieldBuilder*>(&object));
                 break;
-            case type::PhysicsShape:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsShape:
+		obj = new PhysicsShape(*dynamic_cast<const PhysicsShape*>(&object));
                 break;
-            case type::PhysicsShapeBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsShapeBuilder:
+		obj = new PhysicsShapeBuilder(*dynamic_cast<const PhysicsShapeBuilder*>(&object));
                 break;
-            case type::PhysicsWorld:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsWorld:
+		obj = new PhysicsWorld(*dynamic_cast<const PhysicsWorld*>(&object));
                 break;
-            case type::PhysicsWorldBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_PhysicsWorldBuilder:
+		obj = new PhysicsWorldBuilder(*dynamic_cast<const PhysicsWorldBuilder*>(&object));
                 break;
-            case type::Resource:
+            case JLI_OBJECT_TYPE_Resource:
                 obj = new Resource(*dynamic_cast<const Resource*>(&object));
                 break;
-            case type::ResourceBuilder:
+            case JLI_OBJECT_TYPE_ResourceBuilder:
                 obj = new ResourceBuilder(*dynamic_cast<const ResourceBuilder*>(&object));
                 break;
-            case type::Scene:
+            case JLI_OBJECT_TYPE_RigidPhysicsBody:
+                obj = new RigidPhysicsBody(*dynamic_cast<const RigidPhysicsBody*>(&object));
+                break;
+            case JLI_OBJECT_TYPE_RigidPhysicsBodyBuilder:
+                obj = new RigidPhysicsBodyBuilder(*dynamic_cast<const RigidPhysicsBodyBuilder*>(&object));
+                break;
+            case JLI_OBJECT_TYPE_Scene:
                 obj = new Scene(*dynamic_cast<const Scene*>(&object));
                 break;
-            case type::SceneBuilder:
+            case JLI_OBJECT_TYPE_SceneBuilder:
                 obj = new SceneBuilder(*dynamic_cast<const SceneBuilder*>(&object));
                 break;
-            case type::Sound:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoftPhysicsBody:
+                obj = new SoftPhysicsBody(*dynamic_cast<const SoftPhysicsBody*>(&object));
                 break;
-            case type::SoundBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoftPhysicsBodyBuilder:
+                obj = new SoftPhysicsBodyBuilder(*dynamic_cast<const SoftPhysicsBodyBuilder*>(&object));
                 break;
-            case type::State:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_Sound:
+		obj = new Sound(*dynamic_cast<const Sound*>(&object));
                 break;
-            case type::StateBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_SoundBuilder:
+		obj = new SoundBuilder(*dynamic_cast<const SoundBuilder*>(&object));
                 break;
-            case type::StateMachine:
-		obj = NULL;
+            
+            case JLI_OBJECT_TYPE_Texture:
+		obj = new Texture(*dynamic_cast<const Texture*>(&object));
                 break;
-            case type::StateMachineBuilder:
-		obj = NULL;
-                break;
-            case type::StaticPhysicsBody:
-		obj = NULL;
-                break;
-            case type::StaticPhysicsBodyBuilder:
-		obj = NULL;
-                break;
-            case type::Texture:
-		obj = NULL;
-                break;
-            case type::TextureBuilder:
-		obj = NULL;
+            case JLI_OBJECT_TYPE_TextureBuilder:
+		obj = new TextureBuilder(*dynamic_cast<const TextureBuilder*>(&object));
                 break;
             default:
                 obj= NULL;

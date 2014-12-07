@@ -11,13 +11,31 @@
 \hyperlink{classjli_1_1_world_lua_virtual_machine_a6c198a8d45744d6297875cec1ac31b5f}{World\+Lua\+Virtual\+Machine} ()
 \item 
 virtual \hyperlink{classjli_1_1_world_lua_virtual_machine_a522619d2dc14b8828e9b91d76b1fa572}{$\sim$\+World\+Lua\+Virtual\+Machine} ()
+\item 
+void \hyperlink{classjli_1_1_world_lua_virtual_machine_a149a5954ec33c12d4a3a5e66e418efb2}{init} ()
+\item 
+void \hyperlink{classjli_1_1_world_lua_virtual_machine_aa10f035d6f133f0cb05e9f769992ed00}{un\+Init} ()
+\item 
+void \hyperlink{classjli_1_1_world_lua_virtual_machine_aec6b7830afcb04e7cb612742d23e5870}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classjli_1_1_world_lua_virtual_machine_a7aac18365ee2fa9efb7c28a5b5637edb}{get\+Error} (int error)
+\item 
+bool \hyperlink{classjli_1_1_world_lua_virtual_machine_a6e55818ab8b7d3e13207d9db8f577c64}{compile} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+lua\+\_\+\+State $\ast$ \hyperlink{classjli_1_1_world_lua_virtual_machine_aad7e6df2c4aef4106c9d9e81ad4ac3db}{m\+\_\+lua\+\_\+\+State}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 14 of file World\+Lua\+Virtual\+Machine.\+h.
+Definition at line 17 of file World\+Lua\+Virtual\+Machine.\+h.
 
 
 
@@ -31,7 +49,7 @@ Definition at line 14 of file World\+Lua\+Virtual\+Machine.\+h.
 )}}\label{classjli_1_1_world_lua_virtual_machine_a6c198a8d45744d6297875cec1ac31b5f}
 
 
-Definition at line 13 of file World\+Lua\+Virtual\+Machine.\+cpp.
+Definition at line 49 of file World\+Lua\+Virtual\+Machine.\+cpp.
 
 \hypertarget{classjli_1_1_world_lua_virtual_machine_a522619d2dc14b8828e9b91d76b1fa572}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!````~World\+Lua\+Virtual\+Machine@{$\sim$\+World\+Lua\+Virtual\+Machine}}
 \index{````~World\+Lua\+Virtual\+Machine@{$\sim$\+World\+Lua\+Virtual\+Machine}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
@@ -42,11 +60,71 @@ Definition at line 13 of file World\+Lua\+Virtual\+Machine.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_lua_virtual_machine_a522619d2dc14b8828e9b91d76b1fa572}
 
 
-Definition at line 18 of file World\+Lua\+Virtual\+Machine.\+cpp.
+Definition at line 54 of file World\+Lua\+Virtual\+Machine.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjli_1_1_world_lua_virtual_machine_a6e55818ab8b7d3e13207d9db8f577c64}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!compile@{compile}}
+\index{compile@{compile}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
+\subsubsection[{compile}]{\setlength{\rightskip}{0pt plus 5cm}bool jli\+::\+World\+Lua\+Virtual\+Machine\+::compile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classjli_1_1_world_lua_virtual_machine_a6e55818ab8b7d3e13207d9db8f577c64}
+\hypertarget{classjli_1_1_world_lua_virtual_machine_a7aac18365ee2fa9efb7c28a5b5637edb}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
+\subsubsection[{get\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Lua\+Virtual\+Machine\+::get\+Error (
+\begin{DoxyParamCaption}
+\item[{int}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classjli_1_1_world_lua_virtual_machine_a7aac18365ee2fa9efb7c28a5b5637edb}
+\hypertarget{classjli_1_1_world_lua_virtual_machine_a149a5954ec33c12d4a3a5e66e418efb2}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!init@{init}}
+\index{init@{init}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Lua\+Virtual\+Machine\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_lua_virtual_machine_a149a5954ec33c12d4a3a5e66e418efb2}
+
+
+Definition at line 59 of file World\+Lua\+Virtual\+Machine.\+cpp.
+
+\hypertarget{classjli_1_1_world_lua_virtual_machine_aec6b7830afcb04e7cb612742d23e5870}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!reset@{reset}}
+\index{reset@{reset}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Lua\+Virtual\+Machine\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_lua_virtual_machine_aec6b7830afcb04e7cb612742d23e5870}
+
+
+Definition at line 82 of file World\+Lua\+Virtual\+Machine.\+cpp.
+
+\hypertarget{classjli_1_1_world_lua_virtual_machine_aa10f035d6f133f0cb05e9f769992ed00}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!un\+Init@{un\+Init}}
+\index{un\+Init@{un\+Init}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
+\subsubsection[{un\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+Lua\+Virtual\+Machine\+::un\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_lua_virtual_machine_aa10f035d6f133f0cb05e9f769992ed00}
+
+
+Definition at line 73 of file World\+Lua\+Virtual\+Machine.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjli_1_1_world_lua_virtual_machine_aad7e6df2c4aef4106c9d9e81ad4ac3db}{\index{jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}!m\+\_\+lua\+\_\+\+State@{m\+\_\+lua\+\_\+\+State}}
+\index{m\+\_\+lua\+\_\+\+State@{m\+\_\+lua\+\_\+\+State}!jli\+::\+World\+Lua\+Virtual\+Machine@{jli\+::\+World\+Lua\+Virtual\+Machine}}
+\subsubsection[{m\+\_\+lua\+\_\+\+State}]{\setlength{\rightskip}{0pt plus 5cm}lua\+\_\+\+State$\ast$ jli\+::\+World\+Lua\+Virtual\+Machine\+::m\+\_\+lua\+\_\+\+State\hspace{0.3cm}{\ttfamily [protected]}}}\label{classjli_1_1_world_lua_virtual_machine_aad7e6df2c4aef4106c9d9e81ad4ac3db}
+
+
+Definition at line 31 of file World\+Lua\+Virtual\+Machine.\+h.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_lua_virtual_machine_8h}{World\+Lua\+Virtual\+Machine.\+h}\item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_lua_virtual_machine_8cpp}{World\+Lua\+Virtual\+Machine.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{_world_lua_virtual_machine_8h}{World\+Lua\+Virtual\+Machine.\+h}\item 
+\hyperlink{_world_lua_virtual_machine_8cpp}{World\+Lua\+Virtual\+Machine.\+cpp}\end{DoxyCompactItemize}

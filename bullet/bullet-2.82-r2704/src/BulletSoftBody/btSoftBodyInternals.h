@@ -114,7 +114,7 @@ public:
 		///not yet
 		btAssert(0);
 	}
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "SoftBody";
 	}
@@ -162,7 +162,7 @@ public:
 	virtual int	getShapeType() const { return SOFTBODY_SHAPE_PROXYTYPE; }
 
 	//debugging
-	virtual const char*	getName()const {return "SOFTCLUSTER";}
+	virtual const char*	getClassName()const {return "SOFTCLUSTER";}
 
 	virtual void	setMargin(btScalar margin)
 	{

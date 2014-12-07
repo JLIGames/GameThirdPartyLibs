@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Clock::getName()const
+    const char *Clock::getClassName()const
     {
         return "Clock";
     }
     
     u32 Clock::getType()const
     {
-        return type::Clock;
+        return JLI_OBJECT_TYPE_Clock;
     }
 }

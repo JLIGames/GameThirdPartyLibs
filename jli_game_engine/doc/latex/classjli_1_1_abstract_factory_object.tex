@@ -14,9 +14,9 @@ Inheritance diagram for jli\+:\+:Abstract\+Factory\+Object\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual const char $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_ab78cb20b22a26275e80a1dd33566024c}{get\+Name} () const 
+virtual const char $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_a182551cb7d56406b4d3882fbff89a8df}{get\+Class\+Name} () const =0
 \item 
-virtual u32 \hyperlink{classjli_1_1_abstract_factory_object_a1a69b8811cdf0ccc7facb9b1cb396aae}{get\+Type} () const 
+virtual u32 \hyperlink{classjli_1_1_abstract_factory_object_a7fa50dd83680e6ef5e6d3f964490a3ca}{get\+Type} () const =0
 \item 
 virtual \hyperlink{classjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object} $\ast$ \hyperlink{classjli_1_1_abstract_factory_object_af2f25dcc27827022294a2078ef35b9d3}{create} (const \hyperlink{classjli_1_1_abstract_builder}{Abstract\+Builder} \&builder) const 
 \item 
@@ -162,13 +162,13 @@ used to destroy this instance from the factory.
 
 Definition at line 47 of file Abstract\+Factory\+Object.\+cpp.
 
-\hypertarget{classjli_1_1_abstract_factory_object_ab78cb20b22a26275e80a1dd33566024c}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Name@{get\+Name}}
-\index{get\+Name@{get\+Name}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
-\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ jli\+::\+Abstract\+Factory\+Object\+::get\+Name (
+\hypertarget{classjli_1_1_abstract_factory_object_a182551cb7d56406b4d3882fbff89a8df}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
+\subsubsection[{get\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ jli\+::\+Abstract\+Factory\+Object\+::get\+Class\+Name (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_ab78cb20b22a26275e80a1dd33566024c}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classjli_1_1_abstract_factory_object_a182551cb7d56406b4d3882fbff89a8df}
 The name of this Class
 
 \begin{DoxyReturn}{Returns}
@@ -176,11 +176,7 @@ the name of this class
 \end{DoxyReturn}
 
 
-Reimplemented in \hyperlink{classjli_1_1_abstract_builder_a390358e86d1f93a41660bd40ec6e69dc}{jli\+::\+Abstract\+Builder}.
-
-
-
-Definition at line 27 of file Abstract\+Factory\+Object.\+cpp.
+Implemented in \hyperlink{classjli_1_1_abstract_builder_ab482a893dd560709b3ee59f27b4035f4}{jli\+::\+Abstract\+Builder}.
 
 \hypertarget{classjli_1_1_abstract_factory_object_aa32d6469cb7cc3dab360993a7e1a276e}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Pointer@{get\+Pointer}}
 \index{get\+Pointer@{get\+Pointer}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
@@ -209,13 +205,13 @@ the u64 value of this pointer.
 
 Definition at line 57 of file Abstract\+Factory\+Object.\+cpp.
 
-\hypertarget{classjli_1_1_abstract_factory_object_a1a69b8811cdf0ccc7facb9b1cb396aae}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Type@{get\+Type}}
+\hypertarget{classjli_1_1_abstract_factory_object_a7fa50dd83680e6ef5e6d3f964490a3ca}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!get\+Type@{get\+Type}}
 \index{get\+Type@{get\+Type}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
-\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}u32 jli\+::\+Abstract\+Factory\+Object\+::get\+Type (
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual u32 jli\+::\+Abstract\+Factory\+Object\+::get\+Type (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_abstract_factory_object_a1a69b8811cdf0ccc7facb9b1cb396aae}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classjli_1_1_abstract_factory_object_a7fa50dd83680e6ef5e6d3f964490a3ca}
 The type of this Class
 
 \begin{DoxyReturn}{Returns}
@@ -223,11 +219,7 @@ the type of this class
 \end{DoxyReturn}
 
 
-Reimplemented in \hyperlink{classjli_1_1_abstract_builder_a826f70c995257424b7d81ab2d4706ccf}{jli\+::\+Abstract\+Builder}.
-
-
-
-Definition at line 32 of file Abstract\+Factory\+Object.\+cpp.
+Implemented in \hyperlink{classjli_1_1_abstract_builder_a826f70c995257424b7d81ab2d4706ccf}{jli\+::\+Abstract\+Builder}.
 
 \hypertarget{classjli_1_1_abstract_factory_object_a3acdcb151e49d7a3c4bdb9ccc2462e14}{\index{jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!jli\+::\+Abstract\+Factory\+Object@{jli\+::\+Abstract\+Factory\+Object}}
@@ -358,5 +350,5 @@ Definition at line 119 of file Abstract\+Factory\+Object.\+h.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_abstract_factory_object_8h}{Abstract\+Factory\+Object.\+h}\item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_abstract_factory_object_8cpp}{Abstract\+Factory\+Object.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{_abstract_factory_object_8h}{Abstract\+Factory\+Object.\+h}\item 
+\hyperlink{_abstract_factory_object_8cpp}{Abstract\+Factory\+Object.\+cpp}\end{DoxyCompactItemize}

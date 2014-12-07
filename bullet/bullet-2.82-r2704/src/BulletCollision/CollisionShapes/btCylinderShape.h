@@ -127,7 +127,7 @@ BT_DECLARE_ALIGNED_ALLOCATOR();
 	}
 
 	//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "CylinderY";
 	}
@@ -150,7 +150,7 @@ public:
 	virtual void	batchedUnitVectorGetSupportingVertexWithoutMargin(const btVector3* vectors,btVector3* supportVerticesOut,int numVectors) const;
 	
 		//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "CylinderX";
 	}
@@ -173,7 +173,7 @@ public:
 	virtual void	batchedUnitVectorGetSupportingVertexWithoutMargin(const btVector3* vectors,btVector3* supportVerticesOut,int numVectors) const;
 
 		//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "CylinderZ";
 	}

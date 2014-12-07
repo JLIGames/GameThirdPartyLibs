@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>JLI Engine: /Users/jamesfolk/Dropbox/GameDevelopment/mygames/third_party/jli_game_engine/src/AbstractState.h Source File</title>
+<title>My Project: AbstractState.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JLI Engine
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -63,12 +63,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -77,11 +78,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">AbstractState.h</div>  </div>
@@ -107,167 +103,177 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">class </span>Telegram;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">ATTRIBUTE_ALIGNED16</a>(<span class="keyword">class</span>) AbstractState</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        AbstractState();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        AbstractState(<span class="keyword">const</span> AbstractBuilder &amp;builder);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        AbstractState(<span class="keyword">const</span> AbstractState &amp;copy);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">virtual</span> ~AbstractState() = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="namespacejli.html#a570a0b81268f888f69ad4c8b7fe6edae">BT_DECLARE_ALIGNED_ALLOCATOR</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        AbstractState &amp;<a class="code" href="namespacejli.html#abf374f753c2ae3833479fc522c07b7a9">operator=</a>(<span class="keyword">const</span> AbstractState&amp;);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isFinished()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> enableFinished(<span class="keyword">const</span> <span class="keywordtype">bool</span> = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isInUse()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> enableInUse(<span class="keyword">const</span> <span class="keywordtype">bool</span> = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> enter(OBJECT_TYPE*) = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> update(OBJECT_TYPE*, f32) = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> exit(OBJECT_TYPE*) = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> onMessage(OBJECT_TYPE*,<span class="keyword">const</span> Telegram&amp;) = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">bool</span> m_isFinished;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">bool</span> m_isInUse;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    AbstractState&lt;OBJECT_TYPE&gt;::AbstractState():</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m_isFinished(false),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_isInUse(false)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    AbstractState&lt;OBJECT_TYPE&gt;::AbstractState(<span class="keyword">const</span> AbstractBuilder &amp;builder):</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m_isFinished(false),</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    m_isInUse(false)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    AbstractState&lt;OBJECT_TYPE&gt;::AbstractState(<span class="keyword">const</span> AbstractState &amp;copy):</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    m_isFinished(copy.m_isFinished),</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    m_isInUse(false)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    AbstractState&lt;OBJECT_TYPE&gt;::~AbstractState()</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        jliAssertMsg(!m_isInUse, <span class="stringliteral">&quot;state is still in the state machine queue&quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    AbstractState&lt;OBJECT_TYPE&gt; &amp;<a class="code" href="namespacejli.html#abf374f753c2ae3833479fc522c07b7a9">AbstractState&lt;OBJECT_TYPE&gt;::operator=</a>(<span class="keyword">const</span> AbstractState &amp;rhs)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;rhs)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            m_isFinished = rhs.m_isFinished;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            m_isInUse = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> AbstractState&lt;OBJECT_TYPE&gt;::isFinished()<span class="keyword">const</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> m_isFinished;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> AbstractState&lt;OBJECT_TYPE&gt;::enableFinished(<span class="keyword">const</span> <span class="keywordtype">bool</span> finished)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        m_isFinished = finished;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> AbstractState&lt;OBJECT_TYPE&gt;::isInUse()<span class="keyword">const</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> m_isInUse;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> AbstractState&lt;OBJECT_TYPE&gt;::enableInUse(<span class="keyword">const</span> <span class="keywordtype">bool</span> inqueue)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        m_isInUse = inqueue;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html">  117</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classjli_1_1_telegram.html">Telegram</a></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//the entity that sent this telegram</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#ad4088edaa292abb81a48c26a898addb8">  121</a></span>&#160;        <a class="code" href="classjli_1_1_abstract_factory_object.html">AbstractFactoryObject</a> *<a class="code" href="classjli_1_1_telegram.html#ad4088edaa292abb81a48c26a898addb8">Sender</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">//the entity that is to receive this telegram</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#a32cc7c9021bcf0b3dc32790c282cbe73">  124</a></span>&#160;        <a class="code" href="classjli_1_1_abstract_factory_object.html">AbstractFactoryObject</a> *<a class="code" href="classjli_1_1_telegram.html#a32cc7c9021bcf0b3dc32790c282cbe73">Receiver</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">//the message itself. These are all enumerated in the file</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">//&quot;MessageTypes.h&quot;</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#a9a8225da9970a32ede98dc78878b31bc">  128</a></span>&#160;        s32          <a class="code" href="classjli_1_1_telegram.html#a9a8225da9970a32ede98dc78878b31bc">Msg</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">ATTRIBUTE_ALIGNED16</a>(<span class="keyword">class</span>) <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    public AbstractFactoryObject</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a>(<span class="keyword">const</span> AbstractBuilder &amp;builder);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a>(<span class="keyword">const</span> <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a> &amp;copy);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="namespacejli.html#a4f29ddbfb1999ccb9059334002f37aaf">~AbstractState</a>() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="namespacejli.html#a570a0b81268f888f69ad4c8b7fe6edae">BT_DECLARE_ALIGNED_ALLOCATOR</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a> &amp;<a class="code" href="namespacejli.html#abf374f753c2ae3833479fc522c07b7a9">operator=</a>(<span class="keyword">const</span> <a class="code" href="namespacejli.html#afb90c6843a57abb6648df522fd034666">AbstractState</a>&amp;);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#a03fa79fbaafd83709515e1115c5a3986">isFinished</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#abe513ad11f4f190e62b972f4f8893aea">enableFinished</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#ac98ddd4e4925a857a8935b40178b2718">isInUse</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#a28a9fe0627a5e67e2e4a15a3663f7bc4">enableInUse</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#aaa622c9ff88b18070c8c1c970b4a26f8">enter</a>(OBJECT_TYPE*) = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#a922c317a977284f6b6e24ed5c655dd12">update</a>(OBJECT_TYPE*, f32) = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#ad265e81449125b1850fe3a2874dae6f6">exit</a>(OBJECT_TYPE*) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#ad9966e101b766e590473468c68125124">onMessage</a>(OBJECT_TYPE*,<span class="keyword">const</span> Telegram&amp;) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">   47</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">   48</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">AbstractState&lt;OBJECT_TYPE&gt;::AbstractState</a>():</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    AbstractFactoryObject(this),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a>(false),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a>(false)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">AbstractState&lt;OBJECT_TYPE&gt;::AbstractState</a>(<span class="keyword">const</span> AbstractBuilder &amp;builder):</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    AbstractFactoryObject(this),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a>(false),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a>(false)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">   70</a></span>&#160;    <a class="code" href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">AbstractState&lt;OBJECT_TYPE&gt;::AbstractState</a>(<span class="keyword">const</span> <a class="code" href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">AbstractState</a> &amp;copy):</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classjli_1_1_abstract_factory_object.html">AbstractFactoryObject</a>(this),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a>(copy.<a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a>),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a>(false)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespacejli.html#a4f29ddbfb1999ccb9059334002f37aaf">   79</a></span>&#160;    <a class="code" href="namespacejli.html#a4f29ddbfb1999ccb9059334002f37aaf">AbstractState&lt;OBJECT_TYPE&gt;::~AbstractState</a>()</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        jliAssertMsg(!<a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a>, <span class="stringliteral">&quot;state is still in the state machine queue&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    AbstractState&lt;OBJECT_TYPE&gt; &amp;<a class="code" href="namespacejli.html#a11ea974b98a56570306c45017bb5fcf4">AbstractState&lt;OBJECT_TYPE&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">AbstractState</a> &amp;rhs)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;rhs)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a> = rhs.m_isFinished;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="namespacejli.html#a03fa79fbaafd83709515e1115c5a3986">   96</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#a03fa79fbaafd83709515e1115c5a3986">AbstractState&lt;OBJECT_TYPE&gt;::isFinished</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="namespacejli.html#abe513ad11f4f190e62b972f4f8893aea">  102</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#abe513ad11f4f190e62b972f4f8893aea">AbstractState&lt;OBJECT_TYPE&gt;::enableFinished</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> finished)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">m_isFinished</a> = finished;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="namespacejli.html#ac98ddd4e4925a857a8935b40178b2718">  108</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacejli.html#ac98ddd4e4925a857a8935b40178b2718">AbstractState&lt;OBJECT_TYPE&gt;::isInUse</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> OBJECT_TYPE&gt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespacejli.html#a28a9fe0627a5e67e2e4a15a3663f7bc4">  114</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacejli.html#a28a9fe0627a5e67e2e4a15a3663f7bc4">AbstractState&lt;OBJECT_TYPE&gt;::enableInUse</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> inqueue)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">m_isInUse</a> = inqueue;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">class </span>Telegram</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">//the entity that sent this telegram</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        AbstractFactoryObject *Sender;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">//the entity that is to receive this telegram</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        AbstractFactoryObject *Receiver;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">//messages can be dispatched immediately or delayed for a specified amount</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">//of time. If a delay is necessary this field is stamped with the time</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">//the message should be dispatched.</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#ac345246908f0d3c00df7cc7e2e6989c2">  133</a></span>&#160;        f32       <a class="code" href="classjli_1_1_telegram.html#ac345246908f0d3c00df7cc7e2e6989c2">DispatchTime</a>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">//any additional information that may accompany the message</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#a8ab71bba704b1f118d4d4863dbc93974">  136</a></span>&#160;        <span class="keywordtype">void</span>*        <a class="code" href="classjli_1_1_telegram.html#a8ab71bba704b1f118d4d4863dbc93974">ExtraInfo</a>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">//the message itself. These are all enumerated in the file</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">//&quot;MessageTypes.h&quot;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        s32          Msg;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">//messages can be dispatched immediately or delayed for a specified amount</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">//of time. If a delay is necessary this field is stamped with the time</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">//the message should be dispatched.</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        f32       DispatchTime;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        </div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#a499e1f513523c1a818d872548dd71639">  139</a></span>&#160;        <a class="code" href="classjli_1_1_telegram.html#a499e1f513523c1a818d872548dd71639">Telegram</a>():</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        Sender(NULL),</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        Receiver(NULL),</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        Msg(0),</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        DispatchTime(NULL),</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        ExtraInfo(NULL)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {}</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classjli_1_1_telegram.html#ad4324e3e73558ad90a7941171ed48d46">  148</a></span>&#160;        <a class="code" href="classjli_1_1_telegram.html#ad4324e3e73558ad90a7941171ed48d46">Telegram</a>(f32 time,</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                 <a class="code" href="classjli_1_1_abstract_factory_object.html">AbstractFactoryObject</a> *sender,</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                 <a class="code" href="classjli_1_1_abstract_factory_object.html">AbstractFactoryObject</a> *receiver,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                 s32    msg,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                 <span class="keywordtype">void</span>*  info = NULL) :</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        Sender(sender),</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        Receiver(receiver),</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        Msg(msg),</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        DispatchTime(time),</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        ExtraInfo(info)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        {}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    };</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">//any additional information that may accompany the message</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">void</span>*        ExtraInfo;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        Telegram():</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        Sender(NULL),</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        Receiver(NULL),</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        Msg(0),</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        DispatchTime(NULL),</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        ExtraInfo(NULL)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        Telegram(f32 time,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                 AbstractFactoryObject *sender,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                 AbstractFactoryObject *receiver,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                 s32    msg,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                 <span class="keywordtype">void</span>*  info = NULL) :</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        Sender(sender),</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        Receiver(receiver),</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        Msg(msg),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        DispatchTime(time),</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        ExtraInfo(info)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        {}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    };</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacejli_html"><div class="ttname"><a href="namespacejli.html">jli</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_builder_8cpp_source.html#l00013">AbstractBuilder.cpp:13</a></div></div>
+<div class="ttc" id="namespacejli_html_a922c317a977284f6b6e24ed5c655dd12"><div class="ttname"><a href="namespacejli.html#a922c317a977284f6b6e24ed5c655dd12">jli::update</a></div><div class="ttdeci">virtual void update(OBJECT_TYPE *, f32)=0</div></div>
 <div class="ttc" id="namespacejli_html_a570a0b81268f888f69ad4c8b7fe6edae"><div class="ttname"><a href="namespacejli.html#a570a0b81268f888f69ad4c8b7fe6edae">jli::BT_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">BT_DECLARE_ALIGNED_ALLOCATOR()</div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_a32cc7c9021bcf0b3dc32790c282cbe73"><div class="ttname"><a href="classjli_1_1_telegram.html#a32cc7c9021bcf0b3dc32790c282cbe73">jli::Telegram::Receiver</a></div><div class="ttdeci">AbstractFactoryObject * Receiver</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00124">AbstractState.h:124</a></div></div>
+<div class="ttc" id="namespacejli_html_aaa622c9ff88b18070c8c1c970b4a26f8"><div class="ttname"><a href="namespacejli.html#aaa622c9ff88b18070c8c1c970b4a26f8">jli::enter</a></div><div class="ttdeci">virtual void enter(OBJECT_TYPE *)=0</div></div>
+<div class="ttc" id="namespacejli_html_a3d9eb1afcfa6575a74fcbea812335204"><div class="ttname"><a href="namespacejli.html#a3d9eb1afcfa6575a74fcbea812335204">jli::m_isInUse</a></div><div class="ttdeci">bool m_isInUse</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00048">AbstractState.h:48</a></div></div>
+<div class="ttc" id="namespacejli_html_afb90c6843a57abb6648df522fd034666"><div class="ttname"><a href="namespacejli.html#afb90c6843a57abb6648df522fd034666">jli::AbstractState</a></div><div class="ttdeci">ATTRIBUTE_ALIGNED16(class) AbstractState AbstractState(const AbstractBuilder &amp;builder)</div></div>
 <div class="ttc" id="_abstract_builder_8h_html"><div class="ttname"><a href="_abstract_builder_8h.html">AbstractBuilder.h</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_a9a8225da9970a32ede98dc78878b31bc"><div class="ttname"><a href="classjli_1_1_telegram.html#a9a8225da9970a32ede98dc78878b31bc">jli::Telegram::Msg</a></div><div class="ttdeci">s32 Msg</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00128">AbstractState.h:128</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_a499e1f513523c1a818d872548dd71639"><div class="ttname"><a href="classjli_1_1_telegram.html#a499e1f513523c1a818d872548dd71639">jli::Telegram::Telegram</a></div><div class="ttdeci">Telegram()</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00139">AbstractState.h:139</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_ac345246908f0d3c00df7cc7e2e6989c2"><div class="ttname"><a href="classjli_1_1_telegram.html#ac345246908f0d3c00df7cc7e2e6989c2">jli::Telegram::DispatchTime</a></div><div class="ttdeci">f32 DispatchTime</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00133">AbstractState.h:133</a></div></div>
-<div class="ttc" id="namespacejli_html_a5cb9f42798ccca4b6de51fe827ade095"><div class="ttname"><a href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">jli::ATTRIBUTE_ALIGNED16</a></div><div class="ttdeci">ATTRIBUTE_ALIGNED16(class) AbstractObject</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_object_8h_source.html#l00017">AbstractObject.h:17</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_ad4088edaa292abb81a48c26a898addb8"><div class="ttname"><a href="classjli_1_1_telegram.html#ad4088edaa292abb81a48c26a898addb8">jli::Telegram::Sender</a></div><div class="ttdeci">AbstractFactoryObject * Sender</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00121">AbstractState.h:121</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_a8ab71bba704b1f118d4d4863dbc93974"><div class="ttname"><a href="classjli_1_1_telegram.html#a8ab71bba704b1f118d4d4863dbc93974">jli::Telegram::ExtraInfo</a></div><div class="ttdeci">void * ExtraInfo</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00136">AbstractState.h:136</a></div></div>
+<div class="ttc" id="namespacejli_html_a03fa79fbaafd83709515e1115c5a3986"><div class="ttname"><a href="namespacejli.html#a03fa79fbaafd83709515e1115c5a3986">jli::isFinished</a></div><div class="ttdeci">virtual bool isFinished() const </div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00096">AbstractState.h:96</a></div></div>
+<div class="ttc" id="namespacejli_html_a28a9fe0627a5e67e2e4a15a3663f7bc4"><div class="ttname"><a href="namespacejli.html#a28a9fe0627a5e67e2e4a15a3663f7bc4">jli::enableInUse</a></div><div class="ttdeci">virtual void enableInUse(const bool=true)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00114">AbstractState.h:114</a></div></div>
+<div class="ttc" id="namespacejli_html_a4f29ddbfb1999ccb9059334002f37aaf"><div class="ttname"><a href="namespacejli.html#a4f29ddbfb1999ccb9059334002f37aaf">jli::~AbstractState</a></div><div class="ttdeci">virtual ~AbstractState()=0</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00079">AbstractState.h:79</a></div></div>
+<div class="ttc" id="namespacejli_html_a11ea974b98a56570306c45017bb5fcf4"><div class="ttname"><a href="namespacejli.html#a11ea974b98a56570306c45017bb5fcf4">jli::operator=</a></div><div class="ttdeci">AbstractState &amp; operator=(const AbstractState &amp;)</div></div>
+<div class="ttc" id="namespacejli_html_ad9966e101b766e590473468c68125124"><div class="ttname"><a href="namespacejli.html#ad9966e101b766e590473468c68125124">jli::onMessage</a></div><div class="ttdeci">virtual bool onMessage(OBJECT_TYPE *, const Telegram &amp;)=0</div></div>
+<div class="ttc" id="namespacejli_html_a5cb9f42798ccca4b6de51fe827ade095"><div class="ttname"><a href="namespacejli.html#a5cb9f42798ccca4b6de51fe827ade095">jli::ATTRIBUTE_ALIGNED16</a></div><div class="ttdeci">ATTRIBUTE_ALIGNED16(class) AbstractObject</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_object_8h_source.html#l00019">AbstractObject.h:19</a></div></div>
+<div class="ttc" id="namespacejli_html_ad265e81449125b1850fe3a2874dae6f6"><div class="ttname"><a href="namespacejli.html#ad265e81449125b1850fe3a2874dae6f6">jli::exit</a></div><div class="ttdeci">virtual void exit(OBJECT_TYPE *)=0</div></div>
+<div class="ttc" id="namespacejli_html_a7e38adefffab3bce7cc5e105213c0989"><div class="ttname"><a href="namespacejli.html#a7e38adefffab3bce7cc5e105213c0989">jli::m_isFinished</a></div><div class="ttdeci">bool m_isFinished</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00047">AbstractState.h:47</a></div></div>
+<div class="ttc" id="namespacejli_html_ac98ddd4e4925a857a8935b40178b2718"><div class="ttname"><a href="namespacejli.html#ac98ddd4e4925a857a8935b40178b2718">jli::isInUse</a></div><div class="ttdeci">virtual bool isInUse() const </div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00108">AbstractState.h:108</a></div></div>
 <div class="ttc" id="classjli_1_1_abstract_factory_object_html"><div class="ttname"><a href="classjli_1_1_abstract_factory_object.html">jli::AbstractFactoryObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_factory_object_8h_source.html#l00025">AbstractFactoryObject.h:25</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html_ad4324e3e73558ad90a7941171ed48d46"><div class="ttname"><a href="classjli_1_1_telegram.html#ad4324e3e73558ad90a7941171ed48d46">jli::Telegram::Telegram</a></div><div class="ttdeci">Telegram(f32 time, AbstractFactoryObject *sender, AbstractFactoryObject *receiver, s32 msg, void *info=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00148">AbstractState.h:148</a></div></div>
-<div class="ttc" id="classjli_1_1_telegram_html"><div class="ttname"><a href="classjli_1_1_telegram.html">jli::Telegram</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00117">AbstractState.h:117</a></div></div>
+<div class="ttc" id="namespacejli_html_abe513ad11f4f190e62b972f4f8893aea"><div class="ttname"><a href="namespacejli.html#abe513ad11f4f190e62b972f4f8893aea">jli::enableFinished</a></div><div class="ttdeci">virtual void enableFinished(const bool=true)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00102">AbstractState.h:102</a></div></div>
 <div class="ttc" id="namespacejli_html_abf374f753c2ae3833479fc522c07b7a9"><div class="ttname"><a href="namespacejli.html#abf374f753c2ae3833479fc522c07b7a9">jli::operator=</a></div><div class="ttdeci">AbstractPhysicsBody &amp; operator=(const AbstractPhysicsBody &amp;)</div></div>
+<div class="ttc" id="namespacejli_html_ac1726cb5b995ec49ba12eea96abfc7b2"><div class="ttname"><a href="namespacejli.html#ac1726cb5b995ec49ba12eea96abfc7b2">jli::AbstractState</a></div><div class="ttdeci">AbstractState(const AbstractState &amp;copy)</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_state_8h_source.html#l00070">AbstractState.h:70</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 23 2014 14:10:14 for JLI Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 6 2014 19:27:22 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

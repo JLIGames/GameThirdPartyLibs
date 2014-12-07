@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *PhysicsWorld::getName()const
+    const char *PhysicsWorld::getClassName()const
     {
         return "PhysicsWorld";
     }
     
     u32 PhysicsWorld::getType()const
     {
-        return type::PhysicsWorld;
+        return JLI_OBJECT_TYPE_PhysicsWorld;
     }
 }

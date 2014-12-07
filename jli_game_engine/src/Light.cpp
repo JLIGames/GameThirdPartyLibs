@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Light::getName()const
+    const char *Light::getClassName()const
     {
         return "Light";
     }
     
     u32 Light::getType()const
     {
-        return type::Light;
+        return JLI_OBJECT_TYPE_Light;
     }
 }

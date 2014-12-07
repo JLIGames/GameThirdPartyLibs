@@ -54,13 +54,18 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Camera::getName()const
+    const char *Camera::getClassName()const
     {
         return "Camera";
     }
     
     u32 Camera::getType()const
     {
-        return type::Camera;
+        return JLI_OBJECT_TYPE_Camera;
+    }
+    
+    void Camera::render()
+    {
+        
     }
 }

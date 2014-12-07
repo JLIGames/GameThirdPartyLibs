@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>JLI Engine: /Users/jamesfolk/Dropbox/GameDevelopment/mygames/third_party/jli_game_engine/src/WorldLuaVirtualMachine.cpp Source File</title>
+<title>My Project: WorldLuaVirtualMachine.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JLI Engine
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -63,12 +63,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -77,11 +78,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">WorldLuaVirtualMachine.cpp</div>  </div>
@@ -96,37 +92,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_world_lua_virtual_machine_8h.html">WorldLuaVirtualMachine.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejli.html">jli</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#a6c198a8d45744d6297875cec1ac31b5f">   13</a></span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#a6c198a8d45744d6297875cec1ac31b5f">WorldLuaVirtualMachine::WorldLuaVirtualMachine</a>()</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#a522619d2dc14b8828e9b91d76b1fa572">   18</a></span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#a522619d2dc14b8828e9b91d76b1fa572">WorldLuaVirtualMachine::~WorldLuaVirtualMachine</a>()</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html">WorldLuaVirtualMachine</a> &amp;WorldLuaVirtualMachine::operator=(<span class="keyword">const</span> <a class="code" href="classjli_1_1_world_lua_virtual_machine.html">WorldLuaVirtualMachine</a> &amp;rhs)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;rhs)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;SwigLuaWrapper.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Log.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> printMethods(<span class="keyword">const</span> <span class="keywordtype">char</span>* name)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//this touches the SWIG internals, please be careful:</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; swig_types[i]; i++)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (swig_types[i]-&gt;clientdata)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            swig_lua_class* ptr=(swig_lua_class*)(swig_types[i]-&gt;clientdata);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span> (strcmp(name,ptr-&gt;name)==0)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;ptr-&gt;methods[j].name;j++)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    Log(<span class="stringliteral">&quot;%s::%s()\n&quot;</span>,ptr-&gt;name,ptr-&gt;methods[j].name);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> printWrappedClasses()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//this touches the SWIG internals, please be careful:</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; swig_types[i]; i++)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span> (swig_types[i]-&gt;clientdata)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            swig_lua_class* ptr=(swig_lua_class*)(swig_types[i]-&gt;clientdata);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            printMethods(ptr-&gt;name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejli.html">jli</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#a6c198a8d45744d6297875cec1ac31b5f">   49</a></span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#a6c198a8d45744d6297875cec1ac31b5f">WorldLuaVirtualMachine::WorldLuaVirtualMachine</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#a522619d2dc14b8828e9b91d76b1fa572">   54</a></span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#a522619d2dc14b8828e9b91d76b1fa572">WorldLuaVirtualMachine::~WorldLuaVirtualMachine</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#a149a5954ec33c12d4a3a5e66e418efb2">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#a149a5954ec33c12d4a3a5e66e418efb2">WorldLuaVirtualMachine::init</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Log(<span class="stringliteral">&quot;Lua version: %s&quot;</span>, LUA_VERSION);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">m_lua_State</a> = luaL_newstate();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        luaL_openlibs(<a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">m_lua_State</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        luaopen_JLI(<a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">m_lua_State</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        Log(<span class="stringliteral">&quot;%s\n&quot;</span>, SWIG_name );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        printWrappedClasses();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#aa10f035d6f133f0cb05e9f769992ed00">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aa10f035d6f133f0cb05e9f769992ed00">WorldLuaVirtualMachine::unInit</a>()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">m_lua_State</a> )</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            lua_close( <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">m_lua_State</a> );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">m_lua_State</a> = NULL;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classjli_1_1_world_lua_virtual_machine.html#aec6b7830afcb04e7cb612742d23e5870">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aec6b7830afcb04e7cb612742d23e5870">WorldLuaVirtualMachine::reset</a>()</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#aa10f035d6f133f0cb05e9f769992ed00">unInit</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classjli_1_1_world_lua_virtual_machine.html#a149a5954ec33c12d4a3a5e66e418efb2">init</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="ttc" id="namespacejli_html"><div class="ttname"><a href="namespacejli.html">jli</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_builder_8cpp_source.html#l00013">AbstractBuilder.cpp:13</a></div></div>
-<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_a522619d2dc14b8828e9b91d76b1fa572"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#a522619d2dc14b8828e9b91d76b1fa572">jli::WorldLuaVirtualMachine::~WorldLuaVirtualMachine</a></div><div class="ttdeci">virtual ~WorldLuaVirtualMachine()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00018">WorldLuaVirtualMachine.cpp:18</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_aa10f035d6f133f0cb05e9f769992ed00"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#aa10f035d6f133f0cb05e9f769992ed00">jli::WorldLuaVirtualMachine::unInit</a></div><div class="ttdeci">void unInit()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00073">WorldLuaVirtualMachine.cpp:73</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_a522619d2dc14b8828e9b91d76b1fa572"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#a522619d2dc14b8828e9b91d76b1fa572">jli::WorldLuaVirtualMachine::~WorldLuaVirtualMachine</a></div><div class="ttdeci">virtual ~WorldLuaVirtualMachine()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00054">WorldLuaVirtualMachine.cpp:54</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_aad7e6df2c4aef4106c9d9e81ad4ac3db"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#aad7e6df2c4aef4106c9d9e81ad4ac3db">jli::WorldLuaVirtualMachine::m_lua_State</a></div><div class="ttdeci">lua_State * m_lua_State</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8h_source.html#l00031">WorldLuaVirtualMachine.h:31</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_aec6b7830afcb04e7cb612742d23e5870"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#aec6b7830afcb04e7cb612742d23e5870">jli::WorldLuaVirtualMachine::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00082">WorldLuaVirtualMachine.cpp:82</a></div></div>
 <div class="ttc" id="_world_lua_virtual_machine_8h_html"><div class="ttname"><a href="_world_lua_virtual_machine_8h.html">WorldLuaVirtualMachine.h</a></div></div>
-<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_a6c198a8d45744d6297875cec1ac31b5f"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#a6c198a8d45744d6297875cec1ac31b5f">jli::WorldLuaVirtualMachine::WorldLuaVirtualMachine</a></div><div class="ttdeci">WorldLuaVirtualMachine()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00013">WorldLuaVirtualMachine.cpp:13</a></div></div>
-<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html">jli::WorldLuaVirtualMachine</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8h_source.html#l00014">WorldLuaVirtualMachine.h:14</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_a6c198a8d45744d6297875cec1ac31b5f"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#a6c198a8d45744d6297875cec1ac31b5f">jli::WorldLuaVirtualMachine::WorldLuaVirtualMachine</a></div><div class="ttdeci">WorldLuaVirtualMachine()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00049">WorldLuaVirtualMachine.cpp:49</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html_a149a5954ec33c12d4a3a5e66e418efb2"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html#a149a5954ec33c12d4a3a5e66e418efb2">jli::WorldLuaVirtualMachine::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8cpp_source.html#l00059">WorldLuaVirtualMachine.cpp:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 23 2014 14:10:14 for JLI Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 6 2014 19:27:22 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -50,16 +50,16 @@ namespace jli
     
     u32 CameraBuilder::getObjectType()const
     {
-        return type::Camera;
+        return JLI_OBJECT_TYPE_Camera;
     }
     
-    const char *CameraBuilder::getName()const
+    const char *CameraBuilder::getClassName()const
     {
         return "CameraBuilder";
     }
     
     u32 CameraBuilder::getType()const
     {
-        return type::CameraBuilder;
+        return JLI_OBJECT_TYPE_CameraBuilder;
     }
 }

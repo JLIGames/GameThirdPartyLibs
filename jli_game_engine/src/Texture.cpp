@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Texture::getName()const
+    const char *Texture::getClassName()const
     {
         return "Texture";
     }
     
     u32 Texture::getType()const
     {
-        return type::Texture;
+        return JLI_OBJECT_TYPE_Texture;
     }
 }

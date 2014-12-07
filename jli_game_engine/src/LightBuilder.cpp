@@ -50,16 +50,16 @@ namespace jli
     
     u32 LightBuilder::getObjectType()const
     {
-        return type::Light;
+        return JLI_OBJECT_TYPE_Light;
     }
     
-    const char *LightBuilder::getName()const
+    const char *LightBuilder::getClassName()const
     {
         return "LightBuilder";
     }
     
     u32 LightBuilder::getType()const
     {
-        return type::LightBuilder;
+        return JLI_OBJECT_TYPE_LightBuilder;
     }
 }

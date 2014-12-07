@@ -35,7 +35,7 @@ namespace jli
         virtual	void serialize(void*, btSerializer*) const;
         
         virtual u32 getObjectType()const;
-        virtual const char *getName()const;
+        virtual const char *getClassName()const;
         virtual u32 getType()const;
     };
 }

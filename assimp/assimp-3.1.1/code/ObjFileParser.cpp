@@ -600,7 +600,7 @@ void ObjFileParser::getGroupName()
 {
 	std::string strGroupName;
    
-	m_DataIt = getName<DataArrayIt>(m_DataIt, m_DataItEnd, strGroupName);
+	m_DataIt = getClassName<DataArrayIt>(m_DataIt, m_DataItEnd, strGroupName);
 	if ( isEndOfBuffer( m_DataIt, m_DataItEnd ) )
 		return;
 

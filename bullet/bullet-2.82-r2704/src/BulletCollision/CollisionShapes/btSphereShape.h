@@ -57,7 +57,7 @@ public:
 	}
 
 	//debugging
-	virtual const char*	getName()const {return "SPHERE";}
+	virtual const char*	getClassName()const {return "SPHERE";}
 
 	virtual void	setMargin(btScalar margin)
 	{

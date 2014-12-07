@@ -12,21 +12,21 @@
 namespace jli
 {
     Scene::Scene():
-    AbstractFactoryObject(this)
+    AbstractFactoryObject(this),
+    m_Name("Scene")
     {
-        
     }
     
     Scene::Scene(const AbstractBuilder &builder):
-    AbstractFactoryObject(this)
+    AbstractFactoryObject(this),
+    m_Name("Scene")
     {
-        
     }
     
     Scene::Scene(const Scene &copy):
-    AbstractFactoryObject(this)
+    AbstractFactoryObject(this),
+    m_Name("Scene")
     {
-        
     }
     
     Scene::~Scene()
@@ -38,7 +38,6 @@ namespace jli
     {
         if(this != &rhs)
         {
-            
         }
         return *this;
     }
@@ -54,13 +53,23 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Scene::getName()const
+    const char *Scene::getClassName()const
     {
         return "Scene";
     }
     
     u32 Scene::getType()const
     {
-        return type::Scene;
+        return JLI_OBJECT_TYPE_Scene;
+    }
+    
+    void Scene::setName(const char *name)
+    {
+        m_Name = name;
+    }
+    
+    const char *Scene::getName()const
+    {
+        return m_Name.c_str();
     }
 }

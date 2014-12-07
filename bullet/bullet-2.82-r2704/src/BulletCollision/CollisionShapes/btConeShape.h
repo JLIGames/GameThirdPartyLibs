@@ -75,7 +75,7 @@ public:
 	}
 
 
-		virtual const char*	getName()const 
+		virtual const char*	getClassName()const 
 		{
 			return "Cone";
 		}
@@ -116,7 +116,7 @@ class btConeShapeX : public btConeShape
 	}
 
 	//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "ConeX";
 	}
@@ -136,7 +136,7 @@ public:
 	}
 
 	//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "ConeZ";
 	}

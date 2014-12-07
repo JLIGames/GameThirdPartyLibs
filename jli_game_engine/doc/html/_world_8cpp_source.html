@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>JLI Engine: /Users/jamesfolk/Dropbox/GameDevelopment/mygames/third_party/jli_game_engine/src/World.cpp Source File</title>
+<title>My Project: World.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JLI Engine
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -63,12 +63,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -77,11 +78,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">World.cpp</div>  </div>
@@ -105,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">if</span>(NULL == s_Instance)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            s_Instance = <span class="keyword">new</span> <a class="code" href="classjli_1_1_world.html#ab340b6a4f69503333397ec65b091414a">World</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            s_Instance = <span class="keyword">new</span> <a class="code" href="classjli_1_1_world.html">World</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
@@ -127,81 +123,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> (NULL != s_Instance);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#ab340b6a4f69503333397ec65b091414a">   41</a></span>&#160;    <a class="code" href="classjli_1_1_world.html#ab340b6a4f69503333397ec65b091414a">World::World</a>():</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    World::World():</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    m_WorldFactory(new <a class="code" href="classjli_1_1_world_factory.html">WorldFactory</a>()),</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_WorldMySQL(new <a class="code" href="classjli_1_1_world_my_s_q_l.html">WorldMySQL</a>()),</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_WorldInput(new <a class="code" href="classjli_1_1_world_input.html">WorldInput</a>()),</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_WorldSound(new <a class="code" href="classjli_1_1_world_sound.html">WorldSound</a>()),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_WorldLuaVirtualMachine(new <a class="code" href="classjli_1_1_world_lua_virtual_machine.html">WorldLuaVirtualMachine</a>()),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_worldClock(new <a class="code" href="namespacejli.html#af69056b00744493ba074ef13e82b0bec">Clock</a>())</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a23e1f8b843020bdcec4b3ece3a89d1b8">   51</a></span>&#160;    <a class="code" href="classjli_1_1_world.html#a23e1f8b843020bdcec4b3ece3a89d1b8">World::~World</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">delete</span> m_worldClock;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">delete</span> m_WorldLuaVirtualMachine;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">delete</span> m_WorldSound;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">delete</span> m_WorldInput;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">delete</span> m_WorldMySQL;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">delete</span> m_WorldFactory;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#aef4b78708b5daf80703d8a57f2b0f5ae">   61</a></span>&#160;    <a class="code" href="classjli_1_1_world_factory.html">WorldFactory</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#aef4b78708b5daf80703d8a57f2b0f5ae">World::getWorldFactory</a>()<span class="keyword">const</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> m_WorldFactory;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#ae8b75d8993a718753d589d49f2c00094">   66</a></span>&#160;    <a class="code" href="classjli_1_1_world_my_s_q_l.html">WorldMySQL</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#ae8b75d8993a718753d589d49f2c00094">World::getWorldMySQL</a>()<span class="keyword">const</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> m_WorldMySQL;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#aeee764fef2643e963d08df7c891f4a26">   71</a></span>&#160;    <a class="code" href="classjli_1_1_world_input.html">WorldInput</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#aeee764fef2643e963d08df7c891f4a26">World::getWorldInput</a>()<span class="keyword">const</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> m_WorldInput;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a00a7fc82c5723b567fa118e029712d34">   76</a></span>&#160;    <a class="code" href="classjli_1_1_world_sound.html">WorldSound</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a00a7fc82c5723b567fa118e029712d34">World::getWorldSound</a>()<span class="keyword">const</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> m_WorldSound;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a4a11fef67cef6d596344a5f5db79b4fb">   81</a></span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html">WorldLuaVirtualMachine</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a4a11fef67cef6d596344a5f5db79b4fb">World::getWorldLuaVirtualMachine</a>()<span class="keyword">const</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> m_WorldLuaVirtualMachine;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a4e35bb1d091a72f667de5c4cbc6e04b8">   86</a></span>&#160;    <a class="code" href="namespacejli.html#af69056b00744493ba074ef13e82b0bec">Clock</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a4e35bb1d091a72f667de5c4cbc6e04b8">World::getWorldClock</a>()<span class="keyword">const</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> m_worldClock;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_worldClock(new <a class="code" href="namespacejli.html#af69056b00744493ba074ef13e82b0bec">Clock</a>()),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_sceneStateMachine(new WorldStateMachine()),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="namespacejli.html#ac62cb8257e356631f79c562e07188a0c">m_Name</a>(<span class="stringliteral">&quot;World&quot;</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    World::~World()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">delete</span> m_sceneStateMachine;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">delete</span> m_worldClock;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">delete</span> m_WorldLuaVirtualMachine;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">delete</span> m_WorldSound;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">delete</span> m_WorldInput;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">delete</span> m_WorldMySQL;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">delete</span> m_WorldFactory;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#aef4b78708b5daf80703d8a57f2b0f5ae">   64</a></span>&#160;    <a class="code" href="classjli_1_1_world_factory.html">WorldFactory</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#aef4b78708b5daf80703d8a57f2b0f5ae">World::getWorldFactory</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> m_WorldFactory;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#ae8b75d8993a718753d589d49f2c00094">   69</a></span>&#160;    <a class="code" href="classjli_1_1_world_my_s_q_l.html">WorldMySQL</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#ae8b75d8993a718753d589d49f2c00094">World::getWorldMySQL</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> m_WorldMySQL;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#aeee764fef2643e963d08df7c891f4a26">   74</a></span>&#160;    <a class="code" href="classjli_1_1_world_input.html">WorldInput</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#aeee764fef2643e963d08df7c891f4a26">World::getWorldInput</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> m_WorldInput;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a00a7fc82c5723b567fa118e029712d34">   79</a></span>&#160;    <a class="code" href="classjli_1_1_world_sound.html">WorldSound</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a00a7fc82c5723b567fa118e029712d34">World::getWorldSound</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> m_WorldSound;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a4a11fef67cef6d596344a5f5db79b4fb">   84</a></span>&#160;    <a class="code" href="classjli_1_1_world_lua_virtual_machine.html">WorldLuaVirtualMachine</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a4a11fef67cef6d596344a5f5db79b4fb">World::getWorldLuaVirtualMachine</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> m_WorldLuaVirtualMachine;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a4e35bb1d091a72f667de5c4cbc6e04b8">   89</a></span>&#160;    <a class="code" href="namespacejli.html#af69056b00744493ba074ef13e82b0bec">Clock</a> *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a4e35bb1d091a72f667de5c4cbc6e04b8">World::getWorldClock</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> m_worldClock;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a38bea1462eb2aa602938b5c03f92e4ad">   94</a></span>&#160;    WorldStateMachine *<span class="keyword">const</span> <a class="code" href="classjli_1_1_world.html#a38bea1462eb2aa602938b5c03f92e4ad">World::getSceneStateMachine</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> m_sceneStateMachine;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#aaa89d822b116f5b8fcf81a87c44b5c2d">   99</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classjli_1_1_world.html#aaa89d822b116f5b8fcf81a87c44b5c2d">World::setName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        m_Name = name;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classjli_1_1_world.html#a14533a04f69a15a775df34d3d322f7bd">  103</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="classjli_1_1_world.html#a14533a04f69a15a775df34d3d322f7bd">World::getName</a>()<span class="keyword">const</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> m_Name.c_str();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="ttc" id="classjli_1_1_world_html_afbf269b5621c765b5eadbdfc0bbc7457"><div class="ttname"><a href="classjli_1_1_world.html#afbf269b5621c765b5eadbdfc0bbc7457">jli::World::destroyInstance</a></div><div class="ttdeci">static void destroyInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00023">World.cpp:23</a></div></div>
 <div class="ttc" id="classjli_1_1_world_sound_html"><div class="ttname"><a href="classjli_1_1_world_sound.html">jli::WorldSound</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_sound_8h_source.html#l00014">WorldSound.h:14</a></div></div>
 <div class="ttc" id="namespacejli_html"><div class="ttname"><a href="namespacejli.html">jli</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_builder_8cpp_source.html#l00013">AbstractBuilder.cpp:13</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_a23e1f8b843020bdcec4b3ece3a89d1b8"><div class="ttname"><a href="classjli_1_1_world.html#a23e1f8b843020bdcec4b3ece3a89d1b8">jli::World::~World</a></div><div class="ttdeci">virtual ~World()</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00051">World.cpp:51</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_a00a7fc82c5723b567fa118e029712d34"><div class="ttname"><a href="classjli_1_1_world.html#a00a7fc82c5723b567fa118e029712d34">jli::World::getWorldSound</a></div><div class="ttdeci">WorldSound *const getWorldSound() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00076">World.cpp:76</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_aef4b78708b5daf80703d8a57f2b0f5ae"><div class="ttname"><a href="classjli_1_1_world.html#aef4b78708b5daf80703d8a57f2b0f5ae">jli::World::getWorldFactory</a></div><div class="ttdeci">WorldFactory *const getWorldFactory() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00061">World.cpp:61</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_a00a7fc82c5723b567fa118e029712d34"><div class="ttname"><a href="classjli_1_1_world.html#a00a7fc82c5723b567fa118e029712d34">jli::World::getWorldSound</a></div><div class="ttdeci">WorldSound *const getWorldSound() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00079">World.cpp:79</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_aef4b78708b5daf80703d8a57f2b0f5ae"><div class="ttname"><a href="classjli_1_1_world.html#aef4b78708b5daf80703d8a57f2b0f5ae">jli::World::getWorldFactory</a></div><div class="ttdeci">WorldFactory *const getWorldFactory() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00064">World.cpp:64</a></div></div>
 <div class="ttc" id="_world_8h_html"><div class="ttname"><a href="_world_8h.html">World.h</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_aeee764fef2643e963d08df7c891f4a26"><div class="ttname"><a href="classjli_1_1_world.html#aeee764fef2643e963d08df7c891f4a26">jli::World::getWorldInput</a></div><div class="ttdeci">WorldInput *const getWorldInput() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00071">World.cpp:71</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_a14533a04f69a15a775df34d3d322f7bd"><div class="ttname"><a href="classjli_1_1_world.html#a14533a04f69a15a775df34d3d322f7bd">jli::World::getName</a></div><div class="ttdeci">const char * getName() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00103">World.cpp:103</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_aeee764fef2643e963d08df7c891f4a26"><div class="ttname"><a href="classjli_1_1_world.html#aeee764fef2643e963d08df7c891f4a26">jli::World::getWorldInput</a></div><div class="ttdeci">WorldInput *const getWorldInput() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00074">World.cpp:74</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_a38bea1462eb2aa602938b5c03f92e4ad"><div class="ttname"><a href="classjli_1_1_world.html#a38bea1462eb2aa602938b5c03f92e4ad">jli::World::getSceneStateMachine</a></div><div class="ttdeci">WorldStateMachine *const getSceneStateMachine() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00094">World.cpp:94</a></div></div>
 <div class="ttc" id="classjli_1_1_world_html_af250acadd5336ddfebbff7c934c4d410"><div class="ttname"><a href="classjli_1_1_world.html#af250acadd5336ddfebbff7c934c4d410">jli::World::createInstance</a></div><div class="ttdeci">static void createInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00015">World.cpp:15</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_a4a11fef67cef6d596344a5f5db79b4fb"><div class="ttname"><a href="classjli_1_1_world.html#a4a11fef67cef6d596344a5f5db79b4fb">jli::World::getWorldLuaVirtualMachine</a></div><div class="ttdeci">WorldLuaVirtualMachine *const getWorldLuaVirtualMachine() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00081">World.cpp:81</a></div></div>
-<div class="ttc" id="classjli_1_1_world_factory_html"><div class="ttname"><a href="classjli_1_1_world_factory.html">jli::WorldFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_factory_8h_source.html#l00088">WorldFactory.h:88</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_a4a11fef67cef6d596344a5f5db79b4fb"><div class="ttname"><a href="classjli_1_1_world.html#a4a11fef67cef6d596344a5f5db79b4fb">jli::World::getWorldLuaVirtualMachine</a></div><div class="ttdeci">WorldLuaVirtualMachine *const getWorldLuaVirtualMachine() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00084">World.cpp:84</a></div></div>
+<div class="ttc" id="classjli_1_1_world_factory_html"><div class="ttname"><a href="classjli_1_1_world_factory.html">jli::WorldFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_factory_8h_source.html#l00094">WorldFactory.h:94</a></div></div>
 <div class="ttc" id="classjli_1_1_world_my_s_q_l_html"><div class="ttname"><a href="classjli_1_1_world_my_s_q_l.html">jli::WorldMySQL</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_my_s_q_l_8h_source.html#l00014">WorldMySQL.h:14</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_aaa89d822b116f5b8fcf81a87c44b5c2d"><div class="ttname"><a href="classjli_1_1_world.html#aaa89d822b116f5b8fcf81a87c44b5c2d">jli::World::setName</a></div><div class="ttdeci">void setName(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00099">World.cpp:99</a></div></div>
 <div class="ttc" id="classjli_1_1_world_html_a206e13757c28b84d9739b052a2e37e99"><div class="ttname"><a href="classjli_1_1_world.html#a206e13757c28b84d9739b052a2e37e99">jli::World::getInstance</a></div><div class="ttdeci">static World *const getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00029">World.cpp:29</a></div></div>
 <div class="ttc" id="classjli_1_1_world_input_html"><div class="ttname"><a href="classjli_1_1_world_input.html">jli::WorldInput</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_input_8h_source.html#l00014">WorldInput.h:14</a></div></div>
 <div class="ttc" id="namespacejli_html_af69056b00744493ba074ef13e82b0bec"><div class="ttname"><a href="namespacejli.html#af69056b00744493ba074ef13e82b0bec">jli::Clock</a></div><div class="ttdeci">Clock()</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8cpp_source.html#l00014">Clock.cpp:14</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html"><div class="ttname"><a href="classjli_1_1_world.html">jli::World</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_8h_source.html#l00024">World.h:24</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_ab340b6a4f69503333397ec65b091414a"><div class="ttname"><a href="classjli_1_1_world.html#ab340b6a4f69503333397ec65b091414a">jli::World::World</a></div><div class="ttdeci">World()</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00041">World.cpp:41</a></div></div>
-<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html">jli::WorldLuaVirtualMachine</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8h_source.html#l00014">WorldLuaVirtualMachine.h:14</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_a4e35bb1d091a72f667de5c4cbc6e04b8"><div class="ttname"><a href="classjli_1_1_world.html#a4e35bb1d091a72f667de5c4cbc6e04b8">jli::World::getWorldClock</a></div><div class="ttdeci">Clock *const getWorldClock() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00086">World.cpp:86</a></div></div>
-<div class="ttc" id="classjli_1_1_world_html_ae8b75d8993a718753d589d49f2c00094"><div class="ttname"><a href="classjli_1_1_world.html#ae8b75d8993a718753d589d49f2c00094">jli::World::getWorldMySQL</a></div><div class="ttdeci">WorldMySQL *const getWorldMySQL() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00066">World.cpp:66</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html"><div class="ttname"><a href="classjli_1_1_world.html">jli::World</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_8h_source.html#l00027">World.h:27</a></div></div>
+<div class="ttc" id="classjli_1_1_world_lua_virtual_machine_html"><div class="ttname"><a href="classjli_1_1_world_lua_virtual_machine.html">jli::WorldLuaVirtualMachine</a></div><div class="ttdef"><b>Definition:</b> <a href="_world_lua_virtual_machine_8h_source.html#l00017">WorldLuaVirtualMachine.h:17</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_a4e35bb1d091a72f667de5c4cbc6e04b8"><div class="ttname"><a href="classjli_1_1_world.html#a4e35bb1d091a72f667de5c4cbc6e04b8">jli::World::getWorldClock</a></div><div class="ttdeci">Clock *const getWorldClock() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00089">World.cpp:89</a></div></div>
+<div class="ttc" id="namespacejli_html_ac62cb8257e356631f79c562e07188a0c"><div class="ttname"><a href="namespacejli.html#ac62cb8257e356631f79c562e07188a0c">jli::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00043">Node.h:43</a></div></div>
+<div class="ttc" id="classjli_1_1_world_html_ae8b75d8993a718753d589d49f2c00094"><div class="ttname"><a href="classjli_1_1_world.html#ae8b75d8993a718753d589d49f2c00094">jli::World::getWorldMySQL</a></div><div class="ttdeci">WorldMySQL *const getWorldMySQL() const </div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00069">World.cpp:69</a></div></div>
 <div class="ttc" id="classjli_1_1_world_html_a730a4745d8a020a240d8445761ab69a8"><div class="ttname"><a href="classjli_1_1_world.html#a730a4745d8a020a240d8445761ab69a8">jli::World::hasInstance</a></div><div class="ttdeci">static bool hasInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_world_8cpp_source.html#l00036">World.cpp:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 23 2014 14:10:14 for JLI Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 6 2014 19:27:22 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

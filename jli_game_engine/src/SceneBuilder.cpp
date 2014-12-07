@@ -51,16 +51,16 @@ namespace jli
     
     u32 SceneBuilder::getObjectType()const
     {
-        return type::Scene;
+        return JLI_OBJECT_TYPE_Scene;
     }
     
-    const char *SceneBuilder::getName()const
+    const char *SceneBuilder::getClassName()const
     {
         return "SceneBuilder";
     }
     
     u32 SceneBuilder::getType()const
     {
-        return type::SceneBuilder;
+        return JLI_OBJECT_TYPE_SceneBuilder;
     }
 }

@@ -24,15 +24,15 @@ namespace jli
     {
     }
     
-    const char *AbstractFactoryObject::getName()const
-    {
-        return "AbstractFactoryObject";
-    }
-    
-    u32 AbstractFactoryObject::getType()const
-    {
-        return type::None;
-    }
+//    const char *AbstractFactoryObject::getClassName()const
+//    {
+//        return "AbstractFactoryObject";
+//    }
+//    
+//    u32 AbstractFactoryObject::getType()const
+//    {
+//        return JLI_OBJECT_TYPE_None;
+//    }
     
     AbstractFactoryObject *AbstractFactoryObject::create(const AbstractBuilder &builder)const
     {
@@ -94,6 +94,6 @@ namespace jli
         s32 len = calculateSerializeBufferSize();
         btChunk* chunk = serializer->allocate(len,1);
         serialize(chunk->m_oldPtr, serializer);
-        serializer->finalizeChunk(chunk,getName(),getType(),(void*)this);
+        serializer->finalizeChunk(chunk,getClassName(),getType(),(void*)this);
     }
 }

@@ -50,16 +50,16 @@ namespace jli
     
     u32 DynamicPhysicsBodyBuilder::getObjectType()const
     {
-        return type::DynamicPhysicsBody;
+        return JLI_OBJECT_TYPE_DynamicPhysicsBody;
     }
     
-    const char *DynamicPhysicsBodyBuilder::getName()const
+    const char *DynamicPhysicsBodyBuilder::getClassName()const
     {
         return "DynamicPhysicsBodyBuilder";
     }
     
     u32 DynamicPhysicsBodyBuilder::getType()const
     {
-        return type::DynamicPhysicsBodyBuilder;
+        return JLI_OBJECT_TYPE_DynamicPhysicsBodyBuilder;
     }
 }

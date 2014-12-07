@@ -277,7 +277,7 @@ BT_DECLARE_ALIGNED_ALLOCATOR();
 
 
 	//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "Box";
 	}

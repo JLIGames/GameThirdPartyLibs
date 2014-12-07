@@ -49,7 +49,7 @@ public:
 	virtual void	batchedUnitVectorGetSupportingVertexWithoutMargin(const btVector3* vectors,btVector3* supportVerticesOut,int numVectors) const;
 	
 	//debugging
-	virtual const char*	getName()const {return "ConvexTrimesh";}
+	virtual const char*	getClassName()const {return "ConvexTrimesh";}
 	
 	virtual int	getNumVertices() const;
 	virtual int getNumEdges() const;

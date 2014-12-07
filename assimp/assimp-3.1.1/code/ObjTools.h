@@ -154,7 +154,7 @@ inline char_t skipLine( char_t it, char_t end, unsigned int &uiLine )
  *	@return	Current-iterator with new position
  */
 template<class char_t>
-inline char_t getName( char_t it, char_t end, std::string &name )
+inline char_t getClassName( char_t it, char_t end, std::string &name )
 {
 	name = "";
 	if ( isEndOfBuffer( it, end ) )

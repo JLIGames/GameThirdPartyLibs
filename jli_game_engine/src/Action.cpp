@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Action::getName()const
+    const char *Action::getClassName()const
     {
         return "Action";
     }
     
     u32 Action::getType()const
     {
-        return type::Action;
+        return JLI_OBJECT_TYPE_Action;
     }
 }

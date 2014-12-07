@@ -50,16 +50,16 @@ namespace jli
     
     u32 CubicTextureBuilder::getObjectType()const
     {
-        return type::CubicTexture;
+        return JLI_OBJECT_TYPE_CubicTexture;
     }
     
-    const char *CubicTextureBuilder::getName()const
+    const char *CubicTextureBuilder::getClassName()const
     {
         return "CubicTextureBuilder";
     }
     
     u32 CubicTextureBuilder::getType()const
     {
-        return type::CubicTextureBuilder;
+        return JLI_OBJECT_TYPE_CubicTextureBuilder;
     }
 }

@@ -30,7 +30,7 @@ namespace jli
         virtual	s32	calculateSerializeBufferSize() const;
         virtual	void serialize(void*, btSerializer*) const;
         
-        virtual const char *getName()const;
+        virtual const char *getClassName()const;
         virtual u32 getType()const;
         
         //TODO: fill in specific methods for Resource

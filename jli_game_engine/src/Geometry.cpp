@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Geometry::getName()const
+    const char *Geometry::getClassName()const
     {
         return "Geometry";
     }
     
     u32 Geometry::getType()const
     {
-        return type::Geometry;
+        return JLI_OBJECT_TYPE_Geometry;
     }
 }

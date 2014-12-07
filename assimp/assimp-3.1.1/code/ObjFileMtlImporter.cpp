@@ -339,7 +339,7 @@ void ObjFileMtlImporter::getTexture() {
 	m_pModel->m_pCurrentMaterial->clamp[clampIndex] = clamp;
 
 	std::string strTexture;
-	m_DataIt = getName<DataArrayIt>( m_DataIt, m_DataItEnd, strTexture );
+	m_DataIt = getClassName<DataArrayIt>( m_DataIt, m_DataItEnd, strTexture );
 	out->Set( strTexture );
 }
 

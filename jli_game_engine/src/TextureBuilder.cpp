@@ -50,16 +50,16 @@ namespace jli
     
     u32 TextureBuilder::getObjectType()const
     {
-        return type::Texture;
+        return JLI_OBJECT_TYPE_Texture;
     }
     
-    const char *TextureBuilder::getName()const
+    const char *TextureBuilder::getClassName()const
     {
         return "TextureBuilder";
     }
     
     u32 TextureBuilder::getType()const
     {
-        return type::TextureBuilder;
+        return JLI_OBJECT_TYPE_TextureBuilder;
     }
 }

@@ -29,7 +29,7 @@ namespace jli
         virtual	s32	calculateSerializeBufferSize() const = 0;
         virtual	void serialize(void*, btSerializer*) const = 0;
         
-        virtual const char *getName()const = 0;
+        virtual const char *getClassName()const = 0;
         virtual u32 getType()const = 0;
         
         //TODO: fill in specific methods for AbstractPhysicsBody

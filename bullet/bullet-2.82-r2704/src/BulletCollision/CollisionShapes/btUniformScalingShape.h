@@ -62,7 +62,7 @@ ATTRIBUTE_ALIGNED16(class) btUniformScalingShape : public btConvexShape
 		return m_childConvexShape;
 	}
 
-	virtual const char*	getName()const 
+	virtual const char*	getClassName()const 
 	{
 		return "UniformScalingShape";
 	}

@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Material::getName()const
+    const char *Material::getClassName()const
     {
         return "Material";
     }
     
     u32 Material::getType()const
     {
-        return type::Material;
+        return JLI_OBJECT_TYPE_Material;
     }
 }

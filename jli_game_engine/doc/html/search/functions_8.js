@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['light',['Light',['../namespacejli.html#aa743de893683a76d6d6862899d5c9c95',1,'jli::Light()'],['../namespacejli.html#a4df8986faaac7b2936c1b4c2570e30ea',1,'jli::Light(const AbstractBuilder &amp;)'],['../namespacejli.html#aa3b8b43415275515956d5c46a0715ccb',1,'jli::Light(const Light &amp;)']]],
-  ['lightbuilder',['LightBuilder',['../namespacejli.html#ab74bc38edd1ef6ffefa07b38a456dbf4',1,'jli::LightBuilder()'],['../namespacejli.html#a1db92fb58477bc8af86269d5cddc8685',1,'jli::LightBuilder(const LightBuilder &amp;)'],['../namespacejli.html#ae17e3ea054277db213f8262dc1f99949',1,'jli::LightBuilder(const AbstractBuilder &amp;)']]]
+  ['kinematicphysicsbody',['KinematicPhysicsBody',['../namespacejli.html#a7a3913d5239a7a26f7b249c8352cfb7e',1,'jli::KinematicPhysicsBody()'],['../namespacejli.html#ad12a03a0d7f868a1a84fe43d58c4c168',1,'jli::KinematicPhysicsBody(const AbstractBuilder &amp;)'],['../namespacejli.html#a5ddb3c57d768905fbeb013afc3e17197',1,'jli::KinematicPhysicsBody(const KinematicPhysicsBody &amp;)']]],
+  ['kinematicphysicsbodybuilder',['KinematicPhysicsBodyBuilder',['../namespacejli.html#a7c18f18400fc9c3348d7888cd25a57d7',1,'jli::KinematicPhysicsBodyBuilder()'],['../namespacejli.html#a41d3966b2a78be58e202899d74ba0875',1,'jli::KinematicPhysicsBodyBuilder(const KinematicPhysicsBodyBuilder &amp;)'],['../namespacejli.html#a50acbc03a306ce042f59e76accc35c43',1,'jli::KinematicPhysicsBodyBuilder(const AbstractBuilder &amp;)']]]
 ];

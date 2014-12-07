@@ -34,66 +34,9 @@ namespace jli
         virtual	void serialize(void*, btSerializer*) const;
         
         virtual u32 getObjectType()const;
-        virtual const char *getName()const;
+        virtual const char *getClassName()const;
         virtual u32 getType()const;
     };
-}
-
-#include "WorldFactory.h"
-
-namespace jli
-{
-    ActionBuilder::ActionBuilder()
-    {
-    }
-    
-    ActionBuilder::ActionBuilder(const ActionBuilder &copy)
-    {
-        
-    }
-    
-    ActionBuilder::ActionBuilder(const AbstractBuilder &builder)
-    {
-        
-    }
-    
-    ActionBuilder::~ActionBuilder()
-    {
-    }
-    
-    ActionBuilder &ActionBuilder::operator=(const ActionBuilder &rhs)
-    {
-        if (this != &rhs)
-        {
-            
-        }
-        return *this;
-    }
-    
-    s32	ActionBuilder::calculateSerializeBufferSize() const
-    {
-        return 0;
-    }
-    
-    void ActionBuilder::serialize(void* dataBuffer, btSerializer* serializer) const
-    {
-        
-    }
-    
-    u32 ActionBuilder::getObjectType()const
-    {
-        return type::Action;
-    }
-    
-    const char *ActionBuilder::getName()const
-    {
-        return "ActionBuilder";
-    }
-    
-    u32 ActionBuilder::getType()const
-    {
-        return type::ActionBuilder;
-    }
 }
 
 #endif /* defined(__JLIGameEngineTest__ActionBuilder__) */

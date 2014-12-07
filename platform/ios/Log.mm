@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#import <Foundation/Foundation.h>
 
 void Log(const char *format, ...)
 {
@@ -10,7 +11,12 @@ void Log(const char *format, ...)
     
     va_start(args, format);
     
-    printf(format, args);
+    NSLogv([NSString stringWithUTF8String:format], args);
+//    char *buffer = new char[2048];
+//    sprintf(buffer, format, args);
+    
+//    printf(format, args);
+//    NSLog([NSString stringWithUTF8String:format], args);
     
     va_end(args);
 }

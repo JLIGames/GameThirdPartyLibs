@@ -12,21 +12,21 @@
 namespace jli
 {
     Node::Node():
-    AbstractFactoryObject(this)
+    AbstractFactoryObject(this),
+    m_Name("Node")
     {
-        
     }
     
     Node::Node(const AbstractBuilder &builder):
-    AbstractFactoryObject(this)
+    AbstractFactoryObject(this),
+    m_Name("Node")
     {
-        
     }
     
     Node::Node(const Node &copy):
-    AbstractFactoryObject(this)
+    AbstractFactoryObject(this),
+    m_Name("Node")
     {
-        
     }
     
     Node::~Node()
@@ -38,7 +38,6 @@ namespace jli
     {
         if(this != &rhs)
         {
-            
         }
         return *this;
     }
@@ -54,13 +53,23 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *Node::getName()const
+    const char *Node::getClassName()const
     {
         return "Node";
     }
     
     u32 Node::getType()const
     {
-        return type::Node;
+        return JLI_OBJECT_TYPE_Node;
+    }
+    
+    void Node::setName(const char *name)
+    {
+        m_Name = name;
+    }
+    
+    const char *Node::getName()const
+    {
+        return m_Name.c_str();
     }
 }

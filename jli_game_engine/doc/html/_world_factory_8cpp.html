@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>JLI Engine: /Users/jamesfolk/Dropbox/GameDevelopment/mygames/third_party/jli_game_engine/src/WorldFactory.cpp File Reference</title>
+<title>My Project: WorldFactory.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JLI Engine
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -77,10 +77,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -90,12 +86,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_world_factory_8h_source.html">WorldFactory.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_resource_8h_source.html">Resource.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_resource_builder_8h_source.html">ResourceBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_action_8h_source.html">Action.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_action_builder_8h_source.html">ActionBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_camera_8h_source.html">Camera.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_camera_builder_8h_source.html">CameraBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_clock_8h_source.html">Clock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_clock_builder_8h_source.html">ClockBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_collision_response_8h_source.html">CollisionResponse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_collision_response_builder_8h_source.html">CollisionResponseBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cubic_texture_8h_source.html">CubicTexture.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cubic_texture_builder_8h_source.html">CubicTextureBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_dynamic_physics_body_8h_source.html">DynamicPhysicsBody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_dynamic_physics_body_builder_8h_source.html">DynamicPhysicsBodyBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_geometry_8h_source.html">Geometry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_geometry_builder_8h_source.html">GeometryBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ghost_physics_body_8h_source.html">GhostPhysicsBody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ghost_physics_body_builder_8h_source.html">GhostPhysicsBodyBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_kinematic_physics_body_8h_source.html">KinematicPhysicsBody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_kinematic_physics_body_builder_8h_source.html">KinematicPhysicsBodyBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_light_8h_source.html">Light.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_light_builder_8h_source.html">LightBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_8h_source.html">Material.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_builder_8h_source.html">MaterialBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_property_8h_source.html">MaterialProperty.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_material_property_builder_8h_source.html">MaterialPropertyBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_node_8h_source.html">Node.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_node_builder_8h_source.html">NodeBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_node_state_8h_source.html">NodeState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_node_state_builder_8h_source.html">NodeStateBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_node_state_machine_8h_source.html">NodeStateMachine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_node_state_machine_builder_8h_source.html">NodeStateMachineBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_particle_emitter_8h_source.html">ParticleEmitter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_particle_emitter_builder_8h_source.html">ParticleEmitterBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_contact_8h_source.html">PhysicsContact.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_contact_builder_8h_source.html">PhysicsContactBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_field_8h_source.html">PhysicsField.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_field_builder_8h_source.html">PhysicsFieldBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_shape_8h_source.html">PhysicsShape.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_shape_builder_8h_source.html">PhysicsShapeBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_world_8h_source.html">PhysicsWorld.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_physics_world_builder_8h_source.html">PhysicsWorldBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_resource_8h_source.html">Resource.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_resource_builder_8h_source.html">ResourceBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_rigid_physics_body_8h_source.html">RigidPhysicsBody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_rigid_physics_body_builder_8h_source.html">RigidPhysicsBodyBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_8h_source.html">Scene.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_builder_8h_source.html">SceneBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_state_8h_source.html">SceneState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_state_builder_8h_source.html">SceneStateBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_state_machine_8h_source.html">SceneStateMachine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_state_machine_builder_8h_source.html">SceneStateMachineBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_soft_physics_body_8h_source.html">SoftPhysicsBody.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_soft_physics_body_builder_8h_source.html">SoftPhysicsBodyBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sound_8h_source.html">Sound.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sound_builder_8h_source.html">SoundBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_texture_8h_source.html">Texture.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_texture_builder_8h_source.html">TextureBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_world_state_8h_source.html">WorldState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_world_state_builder_8h_source.html">WorldStateBuilder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_world_state_machine_8h_source.html">WorldStateMachine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_world_state_machine_builder_8h_source.html">WorldStateMachineBuilder.h</a>&quot;</code><br />
 </div>
 <p><a href="_world_factory_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,7 +157,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 23 2014 14:10:14 for JLI Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 6 2014 19:27:22 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

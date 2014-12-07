@@ -8,10 +8,6 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classjli_1_1_world_ab340b6a4f69503333397ec65b091414a}{World} ()
-\item 
-virtual \hyperlink{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}{$\sim$\+World} ()
-\item 
 \hyperlink{classjli_1_1_world_factory}{World\+Factory} $\ast$const \hyperlink{classjli_1_1_world_aef4b78708b5daf80703d8a57f2b0f5ae}{get\+World\+Factory} () const 
 \item 
 \hyperlink{classjli_1_1_world_my_s_q_l}{World\+My\+S\+Q\+L} $\ast$const \hyperlink{classjli_1_1_world_ae8b75d8993a718753d589d49f2c00094}{get\+World\+My\+S\+Q\+L} () const 
@@ -23,6 +19,12 @@ virtual \hyperlink{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}{$\sim$\
 \hyperlink{classjli_1_1_world_lua_virtual_machine}{World\+Lua\+Virtual\+Machine} $\ast$const \hyperlink{classjli_1_1_world_a4a11fef67cef6d596344a5f5db79b4fb}{get\+World\+Lua\+Virtual\+Machine} () const 
 \item 
 \hyperlink{namespacejli_af69056b00744493ba074ef13e82b0bec}{Clock} $\ast$const \hyperlink{classjli_1_1_world_a4e35bb1d091a72f667de5c4cbc6e04b8}{get\+World\+Clock} () const 
+\item 
+World\+State\+Machine $\ast$const \hyperlink{classjli_1_1_world_a38bea1462eb2aa602938b5c03f92e4ad}{get\+Scene\+State\+Machine} () const 
+\item 
+void \hyperlink{classjli_1_1_world_aaa89d822b116f5b8fcf81a87c44b5c2d}{set\+Name} (const char $\ast$name)
+\item 
+const char $\ast$ \hyperlink{classjli_1_1_world_a14533a04f69a15a775df34d3d322f7bd}{get\+Name} () const 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -40,32 +42,7 @@ static bool \hyperlink{classjli_1_1_world_a730a4745d8a020a240d8445761ab69a8}{has
 \subsection{Detailed Description}
 
 
-Definition at line 24 of file World.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{classjli_1_1_world_ab340b6a4f69503333397ec65b091414a}{\index{jli\+::\+World@{jli\+::\+World}!World@{World}}
-\index{World@{World}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{World}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+World\+::\+World (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classjli_1_1_world_ab340b6a4f69503333397ec65b091414a}
-
-
-Definition at line 41 of file World.\+cpp.
-
-\hypertarget{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}{\index{jli\+::\+World@{jli\+::\+World}!````~World@{$\sim$\+World}}
-\index{````~World@{$\sim$\+World}!jli\+::\+World@{jli\+::\+World}}
-\subsubsection[{$\sim$\+World}]{\setlength{\rightskip}{0pt plus 5cm}jli\+::\+World\+::$\sim$\+World (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classjli_1_1_world_a23e1f8b843020bdcec4b3ece3a89d1b8}
-
-
-Definition at line 51 of file World.\+cpp.
+Definition at line 27 of file World.\+h.
 
 
 
@@ -103,6 +80,33 @@ Definition at line 23 of file World.\+cpp.
 
 Definition at line 29 of file World.\+cpp.
 
+\hypertarget{classjli_1_1_world_a14533a04f69a15a775df34d3d322f7bd}{\index{jli\+::\+World@{jli\+::\+World}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ jli\+::\+World\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_a14533a04f69a15a775df34d3d322f7bd}
+
+
+Definition at line 103 of file World.\+cpp.
+
+\hypertarget{classjli_1_1_world_a38bea1462eb2aa602938b5c03f92e4ad}{\index{jli\+::\+World@{jli\+::\+World}!get\+Scene\+State\+Machine@{get\+Scene\+State\+Machine}}
+\index{get\+Scene\+State\+Machine@{get\+Scene\+State\+Machine}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{get\+Scene\+State\+Machine}]{\setlength{\rightskip}{0pt plus 5cm}World\+State\+Machine $\ast$const jli\+::\+World\+::get\+Scene\+State\+Machine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classjli_1_1_world_a38bea1462eb2aa602938b5c03f92e4ad}
+This is the central place for the \hyperlink{classjli_1_1_world}{World}'s state. This Statemachine will interface into the Game.\+cpp for the update and render functions.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world statemachine. 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file World.\+cpp.
+
 \hypertarget{classjli_1_1_world_a4e35bb1d091a72f667de5c4cbc6e04b8}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Clock@{get\+World\+Clock}}
 \index{get\+World\+Clock@{get\+World\+Clock}!jli\+::\+World@{jli\+::\+World}}
 \subsubsection[{get\+World\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clock} $\ast$const jli\+::\+World\+::get\+World\+Clock (
@@ -110,9 +114,14 @@ Definition at line 29 of file World.\+cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classjli_1_1_world_a4e35bb1d091a72f667de5c4cbc6e04b8}
+This is the central place for the Time Keeping element of the game.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world's time. 
+\end{DoxyReturn}
 
 
-Definition at line 86 of file World.\+cpp.
+Definition at line 89 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_aef4b78708b5daf80703d8a57f2b0f5ae}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Factory@{get\+World\+Factory}}
 \index{get\+World\+Factory@{get\+World\+Factory}!jli\+::\+World@{jli\+::\+World}}
@@ -121,9 +130,14 @@ Definition at line 86 of file World.\+cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classjli_1_1_world_aef4b78708b5daf80703d8a57f2b0f5ae}
+The is the central place to create all of the objects in the game.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world factory singleton. 
+\end{DoxyReturn}
 
 
-Definition at line 61 of file World.\+cpp.
+Definition at line 64 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_aeee764fef2643e963d08df7c891f4a26}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Input@{get\+World\+Input}}
 \index{get\+World\+Input@{get\+World\+Input}!jli\+::\+World@{jli\+::\+World}}
@@ -132,9 +146,14 @@ Definition at line 61 of file World.\+cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classjli_1_1_world_aeee764fef2643e963d08df7c891f4a26}
+This is the central place for receiving external input from the player. This will interface into the Game.\+ccp for the input methods.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world Input singleton. 
+\end{DoxyReturn}
 
 
-Definition at line 71 of file World.\+cpp.
+Definition at line 74 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_a4a11fef67cef6d596344a5f5db79b4fb}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Lua\+Virtual\+Machine@{get\+World\+Lua\+Virtual\+Machine}}
 \index{get\+World\+Lua\+Virtual\+Machine@{get\+World\+Lua\+Virtual\+Machine}!jli\+::\+World@{jli\+::\+World}}
@@ -143,9 +162,14 @@ Definition at line 71 of file World.\+cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classjli_1_1_world_a4a11fef67cef6d596344a5f5db79b4fb}
+This is the central place for the Lua Virtual Machine.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world's lua virtual machine. 
+\end{DoxyReturn}
 
 
-Definition at line 81 of file World.\+cpp.
+Definition at line 84 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_ae8b75d8993a718753d589d49f2c00094}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+My\+S\+Q\+L@{get\+World\+My\+S\+Q\+L}}
 \index{get\+World\+My\+S\+Q\+L@{get\+World\+My\+S\+Q\+L}!jli\+::\+World@{jli\+::\+World}}
@@ -154,9 +178,14 @@ Definition at line 81 of file World.\+cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classjli_1_1_world_ae8b75d8993a718753d589d49f2c00094}
+This is the central place to load assets from disk.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world my\+S\+Q\+L singleton 
+\end{DoxyReturn}
 
 
-Definition at line 66 of file World.\+cpp.
+Definition at line 69 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_a00a7fc82c5723b567fa118e029712d34}{\index{jli\+::\+World@{jli\+::\+World}!get\+World\+Sound@{get\+World\+Sound}}
 \index{get\+World\+Sound@{get\+World\+Sound}!jli\+::\+World@{jli\+::\+World}}
@@ -165,9 +194,14 @@ Definition at line 66 of file World.\+cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classjli_1_1_world_a00a7fc82c5723b567fa118e029712d34}
+This is the central place for sounds of the game.
+
+\begin{DoxyReturn}{Returns}
+The pointer to the world's sound control. 
+\end{DoxyReturn}
 
 
-Definition at line 76 of file World.\+cpp.
+Definition at line 79 of file World.\+cpp.
 
 \hypertarget{classjli_1_1_world_a730a4745d8a020a240d8445761ab69a8}{\index{jli\+::\+World@{jli\+::\+World}!has\+Instance@{has\+Instance}}
 \index{has\+Instance@{has\+Instance}!jli\+::\+World@{jli\+::\+World}}
@@ -180,9 +214,20 @@ Definition at line 76 of file World.\+cpp.
 
 Definition at line 36 of file World.\+cpp.
 
+\hypertarget{classjli_1_1_world_aaa89d822b116f5b8fcf81a87c44b5c2d}{\index{jli\+::\+World@{jli\+::\+World}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!jli\+::\+World@{jli\+::\+World}}
+\subsubsection[{set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void jli\+::\+World\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classjli_1_1_world_aaa89d822b116f5b8fcf81a87c44b5c2d}
+
+
+Definition at line 99 of file World.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_8h}{World.\+h}\item 
-/\+Users/jamesfolk/\+Dropbox/\+Game\+Development/mygames/third\+\_\+party/jli\+\_\+game\+\_\+engine/src/\hyperlink{_world_8cpp}{World.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{_world_8h}{World.\+h}\item 
+\hyperlink{_world_8cpp}{World.\+cpp}\end{DoxyCompactItemize}

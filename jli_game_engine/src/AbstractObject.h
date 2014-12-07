@@ -12,6 +12,8 @@
 #include "Util.h"
 #include "btAlignedAllocator.h"
 
+#include <string>
+
 namespace jli
 {
     ATTRIBUTE_ALIGNED16(class) AbstractObject
@@ -21,7 +23,7 @@ namespace jli
         
         BT_DECLARE_ALIGNED_ALLOCATOR();
         
-        virtual const char *getName()const = 0;
+        virtual const char *getClassName()const = 0;
         virtual u32 getType()const = 0;
     };
 }

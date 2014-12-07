@@ -57,7 +57,7 @@ BT_DECLARE_ALIGNED_ALLOCATOR();
 	const btConvexShape*	getShapeA() const { return m_shapeA;}
 	const btConvexShape*	getShapeB() const { return m_shapeB;}
 
-	virtual const char*	getName()const 
+	virtual const char*	getClassName()const 
 	{
 		return "MinkowskiSum";
 	}

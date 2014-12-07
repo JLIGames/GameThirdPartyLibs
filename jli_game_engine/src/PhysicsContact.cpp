@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *PhysicsContact::getName()const
+    const char *PhysicsContact::getClassName()const
     {
         return "PhysicsContact";
     }
     
     u32 PhysicsContact::getType()const
     {
-        return type::PhysicsContact;
+        return JLI_OBJECT_TYPE_PhysicsContact;
     }
 }

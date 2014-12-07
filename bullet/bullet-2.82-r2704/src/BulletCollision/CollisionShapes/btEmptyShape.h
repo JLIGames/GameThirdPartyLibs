@@ -59,7 +59,7 @@ public:
 
 	virtual void	calculateLocalInertia(btScalar mass,btVector3& inertia) const;
 	
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "Empty";
 	}

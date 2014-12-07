@@ -50,16 +50,16 @@ namespace jli
     
     u32 GeometryBuilder::getObjectType()const
     {
-        return type::Geometry;
+        return JLI_OBJECT_TYPE_Geometry;
     }
     
-    const char *GeometryBuilder::getName()const
+    const char *GeometryBuilder::getClassName()const
     {
         return "GeometryBuilder";
     }
     
     u32 GeometryBuilder::getType()const
     {
-        return type::GeometryBuilder;
+        return JLI_OBJECT_TYPE_GeometryBuilder;
     }
 }

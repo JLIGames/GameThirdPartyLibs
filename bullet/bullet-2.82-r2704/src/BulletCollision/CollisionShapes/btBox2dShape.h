@@ -335,7 +335,7 @@ public:
 
 
 	//debugging
-	virtual const char*	getName()const
+	virtual const char*	getClassName()const
 	{
 		return "Box2d";
 	}

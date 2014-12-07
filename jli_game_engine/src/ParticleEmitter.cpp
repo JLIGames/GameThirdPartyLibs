@@ -54,13 +54,13 @@ namespace jli
         //TODO: serialize
     }
     
-    const char *ParticleEmitter::getName()const
+    const char *ParticleEmitter::getClassName()const
     {
         return "ParticleEmitter";
     }
     
     u32 ParticleEmitter::getType()const
     {
-        return type::ParticleEmitter;
+        return JLI_OBJECT_TYPE_ParticleEmitter;
     }
 }

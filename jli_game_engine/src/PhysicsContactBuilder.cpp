@@ -50,16 +50,16 @@ namespace jli
     
     u32 PhysicsContactBuilder::getObjectType()const
     {
-        return type::PhysicsContact;
+        return JLI_OBJECT_TYPE_PhysicsContact;
     }
     
-    const char *PhysicsContactBuilder::getName()const
+    const char *PhysicsContactBuilder::getClassName()const
     {
         return "PhysicsContactBuilder";
     }
     
     u32 PhysicsContactBuilder::getType()const
     {
-        return type::PhysicsContactBuilder;
+        return JLI_OBJECT_TYPE_PhysicsContactBuilder;
     }
 }

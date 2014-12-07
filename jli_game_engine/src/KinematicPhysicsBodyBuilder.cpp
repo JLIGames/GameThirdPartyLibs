@@ -50,16 +50,16 @@ namespace jli
     
     u32 KinematicPhysicsBodyBuilder::getObjectType()const
     {
-        return type::KinematicPhysicsBody;
+        return JLI_OBJECT_TYPE_KinematicPhysicsBody;
     }
     
-    const char *KinematicPhysicsBodyBuilder::getName()const
+    const char *KinematicPhysicsBodyBuilder::getClassName()const
     {
         return "KinematicPhysicsBodyBuilder";
     }
     
     u32 KinematicPhysicsBodyBuilder::getType()const
     {
-        return type::KinematicPhysicsBodyBuilder;
+        return JLI_OBJECT_TYPE_KinematicPhysicsBodyBuilder;
     }
 }

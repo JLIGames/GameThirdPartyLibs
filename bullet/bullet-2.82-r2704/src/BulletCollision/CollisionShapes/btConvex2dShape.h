@@ -56,7 +56,7 @@ ATTRIBUTE_ALIGNED16(class) btConvex2dShape : public btConvexShape
 		return m_childConvexShape;
 	}
 
-	virtual const char*	getName()const 
+	virtual const char*	getClassName()const 
 	{
 		return "Convex2dShape";
 	}

@@ -22,8 +22,9 @@
 //#include "fmod_errors.h"
 
 
-#include "nanovg.h"
+//#include "nanovg.h"
 
+//#include "JLIEngine.h"
 
 
 static void printGLString(const char *name, GLenum s) {
@@ -123,6 +124,11 @@ const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
 
 bool create()
 {
+//    jli::World::createInstance();
+    
+    
+    
+//    jli::World::destroyInstance();
 //    NVGcolor nvgTo = vecFrom;
 //    btVector4 vecTo = nvgFrom;
     
@@ -199,11 +205,14 @@ void resize(int x, int y, int width, int height)
 
 void update(float step)
 {
+//    jli::World::getInstance()->update(step);
 //	Log("%f\n", step);
 }
 
 void render()
 {
+//    jli::World::getInstance()->render();
+    
 	static float grey;
 	grey += 0.01f;
 	if (grey > 1.0f) {
@@ -232,6 +241,7 @@ void render()
 
 void destroy()
 {
+//    jli::World::destroyInstance();
 }
 
 //void pause()
