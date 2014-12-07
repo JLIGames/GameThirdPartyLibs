@@ -17,6 +17,7 @@
 %include <lua/lua_fnptr.i>
 
 %import "../../../bullet/Lua.i"
+%import "../../../platform/core/Lua.i"
 
 
 %import "OpenGLES20.i"

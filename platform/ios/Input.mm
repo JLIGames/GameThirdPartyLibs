@@ -34,14 +34,10 @@ namespace jli
     }
     
     
-    DeviceTouch::DeviceTouch(void *touch, int n, int N) :
+    DeviceTouch::DeviceTouch(const void *touch, int n, int N) :
     DeviceInputTime()
     {
-        convert(*this, touch);
-        convert(*this, touch);
-        
-        m_touchIndex = n;
-        m_touchTotal = N;
+        set(touch, n, N);
     }
     
     const btVector2 &DeviceTouch::getPosition()const{return m_pos;}
@@ -71,30 +67,59 @@ namespace jli
         return std::string(buffer);
     }
     
-    void DeviceTouch::convert(DeviceTouch &t, void *_touch)
+    void DeviceTouch::set(const void *touch, int n, int N)
     {
-        UITouch *touch = (__bridge UITouch*)_touch;
-        t.setTimeStampFrame(touch.timestamp);
-        CGPoint p = [touch locationInView:touch.view];
-        t.m_pos.setX(p.x);
-        t.m_pos.setY(p.y);
-        p = [touch previousLocationInView:touch.view];
-        t.m_prev_pos.setX(p.x);
-        t.m_prev_pos.setY(p.y);
-        t.m_address = [touch hash];
-        t.m_tapCount = [touch tapCount];
+        convert(*this, touch);
         
-        CGFloat scaleFactor = touch.view.contentScaleFactor;
-        
-        t.m_pos *= scaleFactor;
-        t.m_prev_pos *= scaleFactor;
-        
-        //TODO: Need to get the height of the view...
-        
-//        btScalar height = CameraFactory::getScreenHeight();
-//        
-//        t.m_pos.setY((height) - t.m_pos.y());
-//        t.m_prev_pos.setY((height) - t.m_prev_pos.y());
+        m_touchIndex = n;
+        m_touchTotal = N;
+    }
+    
+    void DeviceTouch::convert(DeviceTouch &t, const void *_touch)
+    {
+        if(_touch)
+        {
+            UITouch *touch = (__bridge UITouch*)_touch;
+            t.setTimeStampFrame(touch.timestamp);
+            CGPoint p = [touch locationInView:touch.view];
+            t.m_pos.setX(p.x);
+            t.m_pos.setY(p.y);
+            p = [touch previousLocationInView:touch.view];
+            t.m_prev_pos.setX(p.x);
+            t.m_prev_pos.setY(p.y);
+            t.m_address = [touch hash];
+            t.m_tapCount = [touch tapCount];
+            
+            CGFloat scaleFactor = touch.view.contentScaleFactor;
+            
+            t.m_pos *= scaleFactor;
+            t.m_prev_pos *= scaleFactor;
+            
+            //TODO: Need to get the height of the view...
+            
+//            btScalar height = CameraFactory::getScreenHeight();
+//
+//            t.m_pos.setY((height) - t.m_pos.y());
+//            t.m_prev_pos.setY((height) - t.m_prev_pos.y());
+        }
+        else
+        {
+            t.setTimeStampFrame(0);
+            t.m_pos.setX(0);
+            t.m_pos.setY(0);
+            t.m_prev_pos.setX(0);
+            t.m_prev_pos.setY(0);
+            t.m_address = NULL;
+            t.m_tapCount = 0;
+            
+            CGFloat scaleFactor = 1.0f;
+            
+            t.m_pos *= scaleFactor;
+            t.m_prev_pos *= scaleFactor;
+            
+            t.m_pos.setY(0);
+            t.m_prev_pos.setY(0);
+        }
     }
     
 }

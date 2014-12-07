@@ -41,7 +41,6 @@ namespace jli
     World::World():
     m_WorldFactory(new WorldFactory()),
     m_WorldMySQL(new WorldMySQL()),
-    m_WorldInput(new WorldInput()),
     m_WorldSound(new WorldSound()),
     m_WorldLuaVirtualMachine(new WorldLuaVirtualMachine()),
     m_worldClock(new Clock()),
@@ -58,7 +57,6 @@ namespace jli
         delete m_worldClock;
         delete m_WorldLuaVirtualMachine;
         delete m_WorldSound;
-        delete m_WorldInput;
         delete m_WorldMySQL;
         delete m_WorldFactory;
     }
@@ -71,11 +69,6 @@ namespace jli
     WorldMySQL *const World::getWorldMySQL()const
     {
         return m_WorldMySQL;
-    }
-    
-    WorldInput *const World::getWorldInput()const
-    {
-        return m_WorldInput;
     }
     
     WorldSound *const World::getWorldSound()const
@@ -103,6 +96,34 @@ namespace jli
         m_stateMachine->pushState(state);
     }
     
+    void World::touchDown(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    {
+        WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
+        
+        currentState->touchDown(touchArray);
+    }
+    
+    void World::touchUp(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    {
+        WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
+        
+        currentState->touchUp(touchArray);
+    }
+    
+    void World::touchMove(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    {
+        WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
+        
+        currentState->touchMove(touchArray);
+    }
+    
+    void World::touchCancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    {
+        WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
+        
+        currentState->touchCancelled(touchArray);
+    }
+    
     void World::addCamera(Camera *camera)
     {
         m_cameraArray.push_back(camera);
@@ -120,7 +141,7 @@ namespace jli
     
     void World::render()
     {
-        for(s32 index; index < m_cameraArray.size(); ++index)
+        for(s32 index = 0; index < m_cameraArray.size(); ++index)
         {
             m_cameraArray[index]->render();
         }

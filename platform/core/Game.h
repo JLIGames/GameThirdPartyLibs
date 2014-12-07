@@ -1,4 +1,6 @@
 #include <vector>
+#include "Input.h"
+#include "btAlignedObjectArray.h"
 
 bool create();
 void resize(int x, int y, int width, int height);
@@ -9,7 +11,7 @@ void destroy();
 //void unpause();
 
 //TODO import bullet library and pass btVector2
-void touch_down();
-void touch_up();
-void touch_move();
-void touch_cancelled();
+void touch_down(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+void touch_up(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+void touch_move(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+void touch_cancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);

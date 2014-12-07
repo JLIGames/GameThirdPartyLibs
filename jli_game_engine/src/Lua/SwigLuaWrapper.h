@@ -2697,85 +2697,85 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_btAlignedObjectArrayT_btQuantizedBvhNode_t swig_types[50]
 #define SWIGTYPE_p_btAlignedObjectArrayT_btSolverConstraint_t swig_types[51]
 #define SWIGTYPE_p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t swig_types[52]
-#define SWIGTYPE_p_btConstraintRow swig_types[53]
-#define SWIGTYPE_p_btDbvtAabbMm swig_types[54]
-#define SWIGTYPE_p_btDefaultSerializer swig_types[55]
-#define SWIGTYPE_p_btHashMapT_btHashInt_btTriangleInfo_t swig_types[56]
-#define SWIGTYPE_p_btHashMapT_btHashPtr_s32_t swig_types[57]
-#define SWIGTYPE_p_btSerializer swig_types[58]
-#define SWIGTYPE_p_char swig_types[59]
-#define SWIGTYPE_p_f32 swig_types[60]
-#define SWIGTYPE_p_f_p_void__void swig_types[61]
-#define SWIGTYPE_p_f_size_t__p_void swig_types[62]
-#define SWIGTYPE_p_f_size_t_int__p_void swig_types[63]
-#define SWIGTYPE_p_float swig_types[64]
-#define SWIGTYPE_p_int swig_types[65]
-#define SWIGTYPE_p_int64_t swig_types[66]
-#define SWIGTYPE_p_jli__AbstractBuilder swig_types[67]
-#define SWIGTYPE_p_jli__AbstractDecorator swig_types[68]
-#define SWIGTYPE_p_jli__AbstractFactoryObject swig_types[69]
-#define SWIGTYPE_p_jli__AbstractObject swig_types[70]
-#define SWIGTYPE_p_jli__AbstractPhysicsBody swig_types[71]
-#define SWIGTYPE_p_jli__Action swig_types[72]
-#define SWIGTYPE_p_jli__ActionBuilder swig_types[73]
-#define SWIGTYPE_p_jli__Camera swig_types[74]
-#define SWIGTYPE_p_jli__CameraBuilder swig_types[75]
-#define SWIGTYPE_p_jli__Clock swig_types[76]
-#define SWIGTYPE_p_jli__ClockBuilder swig_types[77]
-#define SWIGTYPE_p_jli__CollisionResponse swig_types[78]
-#define SWIGTYPE_p_jli__CollisionResponseBuilder swig_types[79]
-#define SWIGTYPE_p_jli__CubicTexture swig_types[80]
-#define SWIGTYPE_p_jli__CubicTextureBuilder swig_types[81]
-#define SWIGTYPE_p_jli__DynamicPhysicsBody swig_types[82]
-#define SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder swig_types[83]
-#define SWIGTYPE_p_jli__Geometry swig_types[84]
-#define SWIGTYPE_p_jli__GeometryBuilder swig_types[85]
-#define SWIGTYPE_p_jli__GhostPhysicsBody swig_types[86]
-#define SWIGTYPE_p_jli__GhostPhysicsBodyBuilder swig_types[87]
-#define SWIGTYPE_p_jli__KinematicPhysicsBody swig_types[88]
-#define SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder swig_types[89]
-#define SWIGTYPE_p_jli__Light swig_types[90]
-#define SWIGTYPE_p_jli__LightBuilder swig_types[91]
-#define SWIGTYPE_p_jli__Material swig_types[92]
-#define SWIGTYPE_p_jli__MaterialBuilder swig_types[93]
-#define SWIGTYPE_p_jli__MaterialProperty swig_types[94]
-#define SWIGTYPE_p_jli__MaterialPropertyBuilder swig_types[95]
-#define SWIGTYPE_p_jli__Node swig_types[96]
-#define SWIGTYPE_p_jli__NodeBuilder swig_types[97]
-#define SWIGTYPE_p_jli__NodeState swig_types[98]
-#define SWIGTYPE_p_jli__NodeStateBuilder swig_types[99]
-#define SWIGTYPE_p_jli__NodeStateMachine swig_types[100]
-#define SWIGTYPE_p_jli__NodeStateMachineBuilder swig_types[101]
-#define SWIGTYPE_p_jli__ParticleEmitter swig_types[102]
-#define SWIGTYPE_p_jli__ParticleEmitterBuilder swig_types[103]
-#define SWIGTYPE_p_jli__PhysicsContact swig_types[104]
-#define SWIGTYPE_p_jli__PhysicsContactBuilder swig_types[105]
-#define SWIGTYPE_p_jli__PhysicsField swig_types[106]
-#define SWIGTYPE_p_jli__PhysicsFieldBuilder swig_types[107]
-#define SWIGTYPE_p_jli__PhysicsShape swig_types[108]
-#define SWIGTYPE_p_jli__PhysicsShapeBuilder swig_types[109]
-#define SWIGTYPE_p_jli__PhysicsWorld swig_types[110]
-#define SWIGTYPE_p_jli__PhysicsWorldBuilder swig_types[111]
-#define SWIGTYPE_p_jli__Resource swig_types[112]
-#define SWIGTYPE_p_jli__ResourceBuilder swig_types[113]
-#define SWIGTYPE_p_jli__RigidPhysicsBody swig_types[114]
-#define SWIGTYPE_p_jli__RigidPhysicsBodyBuilder swig_types[115]
-#define SWIGTYPE_p_jli__Scene swig_types[116]
-#define SWIGTYPE_p_jli__SceneBuilder swig_types[117]
-#define SWIGTYPE_p_jli__SceneState swig_types[118]
-#define SWIGTYPE_p_jli__SceneStateBuilder swig_types[119]
-#define SWIGTYPE_p_jli__SceneStateMachine swig_types[120]
-#define SWIGTYPE_p_jli__SceneStateMachineBuilder swig_types[121]
-#define SWIGTYPE_p_jli__SoftPhysicsBody swig_types[122]
-#define SWIGTYPE_p_jli__SoftPhysicsBodyBuilder swig_types[123]
-#define SWIGTYPE_p_jli__Sound swig_types[124]
-#define SWIGTYPE_p_jli__SoundBuilder swig_types[125]
-#define SWIGTYPE_p_jli__Telegram swig_types[126]
-#define SWIGTYPE_p_jli__Texture swig_types[127]
-#define SWIGTYPE_p_jli__TextureBuilder swig_types[128]
-#define SWIGTYPE_p_jli__World swig_types[129]
-#define SWIGTYPE_p_jli__WorldFactory swig_types[130]
-#define SWIGTYPE_p_jli__WorldInput swig_types[131]
+#define SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t swig_types[53]
+#define SWIGTYPE_p_btConstraintRow swig_types[54]
+#define SWIGTYPE_p_btDbvtAabbMm swig_types[55]
+#define SWIGTYPE_p_btDefaultSerializer swig_types[56]
+#define SWIGTYPE_p_btHashMapT_btHashInt_btTriangleInfo_t swig_types[57]
+#define SWIGTYPE_p_btHashMapT_btHashPtr_int_t swig_types[58]
+#define SWIGTYPE_p_btSerializer swig_types[59]
+#define SWIGTYPE_p_char swig_types[60]
+#define SWIGTYPE_p_double swig_types[61]
+#define SWIGTYPE_p_f_p_void__void swig_types[62]
+#define SWIGTYPE_p_f_size_t__p_void swig_types[63]
+#define SWIGTYPE_p_f_size_t_int__p_void swig_types[64]
+#define SWIGTYPE_p_float swig_types[65]
+#define SWIGTYPE_p_int swig_types[66]
+#define SWIGTYPE_p_int64_t swig_types[67]
+#define SWIGTYPE_p_jli__AbstractBuilder swig_types[68]
+#define SWIGTYPE_p_jli__AbstractDecorator swig_types[69]
+#define SWIGTYPE_p_jli__AbstractFactoryObject swig_types[70]
+#define SWIGTYPE_p_jli__AbstractObject swig_types[71]
+#define SWIGTYPE_p_jli__AbstractPhysicsBody swig_types[72]
+#define SWIGTYPE_p_jli__Action swig_types[73]
+#define SWIGTYPE_p_jli__ActionBuilder swig_types[74]
+#define SWIGTYPE_p_jli__Camera swig_types[75]
+#define SWIGTYPE_p_jli__CameraBuilder swig_types[76]
+#define SWIGTYPE_p_jli__Clock swig_types[77]
+#define SWIGTYPE_p_jli__ClockBuilder swig_types[78]
+#define SWIGTYPE_p_jli__CollisionResponse swig_types[79]
+#define SWIGTYPE_p_jli__CollisionResponseBuilder swig_types[80]
+#define SWIGTYPE_p_jli__CubicTexture swig_types[81]
+#define SWIGTYPE_p_jli__CubicTextureBuilder swig_types[82]
+#define SWIGTYPE_p_jli__DynamicPhysicsBody swig_types[83]
+#define SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder swig_types[84]
+#define SWIGTYPE_p_jli__Geometry swig_types[85]
+#define SWIGTYPE_p_jli__GeometryBuilder swig_types[86]
+#define SWIGTYPE_p_jli__GhostPhysicsBody swig_types[87]
+#define SWIGTYPE_p_jli__GhostPhysicsBodyBuilder swig_types[88]
+#define SWIGTYPE_p_jli__KinematicPhysicsBody swig_types[89]
+#define SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder swig_types[90]
+#define SWIGTYPE_p_jli__Light swig_types[91]
+#define SWIGTYPE_p_jli__LightBuilder swig_types[92]
+#define SWIGTYPE_p_jli__Material swig_types[93]
+#define SWIGTYPE_p_jli__MaterialBuilder swig_types[94]
+#define SWIGTYPE_p_jli__MaterialProperty swig_types[95]
+#define SWIGTYPE_p_jli__MaterialPropertyBuilder swig_types[96]
+#define SWIGTYPE_p_jli__Node swig_types[97]
+#define SWIGTYPE_p_jli__NodeBuilder swig_types[98]
+#define SWIGTYPE_p_jli__NodeState swig_types[99]
+#define SWIGTYPE_p_jli__NodeStateBuilder swig_types[100]
+#define SWIGTYPE_p_jli__NodeStateMachine swig_types[101]
+#define SWIGTYPE_p_jli__NodeStateMachineBuilder swig_types[102]
+#define SWIGTYPE_p_jli__ParticleEmitter swig_types[103]
+#define SWIGTYPE_p_jli__ParticleEmitterBuilder swig_types[104]
+#define SWIGTYPE_p_jli__PhysicsContact swig_types[105]
+#define SWIGTYPE_p_jli__PhysicsContactBuilder swig_types[106]
+#define SWIGTYPE_p_jli__PhysicsField swig_types[107]
+#define SWIGTYPE_p_jli__PhysicsFieldBuilder swig_types[108]
+#define SWIGTYPE_p_jli__PhysicsShape swig_types[109]
+#define SWIGTYPE_p_jli__PhysicsShapeBuilder swig_types[110]
+#define SWIGTYPE_p_jli__PhysicsWorld swig_types[111]
+#define SWIGTYPE_p_jli__PhysicsWorldBuilder swig_types[112]
+#define SWIGTYPE_p_jli__Resource swig_types[113]
+#define SWIGTYPE_p_jli__ResourceBuilder swig_types[114]
+#define SWIGTYPE_p_jli__RigidPhysicsBody swig_types[115]
+#define SWIGTYPE_p_jli__RigidPhysicsBodyBuilder swig_types[116]
+#define SWIGTYPE_p_jli__Scene swig_types[117]
+#define SWIGTYPE_p_jli__SceneBuilder swig_types[118]
+#define SWIGTYPE_p_jli__SceneState swig_types[119]
+#define SWIGTYPE_p_jli__SceneStateBuilder swig_types[120]
+#define SWIGTYPE_p_jli__SceneStateMachine swig_types[121]
+#define SWIGTYPE_p_jli__SceneStateMachineBuilder swig_types[122]
+#define SWIGTYPE_p_jli__SoftPhysicsBody swig_types[123]
+#define SWIGTYPE_p_jli__SoftPhysicsBodyBuilder swig_types[124]
+#define SWIGTYPE_p_jli__Sound swig_types[125]
+#define SWIGTYPE_p_jli__SoundBuilder swig_types[126]
+#define SWIGTYPE_p_jli__Telegram swig_types[127]
+#define SWIGTYPE_p_jli__Texture swig_types[128]
+#define SWIGTYPE_p_jli__TextureBuilder swig_types[129]
+#define SWIGTYPE_p_jli__World swig_types[130]
+#define SWIGTYPE_p_jli__WorldFactory swig_types[131]
 #define SWIGTYPE_p_jli__WorldLuaVirtualMachine swig_types[132]
 #define SWIGTYPE_p_jli__WorldMySQL swig_types[133]
 #define SWIGTYPE_p_jli__WorldSound swig_types[134]
@@ -2784,14 +2784,14 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_jli__WorldStateMachine swig_types[137]
 #define SWIGTYPE_p_jli__WorldStateMachineBuilder swig_types[138]
 #define SWIGTYPE_p_long swig_types[139]
-#define SWIGTYPE_p_s32 swig_types[140]
+#define SWIGTYPE_p_long_long swig_types[140]
 #define SWIGTYPE_p_short swig_types[141]
 #define SWIGTYPE_p_signed_char swig_types[142]
 #define SWIGTYPE_p_std__string swig_types[143]
-#define SWIGTYPE_p_u32 swig_types[144]
-#define SWIGTYPE_p_uint64_t swig_types[145]
-#define SWIGTYPE_p_unsigned_char swig_types[146]
-#define SWIGTYPE_p_unsigned_int swig_types[147]
+#define SWIGTYPE_p_uint64_t swig_types[144]
+#define SWIGTYPE_p_unsigned_char swig_types[145]
+#define SWIGTYPE_p_unsigned_int swig_types[146]
+#define SWIGTYPE_p_unsigned_long_long swig_types[147]
 #define SWIGTYPE_p_unsigned_short swig_types[148]
 #define SWIGTYPE_p_void swig_types[149]
 static swig_type_info *swig_types[151];
@@ -3781,11 +3781,8 @@ static int _wrap_Action_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Action_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Action);
   }
   
-  result = ((jli::Action const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Action const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -3865,11 +3862,8 @@ static int _wrap_Action_getType(lua_State* L) {
     SWIG_fail_ptr("Action_getType",1,SWIGTYPE_p_jli__Action);
   }
   
-  result = ((jli::Action const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Action const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -3947,11 +3941,8 @@ static int _wrap_ActionBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("ActionBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__ActionBuilder);
   }
   
-  result = ((jli::ActionBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::ActionBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4007,11 +3998,8 @@ static int _wrap_ActionBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("ActionBuilder_getObjectType",1,SWIGTYPE_p_jli__ActionBuilder);
   }
   
-  result = ((jli::ActionBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ActionBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4058,11 +4046,8 @@ static int _wrap_ActionBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("ActionBuilder_getType",1,SWIGTYPE_p_jli__ActionBuilder);
   }
   
-  result = ((jli::ActionBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ActionBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4742,11 +4727,8 @@ static int _wrap_Camera_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Camera_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Camera);
   }
   
-  result = ((jli::Camera const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Camera const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4826,11 +4808,8 @@ static int _wrap_Camera_getType(lua_State* L) {
     SWIG_fail_ptr("Camera_getType",1,SWIGTYPE_p_jli__Camera);
   }
   
-  result = ((jli::Camera const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Camera const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4932,11 +4911,8 @@ static int _wrap_CameraBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("CameraBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__CameraBuilder);
   }
   
-  result = ((jli::CameraBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::CameraBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4992,11 +4968,8 @@ static int _wrap_CameraBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("CameraBuilder_getObjectType",1,SWIGTYPE_p_jli__CameraBuilder);
   }
   
-  result = ((jli::CameraBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CameraBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -5043,11 +5016,8 @@ static int _wrap_CameraBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("CameraBuilder_getType",1,SWIGTYPE_p_jli__CameraBuilder);
   }
   
-  result = ((jli::CameraBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CameraBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -5727,11 +5697,8 @@ static int _wrap_Clock_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Clock_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Clock);
   }
   
-  result = ((jli::Clock const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Clock const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -5811,11 +5778,8 @@ static int _wrap_Clock_getType(lua_State* L) {
     SWIG_fail_ptr("Clock_getType",1,SWIGTYPE_p_jli__Clock);
   }
   
-  result = ((jli::Clock const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Clock const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -5893,11 +5857,8 @@ static int _wrap_ClockBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("ClockBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__ClockBuilder);
   }
   
-  result = ((jli::ClockBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::ClockBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -5953,11 +5914,8 @@ static int _wrap_ClockBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("ClockBuilder_getObjectType",1,SWIGTYPE_p_jli__ClockBuilder);
   }
   
-  result = ((jli::ClockBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ClockBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6004,11 +5962,8 @@ static int _wrap_ClockBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("ClockBuilder_getType",1,SWIGTYPE_p_jli__ClockBuilder);
   }
   
-  result = ((jli::ClockBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ClockBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6688,11 +6643,8 @@ static int _wrap_CollisionResponse_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("CollisionResponse_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__CollisionResponse);
   }
   
-  result = ((jli::CollisionResponse const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::CollisionResponse const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6772,11 +6724,8 @@ static int _wrap_CollisionResponse_getType(lua_State* L) {
     SWIG_fail_ptr("CollisionResponse_getType",1,SWIGTYPE_p_jli__CollisionResponse);
   }
   
-  result = ((jli::CollisionResponse const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CollisionResponse const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6854,11 +6803,8 @@ static int _wrap_CollisionResponseBuilder_calculateSerializeBufferSize(lua_State
     SWIG_fail_ptr("CollisionResponseBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__CollisionResponseBuilder);
   }
   
-  result = ((jli::CollisionResponseBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::CollisionResponseBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6914,11 +6860,8 @@ static int _wrap_CollisionResponseBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("CollisionResponseBuilder_getObjectType",1,SWIGTYPE_p_jli__CollisionResponseBuilder);
   }
   
-  result = ((jli::CollisionResponseBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CollisionResponseBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6965,11 +6908,8 @@ static int _wrap_CollisionResponseBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("CollisionResponseBuilder_getType",1,SWIGTYPE_p_jli__CollisionResponseBuilder);
   }
   
-  result = ((jli::CollisionResponseBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CollisionResponseBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -7649,11 +7589,8 @@ static int _wrap_Texture_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Texture_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Texture);
   }
   
-  result = ((jli::Texture const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Texture const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -7733,11 +7670,8 @@ static int _wrap_Texture_getType(lua_State* L) {
     SWIG_fail_ptr("Texture_getType",1,SWIGTYPE_p_jli__Texture);
   }
   
-  result = ((jli::Texture const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Texture const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -8432,11 +8366,8 @@ static int _wrap_CubicTexture_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("CubicTexture_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__CubicTexture);
   }
   
-  result = ((jli::CubicTexture const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::CubicTexture const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -8516,11 +8447,8 @@ static int _wrap_CubicTexture_getType(lua_State* L) {
     SWIG_fail_ptr("CubicTexture_getType",1,SWIGTYPE_p_jli__CubicTexture);
   }
   
-  result = ((jli::CubicTexture const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CubicTexture const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -8598,11 +8526,8 @@ static int _wrap_CubicTextureBuilder_calculateSerializeBufferSize(lua_State* L) 
     SWIG_fail_ptr("CubicTextureBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__CubicTextureBuilder);
   }
   
-  result = ((jli::CubicTextureBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::CubicTextureBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -8658,11 +8583,8 @@ static int _wrap_CubicTextureBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("CubicTextureBuilder_getObjectType",1,SWIGTYPE_p_jli__CubicTextureBuilder);
   }
   
-  result = ((jli::CubicTextureBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CubicTextureBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -8709,11 +8631,8 @@ static int _wrap_CubicTextureBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("CubicTextureBuilder_getType",1,SWIGTYPE_p_jli__CubicTextureBuilder);
   }
   
-  result = ((jli::CubicTextureBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::CubicTextureBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -9393,11 +9312,8 @@ static int _wrap_DynamicPhysicsBody_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("DynamicPhysicsBody_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__DynamicPhysicsBody);
   }
   
-  result = ((jli::DynamicPhysicsBody const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::DynamicPhysicsBody const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -9477,11 +9393,8 @@ static int _wrap_DynamicPhysicsBody_getType(lua_State* L) {
     SWIG_fail_ptr("DynamicPhysicsBody_getType",1,SWIGTYPE_p_jli__DynamicPhysicsBody);
   }
   
-  result = ((jli::DynamicPhysicsBody const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::DynamicPhysicsBody const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -9559,11 +9472,8 @@ static int _wrap_DynamicPhysicsBodyBuilder_calculateSerializeBufferSize(lua_Stat
     SWIG_fail_ptr("DynamicPhysicsBodyBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder);
   }
   
-  result = ((jli::DynamicPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::DynamicPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -9619,11 +9529,8 @@ static int _wrap_DynamicPhysicsBodyBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("DynamicPhysicsBodyBuilder_getObjectType",1,SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder);
   }
   
-  result = ((jli::DynamicPhysicsBodyBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::DynamicPhysicsBodyBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -9670,11 +9577,8 @@ static int _wrap_DynamicPhysicsBodyBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("DynamicPhysicsBodyBuilder_getType",1,SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder);
   }
   
-  result = ((jli::DynamicPhysicsBodyBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::DynamicPhysicsBodyBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -10354,11 +10258,8 @@ static int _wrap_Geometry_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Geometry_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Geometry);
   }
   
-  result = ((jli::Geometry const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Geometry const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -10438,11 +10339,8 @@ static int _wrap_Geometry_getType(lua_State* L) {
     SWIG_fail_ptr("Geometry_getType",1,SWIGTYPE_p_jli__Geometry);
   }
   
-  result = ((jli::Geometry const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Geometry const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -10520,11 +10418,8 @@ static int _wrap_GeometryBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("GeometryBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__GeometryBuilder);
   }
   
-  result = ((jli::GeometryBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::GeometryBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -10580,11 +10475,8 @@ static int _wrap_GeometryBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("GeometryBuilder_getObjectType",1,SWIGTYPE_p_jli__GeometryBuilder);
   }
   
-  result = ((jli::GeometryBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::GeometryBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -10631,11 +10523,8 @@ static int _wrap_GeometryBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("GeometryBuilder_getType",1,SWIGTYPE_p_jli__GeometryBuilder);
   }
   
-  result = ((jli::GeometryBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::GeometryBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -11315,11 +11204,8 @@ static int _wrap_GhostPhysicsBody_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("GhostPhysicsBody_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__GhostPhysicsBody);
   }
   
-  result = ((jli::GhostPhysicsBody const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::GhostPhysicsBody const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -11399,11 +11285,8 @@ static int _wrap_GhostPhysicsBody_getType(lua_State* L) {
     SWIG_fail_ptr("GhostPhysicsBody_getType",1,SWIGTYPE_p_jli__GhostPhysicsBody);
   }
   
-  result = ((jli::GhostPhysicsBody const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::GhostPhysicsBody const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -11481,11 +11364,8 @@ static int _wrap_GhostPhysicsBodyBuilder_calculateSerializeBufferSize(lua_State*
     SWIG_fail_ptr("GhostPhysicsBodyBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__GhostPhysicsBodyBuilder);
   }
   
-  result = ((jli::GhostPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::GhostPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -11541,11 +11421,8 @@ static int _wrap_GhostPhysicsBodyBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("GhostPhysicsBodyBuilder_getObjectType",1,SWIGTYPE_p_jli__GhostPhysicsBodyBuilder);
   }
   
-  result = ((jli::GhostPhysicsBodyBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::GhostPhysicsBodyBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -11592,11 +11469,8 @@ static int _wrap_GhostPhysicsBodyBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("GhostPhysicsBodyBuilder_getType",1,SWIGTYPE_p_jli__GhostPhysicsBodyBuilder);
   }
   
-  result = ((jli::GhostPhysicsBodyBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::GhostPhysicsBodyBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -12276,11 +12150,8 @@ static int _wrap_KinematicPhysicsBody_calculateSerializeBufferSize(lua_State* L)
     SWIG_fail_ptr("KinematicPhysicsBody_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__KinematicPhysicsBody);
   }
   
-  result = ((jli::KinematicPhysicsBody const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::KinematicPhysicsBody const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -12360,11 +12231,8 @@ static int _wrap_KinematicPhysicsBody_getType(lua_State* L) {
     SWIG_fail_ptr("KinematicPhysicsBody_getType",1,SWIGTYPE_p_jli__KinematicPhysicsBody);
   }
   
-  result = ((jli::KinematicPhysicsBody const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::KinematicPhysicsBody const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -12442,11 +12310,8 @@ static int _wrap_KinematicPhysicsBodyBuilder_calculateSerializeBufferSize(lua_St
     SWIG_fail_ptr("KinematicPhysicsBodyBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder);
   }
   
-  result = ((jli::KinematicPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::KinematicPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -12502,11 +12367,8 @@ static int _wrap_KinematicPhysicsBodyBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("KinematicPhysicsBodyBuilder_getObjectType",1,SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder);
   }
   
-  result = ((jli::KinematicPhysicsBodyBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::KinematicPhysicsBodyBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -12553,11 +12415,8 @@ static int _wrap_KinematicPhysicsBodyBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("KinematicPhysicsBodyBuilder_getType",1,SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder);
   }
   
-  result = ((jli::KinematicPhysicsBodyBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::KinematicPhysicsBodyBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13237,11 +13096,8 @@ static int _wrap_Light_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Light_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Light);
   }
   
-  result = ((jli::Light const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Light const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13321,11 +13177,8 @@ static int _wrap_Light_getType(lua_State* L) {
     SWIG_fail_ptr("Light_getType",1,SWIGTYPE_p_jli__Light);
   }
   
-  result = ((jli::Light const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Light const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13403,11 +13256,8 @@ static int _wrap_LightBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("LightBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__LightBuilder);
   }
   
-  result = ((jli::LightBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::LightBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13463,11 +13313,8 @@ static int _wrap_LightBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("LightBuilder_getObjectType",1,SWIGTYPE_p_jli__LightBuilder);
   }
   
-  result = ((jli::LightBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::LightBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13514,11 +13361,8 @@ static int _wrap_LightBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("LightBuilder_getType",1,SWIGTYPE_p_jli__LightBuilder);
   }
   
-  result = ((jli::LightBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::LightBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -14198,11 +14042,8 @@ static int _wrap_Material_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Material_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Material);
   }
   
-  result = ((jli::Material const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Material const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -14282,11 +14123,8 @@ static int _wrap_Material_getType(lua_State* L) {
     SWIG_fail_ptr("Material_getType",1,SWIGTYPE_p_jli__Material);
   }
   
-  result = ((jli::Material const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Material const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -14364,11 +14202,8 @@ static int _wrap_MaterialBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("MaterialBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__MaterialBuilder);
   }
   
-  result = ((jli::MaterialBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::MaterialBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -14424,11 +14259,8 @@ static int _wrap_MaterialBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("MaterialBuilder_getObjectType",1,SWIGTYPE_p_jli__MaterialBuilder);
   }
   
-  result = ((jli::MaterialBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::MaterialBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -14475,11 +14307,8 @@ static int _wrap_MaterialBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("MaterialBuilder_getType",1,SWIGTYPE_p_jli__MaterialBuilder);
   }
   
-  result = ((jli::MaterialBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::MaterialBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -15159,11 +14988,8 @@ static int _wrap_MaterialProperty_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("MaterialProperty_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__MaterialProperty);
   }
   
-  result = ((jli::MaterialProperty const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::MaterialProperty const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -15243,11 +15069,8 @@ static int _wrap_MaterialProperty_getType(lua_State* L) {
     SWIG_fail_ptr("MaterialProperty_getType",1,SWIGTYPE_p_jli__MaterialProperty);
   }
   
-  result = ((jli::MaterialProperty const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::MaterialProperty const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -15325,11 +15148,8 @@ static int _wrap_MaterialPropertyBuilder_calculateSerializeBufferSize(lua_State*
     SWIG_fail_ptr("MaterialPropertyBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__MaterialPropertyBuilder);
   }
   
-  result = ((jli::MaterialPropertyBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::MaterialPropertyBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -15385,11 +15205,8 @@ static int _wrap_MaterialPropertyBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("MaterialPropertyBuilder_getObjectType",1,SWIGTYPE_p_jli__MaterialPropertyBuilder);
   }
   
-  result = ((jli::MaterialPropertyBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::MaterialPropertyBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -15436,11 +15253,8 @@ static int _wrap_MaterialPropertyBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("MaterialPropertyBuilder_getType",1,SWIGTYPE_p_jli__MaterialPropertyBuilder);
   }
   
-  result = ((jli::MaterialPropertyBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::MaterialPropertyBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16120,11 +15934,8 @@ static int _wrap_Node_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Node_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Node);
   }
   
-  result = ((jli::Node const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Node const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16204,11 +16015,8 @@ static int _wrap_Node_getType(lua_State* L) {
     SWIG_fail_ptr("Node_getType",1,SWIGTYPE_p_jli__Node);
   }
   
-  result = ((jli::Node const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Node const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16338,11 +16146,8 @@ static int _wrap_NodeBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("NodeBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__NodeBuilder);
   }
   
-  result = ((jli::NodeBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::NodeBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16398,11 +16203,8 @@ static int _wrap_NodeBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("NodeBuilder_getObjectType",1,SWIGTYPE_p_jli__NodeBuilder);
   }
   
-  result = ((jli::NodeBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16449,11 +16251,8 @@ static int _wrap_NodeBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("NodeBuilder_getType",1,SWIGTYPE_p_jli__NodeBuilder);
   }
   
-  result = ((jli::NodeBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17133,11 +16932,8 @@ static int _wrap_NodeState_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("NodeState_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__NodeState);
   }
   
-  result = ((jli::NodeState const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::NodeState const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17217,11 +17013,8 @@ static int _wrap_NodeState_getType(lua_State* L) {
     SWIG_fail_ptr("NodeState_getType",1,SWIGTYPE_p_jli__NodeState);
   }
   
-  result = ((jli::NodeState const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeState const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17267,12 +17060,11 @@ static int _wrap_NodeState_update(lua_State* L) {
   jli::NodeState *arg1 = (jli::NodeState *) 0 ;
   jli::Node *arg2 = (jli::Node *) 0 ;
   f32 arg3 ;
-  f32 *argp3 ;
   
   SWIG_check_num_args("jli::NodeState::update",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeState::update",1,"jli::NodeState *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::NodeState::update",2,"jli::Node *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::NodeState::update",3,"f32");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::NodeState::update",3,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__NodeState,0))){
     SWIG_fail_ptr("NodeState_update",1,SWIGTYPE_p_jli__NodeState);
@@ -17283,12 +17075,7 @@ static int _wrap_NodeState_update(lua_State* L) {
     SWIG_fail_ptr("NodeState_update",2,SWIGTYPE_p_jli__Node);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("NodeState_update",3,SWIGTYPE_p_f32);
-  }
-  arg3 = *argp3;
-  
+  arg3 = (f32)lua_tonumber(L, 3);
   (arg1)->update(arg2,arg3);
   
   return SWIG_arg;
@@ -17492,11 +17279,8 @@ static int _wrap_NodeStateBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("NodeStateBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__NodeStateBuilder);
   }
   
-  result = ((jli::NodeStateBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::NodeStateBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17552,11 +17336,8 @@ static int _wrap_NodeStateBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("NodeStateBuilder_getObjectType",1,SWIGTYPE_p_jli__NodeStateBuilder);
   }
   
-  result = ((jli::NodeStateBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeStateBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17603,11 +17384,8 @@ static int _wrap_NodeStateBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("NodeStateBuilder_getType",1,SWIGTYPE_p_jli__NodeStateBuilder);
   }
   
-  result = ((jli::NodeStateBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeStateBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -18287,11 +18065,8 @@ static int _wrap_NodeStateMachine_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("NodeStateMachine_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__NodeStateMachine);
   }
   
-  result = ((jli::NodeStateMachine const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::NodeStateMachine const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -18371,11 +18146,8 @@ static int _wrap_NodeStateMachine_getType(lua_State* L) {
     SWIG_fail_ptr("NodeStateMachine_getType",1,SWIGTYPE_p_jli__NodeStateMachine);
   }
   
-  result = ((jli::NodeStateMachine const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeStateMachine const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -18453,11 +18225,8 @@ static int _wrap_NodeStateMachineBuilder_calculateSerializeBufferSize(lua_State*
     SWIG_fail_ptr("NodeStateMachineBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__NodeStateMachineBuilder);
   }
   
-  result = ((jli::NodeStateMachineBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::NodeStateMachineBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -18513,11 +18282,8 @@ static int _wrap_NodeStateMachineBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("NodeStateMachineBuilder_getObjectType",1,SWIGTYPE_p_jli__NodeStateMachineBuilder);
   }
   
-  result = ((jli::NodeStateMachineBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeStateMachineBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -18564,11 +18330,8 @@ static int _wrap_NodeStateMachineBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("NodeStateMachineBuilder_getType",1,SWIGTYPE_p_jli__NodeStateMachineBuilder);
   }
   
-  result = ((jli::NodeStateMachineBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::NodeStateMachineBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19248,11 +19011,8 @@ static int _wrap_ParticleEmitter_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("ParticleEmitter_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__ParticleEmitter);
   }
   
-  result = ((jli::ParticleEmitter const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::ParticleEmitter const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19332,11 +19092,8 @@ static int _wrap_ParticleEmitter_getType(lua_State* L) {
     SWIG_fail_ptr("ParticleEmitter_getType",1,SWIGTYPE_p_jli__ParticleEmitter);
   }
   
-  result = ((jli::ParticleEmitter const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ParticleEmitter const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19414,11 +19171,8 @@ static int _wrap_ParticleEmitterBuilder_calculateSerializeBufferSize(lua_State* 
     SWIG_fail_ptr("ParticleEmitterBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__ParticleEmitterBuilder);
   }
   
-  result = ((jli::ParticleEmitterBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::ParticleEmitterBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19474,11 +19228,8 @@ static int _wrap_ParticleEmitterBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("ParticleEmitterBuilder_getObjectType",1,SWIGTYPE_p_jli__ParticleEmitterBuilder);
   }
   
-  result = ((jli::ParticleEmitterBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ParticleEmitterBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19525,11 +19276,8 @@ static int _wrap_ParticleEmitterBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("ParticleEmitterBuilder_getType",1,SWIGTYPE_p_jli__ParticleEmitterBuilder);
   }
   
-  result = ((jli::ParticleEmitterBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ParticleEmitterBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -20209,11 +19957,8 @@ static int _wrap_PhysicsContact_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("PhysicsContact_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsContact);
   }
   
-  result = ((jli::PhysicsContact const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsContact const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -20293,11 +20038,8 @@ static int _wrap_PhysicsContact_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsContact_getType",1,SWIGTYPE_p_jli__PhysicsContact);
   }
   
-  result = ((jli::PhysicsContact const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsContact const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -20375,11 +20117,8 @@ static int _wrap_PhysicsContactBuilder_calculateSerializeBufferSize(lua_State* L
     SWIG_fail_ptr("PhysicsContactBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsContactBuilder);
   }
   
-  result = ((jli::PhysicsContactBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsContactBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -20435,11 +20174,8 @@ static int _wrap_PhysicsContactBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("PhysicsContactBuilder_getObjectType",1,SWIGTYPE_p_jli__PhysicsContactBuilder);
   }
   
-  result = ((jli::PhysicsContactBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsContactBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -20486,11 +20222,8 @@ static int _wrap_PhysicsContactBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsContactBuilder_getType",1,SWIGTYPE_p_jli__PhysicsContactBuilder);
   }
   
-  result = ((jli::PhysicsContactBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsContactBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21170,11 +20903,8 @@ static int _wrap_PhysicsField_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("PhysicsField_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsField);
   }
   
-  result = ((jli::PhysicsField const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsField const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21254,11 +20984,8 @@ static int _wrap_PhysicsField_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsField_getType",1,SWIGTYPE_p_jli__PhysicsField);
   }
   
-  result = ((jli::PhysicsField const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsField const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21336,11 +21063,8 @@ static int _wrap_PhysicsFieldBuilder_calculateSerializeBufferSize(lua_State* L) 
     SWIG_fail_ptr("PhysicsFieldBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsFieldBuilder);
   }
   
-  result = ((jli::PhysicsFieldBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsFieldBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21396,11 +21120,8 @@ static int _wrap_PhysicsFieldBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("PhysicsFieldBuilder_getObjectType",1,SWIGTYPE_p_jli__PhysicsFieldBuilder);
   }
   
-  result = ((jli::PhysicsFieldBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsFieldBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21447,11 +21168,8 @@ static int _wrap_PhysicsFieldBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsFieldBuilder_getType",1,SWIGTYPE_p_jli__PhysicsFieldBuilder);
   }
   
-  result = ((jli::PhysicsFieldBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsFieldBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22131,11 +21849,8 @@ static int _wrap_PhysicsShape_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("PhysicsShape_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsShape);
   }
   
-  result = ((jli::PhysicsShape const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsShape const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22215,11 +21930,8 @@ static int _wrap_PhysicsShape_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsShape_getType",1,SWIGTYPE_p_jli__PhysicsShape);
   }
   
-  result = ((jli::PhysicsShape const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsShape const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22297,11 +22009,8 @@ static int _wrap_PhysicsShapeBuilder_calculateSerializeBufferSize(lua_State* L) 
     SWIG_fail_ptr("PhysicsShapeBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsShapeBuilder);
   }
   
-  result = ((jli::PhysicsShapeBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsShapeBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22357,11 +22066,8 @@ static int _wrap_PhysicsShapeBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("PhysicsShapeBuilder_getObjectType",1,SWIGTYPE_p_jli__PhysicsShapeBuilder);
   }
   
-  result = ((jli::PhysicsShapeBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsShapeBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22408,11 +22114,8 @@ static int _wrap_PhysicsShapeBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsShapeBuilder_getType",1,SWIGTYPE_p_jli__PhysicsShapeBuilder);
   }
   
-  result = ((jli::PhysicsShapeBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsShapeBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23092,11 +22795,8 @@ static int _wrap_PhysicsWorld_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("PhysicsWorld_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsWorld);
   }
   
-  result = ((jli::PhysicsWorld const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsWorld const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23176,11 +22876,8 @@ static int _wrap_PhysicsWorld_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsWorld_getType",1,SWIGTYPE_p_jli__PhysicsWorld);
   }
   
-  result = ((jli::PhysicsWorld const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsWorld const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23258,11 +22955,8 @@ static int _wrap_PhysicsWorldBuilder_calculateSerializeBufferSize(lua_State* L) 
     SWIG_fail_ptr("PhysicsWorldBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__PhysicsWorldBuilder);
   }
   
-  result = ((jli::PhysicsWorldBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::PhysicsWorldBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23318,11 +23012,8 @@ static int _wrap_PhysicsWorldBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("PhysicsWorldBuilder_getObjectType",1,SWIGTYPE_p_jli__PhysicsWorldBuilder);
   }
   
-  result = ((jli::PhysicsWorldBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsWorldBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23369,11 +23060,8 @@ static int _wrap_PhysicsWorldBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("PhysicsWorldBuilder_getType",1,SWIGTYPE_p_jli__PhysicsWorldBuilder);
   }
   
-  result = ((jli::PhysicsWorldBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::PhysicsWorldBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -24053,11 +23741,8 @@ static int _wrap_Resource_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Resource_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Resource);
   }
   
-  result = ((jli::Resource const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Resource const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -24137,11 +23822,8 @@ static int _wrap_Resource_getType(lua_State* L) {
     SWIG_fail_ptr("Resource_getType",1,SWIGTYPE_p_jli__Resource);
   }
   
-  result = ((jli::Resource const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Resource const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -24219,11 +23901,8 @@ static int _wrap_ResourceBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("ResourceBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__ResourceBuilder);
   }
   
-  result = ((jli::ResourceBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::ResourceBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -24279,11 +23958,8 @@ static int _wrap_ResourceBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("ResourceBuilder_getObjectType",1,SWIGTYPE_p_jli__ResourceBuilder);
   }
   
-  result = ((jli::ResourceBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ResourceBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -24330,11 +24006,8 @@ static int _wrap_ResourceBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("ResourceBuilder_getType",1,SWIGTYPE_p_jli__ResourceBuilder);
   }
   
-  result = ((jli::ResourceBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::ResourceBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25014,11 +24687,8 @@ static int _wrap_RigidPhysicsBody_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("RigidPhysicsBody_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__RigidPhysicsBody);
   }
   
-  result = ((jli::RigidPhysicsBody const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::RigidPhysicsBody const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25098,11 +24768,8 @@ static int _wrap_RigidPhysicsBody_getType(lua_State* L) {
     SWIG_fail_ptr("RigidPhysicsBody_getType",1,SWIGTYPE_p_jli__RigidPhysicsBody);
   }
   
-  result = ((jli::RigidPhysicsBody const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::RigidPhysicsBody const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25180,11 +24847,8 @@ static int _wrap_RigidPhysicsBodyBuilder_calculateSerializeBufferSize(lua_State*
     SWIG_fail_ptr("RigidPhysicsBodyBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__RigidPhysicsBodyBuilder);
   }
   
-  result = ((jli::RigidPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::RigidPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25240,11 +24904,8 @@ static int _wrap_RigidPhysicsBodyBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("RigidPhysicsBodyBuilder_getObjectType",1,SWIGTYPE_p_jli__RigidPhysicsBodyBuilder);
   }
   
-  result = ((jli::RigidPhysicsBodyBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::RigidPhysicsBodyBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25291,11 +24952,8 @@ static int _wrap_RigidPhysicsBodyBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("RigidPhysicsBodyBuilder_getType",1,SWIGTYPE_p_jli__RigidPhysicsBodyBuilder);
   }
   
-  result = ((jli::RigidPhysicsBodyBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::RigidPhysicsBodyBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25975,11 +25633,8 @@ static int _wrap_Scene_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Scene_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Scene);
   }
   
-  result = ((jli::Scene const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Scene const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -26059,11 +25714,8 @@ static int _wrap_Scene_getType(lua_State* L) {
     SWIG_fail_ptr("Scene_getType",1,SWIGTYPE_p_jli__Scene);
   }
   
-  result = ((jli::Scene const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Scene const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -26193,11 +25845,8 @@ static int _wrap_SceneBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("SceneBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SceneBuilder);
   }
   
-  result = ((jli::SceneBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SceneBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -26253,11 +25902,8 @@ static int _wrap_SceneBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("SceneBuilder_getObjectType",1,SWIGTYPE_p_jli__SceneBuilder);
   }
   
-  result = ((jli::SceneBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -26304,11 +25950,8 @@ static int _wrap_SceneBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("SceneBuilder_getType",1,SWIGTYPE_p_jli__SceneBuilder);
   }
   
-  result = ((jli::SceneBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -26988,11 +26631,8 @@ static int _wrap_SceneState_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("SceneState_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SceneState);
   }
   
-  result = ((jli::SceneState const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SceneState const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -27072,11 +26712,8 @@ static int _wrap_SceneState_getType(lua_State* L) {
     SWIG_fail_ptr("SceneState_getType",1,SWIGTYPE_p_jli__SceneState);
   }
   
-  result = ((jli::SceneState const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneState const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -27122,12 +26759,11 @@ static int _wrap_SceneState_update(lua_State* L) {
   jli::SceneState *arg1 = (jli::SceneState *) 0 ;
   jli::Scene *arg2 = (jli::Scene *) 0 ;
   f32 arg3 ;
-  f32 *argp3 ;
   
   SWIG_check_num_args("jli::SceneState::update",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneState::update",1,"jli::SceneState *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::SceneState::update",2,"jli::Scene *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::SceneState::update",3,"f32");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::SceneState::update",3,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SceneState,0))){
     SWIG_fail_ptr("SceneState_update",1,SWIGTYPE_p_jli__SceneState);
@@ -27138,12 +26774,7 @@ static int _wrap_SceneState_update(lua_State* L) {
     SWIG_fail_ptr("SceneState_update",2,SWIGTYPE_p_jli__Scene);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("SceneState_update",3,SWIGTYPE_p_f32);
-  }
-  arg3 = *argp3;
-  
+  arg3 = (f32)lua_tonumber(L, 3);
   (arg1)->update(arg2,arg3);
   
   return SWIG_arg;
@@ -27347,11 +26978,8 @@ static int _wrap_SceneStateBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("SceneStateBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SceneStateBuilder);
   }
   
-  result = ((jli::SceneStateBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SceneStateBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -27407,11 +27035,8 @@ static int _wrap_SceneStateBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("SceneStateBuilder_getObjectType",1,SWIGTYPE_p_jli__SceneStateBuilder);
   }
   
-  result = ((jli::SceneStateBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneStateBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -27458,11 +27083,8 @@ static int _wrap_SceneStateBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("SceneStateBuilder_getType",1,SWIGTYPE_p_jli__SceneStateBuilder);
   }
   
-  result = ((jli::SceneStateBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneStateBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28142,11 +27764,8 @@ static int _wrap_SceneStateMachine_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("SceneStateMachine_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SceneStateMachine);
   }
   
-  result = ((jli::SceneStateMachine const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SceneStateMachine const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28226,11 +27845,8 @@ static int _wrap_SceneStateMachine_getType(lua_State* L) {
     SWIG_fail_ptr("SceneStateMachine_getType",1,SWIGTYPE_p_jli__SceneStateMachine);
   }
   
-  result = ((jli::SceneStateMachine const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneStateMachine const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28308,11 +27924,8 @@ static int _wrap_SceneStateMachineBuilder_calculateSerializeBufferSize(lua_State
     SWIG_fail_ptr("SceneStateMachineBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SceneStateMachineBuilder);
   }
   
-  result = ((jli::SceneStateMachineBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SceneStateMachineBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28368,11 +27981,8 @@ static int _wrap_SceneStateMachineBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("SceneStateMachineBuilder_getObjectType",1,SWIGTYPE_p_jli__SceneStateMachineBuilder);
   }
   
-  result = ((jli::SceneStateMachineBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneStateMachineBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28419,11 +28029,8 @@ static int _wrap_SceneStateMachineBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("SceneStateMachineBuilder_getType",1,SWIGTYPE_p_jli__SceneStateMachineBuilder);
   }
   
-  result = ((jli::SceneStateMachineBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SceneStateMachineBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -29103,11 +28710,8 @@ static int _wrap_SoftPhysicsBody_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("SoftPhysicsBody_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SoftPhysicsBody);
   }
   
-  result = ((jli::SoftPhysicsBody const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SoftPhysicsBody const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -29187,11 +28791,8 @@ static int _wrap_SoftPhysicsBody_getType(lua_State* L) {
     SWIG_fail_ptr("SoftPhysicsBody_getType",1,SWIGTYPE_p_jli__SoftPhysicsBody);
   }
   
-  result = ((jli::SoftPhysicsBody const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SoftPhysicsBody const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -29269,11 +28870,8 @@ static int _wrap_SoftPhysicsBodyBuilder_calculateSerializeBufferSize(lua_State* 
     SWIG_fail_ptr("SoftPhysicsBodyBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SoftPhysicsBodyBuilder);
   }
   
-  result = ((jli::SoftPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SoftPhysicsBodyBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -29329,11 +28927,8 @@ static int _wrap_SoftPhysicsBodyBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("SoftPhysicsBodyBuilder_getObjectType",1,SWIGTYPE_p_jli__SoftPhysicsBodyBuilder);
   }
   
-  result = ((jli::SoftPhysicsBodyBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SoftPhysicsBodyBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -29380,11 +28975,8 @@ static int _wrap_SoftPhysicsBodyBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("SoftPhysicsBodyBuilder_getType",1,SWIGTYPE_p_jli__SoftPhysicsBodyBuilder);
   }
   
-  result = ((jli::SoftPhysicsBodyBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SoftPhysicsBodyBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30064,11 +29656,8 @@ static int _wrap_Sound_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("Sound_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__Sound);
   }
   
-  result = ((jli::Sound const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::Sound const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30148,11 +29737,8 @@ static int _wrap_Sound_getType(lua_State* L) {
     SWIG_fail_ptr("Sound_getType",1,SWIGTYPE_p_jli__Sound);
   }
   
-  result = ((jli::Sound const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::Sound const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30230,11 +29816,8 @@ static int _wrap_SoundBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("SoundBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__SoundBuilder);
   }
   
-  result = ((jli::SoundBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::SoundBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30290,11 +29873,8 @@ static int _wrap_SoundBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("SoundBuilder_getObjectType",1,SWIGTYPE_p_jli__SoundBuilder);
   }
   
-  result = ((jli::SoundBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SoundBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30341,11 +29921,8 @@ static int _wrap_SoundBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("SoundBuilder_getType",1,SWIGTYPE_p_jli__SoundBuilder);
   }
   
-  result = ((jli::SoundBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::SoundBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30408,11 +29985,8 @@ static int _wrap_TextureBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("TextureBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__TextureBuilder);
   }
   
-  result = ((jli::TextureBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::TextureBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30468,11 +30042,8 @@ static int _wrap_TextureBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("TextureBuilder_getObjectType",1,SWIGTYPE_p_jli__TextureBuilder);
   }
   
-  result = ((jli::TextureBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::TextureBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30519,11 +30090,8 @@ static int _wrap_TextureBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("TextureBuilder_getType",1,SWIGTYPE_p_jli__TextureBuilder);
   }
   
-  result = ((jli::TextureBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::TextureBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30578,23 +30146,18 @@ static int _wrap_WorldFactory_create__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldFactory *arg1 = (jli::WorldFactory *) 0 ;
   u32 arg2 ;
-  u32 *argp2 ;
   jli::AbstractFactoryObject *result = 0 ;
   
   SWIG_check_num_args("jli::WorldFactory::create",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldFactory::create",1,"jli::WorldFactory *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldFactory::create",2,"u32 const");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::WorldFactory::create",2,"u32 const");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldFactory,0))){
     SWIG_fail_ptr("WorldFactory_create",1,SWIGTYPE_p_jli__WorldFactory);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_u32,0))){
-    SWIG_fail_ptr("WorldFactory_create",2,SWIGTYPE_p_u32);
-  }
-  arg2 = *argp2;
-  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative")
+  arg2 = (u32 const)lua_tonumber(L, 2);
   result = (jli::AbstractFactoryObject *)(arg1)->create(arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
   return SWIG_arg;
@@ -30658,14 +30221,14 @@ static int _wrap_WorldFactory_create(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_u32, 0)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractBuilder, 0)) {
           _v = 0;
         } else {
           _v = 1;
         }
       }
       if (_v) {
-        return _wrap_WorldFactory_create__SWIG_0(L);
+        return _wrap_WorldFactory_create__SWIG_1(L);
       }
     }
   }
@@ -30681,15 +30244,10 @@ static int _wrap_WorldFactory_create(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractBuilder, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
-        return _wrap_WorldFactory_create__SWIG_1(L);
+        return _wrap_WorldFactory_create__SWIG_0(L);
       }
     }
   }
@@ -30962,11 +30520,8 @@ static int _wrap_WorldFactory_size(lua_State* L) {
     SWIG_fail_ptr("WorldFactory_size",1,SWIGTYPE_p_jli__WorldFactory);
   }
   
-  result = (arg1)->size();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)(arg1)->size();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -30981,28 +30536,20 @@ static int _wrap_WorldFactory_instances__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldFactory *arg1 = (jli::WorldFactory *) 0 ;
   u32 arg2 ;
-  u32 *argp2 ;
   s32 result;
   
   SWIG_check_num_args("jli::WorldFactory::instances",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldFactory::instances",1,"jli::WorldFactory *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldFactory::instances",2,"u32 const");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::WorldFactory::instances",2,"u32 const");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldFactory,0))){
     SWIG_fail_ptr("WorldFactory_instances",1,SWIGTYPE_p_jli__WorldFactory);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_u32,0))){
-    SWIG_fail_ptr("WorldFactory_instances",2,SWIGTYPE_p_u32);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->instances(arg2);
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative")
+  arg2 = (u32 const)lua_tonumber(L, 2);
+  result = (s32)(arg1)->instances(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -31032,11 +30579,8 @@ static int _wrap_WorldFactory_instances__SWIG_1(lua_State* L) {
     SWIG_fail_ptr("WorldFactory_instances",2,SWIGTYPE_p_jli__AbstractFactoryObject);
   }
   
-  result = (arg1)->instances(arg2);
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)(arg1)->instances(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -31067,14 +30611,14 @@ static int _wrap_WorldFactory_instances(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_u32, 0)) {
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractFactoryObject, 0)) {
           _v = 0;
         } else {
           _v = 1;
         }
       }
       if (_v) {
-        return _wrap_WorldFactory_instances__SWIG_0(L);
+        return _wrap_WorldFactory_instances__SWIG_1(L);
       }
     }
   }
@@ -31090,15 +30634,10 @@ static int _wrap_WorldFactory_instances(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractFactoryObject, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
-        return _wrap_WorldFactory_instances__SWIG_1(L);
+        return _wrap_WorldFactory_instances__SWIG_0(L);
       }
     }
   }
@@ -31115,23 +30654,18 @@ static int _wrap_WorldFactory_get(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldFactory *arg1 = (jli::WorldFactory *) 0 ;
   u32 arg2 ;
-  u32 *argp2 ;
   jli::AbstractFactoryObject *result = 0 ;
   
   SWIG_check_num_args("jli::WorldFactory::get",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldFactory::get",1,"jli::WorldFactory const *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldFactory::get",2,"u32 const");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::WorldFactory::get",2,"u32 const");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldFactory,0))){
     SWIG_fail_ptr("WorldFactory_get",1,SWIGTYPE_p_jli__WorldFactory);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_u32,0))){
-    SWIG_fail_ptr("WorldFactory_get",2,SWIGTYPE_p_u32);
-  }
-  arg2 = *argp2;
-  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative")
+  arg2 = (u32 const)lua_tonumber(L, 2);
   result = (jli::AbstractFactoryObject *)((jli::WorldFactory const *)arg1)->get(arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
   return SWIG_arg;
@@ -31193,11 +30727,8 @@ static int _wrap_WorldFactory_index(lua_State* L) {
     SWIG_fail_ptr("WorldFactory_index",2,SWIGTYPE_p_jli__AbstractFactoryObject);
   }
   
-  result = ((jli::WorldFactory const *)arg1)->index(arg2);
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::WorldFactory const *)arg1)->index(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -31259,21 +30790,19 @@ static int _wrap_WorldFactory_ctor__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldFactory *arg1 = (jli::WorldFactory *) 0 ;
   u32 *arg2 = 0 ;
+  u32 temp2 ;
   jli::AbstractFactoryObject *result = 0 ;
   
   SWIG_check_num_args("jli::WorldFactory::ctor",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldFactory::ctor",1,"jli::WorldFactory *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldFactory::ctor",2,"u32 const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::WorldFactory::ctor",2,"u32 const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldFactory,0))){
     SWIG_fail_ptr("WorldFactory_ctor",1,SWIGTYPE_p_jli__WorldFactory);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_u32,0))){
-    SWIG_fail_ptr("WorldFactory_ctor",2,SWIGTYPE_p_u32);
-  }
-  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative")
+  temp2=(u32)lua_tonumber(L,2); arg2=&temp2;
   result = (jli::AbstractFactoryObject *)(arg1)->ctor((u32 const &)*arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
   return SWIG_arg;
@@ -31368,30 +30897,6 @@ static int _wrap_WorldFactory_ctor(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_u32, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_WorldFactory_ctor__SWIG_0(L);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__WorldFactory, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
         if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractBuilder, 0)) {
           _v = 0;
         } else {
@@ -31427,6 +30932,25 @@ static int _wrap_WorldFactory_ctor(lua_State* L) {
       }
     }
   }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__WorldFactory, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_WorldFactory_ctor__SWIG_0(L);
+      }
+    }
+  }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'WorldFactory_ctor'\n"
     "  Possible C/C++ prototypes are:\n"
@@ -31441,23 +30965,18 @@ static int _wrap_WorldFactory_create_Internal__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldFactory *arg1 = (jli::WorldFactory *) 0 ;
   u32 arg2 ;
-  u32 *argp2 ;
   jli::AbstractFactoryObject *result = 0 ;
   
   SWIG_check_num_args("jli::WorldFactory::create_Internal",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldFactory::create_Internal",1,"jli::WorldFactory *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldFactory::create_Internal",2,"u32 const");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::WorldFactory::create_Internal",2,"u32 const");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldFactory,0))){
     SWIG_fail_ptr("WorldFactory_create_Internal",1,SWIGTYPE_p_jli__WorldFactory);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_u32,0))){
-    SWIG_fail_ptr("WorldFactory_create_Internal",2,SWIGTYPE_p_u32);
-  }
-  arg2 = *argp2;
-  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative")
+  arg2 = (u32 const)lua_tonumber(L, 2);
   result = (jli::AbstractFactoryObject *)(arg1)->create_Internal(arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
   return SWIG_arg;
@@ -31521,14 +31040,14 @@ static int _wrap_WorldFactory_create_Internal(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_u32, 0)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractBuilder, 0)) {
           _v = 0;
         } else {
           _v = 1;
         }
       }
       if (_v) {
-        return _wrap_WorldFactory_create_Internal__SWIG_0(L);
+        return _wrap_WorldFactory_create_Internal__SWIG_1(L);
       }
     }
   }
@@ -31544,15 +31063,10 @@ static int _wrap_WorldFactory_create_Internal(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_jli__AbstractBuilder, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
-        return _wrap_WorldFactory_create_Internal__SWIG_1(L);
+        return _wrap_WorldFactory_create_Internal__SWIG_0(L);
       }
     }
   }
@@ -31697,8 +31211,8 @@ static int _wrap_WorldFactory_m_ObjectDuplicateMap_set(lua_State* L) {
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btHashMapT_btHashPtr_s32_t,0))){
-    SWIG_fail_ptr("WorldFactory_m_ObjectDuplicateMap_set",2,SWIGTYPE_p_btHashMapT_btHashPtr_s32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btHashMapT_btHashPtr_int_t,0))){
+    SWIG_fail_ptr("WorldFactory_m_ObjectDuplicateMap_set",2,SWIGTYPE_p_btHashMapT_btHashPtr_int_t);
   }
   
   if (arg1) (arg1)->m_ObjectDuplicateMap = *arg2;
@@ -31726,7 +31240,7 @@ static int _wrap_WorldFactory_m_ObjectDuplicateMap_get(lua_State* L) {
   }
   
   result = (jli::WorldFactory::ObjectDuplicateMap *)& ((arg1)->m_ObjectDuplicateMap);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_btHashMapT_btHashPtr_s32_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_btHashMapT_btHashPtr_int_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -31866,70 +31380,6 @@ static swig_lua_class *swig_WorldMySQL_bases[] = {0};
 static const char *swig_WorldMySQL_base_names[] = {0};
 static swig_lua_class _wrap_class_WorldMySQL = { "WorldMySQL", "WorldMySQL", &SWIGTYPE_p_jli__WorldMySQL,_proxy__wrap_new_WorldMySQL, swig_delete_WorldMySQL, swig_WorldMySQL_methods, swig_WorldMySQL_attributes, &swig_WorldMySQL_Sf_SwigStatic, swig_WorldMySQL_meta, swig_WorldMySQL_bases, swig_WorldMySQL_base_names };
 
-static int _wrap_new_WorldInput(lua_State* L) {
-  int SWIG_arg = 0;
-  jli::WorldInput *result = 0 ;
-  
-  SWIG_check_num_args("jli::WorldInput::WorldInput",0,0)
-  result = (jli::WorldInput *)new jli::WorldInput();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__WorldInput,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_WorldInput(void *obj) {
-jli::WorldInput *arg1 = (jli::WorldInput *) obj;
-delete arg1;
-}
-static int _proxy__wrap_new_WorldInput(lua_State *L) {
-    assert(lua_istable(L,1));
-    lua_pushcfunction(L,_wrap_new_WorldInput);
-    assert(!lua_isnil(L,-1));
-    lua_replace(L,1); /* replace our table with real constructor */
-    lua_call(L,lua_gettop(L)-1,1);
-    return 1;
-}
-static swig_lua_attribute swig_WorldInput_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_WorldInput_methods[]= {
-    {0,0}
-};
-static swig_lua_method swig_WorldInput_meta[] = {
-    {0,0}
-};
-
-static swig_lua_attribute swig_WorldInput_Sf_SwigStatic_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_const_info swig_WorldInput_Sf_SwigStatic_constants[]= {
-    {0,0,0,0,0,0}
-};
-static swig_lua_method swig_WorldInput_Sf_SwigStatic_methods[]= {
-    {0,0}
-};
-static swig_lua_class* swig_WorldInput_Sf_SwigStatic_classes[]= {
-    0
-};
-
-static swig_lua_namespace swig_WorldInput_Sf_SwigStatic = {
-    "WorldInput",
-    swig_WorldInput_Sf_SwigStatic_methods,
-    swig_WorldInput_Sf_SwigStatic_attributes,
-    swig_WorldInput_Sf_SwigStatic_constants,
-    swig_WorldInput_Sf_SwigStatic_classes,
-    0
-};
-static swig_lua_class *swig_WorldInput_bases[] = {0};
-static const char *swig_WorldInput_base_names[] = {0};
-static swig_lua_class _wrap_class_WorldInput = { "WorldInput", "WorldInput", &SWIGTYPE_p_jli__WorldInput,_proxy__wrap_new_WorldInput, swig_delete_WorldInput, swig_WorldInput_methods, swig_WorldInput_attributes, &swig_WorldInput_Sf_SwigStatic, swig_WorldInput_meta, swig_WorldInput_bases, swig_WorldInput_base_names };
-
 static int _wrap_new_WorldSound(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldSound *result = 0 ;
@@ -32066,25 +31516,19 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_1(lua_State* L) {
   jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
   char *arg2 = (char *) 0 ;
   f32 arg3 ;
-  f32 *argp3 ;
   bool result;
   
   SWIG_check_num_args("jli::WorldLuaVirtualMachine::execute",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",1,"jli::WorldLuaVirtualMachine *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",2,"char const *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"f32");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
     SWIG_fail_ptr("WorldLuaVirtualMachine_execute",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
   }
   
   arg2 = (char *)lua_tostring(L, 2);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",3,SWIGTYPE_p_f32);
-  }
-  arg3 = *argp3;
-  
+  arg3 = (f32)lua_tonumber(L, 3);
   result = (bool)(arg1)->execute((char const *)arg2,arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
@@ -32178,14 +31622,13 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_4(lua_State* L) {
   char *arg2 = (char *) 0 ;
   jli::Scene *arg3 = (jli::Scene *) 0 ;
   f32 arg4 ;
-  f32 *argp4 ;
   bool result;
   
   SWIG_check_num_args("jli::WorldLuaVirtualMachine::execute",4,4)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",1,"jli::WorldLuaVirtualMachine *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",2,"char const *");
   if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"jli::Scene *");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",4,"f32");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",4,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
     SWIG_fail_ptr("WorldLuaVirtualMachine_execute",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
@@ -32197,12 +31640,7 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_4(lua_State* L) {
     SWIG_fail_ptr("WorldLuaVirtualMachine_execute",3,SWIGTYPE_p_jli__Scene);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",4,SWIGTYPE_p_f32);
-  }
-  arg4 = *argp4;
-  
+  arg4 = (f32)lua_tonumber(L, 4);
   result = (bool)(arg1)->execute((char const *)arg2,arg3,arg4);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
@@ -32303,14 +31741,13 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_7(lua_State* L) {
   char *arg2 = (char *) 0 ;
   jli::Node *arg3 = (jli::Node *) 0 ;
   f32 arg4 ;
-  f32 *argp4 ;
   bool result;
   
   SWIG_check_num_args("jli::WorldLuaVirtualMachine::execute",4,4)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",1,"jli::WorldLuaVirtualMachine *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",2,"char const *");
   if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"jli::Node *");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",4,"f32");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",4,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
     SWIG_fail_ptr("WorldLuaVirtualMachine_execute",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
@@ -32322,12 +31759,7 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_7(lua_State* L) {
     SWIG_fail_ptr("WorldLuaVirtualMachine_execute",3,SWIGTYPE_p_jli__Node);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",4,SWIGTYPE_p_f32);
-  }
-  arg4 = *argp4;
-  
+  arg4 = (f32)lua_tonumber(L, 4);
   result = (bool)(arg1)->execute((char const *)arg2,arg3,arg4);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
@@ -32388,6 +31820,40 @@ fail:
 }
 
 
+static int _wrap_WorldLuaVirtualMachine_execute__SWIG_9(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
+  char *arg2 = (char *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg3 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::WorldLuaVirtualMachine::execute",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",1,"jli::WorldLuaVirtualMachine *");
+  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",2,"char const *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
+    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
+  }
+  
+  arg2 = (char *)lua_tostring(L, 2);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",3,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  result = (bool)(arg1)->execute((char const *)arg2,(btAlignedObjectArray< jli::DeviceTouch * > const &)*arg3);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
   int argc;
   int argv[6]={
@@ -32411,35 +31877,6 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
       }
       if (_v) {
         return _wrap_WorldLuaVirtualMachine_execute__SWIG_0(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__WorldLuaVirtualMachine, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = SWIG_lua_isnilstring(L,argv[1]);
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_f32, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_WorldLuaVirtualMachine_execute__SWIG_1(L);
-        }
       }
     }
   }
@@ -32501,7 +31938,7 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
       }
     }
   }
-  if (argc == 4) {
+  if (argc == 3) {
     int _v;
     {
       void *ptr;
@@ -32518,24 +31955,38 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
       if (_v) {
         {
           void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_jli__Scene, 0)) {
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t, 0)) {
             _v = 0;
           } else {
             _v = 1;
           }
         }
         if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_f32, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_WorldLuaVirtualMachine_execute__SWIG_4(L);
-          }
+          return _wrap_WorldLuaVirtualMachine_execute__SWIG_9(L);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__WorldLuaVirtualMachine, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = SWIG_lua_isnilstring(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_WorldLuaVirtualMachine_execute__SWIG_1(L);
         }
       }
     }
@@ -32604,12 +32055,7 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
         }
         if (_v) {
           {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_f32, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
+            _v = lua_isnumber(L,argv[3]);
           }
           if (_v) {
             return _wrap_WorldLuaVirtualMachine_execute__SWIG_7(L);
@@ -32618,7 +32064,7 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
       }
     }
   }
-  if (argc == 5) {
+  if (argc == 4) {
     int _v;
     {
       void *ptr;
@@ -32643,25 +32089,10 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
         }
         if (_v) {
           {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_jli__Telegram, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
+            _v = lua_isnumber(L,argv[3]);
           }
           if (_v) {
-            {
-              void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_bool, 0)) {
-                _v = 0;
-              } else {
-                _v = 1;
-              }
-            }
-            if (_v) {
-              return _wrap_WorldLuaVirtualMachine_execute__SWIG_5(L);
-            }
+            return _wrap_WorldLuaVirtualMachine_execute__SWIG_4(L);
           }
         }
       }
@@ -32716,6 +32147,55 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
       }
     }
   }
+  if (argc == 5) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__WorldLuaVirtualMachine, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = SWIG_lua_isnilstring(L,argv[1]);
+      }
+      if (_v) {
+        {
+          void *ptr;
+          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_jli__Scene, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
+        }
+        if (_v) {
+          {
+            void *ptr;
+            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_jli__Telegram, 0)) {
+              _v = 0;
+            } else {
+              _v = 1;
+            }
+          }
+          if (_v) {
+            {
+              void *ptr;
+              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_bool, 0)) {
+                _v = 0;
+              } else {
+                _v = 1;
+              }
+            }
+            if (_v) {
+              return _wrap_WorldLuaVirtualMachine_execute__SWIG_5(L);
+            }
+          }
+        }
+      }
+    }
+  }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'WorldLuaVirtualMachine_execute'\n"
     "  Possible C/C++ prototypes are:\n"
@@ -32727,7 +32207,8 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
     "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Scene *,jli::Telegram const &,bool &)\n"
     "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *)\n"
     "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *,f32)\n"
-    "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *,jli::Telegram const &,bool &)\n");
+    "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *,jli::Telegram const &,bool &)\n"
+    "    jli::WorldLuaVirtualMachine::execute(char const *,btAlignedObjectArray< jli::DeviceTouch * > const &)\n");
   lua_error(L);return 0;
 }
 
@@ -33410,11 +32891,8 @@ static int _wrap_WorldStateMachine_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("WorldStateMachine_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__WorldStateMachine);
   }
   
-  result = ((jli::WorldStateMachine const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::WorldStateMachine const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -33494,11 +32972,8 @@ static int _wrap_WorldStateMachine_getType(lua_State* L) {
     SWIG_fail_ptr("WorldStateMachine_getType",1,SWIGTYPE_p_jli__WorldStateMachine);
   }
   
-  result = ((jli::WorldStateMachine const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::WorldStateMachine const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -34193,11 +33668,8 @@ static int _wrap_WorldState_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("WorldState_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__WorldState);
   }
   
-  result = ((jli::WorldState const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::WorldState const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -34277,11 +33749,8 @@ static int _wrap_WorldState_getType(lua_State* L) {
     SWIG_fail_ptr("WorldState_getType",1,SWIGTYPE_p_jli__WorldState);
   }
   
-  result = ((jli::WorldState const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::WorldState const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -34323,24 +33792,18 @@ static int _wrap_WorldState_update(lua_State* L) {
   jli::WorldState *arg1 = (jli::WorldState *) 0 ;
   void *arg2 = (void *) 0 ;
   f32 arg3 ;
-  f32 *argp3 ;
   
   SWIG_check_num_args("jli::WorldState::update",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::update",1,"jli::WorldState *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::WorldState::update",2,"void *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::WorldState::update",3,"f32");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::WorldState::update",3,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
     SWIG_fail_ptr("WorldState_update",1,SWIGTYPE_p_jli__WorldState);
   }
   
   arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"WorldState_update");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("WorldState_update",3,SWIGTYPE_p_f32);
-  }
-  arg3 = *argp3;
-  
+  arg3 = (f32)lua_tonumber(L, 3);
   (arg1)->update(arg2,arg3);
   
   return SWIG_arg;
@@ -34463,6 +33926,126 @@ fail:
 }
 
 
+static int _wrap_WorldState_touchDown(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldState *arg1 = (jli::WorldState *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::WorldState::touchDown",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchDown",1,"jli::WorldState *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchDown",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
+    SWIG_fail_ptr("WorldState_touchDown",1,SWIGTYPE_p_jli__WorldState);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("WorldState_touchDown",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchDown((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_touchUp(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldState *arg1 = (jli::WorldState *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::WorldState::touchUp",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchUp",1,"jli::WorldState *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchUp",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
+    SWIG_fail_ptr("WorldState_touchUp",1,SWIGTYPE_p_jli__WorldState);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("WorldState_touchUp",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchUp((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_touchMove(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldState *arg1 = (jli::WorldState *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::WorldState::touchMove",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchMove",1,"jli::WorldState *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchMove",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
+    SWIG_fail_ptr("WorldState_touchMove",1,SWIGTYPE_p_jli__WorldState);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("WorldState_touchMove",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchMove((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_touchCancelled(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldState *arg1 = (jli::WorldState *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::WorldState::touchCancelled",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchCancelled",1,"jli::WorldState *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchCancelled",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
+    SWIG_fail_ptr("WorldState_touchCancelled",1,SWIGTYPE_p_jli__WorldState);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("WorldState_touchCancelled",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchCancelled((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldState(void *obj) {
 jli::WorldState *arg1 = (jli::WorldState *) obj;
 delete arg1;
@@ -34493,6 +34076,10 @@ static swig_lua_method swig_WorldState_methods[]= {
     { "onMessage", _wrap_WorldState_onMessage},
     { "setName", _wrap_WorldState_setName},
     { "getName", _wrap_WorldState_getName},
+    { "touchDown", _wrap_WorldState_touchDown},
+    { "touchUp", _wrap_WorldState_touchUp},
+    { "touchMove", _wrap_WorldState_touchMove},
+    { "touchCancelled", _wrap_WorldState_touchCancelled},
     {0,0}
 };
 static swig_lua_method swig_WorldState_meta[] = {
@@ -34638,30 +34225,6 @@ fail:
 }
 
 
-static int _wrap_World_getWorldInput(lua_State* L) {
-  int SWIG_arg = 0;
-  jli::World *arg1 = (jli::World *) 0 ;
-  jli::WorldInput *result = 0 ;
-  
-  SWIG_check_num_args("jli::World::getWorldInput",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::getWorldInput",1,"jli::World const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
-    SWIG_fail_ptr("World_getWorldInput",1,SWIGTYPE_p_jli__World);
-  }
-  
-  result = (jli::WorldInput *)((jli::World const *)arg1)->getWorldInput();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__WorldInput,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_World_getWorldSound(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
@@ -34764,6 +34327,126 @@ fail:
 }
 
 
+static int _wrap_World_touchDown(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::World *arg1 = (jli::World *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::World::touchDown",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchDown",1,"jli::World *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchDown",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
+    SWIG_fail_ptr("World_touchDown",1,SWIGTYPE_p_jli__World);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("World_touchDown",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchDown((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_World_touchUp(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::World *arg1 = (jli::World *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::World::touchUp",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchUp",1,"jli::World *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchUp",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
+    SWIG_fail_ptr("World_touchUp",1,SWIGTYPE_p_jli__World);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("World_touchUp",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchUp((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_World_touchMove(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::World *arg1 = (jli::World *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::World::touchMove",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchMove",1,"jli::World *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchMove",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
+    SWIG_fail_ptr("World_touchMove",1,SWIGTYPE_p_jli__World);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("World_touchMove",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchMove((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_World_touchCancelled(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::World *arg1 = (jli::World *) 0 ;
+  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  
+  SWIG_check_num_args("jli::World::touchCancelled",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchCancelled",1,"jli::World *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchCancelled",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
+    SWIG_fail_ptr("World_touchCancelled",1,SWIGTYPE_p_jli__World);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
+    SWIG_fail_ptr("World_touchCancelled",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  }
+  
+  (arg1)->touchCancelled((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_World_addCamera(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
@@ -34828,22 +34511,16 @@ static int _wrap_World_update(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
   f32 arg2 ;
-  f32 *argp2 ;
   
   SWIG_check_num_args("jli::World::update",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::update",1,"jli::World *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::update",2,"f32");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::World::update",2,"f32");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
     SWIG_fail_ptr("World_update",1,SWIGTYPE_p_jli__World);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_f32,0))){
-    SWIG_fail_ptr("World_update",2,SWIGTYPE_p_f32);
-  }
-  arg2 = *argp2;
-  
+  arg2 = (f32)lua_tonumber(L, 2);
   (arg1)->update(arg2);
   
   return SWIG_arg;
@@ -34935,11 +34612,14 @@ static swig_lua_attribute swig_World_attributes[] = {
 static swig_lua_method swig_World_methods[]= {
     { "getWorldFactory", _wrap_World_getWorldFactory},
     { "getWorldMySQL", _wrap_World_getWorldMySQL},
-    { "getWorldInput", _wrap_World_getWorldInput},
     { "getWorldSound", _wrap_World_getWorldSound},
     { "getWorldLuaVirtualMachine", _wrap_World_getWorldLuaVirtualMachine},
     { "getWorldClock", _wrap_World_getWorldClock},
     { "pushState", _wrap_World_pushState},
+    { "touchDown", _wrap_World_touchDown},
+    { "touchUp", _wrap_World_touchUp},
+    { "touchMove", _wrap_World_touchMove},
+    { "touchCancelled", _wrap_World_touchCancelled},
     { "addCamera", _wrap_World_addCamera},
     { "removeCamera", _wrap_World_removeCamera},
     { "update", _wrap_World_update},
@@ -34993,11 +34673,8 @@ static int _wrap_WorldStateBuilder_calculateSerializeBufferSize(lua_State* L) {
     SWIG_fail_ptr("WorldStateBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__WorldStateBuilder);
   }
   
-  result = ((jli::WorldStateBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::WorldStateBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35053,11 +34730,8 @@ static int _wrap_WorldStateBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("WorldStateBuilder_getObjectType",1,SWIGTYPE_p_jli__WorldStateBuilder);
   }
   
-  result = ((jli::WorldStateBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::WorldStateBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35104,11 +34778,8 @@ static int _wrap_WorldStateBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("WorldStateBuilder_getType",1,SWIGTYPE_p_jli__WorldStateBuilder);
   }
   
-  result = ((jli::WorldStateBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::WorldStateBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35171,11 +34842,8 @@ static int _wrap_WorldStateMachineBuilder_calculateSerializeBufferSize(lua_State
     SWIG_fail_ptr("WorldStateMachineBuilder_calculateSerializeBufferSize",1,SWIGTYPE_p_jli__WorldStateMachineBuilder);
   }
   
-  result = ((jli::WorldStateMachineBuilder const *)arg1)->calculateSerializeBufferSize();
-  {
-    s32 * resultptr = new s32((const s32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_s32,1); SWIG_arg++;
-  }
+  result = (s32)((jli::WorldStateMachineBuilder const *)arg1)->calculateSerializeBufferSize();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35231,11 +34899,8 @@ static int _wrap_WorldStateMachineBuilder_getObjectType(lua_State* L) {
     SWIG_fail_ptr("WorldStateMachineBuilder_getObjectType",1,SWIGTYPE_p_jli__WorldStateMachineBuilder);
   }
   
-  result = ((jli::WorldStateMachineBuilder const *)arg1)->getObjectType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::WorldStateMachineBuilder const *)arg1)->getObjectType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35282,11 +34947,8 @@ static int _wrap_WorldStateMachineBuilder_getType(lua_State* L) {
     SWIG_fail_ptr("WorldStateMachineBuilder_getType",1,SWIGTYPE_p_jli__WorldStateMachineBuilder);
   }
   
-  result = ((jli::WorldStateMachineBuilder const *)arg1)->getType();
-  {
-    u32 * resultptr = new u32((const u32 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_u32,1); SWIG_arg++;
-  }
+  result = (u32)((jli::WorldStateMachineBuilder const *)arg1)->getType();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35472,7 +35134,6 @@ static swig_lua_class* swig_SwigModule_classes[]= {
 &_wrap_class_TextureBuilder,
 &_wrap_class_WorldFactory,
 &_wrap_class_WorldMySQL,
-&_wrap_class_WorldInput,
 &_wrap_class_WorldSound,
 &_wrap_class_WorldLuaVirtualMachine,
 &_wrap_class_WorldStateMachine,
@@ -36003,19 +35664,20 @@ static swig_type_info _swigt__p_btAlignedObjectArrayT_btPersistentManifold_p_t =
 static swig_type_info _swigt__p_btAlignedObjectArrayT_btQuantizedBvhNode_t = {"_p_btAlignedObjectArrayT_btQuantizedBvhNode_t", "QuantizedNodeArray *|btAlignedObjectArray< btQuantizedBvhNode > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btAlignedObjectArrayT_btSolverConstraint_t = {"_p_btAlignedObjectArrayT_btSolverConstraint_t", "btConstraintArray *|btAlignedObjectArray< btSolverConstraint > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t = {"_p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t", "btAlignedObjectArray< jli::AbstractFactoryObject * > *|jli::WorldFactory::ObjectList *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t = {"_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t", "btAlignedObjectArray< jli::DeviceTouch * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btConstraintRow = {"_p_btConstraintRow", "btConstraintRow *|PfxConstraintRow *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btDbvtAabbMm = {"_p_btDbvtAabbMm", "btDbvtAabbMm *|btDbvtVolume *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btHashMapT_btHashInt_btTriangleInfo_t = {"_p_btHashMapT_btHashInt_btTriangleInfo_t", "btInternalTriangleInfoMap *|btHashMap< btHashInt,btTriangleInfo > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_btHashMapT_btHashPtr_s32_t = {"_p_btHashMapT_btHashPtr_s32_t", "btHashMap< btHashPtr,s32 > *|jli::WorldFactory::ObjectDuplicateMap *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_btHashMapT_btHashPtr_int_t = {"_p_btHashMapT_btHashPtr_int_t", "jli::WorldFactory::ObjectDuplicateMap *|btHashMap< btHashPtr,int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btSerializer = {"_p_btSerializer", "btSerializer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btDefaultSerializer = {"_p_btDefaultSerializer", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_char = {"_p_char", "char *|GLchar *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_f32 = {"_p_f32", "f32 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_char = {"_p_char", "char *|GLchar *|s8 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_double = {"_p_double", "f64 *|double *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_void__void = {"_p_f_p_void__void", "btAlignedFreeFunc *|btFreeFunc *|void (*)(void *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_size_t__p_void = {"_p_f_size_t__p_void", "void *(*)(size_t)|btAllocFunc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_size_t_int__p_void = {"_p_f_size_t_int__p_void", "btAlignedAllocFunc *|void *(*)(size_t,int)", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_float = {"_p_float", "GLclampf *|float *|GLfloat *|btScalar *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int = {"_p_int", "size_type *|GLsizei *|int *|FMOD_BOOL *|GLclampx *|GLfixed *|GLint *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_float = {"_p_float", "f32 *|GLclampf *|float *|GLfloat *|btScalar *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int = {"_p_int", "size_type *|GLsizei *|int *|FMOD_BOOL *|GLclampx *|GLfixed *|s32 *|GLint *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int64_t = {"_p_int64_t", "int64_t *|GLint64 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_jli__AbstractBuilder = {"_p_jli__AbstractBuilder", "jli::AbstractBuilder *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_jli__AbstractDecorator = {"_p_jli__AbstractDecorator", "jli::AbstractDecorator *", 0, 0, (void*)0, 0};
@@ -36081,7 +35743,6 @@ static swig_type_info _swigt__p_jli__Texture = {"_p_jli__Texture", "jli::Texture
 static swig_type_info _swigt__p_jli__TextureBuilder = {"_p_jli__TextureBuilder", "jli::TextureBuilder *", 0, 0, (void*)&_wrap_class_TextureBuilder, 0};
 static swig_type_info _swigt__p_jli__World = {"_p_jli__World", "jli::World *", 0, 0, (void*)&_wrap_class_World, 0};
 static swig_type_info _swigt__p_jli__WorldFactory = {"_p_jli__WorldFactory", "jli::WorldFactory *", 0, 0, (void*)&_wrap_class_WorldFactory, 0};
-static swig_type_info _swigt__p_jli__WorldInput = {"_p_jli__WorldInput", "jli::WorldInput *", 0, 0, (void*)&_wrap_class_WorldInput, 0};
 static swig_type_info _swigt__p_jli__WorldLuaVirtualMachine = {"_p_jli__WorldLuaVirtualMachine", "jli::WorldLuaVirtualMachine *", 0, 0, (void*)&_wrap_class_WorldLuaVirtualMachine, 0};
 static swig_type_info _swigt__p_jli__WorldMySQL = {"_p_jli__WorldMySQL", "jli::WorldMySQL *", 0, 0, (void*)&_wrap_class_WorldMySQL, 0};
 static swig_type_info _swigt__p_jli__WorldSound = {"_p_jli__WorldSound", "jli::WorldSound *", 0, 0, (void*)&_wrap_class_WorldSound, 0};
@@ -36090,15 +35751,15 @@ static swig_type_info _swigt__p_jli__WorldStateBuilder = {"_p_jli__WorldStateBui
 static swig_type_info _swigt__p_jli__WorldStateMachine = {"_p_jli__WorldStateMachine", "jli::WorldStateMachine *", 0, 0, (void*)&_wrap_class_WorldStateMachine, 0};
 static swig_type_info _swigt__p_jli__WorldStateMachineBuilder = {"_p_jli__WorldStateMachineBuilder", "jli::WorldStateMachineBuilder *", 0, 0, (void*)&_wrap_class_WorldStateMachineBuilder, 0};
 static swig_type_info _swigt__p_long = {"_p_long", "GLsizeiptr *|GLintptr *|long *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_s32 = {"_p_s32", "s32 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_short = {"_p_short", "short *|GLshort *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_long_long = {"_p_long_long", "long long *|s64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_short = {"_p_short", "short *|s16 *|GLshort *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|GLbyte *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)&_wrap_class_string, 0};
-static swig_type_info _swigt__p_u32 = {"_p_u32", "u32 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|GLuint64 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *|GLubyte *|GLboolean *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "FMOD_MEMORY_TYPE *|unsigned int *|GLuint *|FMOD_DEBUGLEVEL *|FMOD_TIMEUNIT *|FMOD_CAPS *|GLenum *|FMOD_INITFLAGS *|GLbitfield *|FMOD_MODE *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned short *|GLushort *|GLhalf *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "u8 *|unsigned char *|GLubyte *|GLboolean *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "FMOD_MEMORY_TYPE *|unsigned int *|GLuint *|FMOD_DEBUGLEVEL *|FMOD_TIMEUNIT *|FMOD_CAPS *|GLenum *|u32 *|FMOD_INITFLAGS *|GLbitfield *|FMOD_MODE *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_long_long = {"_p_unsigned_long_long", "unsigned long long *|u64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned short *|GLushort *|u16 *|GLhalf *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_void = {"_p_void", "void *|GLvoid *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
@@ -36155,14 +35816,15 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_btAlignedObjectArrayT_btQuantizedBvhNode_t,
   &_swigt__p_btAlignedObjectArrayT_btSolverConstraint_t,
   &_swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t,
+  &_swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,
   &_swigt__p_btConstraintRow,
   &_swigt__p_btDbvtAabbMm,
   &_swigt__p_btDefaultSerializer,
   &_swigt__p_btHashMapT_btHashInt_btTriangleInfo_t,
-  &_swigt__p_btHashMapT_btHashPtr_s32_t,
+  &_swigt__p_btHashMapT_btHashPtr_int_t,
   &_swigt__p_btSerializer,
   &_swigt__p_char,
-  &_swigt__p_f32,
+  &_swigt__p_double,
   &_swigt__p_f_p_void__void,
   &_swigt__p_f_size_t__p_void,
   &_swigt__p_f_size_t_int__p_void,
@@ -36233,7 +35895,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_jli__TextureBuilder,
   &_swigt__p_jli__World,
   &_swigt__p_jli__WorldFactory,
-  &_swigt__p_jli__WorldInput,
   &_swigt__p_jli__WorldLuaVirtualMachine,
   &_swigt__p_jli__WorldMySQL,
   &_swigt__p_jli__WorldSound,
@@ -36242,14 +35903,14 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_jli__WorldStateMachine,
   &_swigt__p_jli__WorldStateMachineBuilder,
   &_swigt__p_long,
-  &_swigt__p_s32,
+  &_swigt__p_long_long,
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_std__string,
-  &_swigt__p_u32,
   &_swigt__p_uint64_t,
   &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_int,
+  &_swigt__p_unsigned_long_long,
   &_swigt__p_unsigned_short,
   &_swigt__p_void,
 };
@@ -36307,14 +35968,15 @@ static swig_cast_info _swigc__p_btAlignedObjectArrayT_btPersistentManifold_p_t[]
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_btQuantizedBvhNode_t[] = {  {&_swigt__p_btAlignedObjectArrayT_btQuantizedBvhNode_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_btSolverConstraint_t[] = {  {&_swigt__p_btAlignedObjectArrayT_btSolverConstraint_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t[] = {  {&_swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t[] = {  {&_swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btConstraintRow[] = {  {&_swigt__p_btConstraintRow, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btDbvtAabbMm[] = {  {&_swigt__p_btDbvtAabbMm, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btHashMapT_btHashInt_btTriangleInfo_t[] = {  {&_swigt__p_btHashMapT_btHashInt_btTriangleInfo_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_btHashMapT_btHashPtr_s32_t[] = {  {&_swigt__p_btHashMapT_btHashPtr_s32_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_btHashMapT_btHashPtr_int_t[] = {  {&_swigt__p_btHashMapT_btHashPtr_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btDefaultSerializer[] = {{&_swigt__p_btDefaultSerializer, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btSerializer[] = {  {&_swigt__p_btSerializer, 0, 0, 0},  {&_swigt__p_btDefaultSerializer, _p_btDefaultSerializerTo_p_btSerializer, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_f32[] = {  {&_swigt__p_f32, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_void__void[] = {  {&_swigt__p_f_p_void__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_size_t__p_void[] = {  {&_swigt__p_f_size_t__p_void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_size_t_int__p_void[] = {  {&_swigt__p_f_size_t_int__p_void, 0, 0, 0},{0, 0, 0, 0}};
@@ -36385,7 +36047,6 @@ static swig_cast_info _swigc__p_jli__Texture[] = {  {&_swigt__p_jli__Texture, 0,
 static swig_cast_info _swigc__p_jli__TextureBuilder[] = {  {&_swigt__p_jli__TextureBuilder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__World[] = {  {&_swigt__p_jli__World, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__WorldFactory[] = {  {&_swigt__p_jli__WorldFactory, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_jli__WorldInput[] = {  {&_swigt__p_jli__WorldInput, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__WorldLuaVirtualMachine[] = {  {&_swigt__p_jli__WorldLuaVirtualMachine, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__WorldMySQL[] = {  {&_swigt__p_jli__WorldMySQL, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__WorldSound[] = {  {&_swigt__p_jli__WorldSound, 0, 0, 0},{0, 0, 0, 0}};
@@ -36394,14 +36055,14 @@ static swig_cast_info _swigc__p_jli__WorldStateBuilder[] = {  {&_swigt__p_jli__W
 static swig_cast_info _swigc__p_jli__WorldStateMachine[] = {  {&_swigt__p_jli__WorldStateMachine, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__WorldStateMachineBuilder[] = {  {&_swigt__p_jli__WorldStateMachineBuilder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long[] = {  {&_swigt__p_long, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_s32[] = {  {&_swigt__p_s32, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_u32[] = {  {&_swigt__p_u32, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint64_t[] = {  {&_swigt__p_uint64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0, 0}};
 
@@ -36459,14 +36120,15 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_btAlignedObjectArrayT_btQuantizedBvhNode_t,
   _swigc__p_btAlignedObjectArrayT_btSolverConstraint_t,
   _swigc__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t,
+  _swigc__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,
   _swigc__p_btConstraintRow,
   _swigc__p_btDbvtAabbMm,
   _swigc__p_btDefaultSerializer,
   _swigc__p_btHashMapT_btHashInt_btTriangleInfo_t,
-  _swigc__p_btHashMapT_btHashPtr_s32_t,
+  _swigc__p_btHashMapT_btHashPtr_int_t,
   _swigc__p_btSerializer,
   _swigc__p_char,
-  _swigc__p_f32,
+  _swigc__p_double,
   _swigc__p_f_p_void__void,
   _swigc__p_f_size_t__p_void,
   _swigc__p_f_size_t_int__p_void,
@@ -36537,7 +36199,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_jli__TextureBuilder,
   _swigc__p_jli__World,
   _swigc__p_jli__WorldFactory,
-  _swigc__p_jli__WorldInput,
   _swigc__p_jli__WorldLuaVirtualMachine,
   _swigc__p_jli__WorldMySQL,
   _swigc__p_jli__WorldSound,
@@ -36546,14 +36207,14 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_jli__WorldStateMachine,
   _swigc__p_jli__WorldStateMachineBuilder,
   _swigc__p_long,
-  _swigc__p_s32,
+  _swigc__p_long_long,
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_std__string,
-  _swigc__p_u32,
   _swigc__p_uint64_t,
   _swigc__p_unsigned_char,
   _swigc__p_unsigned_int,
+  _swigc__p_unsigned_long_long,
   _swigc__p_unsigned_short,
   _swigc__p_void,
 };

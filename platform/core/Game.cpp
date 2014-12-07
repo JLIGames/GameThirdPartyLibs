@@ -24,7 +24,7 @@
 
 //#include "nanovg.h"
 
-//#include "JLIEngine.h"
+#include "JLIEngine.h"
 
 
 static void printGLString(const char *name, GLenum s) {
@@ -124,7 +124,7 @@ const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
 
 bool create()
 {
-//    jli::World::createInstance();
+    jli::World::createInstance();
     
     
     
@@ -205,13 +205,13 @@ void resize(int x, int y, int width, int height)
 
 void update(float step)
 {
-//    jli::World::getInstance()->update(step);
+    jli::World::getInstance()->update(step);
 //	Log("%f\n", step);
 }
 
 void render()
 {
-//    jli::World::getInstance()->render();
+    jli::World::getInstance()->render();
     
 	static float grey;
 	grey += 0.01f;
@@ -241,7 +241,7 @@ void render()
 
 void destroy()
 {
-//    jli::World::destroyInstance();
+    jli::World::destroyInstance();
 }
 
 //void pause()
@@ -252,20 +252,20 @@ void destroy()
 //{
 //}
 
-void touch_down()
+void touch_down(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
 {
-	Log("onTouchDown\n");
+    jli::World::getInstance()->touchDown(touchArray);
 }
-void touch_up()
+void touch_up(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
 {
-	Log("onTouchUp\n");
+    jli::World::getInstance()->touchUp(touchArray);
 }
-void touch_move()
+void touch_move(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
 {
-	Log("onTouchMove\n");
+    jli::World::getInstance()->touchMove(touchArray);
 }
-void touch_cancelled()
+void touch_cancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
 {
-    Log("onTouchCancelled\n");
+    jli::World::getInstance()->touchCancelled(touchArray);
 }
 

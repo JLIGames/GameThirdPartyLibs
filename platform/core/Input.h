@@ -2,6 +2,9 @@
 #include "btVector2.h"
 #include <string>
 
+#ifndef __JLIGameEngineTest__Input__
+#define __JLIGameEngineTest__Input__
+
 namespace jli
 {
     class DeviceInputTime
@@ -51,7 +54,7 @@ namespace jli
         
         DeviceTouch(const DeviceTouch &rhs);
         DeviceTouch &operator=(const DeviceTouch &rhs);
-        DeviceTouch(void *touch, int n, int N);
+        DeviceTouch(const void *touch, int n, int N);
         
         const btVector2 &getPosition()const;
         const btVector2 &getPreviousPosition()const;
@@ -62,8 +65,9 @@ namespace jli
         
         operator std::string() const;
         
+        void set(const void *touch, int n, int N);
     private:
-        void convert(DeviceTouch &t, void *touch);
+        void convert(DeviceTouch &t, const void *touch);
         
         btVector2 m_pos;
         btVector2 m_prev_pos;
@@ -73,3 +77,5 @@ namespace jli
         u32 m_touchTotal;
     };
 };
+
+#endif

@@ -286,4 +286,22 @@ namespace jli
         
         return true;
     }
+    
+    bool WorldLuaVirtualMachine::execute(const char *code, const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    {
+        /* the function name */
+        lua_getglobal(m_lua_State, code);
+        
+        SWIG_NewPointerObj(m_lua_State,(void *) &touchArray,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0);
+        
+        //lua_call(m_lua_State, 2, 0);
+        int error_code = lua_pcall(m_lua_State, 1, 0, 0);
+        if(error_code)
+        {
+            getError(error_code);
+            return false;
+        }
+        
+        return true;
+    }
 }

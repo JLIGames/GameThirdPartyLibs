@@ -11,6 +11,7 @@
 
 #include "AbstractBuilder.h"
 #include "AbstractStateMachine.h"
+#include "Input.h"
 
 namespace jli
 {

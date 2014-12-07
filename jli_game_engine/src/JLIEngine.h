@@ -77,7 +77,6 @@
 #include "World.h"
 #include "WorldFactory.h"
 #include "WorldMySQL.h"
-#include "WorldInput.h"
 #include "WorldSound.h"
 #include "WorldLuaVirtualMachine.h"
 

@@ -11,6 +11,7 @@
 
 #include "AbstractBuilder.h"
 #include "AbstractState.h"
+#include "Input.h"
 
 namespace jli
 {
@@ -51,6 +52,11 @@ namespace jli
          *  @return The name of the world.
          */
         const char *getName()const;
+        
+        void touchDown(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchUp(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchMove(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchCancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
     protected:
     private:
         std::string m_Name;

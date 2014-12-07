@@ -15,7 +15,6 @@
 #include "btAlignedObjectArray.h"
 #include "WorldFactory.h"
 #include "WorldMySQL.h"
-#include "WorldInput.h"
 #include "WorldSound.h"
 #include "WorldLuaVirtualMachine.h"
 #include "Clock.h"
@@ -55,14 +54,6 @@ namespace jli
         WorldMySQL *const getWorldMySQL()const;
         
         /**
-         *  This is the central place for receiving external input from the player.
-         *  This will interface into the Game.ccp for the input methods.
-         *
-         *  @return The pointer to the world Input singleton.
-         */
-        WorldInput *const getWorldInput()const;
-        
-        /**
          *  This is the central place for sounds of the game.
          *
          *  @return The pointer to the world's sound control.
@@ -89,6 +80,11 @@ namespace jli
          *  @param WorldState The current state of the world
          */
         void pushState(WorldState *);
+        
+        void touchDown(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchUp(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchMove(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchCancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
         
         /**
          *  Add a camera to the world
@@ -137,7 +133,6 @@ namespace jli
         
         WorldFactory *m_WorldFactory;
         WorldMySQL *m_WorldMySQL;
-        WorldInput *m_WorldInput;
         WorldSound *m_WorldSound;
         WorldLuaVirtualMachine *m_WorldLuaVirtualMachine;
         Clock *m_worldClock;

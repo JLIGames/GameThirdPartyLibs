@@ -15,6 +15,7 @@
 #include "AbstractState.h"
 #include "Scene.h"
 #include "Node.h"
+#include "Input.h"
 
 namespace jli
 {
@@ -39,6 +40,8 @@ namespace jli
         bool execute(const char *, Node *);
         bool execute(const char *, Node *, f32);
         bool execute(const char *, Node *, const Telegram &, bool &);
+        
+        bool execute(const char *code, const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
     protected:
         void init();
         void unInit();
