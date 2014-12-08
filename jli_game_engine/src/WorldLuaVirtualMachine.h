@@ -29,6 +29,9 @@ namespace jli
         
         void reset();
         
+        bool loadFile(const char *filePath);
+        bool loadString(const char *code);
+        
         bool execute(const char *);
         bool execute(const char *, f32);
         bool execute(const char *, const Telegram &, bool &);

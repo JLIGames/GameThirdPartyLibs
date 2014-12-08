@@ -597,8 +597,8 @@ int main_xml()
 			char verifyBuf[256];
 			int okay = 1;
 
-			FILE* saved  = File::fopen( "utf8testout.xml", "r" );
-			FILE* verify = File::fopen( "utf8testverify.xml", "r" );
+			FILE* saved  = fopen( "utf8testout.xml", "r" );
+			FILE* verify = fopen( "utf8testverify.xml", "r" );
 
 			//bool firstLineBOM=true;
 			if ( saved && verify )
@@ -967,13 +967,13 @@ int main_xml()
 
 		XmlTest( "Entity transformation: read. ", expected, context, true );
 
-		FILE* textfile = File::fopen( "textfile.txt", "w" );
+		FILE* textfile = fopen( "textfile.txt", "w" );
 		if ( textfile )
 		{
 			psg->Print( textfile, 0 );
 			fclose( textfile );
 		}
-		textfile = File::fopen( "textfile.txt", "r" );
+		textfile = fopen( "textfile.txt", "r" );
 		assert( textfile );
 		if ( textfile )
 		{
@@ -989,7 +989,7 @@ int main_xml()
 	}
 
     {
-		FILE* textfile = File::fopen( "test5.xml", "w" );
+		FILE* textfile = fopen( "test5.xml", "w" );
 		if ( textfile )
 		{
             fputs("<?xml version='1.0'?><a.elem xmi.version='2.0'/>", textfile);
@@ -1002,7 +1002,7 @@ int main_xml()
     }
 
 	{
-		FILE* textfile = File::fopen( "test6.xml", "w" );
+		FILE* textfile = fopen( "test6.xml", "w" );
 		if ( textfile )
 		{
             fputs("<element><Name>1.1 Start easy ignore fin thickness&#xA;</Name></element>", textfile );

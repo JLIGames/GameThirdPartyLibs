@@ -31484,6 +31484,60 @@ fail:
 }
 
 
+static int _wrap_WorldLuaVirtualMachine_loadFile(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::WorldLuaVirtualMachine::loadFile",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::loadFile",1,"jli::WorldLuaVirtualMachine *");
+  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::loadFile",2,"char const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
+    SWIG_fail_ptr("WorldLuaVirtualMachine_loadFile",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
+  }
+  
+  arg2 = (char *)lua_tostring(L, 2);
+  result = (bool)(arg1)->loadFile((char const *)arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldLuaVirtualMachine_loadString(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::WorldLuaVirtualMachine::loadString",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::loadString",1,"jli::WorldLuaVirtualMachine *");
+  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::loadString",2,"char const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
+    SWIG_fail_ptr("WorldLuaVirtualMachine_loadString",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
+  }
+  
+  arg2 = (char *)lua_tostring(L, 2);
+  result = (bool)(arg1)->loadString((char const *)arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_WorldLuaVirtualMachine_execute__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
@@ -32230,6 +32284,8 @@ static swig_lua_attribute swig_WorldLuaVirtualMachine_attributes[] = {
 };
 static swig_lua_method swig_WorldLuaVirtualMachine_methods[]= {
     { "reset", _wrap_WorldLuaVirtualMachine_reset},
+    { "loadFile", _wrap_WorldLuaVirtualMachine_loadFile},
+    { "loadString", _wrap_WorldLuaVirtualMachine_loadString},
     { "execute", _wrap_WorldLuaVirtualMachine_execute},
     {0,0}
 };

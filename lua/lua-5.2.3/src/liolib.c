@@ -28,7 +28,6 @@
 #include "lauxlib.h"
 #include "lualib.h"
 
-
 #if !defined(lua_checkmode)
 
 /*

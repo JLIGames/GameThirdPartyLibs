@@ -1,38 +1,21 @@
 #include "File.h"
 #import <UIKit/UIKit.h>
 
-char *File::asset_path(const char *file, char *filePath)
+const char *File::asset_path(const char *file)
 {
-//    NSArray *paths_ = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//    NSString *docs_dir_ = [paths_ objectAtIndex:0];
-//    NSString *full_path = [NSString stringWithFormat:@"%@/%s", docs_dir_, file];
-    
-    
-    NSMutableString* adjusted_relative_path = [[NSMutableString alloc] initWithString:@"assets/"];
+    NSMutableString* adjusted_relative_path = [[NSMutableString alloc] initWithString:@""];
     [adjusted_relative_path appendString: [[NSString alloc] initWithCString:file
                                                                    encoding:NSASCIIStringEncoding]];
     
-    const char *path = [[[NSBundle mainBundle] pathForResource:adjusted_relative_path
+    return [[[NSBundle mainBundle] pathForResource:adjusted_relative_path
                                                         ofType:nil]
                         cStringUsingEncoding:NSASCIIStringEncoding];
-    
-    strcpy(filePath, path);
-    return filePath;
 }
 
-bool File::readAsset(const std::string filepath)
+bool File::readAsset(const char * filepath)
 {
-    printf("%s", filepath.c_str());
-    
-    NSMutableString* adjusted_relative_path = [[NSMutableString alloc] initWithString:@"assets/"];
-    [adjusted_relative_path appendString:
-     [[NSString alloc] initWithCString:filepath.c_str() encoding:NSASCIIStringEncoding]];
-    
-    const char *path = [[[NSBundle mainBundle] pathForResource:adjusted_relative_path ofType:nil]
-                        cStringUsingEncoding:NSASCIIStringEncoding];
-    
-    
-    FILE* stream = fopen(path, "r");
+    FILE *stream = std::fopen(asset_path(filepath), "r");
+    char *fileContent = NULL;
     
     if(stream)
     {
@@ -42,11 +25,15 @@ bool File::readAsset(const std::string filepath)
         file_size = ftell(stream);
         fseek(stream, 0, SEEK_SET);
         
-        file_content = malloc(file_size);
-        fread(file_content, file_size, 1, stream);
+        fileContent = (char*)malloc(file_size);
+        fread(fileContent, file_size, 1, stream);
         
         assert(ferror(stream) == 0);
         fclose(stream);
+        
+        fileContent[file_size] = '\0';
+        
+        file_content = fileContent;
         
         return true;
     }
@@ -54,7 +41,7 @@ bool File::readAsset(const std::string filepath)
     return false;
 }
 
-bool File::write(const std::string filepath, const char *data)
+bool File::write(const char * filepath, const char *data)
 {
     //get the documents directory:
     NSArray *paths = NSSearchPathForDirectoriesInDomains
@@ -63,7 +50,7 @@ bool File::write(const std::string filepath, const char *data)
     
     //make a file name to write the data to using the documents directory:
     NSString *fileName = [NSString stringWithFormat:@"%@/%s",
-                          documentsDirectory, filepath.c_str()];
+                          documentsDirectory, filepath];
     //create content - four lines of text
     NSString *content = [NSString stringWithUTF8String:data];
     //save content to the documents directory

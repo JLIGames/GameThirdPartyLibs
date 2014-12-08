@@ -10,12 +10,10 @@ class File
 public:
     static FILE	*fopen(const char * filename, const char * mode)
     {
-        char buffer[512];
-        File::asset_path(filename, buffer);
-        return fopen(buffer, mode);
+        return fopen(File::asset_path(filename), mode);
     }
     
-    static char *asset_path(const char *file, char *filePath);
+    static const char *asset_path(const char *file);
     
 	File():
 			file_content(0),
@@ -23,7 +21,7 @@ public:
 	{
 
 	}
-	File(const std::string filepath):
+	File(const char * filepath):
 					file_content(0),
 					file_size(0)
 	{
@@ -69,8 +67,8 @@ public:
 		return *this;
 	}
 
-	bool readAsset(const std::string filepath);
-    static bool write(const std::string filepath, const char *data = NULL);
+	bool readAsset(const char * filepath);
+    static bool write(const char * filepath, const char *data = NULL);
 
 	void *content()const
 	{

@@ -9,7 +9,7 @@
 #include "WorldLuaVirtualMachine.h"
 #include "SwigLuaWrapper.h"
 #include "Log.h"
-
+#include "File.h"
 
 
 static void printMethods(const char* name)
@@ -61,6 +61,27 @@ namespace jli
     {
         unInit();
         init();
+    }
+    
+    bool WorldLuaVirtualMachine::loadFile(const char *filePath)
+    {
+        File *f = new File(filePath);
+        bool ret = loadString(static_cast<const char *>(f->content()));
+        
+        return ret;
+    }
+    
+    bool WorldLuaVirtualMachine::loadString(const char *code)
+    {
+        int error_code = luaL_loadstring(m_lua_State, code);
+        
+        if( error_code )
+        {
+            getError(code, error_code);
+            return false;
+        }
+        
+        return compile();
     }
     
     void WorldLuaVirtualMachine::init()
@@ -269,7 +290,7 @@ namespace jli
     {
         /* the function name */
         lua_getglobal(m_lua_State, code);
-        
+
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
         SWIG_NewPointerObj(m_lua_State,(void *) &telegram,SWIGTYPE_p_jli__Telegram,0);
         

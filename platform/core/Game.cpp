@@ -126,6 +126,7 @@ bool create()
 {
     jli::World::createInstance();
     
+    jli::World::getInstance()->getWorldLuaVirtualMachine()->loadFile("test.lua");
     
     
 //    jli::World::destroyInstance();

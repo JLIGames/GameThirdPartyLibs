@@ -29,7 +29,6 @@
 #include "lauxlib.h"
 #include "lualib.h"
 
-
 /*
 ** LUA_PATH and LUA_CPATH are the names of the environment
 ** variables that Lua check to set its paths.
