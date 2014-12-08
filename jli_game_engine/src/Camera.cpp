@@ -64,6 +64,11 @@ namespace jli
         return JLI_OBJECT_TYPE_Camera;
     }
     
+    Camera::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void Camera::render()
     {
         

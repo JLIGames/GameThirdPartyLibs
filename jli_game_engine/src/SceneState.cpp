@@ -65,6 +65,11 @@ namespace jli
         return JLI_OBJECT_TYPE_SceneState;
     }
     
+    SceneState::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void SceneState::enter(Scene *object)
     {
         char buffer[256];
@@ -86,7 +91,7 @@ namespace jli
         jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, object);
     }
     
-    bool SceneState::onMessage(Scene *object, const Telegram &msg)
+    bool SceneState::onMessage(Scene *object, const Telegram &msg)const
     {
         bool ret;
         char buffer[256];

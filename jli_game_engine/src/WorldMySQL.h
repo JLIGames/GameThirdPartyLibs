@@ -9,6 +9,8 @@
 #ifndef __JLIGameEngineTest__WorldMySQL__
 #define __JLIGameEngineTest__WorldMySQL__
 
+#include <string>
+
 namespace jli
 {
     class WorldMySQL
@@ -16,6 +18,7 @@ namespace jli
     public:
         WorldMySQL();
         virtual ~WorldMySQL();
+        operator std::string() const;
         
         //TODO: fill in specific methods for WorldMySQL
     protected:

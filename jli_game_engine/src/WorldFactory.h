@@ -18,6 +18,8 @@
 #include "AbstractBuilder.h"
 #include "AbstractFactoryObject.h"
 
+#include <string>
+
 namespace jli
 {
 //    namespace type
@@ -25,6 +27,8 @@ namespace jli
         enum jliObjectEnumType
         {
             JLI_OBJECT_TYPE_None = 0,
+            
+            JLI_OBJECT_TYPE_DeviceTouch,
             
             JLI_OBJECT_TYPE_Action,
             JLI_OBJECT_TYPE_ActionBuilder,
@@ -118,6 +122,8 @@ namespace jli
         virtual s32 index(AbstractFactoryObject *)const;
         
         virtual	void serialize(btSerializer* serializer);
+        
+        operator std::string() const;
     public:
         
         WorldFactory();

@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_RigidPhysicsBodyBuilder;
     }
+    
+    RigidPhysicsBodyBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

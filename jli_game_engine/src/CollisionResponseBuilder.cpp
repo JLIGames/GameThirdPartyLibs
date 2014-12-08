@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_CollisionResponseBuilder;
     }
+    
+    CollisionResponseBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

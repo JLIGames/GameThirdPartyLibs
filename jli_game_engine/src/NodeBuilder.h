@@ -37,6 +37,7 @@ namespace jli
         virtual u32 getObjectType()const;
         virtual const char *getClassName()const;
         virtual u32 getType()const;
+        operator std::string() const;
     };
 }
 

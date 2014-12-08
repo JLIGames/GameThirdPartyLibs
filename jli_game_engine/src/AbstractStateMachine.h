@@ -136,7 +136,7 @@ namespace jli
         else
         {
             if(theCurrentState)
-                theCurrentState->update(getOwner(),
+                theCurrentState->update(dynamic_cast<OWNER_TYPE*>(getOwner()),
                                         deltaTimeStep);
         }
     }
@@ -147,7 +147,7 @@ namespace jli
         const AbstractState<OWNER_TYPE> *theCurrentState = getState();
         
         if (theCurrentState &&
-            theCurrentState->onMessage(getOwner(), msg))
+            theCurrentState->onMessage(dynamic_cast<OWNER_TYPE*>(getOwner()), msg))
         {
             return true;
         }
@@ -213,7 +213,7 @@ namespace jli
         
         if(theCurrentState)
         {
-            theCurrentState->exit(getOwner());
+            theCurrentState->exit(dynamic_cast<OWNER_TYPE*>(getOwner()));
             theCurrentState->enableInUse(false);
             theCurrentState->enableFinished(false);
         }
@@ -223,7 +223,7 @@ namespace jli
         theCurrentState = getState();
         if(theCurrentState)
         {
-            theCurrentState->enter(getOwner());
+            theCurrentState->enter(dynamic_cast<OWNER_TYPE*>(getOwner()));
         }
     }
 }

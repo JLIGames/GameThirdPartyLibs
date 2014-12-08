@@ -65,6 +65,11 @@ namespace jli
         return JLI_OBJECT_TYPE_WorldState;
     }
     
+    WorldState::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void WorldState::enter(void *object)
     {
         char buffer[256];
@@ -87,7 +92,7 @@ namespace jli
         jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer);
     }
     
-    bool WorldState::onMessage(void *object, const Telegram &msg)
+    bool WorldState::onMessage(void *object, const Telegram &msg)const
     {
         bool ret;
         char buffer[256];

@@ -63,4 +63,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_Texture;
     }
+    
+    Texture::operator std::string() const
+    {
+        return "TODO";
+    }
 }

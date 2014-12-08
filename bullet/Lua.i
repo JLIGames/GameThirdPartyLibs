@@ -31,18 +31,22 @@
 %ignore processAllOverlappingPairs;
 
 %ignore btAxisSweep3Internal;
+%ignore btInternalTriangleInfoMap;
+
 
 %insert("runtime")
 
 %{
     #include "btBulletDynamicsCommon.h"
     #include "LinearMath/btHashMap.h"
+    #include "LinearMath/btAlignedObjectArray.h"
 %}
 
 #include "btBulletDynamicsCommon.h"
 #include "LinearMath/btHashMap.h"
+#include "LinearMath/btAlignedObjectArray.h"
 
-
+//%template(btAxisSweep3Internal_unsigned_short) btAxisSweep3Internal< unsigned short >;
 
 %extend btMatrix3x3
 {

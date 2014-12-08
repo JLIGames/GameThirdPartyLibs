@@ -63,4 +63,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_Resource;
     }
+    
+    Resource::operator std::string() const
+    {
+        return "TODO";
+    }
 }

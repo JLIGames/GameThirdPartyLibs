@@ -63,6 +63,11 @@ namespace jli
         return JLI_OBJECT_TYPE_Scene;
     }
     
+    Scene::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void Scene::setName(const char *name)
     {
         m_Name = name;

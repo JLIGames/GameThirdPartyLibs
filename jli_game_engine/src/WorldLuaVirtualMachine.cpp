@@ -57,6 +57,11 @@ namespace jli
         unInit();
     }
     
+    WorldLuaVirtualMachine::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void WorldLuaVirtualMachine::reset()
     {
         unInit();
@@ -293,7 +298,7 @@ namespace jli
 
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
         SWIG_NewPointerObj(m_lua_State,(void *) &telegram,SWIGTYPE_p_jli__Telegram,0);
-        
+
         //lua_call(m_lua_State, 2, 0);
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)

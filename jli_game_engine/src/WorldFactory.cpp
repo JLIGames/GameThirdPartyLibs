@@ -183,6 +183,11 @@ namespace jli
         }
     }
     
+    WorldFactory::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     WorldFactory::WorldFactory()
     {
         

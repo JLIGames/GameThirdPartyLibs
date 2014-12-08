@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_TextureBuilder;
     }
+    
+    TextureBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

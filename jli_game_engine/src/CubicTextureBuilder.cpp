@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_CubicTextureBuilder;
     }
+    
+    CubicTextureBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

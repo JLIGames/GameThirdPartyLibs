@@ -32,11 +32,12 @@ namespace jli
         
         virtual const char *getClassName()const;
         virtual u32 getType()const;
+        operator std::string() const;
     public:
         virtual void enter(Scene*);
         virtual void update(Scene*, f32);
         virtual void exit(Scene*);
-        virtual bool onMessage(Scene*,const Telegram&);
+        virtual bool onMessage(Scene*,const Telegram&)const;
         
         //TODO: fill in specific methods for SceneState
         

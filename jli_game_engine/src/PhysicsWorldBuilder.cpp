@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_PhysicsWorldBuilder;
     }
+    
+    PhysicsWorldBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

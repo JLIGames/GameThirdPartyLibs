@@ -32,11 +32,12 @@ namespace jli
         
         virtual const char *getClassName()const;
         virtual u32 getType()const;
+        operator std::string() const;
     public:
         virtual void enter(Node*);
         virtual void update(Node*, f32);
         virtual void exit(Node*);
-        virtual bool onMessage(Node*,const Telegram&);
+        virtual bool onMessage(Node*,const Telegram&)const;
         //TODO: fill in specific methods for NodeState
         
         /**

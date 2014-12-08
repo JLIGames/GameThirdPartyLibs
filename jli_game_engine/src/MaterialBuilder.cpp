@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_MaterialBuilder;
     }
+    
+    MaterialBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

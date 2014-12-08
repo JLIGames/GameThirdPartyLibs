@@ -20,6 +20,11 @@ namespace jli
         
     }
     
+    WorldMySQL::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     WorldMySQL &WorldMySQL::operator=(const WorldMySQL &rhs)
     {
         if(this != &rhs)

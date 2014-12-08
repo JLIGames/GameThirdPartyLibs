@@ -31,6 +31,7 @@ namespace jli
         
         virtual const char *getClassName()const;
         virtual u32 getType()const;
+        operator std::string() const;
         
         //TODO: fill in specific methods for Texture
     protected:

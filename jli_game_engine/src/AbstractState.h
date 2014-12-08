@@ -40,7 +40,7 @@ namespace jli
         virtual void enter(OBJECT_TYPE*) = 0;
         virtual void update(OBJECT_TYPE*, f32) = 0;
         virtual void exit(OBJECT_TYPE*) = 0;
-        virtual bool onMessage(OBJECT_TYPE*,const Telegram&) = 0;
+        virtual bool onMessage(OBJECT_TYPE*,const Telegram&)const = 0;
         
     private:
         

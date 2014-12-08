@@ -154,4 +154,9 @@ namespace jli
     {
         return m_Name.c_str();
     }
+    
+    World::operator std::string() const
+    {
+        return "TODO";
+    }
 }

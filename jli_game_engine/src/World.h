@@ -125,6 +125,8 @@ namespace jli
          *  @return the name of this world.
          */
         const char *getName()const;
+        
+        operator std::string() const;
     protected:
     private:
         World(const World &);

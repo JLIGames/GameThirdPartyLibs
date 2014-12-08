@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_SceneStateMachineBuilder;
     }
+    
+    SceneStateMachineBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

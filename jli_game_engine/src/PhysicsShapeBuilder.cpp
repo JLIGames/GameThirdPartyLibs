@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_PhysicsShapeBuilder;
     }
+    
+    PhysicsShapeBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

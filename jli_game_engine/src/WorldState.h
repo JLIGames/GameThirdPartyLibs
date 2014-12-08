@@ -11,7 +11,7 @@
 
 #include "AbstractBuilder.h"
 #include "AbstractState.h"
-#include "Input.h"
+#include "DeviceTouch.h"
 
 namespace jli
 {
@@ -32,11 +32,12 @@ namespace jli
         
         virtual const char *getClassName()const;
         virtual u32 getType()const;
+        operator std::string() const;
     public:
         virtual void enter(void*);
         virtual void update(void*, f32);
         virtual void exit(void*);
-        virtual bool onMessage(void*,const Telegram&);
+        virtual bool onMessage(void*,const Telegram&)const;
         //TODO: fill in specific methods for WorldState
         
         /**

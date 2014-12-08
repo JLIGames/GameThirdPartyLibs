@@ -9,6 +9,8 @@
 #ifndef __JLIGameEngineTest__WorldSound__
 #define __JLIGameEngineTest__WorldSound__
 
+#include <string>
+
 namespace jli
 {
     class WorldSound
@@ -16,6 +18,8 @@ namespace jli
     public:
         WorldSound();
         virtual ~WorldSound();
+        
+        operator std::string() const;
         
         //TODO: fill in specific methods for WorldSound
     protected:

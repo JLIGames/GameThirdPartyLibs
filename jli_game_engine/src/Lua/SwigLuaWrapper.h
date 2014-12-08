@@ -2701,101 +2701,108 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_btConstraintRow swig_types[54]
 #define SWIGTYPE_p_btDbvtAabbMm swig_types[55]
 #define SWIGTYPE_p_btDefaultSerializer swig_types[56]
-#define SWIGTYPE_p_btHashMapT_btHashInt_btTriangleInfo_t swig_types[57]
-#define SWIGTYPE_p_btHashMapT_btHashPtr_int_t swig_types[58]
-#define SWIGTYPE_p_btSerializer swig_types[59]
-#define SWIGTYPE_p_char swig_types[60]
-#define SWIGTYPE_p_double swig_types[61]
-#define SWIGTYPE_p_f_p_void__void swig_types[62]
-#define SWIGTYPE_p_f_size_t__p_void swig_types[63]
-#define SWIGTYPE_p_f_size_t_int__p_void swig_types[64]
-#define SWIGTYPE_p_float swig_types[65]
-#define SWIGTYPE_p_int swig_types[66]
-#define SWIGTYPE_p_int64_t swig_types[67]
-#define SWIGTYPE_p_jli__AbstractBuilder swig_types[68]
-#define SWIGTYPE_p_jli__AbstractDecorator swig_types[69]
-#define SWIGTYPE_p_jli__AbstractFactoryObject swig_types[70]
-#define SWIGTYPE_p_jli__AbstractObject swig_types[71]
-#define SWIGTYPE_p_jli__AbstractPhysicsBody swig_types[72]
-#define SWIGTYPE_p_jli__Action swig_types[73]
-#define SWIGTYPE_p_jli__ActionBuilder swig_types[74]
-#define SWIGTYPE_p_jli__Camera swig_types[75]
-#define SWIGTYPE_p_jli__CameraBuilder swig_types[76]
-#define SWIGTYPE_p_jli__Clock swig_types[77]
-#define SWIGTYPE_p_jli__ClockBuilder swig_types[78]
-#define SWIGTYPE_p_jli__CollisionResponse swig_types[79]
-#define SWIGTYPE_p_jli__CollisionResponseBuilder swig_types[80]
-#define SWIGTYPE_p_jli__CubicTexture swig_types[81]
-#define SWIGTYPE_p_jli__CubicTextureBuilder swig_types[82]
-#define SWIGTYPE_p_jli__DynamicPhysicsBody swig_types[83]
-#define SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder swig_types[84]
-#define SWIGTYPE_p_jli__Geometry swig_types[85]
-#define SWIGTYPE_p_jli__GeometryBuilder swig_types[86]
-#define SWIGTYPE_p_jli__GhostPhysicsBody swig_types[87]
-#define SWIGTYPE_p_jli__GhostPhysicsBodyBuilder swig_types[88]
-#define SWIGTYPE_p_jli__KinematicPhysicsBody swig_types[89]
-#define SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder swig_types[90]
-#define SWIGTYPE_p_jli__Light swig_types[91]
-#define SWIGTYPE_p_jli__LightBuilder swig_types[92]
-#define SWIGTYPE_p_jli__Material swig_types[93]
-#define SWIGTYPE_p_jli__MaterialBuilder swig_types[94]
-#define SWIGTYPE_p_jli__MaterialProperty swig_types[95]
-#define SWIGTYPE_p_jli__MaterialPropertyBuilder swig_types[96]
-#define SWIGTYPE_p_jli__Node swig_types[97]
-#define SWIGTYPE_p_jli__NodeBuilder swig_types[98]
-#define SWIGTYPE_p_jli__NodeState swig_types[99]
-#define SWIGTYPE_p_jli__NodeStateBuilder swig_types[100]
-#define SWIGTYPE_p_jli__NodeStateMachine swig_types[101]
-#define SWIGTYPE_p_jli__NodeStateMachineBuilder swig_types[102]
-#define SWIGTYPE_p_jli__ParticleEmitter swig_types[103]
-#define SWIGTYPE_p_jli__ParticleEmitterBuilder swig_types[104]
-#define SWIGTYPE_p_jli__PhysicsContact swig_types[105]
-#define SWIGTYPE_p_jli__PhysicsContactBuilder swig_types[106]
-#define SWIGTYPE_p_jli__PhysicsField swig_types[107]
-#define SWIGTYPE_p_jli__PhysicsFieldBuilder swig_types[108]
-#define SWIGTYPE_p_jli__PhysicsShape swig_types[109]
-#define SWIGTYPE_p_jli__PhysicsShapeBuilder swig_types[110]
-#define SWIGTYPE_p_jli__PhysicsWorld swig_types[111]
-#define SWIGTYPE_p_jli__PhysicsWorldBuilder swig_types[112]
-#define SWIGTYPE_p_jli__Resource swig_types[113]
-#define SWIGTYPE_p_jli__ResourceBuilder swig_types[114]
-#define SWIGTYPE_p_jli__RigidPhysicsBody swig_types[115]
-#define SWIGTYPE_p_jli__RigidPhysicsBodyBuilder swig_types[116]
-#define SWIGTYPE_p_jli__Scene swig_types[117]
-#define SWIGTYPE_p_jli__SceneBuilder swig_types[118]
-#define SWIGTYPE_p_jli__SceneState swig_types[119]
-#define SWIGTYPE_p_jli__SceneStateBuilder swig_types[120]
-#define SWIGTYPE_p_jli__SceneStateMachine swig_types[121]
-#define SWIGTYPE_p_jli__SceneStateMachineBuilder swig_types[122]
-#define SWIGTYPE_p_jli__SoftPhysicsBody swig_types[123]
-#define SWIGTYPE_p_jli__SoftPhysicsBodyBuilder swig_types[124]
-#define SWIGTYPE_p_jli__Sound swig_types[125]
-#define SWIGTYPE_p_jli__SoundBuilder swig_types[126]
-#define SWIGTYPE_p_jli__Telegram swig_types[127]
-#define SWIGTYPE_p_jli__Texture swig_types[128]
-#define SWIGTYPE_p_jli__TextureBuilder swig_types[129]
-#define SWIGTYPE_p_jli__World swig_types[130]
-#define SWIGTYPE_p_jli__WorldFactory swig_types[131]
-#define SWIGTYPE_p_jli__WorldLuaVirtualMachine swig_types[132]
-#define SWIGTYPE_p_jli__WorldMySQL swig_types[133]
-#define SWIGTYPE_p_jli__WorldSound swig_types[134]
-#define SWIGTYPE_p_jli__WorldState swig_types[135]
-#define SWIGTYPE_p_jli__WorldStateBuilder swig_types[136]
-#define SWIGTYPE_p_jli__WorldStateMachine swig_types[137]
-#define SWIGTYPE_p_jli__WorldStateMachineBuilder swig_types[138]
-#define SWIGTYPE_p_long swig_types[139]
-#define SWIGTYPE_p_long_long swig_types[140]
-#define SWIGTYPE_p_short swig_types[141]
-#define SWIGTYPE_p_signed_char swig_types[142]
-#define SWIGTYPE_p_std__string swig_types[143]
-#define SWIGTYPE_p_uint64_t swig_types[144]
-#define SWIGTYPE_p_unsigned_char swig_types[145]
-#define SWIGTYPE_p_unsigned_int swig_types[146]
-#define SWIGTYPE_p_unsigned_long_long swig_types[147]
-#define SWIGTYPE_p_unsigned_short swig_types[148]
-#define SWIGTYPE_p_void swig_types[149]
-static swig_type_info *swig_types[151];
-static swig_module_info swig_module = {swig_types, 150, 0, 0, 0, 0};
+#define SWIGTYPE_p_btHashMapT_btHashPtr_int_t swig_types[57]
+#define SWIGTYPE_p_btSerializer swig_types[58]
+#define SWIGTYPE_p_char swig_types[59]
+#define SWIGTYPE_p_double swig_types[60]
+#define SWIGTYPE_p_f_p_void__void swig_types[61]
+#define SWIGTYPE_p_f_size_t__p_void swig_types[62]
+#define SWIGTYPE_p_f_size_t_int__p_void swig_types[63]
+#define SWIGTYPE_p_float swig_types[64]
+#define SWIGTYPE_p_int swig_types[65]
+#define SWIGTYPE_p_int64_t swig_types[66]
+#define SWIGTYPE_p_jli__AbstractBuilder swig_types[67]
+#define SWIGTYPE_p_jli__AbstractDecorator swig_types[68]
+#define SWIGTYPE_p_jli__AbstractFactoryObject swig_types[69]
+#define SWIGTYPE_p_jli__AbstractObject swig_types[70]
+#define SWIGTYPE_p_jli__AbstractPhysicsBody swig_types[71]
+#define SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t swig_types[72]
+#define SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t swig_types[73]
+#define SWIGTYPE_p_jli__AbstractStateMachineT_void_t swig_types[74]
+#define SWIGTYPE_p_jli__AbstractStateT_jli__Node_t swig_types[75]
+#define SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t swig_types[76]
+#define SWIGTYPE_p_jli__AbstractStateT_void_t swig_types[77]
+#define SWIGTYPE_p_jli__Action swig_types[78]
+#define SWIGTYPE_p_jli__ActionBuilder swig_types[79]
+#define SWIGTYPE_p_jli__Camera swig_types[80]
+#define SWIGTYPE_p_jli__CameraBuilder swig_types[81]
+#define SWIGTYPE_p_jli__Clock swig_types[82]
+#define SWIGTYPE_p_jli__ClockBuilder swig_types[83]
+#define SWIGTYPE_p_jli__CollisionResponse swig_types[84]
+#define SWIGTYPE_p_jli__CollisionResponseBuilder swig_types[85]
+#define SWIGTYPE_p_jli__CubicTexture swig_types[86]
+#define SWIGTYPE_p_jli__CubicTextureBuilder swig_types[87]
+#define SWIGTYPE_p_jli__DeviceInputTime swig_types[88]
+#define SWIGTYPE_p_jli__DeviceTouch swig_types[89]
+#define SWIGTYPE_p_jli__DynamicPhysicsBody swig_types[90]
+#define SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder swig_types[91]
+#define SWIGTYPE_p_jli__Geometry swig_types[92]
+#define SWIGTYPE_p_jli__GeometryBuilder swig_types[93]
+#define SWIGTYPE_p_jli__GhostPhysicsBody swig_types[94]
+#define SWIGTYPE_p_jli__GhostPhysicsBodyBuilder swig_types[95]
+#define SWIGTYPE_p_jli__KinematicPhysicsBody swig_types[96]
+#define SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder swig_types[97]
+#define SWIGTYPE_p_jli__Light swig_types[98]
+#define SWIGTYPE_p_jli__LightBuilder swig_types[99]
+#define SWIGTYPE_p_jli__Material swig_types[100]
+#define SWIGTYPE_p_jli__MaterialBuilder swig_types[101]
+#define SWIGTYPE_p_jli__MaterialProperty swig_types[102]
+#define SWIGTYPE_p_jli__MaterialPropertyBuilder swig_types[103]
+#define SWIGTYPE_p_jli__Node swig_types[104]
+#define SWIGTYPE_p_jli__NodeBuilder swig_types[105]
+#define SWIGTYPE_p_jli__NodeState swig_types[106]
+#define SWIGTYPE_p_jli__NodeStateBuilder swig_types[107]
+#define SWIGTYPE_p_jli__NodeStateMachine swig_types[108]
+#define SWIGTYPE_p_jli__NodeStateMachineBuilder swig_types[109]
+#define SWIGTYPE_p_jli__ParticleEmitter swig_types[110]
+#define SWIGTYPE_p_jli__ParticleEmitterBuilder swig_types[111]
+#define SWIGTYPE_p_jli__PhysicsContact swig_types[112]
+#define SWIGTYPE_p_jli__PhysicsContactBuilder swig_types[113]
+#define SWIGTYPE_p_jli__PhysicsField swig_types[114]
+#define SWIGTYPE_p_jli__PhysicsFieldBuilder swig_types[115]
+#define SWIGTYPE_p_jli__PhysicsShape swig_types[116]
+#define SWIGTYPE_p_jli__PhysicsShapeBuilder swig_types[117]
+#define SWIGTYPE_p_jli__PhysicsWorld swig_types[118]
+#define SWIGTYPE_p_jli__PhysicsWorldBuilder swig_types[119]
+#define SWIGTYPE_p_jli__Resource swig_types[120]
+#define SWIGTYPE_p_jli__ResourceBuilder swig_types[121]
+#define SWIGTYPE_p_jli__RigidPhysicsBody swig_types[122]
+#define SWIGTYPE_p_jli__RigidPhysicsBodyBuilder swig_types[123]
+#define SWIGTYPE_p_jli__Scene swig_types[124]
+#define SWIGTYPE_p_jli__SceneBuilder swig_types[125]
+#define SWIGTYPE_p_jli__SceneState swig_types[126]
+#define SWIGTYPE_p_jli__SceneStateBuilder swig_types[127]
+#define SWIGTYPE_p_jli__SceneStateMachine swig_types[128]
+#define SWIGTYPE_p_jli__SceneStateMachineBuilder swig_types[129]
+#define SWIGTYPE_p_jli__SoftPhysicsBody swig_types[130]
+#define SWIGTYPE_p_jli__SoftPhysicsBodyBuilder swig_types[131]
+#define SWIGTYPE_p_jli__Sound swig_types[132]
+#define SWIGTYPE_p_jli__SoundBuilder swig_types[133]
+#define SWIGTYPE_p_jli__Telegram swig_types[134]
+#define SWIGTYPE_p_jli__Texture swig_types[135]
+#define SWIGTYPE_p_jli__TextureBuilder swig_types[136]
+#define SWIGTYPE_p_jli__World swig_types[137]
+#define SWIGTYPE_p_jli__WorldFactory swig_types[138]
+#define SWIGTYPE_p_jli__WorldLuaVirtualMachine swig_types[139]
+#define SWIGTYPE_p_jli__WorldMySQL swig_types[140]
+#define SWIGTYPE_p_jli__WorldSound swig_types[141]
+#define SWIGTYPE_p_jli__WorldState swig_types[142]
+#define SWIGTYPE_p_jli__WorldStateBuilder swig_types[143]
+#define SWIGTYPE_p_jli__WorldStateMachine swig_types[144]
+#define SWIGTYPE_p_jli__WorldStateMachineBuilder swig_types[145]
+#define SWIGTYPE_p_long swig_types[146]
+#define SWIGTYPE_p_long_long swig_types[147]
+#define SWIGTYPE_p_short swig_types[148]
+#define SWIGTYPE_p_signed_char swig_types[149]
+#define SWIGTYPE_p_std__string swig_types[150]
+#define SWIGTYPE_p_uint64_t swig_types[151]
+#define SWIGTYPE_p_unsigned_char swig_types[152]
+#define SWIGTYPE_p_unsigned_int swig_types[153]
+#define SWIGTYPE_p_unsigned_long_long swig_types[154]
+#define SWIGTYPE_p_unsigned_short swig_types[155]
+#define SWIGTYPE_p_void swig_types[156]
+static swig_type_info *swig_types[158];
+static swig_module_info swig_module = {swig_types, 157, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2885,6 +2892,396 @@ void swiglua_ref_get(SWIGLUA_REF* pref){
 }
 
 
+SWIGINTERN char const *jli_Action___str__(jli::Action *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_ActionBuilder___str__(jli::ActionBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Camera___str__(jli::Camera *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_CameraBuilder___str__(jli::CameraBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Clock___str__(jli::Clock *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_ClockBuilder___str__(jli::ClockBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_CollisionResponse___str__(jli::CollisionResponse *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_CollisionResponseBuilder___str__(jli::CollisionResponseBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Texture___str__(jli::Texture *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_CubicTexture___str__(jli::CubicTexture *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_CubicTextureBuilder___str__(jli::CubicTextureBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_DynamicPhysicsBody___str__(jli::DynamicPhysicsBody *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_DynamicPhysicsBodyBuilder___str__(jli::DynamicPhysicsBodyBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Geometry___str__(jli::Geometry *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_GeometryBuilder___str__(jli::GeometryBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_GhostPhysicsBody___str__(jli::GhostPhysicsBody *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_GhostPhysicsBodyBuilder___str__(jli::GhostPhysicsBodyBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_KinematicPhysicsBody___str__(jli::KinematicPhysicsBody *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_KinematicPhysicsBodyBuilder___str__(jli::KinematicPhysicsBodyBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Light___str__(jli::Light *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_LightBuilder___str__(jli::LightBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Material___str__(jli::Material *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_MaterialBuilder___str__(jli::MaterialBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_MaterialProperty___str__(jli::MaterialProperty *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_MaterialPropertyBuilder___str__(jli::MaterialPropertyBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Node___str__(jli::Node *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_NodeBuilder___str__(jli::NodeBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_NodeState___str__(jli::NodeState *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_NodeStateBuilder___str__(jli::NodeStateBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_NodeStateMachine___str__(jli::NodeStateMachine *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_NodeStateMachineBuilder___str__(jli::NodeStateMachineBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_ParticleEmitter___str__(jli::ParticleEmitter *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_ParticleEmitterBuilder___str__(jli::ParticleEmitterBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsContact___str__(jli::PhysicsContact *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsContactBuilder___str__(jli::PhysicsContactBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsField___str__(jli::PhysicsField *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsFieldBuilder___str__(jli::PhysicsFieldBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsShape___str__(jli::PhysicsShape *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsShapeBuilder___str__(jli::PhysicsShapeBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsWorld___str__(jli::PhysicsWorld *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_PhysicsWorldBuilder___str__(jli::PhysicsWorldBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Resource___str__(jli::Resource *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_ResourceBuilder___str__(jli::ResourceBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_RigidPhysicsBody___str__(jli::RigidPhysicsBody *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_RigidPhysicsBodyBuilder___str__(jli::RigidPhysicsBodyBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Scene___str__(jli::Scene *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SceneBuilder___str__(jli::SceneBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SceneState___str__(jli::SceneState *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SceneStateBuilder___str__(jli::SceneStateBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SceneStateMachine___str__(jli::SceneStateMachine *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SceneStateMachineBuilder___str__(jli::SceneStateMachineBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SoftPhysicsBody___str__(jli::SoftPhysicsBody *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SoftPhysicsBodyBuilder___str__(jli::SoftPhysicsBodyBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_Sound___str__(jli::Sound *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_SoundBuilder___str__(jli::SoundBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_TextureBuilder___str__(jli::TextureBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldFactory___str__(jli::WorldFactory *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldMySQL___str__(jli::WorldMySQL *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldSound___str__(jli::WorldSound *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldLuaVirtualMachine___str__(jli::WorldLuaVirtualMachine *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldStateMachine___str__(jli::WorldStateMachine *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldState___str__(jli::WorldState *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_World___str__(jli::World *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldStateBuilder___str__(jli::WorldStateBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
+SWIGINTERN char const *jli_WorldStateMachineBuilder___str__(jli::WorldStateMachineBuilder *self){
+        std::string s(*self);
+        static char tmp[1024];
+        sprintf(tmp, "%s", s.c_str());
+        return tmp;
+    }
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -3151,6 +3548,2216 @@ static swig_lua_namespace swig_string_Sf_SwigStatic = {
 static swig_lua_class *swig_string_bases[] = {0};
 static const char *swig_string_base_names[] = {0};
 static swig_lua_class _wrap_class_string = { "string", "string", &SWIGTYPE_p_std__string,_proxy__wrap_new_string, swig_delete_string, swig_string_methods, swig_string_attributes, &swig_string_Sf_SwigStatic, swig_string_meta, swig_string_bases, swig_string_base_names };
+
+static int _wrap_NodeState_Lua_isFinished(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::isFinished",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::isFinished",1,"jli::AbstractState< jli::Node > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_isFinished",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  result = (bool)((jli::AbstractState< jli::Node > const *)arg1)->isFinished();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_enableFinished__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::enableFinished",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enableFinished",1,"jli::AbstractState< jli::Node > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enableFinished",2,"bool const");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_enableFinished",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->enableFinished(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_enableFinished__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::enableFinished",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enableFinished",1,"jli::AbstractState< jli::Node > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_enableFinished",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  (arg1)->enableFinished();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_enableFinished(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Node_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_NodeState_Lua_enableFinished__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Node_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_NodeState_Lua_enableFinished__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'NodeState_Lua_enableFinished'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractState< jli::Node >::enableFinished(bool const)\n"
+    "    jli::AbstractState< jli::Node >::enableFinished()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_NodeState_Lua_isInUse(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::isInUse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::isInUse",1,"jli::AbstractState< jli::Node > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_isInUse",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  result = (bool)((jli::AbstractState< jli::Node > const *)arg1)->isInUse();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_enableInUse__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::enableInUse",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enableInUse",1,"jli::AbstractState< jli::Node > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enableInUse",2,"bool const");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_enableInUse",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->enableInUse(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_enableInUse__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::enableInUse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enableInUse",1,"jli::AbstractState< jli::Node > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_enableInUse",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  (arg1)->enableInUse();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_enableInUse(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Node_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_NodeState_Lua_enableInUse__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Node_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_NodeState_Lua_enableInUse__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'NodeState_Lua_enableInUse'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractState< jli::Node >::enableInUse(bool const)\n"
+    "    jli::AbstractState< jli::Node >::enableInUse()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_NodeState_Lua_enter(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  jli::Node *arg2 = (jli::Node *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::enter",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enter",1,"jli::AbstractState< jli::Node > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Node >::enter",2,"jli::Node *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_enter",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Node,0))){
+    SWIG_fail_ptr("NodeState_Lua_enter",2,SWIGTYPE_p_jli__Node);
+  }
+  
+  (arg1)->enter(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_update(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  jli::Node *arg2 = (jli::Node *) 0 ;
+  f32 arg3 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::update",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::update",1,"jli::AbstractState< jli::Node > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Node >::update",2,"jli::Node *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::AbstractState< jli::Node >::update",3,"f32");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_update",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Node,0))){
+    SWIG_fail_ptr("NodeState_Lua_update",2,SWIGTYPE_p_jli__Node);
+  }
+  
+  arg3 = (f32)lua_tonumber(L, 3);
+  (arg1)->update(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_exit(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  jli::Node *arg2 = (jli::Node *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::exit",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::exit",1,"jli::AbstractState< jli::Node > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Node >::exit",2,"jli::Node *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_exit",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Node,0))){
+    SWIG_fail_ptr("NodeState_Lua_exit",2,SWIGTYPE_p_jli__Node);
+  }
+  
+  (arg1)->exit(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeState_Lua_onMessage(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Node > *arg1 = (jli::AbstractState< jli::Node > *) 0 ;
+  jli::Node *arg2 = (jli::Node *) 0 ;
+  jli::Telegram *arg3 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Node >::onMessage",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Node >::onMessage",1,"jli::AbstractState< jli::Node > const *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Node >::onMessage",2,"jli::Node *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::AbstractState< jli::Node >::onMessage",3,"jli::Telegram const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeState_Lua_onMessage",1,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Node,0))){
+    SWIG_fail_ptr("NodeState_Lua_onMessage",2,SWIGTYPE_p_jli__Node);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_jli__Telegram,0))){
+    SWIG_fail_ptr("NodeState_Lua_onMessage",3,SWIGTYPE_p_jli__Telegram);
+  }
+  
+  result = (bool)((jli::AbstractState< jli::Node > const *)arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static swig_lua_attribute swig_NodeState_Lua_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_NodeState_Lua_methods[]= {
+    { "isFinished", _wrap_NodeState_Lua_isFinished},
+    { "enableFinished", _wrap_NodeState_Lua_enableFinished},
+    { "isInUse", _wrap_NodeState_Lua_isInUse},
+    { "enableInUse", _wrap_NodeState_Lua_enableInUse},
+    { "enter", _wrap_NodeState_Lua_enter},
+    { "update", _wrap_NodeState_Lua_update},
+    { "exit", _wrap_NodeState_Lua_exit},
+    { "onMessage", _wrap_NodeState_Lua_onMessage},
+    {0,0}
+};
+static swig_lua_method swig_NodeState_Lua_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NodeState_Lua_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NodeState_Lua_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NodeState_Lua_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NodeState_Lua_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NodeState_Lua_Sf_SwigStatic = {
+    "NodeState_Lua",
+    swig_NodeState_Lua_Sf_SwigStatic_methods,
+    swig_NodeState_Lua_Sf_SwigStatic_attributes,
+    swig_NodeState_Lua_Sf_SwigStatic_constants,
+    swig_NodeState_Lua_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NodeState_Lua_bases[] = {0};
+static const char *swig_NodeState_Lua_base_names[] = {0};
+static swig_lua_class _wrap_class_NodeState_Lua = { "NodeState_Lua", "NodeState_Lua", &SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0,0, swig_NodeState_Lua_methods, swig_NodeState_Lua_attributes, &swig_NodeState_Lua_Sf_SwigStatic, swig_NodeState_Lua_meta, swig_NodeState_Lua_bases, swig_NodeState_Lua_base_names };
+
+static int _wrap_NodeStateMachine_Lua_update(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  f32 arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::update",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::update",1,"jli::AbstractStateMachine< jli::Node > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::update",2,"f32");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_update",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  arg2 = (f32)lua_tonumber(L, 2);
+  (arg1)->update(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_handleMessage(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::Telegram *arg2 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::handleMessage",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::handleMessage",1,"jli::AbstractStateMachine< jli::Node > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::handleMessage",2,"jli::Telegram const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_handleMessage",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Telegram,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_handleMessage",2,SWIGTYPE_p_jli__Telegram);
+  }
+  
+  result = (bool)(arg1)->handleMessage((jli::Telegram const &)*arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_pushState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::AbstractState< jli::Node > *arg2 = (jli::AbstractState< jli::Node > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::pushState",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::pushState",1,"jli::AbstractStateMachine< jli::Node > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::pushState",2,"jli::AbstractState< jli::Node > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_pushState",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_pushState",2,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t);
+  }
+  
+  (arg1)->pushState(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_getState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::AbstractState< jli::Node > *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::getState",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::getState",1,"jli::AbstractStateMachine< jli::Node > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_getState",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  result = (jli::AbstractState< jli::Node > *)((jli::AbstractStateMachine< jli::Node > const *)arg1)->getState();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_getPreviousState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::AbstractState< jli::Node > *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::getPreviousState",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::getPreviousState",1,"jli::AbstractStateMachine< jli::Node > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_getPreviousState",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  result = (jli::AbstractState< jli::Node > *)((jli::AbstractStateMachine< jli::Node > const *)arg1)->getPreviousState();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractStateT_jli__Node_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_getOwner__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::AbstractFactoryObject *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::getOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::getOwner",1,"jli::AbstractStateMachine< jli::Node > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_getOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  result = (jli::AbstractFactoryObject *)(arg1)->getOwner();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_getOwner__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::AbstractFactoryObject *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::getOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::getOwner",1,"jli::AbstractStateMachine< jli::Node > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_getOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  result = (jli::AbstractFactoryObject *)((jli::AbstractStateMachine< jli::Node > const *)arg1)->getOwner();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_getOwner(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_NodeStateMachine_Lua_getOwner__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_NodeStateMachine_Lua_getOwner__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'NodeStateMachine_Lua_getOwner'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractStateMachine< jli::Node >::getOwner()\n"
+    "    jli::AbstractStateMachine< jli::Node >::getOwner() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_setOwner(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  jli::AbstractFactoryObject *arg2 = (jli::AbstractFactoryObject *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::setOwner",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::setOwner",1,"jli::AbstractStateMachine< jli::Node > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::setOwner",2,"jli::AbstractFactoryObject *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_setOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__AbstractFactoryObject,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_setOwner",2,SWIGTYPE_p_jli__AbstractFactoryObject);
+  }
+  
+  (arg1)->setOwner(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NodeStateMachine_Lua_hasOwner(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Node > *arg1 = (jli::AbstractStateMachine< jli::Node > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Node >::hasOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Node >::hasOwner",1,"jli::AbstractStateMachine< jli::Node > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0))){
+    SWIG_fail_ptr("NodeStateMachine_Lua_hasOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t);
+  }
+  
+  result = (bool)((jli::AbstractStateMachine< jli::Node > const *)arg1)->hasOwner();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static swig_lua_attribute swig_NodeStateMachine_Lua_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_NodeStateMachine_Lua_methods[]= {
+    { "update", _wrap_NodeStateMachine_Lua_update},
+    { "handleMessage", _wrap_NodeStateMachine_Lua_handleMessage},
+    { "pushState", _wrap_NodeStateMachine_Lua_pushState},
+    { "getState", _wrap_NodeStateMachine_Lua_getState},
+    { "getPreviousState", _wrap_NodeStateMachine_Lua_getPreviousState},
+    { "getOwner", _wrap_NodeStateMachine_Lua_getOwner},
+    { "setOwner", _wrap_NodeStateMachine_Lua_setOwner},
+    { "hasOwner", _wrap_NodeStateMachine_Lua_hasOwner},
+    {0,0}
+};
+static swig_lua_method swig_NodeStateMachine_Lua_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NodeStateMachine_Lua_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NodeStateMachine_Lua_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NodeStateMachine_Lua_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NodeStateMachine_Lua_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NodeStateMachine_Lua_Sf_SwigStatic = {
+    "NodeStateMachine_Lua",
+    swig_NodeStateMachine_Lua_Sf_SwigStatic_methods,
+    swig_NodeStateMachine_Lua_Sf_SwigStatic_attributes,
+    swig_NodeStateMachine_Lua_Sf_SwigStatic_constants,
+    swig_NodeStateMachine_Lua_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NodeStateMachine_Lua_bases[] = {0};
+static const char *swig_NodeStateMachine_Lua_base_names[] = {0};
+static swig_lua_class _wrap_class_NodeStateMachine_Lua = { "NodeStateMachine_Lua", "NodeStateMachine_Lua", &SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t,0,0, swig_NodeStateMachine_Lua_methods, swig_NodeStateMachine_Lua_attributes, &swig_NodeStateMachine_Lua_Sf_SwigStatic, swig_NodeStateMachine_Lua_meta, swig_NodeStateMachine_Lua_bases, swig_NodeStateMachine_Lua_base_names };
+
+static int _wrap_SceneState_Lua_isFinished(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::isFinished",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::isFinished",1,"jli::AbstractState< jli::Scene > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_isFinished",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  result = (bool)((jli::AbstractState< jli::Scene > const *)arg1)->isFinished();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_enableFinished__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::enableFinished",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enableFinished",1,"jli::AbstractState< jli::Scene > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enableFinished",2,"bool const");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_enableFinished",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->enableFinished(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_enableFinished__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::enableFinished",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enableFinished",1,"jli::AbstractState< jli::Scene > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_enableFinished",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  (arg1)->enableFinished();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_enableFinished(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SceneState_Lua_enableFinished__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SceneState_Lua_enableFinished__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SceneState_Lua_enableFinished'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractState< jli::Scene >::enableFinished(bool const)\n"
+    "    jli::AbstractState< jli::Scene >::enableFinished()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SceneState_Lua_isInUse(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::isInUse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::isInUse",1,"jli::AbstractState< jli::Scene > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_isInUse",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  result = (bool)((jli::AbstractState< jli::Scene > const *)arg1)->isInUse();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_enableInUse__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::enableInUse",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enableInUse",1,"jli::AbstractState< jli::Scene > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enableInUse",2,"bool const");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_enableInUse",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->enableInUse(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_enableInUse__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::enableInUse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enableInUse",1,"jli::AbstractState< jli::Scene > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_enableInUse",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  (arg1)->enableInUse();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_enableInUse(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SceneState_Lua_enableInUse__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SceneState_Lua_enableInUse__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SceneState_Lua_enableInUse'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractState< jli::Scene >::enableInUse(bool const)\n"
+    "    jli::AbstractState< jli::Scene >::enableInUse()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SceneState_Lua_enter(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  jli::Scene *arg2 = (jli::Scene *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::enter",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enter",1,"jli::AbstractState< jli::Scene > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::enter",2,"jli::Scene *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_enter",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Scene,0))){
+    SWIG_fail_ptr("SceneState_Lua_enter",2,SWIGTYPE_p_jli__Scene);
+  }
+  
+  (arg1)->enter(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_update(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  jli::Scene *arg2 = (jli::Scene *) 0 ;
+  f32 arg3 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::update",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::update",1,"jli::AbstractState< jli::Scene > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::update",2,"jli::Scene *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::update",3,"f32");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_update",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Scene,0))){
+    SWIG_fail_ptr("SceneState_Lua_update",2,SWIGTYPE_p_jli__Scene);
+  }
+  
+  arg3 = (f32)lua_tonumber(L, 3);
+  (arg1)->update(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_exit(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  jli::Scene *arg2 = (jli::Scene *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::exit",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::exit",1,"jli::AbstractState< jli::Scene > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::exit",2,"jli::Scene *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_exit",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Scene,0))){
+    SWIG_fail_ptr("SceneState_Lua_exit",2,SWIGTYPE_p_jli__Scene);
+  }
+  
+  (arg1)->exit(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneState_Lua_onMessage(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< jli::Scene > *arg1 = (jli::AbstractState< jli::Scene > *) 0 ;
+  jli::Scene *arg2 = (jli::Scene *) 0 ;
+  jli::Telegram *arg3 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< jli::Scene >::onMessage",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::onMessage",1,"jli::AbstractState< jli::Scene > const *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::onMessage",2,"jli::Scene *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::AbstractState< jli::Scene >::onMessage",3,"jli::Telegram const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneState_Lua_onMessage",1,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Scene,0))){
+    SWIG_fail_ptr("SceneState_Lua_onMessage",2,SWIGTYPE_p_jli__Scene);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_jli__Telegram,0))){
+    SWIG_fail_ptr("SceneState_Lua_onMessage",3,SWIGTYPE_p_jli__Telegram);
+  }
+  
+  result = (bool)((jli::AbstractState< jli::Scene > const *)arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static swig_lua_attribute swig_SceneState_Lua_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SceneState_Lua_methods[]= {
+    { "isFinished", _wrap_SceneState_Lua_isFinished},
+    { "enableFinished", _wrap_SceneState_Lua_enableFinished},
+    { "isInUse", _wrap_SceneState_Lua_isInUse},
+    { "enableInUse", _wrap_SceneState_Lua_enableInUse},
+    { "enter", _wrap_SceneState_Lua_enter},
+    { "update", _wrap_SceneState_Lua_update},
+    { "exit", _wrap_SceneState_Lua_exit},
+    { "onMessage", _wrap_SceneState_Lua_onMessage},
+    {0,0}
+};
+static swig_lua_method swig_SceneState_Lua_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SceneState_Lua_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SceneState_Lua_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SceneState_Lua_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SceneState_Lua_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SceneState_Lua_Sf_SwigStatic = {
+    "SceneState_Lua",
+    swig_SceneState_Lua_Sf_SwigStatic_methods,
+    swig_SceneState_Lua_Sf_SwigStatic_attributes,
+    swig_SceneState_Lua_Sf_SwigStatic_constants,
+    swig_SceneState_Lua_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SceneState_Lua_bases[] = {0};
+static const char *swig_SceneState_Lua_base_names[] = {0};
+static swig_lua_class _wrap_class_SceneState_Lua = { "SceneState_Lua", "SceneState_Lua", &SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0,0, swig_SceneState_Lua_methods, swig_SceneState_Lua_attributes, &swig_SceneState_Lua_Sf_SwigStatic, swig_SceneState_Lua_meta, swig_SceneState_Lua_bases, swig_SceneState_Lua_base_names };
+
+static int _wrap_SceneStateMachine_Lua_update(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  f32 arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::update",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::update",1,"jli::AbstractStateMachine< jli::Scene > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::update",2,"f32");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_update",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  arg2 = (f32)lua_tonumber(L, 2);
+  (arg1)->update(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_handleMessage(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::Telegram *arg2 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::handleMessage",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::handleMessage",1,"jli::AbstractStateMachine< jli::Scene > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::handleMessage",2,"jli::Telegram const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_handleMessage",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Telegram,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_handleMessage",2,SWIGTYPE_p_jli__Telegram);
+  }
+  
+  result = (bool)(arg1)->handleMessage((jli::Telegram const &)*arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_pushState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::AbstractState< jli::Scene > *arg2 = (jli::AbstractState< jli::Scene > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::pushState",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::pushState",1,"jli::AbstractStateMachine< jli::Scene > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::pushState",2,"jli::AbstractState< jli::Scene > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_pushState",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_pushState",2,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t);
+  }
+  
+  (arg1)->pushState(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_getState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::AbstractState< jli::Scene > *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::getState",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::getState",1,"jli::AbstractStateMachine< jli::Scene > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_getState",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  result = (jli::AbstractState< jli::Scene > *)((jli::AbstractStateMachine< jli::Scene > const *)arg1)->getState();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_getPreviousState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::AbstractState< jli::Scene > *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::getPreviousState",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::getPreviousState",1,"jli::AbstractStateMachine< jli::Scene > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_getPreviousState",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  result = (jli::AbstractState< jli::Scene > *)((jli::AbstractStateMachine< jli::Scene > const *)arg1)->getPreviousState();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_getOwner__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::AbstractFactoryObject *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::getOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::getOwner",1,"jli::AbstractStateMachine< jli::Scene > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_getOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  result = (jli::AbstractFactoryObject *)(arg1)->getOwner();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_getOwner__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::AbstractFactoryObject *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::getOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::getOwner",1,"jli::AbstractStateMachine< jli::Scene > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_getOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  result = (jli::AbstractFactoryObject *)((jli::AbstractStateMachine< jli::Scene > const *)arg1)->getOwner();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_getOwner(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SceneStateMachine_Lua_getOwner__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SceneStateMachine_Lua_getOwner__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SceneStateMachine_Lua_getOwner'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractStateMachine< jli::Scene >::getOwner()\n"
+    "    jli::AbstractStateMachine< jli::Scene >::getOwner() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_setOwner(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  jli::AbstractFactoryObject *arg2 = (jli::AbstractFactoryObject *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::setOwner",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::setOwner",1,"jli::AbstractStateMachine< jli::Scene > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::setOwner",2,"jli::AbstractFactoryObject *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_setOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__AbstractFactoryObject,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_setOwner",2,SWIGTYPE_p_jli__AbstractFactoryObject);
+  }
+  
+  (arg1)->setOwner(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SceneStateMachine_Lua_hasOwner(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< jli::Scene > *arg1 = (jli::AbstractStateMachine< jli::Scene > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< jli::Scene >::hasOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< jli::Scene >::hasOwner",1,"jli::AbstractStateMachine< jli::Scene > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0))){
+    SWIG_fail_ptr("SceneStateMachine_Lua_hasOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t);
+  }
+  
+  result = (bool)((jli::AbstractStateMachine< jli::Scene > const *)arg1)->hasOwner();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static swig_lua_attribute swig_SceneStateMachine_Lua_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SceneStateMachine_Lua_methods[]= {
+    { "update", _wrap_SceneStateMachine_Lua_update},
+    { "handleMessage", _wrap_SceneStateMachine_Lua_handleMessage},
+    { "pushState", _wrap_SceneStateMachine_Lua_pushState},
+    { "getState", _wrap_SceneStateMachine_Lua_getState},
+    { "getPreviousState", _wrap_SceneStateMachine_Lua_getPreviousState},
+    { "getOwner", _wrap_SceneStateMachine_Lua_getOwner},
+    { "setOwner", _wrap_SceneStateMachine_Lua_setOwner},
+    { "hasOwner", _wrap_SceneStateMachine_Lua_hasOwner},
+    {0,0}
+};
+static swig_lua_method swig_SceneStateMachine_Lua_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SceneStateMachine_Lua_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SceneStateMachine_Lua_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SceneStateMachine_Lua_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SceneStateMachine_Lua_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SceneStateMachine_Lua_Sf_SwigStatic = {
+    "SceneStateMachine_Lua",
+    swig_SceneStateMachine_Lua_Sf_SwigStatic_methods,
+    swig_SceneStateMachine_Lua_Sf_SwigStatic_attributes,
+    swig_SceneStateMachine_Lua_Sf_SwigStatic_constants,
+    swig_SceneStateMachine_Lua_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SceneStateMachine_Lua_bases[] = {0};
+static const char *swig_SceneStateMachine_Lua_base_names[] = {0};
+static swig_lua_class _wrap_class_SceneStateMachine_Lua = { "SceneStateMachine_Lua", "SceneStateMachine_Lua", &SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t,0,0, swig_SceneStateMachine_Lua_methods, swig_SceneStateMachine_Lua_attributes, &swig_SceneStateMachine_Lua_Sf_SwigStatic, swig_SceneStateMachine_Lua_meta, swig_SceneStateMachine_Lua_bases, swig_SceneStateMachine_Lua_base_names };
+
+static int _wrap_WorldState_Lua_isFinished(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::isFinished",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::isFinished",1,"jli::AbstractState< void > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_isFinished",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  result = (bool)((jli::AbstractState< void > const *)arg1)->isFinished();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_enableFinished__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::enableFinished",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::enableFinished",1,"jli::AbstractState< void > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("jli::AbstractState< void >::enableFinished",2,"bool const");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_enableFinished",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->enableFinished(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_enableFinished__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::enableFinished",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::enableFinished",1,"jli::AbstractState< void > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_enableFinished",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  (arg1)->enableFinished();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_enableFinished(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_void_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_WorldState_Lua_enableFinished__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_void_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_WorldState_Lua_enableFinished__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'WorldState_Lua_enableFinished'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractState< void >::enableFinished(bool const)\n"
+    "    jli::AbstractState< void >::enableFinished()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_WorldState_Lua_isInUse(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::isInUse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::isInUse",1,"jli::AbstractState< void > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_isInUse",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  result = (bool)((jli::AbstractState< void > const *)arg1)->isInUse();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_enableInUse__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::enableInUse",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::enableInUse",1,"jli::AbstractState< void > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("jli::AbstractState< void >::enableInUse",2,"bool const");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_enableInUse",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->enableInUse(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_enableInUse__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::enableInUse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::enableInUse",1,"jli::AbstractState< void > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_enableInUse",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  (arg1)->enableInUse();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_enableInUse(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_void_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_WorldState_Lua_enableInUse__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateT_void_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_WorldState_Lua_enableInUse__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'WorldState_Lua_enableInUse'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractState< void >::enableInUse(bool const)\n"
+    "    jli::AbstractState< void >::enableInUse()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_WorldState_Lua_enter(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  void *arg2 = (void *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::enter",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::enter",1,"jli::AbstractState< void > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< void >::enter",2,"void *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_enter",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"WorldState_Lua_enter");
+  (arg1)->enter(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_update(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  void *arg2 = (void *) 0 ;
+  f32 arg3 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::update",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::update",1,"jli::AbstractState< void > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< void >::update",2,"void *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("jli::AbstractState< void >::update",3,"f32");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_update",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"WorldState_Lua_update");
+  arg3 = (f32)lua_tonumber(L, 3);
+  (arg1)->update(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_exit(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  void *arg2 = (void *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::exit",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::exit",1,"jli::AbstractState< void > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< void >::exit",2,"void *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_exit",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"WorldState_Lua_exit");
+  (arg1)->exit(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldState_Lua_onMessage(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractState< void > *arg1 = (jli::AbstractState< void > *) 0 ;
+  void *arg2 = (void *) 0 ;
+  jli::Telegram *arg3 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractState< void >::onMessage",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractState< void >::onMessage",1,"jli::AbstractState< void > const *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractState< void >::onMessage",2,"void *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::AbstractState< void >::onMessage",3,"jli::Telegram const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldState_Lua_onMessage",1,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"WorldState_Lua_onMessage");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_jli__Telegram,0))){
+    SWIG_fail_ptr("WorldState_Lua_onMessage",3,SWIGTYPE_p_jli__Telegram);
+  }
+  
+  result = (bool)((jli::AbstractState< void > const *)arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static swig_lua_attribute swig_WorldState_Lua_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_WorldState_Lua_methods[]= {
+    { "isFinished", _wrap_WorldState_Lua_isFinished},
+    { "enableFinished", _wrap_WorldState_Lua_enableFinished},
+    { "isInUse", _wrap_WorldState_Lua_isInUse},
+    { "enableInUse", _wrap_WorldState_Lua_enableInUse},
+    { "enter", _wrap_WorldState_Lua_enter},
+    { "update", _wrap_WorldState_Lua_update},
+    { "exit", _wrap_WorldState_Lua_exit},
+    { "onMessage", _wrap_WorldState_Lua_onMessage},
+    {0,0}
+};
+static swig_lua_method swig_WorldState_Lua_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_WorldState_Lua_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_WorldState_Lua_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_WorldState_Lua_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_WorldState_Lua_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_WorldState_Lua_Sf_SwigStatic = {
+    "WorldState_Lua",
+    swig_WorldState_Lua_Sf_SwigStatic_methods,
+    swig_WorldState_Lua_Sf_SwigStatic_attributes,
+    swig_WorldState_Lua_Sf_SwigStatic_constants,
+    swig_WorldState_Lua_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_WorldState_Lua_bases[] = {0};
+static const char *swig_WorldState_Lua_base_names[] = {0};
+static swig_lua_class _wrap_class_WorldState_Lua = { "WorldState_Lua", "WorldState_Lua", &SWIGTYPE_p_jli__AbstractStateT_void_t,0,0, swig_WorldState_Lua_methods, swig_WorldState_Lua_attributes, &swig_WorldState_Lua_Sf_SwigStatic, swig_WorldState_Lua_meta, swig_WorldState_Lua_bases, swig_WorldState_Lua_base_names };
+
+static int _wrap_WorldStateMachine_Lua_update(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  f32 arg2 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::update",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::update",1,"jli::AbstractStateMachine< void > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< void >::update",2,"f32");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_update",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  arg2 = (f32)lua_tonumber(L, 2);
+  (arg1)->update(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_handleMessage(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::Telegram *arg2 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::handleMessage",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::handleMessage",1,"jli::AbstractStateMachine< void > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< void >::handleMessage",2,"jli::Telegram const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_handleMessage",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__Telegram,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_handleMessage",2,SWIGTYPE_p_jli__Telegram);
+  }
+  
+  result = (bool)(arg1)->handleMessage((jli::Telegram const &)*arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_pushState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::AbstractState< void > *arg2 = (jli::AbstractState< void > *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::pushState",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::pushState",1,"jli::AbstractStateMachine< void > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< void >::pushState",2,"jli::AbstractState< void > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_pushState",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__AbstractStateT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_pushState",2,SWIGTYPE_p_jli__AbstractStateT_void_t);
+  }
+  
+  (arg1)->pushState(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_getState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::AbstractState< void > *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::getState",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::getState",1,"jli::AbstractStateMachine< void > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_getState",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  result = (jli::AbstractState< void > *)((jli::AbstractStateMachine< void > const *)arg1)->getState();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractStateT_void_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_getPreviousState(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::AbstractState< void > *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::getPreviousState",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::getPreviousState",1,"jli::AbstractStateMachine< void > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_getPreviousState",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  result = (jli::AbstractState< void > *)((jli::AbstractStateMachine< void > const *)arg1)->getPreviousState();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractStateT_void_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_getOwner__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::AbstractFactoryObject *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::getOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::getOwner",1,"jli::AbstractStateMachine< void > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_getOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  result = (jli::AbstractFactoryObject *)(arg1)->getOwner();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_getOwner__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::AbstractFactoryObject *result = 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::getOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::getOwner",1,"jli::AbstractStateMachine< void > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_getOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  result = (jli::AbstractFactoryObject *)((jli::AbstractStateMachine< void > const *)arg1)->getOwner();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_jli__AbstractFactoryObject,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_getOwner(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateMachineT_void_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_WorldStateMachine_Lua_getOwner__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_jli__AbstractStateMachineT_void_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_WorldStateMachine_Lua_getOwner__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'WorldStateMachine_Lua_getOwner'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    jli::AbstractStateMachine< void >::getOwner()\n"
+    "    jli::AbstractStateMachine< void >::getOwner() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_setOwner(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  jli::AbstractFactoryObject *arg2 = (jli::AbstractFactoryObject *) 0 ;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::setOwner",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::setOwner",1,"jli::AbstractStateMachine< void > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::AbstractStateMachine< void >::setOwner",2,"jli::AbstractFactoryObject *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_setOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_jli__AbstractFactoryObject,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_setOwner",2,SWIGTYPE_p_jli__AbstractFactoryObject);
+  }
+  
+  (arg1)->setOwner(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_WorldStateMachine_Lua_hasOwner(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::AbstractStateMachine< void > *arg1 = (jli::AbstractStateMachine< void > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("jli::AbstractStateMachine< void >::hasOwner",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::AbstractStateMachine< void >::hasOwner",1,"jli::AbstractStateMachine< void > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0))){
+    SWIG_fail_ptr("WorldStateMachine_Lua_hasOwner",1,SWIGTYPE_p_jli__AbstractStateMachineT_void_t);
+  }
+  
+  result = (bool)((jli::AbstractStateMachine< void > const *)arg1)->hasOwner();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static swig_lua_attribute swig_WorldStateMachine_Lua_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_WorldStateMachine_Lua_methods[]= {
+    { "update", _wrap_WorldStateMachine_Lua_update},
+    { "handleMessage", _wrap_WorldStateMachine_Lua_handleMessage},
+    { "pushState", _wrap_WorldStateMachine_Lua_pushState},
+    { "getState", _wrap_WorldStateMachine_Lua_getState},
+    { "getPreviousState", _wrap_WorldStateMachine_Lua_getPreviousState},
+    { "getOwner", _wrap_WorldStateMachine_Lua_getOwner},
+    { "setOwner", _wrap_WorldStateMachine_Lua_setOwner},
+    { "hasOwner", _wrap_WorldStateMachine_Lua_hasOwner},
+    {0,0}
+};
+static swig_lua_method swig_WorldStateMachine_Lua_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_WorldStateMachine_Lua_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_WorldStateMachine_Lua_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_WorldStateMachine_Lua_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_WorldStateMachine_Lua_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_WorldStateMachine_Lua_Sf_SwigStatic = {
+    "WorldStateMachine_Lua",
+    swig_WorldStateMachine_Lua_Sf_SwigStatic_methods,
+    swig_WorldStateMachine_Lua_Sf_SwigStatic_attributes,
+    swig_WorldStateMachine_Lua_Sf_SwigStatic_constants,
+    swig_WorldStateMachine_Lua_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_WorldStateMachine_Lua_bases[] = {0};
+static const char *swig_WorldStateMachine_Lua_base_names[] = {0};
+static swig_lua_class _wrap_class_WorldStateMachine_Lua = { "WorldStateMachine_Lua", "WorldStateMachine_Lua", &SWIGTYPE_p_jli__AbstractStateMachineT_void_t,0,0, swig_WorldStateMachine_Lua_methods, swig_WorldStateMachine_Lua_attributes, &swig_WorldStateMachine_Lua_Sf_SwigStatic, swig_WorldStateMachine_Lua_meta, swig_WorldStateMachine_Lua_bases, swig_WorldStateMachine_Lua_base_names };
 
 static int _wrap_new_Action__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
@@ -3874,6 +6481,30 @@ fail:
 }
 
 
+static int _wrap_Action___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Action *arg1 = (jli::Action *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Action::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Action::__str__",1,"jli::Action *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Action,0))){
+    SWIG_fail_ptr("Action___tostring",1,SWIGTYPE_p_jli__Action);
+  }
+  
+  result = (char *)jli_Action___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Action(void *obj) {
 jli::Action *arg1 = (jli::Action *) obj;
 delete arg1;
@@ -3898,9 +6529,11 @@ static swig_lua_method swig_Action_methods[]= {
     { "serialize", _wrap_Action_serialize},
     { "getClassName", _wrap_Action_getClassName},
     { "getType", _wrap_Action_getType},
+    { "__tostring", _wrap_Action___tostring},
     {0,0}
 };
 static swig_lua_method swig_Action_meta[] = {
+    { "__tostring", _wrap_Action___tostring},
     {0,0}
 };
 
@@ -4058,6 +6691,30 @@ fail:
 }
 
 
+static int _wrap_ActionBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::ActionBuilder *arg1 = (jli::ActionBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::ActionBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::ActionBuilder::__str__",1,"jli::ActionBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__ActionBuilder,0))){
+    SWIG_fail_ptr("ActionBuilder___tostring",1,SWIGTYPE_p_jli__ActionBuilder);
+  }
+  
+  result = (char *)jli_ActionBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_ActionBuilder_attributes[] = {
     {0,0,0}
 };
@@ -4067,9 +6724,11 @@ static swig_lua_method swig_ActionBuilder_methods[]= {
     { "getObjectType", _wrap_ActionBuilder_getObjectType},
     { "getClassName", _wrap_ActionBuilder_getClassName},
     { "getType", _wrap_ActionBuilder_getType},
+    { "__tostring", _wrap_ActionBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_ActionBuilder_meta[] = {
+    { "__tostring", _wrap_ActionBuilder___tostring},
     {0,0}
 };
 
@@ -4843,6 +7502,30 @@ fail:
 }
 
 
+static int _wrap_Camera___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Camera *arg1 = (jli::Camera *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Camera::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Camera::__str__",1,"jli::Camera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Camera,0))){
+    SWIG_fail_ptr("Camera___tostring",1,SWIGTYPE_p_jli__Camera);
+  }
+  
+  result = (char *)jli_Camera___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Camera(void *obj) {
 jli::Camera *arg1 = (jli::Camera *) obj;
 delete arg1;
@@ -4868,9 +7551,11 @@ static swig_lua_method swig_Camera_methods[]= {
     { "getClassName", _wrap_Camera_getClassName},
     { "getType", _wrap_Camera_getType},
     { "render", _wrap_Camera_render},
+    { "__tostring", _wrap_Camera___tostring},
     {0,0}
 };
 static swig_lua_method swig_Camera_meta[] = {
+    { "__tostring", _wrap_Camera___tostring},
     {0,0}
 };
 
@@ -5028,6 +7713,30 @@ fail:
 }
 
 
+static int _wrap_CameraBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::CameraBuilder *arg1 = (jli::CameraBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::CameraBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::CameraBuilder::__str__",1,"jli::CameraBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__CameraBuilder,0))){
+    SWIG_fail_ptr("CameraBuilder___tostring",1,SWIGTYPE_p_jli__CameraBuilder);
+  }
+  
+  result = (char *)jli_CameraBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_CameraBuilder_attributes[] = {
     {0,0,0}
 };
@@ -5037,9 +7746,11 @@ static swig_lua_method swig_CameraBuilder_methods[]= {
     { "getObjectType", _wrap_CameraBuilder_getObjectType},
     { "getClassName", _wrap_CameraBuilder_getClassName},
     { "getType", _wrap_CameraBuilder_getType},
+    { "__tostring", _wrap_CameraBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_CameraBuilder_meta[] = {
+    { "__tostring", _wrap_CameraBuilder___tostring},
     {0,0}
 };
 
@@ -5790,6 +8501,30 @@ fail:
 }
 
 
+static int _wrap_Clock___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Clock *arg1 = (jli::Clock *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Clock::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Clock::__str__",1,"jli::Clock *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Clock,0))){
+    SWIG_fail_ptr("Clock___tostring",1,SWIGTYPE_p_jli__Clock);
+  }
+  
+  result = (char *)jli_Clock___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Clock(void *obj) {
 jli::Clock *arg1 = (jli::Clock *) obj;
 delete arg1;
@@ -5814,9 +8549,11 @@ static swig_lua_method swig_Clock_methods[]= {
     { "serialize", _wrap_Clock_serialize},
     { "getClassName", _wrap_Clock_getClassName},
     { "getType", _wrap_Clock_getType},
+    { "__tostring", _wrap_Clock___tostring},
     {0,0}
 };
 static swig_lua_method swig_Clock_meta[] = {
+    { "__tostring", _wrap_Clock___tostring},
     {0,0}
 };
 
@@ -5974,6 +8711,30 @@ fail:
 }
 
 
+static int _wrap_ClockBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::ClockBuilder *arg1 = (jli::ClockBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::ClockBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::ClockBuilder::__str__",1,"jli::ClockBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__ClockBuilder,0))){
+    SWIG_fail_ptr("ClockBuilder___tostring",1,SWIGTYPE_p_jli__ClockBuilder);
+  }
+  
+  result = (char *)jli_ClockBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_ClockBuilder_attributes[] = {
     {0,0,0}
 };
@@ -5983,9 +8744,11 @@ static swig_lua_method swig_ClockBuilder_methods[]= {
     { "getObjectType", _wrap_ClockBuilder_getObjectType},
     { "getClassName", _wrap_ClockBuilder_getClassName},
     { "getType", _wrap_ClockBuilder_getType},
+    { "__tostring", _wrap_ClockBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_ClockBuilder_meta[] = {
+    { "__tostring", _wrap_ClockBuilder___tostring},
     {0,0}
 };
 
@@ -6736,6 +9499,30 @@ fail:
 }
 
 
+static int _wrap_CollisionResponse___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::CollisionResponse *arg1 = (jli::CollisionResponse *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::CollisionResponse::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::CollisionResponse::__str__",1,"jli::CollisionResponse *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__CollisionResponse,0))){
+    SWIG_fail_ptr("CollisionResponse___tostring",1,SWIGTYPE_p_jli__CollisionResponse);
+  }
+  
+  result = (char *)jli_CollisionResponse___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_CollisionResponse(void *obj) {
 jli::CollisionResponse *arg1 = (jli::CollisionResponse *) obj;
 delete arg1;
@@ -6760,9 +9547,11 @@ static swig_lua_method swig_CollisionResponse_methods[]= {
     { "serialize", _wrap_CollisionResponse_serialize},
     { "getClassName", _wrap_CollisionResponse_getClassName},
     { "getType", _wrap_CollisionResponse_getType},
+    { "__tostring", _wrap_CollisionResponse___tostring},
     {0,0}
 };
 static swig_lua_method swig_CollisionResponse_meta[] = {
+    { "__tostring", _wrap_CollisionResponse___tostring},
     {0,0}
 };
 
@@ -6920,6 +9709,30 @@ fail:
 }
 
 
+static int _wrap_CollisionResponseBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::CollisionResponseBuilder *arg1 = (jli::CollisionResponseBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::CollisionResponseBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::CollisionResponseBuilder::__str__",1,"jli::CollisionResponseBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__CollisionResponseBuilder,0))){
+    SWIG_fail_ptr("CollisionResponseBuilder___tostring",1,SWIGTYPE_p_jli__CollisionResponseBuilder);
+  }
+  
+  result = (char *)jli_CollisionResponseBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_CollisionResponseBuilder_attributes[] = {
     {0,0,0}
 };
@@ -6929,9 +9742,11 @@ static swig_lua_method swig_CollisionResponseBuilder_methods[]= {
     { "getObjectType", _wrap_CollisionResponseBuilder_getObjectType},
     { "getClassName", _wrap_CollisionResponseBuilder_getClassName},
     { "getType", _wrap_CollisionResponseBuilder_getType},
+    { "__tostring", _wrap_CollisionResponseBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_CollisionResponseBuilder_meta[] = {
+    { "__tostring", _wrap_CollisionResponseBuilder___tostring},
     {0,0}
 };
 
@@ -7682,6 +10497,30 @@ fail:
 }
 
 
+static int _wrap_Texture___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Texture *arg1 = (jli::Texture *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Texture::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Texture::__str__",1,"jli::Texture *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Texture,0))){
+    SWIG_fail_ptr("Texture___tostring",1,SWIGTYPE_p_jli__Texture);
+  }
+  
+  result = (char *)jli_Texture___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Texture(void *obj) {
 jli::Texture *arg1 = (jli::Texture *) obj;
 delete arg1;
@@ -7706,9 +10545,11 @@ static swig_lua_method swig_Texture_methods[]= {
     { "serialize", _wrap_Texture_serialize},
     { "getClassName", _wrap_Texture_getClassName},
     { "getType", _wrap_Texture_getType},
+    { "__tostring", _wrap_Texture___tostring},
     {0,0}
 };
 static swig_lua_method swig_Texture_meta[] = {
+    { "__tostring", _wrap_Texture___tostring},
     {0,0}
 };
 
@@ -8459,6 +11300,30 @@ fail:
 }
 
 
+static int _wrap_CubicTexture___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::CubicTexture *arg1 = (jli::CubicTexture *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::CubicTexture::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::CubicTexture::__str__",1,"jli::CubicTexture *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__CubicTexture,0))){
+    SWIG_fail_ptr("CubicTexture___tostring",1,SWIGTYPE_p_jli__CubicTexture);
+  }
+  
+  result = (char *)jli_CubicTexture___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_CubicTexture(void *obj) {
 jli::CubicTexture *arg1 = (jli::CubicTexture *) obj;
 delete arg1;
@@ -8483,9 +11348,11 @@ static swig_lua_method swig_CubicTexture_methods[]= {
     { "serialize", _wrap_CubicTexture_serialize},
     { "getClassName", _wrap_CubicTexture_getClassName},
     { "getType", _wrap_CubicTexture_getType},
+    { "__tostring", _wrap_CubicTexture___tostring},
     {0,0}
 };
 static swig_lua_method swig_CubicTexture_meta[] = {
+    { "__tostring", _wrap_CubicTexture___tostring},
     {0,0}
 };
 
@@ -8643,6 +11510,30 @@ fail:
 }
 
 
+static int _wrap_CubicTextureBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::CubicTextureBuilder *arg1 = (jli::CubicTextureBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::CubicTextureBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::CubicTextureBuilder::__str__",1,"jli::CubicTextureBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__CubicTextureBuilder,0))){
+    SWIG_fail_ptr("CubicTextureBuilder___tostring",1,SWIGTYPE_p_jli__CubicTextureBuilder);
+  }
+  
+  result = (char *)jli_CubicTextureBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_CubicTextureBuilder_attributes[] = {
     {0,0,0}
 };
@@ -8652,9 +11543,11 @@ static swig_lua_method swig_CubicTextureBuilder_methods[]= {
     { "getObjectType", _wrap_CubicTextureBuilder_getObjectType},
     { "getClassName", _wrap_CubicTextureBuilder_getClassName},
     { "getType", _wrap_CubicTextureBuilder_getType},
+    { "__tostring", _wrap_CubicTextureBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_CubicTextureBuilder_meta[] = {
+    { "__tostring", _wrap_CubicTextureBuilder___tostring},
     {0,0}
 };
 
@@ -9405,6 +12298,30 @@ fail:
 }
 
 
+static int _wrap_DynamicPhysicsBody___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::DynamicPhysicsBody *arg1 = (jli::DynamicPhysicsBody *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::DynamicPhysicsBody::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::DynamicPhysicsBody::__str__",1,"jli::DynamicPhysicsBody *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__DynamicPhysicsBody,0))){
+    SWIG_fail_ptr("DynamicPhysicsBody___tostring",1,SWIGTYPE_p_jli__DynamicPhysicsBody);
+  }
+  
+  result = (char *)jli_DynamicPhysicsBody___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_DynamicPhysicsBody(void *obj) {
 jli::DynamicPhysicsBody *arg1 = (jli::DynamicPhysicsBody *) obj;
 delete arg1;
@@ -9429,9 +12346,11 @@ static swig_lua_method swig_DynamicPhysicsBody_methods[]= {
     { "serialize", _wrap_DynamicPhysicsBody_serialize},
     { "getClassName", _wrap_DynamicPhysicsBody_getClassName},
     { "getType", _wrap_DynamicPhysicsBody_getType},
+    { "__tostring", _wrap_DynamicPhysicsBody___tostring},
     {0,0}
 };
 static swig_lua_method swig_DynamicPhysicsBody_meta[] = {
+    { "__tostring", _wrap_DynamicPhysicsBody___tostring},
     {0,0}
 };
 
@@ -9589,6 +12508,30 @@ fail:
 }
 
 
+static int _wrap_DynamicPhysicsBodyBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::DynamicPhysicsBodyBuilder *arg1 = (jli::DynamicPhysicsBodyBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::DynamicPhysicsBodyBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::DynamicPhysicsBodyBuilder::__str__",1,"jli::DynamicPhysicsBodyBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder,0))){
+    SWIG_fail_ptr("DynamicPhysicsBodyBuilder___tostring",1,SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder);
+  }
+  
+  result = (char *)jli_DynamicPhysicsBodyBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_DynamicPhysicsBodyBuilder_attributes[] = {
     {0,0,0}
 };
@@ -9598,9 +12541,11 @@ static swig_lua_method swig_DynamicPhysicsBodyBuilder_methods[]= {
     { "getObjectType", _wrap_DynamicPhysicsBodyBuilder_getObjectType},
     { "getClassName", _wrap_DynamicPhysicsBodyBuilder_getClassName},
     { "getType", _wrap_DynamicPhysicsBodyBuilder_getType},
+    { "__tostring", _wrap_DynamicPhysicsBodyBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_DynamicPhysicsBodyBuilder_meta[] = {
+    { "__tostring", _wrap_DynamicPhysicsBodyBuilder___tostring},
     {0,0}
 };
 
@@ -10351,6 +13296,30 @@ fail:
 }
 
 
+static int _wrap_Geometry___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Geometry *arg1 = (jli::Geometry *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Geometry::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Geometry::__str__",1,"jli::Geometry *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Geometry,0))){
+    SWIG_fail_ptr("Geometry___tostring",1,SWIGTYPE_p_jli__Geometry);
+  }
+  
+  result = (char *)jli_Geometry___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Geometry(void *obj) {
 jli::Geometry *arg1 = (jli::Geometry *) obj;
 delete arg1;
@@ -10375,9 +13344,11 @@ static swig_lua_method swig_Geometry_methods[]= {
     { "serialize", _wrap_Geometry_serialize},
     { "getClassName", _wrap_Geometry_getClassName},
     { "getType", _wrap_Geometry_getType},
+    { "__tostring", _wrap_Geometry___tostring},
     {0,0}
 };
 static swig_lua_method swig_Geometry_meta[] = {
+    { "__tostring", _wrap_Geometry___tostring},
     {0,0}
 };
 
@@ -10535,6 +13506,30 @@ fail:
 }
 
 
+static int _wrap_GeometryBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::GeometryBuilder *arg1 = (jli::GeometryBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::GeometryBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::GeometryBuilder::__str__",1,"jli::GeometryBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__GeometryBuilder,0))){
+    SWIG_fail_ptr("GeometryBuilder___tostring",1,SWIGTYPE_p_jli__GeometryBuilder);
+  }
+  
+  result = (char *)jli_GeometryBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_GeometryBuilder_attributes[] = {
     {0,0,0}
 };
@@ -10544,9 +13539,11 @@ static swig_lua_method swig_GeometryBuilder_methods[]= {
     { "getObjectType", _wrap_GeometryBuilder_getObjectType},
     { "getClassName", _wrap_GeometryBuilder_getClassName},
     { "getType", _wrap_GeometryBuilder_getType},
+    { "__tostring", _wrap_GeometryBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_GeometryBuilder_meta[] = {
+    { "__tostring", _wrap_GeometryBuilder___tostring},
     {0,0}
 };
 
@@ -11297,6 +14294,30 @@ fail:
 }
 
 
+static int _wrap_GhostPhysicsBody___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::GhostPhysicsBody *arg1 = (jli::GhostPhysicsBody *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::GhostPhysicsBody::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::GhostPhysicsBody::__str__",1,"jli::GhostPhysicsBody *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__GhostPhysicsBody,0))){
+    SWIG_fail_ptr("GhostPhysicsBody___tostring",1,SWIGTYPE_p_jli__GhostPhysicsBody);
+  }
+  
+  result = (char *)jli_GhostPhysicsBody___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_GhostPhysicsBody(void *obj) {
 jli::GhostPhysicsBody *arg1 = (jli::GhostPhysicsBody *) obj;
 delete arg1;
@@ -11321,9 +14342,11 @@ static swig_lua_method swig_GhostPhysicsBody_methods[]= {
     { "serialize", _wrap_GhostPhysicsBody_serialize},
     { "getClassName", _wrap_GhostPhysicsBody_getClassName},
     { "getType", _wrap_GhostPhysicsBody_getType},
+    { "__tostring", _wrap_GhostPhysicsBody___tostring},
     {0,0}
 };
 static swig_lua_method swig_GhostPhysicsBody_meta[] = {
+    { "__tostring", _wrap_GhostPhysicsBody___tostring},
     {0,0}
 };
 
@@ -11481,6 +14504,30 @@ fail:
 }
 
 
+static int _wrap_GhostPhysicsBodyBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::GhostPhysicsBodyBuilder *arg1 = (jli::GhostPhysicsBodyBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::GhostPhysicsBodyBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::GhostPhysicsBodyBuilder::__str__",1,"jli::GhostPhysicsBodyBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__GhostPhysicsBodyBuilder,0))){
+    SWIG_fail_ptr("GhostPhysicsBodyBuilder___tostring",1,SWIGTYPE_p_jli__GhostPhysicsBodyBuilder);
+  }
+  
+  result = (char *)jli_GhostPhysicsBodyBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_GhostPhysicsBodyBuilder_attributes[] = {
     {0,0,0}
 };
@@ -11490,9 +14537,11 @@ static swig_lua_method swig_GhostPhysicsBodyBuilder_methods[]= {
     { "getObjectType", _wrap_GhostPhysicsBodyBuilder_getObjectType},
     { "getClassName", _wrap_GhostPhysicsBodyBuilder_getClassName},
     { "getType", _wrap_GhostPhysicsBodyBuilder_getType},
+    { "__tostring", _wrap_GhostPhysicsBodyBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_GhostPhysicsBodyBuilder_meta[] = {
+    { "__tostring", _wrap_GhostPhysicsBodyBuilder___tostring},
     {0,0}
 };
 
@@ -12243,6 +15292,30 @@ fail:
 }
 
 
+static int _wrap_KinematicPhysicsBody___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::KinematicPhysicsBody *arg1 = (jli::KinematicPhysicsBody *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::KinematicPhysicsBody::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::KinematicPhysicsBody::__str__",1,"jli::KinematicPhysicsBody *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__KinematicPhysicsBody,0))){
+    SWIG_fail_ptr("KinematicPhysicsBody___tostring",1,SWIGTYPE_p_jli__KinematicPhysicsBody);
+  }
+  
+  result = (char *)jli_KinematicPhysicsBody___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_KinematicPhysicsBody(void *obj) {
 jli::KinematicPhysicsBody *arg1 = (jli::KinematicPhysicsBody *) obj;
 delete arg1;
@@ -12267,9 +15340,11 @@ static swig_lua_method swig_KinematicPhysicsBody_methods[]= {
     { "serialize", _wrap_KinematicPhysicsBody_serialize},
     { "getClassName", _wrap_KinematicPhysicsBody_getClassName},
     { "getType", _wrap_KinematicPhysicsBody_getType},
+    { "__tostring", _wrap_KinematicPhysicsBody___tostring},
     {0,0}
 };
 static swig_lua_method swig_KinematicPhysicsBody_meta[] = {
+    { "__tostring", _wrap_KinematicPhysicsBody___tostring},
     {0,0}
 };
 
@@ -12427,6 +15502,30 @@ fail:
 }
 
 
+static int _wrap_KinematicPhysicsBodyBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::KinematicPhysicsBodyBuilder *arg1 = (jli::KinematicPhysicsBodyBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::KinematicPhysicsBodyBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::KinematicPhysicsBodyBuilder::__str__",1,"jli::KinematicPhysicsBodyBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder,0))){
+    SWIG_fail_ptr("KinematicPhysicsBodyBuilder___tostring",1,SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder);
+  }
+  
+  result = (char *)jli_KinematicPhysicsBodyBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_KinematicPhysicsBodyBuilder_attributes[] = {
     {0,0,0}
 };
@@ -12436,9 +15535,11 @@ static swig_lua_method swig_KinematicPhysicsBodyBuilder_methods[]= {
     { "getObjectType", _wrap_KinematicPhysicsBodyBuilder_getObjectType},
     { "getClassName", _wrap_KinematicPhysicsBodyBuilder_getClassName},
     { "getType", _wrap_KinematicPhysicsBodyBuilder_getType},
+    { "__tostring", _wrap_KinematicPhysicsBodyBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_KinematicPhysicsBodyBuilder_meta[] = {
+    { "__tostring", _wrap_KinematicPhysicsBodyBuilder___tostring},
     {0,0}
 };
 
@@ -13189,6 +16290,30 @@ fail:
 }
 
 
+static int _wrap_Light___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Light *arg1 = (jli::Light *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Light::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Light::__str__",1,"jli::Light *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Light,0))){
+    SWIG_fail_ptr("Light___tostring",1,SWIGTYPE_p_jli__Light);
+  }
+  
+  result = (char *)jli_Light___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Light(void *obj) {
 jli::Light *arg1 = (jli::Light *) obj;
 delete arg1;
@@ -13213,9 +16338,11 @@ static swig_lua_method swig_Light_methods[]= {
     { "serialize", _wrap_Light_serialize},
     { "getClassName", _wrap_Light_getClassName},
     { "getType", _wrap_Light_getType},
+    { "__tostring", _wrap_Light___tostring},
     {0,0}
 };
 static swig_lua_method swig_Light_meta[] = {
+    { "__tostring", _wrap_Light___tostring},
     {0,0}
 };
 
@@ -13373,6 +16500,30 @@ fail:
 }
 
 
+static int _wrap_LightBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::LightBuilder *arg1 = (jli::LightBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::LightBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::LightBuilder::__str__",1,"jli::LightBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__LightBuilder,0))){
+    SWIG_fail_ptr("LightBuilder___tostring",1,SWIGTYPE_p_jli__LightBuilder);
+  }
+  
+  result = (char *)jli_LightBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_LightBuilder_attributes[] = {
     {0,0,0}
 };
@@ -13382,9 +16533,11 @@ static swig_lua_method swig_LightBuilder_methods[]= {
     { "getObjectType", _wrap_LightBuilder_getObjectType},
     { "getClassName", _wrap_LightBuilder_getClassName},
     { "getType", _wrap_LightBuilder_getType},
+    { "__tostring", _wrap_LightBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_LightBuilder_meta[] = {
+    { "__tostring", _wrap_LightBuilder___tostring},
     {0,0}
 };
 
@@ -14135,6 +17288,30 @@ fail:
 }
 
 
+static int _wrap_Material___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Material *arg1 = (jli::Material *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Material::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Material::__str__",1,"jli::Material *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Material,0))){
+    SWIG_fail_ptr("Material___tostring",1,SWIGTYPE_p_jli__Material);
+  }
+  
+  result = (char *)jli_Material___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Material(void *obj) {
 jli::Material *arg1 = (jli::Material *) obj;
 delete arg1;
@@ -14159,9 +17336,11 @@ static swig_lua_method swig_Material_methods[]= {
     { "serialize", _wrap_Material_serialize},
     { "getClassName", _wrap_Material_getClassName},
     { "getType", _wrap_Material_getType},
+    { "__tostring", _wrap_Material___tostring},
     {0,0}
 };
 static swig_lua_method swig_Material_meta[] = {
+    { "__tostring", _wrap_Material___tostring},
     {0,0}
 };
 
@@ -14319,6 +17498,30 @@ fail:
 }
 
 
+static int _wrap_MaterialBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::MaterialBuilder *arg1 = (jli::MaterialBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::MaterialBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::MaterialBuilder::__str__",1,"jli::MaterialBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__MaterialBuilder,0))){
+    SWIG_fail_ptr("MaterialBuilder___tostring",1,SWIGTYPE_p_jli__MaterialBuilder);
+  }
+  
+  result = (char *)jli_MaterialBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_MaterialBuilder_attributes[] = {
     {0,0,0}
 };
@@ -14328,9 +17531,11 @@ static swig_lua_method swig_MaterialBuilder_methods[]= {
     { "getObjectType", _wrap_MaterialBuilder_getObjectType},
     { "getClassName", _wrap_MaterialBuilder_getClassName},
     { "getType", _wrap_MaterialBuilder_getType},
+    { "__tostring", _wrap_MaterialBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_MaterialBuilder_meta[] = {
+    { "__tostring", _wrap_MaterialBuilder___tostring},
     {0,0}
 };
 
@@ -15081,6 +18286,30 @@ fail:
 }
 
 
+static int _wrap_MaterialProperty___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::MaterialProperty *arg1 = (jli::MaterialProperty *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::MaterialProperty::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::MaterialProperty::__str__",1,"jli::MaterialProperty *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__MaterialProperty,0))){
+    SWIG_fail_ptr("MaterialProperty___tostring",1,SWIGTYPE_p_jli__MaterialProperty);
+  }
+  
+  result = (char *)jli_MaterialProperty___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_MaterialProperty(void *obj) {
 jli::MaterialProperty *arg1 = (jli::MaterialProperty *) obj;
 delete arg1;
@@ -15105,9 +18334,11 @@ static swig_lua_method swig_MaterialProperty_methods[]= {
     { "serialize", _wrap_MaterialProperty_serialize},
     { "getClassName", _wrap_MaterialProperty_getClassName},
     { "getType", _wrap_MaterialProperty_getType},
+    { "__tostring", _wrap_MaterialProperty___tostring},
     {0,0}
 };
 static swig_lua_method swig_MaterialProperty_meta[] = {
+    { "__tostring", _wrap_MaterialProperty___tostring},
     {0,0}
 };
 
@@ -15265,6 +18496,30 @@ fail:
 }
 
 
+static int _wrap_MaterialPropertyBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::MaterialPropertyBuilder *arg1 = (jli::MaterialPropertyBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::MaterialPropertyBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::MaterialPropertyBuilder::__str__",1,"jli::MaterialPropertyBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__MaterialPropertyBuilder,0))){
+    SWIG_fail_ptr("MaterialPropertyBuilder___tostring",1,SWIGTYPE_p_jli__MaterialPropertyBuilder);
+  }
+  
+  result = (char *)jli_MaterialPropertyBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_MaterialPropertyBuilder_attributes[] = {
     {0,0,0}
 };
@@ -15274,9 +18529,11 @@ static swig_lua_method swig_MaterialPropertyBuilder_methods[]= {
     { "getObjectType", _wrap_MaterialPropertyBuilder_getObjectType},
     { "getClassName", _wrap_MaterialPropertyBuilder_getClassName},
     { "getType", _wrap_MaterialPropertyBuilder_getType},
+    { "__tostring", _wrap_MaterialPropertyBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_MaterialPropertyBuilder_meta[] = {
+    { "__tostring", _wrap_MaterialPropertyBuilder___tostring},
     {0,0}
 };
 
@@ -16077,6 +19334,30 @@ fail:
 }
 
 
+static int _wrap_Node___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Node *arg1 = (jli::Node *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Node::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Node::__str__",1,"jli::Node *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Node,0))){
+    SWIG_fail_ptr("Node___tostring",1,SWIGTYPE_p_jli__Node);
+  }
+  
+  result = (char *)jli_Node___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Node(void *obj) {
 jli::Node *arg1 = (jli::Node *) obj;
 delete arg1;
@@ -16103,9 +19384,11 @@ static swig_lua_method swig_Node_methods[]= {
     { "getType", _wrap_Node_getType},
     { "setName", _wrap_Node_setName},
     { "getName", _wrap_Node_getName},
+    { "__tostring", _wrap_Node___tostring},
     {0,0}
 };
 static swig_lua_method swig_Node_meta[] = {
+    { "__tostring", _wrap_Node___tostring},
     {0,0}
 };
 
@@ -16263,6 +19546,30 @@ fail:
 }
 
 
+static int _wrap_NodeBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::NodeBuilder *arg1 = (jli::NodeBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::NodeBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeBuilder::__str__",1,"jli::NodeBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__NodeBuilder,0))){
+    SWIG_fail_ptr("NodeBuilder___tostring",1,SWIGTYPE_p_jli__NodeBuilder);
+  }
+  
+  result = (char *)jli_NodeBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_NodeBuilder_attributes[] = {
     {0,0,0}
 };
@@ -16272,9 +19579,11 @@ static swig_lua_method swig_NodeBuilder_methods[]= {
     { "getObjectType", _wrap_NodeBuilder_getObjectType},
     { "getClassName", _wrap_NodeBuilder_getClassName},
     { "getType", _wrap_NodeBuilder_getType},
+    { "__tostring", _wrap_NodeBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_NodeBuilder_meta[] = {
+    { "__tostring", _wrap_NodeBuilder___tostring},
     {0,0}
 };
 
@@ -17126,7 +20435,7 @@ static int _wrap_NodeState_onMessage(lua_State* L) {
   bool result;
   
   SWIG_check_num_args("jli::NodeState::onMessage",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeState::onMessage",1,"jli::NodeState *");
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeState::onMessage",1,"jli::NodeState const *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::NodeState::onMessage",2,"jli::Node *");
   if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::NodeState::onMessage",3,"jli::Telegram const &");
   
@@ -17144,7 +20453,7 @@ static int _wrap_NodeState_onMessage(lua_State* L) {
     SWIG_fail_ptr("NodeState_onMessage",3,SWIGTYPE_p_jli__Telegram);
   }
   
-  result = (bool)(arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
+  result = (bool)((jli::NodeState const *)arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -17206,6 +20515,30 @@ fail:
 }
 
 
+static int _wrap_NodeState___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::NodeState *arg1 = (jli::NodeState *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::NodeState::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeState::__str__",1,"jli::NodeState *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__NodeState,0))){
+    SWIG_fail_ptr("NodeState___tostring",1,SWIGTYPE_p_jli__NodeState);
+  }
+  
+  result = (char *)jli_NodeState___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_NodeState(void *obj) {
 jli::NodeState *arg1 = (jli::NodeState *) obj;
 delete arg1;
@@ -17236,9 +20569,11 @@ static swig_lua_method swig_NodeState_methods[]= {
     { "onMessage", _wrap_NodeState_onMessage},
     { "setName", _wrap_NodeState_setName},
     { "getName", _wrap_NodeState_getName},
+    { "__tostring", _wrap_NodeState___tostring},
     {0,0}
 };
 static swig_lua_method swig_NodeState_meta[] = {
+    { "__tostring", _wrap_NodeState___tostring},
     {0,0}
 };
 
@@ -17263,8 +20598,8 @@ static swig_lua_namespace swig_NodeState_Sf_SwigStatic = {
     swig_NodeState_Sf_SwigStatic_classes,
     0
 };
-static swig_lua_class *swig_NodeState_bases[] = {0};
-static const char *swig_NodeState_base_names[] = {0};
+static swig_lua_class *swig_NodeState_bases[] = {0,0};
+static const char *swig_NodeState_base_names[] = {"jli::AbstractState< jli::Node > *",0};
 static swig_lua_class _wrap_class_NodeState = { "NodeState", "NodeState", &SWIGTYPE_p_jli__NodeState,_proxy__wrap_new_NodeState, swig_delete_NodeState, swig_NodeState_methods, swig_NodeState_attributes, &swig_NodeState_Sf_SwigStatic, swig_NodeState_meta, swig_NodeState_bases, swig_NodeState_base_names };
 
 static int _wrap_NodeStateBuilder_calculateSerializeBufferSize(lua_State* L) {
@@ -17396,6 +20731,30 @@ fail:
 }
 
 
+static int _wrap_NodeStateBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::NodeStateBuilder *arg1 = (jli::NodeStateBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::NodeStateBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeStateBuilder::__str__",1,"jli::NodeStateBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__NodeStateBuilder,0))){
+    SWIG_fail_ptr("NodeStateBuilder___tostring",1,SWIGTYPE_p_jli__NodeStateBuilder);
+  }
+  
+  result = (char *)jli_NodeStateBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_NodeStateBuilder_attributes[] = {
     {0,0,0}
 };
@@ -17405,9 +20764,11 @@ static swig_lua_method swig_NodeStateBuilder_methods[]= {
     { "getObjectType", _wrap_NodeStateBuilder_getObjectType},
     { "getClassName", _wrap_NodeStateBuilder_getClassName},
     { "getType", _wrap_NodeStateBuilder_getType},
+    { "__tostring", _wrap_NodeStateBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_NodeStateBuilder_meta[] = {
+    { "__tostring", _wrap_NodeStateBuilder___tostring},
     {0,0}
 };
 
@@ -18158,6 +21519,30 @@ fail:
 }
 
 
+static int _wrap_NodeStateMachine___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::NodeStateMachine *arg1 = (jli::NodeStateMachine *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::NodeStateMachine::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeStateMachine::__str__",1,"jli::NodeStateMachine *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__NodeStateMachine,0))){
+    SWIG_fail_ptr("NodeStateMachine___tostring",1,SWIGTYPE_p_jli__NodeStateMachine);
+  }
+  
+  result = (char *)jli_NodeStateMachine___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_NodeStateMachine(void *obj) {
 jli::NodeStateMachine *arg1 = (jli::NodeStateMachine *) obj;
 delete arg1;
@@ -18182,9 +21567,11 @@ static swig_lua_method swig_NodeStateMachine_methods[]= {
     { "serialize", _wrap_NodeStateMachine_serialize},
     { "getClassName", _wrap_NodeStateMachine_getClassName},
     { "getType", _wrap_NodeStateMachine_getType},
+    { "__tostring", _wrap_NodeStateMachine___tostring},
     {0,0}
 };
 static swig_lua_method swig_NodeStateMachine_meta[] = {
+    { "__tostring", _wrap_NodeStateMachine___tostring},
     {0,0}
 };
 
@@ -18209,8 +21596,8 @@ static swig_lua_namespace swig_NodeStateMachine_Sf_SwigStatic = {
     swig_NodeStateMachine_Sf_SwigStatic_classes,
     0
 };
-static swig_lua_class *swig_NodeStateMachine_bases[] = {0};
-static const char *swig_NodeStateMachine_base_names[] = {0};
+static swig_lua_class *swig_NodeStateMachine_bases[] = {0,0};
+static const char *swig_NodeStateMachine_base_names[] = {"jli::AbstractStateMachine< jli::Node > *",0};
 static swig_lua_class _wrap_class_NodeStateMachine = { "NodeStateMachine", "NodeStateMachine", &SWIGTYPE_p_jli__NodeStateMachine,_proxy__wrap_new_NodeStateMachine, swig_delete_NodeStateMachine, swig_NodeStateMachine_methods, swig_NodeStateMachine_attributes, &swig_NodeStateMachine_Sf_SwigStatic, swig_NodeStateMachine_meta, swig_NodeStateMachine_bases, swig_NodeStateMachine_base_names };
 
 static int _wrap_NodeStateMachineBuilder_calculateSerializeBufferSize(lua_State* L) {
@@ -18342,6 +21729,30 @@ fail:
 }
 
 
+static int _wrap_NodeStateMachineBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::NodeStateMachineBuilder *arg1 = (jli::NodeStateMachineBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::NodeStateMachineBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::NodeStateMachineBuilder::__str__",1,"jli::NodeStateMachineBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__NodeStateMachineBuilder,0))){
+    SWIG_fail_ptr("NodeStateMachineBuilder___tostring",1,SWIGTYPE_p_jli__NodeStateMachineBuilder);
+  }
+  
+  result = (char *)jli_NodeStateMachineBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_NodeStateMachineBuilder_attributes[] = {
     {0,0,0}
 };
@@ -18351,9 +21762,11 @@ static swig_lua_method swig_NodeStateMachineBuilder_methods[]= {
     { "getObjectType", _wrap_NodeStateMachineBuilder_getObjectType},
     { "getClassName", _wrap_NodeStateMachineBuilder_getClassName},
     { "getType", _wrap_NodeStateMachineBuilder_getType},
+    { "__tostring", _wrap_NodeStateMachineBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_NodeStateMachineBuilder_meta[] = {
+    { "__tostring", _wrap_NodeStateMachineBuilder___tostring},
     {0,0}
 };
 
@@ -19104,6 +22517,30 @@ fail:
 }
 
 
+static int _wrap_ParticleEmitter___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::ParticleEmitter *arg1 = (jli::ParticleEmitter *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::ParticleEmitter::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::ParticleEmitter::__str__",1,"jli::ParticleEmitter *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__ParticleEmitter,0))){
+    SWIG_fail_ptr("ParticleEmitter___tostring",1,SWIGTYPE_p_jli__ParticleEmitter);
+  }
+  
+  result = (char *)jli_ParticleEmitter___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_ParticleEmitter(void *obj) {
 jli::ParticleEmitter *arg1 = (jli::ParticleEmitter *) obj;
 delete arg1;
@@ -19128,9 +22565,11 @@ static swig_lua_method swig_ParticleEmitter_methods[]= {
     { "serialize", _wrap_ParticleEmitter_serialize},
     { "getClassName", _wrap_ParticleEmitter_getClassName},
     { "getType", _wrap_ParticleEmitter_getType},
+    { "__tostring", _wrap_ParticleEmitter___tostring},
     {0,0}
 };
 static swig_lua_method swig_ParticleEmitter_meta[] = {
+    { "__tostring", _wrap_ParticleEmitter___tostring},
     {0,0}
 };
 
@@ -19288,6 +22727,30 @@ fail:
 }
 
 
+static int _wrap_ParticleEmitterBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::ParticleEmitterBuilder *arg1 = (jli::ParticleEmitterBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::ParticleEmitterBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::ParticleEmitterBuilder::__str__",1,"jli::ParticleEmitterBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__ParticleEmitterBuilder,0))){
+    SWIG_fail_ptr("ParticleEmitterBuilder___tostring",1,SWIGTYPE_p_jli__ParticleEmitterBuilder);
+  }
+  
+  result = (char *)jli_ParticleEmitterBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_ParticleEmitterBuilder_attributes[] = {
     {0,0,0}
 };
@@ -19297,9 +22760,11 @@ static swig_lua_method swig_ParticleEmitterBuilder_methods[]= {
     { "getObjectType", _wrap_ParticleEmitterBuilder_getObjectType},
     { "getClassName", _wrap_ParticleEmitterBuilder_getClassName},
     { "getType", _wrap_ParticleEmitterBuilder_getType},
+    { "__tostring", _wrap_ParticleEmitterBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_ParticleEmitterBuilder_meta[] = {
+    { "__tostring", _wrap_ParticleEmitterBuilder___tostring},
     {0,0}
 };
 
@@ -20050,6 +23515,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsContact___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsContact *arg1 = (jli::PhysicsContact *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsContact::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsContact::__str__",1,"jli::PhysicsContact *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsContact,0))){
+    SWIG_fail_ptr("PhysicsContact___tostring",1,SWIGTYPE_p_jli__PhysicsContact);
+  }
+  
+  result = (char *)jli_PhysicsContact___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_PhysicsContact(void *obj) {
 jli::PhysicsContact *arg1 = (jli::PhysicsContact *) obj;
 delete arg1;
@@ -20074,9 +23563,11 @@ static swig_lua_method swig_PhysicsContact_methods[]= {
     { "serialize", _wrap_PhysicsContact_serialize},
     { "getClassName", _wrap_PhysicsContact_getClassName},
     { "getType", _wrap_PhysicsContact_getType},
+    { "__tostring", _wrap_PhysicsContact___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsContact_meta[] = {
+    { "__tostring", _wrap_PhysicsContact___tostring},
     {0,0}
 };
 
@@ -20234,6 +23725,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsContactBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsContactBuilder *arg1 = (jli::PhysicsContactBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsContactBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsContactBuilder::__str__",1,"jli::PhysicsContactBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsContactBuilder,0))){
+    SWIG_fail_ptr("PhysicsContactBuilder___tostring",1,SWIGTYPE_p_jli__PhysicsContactBuilder);
+  }
+  
+  result = (char *)jli_PhysicsContactBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_PhysicsContactBuilder_attributes[] = {
     {0,0,0}
 };
@@ -20243,9 +23758,11 @@ static swig_lua_method swig_PhysicsContactBuilder_methods[]= {
     { "getObjectType", _wrap_PhysicsContactBuilder_getObjectType},
     { "getClassName", _wrap_PhysicsContactBuilder_getClassName},
     { "getType", _wrap_PhysicsContactBuilder_getType},
+    { "__tostring", _wrap_PhysicsContactBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsContactBuilder_meta[] = {
+    { "__tostring", _wrap_PhysicsContactBuilder___tostring},
     {0,0}
 };
 
@@ -20996,6 +24513,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsField___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsField *arg1 = (jli::PhysicsField *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsField::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsField::__str__",1,"jli::PhysicsField *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsField,0))){
+    SWIG_fail_ptr("PhysicsField___tostring",1,SWIGTYPE_p_jli__PhysicsField);
+  }
+  
+  result = (char *)jli_PhysicsField___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_PhysicsField(void *obj) {
 jli::PhysicsField *arg1 = (jli::PhysicsField *) obj;
 delete arg1;
@@ -21020,9 +24561,11 @@ static swig_lua_method swig_PhysicsField_methods[]= {
     { "serialize", _wrap_PhysicsField_serialize},
     { "getClassName", _wrap_PhysicsField_getClassName},
     { "getType", _wrap_PhysicsField_getType},
+    { "__tostring", _wrap_PhysicsField___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsField_meta[] = {
+    { "__tostring", _wrap_PhysicsField___tostring},
     {0,0}
 };
 
@@ -21180,6 +24723,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsFieldBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsFieldBuilder *arg1 = (jli::PhysicsFieldBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsFieldBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsFieldBuilder::__str__",1,"jli::PhysicsFieldBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsFieldBuilder,0))){
+    SWIG_fail_ptr("PhysicsFieldBuilder___tostring",1,SWIGTYPE_p_jli__PhysicsFieldBuilder);
+  }
+  
+  result = (char *)jli_PhysicsFieldBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_PhysicsFieldBuilder_attributes[] = {
     {0,0,0}
 };
@@ -21189,9 +24756,11 @@ static swig_lua_method swig_PhysicsFieldBuilder_methods[]= {
     { "getObjectType", _wrap_PhysicsFieldBuilder_getObjectType},
     { "getClassName", _wrap_PhysicsFieldBuilder_getClassName},
     { "getType", _wrap_PhysicsFieldBuilder_getType},
+    { "__tostring", _wrap_PhysicsFieldBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsFieldBuilder_meta[] = {
+    { "__tostring", _wrap_PhysicsFieldBuilder___tostring},
     {0,0}
 };
 
@@ -21942,6 +25511,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsShape___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsShape *arg1 = (jli::PhysicsShape *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsShape::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsShape::__str__",1,"jli::PhysicsShape *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsShape,0))){
+    SWIG_fail_ptr("PhysicsShape___tostring",1,SWIGTYPE_p_jli__PhysicsShape);
+  }
+  
+  result = (char *)jli_PhysicsShape___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_PhysicsShape(void *obj) {
 jli::PhysicsShape *arg1 = (jli::PhysicsShape *) obj;
 delete arg1;
@@ -21966,9 +25559,11 @@ static swig_lua_method swig_PhysicsShape_methods[]= {
     { "serialize", _wrap_PhysicsShape_serialize},
     { "getClassName", _wrap_PhysicsShape_getClassName},
     { "getType", _wrap_PhysicsShape_getType},
+    { "__tostring", _wrap_PhysicsShape___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsShape_meta[] = {
+    { "__tostring", _wrap_PhysicsShape___tostring},
     {0,0}
 };
 
@@ -22126,6 +25721,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsShapeBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsShapeBuilder *arg1 = (jli::PhysicsShapeBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsShapeBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsShapeBuilder::__str__",1,"jli::PhysicsShapeBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsShapeBuilder,0))){
+    SWIG_fail_ptr("PhysicsShapeBuilder___tostring",1,SWIGTYPE_p_jli__PhysicsShapeBuilder);
+  }
+  
+  result = (char *)jli_PhysicsShapeBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_PhysicsShapeBuilder_attributes[] = {
     {0,0,0}
 };
@@ -22135,9 +25754,11 @@ static swig_lua_method swig_PhysicsShapeBuilder_methods[]= {
     { "getObjectType", _wrap_PhysicsShapeBuilder_getObjectType},
     { "getClassName", _wrap_PhysicsShapeBuilder_getClassName},
     { "getType", _wrap_PhysicsShapeBuilder_getType},
+    { "__tostring", _wrap_PhysicsShapeBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsShapeBuilder_meta[] = {
+    { "__tostring", _wrap_PhysicsShapeBuilder___tostring},
     {0,0}
 };
 
@@ -22888,6 +26509,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsWorld___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsWorld *arg1 = (jli::PhysicsWorld *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsWorld::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsWorld::__str__",1,"jli::PhysicsWorld *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsWorld,0))){
+    SWIG_fail_ptr("PhysicsWorld___tostring",1,SWIGTYPE_p_jli__PhysicsWorld);
+  }
+  
+  result = (char *)jli_PhysicsWorld___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_PhysicsWorld(void *obj) {
 jli::PhysicsWorld *arg1 = (jli::PhysicsWorld *) obj;
 delete arg1;
@@ -22912,9 +26557,11 @@ static swig_lua_method swig_PhysicsWorld_methods[]= {
     { "serialize", _wrap_PhysicsWorld_serialize},
     { "getClassName", _wrap_PhysicsWorld_getClassName},
     { "getType", _wrap_PhysicsWorld_getType},
+    { "__tostring", _wrap_PhysicsWorld___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsWorld_meta[] = {
+    { "__tostring", _wrap_PhysicsWorld___tostring},
     {0,0}
 };
 
@@ -23072,6 +26719,30 @@ fail:
 }
 
 
+static int _wrap_PhysicsWorldBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::PhysicsWorldBuilder *arg1 = (jli::PhysicsWorldBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::PhysicsWorldBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::PhysicsWorldBuilder::__str__",1,"jli::PhysicsWorldBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__PhysicsWorldBuilder,0))){
+    SWIG_fail_ptr("PhysicsWorldBuilder___tostring",1,SWIGTYPE_p_jli__PhysicsWorldBuilder);
+  }
+  
+  result = (char *)jli_PhysicsWorldBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_PhysicsWorldBuilder_attributes[] = {
     {0,0,0}
 };
@@ -23081,9 +26752,11 @@ static swig_lua_method swig_PhysicsWorldBuilder_methods[]= {
     { "getObjectType", _wrap_PhysicsWorldBuilder_getObjectType},
     { "getClassName", _wrap_PhysicsWorldBuilder_getClassName},
     { "getType", _wrap_PhysicsWorldBuilder_getType},
+    { "__tostring", _wrap_PhysicsWorldBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_PhysicsWorldBuilder_meta[] = {
+    { "__tostring", _wrap_PhysicsWorldBuilder___tostring},
     {0,0}
 };
 
@@ -23834,6 +27507,30 @@ fail:
 }
 
 
+static int _wrap_Resource___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Resource *arg1 = (jli::Resource *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Resource::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Resource::__str__",1,"jli::Resource *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Resource,0))){
+    SWIG_fail_ptr("Resource___tostring",1,SWIGTYPE_p_jli__Resource);
+  }
+  
+  result = (char *)jli_Resource___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Resource(void *obj) {
 jli::Resource *arg1 = (jli::Resource *) obj;
 delete arg1;
@@ -23858,9 +27555,11 @@ static swig_lua_method swig_Resource_methods[]= {
     { "serialize", _wrap_Resource_serialize},
     { "getClassName", _wrap_Resource_getClassName},
     { "getType", _wrap_Resource_getType},
+    { "__tostring", _wrap_Resource___tostring},
     {0,0}
 };
 static swig_lua_method swig_Resource_meta[] = {
+    { "__tostring", _wrap_Resource___tostring},
     {0,0}
 };
 
@@ -24018,6 +27717,30 @@ fail:
 }
 
 
+static int _wrap_ResourceBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::ResourceBuilder *arg1 = (jli::ResourceBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::ResourceBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::ResourceBuilder::__str__",1,"jli::ResourceBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__ResourceBuilder,0))){
+    SWIG_fail_ptr("ResourceBuilder___tostring",1,SWIGTYPE_p_jli__ResourceBuilder);
+  }
+  
+  result = (char *)jli_ResourceBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_ResourceBuilder_attributes[] = {
     {0,0,0}
 };
@@ -24027,9 +27750,11 @@ static swig_lua_method swig_ResourceBuilder_methods[]= {
     { "getObjectType", _wrap_ResourceBuilder_getObjectType},
     { "getClassName", _wrap_ResourceBuilder_getClassName},
     { "getType", _wrap_ResourceBuilder_getType},
+    { "__tostring", _wrap_ResourceBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_ResourceBuilder_meta[] = {
+    { "__tostring", _wrap_ResourceBuilder___tostring},
     {0,0}
 };
 
@@ -24780,6 +28505,30 @@ fail:
 }
 
 
+static int _wrap_RigidPhysicsBody___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::RigidPhysicsBody *arg1 = (jli::RigidPhysicsBody *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::RigidPhysicsBody::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::RigidPhysicsBody::__str__",1,"jli::RigidPhysicsBody *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__RigidPhysicsBody,0))){
+    SWIG_fail_ptr("RigidPhysicsBody___tostring",1,SWIGTYPE_p_jli__RigidPhysicsBody);
+  }
+  
+  result = (char *)jli_RigidPhysicsBody___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_RigidPhysicsBody(void *obj) {
 jli::RigidPhysicsBody *arg1 = (jli::RigidPhysicsBody *) obj;
 delete arg1;
@@ -24804,9 +28553,11 @@ static swig_lua_method swig_RigidPhysicsBody_methods[]= {
     { "serialize", _wrap_RigidPhysicsBody_serialize},
     { "getClassName", _wrap_RigidPhysicsBody_getClassName},
     { "getType", _wrap_RigidPhysicsBody_getType},
+    { "__tostring", _wrap_RigidPhysicsBody___tostring},
     {0,0}
 };
 static swig_lua_method swig_RigidPhysicsBody_meta[] = {
+    { "__tostring", _wrap_RigidPhysicsBody___tostring},
     {0,0}
 };
 
@@ -24964,6 +28715,30 @@ fail:
 }
 
 
+static int _wrap_RigidPhysicsBodyBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::RigidPhysicsBodyBuilder *arg1 = (jli::RigidPhysicsBodyBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::RigidPhysicsBodyBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::RigidPhysicsBodyBuilder::__str__",1,"jli::RigidPhysicsBodyBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__RigidPhysicsBodyBuilder,0))){
+    SWIG_fail_ptr("RigidPhysicsBodyBuilder___tostring",1,SWIGTYPE_p_jli__RigidPhysicsBodyBuilder);
+  }
+  
+  result = (char *)jli_RigidPhysicsBodyBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_RigidPhysicsBodyBuilder_attributes[] = {
     {0,0,0}
 };
@@ -24973,9 +28748,11 @@ static swig_lua_method swig_RigidPhysicsBodyBuilder_methods[]= {
     { "getObjectType", _wrap_RigidPhysicsBodyBuilder_getObjectType},
     { "getClassName", _wrap_RigidPhysicsBodyBuilder_getClassName},
     { "getType", _wrap_RigidPhysicsBodyBuilder_getType},
+    { "__tostring", _wrap_RigidPhysicsBodyBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_RigidPhysicsBodyBuilder_meta[] = {
+    { "__tostring", _wrap_RigidPhysicsBodyBuilder___tostring},
     {0,0}
 };
 
@@ -25776,6 +29553,30 @@ fail:
 }
 
 
+static int _wrap_Scene___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Scene *arg1 = (jli::Scene *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Scene::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Scene::__str__",1,"jli::Scene *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Scene,0))){
+    SWIG_fail_ptr("Scene___tostring",1,SWIGTYPE_p_jli__Scene);
+  }
+  
+  result = (char *)jli_Scene___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Scene(void *obj) {
 jli::Scene *arg1 = (jli::Scene *) obj;
 delete arg1;
@@ -25802,9 +29603,11 @@ static swig_lua_method swig_Scene_methods[]= {
     { "getType", _wrap_Scene_getType},
     { "setName", _wrap_Scene_setName},
     { "getName", _wrap_Scene_getName},
+    { "__tostring", _wrap_Scene___tostring},
     {0,0}
 };
 static swig_lua_method swig_Scene_meta[] = {
+    { "__tostring", _wrap_Scene___tostring},
     {0,0}
 };
 
@@ -25962,6 +29765,30 @@ fail:
 }
 
 
+static int _wrap_SceneBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SceneBuilder *arg1 = (jli::SceneBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SceneBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneBuilder::__str__",1,"jli::SceneBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SceneBuilder,0))){
+    SWIG_fail_ptr("SceneBuilder___tostring",1,SWIGTYPE_p_jli__SceneBuilder);
+  }
+  
+  result = (char *)jli_SceneBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_SceneBuilder_attributes[] = {
     {0,0,0}
 };
@@ -25971,9 +29798,11 @@ static swig_lua_method swig_SceneBuilder_methods[]= {
     { "getObjectType", _wrap_SceneBuilder_getObjectType},
     { "getClassName", _wrap_SceneBuilder_getClassName},
     { "getType", _wrap_SceneBuilder_getType},
+    { "__tostring", _wrap_SceneBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_SceneBuilder_meta[] = {
+    { "__tostring", _wrap_SceneBuilder___tostring},
     {0,0}
 };
 
@@ -26825,7 +30654,7 @@ static int _wrap_SceneState_onMessage(lua_State* L) {
   bool result;
   
   SWIG_check_num_args("jli::SceneState::onMessage",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneState::onMessage",1,"jli::SceneState *");
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneState::onMessage",1,"jli::SceneState const *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::SceneState::onMessage",2,"jli::Scene *");
   if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::SceneState::onMessage",3,"jli::Telegram const &");
   
@@ -26843,7 +30672,7 @@ static int _wrap_SceneState_onMessage(lua_State* L) {
     SWIG_fail_ptr("SceneState_onMessage",3,SWIGTYPE_p_jli__Telegram);
   }
   
-  result = (bool)(arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
+  result = (bool)((jli::SceneState const *)arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -26905,6 +30734,30 @@ fail:
 }
 
 
+static int _wrap_SceneState___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SceneState *arg1 = (jli::SceneState *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SceneState::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneState::__str__",1,"jli::SceneState *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SceneState,0))){
+    SWIG_fail_ptr("SceneState___tostring",1,SWIGTYPE_p_jli__SceneState);
+  }
+  
+  result = (char *)jli_SceneState___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_SceneState(void *obj) {
 jli::SceneState *arg1 = (jli::SceneState *) obj;
 delete arg1;
@@ -26935,9 +30788,11 @@ static swig_lua_method swig_SceneState_methods[]= {
     { "onMessage", _wrap_SceneState_onMessage},
     { "setName", _wrap_SceneState_setName},
     { "getName", _wrap_SceneState_getName},
+    { "__tostring", _wrap_SceneState___tostring},
     {0,0}
 };
 static swig_lua_method swig_SceneState_meta[] = {
+    { "__tostring", _wrap_SceneState___tostring},
     {0,0}
 };
 
@@ -26962,8 +30817,8 @@ static swig_lua_namespace swig_SceneState_Sf_SwigStatic = {
     swig_SceneState_Sf_SwigStatic_classes,
     0
 };
-static swig_lua_class *swig_SceneState_bases[] = {0};
-static const char *swig_SceneState_base_names[] = {0};
+static swig_lua_class *swig_SceneState_bases[] = {0,0};
+static const char *swig_SceneState_base_names[] = {"jli::AbstractState< jli::Scene > *",0};
 static swig_lua_class _wrap_class_SceneState = { "SceneState", "SceneState", &SWIGTYPE_p_jli__SceneState,_proxy__wrap_new_SceneState, swig_delete_SceneState, swig_SceneState_methods, swig_SceneState_attributes, &swig_SceneState_Sf_SwigStatic, swig_SceneState_meta, swig_SceneState_bases, swig_SceneState_base_names };
 
 static int _wrap_SceneStateBuilder_calculateSerializeBufferSize(lua_State* L) {
@@ -27095,6 +30950,30 @@ fail:
 }
 
 
+static int _wrap_SceneStateBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SceneStateBuilder *arg1 = (jli::SceneStateBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SceneStateBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneStateBuilder::__str__",1,"jli::SceneStateBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SceneStateBuilder,0))){
+    SWIG_fail_ptr("SceneStateBuilder___tostring",1,SWIGTYPE_p_jli__SceneStateBuilder);
+  }
+  
+  result = (char *)jli_SceneStateBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_SceneStateBuilder_attributes[] = {
     {0,0,0}
 };
@@ -27104,9 +30983,11 @@ static swig_lua_method swig_SceneStateBuilder_methods[]= {
     { "getObjectType", _wrap_SceneStateBuilder_getObjectType},
     { "getClassName", _wrap_SceneStateBuilder_getClassName},
     { "getType", _wrap_SceneStateBuilder_getType},
+    { "__tostring", _wrap_SceneStateBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_SceneStateBuilder_meta[] = {
+    { "__tostring", _wrap_SceneStateBuilder___tostring},
     {0,0}
 };
 
@@ -27857,6 +31738,30 @@ fail:
 }
 
 
+static int _wrap_SceneStateMachine___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SceneStateMachine *arg1 = (jli::SceneStateMachine *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SceneStateMachine::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneStateMachine::__str__",1,"jli::SceneStateMachine *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SceneStateMachine,0))){
+    SWIG_fail_ptr("SceneStateMachine___tostring",1,SWIGTYPE_p_jli__SceneStateMachine);
+  }
+  
+  result = (char *)jli_SceneStateMachine___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_SceneStateMachine(void *obj) {
 jli::SceneStateMachine *arg1 = (jli::SceneStateMachine *) obj;
 delete arg1;
@@ -27881,9 +31786,11 @@ static swig_lua_method swig_SceneStateMachine_methods[]= {
     { "serialize", _wrap_SceneStateMachine_serialize},
     { "getClassName", _wrap_SceneStateMachine_getClassName},
     { "getType", _wrap_SceneStateMachine_getType},
+    { "__tostring", _wrap_SceneStateMachine___tostring},
     {0,0}
 };
 static swig_lua_method swig_SceneStateMachine_meta[] = {
+    { "__tostring", _wrap_SceneStateMachine___tostring},
     {0,0}
 };
 
@@ -27908,8 +31815,8 @@ static swig_lua_namespace swig_SceneStateMachine_Sf_SwigStatic = {
     swig_SceneStateMachine_Sf_SwigStatic_classes,
     0
 };
-static swig_lua_class *swig_SceneStateMachine_bases[] = {0};
-static const char *swig_SceneStateMachine_base_names[] = {0};
+static swig_lua_class *swig_SceneStateMachine_bases[] = {0,0};
+static const char *swig_SceneStateMachine_base_names[] = {"jli::AbstractStateMachine< jli::Scene > *",0};
 static swig_lua_class _wrap_class_SceneStateMachine = { "SceneStateMachine", "SceneStateMachine", &SWIGTYPE_p_jli__SceneStateMachine,_proxy__wrap_new_SceneStateMachine, swig_delete_SceneStateMachine, swig_SceneStateMachine_methods, swig_SceneStateMachine_attributes, &swig_SceneStateMachine_Sf_SwigStatic, swig_SceneStateMachine_meta, swig_SceneStateMachine_bases, swig_SceneStateMachine_base_names };
 
 static int _wrap_SceneStateMachineBuilder_calculateSerializeBufferSize(lua_State* L) {
@@ -28041,6 +31948,30 @@ fail:
 }
 
 
+static int _wrap_SceneStateMachineBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SceneStateMachineBuilder *arg1 = (jli::SceneStateMachineBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SceneStateMachineBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SceneStateMachineBuilder::__str__",1,"jli::SceneStateMachineBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SceneStateMachineBuilder,0))){
+    SWIG_fail_ptr("SceneStateMachineBuilder___tostring",1,SWIGTYPE_p_jli__SceneStateMachineBuilder);
+  }
+  
+  result = (char *)jli_SceneStateMachineBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_SceneStateMachineBuilder_attributes[] = {
     {0,0,0}
 };
@@ -28050,9 +31981,11 @@ static swig_lua_method swig_SceneStateMachineBuilder_methods[]= {
     { "getObjectType", _wrap_SceneStateMachineBuilder_getObjectType},
     { "getClassName", _wrap_SceneStateMachineBuilder_getClassName},
     { "getType", _wrap_SceneStateMachineBuilder_getType},
+    { "__tostring", _wrap_SceneStateMachineBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_SceneStateMachineBuilder_meta[] = {
+    { "__tostring", _wrap_SceneStateMachineBuilder___tostring},
     {0,0}
 };
 
@@ -28803,6 +32736,30 @@ fail:
 }
 
 
+static int _wrap_SoftPhysicsBody___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SoftPhysicsBody *arg1 = (jli::SoftPhysicsBody *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SoftPhysicsBody::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SoftPhysicsBody::__str__",1,"jli::SoftPhysicsBody *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SoftPhysicsBody,0))){
+    SWIG_fail_ptr("SoftPhysicsBody___tostring",1,SWIGTYPE_p_jli__SoftPhysicsBody);
+  }
+  
+  result = (char *)jli_SoftPhysicsBody___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_SoftPhysicsBody(void *obj) {
 jli::SoftPhysicsBody *arg1 = (jli::SoftPhysicsBody *) obj;
 delete arg1;
@@ -28827,9 +32784,11 @@ static swig_lua_method swig_SoftPhysicsBody_methods[]= {
     { "serialize", _wrap_SoftPhysicsBody_serialize},
     { "getClassName", _wrap_SoftPhysicsBody_getClassName},
     { "getType", _wrap_SoftPhysicsBody_getType},
+    { "__tostring", _wrap_SoftPhysicsBody___tostring},
     {0,0}
 };
 static swig_lua_method swig_SoftPhysicsBody_meta[] = {
+    { "__tostring", _wrap_SoftPhysicsBody___tostring},
     {0,0}
 };
 
@@ -28987,6 +32946,30 @@ fail:
 }
 
 
+static int _wrap_SoftPhysicsBodyBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SoftPhysicsBodyBuilder *arg1 = (jli::SoftPhysicsBodyBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SoftPhysicsBodyBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SoftPhysicsBodyBuilder::__str__",1,"jli::SoftPhysicsBodyBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SoftPhysicsBodyBuilder,0))){
+    SWIG_fail_ptr("SoftPhysicsBodyBuilder___tostring",1,SWIGTYPE_p_jli__SoftPhysicsBodyBuilder);
+  }
+  
+  result = (char *)jli_SoftPhysicsBodyBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_SoftPhysicsBodyBuilder_attributes[] = {
     {0,0,0}
 };
@@ -28996,9 +32979,11 @@ static swig_lua_method swig_SoftPhysicsBodyBuilder_methods[]= {
     { "getObjectType", _wrap_SoftPhysicsBodyBuilder_getObjectType},
     { "getClassName", _wrap_SoftPhysicsBodyBuilder_getClassName},
     { "getType", _wrap_SoftPhysicsBodyBuilder_getType},
+    { "__tostring", _wrap_SoftPhysicsBodyBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_SoftPhysicsBodyBuilder_meta[] = {
+    { "__tostring", _wrap_SoftPhysicsBodyBuilder___tostring},
     {0,0}
 };
 
@@ -29749,6 +33734,30 @@ fail:
 }
 
 
+static int _wrap_Sound___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::Sound *arg1 = (jli::Sound *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::Sound::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::Sound::__str__",1,"jli::Sound *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__Sound,0))){
+    SWIG_fail_ptr("Sound___tostring",1,SWIGTYPE_p_jli__Sound);
+  }
+  
+  result = (char *)jli_Sound___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Sound(void *obj) {
 jli::Sound *arg1 = (jli::Sound *) obj;
 delete arg1;
@@ -29773,9 +33782,11 @@ static swig_lua_method swig_Sound_methods[]= {
     { "serialize", _wrap_Sound_serialize},
     { "getClassName", _wrap_Sound_getClassName},
     { "getType", _wrap_Sound_getType},
+    { "__tostring", _wrap_Sound___tostring},
     {0,0}
 };
 static swig_lua_method swig_Sound_meta[] = {
+    { "__tostring", _wrap_Sound___tostring},
     {0,0}
 };
 
@@ -29933,6 +33944,30 @@ fail:
 }
 
 
+static int _wrap_SoundBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::SoundBuilder *arg1 = (jli::SoundBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::SoundBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::SoundBuilder::__str__",1,"jli::SoundBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__SoundBuilder,0))){
+    SWIG_fail_ptr("SoundBuilder___tostring",1,SWIGTYPE_p_jli__SoundBuilder);
+  }
+  
+  result = (char *)jli_SoundBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_SoundBuilder_attributes[] = {
     {0,0,0}
 };
@@ -29942,9 +33977,11 @@ static swig_lua_method swig_SoundBuilder_methods[]= {
     { "getObjectType", _wrap_SoundBuilder_getObjectType},
     { "getClassName", _wrap_SoundBuilder_getClassName},
     { "getType", _wrap_SoundBuilder_getType},
+    { "__tostring", _wrap_SoundBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_SoundBuilder_meta[] = {
+    { "__tostring", _wrap_SoundBuilder___tostring},
     {0,0}
 };
 
@@ -30102,6 +34139,30 @@ fail:
 }
 
 
+static int _wrap_TextureBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::TextureBuilder *arg1 = (jli::TextureBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::TextureBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::TextureBuilder::__str__",1,"jli::TextureBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__TextureBuilder,0))){
+    SWIG_fail_ptr("TextureBuilder___tostring",1,SWIGTYPE_p_jli__TextureBuilder);
+  }
+  
+  result = (char *)jli_TextureBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_TextureBuilder_attributes[] = {
     {0,0,0}
 };
@@ -30111,9 +34172,11 @@ static swig_lua_method swig_TextureBuilder_methods[]= {
     { "getObjectType", _wrap_TextureBuilder_getObjectType},
     { "getClassName", _wrap_TextureBuilder_getClassName},
     { "getType", _wrap_TextureBuilder_getType},
+    { "__tostring", _wrap_TextureBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_TextureBuilder_meta[] = {
+    { "__tostring", _wrap_TextureBuilder___tostring},
     {0,0}
 };
 
@@ -31251,6 +35314,30 @@ fail:
 }
 
 
+static int _wrap_WorldFactory___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldFactory *arg1 = (jli::WorldFactory *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldFactory::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldFactory::__str__",1,"jli::WorldFactory *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldFactory,0))){
+    SWIG_fail_ptr("WorldFactory___tostring",1,SWIGTYPE_p_jli__WorldFactory);
+  }
+  
+  result = (char *)jli_WorldFactory___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldFactory(void *obj) {
 jli::WorldFactory *arg1 = (jli::WorldFactory *) obj;
 delete arg1;
@@ -31285,9 +35372,11 @@ static swig_lua_method swig_WorldFactory_methods[]= {
     { "create_Internal", _wrap_WorldFactory_create_Internal},
     { "clone_Internal", _wrap_WorldFactory_clone_Internal},
     { "remove_Internal", _wrap_WorldFactory_remove_Internal},
+    { "__tostring", _wrap_WorldFactory___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldFactory_meta[] = {
+    { "__tostring", _wrap_WorldFactory___tostring},
     {0,0}
 };
 
@@ -31333,6 +35422,30 @@ fail:
 }
 
 
+static int _wrap_WorldMySQL___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldMySQL *arg1 = (jli::WorldMySQL *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldMySQL::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldMySQL::__str__",1,"jli::WorldMySQL *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldMySQL,0))){
+    SWIG_fail_ptr("WorldMySQL___tostring",1,SWIGTYPE_p_jli__WorldMySQL);
+  }
+  
+  result = (char *)jli_WorldMySQL___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldMySQL(void *obj) {
 jli::WorldMySQL *arg1 = (jli::WorldMySQL *) obj;
 delete arg1;
@@ -31349,9 +35462,11 @@ static swig_lua_attribute swig_WorldMySQL_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_WorldMySQL_methods[]= {
+    { "__tostring", _wrap_WorldMySQL___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldMySQL_meta[] = {
+    { "__tostring", _wrap_WorldMySQL___tostring},
     {0,0}
 };
 
@@ -31397,6 +35512,30 @@ fail:
 }
 
 
+static int _wrap_WorldSound___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldSound *arg1 = (jli::WorldSound *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldSound::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldSound::__str__",1,"jli::WorldSound *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldSound,0))){
+    SWIG_fail_ptr("WorldSound___tostring",1,SWIGTYPE_p_jli__WorldSound);
+  }
+  
+  result = (char *)jli_WorldSound___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldSound(void *obj) {
 jli::WorldSound *arg1 = (jli::WorldSound *) obj;
 delete arg1;
@@ -31413,9 +35552,11 @@ static swig_lua_attribute swig_WorldSound_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_WorldSound_methods[]= {
+    { "__tostring", _wrap_WorldSound___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldSound_meta[] = {
+    { "__tostring", _wrap_WorldSound___tostring},
     {0,0}
 };
 
@@ -32267,6 +36408,30 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
 }
 
 
+static int _wrap_WorldLuaVirtualMachine___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldLuaVirtualMachine::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::__str__",1,"jli::WorldLuaVirtualMachine *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
+    SWIG_fail_ptr("WorldLuaVirtualMachine___tostring",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
+  }
+  
+  result = (char *)jli_WorldLuaVirtualMachine___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldLuaVirtualMachine(void *obj) {
 jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) obj;
 delete arg1;
@@ -32287,9 +36452,11 @@ static swig_lua_method swig_WorldLuaVirtualMachine_methods[]= {
     { "loadFile", _wrap_WorldLuaVirtualMachine_loadFile},
     { "loadString", _wrap_WorldLuaVirtualMachine_loadString},
     { "execute", _wrap_WorldLuaVirtualMachine_execute},
+    { "__tostring", _wrap_WorldLuaVirtualMachine___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldLuaVirtualMachine_meta[] = {
+    { "__tostring", _wrap_WorldLuaVirtualMachine___tostring},
     {0,0}
 };
 
@@ -33040,6 +37207,30 @@ fail:
 }
 
 
+static int _wrap_WorldStateMachine___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldStateMachine *arg1 = (jli::WorldStateMachine *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldStateMachine::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldStateMachine::__str__",1,"jli::WorldStateMachine *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldStateMachine,0))){
+    SWIG_fail_ptr("WorldStateMachine___tostring",1,SWIGTYPE_p_jli__WorldStateMachine);
+  }
+  
+  result = (char *)jli_WorldStateMachine___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldStateMachine(void *obj) {
 jli::WorldStateMachine *arg1 = (jli::WorldStateMachine *) obj;
 delete arg1;
@@ -33064,9 +37255,11 @@ static swig_lua_method swig_WorldStateMachine_methods[]= {
     { "serialize", _wrap_WorldStateMachine_serialize},
     { "getClassName", _wrap_WorldStateMachine_getClassName},
     { "getType", _wrap_WorldStateMachine_getType},
+    { "__tostring", _wrap_WorldStateMachine___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldStateMachine_meta[] = {
+    { "__tostring", _wrap_WorldStateMachine___tostring},
     {0,0}
 };
 
@@ -33091,8 +37284,8 @@ static swig_lua_namespace swig_WorldStateMachine_Sf_SwigStatic = {
     swig_WorldStateMachine_Sf_SwigStatic_classes,
     0
 };
-static swig_lua_class *swig_WorldStateMachine_bases[] = {0};
-static const char *swig_WorldStateMachine_base_names[] = {0};
+static swig_lua_class *swig_WorldStateMachine_bases[] = {0,0};
+static const char *swig_WorldStateMachine_base_names[] = {"jli::AbstractStateMachine< void > *",0};
 static swig_lua_class _wrap_class_WorldStateMachine = { "WorldStateMachine", "WorldStateMachine", &SWIGTYPE_p_jli__WorldStateMachine,_proxy__wrap_new_WorldStateMachine, swig_delete_WorldStateMachine, swig_WorldStateMachine_methods, swig_WorldStateMachine_attributes, &swig_WorldStateMachine_Sf_SwigStatic, swig_WorldStateMachine_meta, swig_WorldStateMachine_bases, swig_WorldStateMachine_base_names };
 
 static int _wrap_new_WorldState__SWIG_0(lua_State* L) {
@@ -33906,7 +38099,7 @@ static int _wrap_WorldState_onMessage(lua_State* L) {
   bool result;
   
   SWIG_check_num_args("jli::WorldState::onMessage",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::onMessage",1,"jli::WorldState *");
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::onMessage",1,"jli::WorldState const *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::WorldState::onMessage",2,"void *");
   if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::WorldState::onMessage",3,"jli::Telegram const &");
   
@@ -33920,7 +38113,7 @@ static int _wrap_WorldState_onMessage(lua_State* L) {
     SWIG_fail_ptr("WorldState_onMessage",3,SWIGTYPE_p_jli__Telegram);
   }
   
-  result = (bool)(arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
+  result = (bool)((jli::WorldState const *)arg1)->onMessage(arg2,(jli::Telegram const &)*arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -34102,6 +38295,30 @@ fail:
 }
 
 
+static int _wrap_WorldState___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldState *arg1 = (jli::WorldState *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldState::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::__str__",1,"jli::WorldState *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
+    SWIG_fail_ptr("WorldState___tostring",1,SWIGTYPE_p_jli__WorldState);
+  }
+  
+  result = (char *)jli_WorldState___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_WorldState(void *obj) {
 jli::WorldState *arg1 = (jli::WorldState *) obj;
 delete arg1;
@@ -34136,9 +38353,11 @@ static swig_lua_method swig_WorldState_methods[]= {
     { "touchUp", _wrap_WorldState_touchUp},
     { "touchMove", _wrap_WorldState_touchMove},
     { "touchCancelled", _wrap_WorldState_touchCancelled},
+    { "__tostring", _wrap_WorldState___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldState_meta[] = {
+    { "__tostring", _wrap_WorldState___tostring},
     {0,0}
 };
 
@@ -34163,8 +38382,8 @@ static swig_lua_namespace swig_WorldState_Sf_SwigStatic = {
     swig_WorldState_Sf_SwigStatic_classes,
     0
 };
-static swig_lua_class *swig_WorldState_bases[] = {0};
-static const char *swig_WorldState_base_names[] = {0};
+static swig_lua_class *swig_WorldState_bases[] = {0,0};
+static const char *swig_WorldState_base_names[] = {"jli::AbstractState< void > *",0};
 static swig_lua_class _wrap_class_WorldState = { "WorldState", "WorldState", &SWIGTYPE_p_jli__WorldState,_proxy__wrap_new_WorldState, swig_delete_WorldState, swig_WorldState_methods, swig_WorldState_attributes, &swig_WorldState_Sf_SwigStatic, swig_WorldState_meta, swig_WorldState_bases, swig_WorldState_base_names };
 
 static int _wrap_World_createInstance(lua_State* L) {
@@ -34662,6 +38881,30 @@ fail:
 }
 
 
+static int _wrap_World___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::World *arg1 = (jli::World *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::World::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::__str__",1,"jli::World *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
+    SWIG_fail_ptr("World___tostring",1,SWIGTYPE_p_jli__World);
+  }
+  
+  result = (char *)jli_World___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_World_attributes[] = {
     {0,0,0}
 };
@@ -34682,9 +38925,11 @@ static swig_lua_method swig_World_methods[]= {
     { "render", _wrap_World_render},
     { "setName", _wrap_World_setName},
     { "getName", _wrap_World_getName},
+    { "__tostring", _wrap_World___tostring},
     {0,0}
 };
 static swig_lua_method swig_World_meta[] = {
+    { "__tostring", _wrap_World___tostring},
     {0,0}
 };
 
@@ -34846,6 +39091,30 @@ fail:
 }
 
 
+static int _wrap_WorldStateBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldStateBuilder *arg1 = (jli::WorldStateBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldStateBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldStateBuilder::__str__",1,"jli::WorldStateBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldStateBuilder,0))){
+    SWIG_fail_ptr("WorldStateBuilder___tostring",1,SWIGTYPE_p_jli__WorldStateBuilder);
+  }
+  
+  result = (char *)jli_WorldStateBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_WorldStateBuilder_attributes[] = {
     {0,0,0}
 };
@@ -34855,9 +39124,11 @@ static swig_lua_method swig_WorldStateBuilder_methods[]= {
     { "getObjectType", _wrap_WorldStateBuilder_getObjectType},
     { "getClassName", _wrap_WorldStateBuilder_getClassName},
     { "getType", _wrap_WorldStateBuilder_getType},
+    { "__tostring", _wrap_WorldStateBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldStateBuilder_meta[] = {
+    { "__tostring", _wrap_WorldStateBuilder___tostring},
     {0,0}
 };
 
@@ -35015,6 +39286,30 @@ fail:
 }
 
 
+static int _wrap_WorldStateMachineBuilder___tostring(lua_State* L) {
+  int SWIG_arg = 0;
+  jli::WorldStateMachineBuilder *arg1 = (jli::WorldStateMachineBuilder *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("jli::WorldStateMachineBuilder::__str__",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldStateMachineBuilder::__str__",1,"jli::WorldStateMachineBuilder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldStateMachineBuilder,0))){
+    SWIG_fail_ptr("WorldStateMachineBuilder___tostring",1,SWIGTYPE_p_jli__WorldStateMachineBuilder);
+  }
+  
+  result = (char *)jli_WorldStateMachineBuilder___str__(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_WorldStateMachineBuilder_attributes[] = {
     {0,0,0}
 };
@@ -35024,9 +39319,11 @@ static swig_lua_method swig_WorldStateMachineBuilder_methods[]= {
     { "getObjectType", _wrap_WorldStateMachineBuilder_getObjectType},
     { "getClassName", _wrap_WorldStateMachineBuilder_getClassName},
     { "getType", _wrap_WorldStateMachineBuilder_getType},
+    { "__tostring", _wrap_WorldStateMachineBuilder___tostring},
     {0,0}
 };
 static swig_lua_method swig_WorldStateMachineBuilder_meta[] = {
+    { "__tostring", _wrap_WorldStateMachineBuilder___tostring},
     {0,0}
 };
 
@@ -35060,6 +39357,7 @@ static swig_lua_attribute swig_SwigModule_attributes[] = {
 };
 static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("JLI_OBJECT_TYPE_None", jli::JLI_OBJECT_TYPE_None)},
+    {SWIG_LUA_CONSTTAB_INT("JLI_OBJECT_TYPE_DeviceTouch", jli::JLI_OBJECT_TYPE_DeviceTouch)},
     {SWIG_LUA_CONSTTAB_INT("JLI_OBJECT_TYPE_Action", jli::JLI_OBJECT_TYPE_Action)},
     {SWIG_LUA_CONSTTAB_INT("JLI_OBJECT_TYPE_ActionBuilder", jli::JLI_OBJECT_TYPE_ActionBuilder)},
     {SWIG_LUA_CONSTTAB_INT("JLI_OBJECT_TYPE_Camera", jli::JLI_OBJECT_TYPE_Camera)},
@@ -35132,6 +39430,12 @@ static swig_lua_method swig_SwigModule_methods[]= {
 };
 static swig_lua_class* swig_SwigModule_classes[]= {
 &_wrap_class_string,
+&_wrap_class_NodeState_Lua,
+&_wrap_class_NodeStateMachine_Lua,
+&_wrap_class_SceneState_Lua,
+&_wrap_class_SceneStateMachine_Lua,
+&_wrap_class_WorldState_Lua,
+&_wrap_class_WorldStateMachine_Lua,
 &_wrap_class_Action,
 &_wrap_class_ActionBuilder,
 &_wrap_class_Camera,
@@ -35217,6 +39521,12 @@ static swig_lua_namespace swig_SwigModule = {
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_jli__WorldStateMachineTo_p_jli__AbstractStateMachineT_void_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractStateMachine< void > *)  ((jli::WorldStateMachine *) x));
+}
+static void *_p_jli__WorldStateTo_p_jli__AbstractStateT_void_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractState< void > *)  ((jli::WorldState *) x));
+}
 static void *_p_jli__PhysicsWorldTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::PhysicsWorld *) x));
 }
@@ -35229,8 +39539,38 @@ static void *_p_jli__LightTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(
 static void *_p_jli__PhysicsShapeTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::PhysicsShape *) x));
 }
+static void *_p_jli__AbstractStateT_jli__Node_tTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractState< jli::Node > *) x));
+}
+static void *_p_jli__AbstractStateMachineT_jli__Node_tTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractStateMachine< jli::Node > *) x));
+}
+static void *_p_jli__DeviceTouchTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::DeviceInputTime *) ((jli::DeviceTouch *) x));
+}
+static void *_p_jli__AbstractStateT_void_tTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractState< void > *) x));
+}
+static void *_p_jli__AbstractStateMachineT_void_tTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractStateMachine< void > *) x));
+}
+static void *_p_jli__WorldStateTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractState< void > *) ((jli::WorldState *) x));
+}
+static void *_p_jli__DeviceInputTimeTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *)  ((jli::DeviceInputTime *) x));
+}
 static void *_p_jli__SoundTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Sound *) x));
+}
+static void *_p_jli__NodeStateMachineTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractStateMachine< jli::Node > *) ((jli::NodeStateMachine *) x));
+}
+static void *_p_jli__SceneStateMachineTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractStateMachine< jli::Scene > *) ((jli::SceneStateMachine *) x));
+}
+static void *_p_jli__WorldStateMachineTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractStateMachine< void > *) ((jli::WorldStateMachine *) x));
 }
 static void *_p_jli__PhysicsFieldTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::PhysicsField *) x));
@@ -35243,21 +39583,6 @@ static void *_p_jli__CameraTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM
 }
 static void *_p_jli__ResourceTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Resource *) x));
-}
-static void *_p_jli__NodeStateMachineBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::NodeStateMachineBuilder *) x));
-}
-static void *_p_jli__NodeStateBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::NodeStateBuilder *) x));
-}
-static void *_p_jli__NodeBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::NodeBuilder *) x));
-}
-static void *_p_jli__MaterialPropertyBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::MaterialPropertyBuilder *) x));
-}
-static void *_p_jli__MaterialBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::MaterialBuilder *) x));
 }
 static void *_p_jli__LightBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::LightBuilder *) x));
@@ -35277,20 +39602,35 @@ static void *_p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractObject(void *x, 
 static void *_p_jli__CubicTextureBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::CubicTextureBuilder *) x));
 }
+static void *_p_jli__CollisionResponseBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::CollisionResponseBuilder *) x));
+}
+static void *_p_jli__ClockBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::ClockBuilder *) x));
+}
+static void *_p_jli__CameraBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::CameraBuilder *) x));
+}
 static void *_p_jli__AbstractBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractBuilder *) x));
 }
 static void *_p_jli__ActionBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::ActionBuilder *) x));
 }
-static void *_p_jli__CameraBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::CameraBuilder *) x));
+static void *_p_jli__MaterialBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::MaterialBuilder *) x));
 }
-static void *_p_jli__ClockBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::ClockBuilder *) x));
+static void *_p_jli__MaterialPropertyBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::MaterialPropertyBuilder *) x));
 }
-static void *_p_jli__CollisionResponseBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::CollisionResponseBuilder *) x));
+static void *_p_jli__NodeBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::NodeBuilder *) x));
+}
+static void *_p_jli__NodeStateBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::NodeStateBuilder *) x));
+}
+static void *_p_jli__NodeStateMachineBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::NodeStateMachineBuilder *) x));
 }
 static void *_p_jli__ParticleEmitterBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::ParticleEmitterBuilder *) x));
@@ -35337,14 +39677,20 @@ static void *_p_jli__WorldStateBuilderTo_p_jli__AbstractObject(void *x, int *SWI
 static void *_p_jli__WorldStateMachineBuilderTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractBuilder *) ((jli::WorldStateMachineBuilder *) x));
 }
+static void *_p_jli__AbstractStateT_jli__Scene_tTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractState< jli::Scene > *) x));
+}
+static void *_p_jli__AbstractStateMachineT_jli__Scene_tTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::AbstractStateMachine< jli::Scene > *) x));
+}
 static void *_p_jli__NodeTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Node *) x));
 }
-static void *_p_jli__TextureTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Texture *) x));
-}
 static void *_p_jli__CubicTextureTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::Texture *) ((jli::CubicTexture *) x));
+}
+static void *_p_jli__TextureTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Texture *) x));
 }
 static void *_p_jli__MaterialTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Material *) x));
@@ -35366,6 +39712,12 @@ static void *_p_jli__AbstractFactoryObjectTo_p_jli__AbstractObject(void *x, int 
 }
 static void *_p_jli__MaterialPropertyTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::MaterialProperty *) x));
+}
+static void *_p_jli__NodeStateTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractState< jli::Node > *) ((jli::NodeState *) x));
+}
+static void *_p_jli__SceneStateTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *)(jli::AbstractState< jli::Scene > *) ((jli::SceneState *) x));
 }
 static void *_p_jli__ClockTo_p_jli__AbstractObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractObject *) (jli::AbstractFactoryObject *) ((jli::Clock *) x));
@@ -35412,8 +39764,32 @@ static void *_p_jli__LightTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUS
 static void *_p_jli__PhysicsShapeTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::PhysicsShape *) x));
 }
+static void *_p_jli__AbstractStateT_jli__Node_tTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractState< jli::Node > *) x));
+}
+static void *_p_jli__AbstractStateMachineT_jli__Node_tTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractStateMachine< jli::Node > *) x));
+}
+static void *_p_jli__AbstractStateT_void_tTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractState< void > *) x));
+}
+static void *_p_jli__AbstractStateMachineT_void_tTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractStateMachine< void > *) x));
+}
+static void *_p_jli__WorldStateTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractState< void > *) ((jli::WorldState *) x));
+}
 static void *_p_jli__SoundTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::Sound *) x));
+}
+static void *_p_jli__NodeStateMachineTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractStateMachine< jli::Node > *) ((jli::NodeStateMachine *) x));
+}
+static void *_p_jli__SceneStateMachineTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractStateMachine< jli::Scene > *) ((jli::SceneStateMachine *) x));
+}
+static void *_p_jli__WorldStateMachineTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractStateMachine< void > *) ((jli::WorldStateMachine *) x));
 }
 static void *_p_jli__PhysicsFieldTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::PhysicsField *) x));
@@ -35426,18 +39802,6 @@ static void *_p_jli__CameraTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNU
 }
 static void *_p_jli__ResourceTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::Resource *) x));
-}
-static void *_p_jli__ParticleEmitterBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::ParticleEmitterBuilder *) x));
-}
-static void *_p_jli__NodeStateMachineBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::NodeStateMachineBuilder *) x));
-}
-static void *_p_jli__NodeStateBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::NodeStateBuilder *) x));
-}
-static void *_p_jli__NodeBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::NodeBuilder *) x));
 }
 static void *_p_jli__MaterialPropertyBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::MaterialPropertyBuilder *) x));
@@ -35460,6 +39824,12 @@ static void *_p_jli__GeometryBuilderTo_p_jli__AbstractFactoryObject(void *x, int
 static void *_p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::DynamicPhysicsBodyBuilder *) x));
 }
+static void *_p_jli__CubicTextureBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::CubicTextureBuilder *) x));
+}
+static void *_p_jli__CollisionResponseBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::CollisionResponseBuilder *) x));
+}
 static void *_p_jli__AbstractBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractBuilder *) x));
 }
@@ -35472,11 +39842,17 @@ static void *_p_jli__CameraBuilderTo_p_jli__AbstractFactoryObject(void *x, int *
 static void *_p_jli__ClockBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::ClockBuilder *) x));
 }
-static void *_p_jli__CollisionResponseBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::CollisionResponseBuilder *) x));
+static void *_p_jli__NodeBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::NodeBuilder *) x));
 }
-static void *_p_jli__CubicTextureBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::CubicTextureBuilder *) x));
+static void *_p_jli__NodeStateBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::NodeStateBuilder *) x));
+}
+static void *_p_jli__NodeStateMachineBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::NodeStateMachineBuilder *) x));
+}
+static void *_p_jli__ParticleEmitterBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::ParticleEmitterBuilder *) x));
 }
 static void *_p_jli__PhysicsContactBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::PhysicsContactBuilder *) x));
@@ -35520,14 +39896,20 @@ static void *_p_jli__WorldStateBuilderTo_p_jli__AbstractFactoryObject(void *x, i
 static void *_p_jli__WorldStateMachineBuilderTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::AbstractBuilder *) ((jli::WorldStateMachineBuilder *) x));
 }
+static void *_p_jli__AbstractStateT_jli__Scene_tTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractState< jli::Scene > *) x));
+}
+static void *_p_jli__AbstractStateMachineT_jli__Scene_tTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractStateMachine< jli::Scene > *) x));
+}
 static void *_p_jli__NodeTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::Node *) x));
 }
-static void *_p_jli__TextureTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *)  ((jli::Texture *) x));
-}
 static void *_p_jli__CubicTextureTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::Texture *) ((jli::CubicTexture *) x));
+}
+static void *_p_jli__TextureTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::Texture *) x));
 }
 static void *_p_jli__MaterialTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::Material *) x));
@@ -35544,6 +39926,12 @@ static void *_p_jli__CollisionResponseTo_p_jli__AbstractFactoryObject(void *x, i
 static void *_p_jli__MaterialPropertyTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::MaterialProperty *) x));
 }
+static void *_p_jli__NodeStateTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractState< jli::Node > *) ((jli::NodeState *) x));
+}
+static void *_p_jli__SceneStateTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *) (jli::AbstractState< jli::Scene > *) ((jli::SceneState *) x));
+}
 static void *_p_jli__ClockTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::Clock *) x));
 }
@@ -35556,11 +39944,11 @@ static void *_p_jli__KinematicPhysicsBodyTo_p_jli__AbstractFactoryObject(void *x
 static void *_p_jli__GhostPhysicsBodyTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::GhostPhysicsBody *) x));
 }
-static void *_p_jli__AbstractPhysicsBodyTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractPhysicsBody *) x));
-}
 static void *_p_jli__DynamicPhysicsBodyTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *)  ((jli::DynamicPhysicsBody *) x));
+}
+static void *_p_jli__AbstractPhysicsBodyTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractFactoryObject *)  ((jli::AbstractPhysicsBody *) x));
 }
 static void *_p_jli__RigidPhysicsBodyTo_p_jli__AbstractFactoryObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractFactoryObject *) (jli::AbstractPhysicsBody *) ((jli::RigidPhysicsBody *) x));
@@ -35573,6 +39961,18 @@ static void *_p_jli__CubicTextureTo_p_jli__Texture(void *x, int *SWIGUNUSEDPARM(
 }
 static void *_p_btDefaultSerializerTo_p_btSerializer(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((btSerializer *)  ((btDefaultSerializer *) x));
+}
+static void *_p_jli__SceneStateTo_p_jli__AbstractStateT_jli__Scene_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractState< jli::Scene > *)  ((jli::SceneState *) x));
+}
+static void *_p_jli__SceneStateMachineTo_p_jli__AbstractStateMachineT_jli__Scene_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractStateMachine< jli::Scene > *)  ((jli::SceneStateMachine *) x));
+}
+static void *_p_jli__NodeStateTo_p_jli__AbstractStateT_jli__Node_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractState< jli::Node > *)  ((jli::NodeState *) x));
+}
+static void *_p_jli__NodeStateMachineTo_p_jli__AbstractStateMachineT_jli__Node_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((jli::AbstractStateMachine< jli::Node > *)  ((jli::NodeStateMachine *) x));
 }
 static void *_p_jli__RigidPhysicsBodyTo_p_jli__AbstractPhysicsBody(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((jli::AbstractPhysicsBody *)  ((jli::RigidPhysicsBody *) x));
@@ -35723,7 +40123,6 @@ static swig_type_info _swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject
 static swig_type_info _swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t = {"_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t", "btAlignedObjectArray< jli::DeviceTouch * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btConstraintRow = {"_p_btConstraintRow", "btConstraintRow *|PfxConstraintRow *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btDbvtAabbMm = {"_p_btDbvtAabbMm", "btDbvtAabbMm *|btDbvtVolume *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_btHashMapT_btHashInt_btTriangleInfo_t = {"_p_btHashMapT_btHashInt_btTriangleInfo_t", "btInternalTriangleInfoMap *|btHashMap< btHashInt,btTriangleInfo > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btHashMapT_btHashPtr_int_t = {"_p_btHashMapT_btHashPtr_int_t", "jli::WorldFactory::ObjectDuplicateMap *|btHashMap< btHashPtr,int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btSerializer = {"_p_btSerializer", "btSerializer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btDefaultSerializer = {"_p_btDefaultSerializer", 0, 0, 0, 0, 0};
@@ -35739,7 +40138,15 @@ static swig_type_info _swigt__p_jli__AbstractBuilder = {"_p_jli__AbstractBuilder
 static swig_type_info _swigt__p_jli__AbstractDecorator = {"_p_jli__AbstractDecorator", "jli::AbstractDecorator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_jli__AbstractFactoryObject = {"_p_jli__AbstractFactoryObject", "jli::AbstractFactoryObject *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_jli__AbstractObject = {"_p_jli__AbstractObject", "jli::AbstractObject *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_jli__DeviceTouch = {"_p_jli__DeviceTouch", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_jli__DeviceInputTime = {"_p_jli__DeviceInputTime", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_jli__AbstractPhysicsBody = {"_p_jli__AbstractPhysicsBody", "jli::AbstractPhysicsBody *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_jli__AbstractStateMachineT_jli__Node_t = {"_p_jli__AbstractStateMachineT_jli__Node_t", "jli::AbstractStateMachine< jli::Node > *", 0, 0, (void*)&_wrap_class_NodeStateMachine_Lua, 0};
+static swig_type_info _swigt__p_jli__AbstractStateMachineT_jli__Scene_t = {"_p_jli__AbstractStateMachineT_jli__Scene_t", "jli::AbstractStateMachine< jli::Scene > *", 0, 0, (void*)&_wrap_class_SceneStateMachine_Lua, 0};
+static swig_type_info _swigt__p_jli__AbstractStateMachineT_void_t = {"_p_jli__AbstractStateMachineT_void_t", "jli::AbstractStateMachine< void > *", 0, 0, (void*)&_wrap_class_WorldStateMachine_Lua, 0};
+static swig_type_info _swigt__p_jli__AbstractStateT_jli__Node_t = {"_p_jli__AbstractStateT_jli__Node_t", "jli::AbstractState< jli::Node > *", 0, 0, (void*)&_wrap_class_NodeState_Lua, 0};
+static swig_type_info _swigt__p_jli__AbstractStateT_jli__Scene_t = {"_p_jli__AbstractStateT_jli__Scene_t", "jli::AbstractState< jli::Scene > *", 0, 0, (void*)&_wrap_class_SceneState_Lua, 0};
+static swig_type_info _swigt__p_jli__AbstractStateT_void_t = {"_p_jli__AbstractStateT_void_t", "jli::AbstractState< void > *", 0, 0, (void*)&_wrap_class_WorldState_Lua, 0};
 static swig_type_info _swigt__p_jli__Action = {"_p_jli__Action", "jli::Action *", 0, 0, (void*)&_wrap_class_Action, 0};
 static swig_type_info _swigt__p_jli__ActionBuilder = {"_p_jli__ActionBuilder", "jli::ActionBuilder *", 0, 0, (void*)&_wrap_class_ActionBuilder, 0};
 static swig_type_info _swigt__p_jli__Camera = {"_p_jli__Camera", "jli::Camera *", 0, 0, (void*)&_wrap_class_Camera, 0};
@@ -35876,7 +40283,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_btConstraintRow,
   &_swigt__p_btDbvtAabbMm,
   &_swigt__p_btDefaultSerializer,
-  &_swigt__p_btHashMapT_btHashInt_btTriangleInfo_t,
   &_swigt__p_btHashMapT_btHashPtr_int_t,
   &_swigt__p_btSerializer,
   &_swigt__p_char,
@@ -35892,6 +40298,12 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_jli__AbstractFactoryObject,
   &_swigt__p_jli__AbstractObject,
   &_swigt__p_jli__AbstractPhysicsBody,
+  &_swigt__p_jli__AbstractStateMachineT_jli__Node_t,
+  &_swigt__p_jli__AbstractStateMachineT_jli__Scene_t,
+  &_swigt__p_jli__AbstractStateMachineT_void_t,
+  &_swigt__p_jli__AbstractStateT_jli__Node_t,
+  &_swigt__p_jli__AbstractStateT_jli__Scene_t,
+  &_swigt__p_jli__AbstractStateT_void_t,
   &_swigt__p_jli__Action,
   &_swigt__p_jli__ActionBuilder,
   &_swigt__p_jli__Camera,
@@ -35902,6 +40314,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_jli__CollisionResponseBuilder,
   &_swigt__p_jli__CubicTexture,
   &_swigt__p_jli__CubicTextureBuilder,
+  &_swigt__p_jli__DeviceInputTime,
+  &_swigt__p_jli__DeviceTouch,
   &_swigt__p_jli__DynamicPhysicsBody,
   &_swigt__p_jli__DynamicPhysicsBodyBuilder,
   &_swigt__p_jli__Geometry,
@@ -36027,7 +40441,6 @@ static swig_cast_info _swigc__p_btAlignedObjectArrayT_jli__AbstractFactoryObject
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t[] = {  {&_swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btConstraintRow[] = {  {&_swigt__p_btConstraintRow, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btDbvtAabbMm[] = {  {&_swigt__p_btDbvtAabbMm, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_btHashMapT_btHashInt_btTriangleInfo_t[] = {  {&_swigt__p_btHashMapT_btHashInt_btTriangleInfo_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btHashMapT_btHashPtr_int_t[] = {  {&_swigt__p_btHashMapT_btHashPtr_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btDefaultSerializer[] = {{&_swigt__p_btDefaultSerializer, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btSerializer[] = {  {&_swigt__p_btSerializer, 0, 0, 0},  {&_swigt__p_btDefaultSerializer, _p_btDefaultSerializerTo_p_btSerializer, 0, 0},{0, 0, 0, 0}};
@@ -36041,9 +40454,17 @@ static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0
 static swig_cast_info _swigc__p_int64_t[] = {  {&_swigt__p_int64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__AbstractBuilder[] = {  {&_swigt__p_jli__NodeStateBuilder, _p_jli__NodeStateBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__NodeBuilder, _p_jli__NodeBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__MaterialPropertyBuilder, _p_jli__MaterialPropertyBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__MaterialBuilder, _p_jli__MaterialBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__LightBuilder, _p_jli__LightBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBodyBuilder, _p_jli__KinematicPhysicsBodyBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__GhostPhysicsBodyBuilder, _p_jli__GhostPhysicsBodyBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__GeometryBuilder, _p_jli__GeometryBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBodyBuilder, _p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__CubicTextureBuilder, _p_jli__CubicTextureBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__CollisionResponseBuilder, _p_jli__CollisionResponseBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__ClockBuilder, _p_jli__ClockBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__CameraBuilder, _p_jli__CameraBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__AbstractBuilder, 0, 0, 0},  {&_swigt__p_jli__ActionBuilder, _p_jli__ActionBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__NodeStateMachineBuilder, _p_jli__NodeStateMachineBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__ParticleEmitterBuilder, _p_jli__ParticleEmitterBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__PhysicsContactBuilder, _p_jli__PhysicsContactBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__PhysicsFieldBuilder, _p_jli__PhysicsFieldBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__PhysicsShapeBuilder, _p_jli__PhysicsShapeBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__PhysicsWorldBuilder, _p_jli__PhysicsWorldBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__ResourceBuilder, _p_jli__ResourceBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__RigidPhysicsBodyBuilder, _p_jli__RigidPhysicsBodyBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__SceneBuilder, _p_jli__SceneBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__SceneStateBuilder, _p_jli__SceneStateBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__SceneStateMachineBuilder, _p_jli__SceneStateMachineBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__SoftPhysicsBodyBuilder, _p_jli__SoftPhysicsBodyBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__SoundBuilder, _p_jli__SoundBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__TextureBuilder, _p_jli__TextureBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__WorldStateBuilder, _p_jli__WorldStateBuilderTo_p_jli__AbstractBuilder, 0, 0},  {&_swigt__p_jli__WorldStateMachineBuilder, _p_jli__WorldStateMachineBuilderTo_p_jli__AbstractBuilder, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__AbstractDecorator[] = {  {&_swigt__p_jli__AbstractDecorator, 0, 0, 0},  {&_swigt__p_jli__Node, _p_jli__NodeTo_p_jli__AbstractDecorator, 0, 0},  {&_swigt__p_jli__Scene, _p_jli__SceneTo_p_jli__AbstractDecorator, 0, 0},  {&_swigt__p_jli__Geometry, _p_jli__GeometryTo_p_jli__AbstractDecorator, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_jli__AbstractFactoryObject[] = {  {&_swigt__p_jli__PhysicsWorld, _p_jli__PhysicsWorldTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsShape, _p_jli__PhysicsShapeTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Scene, _p_jli__SceneTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Action, _p_jli__ActionTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Light, _p_jli__LightTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsField, _p_jli__PhysicsFieldTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Geometry, _p_jli__GeometryTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Resource, _p_jli__ResourceTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Sound, _p_jli__SoundTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ParticleEmitterBuilder, _p_jli__ParticleEmitterBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeStateMachineBuilder, _p_jli__NodeStateMachineBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeStateBuilder, _p_jli__NodeStateBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeBuilder, _p_jli__NodeBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__MaterialPropertyBuilder, _p_jli__MaterialPropertyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__MaterialBuilder, _p_jli__MaterialBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__LightBuilder, _p_jli__LightBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBodyBuilder, _p_jli__KinematicPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBodyBuilder, _p_jli__GhostPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__GeometryBuilder, _p_jli__GeometryBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBodyBuilder, _p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractBuilder, _p_jli__AbstractBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ActionBuilder, _p_jli__ActionBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CameraBuilder, _p_jli__CameraBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ClockBuilder, _p_jli__ClockBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CollisionResponseBuilder, _p_jli__CollisionResponseBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CubicTextureBuilder, _p_jli__CubicTextureBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsContactBuilder, _p_jli__PhysicsContactBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsFieldBuilder, _p_jli__PhysicsFieldBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsShapeBuilder, _p_jli__PhysicsShapeBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneBuilder, _p_jli__SceneBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBodyBuilder, _p_jli__RigidPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ResourceBuilder, _p_jli__ResourceBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsWorldBuilder, _p_jli__PhysicsWorldBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneStateBuilder, _p_jli__SceneStateBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneStateMachineBuilder, _p_jli__SceneStateMachineBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBodyBuilder, _p_jli__SoftPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SoundBuilder, _p_jli__SoundBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__TextureBuilder, _p_jli__TextureBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__WorldStateBuilder, _p_jli__WorldStateBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__WorldStateMachineBuilder, _p_jli__WorldStateMachineBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Texture, _p_jli__TextureTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CubicTexture, _p_jli__CubicTextureTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Material, _p_jli__MaterialTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ParticleEmitter, _p_jli__ParticleEmitterTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsContact, _p_jli__PhysicsContactTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Camera, _p_jli__CameraTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CollisionResponse, _p_jli__CollisionResponseTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractFactoryObject, 0, 0, 0},  {&_swigt__p_jli__MaterialProperty, _p_jli__MaterialPropertyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Clock, _p_jli__ClockTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Node, _p_jli__NodeTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBody, _p_jli__KinematicPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBody, _p_jli__GhostPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractPhysicsBody, _p_jli__AbstractPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBody, _p_jli__RigidPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBody, _p_jli__DynamicPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBody, _p_jli__SoftPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_jli__AbstractObject[] = {  {&_swigt__p_jli__PhysicsWorld, _p_jli__PhysicsWorldTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsShape, _p_jli__PhysicsShapeTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Scene, _p_jli__SceneTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Action, _p_jli__ActionTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Light, _p_jli__LightTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsField, _p_jli__PhysicsFieldTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Geometry, _p_jli__GeometryTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Resource, _p_jli__ResourceTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Sound, _p_jli__SoundTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractObject, 0, 0, 0},  {&_swigt__p_jli__NodeStateMachineBuilder, _p_jli__NodeStateMachineBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__NodeStateBuilder, _p_jli__NodeStateBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__NodeBuilder, _p_jli__NodeBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__MaterialPropertyBuilder, _p_jli__MaterialPropertyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__MaterialBuilder, _p_jli__MaterialBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__LightBuilder, _p_jli__LightBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBodyBuilder, _p_jli__KinematicPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBodyBuilder, _p_jli__GhostPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__GeometryBuilder, _p_jli__GeometryBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBodyBuilder, _p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CubicTextureBuilder, _p_jli__CubicTextureBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractBuilder, _p_jli__AbstractBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ActionBuilder, _p_jli__ActionBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CameraBuilder, _p_jli__CameraBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ClockBuilder, _p_jli__ClockBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CollisionResponseBuilder, _p_jli__CollisionResponseBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ParticleEmitterBuilder, _p_jli__ParticleEmitterBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsContactBuilder, _p_jli__PhysicsContactBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsFieldBuilder, _p_jli__PhysicsFieldBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsShapeBuilder, _p_jli__PhysicsShapeBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneBuilder, _p_jli__SceneBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBodyBuilder, _p_jli__RigidPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ResourceBuilder, _p_jli__ResourceBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsWorldBuilder, _p_jli__PhysicsWorldBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneStateBuilder, _p_jli__SceneStateBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneStateMachineBuilder, _p_jli__SceneStateMachineBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBodyBuilder, _p_jli__SoftPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SoundBuilder, _p_jli__SoundBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__TextureBuilder, _p_jli__TextureBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__WorldStateBuilder, _p_jli__WorldStateBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__WorldStateMachineBuilder, _p_jli__WorldStateMachineBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Texture, _p_jli__TextureTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CubicTexture, _p_jli__CubicTextureTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Material, _p_jli__MaterialTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractDecorator, _p_jli__AbstractDecoratorTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ParticleEmitter, _p_jli__ParticleEmitterTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsContact, _p_jli__PhysicsContactTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Camera, _p_jli__CameraTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CollisionResponse, _p_jli__CollisionResponseTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractFactoryObject, _p_jli__AbstractFactoryObjectTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__MaterialProperty, _p_jli__MaterialPropertyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Clock, _p_jli__ClockTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Node, _p_jli__NodeTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBody, _p_jli__KinematicPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBody, _p_jli__GhostPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractPhysicsBody, _p_jli__AbstractPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBody, _p_jli__RigidPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBody, _p_jli__DynamicPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBody, _p_jli__SoftPhysicsBodyTo_p_jli__AbstractObject, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractFactoryObject[] = {  {&_swigt__p_jli__PhysicsWorld, _p_jli__PhysicsWorldTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractStateT_void_t, _p_jli__AbstractStateT_void_tTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_void_t, _p_jli__AbstractStateMachineT_void_tTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsShape, _p_jli__PhysicsShapeTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Scene, _p_jli__SceneTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Action, _p_jli__ActionTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__WorldState, _p_jli__WorldStateTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Light, _p_jli__LightTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__WorldStateMachine, _p_jli__WorldStateMachineTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeStateMachine, _p_jli__NodeStateMachineTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneStateMachine, _p_jli__SceneStateMachineTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsField, _p_jli__PhysicsFieldTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Geometry, _p_jli__GeometryTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Resource, _p_jli__ResourceTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Sound, _p_jli__SoundTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsContactBuilder, _p_jli__PhysicsContactBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ParticleEmitterBuilder, _p_jli__ParticleEmitterBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__MaterialPropertyBuilder, _p_jli__MaterialPropertyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__MaterialBuilder, _p_jli__MaterialBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__LightBuilder, _p_jli__LightBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBodyBuilder, _p_jli__KinematicPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBodyBuilder, _p_jli__GhostPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__GeometryBuilder, _p_jli__GeometryBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBodyBuilder, _p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CubicTextureBuilder, _p_jli__CubicTextureBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CollisionResponseBuilder, _p_jli__CollisionResponseBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractBuilder, _p_jli__AbstractBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ActionBuilder, _p_jli__ActionBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CameraBuilder, _p_jli__CameraBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ClockBuilder, _p_jli__ClockBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeBuilder, _p_jli__NodeBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeStateBuilder, _p_jli__NodeStateBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeStateMachineBuilder, _p_jli__NodeStateMachineBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsFieldBuilder, _p_jli__PhysicsFieldBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsShapeBuilder, _p_jli__PhysicsShapeBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsWorldBuilder, _p_jli__PhysicsWorldBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ResourceBuilder, _p_jli__ResourceBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBodyBuilder, _p_jli__RigidPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneBuilder, _p_jli__SceneBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneStateBuilder, _p_jli__SceneStateBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneStateMachineBuilder, _p_jli__SceneStateMachineBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBodyBuilder, _p_jli__SoftPhysicsBodyBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SoundBuilder, _p_jli__SoundBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__TextureBuilder, _p_jli__TextureBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__WorldStateBuilder, _p_jli__WorldStateBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__WorldStateMachineBuilder, _p_jli__WorldStateMachineBuilderTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CubicTexture, _p_jli__CubicTextureTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Texture, _p_jli__TextureTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Material, _p_jli__MaterialTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractStateT_jli__Node_t, _p_jli__AbstractStateT_jli__Node_tTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_jli__Node_t, _p_jli__AbstractStateMachineT_jli__Node_tTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__ParticleEmitter, _p_jli__ParticleEmitterTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractStateT_jli__Scene_t, _p_jli__AbstractStateT_jli__Scene_tTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_jli__Scene_t, _p_jli__AbstractStateMachineT_jli__Scene_tTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__PhysicsContact, _p_jli__PhysicsContactTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Camera, _p_jli__CameraTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__CollisionResponse, _p_jli__CollisionResponseTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractFactoryObject, 0, 0, 0},  {&_swigt__p_jli__MaterialProperty, _p_jli__MaterialPropertyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__NodeState, _p_jli__NodeStateTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SceneState, _p_jli__SceneStateTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Clock, _p_jli__ClockTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__Node, _p_jli__NodeTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBody, _p_jli__KinematicPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBody, _p_jli__GhostPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBody, _p_jli__DynamicPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__AbstractPhysicsBody, _p_jli__AbstractPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBody, _p_jli__RigidPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBody, _p_jli__SoftPhysicsBodyTo_p_jli__AbstractFactoryObject, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__DeviceTouch[] = {{&_swigt__p_jli__DeviceTouch, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__DeviceInputTime[] = {{&_swigt__p_jli__DeviceInputTime, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractObject[] = {  {&_swigt__p_jli__PhysicsWorld, _p_jli__PhysicsWorldTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractStateT_void_t, _p_jli__AbstractStateT_void_tTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_void_t, _p_jli__AbstractStateMachineT_void_tTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsShape, _p_jli__PhysicsShapeTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__DeviceTouch, _p_jli__DeviceTouchTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Scene, _p_jli__SceneTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Action, _p_jli__ActionTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__WorldState, _p_jli__WorldStateTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Light, _p_jli__LightTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__DeviceInputTime, _p_jli__DeviceInputTimeTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__WorldStateMachine, _p_jli__WorldStateMachineTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneStateMachine, _p_jli__SceneStateMachineTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__NodeStateMachine, _p_jli__NodeStateMachineTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsField, _p_jli__PhysicsFieldTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Geometry, _p_jli__GeometryTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Resource, _p_jli__ResourceTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Sound, _p_jli__SoundTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractObject, 0, 0, 0},  {&_swigt__p_jli__NodeStateMachineBuilder, _p_jli__NodeStateMachineBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__NodeStateBuilder, _p_jli__NodeStateBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__LightBuilder, _p_jli__LightBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBodyBuilder, _p_jli__KinematicPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBodyBuilder, _p_jli__GhostPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__GeometryBuilder, _p_jli__GeometryBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBodyBuilder, _p_jli__DynamicPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CubicTextureBuilder, _p_jli__CubicTextureBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CollisionResponseBuilder, _p_jli__CollisionResponseBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ClockBuilder, _p_jli__ClockBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CameraBuilder, _p_jli__CameraBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractBuilder, _p_jli__AbstractBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ActionBuilder, _p_jli__ActionBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__MaterialBuilder, _p_jli__MaterialBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__MaterialPropertyBuilder, _p_jli__MaterialPropertyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__NodeBuilder, _p_jli__NodeBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ParticleEmitterBuilder, _p_jli__ParticleEmitterBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsContactBuilder, _p_jli__PhysicsContactBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsFieldBuilder, _p_jli__PhysicsFieldBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsShapeBuilder, _p_jli__PhysicsShapeBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsWorldBuilder, _p_jli__PhysicsWorldBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ResourceBuilder, _p_jli__ResourceBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBodyBuilder, _p_jli__RigidPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneBuilder, _p_jli__SceneBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneStateBuilder, _p_jli__SceneStateBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneStateMachineBuilder, _p_jli__SceneStateMachineBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBodyBuilder, _p_jli__SoftPhysicsBodyBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SoundBuilder, _p_jli__SoundBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__TextureBuilder, _p_jli__TextureBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__WorldStateBuilder, _p_jli__WorldStateBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__WorldStateMachineBuilder, _p_jli__WorldStateMachineBuilderTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CubicTexture, _p_jli__CubicTextureTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Texture, _p_jli__TextureTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Material, _p_jli__MaterialTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractDecorator, _p_jli__AbstractDecoratorTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractStateT_jli__Node_t, _p_jli__AbstractStateT_jli__Node_tTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_jli__Node_t, _p_jli__AbstractStateMachineT_jli__Node_tTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__ParticleEmitter, _p_jli__ParticleEmitterTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractStateT_jli__Scene_t, _p_jli__AbstractStateT_jli__Scene_tTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_jli__Scene_t, _p_jli__AbstractStateMachineT_jli__Scene_tTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__PhysicsContact, _p_jli__PhysicsContactTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Camera, _p_jli__CameraTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__CollisionResponse, _p_jli__CollisionResponseTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractFactoryObject, _p_jli__AbstractFactoryObjectTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__MaterialProperty, _p_jli__MaterialPropertyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__NodeState, _p_jli__NodeStateTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SceneState, _p_jli__SceneStateTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Clock, _p_jli__ClockTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__Node, _p_jli__NodeTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__KinematicPhysicsBody, _p_jli__KinematicPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__GhostPhysicsBody, _p_jli__GhostPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__DynamicPhysicsBody, _p_jli__DynamicPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__AbstractPhysicsBody, _p_jli__AbstractPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__RigidPhysicsBody, _p_jli__RigidPhysicsBodyTo_p_jli__AbstractObject, 0, 0},  {&_swigt__p_jli__SoftPhysicsBody, _p_jli__SoftPhysicsBodyTo_p_jli__AbstractObject, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__AbstractPhysicsBody[] = {  {&_swigt__p_jli__AbstractPhysicsBody, 0, 0, 0},  {&_swigt__p_jli__RigidPhysicsBody, _p_jli__RigidPhysicsBodyTo_p_jli__AbstractPhysicsBody, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractStateMachineT_jli__Node_t[] = {  {&_swigt__p_jli__NodeStateMachine, _p_jli__NodeStateMachineTo_p_jli__AbstractStateMachineT_jli__Node_t, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_jli__Node_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractStateMachineT_jli__Scene_t[] = {  {&_swigt__p_jli__AbstractStateMachineT_jli__Scene_t, 0, 0, 0},  {&_swigt__p_jli__SceneStateMachine, _p_jli__SceneStateMachineTo_p_jli__AbstractStateMachineT_jli__Scene_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractStateMachineT_void_t[] = {  {&_swigt__p_jli__WorldStateMachine, _p_jli__WorldStateMachineTo_p_jli__AbstractStateMachineT_void_t, 0, 0},  {&_swigt__p_jli__AbstractStateMachineT_void_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractStateT_jli__Node_t[] = {  {&_swigt__p_jli__NodeState, _p_jli__NodeStateTo_p_jli__AbstractStateT_jli__Node_t, 0, 0},  {&_swigt__p_jli__AbstractStateT_jli__Node_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractStateT_jli__Scene_t[] = {  {&_swigt__p_jli__AbstractStateT_jli__Scene_t, 0, 0, 0},  {&_swigt__p_jli__SceneState, _p_jli__SceneStateTo_p_jli__AbstractStateT_jli__Scene_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_jli__AbstractStateT_void_t[] = {  {&_swigt__p_jli__AbstractStateT_void_t, 0, 0, 0},  {&_swigt__p_jli__WorldState, _p_jli__WorldStateTo_p_jli__AbstractStateT_void_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__Action[] = {  {&_swigt__p_jli__Action, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__ActionBuilder[] = {  {&_swigt__p_jli__ActionBuilder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_jli__Camera[] = {  {&_swigt__p_jli__Camera, 0, 0, 0},{0, 0, 0, 0}};
@@ -36180,7 +40601,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_btConstraintRow,
   _swigc__p_btDbvtAabbMm,
   _swigc__p_btDefaultSerializer,
-  _swigc__p_btHashMapT_btHashInt_btTriangleInfo_t,
   _swigc__p_btHashMapT_btHashPtr_int_t,
   _swigc__p_btSerializer,
   _swigc__p_char,
@@ -36196,6 +40616,12 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_jli__AbstractFactoryObject,
   _swigc__p_jli__AbstractObject,
   _swigc__p_jli__AbstractPhysicsBody,
+  _swigc__p_jli__AbstractStateMachineT_jli__Node_t,
+  _swigc__p_jli__AbstractStateMachineT_jli__Scene_t,
+  _swigc__p_jli__AbstractStateMachineT_void_t,
+  _swigc__p_jli__AbstractStateT_jli__Node_t,
+  _swigc__p_jli__AbstractStateT_jli__Scene_t,
+  _swigc__p_jli__AbstractStateT_void_t,
   _swigc__p_jli__Action,
   _swigc__p_jli__ActionBuilder,
   _swigc__p_jli__Camera,
@@ -36206,6 +40632,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_jli__CollisionResponseBuilder,
   _swigc__p_jli__CubicTexture,
   _swigc__p_jli__CubicTextureBuilder,
+  _swigc__p_jli__DeviceInputTime,
+  _swigc__p_jli__DeviceTouch,
   _swigc__p_jli__DynamicPhysicsBody,
   _swigc__p_jli__DynamicPhysicsBodyBuilder,
   _swigc__p_jli__Geometry,

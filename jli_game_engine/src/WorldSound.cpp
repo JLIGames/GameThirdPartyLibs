@@ -20,6 +20,11 @@ namespace jli
         
     }
     
+    WorldSound::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     WorldSound &WorldSound::operator=(const WorldSound &rhs)
     {
         if(this != &rhs)

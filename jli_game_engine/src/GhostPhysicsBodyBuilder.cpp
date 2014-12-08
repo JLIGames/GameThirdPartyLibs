@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_GhostPhysicsBodyBuilder;
     }
+    
+    GhostPhysicsBodyBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

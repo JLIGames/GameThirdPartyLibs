@@ -1,5 +1,5 @@
 #include <vector>
-#include "Input.h"
+#include "DeviceTouch.h"
 #include "btAlignedObjectArray.h"
 
 bool create();

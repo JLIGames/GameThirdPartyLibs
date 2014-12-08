@@ -15,7 +15,7 @@
 #include "AbstractState.h"
 #include "Scene.h"
 #include "Node.h"
-#include "Input.h"
+#include "DeviceTouch.h"
 
 namespace jli
 {
@@ -24,7 +24,7 @@ namespace jli
     public:
         WorldLuaVirtualMachine();
         virtual ~WorldLuaVirtualMachine();
-        
+        operator std::string() const;
         //TODO: fill in specific methods for WorldLuaVirtualMachine
         
         void reset();

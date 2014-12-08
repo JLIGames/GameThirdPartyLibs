@@ -63,4 +63,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_ParticleEmitter;
     }
+    
+    ParticleEmitter::operator std::string() const
+    {
+        return "TODO";
+    }
 }

@@ -62,4 +62,9 @@ namespace jli
     {
         return JLI_OBJECT_TYPE_NodeStateMachineBuilder;
     }
+    
+    NodeStateMachineBuilder::operator std::string() const
+    {
+        return "TODO";
+    }
 }

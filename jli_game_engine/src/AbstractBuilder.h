@@ -33,6 +33,7 @@ namespace jli
         virtual u32 getObjectType()const = 0;
         virtual const char *getClassName()const = 0;
         virtual u32 getType()const = 0;
+        virtual operator std::string() const = 0;
         
         //TODO: fill in specific methods for AbstractBuilder
     protected:

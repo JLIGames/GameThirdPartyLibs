@@ -63,6 +63,11 @@ namespace jli
         return JLI_OBJECT_TYPE_Node;
     }
     
+    Node::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void Node::setName(const char *name)
     {
         m_Name = name;

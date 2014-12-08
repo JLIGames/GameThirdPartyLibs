@@ -18,13 +18,15 @@ namespace jli
 {
     ATTRIBUTE_ALIGNED16(class) AbstractObject
     {
-    protected:
+    public:
         virtual ~AbstractObject(){}
         
         BT_DECLARE_ALIGNED_ALLOCATOR();
         
         virtual const char *getClassName()const = 0;
         virtual u32 getType()const = 0;
+    
+        virtual operator std::string() const = 0;
     };
 }
 

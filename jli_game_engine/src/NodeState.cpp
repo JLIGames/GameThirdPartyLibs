@@ -65,6 +65,11 @@ namespace jli
         return JLI_OBJECT_TYPE_Node;
     }
     
+    NodeState::operator std::string() const
+    {
+        return "TODO";
+    }
+    
     void NodeState::enter(Node *object)
     {
         char buffer[256];
@@ -86,7 +91,7 @@ namespace jli
         jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, object);
     }
     
-    bool NodeState::onMessage(Node *object, const Telegram &msg)
+    bool NodeState::onMessage(Node *object, const Telegram &msg)const
     {
         bool ret;
         char buffer[256];

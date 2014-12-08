@@ -46,6 +46,8 @@ namespace jli
          */
         virtual u32 getType()const = 0;
         
+        virtual operator std::string() const = 0;
+        
         /**
          *  Creates an object. This is the central place where all of the objects will be created in the world
          *
