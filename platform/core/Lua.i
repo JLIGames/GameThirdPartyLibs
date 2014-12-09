@@ -1,12 +1,13 @@
 //Lua interface file
 
 %{
+    #include "Util.h"
     #include "DeviceTouch.h"
 %}
 
+#include "Util.h"
 #include "DeviceTouch.h"
 
-%template(DeviceTouchArray) btAlignedObjectArray<jli::DeviceTouch>;
 
 %extend jli::DeviceTouch
 {

@@ -11,7 +11,7 @@ void destroy();
 //void unpause();
 
 //TODO import bullet library and pass btVector2
-void touch_down(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
-void touch_up(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
-void touch_move(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
-void touch_cancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+void touch_down(jli::DeviceTouch *m_CurrentTouches[10]);
+void touch_up(jli::DeviceTouch *m_CurrentTouches[10]);
+void touch_move(jli::DeviceTouch *m_CurrentTouches[10]);
+void touch_cancelled(jli::DeviceTouch *m_CurrentTouches[10]);

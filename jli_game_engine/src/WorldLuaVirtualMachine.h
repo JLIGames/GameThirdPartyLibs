@@ -29,8 +29,8 @@ namespace jli
         
         void reset();
         
-        bool loadFile(const char *filePath);
-        bool loadString(const char *code);
+        void loadFile(const char *filePath);
+        void loadString(const char *code);
         
         bool execute(const char *);
         bool execute(const char *, f32);
@@ -44,13 +44,13 @@ namespace jli
         bool execute(const char *, Node *, f32);
         bool execute(const char *, Node *, const Telegram &, bool &);
         
-        bool execute(const char *code, const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        bool execute(const char *code, DeviceTouch *m_CurrentTouches[10]);
     protected:
         void init();
         void unInit();
         
         void getError(const char *code, int error);
-        bool compile();
+        void compile();
         
         lua_State *m_lua_State;
     private:

@@ -113,31 +113,31 @@ namespace jli
         return m_Name.c_str();
     }
     
-    void WorldState::touchDown(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void WorldState::touchDown(DeviceTouch *m_CurrentTouches[10])
     {
         char buffer[256];
         sprintf(buffer, "%s%s", getName(), "TouchDown");
-        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, touchArray);
+        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, m_CurrentTouches);
     }
     
-    void WorldState::touchUp(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void WorldState::touchUp(DeviceTouch *m_CurrentTouches[10])
     {
         char buffer[256];
         sprintf(buffer, "%s%s", getName(), "TouchUp");
-        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, touchArray);
+        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, m_CurrentTouches);
     }
     
-    void WorldState::touchMove(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void WorldState::touchMove(DeviceTouch *m_CurrentTouches[10])
     {
         char buffer[256];
         sprintf(buffer, "%s%s", getName(), "TouchMove");
-        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, touchArray);
+        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, m_CurrentTouches);
     }
     
-    void WorldState::touchCancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void WorldState::touchCancelled(DeviceTouch *m_CurrentTouches[10])
     {
         char buffer[256];
         sprintf(buffer, "%s%s", getName(), "TouchCancelled");
-        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, touchArray);
+        jli::World::getInstance()->getWorldLuaVirtualMachine()->execute(buffer, m_CurrentTouches);
     }
 }

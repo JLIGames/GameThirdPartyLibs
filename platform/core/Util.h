@@ -34,6 +34,8 @@ typedef double f64;
 
 #ifdef JLI_DEBUG
 
+#define STR_VALUE(arg)      #arg
+
 #define jliAssert(x)\
 {\
     if(!(x))\
@@ -46,7 +48,7 @@ typedef double f64;
 {\
 if(!(x))\
 {\
-printf("%s\njliAssert(%s);\nLine %d\nFile %s\n",#msg,#x, __LINE__, __FILE__);\
+printf("%s\njliAssert(%s);\nLine %d\nFile %s\n",STR_VALUE(msg),#x, __LINE__, __FILE__);\
 std::abort();\
 }\
 }

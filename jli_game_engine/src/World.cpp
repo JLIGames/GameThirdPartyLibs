@@ -96,32 +96,32 @@ namespace jli
         m_stateMachine->pushState(state);
     }
     
-    void World::touchDown(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void World::touchDown(DeviceTouch *m_CurrentTouches[10])
     {
         WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
         
-        currentState->touchDown(touchArray);
+        currentState->touchDown(m_CurrentTouches);
     }
     
-    void World::touchUp(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void World::touchUp(DeviceTouch *m_CurrentTouches[10])
     {
         WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
         
-        currentState->touchUp(touchArray);
+        currentState->touchUp(m_CurrentTouches);
     }
     
-    void World::touchMove(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void World::touchMove(DeviceTouch *m_CurrentTouches[10])
     {
         WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
         
-        currentState->touchMove(touchArray);
+        currentState->touchMove(m_CurrentTouches);
     }
     
-    void World::touchCancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    void World::touchCancelled(DeviceTouch *m_CurrentTouches[10])
     {
         WorldState *currentState = dynamic_cast<WorldState*>(m_stateMachine->getState());
         
-        currentState->touchCancelled(touchArray);
+        currentState->touchCancelled(m_CurrentTouches);
     }
     
     void World::addCamera(Camera *camera)

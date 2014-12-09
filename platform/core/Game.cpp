@@ -253,20 +253,20 @@ void destroy()
 //{
 //}
 
-void touch_down(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+void touch_down(jli::DeviceTouch *m_CurrentTouches[10])
 {
-    jli::World::getInstance()->touchDown(touchArray);
+    jli::World::getInstance()->touchDown(m_CurrentTouches);
 }
-void touch_up(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+void touch_up(jli::DeviceTouch *m_CurrentTouches[10])
 {
-    jli::World::getInstance()->touchUp(touchArray);
+    jli::World::getInstance()->touchUp(m_CurrentTouches);
 }
-void touch_move(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+void touch_move(jli::DeviceTouch *m_CurrentTouches[10])
 {
-    jli::World::getInstance()->touchMove(touchArray);
+    jli::World::getInstance()->touchMove(m_CurrentTouches);
 }
-void touch_cancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+void touch_cancelled(jli::DeviceTouch *m_CurrentTouches[10])
 {
-    jli::World::getInstance()->touchCancelled(touchArray);
+    jli::World::getInstance()->touchCancelled(m_CurrentTouches);
 }
 

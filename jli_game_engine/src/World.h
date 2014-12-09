@@ -81,10 +81,10 @@ namespace jli
          */
         void pushState(WorldState *);
         
-        void touchDown(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
-        void touchUp(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
-        void touchMove(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
-        void touchCancelled(const btAlignedObjectArray<jli::DeviceTouch*> &touchArray);
+        void touchDown(DeviceTouch *m_CurrentTouches[10]);
+        void touchUp(DeviceTouch *m_CurrentTouches[10]);
+        void touchMove(DeviceTouch *m_CurrentTouches[10]);
+        void touchCancelled(DeviceTouch *m_CurrentTouches[10]);
         
         /**
          *  Add a camera to the world

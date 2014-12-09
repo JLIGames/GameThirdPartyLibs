@@ -10,6 +10,7 @@
 #include "SwigLuaWrapper.h"
 #include "Log.h"
 #include "File.h"
+#include "Util.h"
 
 
 static void printMethods(const char* name)
@@ -68,25 +69,23 @@ namespace jli
         init();
     }
     
-    bool WorldLuaVirtualMachine::loadFile(const char *filePath)
+    void WorldLuaVirtualMachine::loadFile(const char *filePath)
     {
         File *f = new File(filePath);
-        bool ret = loadString(static_cast<const char *>(f->content()));
-        
-        return ret;
+        loadString(static_cast<const char *>(f->content()));
     }
     
-    bool WorldLuaVirtualMachine::loadString(const char *code)
+    void WorldLuaVirtualMachine::loadString(const char *code)
     {
         int error_code = luaL_loadstring(m_lua_State, code);
         
-        if( error_code )
-        {
-            getError(code, error_code);
-            return false;
-        }
+        char buffer[256];
+        sprintf(buffer, "\nLuaVM ERROR %d\nLuaVM ERROR MSG \'%s\'\n",
+                error_code,
+                lua_tostring( m_lua_State, -1 ));
+        jliAssertMsg(error_code == 0, buffer);
         
-        return compile();
+        compile();
     }
     
     void WorldLuaVirtualMachine::init()
@@ -119,17 +118,15 @@ namespace jli
         lua_pop( m_lua_State, 1 );
     }
     
-    bool WorldLuaVirtualMachine::compile()
+    void WorldLuaVirtualMachine::compile()
     {
         int error_code = lua_pcall( m_lua_State, 0, LUA_MULTRET, 0 );
         
-        if( error_code )
-        {
-            getError("NONE", error_code);
-            return false;
-        }
-        
-        return true;
+        char buffer[256];
+        sprintf(buffer, "\nLuaVM ERROR %d\nLuaVM ERROR MSG \'%s\'\n",
+                error_code,
+                lua_tostring( m_lua_State, -1 ));
+        jliAssertMsg(error_code == 0, buffer);
     }
     
     bool WorldLuaVirtualMachine::execute(const char *code)
@@ -157,7 +154,6 @@ namespace jli
         //lua_pushnumber(L, y);
         
         /* call the function with 1 arguments, return 0 result */
-        //lua_call(m_lua_State, 1, 0);
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
@@ -176,8 +172,8 @@ namespace jli
         
         SWIG_NewPointerObj(m_lua_State,(void *) &telegram,SWIGTYPE_p_jli__Telegram,0);
         
-        //lua_call(m_lua_State, 2, 0);
-        int error_code = lua_pcall(m_lua_State, 1, 0, 0);
+        /* do the call (1 arguments, 1 result) */
+        int error_code = lua_pcall(m_lua_State, 1, 1, 0);
         if(error_code)
         {
             getError(code, error_code);
@@ -198,7 +194,7 @@ namespace jli
         
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Scene,0);
         
-        //lua_call(m_lua_State, 2, 0);
+        /* do the call (1 arguments, 0 result) */
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
@@ -217,7 +213,7 @@ namespace jli
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Scene,0);
         lua_pushnumber(m_lua_State, _btScalar);
         
-        //lua_call(m_lua_State, 2, 0);
+        /* do the call (2 arguments, 0 result) */
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)
         {
@@ -236,8 +232,8 @@ namespace jli
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Scene,0);
         SWIG_NewPointerObj(m_lua_State,(void *) &telegram,SWIGTYPE_p_jli__Telegram,0);
         
-        //lua_call(m_lua_State, 2, 0);
-        int error_code = lua_pcall(m_lua_State, 2, 0, 0);
+        /* do the call (2 arguments, 1 result) */
+        int error_code = lua_pcall(m_lua_State, 2, 1, 0);
         if(error_code)
         {
             getError(code, error_code);
@@ -261,7 +257,7 @@ namespace jli
         
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
         
-        //lua_call(m_lua_State, 2, 0);
+        /* do the call (1 arguments, 0 result) */
         int error_code = lua_pcall(m_lua_State, 1, 0, 0);
         if(error_code)
         {
@@ -280,7 +276,7 @@ namespace jli
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
         lua_pushnumber(m_lua_State, _btScalar);
         
-        //lua_call(m_lua_State, 2, 0);
+        /* do the call (2 arguments, 1 result) */
         int error_code = lua_pcall(m_lua_State, 2, 0, 0);
         if(error_code)
         {
@@ -299,8 +295,8 @@ namespace jli
         SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
         SWIG_NewPointerObj(m_lua_State,(void *) &telegram,SWIGTYPE_p_jli__Telegram,0);
 
-        //lua_call(m_lua_State, 2, 0);
-        int error_code = lua_pcall(m_lua_State, 2, 0, 0);
+        /* do the call (2 arguments, 1 result) */
+        int error_code = lua_pcall(m_lua_State, 2, 1, 0);
         if(error_code)
         {
             getError(code, error_code);
@@ -313,15 +309,18 @@ namespace jli
         return true;
     }
     
-    bool WorldLuaVirtualMachine::execute(const char *code, const btAlignedObjectArray<jli::DeviceTouch*> &touchArray)
+    bool WorldLuaVirtualMachine::execute(const char *code, DeviceTouch *m_CurrentTouches[10])
     {
-        /* the function name */
+        
         lua_getglobal(m_lua_State, code);
         
-        SWIG_NewPointerObj(m_lua_State,(void *) &touchArray,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0);
+        for (u32 i = 0; i < 10; ++i)
+        {
+            SWIG_NewPointerObj(m_lua_State,(void *) m_CurrentTouches[i],SWIGTYPE_p_jli__DeviceTouch,0);
+        }
         
-        //lua_call(m_lua_State, 2, 0);
-        int error_code = lua_pcall(m_lua_State, 1, 0, 0);
+        /* call the function with 1 arguments, return 0 result */
+        int error_code = lua_pcall(m_lua_State, 10, 0, 0);
         if(error_code)
         {
             getError(code, error_code);

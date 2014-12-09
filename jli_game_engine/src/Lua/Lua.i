@@ -6,12 +6,10 @@
 
 %module JLI
 
-
-
 //%include "OpenAL.i"
 
 
-
+%include <lua/std_string.i>
 %include <lua/factory.i>
 %include <lua/stl.i>
 %include <lua/lua_fnptr.i>
@@ -764,4 +762,3 @@
         return tmp;
     }
 };
-

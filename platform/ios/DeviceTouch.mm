@@ -60,7 +60,7 @@ namespace jli
     
     u32 DeviceTouch::getType()const
     {
-        return JLI_OBJECT_TYPE_DeviceTouch;
+        return jli::JLI_OBJECT_TYPE_DeviceTouch;
     }
     
     DeviceTouch::operator std::string() const

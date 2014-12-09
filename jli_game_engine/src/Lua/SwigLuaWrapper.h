@@ -2697,101 +2697,101 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_btAlignedObjectArrayT_btQuantizedBvhNode_t swig_types[50]
 #define SWIGTYPE_p_btAlignedObjectArrayT_btSolverConstraint_t swig_types[51]
 #define SWIGTYPE_p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t swig_types[52]
-#define SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t swig_types[53]
-#define SWIGTYPE_p_btConstraintRow swig_types[54]
-#define SWIGTYPE_p_btDbvtAabbMm swig_types[55]
-#define SWIGTYPE_p_btDefaultSerializer swig_types[56]
-#define SWIGTYPE_p_btHashMapT_btHashPtr_int_t swig_types[57]
-#define SWIGTYPE_p_btSerializer swig_types[58]
-#define SWIGTYPE_p_char swig_types[59]
-#define SWIGTYPE_p_double swig_types[60]
-#define SWIGTYPE_p_f_p_void__void swig_types[61]
-#define SWIGTYPE_p_f_size_t__p_void swig_types[62]
-#define SWIGTYPE_p_f_size_t_int__p_void swig_types[63]
-#define SWIGTYPE_p_float swig_types[64]
-#define SWIGTYPE_p_int swig_types[65]
-#define SWIGTYPE_p_int64_t swig_types[66]
-#define SWIGTYPE_p_jli__AbstractBuilder swig_types[67]
-#define SWIGTYPE_p_jli__AbstractDecorator swig_types[68]
-#define SWIGTYPE_p_jli__AbstractFactoryObject swig_types[69]
-#define SWIGTYPE_p_jli__AbstractObject swig_types[70]
-#define SWIGTYPE_p_jli__AbstractPhysicsBody swig_types[71]
-#define SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t swig_types[72]
-#define SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t swig_types[73]
-#define SWIGTYPE_p_jli__AbstractStateMachineT_void_t swig_types[74]
-#define SWIGTYPE_p_jli__AbstractStateT_jli__Node_t swig_types[75]
-#define SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t swig_types[76]
-#define SWIGTYPE_p_jli__AbstractStateT_void_t swig_types[77]
-#define SWIGTYPE_p_jli__Action swig_types[78]
-#define SWIGTYPE_p_jli__ActionBuilder swig_types[79]
-#define SWIGTYPE_p_jli__Camera swig_types[80]
-#define SWIGTYPE_p_jli__CameraBuilder swig_types[81]
-#define SWIGTYPE_p_jli__Clock swig_types[82]
-#define SWIGTYPE_p_jli__ClockBuilder swig_types[83]
-#define SWIGTYPE_p_jli__CollisionResponse swig_types[84]
-#define SWIGTYPE_p_jli__CollisionResponseBuilder swig_types[85]
-#define SWIGTYPE_p_jli__CubicTexture swig_types[86]
-#define SWIGTYPE_p_jli__CubicTextureBuilder swig_types[87]
-#define SWIGTYPE_p_jli__DeviceInputTime swig_types[88]
-#define SWIGTYPE_p_jli__DeviceTouch swig_types[89]
-#define SWIGTYPE_p_jli__DynamicPhysicsBody swig_types[90]
-#define SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder swig_types[91]
-#define SWIGTYPE_p_jli__Geometry swig_types[92]
-#define SWIGTYPE_p_jli__GeometryBuilder swig_types[93]
-#define SWIGTYPE_p_jli__GhostPhysicsBody swig_types[94]
-#define SWIGTYPE_p_jli__GhostPhysicsBodyBuilder swig_types[95]
-#define SWIGTYPE_p_jli__KinematicPhysicsBody swig_types[96]
-#define SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder swig_types[97]
-#define SWIGTYPE_p_jli__Light swig_types[98]
-#define SWIGTYPE_p_jli__LightBuilder swig_types[99]
-#define SWIGTYPE_p_jli__Material swig_types[100]
-#define SWIGTYPE_p_jli__MaterialBuilder swig_types[101]
-#define SWIGTYPE_p_jli__MaterialProperty swig_types[102]
-#define SWIGTYPE_p_jli__MaterialPropertyBuilder swig_types[103]
-#define SWIGTYPE_p_jli__Node swig_types[104]
-#define SWIGTYPE_p_jli__NodeBuilder swig_types[105]
-#define SWIGTYPE_p_jli__NodeState swig_types[106]
-#define SWIGTYPE_p_jli__NodeStateBuilder swig_types[107]
-#define SWIGTYPE_p_jli__NodeStateMachine swig_types[108]
-#define SWIGTYPE_p_jli__NodeStateMachineBuilder swig_types[109]
-#define SWIGTYPE_p_jli__ParticleEmitter swig_types[110]
-#define SWIGTYPE_p_jli__ParticleEmitterBuilder swig_types[111]
-#define SWIGTYPE_p_jli__PhysicsContact swig_types[112]
-#define SWIGTYPE_p_jli__PhysicsContactBuilder swig_types[113]
-#define SWIGTYPE_p_jli__PhysicsField swig_types[114]
-#define SWIGTYPE_p_jli__PhysicsFieldBuilder swig_types[115]
-#define SWIGTYPE_p_jli__PhysicsShape swig_types[116]
-#define SWIGTYPE_p_jli__PhysicsShapeBuilder swig_types[117]
-#define SWIGTYPE_p_jli__PhysicsWorld swig_types[118]
-#define SWIGTYPE_p_jli__PhysicsWorldBuilder swig_types[119]
-#define SWIGTYPE_p_jli__Resource swig_types[120]
-#define SWIGTYPE_p_jli__ResourceBuilder swig_types[121]
-#define SWIGTYPE_p_jli__RigidPhysicsBody swig_types[122]
-#define SWIGTYPE_p_jli__RigidPhysicsBodyBuilder swig_types[123]
-#define SWIGTYPE_p_jli__Scene swig_types[124]
-#define SWIGTYPE_p_jli__SceneBuilder swig_types[125]
-#define SWIGTYPE_p_jli__SceneState swig_types[126]
-#define SWIGTYPE_p_jli__SceneStateBuilder swig_types[127]
-#define SWIGTYPE_p_jli__SceneStateMachine swig_types[128]
-#define SWIGTYPE_p_jli__SceneStateMachineBuilder swig_types[129]
-#define SWIGTYPE_p_jli__SoftPhysicsBody swig_types[130]
-#define SWIGTYPE_p_jli__SoftPhysicsBodyBuilder swig_types[131]
-#define SWIGTYPE_p_jli__Sound swig_types[132]
-#define SWIGTYPE_p_jli__SoundBuilder swig_types[133]
-#define SWIGTYPE_p_jli__Telegram swig_types[134]
-#define SWIGTYPE_p_jli__Texture swig_types[135]
-#define SWIGTYPE_p_jli__TextureBuilder swig_types[136]
-#define SWIGTYPE_p_jli__World swig_types[137]
-#define SWIGTYPE_p_jli__WorldFactory swig_types[138]
-#define SWIGTYPE_p_jli__WorldLuaVirtualMachine swig_types[139]
-#define SWIGTYPE_p_jli__WorldMySQL swig_types[140]
-#define SWIGTYPE_p_jli__WorldSound swig_types[141]
-#define SWIGTYPE_p_jli__WorldState swig_types[142]
-#define SWIGTYPE_p_jli__WorldStateBuilder swig_types[143]
-#define SWIGTYPE_p_jli__WorldStateMachine swig_types[144]
-#define SWIGTYPE_p_jli__WorldStateMachineBuilder swig_types[145]
-#define SWIGTYPE_p_long swig_types[146]
-#define SWIGTYPE_p_long_long swig_types[147]
+#define SWIGTYPE_p_btConstraintRow swig_types[53]
+#define SWIGTYPE_p_btDbvtAabbMm swig_types[54]
+#define SWIGTYPE_p_btDefaultSerializer swig_types[55]
+#define SWIGTYPE_p_btHashMapT_btHashPtr_int_t swig_types[56]
+#define SWIGTYPE_p_btSerializer swig_types[57]
+#define SWIGTYPE_p_char swig_types[58]
+#define SWIGTYPE_p_double swig_types[59]
+#define SWIGTYPE_p_f_p_void__void swig_types[60]
+#define SWIGTYPE_p_f_size_t__p_void swig_types[61]
+#define SWIGTYPE_p_f_size_t_int__p_void swig_types[62]
+#define SWIGTYPE_p_float swig_types[63]
+#define SWIGTYPE_p_int swig_types[64]
+#define SWIGTYPE_p_int64_t swig_types[65]
+#define SWIGTYPE_p_jli__AbstractBuilder swig_types[66]
+#define SWIGTYPE_p_jli__AbstractDecorator swig_types[67]
+#define SWIGTYPE_p_jli__AbstractFactoryObject swig_types[68]
+#define SWIGTYPE_p_jli__AbstractObject swig_types[69]
+#define SWIGTYPE_p_jli__AbstractPhysicsBody swig_types[70]
+#define SWIGTYPE_p_jli__AbstractStateMachineT_jli__Node_t swig_types[71]
+#define SWIGTYPE_p_jli__AbstractStateMachineT_jli__Scene_t swig_types[72]
+#define SWIGTYPE_p_jli__AbstractStateMachineT_void_t swig_types[73]
+#define SWIGTYPE_p_jli__AbstractStateT_jli__Node_t swig_types[74]
+#define SWIGTYPE_p_jli__AbstractStateT_jli__Scene_t swig_types[75]
+#define SWIGTYPE_p_jli__AbstractStateT_void_t swig_types[76]
+#define SWIGTYPE_p_jli__Action swig_types[77]
+#define SWIGTYPE_p_jli__ActionBuilder swig_types[78]
+#define SWIGTYPE_p_jli__Camera swig_types[79]
+#define SWIGTYPE_p_jli__CameraBuilder swig_types[80]
+#define SWIGTYPE_p_jli__Clock swig_types[81]
+#define SWIGTYPE_p_jli__ClockBuilder swig_types[82]
+#define SWIGTYPE_p_jli__CollisionResponse swig_types[83]
+#define SWIGTYPE_p_jli__CollisionResponseBuilder swig_types[84]
+#define SWIGTYPE_p_jli__CubicTexture swig_types[85]
+#define SWIGTYPE_p_jli__CubicTextureBuilder swig_types[86]
+#define SWIGTYPE_p_jli__DeviceInputTime swig_types[87]
+#define SWIGTYPE_p_jli__DeviceTouch swig_types[88]
+#define SWIGTYPE_p_jli__DynamicPhysicsBody swig_types[89]
+#define SWIGTYPE_p_jli__DynamicPhysicsBodyBuilder swig_types[90]
+#define SWIGTYPE_p_jli__Geometry swig_types[91]
+#define SWIGTYPE_p_jli__GeometryBuilder swig_types[92]
+#define SWIGTYPE_p_jli__GhostPhysicsBody swig_types[93]
+#define SWIGTYPE_p_jli__GhostPhysicsBodyBuilder swig_types[94]
+#define SWIGTYPE_p_jli__KinematicPhysicsBody swig_types[95]
+#define SWIGTYPE_p_jli__KinematicPhysicsBodyBuilder swig_types[96]
+#define SWIGTYPE_p_jli__Light swig_types[97]
+#define SWIGTYPE_p_jli__LightBuilder swig_types[98]
+#define SWIGTYPE_p_jli__Material swig_types[99]
+#define SWIGTYPE_p_jli__MaterialBuilder swig_types[100]
+#define SWIGTYPE_p_jli__MaterialProperty swig_types[101]
+#define SWIGTYPE_p_jli__MaterialPropertyBuilder swig_types[102]
+#define SWIGTYPE_p_jli__Node swig_types[103]
+#define SWIGTYPE_p_jli__NodeBuilder swig_types[104]
+#define SWIGTYPE_p_jli__NodeState swig_types[105]
+#define SWIGTYPE_p_jli__NodeStateBuilder swig_types[106]
+#define SWIGTYPE_p_jli__NodeStateMachine swig_types[107]
+#define SWIGTYPE_p_jli__NodeStateMachineBuilder swig_types[108]
+#define SWIGTYPE_p_jli__ParticleEmitter swig_types[109]
+#define SWIGTYPE_p_jli__ParticleEmitterBuilder swig_types[110]
+#define SWIGTYPE_p_jli__PhysicsContact swig_types[111]
+#define SWIGTYPE_p_jli__PhysicsContactBuilder swig_types[112]
+#define SWIGTYPE_p_jli__PhysicsField swig_types[113]
+#define SWIGTYPE_p_jli__PhysicsFieldBuilder swig_types[114]
+#define SWIGTYPE_p_jli__PhysicsShape swig_types[115]
+#define SWIGTYPE_p_jli__PhysicsShapeBuilder swig_types[116]
+#define SWIGTYPE_p_jli__PhysicsWorld swig_types[117]
+#define SWIGTYPE_p_jli__PhysicsWorldBuilder swig_types[118]
+#define SWIGTYPE_p_jli__Resource swig_types[119]
+#define SWIGTYPE_p_jli__ResourceBuilder swig_types[120]
+#define SWIGTYPE_p_jli__RigidPhysicsBody swig_types[121]
+#define SWIGTYPE_p_jli__RigidPhysicsBodyBuilder swig_types[122]
+#define SWIGTYPE_p_jli__Scene swig_types[123]
+#define SWIGTYPE_p_jli__SceneBuilder swig_types[124]
+#define SWIGTYPE_p_jli__SceneState swig_types[125]
+#define SWIGTYPE_p_jli__SceneStateBuilder swig_types[126]
+#define SWIGTYPE_p_jli__SceneStateMachine swig_types[127]
+#define SWIGTYPE_p_jli__SceneStateMachineBuilder swig_types[128]
+#define SWIGTYPE_p_jli__SoftPhysicsBody swig_types[129]
+#define SWIGTYPE_p_jli__SoftPhysicsBodyBuilder swig_types[130]
+#define SWIGTYPE_p_jli__Sound swig_types[131]
+#define SWIGTYPE_p_jli__SoundBuilder swig_types[132]
+#define SWIGTYPE_p_jli__Telegram swig_types[133]
+#define SWIGTYPE_p_jli__Texture swig_types[134]
+#define SWIGTYPE_p_jli__TextureBuilder swig_types[135]
+#define SWIGTYPE_p_jli__World swig_types[136]
+#define SWIGTYPE_p_jli__WorldFactory swig_types[137]
+#define SWIGTYPE_p_jli__WorldLuaVirtualMachine swig_types[138]
+#define SWIGTYPE_p_jli__WorldMySQL swig_types[139]
+#define SWIGTYPE_p_jli__WorldSound swig_types[140]
+#define SWIGTYPE_p_jli__WorldState swig_types[141]
+#define SWIGTYPE_p_jli__WorldStateBuilder swig_types[142]
+#define SWIGTYPE_p_jli__WorldStateMachine swig_types[143]
+#define SWIGTYPE_p_jli__WorldStateMachineBuilder swig_types[144]
+#define SWIGTYPE_p_long swig_types[145]
+#define SWIGTYPE_p_long_long swig_types[146]
+#define SWIGTYPE_p_p_jli__DeviceTouch swig_types[147]
 #define SWIGTYPE_p_short swig_types[148]
 #define SWIGTYPE_p_signed_char swig_types[149]
 #define SWIGTYPE_p_std__string swig_types[150]
@@ -2819,6 +2819,17 @@ typedef struct{} LANGUAGE_OBJ;
 }
 
 
+#include <string>
+
+
+SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
+  int ret = lua_isstring(L, idx);
+  if (!ret)
+   ret = lua_isnil(L, idx);
+  return ret;
+}
+
+
 #define SWIGVERSION 0x030002 
 #define SWIG_VERSION SWIGVERSION
 
@@ -2835,17 +2846,6 @@ typedef struct{} LANGUAGE_OBJ;
 
 
 #include <stdexcept>
-
-
-#include <string>
-
-
-SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
-  int ret = lua_isstring(L, idx);
-  if (!ret)
-   ret = lua_isnil(L, idx);
-  return ret;
-}
 
 
 #include <vector>
@@ -35629,7 +35629,6 @@ static int _wrap_WorldLuaVirtualMachine_loadFile(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
   char *arg2 = (char *) 0 ;
-  bool result;
   
   SWIG_check_num_args("jli::WorldLuaVirtualMachine::loadFile",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::loadFile",1,"jli::WorldLuaVirtualMachine *");
@@ -35640,8 +35639,8 @@ static int _wrap_WorldLuaVirtualMachine_loadFile(lua_State* L) {
   }
   
   arg2 = (char *)lua_tostring(L, 2);
-  result = (bool)(arg1)->loadFile((char const *)arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  (arg1)->loadFile((char const *)arg2);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35656,7 +35655,6 @@ static int _wrap_WorldLuaVirtualMachine_loadString(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
   char *arg2 = (char *) 0 ;
-  bool result;
   
   SWIG_check_num_args("jli::WorldLuaVirtualMachine::loadString",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::loadString",1,"jli::WorldLuaVirtualMachine *");
@@ -35667,8 +35665,8 @@ static int _wrap_WorldLuaVirtualMachine_loadString(lua_State* L) {
   }
   
   arg2 = (char *)lua_tostring(L, 2);
-  result = (bool)(arg1)->loadString((char const *)arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  (arg1)->loadString((char const *)arg2);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -36019,13 +36017,13 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_9(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldLuaVirtualMachine *arg1 = (jli::WorldLuaVirtualMachine *) 0 ;
   char *arg2 = (char *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg3 = 0 ;
+  jli::DeviceTouch **arg3 ;
   bool result;
   
   SWIG_check_num_args("jli::WorldLuaVirtualMachine::execute",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",1,"jli::WorldLuaVirtualMachine *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",2,"char const *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("jli::WorldLuaVirtualMachine::execute",3,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldLuaVirtualMachine,0))){
     SWIG_fail_ptr("WorldLuaVirtualMachine_execute",1,SWIGTYPE_p_jli__WorldLuaVirtualMachine);
@@ -36033,11 +36031,11 @@ static int _wrap_WorldLuaVirtualMachine_execute__SWIG_9(lua_State* L) {
   
   arg2 = (char *)lua_tostring(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",3,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("WorldLuaVirtualMachine_execute",3,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  result = (bool)(arg1)->execute((char const *)arg2,(btAlignedObjectArray< jli::DeviceTouch * > const &)*arg3);
+  result = (bool)(arg1)->execute((char const *)arg2,arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -36150,7 +36148,7 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
       if (_v) {
         {
           void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t, 0)) {
+          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_p_jli__DeviceTouch, 0)) {
             _v = 0;
           } else {
             _v = 1;
@@ -36403,7 +36401,7 @@ static int _wrap_WorldLuaVirtualMachine_execute(lua_State* L) {
     "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *)\n"
     "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *,f32)\n"
     "    jli::WorldLuaVirtualMachine::execute(char const *,jli::Node *,jli::Telegram const &,bool &)\n"
-    "    jli::WorldLuaVirtualMachine::execute(char const *,btAlignedObjectArray< jli::DeviceTouch * > const &)\n");
+    "    jli::WorldLuaVirtualMachine::execute(char const *,jli::DeviceTouch *[10])\n");
   lua_error(L);return 0;
 }
 
@@ -38178,22 +38176,22 @@ fail:
 static int _wrap_WorldState_touchDown(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldState *arg1 = (jli::WorldState *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::WorldState::touchDown",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchDown",1,"jli::WorldState *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchDown",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::WorldState::touchDown",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
     SWIG_fail_ptr("WorldState_touchDown",1,SWIGTYPE_p_jli__WorldState);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("WorldState_touchDown",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("WorldState_touchDown",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchDown((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchDown(arg2);
   
   return SWIG_arg;
   
@@ -38208,22 +38206,22 @@ fail:
 static int _wrap_WorldState_touchUp(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldState *arg1 = (jli::WorldState *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::WorldState::touchUp",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchUp",1,"jli::WorldState *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchUp",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::WorldState::touchUp",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
     SWIG_fail_ptr("WorldState_touchUp",1,SWIGTYPE_p_jli__WorldState);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("WorldState_touchUp",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("WorldState_touchUp",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchUp((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchUp(arg2);
   
   return SWIG_arg;
   
@@ -38238,22 +38236,22 @@ fail:
 static int _wrap_WorldState_touchMove(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldState *arg1 = (jli::WorldState *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::WorldState::touchMove",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchMove",1,"jli::WorldState *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchMove",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::WorldState::touchMove",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
     SWIG_fail_ptr("WorldState_touchMove",1,SWIGTYPE_p_jli__WorldState);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("WorldState_touchMove",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("WorldState_touchMove",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchMove((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchMove(arg2);
   
   return SWIG_arg;
   
@@ -38268,22 +38266,22 @@ fail:
 static int _wrap_WorldState_touchCancelled(lua_State* L) {
   int SWIG_arg = 0;
   jli::WorldState *arg1 = (jli::WorldState *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::WorldState::touchCancelled",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::WorldState::touchCancelled",1,"jli::WorldState *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::WorldState::touchCancelled",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::WorldState::touchCancelled",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__WorldState,0))){
     SWIG_fail_ptr("WorldState_touchCancelled",1,SWIGTYPE_p_jli__WorldState);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("WorldState_touchCancelled",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("WorldState_touchCancelled",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchCancelled((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchCancelled(arg2);
   
   return SWIG_arg;
   
@@ -38605,22 +38603,22 @@ fail:
 static int _wrap_World_touchDown(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::World::touchDown",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchDown",1,"jli::World *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchDown",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::World::touchDown",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
     SWIG_fail_ptr("World_touchDown",1,SWIGTYPE_p_jli__World);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("World_touchDown",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("World_touchDown",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchDown((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchDown(arg2);
   
   return SWIG_arg;
   
@@ -38635,22 +38633,22 @@ fail:
 static int _wrap_World_touchUp(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::World::touchUp",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchUp",1,"jli::World *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchUp",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::World::touchUp",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
     SWIG_fail_ptr("World_touchUp",1,SWIGTYPE_p_jli__World);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("World_touchUp",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("World_touchUp",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchUp((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchUp(arg2);
   
   return SWIG_arg;
   
@@ -38665,22 +38663,22 @@ fail:
 static int _wrap_World_touchMove(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::World::touchMove",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchMove",1,"jli::World *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchMove",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::World::touchMove",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
     SWIG_fail_ptr("World_touchMove",1,SWIGTYPE_p_jli__World);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("World_touchMove",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("World_touchMove",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchMove((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchMove(arg2);
   
   return SWIG_arg;
   
@@ -38695,22 +38693,22 @@ fail:
 static int _wrap_World_touchCancelled(lua_State* L) {
   int SWIG_arg = 0;
   jli::World *arg1 = (jli::World *) 0 ;
-  btAlignedObjectArray< jli::DeviceTouch * > *arg2 = 0 ;
+  jli::DeviceTouch **arg2 ;
   
   SWIG_check_num_args("jli::World::touchCancelled",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("jli::World::touchCancelled",1,"jli::World *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("jli::World::touchCancelled",2,"btAlignedObjectArray< jli::DeviceTouch * > const &");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("jli::World::touchCancelled",2,"jli::DeviceTouch *[10]");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_jli__World,0))){
     SWIG_fail_ptr("World_touchCancelled",1,SWIGTYPE_p_jli__World);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,0))){
-    SWIG_fail_ptr("World_touchCancelled",2,SWIGTYPE_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_jli__DeviceTouch,0))){
+    SWIG_fail_ptr("World_touchCancelled",2,SWIGTYPE_p_p_jli__DeviceTouch);
   }
   
-  (arg1)->touchCancelled((btAlignedObjectArray< jli::DeviceTouch * > const &)*arg2);
+  (arg1)->touchCancelled(arg2);
   
   return SWIG_arg;
   
@@ -40120,7 +40118,6 @@ static swig_type_info _swigt__p_btAlignedObjectArrayT_btPersistentManifold_p_t =
 static swig_type_info _swigt__p_btAlignedObjectArrayT_btQuantizedBvhNode_t = {"_p_btAlignedObjectArrayT_btQuantizedBvhNode_t", "QuantizedNodeArray *|btAlignedObjectArray< btQuantizedBvhNode > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btAlignedObjectArrayT_btSolverConstraint_t = {"_p_btAlignedObjectArrayT_btSolverConstraint_t", "btConstraintArray *|btAlignedObjectArray< btSolverConstraint > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t = {"_p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t", "btAlignedObjectArray< jli::AbstractFactoryObject * > *|jli::WorldFactory::ObjectList *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t = {"_p_btAlignedObjectArrayT_jli__DeviceTouch_p_t", "btAlignedObjectArray< jli::DeviceTouch * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btConstraintRow = {"_p_btConstraintRow", "btConstraintRow *|PfxConstraintRow *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btDbvtAabbMm = {"_p_btDbvtAabbMm", "btDbvtAabbMm *|btDbvtVolume *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_btHashMapT_btHashPtr_int_t = {"_p_btHashMapT_btHashPtr_int_t", "jli::WorldFactory::ObjectDuplicateMap *|btHashMap< btHashPtr,int > *", 0, 0, (void*)0, 0};
@@ -40215,6 +40212,7 @@ static swig_type_info _swigt__p_jli__WorldStateMachine = {"_p_jli__WorldStateMac
 static swig_type_info _swigt__p_jli__WorldStateMachineBuilder = {"_p_jli__WorldStateMachineBuilder", "jli::WorldStateMachineBuilder *", 0, 0, (void*)&_wrap_class_WorldStateMachineBuilder, 0};
 static swig_type_info _swigt__p_long = {"_p_long", "GLsizeiptr *|GLintptr *|long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "long long *|s64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_p_jli__DeviceTouch = {"_p_p_jli__DeviceTouch", "jli::DeviceTouch **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_short = {"_p_short", "short *|s16 *|GLshort *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|GLbyte *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)&_wrap_class_string, 0};
@@ -40279,7 +40277,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_btAlignedObjectArrayT_btQuantizedBvhNode_t,
   &_swigt__p_btAlignedObjectArrayT_btSolverConstraint_t,
   &_swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t,
-  &_swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,
   &_swigt__p_btConstraintRow,
   &_swigt__p_btDbvtAabbMm,
   &_swigt__p_btDefaultSerializer,
@@ -40374,6 +40371,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_jli__WorldStateMachineBuilder,
   &_swigt__p_long,
   &_swigt__p_long_long,
+  &_swigt__p_p_jli__DeviceTouch,
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_std__string,
@@ -40438,7 +40436,6 @@ static swig_cast_info _swigc__p_btAlignedObjectArrayT_btPersistentManifold_p_t[]
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_btQuantizedBvhNode_t[] = {  {&_swigt__p_btAlignedObjectArrayT_btQuantizedBvhNode_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_btSolverConstraint_t[] = {  {&_swigt__p_btAlignedObjectArrayT_btSolverConstraint_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t[] = {  {&_swigt__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t[] = {  {&_swigt__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btConstraintRow[] = {  {&_swigt__p_btConstraintRow, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btDbvtAabbMm[] = {  {&_swigt__p_btDbvtAabbMm, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_btHashMapT_btHashPtr_int_t[] = {  {&_swigt__p_btHashMapT_btHashPtr_int_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -40533,6 +40530,7 @@ static swig_cast_info _swigc__p_jli__WorldStateMachine[] = {  {&_swigt__p_jli__W
 static swig_cast_info _swigc__p_jli__WorldStateMachineBuilder[] = {  {&_swigt__p_jli__WorldStateMachineBuilder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long[] = {  {&_swigt__p_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_p_jli__DeviceTouch[] = {  {&_swigt__p_p_jli__DeviceTouch, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
@@ -40597,7 +40595,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_btAlignedObjectArrayT_btQuantizedBvhNode_t,
   _swigc__p_btAlignedObjectArrayT_btSolverConstraint_t,
   _swigc__p_btAlignedObjectArrayT_jli__AbstractFactoryObject_p_t,
-  _swigc__p_btAlignedObjectArrayT_jli__DeviceTouch_p_t,
   _swigc__p_btConstraintRow,
   _swigc__p_btDbvtAabbMm,
   _swigc__p_btDefaultSerializer,
@@ -40692,6 +40689,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_jli__WorldStateMachineBuilder,
   _swigc__p_long,
   _swigc__p_long_long,
+  _swigc__p_p_jli__DeviceTouch,
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_std__string,
