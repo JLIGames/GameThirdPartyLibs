@@ -1,5 +1,7 @@
 //Lua interface file
 
+%module JLI
+
 %ignore btStorageResult;
 %ignore CProfileIterator;
 %ignore btCollisionAlgorithmConstructionInfo::getDispatcherId();
@@ -14,6 +16,13 @@
 %rename(operator_delete) operator delete;
 %rename(operator_new_array) operator new[];
 %rename(operator_delete_array) operator delete[];
+
+%ignore btCollisionObjectWrapper;
+
+//%ignore operator new;
+//%ignore operator delete;
+//%ignore operator new[];
+//%ignore operator delete[];
 
 %ignore isInside;
 %ignore btSelect;
@@ -33,7 +42,7 @@
 %ignore btAxisSweep3Internal;
 %ignore btInternalTriangleInfoMap;
 
-%insert("runtime")
+//%insert("runtime")
 
 %{
     #include "btBulletDynamicsCommon.h"

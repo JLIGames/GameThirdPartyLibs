@@ -13,7 +13,7 @@ class btTransform;
 #endif
 
 #define BT_DECLARE_STACK_ONLY_OBJECT \
-	private: \
+	public: \
 		void* operator new(size_t size); \
 		void operator delete(void*);
 

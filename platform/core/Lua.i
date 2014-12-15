@@ -1,11 +1,19 @@
 //Lua interface file
 
+%module JLI
+
+//%import "../../jli_game_engine/src/Lua/Lua.i"
+//%import "../../bullet/Lua.i"
+
+%ignore operator std::string;
+
 %{
-    #include "Util.h"
+//    #include "Util.h"
     #include "DeviceTouch.h"
+    using namespace jli;
 %}
 
-#include "Util.h"
+//#include "Util.h"
 #include "DeviceTouch.h"
 
 

@@ -16,13 +16,13 @@
 
 %ignore operator std::string;
 
-%import "../../../bullet/Lua.i"
-%import "../../../platform/core/Lua.i"
+%include "../../../bullet/Lua.i"
+%include "../../../platform/core/Lua.i"
 
 
-%import "OpenGLES20.i"
-%import "FMOD.i"
-
+//%include "OpenGLES20.i"
+//%include "FMOD.i"
+//
 %import "AbstractBehavior.i"
 %import "AbstractDecorator.i"
 %import "AbstractFactoryObject.i"
@@ -762,3 +762,8 @@
         return tmp;
     }
 };
+
+
+%include "../../../bullet/Lua.i"
+%include "../../../platform/core/Lua.i"
+

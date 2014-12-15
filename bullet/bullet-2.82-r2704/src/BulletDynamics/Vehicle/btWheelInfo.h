@@ -42,6 +42,7 @@ struct btWheelInfoConstructionInfo
 /// btWheelInfo contains information per wheel about friction and suspension.
 struct btWheelInfo
 {
+    btWheelInfo(){}
 	struct RaycastInfo
 	{
 		//set by raycaster

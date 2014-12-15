@@ -311,16 +311,19 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, DeviceTouch *m_CurrentTouches[10])
     {
+        u32 i = 0, numberOfTouches = 0;
         
         lua_getglobal(m_lua_State, code);
         
-        for (u32 i = 0; i < 10; ++i)
+        while (m_CurrentTouches[i])
         {
             SWIG_NewPointerObj(m_lua_State,(void *) m_CurrentTouches[i],SWIGTYPE_p_jli__DeviceTouch,0);
+            ++i;
+            ++numberOfTouches;
         }
         
         /* call the function with 1 arguments, return 0 result */
-        int error_code = lua_pcall(m_lua_State, 10, 0, 0);
+        int error_code = lua_pcall(m_lua_State, numberOfTouches, 0, 0);
         if(error_code)
         {
             getError(code, error_code);
