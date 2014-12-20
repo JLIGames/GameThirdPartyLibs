@@ -17,18 +17,26 @@ namespace jli
     class DeviceInputTime : public AbstractObject
     {
     public:
-        virtual const char *getClassName()const;
+        virtual const char *getClassName()const{return "DeviceInputTime";}
         virtual u32 getType()const = 0;
         
-        void setTimeStampFrame(const f64 timeStamp);
-        void setTimeStampTick(const f64 timeStamp);
-        f64 getTimeStampFrame()const;
-        f64 getTimeStampTick()const;
+        void setTimeStampFrame(const f64 timeStamp){m_timestamp_frame = timeStamp;}
+        void setTimeStampTick(const f64 timeStamp){m_timestamp_soundtick = timeStamp;}
+        f64 getTimeStampFrame()const{return m_timestamp_frame;}
+        f64 getTimeStampTick()const{return m_timestamp_soundtick;}
     
     protected:
-        DeviceInputTime();
-        DeviceInputTime(const DeviceInputTime &rhs);
-        DeviceInputTime &operator=(const DeviceInputTime &rhs);
+        DeviceInputTime():m_timestamp_frame(0),m_timestamp_soundtick(0){}
+        DeviceInputTime(const DeviceInputTime &rhs):m_timestamp_frame(rhs.m_timestamp_frame),m_timestamp_soundtick(rhs.m_timestamp_soundtick){}
+        DeviceInputTime &operator=(const DeviceInputTime &rhs)
+        {
+            if (this != &rhs)
+            {
+                m_timestamp_frame = rhs.m_timestamp_frame;
+                m_timestamp_soundtick = rhs.m_timestamp_soundtick;
+            }
+            return *this;
+        }
         
     private:
         f64 m_timestamp_frame;

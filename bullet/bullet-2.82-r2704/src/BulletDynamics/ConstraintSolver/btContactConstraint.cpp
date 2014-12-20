@@ -14,15 +14,6 @@ subject to the following restrictions:
 */
 
 
-#ifdef __EMSCRIPTEN__
-#include "btContactConstraint.h"
-#include "../../BulletDynamics/Dynamics/btRigidBody.h"
-#include "../../LinearMath/btVector3.h"
-#include "btJacobianEntry.h"
-#include "btContactSolverInfo.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
-#else
 #include "btContactConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btVector3.h"
@@ -30,7 +21,6 @@ subject to the following restrictions:
 #include "btContactSolverInfo.h"
 #include "LinearMath/btMinMax.h"
 #include "BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
-#endif
 
 
 
@@ -70,15 +60,6 @@ void	btContactConstraint::buildJacobian()
 
 
 
-#ifdef __EMSCRIPTEN__
-#include "btContactConstraint.h"
-#include "../../BulletDynamics/Dynamics/btRigidBody.h"
-#include "../../LinearMath/btVector3.h"
-#include "btJacobianEntry.h"
-#include "btContactSolverInfo.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
-#else
 #include "btContactConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btVector3.h"
@@ -86,7 +67,6 @@ void	btContactConstraint::buildJacobian()
 #include "btContactSolverInfo.h"
 #include "LinearMath/btMinMax.h"
 #include "BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
-#endif
 
 
 

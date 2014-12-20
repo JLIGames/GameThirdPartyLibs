@@ -16,17 +16,10 @@ subject to the following restrictions:
 #ifndef BT_COLLISION_SHAPE_H
 #define BT_COLLISION_SHAPE_H
 
-#ifdef __EMSCRIPTEN__
-#include "../../LinearMath/btTransform.h"
-#include "../../LinearMath/btVector3.h"
-#include "../../LinearMath/btMatrix3x3.h"
-#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" //for the shape types
-#else
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btVector3.h"
 #include "LinearMath/btMatrix3x3.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" //for the shape types
-#endif
 class btSerializer;
 
 
@@ -111,7 +104,7 @@ public:
 
 
 //debugging support
-	virtual const char*	getClassName()const =0 ;
+	virtual const char*	getName()const =0 ;
 #endif //__SPU__
 
 	

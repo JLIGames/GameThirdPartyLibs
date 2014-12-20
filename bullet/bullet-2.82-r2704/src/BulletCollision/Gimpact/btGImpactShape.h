@@ -25,19 +25,6 @@ subject to the following restrictions:
 #ifndef GIMPACT_SHAPE_H
 #define GIMPACT_SHAPE_H
 
-#ifdef __EMSCRIPTEN__
-#include "../../BulletCollision/CollisionShapes/btCollisionShape.h"
-#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
-#include "../../BulletCollision/CollisionShapes/btStridingMeshInterface.h"
-#include "../../BulletCollision/CollisionShapes/btCollisionMargin.h"
-#include "../../BulletCollision/CollisionDispatch/btCollisionWorld.h"
-#include "../../BulletCollision/CollisionShapes/btConcaveShape.h"
-#include "../../BulletCollision/CollisionShapes/btTetrahedronShape.h"
-#include "../../LinearMath/btVector3.h"
-#include "../../LinearMath/btTransform.h"
-#include "../../LinearMath/btMatrix3x3.h"
-#include "../../LinearMath/btAlignedObjectArray.h"
-#else
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
 #include "BulletCollision/CollisionShapes/btStridingMeshInterface.h"
@@ -49,7 +36,6 @@ subject to the following restrictions:
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btMatrix3x3.h"
 #include "LinearMath/btAlignedObjectArray.h"
-#endif
 
 #include "btGImpactQuantizedBvh.h" // box tree class
 
@@ -521,7 +507,7 @@ public:
 	//! Calculates the exact inertia tensor for this shape
 	virtual void	calculateLocalInertia(btScalar mass,btVector3& inertia) const;
 
-	virtual const char*	getClassName()const
+	virtual const char*	getName()const
 	{
 		return "GImpactCompound";
 	}
@@ -835,7 +821,7 @@ public:
 
 
 
-	virtual const char*	getClassName()const
+	virtual const char*	getName()const
 	{
 		return "GImpactMeshShapePart";
 	}
@@ -1153,7 +1139,7 @@ public:
 	}
 
 
-	virtual const char*	getClassName()const
+	virtual const char*	getName()const
 	{
 		return "GImpactMesh";
 	}

@@ -14,6 +14,10 @@
 #include <cstdlib>
 #include <stdio.h>
 
+#ifndef NULL
+#define NULL   ((void *) 0)
+#endif
+
 #if defined(DEBUG) || defined (_DEBUG)
 #define JLI_DEBUG
 #endif

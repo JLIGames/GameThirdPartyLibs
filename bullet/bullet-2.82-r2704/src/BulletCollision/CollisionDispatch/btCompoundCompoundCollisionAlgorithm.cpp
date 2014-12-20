@@ -14,16 +14,6 @@ subject to the following restrictions:
 
 */
 
-#ifdef __EMSCRIPTEN__
-#include "btCompoundCompoundCollisionAlgorithm.h"
-#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
-#include "../../BulletCollision/CollisionShapes/btCompoundShape.h"
-#include "../../BulletCollision/BroadphaseCollision/btDbvt.h"
-#include "../../LinearMath/btIDebugDraw.h"
-#include "../../LinearMath/btAabbUtil2.h"
-#include "../../BulletCollision/CollisionDispatch/btManifoldResult.h"
-#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
-#else
 #include "btCompoundCompoundCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionShapes/btCompoundShape.h"
@@ -32,7 +22,6 @@ subject to the following restrictions:
 #include "LinearMath/btAabbUtil2.h"
 #include "BulletCollision/CollisionDispatch/btManifoldResult.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
-#endif
 
 
 btShapePairCallback gCompoundCompoundChildShapePairCallback = 0;

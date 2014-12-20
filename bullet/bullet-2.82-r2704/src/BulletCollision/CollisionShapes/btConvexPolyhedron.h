@@ -20,13 +20,8 @@ subject to the following restrictions:
 #ifndef _BT_POLYHEDRAL_FEATURES_H
 #define _BT_POLYHEDRAL_FEATURES_H
 
-#ifdef __EMSCRIPTEN__
-#include "../../LinearMath/btTransform.h"
-#include "../../LinearMath/btAlignedObjectArray.h"
-#else
 #include "LinearMath/btTransform.h"
 #include "LinearMath/btAlignedObjectArray.h"
-#endif
 
 #define TEST_INTERNAL_OBJECTS 1
 

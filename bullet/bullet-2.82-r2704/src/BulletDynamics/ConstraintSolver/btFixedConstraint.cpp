@@ -15,13 +15,8 @@ subject to the following restrictions:
 
 
 #include "btFixedConstraint.h"
-#ifdef __EMSCRIPTEN__
-#include "../../BulletDynamics/Dynamics/btRigidBody.h"
-#include "../../LinearMath/btTransformUtil.h"
-#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 #include "LinearMath/btTransformUtil.h"
-#endif
 #include <new>
 
 

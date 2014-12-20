@@ -1,6 +1,5 @@
 #include <vector>
 #include "DeviceTouch.h"
-#include "btAlignedObjectArray.h"
 
 bool create();
 void resize(int x, int y, int width, int height);

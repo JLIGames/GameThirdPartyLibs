@@ -9,12 +9,14 @@
 #ifndef JLIGameEngineTest_lib_tests_h
 #define JLIGameEngineTest_lib_tests_h
 
-#ifdef __EMSCRIPTEN__
-#include "../../bullet/bullet-2.82-r2704/src/btBulletCollisionCommon.h"
-#else
-#include "btBulletCollisionCommon.h"
-#endif
-btVector3 test;
+//#ifdef __EMSCRIPTEN__
+//#include "../../bullet/bullet-2.82-r2704/src/btBulletCollisionCommon.h"
+//#else
+//#include "btBulletCollisionCommon.h"
+//#endif
+//btVector3 test;
+//
+//#include "JLIEngine.h"
 
 //
 //

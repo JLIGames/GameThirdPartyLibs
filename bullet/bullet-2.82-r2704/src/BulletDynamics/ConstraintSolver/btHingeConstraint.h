@@ -21,11 +21,7 @@ subject to the following restrictions:
 #define _BT_USE_CENTER_LIMIT_ 1
 
 
-#ifdef __EMSCRIPTEN__
-#include "../../LinearMath/btVector3.h"
-#else
 #include "LinearMath/btVector3.h"
-#endif
 #include "btJacobianEntry.h"
 #include "btTypedConstraint.h"
 

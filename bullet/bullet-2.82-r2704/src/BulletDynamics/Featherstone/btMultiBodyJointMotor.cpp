@@ -18,11 +18,7 @@ subject to the following restrictions:
 #include "btMultiBodyJointMotor.h"
 #include "btMultiBody.h"
 #include "btMultiBodyLinkCollider.h"
-#ifdef __EMSCRIPTEN__
-#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
-#else
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
-#endif
 
 
 btMultiBodyJointMotor::btMultiBodyJointMotor(btMultiBody* body, int link, btScalar desiredVelocity, btScalar maxMotorImpulse)

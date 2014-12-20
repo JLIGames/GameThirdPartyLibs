@@ -6,14 +6,10 @@
 class btCollisionShape;
 class btCollisionObject;
 class btTransform;
-#ifdef __EMSCRIPTEN__
-#include "../../LinearMath/btScalar.h" // for SIMD_FORCE_INLINE definition
-#else
 #include "LinearMath/btScalar.h" // for SIMD_FORCE_INLINE definition
-#endif
 
 #define BT_DECLARE_STACK_ONLY_OBJECT \
-	public: \
+	private: \
 		void* operator new(size_t size); \
 		void operator delete(void*);
 

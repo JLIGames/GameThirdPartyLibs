@@ -18,7 +18,7 @@ extern "C" {
 JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_onTouchDown
   (JNIEnv *env, jclass cls, jobject obj)
 {
-	touch_down();
+//	touch_down();
 }
 
 /*
@@ -29,7 +29,7 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_o
 JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_onTouchUp
   (JNIEnv *env, jclass cls, jobject obj)
 {
-	touch_up();
+//	touch_up();
 }
 
 /*
@@ -40,13 +40,13 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_o
 JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_onTouchMove
   (JNIEnv *env, jclass cls, jobject obj)
 {
-	touch_move();
+//	touch_move();
 }
 
 JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_onTouchCancel
 (JNIEnv *env, jclass cls, jobject obj)
 {
-	touch_cancelled();
+//	touch_cancelled();
 }
 
 #ifdef __cplusplus

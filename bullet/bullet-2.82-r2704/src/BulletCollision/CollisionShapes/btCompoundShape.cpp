@@ -13,17 +13,10 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
-#ifdef __EMSCRIPTEN__
-#include "btCompoundShape.h"
-#include "btCollisionShape.h"
-#include "../../BulletCollision/BroadphaseCollision/btDbvt.h"
-#include "../../LinearMath/btSerializer.h"
-#else
 #include "btCompoundShape.h"
 #include "btCollisionShape.h"
 #include "BulletCollision/BroadphaseCollision/btDbvt.h"
 #include "LinearMath/btSerializer.h"
-#endif
 
 btCompoundShape::btCompoundShape(bool enableDynamicAabbTree)
 : m_localAabbMin(btScalar(BT_LARGE_FLOAT),btScalar(BT_LARGE_FLOAT),btScalar(BT_LARGE_FLOAT)),

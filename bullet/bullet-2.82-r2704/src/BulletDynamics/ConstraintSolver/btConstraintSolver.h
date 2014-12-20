@@ -16,11 +16,7 @@ subject to the following restrictions:
 #ifndef BT_CONSTRAINT_SOLVER_H
 #define BT_CONSTRAINT_SOLVER_H
 
-#ifdef __EMSCRIPTEN__
-#include "../../LinearMath/btScalar.h"
-#else
 #include "LinearMath/btScalar.h"
-#endif
 
 class btPersistentManifold;
 class btRigidBody;

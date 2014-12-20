@@ -17,8 +17,8 @@ subject to the following restrictions:
 #ifndef BT_MATRIX_X_H
 #define BT_MATRIX_X_H
 
-#include "btQuickprof.h"
-#include "btAlignedObjectArray.h"
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btAlignedObjectArray.h"
 
 class btIntSortPredicate
 {

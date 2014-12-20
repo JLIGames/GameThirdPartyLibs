@@ -16,11 +16,7 @@ subject to the following restrictions:
 #ifndef BT_FEATHERSTONE_LINK_COLLIDER_H
 #define BT_FEATHERSTONE_LINK_COLLIDER_H
 
-#ifdef __EMSCRIPTEN__
-#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
-#else
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
-#endif
 
 #include "btMultiBody.h"
 

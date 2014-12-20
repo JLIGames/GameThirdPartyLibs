@@ -17,11 +17,7 @@ subject to the following restrictions:
 #define BT_CAPSULE_SHAPE_H
 
 #include "btConvexInternalShape.h"
-#ifdef __EMSCRIPTEN__
-#include "../../BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
-#else
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h" // for the types
-#endif
 
 
 ///The btCapsuleShape represents a capsule around the Y axis, there is also the btCapsuleShapeX aligned around the X axis and btCapsuleShapeZ around the Z axis.
@@ -75,7 +71,7 @@ public:
 			aabbMax = center + extent;
 	}
 
-	virtual const char*	getClassName()const 
+	virtual const char*	getName()const 
 	{
 		return "CapsuleShape";
 	}
@@ -133,7 +129,7 @@ public:
 	btCapsuleShapeX(btScalar radius,btScalar height);
 		
 	//debugging
-	virtual const char*	getClassName()const
+	virtual const char*	getName()const
 	{
 		return "CapsuleX";
 	}
@@ -150,7 +146,7 @@ public:
 	btCapsuleShapeZ(btScalar radius,btScalar height);
 
 		//debugging
-	virtual const char*	getClassName()const
+	virtual const char*	getName()const
 	{
 		return "CapsuleZ";
 	}

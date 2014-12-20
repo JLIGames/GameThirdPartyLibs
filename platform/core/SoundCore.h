@@ -3,8 +3,8 @@
 #ifdef __EMSCRIPTEN__
 //TODO include OpenAL
 #else
-#include "fmod.hpp"
-#include "fmod_errors.h"
+//#include "fmod.hpp"
+//#include "fmod_errors.h"
 #endif
 
 class SoundCore// : public AbstractSingleton<SoundCore>
@@ -20,6 +20,6 @@ private:
 #ifdef __EMSCRIPTEN__
     //TODO include OpenAL
 #else
-    FMOD::System   *m_System;
+//    FMOD::System   *m_System;
 #endif
 };

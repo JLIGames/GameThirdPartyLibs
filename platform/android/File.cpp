@@ -27,51 +27,71 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_i
 #endif
 #endif
 
-char *File::asset_path(const char *file, char *filePath)
+
+const char *File::asset_path(const char *file)
 {
-	strcpy(filePath, "file:///android_asset/");
 
-	strcat(filePath, file);
-
-	return filePath;
+	return "file:///android_asset/";
+//	strcpy(filePath, "file:///android_asset/");
+//
+//		strcat(filePath, file);
 }
 
-bool File::readAsset(const std::string filepath)
+bool File::readAsset(const char * filepath)
 {
-	AAsset* asset = AAssetManager_open(asset_manager, filepath.c_str(), AASSET_MODE_UNKNOWN);
 
-	if (asset)
-	{
-		Log("Asset is opened.");
-
-		if(file_content)
-		{
-			free(file_content);
-		}
-
-		file_size = AAsset_getLength(asset);
-		file_content = malloc(file_size);
-
-		int bytesread = AAsset_read(asset, file_content, file_size);
-		if (bytesread)
-		{
-			Log("bytesread: %d.", bytesread);
-			Log("text: %s.", (unsigned char*)file_content);
-		}
-		else
-		{
-			Log("unable to read file %s", filepath.c_str());
-		}
-		AAsset_close(asset);
-
-		return true;
-	}
-
-	return false;
+    return false;
 }
 
-bool File::write(const std::string filepath, const char *data)
+bool File::write(const char * filepath, const char *data)
 {
-	return false;
+    return true;
 }
+//char *File::asset_path(const char *file, char *filePath)
+//{
+//	strcpy(filePath, "file:///android_asset/");
+//
+//	strcat(filePath, file);
+//
+//	return filePath;
+//}
+//
+//bool File::readAsset(const std::string filepath)
+//{
+//	AAsset* asset = AAssetManager_open(asset_manager, filepath.c_str(), AASSET_MODE_UNKNOWN);
+//
+//	if (asset)
+//	{
+//		Log("Asset is opened.");
+//
+//		if(file_content)
+//		{
+//			free(file_content);
+//		}
+//
+//		file_size = AAsset_getLength(asset);
+//		file_content = malloc(file_size);
+//
+//		int bytesread = AAsset_read(asset, file_content, file_size);
+//		if (bytesread)
+//		{
+//			Log("bytesread: %d.", bytesread);
+//			Log("text: %s.", (unsigned char*)file_content);
+//		}
+//		else
+//		{
+//			Log("unable to read file %s", filepath.c_str());
+//		}
+//		AAsset_close(asset);
+//
+//		return true;
+//	}
+//
+//	return false;
+//}
+//
+//bool File::write(const std::string filepath, const char *data)
+//{
+//	return false;
+//}
 

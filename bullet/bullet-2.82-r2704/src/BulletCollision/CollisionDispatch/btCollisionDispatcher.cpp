@@ -15,19 +15,6 @@ subject to the following restrictions:
 
 
 
-#ifdef __EMSCRIPTEN__
-#include "btCollisionDispatcher.h"
-
-
-#include "../../BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
-
-#include "../../BulletCollision/CollisionShapes/btCollisionShape.h"
-#include "../../BulletCollision/CollisionDispatch/btCollisionObject.h"
-#include "../../BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
-#include "../../LinearMath/btPoolAllocator.h"
-#include "../../BulletCollision/CollisionDispatch/btCollisionConfiguration.h"
-#include "../../BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
-#else
 #include "btCollisionDispatcher.h"
 
 
@@ -39,7 +26,6 @@ subject to the following restrictions:
 #include "LinearMath/btPoolAllocator.h"
 #include "BulletCollision/CollisionDispatch/btCollisionConfiguration.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
-#endif
 
 int gNumManifold = 0;
 

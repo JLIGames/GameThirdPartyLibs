@@ -1,6 +1,6 @@
 //Lua interface file
 
-%module JLI
+//%module JLI
 
 //%import "../../jli_game_engine/src/Lua/Lua.i"
 //%import "../../bullet/Lua.i"

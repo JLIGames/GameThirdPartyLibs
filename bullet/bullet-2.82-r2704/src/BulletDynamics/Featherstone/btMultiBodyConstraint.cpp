@@ -1,9 +1,5 @@
 #include "btMultiBodyConstraint.h"
-#ifdef __EMSCRIPTEN__
-#include "../../BulletDynamics/Dynamics/btRigidBody.h"
-#else
 #include "BulletDynamics/Dynamics/btRigidBody.h"
-#endif
 
 btMultiBodyConstraint::btMultiBodyConstraint(btMultiBody* bodyA,btMultiBody* bodyB,int linkA, int linkB, int numRows, bool isUnilateral)
 	:m_bodyA(bodyA),

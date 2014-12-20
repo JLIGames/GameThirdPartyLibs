@@ -20,32 +20,6 @@ subject to the following restrictions:
 	If possible, use the richer Bullet C++ API, by including <src/btBulletDynamicsCommon.h>
 */
 
-
-#ifdef __EMSCRIPTEN__
-#include "../../Bullet-C-Api.h"
-#include "../../btBulletDynamicsCommon.h"
-#include "../../LinearMath/btAlignedAllocator.h"
-
-
-
-#include "../../LinearMath/btVector3.h"
-#include "../../LinearMath/btScalar.h"	
-#include "../../LinearMath/btMatrix3x3.h"
-#include "../../LinearMath/btTransform.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
-#include "../../BulletCollision/CollisionShapes/btTriangleShape.h"
-
-#include "../../BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btPointCollector.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
-#include "../../BulletCollision/CollisionShapes/btMinkowskiSumShape.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h"
-#include "../../BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h"
-#else
 #include "Bullet-C-Api.h"
 #include "btBulletDynamicsCommon.h"
 #include "LinearMath/btAlignedAllocator.h"
@@ -69,7 +43,6 @@ subject to the following restrictions:
 #include "BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
 #include "BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h"
 #include "BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h"
-#endif
 
 
 /*
