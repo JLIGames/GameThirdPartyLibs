@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := assimp
 
-LOCAL_C_INCLUDES := \
+LOCAL_EXPORT_C_INCLUDES := \
 $(LOCAL_PATH) \
 $(MY_ASSIMP_PATH)/code \
 $(MY_ASSIMP_PATH)/contrib/ConvertUTF/ \
@@ -31,7 +31,7 @@ $(MY_BULLET_PATH)/BulletDynamics/Vehicle \
 $(MY_BULLET_PATH)/BulletSoftBody \
 $(MY_BULLET_PATH)/LinearMath \
 $(MY_FMOD_PATH)/lowlevel/inc \
-$(MY_JLI_PATH) \
+\
 $(MY_JSON_PATH)/src/lib_json \
 $(MY_JSON_PATH)/include \
 $(MY_JSON_PATH)/src/test_lib_json \

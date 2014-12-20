@@ -10,7 +10,7 @@
 #define __JLIGameEngineTest__DeviceTouch__
 
 #include "DeviceInputTime.h"
-#include "WorldFactory.h"
+//#include "WorldFactory.h"
 #include <string>
 
 namespace jli
@@ -63,7 +63,7 @@ namespace jli
         virtual ~DeviceTouch(){}
         
         virtual const char *getClassName()const{return "DeviceTouch";}
-        virtual u32 getType()const{return JLI_OBJECT_TYPE_DeviceTouch;}
+        virtual u32 getType()const{return 0;}
         operator std::string() const
         {
             char buffer[1024];

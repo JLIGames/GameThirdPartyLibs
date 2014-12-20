@@ -10,11 +10,11 @@
 #define __JLIGameEngineTest__DeviceInputTime__
 
 #include "Util.h"
-#include "AbstractObject.h"
+//#include "AbstractObject.h"
 
 namespace jli
 {
-    class DeviceInputTime : public AbstractObject
+    class DeviceInputTime// : public AbstractObject
     {
     public:
         virtual const char *getClassName()const{return "DeviceInputTime";}

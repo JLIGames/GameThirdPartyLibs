@@ -5,7 +5,7 @@
 #include "SoundCore.h"
 #include "Game.h"
 #include "Util.h"
-#include "World.h"
+//#include "World.h"
 #include "GLPlatform.h"
 #include <stdio.h>
 #include <stdlib.h>
