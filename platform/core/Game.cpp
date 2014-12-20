@@ -5,14 +5,11 @@
 #include "SoundCore.h"
 #include "Game.h"
 #include "Util.h"
-//#include "World.h"
+#include "World.h"
 #include "GLPlatform.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
-
-using namespace jli;
 
 
 static void printGLString(const char *name, GLenum s) {
@@ -112,7 +109,7 @@ const GLfloat gTriangleVertices[] = { 0.0f, 0.5f, -0.5f, -0.5f,
 
 bool create()
 {
-//	World::createInstance();
+	jli::World::createInstance();
 //	jli::World::createInstance();
 //    jli::World::createInstance();
 //
@@ -196,13 +193,13 @@ void resize(int x, int y, int width, int height)
 
 void update(float step)
 {
-//    jli::World::getInstance()->update(step);
+    jli::World::getInstance()->update(step);
 //	Log("%f\n", step);
 }
 
 void render()
 {
-//    jli::World::getInstance()->render();
+    jli::World::getInstance()->render();
     
 	static float grey;
 	grey += 0.01f;
@@ -232,7 +229,7 @@ void render()
 
 void destroy()
 {
-//    jli::World::destroyInstance();
+    jli::World::destroyInstance();
 }
 
 //void pause()
@@ -245,18 +242,18 @@ void destroy()
 
 void touch_down(jli::DeviceTouch *m_CurrentTouches[10])
 {
-//    jli::World::getInstance()->touchDown(m_CurrentTouches);
+    jli::World::getInstance()->touchDown(m_CurrentTouches);
 }
 void touch_up(jli::DeviceTouch *m_CurrentTouches[10])
 {
-//    jli::World::getInstance()->touchUp(m_CurrentTouches);
+    jli::World::getInstance()->touchUp(m_CurrentTouches);
 }
 void touch_move(jli::DeviceTouch *m_CurrentTouches[10])
 {
-//    jli::World::getInstance()->touchMove(m_CurrentTouches);
+    jli::World::getInstance()->touchMove(m_CurrentTouches);
 }
 void touch_cancelled(jli::DeviceTouch *m_CurrentTouches[10])
 {
-//    jli::World::getInstance()->touchCancelled(m_CurrentTouches);
+    jli::World::getInstance()->touchCancelled(m_CurrentTouches);
 }
 

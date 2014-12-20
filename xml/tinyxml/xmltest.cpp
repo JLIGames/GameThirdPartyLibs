@@ -1,7 +1,6 @@
 /*
    Test program for TinyXML.
 */
-#include "File.h"
 #include "xml_test.h"
 
 #ifdef TIXML_USE_STL

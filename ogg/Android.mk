@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := ogg
 
-LOCAL_C_INCLUDES := \
+LOCAL_EXPORT_C_INCLUDES := \
 $(LOCAL_PATH) \
 $(LOCAL_PATH)/include \
 $(LOCAL_PATH)/include/ogg \
