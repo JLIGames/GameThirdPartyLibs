@@ -9,7 +9,7 @@
 
 
 #include "WorldLuaVirtualMachine.h"
-//#include "SwigLuaWrapper.h"
+//#include "SwigLuaWrapper.c"
 #include "Log.h"
 #include "File.h"
 #include "Util.h"
@@ -24,21 +24,21 @@ extern "C" {
 static void printMethods(const char* name)
 {
     //this touches the SWIG internals, please be careful:
-//    for (int i = 0; swig_types[i]; i++)
-//    {
-//        if (swig_types[i]->clientdata)
-//        {
-//            swig_lua_class* ptr=(swig_lua_class*)(swig_types[i]->clientdata);
+//		for (int i = 0; swig_types[i]; i++)
+//		{
+//			if (swig_types[i]->clientdata)
+//			{
+//				swig_lua_class* ptr=(swig_lua_class*)(swig_types[i]->clientdata);
 //
-//            if (strcmp(name,ptr->name)==0)
-//            {
-//                for(int j=0;ptr->methods[j].name;j++)
-//                {
-//                    Log("%s::%s()\n",ptr->name,ptr->methods[j].name);
-//                }
-//            }
-//        }
-//    }
+//				if (strcmp(name,ptr->name)==0)
+//				{
+//					for(int j=0;ptr->methods[j].name;j++)
+//					{
+//						Log("%s::%s()\n",ptr->name,ptr->methods[j].name);
+//					}
+//				}
+//			}
+//		}
 }
 
 static void printWrappedClasses()
@@ -79,8 +79,8 @@ namespace jli
     
     void WorldLuaVirtualMachine::loadFile(const char *filePath)
     {
-        File *f = new File(filePath);
-        loadString(static_cast<const char *>(f->content()));
+//        File *f = new File(filePath);
+//        loadString(static_cast<const char *>(f->content()));
     }
     
     void WorldLuaVirtualMachine::loadString(const char *code)
@@ -158,9 +158,6 @@ namespace jli
 //        /* the first argument */
 //        lua_pushnumber(m_lua_State, _btScalar);
 //
-//        /* the second argument */
-//        //lua_pushnumber(L, y);
-//
 //        /* call the function with 1 arguments, return 0 result */
 //        int error_code = lua_pcall(m_lua_State, 1, 0, 0);
 //        if(error_code)
@@ -175,7 +172,7 @@ namespace jli
     bool WorldLuaVirtualMachine::execute(const char *code, const Telegram &telegram, bool &returnValue)
     {
         
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) &telegram,SWIGTYPE_p_jli__Telegram,0);
@@ -197,7 +194,7 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, Scene *pEntity)
     {
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Scene,0);
@@ -215,7 +212,7 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, Scene *pEntity, f32 _btScalar)
     {
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Scene,0);
@@ -234,7 +231,7 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, Scene *pEntity, const Telegram &telegram, bool &returnValue)
     {
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Scene,0);
@@ -260,7 +257,7 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, Node *pEntity)
     {
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
@@ -278,7 +275,7 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, Node *pEntity, f32 _btScalar)
     {
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);
@@ -297,7 +294,7 @@ namespace jli
     
     bool WorldLuaVirtualMachine::execute(const char *code, Node *pEntity, const Telegram &telegram, bool &returnValue)
     {
-        /* the function name */
+//        /* the function name */
 //        lua_getglobal(m_lua_State, code);
 //
 //        SWIG_NewPointerObj(m_lua_State,(void *) pEntity,SWIGTYPE_p_jli__Node,0);

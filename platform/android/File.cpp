@@ -30,17 +30,45 @@ JNIEXPORT void JNICALL Java_com_example_jligameenginetest_JLIGameEngineTestLib_i
 
 const char *File::asset_path(const char *file)
 {
-
-	return "file:///android_asset/";
-//	strcpy(filePath, "file:///android_asset/");
-//
-//		strcat(filePath, file);
+	return file;
+//	static char tempBuffer[512];
+//	strcpy(tempBuffer, "file:///android_asset/");
+//	strcat(tempBuffer, file);
+//	return tempBuffer;
 }
 
 bool File::readAsset(const char * filepath)
 {
+	AAsset* asset = AAssetManager_open(asset_manager, filepath, AASSET_MODE_UNKNOWN);
 
-    return false;
+	if (asset)
+	{
+		Log("Asset is opened.");
+
+		if(file_content)
+		{
+			free(file_content);
+		}
+
+		file_size = AAsset_getLength(asset);
+		file_content = malloc(file_size);
+
+		int bytesread = AAsset_read(asset, file_content, file_size);
+		if (bytesread)
+		{
+			Log("bytesread: %d.", bytesread);
+			Log("text: %s.", (unsigned char*)file_content);
+		}
+		else
+		{
+			Log("unable to read file %s", filepath);
+		}
+		AAsset_close(asset);
+
+		return true;
+	}
+
+	return false;
 }
 
 bool File::write(const char * filepath, const char *data)

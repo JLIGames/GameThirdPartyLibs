@@ -14,7 +14,9 @@ const char *File::asset_path(const char *file)
 
 bool File::readAsset(const char * filepath)
 {
-    FILE *stream = std::fopen(asset_path(filepath), "r");
+    static char buffer[512];
+    sprintf(buffer, "assets/%s", filepath);
+    FILE *stream = std::fopen(asset_path(buffer), "r");
     char *fileContent = NULL;
     
     if(stream)
